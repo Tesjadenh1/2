@@ -31,7 +31,7 @@ class Google_Service_Storagetransfer_TransferOperation extends Google_Collection
   protected $transferSpecType = 'Google_Service_Storagetransfer_TransferSpec';
   protected $transferSpecDataType = '';
 
-  public function setCounters(TransferCounters $counters)
+  public function setCounters(Google_Service_Storagetransfer_TransferCounters $counters)
   {
     $this->counters = $counters;
   }
@@ -95,7 +95,7 @@ class Google_Service_Storagetransfer_TransferOperation extends Google_Collection
   {
     return $this->transferJobName;
   }
-  public function setTransferSpec(TransferSpec $transferSpec)
+  public function setTransferSpec(Google_Service_Storagetransfer_TransferSpec $transferSpec)
   {
     $this->transferSpec = $transferSpec;
   }

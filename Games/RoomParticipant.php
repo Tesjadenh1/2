@@ -40,7 +40,7 @@ class Google_Service_Games_RoomParticipant extends Google_Collection
   {
     return $this->autoMatched;
   }
-  public function setAutoMatchedPlayer(AnonymousPlayer $autoMatchedPlayer)
+  public function setAutoMatchedPlayer(Google_Service_Games_AnonymousPlayer $autoMatchedPlayer)
   {
     $this->autoMatchedPlayer = $autoMatchedPlayer;
   }
@@ -56,7 +56,7 @@ class Google_Service_Games_RoomParticipant extends Google_Collection
   {
     return $this->capabilities;
   }
-  public function setClientAddress(RoomClientAddress $clientAddress)
+  public function setClientAddress(Google_Service_Games_RoomClientAddress $clientAddress)
   {
     $this->clientAddress = $clientAddress;
   }
@@ -96,7 +96,7 @@ class Google_Service_Games_RoomParticipant extends Google_Collection
   {
     return $this->leaveReason;
   }
-  public function setPlayer(Player $player)
+  public function setPlayer(Google_Service_Games_Player $player)
   {
     $this->player = $player;
   }

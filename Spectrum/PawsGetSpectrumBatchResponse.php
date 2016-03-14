@@ -34,7 +34,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchResponse extends Google_Collec
   public $type;
   public $version;
 
-  public function setDatabaseChange(DbUpdateSpec $databaseChange)
+  public function setDatabaseChange(Google_Service_Spectrum_DbUpdateSpec $databaseChange)
   {
     $this->databaseChange = $databaseChange;
   }
@@ -42,7 +42,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchResponse extends Google_Collec
   {
     return $this->databaseChange;
   }
-  public function setDeviceDesc(DeviceDescriptor $deviceDesc)
+  public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }
@@ -90,7 +90,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchResponse extends Google_Collec
   {
     return $this->needsSpectrumReport;
   }
-  public function setRulesetInfo(RulesetInfo $rulesetInfo)
+  public function setRulesetInfo(Google_Service_Spectrum_RulesetInfo $rulesetInfo)
   {
     $this->rulesetInfo = $rulesetInfo;
   }

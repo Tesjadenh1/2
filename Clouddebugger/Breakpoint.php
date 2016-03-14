@@ -112,7 +112,7 @@ class Google_Service_Clouddebugger_Breakpoint extends Google_Collection
   {
     return $this->labels;
   }
-  public function setLocation(SourceLocation $location)
+  public function setLocation(Google_Service_Clouddebugger_SourceLocation $location)
   {
     $this->location = $location;
   }
@@ -144,7 +144,7 @@ class Google_Service_Clouddebugger_Breakpoint extends Google_Collection
   {
     return $this->stackFrames;
   }
-  public function setStatus(StatusMessage $status)
+  public function setStatus(Google_Service_Clouddebugger_StatusMessage $status)
   {
     $this->status = $status;
   }

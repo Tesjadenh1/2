@@ -47,7 +47,7 @@ class Google_Service_YouTube_GuideCategory extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(GuideCategorySnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_GuideCategorySnippet $snippet)
   {
     $this->snippet = $snippet;
   }

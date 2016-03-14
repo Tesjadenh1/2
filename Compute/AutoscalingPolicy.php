@@ -36,7 +36,7 @@ class Google_Service_Compute_AutoscalingPolicy extends Google_Collection
   {
     return $this->coolDownPeriodSec;
   }
-  public function setCpuUtilization(AutoscalingPolicyCpuUtilization $cpuUtilization)
+  public function setCpuUtilization(Google_Service_Compute_AutoscalingPolicyCpuUtilization $cpuUtilization)
   {
     $this->cpuUtilization = $cpuUtilization;
   }
@@ -52,7 +52,7 @@ class Google_Service_Compute_AutoscalingPolicy extends Google_Collection
   {
     return $this->customMetricUtilizations;
   }
-  public function setLoadBalancingUtilization(AutoscalingPolicyLoadBalancingUtilization $loadBalancingUtilization)
+  public function setLoadBalancingUtilization(Google_Service_Compute_AutoscalingPolicyLoadBalancingUtilization $loadBalancingUtilization)
   {
     $this->loadBalancingUtilization = $loadBalancingUtilization;
   }

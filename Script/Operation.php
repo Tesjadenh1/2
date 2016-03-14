@@ -32,7 +32,7 @@ class Google_Service_Script_Operation extends Google_Model
   {
     return $this->done;
   }
-  public function setError(Status $error)
+  public function setError(Google_Service_Script_Status $error)
   {
     $this->error = $error;
   }

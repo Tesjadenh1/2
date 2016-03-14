@@ -21,7 +21,7 @@ class Google_Service_YouTube_LiveStreamStatus extends Google_Model
   protected $healthStatusDataType = '';
   public $streamStatus;
 
-  public function setHealthStatus(LiveStreamHealthStatus $healthStatus)
+  public function setHealthStatus(Google_Service_YouTube_LiveStreamHealthStatus $healthStatus)
   {
     $this->healthStatus = $healthStatus;
   }

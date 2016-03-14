@@ -24,7 +24,7 @@ class Google_Service_Clouddebugger_CloudRepoSourceContext extends Google_Model
   protected $repoIdDataType = '';
   public $revisionId;
 
-  public function setAliasContext(AliasContext $aliasContext)
+  public function setAliasContext(Google_Service_Clouddebugger_AliasContext $aliasContext)
   {
     $this->aliasContext = $aliasContext;
   }
@@ -40,7 +40,7 @@ class Google_Service_Clouddebugger_CloudRepoSourceContext extends Google_Model
   {
     return $this->aliasName;
   }
-  public function setRepoId(RepoId $repoId)
+  public function setRepoId(Google_Service_Clouddebugger_RepoId $repoId)
   {
     $this->repoId = $repoId;
   }

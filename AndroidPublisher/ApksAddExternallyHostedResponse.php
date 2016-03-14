@@ -20,7 +20,7 @@ class Google_Service_AndroidPublisher_ApksAddExternallyHostedResponse extends Go
   protected $externallyHostedApkType = 'Google_Service_AndroidPublisher_ExternallyHostedApk';
   protected $externallyHostedApkDataType = '';
 
-  public function setExternallyHostedApk(ExternallyHostedApk $externallyHostedApk)
+  public function setExternallyHostedApk(Google_Service_AndroidPublisher_ExternallyHostedApk $externallyHostedApk)
   {
     $this->externallyHostedApk = $externallyHostedApk;
   }

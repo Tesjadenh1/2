@@ -44,7 +44,7 @@ class Google_Service_Analytics_CustomDataSource extends Google_Collection
   {
     return $this->accountId;
   }
-  public function setChildLink(CustomDataSourceChildLink $childLink)
+  public function setChildLink(Google_Service_Analytics_CustomDataSourceChildLink $childLink)
   {
     $this->childLink = $childLink;
   }
@@ -100,7 +100,7 @@ class Google_Service_Analytics_CustomDataSource extends Google_Collection
   {
     return $this->name;
   }
-  public function setParentLink(CustomDataSourceParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_CustomDataSourceParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }

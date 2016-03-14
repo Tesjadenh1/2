@@ -53,7 +53,7 @@ class Google_Service_Bigquery_JobConfigurationQuery extends Google_Collection
   {
     return $this->createDisposition;
   }
-  public function setDefaultDataset(DatasetReference $defaultDataset)
+  public function setDefaultDataset(Google_Service_Bigquery_DatasetReference $defaultDataset)
   {
     $this->defaultDataset = $defaultDataset;
   }
@@ -61,7 +61,7 @@ class Google_Service_Bigquery_JobConfigurationQuery extends Google_Collection
   {
     return $this->defaultDataset;
   }
-  public function setDestinationTable(TableReference $destinationTable)
+  public function setDestinationTable(Google_Service_Bigquery_TableReference $destinationTable)
   {
     $this->destinationTable = $destinationTable;
   }

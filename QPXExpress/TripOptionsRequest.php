@@ -35,7 +35,7 @@ class Google_Service_QPXExpress_TripOptionsRequest extends Google_Collection
   {
     return $this->maxPrice;
   }
-  public function setPassengers(PassengerCounts $passengers)
+  public function setPassengers(Google_Service_QPXExpress_PassengerCounts $passengers)
   {
     $this->passengers = $passengers;
   }

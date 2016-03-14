@@ -30,7 +30,7 @@ class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends Go
   protected $zeroType = 'Google_Service_GamesConfiguration_LocalizedStringBundle';
   protected $zeroDataType = '';
 
-  public function setFew(LocalizedStringBundle $few)
+  public function setFew(Google_Service_GamesConfiguration_LocalizedStringBundle $few)
   {
     $this->few = $few;
   }
@@ -38,7 +38,7 @@ class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends Go
   {
     return $this->few;
   }
-  public function setMany(LocalizedStringBundle $many)
+  public function setMany(Google_Service_GamesConfiguration_LocalizedStringBundle $many)
   {
     $this->many = $many;
   }
@@ -46,7 +46,7 @@ class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends Go
   {
     return $this->many;
   }
-  public function setOne(LocalizedStringBundle $one)
+  public function setOne(Google_Service_GamesConfiguration_LocalizedStringBundle $one)
   {
     $this->one = $one;
   }
@@ -54,7 +54,7 @@ class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends Go
   {
     return $this->one;
   }
-  public function setOther(LocalizedStringBundle $other)
+  public function setOther(Google_Service_GamesConfiguration_LocalizedStringBundle $other)
   {
     $this->other = $other;
   }
@@ -62,7 +62,7 @@ class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends Go
   {
     return $this->other;
   }
-  public function setTwo(LocalizedStringBundle $two)
+  public function setTwo(Google_Service_GamesConfiguration_LocalizedStringBundle $two)
   {
     $this->two = $two;
   }
@@ -70,7 +70,7 @@ class Google_Service_GamesConfiguration_GamesNumberAffixConfiguration extends Go
   {
     return $this->two;
   }
-  public function setZero(LocalizedStringBundle $zero)
+  public function setZero(Google_Service_GamesConfiguration_LocalizedStringBundle $zero)
   {
     $this->zero = $zero;
   }

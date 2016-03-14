@@ -59,7 +59,7 @@ class Google_Service_YouTubeAnalytics_BatchReport extends Google_Collection
   {
     return $this->reportId;
   }
-  public function setTimeSpan(BatchReportTimeSpan $timeSpan)
+  public function setTimeSpan(Google_Service_YouTubeAnalytics_BatchReportTimeSpan $timeSpan)
   {
     $this->timeSpan = $timeSpan;
   }

@@ -114,7 +114,7 @@ class Google_Service_Dfareporting_InventoryItem extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+  public function setLastModifiedInfo(Google_Service_Dfareporting_LastModifiedInfo $lastModifiedInfo)
   {
     $this->lastModifiedInfo = $lastModifiedInfo;
   }
@@ -154,7 +154,7 @@ class Google_Service_Dfareporting_InventoryItem extends Google_Collection
   {
     return $this->placementStrategyId;
   }
-  public function setPricing(Pricing $pricing)
+  public function setPricing(Google_Service_Dfareporting_Pricing $pricing)
   {
     $this->pricing = $pricing;
   }

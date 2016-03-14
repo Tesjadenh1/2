@@ -31,7 +31,7 @@ class Google_Service_Games_PushToken extends Google_Model
   {
     return $this->clientRevision;
   }
-  public function setId(PushTokenId $id)
+  public function setId(Google_Service_Games_PushTokenId $id)
   {
     $this->id = $id;
   }

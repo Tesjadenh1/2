@@ -21,7 +21,7 @@ class Google_Service_Clouddebugger_RepoId extends Google_Model
   protected $projectRepoIdDataType = '';
   public $uid;
 
-  public function setProjectRepoId(ProjectRepoId $projectRepoId)
+  public function setProjectRepoId(Google_Service_Clouddebugger_ProjectRepoId $projectRepoId)
   {
     $this->projectRepoId = $projectRepoId;
   }

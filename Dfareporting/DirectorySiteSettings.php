@@ -38,7 +38,7 @@ class Google_Service_Dfareporting_DirectorySiteSettings extends Google_Model
   {
     return $this->activeViewOptOut;
   }
-  public function setDfpSettings(DfpSettings $dfpSettings)
+  public function setDfpSettings(Google_Service_Dfareporting_DfpSettings $dfpSettings)
   {
     $this->dfpSettings = $dfpSettings;
   }

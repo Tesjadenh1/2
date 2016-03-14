@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_ReportsConfiguration extends Google_Model
   {
     return $this->exposureToConversionEnabled;
   }
-  public function setLookbackConfiguration(LookbackConfiguration $lookbackConfiguration)
+  public function setLookbackConfiguration(Google_Service_Dfareporting_LookbackConfiguration $lookbackConfiguration)
   {
     $this->lookbackConfiguration = $lookbackConfiguration;
   }

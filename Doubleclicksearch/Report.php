@@ -62,7 +62,7 @@ class Google_Service_Doubleclicksearch_Report extends Google_Collection
   {
     return $this->kind;
   }
-  public function setRequest(ReportRequest $request)
+  public function setRequest(Google_Service_Doubleclicksearch_ReportRequest $request)
   {
     $this->request = $request;
   }

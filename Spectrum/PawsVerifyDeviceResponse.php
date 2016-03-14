@@ -26,7 +26,7 @@ class Google_Service_Spectrum_PawsVerifyDeviceResponse extends Google_Collection
   public $type;
   public $version;
 
-  public function setDatabaseChange(DbUpdateSpec $databaseChange)
+  public function setDatabaseChange(Google_Service_Spectrum_DbUpdateSpec $databaseChange)
   {
     $this->databaseChange = $databaseChange;
   }

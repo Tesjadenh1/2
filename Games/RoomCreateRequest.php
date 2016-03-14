@@ -30,7 +30,7 @@ class Google_Service_Games_RoomCreateRequest extends Google_Collection
   public $requestId;
   public $variant;
 
-  public function setAutoMatchingCriteria(RoomAutoMatchingCriteria $autoMatchingCriteria)
+  public function setAutoMatchingCriteria(Google_Service_Games_RoomAutoMatchingCriteria $autoMatchingCriteria)
   {
     $this->autoMatchingCriteria = $autoMatchingCriteria;
   }
@@ -46,7 +46,7 @@ class Google_Service_Games_RoomCreateRequest extends Google_Collection
   {
     return $this->capabilities;
   }
-  public function setClientAddress(RoomClientAddress $clientAddress)
+  public function setClientAddress(Google_Service_Games_RoomClientAddress $clientAddress)
   {
     $this->clientAddress = $clientAddress;
   }
@@ -70,7 +70,7 @@ class Google_Service_Games_RoomCreateRequest extends Google_Collection
   {
     return $this->kind;
   }
-  public function setNetworkDiagnostics(NetworkDiagnostics $networkDiagnostics)
+  public function setNetworkDiagnostics(Google_Service_Games_NetworkDiagnostics $networkDiagnostics)
   {
     $this->networkDiagnostics = $networkDiagnostics;
   }

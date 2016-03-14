@@ -22,7 +22,7 @@ class Google_Service_Storage_BucketLifecycleRule extends Google_Model
   protected $conditionType = 'Google_Service_Storage_BucketLifecycleRuleCondition';
   protected $conditionDataType = '';
 
-  public function setAction(BucketLifecycleRuleAction $action)
+  public function setAction(Google_Service_Storage_BucketLifecycleRuleAction $action)
   {
     $this->action = $action;
   }
@@ -30,7 +30,7 @@ class Google_Service_Storage_BucketLifecycleRule extends Google_Model
   {
     return $this->action;
   }
-  public function setCondition(BucketLifecycleRuleCondition $condition)
+  public function setCondition(Google_Service_Storage_BucketLifecycleRuleCondition $condition)
   {
     $this->condition = $condition;
   }

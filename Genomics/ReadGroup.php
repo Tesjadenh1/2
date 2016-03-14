@@ -47,7 +47,7 @@ class Google_Service_Genomics_ReadGroup extends Google_Collection
   {
     return $this->description;
   }
-  public function setExperiment(Experiment $experiment)
+  public function setExperiment(Google_Service_Genomics_Experiment $experiment)
   {
     $this->experiment = $experiment;
   }

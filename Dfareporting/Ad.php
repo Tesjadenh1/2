@@ -99,7 +99,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->advertiserId;
   }
-  public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+  public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }
@@ -131,7 +131,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->campaignId;
   }
-  public function setCampaignIdDimensionValue(DimensionValue $campaignIdDimensionValue)
+  public function setCampaignIdDimensionValue(Google_Service_Dfareporting_DimensionValue $campaignIdDimensionValue)
   {
     $this->campaignIdDimensionValue = $campaignIdDimensionValue;
   }
@@ -139,7 +139,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->campaignIdDimensionValue;
   }
-  public function setClickThroughUrl(ClickThroughUrl $clickThroughUrl)
+  public function setClickThroughUrl(Google_Service_Dfareporting_ClickThroughUrl $clickThroughUrl)
   {
     $this->clickThroughUrl = $clickThroughUrl;
   }
@@ -147,7 +147,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->clickThroughUrl;
   }
-  public function setClickThroughUrlSuffixProperties(ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
+  public function setClickThroughUrlSuffixProperties(Google_Service_Dfareporting_ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
   {
     $this->clickThroughUrlSuffixProperties = $clickThroughUrlSuffixProperties;
   }
@@ -171,7 +171,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->compatibility;
   }
-  public function setCreateInfo(LastModifiedInfo $createInfo)
+  public function setCreateInfo(Google_Service_Dfareporting_LastModifiedInfo $createInfo)
   {
     $this->createInfo = $createInfo;
   }
@@ -187,7 +187,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->creativeGroupAssignments;
   }
-  public function setCreativeRotation(CreativeRotation $creativeRotation)
+  public function setCreativeRotation(Google_Service_Dfareporting_CreativeRotation $creativeRotation)
   {
     $this->creativeRotation = $creativeRotation;
   }
@@ -195,7 +195,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->creativeRotation;
   }
-  public function setDayPartTargeting(DayPartTargeting $dayPartTargeting)
+  public function setDayPartTargeting(Google_Service_Dfareporting_DayPartTargeting $dayPartTargeting)
   {
     $this->dayPartTargeting = $dayPartTargeting;
   }
@@ -203,7 +203,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->dayPartTargeting;
   }
-  public function setDefaultClickThroughEventTagProperties(DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
+  public function setDefaultClickThroughEventTagProperties(Google_Service_Dfareporting_DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
   {
     $this->defaultClickThroughEventTagProperties = $defaultClickThroughEventTagProperties;
   }
@@ -211,7 +211,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->defaultClickThroughEventTagProperties;
   }
-  public function setDeliverySchedule(DeliverySchedule $deliverySchedule)
+  public function setDeliverySchedule(Google_Service_Dfareporting_DeliverySchedule $deliverySchedule)
   {
     $this->deliverySchedule = $deliverySchedule;
   }
@@ -243,7 +243,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->eventTagOverrides;
   }
-  public function setGeoTargeting(GeoTargeting $geoTargeting)
+  public function setGeoTargeting(Google_Service_Dfareporting_GeoTargeting $geoTargeting)
   {
     $this->geoTargeting = $geoTargeting;
   }
@@ -259,7 +259,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->id;
   }
-  public function setIdDimensionValue(DimensionValue $idDimensionValue)
+  public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
@@ -267,7 +267,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->idDimensionValue;
   }
-  public function setKeyValueTargetingExpression(KeyValueTargetingExpression $keyValueTargetingExpression)
+  public function setKeyValueTargetingExpression(Google_Service_Dfareporting_KeyValueTargetingExpression $keyValueTargetingExpression)
   {
     $this->keyValueTargetingExpression = $keyValueTargetingExpression;
   }
@@ -283,7 +283,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+  public function setLastModifiedInfo(Google_Service_Dfareporting_LastModifiedInfo $lastModifiedInfo)
   {
     $this->lastModifiedInfo = $lastModifiedInfo;
   }
@@ -307,7 +307,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->placementAssignments;
   }
-  public function setRemarketingListExpression(ListTargetingExpression $remarketingListExpression)
+  public function setRemarketingListExpression(Google_Service_Dfareporting_ListTargetingExpression $remarketingListExpression)
   {
     $this->remarketingListExpression = $remarketingListExpression;
   }
@@ -315,7 +315,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->remarketingListExpression;
   }
-  public function setSize(Size $size)
+  public function setSize(Google_Service_Dfareporting_Size $size)
   {
     $this->size = $size;
   }
@@ -355,7 +355,7 @@ class Google_Service_Dfareporting_Ad extends Google_Collection
   {
     return $this->subaccountId;
   }
-  public function setTechnologyTargeting(TechnologyTargeting $technologyTargeting)
+  public function setTechnologyTargeting(Google_Service_Dfareporting_TechnologyTargeting $technologyTargeting)
   {
     $this->technologyTargeting = $technologyTargeting;
   }

@@ -47,7 +47,7 @@ class Google_Service_YouTube_Caption extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(CaptionSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_CaptionSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

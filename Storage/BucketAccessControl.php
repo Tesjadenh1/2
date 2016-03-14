@@ -94,7 +94,7 @@ class Google_Service_Storage_BucketAccessControl extends Google_Model
   {
     return $this->kind;
   }
-  public function setProjectTeam(BucketAccessControlProjectTeam $projectTeam)
+  public function setProjectTeam(Google_Service_Storage_BucketAccessControlProjectTeam $projectTeam)
   {
     $this->projectTeam = $projectTeam;
   }

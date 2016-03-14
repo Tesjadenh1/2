@@ -37,7 +37,7 @@ class Google_Service_YouTube_VideoContentDetails extends Google_Model
   {
     return $this->caption;
   }
-  public function setContentRating(ContentRating $contentRating)
+  public function setContentRating(Google_Service_YouTube_ContentRating $contentRating)
   {
     $this->contentRating = $contentRating;
   }
@@ -45,7 +45,7 @@ class Google_Service_YouTube_VideoContentDetails extends Google_Model
   {
     return $this->contentRating;
   }
-  public function setCountryRestriction(AccessPolicy $countryRestriction)
+  public function setCountryRestriction(Google_Service_YouTube_AccessPolicy $countryRestriction)
   {
     $this->countryRestriction = $countryRestriction;
   }
@@ -85,7 +85,7 @@ class Google_Service_YouTube_VideoContentDetails extends Google_Model
   {
     return $this->licensedContent;
   }
-  public function setRegionRestriction(VideoContentDetailsRegionRestriction $regionRestriction)
+  public function setRegionRestriction(Google_Service_YouTube_VideoContentDetailsRegionRestriction $regionRestriction)
   {
     $this->regionRestriction = $regionRestriction;
   }

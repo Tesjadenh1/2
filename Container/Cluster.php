@@ -122,7 +122,7 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->loggingService;
   }
-  public function setMasterAuth(MasterAuth $masterAuth)
+  public function setMasterAuth(Google_Service_Container_MasterAuth $masterAuth)
   {
     $this->masterAuth = $masterAuth;
   }
@@ -154,7 +154,7 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->network;
   }
-  public function setNodeConfig(NodeConfig $nodeConfig)
+  public function setNodeConfig(Google_Service_Container_NodeConfig $nodeConfig)
   {
     $this->nodeConfig = $nodeConfig;
   }

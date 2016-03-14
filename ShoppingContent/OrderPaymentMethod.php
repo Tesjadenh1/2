@@ -25,7 +25,7 @@ class Google_Service_ShoppingContent_OrderPaymentMethod extends Google_Model
   public $phoneNumber;
   public $type;
 
-  public function setBillingAddress(OrderAddress $billingAddress)
+  public function setBillingAddress(Google_Service_ShoppingContent_OrderAddress $billingAddress)
   {
     $this->billingAddress = $billingAddress;
   }

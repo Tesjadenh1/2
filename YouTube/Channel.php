@@ -43,7 +43,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   protected $topicDetailsType = 'Google_Service_YouTube_ChannelTopicDetails';
   protected $topicDetailsDataType = '';
 
-  public function setAuditDetails(ChannelAuditDetails $auditDetails)
+  public function setAuditDetails(Google_Service_YouTube_ChannelAuditDetails $auditDetails)
   {
     $this->auditDetails = $auditDetails;
   }
@@ -51,7 +51,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->auditDetails;
   }
-  public function setBrandingSettings(ChannelBrandingSettings $brandingSettings)
+  public function setBrandingSettings(Google_Service_YouTube_ChannelBrandingSettings $brandingSettings)
   {
     $this->brandingSettings = $brandingSettings;
   }
@@ -59,7 +59,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->brandingSettings;
   }
-  public function setContentDetails(ChannelContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_ChannelContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -67,7 +67,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->contentDetails;
   }
-  public function setContentOwnerDetails(ChannelContentOwnerDetails $contentOwnerDetails)
+  public function setContentOwnerDetails(Google_Service_YouTube_ChannelContentOwnerDetails $contentOwnerDetails)
   {
     $this->contentOwnerDetails = $contentOwnerDetails;
   }
@@ -75,7 +75,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->contentOwnerDetails;
   }
-  public function setConversionPings(ChannelConversionPings $conversionPings)
+  public function setConversionPings(Google_Service_YouTube_ChannelConversionPings $conversionPings)
   {
     $this->conversionPings = $conversionPings;
   }
@@ -99,7 +99,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->id;
   }
-  public function setInvideoPromotion(InvideoPromotion $invideoPromotion)
+  public function setInvideoPromotion(Google_Service_YouTube_InvideoPromotion $invideoPromotion)
   {
     $this->invideoPromotion = $invideoPromotion;
   }
@@ -123,7 +123,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->localizations;
   }
-  public function setSnippet(ChannelSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_ChannelSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -131,7 +131,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->snippet;
   }
-  public function setStatistics(ChannelStatistics $statistics)
+  public function setStatistics(Google_Service_YouTube_ChannelStatistics $statistics)
   {
     $this->statistics = $statistics;
   }
@@ -139,7 +139,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->statistics;
   }
-  public function setStatus(ChannelStatus $status)
+  public function setStatus(Google_Service_YouTube_ChannelStatus $status)
   {
     $this->status = $status;
   }
@@ -147,7 +147,7 @@ class Google_Service_YouTube_Channel extends Google_Model
   {
     return $this->status;
   }
-  public function setTopicDetails(ChannelTopicDetails $topicDetails)
+  public function setTopicDetails(Google_Service_YouTube_ChannelTopicDetails $topicDetails)
   {
     $this->topicDetails = $topicDetails;
   }

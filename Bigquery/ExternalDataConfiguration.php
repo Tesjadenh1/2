@@ -39,7 +39,7 @@ class Google_Service_Bigquery_ExternalDataConfiguration extends Google_Collectio
   {
     return $this->autodetect;
   }
-  public function setBigtableOptions(BigtableOptions $bigtableOptions)
+  public function setBigtableOptions(Google_Service_Bigquery_BigtableOptions $bigtableOptions)
   {
     $this->bigtableOptions = $bigtableOptions;
   }
@@ -55,7 +55,7 @@ class Google_Service_Bigquery_ExternalDataConfiguration extends Google_Collectio
   {
     return $this->compression;
   }
-  public function setCsvOptions(CsvOptions $csvOptions)
+  public function setCsvOptions(Google_Service_Bigquery_CsvOptions $csvOptions)
   {
     $this->csvOptions = $csvOptions;
   }
@@ -79,7 +79,7 @@ class Google_Service_Bigquery_ExternalDataConfiguration extends Google_Collectio
   {
     return $this->maxBadRecords;
   }
-  public function setSchema(TableSchema $schema)
+  public function setSchema(Google_Service_Bigquery_TableSchema $schema)
   {
     $this->schema = $schema;
   }

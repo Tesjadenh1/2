@@ -34,7 +34,7 @@ class Google_Service_Customsearch_Search extends Google_Collection
   protected $urlType = 'Google_Service_Customsearch_SearchUrl';
   protected $urlDataType = '';
 
-  public function setContext(Context $context)
+  public function setContext(Google_Service_Customsearch_Context $context)
   {
     $this->context = $context;
   }
@@ -74,7 +74,7 @@ class Google_Service_Customsearch_Search extends Google_Collection
   {
     return $this->queries;
   }
-  public function setSearchInformation(SearchSearchInformation $searchInformation)
+  public function setSearchInformation(Google_Service_Customsearch_SearchSearchInformation $searchInformation)
   {
     $this->searchInformation = $searchInformation;
   }
@@ -82,7 +82,7 @@ class Google_Service_Customsearch_Search extends Google_Collection
   {
     return $this->searchInformation;
   }
-  public function setSpelling(SearchSpelling $spelling)
+  public function setSpelling(Google_Service_Customsearch_SearchSpelling $spelling)
   {
     $this->spelling = $spelling;
   }
@@ -90,7 +90,7 @@ class Google_Service_Customsearch_Search extends Google_Collection
   {
     return $this->spelling;
   }
-  public function setUrl(SearchUrl $url)
+  public function setUrl(Google_Service_Customsearch_SearchUrl $url)
   {
     $this->url = $url;
   }

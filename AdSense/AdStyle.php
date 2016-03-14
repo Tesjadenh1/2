@@ -24,7 +24,7 @@ class Google_Service_AdSense_AdStyle extends Google_Model
   protected $fontDataType = '';
   public $kind;
 
-  public function setColors(AdStyleColors $colors)
+  public function setColors(Google_Service_AdSense_AdStyleColors $colors)
   {
     $this->colors = $colors;
   }
@@ -40,7 +40,7 @@ class Google_Service_AdSense_AdStyle extends Google_Model
   {
     return $this->corners;
   }
-  public function setFont(AdStyleFont $font)
+  public function setFont(Google_Service_AdSense_AdStyleFont $font)
   {
     $this->font = $font;
   }

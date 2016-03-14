@@ -39,7 +39,7 @@ class Google_Service_YouTube_SubscriptionSubscriberSnippet extends Google_Model
   {
     return $this->description;
   }
-  public function setThumbnails(ThumbnailDetails $thumbnails)
+  public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }

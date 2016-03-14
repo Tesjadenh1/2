@@ -29,7 +29,7 @@ class Google_Service_Drive_FileContentHints extends Google_Model
   {
     return $this->indexableText;
   }
-  public function setThumbnail(FileContentHintsThumbnail $thumbnail)
+  public function setThumbnail(Google_Service_Drive_FileContentHintsThumbnail $thumbnail)
   {
     $this->thumbnail = $thumbnail;
   }

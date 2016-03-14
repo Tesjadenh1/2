@@ -72,7 +72,7 @@ class Google_Service_QPXExpress_SegmentInfo extends Google_Collection
   {
     return $this->duration;
   }
-  public function setFlight(FlightInfo $flight)
+  public function setFlight(Google_Service_QPXExpress_FlightInfo $flight)
   {
     $this->flight = $flight;
   }

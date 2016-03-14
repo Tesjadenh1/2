@@ -24,7 +24,7 @@ class Google_Service_DoubleClickBidManager_Report extends Google_Model
   protected $paramsType = 'Google_Service_DoubleClickBidManager_Parameters';
   protected $paramsDataType = '';
 
-  public function setKey(ReportKey $key)
+  public function setKey(Google_Service_DoubleClickBidManager_ReportKey $key)
   {
     $this->key = $key;
   }
@@ -32,7 +32,7 @@ class Google_Service_DoubleClickBidManager_Report extends Google_Model
   {
     return $this->key;
   }
-  public function setMetadata(ReportMetadata $metadata)
+  public function setMetadata(Google_Service_DoubleClickBidManager_ReportMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
@@ -40,7 +40,7 @@ class Google_Service_DoubleClickBidManager_Report extends Google_Model
   {
     return $this->metadata;
   }
-  public function setParams(Parameters $params)
+  public function setParams(Google_Service_DoubleClickBidManager_Parameters $params)
   {
     $this->params = $params;
   }

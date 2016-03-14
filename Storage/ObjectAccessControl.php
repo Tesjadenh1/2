@@ -112,7 +112,7 @@ class Google_Service_Storage_ObjectAccessControl extends Google_Model
   {
     return $this->object;
   }
-  public function setProjectTeam(ObjectAccessControlProjectTeam $projectTeam)
+  public function setProjectTeam(Google_Service_Storage_ObjectAccessControlProjectTeam $projectTeam)
   {
     $this->projectTeam = $projectTeam;
   }

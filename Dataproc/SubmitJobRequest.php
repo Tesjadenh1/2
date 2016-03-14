@@ -20,7 +20,7 @@ class Google_Service_Dataproc_SubmitJobRequest extends Google_Model
   protected $jobType = 'Google_Service_Dataproc_Job';
   protected $jobDataType = '';
 
-  public function setJob(Job $job)
+  public function setJob(Google_Service_Dataproc_Job $job)
   {
     $this->job = $job;
   }

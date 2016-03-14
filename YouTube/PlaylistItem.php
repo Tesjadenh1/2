@@ -27,7 +27,7 @@ class Google_Service_YouTube_PlaylistItem extends Google_Model
   protected $statusType = 'Google_Service_YouTube_PlaylistItemStatus';
   protected $statusDataType = '';
 
-  public function setContentDetails(PlaylistItemContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_PlaylistItemContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -59,7 +59,7 @@ class Google_Service_YouTube_PlaylistItem extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(PlaylistItemSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_PlaylistItemSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -67,7 +67,7 @@ class Google_Service_YouTube_PlaylistItem extends Google_Model
   {
     return $this->snippet;
   }
-  public function setStatus(PlaylistItemStatus $status)
+  public function setStatus(Google_Service_YouTube_PlaylistItemStatus $status)
   {
     $this->status = $status;
   }

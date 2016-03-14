@@ -63,7 +63,7 @@ class Google_Service_Analytics_Profile extends Google_Model
   {
     return $this->botFilteringEnabled;
   }
-  public function setChildLink(ProfileChildLink $childLink)
+  public function setChildLink(Google_Service_Analytics_ProfileChildLink $childLink)
   {
     $this->childLink = $childLink;
   }
@@ -151,7 +151,7 @@ class Google_Service_Analytics_Profile extends Google_Model
   {
     return $this->name;
   }
-  public function setParentLink(ProfileParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_ProfileParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }
@@ -159,7 +159,7 @@ class Google_Service_Analytics_Profile extends Google_Model
   {
     return $this->parentLink;
   }
-  public function setPermissions(ProfilePermissions $permissions)
+  public function setPermissions(Google_Service_Analytics_ProfilePermissions $permissions)
   {
     $this->permissions = $permissions;
   }

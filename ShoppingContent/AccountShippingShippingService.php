@@ -33,7 +33,7 @@ class Google_Service_ShoppingContent_AccountShippingShippingService extends Goog
   {
     return $this->active;
   }
-  public function setCalculationMethod(AccountShippingShippingServiceCalculationMethod $calculationMethod)
+  public function setCalculationMethod(Google_Service_ShoppingContent_AccountShippingShippingServiceCalculationMethod $calculationMethod)
   {
     $this->calculationMethod = $calculationMethod;
   }
@@ -41,7 +41,7 @@ class Google_Service_ShoppingContent_AccountShippingShippingService extends Goog
   {
     return $this->calculationMethod;
   }
-  public function setCostRuleTree(AccountShippingShippingServiceCostRule $costRuleTree)
+  public function setCostRuleTree(Google_Service_ShoppingContent_AccountShippingShippingServiceCostRule $costRuleTree)
   {
     $this->costRuleTree = $costRuleTree;
   }

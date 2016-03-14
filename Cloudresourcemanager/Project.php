@@ -58,7 +58,7 @@ class Google_Service_Cloudresourcemanager_Project extends Google_Model
   {
     return $this->name;
   }
-  public function setParent(ResourceId $parent)
+  public function setParent(Google_Service_Cloudresourcemanager_ResourceId $parent)
   {
     $this->parent = $parent;
   }

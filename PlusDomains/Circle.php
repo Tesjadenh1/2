@@ -66,7 +66,7 @@ class Google_Service_PlusDomains_Circle extends Google_Model
   {
     return $this->kind;
   }
-  public function setPeople(CirclePeople $people)
+  public function setPeople(Google_Service_PlusDomains_CirclePeople $people)
   {
     $this->people = $people;
   }

@@ -56,7 +56,7 @@ class Google_Service_AdExchangeSeller_CustomChannel extends Google_Model
   {
     return $this->name;
   }
-  public function setTargetingInfo(CustomChannelTargetingInfo $targetingInfo)
+  public function setTargetingInfo(Google_Service_AdExchangeSeller_CustomChannelTargetingInfo $targetingInfo)
   {
     $this->targetingInfo = $targetingInfo;
   }

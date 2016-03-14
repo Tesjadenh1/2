@@ -60,7 +60,7 @@ class Google_Service_Webmasters_UrlCrawlErrorsSample extends Google_Model
   {
     return $this->responseCode;
   }
-  public function setUrlDetails(UrlSampleDetails $urlDetails)
+  public function setUrlDetails(Google_Service_Webmasters_UrlSampleDetails $urlDetails)
   {
     $this->urlDetails = $urlDetails;
   }

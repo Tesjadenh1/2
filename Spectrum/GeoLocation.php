@@ -31,7 +31,7 @@ class Google_Service_Spectrum_GeoLocation extends Google_Model
   {
     return $this->confidence;
   }
-  public function setPoint(GeoLocationEllipse $point)
+  public function setPoint(Google_Service_Spectrum_GeoLocationEllipse $point)
   {
     $this->point = $point;
   }
@@ -39,7 +39,7 @@ class Google_Service_Spectrum_GeoLocation extends Google_Model
   {
     return $this->point;
   }
-  public function setRegion(GeoLocationPolygon $region)
+  public function setRegion(Google_Service_Spectrum_GeoLocationPolygon $region)
   {
     $this->region = $region;
   }

@@ -73,7 +73,7 @@ class Google_Service_Bigquery_Table extends Google_Model
   {
     return $this->expirationTime;
   }
-  public function setExternalDataConfiguration(ExternalDataConfiguration $externalDataConfiguration)
+  public function setExternalDataConfiguration(Google_Service_Bigquery_ExternalDataConfiguration $externalDataConfiguration)
   {
     $this->externalDataConfiguration = $externalDataConfiguration;
   }
@@ -137,7 +137,7 @@ class Google_Service_Bigquery_Table extends Google_Model
   {
     return $this->numRows;
   }
-  public function setSchema(TableSchema $schema)
+  public function setSchema(Google_Service_Bigquery_TableSchema $schema)
   {
     $this->schema = $schema;
   }
@@ -153,7 +153,7 @@ class Google_Service_Bigquery_Table extends Google_Model
   {
     return $this->selfLink;
   }
-  public function setStreamingBuffer(Streamingbuffer $streamingBuffer)
+  public function setStreamingBuffer(Google_Service_Bigquery_Streamingbuffer $streamingBuffer)
   {
     $this->streamingBuffer = $streamingBuffer;
   }
@@ -161,7 +161,7 @@ class Google_Service_Bigquery_Table extends Google_Model
   {
     return $this->streamingBuffer;
   }
-  public function setTableReference(TableReference $tableReference)
+  public function setTableReference(Google_Service_Bigquery_TableReference $tableReference)
   {
     $this->tableReference = $tableReference;
   }
@@ -177,7 +177,7 @@ class Google_Service_Bigquery_Table extends Google_Model
   {
     return $this->type;
   }
-  public function setView(ViewDefinition $view)
+  public function setView(Google_Service_Bigquery_ViewDefinition $view)
   {
     $this->view = $view;
   }

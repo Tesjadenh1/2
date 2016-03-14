@@ -32,7 +32,7 @@ class Google_Service_PlusDomains_Audience extends Google_Model
   {
     return $this->etag;
   }
-  public function setItem(PlusDomainsAclentryResource $item)
+  public function setItem(Google_Service_PlusDomains_PlusDomainsAclentryResource $item)
   {
     $this->item = $item;
   }

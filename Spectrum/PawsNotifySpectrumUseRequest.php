@@ -27,7 +27,7 @@ class Google_Service_Spectrum_PawsNotifySpectrumUseRequest extends Google_Collec
   public $type;
   public $version;
 
-  public function setDeviceDesc(DeviceDescriptor $deviceDesc)
+  public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }
@@ -35,7 +35,7 @@ class Google_Service_Spectrum_PawsNotifySpectrumUseRequest extends Google_Collec
   {
     return $this->deviceDesc;
   }
-  public function setLocation(GeoLocation $location)
+  public function setLocation(Google_Service_Spectrum_GeoLocation $location)
   {
     $this->location = $location;
   }

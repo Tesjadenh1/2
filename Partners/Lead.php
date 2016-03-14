@@ -78,7 +78,7 @@ class Google_Service_Partners_Lead extends Google_Collection
   {
     return $this->id;
   }
-  public function setMinMonthlyBudget(Money $minMonthlyBudget)
+  public function setMinMonthlyBudget(Google_Service_Partners_Money $minMonthlyBudget)
   {
     $this->minMonthlyBudget = $minMonthlyBudget;
   }

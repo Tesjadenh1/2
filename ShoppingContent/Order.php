@@ -56,7 +56,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   {
     return $this->acknowledged;
   }
-  public function setCustomer(OrderCustomer $customer)
+  public function setCustomer(Google_Service_ShoppingContent_OrderCustomer $customer)
   {
     $this->customer = $customer;
   }
@@ -64,7 +64,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   {
     return $this->customer;
   }
-  public function setDeliveryDetails(OrderDeliveryDetails $deliveryDetails)
+  public function setDeliveryDetails(Google_Service_ShoppingContent_OrderDeliveryDetails $deliveryDetails)
   {
     $this->deliveryDetails = $deliveryDetails;
   }
@@ -112,7 +112,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   {
     return $this->merchantOrderId;
   }
-  public function setNetAmount(Price $netAmount)
+  public function setNetAmount(Google_Service_ShoppingContent_Price $netAmount)
   {
     $this->netAmount = $netAmount;
   }
@@ -120,7 +120,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   {
     return $this->netAmount;
   }
-  public function setPaymentMethod(OrderPaymentMethod $paymentMethod)
+  public function setPaymentMethod(Google_Service_ShoppingContent_OrderPaymentMethod $paymentMethod)
   {
     $this->paymentMethod = $paymentMethod;
   }
@@ -168,7 +168,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   {
     return $this->shipments;
   }
-  public function setShippingCost(Price $shippingCost)
+  public function setShippingCost(Google_Service_ShoppingContent_Price $shippingCost)
   {
     $this->shippingCost = $shippingCost;
   }
@@ -176,7 +176,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   {
     return $this->shippingCost;
   }
-  public function setShippingCostTax(Price $shippingCostTax)
+  public function setShippingCostTax(Google_Service_ShoppingContent_Price $shippingCostTax)
   {
     $this->shippingCostTax = $shippingCostTax;
   }

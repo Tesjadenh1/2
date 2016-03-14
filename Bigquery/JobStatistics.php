@@ -44,7 +44,7 @@ class Google_Service_Bigquery_JobStatistics extends Google_Model
   {
     return $this->endTime;
   }
-  public function setExtract(JobStatistics4 $extract)
+  public function setExtract(Google_Service_Bigquery_JobStatistics4 $extract)
   {
     $this->extract = $extract;
   }
@@ -52,7 +52,7 @@ class Google_Service_Bigquery_JobStatistics extends Google_Model
   {
     return $this->extract;
   }
-  public function setLoad(JobStatistics3 $load)
+  public function setLoad(Google_Service_Bigquery_JobStatistics3 $load)
   {
     $this->load = $load;
   }
@@ -60,7 +60,7 @@ class Google_Service_Bigquery_JobStatistics extends Google_Model
   {
     return $this->load;
   }
-  public function setQuery(JobStatistics2 $query)
+  public function setQuery(Google_Service_Bigquery_JobStatistics2 $query)
   {
     $this->query = $query;
   }

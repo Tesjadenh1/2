@@ -77,7 +77,7 @@ class Google_Service_Storagetransfer_TransferJob extends Google_Model
   {
     return $this->projectId;
   }
-  public function setSchedule(Schedule $schedule)
+  public function setSchedule(Google_Service_Storagetransfer_Schedule $schedule)
   {
     $this->schedule = $schedule;
   }
@@ -93,7 +93,7 @@ class Google_Service_Storagetransfer_TransferJob extends Google_Model
   {
     return $this->status;
   }
-  public function setTransferSpec(TransferSpec $transferSpec)
+  public function setTransferSpec(Google_Service_Storagetransfer_TransferSpec $transferSpec)
   {
     $this->transferSpec = $transferSpec;
   }

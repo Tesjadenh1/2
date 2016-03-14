@@ -48,7 +48,7 @@ class Google_Service_YouTube_ActivityContentDetailsSocial extends Google_Model
   {
     return $this->referenceUrl;
   }
-  public function setResourceId(ResourceId $resourceId)
+  public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }

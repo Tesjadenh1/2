@@ -22,7 +22,7 @@ class Google_Service_Partners_GetCompanyResponse extends Google_Model
   protected $responseMetadataType = 'Google_Service_Partners_ResponseMetadata';
   protected $responseMetadataDataType = '';
 
-  public function setCompany(Company $company)
+  public function setCompany(Google_Service_Partners_Company $company)
   {
     $this->company = $company;
   }
@@ -30,7 +30,7 @@ class Google_Service_Partners_GetCompanyResponse extends Google_Model
   {
     return $this->company;
   }
-  public function setResponseMetadata(ResponseMetadata $responseMetadata)
+  public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }

@@ -89,7 +89,7 @@ class Google_Service_YouTube_VideoSnippet extends Google_Collection
   {
     return $this->liveBroadcastContent;
   }
-  public function setLocalized(VideoLocalization $localized)
+  public function setLocalized(Google_Service_YouTube_VideoLocalization $localized)
   {
     $this->localized = $localized;
   }
@@ -113,7 +113,7 @@ class Google_Service_YouTube_VideoSnippet extends Google_Collection
   {
     return $this->tags;
   }
-  public function setThumbnails(ThumbnailDetails $thumbnails)
+  public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }

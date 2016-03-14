@@ -55,7 +55,7 @@ class Google_Service_Analytics_RealtimeData extends Google_Collection
   {
     return $this->kind;
   }
-  public function setProfileInfo(RealtimeDataProfileInfo $profileInfo)
+  public function setProfileInfo(Google_Service_Analytics_RealtimeDataProfileInfo $profileInfo)
   {
     $this->profileInfo = $profileInfo;
   }
@@ -63,7 +63,7 @@ class Google_Service_Analytics_RealtimeData extends Google_Collection
   {
     return $this->profileInfo;
   }
-  public function setQuery(RealtimeDataQuery $query)
+  public function setQuery(Google_Service_Analytics_RealtimeDataQuery $query)
   {
     $this->query = $query;
   }

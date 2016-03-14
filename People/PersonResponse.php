@@ -30,7 +30,7 @@ class Google_Service_People_PersonResponse extends Google_Model
   {
     return $this->httpStatusCode;
   }
-  public function setPerson(Person $person)
+  public function setPerson(Google_Service_People_Person $person)
   {
     $this->person = $person;
   }

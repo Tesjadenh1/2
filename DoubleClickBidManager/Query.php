@@ -37,7 +37,7 @@ class Google_Service_DoubleClickBidManager_Query extends Google_Model
   {
     return $this->kind;
   }
-  public function setMetadata(QueryMetadata $metadata)
+  public function setMetadata(Google_Service_DoubleClickBidManager_QueryMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
@@ -45,7 +45,7 @@ class Google_Service_DoubleClickBidManager_Query extends Google_Model
   {
     return $this->metadata;
   }
-  public function setParams(Parameters $params)
+  public function setParams(Google_Service_DoubleClickBidManager_Parameters $params)
   {
     $this->params = $params;
   }
@@ -77,7 +77,7 @@ class Google_Service_DoubleClickBidManager_Query extends Google_Model
   {
     return $this->reportDataStartTimeMs;
   }
-  public function setSchedule(QuerySchedule $schedule)
+  public function setSchedule(Google_Service_DoubleClickBidManager_QuerySchedule $schedule)
   {
     $this->schedule = $schedule;
   }

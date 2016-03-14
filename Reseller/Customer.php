@@ -75,7 +75,7 @@ class Google_Service_Reseller_Customer extends Google_Model
   {
     return $this->phoneNumber;
   }
-  public function setPostalAddress(Address $postalAddress)
+  public function setPostalAddress(Google_Service_Reseller_Address $postalAddress)
   {
     $this->postalAddress = $postalAddress;
   }

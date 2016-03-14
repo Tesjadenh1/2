@@ -105,7 +105,7 @@ class Google_Service_Books_VolumeVolumeInfo extends Google_Collection
   {
     return $this->description;
   }
-  public function setDimensions(VolumeVolumeInfoDimensions $dimensions)
+  public function setDimensions(Google_Service_Books_VolumeVolumeInfoDimensions $dimensions)
   {
     $this->dimensions = $dimensions;
   }
@@ -113,7 +113,7 @@ class Google_Service_Books_VolumeVolumeInfo extends Google_Collection
   {
     return $this->dimensions;
   }
-  public function setImageLinks(VolumeVolumeInfoImageLinks $imageLinks)
+  public function setImageLinks(Google_Service_Books_VolumeVolumeInfoImageLinks $imageLinks)
   {
     $this->imageLinks = $imageLinks;
   }
@@ -233,7 +233,7 @@ class Google_Service_Books_VolumeVolumeInfo extends Google_Collection
   {
     return $this->samplePageCount;
   }
-  public function setSeriesInfo(Volumeseriesinfo $seriesInfo)
+  public function setSeriesInfo(Google_Service_Books_Volumeseriesinfo $seriesInfo)
   {
     $this->seriesInfo = $seriesInfo;
   }

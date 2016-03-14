@@ -186,7 +186,7 @@ class Google_Service_People_Person extends Google_Collection
   {
     return $this->memberships;
   }
-  public function setMetadata(PersonMetadata $metadata)
+  public function setMetadata(Google_Service_People_PersonMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

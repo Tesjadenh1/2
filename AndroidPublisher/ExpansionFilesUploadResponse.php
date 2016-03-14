@@ -20,7 +20,7 @@ class Google_Service_AndroidPublisher_ExpansionFilesUploadResponse extends Googl
   protected $expansionFileType = 'Google_Service_AndroidPublisher_ExpansionFile';
   protected $expansionFileDataType = '';
 
-  public function setExpansionFile(ExpansionFile $expansionFile)
+  public function setExpansionFile(Google_Service_AndroidPublisher_ExpansionFile $expansionFile)
   {
     $this->expansionFile = $expansionFile;
   }

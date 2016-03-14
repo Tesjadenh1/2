@@ -28,7 +28,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfiguration extends Google_
   public $scoreOrder;
   public $token;
 
-  public function setDraft(LeaderboardConfigurationDetail $draft)
+  public function setDraft(Google_Service_GamesConfiguration_LeaderboardConfigurationDetail $draft)
   {
     $this->draft = $draft;
   }
@@ -52,7 +52,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfiguration extends Google_
   {
     return $this->kind;
   }
-  public function setPublished(LeaderboardConfigurationDetail $published)
+  public function setPublished(Google_Service_GamesConfiguration_LeaderboardConfigurationDetail $published)
   {
     $this->published = $published;
   }

@@ -88,7 +88,7 @@ class Google_Service_DeploymentManager_DeploymentmanagerResource extends Google_
   {
     return $this->type;
   }
-  public function setUpdate(ResourceUpdate $update)
+  public function setUpdate(Google_Service_DeploymentManager_ResourceUpdate $update)
   {
     $this->update = $update;
   }

@@ -22,7 +22,7 @@ class Google_Service_AdSenseHost_AdUnitContentAdsSettings extends Google_Model
   public $size;
   public $type;
 
-  public function setBackupOption(AdUnitContentAdsSettingsBackupOption $backupOption)
+  public function setBackupOption(Google_Service_AdSenseHost_AdUnitContentAdsSettingsBackupOption $backupOption)
   {
     $this->backupOption = $backupOption;
   }

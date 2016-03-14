@@ -24,7 +24,7 @@ class Google_Service_Spectrum_PawsInitRequest extends Google_Model
   public $type;
   public $version;
 
-  public function setDeviceDesc(DeviceDescriptor $deviceDesc)
+  public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }
@@ -32,7 +32,7 @@ class Google_Service_Spectrum_PawsInitRequest extends Google_Model
   {
     return $this->deviceDesc;
   }
-  public function setLocation(GeoLocation $location)
+  public function setLocation(Google_Service_Spectrum_GeoLocation $location)
   {
     $this->location = $location;
   }

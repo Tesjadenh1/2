@@ -23,7 +23,7 @@ class Google_Service_Spectrum_GeoSpectrumSchedule extends Google_Collection
   protected $spectrumSchedulesType = 'Google_Service_Spectrum_SpectrumSchedule';
   protected $spectrumSchedulesDataType = 'array';
 
-  public function setLocation(GeoLocation $location)
+  public function setLocation(Google_Service_Spectrum_GeoLocation $location)
   {
     $this->location = $location;
   }

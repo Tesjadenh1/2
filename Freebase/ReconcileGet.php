@@ -35,7 +35,7 @@ class Google_Service_Freebase_ReconcileGet extends Google_Collection
   {
     return $this->candidate;
   }
-  public function setCosts(ReconcileGetCosts $costs)
+  public function setCosts(Google_Service_Freebase_ReconcileGetCosts $costs)
   {
     $this->costs = $costs;
   }
@@ -43,7 +43,7 @@ class Google_Service_Freebase_ReconcileGet extends Google_Collection
   {
     return $this->costs;
   }
-  public function setMatch(ReconcileCandidate $match)
+  public function setMatch(Google_Service_Freebase_ReconcileCandidate $match)
   {
     $this->match = $match;
   }

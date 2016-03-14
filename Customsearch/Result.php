@@ -92,7 +92,7 @@ class Google_Service_Customsearch_Result extends Google_Collection
   {
     return $this->htmlTitle;
   }
-  public function setImage(ResultImage $image)
+  public function setImage(Google_Service_Customsearch_ResultImage $image)
   {
     $this->image = $image;
   }

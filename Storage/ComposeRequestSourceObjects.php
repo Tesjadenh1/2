@@ -38,7 +38,7 @@ class Google_Service_Storage_ComposeRequestSourceObjects extends Google_Model
   {
     return $this->name;
   }
-  public function setObjectPreconditions(ComposeRequestSourceObjectsObjectPreconditions $objectPreconditions)
+  public function setObjectPreconditions(Google_Service_Storage_ComposeRequestSourceObjectsObjectPreconditions $objectPreconditions)
   {
     $this->objectPreconditions = $objectPreconditions;
   }

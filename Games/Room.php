@@ -45,7 +45,7 @@ class Google_Service_Games_Room extends Google_Collection
   {
     return $this->applicationId;
   }
-  public function setAutoMatchingCriteria(RoomAutoMatchingCriteria $autoMatchingCriteria)
+  public function setAutoMatchingCriteria(Google_Service_Games_RoomAutoMatchingCriteria $autoMatchingCriteria)
   {
     $this->autoMatchingCriteria = $autoMatchingCriteria;
   }
@@ -53,7 +53,7 @@ class Google_Service_Games_Room extends Google_Collection
   {
     return $this->autoMatchingCriteria;
   }
-  public function setAutoMatchingStatus(RoomAutoMatchStatus $autoMatchingStatus)
+  public function setAutoMatchingStatus(Google_Service_Games_RoomAutoMatchStatus $autoMatchingStatus)
   {
     $this->autoMatchingStatus = $autoMatchingStatus;
   }
@@ -61,7 +61,7 @@ class Google_Service_Games_Room extends Google_Collection
   {
     return $this->autoMatchingStatus;
   }
-  public function setCreationDetails(RoomModification $creationDetails)
+  public function setCreationDetails(Google_Service_Games_RoomModification $creationDetails)
   {
     $this->creationDetails = $creationDetails;
   }
@@ -93,7 +93,7 @@ class Google_Service_Games_Room extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastUpdateDetails(RoomModification $lastUpdateDetails)
+  public function setLastUpdateDetails(Google_Service_Games_RoomModification $lastUpdateDetails)
   {
     $this->lastUpdateDetails = $lastUpdateDetails;
   }

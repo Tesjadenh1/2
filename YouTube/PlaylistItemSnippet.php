@@ -77,7 +77,7 @@ class Google_Service_YouTube_PlaylistItemSnippet extends Google_Model
   {
     return $this->publishedAt;
   }
-  public function setResourceId(ResourceId $resourceId)
+  public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
@@ -85,7 +85,7 @@ class Google_Service_YouTube_PlaylistItemSnippet extends Google_Model
   {
     return $this->resourceId;
   }
-  public function setThumbnails(ThumbnailDetails $thumbnails)
+  public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }

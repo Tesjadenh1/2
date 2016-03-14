@@ -43,7 +43,7 @@ class Google_Service_Blogger_Post extends Google_Collection
   public $updated;
   public $url;
 
-  public function setAuthor(PostAuthor $author)
+  public function setAuthor(Google_Service_Blogger_PostAuthor $author)
   {
     $this->author = $author;
   }
@@ -51,7 +51,7 @@ class Google_Service_Blogger_Post extends Google_Collection
   {
     return $this->author;
   }
-  public function setBlog(PostBlog $blog)
+  public function setBlog(Google_Service_Blogger_PostBlog $blog)
   {
     $this->blog = $blog;
   }
@@ -115,7 +115,7 @@ class Google_Service_Blogger_Post extends Google_Collection
   {
     return $this->labels;
   }
-  public function setLocation(PostLocation $location)
+  public function setLocation(Google_Service_Blogger_PostLocation $location)
   {
     $this->location = $location;
   }
@@ -139,7 +139,7 @@ class Google_Service_Blogger_Post extends Google_Collection
   {
     return $this->readerComments;
   }
-  public function setReplies(PostReplies $replies)
+  public function setReplies(Google_Service_Blogger_PostReplies $replies)
   {
     $this->replies = $replies;
   }

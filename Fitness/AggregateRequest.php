@@ -39,7 +39,7 @@ class Google_Service_Fitness_AggregateRequest extends Google_Collection
   {
     return $this->aggregateBy;
   }
-  public function setBucketByActivitySegment(BucketByActivity $bucketByActivitySegment)
+  public function setBucketByActivitySegment(Google_Service_Fitness_BucketByActivity $bucketByActivitySegment)
   {
     $this->bucketByActivitySegment = $bucketByActivitySegment;
   }
@@ -47,7 +47,7 @@ class Google_Service_Fitness_AggregateRequest extends Google_Collection
   {
     return $this->bucketByActivitySegment;
   }
-  public function setBucketByActivityType(BucketByActivity $bucketByActivityType)
+  public function setBucketByActivityType(Google_Service_Fitness_BucketByActivity $bucketByActivityType)
   {
     $this->bucketByActivityType = $bucketByActivityType;
   }
@@ -55,7 +55,7 @@ class Google_Service_Fitness_AggregateRequest extends Google_Collection
   {
     return $this->bucketByActivityType;
   }
-  public function setBucketBySession(BucketBySession $bucketBySession)
+  public function setBucketBySession(Google_Service_Fitness_BucketBySession $bucketBySession)
   {
     $this->bucketBySession = $bucketBySession;
   }
@@ -63,7 +63,7 @@ class Google_Service_Fitness_AggregateRequest extends Google_Collection
   {
     return $this->bucketBySession;
   }
-  public function setBucketByTime(BucketByTime $bucketByTime)
+  public function setBucketByTime(Google_Service_Fitness_BucketByTime $bucketByTime)
   {
     $this->bucketByTime = $bucketByTime;
   }

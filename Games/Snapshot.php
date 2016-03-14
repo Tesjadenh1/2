@@ -30,7 +30,7 @@ class Google_Service_Games_Snapshot extends Google_Model
   public $type;
   public $uniqueName;
 
-  public function setCoverImage(SnapshotImage $coverImage)
+  public function setCoverImage(Google_Service_Games_SnapshotImage $coverImage)
   {
     $this->coverImage = $coverImage;
   }

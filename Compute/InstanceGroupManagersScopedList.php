@@ -31,7 +31,7 @@ class Google_Service_Compute_InstanceGroupManagersScopedList extends Google_Coll
   {
     return $this->instanceGroupManagers;
   }
-  public function setWarning(InstanceGroupManagersScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_InstanceGroupManagersScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

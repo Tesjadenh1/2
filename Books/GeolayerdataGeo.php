@@ -77,7 +77,7 @@ class Google_Service_Books_GeolayerdataGeo extends Google_Collection
   {
     return $this->mapType;
   }
-  public function setViewport(GeolayerdataGeoViewport $viewport)
+  public function setViewport(Google_Service_Books_GeolayerdataGeoViewport $viewport)
   {
     $this->viewport = $viewport;
   }

@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_AccountshippingCustomBatchRequestEntry exte
   {
     return $this->accountId;
   }
-  public function setAccountShipping(AccountShipping $accountShipping)
+  public function setAccountShipping(Google_Service_ShoppingContent_AccountShipping $accountShipping)
   {
     $this->accountShipping = $accountShipping;
   }

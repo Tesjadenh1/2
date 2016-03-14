@@ -36,7 +36,7 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   {
     return $this->activeViewOptOut;
   }
-  public function setCreativeSettings(CreativeSettings $creativeSettings)
+  public function setCreativeSettings(Google_Service_Dfareporting_CreativeSettings $creativeSettings)
   {
     $this->creativeSettings = $creativeSettings;
   }
@@ -60,7 +60,7 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   {
     return $this->disableNewCookie;
   }
-  public function setLookbackConfiguration(LookbackConfiguration $lookbackConfiguration)
+  public function setLookbackConfiguration(Google_Service_Dfareporting_LookbackConfiguration $lookbackConfiguration)
   {
     $this->lookbackConfiguration = $lookbackConfiguration;
   }
@@ -68,7 +68,7 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   {
     return $this->lookbackConfiguration;
   }
-  public function setTagSetting(TagSetting $tagSetting)
+  public function setTagSetting(Google_Service_Dfareporting_TagSetting $tagSetting)
   {
     $this->tagSetting = $tagSetting;
   }

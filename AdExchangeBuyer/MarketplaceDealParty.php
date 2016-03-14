@@ -22,7 +22,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDealParty extends Google_Model
   protected $sellerType = 'Google_Service_AdExchangeBuyer_Seller';
   protected $sellerDataType = '';
 
-  public function setBuyer(Buyer $buyer)
+  public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
   {
     $this->buyer = $buyer;
   }
@@ -30,7 +30,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDealParty extends Google_Model
   {
     return $this->buyer;
   }
-  public function setSeller(Seller $seller)
+  public function setSeller(Google_Service_AdExchangeBuyer_Seller $seller)
   {
     $this->seller = $seller;
   }

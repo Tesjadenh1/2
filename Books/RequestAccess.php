@@ -23,7 +23,7 @@ class Google_Service_Books_RequestAccess extends Google_Model
   protected $downloadAccessDataType = '';
   public $kind;
 
-  public function setConcurrentAccess(ConcurrentAccessRestriction $concurrentAccess)
+  public function setConcurrentAccess(Google_Service_Books_ConcurrentAccessRestriction $concurrentAccess)
   {
     $this->concurrentAccess = $concurrentAccess;
   }
@@ -31,7 +31,7 @@ class Google_Service_Books_RequestAccess extends Google_Model
   {
     return $this->concurrentAccess;
   }
-  public function setDownloadAccess(DownloadAccessRestriction $downloadAccess)
+  public function setDownloadAccess(Google_Service_Books_DownloadAccessRestriction $downloadAccess)
   {
     $this->downloadAccess = $downloadAccess;
   }

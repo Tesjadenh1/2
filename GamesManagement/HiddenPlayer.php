@@ -38,7 +38,7 @@ class Google_Service_GamesManagement_HiddenPlayer extends Google_Model
   {
     return $this->kind;
   }
-  public function setPlayer(Player $player)
+  public function setPlayer(Google_Service_GamesManagement_Player $player)
   {
     $this->player = $player;
   }

@@ -30,7 +30,7 @@ class Google_Service_Storagetransfer_UpdateTransferJobRequest extends Google_Mod
   {
     return $this->projectId;
   }
-  public function setTransferJob(TransferJob $transferJob)
+  public function setTransferJob(Google_Service_Storagetransfer_TransferJob $transferJob)
   {
     $this->transferJob = $transferJob;
   }

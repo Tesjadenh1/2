@@ -44,7 +44,7 @@ class Google_Service_Fitness_Session extends Google_Model
   {
     return $this->activityType;
   }
-  public function setApplication(Application $application)
+  public function setApplication(Google_Service_Fitness_Application $application)
   {
     $this->application = $application;
   }

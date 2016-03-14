@@ -29,7 +29,7 @@ class Google_Service_Games_PeerChannelDiagnostics extends Google_Model
   protected $roundtripLatencyMillisType = 'Google_Service_Games_AggregateStats';
   protected $roundtripLatencyMillisDataType = '';
 
-  public function setBytesReceived(AggregateStats $bytesReceived)
+  public function setBytesReceived(Google_Service_Games_AggregateStats $bytesReceived)
   {
     $this->bytesReceived = $bytesReceived;
   }
@@ -37,7 +37,7 @@ class Google_Service_Games_PeerChannelDiagnostics extends Google_Model
   {
     return $this->bytesReceived;
   }
-  public function setBytesSent(AggregateStats $bytesSent)
+  public function setBytesSent(Google_Service_Games_AggregateStats $bytesSent)
   {
     $this->bytesSent = $bytesSent;
   }
@@ -85,7 +85,7 @@ class Google_Service_Games_PeerChannelDiagnostics extends Google_Model
   {
     return $this->numSendFailures;
   }
-  public function setRoundtripLatencyMillis(AggregateStats $roundtripLatencyMillis)
+  public function setRoundtripLatencyMillis(Google_Service_Games_AggregateStats $roundtripLatencyMillis)
   {
     $this->roundtripLatencyMillis = $roundtripLatencyMillis;
   }

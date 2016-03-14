@@ -47,7 +47,7 @@ class Google_Service_YouTube_FanFundingEvent extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(FanFundingEventSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_FanFundingEventSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

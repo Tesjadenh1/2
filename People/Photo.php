@@ -21,7 +21,7 @@ class Google_Service_People_Photo extends Google_Model
   protected $metadataDataType = '';
   public $url;
 
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

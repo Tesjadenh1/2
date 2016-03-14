@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_ProductstatusesCustomBatchResponseEntry ext
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }
@@ -48,7 +48,7 @@ class Google_Service_ShoppingContent_ProductstatusesCustomBatchResponseEntry ext
   {
     return $this->kind;
   }
-  public function setProductStatus(ProductStatus $productStatus)
+  public function setProductStatus(Google_Service_ShoppingContent_ProductStatus $productStatus)
   {
     $this->productStatus = $productStatus;
   }

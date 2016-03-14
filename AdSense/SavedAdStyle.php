@@ -23,7 +23,7 @@ class Google_Service_AdSense_SavedAdStyle extends Google_Model
   public $kind;
   public $name;
 
-  public function setAdStyle(AdStyle $adStyle)
+  public function setAdStyle(Google_Service_AdSense_AdStyle $adStyle)
   {
     $this->adStyle = $adStyle;
   }

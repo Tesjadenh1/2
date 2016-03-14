@@ -153,7 +153,7 @@ class Google_Service_Analytics_Experiment extends Google_Collection
   {
     return $this->optimizationType;
   }
-  public function setParentLink(ExperimentParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_ExperimentParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }

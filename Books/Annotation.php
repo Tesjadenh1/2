@@ -55,7 +55,7 @@ class Google_Service_Books_Annotation extends Google_Collection
   {
     return $this->beforeSelectedText;
   }
-  public function setClientVersionRanges(AnnotationClientVersionRanges $clientVersionRanges)
+  public function setClientVersionRanges(Google_Service_Books_AnnotationClientVersionRanges $clientVersionRanges)
   {
     $this->clientVersionRanges = $clientVersionRanges;
   }
@@ -71,7 +71,7 @@ class Google_Service_Books_Annotation extends Google_Collection
   {
     return $this->created;
   }
-  public function setCurrentVersionRanges(AnnotationCurrentVersionRanges $currentVersionRanges)
+  public function setCurrentVersionRanges(Google_Service_Books_AnnotationCurrentVersionRanges $currentVersionRanges)
   {
     $this->currentVersionRanges = $currentVersionRanges;
   }
@@ -127,7 +127,7 @@ class Google_Service_Books_Annotation extends Google_Collection
   {
     return $this->layerId;
   }
-  public function setLayerSummary(AnnotationLayerSummary $layerSummary)
+  public function setLayerSummary(Google_Service_Books_AnnotationLayerSummary $layerSummary)
   {
     $this->layerSummary = $layerSummary;
   }

@@ -28,7 +28,7 @@ class Google_Service_YouTube_ThumbnailDetails extends Google_Model
   protected $standardType = 'Google_Service_YouTube_Thumbnail';
   protected $standardDataType = '';
 
-  public function setDefault(Thumbnail $default)
+  public function setDefault(Google_Service_YouTube_Thumbnail $default)
   {
     $this->default = $default;
   }
@@ -36,7 +36,7 @@ class Google_Service_YouTube_ThumbnailDetails extends Google_Model
   {
     return $this->default;
   }
-  public function setHigh(Thumbnail $high)
+  public function setHigh(Google_Service_YouTube_Thumbnail $high)
   {
     $this->high = $high;
   }
@@ -44,7 +44,7 @@ class Google_Service_YouTube_ThumbnailDetails extends Google_Model
   {
     return $this->high;
   }
-  public function setMaxres(Thumbnail $maxres)
+  public function setMaxres(Google_Service_YouTube_Thumbnail $maxres)
   {
     $this->maxres = $maxres;
   }
@@ -52,7 +52,7 @@ class Google_Service_YouTube_ThumbnailDetails extends Google_Model
   {
     return $this->maxres;
   }
-  public function setMedium(Thumbnail $medium)
+  public function setMedium(Google_Service_YouTube_Thumbnail $medium)
   {
     $this->medium = $medium;
   }
@@ -60,7 +60,7 @@ class Google_Service_YouTube_ThumbnailDetails extends Google_Model
   {
     return $this->medium;
   }
-  public function setStandard(Thumbnail $standard)
+  public function setStandard(Google_Service_YouTube_Thumbnail $standard)
   {
     $this->standard = $standard;
   }

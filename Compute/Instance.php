@@ -107,7 +107,7 @@ class Google_Service_Compute_Instance extends Google_Collection
   {
     return $this->machineType;
   }
-  public function setMetadata(Metadata $metadata)
+  public function setMetadata(Google_Service_Compute_Metadata $metadata)
   {
     $this->metadata = $metadata;
   }
@@ -131,7 +131,7 @@ class Google_Service_Compute_Instance extends Google_Collection
   {
     return $this->networkInterfaces;
   }
-  public function setScheduling(Scheduling $scheduling)
+  public function setScheduling(Google_Service_Compute_Scheduling $scheduling)
   {
     $this->scheduling = $scheduling;
   }
@@ -171,7 +171,7 @@ class Google_Service_Compute_Instance extends Google_Collection
   {
     return $this->statusMessage;
   }
-  public function setTags(Tags $tags)
+  public function setTags(Google_Service_Compute_Tags $tags)
   {
     $this->tags = $tags;
   }

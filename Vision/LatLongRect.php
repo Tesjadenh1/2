@@ -22,7 +22,7 @@ class Google_Service_Vision_LatLongRect extends Google_Model
   protected $minLatLngType = 'Google_Service_Vision_LatLng';
   protected $minLatLngDataType = '';
 
-  public function setMaxLatLng(LatLng $maxLatLng)
+  public function setMaxLatLng(Google_Service_Vision_LatLng $maxLatLng)
   {
     $this->maxLatLng = $maxLatLng;
   }
@@ -30,7 +30,7 @@ class Google_Service_Vision_LatLongRect extends Google_Model
   {
     return $this->maxLatLng;
   }
-  public function setMinLatLng(LatLng $minLatLng)
+  public function setMinLatLng(Google_Service_Vision_LatLng $minLatLng)
   {
     $this->minLatLng = $minLatLng;
   }

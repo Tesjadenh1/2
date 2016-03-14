@@ -25,7 +25,7 @@ class Google_Service_QPXExpress_TripOptionsResponse extends Google_Collection
   protected $tripOptionType = 'Google_Service_QPXExpress_TripOption';
   protected $tripOptionDataType = 'array';
 
-  public function setData(Data $data)
+  public function setData(Google_Service_QPXExpress_Data $data)
   {
     $this->data = $data;
   }

@@ -30,7 +30,7 @@ class Google_Service_ShoppingContent_InventoryCustomBatchResponseEntry extends G
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

@@ -29,7 +29,7 @@ class Google_Service_DeploymentManager_Manifest extends Google_Collection
   public $name;
   public $selfLink;
 
-  public function setConfig(ConfigFile $config)
+  public function setConfig(Google_Service_DeploymentManager_ConfigFile $config)
   {
     $this->config = $config;
   }

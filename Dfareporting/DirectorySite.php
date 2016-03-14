@@ -84,7 +84,7 @@ class Google_Service_Dfareporting_DirectorySite extends Google_Collection
   {
     return $this->id;
   }
-  public function setIdDimensionValue(DimensionValue $idDimensionValue)
+  public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
@@ -132,7 +132,7 @@ class Google_Service_Dfareporting_DirectorySite extends Google_Collection
   {
     return $this->parentId;
   }
-  public function setSettings(DirectorySiteSettings $settings)
+  public function setSettings(Google_Service_Dfareporting_DirectorySiteSettings $settings)
   {
     $this->settings = $settings;
   }

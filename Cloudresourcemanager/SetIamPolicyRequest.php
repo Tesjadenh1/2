@@ -20,7 +20,7 @@ class Google_Service_Cloudresourcemanager_SetIamPolicyRequest extends Google_Mod
   protected $policyType = 'Google_Service_Cloudresourcemanager_Policy';
   protected $policyDataType = '';
 
-  public function setPolicy(Policy $policy)
+  public function setPolicy(Google_Service_Cloudresourcemanager_Policy $policy)
   {
     $this->policy = $policy;
   }

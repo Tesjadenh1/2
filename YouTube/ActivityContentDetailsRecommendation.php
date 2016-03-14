@@ -31,7 +31,7 @@ class Google_Service_YouTube_ActivityContentDetailsRecommendation extends Google
   {
     return $this->reason;
   }
-  public function setResourceId(ResourceId $resourceId)
+  public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
@@ -39,7 +39,7 @@ class Google_Service_YouTube_ActivityContentDetailsRecommendation extends Google
   {
     return $this->resourceId;
   }
-  public function setSeedResourceId(ResourceId $seedResourceId)
+  public function setSeedResourceId(Google_Service_YouTube_ResourceId $seedResourceId)
   {
     $this->seedResourceId = $seedResourceId;
   }

@@ -48,7 +48,7 @@ class Google_Service_ShoppingContent_ProductsCustomBatchRequestEntry extends Goo
   {
     return $this->method;
   }
-  public function setProduct(Product $product)
+  public function setProduct(Google_Service_ShoppingContent_Product $product)
   {
     $this->product = $product;
   }

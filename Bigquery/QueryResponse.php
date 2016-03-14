@@ -57,7 +57,7 @@ class Google_Service_Bigquery_QueryResponse extends Google_Collection
   {
     return $this->jobComplete;
   }
-  public function setJobReference(JobReference $jobReference)
+  public function setJobReference(Google_Service_Bigquery_JobReference $jobReference)
   {
     $this->jobReference = $jobReference;
   }
@@ -89,7 +89,7 @@ class Google_Service_Bigquery_QueryResponse extends Google_Collection
   {
     return $this->rows;
   }
-  public function setSchema(TableSchema $schema)
+  public function setSchema(Google_Service_Bigquery_TableSchema $schema)
   {
     $this->schema = $schema;
   }

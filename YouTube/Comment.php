@@ -47,7 +47,7 @@ class Google_Service_YouTube_Comment extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(CommentSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_CommentSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

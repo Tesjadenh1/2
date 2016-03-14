@@ -30,7 +30,7 @@ class Google_Service_Coordinate_JobChange extends Google_Model
   {
     return $this->kind;
   }
-  public function setState(JobState $state)
+  public function setState(Google_Service_Coordinate_JobState $state)
   {
     $this->state = $state;
   }

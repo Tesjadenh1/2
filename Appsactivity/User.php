@@ -47,7 +47,7 @@ class Google_Service_Appsactivity_User extends Google_Model
   {
     return $this->permissionId;
   }
-  public function setPhoto(Photo $photo)
+  public function setPhoto(Google_Service_Appsactivity_Photo $photo)
   {
     $this->photo = $photo;
   }

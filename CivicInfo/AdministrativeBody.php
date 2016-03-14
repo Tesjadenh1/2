@@ -54,7 +54,7 @@ class Google_Service_CivicInfo_AdministrativeBody extends Google_Collection
   {
     return $this->ballotInfoUrl;
   }
-  public function setCorrespondenceAddress(SimpleAddressType $correspondenceAddress)
+  public function setCorrespondenceAddress(Google_Service_CivicInfo_SimpleAddressType $correspondenceAddress)
   {
     $this->correspondenceAddress = $correspondenceAddress;
   }
@@ -118,7 +118,7 @@ class Google_Service_CivicInfo_AdministrativeBody extends Google_Collection
   {
     return $this->name;
   }
-  public function setPhysicalAddress(SimpleAddressType $physicalAddress)
+  public function setPhysicalAddress(Google_Service_CivicInfo_SimpleAddressType $physicalAddress)
   {
     $this->physicalAddress = $physicalAddress;
   }

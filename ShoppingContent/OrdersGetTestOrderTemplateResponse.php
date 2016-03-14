@@ -29,7 +29,7 @@ class Google_Service_ShoppingContent_OrdersGetTestOrderTemplateResponse extends 
   {
     return $this->kind;
   }
-  public function setTemplate(TestOrder $template)
+  public function setTemplate(Google_Service_ShoppingContent_TestOrder $template)
   {
     $this->template = $template;
   }

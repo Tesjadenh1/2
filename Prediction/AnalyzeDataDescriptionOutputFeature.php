@@ -23,7 +23,7 @@ class Google_Service_Prediction_AnalyzeDataDescriptionOutputFeature extends Goog
   protected $textType = 'Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureText';
   protected $textDataType = 'array';
 
-  public function setNumeric(AnalyzeDataDescriptionOutputFeatureNumeric $numeric)
+  public function setNumeric(Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureNumeric $numeric)
   {
     $this->numeric = $numeric;
   }

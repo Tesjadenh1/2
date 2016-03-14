@@ -22,7 +22,7 @@ class Google_Service_ShoppingContent_AccountShippingRateTableCell extends Google
   protected $rateType = 'Google_Service_ShoppingContent_Price';
   protected $rateDataType = '';
 
-  public function setCondition(AccountShippingCondition $condition)
+  public function setCondition(Google_Service_ShoppingContent_AccountShippingCondition $condition)
   {
     $this->condition = $condition;
   }
@@ -30,7 +30,7 @@ class Google_Service_ShoppingContent_AccountShippingRateTableCell extends Google
   {
     return $this->condition;
   }
-  public function setRate(Price $rate)
+  public function setRate(Google_Service_ShoppingContent_Price $rate)
   {
     $this->rate = $rate;
   }

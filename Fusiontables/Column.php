@@ -32,7 +32,7 @@ class Google_Service_Fusiontables_Column extends Google_Collection
   public $validValues;
   public $validateData;
 
-  public function setBaseColumn(ColumnBaseColumn $baseColumn)
+  public function setBaseColumn(Google_Service_Fusiontables_ColumnBaseColumn $baseColumn)
   {
     $this->baseColumn = $baseColumn;
   }

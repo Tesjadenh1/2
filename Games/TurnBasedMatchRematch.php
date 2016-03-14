@@ -31,7 +31,7 @@ class Google_Service_Games_TurnBasedMatchRematch extends Google_Model
   {
     return $this->kind;
   }
-  public function setPreviousMatch(TurnBasedMatch $previousMatch)
+  public function setPreviousMatch(Google_Service_Games_TurnBasedMatch $previousMatch)
   {
     $this->previousMatch = $previousMatch;
   }
@@ -39,7 +39,7 @@ class Google_Service_Games_TurnBasedMatchRematch extends Google_Model
   {
     return $this->previousMatch;
   }
-  public function setRematch(TurnBasedMatch $rematch)
+  public function setRematch(Google_Service_Games_TurnBasedMatch $rematch)
   {
     $this->rematch = $rematch;
   }

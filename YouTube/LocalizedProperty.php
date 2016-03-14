@@ -32,7 +32,7 @@ class Google_Service_YouTube_LocalizedProperty extends Google_Collection
   {
     return $this->default;
   }
-  public function setDefaultLanguage(LanguageTag $defaultLanguage)
+  public function setDefaultLanguage(Google_Service_YouTube_LanguageTag $defaultLanguage)
   {
     $this->defaultLanguage = $defaultLanguage;
   }

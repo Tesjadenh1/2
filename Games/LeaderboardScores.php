@@ -59,7 +59,7 @@ class Google_Service_Games_LeaderboardScores extends Google_Collection
   {
     return $this->numScores;
   }
-  public function setPlayerScore(LeaderboardEntry $playerScore)
+  public function setPlayerScore(Google_Service_Games_LeaderboardEntry $playerScore)
   {
     $this->playerScore = $playerScore;
   }

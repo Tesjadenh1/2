@@ -100,7 +100,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->artworkType;
   }
-  public function setAssetIdentifier(CreativeAssetId $assetIdentifier)
+  public function setAssetIdentifier(Google_Service_Dfareporting_CreativeAssetId $assetIdentifier)
   {
     $this->assetIdentifier = $assetIdentifier;
   }
@@ -108,7 +108,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->assetIdentifier;
   }
-  public function setBackupImageExit(CreativeCustomEvent $backupImageExit)
+  public function setBackupImageExit(Google_Service_Dfareporting_CreativeCustomEvent $backupImageExit)
   {
     $this->backupImageExit = $backupImageExit;
   }
@@ -132,7 +132,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->childAssetType;
   }
-  public function setCollapsedSize(Size $collapsedSize)
+  public function setCollapsedSize(Google_Service_Dfareporting_Size $collapsedSize)
   {
     $this->collapsedSize = $collapsedSize;
   }
@@ -180,7 +180,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->durationType;
   }
-  public function setExpandedDimension(Size $expandedDimension)
+  public function setExpandedDimension(Google_Service_Dfareporting_Size $expandedDimension)
   {
     $this->expandedDimension = $expandedDimension;
   }
@@ -244,7 +244,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->mimeType;
   }
-  public function setOffset(OffsetPosition $offset)
+  public function setOffset(Google_Service_Dfareporting_OffsetPosition $offset)
   {
     $this->offset = $offset;
   }
@@ -260,7 +260,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->originalBackup;
   }
-  public function setPosition(OffsetPosition $position)
+  public function setPosition(Google_Service_Dfareporting_OffsetPosition $position)
   {
     $this->position = $position;
   }
@@ -316,7 +316,7 @@ class Google_Service_Dfareporting_CreativeAsset extends Google_Collection
   {
     return $this->role;
   }
-  public function setSize(Size $size)
+  public function setSize(Google_Service_Dfareporting_Size $size)
   {
     $this->size = $size;
   }

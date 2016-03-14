@@ -36,7 +36,7 @@ class Google_Service_GamesConfiguration_AchievementConfiguration extends Google_
   {
     return $this->achievementType;
   }
-  public function setDraft(AchievementConfigurationDetail $draft)
+  public function setDraft(Google_Service_GamesConfiguration_AchievementConfigurationDetail $draft)
   {
     $this->draft = $draft;
   }
@@ -68,7 +68,7 @@ class Google_Service_GamesConfiguration_AchievementConfiguration extends Google_
   {
     return $this->kind;
   }
-  public function setPublished(AchievementConfigurationDetail $published)
+  public function setPublished(Google_Service_GamesConfiguration_AchievementConfigurationDetail $published)
   {
     $this->published = $published;
   }

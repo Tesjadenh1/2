@@ -51,7 +51,7 @@ class Google_Service_YouTube_Video extends Google_Model
   protected $topicDetailsType = 'Google_Service_YouTube_VideoTopicDetails';
   protected $topicDetailsDataType = '';
 
-  public function setAgeGating(VideoAgeGating $ageGating)
+  public function setAgeGating(Google_Service_YouTube_VideoAgeGating $ageGating)
   {
     $this->ageGating = $ageGating;
   }
@@ -59,7 +59,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->ageGating;
   }
-  public function setContentDetails(VideoContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_VideoContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -75,7 +75,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->etag;
   }
-  public function setFileDetails(VideoFileDetails $fileDetails)
+  public function setFileDetails(Google_Service_YouTube_VideoFileDetails $fileDetails)
   {
     $this->fileDetails = $fileDetails;
   }
@@ -99,7 +99,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->kind;
   }
-  public function setLiveStreamingDetails(VideoLiveStreamingDetails $liveStreamingDetails)
+  public function setLiveStreamingDetails(Google_Service_YouTube_VideoLiveStreamingDetails $liveStreamingDetails)
   {
     $this->liveStreamingDetails = $liveStreamingDetails;
   }
@@ -115,7 +115,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->localizations;
   }
-  public function setMonetizationDetails(VideoMonetizationDetails $monetizationDetails)
+  public function setMonetizationDetails(Google_Service_YouTube_VideoMonetizationDetails $monetizationDetails)
   {
     $this->monetizationDetails = $monetizationDetails;
   }
@@ -123,7 +123,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->monetizationDetails;
   }
-  public function setPlayer(VideoPlayer $player)
+  public function setPlayer(Google_Service_YouTube_VideoPlayer $player)
   {
     $this->player = $player;
   }
@@ -131,7 +131,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->player;
   }
-  public function setProcessingDetails(VideoProcessingDetails $processingDetails)
+  public function setProcessingDetails(Google_Service_YouTube_VideoProcessingDetails $processingDetails)
   {
     $this->processingDetails = $processingDetails;
   }
@@ -139,7 +139,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->processingDetails;
   }
-  public function setProjectDetails(VideoProjectDetails $projectDetails)
+  public function setProjectDetails(Google_Service_YouTube_VideoProjectDetails $projectDetails)
   {
     $this->projectDetails = $projectDetails;
   }
@@ -147,7 +147,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->projectDetails;
   }
-  public function setRecordingDetails(VideoRecordingDetails $recordingDetails)
+  public function setRecordingDetails(Google_Service_YouTube_VideoRecordingDetails $recordingDetails)
   {
     $this->recordingDetails = $recordingDetails;
   }
@@ -155,7 +155,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->recordingDetails;
   }
-  public function setSnippet(VideoSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_VideoSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -163,7 +163,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->snippet;
   }
-  public function setStatistics(VideoStatistics $statistics)
+  public function setStatistics(Google_Service_YouTube_VideoStatistics $statistics)
   {
     $this->statistics = $statistics;
   }
@@ -171,7 +171,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->statistics;
   }
-  public function setStatus(VideoStatus $status)
+  public function setStatus(Google_Service_YouTube_VideoStatus $status)
   {
     $this->status = $status;
   }
@@ -179,7 +179,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->status;
   }
-  public function setSuggestions(VideoSuggestions $suggestions)
+  public function setSuggestions(Google_Service_YouTube_VideoSuggestions $suggestions)
   {
     $this->suggestions = $suggestions;
   }
@@ -187,7 +187,7 @@ class Google_Service_YouTube_Video extends Google_Model
   {
     return $this->suggestions;
   }
-  public function setTopicDetails(VideoTopicDetails $topicDetails)
+  public function setTopicDetails(Google_Service_YouTube_VideoTopicDetails $topicDetails)
   {
     $this->topicDetails = $topicDetails;
   }

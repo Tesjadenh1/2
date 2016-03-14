@@ -42,7 +42,7 @@ class Google_Service_Classroom_UserProfile extends Google_Collection
   {
     return $this->id;
   }
-  public function setName(Name $name)
+  public function setName(Google_Service_Classroom_Name $name)
   {
     $this->name = $name;
   }

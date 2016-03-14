@@ -28,7 +28,7 @@ class Google_Service_Bigquery_QueryRequest extends Google_Model
   public $useLegacySql;
   public $useQueryCache;
 
-  public function setDefaultDataset(DatasetReference $defaultDataset)
+  public function setDefaultDataset(Google_Service_Bigquery_DatasetReference $defaultDataset)
   {
     $this->defaultDataset = $defaultDataset;
   }

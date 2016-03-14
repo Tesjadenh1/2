@@ -32,7 +32,7 @@ class Google_Service_YouTube_PromotedItem extends Google_Model
   {
     return $this->customMessage;
   }
-  public function setId(PromotedItemId $id)
+  public function setId(Google_Service_YouTube_PromotedItemId $id)
   {
     $this->id = $id;
   }
@@ -48,7 +48,7 @@ class Google_Service_YouTube_PromotedItem extends Google_Model
   {
     return $this->promotedByContentOwner;
   }
-  public function setTiming(InvideoTiming $timing)
+  public function setTiming(Google_Service_YouTube_InvideoTiming $timing)
   {
     $this->timing = $timing;
   }

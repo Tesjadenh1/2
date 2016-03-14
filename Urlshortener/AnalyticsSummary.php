@@ -28,7 +28,7 @@ class Google_Service_Urlshortener_AnalyticsSummary extends Google_Model
   protected $weekType = 'Google_Service_Urlshortener_AnalyticsSnapshot';
   protected $weekDataType = '';
 
-  public function setAllTime(AnalyticsSnapshot $allTime)
+  public function setAllTime(Google_Service_Urlshortener_AnalyticsSnapshot $allTime)
   {
     $this->allTime = $allTime;
   }
@@ -36,7 +36,7 @@ class Google_Service_Urlshortener_AnalyticsSummary extends Google_Model
   {
     return $this->allTime;
   }
-  public function setDay(AnalyticsSnapshot $day)
+  public function setDay(Google_Service_Urlshortener_AnalyticsSnapshot $day)
   {
     $this->day = $day;
   }
@@ -44,7 +44,7 @@ class Google_Service_Urlshortener_AnalyticsSummary extends Google_Model
   {
     return $this->day;
   }
-  public function setMonth(AnalyticsSnapshot $month)
+  public function setMonth(Google_Service_Urlshortener_AnalyticsSnapshot $month)
   {
     $this->month = $month;
   }
@@ -52,7 +52,7 @@ class Google_Service_Urlshortener_AnalyticsSummary extends Google_Model
   {
     return $this->month;
   }
-  public function setTwoHours(AnalyticsSnapshot $twoHours)
+  public function setTwoHours(Google_Service_Urlshortener_AnalyticsSnapshot $twoHours)
   {
     $this->twoHours = $twoHours;
   }
@@ -60,7 +60,7 @@ class Google_Service_Urlshortener_AnalyticsSummary extends Google_Model
   {
     return $this->twoHours;
   }
-  public function setWeek(AnalyticsSnapshot $week)
+  public function setWeek(Google_Service_Urlshortener_AnalyticsSnapshot $week)
   {
     $this->week = $week;
   }

@@ -39,7 +39,7 @@ class Google_Service_Blogger_PostAuthor extends Google_Model
   {
     return $this->id;
   }
-  public function setImage(PostAuthorImage $image)
+  public function setImage(Google_Service_Blogger_PostAuthorImage $image)
   {
     $this->image = $image;
   }

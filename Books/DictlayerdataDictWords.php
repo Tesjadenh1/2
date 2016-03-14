@@ -51,7 +51,7 @@ class Google_Service_Books_DictlayerdataDictWords extends Google_Collection
   {
     return $this->senses;
   }
-  public function setSource(DictlayerdataDictWordsSource $source)
+  public function setSource(Google_Service_Books_DictlayerdataDictWordsSource $source)
   {
     $this->source = $source;
   }

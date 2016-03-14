@@ -25,7 +25,7 @@ class Google_Service_AndroidPublisher_Season extends Google_Collection
   protected $startType = 'Google_Service_AndroidPublisher_MonthDay';
   protected $startDataType = '';
 
-  public function setEnd(MonthDay $end)
+  public function setEnd(Google_Service_AndroidPublisher_MonthDay $end)
   {
     $this->end = $end;
   }
@@ -41,7 +41,7 @@ class Google_Service_AndroidPublisher_Season extends Google_Collection
   {
     return $this->prorations;
   }
-  public function setStart(MonthDay $start)
+  public function setStart(Google_Service_AndroidPublisher_MonthDay $start)
   {
     $this->start = $start;
   }

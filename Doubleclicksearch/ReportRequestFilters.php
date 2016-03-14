@@ -23,7 +23,7 @@ class Google_Service_Doubleclicksearch_ReportRequestFilters extends Google_Colle
   public $operator;
   public $values;
 
-  public function setColumn(ReportApiColumnSpec $column)
+  public function setColumn(Google_Service_Doubleclicksearch_ReportApiColumnSpec $column)
   {
     $this->column = $column;
   }

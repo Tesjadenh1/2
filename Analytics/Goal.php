@@ -65,7 +65,7 @@ class Google_Service_Analytics_Goal extends Google_Model
   {
     return $this->created;
   }
-  public function setEventDetails(GoalEventDetails $eventDetails)
+  public function setEventDetails(Google_Service_Analytics_GoalEventDetails $eventDetails)
   {
     $this->eventDetails = $eventDetails;
   }
@@ -105,7 +105,7 @@ class Google_Service_Analytics_Goal extends Google_Model
   {
     return $this->name;
   }
-  public function setParentLink(GoalParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_GoalParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }
@@ -145,7 +145,7 @@ class Google_Service_Analytics_Goal extends Google_Model
   {
     return $this->updated;
   }
-  public function setUrlDestinationDetails(GoalUrlDestinationDetails $urlDestinationDetails)
+  public function setUrlDestinationDetails(Google_Service_Analytics_GoalUrlDestinationDetails $urlDestinationDetails)
   {
     $this->urlDestinationDetails = $urlDestinationDetails;
   }
@@ -161,7 +161,7 @@ class Google_Service_Analytics_Goal extends Google_Model
   {
     return $this->value;
   }
-  public function setVisitNumPagesDetails(GoalVisitNumPagesDetails $visitNumPagesDetails)
+  public function setVisitNumPagesDetails(Google_Service_Analytics_GoalVisitNumPagesDetails $visitNumPagesDetails)
   {
     $this->visitNumPagesDetails = $visitNumPagesDetails;
   }
@@ -169,7 +169,7 @@ class Google_Service_Analytics_Goal extends Google_Model
   {
     return $this->visitNumPagesDetails;
   }
-  public function setVisitTimeOnSiteDetails(GoalVisitTimeOnSiteDetails $visitTimeOnSiteDetails)
+  public function setVisitTimeOnSiteDetails(Google_Service_Analytics_GoalVisitTimeOnSiteDetails $visitTimeOnSiteDetails)
   {
     $this->visitTimeOnSiteDetails = $visitTimeOnSiteDetails;
   }

@@ -57,7 +57,7 @@ class Google_Service_Appsactivity_Permission extends Google_Model
   {
     return $this->type;
   }
-  public function setUser(User $user)
+  public function setUser(Google_Service_Appsactivity_User $user)
   {
     $this->user = $user;
   }

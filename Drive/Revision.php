@@ -55,7 +55,7 @@ class Google_Service_Drive_Revision extends Google_Model
   {
     return $this->kind;
   }
-  public function setLastModifyingUser(User $lastModifyingUser)
+  public function setLastModifyingUser(Google_Service_Drive_User $lastModifyingUser)
   {
     $this->lastModifyingUser = $lastModifyingUser;
   }

@@ -71,7 +71,7 @@ class Google_Service_YouTube_LiveStreamListResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  public function setPageInfo(PageInfo $pageInfo)
+  public function setPageInfo(Google_Service_YouTube_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
@@ -87,7 +87,7 @@ class Google_Service_YouTube_LiveStreamListResponse extends Google_Collection
   {
     return $this->prevPageToken;
   }
-  public function setTokenPagination(TokenPagination $tokenPagination)
+  public function setTokenPagination(Google_Service_YouTube_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }

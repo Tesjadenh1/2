@@ -42,7 +42,7 @@ class Google_Service_YouTube_ChannelSectionSnippet extends Google_Model
   {
     return $this->defaultLanguage;
   }
-  public function setLocalized(ChannelSectionLocalization $localized)
+  public function setLocalized(Google_Service_YouTube_ChannelSectionLocalization $localized)
   {
     $this->localized = $localized;
   }

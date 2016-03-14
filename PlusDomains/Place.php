@@ -25,7 +25,7 @@ class Google_Service_PlusDomains_Place extends Google_Model
   protected $positionType = 'Google_Service_PlusDomains_PlacePosition';
   protected $positionDataType = '';
 
-  public function setAddress(PlaceAddress $address)
+  public function setAddress(Google_Service_PlusDomains_PlaceAddress $address)
   {
     $this->address = $address;
   }
@@ -57,7 +57,7 @@ class Google_Service_PlusDomains_Place extends Google_Model
   {
     return $this->kind;
   }
-  public function setPosition(PlacePosition $position)
+  public function setPosition(Google_Service_PlusDomains_PlacePosition $position)
   {
     $this->position = $position;
   }

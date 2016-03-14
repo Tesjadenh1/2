@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_DatafeedsCustomBatchRequestEntry extends Go
   {
     return $this->batchId;
   }
-  public function setDatafeed(Datafeed $datafeed)
+  public function setDatafeed(Google_Service_ShoppingContent_Datafeed $datafeed)
   {
     $this->datafeed = $datafeed;
   }

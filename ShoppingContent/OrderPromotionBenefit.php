@@ -26,7 +26,7 @@ class Google_Service_ShoppingContent_OrderPromotionBenefit extends Google_Collec
   protected $taxImpactDataType = '';
   public $type;
 
-  public function setDiscount(Price $discount)
+  public function setDiscount(Google_Service_ShoppingContent_Price $discount)
   {
     $this->discount = $discount;
   }
@@ -50,7 +50,7 @@ class Google_Service_ShoppingContent_OrderPromotionBenefit extends Google_Collec
   {
     return $this->subType;
   }
-  public function setTaxImpact(Price $taxImpact)
+  public function setTaxImpact(Google_Service_ShoppingContent_Price $taxImpact)
   {
     $this->taxImpact = $taxImpact;
   }

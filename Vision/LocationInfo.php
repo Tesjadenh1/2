@@ -20,7 +20,7 @@ class Google_Service_Vision_LocationInfo extends Google_Model
   protected $latLngType = 'Google_Service_Vision_LatLng';
   protected $latLngDataType = '';
 
-  public function setLatLng(LatLng $latLng)
+  public function setLatLng(Google_Service_Vision_LatLng $latLng)
   {
     $this->latLng = $latLng;
   }

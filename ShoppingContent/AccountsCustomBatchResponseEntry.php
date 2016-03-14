@@ -24,7 +24,7 @@ class Google_Service_ShoppingContent_AccountsCustomBatchResponseEntry extends Go
   protected $errorsDataType = '';
   public $kind;
 
-  public function setAccount(Account $account)
+  public function setAccount(Google_Service_ShoppingContent_Account $account)
   {
     $this->account = $account;
   }
@@ -40,7 +40,7 @@ class Google_Service_ShoppingContent_AccountsCustomBatchResponseEntry extends Go
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

@@ -24,7 +24,7 @@ class Google_Service_Bigquery_JobStatus extends Google_Collection
   protected $errorsDataType = 'array';
   public $state;
 
-  public function setErrorResult(ErrorProto $errorResult)
+  public function setErrorResult(Google_Service_Bigquery_ErrorProto $errorResult)
   {
     $this->errorResult = $errorResult;
   }

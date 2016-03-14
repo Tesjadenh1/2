@@ -40,7 +40,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   protected $uploadType = 'Google_Service_YouTube_ActivityContentDetailsUpload';
   protected $uploadDataType = '';
 
-  public function setBulletin(ActivityContentDetailsBulletin $bulletin)
+  public function setBulletin(Google_Service_YouTube_ActivityContentDetailsBulletin $bulletin)
   {
     $this->bulletin = $bulletin;
   }
@@ -48,7 +48,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->bulletin;
   }
-  public function setChannelItem(ActivityContentDetailsChannelItem $channelItem)
+  public function setChannelItem(Google_Service_YouTube_ActivityContentDetailsChannelItem $channelItem)
   {
     $this->channelItem = $channelItem;
   }
@@ -56,7 +56,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->channelItem;
   }
-  public function setComment(ActivityContentDetailsComment $comment)
+  public function setComment(Google_Service_YouTube_ActivityContentDetailsComment $comment)
   {
     $this->comment = $comment;
   }
@@ -64,7 +64,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->comment;
   }
-  public function setFavorite(ActivityContentDetailsFavorite $favorite)
+  public function setFavorite(Google_Service_YouTube_ActivityContentDetailsFavorite $favorite)
   {
     $this->favorite = $favorite;
   }
@@ -72,7 +72,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->favorite;
   }
-  public function setLike(ActivityContentDetailsLike $like)
+  public function setLike(Google_Service_YouTube_ActivityContentDetailsLike $like)
   {
     $this->like = $like;
   }
@@ -80,7 +80,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->like;
   }
-  public function setPlaylistItem(ActivityContentDetailsPlaylistItem $playlistItem)
+  public function setPlaylistItem(Google_Service_YouTube_ActivityContentDetailsPlaylistItem $playlistItem)
   {
     $this->playlistItem = $playlistItem;
   }
@@ -88,7 +88,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->playlistItem;
   }
-  public function setPromotedItem(ActivityContentDetailsPromotedItem $promotedItem)
+  public function setPromotedItem(Google_Service_YouTube_ActivityContentDetailsPromotedItem $promotedItem)
   {
     $this->promotedItem = $promotedItem;
   }
@@ -96,7 +96,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->promotedItem;
   }
-  public function setRecommendation(ActivityContentDetailsRecommendation $recommendation)
+  public function setRecommendation(Google_Service_YouTube_ActivityContentDetailsRecommendation $recommendation)
   {
     $this->recommendation = $recommendation;
   }
@@ -104,7 +104,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->recommendation;
   }
-  public function setSocial(ActivityContentDetailsSocial $social)
+  public function setSocial(Google_Service_YouTube_ActivityContentDetailsSocial $social)
   {
     $this->social = $social;
   }
@@ -112,7 +112,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->social;
   }
-  public function setSubscription(ActivityContentDetailsSubscription $subscription)
+  public function setSubscription(Google_Service_YouTube_ActivityContentDetailsSubscription $subscription)
   {
     $this->subscription = $subscription;
   }
@@ -120,7 +120,7 @@ class Google_Service_YouTube_ActivityContentDetails extends Google_Model
   {
     return $this->subscription;
   }
-  public function setUpload(ActivityContentDetailsUpload $upload)
+  public function setUpload(Google_Service_YouTube_ActivityContentDetailsUpload $upload)
   {
     $this->upload = $upload;
   }

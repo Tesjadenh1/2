@@ -29,7 +29,7 @@ class Google_Service_YouTube_LiveStream extends Google_Model
   protected $statusType = 'Google_Service_YouTube_LiveStreamStatus';
   protected $statusDataType = '';
 
-  public function setCdn(CdnSettings $cdn)
+  public function setCdn(Google_Service_YouTube_CdnSettings $cdn)
   {
     $this->cdn = $cdn;
   }
@@ -37,7 +37,7 @@ class Google_Service_YouTube_LiveStream extends Google_Model
   {
     return $this->cdn;
   }
-  public function setContentDetails(LiveStreamContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_LiveStreamContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -69,7 +69,7 @@ class Google_Service_YouTube_LiveStream extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(LiveStreamSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_LiveStreamSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -77,7 +77,7 @@ class Google_Service_YouTube_LiveStream extends Google_Model
   {
     return $this->snippet;
   }
-  public function setStatus(LiveStreamStatus $status)
+  public function setStatus(Google_Service_YouTube_LiveStreamStatus $status)
   {
     $this->status = $status;
   }

@@ -26,7 +26,7 @@ class Google_Service_Blogger_BlogUserInfo extends Google_Model
   protected $blogUserInfoDataType = '';
   public $kind;
 
-  public function setBlog(Blog $blog)
+  public function setBlog(Google_Service_Blogger_Blog $blog)
   {
     $this->blog = $blog;
   }
@@ -34,7 +34,7 @@ class Google_Service_Blogger_BlogUserInfo extends Google_Model
   {
     return $this->blog;
   }
-  public function setBlogUserInfo(BlogPerUserInfo $blogUserInfo)
+  public function setBlogUserInfo(Google_Service_Blogger_BlogPerUserInfo $blogUserInfo)
   {
     $this->blogUserInfo = $blogUserInfo;
   }

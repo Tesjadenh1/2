@@ -31,7 +31,7 @@ class Google_Service_Compute_AutoscalersScopedList extends Google_Collection
   {
     return $this->autoscalers;
   }
-  public function setWarning(AutoscalersScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_AutoscalersScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

@@ -56,7 +56,7 @@ class Google_Service_ShoppingContent_OrderLineItem extends Google_Collection
   {
     return $this->id;
   }
-  public function setPrice(Price $price)
+  public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }
@@ -64,7 +64,7 @@ class Google_Service_ShoppingContent_OrderLineItem extends Google_Collection
   {
     return $this->price;
   }
-  public function setProduct(OrderLineItemProduct $product)
+  public function setProduct(Google_Service_ShoppingContent_OrderLineItemProduct $product)
   {
     $this->product = $product;
   }
@@ -120,7 +120,7 @@ class Google_Service_ShoppingContent_OrderLineItem extends Google_Collection
   {
     return $this->quantityShipped;
   }
-  public function setReturnInfo(OrderLineItemReturnInfo $returnInfo)
+  public function setReturnInfo(Google_Service_ShoppingContent_OrderLineItemReturnInfo $returnInfo)
   {
     $this->returnInfo = $returnInfo;
   }
@@ -136,7 +136,7 @@ class Google_Service_ShoppingContent_OrderLineItem extends Google_Collection
   {
     return $this->returns;
   }
-  public function setShippingDetails(OrderLineItemShippingDetails $shippingDetails)
+  public function setShippingDetails(Google_Service_ShoppingContent_OrderLineItemShippingDetails $shippingDetails)
   {
     $this->shippingDetails = $shippingDetails;
   }
@@ -144,7 +144,7 @@ class Google_Service_ShoppingContent_OrderLineItem extends Google_Collection
   {
     return $this->shippingDetails;
   }
-  public function setTax(Price $tax)
+  public function setTax(Google_Service_ShoppingContent_Price $tax)
   {
     $this->tax = $tax;
   }

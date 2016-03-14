@@ -34,7 +34,7 @@ class Google_Service_Plus_ActivityObject extends Google_Collection
   protected $resharersDataType = '';
   public $url;
 
-  public function setActor(ActivityObjectActor $actor)
+  public function setActor(Google_Service_Plus_ActivityObjectActor $actor)
   {
     $this->actor = $actor;
   }
@@ -82,7 +82,7 @@ class Google_Service_Plus_ActivityObject extends Google_Collection
   {
     return $this->originalContent;
   }
-  public function setPlusoners(ActivityObjectPlusoners $plusoners)
+  public function setPlusoners(Google_Service_Plus_ActivityObjectPlusoners $plusoners)
   {
     $this->plusoners = $plusoners;
   }
@@ -90,7 +90,7 @@ class Google_Service_Plus_ActivityObject extends Google_Collection
   {
     return $this->plusoners;
   }
-  public function setReplies(ActivityObjectReplies $replies)
+  public function setReplies(Google_Service_Plus_ActivityObjectReplies $replies)
   {
     $this->replies = $replies;
   }
@@ -98,7 +98,7 @@ class Google_Service_Plus_ActivityObject extends Google_Collection
   {
     return $this->replies;
   }
-  public function setResharers(ActivityObjectResharers $resharers)
+  public function setResharers(Google_Service_Plus_ActivityObjectResharers $resharers)
   {
     $this->resharers = $resharers;
   }

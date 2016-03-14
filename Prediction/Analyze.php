@@ -27,7 +27,7 @@ class Google_Service_Prediction_Analyze extends Google_Collection
   protected $modelDescriptionDataType = '';
   public $selfLink;
 
-  public function setDataDescription(AnalyzeDataDescription $dataDescription)
+  public function setDataDescription(Google_Service_Prediction_AnalyzeDataDescription $dataDescription)
   {
     $this->dataDescription = $dataDescription;
   }
@@ -59,7 +59,7 @@ class Google_Service_Prediction_Analyze extends Google_Collection
   {
     return $this->kind;
   }
-  public function setModelDescription(AnalyzeModelDescription $modelDescription)
+  public function setModelDescription(Google_Service_Prediction_AnalyzeModelDescription $modelDescription)
   {
     $this->modelDescription = $modelDescription;
   }

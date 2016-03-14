@@ -76,7 +76,7 @@ class Google_Service_DeploymentManager_Operation extends Google_Collection
   {
     return $this->endTime;
   }
-  public function setError(OperationError $error)
+  public function setError(Google_Service_DeploymentManager_OperationError $error)
   {
     $this->error = $error;
   }

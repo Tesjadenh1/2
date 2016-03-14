@@ -23,7 +23,7 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrl
   protected $urlsType = 'Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls';
   protected $urlsDataType = 'array';
 
-  public function setHeader(PagespeedApiFormatStringV2 $header)
+  public function setHeader(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $header)
   {
     $this->header = $header;
   }

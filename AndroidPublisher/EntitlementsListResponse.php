@@ -25,7 +25,7 @@ class Google_Service_AndroidPublisher_EntitlementsListResponse extends Google_Co
   protected $tokenPaginationType = 'Google_Service_AndroidPublisher_TokenPagination';
   protected $tokenPaginationDataType = '';
 
-  public function setPageInfo(PageInfo $pageInfo)
+  public function setPageInfo(Google_Service_AndroidPublisher_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
@@ -41,7 +41,7 @@ class Google_Service_AndroidPublisher_EntitlementsListResponse extends Google_Co
   {
     return $this->resources;
   }
-  public function setTokenPagination(TokenPagination $tokenPagination)
+  public function setTokenPagination(Google_Service_AndroidPublisher_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }

@@ -35,7 +35,7 @@ class Google_Service_Vision_AnnotateImageResponse extends Google_Collection
   protected $textAnnotationsType = 'Google_Service_Vision_EntityAnnotation';
   protected $textAnnotationsDataType = 'array';
 
-  public function setError(Status $error)
+  public function setError(Google_Service_Vision_Status $error)
   {
     $this->error = $error;
   }
@@ -51,7 +51,7 @@ class Google_Service_Vision_AnnotateImageResponse extends Google_Collection
   {
     return $this->faceAnnotations;
   }
-  public function setImagePropertiesAnnotation(ImageProperties $imagePropertiesAnnotation)
+  public function setImagePropertiesAnnotation(Google_Service_Vision_ImageProperties $imagePropertiesAnnotation)
   {
     $this->imagePropertiesAnnotation = $imagePropertiesAnnotation;
   }
@@ -83,7 +83,7 @@ class Google_Service_Vision_AnnotateImageResponse extends Google_Collection
   {
     return $this->logoAnnotations;
   }
-  public function setSafeSearchAnnotation(SafeSearchAnnotation $safeSearchAnnotation)
+  public function setSafeSearchAnnotation(Google_Service_Vision_SafeSearchAnnotation $safeSearchAnnotation)
   {
     $this->safeSearchAnnotation = $safeSearchAnnotation;
   }

@@ -23,7 +23,7 @@ class Google_Service_PlusDomains_PersonCover extends Google_Model
   protected $coverPhotoDataType = '';
   public $layout;
 
-  public function setCoverInfo(PersonCoverCoverInfo $coverInfo)
+  public function setCoverInfo(Google_Service_PlusDomains_PersonCoverCoverInfo $coverInfo)
   {
     $this->coverInfo = $coverInfo;
   }
@@ -31,7 +31,7 @@ class Google_Service_PlusDomains_PersonCover extends Google_Model
   {
     return $this->coverInfo;
   }
-  public function setCoverPhoto(PersonCoverCoverPhoto $coverPhoto)
+  public function setCoverPhoto(Google_Service_PlusDomains_PersonCoverCoverPhoto $coverPhoto)
   {
     $this->coverPhoto = $coverPhoto;
   }

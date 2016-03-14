@@ -20,7 +20,7 @@ class Google_Service_Prediction_Input extends Google_Model
   protected $inputType = 'Google_Service_Prediction_InputInput';
   protected $inputDataType = '';
 
-  public function setInput(InputInput $input)
+  public function setInput(Google_Service_Prediction_InputInput $input)
   {
     $this->input = $input;
   }

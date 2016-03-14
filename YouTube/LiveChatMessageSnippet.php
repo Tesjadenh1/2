@@ -44,7 +44,7 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   {
     return $this->displayMessage;
   }
-  public function setFanFundingEventDetails(LiveChatFanFundingEventDetails $fanFundingEventDetails)
+  public function setFanFundingEventDetails(Google_Service_YouTube_LiveChatFanFundingEventDetails $fanFundingEventDetails)
   {
     $this->fanFundingEventDetails = $fanFundingEventDetails;
   }
@@ -76,7 +76,7 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   {
     return $this->publishedAt;
   }
-  public function setTextMessageDetails(LiveChatTextMessageDetails $textMessageDetails)
+  public function setTextMessageDetails(Google_Service_YouTube_LiveChatTextMessageDetails $textMessageDetails)
   {
     $this->textMessageDetails = $textMessageDetails;
   }

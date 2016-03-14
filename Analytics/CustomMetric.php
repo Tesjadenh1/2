@@ -110,7 +110,7 @@ class Google_Service_Analytics_CustomMetric extends Google_Model
   {
     return $this->name;
   }
-  public function setParentLink(CustomMetricParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_CustomMetricParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }

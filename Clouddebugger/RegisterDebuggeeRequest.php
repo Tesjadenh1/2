@@ -20,7 +20,7 @@ class Google_Service_Clouddebugger_RegisterDebuggeeRequest extends Google_Model
   protected $debuggeeType = 'Google_Service_Clouddebugger_Debuggee';
   protected $debuggeeDataType = '';
 
-  public function setDebuggee(Debuggee $debuggee)
+  public function setDebuggee(Google_Service_Clouddebugger_Debuggee $debuggee)
   {
     $this->debuggee = $debuggee;
   }

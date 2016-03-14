@@ -31,7 +31,7 @@ class Google_Service_YouTube_LiveBroadcast extends Google_Model
   protected $topicDetailsType = 'Google_Service_YouTube_LiveBroadcastTopicDetails';
   protected $topicDetailsDataType = '';
 
-  public function setContentDetails(LiveBroadcastContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_LiveBroadcastContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -63,7 +63,7 @@ class Google_Service_YouTube_LiveBroadcast extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(LiveBroadcastSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_LiveBroadcastSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -71,7 +71,7 @@ class Google_Service_YouTube_LiveBroadcast extends Google_Model
   {
     return $this->snippet;
   }
-  public function setStatistics(LiveBroadcastStatistics $statistics)
+  public function setStatistics(Google_Service_YouTube_LiveBroadcastStatistics $statistics)
   {
     $this->statistics = $statistics;
   }
@@ -79,7 +79,7 @@ class Google_Service_YouTube_LiveBroadcast extends Google_Model
   {
     return $this->statistics;
   }
-  public function setStatus(LiveBroadcastStatus $status)
+  public function setStatus(Google_Service_YouTube_LiveBroadcastStatus $status)
   {
     $this->status = $status;
   }
@@ -87,7 +87,7 @@ class Google_Service_YouTube_LiveBroadcast extends Google_Model
   {
     return $this->status;
   }
-  public function setTopicDetails(LiveBroadcastTopicDetails $topicDetails)
+  public function setTopicDetails(Google_Service_YouTube_LiveBroadcastTopicDetails $topicDetails)
   {
     $this->topicDetails = $topicDetails;
   }

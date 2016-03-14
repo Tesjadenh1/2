@@ -31,7 +31,7 @@ class Google_Service_Vision_EntityAnnotation extends Google_Collection
   public $score;
   public $topicality;
 
-  public function setBoundingPoly(BoundingPoly $boundingPoly)
+  public function setBoundingPoly(Google_Service_Vision_BoundingPoly $boundingPoly)
   {
     $this->boundingPoly = $boundingPoly;
   }

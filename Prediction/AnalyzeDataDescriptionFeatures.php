@@ -25,7 +25,7 @@ class Google_Service_Prediction_AnalyzeDataDescriptionFeatures extends Google_Mo
   protected $textType = 'Google_Service_Prediction_AnalyzeDataDescriptionFeaturesText';
   protected $textDataType = '';
 
-  public function setCategorical(AnalyzeDataDescriptionFeaturesCategorical $categorical)
+  public function setCategorical(Google_Service_Prediction_AnalyzeDataDescriptionFeaturesCategorical $categorical)
   {
     $this->categorical = $categorical;
   }
@@ -41,7 +41,7 @@ class Google_Service_Prediction_AnalyzeDataDescriptionFeatures extends Google_Mo
   {
     return $this->index;
   }
-  public function setNumeric(AnalyzeDataDescriptionFeaturesNumeric $numeric)
+  public function setNumeric(Google_Service_Prediction_AnalyzeDataDescriptionFeaturesNumeric $numeric)
   {
     $this->numeric = $numeric;
   }
@@ -49,7 +49,7 @@ class Google_Service_Prediction_AnalyzeDataDescriptionFeatures extends Google_Mo
   {
     return $this->numeric;
   }
-  public function setText(AnalyzeDataDescriptionFeaturesText $text)
+  public function setText(Google_Service_Prediction_AnalyzeDataDescriptionFeaturesText $text)
   {
     $this->text = $text;
   }

@@ -28,7 +28,7 @@ class Google_Service_Gmail_MessagePart extends Google_Collection
   protected $partsType = 'Google_Service_Gmail_MessagePart';
   protected $partsDataType = 'array';
 
-  public function setBody(MessagePartBody $body)
+  public function setBody(Google_Service_Gmail_MessagePartBody $body)
   {
     $this->body = $body;
   }

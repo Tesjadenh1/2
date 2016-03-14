@@ -83,7 +83,7 @@ class Google_Service_Mirror_TimelineItem extends Google_Collection
   {
     return $this->created;
   }
-  public function setCreator(Contact $creator)
+  public function setCreator(Google_Service_Mirror_Contact $creator)
   {
     $this->creator = $creator;
   }
@@ -163,7 +163,7 @@ class Google_Service_Mirror_TimelineItem extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLocation(Location $location)
+  public function setLocation(Google_Service_Mirror_Location $location)
   {
     $this->location = $location;
   }
@@ -179,7 +179,7 @@ class Google_Service_Mirror_TimelineItem extends Google_Collection
   {
     return $this->menuItems;
   }
-  public function setNotification(NotificationConfig $notification)
+  public function setNotification(Google_Service_Mirror_NotificationConfig $notification)
   {
     $this->notification = $notification;
   }

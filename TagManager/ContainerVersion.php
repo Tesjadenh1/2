@@ -48,7 +48,7 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->accountId;
   }
-  public function setContainer(Container $container)
+  public function setContainer(Google_Service_TagManager_Container $container)
   {
     $this->container = $container;
   }

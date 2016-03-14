@@ -78,7 +78,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->appProperties;
   }
-  public function setCapabilities(FileCapabilities $capabilities)
+  public function setCapabilities(Google_Service_Drive_FileCapabilities $capabilities)
   {
     $this->capabilities = $capabilities;
   }
@@ -86,7 +86,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->capabilities;
   }
-  public function setContentHints(FileContentHints $contentHints)
+  public function setContentHints(Google_Service_Drive_FileContentHints $contentHints)
   {
     $this->contentHints = $contentHints;
   }
@@ -166,7 +166,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->id;
   }
-  public function setImageMediaMetadata(FileImageMediaMetadata $imageMediaMetadata)
+  public function setImageMediaMetadata(Google_Service_Drive_FileImageMediaMetadata $imageMediaMetadata)
   {
     $this->imageMediaMetadata = $imageMediaMetadata;
   }
@@ -182,7 +182,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastModifyingUser(User $lastModifyingUser)
+  public function setLastModifyingUser(Google_Service_Drive_User $lastModifyingUser)
   {
     $this->lastModifyingUser = $lastModifyingUser;
   }
@@ -302,7 +302,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->sharedWithMeTime;
   }
-  public function setSharingUser(User $sharingUser)
+  public function setSharingUser(Google_Service_Drive_User $sharingUser)
   {
     $this->sharingUser = $sharingUser;
   }
@@ -358,7 +358,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->version;
   }
-  public function setVideoMediaMetadata(FileVideoMediaMetadata $videoMediaMetadata)
+  public function setVideoMediaMetadata(Google_Service_Drive_FileVideoMediaMetadata $videoMediaMetadata)
   {
     $this->videoMediaMetadata = $videoMediaMetadata;
   }

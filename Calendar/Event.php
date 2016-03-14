@@ -115,7 +115,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->created;
   }
-  public function setCreator(EventCreator $creator)
+  public function setCreator(Google_Service_Calendar_EventCreator $creator)
   {
     $this->creator = $creator;
   }
@@ -131,7 +131,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->description;
   }
-  public function setEnd(EventDateTime $end)
+  public function setEnd(Google_Service_Calendar_EventDateTime $end)
   {
     $this->end = $end;
   }
@@ -155,7 +155,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->etag;
   }
-  public function setExtendedProperties(EventExtendedProperties $extendedProperties)
+  public function setExtendedProperties(Google_Service_Calendar_EventExtendedProperties $extendedProperties)
   {
     $this->extendedProperties = $extendedProperties;
   }
@@ -163,7 +163,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->extendedProperties;
   }
-  public function setGadget(EventGadget $gadget)
+  public function setGadget(Google_Service_Calendar_EventGadget $gadget)
   {
     $this->gadget = $gadget;
   }
@@ -251,7 +251,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->locked;
   }
-  public function setOrganizer(EventOrganizer $organizer)
+  public function setOrganizer(Google_Service_Calendar_EventOrganizer $organizer)
   {
     $this->organizer = $organizer;
   }
@@ -259,7 +259,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->organizer;
   }
-  public function setOriginalStartTime(EventDateTime $originalStartTime)
+  public function setOriginalStartTime(Google_Service_Calendar_EventDateTime $originalStartTime)
   {
     $this->originalStartTime = $originalStartTime;
   }
@@ -291,7 +291,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->recurringEventId;
   }
-  public function setReminders(EventReminders $reminders)
+  public function setReminders(Google_Service_Calendar_EventReminders $reminders)
   {
     $this->reminders = $reminders;
   }
@@ -307,7 +307,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->sequence;
   }
-  public function setSource(EventSource $source)
+  public function setSource(Google_Service_Calendar_EventSource $source)
   {
     $this->source = $source;
   }
@@ -315,7 +315,7 @@ class Google_Service_Calendar_Event extends Google_Collection
   {
     return $this->source;
   }
-  public function setStart(EventDateTime $start)
+  public function setStart(Google_Service_Calendar_EventDateTime $start)
   {
     $this->start = $start;
   }

@@ -38,7 +38,7 @@ class Google_Service_ShoppingContent_InventorySetRequest extends Google_Model
   {
     return $this->availability;
   }
-  public function setInstallment(Installment $installment)
+  public function setInstallment(Google_Service_ShoppingContent_Installment $installment)
   {
     $this->installment = $installment;
   }
@@ -46,7 +46,7 @@ class Google_Service_ShoppingContent_InventorySetRequest extends Google_Model
   {
     return $this->installment;
   }
-  public function setLoyaltyPoints(LoyaltyPoints $loyaltyPoints)
+  public function setLoyaltyPoints(Google_Service_ShoppingContent_LoyaltyPoints $loyaltyPoints)
   {
     $this->loyaltyPoints = $loyaltyPoints;
   }
@@ -54,7 +54,7 @@ class Google_Service_ShoppingContent_InventorySetRequest extends Google_Model
   {
     return $this->loyaltyPoints;
   }
-  public function setPrice(Price $price)
+  public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }
@@ -70,7 +70,7 @@ class Google_Service_ShoppingContent_InventorySetRequest extends Google_Model
   {
     return $this->quantity;
   }
-  public function setSalePrice(Price $salePrice)
+  public function setSalePrice(Google_Service_ShoppingContent_Price $salePrice)
   {
     $this->salePrice = $salePrice;
   }

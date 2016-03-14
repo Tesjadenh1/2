@@ -26,7 +26,7 @@ class Google_Service_Analytics_ProfileFilterLink extends Google_Model
   public $rank;
   public $selfLink;
 
-  public function setFilterRef(FilterRef $filterRef)
+  public function setFilterRef(Google_Service_Analytics_FilterRef $filterRef)
   {
     $this->filterRef = $filterRef;
   }
@@ -50,7 +50,7 @@ class Google_Service_Analytics_ProfileFilterLink extends Google_Model
   {
     return $this->kind;
   }
-  public function setProfileRef(ProfileRef $profileRef)
+  public function setProfileRef(Google_Service_Analytics_ProfileRef $profileRef)
   {
     $this->profileRef = $profileRef;
   }

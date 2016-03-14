@@ -24,7 +24,7 @@ class Google_Service_Partners_CreateLeadRequest extends Google_Model
   protected $requestMetadataType = 'Google_Service_Partners_RequestMetadata';
   protected $requestMetadataDataType = '';
 
-  public function setLead(Lead $lead)
+  public function setLead(Google_Service_Partners_Lead $lead)
   {
     $this->lead = $lead;
   }
@@ -32,7 +32,7 @@ class Google_Service_Partners_CreateLeadRequest extends Google_Model
   {
     return $this->lead;
   }
-  public function setRecaptchaChallenge(RecaptchaChallenge $recaptchaChallenge)
+  public function setRecaptchaChallenge(Google_Service_Partners_RecaptchaChallenge $recaptchaChallenge)
   {
     $this->recaptchaChallenge = $recaptchaChallenge;
   }
@@ -40,7 +40,7 @@ class Google_Service_Partners_CreateLeadRequest extends Google_Model
   {
     return $this->recaptchaChallenge;
   }
-  public function setRequestMetadata(RequestMetadata $requestMetadata)
+  public function setRequestMetadata(Google_Service_Partners_RequestMetadata $requestMetadata)
   {
     $this->requestMetadata = $requestMetadata;
   }

@@ -94,7 +94,7 @@ class Google_Service_Storage_Bucket extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLifecycle(BucketLifecycle $lifecycle)
+  public function setLifecycle(Google_Service_Storage_BucketLifecycle $lifecycle)
   {
     $this->lifecycle = $lifecycle;
   }
@@ -110,7 +110,7 @@ class Google_Service_Storage_Bucket extends Google_Collection
   {
     return $this->location;
   }
-  public function setLogging(BucketLogging $logging)
+  public function setLogging(Google_Service_Storage_BucketLogging $logging)
   {
     $this->logging = $logging;
   }
@@ -134,7 +134,7 @@ class Google_Service_Storage_Bucket extends Google_Collection
   {
     return $this->name;
   }
-  public function setOwner(BucketOwner $owner)
+  public function setOwner(Google_Service_Storage_BucketOwner $owner)
   {
     $this->owner = $owner;
   }
@@ -182,7 +182,7 @@ class Google_Service_Storage_Bucket extends Google_Collection
   {
     return $this->updated;
   }
-  public function setVersioning(BucketVersioning $versioning)
+  public function setVersioning(Google_Service_Storage_BucketVersioning $versioning)
   {
     $this->versioning = $versioning;
   }
@@ -190,7 +190,7 @@ class Google_Service_Storage_Bucket extends Google_Collection
   {
     return $this->versioning;
   }
-  public function setWebsite(BucketWebsite $website)
+  public function setWebsite(Google_Service_Storage_BucketWebsite $website)
   {
     $this->website = $website;
   }

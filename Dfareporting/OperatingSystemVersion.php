@@ -65,7 +65,7 @@ class Google_Service_Dfareporting_OperatingSystemVersion extends Google_Model
   {
     return $this->name;
   }
-  public function setOperatingSystem(OperatingSystem $operatingSystem)
+  public function setOperatingSystem(Google_Service_Dfareporting_OperatingSystem $operatingSystem)
   {
     $this->operatingSystem = $operatingSystem;
   }

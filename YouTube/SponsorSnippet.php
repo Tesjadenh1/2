@@ -30,7 +30,7 @@ class Google_Service_YouTube_SponsorSnippet extends Google_Model
   {
     return $this->channelId;
   }
-  public function setSponsorDetails(ChannelProfileDetails $sponsorDetails)
+  public function setSponsorDetails(Google_Service_YouTube_ChannelProfileDetails $sponsorDetails)
   {
     $this->sponsorDetails = $sponsorDetails;
   }

@@ -20,7 +20,7 @@ class Google_Service_Plus_ActivityObjectActorClientSpecificActorInfo extends Goo
   protected $youtubeActorInfoType = 'Google_Service_Plus_ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo';
   protected $youtubeActorInfoDataType = '';
 
-  public function setYoutubeActorInfo(ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo $youtubeActorInfo)
+  public function setYoutubeActorInfo(Google_Service_Plus_ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo $youtubeActorInfo)
   {
     $this->youtubeActorInfo = $youtubeActorInfo;
   }

@@ -22,7 +22,7 @@ class Google_Service_Spectrum_DeviceValidity extends Google_Model
   public $isValid;
   public $reason;
 
-  public function setDeviceDesc(DeviceDescriptor $deviceDesc)
+  public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }

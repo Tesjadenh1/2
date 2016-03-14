@@ -30,7 +30,7 @@ class Google_Service_People_FieldMetadata extends Google_Model
   {
     return $this->primary;
   }
-  public function setSource(Source $source)
+  public function setSource(Google_Service_People_Source $source)
   {
     $this->source = $source;
   }

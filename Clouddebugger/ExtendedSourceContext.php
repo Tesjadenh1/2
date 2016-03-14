@@ -21,7 +21,7 @@ class Google_Service_Clouddebugger_ExtendedSourceContext extends Google_Model
   protected $contextDataType = '';
   public $labels;
 
-  public function setContext(SourceContext $context)
+  public function setContext(Google_Service_Clouddebugger_SourceContext $context)
   {
     $this->context = $context;
   }

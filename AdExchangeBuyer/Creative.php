@@ -139,7 +139,7 @@ class Google_Service_AdExchangeBuyer_Creative extends Google_Collection
   {
     return $this->dealsStatus;
   }
-  public function setFilteringReasons(CreativeFilteringReasons $filteringReasons)
+  public function setFilteringReasons(Google_Service_AdExchangeBuyer_CreativeFilteringReasons $filteringReasons)
   {
     $this->filteringReasons = $filteringReasons;
   }
@@ -171,7 +171,7 @@ class Google_Service_AdExchangeBuyer_Creative extends Google_Collection
   {
     return $this->kind;
   }
-  public function setNativeAd(CreativeNativeAd $nativeAd)
+  public function setNativeAd(Google_Service_AdExchangeBuyer_CreativeNativeAd $nativeAd)
   {
     $this->nativeAd = $nativeAd;
   }

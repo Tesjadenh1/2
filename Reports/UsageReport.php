@@ -34,7 +34,7 @@ class Google_Service_Reports_UsageReport extends Google_Collection
   {
     return $this->date;
   }
-  public function setEntity(UsageReportEntity $entity)
+  public function setEntity(Google_Service_Reports_UsageReportEntity $entity)
   {
     $this->entity = $entity;
   }

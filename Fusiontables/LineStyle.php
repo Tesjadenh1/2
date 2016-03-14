@@ -33,7 +33,7 @@ class Google_Service_Fusiontables_LineStyle extends Google_Model
   {
     return $this->strokeColor;
   }
-  public function setStrokeColorStyler(StyleFunction $strokeColorStyler)
+  public function setStrokeColorStyler(Google_Service_Fusiontables_StyleFunction $strokeColorStyler)
   {
     $this->strokeColorStyler = $strokeColorStyler;
   }
@@ -57,7 +57,7 @@ class Google_Service_Fusiontables_LineStyle extends Google_Model
   {
     return $this->strokeWeight;
   }
-  public function setStrokeWeightStyler(StyleFunction $strokeWeightStyler)
+  public function setStrokeWeightStyler(Google_Service_Fusiontables_StyleFunction $strokeWeightStyler)
   {
     $this->strokeWeightStyler = $strokeWeightStyler;
   }

@@ -31,7 +31,7 @@ class Google_Service_YouTube_Playlist extends Google_Model
   protected $statusType = 'Google_Service_YouTube_PlaylistStatus';
   protected $statusDataType = '';
 
-  public function setContentDetails(PlaylistContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_PlaylistContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -71,7 +71,7 @@ class Google_Service_YouTube_Playlist extends Google_Model
   {
     return $this->localizations;
   }
-  public function setPlayer(PlaylistPlayer $player)
+  public function setPlayer(Google_Service_YouTube_PlaylistPlayer $player)
   {
     $this->player = $player;
   }
@@ -79,7 +79,7 @@ class Google_Service_YouTube_Playlist extends Google_Model
   {
     return $this->player;
   }
-  public function setSnippet(PlaylistSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_PlaylistSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -87,7 +87,7 @@ class Google_Service_YouTube_Playlist extends Google_Model
   {
     return $this->snippet;
   }
-  public function setStatus(PlaylistStatus $status)
+  public function setStatus(Google_Service_YouTube_PlaylistStatus $status)
   {
     $this->status = $status;
   }

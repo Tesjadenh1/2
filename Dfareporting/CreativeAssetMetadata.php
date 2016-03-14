@@ -26,7 +26,7 @@ class Google_Service_Dfareporting_CreativeAssetMetadata extends Google_Collectio
   public $kind;
   public $warnedValidationRules;
 
-  public function setAssetIdentifier(CreativeAssetId $assetIdentifier)
+  public function setAssetIdentifier(Google_Service_Dfareporting_CreativeAssetId $assetIdentifier)
   {
     $this->assetIdentifier = $assetIdentifier;
   }

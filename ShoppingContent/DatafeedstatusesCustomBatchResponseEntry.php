@@ -31,7 +31,7 @@ class Google_Service_ShoppingContent_DatafeedstatusesCustomBatchResponseEntry ex
   {
     return $this->batchId;
   }
-  public function setDatafeedStatus(DatafeedStatus $datafeedStatus)
+  public function setDatafeedStatus(Google_Service_ShoppingContent_DatafeedStatus $datafeedStatus)
   {
     $this->datafeedStatus = $datafeedStatus;
   }
@@ -39,7 +39,7 @@ class Google_Service_ShoppingContent_DatafeedstatusesCustomBatchResponseEntry ex
   {
     return $this->datafeedStatus;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

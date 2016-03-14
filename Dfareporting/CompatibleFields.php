@@ -29,7 +29,7 @@ class Google_Service_Dfareporting_CompatibleFields extends Google_Model
   protected $reportCompatibleFieldsType = 'Google_Service_Dfareporting_ReportCompatibleFields';
   protected $reportCompatibleFieldsDataType = '';
 
-  public function setCrossDimensionReachReportCompatibleFields(CrossDimensionReachReportCompatibleFields $crossDimensionReachReportCompatibleFields)
+  public function setCrossDimensionReachReportCompatibleFields(Google_Service_Dfareporting_CrossDimensionReachReportCompatibleFields $crossDimensionReachReportCompatibleFields)
   {
     $this->crossDimensionReachReportCompatibleFields = $crossDimensionReachReportCompatibleFields;
   }
@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_CompatibleFields extends Google_Model
   {
     return $this->crossDimensionReachReportCompatibleFields;
   }
-  public function setFloodlightReportCompatibleFields(FloodlightReportCompatibleFields $floodlightReportCompatibleFields)
+  public function setFloodlightReportCompatibleFields(Google_Service_Dfareporting_FloodlightReportCompatibleFields $floodlightReportCompatibleFields)
   {
     $this->floodlightReportCompatibleFields = $floodlightReportCompatibleFields;
   }
@@ -53,7 +53,7 @@ class Google_Service_Dfareporting_CompatibleFields extends Google_Model
   {
     return $this->kind;
   }
-  public function setPathToConversionReportCompatibleFields(PathToConversionReportCompatibleFields $pathToConversionReportCompatibleFields)
+  public function setPathToConversionReportCompatibleFields(Google_Service_Dfareporting_PathToConversionReportCompatibleFields $pathToConversionReportCompatibleFields)
   {
     $this->pathToConversionReportCompatibleFields = $pathToConversionReportCompatibleFields;
   }
@@ -61,7 +61,7 @@ class Google_Service_Dfareporting_CompatibleFields extends Google_Model
   {
     return $this->pathToConversionReportCompatibleFields;
   }
-  public function setReachReportCompatibleFields(ReachReportCompatibleFields $reachReportCompatibleFields)
+  public function setReachReportCompatibleFields(Google_Service_Dfareporting_ReachReportCompatibleFields $reachReportCompatibleFields)
   {
     $this->reachReportCompatibleFields = $reachReportCompatibleFields;
   }
@@ -69,7 +69,7 @@ class Google_Service_Dfareporting_CompatibleFields extends Google_Model
   {
     return $this->reachReportCompatibleFields;
   }
-  public function setReportCompatibleFields(ReportCompatibleFields $reportCompatibleFields)
+  public function setReportCompatibleFields(Google_Service_Dfareporting_ReportCompatibleFields $reportCompatibleFields)
   {
     $this->reportCompatibleFields = $reportCompatibleFields;
   }

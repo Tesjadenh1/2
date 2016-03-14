@@ -41,7 +41,7 @@ class Google_Service_Fusiontables_StyleFunction extends Google_Collection
   {
     return $this->columnName;
   }
-  public function setGradient(StyleFunctionGradient $gradient)
+  public function setGradient(Google_Service_Fusiontables_StyleFunctionGradient $gradient)
   {
     $this->gradient = $gradient;
   }

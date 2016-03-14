@@ -31,7 +31,7 @@ class Google_Service_AndroidPublisher_InappproductsBatchResponseEntry extends Go
   {
     return $this->batchId;
   }
-  public function setInappproductsinsertresponse(InappproductsInsertResponse $inappproductsinsertresponse)
+  public function setInappproductsinsertresponse(Google_Service_AndroidPublisher_InappproductsInsertResponse $inappproductsinsertresponse)
   {
     $this->inappproductsinsertresponse = $inappproductsinsertresponse;
   }
@@ -39,7 +39,7 @@ class Google_Service_AndroidPublisher_InappproductsBatchResponseEntry extends Go
   {
     return $this->inappproductsinsertresponse;
   }
-  public function setInappproductsupdateresponse(InappproductsUpdateResponse $inappproductsupdateresponse)
+  public function setInappproductsupdateresponse(Google_Service_AndroidPublisher_InappproductsUpdateResponse $inappproductsupdateresponse)
   {
     $this->inappproductsupdateresponse = $inappproductsupdateresponse;
   }

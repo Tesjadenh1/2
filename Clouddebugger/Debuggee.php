@@ -105,7 +105,7 @@ class Google_Service_Clouddebugger_Debuggee extends Google_Collection
   {
     return $this->sourceContexts;
   }
-  public function setStatus(StatusMessage $status)
+  public function setStatus(Google_Service_Clouddebugger_StatusMessage $status)
   {
     $this->status = $status;
   }

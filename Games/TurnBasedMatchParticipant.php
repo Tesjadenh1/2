@@ -34,7 +34,7 @@ class Google_Service_Games_TurnBasedMatchParticipant extends Google_Model
   {
     return $this->autoMatched;
   }
-  public function setAutoMatchedPlayer(AnonymousPlayer $autoMatchedPlayer)
+  public function setAutoMatchedPlayer(Google_Service_Games_AnonymousPlayer $autoMatchedPlayer)
   {
     $this->autoMatchedPlayer = $autoMatchedPlayer;
   }
@@ -58,7 +58,7 @@ class Google_Service_Games_TurnBasedMatchParticipant extends Google_Model
   {
     return $this->kind;
   }
-  public function setPlayer(Player $player)
+  public function setPlayer(Google_Service_Games_Player $player)
   {
     $this->player = $player;
   }

@@ -44,7 +44,7 @@ class Google_Service_CivicInfo_RepresentativeInfoResponse extends Google_Collect
   {
     return $this->kind;
   }
-  public function setNormalizedInput(SimpleAddressType $normalizedInput)
+  public function setNormalizedInput(Google_Service_CivicInfo_SimpleAddressType $normalizedInput)
   {
     $this->normalizedInput = $normalizedInput;
   }

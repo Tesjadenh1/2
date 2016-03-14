@@ -55,7 +55,7 @@ class Google_Service_Dfareporting_EventTag extends Google_Collection
   {
     return $this->advertiserId;
   }
-  public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+  public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }
@@ -71,7 +71,7 @@ class Google_Service_Dfareporting_EventTag extends Google_Collection
   {
     return $this->campaignId;
   }
-  public function setCampaignIdDimensionValue(DimensionValue $campaignIdDimensionValue)
+  public function setCampaignIdDimensionValue(Google_Service_Dfareporting_DimensionValue $campaignIdDimensionValue)
   {
     $this->campaignIdDimensionValue = $campaignIdDimensionValue;
   }

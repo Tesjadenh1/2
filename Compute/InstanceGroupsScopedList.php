@@ -31,7 +31,7 @@ class Google_Service_Compute_InstanceGroupsScopedList extends Google_Collection
   {
     return $this->instanceGroups;
   }
-  public function setWarning(InstanceGroupsScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_InstanceGroupsScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

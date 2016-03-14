@@ -50,7 +50,7 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement ex
   {
     return $this->ruleImpact;
   }
-  public function setSummary(PagespeedApiFormatStringV2 $summary)
+  public function setSummary(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $summary)
   {
     $this->summary = $summary;
   }

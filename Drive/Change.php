@@ -24,7 +24,7 @@ class Google_Service_Drive_Change extends Google_Model
   public $removed;
   public $time;
 
-  public function setFile(File $file)
+  public function setFile(Google_Service_Drive_File $file)
   {
     $this->file = $file;
   }

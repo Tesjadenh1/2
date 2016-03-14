@@ -51,7 +51,7 @@ class Google_Service_Customsearch_Promotion extends Google_Collection
   {
     return $this->htmlTitle;
   }
-  public function setImage(PromotionImage $image)
+  public function setImage(Google_Service_Customsearch_PromotionImage $image)
   {
     $this->image = $image;
   }

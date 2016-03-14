@@ -55,7 +55,7 @@ class Google_Service_Dfareporting_TargetableRemarketingList extends Google_Model
   {
     return $this->advertiserId;
   }
-  public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+  public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }

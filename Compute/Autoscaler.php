@@ -28,7 +28,7 @@ class Google_Service_Compute_Autoscaler extends Google_Model
   public $target;
   public $zone;
 
-  public function setAutoscalingPolicy(AutoscalingPolicy $autoscalingPolicy)
+  public function setAutoscalingPolicy(Google_Service_Compute_AutoscalingPolicy $autoscalingPolicy)
   {
     $this->autoscalingPolicy = $autoscalingPolicy;
   }

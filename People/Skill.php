@@ -21,7 +21,7 @@ class Google_Service_People_Skill extends Google_Model
   protected $metadataDataType = '';
   public $value;
 
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

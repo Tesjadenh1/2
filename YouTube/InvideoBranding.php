@@ -41,7 +41,7 @@ class Google_Service_YouTube_InvideoBranding extends Google_Model
   {
     return $this->imageUrl;
   }
-  public function setPosition(InvideoPosition $position)
+  public function setPosition(Google_Service_YouTube_InvideoPosition $position)
   {
     $this->position = $position;
   }
@@ -57,7 +57,7 @@ class Google_Service_YouTube_InvideoBranding extends Google_Model
   {
     return $this->targetChannelId;
   }
-  public function setTiming(InvideoTiming $timing)
+  public function setTiming(Google_Service_YouTube_InvideoTiming $timing)
   {
     $this->timing = $timing;
   }

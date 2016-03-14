@@ -48,7 +48,7 @@ class Google_Service_Plus_ActivityObjectAttachments extends Google_Collection
   {
     return $this->displayName;
   }
-  public function setEmbed(ActivityObjectAttachmentsEmbed $embed)
+  public function setEmbed(Google_Service_Plus_ActivityObjectAttachmentsEmbed $embed)
   {
     $this->embed = $embed;
   }
@@ -56,7 +56,7 @@ class Google_Service_Plus_ActivityObjectAttachments extends Google_Collection
   {
     return $this->embed;
   }
-  public function setFullImage(ActivityObjectAttachmentsFullImage $fullImage)
+  public function setFullImage(Google_Service_Plus_ActivityObjectAttachmentsFullImage $fullImage)
   {
     $this->fullImage = $fullImage;
   }
@@ -72,7 +72,7 @@ class Google_Service_Plus_ActivityObjectAttachments extends Google_Collection
   {
     return $this->id;
   }
-  public function setImage(ActivityObjectAttachmentsImage $image)
+  public function setImage(Google_Service_Plus_ActivityObjectAttachmentsImage $image)
   {
     $this->image = $image;
   }

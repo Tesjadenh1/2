@@ -27,7 +27,7 @@ class Google_Service_Games_RoomStatus extends Google_Collection
   public $status;
   public $statusVersion;
 
-  public function setAutoMatchingStatus(RoomAutoMatchStatus $autoMatchingStatus)
+  public function setAutoMatchingStatus(Google_Service_Games_RoomAutoMatchStatus $autoMatchingStatus)
   {
     $this->autoMatchingStatus = $autoMatchingStatus;
   }

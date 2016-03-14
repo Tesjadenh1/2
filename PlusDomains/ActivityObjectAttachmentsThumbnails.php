@@ -30,7 +30,7 @@ class Google_Service_PlusDomains_ActivityObjectAttachmentsThumbnails extends Goo
   {
     return $this->description;
   }
-  public function setImage(ActivityObjectAttachmentsThumbnailsImage $image)
+  public function setImage(Google_Service_PlusDomains_ActivityObjectAttachmentsThumbnailsImage $image)
   {
     $this->image = $image;
   }

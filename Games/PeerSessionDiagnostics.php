@@ -49,7 +49,7 @@ class Google_Service_Games_PeerSessionDiagnostics extends Google_Model
   {
     return $this->participantId;
   }
-  public function setReliableChannel(PeerChannelDiagnostics $reliableChannel)
+  public function setReliableChannel(Google_Service_Games_PeerChannelDiagnostics $reliableChannel)
   {
     $this->reliableChannel = $reliableChannel;
   }
@@ -57,7 +57,7 @@ class Google_Service_Games_PeerSessionDiagnostics extends Google_Model
   {
     return $this->reliableChannel;
   }
-  public function setUnreliableChannel(PeerChannelDiagnostics $unreliableChannel)
+  public function setUnreliableChannel(Google_Service_Games_PeerChannelDiagnostics $unreliableChannel)
   {
     $this->unreliableChannel = $unreliableChannel;
   }

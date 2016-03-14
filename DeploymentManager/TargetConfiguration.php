@@ -23,7 +23,7 @@ class Google_Service_DeploymentManager_TargetConfiguration extends Google_Collec
   protected $importsType = 'Google_Service_DeploymentManager_ImportFile';
   protected $importsDataType = 'array';
 
-  public function setConfig(ConfigFile $config)
+  public function setConfig(Google_Service_DeploymentManager_ConfigFile $config)
   {
     $this->config = $config;
   }

@@ -47,7 +47,7 @@ class Google_Service_YouTube_VideoAbuseReportReason extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(VideoAbuseReportReasonSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_VideoAbuseReportReasonSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

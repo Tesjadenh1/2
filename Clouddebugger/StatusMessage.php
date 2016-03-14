@@ -22,7 +22,7 @@ class Google_Service_Clouddebugger_StatusMessage extends Google_Model
   public $isError;
   public $refersTo;
 
-  public function setDescription(FormatMessage $description)
+  public function setDescription(Google_Service_Clouddebugger_FormatMessage $description)
   {
     $this->description = $description;
   }

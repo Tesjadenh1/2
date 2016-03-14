@@ -395,7 +395,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->imageLink;
   }
-  public function setInstallment(Installment $installment)
+  public function setInstallment(Google_Service_ShoppingContent_Installment $installment)
   {
     $this->installment = $installment;
   }
@@ -435,7 +435,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->link;
   }
-  public function setLoyaltyPoints(LoyaltyPoints $loyaltyPoints)
+  public function setLoyaltyPoints(Google_Service_ShoppingContent_LoyaltyPoints $loyaltyPoints)
   {
     $this->loyaltyPoints = $loyaltyPoints;
   }
@@ -499,7 +499,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->pattern;
   }
-  public function setPrice(Price $price)
+  public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }
@@ -523,7 +523,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->promotionIds;
   }
-  public function setSalePrice(Price $salePrice)
+  public function setSalePrice(Google_Service_ShoppingContent_Price $salePrice)
   {
     $this->salePrice = $salePrice;
   }
@@ -555,7 +555,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->shipping;
   }
-  public function setShippingHeight(ProductShippingDimension $shippingHeight)
+  public function setShippingHeight(Google_Service_ShoppingContent_ProductShippingDimension $shippingHeight)
   {
     $this->shippingHeight = $shippingHeight;
   }
@@ -571,7 +571,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->shippingLabel;
   }
-  public function setShippingLength(ProductShippingDimension $shippingLength)
+  public function setShippingLength(Google_Service_ShoppingContent_ProductShippingDimension $shippingLength)
   {
     $this->shippingLength = $shippingLength;
   }
@@ -579,7 +579,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->shippingLength;
   }
-  public function setShippingWeight(ProductShippingWeight $shippingWeight)
+  public function setShippingWeight(Google_Service_ShoppingContent_ProductShippingWeight $shippingWeight)
   {
     $this->shippingWeight = $shippingWeight;
   }
@@ -587,7 +587,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->shippingWeight;
   }
-  public function setShippingWidth(ProductShippingDimension $shippingWidth)
+  public function setShippingWidth(Google_Service_ShoppingContent_ProductShippingDimension $shippingWidth)
   {
     $this->shippingWidth = $shippingWidth;
   }
@@ -643,7 +643,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->title;
   }
-  public function setUnitPricingBaseMeasure(ProductUnitPricingBaseMeasure $unitPricingBaseMeasure)
+  public function setUnitPricingBaseMeasure(Google_Service_ShoppingContent_ProductUnitPricingBaseMeasure $unitPricingBaseMeasure)
   {
     $this->unitPricingBaseMeasure = $unitPricingBaseMeasure;
   }
@@ -651,7 +651,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   {
     return $this->unitPricingBaseMeasure;
   }
-  public function setUnitPricingMeasure(ProductUnitPricingMeasure $unitPricingMeasure)
+  public function setUnitPricingMeasure(Google_Service_ShoppingContent_ProductUnitPricingMeasure $unitPricingMeasure)
   {
     $this->unitPricingMeasure = $unitPricingMeasure;
   }

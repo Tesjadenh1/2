@@ -31,7 +31,7 @@ class Google_Service_ShoppingContent_DatafeedsCustomBatchResponseEntry extends G
   {
     return $this->batchId;
   }
-  public function setDatafeed(Datafeed $datafeed)
+  public function setDatafeed(Google_Service_ShoppingContent_Datafeed $datafeed)
   {
     $this->datafeed = $datafeed;
   }
@@ -39,7 +39,7 @@ class Google_Service_ShoppingContent_DatafeedsCustomBatchResponseEntry extends G
   {
     return $this->datafeed;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

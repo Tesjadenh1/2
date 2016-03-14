@@ -24,7 +24,7 @@ class Google_Service_Storage_ComposeRequest extends Google_Collection
   protected $sourceObjectsType = 'Google_Service_Storage_ComposeRequestSourceObjects';
   protected $sourceObjectsDataType = 'array';
 
-  public function setDestination(StorageObject $destination)
+  public function setDestination(Google_Service_Storage_StorageObject $destination)
   {
     $this->destination = $destination;
   }

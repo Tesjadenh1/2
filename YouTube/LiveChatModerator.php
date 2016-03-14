@@ -47,7 +47,7 @@ class Google_Service_YouTube_LiveChatModerator extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(LiveChatModeratorSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_LiveChatModeratorSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

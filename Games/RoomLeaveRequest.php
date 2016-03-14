@@ -30,7 +30,7 @@ class Google_Service_Games_RoomLeaveRequest extends Google_Model
   {
     return $this->kind;
   }
-  public function setLeaveDiagnostics(RoomLeaveDiagnostics $leaveDiagnostics)
+  public function setLeaveDiagnostics(Google_Service_Games_RoomLeaveDiagnostics $leaveDiagnostics)
   {
     $this->leaveDiagnostics = $leaveDiagnostics;
   }

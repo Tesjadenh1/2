@@ -31,7 +31,7 @@ class Google_Service_Compute_AddressesScopedList extends Google_Collection
   {
     return $this->addresses;
   }
-  public function setWarning(AddressesScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_AddressesScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

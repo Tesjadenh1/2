@@ -21,7 +21,7 @@ class Google_Service_Doubleclicksearch_ReportRequestOrderBy extends Google_Model
   protected $columnDataType = '';
   public $sortOrder;
 
-  public function setColumn(ReportApiColumnSpec $column)
+  public function setColumn(Google_Service_Doubleclicksearch_ReportApiColumnSpec $column)
   {
     $this->column = $column;
   }

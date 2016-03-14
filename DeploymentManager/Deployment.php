@@ -89,7 +89,7 @@ class Google_Service_DeploymentManager_Deployment extends Google_Collection
   {
     return $this->name;
   }
-  public function setOperation(Operation $operation)
+  public function setOperation(Google_Service_DeploymentManager_Operation $operation)
   {
     $this->operation = $operation;
   }
@@ -97,7 +97,7 @@ class Google_Service_DeploymentManager_Deployment extends Google_Collection
   {
     return $this->operation;
   }
-  public function setTarget(TargetConfiguration $target)
+  public function setTarget(Google_Service_DeploymentManager_TargetConfiguration $target)
   {
     $this->target = $target;
   }
@@ -105,7 +105,7 @@ class Google_Service_DeploymentManager_Deployment extends Google_Collection
   {
     return $this->target;
   }
-  public function setUpdate(DeploymentUpdate $update)
+  public function setUpdate(Google_Service_DeploymentManager_DeploymentUpdate $update)
   {
     $this->update = $update;
   }

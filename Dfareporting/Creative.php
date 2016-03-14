@@ -213,7 +213,7 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->backupImageReportingLabel;
   }
-  public function setBackupImageTargetWindow(TargetWindow $backupImageTargetWindow)
+  public function setBackupImageTargetWindow(Google_Service_Dfareporting_TargetWindow $backupImageTargetWindow)
   {
     $this->backupImageTargetWindow = $backupImageTargetWindow;
   }
@@ -301,7 +301,7 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->exitCustomEvents;
   }
-  public function setFsCommand(FsCommand $fsCommand)
+  public function setFsCommand(Google_Service_Dfareporting_FsCommand $fsCommand)
   {
     $this->fsCommand = $fsCommand;
   }
@@ -333,7 +333,7 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->id;
   }
-  public function setIdDimensionValue(DimensionValue $idDimensionValue)
+  public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
@@ -349,7 +349,7 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+  public function setLastModifiedInfo(Google_Service_Dfareporting_LastModifiedInfo $lastModifiedInfo)
   {
     $this->lastModifiedInfo = $lastModifiedInfo;
   }
@@ -397,7 +397,7 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->renderingId;
   }
-  public function setRenderingIdDimensionValue(DimensionValue $renderingIdDimensionValue)
+  public function setRenderingIdDimensionValue(Google_Service_Dfareporting_DimensionValue $renderingIdDimensionValue)
   {
     $this->renderingIdDimensionValue = $renderingIdDimensionValue;
   }
@@ -421,7 +421,7 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->requiredFlashVersion;
   }
-  public function setSize(Size $size)
+  public function setSize(Google_Service_Dfareporting_Size $size)
   {
     $this->size = $size;
   }

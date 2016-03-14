@@ -23,7 +23,7 @@ class Google_Service_ShoppingContent_AccountstatusesCustomBatchResponseEntry ext
   protected $errorsType = 'Google_Service_ShoppingContent_Errors';
   protected $errorsDataType = '';
 
-  public function setAccountStatus(AccountStatus $accountStatus)
+  public function setAccountStatus(Google_Service_ShoppingContent_AccountStatus $accountStatus)
   {
     $this->accountStatus = $accountStatus;
   }
@@ -39,7 +39,7 @@ class Google_Service_ShoppingContent_AccountstatusesCustomBatchResponseEntry ext
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

@@ -34,7 +34,7 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   protected $versionType = 'Google_Service_Pagespeedonline_ResultVersion';
   protected $versionDataType = '';
 
-  public function setFormattedResults(ResultFormattedResults $formattedResults)
+  public function setFormattedResults(Google_Service_Pagespeedonline_ResultFormattedResults $formattedResults)
   {
     $this->formattedResults = $formattedResults;
   }
@@ -66,7 +66,7 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   {
     return $this->kind;
   }
-  public function setPageStats(ResultPageStats $pageStats)
+  public function setPageStats(Google_Service_Pagespeedonline_ResultPageStats $pageStats)
   {
     $this->pageStats = $pageStats;
   }
@@ -90,7 +90,7 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   {
     return $this->ruleGroups;
   }
-  public function setScreenshot(PagespeedApiImageV2 $screenshot)
+  public function setScreenshot(Google_Service_Pagespeedonline_PagespeedApiImageV2 $screenshot)
   {
     $this->screenshot = $screenshot;
   }
@@ -106,7 +106,7 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   {
     return $this->title;
   }
-  public function setVersion(ResultVersion $version)
+  public function setVersion(Google_Service_Pagespeedonline_ResultVersion $version)
   {
     $this->version = $version;
   }

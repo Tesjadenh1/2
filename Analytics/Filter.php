@@ -48,7 +48,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->accountId;
   }
-  public function setAdvancedDetails(FilterAdvancedDetails $advancedDetails)
+  public function setAdvancedDetails(Google_Service_Analytics_FilterAdvancedDetails $advancedDetails)
   {
     $this->advancedDetails = $advancedDetails;
   }
@@ -64,7 +64,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->created;
   }
-  public function setExcludeDetails(FilterExpression $excludeDetails)
+  public function setExcludeDetails(Google_Service_Analytics_FilterExpression $excludeDetails)
   {
     $this->excludeDetails = $excludeDetails;
   }
@@ -80,7 +80,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->id;
   }
-  public function setIncludeDetails(FilterExpression $includeDetails)
+  public function setIncludeDetails(Google_Service_Analytics_FilterExpression $includeDetails)
   {
     $this->includeDetails = $includeDetails;
   }
@@ -96,7 +96,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->kind;
   }
-  public function setLowercaseDetails(FilterLowercaseDetails $lowercaseDetails)
+  public function setLowercaseDetails(Google_Service_Analytics_FilterLowercaseDetails $lowercaseDetails)
   {
     $this->lowercaseDetails = $lowercaseDetails;
   }
@@ -112,7 +112,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->name;
   }
-  public function setParentLink(FilterParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_FilterParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }
@@ -120,7 +120,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->parentLink;
   }
-  public function setSearchAndReplaceDetails(FilterSearchAndReplaceDetails $searchAndReplaceDetails)
+  public function setSearchAndReplaceDetails(Google_Service_Analytics_FilterSearchAndReplaceDetails $searchAndReplaceDetails)
   {
     $this->searchAndReplaceDetails = $searchAndReplaceDetails;
   }
@@ -152,7 +152,7 @@ class Google_Service_Analytics_Filter extends Google_Model
   {
     return $this->updated;
   }
-  public function setUppercaseDetails(FilterUppercaseDetails $uppercaseDetails)
+  public function setUppercaseDetails(Google_Service_Analytics_FilterUppercaseDetails $uppercaseDetails)
   {
     $this->uppercaseDetails = $uppercaseDetails;
   }

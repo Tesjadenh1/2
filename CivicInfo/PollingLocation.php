@@ -30,7 +30,7 @@ class Google_Service_CivicInfo_PollingLocation extends Google_Collection
   public $startDate;
   public $voterServices;
 
-  public function setAddress(SimpleAddressType $address)
+  public function setAddress(Google_Service_CivicInfo_SimpleAddressType $address)
   {
     $this->address = $address;
   }

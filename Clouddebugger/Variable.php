@@ -43,7 +43,7 @@ class Google_Service_Clouddebugger_Variable extends Google_Collection
   {
     return $this->name;
   }
-  public function setStatus(StatusMessage $status)
+  public function setStatus(Google_Service_Clouddebugger_StatusMessage $status)
   {
     $this->status = $status;
   }

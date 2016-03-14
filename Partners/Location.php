@@ -29,7 +29,7 @@ class Google_Service_Partners_Location extends Google_Model
   {
     return $this->address;
   }
-  public function setLatLng(LatLng $latLng)
+  public function setLatLng(Google_Service_Partners_LatLng $latLng)
   {
     $this->latLng = $latLng;
   }

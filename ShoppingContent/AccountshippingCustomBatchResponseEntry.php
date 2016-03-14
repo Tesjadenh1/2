@@ -24,7 +24,7 @@ class Google_Service_ShoppingContent_AccountshippingCustomBatchResponseEntry ext
   protected $errorsDataType = '';
   public $kind;
 
-  public function setAccountShipping(AccountShipping $accountShipping)
+  public function setAccountShipping(Google_Service_ShoppingContent_AccountShipping $accountShipping)
   {
     $this->accountShipping = $accountShipping;
   }
@@ -40,7 +40,7 @@ class Google_Service_ShoppingContent_AccountshippingCustomBatchResponseEntry ext
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

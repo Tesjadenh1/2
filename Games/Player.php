@@ -64,7 +64,7 @@ class Google_Service_Games_Player extends Google_Model
   {
     return $this->displayName;
   }
-  public function setExperienceInfo(PlayerExperienceInfo $experienceInfo)
+  public function setExperienceInfo(Google_Service_Games_PlayerExperienceInfo $experienceInfo)
   {
     $this->experienceInfo = $experienceInfo;
   }
@@ -80,7 +80,7 @@ class Google_Service_Games_Player extends Google_Model
   {
     return $this->kind;
   }
-  public function setLastPlayedWith(Played $lastPlayedWith)
+  public function setLastPlayedWith(Google_Service_Games_Played $lastPlayedWith)
   {
     $this->lastPlayedWith = $lastPlayedWith;
   }
@@ -88,7 +88,7 @@ class Google_Service_Games_Player extends Google_Model
   {
     return $this->lastPlayedWith;
   }
-  public function setName(PlayerName $name)
+  public function setName(Google_Service_Games_PlayerName $name)
   {
     $this->name = $name;
   }

@@ -30,7 +30,7 @@ class Google_Service_ShoppingContent_OrderLineItemShippingDetails extends Google
   {
     return $this->deliverByDate;
   }
-  public function setMethod(OrderLineItemShippingDetailsMethod $method)
+  public function setMethod(Google_Service_ShoppingContent_OrderLineItemShippingDetailsMethod $method)
   {
     $this->method = $method;
   }

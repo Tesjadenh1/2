@@ -31,7 +31,7 @@ class Google_Service_Compute_TargetPoolsScopedList extends Google_Collection
   {
     return $this->targetPools;
   }
-  public function setWarning(TargetPoolsScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_TargetPoolsScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

@@ -43,7 +43,7 @@ class Google_Service_Plus_Activity extends Google_Model
   public $url;
   public $verb;
 
-  public function setAccess(Acl $access)
+  public function setAccess(Google_Service_Plus_Acl $access)
   {
     $this->access = $access;
   }
@@ -51,7 +51,7 @@ class Google_Service_Plus_Activity extends Google_Model
   {
     return $this->access;
   }
-  public function setActor(ActivityActor $actor)
+  public function setActor(Google_Service_Plus_ActivityActor $actor)
   {
     $this->actor = $actor;
   }
@@ -115,7 +115,7 @@ class Google_Service_Plus_Activity extends Google_Model
   {
     return $this->kind;
   }
-  public function setLocation(Place $location)
+  public function setLocation(Google_Service_Plus_Place $location)
   {
     $this->location = $location;
   }
@@ -123,7 +123,7 @@ class Google_Service_Plus_Activity extends Google_Model
   {
     return $this->location;
   }
-  public function setObject(ActivityObject $object)
+  public function setObject(Google_Service_Plus_ActivityObject $object)
   {
     $this->object = $object;
   }
@@ -147,7 +147,7 @@ class Google_Service_Plus_Activity extends Google_Model
   {
     return $this->placeName;
   }
-  public function setProvider(ActivityProvider $provider)
+  public function setProvider(Google_Service_Plus_ActivityProvider $provider)
   {
     $this->provider = $provider;
   }

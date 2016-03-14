@@ -26,7 +26,7 @@ class Google_Service_TagManager_UserAccess extends Google_Collection
   public $emailAddress;
   public $permissionId;
 
-  public function setAccountAccess(AccountAccess $accountAccess)
+  public function setAccountAccess(Google_Service_TagManager_AccountAccess $accountAccess)
   {
     $this->accountAccess = $accountAccess;
   }

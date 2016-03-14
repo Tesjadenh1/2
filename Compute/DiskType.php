@@ -45,7 +45,7 @@ class Google_Service_Compute_DiskType extends Google_Model
   {
     return $this->defaultDiskSizeGb;
   }
-  public function setDeprecated(DeprecationStatus $deprecated)
+  public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
   {
     $this->deprecated = $deprecated;
   }

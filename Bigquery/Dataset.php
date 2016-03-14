@@ -49,7 +49,7 @@ class Google_Service_Bigquery_Dataset extends Google_Collection
   {
     return $this->creationTime;
   }
-  public function setDatasetReference(DatasetReference $datasetReference)
+  public function setDatasetReference(Google_Service_Bigquery_DatasetReference $datasetReference)
   {
     $this->datasetReference = $datasetReference;
   }

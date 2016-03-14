@@ -31,7 +31,7 @@ class Google_Service_People_EmailAddress extends Google_Model
   {
     return $this->formattedType;
   }
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

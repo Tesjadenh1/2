@@ -39,7 +39,7 @@ class Google_Service_Dfareporting_PlacementAssignment extends Google_Model
   {
     return $this->placementId;
   }
-  public function setPlacementIdDimensionValue(DimensionValue $placementIdDimensionValue)
+  public function setPlacementIdDimensionValue(Google_Service_Dfareporting_DimensionValue $placementIdDimensionValue)
   {
     $this->placementIdDimensionValue = $placementIdDimensionValue;
   }

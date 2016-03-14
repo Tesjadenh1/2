@@ -25,7 +25,7 @@ class Google_Service_YouTube_Activity extends Google_Model
   protected $snippetType = 'Google_Service_YouTube_ActivitySnippet';
   protected $snippetDataType = '';
 
-  public function setContentDetails(ActivityContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_ActivityContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -57,7 +57,7 @@ class Google_Service_YouTube_Activity extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(ActivitySnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_ActivitySnippet $snippet)
   {
     $this->snippet = $snippet;
   }

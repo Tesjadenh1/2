@@ -29,7 +29,7 @@ class Google_Service_Dfareporting_PopupWindowProperties extends Google_Model
   public $showToolBar;
   public $title;
 
-  public function setDimension(Size $dimension)
+  public function setDimension(Google_Service_Dfareporting_Size $dimension)
   {
     $this->dimension = $dimension;
   }
@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_PopupWindowProperties extends Google_Model
   {
     return $this->dimension;
   }
-  public function setOffset(OffsetPosition $offset)
+  public function setOffset(Google_Service_Dfareporting_OffsetPosition $offset)
   {
     $this->offset = $offset;
   }

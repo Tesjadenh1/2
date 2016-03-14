@@ -51,7 +51,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->accountId;
   }
-  public function setCriteria(ReportCriteria $criteria)
+  public function setCriteria(Google_Service_Dfareporting_ReportCriteria $criteria)
   {
     $this->criteria = $criteria;
   }
@@ -59,7 +59,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->criteria;
   }
-  public function setCrossDimensionReachCriteria(ReportCrossDimensionReachCriteria $crossDimensionReachCriteria)
+  public function setCrossDimensionReachCriteria(Google_Service_Dfareporting_ReportCrossDimensionReachCriteria $crossDimensionReachCriteria)
   {
     $this->crossDimensionReachCriteria = $crossDimensionReachCriteria;
   }
@@ -67,7 +67,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->crossDimensionReachCriteria;
   }
-  public function setDelivery(ReportDelivery $delivery)
+  public function setDelivery(Google_Service_Dfareporting_ReportDelivery $delivery)
   {
     $this->delivery = $delivery;
   }
@@ -91,7 +91,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->fileName;
   }
-  public function setFloodlightCriteria(ReportFloodlightCriteria $floodlightCriteria)
+  public function setFloodlightCriteria(Google_Service_Dfareporting_ReportFloodlightCriteria $floodlightCriteria)
   {
     $this->floodlightCriteria = $floodlightCriteria;
   }
@@ -147,7 +147,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->ownerProfileId;
   }
-  public function setPathToConversionCriteria(ReportPathToConversionCriteria $pathToConversionCriteria)
+  public function setPathToConversionCriteria(Google_Service_Dfareporting_ReportPathToConversionCriteria $pathToConversionCriteria)
   {
     $this->pathToConversionCriteria = $pathToConversionCriteria;
   }
@@ -155,7 +155,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->pathToConversionCriteria;
   }
-  public function setReachCriteria(ReportReachCriteria $reachCriteria)
+  public function setReachCriteria(Google_Service_Dfareporting_ReportReachCriteria $reachCriteria)
   {
     $this->reachCriteria = $reachCriteria;
   }
@@ -163,7 +163,7 @@ class Google_Service_Dfareporting_Report extends Google_Model
   {
     return $this->reachCriteria;
   }
-  public function setSchedule(ReportSchedule $schedule)
+  public function setSchedule(Google_Service_Dfareporting_ReportSchedule $schedule)
   {
     $this->schedule = $schedule;
   }

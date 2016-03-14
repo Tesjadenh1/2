@@ -41,7 +41,7 @@ class Google_Service_AndroidPublisher_InAppProduct extends Google_Model
   {
     return $this->defaultLanguage;
   }
-  public function setDefaultPrice(Price $defaultPrice)
+  public function setDefaultPrice(Google_Service_AndroidPublisher_Price $defaultPrice)
   {
     $this->defaultPrice = $defaultPrice;
   }
@@ -81,7 +81,7 @@ class Google_Service_AndroidPublisher_InAppProduct extends Google_Model
   {
     return $this->purchaseType;
   }
-  public function setSeason(Season $season)
+  public function setSeason(Google_Service_AndroidPublisher_Season $season)
   {
     $this->season = $season;
   }

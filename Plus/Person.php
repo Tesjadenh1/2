@@ -65,7 +65,7 @@ class Google_Service_Plus_Person extends Google_Collection
   {
     return $this->aboutMe;
   }
-  public function setAgeRange(PersonAgeRange $ageRange)
+  public function setAgeRange(Google_Service_Plus_PersonAgeRange $ageRange)
   {
     $this->ageRange = $ageRange;
   }
@@ -97,7 +97,7 @@ class Google_Service_Plus_Person extends Google_Collection
   {
     return $this->circledByCount;
   }
-  public function setCover(PersonCover $cover)
+  public function setCover(Google_Service_Plus_PersonCover $cover)
   {
     $this->cover = $cover;
   }
@@ -161,7 +161,7 @@ class Google_Service_Plus_Person extends Google_Collection
   {
     return $this->id;
   }
-  public function setImage(PersonImage $image)
+  public function setImage(Google_Service_Plus_PersonImage $image)
   {
     $this->image = $image;
   }
@@ -193,7 +193,7 @@ class Google_Service_Plus_Person extends Google_Collection
   {
     return $this->language;
   }
-  public function setName(PersonName $name)
+  public function setName(Google_Service_Plus_PersonName $name)
   {
     $this->name = $name;
   }

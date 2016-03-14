@@ -116,7 +116,7 @@ class Google_Service_ShoppingContent_OrderLineItemProduct extends Google_Collect
   {
     return $this->offerId;
   }
-  public function setPrice(Price $price)
+  public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }

@@ -62,7 +62,7 @@ class Google_Service_CivicInfo_VoterInfoResponse extends Google_Collection
   {
     return $this->earlyVoteSites;
   }
-  public function setElection(Election $election)
+  public function setElection(Google_Service_CivicInfo_Election $election)
   {
     $this->election = $election;
   }
@@ -86,7 +86,7 @@ class Google_Service_CivicInfo_VoterInfoResponse extends Google_Collection
   {
     return $this->mailOnly;
   }
-  public function setNormalizedInput(SimpleAddressType $normalizedInput)
+  public function setNormalizedInput(Google_Service_CivicInfo_SimpleAddressType $normalizedInput)
   {
     $this->normalizedInput = $normalizedInput;
   }

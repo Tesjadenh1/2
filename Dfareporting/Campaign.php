@@ -90,7 +90,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->advertiserId;
   }
-  public function setAdvertiserIdDimensionValue(DimensionValue $advertiserIdDimensionValue)
+  public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }
@@ -122,7 +122,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->billingInvoiceCode;
   }
-  public function setClickThroughUrlSuffixProperties(ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
+  public function setClickThroughUrlSuffixProperties(Google_Service_Dfareporting_ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
   {
     $this->clickThroughUrlSuffixProperties = $clickThroughUrlSuffixProperties;
   }
@@ -146,7 +146,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->comscoreVceEnabled;
   }
-  public function setCreateInfo(LastModifiedInfo $createInfo)
+  public function setCreateInfo(Google_Service_Dfareporting_LastModifiedInfo $createInfo)
   {
     $this->createInfo = $createInfo;
   }
@@ -162,7 +162,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->creativeGroupIds;
   }
-  public function setCreativeOptimizationConfiguration(CreativeOptimizationConfiguration $creativeOptimizationConfiguration)
+  public function setCreativeOptimizationConfiguration(Google_Service_Dfareporting_CreativeOptimizationConfiguration $creativeOptimizationConfiguration)
   {
     $this->creativeOptimizationConfiguration = $creativeOptimizationConfiguration;
   }
@@ -170,7 +170,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->creativeOptimizationConfiguration;
   }
-  public function setDefaultClickThroughEventTagProperties(DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
+  public function setDefaultClickThroughEventTagProperties(Google_Service_Dfareporting_DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
   {
     $this->defaultClickThroughEventTagProperties = $defaultClickThroughEventTagProperties;
   }
@@ -210,7 +210,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->id;
   }
-  public function setIdDimensionValue(DimensionValue $idDimensionValue)
+  public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
@@ -226,7 +226,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastModifiedInfo(LastModifiedInfo $lastModifiedInfo)
+  public function setLastModifiedInfo(Google_Service_Dfareporting_LastModifiedInfo $lastModifiedInfo)
   {
     $this->lastModifiedInfo = $lastModifiedInfo;
   }
@@ -234,7 +234,7 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->lastModifiedInfo;
   }
-  public function setLookbackConfiguration(LookbackConfiguration $lookbackConfiguration)
+  public function setLookbackConfiguration(Google_Service_Dfareporting_LookbackConfiguration $lookbackConfiguration)
   {
     $this->lookbackConfiguration = $lookbackConfiguration;
   }

@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_ReportCriteria extends Google_Collection
   protected $dimensionsDataType = 'array';
   public $metricNames;
 
-  public function setActivities(Activities $activities)
+  public function setActivities(Google_Service_Dfareporting_Activities $activities)
   {
     $this->activities = $activities;
   }
@@ -38,7 +38,7 @@ class Google_Service_Dfareporting_ReportCriteria extends Google_Collection
   {
     return $this->activities;
   }
-  public function setCustomRichMediaEvents(CustomRichMediaEvents $customRichMediaEvents)
+  public function setCustomRichMediaEvents(Google_Service_Dfareporting_CustomRichMediaEvents $customRichMediaEvents)
   {
     $this->customRichMediaEvents = $customRichMediaEvents;
   }
@@ -46,7 +46,7 @@ class Google_Service_Dfareporting_ReportCriteria extends Google_Collection
   {
     return $this->customRichMediaEvents;
   }
-  public function setDateRange(DateRange $dateRange)
+  public function setDateRange(Google_Service_Dfareporting_DateRange $dateRange)
   {
     $this->dateRange = $dateRange;
   }

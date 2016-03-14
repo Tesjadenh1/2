@@ -50,7 +50,7 @@ class Google_Service_Clouddebugger_StackFrame extends Google_Collection
   {
     return $this->locals;
   }
-  public function setLocation(SourceLocation $location)
+  public function setLocation(Google_Service_Clouddebugger_SourceLocation $location)
   {
     $this->location = $location;
   }

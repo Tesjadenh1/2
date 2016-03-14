@@ -49,7 +49,7 @@ class Google_Service_YouTube_CommentThread extends Google_Model
   {
     return $this->kind;
   }
-  public function setReplies(CommentThreadReplies $replies)
+  public function setReplies(Google_Service_YouTube_CommentThreadReplies $replies)
   {
     $this->replies = $replies;
   }
@@ -57,7 +57,7 @@ class Google_Service_YouTube_CommentThread extends Google_Model
   {
     return $this->replies;
   }
-  public function setSnippet(CommentThreadSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_CommentThreadSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

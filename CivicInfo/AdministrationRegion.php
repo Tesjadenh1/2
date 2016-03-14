@@ -30,7 +30,7 @@ class Google_Service_CivicInfo_AdministrationRegion extends Google_Collection
   protected $sourcesType = 'Google_Service_CivicInfo_Source';
   protected $sourcesDataType = 'array';
 
-  public function setElectionAdministrationBody(AdministrativeBody $electionAdministrationBody)
+  public function setElectionAdministrationBody(Google_Service_CivicInfo_AdministrativeBody $electionAdministrationBody)
   {
     $this->electionAdministrationBody = $electionAdministrationBody;
   }
@@ -46,7 +46,7 @@ class Google_Service_CivicInfo_AdministrationRegion extends Google_Collection
   {
     return $this->id;
   }
-  public function setLocalJurisdiction(AdministrationRegion $localJurisdiction)
+  public function setLocalJurisdiction(Google_Service_CivicInfo_AdministrationRegion $localJurisdiction)
   {
     $this->localJurisdiction = $localJurisdiction;
   }

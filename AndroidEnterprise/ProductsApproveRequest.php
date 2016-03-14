@@ -20,7 +20,7 @@ class Google_Service_AndroidEnterprise_ProductsApproveRequest extends Google_Mod
   protected $approvalUrlInfoType = 'Google_Service_AndroidEnterprise_ApprovalUrlInfo';
   protected $approvalUrlInfoDataType = '';
 
-  public function setApprovalUrlInfo(ApprovalUrlInfo $approvalUrlInfo)
+  public function setApprovalUrlInfo(Google_Service_AndroidEnterprise_ApprovalUrlInfo $approvalUrlInfo)
   {
     $this->approvalUrlInfo = $approvalUrlInfo;
   }

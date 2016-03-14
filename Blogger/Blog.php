@@ -66,7 +66,7 @@ class Google_Service_Blogger_Blog extends Google_Model
   {
     return $this->kind;
   }
-  public function setLocale(BlogLocale $locale)
+  public function setLocale(Google_Service_Blogger_BlogLocale $locale)
   {
     $this->locale = $locale;
   }
@@ -82,7 +82,7 @@ class Google_Service_Blogger_Blog extends Google_Model
   {
     return $this->name;
   }
-  public function setPages(BlogPages $pages)
+  public function setPages(Google_Service_Blogger_BlogPages $pages)
   {
     $this->pages = $pages;
   }
@@ -90,7 +90,7 @@ class Google_Service_Blogger_Blog extends Google_Model
   {
     return $this->pages;
   }
-  public function setPosts(BlogPosts $posts)
+  public function setPosts(Google_Service_Blogger_BlogPosts $posts)
   {
     $this->posts = $posts;
   }

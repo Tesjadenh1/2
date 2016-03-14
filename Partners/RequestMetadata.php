@@ -50,7 +50,7 @@ class Google_Service_Partners_RequestMetadata extends Google_Collection
   {
     return $this->partnersSessionId;
   }
-  public function setTrafficSource(TrafficSource $trafficSource)
+  public function setTrafficSource(Google_Service_Partners_TrafficSource $trafficSource)
   {
     $this->trafficSource = $trafficSource;
   }
@@ -58,7 +58,7 @@ class Google_Service_Partners_RequestMetadata extends Google_Collection
   {
     return $this->trafficSource;
   }
-  public function setUserOverrides(UserOverrides $userOverrides)
+  public function setUserOverrides(Google_Service_Partners_UserOverrides $userOverrides)
   {
     $this->userOverrides = $userOverrides;
   }

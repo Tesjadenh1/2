@@ -25,7 +25,7 @@ class Google_Service_YouTube_LiveChatMessage extends Google_Model
   protected $snippetType = 'Google_Service_YouTube_LiveChatMessageSnippet';
   protected $snippetDataType = '';
 
-  public function setAuthorDetails(LiveChatMessageAuthorDetails $authorDetails)
+  public function setAuthorDetails(Google_Service_YouTube_LiveChatMessageAuthorDetails $authorDetails)
   {
     $this->authorDetails = $authorDetails;
   }
@@ -57,7 +57,7 @@ class Google_Service_YouTube_LiveChatMessage extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(LiveChatMessageSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_LiveChatMessageSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

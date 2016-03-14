@@ -95,7 +95,7 @@ class Google_Service_QPXExpress_SliceInput extends Google_Collection
   {
     return $this->permittedCarrier;
   }
-  public function setPermittedDepartureTime(TimeOfDayRange $permittedDepartureTime)
+  public function setPermittedDepartureTime(Google_Service_QPXExpress_TimeOfDayRange $permittedDepartureTime)
   {
     $this->permittedDepartureTime = $permittedDepartureTime;
   }

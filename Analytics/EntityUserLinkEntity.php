@@ -24,7 +24,7 @@ class Google_Service_Analytics_EntityUserLinkEntity extends Google_Model
   protected $webPropertyRefType = 'Google_Service_Analytics_WebPropertyRef';
   protected $webPropertyRefDataType = '';
 
-  public function setAccountRef(AccountRef $accountRef)
+  public function setAccountRef(Google_Service_Analytics_AccountRef $accountRef)
   {
     $this->accountRef = $accountRef;
   }
@@ -32,7 +32,7 @@ class Google_Service_Analytics_EntityUserLinkEntity extends Google_Model
   {
     return $this->accountRef;
   }
-  public function setProfileRef(ProfileRef $profileRef)
+  public function setProfileRef(Google_Service_Analytics_ProfileRef $profileRef)
   {
     $this->profileRef = $profileRef;
   }
@@ -40,7 +40,7 @@ class Google_Service_Analytics_EntityUserLinkEntity extends Google_Model
   {
     return $this->profileRef;
   }
-  public function setWebPropertyRef(WebPropertyRef $webPropertyRef)
+  public function setWebPropertyRef(Google_Service_Analytics_WebPropertyRef $webPropertyRef)
   {
     $this->webPropertyRef = $webPropertyRef;
   }

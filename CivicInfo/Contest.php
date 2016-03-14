@@ -62,7 +62,7 @@ class Google_Service_CivicInfo_Contest extends Google_Collection
   {
     return $this->candidates;
   }
-  public function setDistrict(ElectoralDistrict $district)
+  public function setDistrict(Google_Service_CivicInfo_ElectoralDistrict $district)
   {
     $this->district = $district;
   }

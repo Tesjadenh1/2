@@ -47,7 +47,7 @@ class Google_Service_YouTube_I18nRegion extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(I18nRegionSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_I18nRegionSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

@@ -40,7 +40,7 @@ class Google_Service_Genomics_LinearAlignment extends Google_Collection
   {
     return $this->mappingQuality;
   }
-  public function setPosition(Position $position)
+  public function setPosition(Google_Service_Genomics_Position $position)
   {
     $this->position = $position;
   }

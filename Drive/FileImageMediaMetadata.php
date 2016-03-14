@@ -136,7 +136,7 @@ class Google_Service_Drive_FileImageMediaMetadata extends Google_Model
   {
     return $this->lens;
   }
-  public function setLocation(FileImageMediaMetadataLocation $location)
+  public function setLocation(Google_Service_Drive_FileImageMediaMetadataLocation $location)
   {
     $this->location = $location;
   }

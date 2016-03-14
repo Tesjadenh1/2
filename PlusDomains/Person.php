@@ -86,7 +86,7 @@ class Google_Service_PlusDomains_Person extends Google_Collection
   {
     return $this->circledByCount;
   }
-  public function setCover(PersonCover $cover)
+  public function setCover(Google_Service_PlusDomains_PersonCover $cover)
   {
     $this->cover = $cover;
   }
@@ -150,7 +150,7 @@ class Google_Service_PlusDomains_Person extends Google_Collection
   {
     return $this->id;
   }
-  public function setImage(PersonImage $image)
+  public function setImage(Google_Service_PlusDomains_PersonImage $image)
   {
     $this->image = $image;
   }
@@ -174,7 +174,7 @@ class Google_Service_PlusDomains_Person extends Google_Collection
   {
     return $this->kind;
   }
-  public function setName(PersonName $name)
+  public function setName(Google_Service_PlusDomains_PersonName $name)
   {
     $this->name = $name;
   }

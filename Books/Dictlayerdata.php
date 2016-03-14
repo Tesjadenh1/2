@@ -23,7 +23,7 @@ class Google_Service_Books_Dictlayerdata extends Google_Model
   protected $dictDataType = '';
   public $kind;
 
-  public function setCommon(DictlayerdataCommon $common)
+  public function setCommon(Google_Service_Books_DictlayerdataCommon $common)
   {
     $this->common = $common;
   }
@@ -31,7 +31,7 @@ class Google_Service_Books_Dictlayerdata extends Google_Model
   {
     return $this->common;
   }
-  public function setDict(DictlayerdataDict $dict)
+  public function setDict(Google_Service_Books_DictlayerdataDict $dict)
   {
     $this->dict = $dict;
   }

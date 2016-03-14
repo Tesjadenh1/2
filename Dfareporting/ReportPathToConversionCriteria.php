@@ -68,7 +68,7 @@ class Google_Service_Dfareporting_ReportPathToConversionCriteria extends Google_
   {
     return $this->customRichMediaEvents;
   }
-  public function setDateRange(DateRange $dateRange)
+  public function setDateRange(Google_Service_Dfareporting_DateRange $dateRange)
   {
     $this->dateRange = $dateRange;
   }
@@ -76,7 +76,7 @@ class Google_Service_Dfareporting_ReportPathToConversionCriteria extends Google_
   {
     return $this->dateRange;
   }
-  public function setFloodlightConfigId(DimensionValue $floodlightConfigId)
+  public function setFloodlightConfigId(Google_Service_Dfareporting_DimensionValue $floodlightConfigId)
   {
     $this->floodlightConfigId = $floodlightConfigId;
   }
@@ -100,7 +100,7 @@ class Google_Service_Dfareporting_ReportPathToConversionCriteria extends Google_
   {
     return $this->perInteractionDimensions;
   }
-  public function setReportProperties(ReportPathToConversionCriteriaReportProperties $reportProperties)
+  public function setReportProperties(Google_Service_Dfareporting_ReportPathToConversionCriteriaReportProperties $reportProperties)
   {
     $this->reportProperties = $reportProperties;
   }

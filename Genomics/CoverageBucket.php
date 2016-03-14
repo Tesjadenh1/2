@@ -29,7 +29,7 @@ class Google_Service_Genomics_CoverageBucket extends Google_Model
   {
     return $this->meanCoverage;
   }
-  public function setRange(Range $range)
+  public function setRange(Google_Service_Genomics_Range $range)
   {
     $this->range = $range;
   }

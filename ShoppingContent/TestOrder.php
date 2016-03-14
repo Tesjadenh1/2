@@ -34,7 +34,7 @@ class Google_Service_ShoppingContent_TestOrder extends Google_Collection
   protected $shippingCostTaxDataType = '';
   public $shippingOption;
 
-  public function setCustomer(TestOrderCustomer $customer)
+  public function setCustomer(Google_Service_ShoppingContent_TestOrderCustomer $customer)
   {
     $this->customer = $customer;
   }
@@ -58,7 +58,7 @@ class Google_Service_ShoppingContent_TestOrder extends Google_Collection
   {
     return $this->lineItems;
   }
-  public function setPaymentMethod(TestOrderPaymentMethod $paymentMethod)
+  public function setPaymentMethod(Google_Service_ShoppingContent_TestOrderPaymentMethod $paymentMethod)
   {
     $this->paymentMethod = $paymentMethod;
   }
@@ -82,7 +82,7 @@ class Google_Service_ShoppingContent_TestOrder extends Google_Collection
   {
     return $this->promotions;
   }
-  public function setShippingCost(Price $shippingCost)
+  public function setShippingCost(Google_Service_ShoppingContent_Price $shippingCost)
   {
     $this->shippingCost = $shippingCost;
   }
@@ -90,7 +90,7 @@ class Google_Service_ShoppingContent_TestOrder extends Google_Collection
   {
     return $this->shippingCost;
   }
-  public function setShippingCostTax(Price $shippingCostTax)
+  public function setShippingCostTax(Google_Service_ShoppingContent_Price $shippingCostTax)
   {
     $this->shippingCostTax = $shippingCostTax;
   }

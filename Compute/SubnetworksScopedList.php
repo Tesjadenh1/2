@@ -31,7 +31,7 @@ class Google_Service_Compute_SubnetworksScopedList extends Google_Collection
   {
     return $this->subnetworks;
   }
-  public function setWarning(SubnetworksScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_SubnetworksScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

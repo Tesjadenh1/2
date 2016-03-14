@@ -34,7 +34,7 @@ class Google_Service_Plus_Comment extends Google_Collection
   public $updated;
   public $verb;
 
-  public function setActor(CommentActor $actor)
+  public function setActor(Google_Service_Plus_CommentActor $actor)
   {
     $this->actor = $actor;
   }
@@ -74,7 +74,7 @@ class Google_Service_Plus_Comment extends Google_Collection
   {
     return $this->kind;
   }
-  public function setObject(CommentObject $object)
+  public function setObject(Google_Service_Plus_CommentObject $object)
   {
     $this->object = $object;
   }
@@ -82,7 +82,7 @@ class Google_Service_Plus_Comment extends Google_Collection
   {
     return $this->object;
   }
-  public function setPlusoners(CommentPlusoners $plusoners)
+  public function setPlusoners(Google_Service_Plus_CommentPlusoners $plusoners)
   {
     $this->plusoners = $plusoners;
   }

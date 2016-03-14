@@ -36,7 +36,7 @@ class Google_Service_Drive_Reply extends Google_Model
   {
     return $this->action;
   }
-  public function setAuthor(User $author)
+  public function setAuthor(Google_Service_Drive_User $author)
   {
     $this->author = $author;
   }

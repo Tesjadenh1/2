@@ -56,7 +56,7 @@ class Google_Service_YouTubeAnalytics_GroupItem extends Google_Model
   {
     return $this->kind;
   }
-  public function setResource(GroupItemResource $resource)
+  public function setResource(Google_Service_YouTubeAnalytics_GroupItemResource $resource)
   {
     $this->resource = $resource;
   }

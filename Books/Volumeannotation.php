@@ -58,7 +58,7 @@ class Google_Service_Books_Volumeannotation extends Google_Collection
   {
     return $this->annotationType;
   }
-  public function setContentRanges(VolumeannotationContentRanges $contentRanges)
+  public function setContentRanges(Google_Service_Books_VolumeannotationContentRanges $contentRanges)
   {
     $this->contentRanges = $contentRanges;
   }

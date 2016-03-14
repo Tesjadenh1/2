@@ -31,7 +31,7 @@ class Google_Service_Compute_OperationsScopedList extends Google_Collection
   {
     return $this->operations;
   }
-  public function setWarning(OperationsScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_OperationsScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

@@ -30,7 +30,7 @@ class Google_Service_Storagetransfer_TransferSpec extends Google_Model
   protected $transferOptionsType = 'Google_Service_Storagetransfer_TransferOptions';
   protected $transferOptionsDataType = '';
 
-  public function setAwsS3DataSource(AwsS3Data $awsS3DataSource)
+  public function setAwsS3DataSource(Google_Service_Storagetransfer_AwsS3Data $awsS3DataSource)
   {
     $this->awsS3DataSource = $awsS3DataSource;
   }
@@ -38,7 +38,7 @@ class Google_Service_Storagetransfer_TransferSpec extends Google_Model
   {
     return $this->awsS3DataSource;
   }
-  public function setGcsDataSink(GcsData $gcsDataSink)
+  public function setGcsDataSink(Google_Service_Storagetransfer_GcsData $gcsDataSink)
   {
     $this->gcsDataSink = $gcsDataSink;
   }
@@ -46,7 +46,7 @@ class Google_Service_Storagetransfer_TransferSpec extends Google_Model
   {
     return $this->gcsDataSink;
   }
-  public function setGcsDataSource(GcsData $gcsDataSource)
+  public function setGcsDataSource(Google_Service_Storagetransfer_GcsData $gcsDataSource)
   {
     $this->gcsDataSource = $gcsDataSource;
   }
@@ -54,7 +54,7 @@ class Google_Service_Storagetransfer_TransferSpec extends Google_Model
   {
     return $this->gcsDataSource;
   }
-  public function setHttpDataSource(HttpData $httpDataSource)
+  public function setHttpDataSource(Google_Service_Storagetransfer_HttpData $httpDataSource)
   {
     $this->httpDataSource = $httpDataSource;
   }
@@ -62,7 +62,7 @@ class Google_Service_Storagetransfer_TransferSpec extends Google_Model
   {
     return $this->httpDataSource;
   }
-  public function setObjectConditions(ObjectConditions $objectConditions)
+  public function setObjectConditions(Google_Service_Storagetransfer_ObjectConditions $objectConditions)
   {
     $this->objectConditions = $objectConditions;
   }
@@ -70,7 +70,7 @@ class Google_Service_Storagetransfer_TransferSpec extends Google_Model
   {
     return $this->objectConditions;
   }
-  public function setTransferOptions(TransferOptions $transferOptions)
+  public function setTransferOptions(Google_Service_Storagetransfer_TransferOptions $transferOptions)
   {
     $this->transferOptions = $transferOptions;
   }

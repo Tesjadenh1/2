@@ -139,7 +139,7 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->parentFolderId;
   }
-  public function setPriority(Parameter $priority)
+  public function setPriority(Google_Service_TagManager_Parameter $priority)
   {
     $this->priority = $priority;
   }

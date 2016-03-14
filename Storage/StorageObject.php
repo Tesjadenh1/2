@@ -120,7 +120,7 @@ class Google_Service_Storage_StorageObject extends Google_Collection
   {
     return $this->crc32c;
   }
-  public function setCustomerEncryption(StorageObjectCustomerEncryption $customerEncryption)
+  public function setCustomerEncryption(Google_Service_Storage_StorageObjectCustomerEncryption $customerEncryption)
   {
     $this->customerEncryption = $customerEncryption;
   }
@@ -200,7 +200,7 @@ class Google_Service_Storage_StorageObject extends Google_Collection
   {
     return $this->name;
   }
-  public function setOwner(StorageObjectOwner $owner)
+  public function setOwner(Google_Service_Storage_StorageObjectOwner $owner)
   {
     $this->owner = $owner;
   }

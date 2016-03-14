@@ -46,7 +46,7 @@ class Google_Service_Partners_Company extends Google_Collection
   {
     return $this->certificationStatuses;
   }
-  public function setConvertedMinMonthlyBudget(Money $convertedMinMonthlyBudget)
+  public function setConvertedMinMonthlyBudget(Google_Service_Partners_Money $convertedMinMonthlyBudget)
   {
     $this->convertedMinMonthlyBudget = $convertedMinMonthlyBudget;
   }
@@ -94,7 +94,7 @@ class Google_Service_Partners_Company extends Google_Collection
   {
     return $this->name;
   }
-  public function setOriginalMinMonthlyBudget(Money $originalMinMonthlyBudget)
+  public function setOriginalMinMonthlyBudget(Google_Service_Partners_Money $originalMinMonthlyBudget)
   {
     $this->originalMinMonthlyBudget = $originalMinMonthlyBudget;
   }
@@ -102,7 +102,7 @@ class Google_Service_Partners_Company extends Google_Collection
   {
     return $this->originalMinMonthlyBudget;
   }
-  public function setPublicProfile(PublicProfile $publicProfile)
+  public function setPublicProfile(Google_Service_Partners_PublicProfile $publicProfile)
   {
     $this->publicProfile = $publicProfile;
   }

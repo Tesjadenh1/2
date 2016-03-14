@@ -20,7 +20,7 @@ class Google_Service_AndroidPublisher_ImagesUploadResponse extends Google_Model
   protected $imageType = 'Google_Service_AndroidPublisher_Image';
   protected $imageDataType = '';
 
-  public function setImage(Image $image)
+  public function setImage(Google_Service_AndroidPublisher_Image $image)
   {
     $this->image = $image;
   }

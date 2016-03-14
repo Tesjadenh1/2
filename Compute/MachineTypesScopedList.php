@@ -31,7 +31,7 @@ class Google_Service_Compute_MachineTypesScopedList extends Google_Collection
   {
     return $this->machineTypes;
   }
-  public function setWarning(MachineTypesScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_MachineTypesScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

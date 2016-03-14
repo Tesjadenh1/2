@@ -61,7 +61,7 @@ class Google_Service_Mirror_Subscription extends Google_Collection
   {
     return $this->kind;
   }
-  public function setNotification(Notification $notification)
+  public function setNotification(Google_Service_Mirror_Notification $notification)
   {
     $this->notification = $notification;
   }

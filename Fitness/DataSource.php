@@ -28,7 +28,7 @@ class Google_Service_Fitness_DataSource extends Google_Model
   public $name;
   public $type;
 
-  public function setApplication(Application $application)
+  public function setApplication(Google_Service_Fitness_Application $application)
   {
     $this->application = $application;
   }
@@ -52,7 +52,7 @@ class Google_Service_Fitness_DataSource extends Google_Model
   {
     return $this->dataStreamName;
   }
-  public function setDataType(DataType $dataType)
+  public function setDataType(Google_Service_Fitness_DataType $dataType)
   {
     $this->dataType = $dataType;
   }
@@ -60,7 +60,7 @@ class Google_Service_Fitness_DataSource extends Google_Model
   {
     return $this->dataType;
   }
-  public function setDevice(Device $device)
+  public function setDevice(Google_Service_Fitness_Device $device)
   {
     $this->device = $device;
   }

@@ -36,7 +36,7 @@ class Google_Service_Fusiontables_StyleSetting extends Google_Model
   {
     return $this->kind;
   }
-  public function setMarkerOptions(PointStyle $markerOptions)
+  public function setMarkerOptions(Google_Service_Fusiontables_PointStyle $markerOptions)
   {
     $this->markerOptions = $markerOptions;
   }
@@ -52,7 +52,7 @@ class Google_Service_Fusiontables_StyleSetting extends Google_Model
   {
     return $this->name;
   }
-  public function setPolygonOptions(PolygonStyle $polygonOptions)
+  public function setPolygonOptions(Google_Service_Fusiontables_PolygonStyle $polygonOptions)
   {
     $this->polygonOptions = $polygonOptions;
   }
@@ -60,7 +60,7 @@ class Google_Service_Fusiontables_StyleSetting extends Google_Model
   {
     return $this->polygonOptions;
   }
-  public function setPolylineOptions(LineStyle $polylineOptions)
+  public function setPolylineOptions(Google_Service_Fusiontables_LineStyle $polylineOptions)
   {
     $this->polylineOptions = $polylineOptions;
   }

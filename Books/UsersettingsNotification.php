@@ -20,7 +20,7 @@ class Google_Service_Books_UsersettingsNotification extends Google_Model
   protected $moreFromAuthorsType = 'Google_Service_Books_UsersettingsNotificationMoreFromAuthors';
   protected $moreFromAuthorsDataType = '';
 
-  public function setMoreFromAuthors(UsersettingsNotificationMoreFromAuthors $moreFromAuthors)
+  public function setMoreFromAuthors(Google_Service_Books_UsersettingsNotificationMoreFromAuthors $moreFromAuthors)
   {
     $this->moreFromAuthors = $moreFromAuthors;
   }

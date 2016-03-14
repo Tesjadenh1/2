@@ -30,7 +30,7 @@ class Google_Service_Books_DiscoveryclustersClusters extends Google_Collection
   protected $volumesType = 'Google_Service_Books_Volume';
   protected $volumesDataType = 'array';
 
-  public function setBannerWithContentContainer(DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer)
+  public function setBannerWithContentContainer(Google_Service_Books_DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer)
   {
     $this->bannerWithContentContainer = $bannerWithContentContainer;
   }

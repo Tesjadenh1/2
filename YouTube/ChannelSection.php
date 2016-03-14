@@ -29,7 +29,7 @@ class Google_Service_YouTube_ChannelSection extends Google_Model
   protected $targetingType = 'Google_Service_YouTube_ChannelSectionTargeting';
   protected $targetingDataType = '';
 
-  public function setContentDetails(ChannelSectionContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_ChannelSectionContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -69,7 +69,7 @@ class Google_Service_YouTube_ChannelSection extends Google_Model
   {
     return $this->localizations;
   }
-  public function setSnippet(ChannelSectionSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_ChannelSectionSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -77,7 +77,7 @@ class Google_Service_YouTube_ChannelSection extends Google_Model
   {
     return $this->snippet;
   }
-  public function setTargeting(ChannelSectionTargeting $targeting)
+  public function setTargeting(Google_Service_YouTube_ChannelSectionTargeting $targeting)
   {
     $this->targeting = $targeting;
   }

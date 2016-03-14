@@ -51,7 +51,7 @@ class Google_Service_Fitness_AggregateBucket extends Google_Collection
   {
     return $this->endTimeMillis;
   }
-  public function setSession(Session $session)
+  public function setSession(Google_Service_Fitness_Session $session)
   {
     $this->session = $session;
   }

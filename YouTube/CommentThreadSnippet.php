@@ -49,7 +49,7 @@ class Google_Service_YouTube_CommentThreadSnippet extends Google_Model
   {
     return $this->isPublic;
   }
-  public function setTopLevelComment(Comment $topLevelComment)
+  public function setTopLevelComment(Google_Service_YouTube_Comment $topLevelComment)
   {
     $this->topLevelComment = $topLevelComment;
   }

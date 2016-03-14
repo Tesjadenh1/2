@@ -94,7 +94,7 @@ class Google_Service_Analytics_McfData extends Google_Collection
   {
     return $this->previousLink;
   }
-  public function setProfileInfo(McfDataProfileInfo $profileInfo)
+  public function setProfileInfo(Google_Service_Analytics_McfDataProfileInfo $profileInfo)
   {
     $this->profileInfo = $profileInfo;
   }
@@ -102,7 +102,7 @@ class Google_Service_Analytics_McfData extends Google_Collection
   {
     return $this->profileInfo;
   }
-  public function setQuery(McfDataQuery $query)
+  public function setQuery(Google_Service_Analytics_McfDataQuery $query)
   {
     $this->query = $query;
   }

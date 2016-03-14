@@ -21,7 +21,7 @@ class Google_Service_ShoppingContent_Installment extends Google_Model
   protected $amountDataType = '';
   public $months;
 
-  public function setAmount(Price $amount)
+  public function setAmount(Google_Service_ShoppingContent_Price $amount)
   {
     $this->amount = $amount;
   }

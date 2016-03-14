@@ -37,7 +37,7 @@ class Google_Service_Blogger_User extends Google_Model
   {
     return $this->about;
   }
-  public function setBlogs(UserBlogs $blogs)
+  public function setBlogs(Google_Service_Blogger_UserBlogs $blogs)
   {
     $this->blogs = $blogs;
   }
@@ -77,7 +77,7 @@ class Google_Service_Blogger_User extends Google_Model
   {
     return $this->kind;
   }
-  public function setLocale(UserLocale $locale)
+  public function setLocale(Google_Service_Blogger_UserLocale $locale)
   {
     $this->locale = $locale;
   }

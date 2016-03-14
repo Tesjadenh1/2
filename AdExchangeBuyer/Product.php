@@ -62,7 +62,7 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   {
     return $this->creatorContacts;
   }
-  public function setDeliveryControl(DeliveryControl $deliveryControl)
+  public function setDeliveryControl(Google_Service_AdExchangeBuyer_DeliveryControl $deliveryControl)
   {
     $this->deliveryControl = $deliveryControl;
   }
@@ -166,7 +166,7 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   {
     return $this->revisionNumber;
   }
-  public function setSeller(Seller $seller)
+  public function setSeller(Google_Service_AdExchangeBuyer_Seller $seller)
   {
     $this->seller = $seller;
   }
@@ -198,7 +198,7 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   {
     return $this->syndicationProduct;
   }
-  public function setTerms(DealTerms $terms)
+  public function setTerms(Google_Service_AdExchangeBuyer_DealTerms $terms)
   {
     $this->terms = $terms;
   }

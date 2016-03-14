@@ -30,7 +30,7 @@ class Google_Service_Vision_ImageContext extends Google_Collection
   {
     return $this->languageHints;
   }
-  public function setLatLongRect(LatLongRect $latLongRect)
+  public function setLatLongRect(Google_Service_Vision_LatLongRect $latLongRect)
   {
     $this->latLongRect = $latLongRect;
   }

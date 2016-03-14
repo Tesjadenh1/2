@@ -24,7 +24,7 @@ class Google_Service_Storagetransfer_Schedule extends Google_Model
   protected $startTimeOfDayType = 'Google_Service_Storagetransfer_TimeOfDay';
   protected $startTimeOfDayDataType = '';
 
-  public function setScheduleEndDate(Date $scheduleEndDate)
+  public function setScheduleEndDate(Google_Service_Storagetransfer_Date $scheduleEndDate)
   {
     $this->scheduleEndDate = $scheduleEndDate;
   }
@@ -32,7 +32,7 @@ class Google_Service_Storagetransfer_Schedule extends Google_Model
   {
     return $this->scheduleEndDate;
   }
-  public function setScheduleStartDate(Date $scheduleStartDate)
+  public function setScheduleStartDate(Google_Service_Storagetransfer_Date $scheduleStartDate)
   {
     $this->scheduleStartDate = $scheduleStartDate;
   }
@@ -40,7 +40,7 @@ class Google_Service_Storagetransfer_Schedule extends Google_Model
   {
     return $this->scheduleStartDate;
   }
-  public function setStartTimeOfDay(TimeOfDay $startTimeOfDay)
+  public function setStartTimeOfDay(Google_Service_Storagetransfer_TimeOfDay $startTimeOfDay)
   {
     $this->startTimeOfDay = $startTimeOfDay;
   }

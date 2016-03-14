@@ -30,7 +30,7 @@ class Google_Service_Gmail_HistoryLabelAdded extends Google_Collection
   {
     return $this->labelIds;
   }
-  public function setMessage(Message $message)
+  public function setMessage(Google_Service_Gmail_Message $message)
   {
     $this->message = $message;
   }

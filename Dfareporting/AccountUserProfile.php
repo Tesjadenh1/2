@@ -54,7 +54,7 @@ class Google_Service_Dfareporting_AccountUserProfile extends Google_Model
   {
     return $this->active;
   }
-  public function setAdvertiserFilter(ObjectFilter $advertiserFilter)
+  public function setAdvertiserFilter(Google_Service_Dfareporting_ObjectFilter $advertiserFilter)
   {
     $this->advertiserFilter = $advertiserFilter;
   }
@@ -62,7 +62,7 @@ class Google_Service_Dfareporting_AccountUserProfile extends Google_Model
   {
     return $this->advertiserFilter;
   }
-  public function setCampaignFilter(ObjectFilter $campaignFilter)
+  public function setCampaignFilter(Google_Service_Dfareporting_ObjectFilter $campaignFilter)
   {
     $this->campaignFilter = $campaignFilter;
   }
@@ -118,7 +118,7 @@ class Google_Service_Dfareporting_AccountUserProfile extends Google_Model
   {
     return $this->name;
   }
-  public function setSiteFilter(ObjectFilter $siteFilter)
+  public function setSiteFilter(Google_Service_Dfareporting_ObjectFilter $siteFilter)
   {
     $this->siteFilter = $siteFilter;
   }
@@ -150,7 +150,7 @@ class Google_Service_Dfareporting_AccountUserProfile extends Google_Model
   {
     return $this->userAccessType;
   }
-  public function setUserRoleFilter(ObjectFilter $userRoleFilter)
+  public function setUserRoleFilter(Google_Service_Dfareporting_ObjectFilter $userRoleFilter)
   {
     $this->userRoleFilter = $userRoleFilter;
   }

@@ -21,7 +21,7 @@ class Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamples exten
   protected $sourceDataType = '';
   public $text;
 
-  public function setSource(DictlayerdataDictWordsSensesDefinitionsExamplesSource $source)
+  public function setSource(Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamplesSource $source)
   {
     $this->source = $source;
   }

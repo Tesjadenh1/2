@@ -63,7 +63,7 @@ class Google_Service_Compute_AttachedDisk extends Google_Collection
   {
     return $this->index;
   }
-  public function setInitializeParams(AttachedDiskInitializeParams $initializeParams)
+  public function setInitializeParams(Google_Service_Compute_AttachedDiskInitializeParams $initializeParams)
   {
     $this->initializeParams = $initializeParams;
   }

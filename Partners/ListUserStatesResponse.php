@@ -22,7 +22,7 @@ class Google_Service_Partners_ListUserStatesResponse extends Google_Collection
   protected $responseMetadataDataType = '';
   public $userStates;
 
-  public function setResponseMetadata(ResponseMetadata $responseMetadata)
+  public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }

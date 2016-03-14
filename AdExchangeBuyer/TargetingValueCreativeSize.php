@@ -40,7 +40,7 @@ class Google_Service_AdExchangeBuyer_TargetingValueCreativeSize extends Google_C
   {
     return $this->creativeSizeType;
   }
-  public function setSize(TargetingValueSize $size)
+  public function setSize(Google_Service_AdExchangeBuyer_TargetingValueSize $size)
   {
     $this->size = $size;
   }

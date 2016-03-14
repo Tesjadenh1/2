@@ -30,7 +30,7 @@ class Google_Service_Books_Review extends Google_Model
   public $type;
   public $volumeId;
 
-  public function setAuthor(ReviewAuthor $author)
+  public function setAuthor(Google_Service_Books_ReviewAuthor $author)
   {
     $this->author = $author;
   }
@@ -78,7 +78,7 @@ class Google_Service_Books_Review extends Google_Model
   {
     return $this->rating;
   }
-  public function setSource(ReviewSource $source)
+  public function setSource(Google_Service_Books_ReviewSource $source)
   {
     $this->source = $source;
   }

@@ -33,7 +33,7 @@ class Google_Service_AdExchangeBuyer_EditAllOrderDealsRequest extends Google_Col
   {
     return $this->deals;
   }
-  public function setProposal(Proposal $proposal)
+  public function setProposal(Google_Service_AdExchangeBuyer_Proposal $proposal)
   {
     $this->proposal = $proposal;
   }

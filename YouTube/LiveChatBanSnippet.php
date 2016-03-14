@@ -31,7 +31,7 @@ class Google_Service_YouTube_LiveChatBanSnippet extends Google_Model
   {
     return $this->banDurationSeconds;
   }
-  public function setBannedUserDetails(ChannelProfileDetails $bannedUserDetails)
+  public function setBannedUserDetails(Google_Service_YouTube_ChannelProfileDetails $bannedUserDetails)
   {
     $this->bannedUserDetails = $bannedUserDetails;
   }

@@ -24,7 +24,7 @@ class Google_Service_Clouddebugger_GerritSourceContext extends Google_Model
   public $hostUri;
   public $revisionId;
 
-  public function setAliasContext(AliasContext $aliasContext)
+  public function setAliasContext(Google_Service_Clouddebugger_AliasContext $aliasContext)
   {
     $this->aliasContext = $aliasContext;
   }

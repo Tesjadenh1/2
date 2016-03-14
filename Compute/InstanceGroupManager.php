@@ -52,7 +52,7 @@ class Google_Service_Compute_InstanceGroupManager extends Google_Collection
   {
     return $this->creationTimestamp;
   }
-  public function setCurrentActions(InstanceGroupManagerActionsSummary $currentActions)
+  public function setCurrentActions(Google_Service_Compute_InstanceGroupManagerActionsSummary $currentActions)
   {
     $this->currentActions = $currentActions;
   }

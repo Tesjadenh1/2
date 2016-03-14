@@ -49,7 +49,7 @@ class Google_Service_AdExchangeBuyer_Proposal extends Google_Collection
   protected $sellerContactsType = 'Google_Service_AdExchangeBuyer_ContactInformation';
   protected $sellerContactsDataType = 'array';
 
-  public function setBilledBuyer(Buyer $billedBuyer)
+  public function setBilledBuyer(Google_Service_AdExchangeBuyer_Buyer $billedBuyer)
   {
     $this->billedBuyer = $billedBuyer;
   }
@@ -57,7 +57,7 @@ class Google_Service_AdExchangeBuyer_Proposal extends Google_Collection
   {
     return $this->billedBuyer;
   }
-  public function setBuyer(Buyer $buyer)
+  public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
   {
     $this->buyer = $buyer;
   }
@@ -73,7 +73,7 @@ class Google_Service_AdExchangeBuyer_Proposal extends Google_Collection
   {
     return $this->buyerContacts;
   }
-  public function setBuyerPrivateData(PrivateData $buyerPrivateData)
+  public function setBuyerPrivateData(Google_Service_AdExchangeBuyer_PrivateData $buyerPrivateData)
   {
     $this->buyerPrivateData = $buyerPrivateData;
   }
@@ -217,7 +217,7 @@ class Google_Service_AdExchangeBuyer_Proposal extends Google_Collection
   {
     return $this->revisionTimeMs;
   }
-  public function setSeller(Seller $seller)
+  public function setSeller(Google_Service_AdExchangeBuyer_Seller $seller)
   {
     $this->seller = $seller;
   }

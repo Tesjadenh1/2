@@ -20,7 +20,7 @@ class Google_Service_YouTube_ActivityContentDetailsBulletin extends Google_Model
   protected $resourceIdType = 'Google_Service_YouTube_ResourceId';
   protected $resourceIdDataType = '';
 
-  public function setResourceId(ResourceId $resourceId)
+  public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }

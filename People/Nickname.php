@@ -22,7 +22,7 @@ class Google_Service_People_Nickname extends Google_Model
   public $type;
   public $value;
 
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

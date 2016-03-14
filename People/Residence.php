@@ -30,7 +30,7 @@ class Google_Service_People_Residence extends Google_Model
   {
     return $this->current;
   }
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

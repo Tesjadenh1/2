@@ -31,7 +31,7 @@ class Google_Service_Compute_ForwardingRulesScopedList extends Google_Collection
   {
     return $this->forwardingRules;
   }
-  public function setWarning(ForwardingRulesScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_ForwardingRulesScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

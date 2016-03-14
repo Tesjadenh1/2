@@ -49,7 +49,7 @@ class Google_Service_Coordinate_LocationListResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  public function setTokenPagination(TokenPagination $tokenPagination)
+  public function setTokenPagination(Google_Service_Coordinate_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }

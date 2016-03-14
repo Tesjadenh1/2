@@ -20,7 +20,7 @@ class Google_Service_YouTube_VideoMonetizationDetails extends Google_Model
   protected $accessType = 'Google_Service_YouTube_AccessPolicy';
   protected $accessDataType = '';
 
-  public function setAccess(AccessPolicy $access)
+  public function setAccess(Google_Service_YouTube_AccessPolicy $access)
   {
     $this->access = $access;
   }

@@ -27,7 +27,7 @@ class Google_Service_ShoppingContent_TestOrderLineItem extends Google_Model
   protected $unitTaxType = 'Google_Service_ShoppingContent_Price';
   protected $unitTaxDataType = '';
 
-  public function setProduct(TestOrderLineItemProduct $product)
+  public function setProduct(Google_Service_ShoppingContent_TestOrderLineItemProduct $product)
   {
     $this->product = $product;
   }
@@ -43,7 +43,7 @@ class Google_Service_ShoppingContent_TestOrderLineItem extends Google_Model
   {
     return $this->quantityOrdered;
   }
-  public function setReturnInfo(OrderLineItemReturnInfo $returnInfo)
+  public function setReturnInfo(Google_Service_ShoppingContent_OrderLineItemReturnInfo $returnInfo)
   {
     $this->returnInfo = $returnInfo;
   }
@@ -51,7 +51,7 @@ class Google_Service_ShoppingContent_TestOrderLineItem extends Google_Model
   {
     return $this->returnInfo;
   }
-  public function setShippingDetails(OrderLineItemShippingDetails $shippingDetails)
+  public function setShippingDetails(Google_Service_ShoppingContent_OrderLineItemShippingDetails $shippingDetails)
   {
     $this->shippingDetails = $shippingDetails;
   }
@@ -59,7 +59,7 @@ class Google_Service_ShoppingContent_TestOrderLineItem extends Google_Model
   {
     return $this->shippingDetails;
   }
-  public function setUnitTax(Price $unitTax)
+  public function setUnitTax(Google_Service_ShoppingContent_Price $unitTax)
   {
     $this->unitTax = $unitTax;
   }

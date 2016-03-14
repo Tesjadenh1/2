@@ -66,7 +66,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->autoEventFilter;
   }
-  public function setCheckValidation(Parameter $checkValidation)
+  public function setCheckValidation(Google_Service_TagManager_Parameter $checkValidation)
   {
     $this->checkValidation = $checkValidation;
   }
@@ -90,7 +90,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->customEventFilter;
   }
-  public function setEnableAllVideos(Parameter $enableAllVideos)
+  public function setEnableAllVideos(Google_Service_TagManager_Parameter $enableAllVideos)
   {
     $this->enableAllVideos = $enableAllVideos;
   }
@@ -98,7 +98,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->enableAllVideos;
   }
-  public function setEventName(Parameter $eventName)
+  public function setEventName(Google_Service_TagManager_Parameter $eventName)
   {
     $this->eventName = $eventName;
   }
@@ -122,7 +122,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->fingerprint;
   }
-  public function setInterval(Parameter $interval)
+  public function setInterval(Google_Service_TagManager_Parameter $interval)
   {
     $this->interval = $interval;
   }
@@ -130,7 +130,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->interval;
   }
-  public function setLimit(Parameter $limit)
+  public function setLimit(Google_Service_TagManager_Parameter $limit)
   {
     $this->limit = $limit;
   }
@@ -170,7 +170,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->type;
   }
-  public function setUniqueTriggerId(Parameter $uniqueTriggerId)
+  public function setUniqueTriggerId(Google_Service_TagManager_Parameter $uniqueTriggerId)
   {
     $this->uniqueTriggerId = $uniqueTriggerId;
   }
@@ -178,7 +178,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->uniqueTriggerId;
   }
-  public function setVideoPercentageList(Parameter $videoPercentageList)
+  public function setVideoPercentageList(Google_Service_TagManager_Parameter $videoPercentageList)
   {
     $this->videoPercentageList = $videoPercentageList;
   }
@@ -186,7 +186,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->videoPercentageList;
   }
-  public function setWaitForTags(Parameter $waitForTags)
+  public function setWaitForTags(Google_Service_TagManager_Parameter $waitForTags)
   {
     $this->waitForTags = $waitForTags;
   }
@@ -194,7 +194,7 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->waitForTags;
   }
-  public function setWaitForTagsTimeout(Parameter $waitForTagsTimeout)
+  public function setWaitForTagsTimeout(Google_Service_TagManager_Parameter $waitForTagsTimeout)
   {
     $this->waitForTagsTimeout = $waitForTagsTimeout;
   }

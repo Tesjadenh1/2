@@ -27,7 +27,7 @@ class Google_Service_Plus_ActivityObjectActor extends Google_Model
   protected $verificationType = 'Google_Service_Plus_ActivityObjectActorVerification';
   protected $verificationDataType = '';
 
-  public function setClientSpecificActorInfo(ActivityObjectActorClientSpecificActorInfo $clientSpecificActorInfo)
+  public function setClientSpecificActorInfo(Google_Service_Plus_ActivityObjectActorClientSpecificActorInfo $clientSpecificActorInfo)
   {
     $this->clientSpecificActorInfo = $clientSpecificActorInfo;
   }
@@ -51,7 +51,7 @@ class Google_Service_Plus_ActivityObjectActor extends Google_Model
   {
     return $this->id;
   }
-  public function setImage(ActivityObjectActorImage $image)
+  public function setImage(Google_Service_Plus_ActivityObjectActorImage $image)
   {
     $this->image = $image;
   }
@@ -67,7 +67,7 @@ class Google_Service_Plus_ActivityObjectActor extends Google_Model
   {
     return $this->url;
   }
-  public function setVerification(ActivityObjectActorVerification $verification)
+  public function setVerification(Google_Service_Plus_ActivityObjectActorVerification $verification)
   {
     $this->verification = $verification;
   }

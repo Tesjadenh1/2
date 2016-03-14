@@ -32,7 +32,7 @@ class Google_Service_GamesManagement_GamesPlayerExperienceInfoResource extends G
   {
     return $this->currentExperiencePoints;
   }
-  public function setCurrentLevel(GamesPlayerLevelResource $currentLevel)
+  public function setCurrentLevel(Google_Service_GamesManagement_GamesPlayerLevelResource $currentLevel)
   {
     $this->currentLevel = $currentLevel;
   }
@@ -48,7 +48,7 @@ class Google_Service_GamesManagement_GamesPlayerExperienceInfoResource extends G
   {
     return $this->lastLevelUpTimestampMillis;
   }
-  public function setNextLevel(GamesPlayerLevelResource $nextLevel)
+  public function setNextLevel(Google_Service_GamesManagement_GamesPlayerLevelResource $nextLevel)
   {
     $this->nextLevel = $nextLevel;
   }

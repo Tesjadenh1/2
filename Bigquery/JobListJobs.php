@@ -35,7 +35,7 @@ class Google_Service_Bigquery_JobListJobs extends Google_Model
   protected $statusDataType = '';
   public $userEmail;
 
-  public function setConfiguration(JobConfiguration $configuration)
+  public function setConfiguration(Google_Service_Bigquery_JobConfiguration $configuration)
   {
     $this->configuration = $configuration;
   }
@@ -43,7 +43,7 @@ class Google_Service_Bigquery_JobListJobs extends Google_Model
   {
     return $this->configuration;
   }
-  public function setErrorResult(ErrorProto $errorResult)
+  public function setErrorResult(Google_Service_Bigquery_ErrorProto $errorResult)
   {
     $this->errorResult = $errorResult;
   }
@@ -59,7 +59,7 @@ class Google_Service_Bigquery_JobListJobs extends Google_Model
   {
     return $this->id;
   }
-  public function setJobReference(JobReference $jobReference)
+  public function setJobReference(Google_Service_Bigquery_JobReference $jobReference)
   {
     $this->jobReference = $jobReference;
   }
@@ -83,7 +83,7 @@ class Google_Service_Bigquery_JobListJobs extends Google_Model
   {
     return $this->state;
   }
-  public function setStatistics(JobStatistics $statistics)
+  public function setStatistics(Google_Service_Bigquery_JobStatistics $statistics)
   {
     $this->statistics = $statistics;
   }
@@ -91,7 +91,7 @@ class Google_Service_Bigquery_JobListJobs extends Google_Model
   {
     return $this->statistics;
   }
-  public function setStatus(JobStatus $status)
+  public function setStatus(Google_Service_Bigquery_JobStatus $status)
   {
     $this->status = $status;
   }

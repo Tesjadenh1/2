@@ -25,7 +25,7 @@ class Google_Service_ShoppingContent_AccountShippingShippingServiceCostRule exte
   protected $conditionType = 'Google_Service_ShoppingContent_AccountShippingCondition';
   protected $conditionDataType = '';
 
-  public function setCalculationMethod(AccountShippingShippingServiceCalculationMethod $calculationMethod)
+  public function setCalculationMethod(Google_Service_ShoppingContent_AccountShippingShippingServiceCalculationMethod $calculationMethod)
   {
     $this->calculationMethod = $calculationMethod;
   }
@@ -41,7 +41,7 @@ class Google_Service_ShoppingContent_AccountShippingShippingServiceCostRule exte
   {
     return $this->children;
   }
-  public function setCondition(AccountShippingCondition $condition)
+  public function setCondition(Google_Service_ShoppingContent_AccountShippingCondition $condition)
   {
     $this->condition = $condition;
   }

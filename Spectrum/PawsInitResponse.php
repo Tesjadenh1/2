@@ -25,7 +25,7 @@ class Google_Service_Spectrum_PawsInitResponse extends Google_Model
   public $type;
   public $version;
 
-  public function setDatabaseChange(DbUpdateSpec $databaseChange)
+  public function setDatabaseChange(Google_Service_Spectrum_DbUpdateSpec $databaseChange)
   {
     $this->databaseChange = $databaseChange;
   }
@@ -41,7 +41,7 @@ class Google_Service_Spectrum_PawsInitResponse extends Google_Model
   {
     return $this->kind;
   }
-  public function setRulesetInfo(RulesetInfo $rulesetInfo)
+  public function setRulesetInfo(Google_Service_Spectrum_RulesetInfo $rulesetInfo)
   {
     $this->rulesetInfo = $rulesetInfo;
   }

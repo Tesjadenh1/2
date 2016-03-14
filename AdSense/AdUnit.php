@@ -40,7 +40,7 @@ class Google_Service_AdSense_AdUnit extends Google_Model
   {
     return $this->code;
   }
-  public function setContentAdsSettings(AdUnitContentAdsSettings $contentAdsSettings)
+  public function setContentAdsSettings(Google_Service_AdSense_AdUnitContentAdsSettings $contentAdsSettings)
   {
     $this->contentAdsSettings = $contentAdsSettings;
   }
@@ -48,7 +48,7 @@ class Google_Service_AdSense_AdUnit extends Google_Model
   {
     return $this->contentAdsSettings;
   }
-  public function setCustomStyle(AdStyle $customStyle)
+  public function setCustomStyle(Google_Service_AdSense_AdStyle $customStyle)
   {
     $this->customStyle = $customStyle;
   }
@@ -56,7 +56,7 @@ class Google_Service_AdSense_AdUnit extends Google_Model
   {
     return $this->customStyle;
   }
-  public function setFeedAdsSettings(AdUnitFeedAdsSettings $feedAdsSettings)
+  public function setFeedAdsSettings(Google_Service_AdSense_AdUnitFeedAdsSettings $feedAdsSettings)
   {
     $this->feedAdsSettings = $feedAdsSettings;
   }
@@ -80,7 +80,7 @@ class Google_Service_AdSense_AdUnit extends Google_Model
   {
     return $this->kind;
   }
-  public function setMobileContentAdsSettings(AdUnitMobileContentAdsSettings $mobileContentAdsSettings)
+  public function setMobileContentAdsSettings(Google_Service_AdSense_AdUnitMobileContentAdsSettings $mobileContentAdsSettings)
   {
     $this->mobileContentAdsSettings = $mobileContentAdsSettings;
   }

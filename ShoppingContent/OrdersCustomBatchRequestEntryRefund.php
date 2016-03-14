@@ -22,7 +22,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryRefund extends
   public $reason;
   public $reasonText;
 
-  public function setAmount(Price $amount)
+  public function setAmount(Google_Service_ShoppingContent_Price $amount)
   {
     $this->amount = $amount;
   }

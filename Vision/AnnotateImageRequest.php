@@ -33,7 +33,7 @@ class Google_Service_Vision_AnnotateImageRequest extends Google_Collection
   {
     return $this->features;
   }
-  public function setImage(Image $image)
+  public function setImage(Google_Service_Vision_Image $image)
   {
     $this->image = $image;
   }
@@ -41,7 +41,7 @@ class Google_Service_Vision_AnnotateImageRequest extends Google_Collection
   {
     return $this->image;
   }
-  public function setImageContext(ImageContext $imageContext)
+  public function setImageContext(Google_Service_Vision_ImageContext $imageContext)
   {
     $this->imageContext = $imageContext;
   }

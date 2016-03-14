@@ -56,7 +56,7 @@ class Google_Service_Bigquery_ProjectListProjects extends Google_Model
   {
     return $this->numericId;
   }
-  public function setProjectReference(ProjectReference $projectReference)
+  public function setProjectReference(Google_Service_Bigquery_ProjectReference $projectReference)
   {
     $this->projectReference = $projectReference;
   }

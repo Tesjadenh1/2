@@ -32,7 +32,7 @@ class Google_Service_Games_EventPeriodUpdate extends Google_Collection
   {
     return $this->kind;
   }
-  public function setTimePeriod(EventPeriodRange $timePeriod)
+  public function setTimePeriod(Google_Service_Games_EventPeriodRange $timePeriod)
   {
     $this->timePeriod = $timePeriod;
   }

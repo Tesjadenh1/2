@@ -33,7 +33,7 @@ class Google_Service_Games_AchievementUpdateRequest extends Google_Model
   {
     return $this->achievementId;
   }
-  public function setIncrementPayload(GamesAchievementIncrement $incrementPayload)
+  public function setIncrementPayload(Google_Service_Games_GamesAchievementIncrement $incrementPayload)
   {
     $this->incrementPayload = $incrementPayload;
   }
@@ -49,7 +49,7 @@ class Google_Service_Games_AchievementUpdateRequest extends Google_Model
   {
     return $this->kind;
   }
-  public function setSetStepsAtLeastPayload(GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload)
+  public function setSetStepsAtLeastPayload(Google_Service_Games_GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload)
   {
     $this->setStepsAtLeastPayload = $setStepsAtLeastPayload;
   }

@@ -53,7 +53,7 @@ class Google_Service_Dfareporting_CreativeAssignment extends Google_Collection
   {
     return $this->applyEventTags;
   }
-  public function setClickThroughUrl(ClickThroughUrl $clickThroughUrl)
+  public function setClickThroughUrl(Google_Service_Dfareporting_ClickThroughUrl $clickThroughUrl)
   {
     $this->clickThroughUrl = $clickThroughUrl;
   }
@@ -85,7 +85,7 @@ class Google_Service_Dfareporting_CreativeAssignment extends Google_Collection
   {
     return $this->creativeId;
   }
-  public function setCreativeIdDimensionValue(DimensionValue $creativeIdDimensionValue)
+  public function setCreativeIdDimensionValue(Google_Service_Dfareporting_DimensionValue $creativeIdDimensionValue)
   {
     $this->creativeIdDimensionValue = $creativeIdDimensionValue;
   }

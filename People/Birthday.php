@@ -23,7 +23,7 @@ class Google_Service_People_Birthday extends Google_Model
   protected $metadataDataType = '';
   public $text;
 
-  public function setDate(Date $date)
+  public function setDate(Google_Service_People_Date $date)
   {
     $this->date = $date;
   }
@@ -31,7 +31,7 @@ class Google_Service_People_Birthday extends Google_Model
   {
     return $this->date;
   }
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

@@ -26,7 +26,7 @@ class Google_Service_Clouddebugger_SourceContext extends Google_Model
   protected $gitType = 'Google_Service_Clouddebugger_GitSourceContext';
   protected $gitDataType = '';
 
-  public function setCloudRepo(CloudRepoSourceContext $cloudRepo)
+  public function setCloudRepo(Google_Service_Clouddebugger_CloudRepoSourceContext $cloudRepo)
   {
     $this->cloudRepo = $cloudRepo;
   }
@@ -34,7 +34,7 @@ class Google_Service_Clouddebugger_SourceContext extends Google_Model
   {
     return $this->cloudRepo;
   }
-  public function setCloudWorkspace(CloudWorkspaceSourceContext $cloudWorkspace)
+  public function setCloudWorkspace(Google_Service_Clouddebugger_CloudWorkspaceSourceContext $cloudWorkspace)
   {
     $this->cloudWorkspace = $cloudWorkspace;
   }
@@ -42,7 +42,7 @@ class Google_Service_Clouddebugger_SourceContext extends Google_Model
   {
     return $this->cloudWorkspace;
   }
-  public function setGerrit(GerritSourceContext $gerrit)
+  public function setGerrit(Google_Service_Clouddebugger_GerritSourceContext $gerrit)
   {
     $this->gerrit = $gerrit;
   }
@@ -50,7 +50,7 @@ class Google_Service_Clouddebugger_SourceContext extends Google_Model
   {
     return $this->gerrit;
   }
-  public function setGit(GitSourceContext $git)
+  public function setGit(Google_Service_Clouddebugger_GitSourceContext $git)
   {
     $this->git = $git;
   }

@@ -51,7 +51,7 @@ class Google_Service_Books_VolumeAccessInfo extends Google_Model
   {
     return $this->country;
   }
-  public function setDownloadAccess(DownloadAccessRestriction $downloadAccess)
+  public function setDownloadAccess(Google_Service_Books_DownloadAccessRestriction $downloadAccess)
   {
     $this->downloadAccess = $downloadAccess;
   }
@@ -75,7 +75,7 @@ class Google_Service_Books_VolumeAccessInfo extends Google_Model
   {
     return $this->embeddable;
   }
-  public function setEpub(VolumeAccessInfoEpub $epub)
+  public function setEpub(Google_Service_Books_VolumeAccessInfoEpub $epub)
   {
     $this->epub = $epub;
   }
@@ -91,7 +91,7 @@ class Google_Service_Books_VolumeAccessInfo extends Google_Model
   {
     return $this->explicitOfflineLicenseManagement;
   }
-  public function setPdf(VolumeAccessInfoPdf $pdf)
+  public function setPdf(Google_Service_Books_VolumeAccessInfoPdf $pdf)
   {
     $this->pdf = $pdf;
   }

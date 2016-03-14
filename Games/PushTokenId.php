@@ -21,7 +21,7 @@ class Google_Service_Games_PushTokenId extends Google_Model
   protected $iosDataType = '';
   public $kind;
 
-  public function setIos(PushTokenIdIos $ios)
+  public function setIos(Google_Service_Games_PushTokenIdIos $ios)
   {
     $this->ios = $ios;
   }

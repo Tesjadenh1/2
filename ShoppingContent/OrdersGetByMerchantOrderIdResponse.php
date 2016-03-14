@@ -29,7 +29,7 @@ class Google_Service_ShoppingContent_OrdersGetByMerchantOrderIdResponse extends 
   {
     return $this->kind;
   }
-  public function setOrder(Order $order)
+  public function setOrder(Google_Service_ShoppingContent_Order $order)
   {
     $this->order = $order;
   }

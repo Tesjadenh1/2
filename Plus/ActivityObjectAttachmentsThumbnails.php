@@ -30,7 +30,7 @@ class Google_Service_Plus_ActivityObjectAttachmentsThumbnails extends Google_Mod
   {
     return $this->description;
   }
-  public function setImage(ActivityObjectAttachmentsThumbnailsImage $image)
+  public function setImage(Google_Service_Plus_ActivityObjectAttachmentsThumbnailsImage $image)
   {
     $this->image = $image;
   }

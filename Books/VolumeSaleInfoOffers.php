@@ -33,7 +33,7 @@ class Google_Service_Books_VolumeSaleInfoOffers extends Google_Model
   {
     return $this->finskyOfferType;
   }
-  public function setListPrice(VolumeSaleInfoOffersListPrice $listPrice)
+  public function setListPrice(Google_Service_Books_VolumeSaleInfoOffersListPrice $listPrice)
   {
     $this->listPrice = $listPrice;
   }
@@ -41,7 +41,7 @@ class Google_Service_Books_VolumeSaleInfoOffers extends Google_Model
   {
     return $this->listPrice;
   }
-  public function setRentalDuration(VolumeSaleInfoOffersRentalDuration $rentalDuration)
+  public function setRentalDuration(Google_Service_Books_VolumeSaleInfoOffersRentalDuration $rentalDuration)
   {
     $this->rentalDuration = $rentalDuration;
   }
@@ -49,7 +49,7 @@ class Google_Service_Books_VolumeSaleInfoOffers extends Google_Model
   {
     return $this->rentalDuration;
   }
-  public function setRetailPrice(VolumeSaleInfoOffersRetailPrice $retailPrice)
+  public function setRetailPrice(Google_Service_Books_VolumeSaleInfoOffersRetailPrice $retailPrice)
   {
     $this->retailPrice = $retailPrice;
   }

@@ -51,7 +51,7 @@ class Google_Service_Analytics_UnsampledReport extends Google_Model
   {
     return $this->accountId;
   }
-  public function setCloudStorageDownloadDetails(UnsampledReportCloudStorageDownloadDetails $cloudStorageDownloadDetails)
+  public function setCloudStorageDownloadDetails(Google_Service_Analytics_UnsampledReportCloudStorageDownloadDetails $cloudStorageDownloadDetails)
   {
     $this->cloudStorageDownloadDetails = $cloudStorageDownloadDetails;
   }
@@ -83,7 +83,7 @@ class Google_Service_Analytics_UnsampledReport extends Google_Model
   {
     return $this->downloadType;
   }
-  public function setDriveDownloadDetails(UnsampledReportDriveDownloadDetails $driveDownloadDetails)
+  public function setDriveDownloadDetails(Google_Service_Analytics_UnsampledReportDriveDownloadDetails $driveDownloadDetails)
   {
     $this->driveDownloadDetails = $driveDownloadDetails;
   }

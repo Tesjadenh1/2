@@ -28,7 +28,7 @@ class Google_Service_Dataproc_InstanceGroupConfig extends Google_Collection
   protected $managedGroupConfigDataType = '';
   public $numInstances;
 
-  public function setDiskConfig(DiskConfig $diskConfig)
+  public function setDiskConfig(Google_Service_Dataproc_DiskConfig $diskConfig)
   {
     $this->diskConfig = $diskConfig;
   }
@@ -68,7 +68,7 @@ class Google_Service_Dataproc_InstanceGroupConfig extends Google_Collection
   {
     return $this->machineTypeUri;
   }
-  public function setManagedGroupConfig(ManagedGroupConfig $managedGroupConfig)
+  public function setManagedGroupConfig(Google_Service_Dataproc_ManagedGroupConfig $managedGroupConfig)
   {
     $this->managedGroupConfig = $managedGroupConfig;
   }

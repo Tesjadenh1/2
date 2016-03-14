@@ -56,7 +56,7 @@ class Google_Service_Calendar_AclRule extends Google_Model
   {
     return $this->role;
   }
-  public function setScope(AclRuleScope $scope)
+  public function setScope(Google_Service_Calendar_AclRuleScope $scope)
   {
     $this->scope = $scope;
   }

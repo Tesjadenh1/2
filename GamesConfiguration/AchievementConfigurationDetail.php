@@ -26,7 +26,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationDetail extends G
   public $pointValue;
   public $sortRank;
 
-  public function setDescription(LocalizedStringBundle $description)
+  public function setDescription(Google_Service_GamesConfiguration_LocalizedStringBundle $description)
   {
     $this->description = $description;
   }
@@ -50,7 +50,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationDetail extends G
   {
     return $this->kind;
   }
-  public function setName(LocalizedStringBundle $name)
+  public function setName(Google_Service_GamesConfiguration_LocalizedStringBundle $name)
   {
     $this->name = $name;
   }

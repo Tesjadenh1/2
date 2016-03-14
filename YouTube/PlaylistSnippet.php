@@ -62,7 +62,7 @@ class Google_Service_YouTube_PlaylistSnippet extends Google_Collection
   {
     return $this->description;
   }
-  public function setLocalized(PlaylistLocalization $localized)
+  public function setLocalized(Google_Service_YouTube_PlaylistLocalization $localized)
   {
     $this->localized = $localized;
   }
@@ -86,7 +86,7 @@ class Google_Service_YouTube_PlaylistSnippet extends Google_Collection
   {
     return $this->tags;
   }
-  public function setThumbnails(ThumbnailDetails $thumbnails)
+  public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }

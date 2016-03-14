@@ -34,7 +34,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchRequest extends Google_Collect
   public $type;
   public $version;
 
-  public function setAntenna(AntennaCharacteristics $antenna)
+  public function setAntenna(Google_Service_Spectrum_AntennaCharacteristics $antenna)
   {
     $this->antenna = $antenna;
   }
@@ -42,7 +42,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchRequest extends Google_Collect
   {
     return $this->antenna;
   }
-  public function setCapabilities(DeviceCapabilities $capabilities)
+  public function setCapabilities(Google_Service_Spectrum_DeviceCapabilities $capabilities)
   {
     $this->capabilities = $capabilities;
   }
@@ -50,7 +50,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchRequest extends Google_Collect
   {
     return $this->capabilities;
   }
-  public function setDeviceDesc(DeviceDescriptor $deviceDesc)
+  public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }
@@ -66,7 +66,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchRequest extends Google_Collect
   {
     return $this->locations;
   }
-  public function setMasterDeviceDesc(DeviceDescriptor $masterDeviceDesc)
+  public function setMasterDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $masterDeviceDesc)
   {
     $this->masterDeviceDesc = $masterDeviceDesc;
   }
@@ -74,7 +74,7 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchRequest extends Google_Collect
   {
     return $this->masterDeviceDesc;
   }
-  public function setOwner(DeviceOwner $owner)
+  public function setOwner(Google_Service_Spectrum_DeviceOwner $owner)
   {
     $this->owner = $owner;
   }

@@ -80,7 +80,7 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   {
     return $this->kind;
   }
-  public function setPlan(SubscriptionPlan $plan)
+  public function setPlan(Google_Service_Reseller_SubscriptionPlan $plan)
   {
     $this->plan = $plan;
   }
@@ -96,7 +96,7 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   {
     return $this->purchaseOrderId;
   }
-  public function setRenewalSettings(RenewalSettings $renewalSettings)
+  public function setRenewalSettings(Google_Service_Reseller_RenewalSettings $renewalSettings)
   {
     $this->renewalSettings = $renewalSettings;
   }
@@ -112,7 +112,7 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   {
     return $this->resourceUiUrl;
   }
-  public function setSeats(Seats $seats)
+  public function setSeats(Google_Service_Reseller_Seats $seats)
   {
     $this->seats = $seats;
   }
@@ -152,7 +152,7 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   {
     return $this->suspensionReasons;
   }
-  public function setTransferInfo(SubscriptionTransferInfo $transferInfo)
+  public function setTransferInfo(Google_Service_Reseller_SubscriptionTransferInfo $transferInfo)
   {
     $this->transferInfo = $transferInfo;
   }
@@ -160,7 +160,7 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   {
     return $this->transferInfo;
   }
-  public function setTrialSettings(SubscriptionTrialSettings $trialSettings)
+  public function setTrialSettings(Google_Service_Reseller_SubscriptionTrialSettings $trialSettings)
   {
     $this->trialSettings = $trialSettings;
   }

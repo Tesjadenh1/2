@@ -33,7 +33,7 @@ class Google_Service_Blogger_Comment extends Google_Model
   public $status;
   public $updated;
 
-  public function setAuthor(CommentAuthor $author)
+  public function setAuthor(Google_Service_Blogger_CommentAuthor $author)
   {
     $this->author = $author;
   }
@@ -41,7 +41,7 @@ class Google_Service_Blogger_Comment extends Google_Model
   {
     return $this->author;
   }
-  public function setBlog(CommentBlog $blog)
+  public function setBlog(Google_Service_Blogger_CommentBlog $blog)
   {
     $this->blog = $blog;
   }
@@ -65,7 +65,7 @@ class Google_Service_Blogger_Comment extends Google_Model
   {
     return $this->id;
   }
-  public function setInReplyTo(CommentInReplyTo $inReplyTo)
+  public function setInReplyTo(Google_Service_Blogger_CommentInReplyTo $inReplyTo)
   {
     $this->inReplyTo = $inReplyTo;
   }
@@ -81,7 +81,7 @@ class Google_Service_Blogger_Comment extends Google_Model
   {
     return $this->kind;
   }
-  public function setPost(CommentPost $post)
+  public function setPost(Google_Service_Blogger_CommentPost $post)
   {
     $this->post = $post;
   }

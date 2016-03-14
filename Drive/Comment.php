@@ -42,7 +42,7 @@ class Google_Service_Drive_Comment extends Google_Collection
   {
     return $this->anchor;
   }
-  public function setAuthor(User $author)
+  public function setAuthor(Google_Service_Drive_User $author)
   {
     $this->author = $author;
   }
@@ -106,7 +106,7 @@ class Google_Service_Drive_Comment extends Google_Collection
   {
     return $this->modifiedTime;
   }
-  public function setQuotedFileContent(CommentQuotedFileContent $quotedFileContent)
+  public function setQuotedFileContent(Google_Service_Drive_CommentQuotedFileContent $quotedFileContent)
   {
     $this->quotedFileContent = $quotedFileContent;
   }

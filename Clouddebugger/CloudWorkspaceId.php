@@ -29,7 +29,7 @@ class Google_Service_Clouddebugger_CloudWorkspaceId extends Google_Model
   {
     return $this->name;
   }
-  public function setRepoId(RepoId $repoId)
+  public function setRepoId(Google_Service_Clouddebugger_RepoId $repoId)
   {
     $this->repoId = $repoId;
   }

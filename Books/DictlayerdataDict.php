@@ -23,7 +23,7 @@ class Google_Service_Books_DictlayerdataDict extends Google_Collection
   protected $wordsType = 'Google_Service_Books_DictlayerdataDictWords';
   protected $wordsDataType = 'array';
 
-  public function setSource(DictlayerdataDictSource $source)
+  public function setSource(Google_Service_Books_DictlayerdataDictSource $source)
   {
     $this->source = $source;
   }

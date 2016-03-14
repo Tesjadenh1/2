@@ -29,7 +29,7 @@ class Google_Service_Vision_Image extends Google_Model
   {
     return $this->content;
   }
-  public function setSource(ImageSource $source)
+  public function setSource(Google_Service_Vision_ImageSource $source)
   {
     $this->source = $source;
   }

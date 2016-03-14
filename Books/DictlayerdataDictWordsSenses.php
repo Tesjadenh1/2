@@ -71,7 +71,7 @@ class Google_Service_Books_DictlayerdataDictWordsSenses extends Google_Collectio
   {
     return $this->pronunciationUrl;
   }
-  public function setSource(DictlayerdataDictWordsSensesSource $source)
+  public function setSource(Google_Service_Books_DictlayerdataDictWordsSensesSource $source)
   {
     $this->source = $source;
   }

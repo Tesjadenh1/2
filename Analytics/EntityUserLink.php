@@ -27,7 +27,7 @@ class Google_Service_Analytics_EntityUserLink extends Google_Model
   protected $userRefType = 'Google_Service_Analytics_UserRef';
   protected $userRefDataType = '';
 
-  public function setEntity(EntityUserLinkEntity $entity)
+  public function setEntity(Google_Service_Analytics_EntityUserLinkEntity $entity)
   {
     $this->entity = $entity;
   }
@@ -51,7 +51,7 @@ class Google_Service_Analytics_EntityUserLink extends Google_Model
   {
     return $this->kind;
   }
-  public function setPermissions(EntityUserLinkPermissions $permissions)
+  public function setPermissions(Google_Service_Analytics_EntityUserLinkPermissions $permissions)
   {
     $this->permissions = $permissions;
   }
@@ -67,7 +67,7 @@ class Google_Service_Analytics_EntityUserLink extends Google_Model
   {
     return $this->selfLink;
   }
-  public function setUserRef(UserRef $userRef)
+  public function setUserRef(Google_Service_Analytics_UserRef $userRef)
   {
     $this->userRef = $userRef;
   }

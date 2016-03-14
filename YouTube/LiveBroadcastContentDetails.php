@@ -85,7 +85,7 @@ class Google_Service_YouTube_LiveBroadcastContentDetails extends Google_Model
   {
     return $this->enableLowLatency;
   }
-  public function setMonitorStream(MonitorStreamInfo $monitorStream)
+  public function setMonitorStream(Google_Service_YouTube_MonitorStreamInfo $monitorStream)
   {
     $this->monitorStream = $monitorStream;
   }

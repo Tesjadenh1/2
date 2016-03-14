@@ -52,7 +52,7 @@ class Google_Service_ShoppingContent_AccountShippingCondition extends Google_Mod
   {
     return $this->deliveryPostalCode;
   }
-  public function setDeliveryPostalCodeRange(AccountShippingPostalCodeRange $deliveryPostalCodeRange)
+  public function setDeliveryPostalCodeRange(Google_Service_ShoppingContent_AccountShippingPostalCodeRange $deliveryPostalCodeRange)
   {
     $this->deliveryPostalCodeRange = $deliveryPostalCodeRange;
   }
@@ -60,7 +60,7 @@ class Google_Service_ShoppingContent_AccountShippingCondition extends Google_Mod
   {
     return $this->deliveryPostalCodeRange;
   }
-  public function setPriceMax(Price $priceMax)
+  public function setPriceMax(Google_Service_ShoppingContent_Price $priceMax)
   {
     $this->priceMax = $priceMax;
   }
@@ -76,7 +76,7 @@ class Google_Service_ShoppingContent_AccountShippingCondition extends Google_Mod
   {
     return $this->shippingLabel;
   }
-  public function setWeightMax(Weight $weightMax)
+  public function setWeightMax(Google_Service_ShoppingContent_Weight $weightMax)
   {
     $this->weightMax = $weightMax;
   }

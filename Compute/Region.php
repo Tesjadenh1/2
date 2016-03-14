@@ -39,7 +39,7 @@ class Google_Service_Compute_Region extends Google_Collection
   {
     return $this->creationTimestamp;
   }
-  public function setDeprecated(DeprecationStatus $deprecated)
+  public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
   {
     $this->deprecated = $deprecated;
   }

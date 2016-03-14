@@ -49,7 +49,7 @@ class Google_Service_Games_PlayerLeaderboardScoreListResponse extends Google_Col
   {
     return $this->nextPageToken;
   }
-  public function setPlayer(Player $player)
+  public function setPlayer(Google_Service_Games_Player $player)
   {
     $this->player = $player;
   }

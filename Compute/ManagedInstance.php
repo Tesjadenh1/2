@@ -56,7 +56,7 @@ class Google_Service_Compute_ManagedInstance extends Google_Model
   {
     return $this->instanceStatus;
   }
-  public function setLastAttempt(ManagedInstanceLastAttempt $lastAttempt)
+  public function setLastAttempt(Google_Service_Compute_ManagedInstanceLastAttempt $lastAttempt)
   {
     $this->lastAttempt = $lastAttempt;
   }

@@ -40,7 +40,7 @@ class Google_Service_Partners_ListCompaniesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  public function setResponseMetadata(ResponseMetadata $responseMetadata)
+  public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }

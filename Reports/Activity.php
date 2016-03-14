@@ -29,7 +29,7 @@ class Google_Service_Reports_Activity extends Google_Collection
   public $kind;
   public $ownerDomain;
 
-  public function setActor(ActivityActor $actor)
+  public function setActor(Google_Service_Reports_ActivityActor $actor)
   {
     $this->actor = $actor;
   }
@@ -53,7 +53,7 @@ class Google_Service_Reports_Activity extends Google_Collection
   {
     return $this->events;
   }
-  public function setId(ActivityId $id)
+  public function setId(Google_Service_Reports_ActivityId $id)
   {
     $this->id = $id;
   }

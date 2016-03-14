@@ -27,7 +27,7 @@ class Google_Service_Books_AnnotationClientVersionRanges extends Google_Model
   protected $imageCfiRangeType = 'Google_Service_Books_BooksAnnotationsRange';
   protected $imageCfiRangeDataType = '';
 
-  public function setCfiRange(BooksAnnotationsRange $cfiRange)
+  public function setCfiRange(Google_Service_Books_BooksAnnotationsRange $cfiRange)
   {
     $this->cfiRange = $cfiRange;
   }
@@ -43,7 +43,7 @@ class Google_Service_Books_AnnotationClientVersionRanges extends Google_Model
   {
     return $this->contentVersion;
   }
-  public function setGbImageRange(BooksAnnotationsRange $gbImageRange)
+  public function setGbImageRange(Google_Service_Books_BooksAnnotationsRange $gbImageRange)
   {
     $this->gbImageRange = $gbImageRange;
   }
@@ -51,7 +51,7 @@ class Google_Service_Books_AnnotationClientVersionRanges extends Google_Model
   {
     return $this->gbImageRange;
   }
-  public function setGbTextRange(BooksAnnotationsRange $gbTextRange)
+  public function setGbTextRange(Google_Service_Books_BooksAnnotationsRange $gbTextRange)
   {
     $this->gbTextRange = $gbTextRange;
   }
@@ -59,7 +59,7 @@ class Google_Service_Books_AnnotationClientVersionRanges extends Google_Model
   {
     return $this->gbTextRange;
   }
-  public function setImageCfiRange(BooksAnnotationsRange $imageCfiRange)
+  public function setImageCfiRange(Google_Service_Books_BooksAnnotationsRange $imageCfiRange)
   {
     $this->imageCfiRange = $imageCfiRange;
   }

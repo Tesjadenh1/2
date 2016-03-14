@@ -29,7 +29,7 @@ class Google_Service_Iam_CreateServiceAccountRequest extends Google_Model
   {
     return $this->accountId;
   }
-  public function setServiceAccount(ServiceAccount $serviceAccount)
+  public function setServiceAccount(Google_Service_Iam_ServiceAccount $serviceAccount)
   {
     $this->serviceAccount = $serviceAccount;
   }

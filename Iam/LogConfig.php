@@ -24,7 +24,7 @@ class Google_Service_Iam_LogConfig extends Google_Model
   protected $dataAccessType = 'Google_Service_Iam_DataAccessOptions';
   protected $dataAccessDataType = '';
 
-  public function setCloudAudit(CloudAuditOptions $cloudAudit)
+  public function setCloudAudit(Google_Service_Iam_CloudAuditOptions $cloudAudit)
   {
     $this->cloudAudit = $cloudAudit;
   }
@@ -32,7 +32,7 @@ class Google_Service_Iam_LogConfig extends Google_Model
   {
     return $this->cloudAudit;
   }
-  public function setCounter(CounterOptions $counter)
+  public function setCounter(Google_Service_Iam_CounterOptions $counter)
   {
     $this->counter = $counter;
   }
@@ -40,7 +40,7 @@ class Google_Service_Iam_LogConfig extends Google_Model
   {
     return $this->counter;
   }
-  public function setDataAccess(DataAccessOptions $dataAccess)
+  public function setDataAccess(Google_Service_Iam_DataAccessOptions $dataAccess)
   {
     $this->dataAccess = $dataAccess;
   }

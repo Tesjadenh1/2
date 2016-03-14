@@ -106,7 +106,7 @@ class Google_Service_ShoppingContent_TestOrderLineItemProduct extends Google_Col
   {
     return $this->offerId;
   }
-  public function setPrice(Price $price)
+  public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }

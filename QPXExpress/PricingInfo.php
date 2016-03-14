@@ -76,7 +76,7 @@ class Google_Service_QPXExpress_PricingInfo extends Google_Collection
   {
     return $this->latestTicketingTime;
   }
-  public function setPassengers(PassengerCounts $passengers)
+  public function setPassengers(Google_Service_QPXExpress_PassengerCounts $passengers)
   {
     $this->passengers = $passengers;
   }

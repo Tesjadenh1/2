@@ -27,7 +27,7 @@ class Google_Service_Bigquery_JobConfiguration extends Google_Model
   protected $queryType = 'Google_Service_Bigquery_JobConfigurationQuery';
   protected $queryDataType = '';
 
-  public function setCopy(JobConfigurationTableCopy $copy)
+  public function setCopy(Google_Service_Bigquery_JobConfigurationTableCopy $copy)
   {
     $this->copy = $copy;
   }
@@ -43,7 +43,7 @@ class Google_Service_Bigquery_JobConfiguration extends Google_Model
   {
     return $this->dryRun;
   }
-  public function setExtract(JobConfigurationExtract $extract)
+  public function setExtract(Google_Service_Bigquery_JobConfigurationExtract $extract)
   {
     $this->extract = $extract;
   }
@@ -51,7 +51,7 @@ class Google_Service_Bigquery_JobConfiguration extends Google_Model
   {
     return $this->extract;
   }
-  public function setLoad(JobConfigurationLoad $load)
+  public function setLoad(Google_Service_Bigquery_JobConfigurationLoad $load)
   {
     $this->load = $load;
   }
@@ -59,7 +59,7 @@ class Google_Service_Bigquery_JobConfiguration extends Google_Model
   {
     return $this->load;
   }
-  public function setQuery(JobConfigurationQuery $query)
+  public function setQuery(Google_Service_Bigquery_JobConfigurationQuery $query)
   {
     $this->query = $query;
   }

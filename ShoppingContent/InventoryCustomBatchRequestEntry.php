@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_InventoryCustomBatchRequestEntry extends Go
   {
     return $this->batchId;
   }
-  public function setInventory(Inventory $inventory)
+  public function setInventory(Google_Service_ShoppingContent_Inventory $inventory)
   {
     $this->inventory = $inventory;
   }

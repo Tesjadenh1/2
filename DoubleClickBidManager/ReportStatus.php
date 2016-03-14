@@ -23,7 +23,7 @@ class Google_Service_DoubleClickBidManager_ReportStatus extends Google_Model
   public $format;
   public $state;
 
-  public function setFailure(ReportFailure $failure)
+  public function setFailure(Google_Service_DoubleClickBidManager_ReportFailure $failure)
   {
     $this->failure = $failure;
   }

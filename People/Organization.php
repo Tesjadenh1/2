@@ -59,7 +59,7 @@ class Google_Service_People_Organization extends Google_Model
   {
     return $this->domain;
   }
-  public function setEndDate(Date $endDate)
+  public function setEndDate(Google_Service_People_Date $endDate)
   {
     $this->endDate = $endDate;
   }
@@ -91,7 +91,7 @@ class Google_Service_People_Organization extends Google_Model
   {
     return $this->location;
   }
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
@@ -115,7 +115,7 @@ class Google_Service_People_Organization extends Google_Model
   {
     return $this->phoneticName;
   }
-  public function setStartDate(Date $startDate)
+  public function setStartDate(Google_Service_People_Date $startDate)
   {
     $this->startDate = $startDate;
   }

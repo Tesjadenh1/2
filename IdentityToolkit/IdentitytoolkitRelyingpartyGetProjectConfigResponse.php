@@ -56,7 +56,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetProjectConfig
   {
     return $this->authorizedDomains;
   }
-  public function setChangeEmailTemplate(EmailTemplate $changeEmailTemplate)
+  public function setChangeEmailTemplate(Google_Service_IdentityToolkit_EmailTemplate $changeEmailTemplate)
   {
     $this->changeEmailTemplate = $changeEmailTemplate;
   }
@@ -80,7 +80,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetProjectConfig
   {
     return $this->projectId;
   }
-  public function setResetPasswordTemplate(EmailTemplate $resetPasswordTemplate)
+  public function setResetPasswordTemplate(Google_Service_IdentityToolkit_EmailTemplate $resetPasswordTemplate)
   {
     $this->resetPasswordTemplate = $resetPasswordTemplate;
   }
@@ -96,7 +96,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetProjectConfig
   {
     return $this->useEmailSending;
   }
-  public function setVerifyEmailTemplate(EmailTemplate $verifyEmailTemplate)
+  public function setVerifyEmailTemplate(Google_Service_IdentityToolkit_EmailTemplate $verifyEmailTemplate)
   {
     $this->verifyEmailTemplate = $verifyEmailTemplate;
   }

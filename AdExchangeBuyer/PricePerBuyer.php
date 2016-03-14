@@ -22,7 +22,7 @@ class Google_Service_AdExchangeBuyer_PricePerBuyer extends Google_Model
   protected $priceType = 'Google_Service_AdExchangeBuyer_Price';
   protected $priceDataType = '';
 
-  public function setBuyer(Buyer $buyer)
+  public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
   {
     $this->buyer = $buyer;
   }
@@ -30,7 +30,7 @@ class Google_Service_AdExchangeBuyer_PricePerBuyer extends Google_Model
   {
     return $this->buyer;
   }
-  public function setPrice(Price $price)
+  public function setPrice(Google_Service_AdExchangeBuyer_Price $price)
   {
     $this->price = $price;
   }

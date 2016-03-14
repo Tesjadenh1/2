@@ -79,7 +79,7 @@ class Google_Service_People_Address extends Google_Model
   {
     return $this->formattedValue;
   }
-  public function setMetadata(FieldMetadata $metadata)
+  public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }

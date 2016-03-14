@@ -55,7 +55,7 @@ class Google_Service_Analytics_GaData extends Google_Collection
   {
     return $this->containsSampledData;
   }
-  public function setDataTable(GaDataDataTable $dataTable)
+  public function setDataTable(Google_Service_Analytics_GaDataDataTable $dataTable)
   {
     $this->dataTable = $dataTable;
   }
@@ -103,7 +103,7 @@ class Google_Service_Analytics_GaData extends Google_Collection
   {
     return $this->previousLink;
   }
-  public function setProfileInfo(GaDataProfileInfo $profileInfo)
+  public function setProfileInfo(Google_Service_Analytics_GaDataProfileInfo $profileInfo)
   {
     $this->profileInfo = $profileInfo;
   }
@@ -111,7 +111,7 @@ class Google_Service_Analytics_GaData extends Google_Collection
   {
     return $this->profileInfo;
   }
-  public function setQuery(GaDataQuery $query)
+  public function setQuery(Google_Service_Analytics_GaDataQuery $query)
   {
     $this->query = $query;
   }

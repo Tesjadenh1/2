@@ -31,7 +31,7 @@ class Google_Service_Books_Usersettings extends Google_Model
   {
     return $this->kind;
   }
-  public function setNotesExport(UsersettingsNotesExport $notesExport)
+  public function setNotesExport(Google_Service_Books_UsersettingsNotesExport $notesExport)
   {
     $this->notesExport = $notesExport;
   }
@@ -39,7 +39,7 @@ class Google_Service_Books_Usersettings extends Google_Model
   {
     return $this->notesExport;
   }
-  public function setNotification(UsersettingsNotification $notification)
+  public function setNotification(Google_Service_Books_UsersettingsNotification $notification)
   {
     $this->notification = $notification;
   }

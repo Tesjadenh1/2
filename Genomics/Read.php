@@ -54,7 +54,7 @@ class Google_Service_Genomics_Read extends Google_Collection
   {
     return $this->alignedSequence;
   }
-  public function setAlignment(LinearAlignment $alignment)
+  public function setAlignment(Google_Service_Genomics_LinearAlignment $alignment)
   {
     $this->alignment = $alignment;
   }
@@ -110,7 +110,7 @@ class Google_Service_Genomics_Read extends Google_Collection
   {
     return $this->info;
   }
-  public function setNextMatePosition(Position $nextMatePosition)
+  public function setNextMatePosition(Google_Service_Genomics_Position $nextMatePosition)
   {
     $this->nextMatePosition = $nextMatePosition;
   }

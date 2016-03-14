@@ -135,7 +135,7 @@ class Google_Service_Calendar_CalendarListEntry extends Google_Collection
   {
     return $this->location;
   }
-  public function setNotificationSettings(CalendarListEntryNotificationSettings $notificationSettings)
+  public function setNotificationSettings(Google_Service_Calendar_CalendarListEntryNotificationSettings $notificationSettings)
   {
     $this->notificationSettings = $notificationSettings;
   }

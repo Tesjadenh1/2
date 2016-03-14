@@ -82,7 +82,7 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   {
     return $this->projectId;
   }
-  public function setResults(Results $results)
+  public function setResults(Google_Service_CloudBuild_Results $results)
   {
     $this->results = $results;
   }
@@ -90,7 +90,7 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   {
     return $this->results;
   }
-  public function setSource(Source $source)
+  public function setSource(Google_Service_CloudBuild_Source $source)
   {
     $this->source = $source;
   }

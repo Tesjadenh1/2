@@ -77,7 +77,7 @@ class Google_Service_Dfareporting_OrderDocument extends Google_Collection
   {
     return $this->cancelled;
   }
-  public function setCreatedInfo(LastModifiedInfo $createdInfo)
+  public function setCreatedInfo(Google_Service_Dfareporting_LastModifiedInfo $createdInfo)
   {
     $this->createdInfo = $createdInfo;
   }

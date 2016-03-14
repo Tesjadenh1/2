@@ -56,7 +56,7 @@ class Google_Service_Books_VolumeUserInfo extends Google_Model
   {
     return $this->acquisitionType;
   }
-  public function setCopy(VolumeUserInfoCopy $copy)
+  public function setCopy(Google_Service_Books_VolumeUserInfoCopy $copy)
   {
     $this->copy = $copy;
   }
@@ -128,7 +128,7 @@ class Google_Service_Books_VolumeUserInfo extends Google_Model
   {
     return $this->isUploaded;
   }
-  public function setReadingPosition(ReadingPosition $readingPosition)
+  public function setReadingPosition(Google_Service_Books_ReadingPosition $readingPosition)
   {
     $this->readingPosition = $readingPosition;
   }
@@ -136,7 +136,7 @@ class Google_Service_Books_VolumeUserInfo extends Google_Model
   {
     return $this->readingPosition;
   }
-  public function setRentalPeriod(VolumeUserInfoRentalPeriod $rentalPeriod)
+  public function setRentalPeriod(Google_Service_Books_VolumeUserInfoRentalPeriod $rentalPeriod)
   {
     $this->rentalPeriod = $rentalPeriod;
   }
@@ -152,7 +152,7 @@ class Google_Service_Books_VolumeUserInfo extends Google_Model
   {
     return $this->rentalState;
   }
-  public function setReview(Review $review)
+  public function setReview(Google_Service_Books_Review $review)
   {
     $this->review = $review;
   }
@@ -168,7 +168,7 @@ class Google_Service_Books_VolumeUserInfo extends Google_Model
   {
     return $this->updated;
   }
-  public function setUserUploadedVolumeInfo(VolumeUserInfoUserUploadedVolumeInfo $userUploadedVolumeInfo)
+  public function setUserUploadedVolumeInfo(Google_Service_Books_VolumeUserInfoUserUploadedVolumeInfo $userUploadedVolumeInfo)
   {
     $this->userUploadedVolumeInfo = $userUploadedVolumeInfo;
   }

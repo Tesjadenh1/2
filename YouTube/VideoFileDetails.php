@@ -96,7 +96,7 @@ class Google_Service_YouTube_VideoFileDetails extends Google_Collection
   {
     return $this->fileType;
   }
-  public function setRecordingLocation(GeoPoint $recordingLocation)
+  public function setRecordingLocation(Google_Service_YouTube_GeoPoint $recordingLocation)
   {
     $this->recordingLocation = $recordingLocation;
   }

@@ -42,7 +42,7 @@ class Google_Service_ShoppingContent_AccountShippingCarrierRate extends Google_M
   {
     return $this->carrierService;
   }
-  public function setModifierFlatRate(Price $modifierFlatRate)
+  public function setModifierFlatRate(Google_Service_ShoppingContent_Price $modifierFlatRate)
   {
     $this->modifierFlatRate = $modifierFlatRate;
   }

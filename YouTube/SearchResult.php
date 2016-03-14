@@ -32,7 +32,7 @@ class Google_Service_YouTube_SearchResult extends Google_Model
   {
     return $this->etag;
   }
-  public function setId(ResourceId $id)
+  public function setId(Google_Service_YouTube_ResourceId $id)
   {
     $this->id = $id;
   }
@@ -48,7 +48,7 @@ class Google_Service_YouTube_SearchResult extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(SearchResultSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_SearchResultSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

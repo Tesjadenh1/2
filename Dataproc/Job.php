@@ -57,7 +57,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->driverOutputResourceUri;
   }
-  public function setHadoopJob(HadoopJob $hadoopJob)
+  public function setHadoopJob(Google_Service_Dataproc_HadoopJob $hadoopJob)
   {
     $this->hadoopJob = $hadoopJob;
   }
@@ -65,7 +65,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->hadoopJob;
   }
-  public function setHiveJob(HiveJob $hiveJob)
+  public function setHiveJob(Google_Service_Dataproc_HiveJob $hiveJob)
   {
     $this->hiveJob = $hiveJob;
   }
@@ -73,7 +73,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->hiveJob;
   }
-  public function setPigJob(PigJob $pigJob)
+  public function setPigJob(Google_Service_Dataproc_PigJob $pigJob)
   {
     $this->pigJob = $pigJob;
   }
@@ -81,7 +81,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->pigJob;
   }
-  public function setPlacement(JobPlacement $placement)
+  public function setPlacement(Google_Service_Dataproc_JobPlacement $placement)
   {
     $this->placement = $placement;
   }
@@ -89,7 +89,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->placement;
   }
-  public function setPysparkJob(PySparkJob $pysparkJob)
+  public function setPysparkJob(Google_Service_Dataproc_PySparkJob $pysparkJob)
   {
     $this->pysparkJob = $pysparkJob;
   }
@@ -97,7 +97,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->pysparkJob;
   }
-  public function setReference(JobReference $reference)
+  public function setReference(Google_Service_Dataproc_JobReference $reference)
   {
     $this->reference = $reference;
   }
@@ -105,7 +105,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->reference;
   }
-  public function setSparkJob(SparkJob $sparkJob)
+  public function setSparkJob(Google_Service_Dataproc_SparkJob $sparkJob)
   {
     $this->sparkJob = $sparkJob;
   }
@@ -113,7 +113,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->sparkJob;
   }
-  public function setSparkSqlJob(SparkSqlJob $sparkSqlJob)
+  public function setSparkSqlJob(Google_Service_Dataproc_SparkSqlJob $sparkSqlJob)
   {
     $this->sparkSqlJob = $sparkSqlJob;
   }
@@ -121,7 +121,7 @@ class Google_Service_Dataproc_Job extends Google_Collection
   {
     return $this->sparkSqlJob;
   }
-  public function setStatus(JobStatus $status)
+  public function setStatus(Google_Service_Dataproc_JobStatus $status)
   {
     $this->status = $status;
   }

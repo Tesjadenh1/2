@@ -41,7 +41,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationDetail extends G
   {
     return $this->kind;
   }
-  public function setName(LocalizedStringBundle $name)
+  public function setName(Google_Service_GamesConfiguration_LocalizedStringBundle $name)
   {
     $this->name = $name;
   }
@@ -49,7 +49,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationDetail extends G
   {
     return $this->name;
   }
-  public function setScoreFormat(GamesNumberFormatConfiguration $scoreFormat)
+  public function setScoreFormat(Google_Service_GamesConfiguration_GamesNumberFormatConfiguration $scoreFormat)
   {
     $this->scoreFormat = $scoreFormat;
   }

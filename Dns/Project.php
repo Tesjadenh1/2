@@ -47,7 +47,7 @@ class Google_Service_Dns_Project extends Google_Model
   {
     return $this->number;
   }
-  public function setQuota(Quota $quota)
+  public function setQuota(Google_Service_Dns_Quota $quota)
   {
     $this->quota = $quota;
   }

@@ -56,7 +56,7 @@ class Google_Service_Freebase_ReconcileCandidate extends Google_Model
   {
     return $this->name;
   }
-  public function setNotable(ReconcileCandidateNotable $notable)
+  public function setNotable(Google_Service_Freebase_ReconcileCandidateNotable $notable)
   {
     $this->notable = $notable;
   }

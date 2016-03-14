@@ -74,7 +74,7 @@ class Google_Service_YouTube_FanFundingEventSnippet extends Google_Model
   {
     return $this->displayString;
   }
-  public function setSupporterDetails(ChannelProfileDetails $supporterDetails)
+  public function setSupporterDetails(Google_Service_YouTube_ChannelProfileDetails $supporterDetails)
   {
     $this->supporterDetails = $supporterDetails;
   }

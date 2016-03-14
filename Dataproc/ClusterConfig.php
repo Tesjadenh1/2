@@ -40,7 +40,7 @@ class Google_Service_Dataproc_ClusterConfig extends Google_Collection
   {
     return $this->configBucket;
   }
-  public function setGceClusterConfig(GceClusterConfig $gceClusterConfig)
+  public function setGceClusterConfig(Google_Service_Dataproc_GceClusterConfig $gceClusterConfig)
   {
     $this->gceClusterConfig = $gceClusterConfig;
   }
@@ -56,7 +56,7 @@ class Google_Service_Dataproc_ClusterConfig extends Google_Collection
   {
     return $this->initializationActions;
   }
-  public function setMasterConfig(InstanceGroupConfig $masterConfig)
+  public function setMasterConfig(Google_Service_Dataproc_InstanceGroupConfig $masterConfig)
   {
     $this->masterConfig = $masterConfig;
   }
@@ -64,7 +64,7 @@ class Google_Service_Dataproc_ClusterConfig extends Google_Collection
   {
     return $this->masterConfig;
   }
-  public function setSecondaryWorkerConfig(InstanceGroupConfig $secondaryWorkerConfig)
+  public function setSecondaryWorkerConfig(Google_Service_Dataproc_InstanceGroupConfig $secondaryWorkerConfig)
   {
     $this->secondaryWorkerConfig = $secondaryWorkerConfig;
   }
@@ -72,7 +72,7 @@ class Google_Service_Dataproc_ClusterConfig extends Google_Collection
   {
     return $this->secondaryWorkerConfig;
   }
-  public function setSoftwareConfig(SoftwareConfig $softwareConfig)
+  public function setSoftwareConfig(Google_Service_Dataproc_SoftwareConfig $softwareConfig)
   {
     $this->softwareConfig = $softwareConfig;
   }
@@ -80,7 +80,7 @@ class Google_Service_Dataproc_ClusterConfig extends Google_Collection
   {
     return $this->softwareConfig;
   }
-  public function setWorkerConfig(InstanceGroupConfig $workerConfig)
+  public function setWorkerConfig(Google_Service_Dataproc_InstanceGroupConfig $workerConfig)
   {
     $this->workerConfig = $workerConfig;
   }

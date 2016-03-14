@@ -27,7 +27,7 @@ class Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction extends 
   public $restrictionType;
   public $title;
 
-  public function setDefaultValue(AppRestrictionsSchemaRestrictionRestrictionValue $defaultValue)
+  public function setDefaultValue(Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestrictionRestrictionValue $defaultValue)
   {
     $this->defaultValue = $defaultValue;
   }

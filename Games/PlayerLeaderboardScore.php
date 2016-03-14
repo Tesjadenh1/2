@@ -48,7 +48,7 @@ class Google_Service_Games_PlayerLeaderboardScore extends Google_Model
   {
     return $this->leaderboardId;
   }
-  public function setPublicRank(LeaderboardScoreRank $publicRank)
+  public function setPublicRank(Google_Service_Games_LeaderboardScoreRank $publicRank)
   {
     $this->publicRank = $publicRank;
   }
@@ -80,7 +80,7 @@ class Google_Service_Games_PlayerLeaderboardScore extends Google_Model
   {
     return $this->scoreValue;
   }
-  public function setSocialRank(LeaderboardScoreRank $socialRank)
+  public function setSocialRank(Google_Service_Games_LeaderboardScoreRank $socialRank)
   {
     $this->socialRank = $socialRank;
   }

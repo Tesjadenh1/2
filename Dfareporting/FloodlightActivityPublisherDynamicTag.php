@@ -42,7 +42,7 @@ class Google_Service_Dfareporting_FloodlightActivityPublisherDynamicTag extends 
   {
     return $this->directorySiteId;
   }
-  public function setDynamicTag(FloodlightActivityDynamicTag $dynamicTag)
+  public function setDynamicTag(Google_Service_Dfareporting_FloodlightActivityDynamicTag $dynamicTag)
   {
     $this->dynamicTag = $dynamicTag;
   }
@@ -58,7 +58,7 @@ class Google_Service_Dfareporting_FloodlightActivityPublisherDynamicTag extends 
   {
     return $this->siteId;
   }
-  public function setSiteIdDimensionValue(DimensionValue $siteIdDimensionValue)
+  public function setSiteIdDimensionValue(Google_Service_Dfareporting_DimensionValue $siteIdDimensionValue)
   {
     $this->siteIdDimensionValue = $siteIdDimensionValue;
   }

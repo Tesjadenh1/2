@@ -40,7 +40,7 @@ class Google_Service_PlusDomains_Media extends Google_Collection
   public $videoStatus;
   public $width;
 
-  public function setAuthor(MediaAuthor $author)
+  public function setAuthor(Google_Service_PlusDomains_MediaAuthor $author)
   {
     $this->author = $author;
   }
@@ -64,7 +64,7 @@ class Google_Service_PlusDomains_Media extends Google_Collection
   {
     return $this->etag;
   }
-  public function setExif(MediaExif $exif)
+  public function setExif(Google_Service_PlusDomains_MediaExif $exif)
   {
     $this->exif = $exif;
   }

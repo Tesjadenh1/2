@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_OrderRefund extends Google_Model
   {
     return $this->actor;
   }
-  public function setAmount(Price $amount)
+  public function setAmount(Google_Service_ShoppingContent_Price $amount)
   {
     $this->amount = $amount;
   }

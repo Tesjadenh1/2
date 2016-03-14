@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_AccounttaxCustomBatchRequestEntry extends G
   {
     return $this->accountId;
   }
-  public function setAccountTax(AccountTax $accountTax)
+  public function setAccountTax(Google_Service_ShoppingContent_AccountTax $accountTax)
   {
     $this->accountTax = $accountTax;
   }

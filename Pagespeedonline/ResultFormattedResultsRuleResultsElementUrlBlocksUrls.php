@@ -31,7 +31,7 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrl
   {
     return $this->details;
   }
-  public function setResult(PagespeedApiFormatStringV2 $result)
+  public function setResult(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $result)
   {
     $this->result = $result;
   }

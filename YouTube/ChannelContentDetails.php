@@ -29,7 +29,7 @@ class Google_Service_YouTube_ChannelContentDetails extends Google_Model
   {
     return $this->googlePlusUserId;
   }
-  public function setRelatedPlaylists(ChannelContentDetailsRelatedPlaylists $relatedPlaylists)
+  public function setRelatedPlaylists(Google_Service_YouTube_ChannelContentDetailsRelatedPlaylists $relatedPlaylists)
   {
     $this->relatedPlaylists = $relatedPlaylists;
   }

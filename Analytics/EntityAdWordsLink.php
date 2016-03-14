@@ -36,7 +36,7 @@ class Google_Service_Analytics_EntityAdWordsLink extends Google_Collection
   {
     return $this->adWordsAccounts;
   }
-  public function setEntity(EntityAdWordsLinkEntity $entity)
+  public function setEntity(Google_Service_Analytics_EntityAdWordsLinkEntity $entity)
   {
     $this->entity = $entity;
   }

@@ -23,7 +23,7 @@ class Google_Service_Dfareporting_DeliverySchedule extends Google_Model
   public $impressionRatio;
   public $priority;
 
-  public function setFrequencyCap(FrequencyCap $frequencyCap)
+  public function setFrequencyCap(Google_Service_Dfareporting_FrequencyCap $frequencyCap)
   {
     $this->frequencyCap = $frequencyCap;
   }

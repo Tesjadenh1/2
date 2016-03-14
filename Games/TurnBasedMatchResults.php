@@ -25,7 +25,7 @@ class Google_Service_Games_TurnBasedMatchResults extends Google_Collection
   protected $resultsType = 'Google_Service_Games_ParticipantResult';
   protected $resultsDataType = 'array';
 
-  public function setData(TurnBasedMatchDataRequest $data)
+  public function setData(Google_Service_Games_TurnBasedMatchDataRequest $data)
   {
     $this->data = $data;
   }

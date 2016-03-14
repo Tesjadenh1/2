@@ -31,7 +31,7 @@ class Google_Service_Compute_DisksScopedList extends Google_Collection
   {
     return $this->disks;
   }
-  public function setWarning(DisksScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_DisksScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

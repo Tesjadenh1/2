@@ -48,7 +48,7 @@ class Google_Service_Bigquery_TableListTables extends Google_Model
   {
     return $this->kind;
   }
-  public function setTableReference(TableReference $tableReference)
+  public function setTableReference(Google_Service_Bigquery_TableReference $tableReference)
   {
     $this->tableReference = $tableReference;
   }

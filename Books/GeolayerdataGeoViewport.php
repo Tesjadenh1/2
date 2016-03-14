@@ -22,7 +22,7 @@ class Google_Service_Books_GeolayerdataGeoViewport extends Google_Model
   protected $loType = 'Google_Service_Books_GeolayerdataGeoViewportLo';
   protected $loDataType = '';
 
-  public function setHi(GeolayerdataGeoViewportHi $hi)
+  public function setHi(Google_Service_Books_GeolayerdataGeoViewportHi $hi)
   {
     $this->hi = $hi;
   }
@@ -30,7 +30,7 @@ class Google_Service_Books_GeolayerdataGeoViewport extends Google_Model
   {
     return $this->hi;
   }
-  public function setLo(GeolayerdataGeoViewportLo $lo)
+  public function setLo(Google_Service_Books_GeolayerdataGeoViewportLo $lo)
   {
     $this->lo = $lo;
   }

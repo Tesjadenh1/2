@@ -32,7 +32,7 @@ class Google_Service_Compute_Project extends Google_Collection
   protected $usageExportLocationType = 'Google_Service_Compute_UsageExportLocation';
   protected $usageExportLocationDataType = '';
 
-  public function setCommonInstanceMetadata(Metadata $commonInstanceMetadata)
+  public function setCommonInstanceMetadata(Google_Service_Compute_Metadata $commonInstanceMetadata)
   {
     $this->commonInstanceMetadata = $commonInstanceMetadata;
   }
@@ -104,7 +104,7 @@ class Google_Service_Compute_Project extends Google_Collection
   {
     return $this->selfLink;
   }
-  public function setUsageExportLocation(UsageExportLocation $usageExportLocation)
+  public function setUsageExportLocation(Google_Service_Compute_UsageExportLocation $usageExportLocation)
   {
     $this->usageExportLocation = $usageExportLocation;
   }

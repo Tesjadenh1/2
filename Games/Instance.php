@@ -38,7 +38,7 @@ class Google_Service_Games_Instance extends Google_Model
   {
     return $this->acquisitionUri;
   }
-  public function setAndroidInstance(InstanceAndroidDetails $androidInstance)
+  public function setAndroidInstance(Google_Service_Games_InstanceAndroidDetails $androidInstance)
   {
     $this->androidInstance = $androidInstance;
   }
@@ -46,7 +46,7 @@ class Google_Service_Games_Instance extends Google_Model
   {
     return $this->androidInstance;
   }
-  public function setIosInstance(InstanceIosDetails $iosInstance)
+  public function setIosInstance(Google_Service_Games_InstanceIosDetails $iosInstance)
   {
     $this->iosInstance = $iosInstance;
   }
@@ -94,7 +94,7 @@ class Google_Service_Games_Instance extends Google_Model
   {
     return $this->turnBasedPlay;
   }
-  public function setWebInstance(InstanceWebDetails $webInstance)
+  public function setWebInstance(Google_Service_Games_InstanceWebDetails $webInstance)
   {
     $this->webInstance = $webInstance;
   }

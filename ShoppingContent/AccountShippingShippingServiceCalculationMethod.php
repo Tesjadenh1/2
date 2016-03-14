@@ -40,7 +40,7 @@ class Google_Service_ShoppingContent_AccountShippingShippingServiceCalculationMe
   {
     return $this->excluded;
   }
-  public function setFlatRate(Price $flatRate)
+  public function setFlatRate(Google_Service_ShoppingContent_Price $flatRate)
   {
     $this->flatRate = $flatRate;
   }

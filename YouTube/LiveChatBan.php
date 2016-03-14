@@ -47,7 +47,7 @@ class Google_Service_YouTube_LiveChatBan extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(LiveChatBanSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_LiveChatBanSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

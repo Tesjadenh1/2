@@ -42,7 +42,7 @@ class Google_Service_AndroidPublisher_InappproductsListResponse extends Google_C
   {
     return $this->kind;
   }
-  public function setPageInfo(PageInfo $pageInfo)
+  public function setPageInfo(Google_Service_AndroidPublisher_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
@@ -50,7 +50,7 @@ class Google_Service_AndroidPublisher_InappproductsListResponse extends Google_C
   {
     return $this->pageInfo;
   }
-  public function setTokenPagination(TokenPagination $tokenPagination)
+  public function setTokenPagination(Google_Service_AndroidPublisher_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }

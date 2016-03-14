@@ -26,7 +26,7 @@ class Google_Service_YouTube_InvideoPromotion extends Google_Collection
   protected $positionDataType = '';
   public $useSmartTiming;
 
-  public function setDefaultTiming(InvideoTiming $defaultTiming)
+  public function setDefaultTiming(Google_Service_YouTube_InvideoTiming $defaultTiming)
   {
     $this->defaultTiming = $defaultTiming;
   }
@@ -42,7 +42,7 @@ class Google_Service_YouTube_InvideoPromotion extends Google_Collection
   {
     return $this->items;
   }
-  public function setPosition(InvideoPosition $position)
+  public function setPosition(Google_Service_YouTube_InvideoPosition $position)
   {
     $this->position = $position;
   }

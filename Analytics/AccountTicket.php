@@ -27,7 +27,7 @@ class Google_Service_Analytics_AccountTicket extends Google_Model
   protected $webpropertyType = 'Google_Service_Analytics_Webproperty';
   protected $webpropertyDataType = '';
 
-  public function setAccount(Account $account)
+  public function setAccount(Google_Service_Analytics_Account $account)
   {
     $this->account = $account;
   }
@@ -51,7 +51,7 @@ class Google_Service_Analytics_AccountTicket extends Google_Model
   {
     return $this->kind;
   }
-  public function setProfile(Profile $profile)
+  public function setProfile(Google_Service_Analytics_Profile $profile)
   {
     $this->profile = $profile;
   }
@@ -67,7 +67,7 @@ class Google_Service_Analytics_AccountTicket extends Google_Model
   {
     return $this->redirectUri;
   }
-  public function setWebproperty(Webproperty $webproperty)
+  public function setWebproperty(Google_Service_Analytics_Webproperty $webproperty)
   {
     $this->webproperty = $webproperty;
   }

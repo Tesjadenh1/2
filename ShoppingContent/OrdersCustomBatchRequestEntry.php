@@ -44,7 +44,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   {
     return $this->batchId;
   }
-  public function setCancel(OrdersCustomBatchRequestEntryCancel $cancel)
+  public function setCancel(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryCancel $cancel)
   {
     $this->cancel = $cancel;
   }
@@ -52,7 +52,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   {
     return $this->cancel;
   }
-  public function setCancelLineItem(OrdersCustomBatchRequestEntryCancelLineItem $cancelLineItem)
+  public function setCancelLineItem(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryCancelLineItem $cancelLineItem)
   {
     $this->cancelLineItem = $cancelLineItem;
   }
@@ -100,7 +100,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   {
     return $this->orderId;
   }
-  public function setRefund(OrdersCustomBatchRequestEntryRefund $refund)
+  public function setRefund(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryRefund $refund)
   {
     $this->refund = $refund;
   }
@@ -108,7 +108,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   {
     return $this->refund;
   }
-  public function setReturnLineItem(OrdersCustomBatchRequestEntryReturnLineItem $returnLineItem)
+  public function setReturnLineItem(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryReturnLineItem $returnLineItem)
   {
     $this->returnLineItem = $returnLineItem;
   }
@@ -116,7 +116,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   {
     return $this->returnLineItem;
   }
-  public function setShipLineItems(OrdersCustomBatchRequestEntryShipLineItems $shipLineItems)
+  public function setShipLineItems(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryShipLineItems $shipLineItems)
   {
     $this->shipLineItems = $shipLineItems;
   }
@@ -124,7 +124,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   {
     return $this->shipLineItems;
   }
-  public function setUpdateShipment(OrdersCustomBatchRequestEntryUpdateShipment $updateShipment)
+  public function setUpdateShipment(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateShipment $updateShipment)
   {
     $this->updateShipment = $updateShipment;
   }

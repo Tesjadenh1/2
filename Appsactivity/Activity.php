@@ -23,7 +23,7 @@ class Google_Service_Appsactivity_Activity extends Google_Collection
   protected $singleEventsType = 'Google_Service_Appsactivity_Event';
   protected $singleEventsDataType = 'array';
 
-  public function setCombinedEvent(Event $combinedEvent)
+  public function setCombinedEvent(Google_Service_Appsactivity_Event $combinedEvent)
   {
     $this->combinedEvent = $combinedEvent;
   }

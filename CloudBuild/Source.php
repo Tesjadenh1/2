@@ -20,7 +20,7 @@ class Google_Service_CloudBuild_Source extends Google_Model
   protected $storageSourceType = 'Google_Service_CloudBuild_StorageSource';
   protected $storageSourceDataType = '';
 
-  public function setStorageSource(StorageSource $storageSource)
+  public function setStorageSource(Google_Service_CloudBuild_StorageSource $storageSource)
   {
     $this->storageSource = $storageSource;
   }

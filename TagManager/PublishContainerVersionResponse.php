@@ -29,7 +29,7 @@ class Google_Service_TagManager_PublishContainerVersionResponse extends Google_M
   {
     return $this->compilerError;
   }
-  public function setContainerVersion(ContainerVersion $containerVersion)
+  public function setContainerVersion(Google_Service_TagManager_ContainerVersion $containerVersion)
   {
     $this->containerVersion = $containerVersion;
   }

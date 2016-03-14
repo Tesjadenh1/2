@@ -29,7 +29,7 @@ class Google_Service_Analytics_Account extends Google_Model
   public $starred;
   public $updated;
 
-  public function setChildLink(AccountChildLink $childLink)
+  public function setChildLink(Google_Service_Analytics_AccountChildLink $childLink)
   {
     $this->childLink = $childLink;
   }
@@ -69,7 +69,7 @@ class Google_Service_Analytics_Account extends Google_Model
   {
     return $this->name;
   }
-  public function setPermissions(AccountPermissions $permissions)
+  public function setPermissions(Google_Service_Analytics_AccountPermissions $permissions)
   {
     $this->permissions = $permissions;
   }

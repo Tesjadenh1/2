@@ -31,7 +31,7 @@ class Google_Service_Compute_TargetVpnGatewaysScopedList extends Google_Collecti
   {
     return $this->targetVpnGateways;
   }
-  public function setWarning(TargetVpnGatewaysScopedListWarning $warning)
+  public function setWarning(Google_Service_Compute_TargetVpnGatewaysScopedListWarning $warning)
   {
     $this->warning = $warning;
   }

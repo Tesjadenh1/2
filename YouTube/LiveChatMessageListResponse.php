@@ -80,7 +80,7 @@ class Google_Service_YouTube_LiveChatMessageListResponse extends Google_Collecti
   {
     return $this->offlineAt;
   }
-  public function setPageInfo(PageInfo $pageInfo)
+  public function setPageInfo(Google_Service_YouTube_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
@@ -96,7 +96,7 @@ class Google_Service_YouTube_LiveChatMessageListResponse extends Google_Collecti
   {
     return $this->pollingIntervalMillis;
   }
-  public function setTokenPagination(TokenPagination $tokenPagination)
+  public function setTokenPagination(Google_Service_YouTube_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }

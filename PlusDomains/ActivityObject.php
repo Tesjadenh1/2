@@ -36,7 +36,7 @@ class Google_Service_PlusDomains_ActivityObject extends Google_Collection
   protected $statusForViewerDataType = '';
   public $url;
 
-  public function setActor(ActivityObjectActor $actor)
+  public function setActor(Google_Service_PlusDomains_ActivityObjectActor $actor)
   {
     $this->actor = $actor;
   }
@@ -84,7 +84,7 @@ class Google_Service_PlusDomains_ActivityObject extends Google_Collection
   {
     return $this->originalContent;
   }
-  public function setPlusoners(ActivityObjectPlusoners $plusoners)
+  public function setPlusoners(Google_Service_PlusDomains_ActivityObjectPlusoners $plusoners)
   {
     $this->plusoners = $plusoners;
   }
@@ -92,7 +92,7 @@ class Google_Service_PlusDomains_ActivityObject extends Google_Collection
   {
     return $this->plusoners;
   }
-  public function setReplies(ActivityObjectReplies $replies)
+  public function setReplies(Google_Service_PlusDomains_ActivityObjectReplies $replies)
   {
     $this->replies = $replies;
   }
@@ -100,7 +100,7 @@ class Google_Service_PlusDomains_ActivityObject extends Google_Collection
   {
     return $this->replies;
   }
-  public function setResharers(ActivityObjectResharers $resharers)
+  public function setResharers(Google_Service_PlusDomains_ActivityObjectResharers $resharers)
   {
     $this->resharers = $resharers;
   }
@@ -108,7 +108,7 @@ class Google_Service_PlusDomains_ActivityObject extends Google_Collection
   {
     return $this->resharers;
   }
-  public function setStatusForViewer(ActivityObjectStatusForViewer $statusForViewer)
+  public function setStatusForViewer(Google_Service_PlusDomains_ActivityObjectStatusForViewer $statusForViewer)
   {
     $this->statusForViewer = $statusForViewer;
   }

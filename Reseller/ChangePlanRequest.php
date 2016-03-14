@@ -47,7 +47,7 @@ class Google_Service_Reseller_ChangePlanRequest extends Google_Model
   {
     return $this->purchaseOrderId;
   }
-  public function setSeats(Seats $seats)
+  public function setSeats(Google_Service_Reseller_Seats $seats)
   {
     $this->seats = $seats;
   }

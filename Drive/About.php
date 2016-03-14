@@ -86,7 +86,7 @@ class Google_Service_Drive_About extends Google_Collection
   {
     return $this->maxUploadSize;
   }
-  public function setStorageQuota(AboutStorageQuota $storageQuota)
+  public function setStorageQuota(Google_Service_Drive_AboutStorageQuota $storageQuota)
   {
     $this->storageQuota = $storageQuota;
   }
@@ -94,7 +94,7 @@ class Google_Service_Drive_About extends Google_Collection
   {
     return $this->storageQuota;
   }
-  public function setUser(User $user)
+  public function setUser(Google_Service_Drive_User $user)
   {
     $this->user = $user;
   }

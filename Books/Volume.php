@@ -36,7 +36,7 @@ class Google_Service_Books_Volume extends Google_Model
   protected $volumeInfoType = 'Google_Service_Books_VolumeVolumeInfo';
   protected $volumeInfoDataType = '';
 
-  public function setAccessInfo(VolumeAccessInfo $accessInfo)
+  public function setAccessInfo(Google_Service_Books_VolumeAccessInfo $accessInfo)
   {
     $this->accessInfo = $accessInfo;
   }
@@ -68,7 +68,7 @@ class Google_Service_Books_Volume extends Google_Model
   {
     return $this->kind;
   }
-  public function setLayerInfo(VolumeLayerInfo $layerInfo)
+  public function setLayerInfo(Google_Service_Books_VolumeLayerInfo $layerInfo)
   {
     $this->layerInfo = $layerInfo;
   }
@@ -76,7 +76,7 @@ class Google_Service_Books_Volume extends Google_Model
   {
     return $this->layerInfo;
   }
-  public function setRecommendedInfo(VolumeRecommendedInfo $recommendedInfo)
+  public function setRecommendedInfo(Google_Service_Books_VolumeRecommendedInfo $recommendedInfo)
   {
     $this->recommendedInfo = $recommendedInfo;
   }
@@ -84,7 +84,7 @@ class Google_Service_Books_Volume extends Google_Model
   {
     return $this->recommendedInfo;
   }
-  public function setSaleInfo(VolumeSaleInfo $saleInfo)
+  public function setSaleInfo(Google_Service_Books_VolumeSaleInfo $saleInfo)
   {
     $this->saleInfo = $saleInfo;
   }
@@ -92,7 +92,7 @@ class Google_Service_Books_Volume extends Google_Model
   {
     return $this->saleInfo;
   }
-  public function setSearchInfo(VolumeSearchInfo $searchInfo)
+  public function setSearchInfo(Google_Service_Books_VolumeSearchInfo $searchInfo)
   {
     $this->searchInfo = $searchInfo;
   }
@@ -108,7 +108,7 @@ class Google_Service_Books_Volume extends Google_Model
   {
     return $this->selfLink;
   }
-  public function setUserInfo(VolumeUserInfo $userInfo)
+  public function setUserInfo(Google_Service_Books_VolumeUserInfo $userInfo)
   {
     $this->userInfo = $userInfo;
   }
@@ -116,7 +116,7 @@ class Google_Service_Books_Volume extends Google_Model
   {
     return $this->userInfo;
   }
-  public function setVolumeInfo(VolumeVolumeInfo $volumeInfo)
+  public function setVolumeInfo(Google_Service_Books_VolumeVolumeInfo $volumeInfo)
   {
     $this->volumeInfo = $volumeInfo;
   }

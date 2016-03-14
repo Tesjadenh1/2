@@ -94,7 +94,7 @@ class Google_Service_Doubleclicksearch_ReportRequest extends Google_Collection
   {
     return $this->orderBy;
   }
-  public function setReportScope(ReportRequestReportScope $reportScope)
+  public function setReportScope(Google_Service_Doubleclicksearch_ReportRequestReportScope $reportScope)
   {
     $this->reportScope = $reportScope;
   }
@@ -134,7 +134,7 @@ class Google_Service_Doubleclicksearch_ReportRequest extends Google_Collection
   {
     return $this->statisticsCurrency;
   }
-  public function setTimeRange(ReportRequestTimeRange $timeRange)
+  public function setTimeRange(Google_Service_Doubleclicksearch_ReportRequestTimeRange $timeRange)
   {
     $this->timeRange = $timeRange;
   }

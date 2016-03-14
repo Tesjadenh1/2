@@ -31,7 +31,7 @@ class Google_Service_Prediction_AnalyzeDataDescription extends Google_Collection
   {
     return $this->features;
   }
-  public function setOutputFeature(AnalyzeDataDescriptionOutputFeature $outputFeature)
+  public function setOutputFeature(Google_Service_Prediction_AnalyzeDataDescriptionOutputFeature $outputFeature)
   {
     $this->outputFeature = $outputFeature;
   }

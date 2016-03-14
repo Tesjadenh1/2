@@ -33,7 +33,7 @@ class Google_Service_Games_PlayerExperienceInfo extends Google_Model
   {
     return $this->currentExperiencePoints;
   }
-  public function setCurrentLevel(PlayerLevel $currentLevel)
+  public function setCurrentLevel(Google_Service_Games_PlayerLevel $currentLevel)
   {
     $this->currentLevel = $currentLevel;
   }
@@ -57,7 +57,7 @@ class Google_Service_Games_PlayerExperienceInfo extends Google_Model
   {
     return $this->lastLevelUpTimestampMillis;
   }
-  public function setNextLevel(PlayerLevel $nextLevel)
+  public function setNextLevel(Google_Service_Games_PlayerLevel $nextLevel)
   {
     $this->nextLevel = $nextLevel;
   }

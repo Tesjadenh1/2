@@ -26,7 +26,7 @@ class Google_Service_Games_QuestCriterion extends Google_Model
   protected $initialPlayerProgressDataType = '';
   public $kind;
 
-  public function setCompletionContribution(QuestContribution $completionContribution)
+  public function setCompletionContribution(Google_Service_Games_QuestContribution $completionContribution)
   {
     $this->completionContribution = $completionContribution;
   }
@@ -34,7 +34,7 @@ class Google_Service_Games_QuestCriterion extends Google_Model
   {
     return $this->completionContribution;
   }
-  public function setCurrentContribution(QuestContribution $currentContribution)
+  public function setCurrentContribution(Google_Service_Games_QuestContribution $currentContribution)
   {
     $this->currentContribution = $currentContribution;
   }
@@ -50,7 +50,7 @@ class Google_Service_Games_QuestCriterion extends Google_Model
   {
     return $this->eventId;
   }
-  public function setInitialPlayerProgress(QuestContribution $initialPlayerProgress)
+  public function setInitialPlayerProgress(Google_Service_Games_QuestContribution $initialPlayerProgress)
   {
     $this->initialPlayerProgress = $initialPlayerProgress;
   }

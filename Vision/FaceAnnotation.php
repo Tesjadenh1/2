@@ -53,7 +53,7 @@ class Google_Service_Vision_FaceAnnotation extends Google_Collection
   {
     return $this->blurredLikelihood;
   }
-  public function setBoundingPoly(BoundingPoly $boundingPoly)
+  public function setBoundingPoly(Google_Service_Vision_BoundingPoly $boundingPoly)
   {
     $this->boundingPoly = $boundingPoly;
   }
@@ -69,7 +69,7 @@ class Google_Service_Vision_FaceAnnotation extends Google_Collection
   {
     return $this->detectionConfidence;
   }
-  public function setFdBoundingPoly(BoundingPoly $fdBoundingPoly)
+  public function setFdBoundingPoly(Google_Service_Vision_BoundingPoly $fdBoundingPoly)
   {
     $this->fdBoundingPoly = $fdBoundingPoly;
   }

@@ -32,7 +32,7 @@ class Google_Service_AdExchangeBuyer_UpdatePrivateAuctionProposalRequest extends
   {
     return $this->externalDealId;
   }
-  public function setNote(MarketplaceNote $note)
+  public function setNote(Google_Service_AdExchangeBuyer_MarketplaceNote $note)
   {
     $this->note = $note;
   }

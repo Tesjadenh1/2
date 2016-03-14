@@ -62,7 +62,7 @@ class Google_Service_Bigquery_JobConfigurationLoad extends Google_Collection
   {
     return $this->createDisposition;
   }
-  public function setDestinationTable(TableReference $destinationTable)
+  public function setDestinationTable(Google_Service_Bigquery_TableReference $destinationTable)
   {
     $this->destinationTable = $destinationTable;
   }
@@ -118,7 +118,7 @@ class Google_Service_Bigquery_JobConfigurationLoad extends Google_Collection
   {
     return $this->quote;
   }
-  public function setSchema(TableSchema $schema)
+  public function setSchema(Google_Service_Bigquery_TableSchema $schema)
   {
     $this->schema = $schema;
   }

@@ -25,7 +25,7 @@ class Google_Service_YouTubeAnalytics_Group extends Google_Model
   protected $snippetType = 'Google_Service_YouTubeAnalytics_GroupSnippet';
   protected $snippetDataType = '';
 
-  public function setContentDetails(GroupContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTubeAnalytics_GroupContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -57,7 +57,7 @@ class Google_Service_YouTubeAnalytics_Group extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(GroupSnippet $snippet)
+  public function setSnippet(Google_Service_YouTubeAnalytics_GroupSnippet $snippet)
   {
     $this->snippet = $snippet;
   }

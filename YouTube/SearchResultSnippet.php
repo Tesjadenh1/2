@@ -66,7 +66,7 @@ class Google_Service_YouTube_SearchResultSnippet extends Google_Model
   {
     return $this->publishedAt;
   }
-  public function setThumbnails(ThumbnailDetails $thumbnails)
+  public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }

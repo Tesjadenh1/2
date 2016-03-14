@@ -59,7 +59,7 @@ class Google_Service_Dataproc_ClusterOperationMetadata extends Google_Collection
   {
     return $this->operationType;
   }
-  public function setStatus(ClusterOperationStatus $status)
+  public function setStatus(Google_Service_Dataproc_ClusterOperationStatus $status)
   {
     $this->status = $status;
   }

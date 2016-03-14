@@ -21,7 +21,7 @@ class Google_Service_Books_DictlayerdataDictWordsDerivatives extends Google_Mode
   protected $sourceDataType = '';
   public $text;
 
-  public function setSource(DictlayerdataDictWordsDerivativesSource $source)
+  public function setSource(Google_Service_Books_DictlayerdataDictWordsDerivativesSource $source)
   {
     $this->source = $source;
   }

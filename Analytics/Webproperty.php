@@ -46,7 +46,7 @@ class Google_Service_Analytics_Webproperty extends Google_Model
   {
     return $this->accountId;
   }
-  public function setChildLink(WebpropertyChildLink $childLink)
+  public function setChildLink(Google_Service_Analytics_WebpropertyChildLink $childLink)
   {
     $this->childLink = $childLink;
   }
@@ -118,7 +118,7 @@ class Google_Service_Analytics_Webproperty extends Google_Model
   {
     return $this->name;
   }
-  public function setParentLink(WebpropertyParentLink $parentLink)
+  public function setParentLink(Google_Service_Analytics_WebpropertyParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }
@@ -126,7 +126,7 @@ class Google_Service_Analytics_Webproperty extends Google_Model
   {
     return $this->parentLink;
   }
-  public function setPermissions(WebpropertyPermissions $permissions)
+  public function setPermissions(Google_Service_Analytics_WebpropertyPermissions $permissions)
   {
     $this->permissions = $permissions;
   }

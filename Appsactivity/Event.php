@@ -57,7 +57,7 @@ class Google_Service_Appsactivity_Event extends Google_Collection
   {
     return $this->fromUserDeletion;
   }
-  public function setMove(Move $move)
+  public function setMove(Google_Service_Appsactivity_Move $move)
   {
     $this->move = $move;
   }
@@ -81,7 +81,7 @@ class Google_Service_Appsactivity_Event extends Google_Collection
   {
     return $this->primaryEventType;
   }
-  public function setRename(Rename $rename)
+  public function setRename(Google_Service_Appsactivity_Rename $rename)
   {
     $this->rename = $rename;
   }
@@ -89,7 +89,7 @@ class Google_Service_Appsactivity_Event extends Google_Collection
   {
     return $this->rename;
   }
-  public function setTarget(Target $target)
+  public function setTarget(Google_Service_Appsactivity_Target $target)
   {
     $this->target = $target;
   }
@@ -97,7 +97,7 @@ class Google_Service_Appsactivity_Event extends Google_Collection
   {
     return $this->target;
   }
-  public function setUser(User $user)
+  public function setUser(Google_Service_Appsactivity_User $user)
   {
     $this->user = $user;
   }

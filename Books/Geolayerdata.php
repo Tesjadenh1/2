@@ -23,7 +23,7 @@ class Google_Service_Books_Geolayerdata extends Google_Model
   protected $geoDataType = '';
   public $kind;
 
-  public function setCommon(GeolayerdataCommon $common)
+  public function setCommon(Google_Service_Books_GeolayerdataCommon $common)
   {
     $this->common = $common;
   }
@@ -31,7 +31,7 @@ class Google_Service_Books_Geolayerdata extends Google_Model
   {
     return $this->common;
   }
-  public function setGeo(GeolayerdataGeo $geo)
+  public function setGeo(Google_Service_Books_GeolayerdataGeo $geo)
   {
     $this->geo = $geo;
   }

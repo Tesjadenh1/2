@@ -34,7 +34,7 @@ class Google_Service_Blogger_PostUserInfo extends Google_Model
   {
     return $this->kind;
   }
-  public function setPost(Post $post)
+  public function setPost(Google_Service_Blogger_Post $post)
   {
     $this->post = $post;
   }
@@ -42,7 +42,7 @@ class Google_Service_Blogger_PostUserInfo extends Google_Model
   {
     return $this->post;
   }
-  public function setPostUserInfo(PostPerUserInfo $postUserInfo)
+  public function setPostUserInfo(Google_Service_Blogger_PostPerUserInfo $postUserInfo)
   {
     $this->postUserInfo = $postUserInfo;
   }

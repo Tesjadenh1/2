@@ -24,7 +24,7 @@ class Google_Service_ShoppingContent_AccountsCustomBatchRequestEntry extends Goo
   public $merchantId;
   public $method;
 
-  public function setAccount(Account $account)
+  public function setAccount(Google_Service_ShoppingContent_Account $account)
   {
     $this->account = $account;
   }

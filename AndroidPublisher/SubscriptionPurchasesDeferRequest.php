@@ -20,7 +20,7 @@ class Google_Service_AndroidPublisher_SubscriptionPurchasesDeferRequest extends 
   protected $deferralInfoType = 'Google_Service_AndroidPublisher_SubscriptionDeferralInfo';
   protected $deferralInfoDataType = '';
 
-  public function setDeferralInfo(SubscriptionDeferralInfo $deferralInfo)
+  public function setDeferralInfo(Google_Service_AndroidPublisher_SubscriptionDeferralInfo $deferralInfo)
   {
     $this->deferralInfo = $deferralInfo;
   }

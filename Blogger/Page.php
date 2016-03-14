@@ -32,7 +32,7 @@ class Google_Service_Blogger_Page extends Google_Model
   public $updated;
   public $url;
 
-  public function setAuthor(PageAuthor $author)
+  public function setAuthor(Google_Service_Blogger_PageAuthor $author)
   {
     $this->author = $author;
   }
@@ -40,7 +40,7 @@ class Google_Service_Blogger_Page extends Google_Model
   {
     return $this->author;
   }
-  public function setBlog(PageBlog $blog)
+  public function setBlog(Google_Service_Blogger_PageBlog $blog)
   {
     $this->blog = $blog;
   }

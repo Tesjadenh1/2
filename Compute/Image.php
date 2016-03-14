@@ -52,7 +52,7 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->creationTimestamp;
   }
-  public function setDeprecated(DeprecationStatus $deprecated)
+  public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
   {
     $this->deprecated = $deprecated;
   }
@@ -108,7 +108,7 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->name;
   }
-  public function setRawDisk(ImageRawDisk $rawDisk)
+  public function setRawDisk(Google_Service_Compute_ImageRawDisk $rawDisk)
   {
     $this->rawDisk = $rawDisk;
   }

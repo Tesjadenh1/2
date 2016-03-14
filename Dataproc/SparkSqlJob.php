@@ -35,7 +35,7 @@ class Google_Service_Dataproc_SparkSqlJob extends Google_Collection
   {
     return $this->jarFileUris;
   }
-  public function setLoggingConfig(LoggingConfig $loggingConfig)
+  public function setLoggingConfig(Google_Service_Dataproc_LoggingConfig $loggingConfig)
   {
     $this->loggingConfig = $loggingConfig;
   }
@@ -59,7 +59,7 @@ class Google_Service_Dataproc_SparkSqlJob extends Google_Collection
   {
     return $this->queryFileUri;
   }
-  public function setQueryList(QueryList $queryList)
+  public function setQueryList(Google_Service_Dataproc_QueryList $queryList)
   {
     $this->queryList = $queryList;
   }

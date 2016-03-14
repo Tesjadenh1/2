@@ -45,7 +45,7 @@ class Google_Service_AdExchangeBuyer_DealTerms extends Google_Model
   {
     return $this->description;
   }
-  public function setEstimatedGrossSpend(Price $estimatedGrossSpend)
+  public function setEstimatedGrossSpend(Google_Service_AdExchangeBuyer_Price $estimatedGrossSpend)
   {
     $this->estimatedGrossSpend = $estimatedGrossSpend;
   }
@@ -61,7 +61,7 @@ class Google_Service_AdExchangeBuyer_DealTerms extends Google_Model
   {
     return $this->estimatedImpressionsPerDay;
   }
-  public function setGuaranteedFixedPriceTerms(DealTermsGuaranteedFixedPriceTerms $guaranteedFixedPriceTerms)
+  public function setGuaranteedFixedPriceTerms(Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTerms $guaranteedFixedPriceTerms)
   {
     $this->guaranteedFixedPriceTerms = $guaranteedFixedPriceTerms;
   }
@@ -69,7 +69,7 @@ class Google_Service_AdExchangeBuyer_DealTerms extends Google_Model
   {
     return $this->guaranteedFixedPriceTerms;
   }
-  public function setNonGuaranteedAuctionTerms(DealTermsNonGuaranteedAuctionTerms $nonGuaranteedAuctionTerms)
+  public function setNonGuaranteedAuctionTerms(Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedAuctionTerms $nonGuaranteedAuctionTerms)
   {
     $this->nonGuaranteedAuctionTerms = $nonGuaranteedAuctionTerms;
   }
@@ -77,7 +77,7 @@ class Google_Service_AdExchangeBuyer_DealTerms extends Google_Model
   {
     return $this->nonGuaranteedAuctionTerms;
   }
-  public function setNonGuaranteedFixedPriceTerms(DealTermsNonGuaranteedFixedPriceTerms $nonGuaranteedFixedPriceTerms)
+  public function setNonGuaranteedFixedPriceTerms(Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedFixedPriceTerms $nonGuaranteedFixedPriceTerms)
   {
     $this->nonGuaranteedFixedPriceTerms = $nonGuaranteedFixedPriceTerms;
   }

@@ -33,7 +33,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchResponseEntry extends Goog
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }
@@ -57,7 +57,7 @@ class Google_Service_ShoppingContent_OrdersCustomBatchResponseEntry extends Goog
   {
     return $this->kind;
   }
-  public function setOrder(Order $order)
+  public function setOrder(Google_Service_ShoppingContent_Order $order)
   {
     $this->order = $order;
   }

@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_ProductsCustomBatchResponseEntry extends Go
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }
@@ -48,7 +48,7 @@ class Google_Service_ShoppingContent_ProductsCustomBatchResponseEntry extends Go
   {
     return $this->kind;
   }
-  public function setProduct(Product $product)
+  public function setProduct(Google_Service_ShoppingContent_Product $product)
   {
     $this->product = $product;
   }

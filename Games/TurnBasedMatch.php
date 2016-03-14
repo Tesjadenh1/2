@@ -54,7 +54,7 @@ class Google_Service_Games_TurnBasedMatch extends Google_Collection
   {
     return $this->applicationId;
   }
-  public function setAutoMatchingCriteria(TurnBasedAutoMatchingCriteria $autoMatchingCriteria)
+  public function setAutoMatchingCriteria(Google_Service_Games_TurnBasedAutoMatchingCriteria $autoMatchingCriteria)
   {
     $this->autoMatchingCriteria = $autoMatchingCriteria;
   }
@@ -62,7 +62,7 @@ class Google_Service_Games_TurnBasedMatch extends Google_Collection
   {
     return $this->autoMatchingCriteria;
   }
-  public function setCreationDetails(TurnBasedMatchModification $creationDetails)
+  public function setCreationDetails(Google_Service_Games_TurnBasedMatchModification $creationDetails)
   {
     $this->creationDetails = $creationDetails;
   }
@@ -70,7 +70,7 @@ class Google_Service_Games_TurnBasedMatch extends Google_Collection
   {
     return $this->creationDetails;
   }
-  public function setData(TurnBasedMatchData $data)
+  public function setData(Google_Service_Games_TurnBasedMatchData $data)
   {
     $this->data = $data;
   }
@@ -102,7 +102,7 @@ class Google_Service_Games_TurnBasedMatch extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLastUpdateDetails(TurnBasedMatchModification $lastUpdateDetails)
+  public function setLastUpdateDetails(Google_Service_Games_TurnBasedMatchModification $lastUpdateDetails)
   {
     $this->lastUpdateDetails = $lastUpdateDetails;
   }
@@ -150,7 +150,7 @@ class Google_Service_Games_TurnBasedMatch extends Google_Collection
   {
     return $this->pendingParticipantId;
   }
-  public function setPreviousMatchData(TurnBasedMatchData $previousMatchData)
+  public function setPreviousMatchData(Google_Service_Games_TurnBasedMatchData $previousMatchData)
   {
     $this->previousMatchData = $previousMatchData;
   }

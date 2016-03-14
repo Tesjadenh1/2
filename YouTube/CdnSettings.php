@@ -30,7 +30,7 @@ class Google_Service_YouTube_CdnSettings extends Google_Model
   {
     return $this->format;
   }
-  public function setIngestionInfo(IngestionInfo $ingestionInfo)
+  public function setIngestionInfo(Google_Service_YouTube_IngestionInfo $ingestionInfo)
   {
     $this->ingestionInfo = $ingestionInfo;
   }

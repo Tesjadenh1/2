@@ -28,7 +28,7 @@ class Google_Service_Spectrum_PawsRegisterRequest extends Google_Model
   public $type;
   public $version;
 
-  public function setAntenna(AntennaCharacteristics $antenna)
+  public function setAntenna(Google_Service_Spectrum_AntennaCharacteristics $antenna)
   {
     $this->antenna = $antenna;
   }
@@ -36,7 +36,7 @@ class Google_Service_Spectrum_PawsRegisterRequest extends Google_Model
   {
     return $this->antenna;
   }
-  public function setDeviceDesc(DeviceDescriptor $deviceDesc)
+  public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }
@@ -44,7 +44,7 @@ class Google_Service_Spectrum_PawsRegisterRequest extends Google_Model
   {
     return $this->deviceDesc;
   }
-  public function setDeviceOwner(DeviceOwner $deviceOwner)
+  public function setDeviceOwner(Google_Service_Spectrum_DeviceOwner $deviceOwner)
   {
     $this->deviceOwner = $deviceOwner;
   }
@@ -52,7 +52,7 @@ class Google_Service_Spectrum_PawsRegisterRequest extends Google_Model
   {
     return $this->deviceOwner;
   }
-  public function setLocation(GeoLocation $location)
+  public function setLocation(Google_Service_Spectrum_GeoLocation $location)
   {
     $this->location = $location;
   }

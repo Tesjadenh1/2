@@ -22,7 +22,7 @@ class Google_Service_YouTube_VideoRecordingDetails extends Google_Model
   public $locationDescription;
   public $recordingDate;
 
-  public function setLocation(GeoPoint $location)
+  public function setLocation(Google_Service_YouTube_GeoPoint $location)
   {
     $this->location = $location;
   }

@@ -60,7 +60,7 @@ class Google_Service_YouTube_ChannelSnippet extends Google_Model
   {
     return $this->description;
   }
-  public function setLocalized(ChannelLocalization $localized)
+  public function setLocalized(Google_Service_YouTube_ChannelLocalization $localized)
   {
     $this->localized = $localized;
   }
@@ -76,7 +76,7 @@ class Google_Service_YouTube_ChannelSnippet extends Google_Model
   {
     return $this->publishedAt;
   }
-  public function setThumbnails(ThumbnailDetails $thumbnails)
+  public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }

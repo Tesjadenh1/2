@@ -45,7 +45,7 @@ class Google_Service_YouTube_ImageSettings extends Google_Model
   public $trackingImageUrl;
   public $watchIconImageUrl;
 
-  public function setBackgroundImageUrl(LocalizedProperty $backgroundImageUrl)
+  public function setBackgroundImageUrl(Google_Service_YouTube_LocalizedProperty $backgroundImageUrl)
   {
     $this->backgroundImageUrl = $backgroundImageUrl;
   }
@@ -173,7 +173,7 @@ class Google_Service_YouTube_ImageSettings extends Google_Model
   {
     return $this->bannerTvMediumImageUrl;
   }
-  public function setLargeBrandedBannerImageImapScript(LocalizedProperty $largeBrandedBannerImageImapScript)
+  public function setLargeBrandedBannerImageImapScript(Google_Service_YouTube_LocalizedProperty $largeBrandedBannerImageImapScript)
   {
     $this->largeBrandedBannerImageImapScript = $largeBrandedBannerImageImapScript;
   }
@@ -181,7 +181,7 @@ class Google_Service_YouTube_ImageSettings extends Google_Model
   {
     return $this->largeBrandedBannerImageImapScript;
   }
-  public function setLargeBrandedBannerImageUrl(LocalizedProperty $largeBrandedBannerImageUrl)
+  public function setLargeBrandedBannerImageUrl(Google_Service_YouTube_LocalizedProperty $largeBrandedBannerImageUrl)
   {
     $this->largeBrandedBannerImageUrl = $largeBrandedBannerImageUrl;
   }
@@ -189,7 +189,7 @@ class Google_Service_YouTube_ImageSettings extends Google_Model
   {
     return $this->largeBrandedBannerImageUrl;
   }
-  public function setSmallBrandedBannerImageImapScript(LocalizedProperty $smallBrandedBannerImageImapScript)
+  public function setSmallBrandedBannerImageImapScript(Google_Service_YouTube_LocalizedProperty $smallBrandedBannerImageImapScript)
   {
     $this->smallBrandedBannerImageImapScript = $smallBrandedBannerImageImapScript;
   }
@@ -197,7 +197,7 @@ class Google_Service_YouTube_ImageSettings extends Google_Model
   {
     return $this->smallBrandedBannerImageImapScript;
   }
-  public function setSmallBrandedBannerImageUrl(LocalizedProperty $smallBrandedBannerImageUrl)
+  public function setSmallBrandedBannerImageUrl(Google_Service_YouTube_LocalizedProperty $smallBrandedBannerImageUrl)
   {
     $this->smallBrandedBannerImageUrl = $smallBrandedBannerImageUrl;
   }

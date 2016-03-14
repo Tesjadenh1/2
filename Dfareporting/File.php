@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_File extends Google_Model
   protected $urlsType = 'Google_Service_Dfareporting_FileUrls';
   protected $urlsDataType = '';
 
-  public function setDateRange(DateRange $dateRange)
+  public function setDateRange(Google_Service_Dfareporting_DateRange $dateRange)
   {
     $this->dateRange = $dateRange;
   }
@@ -102,7 +102,7 @@ class Google_Service_Dfareporting_File extends Google_Model
   {
     return $this->status;
   }
-  public function setUrls(FileUrls $urls)
+  public function setUrls(Google_Service_Dfareporting_FileUrls $urls)
   {
     $this->urls = $urls;
   }

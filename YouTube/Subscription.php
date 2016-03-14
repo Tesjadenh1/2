@@ -27,7 +27,7 @@ class Google_Service_YouTube_Subscription extends Google_Model
   protected $subscriberSnippetType = 'Google_Service_YouTube_SubscriptionSubscriberSnippet';
   protected $subscriberSnippetDataType = '';
 
-  public function setContentDetails(SubscriptionContentDetails $contentDetails)
+  public function setContentDetails(Google_Service_YouTube_SubscriptionContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
@@ -59,7 +59,7 @@ class Google_Service_YouTube_Subscription extends Google_Model
   {
     return $this->kind;
   }
-  public function setSnippet(SubscriptionSnippet $snippet)
+  public function setSnippet(Google_Service_YouTube_SubscriptionSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
@@ -67,7 +67,7 @@ class Google_Service_YouTube_Subscription extends Google_Model
   {
     return $this->snippet;
   }
-  public function setSubscriberSnippet(SubscriptionSubscriberSnippet $subscriberSnippet)
+  public function setSubscriberSnippet(Google_Service_YouTube_SubscriptionSubscriberSnippet $subscriberSnippet)
   {
     $this->subscriberSnippet = $subscriberSnippet;
   }

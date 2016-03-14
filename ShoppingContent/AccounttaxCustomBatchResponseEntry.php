@@ -24,7 +24,7 @@ class Google_Service_ShoppingContent_AccounttaxCustomBatchResponseEntry extends 
   protected $errorsDataType = '';
   public $kind;
 
-  public function setAccountTax(AccountTax $accountTax)
+  public function setAccountTax(Google_Service_ShoppingContent_AccountTax $accountTax)
   {
     $this->accountTax = $accountTax;
   }
@@ -40,7 +40,7 @@ class Google_Service_ShoppingContent_AccounttaxCustomBatchResponseEntry extends 
   {
     return $this->batchId;
   }
-  public function setErrors(Errors $errors)
+  public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }

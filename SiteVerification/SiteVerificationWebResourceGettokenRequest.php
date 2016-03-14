@@ -21,7 +21,7 @@ class Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequest
   protected $siteDataType = '';
   public $verificationMethod;
 
-  public function setSite(SiteVerificationWebResourceGettokenRequestSite $site)
+  public function setSite(Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequestSite $site)
   {
     $this->site = $site;
   }

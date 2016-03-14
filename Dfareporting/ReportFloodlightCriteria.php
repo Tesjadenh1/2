@@ -40,7 +40,7 @@ class Google_Service_Dfareporting_ReportFloodlightCriteria extends Google_Collec
   {
     return $this->customRichMediaEvents;
   }
-  public function setDateRange(DateRange $dateRange)
+  public function setDateRange(Google_Service_Dfareporting_DateRange $dateRange)
   {
     $this->dateRange = $dateRange;
   }
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_ReportFloodlightCriteria extends Google_Collec
   {
     return $this->dimensions;
   }
-  public function setFloodlightConfigId(DimensionValue $floodlightConfigId)
+  public function setFloodlightConfigId(Google_Service_Dfareporting_DimensionValue $floodlightConfigId)
   {
     $this->floodlightConfigId = $floodlightConfigId;
   }
@@ -80,7 +80,7 @@ class Google_Service_Dfareporting_ReportFloodlightCriteria extends Google_Collec
   {
     return $this->metricNames;
   }
-  public function setReportProperties(ReportFloodlightCriteriaReportProperties $reportProperties)
+  public function setReportProperties(Google_Service_Dfareporting_ReportFloodlightCriteriaReportProperties $reportProperties)
   {
     $this->reportProperties = $reportProperties;
   }

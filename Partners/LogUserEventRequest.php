@@ -61,7 +61,7 @@ class Google_Service_Partners_LogUserEventRequest extends Google_Collection
   {
     return $this->eventScope;
   }
-  public function setLead(Lead $lead)
+  public function setLead(Google_Service_Partners_Lead $lead)
   {
     $this->lead = $lead;
   }
@@ -69,7 +69,7 @@ class Google_Service_Partners_LogUserEventRequest extends Google_Collection
   {
     return $this->lead;
   }
-  public function setRequestMetadata(RequestMetadata $requestMetadata)
+  public function setRequestMetadata(Google_Service_Partners_RequestMetadata $requestMetadata)
   {
     $this->requestMetadata = $requestMetadata;
   }

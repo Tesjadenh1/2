@@ -20,7 +20,7 @@ class Google_Service_Partners_LogUserEventResponse extends Google_Model
   protected $responseMetadataType = 'Google_Service_Partners_ResponseMetadata';
   protected $responseMetadataDataType = '';
 
-  public function setResponseMetadata(ResponseMetadata $responseMetadata)
+  public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }

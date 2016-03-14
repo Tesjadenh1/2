@@ -27,7 +27,7 @@ class Google_Service_YouTube_ChannelBrandingSettings extends Google_Collection
   protected $watchType = 'Google_Service_YouTube_WatchSettings';
   protected $watchDataType = '';
 
-  public function setChannel(ChannelSettings $channel)
+  public function setChannel(Google_Service_YouTube_ChannelSettings $channel)
   {
     $this->channel = $channel;
   }
@@ -43,7 +43,7 @@ class Google_Service_YouTube_ChannelBrandingSettings extends Google_Collection
   {
     return $this->hints;
   }
-  public function setImage(ImageSettings $image)
+  public function setImage(Google_Service_YouTube_ImageSettings $image)
   {
     $this->image = $image;
   }
@@ -51,7 +51,7 @@ class Google_Service_YouTube_ChannelBrandingSettings extends Google_Collection
   {
     return $this->image;
   }
-  public function setWatch(WatchSettings $watch)
+  public function setWatch(Google_Service_YouTube_WatchSettings $watch)
   {
     $this->watch = $watch;
   }

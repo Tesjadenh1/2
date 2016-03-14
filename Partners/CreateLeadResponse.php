@@ -23,7 +23,7 @@ class Google_Service_Partners_CreateLeadResponse extends Google_Model
   protected $responseMetadataType = 'Google_Service_Partners_ResponseMetadata';
   protected $responseMetadataDataType = '';
 
-  public function setLead(Lead $lead)
+  public function setLead(Google_Service_Partners_Lead $lead)
   {
     $this->lead = $lead;
   }
@@ -39,7 +39,7 @@ class Google_Service_Partners_CreateLeadResponse extends Google_Model
   {
     return $this->recaptchaStatus;
   }
-  public function setResponseMetadata(ResponseMetadata $responseMetadata)
+  public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }

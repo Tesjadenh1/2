@@ -63,7 +63,7 @@ class Google_Service_Games_Application extends Google_Collection
   {
     return $this->author;
   }
-  public function setCategory(ApplicationCategory $category)
+  public function setCategory(Google_Service_Games_ApplicationCategory $category)
   {
     $this->category = $category;
   }

@@ -24,7 +24,7 @@ class Google_Service_AdExchangeBuyer_TargetingValue extends Google_Model
   public $longValue;
   public $stringValue;
 
-  public function setCreativeSizeValue(TargetingValueCreativeSize $creativeSizeValue)
+  public function setCreativeSizeValue(Google_Service_AdExchangeBuyer_TargetingValueCreativeSize $creativeSizeValue)
   {
     $this->creativeSizeValue = $creativeSizeValue;
   }
@@ -32,7 +32,7 @@ class Google_Service_AdExchangeBuyer_TargetingValue extends Google_Model
   {
     return $this->creativeSizeValue;
   }
-  public function setDayPartTargetingValue(TargetingValueDayPartTargeting $dayPartTargetingValue)
+  public function setDayPartTargetingValue(Google_Service_AdExchangeBuyer_TargetingValueDayPartTargeting $dayPartTargetingValue)
   {
     $this->dayPartTargetingValue = $dayPartTargetingValue;
   }

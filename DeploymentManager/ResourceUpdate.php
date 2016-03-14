@@ -28,7 +28,7 @@ class Google_Service_DeploymentManager_ResourceUpdate extends Google_Collection
   protected $warningsType = 'Google_Service_DeploymentManager_ResourceUpdateWarnings';
   protected $warningsDataType = 'array';
 
-  public function setError(ResourceUpdateError $error)
+  public function setError(Google_Service_DeploymentManager_ResourceUpdateError $error)
   {
     $this->error = $error;
   }

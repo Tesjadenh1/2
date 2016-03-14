@@ -48,7 +48,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   protected $termsDataType = '';
   public $webPropertyCode;
 
-  public function setBuyerPrivateData(PrivateData $buyerPrivateData)
+  public function setBuyerPrivateData(Google_Service_AdExchangeBuyer_PrivateData $buyerPrivateData)
   {
     $this->buyerPrivateData = $buyerPrivateData;
   }
@@ -88,7 +88,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   {
     return $this->dealId;
   }
-  public function setDealServingMetadata(DealServingMetadata $dealServingMetadata)
+  public function setDealServingMetadata(Google_Service_AdExchangeBuyer_DealServingMetadata $dealServingMetadata)
   {
     $this->dealServingMetadata = $dealServingMetadata;
   }
@@ -96,7 +96,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   {
     return $this->dealServingMetadata;
   }
-  public function setDeliveryControl(DeliveryControl $deliveryControl)
+  public function setDeliveryControl(Google_Service_AdExchangeBuyer_DeliveryControl $deliveryControl)
   {
     $this->deliveryControl = $deliveryControl;
   }
@@ -216,7 +216,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   {
     return $this->syndicationProduct;
   }
-  public function setTerms(DealTerms $terms)
+  public function setTerms(Google_Service_AdExchangeBuyer_DealTerms $terms)
   {
     $this->terms = $terms;
   }

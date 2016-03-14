@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_ReportCrossDimensionReachCriteria extends Goog
   {
     return $this->breakdown;
   }
-  public function setDateRange(DateRange $dateRange)
+  public function setDateRange(Google_Service_Dfareporting_DateRange $dateRange)
   {
     $this->dateRange = $dateRange;
   }

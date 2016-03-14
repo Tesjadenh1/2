@@ -42,7 +42,7 @@ class Google_Service_AdExchangeBuyer_CreativeNativeAd extends Google_Collection
   {
     return $this->advertiser;
   }
-  public function setAppIcon(CreativeNativeAdAppIcon $appIcon)
+  public function setAppIcon(Google_Service_AdExchangeBuyer_CreativeNativeAdAppIcon $appIcon)
   {
     $this->appIcon = $appIcon;
   }
@@ -82,7 +82,7 @@ class Google_Service_AdExchangeBuyer_CreativeNativeAd extends Google_Collection
   {
     return $this->headline;
   }
-  public function setImage(CreativeNativeAdImage $image)
+  public function setImage(Google_Service_AdExchangeBuyer_CreativeNativeAdImage $image)
   {
     $this->image = $image;
   }
@@ -98,7 +98,7 @@ class Google_Service_AdExchangeBuyer_CreativeNativeAd extends Google_Collection
   {
     return $this->impressionTrackingUrl;
   }
-  public function setLogo(CreativeNativeAdLogo $logo)
+  public function setLogo(Google_Service_AdExchangeBuyer_CreativeNativeAdLogo $logo)
   {
     $this->logo = $logo;
   }

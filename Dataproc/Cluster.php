@@ -44,7 +44,7 @@ class Google_Service_Dataproc_Cluster extends Google_Collection
   {
     return $this->clusterUuid;
   }
-  public function setConfig(ClusterConfig $config)
+  public function setConfig(Google_Service_Dataproc_ClusterConfig $config)
   {
     $this->config = $config;
   }
@@ -60,7 +60,7 @@ class Google_Service_Dataproc_Cluster extends Google_Collection
   {
     return $this->projectId;
   }
-  public function setStatus(ClusterStatus $status)
+  public function setStatus(Google_Service_Dataproc_ClusterStatus $status)
   {
     $this->status = $status;
   }

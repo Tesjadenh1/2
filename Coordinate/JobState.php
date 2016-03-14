@@ -38,7 +38,7 @@ class Google_Service_Coordinate_JobState extends Google_Collection
   {
     return $this->assignee;
   }
-  public function setCustomFields(CustomFields $customFields)
+  public function setCustomFields(Google_Service_Coordinate_CustomFields $customFields)
   {
     $this->customFields = $customFields;
   }
@@ -70,7 +70,7 @@ class Google_Service_Coordinate_JobState extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLocation(Location $location)
+  public function setLocation(Google_Service_Coordinate_Location $location)
   {
     $this->location = $location;
   }
