@@ -23,7 +23,7 @@
  *   $disks = $computeService->disks;
  *  </code>
  */
-class Google_Service_Compute_Disks_Resource extends Google_Service_Resource
+class Google_Service_Compute_DisksResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of persistent disks. (disks.aggregatedList)

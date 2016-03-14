@@ -23,7 +23,7 @@
  *   $instances = $computeService->instances;
  *  </code>
  */
-class Google_Service_Compute_Instances_Resource extends Google_Service_Resource
+class Google_Service_Compute_InstancesResource extends Google_Service_Resource
 {
   /**
    * Adds an access config to an instance's network interface.

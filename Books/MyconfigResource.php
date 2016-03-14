@@ -23,7 +23,7 @@
  *   $myconfig = $booksService->myconfig;
  *  </code>
  */
-class Google_Service_Books_Myconfig_Resource extends Google_Service_Resource
+class Google_Service_Books_MyconfigResource extends Google_Service_Resource
 {
   /**
    * Gets the current settings for the user. (myconfig.getUserSettings)

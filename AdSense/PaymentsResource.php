@@ -23,7 +23,7 @@
  *   $payments = $adsenseService->payments;
  *  </code>
  */
-class Google_Service_AdSense_Payments_Resource extends Google_Service_Resource
+class Google_Service_AdSense_PaymentsResource extends Google_Service_Resource
 {
   /**
    * List the payments for this AdSense account. (payments.listPayments)

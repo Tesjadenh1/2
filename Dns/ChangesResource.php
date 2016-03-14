@@ -23,7 +23,7 @@
  *   $changes = $dnsService->changes;
  *  </code>
  */
-class Google_Service_Dns_Changes_Resource extends Google_Service_Resource
+class Google_Service_Dns_ChangesResource extends Google_Service_Resource
 {
   /**
    * Atomically update the ResourceRecordSet collection. (changes.create)

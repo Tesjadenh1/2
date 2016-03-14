@@ -23,7 +23,7 @@
  *   $cse = $customsearchService->cse;
  *  </code>
  */
-class Google_Service_Customsearch_Cse_Resource extends Google_Service_Resource
+class Google_Service_Customsearch_CseResource extends Google_Service_Resource
 {
   /**
    * Returns metadata about the search performed, metadata about the custom search

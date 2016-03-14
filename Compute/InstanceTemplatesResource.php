@@ -23,7 +23,7 @@
  *   $instanceTemplates = $computeService->instanceTemplates;
  *  </code>
  */
-class Google_Service_Compute_InstanceTemplates_Resource extends Google_Service_Resource
+class Google_Service_Compute_InstanceTemplatesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified instance template. If you delete an instance template

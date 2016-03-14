@@ -23,7 +23,7 @@
  *   $projects = $computeService->projects;
  *  </code>
  */
-class Google_Service_Compute_Projects_Resource extends Google_Service_Resource
+class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Returns the specified Project resource. (projects.get)

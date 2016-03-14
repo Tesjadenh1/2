@@ -23,7 +23,7 @@
  *   $machineTypes = $computeService->machineTypes;
  *  </code>
  */
-class Google_Service_Compute_MachineTypes_Resource extends Google_Service_Resource
+class Google_Service_Compute_MachineTypesResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of machine types. (machineTypes.aggregatedList)

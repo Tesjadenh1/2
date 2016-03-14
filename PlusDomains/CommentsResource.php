@@ -23,7 +23,7 @@
  *   $comments = $plusDomainsService->comments;
  *  </code>
  */
-class Google_Service_PlusDomains_Comments_Resource extends Google_Service_Resource
+class Google_Service_PlusDomains_CommentsResource extends Google_Service_Resource
 {
   /**
    * Get a comment. (comments.get)

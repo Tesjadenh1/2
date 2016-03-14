@@ -23,7 +23,7 @@
  *   $targetVpnGateways = $computeService->targetVpnGateways;
  *  </code>
  */
-class Google_Service_Compute_TargetVpnGateways_Resource extends Google_Service_Resource
+class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of target VPN gateways.

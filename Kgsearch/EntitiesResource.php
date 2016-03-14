@@ -23,7 +23,7 @@
  *   $entities = $kgsearchService->entities;
  *  </code>
  */
-class Google_Service_Kgsearch_Entities_Resource extends Google_Service_Resource
+class Google_Service_Kgsearch_EntitiesResource extends Google_Service_Resource
 {
   /**
    * Searches Knowledge Graph for entities that match the constraints. A list of

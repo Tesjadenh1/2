@@ -23,7 +23,7 @@
  *   $products = $androidenterpriseService->products;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Products_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_Resource
 {
   /**
    * Approves the specified product (and the relevant app permissions, if any).

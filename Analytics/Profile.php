@@ -38,6 +38,7 @@ class Google_Service_Analytics_Profile extends Google_Model
   public $selfLink;
   public $siteSearchCategoryParameters;
   public $siteSearchQueryParameters;
+  public $starred;
   public $stripSiteSearchCategoryParameters;
   public $stripSiteSearchQueryParameters;
   public $timezone;
@@ -189,6 +190,14 @@ class Google_Service_Analytics_Profile extends Google_Model
   public function getSiteSearchQueryParameters()
   {
     return $this->siteSearchQueryParameters;
+  }
+  public function setStarred($starred)
+  {
+    $this->starred = $starred;
+  }
+  public function getStarred()
+  {
+    return $this->starred;
   }
   public function setStripSiteSearchCategoryParameters($stripSiteSearchCategoryParameters)
   {

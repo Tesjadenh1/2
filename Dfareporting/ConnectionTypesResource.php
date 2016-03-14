@@ -23,7 +23,7 @@
  *   $connectionTypes = $dfareportingService->connectionTypes;
  *  </code>
  */
-class Google_Service_Dfareporting_ConnectionTypes_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_ConnectionTypesResource extends Google_Service_Resource
 {
   /**
    * Gets one connection type by ID. (connectionTypes.get)

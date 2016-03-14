@@ -23,7 +23,7 @@
  *   $leaderboardConfigurations = $gamesConfigurationService->leaderboardConfigurations;
  *  </code>
  */
-class Google_Service_GamesConfiguration_LeaderboardConfigurations_Resource extends Google_Service_Resource
+class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extends Google_Service_Resource
 {
   /**
    * Delete the leaderboard configuration with the given ID.

@@ -23,7 +23,7 @@
  *   $operatingSystems = $dfareportingService->operatingSystems;
  *  </code>
  */
-class Google_Service_Dfareporting_OperatingSystems_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_OperatingSystemsResource extends Google_Service_Resource
 {
   /**
    * Gets one operating system by DART ID. (operatingSystems.get)

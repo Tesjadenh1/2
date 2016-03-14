@@ -23,7 +23,7 @@
  *   $sponsors = $youtubeService->sponsors;
  *  </code>
  */
-class Google_Service_YouTube_Sponsors_Resource extends Google_Service_Resource
+class Google_Service_YouTube_SponsorsResource extends Google_Service_Resource
 {
   /**
    * Lists sponsors for a channel. (sponsors.listSponsors)

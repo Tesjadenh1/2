@@ -23,7 +23,7 @@
  *   $collectionviewers = $androidenterpriseService->collectionviewers;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Collectionviewers_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_Service_Resource
 {
   /**
    * Removes the user from the list of those specifically allowed to see the

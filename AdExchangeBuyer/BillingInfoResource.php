@@ -23,7 +23,7 @@
  *   $billingInfo = $adexchangebuyerService->billingInfo;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_BillingInfo_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_BillingInfoResource extends Google_Service_Resource
 {
   /**
    * Returns the billing information for one account specified by account ID.

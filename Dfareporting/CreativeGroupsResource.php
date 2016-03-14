@@ -23,7 +23,7 @@
  *   $creativeGroups = $dfareportingService->creativeGroups;
  *  </code>
  */
-class Google_Service_Dfareporting_CreativeGroups_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_CreativeGroupsResource extends Google_Service_Resource
 {
   /**
    * Gets one creative group by ID. (creativeGroups.get)

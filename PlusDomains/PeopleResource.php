@@ -23,7 +23,7 @@
  *   $people = $plusDomainsService->people;
  *  </code>
  */
-class Google_Service_PlusDomains_People_Resource extends Google_Service_Resource
+class Google_Service_PlusDomains_PeopleResource extends Google_Service_Resource
 {
   /**
    * Get a person's profile. (people.get)

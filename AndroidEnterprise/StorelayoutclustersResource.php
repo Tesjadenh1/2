@@ -23,7 +23,7 @@
  *   $storelayoutclusters = $androidenterpriseService->storelayoutclusters;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Storelayoutclusters_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Google_Service_Resource
 {
   /**
    * Deletes a cluster. (storelayoutclusters.delete)

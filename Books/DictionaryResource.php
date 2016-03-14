@@ -23,7 +23,7 @@
  *   $dictionary = $booksService->dictionary;
  *  </code>
  */
-class Google_Service_Books_Dictionary_Resource extends Google_Service_Resource
+class Google_Service_Books_DictionaryResource extends Google_Service_Resource
 {
   /**
    * Returns a list of offline dictionary metadata available

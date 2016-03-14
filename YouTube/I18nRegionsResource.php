@@ -23,7 +23,7 @@
  *   $i18nRegions = $youtubeService->i18nRegions;
  *  </code>
  */
-class Google_Service_YouTube_I18nRegions_Resource extends Google_Service_Resource
+class Google_Service_YouTube_I18nRegionsResource extends Google_Service_Resource
 {
   /**
    * Returns a list of content regions that the YouTube website supports.

@@ -23,7 +23,7 @@
  *   $channelBanners = $youtubeService->channelBanners;
  *  </code>
  */
-class Google_Service_YouTube_ChannelBanners_Resource extends Google_Service_Resource
+class Google_Service_YouTube_ChannelBannersResource extends Google_Service_Resource
 {
   /**
    * Uploads a channel banner image to YouTube. This method represents the first

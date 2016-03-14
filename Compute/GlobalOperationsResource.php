@@ -23,7 +23,7 @@
  *   $globalOperations = $computeService->globalOperations;
  *  </code>
  */
-class Google_Service_Compute_GlobalOperations_Resource extends Google_Service_Resource
+class Google_Service_Compute_GlobalOperationsResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of all operations.

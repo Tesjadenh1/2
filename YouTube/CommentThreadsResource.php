@@ -23,7 +23,7 @@
  *   $commentThreads = $youtubeService->commentThreads;
  *  </code>
  */
-class Google_Service_YouTube_CommentThreads_Resource extends Google_Service_Resource
+class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resource
 {
   /**
    * Creates a new top-level comment. To add a reply to an existing comment, use

@@ -23,7 +23,7 @@
  *   $eventTags = $dfareportingService->eventTags;
  *  </code>
  */
-class Google_Service_Dfareporting_EventTags_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_EventTagsResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing event tag. (eventTags.delete)

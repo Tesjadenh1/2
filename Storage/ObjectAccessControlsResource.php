@@ -23,7 +23,7 @@
  *   $objectAccessControls = $storageService->objectAccessControls;
  *  </code>
  */
-class Google_Service_Storage_ObjectAccessControls_Resource extends Google_Service_Resource
+class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service_Resource
 {
   /**
    * Permanently deletes the ACL entry for the specified entity on the specified

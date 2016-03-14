@@ -23,7 +23,7 @@
  *   $customchannels = $adsensehostService->customchannels;
  *  </code>
  */
-class Google_Service_AdSenseHost_Customchannels_Resource extends Google_Service_Resource
+class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_Resource
 {
   /**
    * Delete a specific custom channel from the host AdSense account.

@@ -23,7 +23,7 @@
  *   $grouplicenseusers = $androidenterpriseService->grouplicenseusers;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Grouplicenseusers_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_GrouplicenseusersResource extends Google_Service_Resource
 {
   /**
    * Retrieves the IDs of the users who have been granted entitlements under the

@@ -23,6 +23,6 @@
  *   $projects = $iamService->projects;
  *  </code>
  */
-class Google_Service_Iam_Projects_Resource extends Google_Service_Resource
+class Google_Service_Iam_ProjectsResource extends Google_Service_Resource
 {
 }

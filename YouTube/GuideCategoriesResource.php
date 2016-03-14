@@ -23,7 +23,7 @@
  *   $guideCategories = $youtubeService->guideCategories;
  *  </code>
  */
-class Google_Service_YouTube_GuideCategories_Resource extends Google_Service_Resource
+class Google_Service_YouTube_GuideCategoriesResource extends Google_Service_Resource
 {
   /**
    * Returns a list of categories that can be associated with YouTube channels.

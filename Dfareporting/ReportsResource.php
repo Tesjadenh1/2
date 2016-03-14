@@ -23,7 +23,7 @@
  *   $reports = $dfareportingService->reports;
  *  </code>
  */
-class Google_Service_Dfareporting_Reports_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resource
 {
   /**
    * Deletes a report by its ID. (reports.delete)

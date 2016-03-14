@@ -23,7 +23,7 @@
  *   $pages = $bloggerService->pages;
  *  </code>
  */
-class Google_Service_Blogger_Pages_Resource extends Google_Service_Resource
+class Google_Service_Blogger_PagesResource extends Google_Service_Resource
 {
   /**
    * Delete a page by ID. (pages.delete)

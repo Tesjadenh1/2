@@ -23,7 +23,7 @@
  *   $files = $dfareportingService->files;
  *  </code>
  */
-class Google_Service_Dfareporting_Files_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_FilesResource extends Google_Service_Resource
 {
   /**
    * Retrieves a report file by its report ID and file ID. (files.get)

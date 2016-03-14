@@ -23,7 +23,7 @@
  *   $videoCategories = $youtubeService->videoCategories;
  *  </code>
  */
-class Google_Service_YouTube_VideoCategories_Resource extends Google_Service_Resource
+class Google_Service_YouTube_VideoCategoriesResource extends Google_Service_Resource
 {
   /**
    * Returns a list of categories that can be associated with YouTube videos.

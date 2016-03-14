@@ -23,7 +23,7 @@
  *   $directorySiteContacts = $dfareportingService->directorySiteContacts;
  *  </code>
  */
-class Google_Service_Dfareporting_DirectorySiteContacts_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_DirectorySiteContactsResource extends Google_Service_Resource
 {
   /**
    * Gets one directory site contact by ID. (directorySiteContacts.get)

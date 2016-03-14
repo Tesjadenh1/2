@@ -23,7 +23,7 @@
  *   $blogUserInfos = $bloggerService->blogUserInfos;
  *  </code>
  */
-class Google_Service_Blogger_BlogUserInfos_Resource extends Google_Service_Resource
+class Google_Service_Blogger_BlogUserInfosResource extends Google_Service_Resource
 {
   /**
    * Gets one blog and user info pair by blogId and userId. (blogUserInfos.get)

@@ -23,7 +23,7 @@
  *   $acl = $calendarService->acl;
  *  </code>
  */
-class Google_Service_Calendar_Acl_Resource extends Google_Service_Resource
+class Google_Service_Calendar_AclResource extends Google_Service_Resource
 {
   /**
    * Deletes an access control rule. (acl.delete)

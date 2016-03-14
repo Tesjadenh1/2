@@ -23,7 +23,7 @@
  *   $rooms = $gamesService->rooms;
  *  </code>
  */
-class Google_Service_Games_Rooms_Resource extends Google_Service_Resource
+class Google_Service_Games_RoomsResource extends Google_Service_Resource
 {
   /**
    * Create a room. For internal use by the Games SDK only. Calling this method

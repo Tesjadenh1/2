@@ -23,7 +23,7 @@
  *   $customchannels = $adsenseService->customchannels;
  *  </code>
  */
-class Google_Service_AdSense_Customchannels_Resource extends Google_Service_Resource
+class Google_Service_AdSense_CustomchannelsResource extends Google_Service_Resource
 {
   /**
    * Get the specified custom channel from the specified ad client.

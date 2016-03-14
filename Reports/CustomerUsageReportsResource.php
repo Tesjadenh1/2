@@ -23,7 +23,7 @@
  *   $customerUsageReports = $adminService->customerUsageReports;
  *  </code>
  */
-class Google_Service_Reports_CustomerUsageReports_Resource extends Google_Service_Resource
+class Google_Service_Reports_CustomerUsageReportsResource extends Google_Service_Resource
 {
   /**
    * Retrieves a report which is a collection of properties / statistics for a

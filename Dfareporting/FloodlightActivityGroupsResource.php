@@ -23,7 +23,7 @@
  *   $floodlightActivityGroups = $dfareportingService->floodlightActivityGroups;
  *  </code>
  */
-class Google_Service_Dfareporting_FloodlightActivityGroups_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Google_Service_Resource
 {
   /**
    * Gets one floodlight activity group by ID. (floodlightActivityGroups.get)

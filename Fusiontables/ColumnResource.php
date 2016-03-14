@@ -23,7 +23,7 @@
  *   $column = $fusiontablesService->column;
  *  </code>
  */
-class Google_Service_Fusiontables_Column_Resource extends Google_Service_Resource
+class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified column. (column.delete)

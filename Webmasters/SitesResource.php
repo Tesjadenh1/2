@@ -23,7 +23,7 @@
  *   $sites = $webmastersService->sites;
  *  </code>
  */
-class Google_Service_Webmasters_Sites_Resource extends Google_Service_Resource
+class Google_Service_Webmasters_SitesResource extends Google_Service_Resource
 {
   /**
    * Adds a site to the set of the user's sites in Search Console. (sites.add)

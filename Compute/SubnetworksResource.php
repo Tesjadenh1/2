@@ -23,7 +23,7 @@
  *   $subnetworks = $computeService->subnetworks;
  *  </code>
  */
-class Google_Service_Compute_Subnetworks_Resource extends Google_Service_Resource
+class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of subnetworks. (subnetworks.aggregatedList)

@@ -23,7 +23,7 @@
  *   $courses = $classroomService->courses;
  *  </code>
  */
-class Google_Service_Classroom_Courses_Resource extends Google_Service_Resource
+class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
 {
   /**
    * Creates a course. The user specified in `ownerId` is the owner of the created

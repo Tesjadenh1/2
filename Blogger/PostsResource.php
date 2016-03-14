@@ -23,7 +23,7 @@
  *   $posts = $bloggerService->posts;
  *  </code>
  */
-class Google_Service_Blogger_Posts_Resource extends Google_Service_Resource
+class Google_Service_Blogger_PostsResource extends Google_Service_Resource
 {
   /**
    * Delete a post by ID. (posts.delete)

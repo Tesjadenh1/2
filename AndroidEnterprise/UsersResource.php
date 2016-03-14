@@ -23,7 +23,7 @@
  *   $users = $androidenterpriseService->users;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Users_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Resource
 {
   /**
    * Generates a token (activation code) to allow this user to configure their

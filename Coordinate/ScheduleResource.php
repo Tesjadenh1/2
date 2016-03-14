@@ -23,7 +23,7 @@
  *   $schedule = $coordinateService->schedule;
  *  </code>
  */
-class Google_Service_Coordinate_Schedule_Resource extends Google_Service_Resource
+class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
 {
   /**
    * Retrieves the schedule for a job. (schedule.get)

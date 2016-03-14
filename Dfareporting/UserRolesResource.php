@@ -23,7 +23,7 @@
  *   $userRoles = $dfareportingService->userRoles;
  *  </code>
  */
-class Google_Service_Dfareporting_UserRoles_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_UserRolesResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing user role. (userRoles.delete)

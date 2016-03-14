@@ -23,7 +23,7 @@
  *   $url = $urlshortenerService->url;
  *  </code>
  */
-class Google_Service_Urlshortener_Url_Resource extends Google_Service_Resource
+class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
 {
   /**
    * Expands a short URL or gets creation time and analytics. (url.get)

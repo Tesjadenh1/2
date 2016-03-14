@@ -23,7 +23,7 @@
  *   $archive = $groupsmigrationService->archive;
  *  </code>
  */
-class Google_Service_GroupsMigration_Archive_Resource extends Google_Service_Resource
+class Google_Service_GroupsMigration_ArchiveResource extends Google_Service_Resource
 {
   /**
    * Inserts a new mail into the archive of the Google group. (archive.insert)

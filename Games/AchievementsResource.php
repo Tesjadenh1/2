@@ -23,7 +23,7 @@
  *   $achievements = $gamesService->achievements;
  *  </code>
  */
-class Google_Service_Games_Achievements_Resource extends Google_Service_Resource
+class Google_Service_Games_AchievementsResource extends Google_Service_Resource
 {
   /**
    * Increments the steps of the achievement with the given ID for the currently

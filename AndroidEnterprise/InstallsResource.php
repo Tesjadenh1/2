@@ -23,7 +23,7 @@
  *   $installs = $androidenterpriseService->installs;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Installs_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_Resource
 {
   /**
    * Requests to remove an app from a device. A call to get or list will still

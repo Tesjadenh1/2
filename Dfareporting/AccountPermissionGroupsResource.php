@@ -23,7 +23,7 @@
  *   $accountPermissionGroups = $dfareportingService->accountPermissionGroups;
  *  </code>
  */
-class Google_Service_Dfareporting_AccountPermissionGroups_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AccountPermissionGroupsResource extends Google_Service_Resource
 {
   /**
    * Gets one account permission group by ID. (accountPermissionGroups.get)

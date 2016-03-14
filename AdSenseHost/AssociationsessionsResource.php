@@ -23,7 +23,7 @@
  *   $associationsessions = $adsensehostService->associationsessions;
  *  </code>
  */
-class Google_Service_AdSenseHost_Associationsessions_Resource extends Google_Service_Resource
+class Google_Service_AdSenseHost_AssociationsessionsResource extends Google_Service_Resource
 {
   /**
    * Create an association session for initiating an association with an AdSense

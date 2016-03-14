@@ -23,6 +23,6 @@
  *   $purchases = $androidpublisherService->purchases;
  *  </code>
  */
-class Google_Service_AndroidPublisher_Purchases_Resource extends Google_Service_Resource
+class Google_Service_AndroidPublisher_PurchasesResource extends Google_Service_Resource
 {
 }

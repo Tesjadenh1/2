@@ -23,7 +23,7 @@
  *   $turnBasedMatches = $gamesManagementService->turnBasedMatches;
  *  </code>
  */
-class Google_Service_GamesManagement_TurnBasedMatches_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_TurnBasedMatchesResource extends Google_Service_Resource
 {
   /**
    * Reset all turn-based match data for a user. This method is only accessible to

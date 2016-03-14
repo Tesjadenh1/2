@@ -23,7 +23,7 @@
  *   $permissions = $androidenterpriseService->permissions;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Permissions_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_PermissionsResource extends Google_Service_Resource
 {
   /**
    * Retrieves details of an Android app permission for display to an enterprise

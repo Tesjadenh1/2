@@ -23,7 +23,7 @@
  *   $companies = $partnersService->companies;
  *  </code>
  */
-class Google_Service_Partners_Companies_Resource extends Google_Service_Resource
+class Google_Service_Partners_CompaniesResource extends Google_Service_Resource
 {
   /**
    * Gets a company. (companies.get)

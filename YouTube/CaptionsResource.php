@@ -23,7 +23,7 @@
  *   $captions = $youtubeService->captions;
  *  </code>
  */
-class Google_Service_YouTube_Captions_Resource extends Google_Service_Resource
+class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
 {
   /**
    * Deletes a specified caption track. (captions.delete)

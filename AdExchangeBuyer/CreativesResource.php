@@ -23,7 +23,7 @@
  *   $creatives = $adexchangebuyerService->creatives;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Creatives_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Resource
 {
   /**
    * Add a deal id association for the creative. (creatives.addDeal)

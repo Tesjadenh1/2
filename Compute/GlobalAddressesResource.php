@@ -23,7 +23,7 @@
  *   $globalAddresses = $computeService->globalAddresses;
  *  </code>
  */
-class Google_Service_Compute_GlobalAddresses_Resource extends Google_Service_Resource
+class Google_Service_Compute_GlobalAddressesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified address resource. (globalAddresses.delete)

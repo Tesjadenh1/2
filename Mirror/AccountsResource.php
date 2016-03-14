@@ -23,7 +23,7 @@
  *   $accounts = $mirrorService->accounts;
  *  </code>
  */
-class Google_Service_Mirror_Accounts_Resource extends Google_Service_Resource
+class Google_Service_Mirror_AccountsResource extends Google_Service_Resource
 {
   /**
    * Inserts a new account for a user (accounts.insert)

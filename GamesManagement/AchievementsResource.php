@@ -23,7 +23,7 @@
  *   $achievements = $gamesManagementService->achievements;
  *  </code>
  */
-class Google_Service_GamesManagement_Achievements_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_AchievementsResource extends Google_Service_Resource
 {
   /**
    * Resets the achievement with the given ID for the currently authenticated

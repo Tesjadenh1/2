@@ -22,6 +22,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetAccountInfoRe
   public $captchaResponse;
   public $delegatedProjectNumber;
   public $deleteAttribute;
+  public $deleteProvider;
   public $disableUser;
   public $displayName;
   public $email;
@@ -68,6 +69,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetAccountInfoRe
   public function getDeleteAttribute()
   {
     return $this->deleteAttribute;
+  }
+  public function setDeleteProvider($deleteProvider)
+  {
+    $this->deleteProvider = $deleteProvider;
+  }
+  public function getDeleteProvider()
+  {
+    return $this->deleteProvider;
   }
   public function setDisableUser($disableUser)
   {

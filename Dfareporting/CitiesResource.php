@@ -23,7 +23,7 @@
  *   $cities = $dfareportingService->cities;
  *  </code>
  */
-class Google_Service_Dfareporting_Cities_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_CitiesResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of cities, possibly filtered. (cities.listCities)

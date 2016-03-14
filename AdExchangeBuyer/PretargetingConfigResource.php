@@ -23,7 +23,7 @@
  *   $pretargetingConfig = $adexchangebuyerService->pretargetingConfig;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_PretargetingConfig_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing pretargeting config. (pretargetingConfig.delete)

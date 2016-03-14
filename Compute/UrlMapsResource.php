@@ -23,7 +23,7 @@
  *   $urlMaps = $computeService->urlMaps;
  *  </code>
  */
-class Google_Service_Compute_UrlMaps_Resource extends Google_Service_Resource
+class Google_Service_Compute_UrlMapsResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified UrlMap resource. (urlMaps.delete)

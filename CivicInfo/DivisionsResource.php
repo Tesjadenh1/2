@@ -23,7 +23,7 @@
  *   $divisions = $civicinfoService->divisions;
  *  </code>
  */
-class Google_Service_CivicInfo_Divisions_Resource extends Google_Service_Resource
+class Google_Service_CivicInfo_DivisionsResource extends Google_Service_Resource
 {
   /**
    * Searches for political divisions by their natural name or OCD ID.

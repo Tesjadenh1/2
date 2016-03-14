@@ -23,7 +23,7 @@
  *   $representatives = $civicinfoService->representatives;
  *  </code>
  */
-class Google_Service_CivicInfo_Representatives_Resource extends Google_Service_Resource
+class Google_Service_CivicInfo_RepresentativesResource extends Google_Service_Resource
 {
   /**
    * Looks up political geography and representative information for a single

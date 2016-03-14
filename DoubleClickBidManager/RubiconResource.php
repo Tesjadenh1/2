@@ -23,7 +23,7 @@
  *   $rubicon = $doubleclickbidmanagerService->rubicon;
  *  </code>
  */
-class Google_Service_DoubleClickBidManager_Rubicon_Resource extends Google_Service_Resource
+class Google_Service_DoubleClickBidManager_RubiconResource extends Google_Service_Resource
 {
   /**
    * Update proposal upon actions of Rubicon publisher.

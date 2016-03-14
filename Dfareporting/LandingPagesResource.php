@@ -23,7 +23,7 @@
  *   $landingPages = $dfareportingService->landingPages;
  *  </code>
  */
-class Google_Service_Dfareporting_LandingPages_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing campaign landing page. (landingPages.delete)

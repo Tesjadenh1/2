@@ -23,7 +23,7 @@
  *   $budget = $adexchangebuyerService->budget;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Budget_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_BudgetResource extends Google_Service_Resource
 {
   /**
    * Returns the budget information for the adgroup specified by the accountId and

@@ -23,7 +23,7 @@
  *   $vpnTunnels = $computeService->vpnTunnels;
  *  </code>
  */
-class Google_Service_Compute_VpnTunnels_Resource extends Google_Service_Resource
+class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of VPN tunnels. (vpnTunnels.aggregatedList)

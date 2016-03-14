@@ -23,7 +23,7 @@
  *   $applications = $gamesManagementService->applications;
  *  </code>
  */
-class Google_Service_GamesManagement_Applications_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_ApplicationsResource extends Google_Service_Resource
 {
   /**
    * Get the list of players hidden from the given application. This method is

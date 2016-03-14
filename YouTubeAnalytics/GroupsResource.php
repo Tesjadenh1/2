@@ -23,7 +23,7 @@
  *   $groups = $youtubeAnalyticsService->groups;
  *  </code>
  */
-class Google_Service_YouTubeAnalytics_Groups_Resource extends Google_Service_Resource
+class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Resource
 {
   /**
    * Deletes a group. (groups.delete)

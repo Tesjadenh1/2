@@ -23,7 +23,7 @@
  *   $savedadstyles = $adsenseService->savedadstyles;
  *  </code>
  */
-class Google_Service_AdSense_Savedadstyles_Resource extends Google_Service_Resource
+class Google_Service_AdSense_SavedadstylesResource extends Google_Service_Resource
 {
   /**
    * Get a specific saved ad style from the user's account. (savedadstyles.get)

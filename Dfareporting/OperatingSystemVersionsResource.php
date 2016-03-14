@@ -23,7 +23,7 @@
  *   $operatingSystemVersions = $dfareportingService->operatingSystemVersions;
  *  </code>
  */
-class Google_Service_Dfareporting_OperatingSystemVersions_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_OperatingSystemVersionsResource extends Google_Service_Resource
 {
   /**
    * Gets one operating system version by ID. (operatingSystemVersions.get)

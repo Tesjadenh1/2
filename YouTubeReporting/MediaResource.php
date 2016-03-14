@@ -23,7 +23,7 @@
  *   $media = $youtubereportingService->media;
  *  </code>
  */
-class Google_Service_YouTubeReporting_Media_Resource extends Google_Service_Resource
+class Google_Service_YouTubeReporting_MediaResource extends Google_Service_Resource
 {
   /**
    * Method for media download. Download is supported on the URI

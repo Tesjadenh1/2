@@ -23,7 +23,7 @@
  *   $urlcrawlerrorscounts = $webmastersService->urlcrawlerrorscounts;
  *  </code>
  */
-class Google_Service_Webmasters_Urlcrawlerrorscounts_Resource extends Google_Service_Resource
+class Google_Service_Webmasters_UrlcrawlerrorscountsResource extends Google_Service_Resource
 {
   /**
    * Retrieves a time series of the number of URL crawl errors per error category

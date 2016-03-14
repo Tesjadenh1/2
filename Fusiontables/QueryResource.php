@@ -23,7 +23,7 @@
  *   $query = $fusiontablesService->query;
  *  </code>
  */
-class Google_Service_Fusiontables_Query_Resource extends Google_Service_Resource
+class Google_Service_Fusiontables_QueryResource extends Google_Service_Resource
 {
   /**
    * Executes a Fusion Tables SQL statement, which can be any of - SELECT - INSERT

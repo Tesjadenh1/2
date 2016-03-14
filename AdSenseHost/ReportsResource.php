@@ -23,7 +23,7 @@
  *   $reports = $adsensehostService->reports;
  *  </code>
  */
-class Google_Service_AdSenseHost_Reports_Resource extends Google_Service_Resource
+class Google_Service_AdSenseHost_ReportsResource extends Google_Service_Resource
 {
   /**
    * Generate an AdSense report based on the report request sent in the query

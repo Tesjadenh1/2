@@ -23,7 +23,7 @@
  *   $projects = $cloudresourcemanagerService->projects;
  *  </code>
  */
-class Google_Service_Cloudresourcemanager_Projects_Resource extends Google_Service_Resource
+class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Marks the Project identified by the specified `project_id` (for example, `my-

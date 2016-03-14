@@ -23,7 +23,7 @@
  *   $userProfiles = $classroomService->userProfiles;
  *  </code>
  */
-class Google_Service_Classroom_UserProfiles_Resource extends Google_Service_Resource
+class Google_Service_Classroom_UserProfilesResource extends Google_Service_Resource
 {
   /**
    * Returns a user profile. This method returns the following error codes: *

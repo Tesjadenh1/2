@@ -23,7 +23,7 @@
  *   $dimensionValues = $dfareportingService->dimensionValues;
  *  </code>
  */
-class Google_Service_Dfareporting_DimensionValues_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_DimensionValuesResource extends Google_Service_Resource
 {
   /**
    * Retrieves list of report dimension values for a list of filters.

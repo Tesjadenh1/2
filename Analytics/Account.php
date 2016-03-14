@@ -26,6 +26,7 @@ class Google_Service_Analytics_Account extends Google_Model
   protected $permissionsType = 'Google_Service_Analytics_AccountPermissions';
   protected $permissionsDataType = '';
   public $selfLink;
+  public $starred;
   public $updated;
 
   public function setChildLink(AccountChildLink $childLink)
@@ -83,6 +84,14 @@ class Google_Service_Analytics_Account extends Google_Model
   public function getSelfLink()
   {
     return $this->selfLink;
+  }
+  public function setStarred($starred)
+  {
+    $this->starred = $starred;
+  }
+  public function getStarred()
+  {
+    return $this->starred;
   }
   public function setUpdated($updated)
   {

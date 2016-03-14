@@ -23,7 +23,7 @@
  *   $settings = $calendarService->settings;
  *  </code>
  */
-class Google_Service_Calendar_Settings_Resource extends Google_Service_Resource
+class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
 {
   /**
    * Returns a single user setting. (settings.get)

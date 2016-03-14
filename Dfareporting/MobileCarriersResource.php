@@ -23,7 +23,7 @@
  *   $mobileCarriers = $dfareportingService->mobileCarriers;
  *  </code>
  */
-class Google_Service_Dfareporting_MobileCarriers_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_MobileCarriersResource extends Google_Service_Resource
 {
   /**
    * Gets one mobile carrier by ID. (mobileCarriers.get)

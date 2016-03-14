@@ -23,7 +23,7 @@
  *   $enterprises = $androidenterpriseService->enterprises;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Enterprises_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Service_Resource
 {
   /**
    * Deletes the binding between the EMM and enterprise. This is now deprecated;

@@ -23,7 +23,7 @@
  *   $billingAccounts = $cloudbillingService->billingAccounts;
  *  </code>
  */
-class Google_Service_Cloudbilling_BillingAccounts_Resource extends Google_Service_Resource
+class Google_Service_Cloudbilling_BillingAccountsResource extends Google_Service_Resource
 {
   /**
    * Gets information about a billing account. The current authenticated user must

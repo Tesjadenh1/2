@@ -23,7 +23,7 @@
  *   $activities = $appsactivityService->activities;
  *  </code>
  */
-class Google_Service_Appsactivity_Activities_Resource extends Google_Service_Resource
+class Google_Service_Appsactivity_ActivitiesResource extends Google_Service_Resource
 {
   /**
    * Returns a list of activities visible to the current logged in user. Visible

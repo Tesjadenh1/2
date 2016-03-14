@@ -23,7 +23,7 @@
  *   $sitemaps = $webmastersService->sitemaps;
  *  </code>
  */
-class Google_Service_Webmasters_Sitemaps_Resource extends Google_Service_Resource
+class Google_Service_Webmasters_SitemapsResource extends Google_Service_Resource
 {
   /**
    * Deletes a sitemap from this site. (sitemaps.delete)

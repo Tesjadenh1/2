@@ -23,7 +23,7 @@
  *   $accounttax = $contentService->accounttax;
  *  </code>
  */
-class Google_Service_ShoppingContent_Accounttax_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_Resource
 {
   /**
    * Retrieves and updates tax settings of multiple accounts in a single request.

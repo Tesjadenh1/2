@@ -23,7 +23,7 @@
  *   $paws = $spectrumService->paws;
  *  </code>
  */
-class Google_Service_Spectrum_Paws_Resource extends Google_Service_Resource
+class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
 {
   /**
    * Requests information about the available spectrum for a device at a location.

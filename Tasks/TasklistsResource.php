@@ -23,7 +23,7 @@
  *   $tasklists = $tasksService->tasklists;
  *  </code>
  */
-class Google_Service_Tasks_Tasklists_Resource extends Google_Service_Resource
+class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
 {
   /**
    * Deletes the authenticated user's specified task list. (tasklists.delete)

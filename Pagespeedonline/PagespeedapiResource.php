@@ -23,7 +23,7 @@
  *   $pagespeedapi = $pagespeedonlineService->pagespeedapi;
  *  </code>
  */
-class Google_Service_Pagespeedonline_Pagespeedapi_Resource extends Google_Service_Resource
+class Google_Service_Pagespeedonline_PagespeedapiResource extends Google_Service_Resource
 {
   /**
    * Runs PageSpeed analysis on the page at the specified URL, and returns

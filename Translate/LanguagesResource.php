@@ -23,7 +23,7 @@
  *   $languages = $translateService->languages;
  *  </code>
  */
-class Google_Service_Translate_Languages_Resource extends Google_Service_Resource
+class Google_Service_Translate_LanguagesResource extends Google_Service_Resource
 {
   /**
    * List the source/target languages supported by the API

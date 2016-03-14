@@ -23,7 +23,7 @@
  *   $urlchannels = $adsenseService->urlchannels;
  *  </code>
  */
-class Google_Service_AdSense_Urlchannels_Resource extends Google_Service_Resource
+class Google_Service_AdSense_UrlchannelsResource extends Google_Service_Resource
 {
   /**
    * List all URL channels in the specified ad client for this AdSense account.

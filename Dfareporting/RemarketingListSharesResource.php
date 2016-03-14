@@ -23,7 +23,7 @@
  *   $remarketingListShares = $dfareportingService->remarketingListShares;
  *  </code>
  */
-class Google_Service_Dfareporting_RemarketingListShares_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_Service_Resource
 {
   /**
    * Gets one remarketing list share by remarketing list ID.

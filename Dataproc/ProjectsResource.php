@@ -23,6 +23,6 @@
  *   $projects = $dataprocService->projects;
  *  </code>
  */
-class Google_Service_Dataproc_Projects_Resource extends Google_Service_Resource
+class Google_Service_Dataproc_ProjectsResource extends Google_Service_Resource
 {
 }

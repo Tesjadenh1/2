@@ -23,7 +23,7 @@
  *   $leaderboards = $gamesService->leaderboards;
  *  </code>
  */
-class Google_Service_Games_Leaderboards_Resource extends Google_Service_Resource
+class Google_Service_Games_LeaderboardsResource extends Google_Service_Resource
 {
   /**
    * Retrieves the metadata of the leaderboard with the given ID.

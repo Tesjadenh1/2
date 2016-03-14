@@ -23,6 +23,6 @@
  *   $controller = $clouddebuggerService->controller;
  *  </code>
  */
-class Google_Service_Clouddebugger_Controller_Resource extends Google_Service_Resource
+class Google_Service_Clouddebugger_ControllerResource extends Google_Service_Resource
 {
 }

@@ -23,7 +23,7 @@
  *   $team = $coordinateService->team;
  *  </code>
  */
-class Google_Service_Coordinate_Team_Resource extends Google_Service_Resource
+class Google_Service_Coordinate_TeamResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of teams for a user. (team.listTeam)

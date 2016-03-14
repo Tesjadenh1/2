@@ -23,7 +23,7 @@
  *   $globalForwardingRules = $computeService->globalForwardingRules;
  *  </code>
  */
-class Google_Service_Compute_GlobalForwardingRules_Resource extends Google_Service_Resource
+class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified ForwardingRule resource. (globalForwardingRules.delete)

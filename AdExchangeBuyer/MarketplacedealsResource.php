@@ -23,7 +23,7 @@
  *   $marketplacedeals = $adexchangebuyerService->marketplacedeals;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Marketplacedeals_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Service_Resource
 {
   /**
    * Delete the specified deals from the proposal (marketplacedeals.delete)

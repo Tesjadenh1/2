@@ -23,7 +23,7 @@
  *   $cloudloading = $booksService->cloudloading;
  *  </code>
  */
-class Google_Service_Books_Cloudloading_Resource extends Google_Service_Resource
+class Google_Service_Books_CloudloadingResource extends Google_Service_Resource
 {
   /**
    * (cloudloading.addBook)

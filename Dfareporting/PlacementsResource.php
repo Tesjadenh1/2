@@ -23,7 +23,7 @@
  *   $placements = $dfareportingService->placements;
  *  </code>
  */
-class Google_Service_Dfareporting_Placements_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Resource
 {
   /**
    * Generates tags for a placement. (placements.generatetags)

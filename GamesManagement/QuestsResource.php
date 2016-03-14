@@ -23,7 +23,7 @@
  *   $quests = $gamesManagementService->quests;
  *  </code>
  */
-class Google_Service_GamesManagement_Quests_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_QuestsResource extends Google_Service_Resource
 {
   /**
    * Resets all player progress on the quest with the given ID for the currently

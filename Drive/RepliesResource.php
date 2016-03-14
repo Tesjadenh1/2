@@ -23,7 +23,7 @@
  *   $replies = $driveService->replies;
  *  </code>
  */
-class Google_Service_Drive_Replies_Resource extends Google_Service_Resource
+class Google_Service_Drive_RepliesResource extends Google_Service_Resource
 {
   /**
    * Creates a new reply to a comment. (replies.create)

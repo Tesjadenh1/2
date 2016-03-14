@@ -23,7 +23,7 @@
  *   $accountUserProfiles = $dfareportingService->accountUserProfiles;
  *  </code>
  */
-class Google_Service_Dfareporting_AccountUserProfiles_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Service_Resource
 {
   /**
    * Gets one account user profile by ID. (accountUserProfiles.get)

@@ -23,7 +23,7 @@
  *   $creativeAssets = $dfareportingService->creativeAssets;
  *  </code>
  */
-class Google_Service_Dfareporting_CreativeAssets_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_CreativeAssetsResource extends Google_Service_Resource
 {
   /**
    * Inserts a new creative asset. (creativeAssets.insert)

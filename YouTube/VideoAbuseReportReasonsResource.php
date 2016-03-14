@@ -23,7 +23,7 @@
  *   $videoAbuseReportReasons = $youtubeService->videoAbuseReportReasons;
  *  </code>
  */
-class Google_Service_YouTube_VideoAbuseReportReasons_Resource extends Google_Service_Resource
+class Google_Service_YouTube_VideoAbuseReportReasonsResource extends Google_Service_Resource
 {
   /**
    * Returns a list of abuse reasons that can be used for reporting abusive

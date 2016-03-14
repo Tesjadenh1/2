@@ -23,7 +23,7 @@
  *   $series = $booksService->series;
  *  </code>
  */
-class Google_Service_Books_Series_Resource extends Google_Service_Resource
+class Google_Service_Books_SeriesResource extends Google_Service_Resource
 {
   /**
    * Returns Series metadata for the given series ids. (series.get)

@@ -23,7 +23,7 @@
  *   $scores = $gamesManagementService->scores;
  *  </code>
  */
-class Google_Service_GamesManagement_Scores_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_ScoresResource extends Google_Service_Resource
 {
   /**
    * Resets scores for the leaderboard with the given ID for the currently

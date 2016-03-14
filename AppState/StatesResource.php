@@ -23,7 +23,7 @@
  *   $states = $appstateService->states;
  *  </code>
  */
-class Google_Service_AppState_States_Resource extends Google_Service_Resource
+class Google_Service_AppState_StatesResource extends Google_Service_Resource
 {
   /**
    * Clears (sets to empty) the data for the passed key if and only if the passed

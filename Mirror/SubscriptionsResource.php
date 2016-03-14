@@ -23,7 +23,7 @@
  *   $subscriptions = $mirrorService->subscriptions;
  *  </code>
  */
-class Google_Service_Mirror_Subscriptions_Resource extends Google_Service_Resource
+class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resource
 {
   /**
    * Deletes a subscription. (subscriptions.delete)

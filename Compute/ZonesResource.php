@@ -23,7 +23,7 @@
  *   $zones = $computeService->zones;
  *  </code>
  */
-class Google_Service_Compute_Zones_Resource extends Google_Service_Resource
+class Google_Service_Compute_ZonesResource extends Google_Service_Resource
 {
   /**
    * Returns the specified Zone resource. Get a list of available zones by making

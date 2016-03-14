@@ -23,7 +23,7 @@
  *   $inventoryItems = $dfareportingService->inventoryItems;
  *  </code>
  */
-class Google_Service_Dfareporting_InventoryItems_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_InventoryItemsResource extends Google_Service_Resource
 {
   /**
    * Gets one inventory item by ID. (inventoryItems.get)

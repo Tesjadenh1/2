@@ -23,7 +23,7 @@
  *   $datasets = $genomicsService->datasets;
  *  </code>
  */
-class Google_Service_Genomics_Datasets_Resource extends Google_Service_Resource
+class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
 {
   /**
    * Creates a new dataset. For the definitions of datasets and other genomics

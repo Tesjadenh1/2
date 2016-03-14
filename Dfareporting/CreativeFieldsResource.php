@@ -23,7 +23,7 @@
  *   $creativeFields = $dfareportingService->creativeFields;
  *  </code>
  */
-class Google_Service_Dfareporting_CreativeFields_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_CreativeFieldsResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing creative field. (creativeFields.delete)

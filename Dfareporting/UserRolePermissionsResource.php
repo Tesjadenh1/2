@@ -23,7 +23,7 @@
  *   $userRolePermissions = $dfareportingService->userRolePermissions;
  *  </code>
  */
-class Google_Service_Dfareporting_UserRolePermissions_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_UserRolePermissionsResource extends Google_Service_Resource
 {
   /**
    * Gets one user role permission by ID. (userRolePermissions.get)

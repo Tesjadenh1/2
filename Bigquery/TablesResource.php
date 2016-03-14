@@ -23,7 +23,7 @@
  *   $tables = $bigqueryService->tables;
  *  </code>
  */
-class Google_Service_Bigquery_Tables_Resource extends Google_Service_Resource
+class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
 {
   /**
    * Deletes the table specified by tableId from the dataset. If the table

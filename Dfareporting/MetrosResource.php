@@ -23,7 +23,7 @@
  *   $metros = $dfareportingService->metros;
  *  </code>
  */
-class Google_Service_Dfareporting_Metros_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_MetrosResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of metros. (metros.listMetros)

@@ -23,7 +23,7 @@
  *   $regions = $computeService->regions;
  *  </code>
  */
-class Google_Service_Compute_Regions_Resource extends Google_Service_Resource
+class Google_Service_Compute_RegionsResource extends Google_Service_Resource
 {
   /**
    * Returns the specified Region resource. Get a list of available regions by

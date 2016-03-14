@@ -23,7 +23,7 @@
  *   $changeLogs = $dfareportingService->changeLogs;
  *  </code>
  */
-class Google_Service_Dfareporting_ChangeLogs_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_ChangeLogsResource extends Google_Service_Resource
 {
   /**
    * Gets one change log by ID. (changeLogs.get)

@@ -23,7 +23,7 @@
  *   $sslCertificates = $computeService->sslCertificates;
  *  </code>
  */
-class Google_Service_Compute_SslCertificates_Resource extends Google_Service_Resource
+class Google_Service_Compute_SslCertificatesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified SslCertificate resource. (sslCertificates.delete)

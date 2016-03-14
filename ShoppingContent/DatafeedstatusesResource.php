@@ -23,7 +23,7 @@
  *   $datafeedstatuses = $contentService->datafeedstatuses;
  *  </code>
  */
-class Google_Service_ShoppingContent_Datafeedstatuses_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_DatafeedstatusesResource extends Google_Service_Resource
 {
   /**
    * (datafeedstatuses.custombatch)

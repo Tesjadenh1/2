@@ -23,7 +23,7 @@
  *   $routes = $computeService->routes;
  *  </code>
  */
-class Google_Service_Compute_Routes_Resource extends Google_Service_Resource
+class Google_Service_Compute_RoutesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified Route resource. (routes.delete)

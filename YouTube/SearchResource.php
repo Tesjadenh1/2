@@ -23,7 +23,7 @@
  *   $search = $youtubeService->search;
  *  </code>
  */
-class Google_Service_YouTube_Search_Resource extends Google_Service_Resource
+class Google_Service_YouTube_SearchResource extends Google_Service_Resource
 {
   /**
    * Returns a collection of search results that match the query parameters

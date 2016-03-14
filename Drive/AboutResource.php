@@ -23,7 +23,7 @@
  *   $about = $driveService->about;
  *  </code>
  */
-class Google_Service_Drive_About_Resource extends Google_Service_Resource
+class Google_Service_Drive_AboutResource extends Google_Service_Resource
 {
   /**
    * Gets information about the user, the user's Drive, and system capabilities.

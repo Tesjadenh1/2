@@ -23,7 +23,7 @@
  *   $channelSections = $youtubeService->channelSections;
  *  </code>
  */
-class Google_Service_YouTube_ChannelSections_Resource extends Google_Service_Resource
+class Google_Service_YouTube_ChannelSectionsResource extends Google_Service_Resource
 {
   /**
    * Deletes a channelSection. (channelSections.delete)

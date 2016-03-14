@@ -23,7 +23,7 @@
  *   $variants = $genomicsService->variants;
  *  </code>
  */
-class Google_Service_Genomics_Variants_Resource extends Google_Service_Resource
+class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
 {
   /**
    * Creates a new variant. For the definitions of variants and other genomics

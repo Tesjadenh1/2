@@ -23,7 +23,7 @@
  *   $snapshots = $computeService->snapshots;
  *  </code>
  */
-class Google_Service_Compute_Snapshots_Resource extends Google_Service_Resource
+class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified Snapshot resource. Keep in mind that deleting a single

@@ -23,7 +23,7 @@
  *   $events = $gamesService->events;
  *  </code>
  */
-class Google_Service_Games_Events_Resource extends Google_Service_Resource
+class Google_Service_Games_EventsResource extends Google_Service_Resource
 {
   /**
    * Returns a list showing the current progress on events in this application for

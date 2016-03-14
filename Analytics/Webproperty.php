@@ -34,6 +34,7 @@ class Google_Service_Analytics_Webproperty extends Google_Model
   protected $permissionsDataType = '';
   public $profileCount;
   public $selfLink;
+  public $starred;
   public $updated;
   public $websiteUrl;
 
@@ -148,6 +149,14 @@ class Google_Service_Analytics_Webproperty extends Google_Model
   public function getSelfLink()
   {
     return $this->selfLink;
+  }
+  public function setStarred($starred)
+  {
+    $this->starred = $starred;
+  }
+  public function getStarred()
+  {
+    return $this->starred;
   }
   public function setUpdated($updated)
   {

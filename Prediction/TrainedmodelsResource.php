@@ -23,7 +23,7 @@
  *   $trainedmodels = $predictionService->trainedmodels;
  *  </code>
  */
-class Google_Service_Prediction_Trainedmodels_Resource extends Google_Service_Resource
+class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Resource
 {
   /**
    * Get analysis of the model and the data the model was trained on.

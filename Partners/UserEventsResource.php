@@ -23,7 +23,7 @@
  *   $userEvents = $partnersService->userEvents;
  *  </code>
  */
-class Google_Service_Partners_UserEvents_Resource extends Google_Service_Resource
+class Google_Service_Partners_UserEventsResource extends Google_Service_Resource
 {
   /**
    * Logs a user event. (userEvents.log)

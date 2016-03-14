@@ -23,7 +23,7 @@
  *   $webfonts = $webfontsService->webfonts;
  *  </code>
  */
-class Google_Service_Webfonts_Webfonts_Resource extends Google_Service_Resource
+class Google_Service_Webfonts_WebfontsResource extends Google_Service_Resource
 {
   /**
    * Retrieves the list of fonts currently served by the Google Fonts Developer

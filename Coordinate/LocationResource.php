@@ -23,7 +23,7 @@
  *   $location = $coordinateService->location;
  *  </code>
  */
-class Google_Service_Coordinate_Location_Resource extends Google_Service_Resource
+class Google_Service_Coordinate_LocationResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of locations for a worker. (location.listLocation)

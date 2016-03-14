@@ -23,7 +23,7 @@
  *   $pushtokens = $gamesService->pushtokens;
  *  </code>
  */
-class Google_Service_Games_Pushtokens_Resource extends Google_Service_Resource
+class Google_Service_Games_PushtokensResource extends Google_Service_Resource
 {
   /**
    * Removes a push token for the current user and application. Removing a non-

@@ -23,7 +23,7 @@
  *   $people = $peopleService->people;
  *  </code>
  */
-class Google_Service_People_People_Resource extends Google_Service_Resource
+class Google_Service_People_PeopleResource extends Google_Service_Resource
 {
   /**
    * Provides information about a person resource for a resource name. Use

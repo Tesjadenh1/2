@@ -23,7 +23,7 @@
  *   $people = $plusService->people;
  *  </code>
  */
-class Google_Service_Plus_People_Resource extends Google_Service_Resource
+class Google_Service_Plus_PeopleResource extends Google_Service_Resource
 {
   /**
    * Get a person's profile. If your app uses scope

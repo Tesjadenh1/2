@@ -23,7 +23,7 @@
  *   $regions = $dfareportingService->regions;
  *  </code>
  */
-class Google_Service_Dfareporting_Regions_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_RegionsResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of regions. (regions.listRegions)

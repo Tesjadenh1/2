@@ -23,7 +23,7 @@
  *   $calendars = $calendarService->calendars;
  *  </code>
  */
-class Google_Service_Calendar_Calendars_Resource extends Google_Service_Resource
+class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
 {
   /**
    * Clears a primary calendar. This operation deletes all events associated with

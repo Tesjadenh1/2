@@ -23,7 +23,7 @@
  *   $productstatuses = $contentService->productstatuses;
  *  </code>
  */
-class Google_Service_ShoppingContent_Productstatuses_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Service_Resource
 {
   /**
    * Gets the statuses of multiple products in a single request.

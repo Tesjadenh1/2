@@ -23,7 +23,7 @@
  *   $adclients = $adsenseService->adclients;
  *  </code>
  */
-class Google_Service_AdSense_Adclients_Resource extends Google_Service_Resource
+class Google_Service_AdSense_AdclientsResource extends Google_Service_Resource
 {
   /**
    * List all ad clients in this AdSense account. (adclients.listAdclients)

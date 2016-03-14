@@ -23,7 +23,7 @@
  *   $reportTypes = $youtubereportingService->reportTypes;
  *  </code>
  */
-class Google_Service_YouTubeReporting_ReportTypes_Resource extends Google_Service_Resource
+class Google_Service_YouTubeReporting_ReportTypesResource extends Google_Service_Resource
 {
   /**
    * Lists report types. (reportTypes.listReportTypes)

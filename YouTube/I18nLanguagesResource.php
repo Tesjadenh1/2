@@ -23,7 +23,7 @@
  *   $i18nLanguages = $youtubeService->i18nLanguages;
  *  </code>
  */
-class Google_Service_YouTube_I18nLanguages_Resource extends Google_Service_Resource
+class Google_Service_YouTube_I18nLanguagesResource extends Google_Service_Resource
 {
   /**
    * Returns a list of application languages that the YouTube website supports.

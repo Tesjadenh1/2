@@ -23,7 +23,7 @@
  *   $batchReports = $youtubeAnalyticsService->batchReports;
  *  </code>
  */
-class Google_Service_YouTubeAnalytics_BatchReports_Resource extends Google_Service_Resource
+class Google_Service_YouTubeAnalytics_BatchReportsResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of processed batch reports. (batchReports.listBatchReports)

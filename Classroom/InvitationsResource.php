@@ -23,7 +23,7 @@
  *   $invitations = $classroomService->invitations;
  *  </code>
  */
-class Google_Service_Classroom_Invitations_Resource extends Google_Service_Resource
+class Google_Service_Classroom_InvitationsResource extends Google_Service_Resource
 {
   /**
    * Accepts an invitation, removing it and adding the invited user to the

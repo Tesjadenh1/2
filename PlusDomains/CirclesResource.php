@@ -23,7 +23,7 @@
  *   $circles = $plusDomainsService->circles;
  *  </code>
  */
-class Google_Service_PlusDomains_Circles_Resource extends Google_Service_Resource
+class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
 {
   /**
    * Add a person to a circle. Google+ limits certain circle operations, including

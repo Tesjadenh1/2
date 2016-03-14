@@ -23,7 +23,7 @@
  *   $orderDocuments = $dfareportingService->orderDocuments;
  *  </code>
  */
-class Google_Service_Dfareporting_OrderDocuments_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_OrderDocumentsResource extends Google_Service_Resource
 {
   /**
    * Gets one order document by ID. (orderDocuments.get)

@@ -23,7 +23,7 @@
  *   $permissions = $driveService->permissions;
  *  </code>
  */
-class Google_Service_Drive_Permissions_Resource extends Google_Service_Resource
+class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
 {
   /**
    * Creates a permission for a file. (permissions.create)

@@ -23,7 +23,7 @@
  *   $comments = $driveService->comments;
  *  </code>
  */
-class Google_Service_Drive_Comments_Resource extends Google_Service_Resource
+class Google_Service_Drive_CommentsResource extends Google_Service_Resource
 {
   /**
    * Creates a new comment on a file. (comments.create)

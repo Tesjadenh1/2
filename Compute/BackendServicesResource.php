@@ -23,7 +23,7 @@
  *   $backendServices = $computeService->backendServices;
  *  </code>
  */
-class Google_Service_Compute_BackendServices_Resource extends Google_Service_Resource
+class Google_Service_Compute_BackendServicesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified BackendService resource. (backendServices.delete)

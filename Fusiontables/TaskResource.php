@@ -23,7 +23,7 @@
  *   $task = $fusiontablesService->task;
  *  </code>
  */
-class Google_Service_Fusiontables_Task_Resource extends Google_Service_Resource
+class Google_Service_Fusiontables_TaskResource extends Google_Service_Resource
 {
   /**
    * Deletes a specific task by its ID, unless that task has already started

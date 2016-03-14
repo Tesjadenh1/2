@@ -23,7 +23,7 @@
  *   $promooffer = $booksService->promooffer;
  *  </code>
  */
-class Google_Service_Books_Promooffer_Resource extends Google_Service_Resource
+class Google_Service_Books_PromoofferResource extends Google_Service_Resource
 {
   /**
    * (promooffer.accept)

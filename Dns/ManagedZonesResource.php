@@ -23,7 +23,7 @@
  *   $managedZones = $dnsService->managedZones;
  *  </code>
  */
-class Google_Service_Dns_ManagedZones_Resource extends Google_Service_Resource
+class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
 {
   /**
    * Create a new ManagedZone. (managedZones.create)

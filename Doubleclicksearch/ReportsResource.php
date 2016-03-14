@@ -23,7 +23,7 @@
  *   $reports = $doubleclicksearchService->reports;
  *  </code>
  */
-class Google_Service_Doubleclicksearch_Reports_Resource extends Google_Service_Resource
+class Google_Service_Doubleclicksearch_ReportsResource extends Google_Service_Resource
 {
   /**
    * Generates and returns a report immediately. (reports.generate)

@@ -23,7 +23,7 @@
  *   $detections = $translateService->detections;
  *  </code>
  */
-class Google_Service_Translate_Detections_Resource extends Google_Service_Resource
+class Google_Service_Translate_DetectionsResource extends Google_Service_Resource
 {
   /**
    * Detect the language of text. (detections.listDetections)

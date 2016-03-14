@@ -23,7 +23,7 @@
  *   $placementStrategies = $dfareportingService->placementStrategies;
  *  </code>
  */
-class Google_Service_Dfareporting_PlacementStrategies_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing placement strategy. (placementStrategies.delete)

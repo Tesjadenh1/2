@@ -23,7 +23,7 @@
  *   $metagame = $gamesService->metagame;
  *  </code>
  */
-class Google_Service_Games_Metagame_Resource extends Google_Service_Resource
+class Google_Service_Games_MetagameResource extends Google_Service_Resource
 {
   /**
    * Return the metagame configuration data for the calling application.

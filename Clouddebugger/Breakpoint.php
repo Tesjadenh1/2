@@ -27,6 +27,7 @@ class Google_Service_Clouddebugger_Breakpoint extends Google_Collection
   public $finalTime;
   public $id;
   public $isFinalState;
+  public $labels;
   protected $locationType = 'Google_Service_Clouddebugger_SourceLocation';
   protected $locationDataType = '';
   public $logLevel;
@@ -102,6 +103,14 @@ class Google_Service_Clouddebugger_Breakpoint extends Google_Collection
   public function getIsFinalState()
   {
     return $this->isFinalState;
+  }
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  public function getLabels()
+  {
+    return $this->labels;
   }
   public function setLocation(SourceLocation $location)
   {

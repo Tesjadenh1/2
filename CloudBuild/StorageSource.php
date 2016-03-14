@@ -18,6 +18,7 @@
 class Google_Service_CloudBuild_StorageSource extends Google_Model
 {
   public $bucket;
+  public $generation;
   public $object;
 
   public function setBucket($bucket)
@@ -27,6 +28,14 @@ class Google_Service_CloudBuild_StorageSource extends Google_Model
   public function getBucket()
   {
     return $this->bucket;
+  }
+  public function setGeneration($generation)
+  {
+    $this->generation = $generation;
+  }
+  public function getGeneration()
+  {
+    return $this->generation;
   }
   public function setObject($object)
   {

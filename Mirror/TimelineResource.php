@@ -23,7 +23,7 @@
  *   $timeline = $mirrorService->timeline;
  *  </code>
  */
-class Google_Service_Mirror_Timeline_Resource extends Google_Service_Resource
+class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
 {
   /**
    * Deletes a timeline item. (timeline.delete)

@@ -23,7 +23,7 @@
  *   $worker = $coordinateService->worker;
  *  </code>
  */
-class Google_Service_Coordinate_Worker_Resource extends Google_Service_Resource
+class Google_Service_Coordinate_WorkerResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of workers in a team. (worker.listWorker)

@@ -23,7 +23,7 @@
  *   $snapshots = $gamesService->snapshots;
  *  </code>
  */
-class Google_Service_Games_Snapshots_Resource extends Google_Service_Resource
+class Google_Service_Games_SnapshotsResource extends Google_Service_Resource
 {
   /**
    * Retrieves the metadata for a given snapshot ID. (snapshots.get)

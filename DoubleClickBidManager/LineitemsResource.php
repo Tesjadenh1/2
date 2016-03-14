@@ -23,7 +23,7 @@
  *   $lineitems = $doubleclickbidmanagerService->lineitems;
  *  </code>
  */
-class Google_Service_DoubleClickBidManager_Lineitems_Resource extends Google_Service_Resource
+class Google_Service_DoubleClickBidManager_LineitemsResource extends Google_Service_Resource
 {
   /**
    * Retrieves line items in CSV format. (lineitems.downloadlineitems)

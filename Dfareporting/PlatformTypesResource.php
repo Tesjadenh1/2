@@ -23,7 +23,7 @@
  *   $platformTypes = $dfareportingService->platformTypes;
  *  </code>
  */
-class Google_Service_Dfareporting_PlatformTypes_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_PlatformTypesResource extends Google_Service_Resource
 {
   /**
    * Gets one platform type by ID. (platformTypes.get)

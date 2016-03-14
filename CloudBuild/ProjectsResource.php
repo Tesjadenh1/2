@@ -23,6 +23,6 @@
  *   $projects = $cloudbuildService->projects;
  *  </code>
  */
-class Google_Service_CloudBuild_Projects_Resource extends Google_Service_Resource
+class Google_Service_CloudBuild_ProjectsResource extends Google_Service_Resource
 {
 }

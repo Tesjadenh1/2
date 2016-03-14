@@ -23,7 +23,7 @@
  *   $playlists = $youtubeService->playlists;
  *  </code>
  */
-class Google_Service_YouTube_Playlists_Resource extends Google_Service_Resource
+class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
 {
   /**
    * Deletes a playlist. (playlists.delete)

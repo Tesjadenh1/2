@@ -18,6 +18,7 @@
 class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyDeleteAccountRequest extends Google_Model
 {
   public $delegatedProjectNumber;
+  public $idToken;
   public $localId;
 
   public function setDelegatedProjectNumber($delegatedProjectNumber)
@@ -27,6 +28,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyDeleteAccountReq
   public function getDelegatedProjectNumber()
   {
     return $this->delegatedProjectNumber;
+  }
+  public function setIdToken($idToken)
+  {
+    $this->idToken = $idToken;
+  }
+  public function getIdToken()
+  {
+    return $this->idToken;
   }
   public function setLocalId($localId)
   {

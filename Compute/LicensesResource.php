@@ -23,7 +23,7 @@
  *   $licenses = $computeService->licenses;
  *  </code>
  */
-class Google_Service_Compute_Licenses_Resource extends Google_Service_Resource
+class Google_Service_Compute_LicensesResource extends Google_Service_Resource
 {
   /**
    * Returns the specified License resource. Get a list of available licenses by

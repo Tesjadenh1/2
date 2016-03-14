@@ -23,7 +23,7 @@
  *   $jobs = $bigqueryService->jobs;
  *  </code>
  */
-class Google_Service_Bigquery_Jobs_Resource extends Google_Service_Resource
+class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
 {
   /**
    * Requests that a job be cancelled. This call will return immediately, and the

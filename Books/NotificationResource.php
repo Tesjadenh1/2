@@ -23,7 +23,7 @@
  *   $notification = $booksService->notification;
  *  </code>
  */
-class Google_Service_Books_Notification_Resource extends Google_Service_Resource
+class Google_Service_Books_NotificationResource extends Google_Service_Resource
 {
   /**
    * Returns notification details for a given notification id. (notification.get)

@@ -23,7 +23,7 @@
  *   $images = $visionService->images;
  *  </code>
  */
-class Google_Service_Vision_Images_Resource extends Google_Service_Resource
+class Google_Service_Vision_ImagesResource extends Google_Service_Resource
 {
   /**
    * Run image detection and annotation for a batch of images. (images.annotate)

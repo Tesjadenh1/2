@@ -23,7 +23,7 @@
  *   $thumbnails = $youtubeService->thumbnails;
  *  </code>
  */
-class Google_Service_YouTube_Thumbnails_Resource extends Google_Service_Resource
+class Google_Service_YouTube_ThumbnailsResource extends Google_Service_Resource
 {
   /**
    * Uploads a custom video thumbnail to YouTube and sets it for a video.

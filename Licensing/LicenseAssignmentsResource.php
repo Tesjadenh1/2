@@ -23,7 +23,7 @@
  *   $licenseAssignments = $licensingService->licenseAssignments;
  *  </code>
  */
-class Google_Service_Licensing_LicenseAssignments_Resource extends Google_Service_Resource
+class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service_Resource
 {
   /**
    * Revoke License. (licenseAssignments.delete)

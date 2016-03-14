@@ -23,7 +23,7 @@
  *   $watermarks = $youtubeService->watermarks;
  *  </code>
  */
-class Google_Service_YouTube_Watermarks_Resource extends Google_Service_Resource
+class Google_Service_YouTube_WatermarksResource extends Google_Service_Resource
 {
   /**
    * Uploads a watermark image to YouTube and sets it for a channel.

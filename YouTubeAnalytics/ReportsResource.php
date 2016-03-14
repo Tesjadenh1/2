@@ -23,7 +23,7 @@
  *   $reports = $youtubeAnalyticsService->reports;
  *  </code>
  */
-class Google_Service_YouTubeAnalytics_Reports_Resource extends Google_Service_Resource
+class Google_Service_YouTubeAnalytics_ReportsResource extends Google_Service_Resource
 {
   /**
    * Retrieve your YouTube Analytics reports. (reports.query)

@@ -23,7 +23,7 @@
  *   $style = $fusiontablesService->style;
  *  </code>
  */
-class Google_Service_Fusiontables_Style_Resource extends Google_Service_Resource
+class Google_Service_Fusiontables_StyleResource extends Google_Service_Resource
 {
   /**
    * Deletes a style. (style.delete)

@@ -23,7 +23,7 @@
  *   $onboarding = $booksService->onboarding;
  *  </code>
  */
-class Google_Service_Books_Onboarding_Resource extends Google_Service_Resource
+class Google_Service_Books_OnboardingResource extends Google_Service_Resource
 {
   /**
    * List categories for onboarding experience. (onboarding.listCategories)

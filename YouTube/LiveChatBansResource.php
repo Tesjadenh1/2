@@ -23,7 +23,7 @@
  *   $liveChatBans = $youtubeService->liveChatBans;
  *  </code>
  */
-class Google_Service_YouTube_LiveChatBans_Resource extends Google_Service_Resource
+class Google_Service_YouTube_LiveChatBansResource extends Google_Service_Resource
 {
   /**
    * Removes a chat ban. (liveChatBans.delete)

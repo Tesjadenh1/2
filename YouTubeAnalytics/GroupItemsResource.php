@@ -23,7 +23,7 @@
  *   $groupItems = $youtubeAnalyticsService->groupItems;
  *  </code>
  */
-class Google_Service_YouTubeAnalytics_GroupItems_Resource extends Google_Service_Resource
+class Google_Service_YouTubeAnalytics_GroupItemsResource extends Google_Service_Resource
 {
   /**
    * Removes an item from a group. (groupItems.delete)

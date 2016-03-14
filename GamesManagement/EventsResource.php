@@ -23,7 +23,7 @@
  *   $events = $gamesManagementService->events;
  *  </code>
  */
-class Google_Service_GamesManagement_Events_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_EventsResource extends Google_Service_Resource
 {
   /**
    * Resets all player progress on the event with the given ID for the currently

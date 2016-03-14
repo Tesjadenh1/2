@@ -20,6 +20,7 @@ class Google_Service_Analytics_ProfileSummary extends Google_Model
   public $id;
   public $kind;
   public $name;
+  public $starred;
   public $type;
 
   public function setId($id)
@@ -45,6 +46,14 @@ class Google_Service_Analytics_ProfileSummary extends Google_Model
   public function getName()
   {
     return $this->name;
+  }
+  public function setStarred($starred)
+  {
+    $this->starred = $starred;
+  }
+  public function getStarred()
+  {
+    return $this->starred;
   }
   public function setType($type)
   {

@@ -23,7 +23,7 @@
  *   $contacts = $mirrorService->contacts;
  *  </code>
  */
-class Google_Service_Mirror_Contacts_Resource extends Google_Service_Resource
+class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
 {
   /**
    * Deletes a contact. (contacts.delete)

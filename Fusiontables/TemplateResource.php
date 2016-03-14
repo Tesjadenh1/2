@@ -23,7 +23,7 @@
  *   $template = $fusiontablesService->template;
  *  </code>
  */
-class Google_Service_Fusiontables_Template_Resource extends Google_Service_Resource
+class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resource
 {
   /**
    * Deletes a template (template.delete)

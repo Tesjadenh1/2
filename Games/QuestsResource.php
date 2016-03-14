@@ -23,7 +23,7 @@
  *   $quests = $gamesService->quests;
  *  </code>
  */
-class Google_Service_Games_Quests_Resource extends Google_Service_Resource
+class Google_Service_Games_QuestsResource extends Google_Service_Resource
 {
   /**
    * Indicates that the currently authorized user will participate in the quest.

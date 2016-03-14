@@ -23,7 +23,7 @@
  *   $accounts = $contentService->accounts;
  *  </code>
  */
-class Google_Service_ShoppingContent_Accounts_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Resource
 {
   /**
    * Returns information about the authenticated user. (accounts.authinfo)

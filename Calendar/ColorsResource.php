@@ -23,7 +23,7 @@
  *   $colors = $calendarService->colors;
  *  </code>
  */
-class Google_Service_Calendar_Colors_Resource extends Google_Service_Resource
+class Google_Service_Calendar_ColorsResource extends Google_Service_Resource
 {
   /**
    * Returns the color definitions for calendars and events. (colors.get)

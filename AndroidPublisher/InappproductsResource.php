@@ -23,7 +23,7 @@
  *   $inappproducts = $androidpublisherService->inappproducts;
  *  </code>
  */
-class Google_Service_AndroidPublisher_Inappproducts_Resource extends Google_Service_Resource
+class Google_Service_AndroidPublisher_InappproductsResource extends Google_Service_Resource
 {
   /**
    * (inappproducts.batch)

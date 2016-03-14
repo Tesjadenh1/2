@@ -23,7 +23,7 @@
  *   $locations = $mirrorService->locations;
  *  </code>
  */
-class Google_Service_Mirror_Locations_Resource extends Google_Service_Resource
+class Google_Service_Mirror_LocationsResource extends Google_Service_Resource
 {
   /**
    * Gets a single location by ID. (locations.get)

@@ -23,7 +23,7 @@
  *   $bookshelves = $booksService->bookshelves;
  *  </code>
  */
-class Google_Service_Books_Bookshelves_Resource extends Google_Service_Resource
+class Google_Service_Books_BookshelvesResource extends Google_Service_Resource
 {
   /**
    * Retrieves metadata for a specific bookshelf for the specified user.

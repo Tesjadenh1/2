@@ -23,7 +23,7 @@
  *   $statscollection = $cloudlatencytestService->statscollection;
  *  </code>
  */
-class Google_Service_Cloudlatencytest_Statscollection_Resource extends Google_Service_Resource
+class Google_Service_Cloudlatencytest_StatscollectionResource extends Google_Service_Resource
 {
   /**
    * RPC to update the new TCP stats. (statscollection.updateaggregatedstats)

@@ -23,7 +23,7 @@
  *   $datasets = $bigqueryService->datasets;
  *  </code>
  */
-class Google_Service_Bigquery_Datasets_Resource extends Google_Service_Resource
+class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
 {
   /**
    * Deletes the dataset specified by the datasetId value. Before you can delete a

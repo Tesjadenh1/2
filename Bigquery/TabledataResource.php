@@ -23,7 +23,7 @@
  *   $tabledata = $bigqueryService->tabledata;
  *  </code>
  */
-class Google_Service_Bigquery_Tabledata_Resource extends Google_Service_Resource
+class Google_Service_Bigquery_TabledataResource extends Google_Service_Resource
 {
   /**
    * Streams data into BigQuery one record at a time without needing to run a load

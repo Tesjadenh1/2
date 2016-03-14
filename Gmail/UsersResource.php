@@ -23,7 +23,7 @@
  *   $users = $gmailService->users;
  *  </code>
  */
-class Google_Service_Gmail_Users_Resource extends Google_Service_Resource
+class Google_Service_Gmail_UsersResource extends Google_Service_Resource
 {
   /**
    * Gets the current user's Gmail profile. (users.getProfile)

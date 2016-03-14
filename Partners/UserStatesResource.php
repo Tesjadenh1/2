@@ -23,7 +23,7 @@
  *   $userStates = $partnersService->userStates;
  *  </code>
  */
-class Google_Service_Partners_UserStates_Resource extends Google_Service_Resource
+class Google_Service_Partners_UserStatesResource extends Google_Service_Resource
 {
   /**
    * Lists states for current user. (userStates.listUserStates)

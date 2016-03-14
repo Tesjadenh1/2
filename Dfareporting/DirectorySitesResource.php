@@ -23,7 +23,7 @@
  *   $directorySites = $dfareportingService->directorySites;
  *  </code>
  */
-class Google_Service_Dfareporting_DirectorySites_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_DirectorySitesResource extends Google_Service_Resource
 {
   /**
    * Gets one directory site by ID. (directorySites.get)

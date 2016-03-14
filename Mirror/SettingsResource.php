@@ -23,7 +23,7 @@
  *   $settings = $mirrorService->settings;
  *  </code>
  */
-class Google_Service_Mirror_Settings_Resource extends Google_Service_Resource
+class Google_Service_Mirror_SettingsResource extends Google_Service_Resource
 {
   /**
    * Gets a single setting by ID. (settings.get)

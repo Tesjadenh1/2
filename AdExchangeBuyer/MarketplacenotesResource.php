@@ -23,7 +23,7 @@
  *   $marketplacenotes = $adexchangebuyerService->marketplacenotes;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Marketplacenotes_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_MarketplacenotesResource extends Google_Service_Resource
 {
   /**
    * Add notes to the proposal (marketplacenotes.insert)

@@ -23,7 +23,7 @@
  *   $devices = $androidenterpriseService->devices;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Devices_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Resource
 {
   /**
    * Retrieves the details of a device. (devices.get)

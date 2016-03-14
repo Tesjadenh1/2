@@ -23,7 +23,7 @@
  *   $autoscalers = $computeService->autoscalers;
  *  </code>
  */
-class Google_Service_Compute_Autoscalers_Resource extends Google_Service_Resource
+class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of autoscalers. (autoscalers.aggregatedList)

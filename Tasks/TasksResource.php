@@ -23,7 +23,7 @@
  *   $tasks = $tasksService->tasks;
  *  </code>
  */
-class Google_Service_Tasks_Tasks_Resource extends Google_Service_Resource
+class Google_Service_Tasks_TasksResource extends Google_Service_Resource
 {
   /**
    * Clears all completed tasks from the specified task list. The affected tasks

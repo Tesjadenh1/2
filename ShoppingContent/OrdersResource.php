@@ -23,7 +23,7 @@
  *   $orders = $contentService->orders;
  *  </code>
  */
-class Google_Service_ShoppingContent_Orders_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resource
 {
   /**
    * Marks an order as acknowledged. (orders.acknowledge)

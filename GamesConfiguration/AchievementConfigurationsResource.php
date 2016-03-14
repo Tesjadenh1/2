@@ -23,7 +23,7 @@
  *   $achievementConfigurations = $gamesConfigurationService->achievementConfigurations;
  *  </code>
  */
-class Google_Service_GamesConfiguration_AchievementConfigurations_Resource extends Google_Service_Resource
+class Google_Service_GamesConfiguration_AchievementConfigurationsResource extends Google_Service_Resource
 {
   /**
    * Delete the achievement configuration with the given ID.

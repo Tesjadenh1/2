@@ -23,7 +23,7 @@
  *   $liveStreams = $youtubeService->liveStreams;
  *  </code>
  */
-class Google_Service_YouTube_LiveStreams_Resource extends Google_Service_Resource
+class Google_Service_YouTube_LiveStreamsResource extends Google_Service_Resource
 {
   /**
    * Deletes a video stream. (liveStreams.delete)

@@ -23,7 +23,7 @@
  *   $ads = $dfareportingService->ads;
  *  </code>
  */
-class Google_Service_Dfareporting_Ads_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
 {
   /**
    * Gets one ad by ID. (ads.get)

@@ -23,7 +23,7 @@
  *   $accountstatuses = $contentService->accountstatuses;
  *  </code>
  */
-class Google_Service_ShoppingContent_Accountstatuses_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Service_Resource
 {
   /**
    * (accountstatuses.custombatch)

@@ -23,7 +23,7 @@
  *   $countries = $dfareportingService->countries;
  *  </code>
  */
-class Google_Service_Dfareporting_Countries_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_CountriesResource extends Google_Service_Resource
 {
   /**
    * Gets one country by ID. (countries.get)

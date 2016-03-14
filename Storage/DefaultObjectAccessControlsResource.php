@@ -23,7 +23,7 @@
  *   $defaultObjectAccessControls = $storageService->defaultObjectAccessControls;
  *  </code>
  */
-class Google_Service_Storage_DefaultObjectAccessControls_Resource extends Google_Service_Resource
+class Google_Service_Storage_DefaultObjectAccessControlsResource extends Google_Service_Resource
 {
   /**
    * Permanently deletes the default object ACL entry for the specified entity on

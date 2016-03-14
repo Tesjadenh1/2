@@ -23,7 +23,7 @@
  *   $relyingparty = $identitytoolkitService->relyingparty;
  *  </code>
  */
-class Google_Service_IdentityToolkit_Relyingparty_Resource extends Google_Service_Resource
+class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service_Resource
 {
   /**
    * Creates the URI used by the IdP to authenticate the user.

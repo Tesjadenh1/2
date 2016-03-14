@@ -23,7 +23,7 @@
  *   $httpHealthChecks = $computeService->httpHealthChecks;
  *  </code>
  */
-class Google_Service_Compute_HttpHealthChecks_Resource extends Google_Service_Resource
+class Google_Service_Compute_HttpHealthChecksResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified HttpHealthCheck resource. (httpHealthChecks.delete)

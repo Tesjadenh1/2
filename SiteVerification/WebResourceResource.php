@@ -23,7 +23,7 @@
  *   $webResource = $siteVerificationService->webResource;
  *  </code>
  */
-class Google_Service_SiteVerification_WebResource_Resource extends Google_Service_Resource
+class Google_Service_SiteVerification_WebResourceResource extends Google_Service_Resource
 {
   /**
    * Relinquish ownership of a website or domain. (webResource.delete)

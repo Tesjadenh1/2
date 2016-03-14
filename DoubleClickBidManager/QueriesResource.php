@@ -23,7 +23,7 @@
  *   $queries = $doubleclickbidmanagerService->queries;
  *  </code>
  */
-class Google_Service_DoubleClickBidManager_Queries_Resource extends Google_Service_Resource
+class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Service_Resource
 {
   /**
    * Creates a query. (queries.createquery)

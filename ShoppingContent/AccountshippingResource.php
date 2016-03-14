@@ -23,7 +23,7 @@
  *   $accountshipping = $contentService->accountshipping;
  *  </code>
  */
-class Google_Service_ShoppingContent_Accountshipping_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_AccountshippingResource extends Google_Service_Resource
 {
   /**
    * Retrieves and updates the shipping settings of multiple accounts in a single

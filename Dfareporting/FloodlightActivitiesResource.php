@@ -23,7 +23,7 @@
  *   $floodlightActivities = $dfareportingService->floodlightActivities;
  *  </code>
  */
-class Google_Service_Dfareporting_FloodlightActivities_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing floodlight activity. (floodlightActivities.delete)

@@ -23,7 +23,7 @@
  *   $urlcrawlerrorssamples = $webmastersService->urlcrawlerrorssamples;
  *  </code>
  */
-class Google_Service_Webmasters_Urlcrawlerrorssamples_Resource extends Google_Service_Resource
+class Google_Service_Webmasters_UrlcrawlerrorssamplesResource extends Google_Service_Resource
 {
   /**
    * Retrieves details about crawl errors for a site's sample URL.

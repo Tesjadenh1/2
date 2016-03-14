@@ -23,7 +23,7 @@
  *   $players = $gamesManagementService->players;
  *  </code>
  */
-class Google_Service_GamesManagement_Players_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_PlayersResource extends Google_Service_Resource
 {
   /**
    * Hide the given player's leaderboard scores from the given application. This

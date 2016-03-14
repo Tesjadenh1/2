@@ -23,7 +23,7 @@
  *   $products = $contentService->products;
  *  </code>
  */
-class Google_Service_ShoppingContent_Products_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Resource
 {
   /**
    * Retrieves, inserts, and deletes multiple products in a single request.

@@ -23,7 +23,7 @@
  *   $personalizedstream = $booksService->personalizedstream;
  *  </code>
  */
-class Google_Service_Books_Personalizedstream_Resource extends Google_Service_Resource
+class Google_Service_Books_PersonalizedstreamResource extends Google_Service_Resource
 {
   /**
    * Returns a stream of personalized book clusters (personalizedstream.get)

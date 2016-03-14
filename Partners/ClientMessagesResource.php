@@ -23,7 +23,7 @@
  *   $clientMessages = $partnersService->clientMessages;
  *  </code>
  */
-class Google_Service_Partners_ClientMessages_Resource extends Google_Service_Resource
+class Google_Service_Partners_ClientMessagesResource extends Google_Service_Resource
 {
   /**
    * Logs a generic message from the client, such as `Failed to render component`,

@@ -23,7 +23,7 @@
  *   $fanFundingEvents = $youtubeService->fanFundingEvents;
  *  </code>
  */
-class Google_Service_YouTube_FanFundingEvents_Resource extends Google_Service_Resource
+class Google_Service_YouTube_FanFundingEventsResource extends Google_Service_Resource
 {
   /**
    * Lists fan funding events for a channel.

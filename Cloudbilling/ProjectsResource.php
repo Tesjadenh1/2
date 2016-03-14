@@ -23,7 +23,7 @@
  *   $projects = $cloudbillingService->projects;
  *  </code>
  */
-class Google_Service_Cloudbilling_Projects_Resource extends Google_Service_Resource
+class Google_Service_Cloudbilling_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Gets the billing information for a project. The current authenticated user

@@ -23,7 +23,7 @@
  *   $accountActiveAdSummaries = $dfareportingService->accountActiveAdSummaries;
  *  </code>
  */
-class Google_Service_Dfareporting_AccountActiveAdSummaries_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AccountActiveAdSummariesResource extends Google_Service_Resource
 {
   /**
    * Gets the account's active ad summary by account ID.

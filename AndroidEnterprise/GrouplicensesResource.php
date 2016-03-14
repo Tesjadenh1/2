@@ -23,7 +23,7 @@
  *   $grouplicenses = $androidenterpriseService->grouplicenses;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Grouplicenses_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_GrouplicensesResource extends Google_Service_Resource
 {
   /**
    * Retrieves details of an enterprise's group license for a product.

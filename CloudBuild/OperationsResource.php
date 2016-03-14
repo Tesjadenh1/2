@@ -23,7 +23,7 @@
  *   $operations = $cloudbuildService->operations;
  *  </code>
  */
-class Google_Service_CloudBuild_Operations_Resource extends Google_Service_Resource
+class Google_Service_CloudBuild_OperationsResource extends Google_Service_Resource
 {
   /**
    * Gets the latest state of a long-running operation.  Clients can use this

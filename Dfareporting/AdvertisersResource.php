@@ -23,7 +23,7 @@
  *   $advertisers = $dfareportingService->advertisers;
  *  </code>
  */
-class Google_Service_Dfareporting_Advertisers_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Resource
 {
   /**
    * Gets one advertiser by ID. (advertisers.get)

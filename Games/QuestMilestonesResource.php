@@ -23,7 +23,7 @@
  *   $questMilestones = $gamesService->questMilestones;
  *  </code>
  */
-class Google_Service_Games_QuestMilestones_Resource extends Google_Service_Resource
+class Google_Service_Games_QuestMilestonesResource extends Google_Service_Resource
 {
   /**
    * Report that a reward for the milestone corresponding to milestoneId for the

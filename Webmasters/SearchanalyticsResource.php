@@ -23,7 +23,7 @@
  *   $searchanalytics = $webmastersService->searchanalytics;
  *  </code>
  */
-class Google_Service_Webmasters_Searchanalytics_Resource extends Google_Service_Resource
+class Google_Service_Webmasters_SearchanalyticsResource extends Google_Service_Resource
 {
   /**
    * Query your data with filters and parameters that you define. Returns zero or

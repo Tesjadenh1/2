@@ -23,7 +23,7 @@
  *   $layers = $booksService->layers;
  *  </code>
  */
-class Google_Service_Books_Layers_Resource extends Google_Service_Resource
+class Google_Service_Books_LayersResource extends Google_Service_Resource
 {
   /**
    * Gets the layer summary for a volume. (layers.get)

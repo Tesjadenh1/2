@@ -23,7 +23,7 @@
  *   $adclients = $adsensehostService->adclients;
  *  </code>
  */
-class Google_Service_AdSenseHost_Adclients_Resource extends Google_Service_Resource
+class Google_Service_AdSenseHost_AdclientsResource extends Google_Service_Resource
 {
   /**
    * Get information about one of the ad clients in the Host AdSense account.

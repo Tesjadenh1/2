@@ -23,7 +23,7 @@
  *   $advertiserGroups = $dfareportingService->advertiserGroups;
  *  </code>
  */
-class Google_Service_Dfareporting_AdvertiserGroups_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AdvertiserGroupsResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing advertiser group. (advertiserGroups.delete)

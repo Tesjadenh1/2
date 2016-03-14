@@ -23,7 +23,7 @@
  *   $channels = $adminService->channels;
  *  </code>
  */
-class Google_Service_Reports_Channels_Resource extends Google_Service_Resource
+class Google_Service_Reports_ChannelsResource extends Google_Service_Resource
 {
   /**
    * Stop watching resources through this channel (channels.stop)

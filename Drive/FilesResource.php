@@ -23,7 +23,7 @@
  *   $files = $driveService->files;
  *  </code>
  */
-class Google_Service_Drive_Files_Resource extends Google_Service_Resource
+class Google_Service_Drive_FilesResource extends Google_Service_Resource
 {
   /**
    * Creates a copy of a file and applies any requested updates with patch

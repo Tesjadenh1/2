@@ -23,7 +23,7 @@
  *   $reports = $doubleclickbidmanagerService->reports;
  *  </code>
  */
-class Google_Service_DoubleClickBidManager_Reports_Resource extends Google_Service_Resource
+class Google_Service_DoubleClickBidManager_ReportsResource extends Google_Service_Resource
 {
   /**
    * Retrieves stored reports. (reports.listreports)

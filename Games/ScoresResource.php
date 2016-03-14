@@ -23,7 +23,7 @@
  *   $scores = $gamesService->scores;
  *  </code>
  */
-class Google_Service_Games_Scores_Resource extends Google_Service_Resource
+class Google_Service_Games_ScoresResource extends Google_Service_Resource
 {
   /**
    * Get high scores, and optionally ranks, in leaderboards for the currently

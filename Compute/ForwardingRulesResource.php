@@ -23,7 +23,7 @@
  *   $forwardingRules = $computeService->forwardingRules;
  *  </code>
  */
-class Google_Service_Compute_ForwardingRules_Resource extends Google_Service_Resource
+class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of forwarding rules.

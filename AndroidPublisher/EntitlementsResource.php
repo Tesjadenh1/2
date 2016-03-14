@@ -23,7 +23,7 @@
  *   $entitlements = $androidpublisherService->entitlements;
  *  </code>
  */
-class Google_Service_AndroidPublisher_Entitlements_Resource extends Google_Service_Resource
+class Google_Service_AndroidPublisher_EntitlementsResource extends Google_Service_Resource
 {
   /**
    * Lists the user's current inapp item or subscription entitlements

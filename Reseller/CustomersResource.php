@@ -23,7 +23,7 @@
  *   $customers = $resellerService->customers;
  *  </code>
  */
-class Google_Service_Reseller_Customers_Resource extends Google_Service_Resource
+class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
 {
   /**
    * Gets a customer resource if one exists and is owned by the reseller.

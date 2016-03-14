@@ -23,7 +23,7 @@
  *   $liveChatModerators = $youtubeService->liveChatModerators;
  *  </code>
  */
-class Google_Service_YouTube_LiveChatModerators_Resource extends Google_Service_Resource
+class Google_Service_YouTube_LiveChatModeratorsResource extends Google_Service_Resource
 {
   /**
    * Removes a chat moderator. (liveChatModerators.delete)

@@ -23,7 +23,7 @@
  *   $revisions = $gamesService->revisions;
  *  </code>
  */
-class Google_Service_Games_Revisions_Resource extends Google_Service_Resource
+class Google_Service_Games_RevisionsResource extends Google_Service_Resource
 {
   /**
    * Checks whether the games client is out of date. (revisions.check)

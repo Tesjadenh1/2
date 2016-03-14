@@ -23,7 +23,7 @@
  *   $postalCodes = $dfareportingService->postalCodes;
  *  </code>
  */
-class Google_Service_Dfareporting_PostalCodes_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_PostalCodesResource extends Google_Service_Resource
 {
   /**
    * Gets one postal code by ID. (postalCodes.get)

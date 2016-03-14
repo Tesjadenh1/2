@@ -23,7 +23,7 @@
  *   $media = $plusDomainsService->media;
  *  </code>
  */
-class Google_Service_PlusDomains_Media_Resource extends Google_Service_Resource
+class Google_Service_PlusDomains_MediaResource extends Google_Service_Resource
 {
   /**
    * Add a new media item to an album. The current upload size limitations are

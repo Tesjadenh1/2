@@ -23,7 +23,7 @@
  *   $buckets = $storageService->buckets;
  *  </code>
  */
-class Google_Service_Storage_Buckets_Resource extends Google_Service_Resource
+class Google_Service_Storage_BucketsResource extends Google_Service_Resource
 {
   /**
    * Permanently deletes an empty bucket. (buckets.delete)

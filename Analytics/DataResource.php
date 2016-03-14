@@ -23,6 +23,6 @@
  *   $data = $analyticsService->data;
  *  </code>
  */
-class Google_Service_Analytics_Data_Resource extends Google_Service_Resource
+class Google_Service_Analytics_DataResource extends Google_Service_Resource
 {
 }

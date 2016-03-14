@@ -23,7 +23,7 @@
  *   $trips = $qpxExpressService->trips;
  *  </code>
  */
-class Google_Service_QPXExpress_Trips_Resource extends Google_Service_Resource
+class Google_Service_QPXExpress_TripsResource extends Google_Service_Resource
 {
   /**
    * Returns a list of flights. (trips.search)

@@ -23,7 +23,7 @@
  *   $callsets = $genomicsService->callsets;
  *  </code>
  */
-class Google_Service_Genomics_Callsets_Resource extends Google_Service_Resource
+class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
 {
   /**
    * Creates a new call set. For the definitions of call sets and other genomics

@@ -23,7 +23,7 @@
  *   $players = $gamesService->players;
  *  </code>
  */
-class Google_Service_Games_Players_Resource extends Google_Service_Resource
+class Google_Service_Games_PlayersResource extends Google_Service_Resource
 {
   /**
    * Retrieves the Player resource with the given ID. To retrieve the player for

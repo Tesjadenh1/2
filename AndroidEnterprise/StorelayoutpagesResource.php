@@ -23,7 +23,7 @@
  *   $storelayoutpages = $androidenterpriseService->storelayoutpages;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Storelayoutpages_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_Service_Resource
 {
   /**
    * Deletes a store page. (storelayoutpages.delete)

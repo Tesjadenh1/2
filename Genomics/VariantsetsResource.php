@@ -23,7 +23,7 @@
  *   $variantsets = $genomicsService->variantsets;
  *  </code>
  */
-class Google_Service_Genomics_Variantsets_Resource extends Google_Service_Resource
+class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resource
 {
   /**
    * Creates a new variant set. For the definitions of variant sets and other

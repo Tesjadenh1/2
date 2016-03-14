@@ -23,6 +23,6 @@
  *   $users = $fitnessService->users;
  *  </code>
  */
-class Google_Service_Fitness_Users_Resource extends Google_Service_Resource
+class Google_Service_Fitness_UsersResource extends Google_Service_Resource
 {
 }

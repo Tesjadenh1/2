@@ -23,7 +23,7 @@
  *   $zoneOperations = $computeService->zoneOperations;
  *  </code>
  */
-class Google_Service_Compute_ZoneOperations_Resource extends Google_Service_Resource
+class Google_Service_Compute_ZoneOperationsResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified zone-specific Operations resource.

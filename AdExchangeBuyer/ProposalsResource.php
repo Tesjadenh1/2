@@ -23,7 +23,7 @@
  *   $proposals = $adexchangebuyerService->proposals;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Proposals_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Resource
 {
   /**
    * Get a proposal given its id (proposals.get)

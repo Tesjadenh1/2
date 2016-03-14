@@ -23,7 +23,7 @@
  *   $liveBroadcasts = $youtubeService->liveBroadcasts;
  *  </code>
  */
-class Google_Service_YouTube_LiveBroadcasts_Resource extends Google_Service_Resource
+class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resource
 {
   /**
    * Binds a YouTube broadcast to a stream or removes an existing binding between

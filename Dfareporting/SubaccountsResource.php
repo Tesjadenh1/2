@@ -23,7 +23,7 @@
  *   $subaccounts = $dfareportingService->subaccounts;
  *  </code>
  */
-class Google_Service_Dfareporting_Subaccounts_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_SubaccountsResource extends Google_Service_Resource
 {
   /**
    * Gets one subaccount by ID. (subaccounts.get)

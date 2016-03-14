@@ -23,7 +23,7 @@
  *   $blogs = $bloggerService->blogs;
  *  </code>
  */
-class Google_Service_Blogger_Blogs_Resource extends Google_Service_Resource
+class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
 {
   /**
    * Gets one blog by ID. (blogs.get)

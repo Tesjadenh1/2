@@ -20,6 +20,7 @@ class Google_Service_ShoppingContent_DatafeedFetchSchedule extends Google_Model
   public $dayOfMonth;
   public $fetchUrl;
   public $hour;
+  public $minuteOfHour;
   public $password;
   public $timeZone;
   public $username;
@@ -48,6 +49,14 @@ class Google_Service_ShoppingContent_DatafeedFetchSchedule extends Google_Model
   public function getHour()
   {
     return $this->hour;
+  }
+  public function setMinuteOfHour($minuteOfHour)
+  {
+    $this->minuteOfHour = $minuteOfHour;
+  }
+  public function getMinuteOfHour()
+  {
+    return $this->minuteOfHour;
   }
   public function setPassword($password)
   {

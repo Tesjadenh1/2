@@ -23,7 +23,7 @@
  *   $audiences = $plusDomainsService->audiences;
  *  </code>
  */
-class Google_Service_PlusDomains_Audiences_Resource extends Google_Service_Resource
+class Google_Service_PlusDomains_AudiencesResource extends Google_Service_Resource
 {
   /**
    * List all of the audiences to which a user can share.

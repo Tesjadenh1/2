@@ -23,7 +23,7 @@
  *   $pubprofiles = $adexchangebuyerService->pubprofiles;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Pubprofiles_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_PubprofilesResource extends Google_Service_Resource
 {
   /**
    * Gets the requested publisher profile(s) by publisher accountId.

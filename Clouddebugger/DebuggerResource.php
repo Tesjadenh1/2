@@ -23,6 +23,6 @@
  *   $debugger = $clouddebuggerService->debugger;
  *  </code>
  */
-class Google_Service_Clouddebugger_Debugger_Resource extends Google_Service_Resource
+class Google_Service_Clouddebugger_DebuggerResource extends Google_Service_Resource
 {
 }

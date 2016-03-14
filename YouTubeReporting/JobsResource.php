@@ -23,7 +23,7 @@
  *   $jobs = $youtubereportingService->jobs;
  *  </code>
  */
-class Google_Service_YouTubeReporting_Jobs_Resource extends Google_Service_Resource
+class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resource
 {
   /**
    * Creates a job and returns it. (jobs.create)

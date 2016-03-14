@@ -23,7 +23,7 @@
  *   $changes = $driveService->changes;
  *  </code>
  */
-class Google_Service_Drive_Changes_Resource extends Google_Service_Resource
+class Google_Service_Drive_ChangesResource extends Google_Service_Resource
 {
   /**
    * Gets the starting pageToken for listing future changes.

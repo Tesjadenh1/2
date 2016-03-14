@@ -23,6 +23,6 @@
  *   $projects = $pubsubService->projects;
  *  </code>
  */
-class Google_Service_Pubsub_Projects_Resource extends Google_Service_Resource
+class Google_Service_Pubsub_ProjectsResource extends Google_Service_Resource
 {
 }

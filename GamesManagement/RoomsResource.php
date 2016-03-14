@@ -23,7 +23,7 @@
  *   $rooms = $gamesManagementService->rooms;
  *  </code>
  */
-class Google_Service_GamesManagement_Rooms_Resource extends Google_Service_Resource
+class Google_Service_GamesManagement_RoomsResource extends Google_Service_Resource
 {
   /**
    * Reset all rooms for the currently authenticated player for your application.

@@ -23,7 +23,7 @@
  *   $pageViews = $bloggerService->pageViews;
  *  </code>
  */
-class Google_Service_Blogger_PageViews_Resource extends Google_Service_Resource
+class Google_Service_Blogger_PageViewsResource extends Google_Service_Resource
 {
   /**
    * Retrieve pageview stats for a Blog. (pageViews.get)

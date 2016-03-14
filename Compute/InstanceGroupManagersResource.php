@@ -23,7 +23,7 @@
  *   $instanceGroupManagers = $computeService->instanceGroupManagers;
  *  </code>
  */
-class Google_Service_Compute_InstanceGroupManagers_Resource extends Google_Service_Resource
+class Google_Service_Compute_InstanceGroupManagersResource extends Google_Service_Resource
 {
   /**
    * Schedules a group action to remove the specified instances from the managed

@@ -23,7 +23,7 @@
  *   $reads = $genomicsService->reads;
  *  </code>
  */
-class Google_Service_Genomics_Reads_Resource extends Google_Service_Resource
+class Google_Service_Genomics_ReadsResource extends Google_Service_Resource
 {
   /**
    * Gets a list of reads for one or more read group sets. For the definitions of

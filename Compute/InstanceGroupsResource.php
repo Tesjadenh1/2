@@ -23,7 +23,7 @@
  *   $instanceGroups = $computeService->instanceGroups;
  *  </code>
  */
-class Google_Service_Compute_InstanceGroups_Resource extends Google_Service_Resource
+class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resource
 {
   /**
    * Adds a list of instances to the specified instance group. All of the

@@ -23,7 +23,7 @@
  *   $scripts = $scriptService->scripts;
  *  </code>
  */
-class Google_Service_Script_Scripts_Resource extends Google_Service_Resource
+class Google_Service_Script_ScriptsResource extends Google_Service_Resource
 {
   /**
    * Runs a function in an Apps Script project that has been deployed for use with

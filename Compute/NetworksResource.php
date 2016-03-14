@@ -23,7 +23,7 @@
  *   $networks = $computeService->networks;
  *  </code>
  */
-class Google_Service_Compute_Networks_Resource extends Google_Service_Resource
+class Google_Service_Compute_NetworksResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified network. (networks.delete)

@@ -23,7 +23,7 @@
  *   $alerts = $adsenseService->alerts;
  *  </code>
  */
-class Google_Service_AdSense_Alerts_Resource extends Google_Service_Resource
+class Google_Service_AdSense_AlertsResource extends Google_Service_Resource
 {
   /**
    * Dismiss (delete) the specified alert from the publisher's AdSense account.

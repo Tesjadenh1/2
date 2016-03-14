@@ -23,7 +23,7 @@
  *   $contentCategories = $dfareportingService->contentCategories;
  *  </code>
  */
-class Google_Service_Dfareporting_ContentCategories_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Service_Resource
 {
   /**
    * Deletes an existing content category. (contentCategories.delete)

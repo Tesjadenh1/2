@@ -23,7 +23,7 @@
  *   $accounts = $adexchangesellerService->accounts;
  *  </code>
  */
-class Google_Service_AdExchangeSeller_Accounts_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeSeller_AccountsResource extends Google_Service_Resource
 {
   /**
    * Get information about the selected Ad Exchange account. (accounts.get)

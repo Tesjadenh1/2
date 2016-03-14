@@ -23,7 +23,7 @@
  *   $projects = $dfareportingService->projects;
  *  </code>
  */
-class Google_Service_Dfareporting_Projects_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Gets one project by ID. (projects.get)

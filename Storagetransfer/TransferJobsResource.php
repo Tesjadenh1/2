@@ -23,7 +23,7 @@
  *   $transferJobs = $storagetransferService->transferJobs;
  *  </code>
  */
-class Google_Service_Storagetransfer_TransferJobs_Resource extends Google_Service_Resource
+class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service_Resource
 {
   /**
    * Creates a transfer job that runs periodically. (transferJobs.create)

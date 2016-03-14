@@ -23,7 +23,7 @@
  *   $targetHttpProxies = $computeService->targetHttpProxies;
  *  </code>
  */
-class Google_Service_Compute_TargetHttpProxies_Resource extends Google_Service_Resource
+class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified TargetHttpProxy resource. (targetHttpProxies.delete)

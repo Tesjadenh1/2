@@ -23,7 +23,7 @@
  *   $placementGroups = $dfareportingService->placementGroups;
  *  </code>
  */
-class Google_Service_Dfareporting_PlacementGroups_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_PlacementGroupsResource extends Google_Service_Resource
 {
   /**
    * Gets one placement group by ID. (placementGroups.get)

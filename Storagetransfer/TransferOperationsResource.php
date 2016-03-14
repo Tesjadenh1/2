@@ -23,7 +23,7 @@
  *   $transferOperations = $storagetransferService->transferOperations;
  *  </code>
  */
-class Google_Service_Storagetransfer_TransferOperations_Resource extends Google_Service_Resource
+class Google_Service_Storagetransfer_TransferOperationsResource extends Google_Service_Resource
 {
   /**
    * Cancels a transfer. Use the get method to check whether the cancellation

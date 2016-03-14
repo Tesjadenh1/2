@@ -23,7 +23,7 @@
  *   $applications = $gamesService->applications;
  *  </code>
  */
-class Google_Service_Games_Applications_Resource extends Google_Service_Resource
+class Google_Service_Games_ApplicationsResource extends Google_Service_Resource
 {
   /**
    * Retrieves the metadata of the application with the given ID. If the requested

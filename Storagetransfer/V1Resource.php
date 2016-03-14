@@ -23,7 +23,7 @@
  *   $v1 = $storagetransferService->v1;
  *  </code>
  */
-class Google_Service_Storagetransfer_V1_Resource extends Google_Service_Resource
+class Google_Service_Storagetransfer_V1Resource extends Google_Service_Resource
 {
   /**
    * Returns the Google service account that is used by Storage Transfer Service

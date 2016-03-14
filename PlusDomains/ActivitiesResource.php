@@ -23,7 +23,7 @@
  *   $activities = $plusDomainsService->activities;
  *  </code>
  */
-class Google_Service_PlusDomains_Activities_Resource extends Google_Service_Resource
+class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resource
 {
   /**
    * Get an activity. (activities.get)

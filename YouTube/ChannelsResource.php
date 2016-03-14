@@ -23,7 +23,7 @@
  *   $channels = $youtubeService->channels;
  *  </code>
  */
-class Google_Service_YouTube_Channels_Resource extends Google_Service_Resource
+class Google_Service_YouTube_ChannelsResource extends Google_Service_Resource
 {
   /**
    * Returns a collection of zero or more channel resources that match the request

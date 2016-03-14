@@ -23,7 +23,7 @@
  *   $table = $fusiontablesService->table;
  *  </code>
  */
-class Google_Service_Fusiontables_Table_Resource extends Google_Service_Resource
+class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
 {
   /**
    * Copies a table. (table.copy)

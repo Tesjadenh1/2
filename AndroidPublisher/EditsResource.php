@@ -23,7 +23,7 @@
  *   $edits = $androidpublisherService->edits;
  *  </code>
  */
-class Google_Service_AndroidPublisher_Edits_Resource extends Google_Service_Resource
+class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resource
 {
   /**
    * Commits/applies the changes made in this edit back to the app. (edits.commit)

@@ -23,7 +23,7 @@
  *   $accounts = $dfareportingService->accounts;
  *  </code>
  */
-class Google_Service_Dfareporting_Accounts_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AccountsResource extends Google_Service_Resource
 {
   /**
    * Gets one account by ID. (accounts.get)

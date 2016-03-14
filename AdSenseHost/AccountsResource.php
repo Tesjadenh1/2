@@ -23,7 +23,7 @@
  *   $accounts = $adsensehostService->accounts;
  *  </code>
  */
-class Google_Service_AdSenseHost_Accounts_Resource extends Google_Service_Resource
+class Google_Service_AdSenseHost_AccountsResource extends Google_Service_Resource
 {
   /**
    * Get information about the selected associated AdSense account. (accounts.get)

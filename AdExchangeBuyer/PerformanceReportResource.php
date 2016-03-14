@@ -23,7 +23,7 @@
  *   $performanceReport = $adexchangebuyerService->performanceReport;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_PerformanceReport_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_PerformanceReportResource extends Google_Service_Resource
 {
   /**
    * Retrieves the authenticated user's list of performance metrics.

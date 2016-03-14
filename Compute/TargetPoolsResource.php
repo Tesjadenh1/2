@@ -23,7 +23,7 @@
  *   $targetPools = $computeService->targetPools;
  *  </code>
  */
-class Google_Service_Compute_TargetPools_Resource extends Google_Service_Resource
+class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
 {
   /**
    * Adds health check URLs to a target pool. (targetPools.addHealthCheck)

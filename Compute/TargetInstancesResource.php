@@ -23,7 +23,7 @@
  *   $targetInstances = $computeService->targetInstances;
  *  </code>
  */
-class Google_Service_Compute_TargetInstances_Resource extends Google_Service_Resource
+class Google_Service_Compute_TargetInstancesResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of target instances.

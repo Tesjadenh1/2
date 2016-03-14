@@ -23,7 +23,7 @@
  *   $subscriptions = $youtubeService->subscriptions;
  *  </code>
  */
-class Google_Service_YouTube_Subscriptions_Resource extends Google_Service_Resource
+class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resource
 {
   /**
    * Deletes a subscription. (subscriptions.delete)

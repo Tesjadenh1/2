@@ -23,7 +23,7 @@
  *   $targetableRemarketingLists = $dfareportingService->targetableRemarketingLists;
  *  </code>
  */
-class Google_Service_Dfareporting_TargetableRemarketingLists_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_TargetableRemarketingListsResource extends Google_Service_Resource
 {
   /**
    * Gets one remarketing list by ID. (targetableRemarketingLists.get)

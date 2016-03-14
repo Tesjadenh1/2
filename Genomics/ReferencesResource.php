@@ -23,7 +23,7 @@
  *   $references = $genomicsService->references;
  *  </code>
  */
-class Google_Service_Genomics_References_Resource extends Google_Service_Resource
+class Google_Service_Genomics_ReferencesResource extends Google_Service_Resource
 {
   /**
    * Gets a reference. For the definitions of references and other genomics

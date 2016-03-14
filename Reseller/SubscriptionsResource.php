@@ -23,7 +23,7 @@
  *   $subscriptions = $resellerService->subscriptions;
  *  </code>
  */
-class Google_Service_Reseller_Subscriptions_Resource extends Google_Service_Resource
+class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resource
 {
   /**
    * Activates a subscription previously suspended by the reseller

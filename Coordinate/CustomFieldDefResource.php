@@ -23,7 +23,7 @@
  *   $customFieldDef = $coordinateService->customFieldDef;
  *  </code>
  */
-class Google_Service_Coordinate_CustomFieldDef_Resource extends Google_Service_Resource
+class Google_Service_Coordinate_CustomFieldDefResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of custom field definitions for a team.

@@ -23,7 +23,7 @@
  *   $readgroupsets = $genomicsService->readgroupsets;
  *  </code>
  */
-class Google_Service_Genomics_Readgroupsets_Resource extends Google_Service_Resource
+class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resource
 {
   /**
    * Deletes a read group set. For the definitions of read group sets and other

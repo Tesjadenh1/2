@@ -23,7 +23,7 @@
  *   $operations = $genomicsService->operations;
  *  </code>
  */
-class Google_Service_Genomics_Operations_Resource extends Google_Service_Resource
+class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
 {
   /**
    * Starts asynchronous cancellation on a long-running operation. The server

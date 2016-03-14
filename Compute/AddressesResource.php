@@ -23,7 +23,7 @@
  *   $addresses = $computeService->addresses;
  *  </code>
  */
-class Google_Service_Compute_Addresses_Resource extends Google_Service_Resource
+class Google_Service_Compute_AddressesResource extends Google_Service_Resource
 {
   /**
    * Retrieves an aggregated list of addresses. (addresses.aggregatedList)

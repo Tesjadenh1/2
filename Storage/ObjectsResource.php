@@ -23,7 +23,7 @@
  *   $objects = $storageService->objects;
  *  </code>
  */
-class Google_Service_Storage_Objects_Resource extends Google_Service_Resource
+class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
 {
   /**
    * Concatenates a list of existing objects into a new object in the same bucket.

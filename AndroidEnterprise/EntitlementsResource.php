@@ -23,7 +23,7 @@
  *   $entitlements = $androidenterpriseService->entitlements;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Entitlements_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Service_Resource
 {
   /**
    * Removes an entitlement to an app for a user and uninstalls it.

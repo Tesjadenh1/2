@@ -23,7 +23,7 @@
  *   $projects = $dnsService->projects;
  *  </code>
  */
-class Google_Service_Dns_Projects_Resource extends Google_Service_Resource
+class Google_Service_Dns_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Fetch the representation of an existing Project. (projects.get)

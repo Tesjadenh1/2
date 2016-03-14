@@ -23,7 +23,7 @@
  *   $provisioning = $analyticsService->provisioning;
  *  </code>
  */
-class Google_Service_Analytics_Provisioning_Resource extends Google_Service_Resource
+class Google_Service_Analytics_ProvisioningResource extends Google_Service_Resource
 {
   /**
    * Creates an account ticket. (provisioning.createAccountTicket)

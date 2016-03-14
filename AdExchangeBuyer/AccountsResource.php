@@ -23,7 +23,7 @@
  *   $accounts = $adexchangebuyerService->accounts;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Accounts_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Resource
 {
   /**
    * Gets one account by ID. (accounts.get)

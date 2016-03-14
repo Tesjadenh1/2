@@ -23,6 +23,6 @@
  *   $metadata = $adsenseService->metadata;
  *  </code>
  */
-class Google_Service_AdSense_Metadata_Resource extends Google_Service_Resource
+class Google_Service_AdSense_MetadataResource extends Google_Service_Resource
 {
 }

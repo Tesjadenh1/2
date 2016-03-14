@@ -23,7 +23,7 @@
  *   $users = $bloggerService->users;
  *  </code>
  */
-class Google_Service_Blogger_Users_Resource extends Google_Service_Resource
+class Google_Service_Blogger_UsersResource extends Google_Service_Resource
 {
   /**
    * Gets one user by ID. (users.get)

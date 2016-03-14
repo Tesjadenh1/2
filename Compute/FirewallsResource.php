@@ -23,7 +23,7 @@
  *   $firewalls = $computeService->firewalls;
  *  </code>
  */
-class Google_Service_Compute_Firewalls_Resource extends Google_Service_Resource
+class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified firewall. (firewalls.delete)

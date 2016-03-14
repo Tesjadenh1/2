@@ -23,7 +23,7 @@
  *   $resourceRecordSets = $dnsService->resourceRecordSets;
  *  </code>
  */
-class Google_Service_Dns_ResourceRecordSets_Resource extends Google_Service_Resource
+class Google_Service_Dns_ResourceRecordSetsResource extends Google_Service_Resource
 {
   /**
    * Enumerate ResourceRecordSets that have been created but not yet deleted.

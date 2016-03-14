@@ -23,7 +23,7 @@
  *   $imageConfigurations = $gamesConfigurationService->imageConfigurations;
  *  </code>
  */
-class Google_Service_GamesConfiguration_ImageConfigurations_Resource extends Google_Service_Resource
+class Google_Service_GamesConfiguration_ImageConfigurationsResource extends Google_Service_Resource
 {
   /**
    * Uploads an image for a resource with the given ID and image type.

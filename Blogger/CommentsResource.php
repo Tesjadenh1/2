@@ -23,7 +23,7 @@
  *   $comments = $bloggerService->comments;
  *  </code>
  */
-class Google_Service_Blogger_Comments_Resource extends Google_Service_Resource
+class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
 {
   /**
    * Marks a comment as not spam. (comments.approve)

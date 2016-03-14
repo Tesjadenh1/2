@@ -23,7 +23,7 @@
  *   $products = $adexchangebuyerService->products;
  *  </code>
  */
-class Google_Service_AdExchangeBuyer_Products_Resource extends Google_Service_Resource
+class Google_Service_AdExchangeBuyer_ProductsResource extends Google_Service_Resource
 {
   /**
    * Gets the requested product by id. (products.get)

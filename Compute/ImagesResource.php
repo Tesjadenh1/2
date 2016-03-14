@@ -23,7 +23,7 @@
  *   $images = $computeService->images;
  *  </code>
  */
-class Google_Service_Compute_Images_Resource extends Google_Service_Resource
+class Google_Service_Compute_ImagesResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified image. (images.delete)

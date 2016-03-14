@@ -23,7 +23,7 @@
  *   $activities = $adminService->activities;
  *  </code>
  */
-class Google_Service_Reports_Activities_Resource extends Google_Service_Resource
+class Google_Service_Reports_ActivitiesResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of activities for a specific customer and application.

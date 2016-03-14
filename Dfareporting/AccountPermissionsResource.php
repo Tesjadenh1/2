@@ -23,7 +23,7 @@
  *   $accountPermissions = $dfareportingService->accountPermissions;
  *  </code>
  */
-class Google_Service_Dfareporting_AccountPermissions_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_AccountPermissionsResource extends Google_Service_Resource
 {
   /**
    * Gets one account permission by ID. (accountPermissions.get)

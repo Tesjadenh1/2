@@ -23,7 +23,7 @@
  *   $elections = $civicinfoService->elections;
  *  </code>
  */
-class Google_Service_CivicInfo_Elections_Resource extends Google_Service_Resource
+class Google_Service_CivicInfo_ElectionsResource extends Google_Service_Resource
 {
   /**
    * List of available elections to query. (elections.electionQuery)

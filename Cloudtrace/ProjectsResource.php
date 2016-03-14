@@ -23,7 +23,7 @@
  *   $projects = $cloudtraceService->projects;
  *  </code>
  */
-class Google_Service_Cloudtrace_Projects_Resource extends Google_Service_Resource
+class Google_Service_Cloudtrace_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Sends new traces to Cloud Trace or updates existing traces. If the ID of a

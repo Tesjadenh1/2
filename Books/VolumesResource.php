@@ -23,7 +23,7 @@
  *   $volumes = $booksService->volumes;
  *  </code>
  */
-class Google_Service_Books_Volumes_Resource extends Google_Service_Resource
+class Google_Service_Books_VolumesResource extends Google_Service_Resource
 {
   /**
    * Gets volume information for a single volume. (volumes.get)

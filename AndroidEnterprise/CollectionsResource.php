@@ -23,7 +23,7 @@
  *   $collections = $androidenterpriseService->collections;
  *  </code>
  */
-class Google_Service_AndroidEnterprise_Collections_Resource extends Google_Service_Resource
+class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Service_Resource
 {
   /**
    * Deletes a collection. (collections.delete)

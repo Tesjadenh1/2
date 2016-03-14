@@ -23,7 +23,7 @@
  *   $conversion = $doubleclicksearchService->conversion;
  *  </code>
  */
-class Google_Service_Doubleclicksearch_Conversion_Resource extends Google_Service_Resource
+class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service_Resource
 {
   /**
    * Retrieves a list of conversions from a DoubleClick Search engine account.

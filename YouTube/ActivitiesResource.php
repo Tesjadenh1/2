@@ -23,7 +23,7 @@
  *   $activities = $youtubeService->activities;
  *  </code>
  */
-class Google_Service_YouTube_Activities_Resource extends Google_Service_Resource
+class Google_Service_YouTube_ActivitiesResource extends Google_Service_Resource
 {
   /**
    * Posts a bulletin for a specific channel. (The user submitting the request

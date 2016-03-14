@@ -23,7 +23,7 @@
  *   $campaignCreativeAssociations = $dfareportingService->campaignCreativeAssociations;
  *  </code>
  */
-class Google_Service_Dfareporting_CampaignCreativeAssociations_Resource extends Google_Service_Resource
+class Google_Service_Dfareporting_CampaignCreativeAssociationsResource extends Google_Service_Resource
 {
   /**
    * Associates a creative with the specified campaign. This method creates a

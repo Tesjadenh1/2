@@ -23,7 +23,7 @@
  *   $adunits = $adsenseService->adunits;
  *  </code>
  */
-class Google_Service_AdSense_Adunits_Resource extends Google_Service_Resource
+class Google_Service_AdSense_AdunitsResource extends Google_Service_Resource
 {
   /**
    * Gets the specified ad unit in the specified ad client. (adunits.get)

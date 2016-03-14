@@ -29,6 +29,7 @@ class Google_Service_Books_Notification extends Google_Model
   public $kind;
   public $notificationType;
   public $pcampaignId;
+  public $reason;
   public $showNotificationSettingsAction;
   public $targetUrl;
   public $title;
@@ -80,6 +81,14 @@ class Google_Service_Books_Notification extends Google_Model
   public function getPcampaignId()
   {
     return $this->pcampaignId;
+  }
+  public function setReason($reason)
+  {
+    $this->reason = $reason;
+  }
+  public function getReason()
+  {
+    return $this->reason;
   }
   public function setShowNotificationSettingsAction($showNotificationSettingsAction)
   {

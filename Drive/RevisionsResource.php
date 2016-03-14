@@ -23,7 +23,7 @@
  *   $revisions = $driveService->revisions;
  *  </code>
  */
-class Google_Service_Drive_Revisions_Resource extends Google_Service_Resource
+class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
 {
   /**
    * Permanently deletes a revision. This method is only applicable to files with

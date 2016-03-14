@@ -23,7 +23,7 @@
  *   $urlchannels = $adsensehostService->urlchannels;
  *  </code>
  */
-class Google_Service_AdSenseHost_Urlchannels_Resource extends Google_Service_Resource
+class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Resource
 {
   /**
    * Delete a URL channel from the host AdSense account. (urlchannels.delete)

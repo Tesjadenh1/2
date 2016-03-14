@@ -23,6 +23,6 @@
  *   $mylibrary = $booksService->mylibrary;
  *  </code>
  */
-class Google_Service_Books_Mylibrary_Resource extends Google_Service_Resource
+class Google_Service_Books_MylibraryResource extends Google_Service_Resource
 {
 }

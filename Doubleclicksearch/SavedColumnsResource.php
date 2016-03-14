@@ -23,7 +23,7 @@
  *   $savedColumns = $doubleclicksearchService->savedColumns;
  *  </code>
  */
-class Google_Service_Doubleclicksearch_SavedColumns_Resource extends Google_Service_Resource
+class Google_Service_Doubleclicksearch_SavedColumnsResource extends Google_Service_Resource
 {
   /**
    * Retrieve the list of saved columns for a specified advertiser.

@@ -23,7 +23,7 @@
  *   $deployments = $deploymentmanagerService->deployments;
  *  </code>
  */
-class Google_Service_DeploymentManager_Deployments_Resource extends Google_Service_Resource
+class Google_Service_DeploymentManager_DeploymentsResource extends Google_Service_Resource
 {
   /**
    * Cancels and removes the preview currently associated with the deployment.
@@ -112,7 +112,7 @@ class Google_Service_DeploymentManager_Deployments_Resource extends Google_Servi
    * literal value is interpreted as a regular expression using RE2 syntax. The
    * literal value must match the entire field.
    *
-   * For example, to filter for instances whose name is not equal to example-
+   * For example, to filter for instances that do not have a name of example-
    * instance, you would use filter=name ne example-instance.
    *
    * Compute Engine Beta API Only: If you use filtering in the Beta API, you can
@@ -124,7 +124,7 @@ class Google_Service_DeploymentManager_Deployments_Resource extends Google_Servi
    * The Beta API also supports filtering on multiple expressions by providing
    * each separate expression within parentheses. For example,
    * (scheduling.automaticRestart eq true) (zone eq us-central1-f). Multiple
-   * expressions are treated as AND expressions meaning that resources must match
+   * expressions are treated as AND expressions, meaning that resources must match
    * all expressions to pass the filters.
    * @opt_param string maxResults The maximum number of results per page that
    * should be returned. If the number of available results is larger than

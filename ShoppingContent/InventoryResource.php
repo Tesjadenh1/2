@@ -23,7 +23,7 @@
  *   $inventory = $contentService->inventory;
  *  </code>
  */
-class Google_Service_ShoppingContent_Inventory_Resource extends Google_Service_Resource
+class Google_Service_ShoppingContent_InventoryResource extends Google_Service_Resource
 {
   /**
    * Updates price and availability for multiple products or stores in a single

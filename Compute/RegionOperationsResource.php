@@ -23,7 +23,7 @@
  *   $regionOperations = $computeService->regionOperations;
  *  </code>
  */
-class Google_Service_Compute_RegionOperations_Resource extends Google_Service_Resource
+class Google_Service_Compute_RegionOperationsResource extends Google_Service_Resource
 {
   /**
    * Deletes the specified region-specific Operations resource.

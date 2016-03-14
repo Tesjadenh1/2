@@ -23,7 +23,7 @@
  *   $projects = $bigqueryService->projects;
  *  </code>
  */
-class Google_Service_Bigquery_Projects_Resource extends Google_Service_Resource
+class Google_Service_Bigquery_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Lists all projects to which you have been granted any project role.

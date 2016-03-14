@@ -23,7 +23,7 @@
  *   $jobs = $coordinateService->jobs;
  *  </code>
  */
-class Google_Service_Coordinate_Jobs_Resource extends Google_Service_Resource
+class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
 {
   /**
    * Retrieves a job, including all the changes made to the job. (jobs.get)

@@ -23,7 +23,7 @@
  *   $hostedmodels = $predictionService->hostedmodels;
  *  </code>
  */
-class Google_Service_Prediction_Hostedmodels_Resource extends Google_Service_Resource
+class Google_Service_Prediction_HostedmodelsResource extends Google_Service_Resource
 {
   /**
    * Submit input and request an output against a hosted model.

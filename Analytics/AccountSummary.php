@@ -21,6 +21,7 @@ class Google_Service_Analytics_AccountSummary extends Google_Collection
   public $id;
   public $kind;
   public $name;
+  public $starred;
   protected $webPropertiesType = 'Google_Service_Analytics_WebPropertySummary';
   protected $webPropertiesDataType = 'array';
 
@@ -47,6 +48,14 @@ class Google_Service_Analytics_AccountSummary extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  public function setStarred($starred)
+  {
+    $this->starred = $starred;
+  }
+  public function getStarred()
+  {
+    return $this->starred;
   }
   public function setWebProperties($webProperties)
   {

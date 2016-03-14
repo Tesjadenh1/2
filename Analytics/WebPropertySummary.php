@@ -25,6 +25,7 @@ class Google_Service_Analytics_WebPropertySummary extends Google_Collection
   public $name;
   protected $profilesType = 'Google_Service_Analytics_ProfileSummary';
   protected $profilesDataType = 'array';
+  public $starred;
   public $websiteUrl;
 
   public function setId($id)
@@ -74,6 +75,14 @@ class Google_Service_Analytics_WebPropertySummary extends Google_Collection
   public function getProfiles()
   {
     return $this->profiles;
+  }
+  public function setStarred($starred)
+  {
+    $this->starred = $starred;
+  }
+  public function getStarred()
+  {
+    return $this->starred;
   }
   public function setWebsiteUrl($websiteUrl)
   {

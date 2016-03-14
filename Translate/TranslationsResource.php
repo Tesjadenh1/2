@@ -23,7 +23,7 @@
  *   $translations = $translateService->translations;
  *  </code>
  */
-class Google_Service_Translate_Translations_Resource extends Google_Service_Resource
+class Google_Service_Translate_TranslationsResource extends Google_Service_Resource
 {
   /**
    * Returns text translations from one language to another.
