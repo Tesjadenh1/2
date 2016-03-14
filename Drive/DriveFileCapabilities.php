@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Drive_FileCapabilities extends Google_Model
+class Google_Service_Drive_DriveFileCapabilities extends Google_Model
 {
   public $canComment;
   public $canCopy;

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Drive_FileImageMediaMetadata extends Google_Model
+class Google_Service_Drive_DriveFileImageMediaMetadata extends Google_Model
 {
   public $aperture;
   public $cameraMake;
@@ -29,7 +29,7 @@ class Google_Service_Drive_FileImageMediaMetadata extends Google_Model
   public $height;
   public $isoSpeed;
   public $lens;
-  protected $locationType = 'Google_Service_Drive_FileImageMediaMetadataLocation';
+  protected $locationType = 'Google_Service_Drive_DriveFileImageMediaMetadataLocation';
   protected $locationDataType = '';
   public $maxApertureValue;
   public $meteringMode;
@@ -136,7 +136,7 @@ class Google_Service_Drive_FileImageMediaMetadata extends Google_Model
   {
     return $this->lens;
   }
-  public function setLocation(Google_Service_Drive_FileImageMediaMetadataLocation $location)
+  public function setLocation(Google_Service_Drive_DriveFileImageMediaMetadataLocation $location)
   {
     $this->location = $location;
   }

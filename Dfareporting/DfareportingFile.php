@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Dfareporting_File extends Google_Model
+class Google_Service_Dfareporting_DfareportingFile extends Google_Model
 {
   protected $dateRangeType = 'Google_Service_Dfareporting_DateRange';
   protected $dateRangeDataType = '';
@@ -27,7 +27,7 @@ class Google_Service_Dfareporting_File extends Google_Model
   public $lastModifiedTime;
   public $reportId;
   public $status;
-  protected $urlsType = 'Google_Service_Dfareporting_FileUrls';
+  protected $urlsType = 'Google_Service_Dfareporting_DfareportingFileUrls';
   protected $urlsDataType = '';
 
   public function setDateRange(Google_Service_Dfareporting_DateRange $dateRange)
@@ -102,7 +102,7 @@ class Google_Service_Dfareporting_File extends Google_Model
   {
     return $this->status;
   }
-  public function setUrls(Google_Service_Dfareporting_FileUrls $urls)
+  public function setUrls(Google_Service_Dfareporting_DfareportingFileUrls $urls)
   {
     $this->urls = $urls;
   }

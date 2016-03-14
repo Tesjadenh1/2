@@ -30,7 +30,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * semantics. (files.copy)
    *
    * @param string $fileId The ID of the file.
-   * @param Google_File $postBody
+   * @param Google_DriveFile $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool ignoreDefaultVisibility Whether to ignore the domain's
@@ -43,18 +43,18 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * in Drive.
    * @opt_param string ocrLanguage A language hint for OCR processing during image
    * import (ISO 639-1 code).
-   * @return Google_Service_File
+   * @return Google_Service_DriveFile
    */
-  public function copy($fileId, Google_Service_Drive_File $postBody, $optParams = array())
+  public function copy($fileId, Google_Service_Drive_DriveFile $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('copy', array($params), "Google_Service_Drive_File");
+    return $this->call('copy', array($params), "Google_Service_Drive_DriveFile");
   }
   /**
    * Creates a new file. (files.create)
    *
-   * @param Google_File $postBody
+   * @param Google_DriveFile $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool ignoreDefaultVisibility Whether to ignore the domain's
@@ -69,13 +69,13 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * import (ISO 639-1 code).
    * @opt_param bool useContentAsIndexableText Whether to use the uploaded content
    * as indexable text.
-   * @return Google_Service_File
+   * @return Google_Service_DriveFile
    */
-  public function create(Google_Service_Drive_File $postBody, $optParams = array())
+  public function create(Google_Service_Drive_DriveFile $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), "Google_Service_Drive_File");
+    return $this->call('create', array($params), "Google_Service_Drive_DriveFile");
   }
   /**
    * Permanently deletes a file owned by the user without moving it to the trash.
@@ -143,13 +143,13 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * @opt_param bool acknowledgeAbuse Whether the user is acknowledging the risk
    * of downloading known malware or other abusive files. This is only applicable
    * when alt=media.
-   * @return Google_Service_File
+   * @return Google_Service_DriveFile
    */
   public function get($fileId, $optParams = array())
   {
     $params = array('fileId' => $fileId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Drive_File");
+    return $this->call('get', array($params), "Google_Service_Drive_DriveFile");
   }
   /**
    * Lists or searches files. (files.listFiles)
@@ -184,7 +184,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * Updates a file's metadata and/or content with patch semantics. (files.update)
    *
    * @param string $fileId The ID of the file.
-   * @param Google_File $postBody
+   * @param Google_DriveFile $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param string addParents A comma-separated list of parent IDs to add.
@@ -197,13 +197,13 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * remove.
    * @opt_param bool useContentAsIndexableText Whether to use the uploaded content
    * as indexable text.
-   * @return Google_Service_File
+   * @return Google_Service_DriveFile
    */
-  public function update($fileId, Google_Service_Drive_File $postBody, $optParams = array())
+  public function update($fileId, Google_Service_Drive_DriveFile $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), "Google_Service_Drive_File");
+    return $this->call('update', array($params), "Google_Service_Drive_DriveFile");
   }
   /**
    * Subscribes to changes to a file (files.watch)

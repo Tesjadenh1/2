@@ -15,25 +15,26 @@
  * the License.
  */
 
-class Google_Service_Drive_FileContentHintsThumbnail extends Google_Model
+class Google_Service_Drive_DriveFileContentHints extends Google_Model
 {
-  public $image;
-  public $mimeType;
+  public $indexableText;
+  protected $thumbnailType = 'Google_Service_Drive_DriveFileContentHintsThumbnail';
+  protected $thumbnailDataType = '';
 
-  public function setImage($image)
+  public function setIndexableText($indexableText)
   {
-    $this->image = $image;
+    $this->indexableText = $indexableText;
   }
-  public function getImage()
+  public function getIndexableText()
   {
-    return $this->image;
+    return $this->indexableText;
   }
-  public function setMimeType($mimeType)
+  public function setThumbnail(Google_Service_Drive_DriveFileContentHintsThumbnail $thumbnail)
   {
-    $this->mimeType = $mimeType;
+    $this->thumbnail = $thumbnail;
   }
-  public function getMimeType()
+  public function getThumbnail()
   {
-    return $this->mimeType;
+    return $this->thumbnail;
   }
 }

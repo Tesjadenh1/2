@@ -31,13 +31,13 @@ class Google_Service_Dfareporting_FilesResource extends Google_Service_Resource
    * @param string $reportId The ID of the report.
    * @param string $fileId The ID of the report file.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_File
+   * @return Google_Service_DfareportingFile
    */
   public function get($reportId, $fileId, $optParams = array())
   {
     $params = array('reportId' => $reportId, 'fileId' => $fileId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Dfareporting_File");
+    return $this->call('get', array($params), "Google_Service_Dfareporting_DfareportingFile");
   }
   /**
    * Lists files for a user profile. (files.listFiles)

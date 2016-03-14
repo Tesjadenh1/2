@@ -18,7 +18,7 @@
 class Google_Service_Drive_FileList extends Google_Collection
 {
   protected $collection_key = 'files';
-  protected $filesType = 'Google_Service_Drive_File';
+  protected $filesType = 'Google_Service_Drive_DriveFile';
   protected $filesDataType = 'array';
   public $kind;
   public $nextPageToken;

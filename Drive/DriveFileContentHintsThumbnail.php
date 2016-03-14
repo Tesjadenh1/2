@@ -15,6 +15,25 @@
  * the License.
  */
 
-class Google_Service_YouTube_ChannelSectionLocalizations extends Google_Model
+class Google_Service_Drive_DriveFileContentHintsThumbnail extends Google_Model
 {
+  public $image;
+  public $mimeType;
+
+  public function setImage($image)
+  {
+    $this->image = $image;
+  }
+  public function getImage()
+  {
+    return $this->image;
+  }
+  public function setMimeType($mimeType)
+  {
+    $this->mimeType = $mimeType;
+  }
+  public function getMimeType()
+  {
+    return $this->mimeType;
+  }
 }

@@ -17,14 +17,14 @@
 
 class Google_Service_Drive_Change extends Google_Model
 {
-  protected $fileType = 'Google_Service_Drive_File';
+  protected $fileType = 'Google_Service_Drive_DriveFile';
   protected $fileDataType = '';
   public $fileId;
   public $kind;
   public $removed;
   public $time;
 
-  public function setFile(Google_Service_Drive_File $file)
+  public function setFile(Google_Service_Drive_DriveFile $file)
   {
     $this->file = $file;
   }

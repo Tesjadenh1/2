@@ -19,7 +19,7 @@ class Google_Service_Dfareporting_FileList extends Google_Collection
 {
   protected $collection_key = 'items';
   public $etag;
-  protected $itemsType = 'Google_Service_Dfareporting_File';
+  protected $itemsType = 'Google_Service_Dfareporting_DfareportingFile';
   protected $itemsDataType = 'array';
   public $kind;
   public $nextPageToken;

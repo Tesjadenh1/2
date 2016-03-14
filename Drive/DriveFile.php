@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_Drive_File extends Google_Collection
+class Google_Service_Drive_DriveFile extends Google_Collection
 {
   protected $collection_key = 'spaces';
   public $appProperties;
-  protected $capabilitiesType = 'Google_Service_Drive_FileCapabilities';
+  protected $capabilitiesType = 'Google_Service_Drive_DriveFileCapabilities';
   protected $capabilitiesDataType = '';
-  protected $contentHintsType = 'Google_Service_Drive_FileContentHints';
+  protected $contentHintsType = 'Google_Service_Drive_DriveFileContentHints';
   protected $contentHintsDataType = '';
   public $createdTime;
   public $description;
@@ -32,7 +32,7 @@ class Google_Service_Drive_File extends Google_Collection
   public $headRevisionId;
   public $iconLink;
   public $id;
-  protected $imageMediaMetadataType = 'Google_Service_Drive_FileImageMediaMetadata';
+  protected $imageMediaMetadataType = 'Google_Service_Drive_DriveFileImageMediaMetadata';
   protected $imageMediaMetadataDataType = '';
   public $kind;
   protected $lastModifyingUserType = 'Google_Service_Drive_User';
@@ -61,7 +61,7 @@ class Google_Service_Drive_File extends Google_Collection
   public $thumbnailLink;
   public $trashed;
   public $version;
-  protected $videoMediaMetadataType = 'Google_Service_Drive_FileVideoMediaMetadata';
+  protected $videoMediaMetadataType = 'Google_Service_Drive_DriveFileVideoMediaMetadata';
   protected $videoMediaMetadataDataType = '';
   public $viewedByMe;
   public $viewedByMeTime;
@@ -78,7 +78,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->appProperties;
   }
-  public function setCapabilities(Google_Service_Drive_FileCapabilities $capabilities)
+  public function setCapabilities(Google_Service_Drive_DriveFileCapabilities $capabilities)
   {
     $this->capabilities = $capabilities;
   }
@@ -86,7 +86,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->capabilities;
   }
-  public function setContentHints(Google_Service_Drive_FileContentHints $contentHints)
+  public function setContentHints(Google_Service_Drive_DriveFileContentHints $contentHints)
   {
     $this->contentHints = $contentHints;
   }
@@ -166,7 +166,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->id;
   }
-  public function setImageMediaMetadata(Google_Service_Drive_FileImageMediaMetadata $imageMediaMetadata)
+  public function setImageMediaMetadata(Google_Service_Drive_DriveFileImageMediaMetadata $imageMediaMetadata)
   {
     $this->imageMediaMetadata = $imageMediaMetadata;
   }
@@ -358,7 +358,7 @@ class Google_Service_Drive_File extends Google_Collection
   {
     return $this->version;
   }
-  public function setVideoMediaMetadata(Google_Service_Drive_FileVideoMediaMetadata $videoMediaMetadata)
+  public function setVideoMediaMetadata(Google_Service_Drive_DriveFileVideoMediaMetadata $videoMediaMetadata)
   {
     $this->videoMediaMetadata = $videoMediaMetadata;
   }

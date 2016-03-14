@@ -111,13 +111,13 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    *
    * @opt_param bool synchronous If set and true, tries to run the report
    * synchronously.
-   * @return Google_Service_File
+   * @return Google_Service_DfareportingFile
    */
   public function run($profileId, $reportId, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId);
     $params = array_merge($params, $optParams);
-    return $this->call('run', array($params), "Google_Service_Dfareporting_File");
+    return $this->call('run', array($params), "Google_Service_Dfareporting_DfareportingFile");
   }
   /**
    * Updates a report. (reports.update)
