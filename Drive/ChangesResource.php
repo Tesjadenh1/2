@@ -36,7 +36,7 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('getStartPageToken', array($params), 'Google_Service_StartPageToken');
+    return $this->call('getStartPageToken', array($params), "Google_Service_Drive_StartPageToken");
   }
   /**
    * Lists changes for a user. (changes.listChanges)
@@ -62,7 +62,7 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
   {
     $params = array('pageToken' => $pageToken);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ChangeList');
+    return $this->call('list', array($params), "Google_Service_Drive_ChangeList");
   }
   /**
    * Subscribes to changes for a user. (changes.watch)
@@ -89,6 +89,6 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
   {
     $params = array('pageToken' => $pageToken, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Drive_Channel");
   }
 }

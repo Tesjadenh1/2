@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_UserRolePermissionsResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UserRolePermission');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_UserRolePermission");
   }
   /**
    * Gets a list of user role permissions, possibly filtered.
@@ -53,6 +53,6 @@ class Google_Service_Dfareporting_UserRolePermissionsResource extends Google_Ser
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UserRolePermissionsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_UserRolePermissionsListResponse");
   }
 }

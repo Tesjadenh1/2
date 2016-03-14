@@ -56,7 +56,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'entity' => $entity);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_BucketAccessControl');
+    return $this->call('get', array($params), "Google_Service_Storage_BucketAccessControl");
   }
   /**
    * Creates a new ACL entry on the specified bucket.
@@ -71,7 +71,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_BucketAccessControl');
+    return $this->call('insert', array($params), "Google_Service_Storage_BucketAccessControl");
   }
   /**
    * Retrieves ACL entries on the specified bucket.
@@ -85,7 +85,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_BucketAccessControls');
+    return $this->call('list', array($params), "Google_Service_Storage_BucketAccessControls");
   }
   /**
    * Updates an ACL entry on the specified bucket. This method supports patch
@@ -103,7 +103,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'entity' => $entity, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_BucketAccessControl');
+    return $this->call('patch', array($params), "Google_Service_Storage_BucketAccessControl");
   }
   /**
    * Updates an ACL entry on the specified bucket. (bucketAccessControls.update)
@@ -120,6 +120,6 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'entity' => $entity, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_BucketAccessControl');
+    return $this->call('update', array($params), "Google_Service_Storage_BucketAccessControl");
   }
 }

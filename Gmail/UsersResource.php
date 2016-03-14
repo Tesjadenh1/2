@@ -37,7 +37,7 @@ class Google_Service_Gmail_UsersResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('getProfile', array($params), 'Google_Service_Profile');
+    return $this->call('getProfile', array($params), "Google_Service_Gmail_Profile");
   }
   /**
    * Stop receiving push notifications for the given user mailbox. (users.stop)
@@ -66,6 +66,6 @@ class Google_Service_Gmail_UsersResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_WatchResponse');
+    return $this->call('watch', array($params), "Google_Service_Gmail_WatchResponse");
   }
 }

@@ -38,7 +38,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
   {
     $params = array('project' => $project, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('analyze', array($params), 'Google_Service_Analyze');
+    return $this->call('analyze', array($params), "Google_Service_Prediction_Analyze");
   }
   /**
    * Delete a trained model. (trainedmodels.delete)
@@ -65,7 +65,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
   {
     $params = array('project' => $project, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Insert2');
+    return $this->call('get', array($params), "Google_Service_Prediction_Insert2");
   }
   /**
    * Train a Prediction API model. (trainedmodels.insert)
@@ -79,7 +79,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Insert2');
+    return $this->call('insert', array($params), "Google_Service_Prediction_Insert2");
   }
   /**
    * List available models. (trainedmodels.listTrainedmodels)
@@ -95,7 +95,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PredictionList');
+    return $this->call('list', array($params), "Google_Service_Prediction_PredictionList");
   }
   /**
    * Submit model id and request a prediction. (trainedmodels.predict)
@@ -110,7 +110,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
   {
     $params = array('project' => $project, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('predict', array($params), 'Google_Service_Output');
+    return $this->call('predict', array($params), "Google_Service_Prediction_Output");
   }
   /**
    * Add new data to a trained model. (trainedmodels.update)
@@ -125,6 +125,6 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
   {
     $params = array('project' => $project, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Insert2');
+    return $this->call('update', array($params), "Google_Service_Prediction_Insert2");
   }
 }

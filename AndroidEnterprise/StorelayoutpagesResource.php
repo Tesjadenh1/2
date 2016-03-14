@@ -50,7 +50,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_StorePage');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_StorePage");
   }
   /**
    * Inserts a new store page. (storelayoutpages.insert)
@@ -64,7 +64,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_StorePage');
+    return $this->call('insert', array($params), "Google_Service_AndroidEnterprise_StorePage");
   }
   /**
    * Retrieves the details of all pages in the store.
@@ -78,7 +78,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
   {
     $params = array('enterpriseId' => $enterpriseId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_StoreLayoutPagesListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_StoreLayoutPagesListResponse");
   }
   /**
    * Updates the content of a store page. This method supports patch semantics.
@@ -94,7 +94,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_StorePage');
+    return $this->call('patch', array($params), "Google_Service_AndroidEnterprise_StorePage");
   }
   /**
    * Updates the content of a store page. (storelayoutpages.update)
@@ -109,6 +109,6 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_StorePage');
+    return $this->call('update', array($params), "Google_Service_AndroidEnterprise_StorePage");
   }
 }

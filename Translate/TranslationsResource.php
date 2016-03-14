@@ -43,6 +43,6 @@ class Google_Service_Translate_TranslationsResource extends Google_Service_Resou
   {
     $params = array('q' => $q, 'target' => $target);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TranslationsListResponse');
+    return $this->call('list', array($params), "Google_Service_Translate_TranslationsListResponse");
   }
 }

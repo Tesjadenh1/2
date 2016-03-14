@@ -48,7 +48,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('abandonInstances', array($params), 'Google_Service_Operation');
+    return $this->call('abandonInstances', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of managed instance groups and groups them by zone.
@@ -96,7 +96,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_InstanceGroupManagerAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_InstanceGroupManagerAggregatedList");
   }
   /**
    * Deletes the specified managed instance group and all of the instances in that
@@ -116,7 +116,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Schedules a group action to delete the specified instances in the managed
@@ -139,7 +139,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('deleteInstances', array($params), 'Google_Service_Operation');
+    return $this->call('deleteInstances', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns all of the details about the specified managed instance group. Get a
@@ -157,7 +157,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_InstanceGroupManager');
+    return $this->call('get', array($params), "Google_Service_Compute_InstanceGroupManager");
   }
   /**
    * Creates a managed instance group using the information that you specify in
@@ -179,7 +179,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of managed instance groups that are contained within the
@@ -229,7 +229,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_InstanceGroupManagerList');
+    return $this->call('list', array($params), "Google_Service_Compute_InstanceGroupManagerList");
   }
   /**
    * Lists all of the instances in the managed instance group. Each instance in
@@ -250,7 +250,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager);
     $params = array_merge($params, $optParams);
-    return $this->call('listManagedInstances', array($params), 'Google_Service_InstanceGroupManagersListManagedInstancesResponse');
+    return $this->call('listManagedInstances', array($params), "Google_Service_Compute_InstanceGroupManagersListManagedInstancesResponse");
   }
   /**
    * Schedules a group action to recreate the specified instances in the managed
@@ -273,7 +273,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('recreateInstances', array($params), 'Google_Service_Operation');
+    return $this->call('recreateInstances', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Resizes the managed instance group. If you increase the size, the group
@@ -299,7 +299,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'size' => $size);
     $params = array_merge($params, $optParams);
-    return $this->call('resize', array($params), 'Google_Service_Operation');
+    return $this->call('resize', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Specifies the instance template to use when creating new instances in this
@@ -318,7 +318,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setInstanceTemplate', array($params), 'Google_Service_Operation');
+    return $this->call('setInstanceTemplate', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Modifies the target pools to which all instances in this managed instance
@@ -341,6 +341,6 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setTargetPools', array($params), 'Google_Service_Operation');
+    return $this->call('setTargetPools', array($params), "Google_Service_Compute_Operation");
   }
 }

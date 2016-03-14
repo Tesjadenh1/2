@@ -38,7 +38,7 @@ class Google_Service_Books_OnboardingResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('listCategories', array($params), 'Google_Service_Category');
+    return $this->call('listCategories', array($params), "Google_Service_Books_Category");
   }
   /**
    * List available volumes under categories for onboarding experience.
@@ -62,6 +62,6 @@ class Google_Service_Books_OnboardingResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('listCategoryVolumes', array($params), 'Google_Service_Volume2');
+    return $this->call('listCategoryVolumes', array($params), "Google_Service_Books_Volume2");
   }
 }

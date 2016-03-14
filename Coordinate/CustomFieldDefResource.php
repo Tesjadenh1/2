@@ -37,6 +37,6 @@ class Google_Service_Coordinate_CustomFieldDefResource extends Google_Service_Re
   {
     $params = array('teamId' => $teamId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CustomFieldDefListResponse');
+    return $this->call('list', array($params), "Google_Service_Coordinate_CustomFieldDefListResponse");
   }
 }

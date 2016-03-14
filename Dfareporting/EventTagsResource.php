@@ -50,7 +50,7 @@ class Google_Service_Dfareporting_EventTagsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_EventTag');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_EventTag");
   }
   /**
    * Inserts a new event tag. (eventTags.insert)
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_EventTagsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_EventTag');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_EventTag");
   }
   /**
    * Retrieves a list of event tags, possibly filtered. (eventTags.listEventTags)
@@ -111,7 +111,7 @@ class Google_Service_Dfareporting_EventTagsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_EventTagsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_EventTagsListResponse");
   }
   /**
    * Updates an existing event tag. This method supports patch semantics.
@@ -127,7 +127,7 @@ class Google_Service_Dfareporting_EventTagsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_EventTag');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_EventTag");
   }
   /**
    * Updates an existing event tag. (eventTags.update)
@@ -141,6 +141,6 @@ class Google_Service_Dfareporting_EventTagsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_EventTag');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_EventTag");
   }
 }

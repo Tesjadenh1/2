@@ -38,7 +38,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'httpsHealthCheck' => $httpsHealthCheck);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified HttpsHealthCheck resource. Get a list of available
@@ -54,7 +54,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'httpsHealthCheck' => $httpsHealthCheck);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_HttpsHealthCheck');
+    return $this->call('get', array($params), "Google_Service_Compute_HttpsHealthCheck");
   }
   /**
    * Creates a HttpsHealthCheck resource in the specified project using the data
@@ -69,7 +69,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of HttpsHealthCheck resources available to the specified
@@ -117,7 +117,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_HttpsHealthCheckList');
+    return $this->call('list', array($params), "Google_Service_Compute_HttpsHealthCheckList");
   }
   /**
    * Updates a HttpsHealthCheck resource in the specified project using the data
@@ -135,7 +135,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'httpsHealthCheck' => $httpsHealthCheck, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Operation');
+    return $this->call('patch', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Updates a HttpsHealthCheck resource in the specified project using the data
@@ -152,6 +152,6 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'httpsHealthCheck' => $httpsHealthCheck, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Operation');
+    return $this->call('update', array($params), "Google_Service_Compute_Operation");
   }
 }

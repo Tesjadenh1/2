@@ -58,7 +58,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'installId' => $installId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Install');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Install");
   }
   /**
    * Retrieves the details of all apps installed on the specified device.
@@ -74,7 +74,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_InstallsListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_InstallsListResponse");
   }
   /**
    * Requests to install the latest version of an app to a device. If the app is
@@ -94,7 +94,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'installId' => $installId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Install');
+    return $this->call('patch', array($params), "Google_Service_AndroidEnterprise_Install");
   }
   /**
    * Requests to install the latest version of an app to a device. If the app is
@@ -114,6 +114,6 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'installId' => $installId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Install');
+    return $this->call('update', array($params), "Google_Service_AndroidEnterprise_Install");
   }
 }

@@ -53,7 +53,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Comment');
+    return $this->call('insert', array($params), "Google_Service_YouTube_Comment");
   }
   /**
    * Returns a list of comments that match the API request parameters.
@@ -91,7 +91,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CommentListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_CommentListResponse");
   }
   /**
    * Expresses the caller's opinion that one or more comments should be flagged as
@@ -146,6 +146,6 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Comment');
+    return $this->call('update', array($params), "Google_Service_YouTube_Comment");
   }
 }

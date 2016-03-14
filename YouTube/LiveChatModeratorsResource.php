@@ -52,7 +52,7 @@ class Google_Service_YouTube_LiveChatModeratorsResource extends Google_Service_R
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_LiveChatModerator');
+    return $this->call('insert', array($params), "Google_Service_YouTube_LiveChatModerator");
   }
   /**
    * Lists moderators for a live chat. (liveChatModerators.listLiveChatModerators)
@@ -76,6 +76,6 @@ class Google_Service_YouTube_LiveChatModeratorsResource extends Google_Service_R
   {
     $params = array('liveChatId' => $liveChatId, 'part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_LiveChatModeratorListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_LiveChatModeratorListResponse");
   }
 }

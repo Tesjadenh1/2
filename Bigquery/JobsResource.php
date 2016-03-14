@@ -39,7 +39,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'jobId' => $jobId);
     $params = array_merge($params, $optParams);
-    return $this->call('cancel', array($params), 'Google_Service_JobCancelResponse');
+    return $this->call('cancel', array($params), "Google_Service_Bigquery_JobCancelResponse");
   }
   /**
    * Returns information about a specific job. Job information is available for a
@@ -55,7 +55,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'jobId' => $jobId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Job');
+    return $this->call('get', array($params), "Google_Service_Bigquery_Job");
   }
   /**
    * Retrieves the results of a query job. (jobs.getQueryResults)
@@ -78,7 +78,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'jobId' => $jobId);
     $params = array_merge($params, $optParams);
-    return $this->call('getQueryResults', array($params), 'Google_Service_GetQueryResultsResponse');
+    return $this->call('getQueryResults', array($params), "Google_Service_Bigquery_GetQueryResultsResponse");
   }
   /**
    * Starts a new asynchronous job. Requires the Can View project role.
@@ -94,7 +94,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Job');
+    return $this->call('insert', array($params), "Google_Service_Bigquery_Job");
   }
   /**
    * Lists all jobs that you started in the specified project. Job information is
@@ -120,7 +120,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_JobList');
+    return $this->call('list', array($params), "Google_Service_Bigquery_JobList");
   }
   /**
    * Runs a BigQuery SQL query synchronously and returns query results if the
@@ -135,6 +135,6 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('query', array($params), 'Google_Service_QueryResponse');
+    return $this->call('query', array($params), "Google_Service_Bigquery_QueryResponse");
   }
 }

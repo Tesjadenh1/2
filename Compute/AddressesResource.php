@@ -70,7 +70,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_AddressAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_AddressAggregatedList");
   }
   /**
    * Deletes the specified address resource. (addresses.delete)
@@ -85,7 +85,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'address' => $address);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified address resource. (addresses.get)
@@ -100,7 +100,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'address' => $address);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Address');
+    return $this->call('get', array($params), "Google_Service_Compute_Address");
   }
   /**
    * Creates an address resource in the specified project using the data included
@@ -116,7 +116,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of addresses contained within the specified region.
@@ -165,6 +165,6 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AddressList');
+    return $this->call('list', array($params), "Google_Service_Compute_AddressList");
   }
 }

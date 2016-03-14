@@ -38,7 +38,7 @@ class Google_Service_Dataproc_MediaResource extends Google_Service_Resource
   {
     $params = array('resourceName' => $resourceName);
     $params = array_merge($params, $optParams);
-    return $this->call('download', array($params), 'Google_Service_Media');
+    return $this->call('download', array($params), "Google_Service_Dataproc_Media");
   }
   /**
    * Method for media upload. Upload is supported on the URI
@@ -54,6 +54,6 @@ class Google_Service_Dataproc_MediaResource extends Google_Service_Resource
   {
     $params = array('resourceName' => $resourceName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('upload', array($params), 'Google_Service_Media');
+    return $this->call('upload', array($params), "Google_Service_Dataproc_Media");
   }
 }

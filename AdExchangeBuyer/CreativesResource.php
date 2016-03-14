@@ -52,7 +52,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
   {
     $params = array('accountId' => $accountId, 'buyerCreativeId' => $buyerCreativeId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Creative');
+    return $this->call('get', array($params), "Google_Service_AdExchangeBuyer_Creative");
   }
   /**
    * Submit a new creative. (creatives.insert)
@@ -65,7 +65,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Creative');
+    return $this->call('insert', array($params), "Google_Service_AdExchangeBuyer_Creative");
   }
   /**
    * Retrieves a list of the authenticated user's active creatives. A creative
@@ -92,7 +92,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CreativesList');
+    return $this->call('list', array($params), "Google_Service_AdExchangeBuyer_CreativesList");
   }
   /**
    * Remove a deal id associated with the creative. (creatives.removeDeal)

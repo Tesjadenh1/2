@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Campaign');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Campaign");
   }
   /**
    * Inserts a new campaign. (campaigns.insert)
@@ -55,7 +55,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'defaultLandingPageName' => $defaultLandingPageName, 'defaultLandingPageUrl' => $defaultLandingPageUrl, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Campaign');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_Campaign");
   }
   /**
    * Retrieves a list of campaigns, possibly filtered. (campaigns.listCampaigns)
@@ -95,7 +95,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CampaignsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_CampaignsListResponse");
   }
   /**
    * Updates an existing campaign. This method supports patch semantics.
@@ -111,7 +111,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Campaign');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_Campaign");
   }
   /**
    * Updates an existing campaign. (campaigns.update)
@@ -125,6 +125,6 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Campaign');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_Campaign");
   }
 }

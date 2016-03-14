@@ -36,7 +36,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('createquery', array($params), 'Google_Service_Query');
+    return $this->call('createquery', array($params), "Google_Service_DoubleClickBidManager_Query");
   }
   /**
    * Deletes a stored query as well as the associated stored reports.
@@ -62,7 +62,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
   {
     $params = array('queryId' => $queryId);
     $params = array_merge($params, $optParams);
-    return $this->call('getquery', array($params), 'Google_Service_Query');
+    return $this->call('getquery', array($params), "Google_Service_DoubleClickBidManager_Query");
   }
   /**
    * Retrieves stored queries. (queries.listqueries)
@@ -74,7 +74,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('listqueries', array($params), 'Google_Service_ListQueriesResponse');
+    return $this->call('listqueries', array($params), "Google_Service_DoubleClickBidManager_ListQueriesResponse");
   }
   /**
    * Runs a stored query to generate a report. (queries.runquery)

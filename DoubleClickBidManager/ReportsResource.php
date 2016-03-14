@@ -36,6 +36,6 @@ class Google_Service_DoubleClickBidManager_ReportsResource extends Google_Servic
   {
     $params = array('queryId' => $queryId);
     $params = array_merge($params, $optParams);
-    return $this->call('listreports', array($params), 'Google_Service_ListReportsResponse');
+    return $this->call('listreports', array($params), "Google_Service_DoubleClickBidManager_ListReportsResponse");
   }
 }

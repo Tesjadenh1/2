@@ -42,6 +42,6 @@ class Google_Service_Classroom_UserProfilesResource extends Google_Service_Resou
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UserProfile');
+    return $this->call('get', array($params), "Google_Service_Classroom_UserProfile");
   }
 }

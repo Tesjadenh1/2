@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Site');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Site");
   }
   /**
    * Inserts a new site. (sites.insert)
@@ -51,7 +51,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Site');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_Site");
   }
   /**
    * Retrieves a list of sites, possibly filtered. (sites.listSites)
@@ -91,7 +91,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SitesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_SitesListResponse");
   }
   /**
    * Updates an existing site. This method supports patch semantics. (sites.patch)
@@ -106,7 +106,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Site');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_Site");
   }
   /**
    * Updates an existing site. (sites.update)
@@ -120,6 +120,6 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Site');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_Site");
   }
 }

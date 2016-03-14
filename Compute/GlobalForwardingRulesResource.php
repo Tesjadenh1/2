@@ -37,7 +37,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
   {
     $params = array('project' => $project, 'forwardingRule' => $forwardingRule);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified ForwardingRule resource. Get a list of available
@@ -52,7 +52,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
   {
     $params = array('project' => $project, 'forwardingRule' => $forwardingRule);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ForwardingRule');
+    return $this->call('get', array($params), "Google_Service_Compute_ForwardingRule");
   }
   /**
    * Creates a ForwardingRule resource in the specified project and region using
@@ -67,7 +67,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of ForwardingRule resources available to the specified
@@ -115,7 +115,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ForwardingRuleList');
+    return $this->call('list', array($params), "Google_Service_Compute_ForwardingRuleList");
   }
   /**
    * Changes target URL for forwarding rule. The new target should be of the same
@@ -132,6 +132,6 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
   {
     $params = array('project' => $project, 'forwardingRule' => $forwardingRule, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setTarget', array($params), 'Google_Service_Operation');
+    return $this->call('setTarget', array($params), "Google_Service_Compute_Operation");
   }
 }

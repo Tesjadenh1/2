@@ -41,7 +41,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_VariantSet');
+    return $this->call('create', array($params), "Google_Service_Genomics_VariantSet");
   }
   /**
    * Deletes a variant set including all variants, call sets, and calls within.
@@ -58,7 +58,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   {
     $params = array('variantSetId' => $variantSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_GenomicsEmpty');
+    return $this->call('delete', array($params), "Google_Service_Genomics_GenomicsEmpty");
   }
   /**
    * Exports variant set data to an external destination. For the definitions of
@@ -77,7 +77,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   {
     $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('export', array($params), 'Google_Service_Operation');
+    return $this->call('export', array($params), "Google_Service_Genomics_Operation");
   }
   /**
    * Gets a variant set by ID. For the definitions of variant sets and other
@@ -93,7 +93,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   {
     $params = array('variantSetId' => $variantSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_VariantSet');
+    return $this->call('get', array($params), "Google_Service_Genomics_VariantSet");
   }
   /**
    * Updates a variant set using patch semantics. For the definitions of variant
@@ -115,7 +115,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   {
     $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_VariantSet');
+    return $this->call('patch', array($params), "Google_Service_Genomics_VariantSet");
   }
   /**
    * Returns a list of all variant sets matching search criteria. For the
@@ -133,6 +133,6 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_SearchVariantSetsResponse');
+    return $this->call('search', array($params), "Google_Service_Genomics_SearchVariantSetsResponse");
   }
 }

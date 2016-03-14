@@ -38,7 +38,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'targetHttpProxy' => $targetHttpProxy);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified TargetHttpProxy resource. Get a list of available
@@ -54,7 +54,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'targetHttpProxy' => $targetHttpProxy);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TargetHttpProxy');
+    return $this->call('get', array($params), "Google_Service_Compute_TargetHttpProxy");
   }
   /**
    * Creates a TargetHttpProxy resource in the specified project using the data
@@ -69,7 +69,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of TargetHttpProxy resources available to the specified
@@ -117,7 +117,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TargetHttpProxyList');
+    return $this->call('list', array($params), "Google_Service_Compute_TargetHttpProxyList");
   }
   /**
    * Changes the URL map for TargetHttpProxy. (targetHttpProxies.setUrlMap)
@@ -133,6 +133,6 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'targetHttpProxy' => $targetHttpProxy, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setUrlMap', array($params), 'Google_Service_Operation');
+    return $this->call('setUrlMap', array($params), "Google_Service_Compute_Operation");
   }
 }

@@ -36,7 +36,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('batch', array($params), 'Google_Service_InappproductsBatchResponse');
+    return $this->call('batch', array($params), "Google_Service_AndroidPublisher_InappproductsBatchResponse");
   }
   /**
    * Delete an in-app product for an app. (inappproducts.delete)
@@ -64,7 +64,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
   {
     $params = array('packageName' => $packageName, 'sku' => $sku);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_InAppProduct');
+    return $this->call('get', array($params), "Google_Service_AndroidPublisher_InAppProduct");
   }
   /**
    * Creates a new in-app product for an app. (inappproducts.insert)
@@ -84,7 +84,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
   {
     $params = array('packageName' => $packageName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_InAppProduct');
+    return $this->call('insert', array($params), "Google_Service_AndroidPublisher_InAppProduct");
   }
   /**
    * List all the in-app products for an Android app, both subscriptions and
@@ -103,7 +103,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
   {
     $params = array('packageName' => $packageName);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_InappproductsListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidPublisher_InappproductsListResponse");
   }
   /**
    * Updates the details of an in-app product. This method supports patch
@@ -125,7 +125,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
   {
     $params = array('packageName' => $packageName, 'sku' => $sku, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_InAppProduct');
+    return $this->call('patch', array($params), "Google_Service_AndroidPublisher_InAppProduct");
   }
   /**
    * Updates the details of an in-app product. (inappproducts.update)
@@ -146,6 +146,6 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
   {
     $params = array('packageName' => $packageName, 'sku' => $sku, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_InAppProduct');
+    return $this->call('update', array($params), "Google_Service_AndroidPublisher_InAppProduct");
   }
 }

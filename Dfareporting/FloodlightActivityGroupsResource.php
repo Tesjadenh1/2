@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_FloodlightActivityGroup');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_FloodlightActivityGroup");
   }
   /**
    * Inserts a new floodlight activity group. (floodlightActivityGroups.insert)
@@ -51,7 +51,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_FloodlightActivityGroup');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_FloodlightActivityGroup");
   }
   /**
    * Retrieves a list of floodlight activity groups, possibly filtered.
@@ -91,7 +91,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_FloodlightActivityGroupsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_FloodlightActivityGroupsListResponse");
   }
   /**
    * Updates an existing floodlight activity group. This method supports patch
@@ -107,7 +107,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_FloodlightActivityGroup');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_FloodlightActivityGroup");
   }
   /**
    * Updates an existing floodlight activity group.
@@ -122,6 +122,6 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_FloodlightActivityGroup');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_FloodlightActivityGroup");
   }
 }

@@ -50,7 +50,7 @@ class Google_Service_Dfareporting_UserRolesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UserRole');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_UserRole");
   }
   /**
    * Inserts a new user role. (userRoles.insert)
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_UserRolesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_UserRole');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_UserRole");
   }
   /**
    * Retrieves a list of user roles, possibly filtered. (userRoles.listUserRoles)
@@ -95,7 +95,7 @@ class Google_Service_Dfareporting_UserRolesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UserRolesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_UserRolesListResponse");
   }
   /**
    * Updates an existing user role. This method supports patch semantics.
@@ -111,7 +111,7 @@ class Google_Service_Dfareporting_UserRolesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_UserRole');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_UserRole");
   }
   /**
    * Updates an existing user role. (userRoles.update)
@@ -125,6 +125,6 @@ class Google_Service_Dfareporting_UserRolesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_UserRole');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_UserRole");
   }
 }

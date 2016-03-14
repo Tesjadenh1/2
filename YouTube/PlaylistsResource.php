@@ -98,7 +98,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Playlist');
+    return $this->call('insert', array($params), "Google_Service_YouTube_Playlist");
   }
   /**
    * Returns a collection of playlists that match the API request parameters. For
@@ -169,7 +169,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PlaylistListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_PlaylistListResponse");
   }
   /**
    * Modifies a playlist. For example, you could change a playlist's title,
@@ -206,6 +206,6 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Playlist');
+    return $this->call('update', array($params), "Google_Service_YouTube_Playlist");
   }
 }

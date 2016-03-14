@@ -37,7 +37,7 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
   {
     $params = array('adClientId' => $adClientId, 'urlChannelId' => $urlChannelId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_UrlChannel');
+    return $this->call('delete', array($params), "Google_Service_AdSenseHost_UrlChannel");
   }
   /**
    * Add a new URL channel to the host AdSense account. (urlchannels.insert)
@@ -52,7 +52,7 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
   {
     $params = array('adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_UrlChannel');
+    return $this->call('insert', array($params), "Google_Service_AdSenseHost_UrlChannel");
   }
   /**
    * List all host URL channels in the host AdSense account.
@@ -72,6 +72,6 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
   {
     $params = array('adClientId' => $adClientId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UrlChannels');
+    return $this->call('list', array($params), "Google_Service_AdSenseHost_UrlChannels");
   }
 }

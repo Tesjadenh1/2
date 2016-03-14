@@ -48,7 +48,7 @@ class Google_Service_CivicInfo_RepresentativesResource extends Google_Service_Re
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('representativeInfoByAddress', array($params), 'Google_Service_RepresentativeInfoResponse');
+    return $this->call('representativeInfoByAddress', array($params), "Google_Service_CivicInfo_RepresentativeInfoResponse");
   }
   /**
    * Looks up representative information for a single geographic division.
@@ -74,6 +74,6 @@ class Google_Service_CivicInfo_RepresentativesResource extends Google_Service_Re
   {
     $params = array('ocdId' => $ocdId);
     $params = array_merge($params, $optParams);
-    return $this->call('representativeInfoByDivision', array($params), 'Google_Service_RepresentativeInfoData');
+    return $this->call('representativeInfoByDivision', array($params), "Google_Service_CivicInfo_RepresentativeInfoData");
   }
 }

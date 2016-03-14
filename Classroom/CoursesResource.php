@@ -43,7 +43,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_Course');
+    return $this->call('create', array($params), "Google_Service_Classroom_Course");
   }
   /**
    * Deletes a course. This method returns the following error codes: *
@@ -60,7 +60,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_ClassroomEmpty');
+    return $this->call('delete', array($params), "Google_Service_Classroom_ClassroomEmpty");
   }
   /**
    * Returns a course. This method returns the following error codes: *
@@ -77,7 +77,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Course');
+    return $this->call('get', array($params), "Google_Service_Classroom_Course");
   }
   /**
    * Returns a list of courses that the requesting user is permitted to view,
@@ -109,7 +109,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListCoursesResponse');
+    return $this->call('list', array($params), "Google_Service_Classroom_ListCoursesResponse");
   }
   /**
    * Updates one or more fields in a course. This method returns the following
@@ -137,7 +137,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Course');
+    return $this->call('patch', array($params), "Google_Service_Classroom_Course");
   }
   /**
    * Updates a course. This method returns the following error codes: *
@@ -156,6 +156,6 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Course');
+    return $this->call('update', array($params), "Google_Service_Classroom_Course");
   }
 }

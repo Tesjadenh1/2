@@ -46,6 +46,6 @@ class Google_Service_Webmasters_UrlcrawlerrorscountsResource extends Google_Serv
   {
     $params = array('siteUrl' => $siteUrl);
     $params = array_merge($params, $optParams);
-    return $this->call('query', array($params), 'Google_Service_UrlCrawlErrorsCountsQueryResponse');
+    return $this->call('query', array($params), "Google_Service_Webmasters_UrlCrawlErrorsCountsQueryResponse");
   }
 }

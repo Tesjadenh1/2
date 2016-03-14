@@ -50,7 +50,7 @@ class Google_Service_Dfareporting_AdvertiserGroupsResource extends Google_Servic
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AdvertiserGroup');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_AdvertiserGroup");
   }
   /**
    * Inserts a new advertiser group. (advertiserGroups.insert)
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_AdvertiserGroupsResource extends Google_Servic
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_AdvertiserGroup');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_AdvertiserGroup");
   }
   /**
    * Retrieves a list of advertiser groups, possibly filtered.
@@ -92,7 +92,7 @@ class Google_Service_Dfareporting_AdvertiserGroupsResource extends Google_Servic
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AdvertiserGroupsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_AdvertiserGroupsListResponse");
   }
   /**
    * Updates an existing advertiser group. This method supports patch semantics.
@@ -108,7 +108,7 @@ class Google_Service_Dfareporting_AdvertiserGroupsResource extends Google_Servic
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_AdvertiserGroup');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_AdvertiserGroup");
   }
   /**
    * Updates an existing advertiser group. (advertiserGroups.update)
@@ -122,6 +122,6 @@ class Google_Service_Dfareporting_AdvertiserGroupsResource extends Google_Servic
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_AdvertiserGroup');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_AdvertiserGroup");
   }
 }

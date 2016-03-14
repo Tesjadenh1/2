@@ -37,7 +37,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'route' => $route);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified Route resource. Get a list of available routes by
@@ -52,7 +52,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'route' => $route);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Route');
+    return $this->call('get', array($params), "Google_Service_Compute_Route");
   }
   /**
    * Creates a Route resource in the specified project using the data included in
@@ -67,7 +67,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of Route resources available to the specified project.
@@ -115,6 +115,6 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_RouteList');
+    return $this->call('list', array($params), "Google_Service_Compute_RouteList");
   }
 }

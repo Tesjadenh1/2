@@ -41,6 +41,6 @@ class Google_Service_PlusDomains_MediaResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId, 'collection' => $collection, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Media');
+    return $this->call('insert', array($params), "Google_Service_PlusDomains_Media");
   }
 }

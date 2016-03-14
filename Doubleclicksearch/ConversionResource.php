@@ -51,7 +51,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
   {
     $params = array('agencyId' => $agencyId, 'advertiserId' => $advertiserId, 'engineAccountId' => $engineAccountId, 'endDate' => $endDate, 'rowCount' => $rowCount, 'startDate' => $startDate, 'startRow' => $startRow);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ConversionList');
+    return $this->call('get', array($params), "Google_Service_Doubleclicksearch_ConversionList");
   }
   /**
    * Inserts a batch of new conversions into DoubleClick Search.
@@ -65,7 +65,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_ConversionList');
+    return $this->call('insert', array($params), "Google_Service_Doubleclicksearch_ConversionList");
   }
   /**
    * Updates a batch of conversions in DoubleClick Search. This method supports
@@ -89,7 +89,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
   {
     $params = array('advertiserId' => $advertiserId, 'agencyId' => $agencyId, 'endDate' => $endDate, 'engineAccountId' => $engineAccountId, 'rowCount' => $rowCount, 'startDate' => $startDate, 'startRow' => $startRow, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_ConversionList');
+    return $this->call('patch', array($params), "Google_Service_Doubleclicksearch_ConversionList");
   }
   /**
    * Updates a batch of conversions in DoubleClick Search. (conversion.update)
@@ -102,7 +102,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_ConversionList');
+    return $this->call('update', array($params), "Google_Service_Doubleclicksearch_ConversionList");
   }
   /**
    * Updates the availabilities of a batch of floodlight activities in DoubleClick
@@ -116,6 +116,6 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('updateAvailability', array($params), 'Google_Service_UpdateAvailabilityResponse');
+    return $this->call('updateAvailability', array($params), "Google_Service_Doubleclicksearch_UpdateAvailabilityResponse");
   }
 }

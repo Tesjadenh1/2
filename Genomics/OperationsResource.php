@@ -41,7 +41,7 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('cancel', array($params), 'Google_Service_GenomicsEmpty');
+    return $this->call('cancel', array($params), "Google_Service_Genomics_GenomicsEmpty");
   }
   /**
    * Gets the latest state of a long-running operation. Clients can use this
@@ -56,7 +56,7 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Operation');
+    return $this->call('get', array($params), "Google_Service_Genomics_Operation");
   }
   /**
    * Lists operations that match the specified filter in the request.
@@ -80,6 +80,6 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListOperationsResponse');
+    return $this->call('list', array($params), "Google_Service_Genomics_ListOperationsResponse");
   }
 }

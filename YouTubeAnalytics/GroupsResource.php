@@ -75,7 +75,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Group');
+    return $this->call('insert', array($params), "Google_Service_YouTubeAnalytics_Group");
   }
   /**
    * Returns a collection of groups that match the API request parameters. For
@@ -110,7 +110,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_GroupListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTubeAnalytics_GroupListResponse");
   }
   /**
    * Modifies a group. For example, you could change a group's title.
@@ -137,6 +137,6 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Group');
+    return $this->call('update', array($params), "Google_Service_YouTubeAnalytics_Group");
   }
 }

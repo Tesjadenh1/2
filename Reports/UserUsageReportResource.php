@@ -50,6 +50,6 @@ class Google_Service_Reports_UserUsageReportResource extends Google_Service_Reso
   {
     $params = array('userKey' => $userKey, 'date' => $date);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UsageReports');
+    return $this->call('get', array($params), "Google_Service_Reports_UsageReports");
   }
 }

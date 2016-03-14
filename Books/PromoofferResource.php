@@ -81,6 +81,6 @@ class Google_Service_Books_PromoofferResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Offers');
+    return $this->call('get', array($params), "Google_Service_Books_Offers");
   }
 }

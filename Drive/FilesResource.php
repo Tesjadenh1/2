@@ -49,7 +49,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('copy', array($params), 'Google_Service_File');
+    return $this->call('copy', array($params), "Google_Service_Drive_File");
   }
   /**
    * Creates a new file. (files.create)
@@ -75,7 +75,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_File');
+    return $this->call('create', array($params), "Google_Service_Drive_File");
   }
   /**
    * Permanently deletes a file owned by the user without moving it to the trash.
@@ -132,7 +132,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('generateIds', array($params), 'Google_Service_GeneratedIds');
+    return $this->call('generateIds', array($params), "Google_Service_Drive_GeneratedIds");
   }
   /**
    * Gets a file's metadata or content by ID. (files.get)
@@ -149,7 +149,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_File');
+    return $this->call('get', array($params), "Google_Service_Drive_File");
   }
   /**
    * Lists or searches files. (files.listFiles)
@@ -178,7 +178,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_FileList');
+    return $this->call('list', array($params), "Google_Service_Drive_FileList");
   }
   /**
    * Updates a file's metadata and/or content with patch semantics. (files.update)
@@ -203,7 +203,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_File');
+    return $this->call('update', array($params), "Google_Service_Drive_File");
   }
   /**
    * Subscribes to changes to a file (files.watch)
@@ -221,6 +221,6 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Drive_Channel");
   }
 }

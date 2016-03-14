@@ -48,7 +48,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TaskList');
+    return $this->call('get', array($params), "Google_Service_Tasks_TaskList");
   }
   /**
    * Creates a new task list and adds it to the authenticated user's task lists.
@@ -62,7 +62,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_TaskList');
+    return $this->call('insert', array($params), "Google_Service_Tasks_TaskList");
   }
   /**
    * Returns all the authenticated user's task lists. (tasklists.listTasklists)
@@ -79,7 +79,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TaskLists');
+    return $this->call('list', array($params), "Google_Service_Tasks_TaskLists");
   }
   /**
    * Updates the authenticated user's specified task list. This method supports
@@ -94,7 +94,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_TaskList');
+    return $this->call('patch', array($params), "Google_Service_Tasks_TaskList");
   }
   /**
    * Updates the authenticated user's specified task list. (tasklists.update)
@@ -108,6 +108,6 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_TaskList');
+    return $this->call('update', array($params), "Google_Service_Tasks_TaskList");
   }
 }

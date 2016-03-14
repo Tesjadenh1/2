@@ -64,7 +64,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'task' => $task);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Task');
+    return $this->call('get', array($params), "Google_Service_Tasks_Task");
   }
   /**
    * Creates a new task on the specified task list. (tasks.insert)
@@ -84,7 +84,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Task');
+    return $this->call('insert', array($params), "Google_Service_Tasks_Task");
   }
   /**
    * Returns all tasks in the specified task list. (tasks.listTasks)
@@ -121,7 +121,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Tasks');
+    return $this->call('list', array($params), "Google_Service_Tasks_Tasks");
   }
   /**
    * Moves the specified task to another position in the task list. This can
@@ -143,7 +143,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'task' => $task);
     $params = array_merge($params, $optParams);
-    return $this->call('move', array($params), 'Google_Service_Task');
+    return $this->call('move', array($params), "Google_Service_Tasks_Task");
   }
   /**
    * Updates the specified task. This method supports patch semantics.
@@ -159,7 +159,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'task' => $task, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Task');
+    return $this->call('patch', array($params), "Google_Service_Tasks_Task");
   }
   /**
    * Updates the specified task. (tasks.update)
@@ -174,6 +174,6 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
   {
     $params = array('tasklist' => $tasklist, 'task' => $task, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Task');
+    return $this->call('update', array($params), "Google_Service_Tasks_Task");
   }
 }

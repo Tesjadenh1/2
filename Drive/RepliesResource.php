@@ -38,7 +38,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_Reply');
+    return $this->call('create', array($params), "Google_Service_Drive_Reply");
   }
   /**
    * Deletes a reply. (replies.delete)
@@ -70,7 +70,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId, 'replyId' => $replyId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Reply');
+    return $this->call('get', array($params), "Google_Service_Drive_Reply");
   }
   /**
    * Lists a comment's replies. (replies.listReplies)
@@ -91,7 +91,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ReplyList');
+    return $this->call('list', array($params), "Google_Service_Drive_ReplyList");
   }
   /**
    * Updates a reply with patch semantics. (replies.update)
@@ -107,6 +107,6 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId, 'replyId' => $replyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Reply');
+    return $this->call('update', array($params), "Google_Service_Drive_Reply");
   }
 }

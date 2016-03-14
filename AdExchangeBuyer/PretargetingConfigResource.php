@@ -51,7 +51,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
   {
     $params = array('accountId' => $accountId, 'configId' => $configId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_PretargetingConfig');
+    return $this->call('get', array($params), "Google_Service_AdExchangeBuyer_PretargetingConfig");
   }
   /**
    * Inserts a new pretargeting configuration. (pretargetingConfig.insert)
@@ -66,7 +66,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_PretargetingConfig');
+    return $this->call('insert', array($params), "Google_Service_AdExchangeBuyer_PretargetingConfig");
   }
   /**
    * Retrieves a list of the authenticated user's pretargeting configurations.
@@ -80,7 +80,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
   {
     $params = array('accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PretargetingConfigList');
+    return $this->call('list', array($params), "Google_Service_AdExchangeBuyer_PretargetingConfigList");
   }
   /**
    * Updates an existing pretargeting config. This method supports patch
@@ -97,7 +97,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
   {
     $params = array('accountId' => $accountId, 'configId' => $configId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_PretargetingConfig');
+    return $this->call('patch', array($params), "Google_Service_AdExchangeBuyer_PretargetingConfig");
   }
   /**
    * Updates an existing pretargeting config. (pretargetingConfig.update)
@@ -113,6 +113,6 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
   {
     $params = array('accountId' => $accountId, 'configId' => $configId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_PretargetingConfig');
+    return $this->call('update', array($params), "Google_Service_AdExchangeBuyer_PretargetingConfig");
   }
 }

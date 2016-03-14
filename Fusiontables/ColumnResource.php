@@ -51,7 +51,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'columnId' => $columnId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Column');
+    return $this->call('get', array($params), "Google_Service_Fusiontables_Column");
   }
   /**
    * Adds a new column to the table. (column.insert)
@@ -65,7 +65,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Column');
+    return $this->call('insert', array($params), "Google_Service_Fusiontables_Column");
   }
   /**
    * Retrieves a list of columns. (column.listColumn)
@@ -83,7 +83,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ColumnList');
+    return $this->call('list', array($params), "Google_Service_Fusiontables_ColumnList");
   }
   /**
    * Updates the name or type of an existing column. This method supports patch
@@ -100,7 +100,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'columnId' => $columnId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Column');
+    return $this->call('patch', array($params), "Google_Service_Fusiontables_Column");
   }
   /**
    * Updates the name or type of an existing column. (column.update)
@@ -116,6 +116,6 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'columnId' => $columnId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Column');
+    return $this->call('update', array($params), "Google_Service_Fusiontables_Column");
   }
 }

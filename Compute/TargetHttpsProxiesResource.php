@@ -38,7 +38,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
   {
     $params = array('project' => $project, 'targetHttpsProxy' => $targetHttpsProxy);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified TargetHttpsProxy resource. Get a list of available
@@ -54,7 +54,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
   {
     $params = array('project' => $project, 'targetHttpsProxy' => $targetHttpsProxy);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TargetHttpsProxy');
+    return $this->call('get', array($params), "Google_Service_Compute_TargetHttpsProxy");
   }
   /**
    * Creates a TargetHttpsProxy resource in the specified project using the data
@@ -69,7 +69,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of TargetHttpsProxy resources available to the specified
@@ -117,7 +117,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TargetHttpsProxyList');
+    return $this->call('list', array($params), "Google_Service_Compute_TargetHttpsProxyList");
   }
   /**
    * Replaces SslCertificates for TargetHttpsProxy.
@@ -134,7 +134,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
   {
     $params = array('project' => $project, 'targetHttpsProxy' => $targetHttpsProxy, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setSslCertificates', array($params), 'Google_Service_Operation');
+    return $this->call('setSslCertificates', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Changes the URL map for TargetHttpsProxy. (targetHttpsProxies.setUrlMap)
@@ -150,6 +150,6 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
   {
     $params = array('project' => $project, 'targetHttpsProxy' => $targetHttpsProxy, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setUrlMap', array($params), 'Google_Service_Operation');
+    return $this->call('setUrlMap', array($params), "Google_Service_Compute_Operation");
   }
 }

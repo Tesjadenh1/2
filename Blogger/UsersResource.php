@@ -36,6 +36,6 @@ class Google_Service_Blogger_UsersResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_User');
+    return $this->call('get', array($params), "Google_Service_Blogger_User");
   }
 }

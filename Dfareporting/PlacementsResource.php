@@ -41,7 +41,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('generatetags', array($params), 'Google_Service_PlacementsGenerateTagsResponse');
+    return $this->call('generatetags', array($params), "Google_Service_Dfareporting_PlacementsGenerateTagsResponse");
   }
   /**
    * Gets one placement by ID. (placements.get)
@@ -55,7 +55,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Placement');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Placement");
   }
   /**
    * Inserts a new placement. (placements.insert)
@@ -69,7 +69,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Placement');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_Placement");
   }
   /**
    * Retrieves a list of placements, possibly filtered.
@@ -137,7 +137,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PlacementsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_PlacementsListResponse");
   }
   /**
    * Updates an existing placement. This method supports patch semantics.
@@ -153,7 +153,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Placement');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_Placement");
   }
   /**
    * Updates an existing placement. (placements.update)
@@ -167,6 +167,6 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Placement');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_Placement");
   }
 }

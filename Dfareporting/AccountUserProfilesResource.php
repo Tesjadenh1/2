@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AccountUserProfile');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_AccountUserProfile");
   }
   /**
    * Inserts a new account user profile. (accountUserProfiles.insert)
@@ -51,7 +51,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_AccountUserProfile');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_AccountUserProfile");
   }
   /**
    * Retrieves a list of account user profiles, possibly filtered.
@@ -84,7 +84,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AccountUserProfilesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_AccountUserProfilesListResponse");
   }
   /**
    * Updates an existing account user profile. This method supports patch
@@ -100,7 +100,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_AccountUserProfile');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_AccountUserProfile");
   }
   /**
    * Updates an existing account user profile. (accountUserProfiles.update)
@@ -114,6 +114,6 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_AccountUserProfile');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_AccountUserProfile");
   }
 }

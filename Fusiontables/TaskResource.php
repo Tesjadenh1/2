@@ -51,7 +51,7 @@ class Google_Service_Fusiontables_TaskResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'taskId' => $taskId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Task');
+    return $this->call('get', array($params), "Google_Service_Fusiontables_Task");
   }
   /**
    * Retrieves a list of tasks. (task.listTask)
@@ -70,6 +70,6 @@ class Google_Service_Fusiontables_TaskResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TaskList');
+    return $this->call('list', array($params), "Google_Service_Fusiontables_TaskList");
   }
 }

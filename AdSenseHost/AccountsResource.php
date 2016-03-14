@@ -36,7 +36,7 @@ class Google_Service_AdSenseHost_AccountsResource extends Google_Service_Resourc
   {
     $params = array('accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Account');
+    return $this->call('get', array($params), "Google_Service_AdSenseHost_Account");
   }
   /**
    * List hosted accounts associated with this AdSense account by ad client id.
@@ -50,6 +50,6 @@ class Google_Service_AdSenseHost_AccountsResource extends Google_Service_Resourc
   {
     $params = array('filterAdClientId' => $filterAdClientId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Accounts');
+    return $this->call('list', array($params), "Google_Service_AdSenseHost_Accounts");
   }
 }

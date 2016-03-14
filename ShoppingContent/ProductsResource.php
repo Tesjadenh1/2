@@ -39,7 +39,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_ProductsCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_ProductsCustomBatchResponse");
   }
   /**
    * Deletes a product from your Merchant Center account. (products.delete)
@@ -68,7 +68,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Product');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_Product");
   }
   /**
    * Uploads a product to your Merchant Center account. (products.insert)
@@ -84,7 +84,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Product');
+    return $this->call('insert', array($params), "Google_Service_ShoppingContent_Product");
   }
   /**
    * Lists the products in your Merchant Center account. (products.listProducts)
@@ -104,6 +104,6 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ProductsListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_ProductsListResponse");
   }
 }

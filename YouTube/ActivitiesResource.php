@@ -47,7 +47,7 @@ class Google_Service_YouTube_ActivitiesResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Activity');
+    return $this->call('insert', array($params), "Google_Service_YouTube_Activity");
   }
   /**
    * Returns a list of channel activity events that match the request criteria.
@@ -104,6 +104,6 @@ class Google_Service_YouTube_ActivitiesResource extends Google_Service_Resource
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ActivityListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_ActivityListResponse");
   }
 }

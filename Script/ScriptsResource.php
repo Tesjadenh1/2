@@ -46,6 +46,6 @@ class Google_Service_Script_ScriptsResource extends Google_Service_Resource
   {
     $params = array('scriptId' => $scriptId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('run', array($params), 'Google_Service_Operation');
+    return $this->call('run', array($params), "Google_Service_Script_Operation");
   }
 }

@@ -39,7 +39,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId);
     $params = array_merge($params, $optParams);
-    return $this->call('activate', array($params), 'Google_Service_Subscription');
+    return $this->call('activate', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Changes the plan of a subscription (subscriptions.changePlan)
@@ -55,7 +55,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('changePlan', array($params), 'Google_Service_Subscription');
+    return $this->call('changePlan', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Changes the renewal settings of a subscription
@@ -72,7 +72,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('changeRenewalSettings', array($params), 'Google_Service_Subscription');
+    return $this->call('changeRenewalSettings', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Changes the seats configuration of a subscription (subscriptions.changeSeats)
@@ -88,7 +88,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('changeSeats', array($params), 'Google_Service_Subscription');
+    return $this->call('changeSeats', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Cancels/Downgrades a subscription. (subscriptions.delete)
@@ -119,7 +119,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Subscription');
+    return $this->call('get', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Creates/Transfers a subscription for the customer. (subscriptions.insert)
@@ -137,7 +137,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Subscription');
+    return $this->call('insert', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Lists subscriptions of a reseller, optionally filtered by a customer name
@@ -159,7 +159,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Subscriptions');
+    return $this->call('list', array($params), "Google_Service_Reseller_Subscriptions");
   }
   /**
    * Starts paid service of a trial subscription (subscriptions.startPaidService)
@@ -174,7 +174,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId);
     $params = array_merge($params, $optParams);
-    return $this->call('startPaidService', array($params), 'Google_Service_Subscription');
+    return $this->call('startPaidService', array($params), "Google_Service_Reseller_Subscription");
   }
   /**
    * Suspends an active subscription (subscriptions.suspend)
@@ -189,6 +189,6 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId);
     $params = array_merge($params, $optParams);
-    return $this->call('suspend', array($params), 'Google_Service_Subscription');
+    return $this->call('suspend', array($params), "Google_Service_Reseller_Subscription");
   }
 }

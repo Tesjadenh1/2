@@ -40,7 +40,7 @@ class Google_Service_Games_QuestsResource extends Google_Service_Resource
   {
     $params = array('questId' => $questId);
     $params = array_merge($params, $optParams);
-    return $this->call('accept', array($params), 'Google_Service_Quest');
+    return $this->call('accept', array($params), "Google_Service_Games_Quest");
   }
   /**
    * Get a list of quests for your application and the currently authenticated
@@ -63,6 +63,6 @@ class Google_Service_Games_QuestsResource extends Google_Service_Resource
   {
     $params = array('playerId' => $playerId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_QuestListResponse');
+    return $this->call('list', array($params), "Google_Service_Games_QuestListResponse");
   }
 }

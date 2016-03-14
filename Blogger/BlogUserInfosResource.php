@@ -41,6 +41,6 @@ class Google_Service_Blogger_BlogUserInfosResource extends Google_Service_Resour
   {
     $params = array('userId' => $userId, 'blogId' => $blogId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_BlogUserInfo');
+    return $this->call('get', array($params), "Google_Service_Blogger_BlogUserInfo");
   }
 }

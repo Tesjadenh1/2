@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_CountriesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId, 'dartId' => $dartId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Country');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Country");
   }
   /**
    * Retrieves a list of countries. (countries.listCountries)
@@ -50,6 +50,6 @@ class Google_Service_Dfareporting_CountriesResource extends Google_Service_Resou
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CountriesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_CountriesListResponse");
   }
 }

@@ -50,7 +50,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
   {
     $params = array('tableId' => $tableId, 'templateId' => $templateId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Template');
+    return $this->call('get', array($params), "Google_Service_Fusiontables_Template");
   }
   /**
    * Creates a new template for the table. (template.insert)
@@ -64,7 +64,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Template');
+    return $this->call('insert', array($params), "Google_Service_Fusiontables_Template");
   }
   /**
    * Retrieves a list of templates. (template.listTemplate)
@@ -83,7 +83,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TemplateList');
+    return $this->call('list', array($params), "Google_Service_Fusiontables_TemplateList");
   }
   /**
    * Updates an existing template. This method supports patch semantics.
@@ -99,7 +99,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
   {
     $params = array('tableId' => $tableId, 'templateId' => $templateId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Template');
+    return $this->call('patch', array($params), "Google_Service_Fusiontables_Template");
   }
   /**
    * Updates an existing template (template.update)
@@ -114,6 +114,6 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
   {
     $params = array('tableId' => $tableId, 'templateId' => $templateId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Template');
+    return $this->call('update', array($params), "Google_Service_Fusiontables_Template");
   }
 }

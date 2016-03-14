@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Ad');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Ad");
   }
   /**
    * Inserts a new ad. (ads.insert)
@@ -51,7 +51,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Ad');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_Ad");
   }
   /**
    * Retrieves a list of ads, possibly filtered. (ads.listAds)
@@ -110,7 +110,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AdsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_AdsListResponse");
   }
   /**
    * Updates an existing ad. This method supports patch semantics. (ads.patch)
@@ -125,7 +125,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Ad');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_Ad");
   }
   /**
    * Updates an existing ad. (ads.update)
@@ -139,6 +139,6 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Ad');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_Ad");
   }
 }

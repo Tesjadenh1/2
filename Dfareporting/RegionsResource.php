@@ -36,6 +36,6 @@ class Google_Service_Dfareporting_RegionsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_RegionsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_RegionsListResponse");
   }
 }

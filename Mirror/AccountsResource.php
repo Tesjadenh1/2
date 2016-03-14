@@ -41,6 +41,6 @@ class Google_Service_Mirror_AccountsResource extends Google_Service_Resource
   {
     $params = array('userToken' => $userToken, 'accountType' => $accountType, 'accountName' => $accountName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Account');
+    return $this->call('insert', array($params), "Google_Service_Mirror_Account");
   }
 }

@@ -46,6 +46,6 @@ class Google_Service_YouTubeReporting_ReportTypesResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListReportTypesResponse');
+    return $this->call('list', array($params), "Google_Service_YouTubeReporting_ListReportTypesResponse");
   }
 }

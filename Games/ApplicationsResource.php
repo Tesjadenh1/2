@@ -44,7 +44,7 @@ class Google_Service_Games_ApplicationsResource extends Google_Service_Resource
   {
     $params = array('applicationId' => $applicationId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Application');
+    return $this->call('get', array($params), "Google_Service_Games_Application");
   }
   /**
    * Indicate that the the currently authenticated user is playing your
@@ -72,6 +72,6 @@ class Google_Service_Games_ApplicationsResource extends Google_Service_Resource
   {
     $params = array('applicationId' => $applicationId);
     $params = array_merge($params, $optParams);
-    return $this->call('verify', array($params), 'Google_Service_ApplicationVerifyResponse');
+    return $this->call('verify', array($params), "Google_Service_Games_ApplicationVerifyResponse");
   }
 }

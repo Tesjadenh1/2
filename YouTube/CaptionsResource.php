@@ -130,7 +130,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Caption');
+    return $this->call('insert', array($params), "Google_Service_YouTube_Caption");
   }
   /**
    * Returns a list of caption tracks that are associated with a specified video.
@@ -168,7 +168,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'videoId' => $videoId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CaptionListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_CaptionListResponse");
   }
   /**
    * Updates a caption track. When updating a caption track, you can change the
@@ -210,6 +210,6 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Caption');
+    return $this->call('update', array($params), "Google_Service_YouTube_Caption");
   }
 }

@@ -40,7 +40,7 @@ class Google_Service_ShoppingContent_InventoryResource extends Google_Service_Re
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_InventoryCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_InventoryCustomBatchResponse");
   }
   /**
    * Updates price and availability of a product in your Merchant Center account.
@@ -63,6 +63,6 @@ class Google_Service_ShoppingContent_InventoryResource extends Google_Service_Re
   {
     $params = array('merchantId' => $merchantId, 'storeCode' => $storeCode, 'productId' => $productId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('set', array($params), 'Google_Service_InventorySetResponse');
+    return $this->call('set', array($params), "Google_Service_ShoppingContent_InventorySetResponse");
   }
 }

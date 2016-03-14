@@ -42,6 +42,6 @@ class Google_Service_YouTube_I18nLanguagesResource extends Google_Service_Resour
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_I18nLanguageListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_I18nLanguageListResponse");
   }
 }

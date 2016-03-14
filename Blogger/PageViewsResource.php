@@ -38,6 +38,6 @@ class Google_Service_Blogger_PageViewsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Pageviews');
+    return $this->call('get', array($params), "Google_Service_Blogger_Pageviews");
   }
 }

@@ -37,7 +37,7 @@ class Google_Service_AdSenseHost_AdclientsResource extends Google_Service_Resour
   {
     $params = array('adClientId' => $adClientId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AdClient');
+    return $this->call('get', array($params), "Google_Service_AdSenseHost_AdClient");
   }
   /**
    * List all host ad clients in this AdSense account. (adclients.listAdclients)
@@ -55,6 +55,6 @@ class Google_Service_AdSenseHost_AdclientsResource extends Google_Service_Resour
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AdClients');
+    return $this->call('list', array($params), "Google_Service_AdSenseHost_AdClients");
   }
 }

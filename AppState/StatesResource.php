@@ -41,7 +41,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
   {
     $params = array('stateKey' => $stateKey);
     $params = array_merge($params, $optParams);
-    return $this->call('clear', array($params), 'Google_Service_WriteResult');
+    return $this->call('clear', array($params), "Google_Service_AppState_WriteResult");
   }
   /**
    * Deletes a key and the data associated with it. The key is removed and no
@@ -71,7 +71,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
   {
     $params = array('stateKey' => $stateKey);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_GetResponse');
+    return $this->call('get', array($params), "Google_Service_AppState_GetResponse");
   }
   /**
    * Lists all the states keys, and optionally the state data. (states.listStates)
@@ -86,7 +86,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListResponse');
+    return $this->call('list', array($params), "Google_Service_AppState_ListResponse");
   }
   /**
    * Update the data associated with the input key if and only if the passed
@@ -108,6 +108,6 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
   {
     $params = array('stateKey' => $stateKey, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_WriteResult');
+    return $this->call('update', array($params), "Google_Service_AppState_WriteResult");
   }
 }

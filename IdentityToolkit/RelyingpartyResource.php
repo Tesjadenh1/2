@@ -37,7 +37,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('createAuthUri', array($params), 'Google_Service_CreateAuthUriResponse');
+    return $this->call('createAuthUri', array($params), "Google_Service_IdentityToolkit_CreateAuthUriResponse");
   }
   /**
    * Delete user account. (relyingparty.deleteAccount)
@@ -50,7 +50,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('deleteAccount', array($params), 'Google_Service_DeleteAccountResponse');
+    return $this->call('deleteAccount', array($params), "Google_Service_IdentityToolkit_DeleteAccountResponse");
   }
   /**
    * Batch download user accounts. (relyingparty.downloadAccount)
@@ -63,7 +63,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('downloadAccount', array($params), 'Google_Service_DownloadAccountResponse');
+    return $this->call('downloadAccount', array($params), "Google_Service_IdentityToolkit_DownloadAccountResponse");
   }
   /**
    * Returns the account info. (relyingparty.getAccountInfo)
@@ -76,7 +76,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getAccountInfo', array($params), 'Google_Service_GetAccountInfoResponse');
+    return $this->call('getAccountInfo', array($params), "Google_Service_IdentityToolkit_GetAccountInfoResponse");
   }
   /**
    * Get a code for user action confirmation.
@@ -90,7 +90,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getOobConfirmationCode', array($params), 'Google_Service_GetOobConfirmationCodeResponse');
+    return $this->call('getOobConfirmationCode', array($params), "Google_Service_IdentityToolkit_GetOobConfirmationCodeResponse");
   }
   /**
    * Get project configuration. (relyingparty.getProjectConfig)
@@ -106,7 +106,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('getProjectConfig', array($params), 'Google_Service_IdentitytoolkitRelyingpartyGetProjectConfigResponse');
+    return $this->call('getProjectConfig', array($params), "Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetProjectConfigResponse");
   }
   /**
    * Get token signing public key. (relyingparty.getPublicKeys)
@@ -118,7 +118,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('getPublicKeys', array($params), 'Google_Service_IdentitytoolkitRelyingpartyGetPublicKeysResponse');
+    return $this->call('getPublicKeys', array($params), "Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetPublicKeysResponse");
   }
   /**
    * Get recaptcha secure param. (relyingparty.getRecaptchaParam)
@@ -130,7 +130,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('getRecaptchaParam', array($params), 'Google_Service_GetRecaptchaParamResponse');
+    return $this->call('getRecaptchaParam', array($params), "Google_Service_IdentityToolkit_GetRecaptchaParamResponse");
   }
   /**
    * Reset password for a user. (relyingparty.resetPassword)
@@ -143,7 +143,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('resetPassword', array($params), 'Google_Service_ResetPasswordResponse');
+    return $this->call('resetPassword', array($params), "Google_Service_IdentityToolkit_ResetPasswordResponse");
   }
   /**
    * Set account info for a user. (relyingparty.setAccountInfo)
@@ -156,7 +156,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setAccountInfo', array($params), 'Google_Service_SetAccountInfoResponse');
+    return $this->call('setAccountInfo', array($params), "Google_Service_IdentityToolkit_SetAccountInfoResponse");
   }
   /**
    * Set project configuration. (relyingparty.setProjectConfig)
@@ -169,7 +169,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setProjectConfig', array($params), 'Google_Service_IdentitytoolkitRelyingpartySetProjectConfigResponse');
+    return $this->call('setProjectConfig', array($params), "Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfigResponse");
   }
   /**
    * Sign out user. (relyingparty.signOutUser)
@@ -182,7 +182,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('signOutUser', array($params), 'Google_Service_IdentitytoolkitRelyingpartySignOutUserResponse');
+    return $this->call('signOutUser', array($params), "Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignOutUserResponse");
   }
   /**
    * Signup new user. (relyingparty.signupNewUser)
@@ -195,7 +195,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('signupNewUser', array($params), 'Google_Service_SignupNewUserResponse');
+    return $this->call('signupNewUser', array($params), "Google_Service_IdentityToolkit_SignupNewUserResponse");
   }
   /**
    * Batch upload existing user accounts. (relyingparty.uploadAccount)
@@ -208,7 +208,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('uploadAccount', array($params), 'Google_Service_UploadAccountResponse');
+    return $this->call('uploadAccount', array($params), "Google_Service_IdentityToolkit_UploadAccountResponse");
   }
   /**
    * Verifies the assertion returned by the IdP. (relyingparty.verifyAssertion)
@@ -221,7 +221,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('verifyAssertion', array($params), 'Google_Service_VerifyAssertionResponse');
+    return $this->call('verifyAssertion', array($params), "Google_Service_IdentityToolkit_VerifyAssertionResponse");
   }
   /**
    * Verifies the developer asserted ID token. (relyingparty.verifyCustomToken)
@@ -234,7 +234,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('verifyCustomToken', array($params), 'Google_Service_VerifyCustomTokenResponse');
+    return $this->call('verifyCustomToken', array($params), "Google_Service_IdentityToolkit_VerifyCustomTokenResponse");
   }
   /**
    * Verifies the user entered password. (relyingparty.verifyPassword)
@@ -247,6 +247,6 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('verifyPassword', array($params), 'Google_Service_VerifyPasswordResponse');
+    return $this->call('verifyPassword', array($params), "Google_Service_IdentityToolkit_VerifyPasswordResponse");
   }
 }

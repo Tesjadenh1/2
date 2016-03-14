@@ -40,6 +40,6 @@ class Google_Service_Games_RevisionsResource extends Google_Service_Resource
   {
     $params = array('clientRevision' => $clientRevision);
     $params = array_merge($params, $optParams);
-    return $this->call('check', array($params), 'Google_Service_RevisionCheckResponse');
+    return $this->call('check', array($params), "Google_Service_Games_RevisionCheckResponse");
   }
 }

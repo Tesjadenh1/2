@@ -36,6 +36,6 @@ class Google_Service_Translate_DetectionsResource extends Google_Service_Resourc
   {
     $params = array('q' => $q);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_DetectionsListResponse');
+    return $this->call('list', array($params), "Google_Service_Translate_DetectionsListResponse");
   }
 }

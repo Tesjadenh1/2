@@ -36,7 +36,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_TransferJob');
+    return $this->call('create', array($params), "Google_Service_Storagetransfer_TransferJob");
   }
   /**
    * Gets a transfer job. (transferJobs.get)
@@ -52,7 +52,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
   {
     $params = array('jobName' => $jobName);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TransferJob');
+    return $this->call('get', array($params), "Google_Service_Storagetransfer_TransferJob");
   }
   /**
    * Lists transfer jobs. (transferJobs.listTransferJobs)
@@ -75,7 +75,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListTransferJobsResponse');
+    return $this->call('list', array($params), "Google_Service_Storagetransfer_ListTransferJobsResponse");
   }
   /**
    * Updates a transfer job. Updating a job's transfer spec does not affect
@@ -91,6 +91,6 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
   {
     $params = array('jobName' => $jobName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_TransferJob');
+    return $this->call('patch', array($params), "Google_Service_Storagetransfer_TransferJob");
   }
 }

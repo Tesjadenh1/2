@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_DirectorySiteContactsResource extends Google_S
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_DirectorySiteContact');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_DirectorySiteContact");
   }
   /**
    * Retrieves a list of directory site contacts, possibly filtered.
@@ -68,6 +68,6 @@ class Google_Service_Dfareporting_DirectorySiteContactsResource extends Google_S
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_DirectorySiteContactsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_DirectorySiteContactsListResponse");
   }
 }

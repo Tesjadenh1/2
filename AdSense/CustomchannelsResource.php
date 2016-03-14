@@ -38,7 +38,7 @@ class Google_Service_AdSense_CustomchannelsResource extends Google_Service_Resou
   {
     $params = array('adClientId' => $adClientId, 'customChannelId' => $customChannelId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_CustomChannel');
+    return $this->call('get', array($params), "Google_Service_AdSense_CustomChannel");
   }
   /**
    * List all custom channels in the specified ad client for this AdSense account.
@@ -58,6 +58,6 @@ class Google_Service_AdSense_CustomchannelsResource extends Google_Service_Resou
   {
     $params = array('adClientId' => $adClientId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CustomChannels');
+    return $this->call('list', array($params), "Google_Service_AdSense_CustomChannels");
   }
 }

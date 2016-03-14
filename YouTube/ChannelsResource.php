@@ -86,7 +86,7 @@ class Google_Service_YouTube_ChannelsResource extends Google_Service_Resource
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ChannelListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_ChannelListResponse");
   }
   /**
    * Updates a channel's metadata. Note that this method currently only supports
@@ -121,6 +121,6 @@ class Google_Service_YouTube_ChannelsResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Channel');
+    return $this->call('update', array($params), "Google_Service_YouTube_Channel");
   }
 }

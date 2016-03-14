@@ -39,6 +39,6 @@ class Google_Service_AndroidEnterprise_GrouplicenseusersResource extends Google_
   {
     $params = array('enterpriseId' => $enterpriseId, 'groupLicenseId' => $groupLicenseId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_GroupLicenseUsersListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_GroupLicenseUsersListResponse");
   }
 }

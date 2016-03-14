@@ -213,7 +213,7 @@ class Google_Service_Freebase extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->base_methods->call('reconcile', array($params), 'Google_Service_ReconcileGet');
+    return $this->base_methods->call('reconcile', array($params), "Google_Service_Freebase_ReconcileGet");
   }
   /**
    * Search Freebase open data. (search)

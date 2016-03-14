@@ -63,7 +63,7 @@ class Google_Service_Webmasters_SitesResource extends Google_Service_Resource
   {
     $params = array('siteUrl' => $siteUrl);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_WmxSite');
+    return $this->call('get', array($params), "Google_Service_Webmasters_WmxSite");
   }
   /**
    * Lists the user's Search Console sites. (sites.listSites)
@@ -75,6 +75,6 @@ class Google_Service_Webmasters_SitesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SitesListResponse');
+    return $this->call('list', array($params), "Google_Service_Webmasters_SitesListResponse");
   }
 }

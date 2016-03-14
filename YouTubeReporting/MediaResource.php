@@ -38,6 +38,6 @@ class Google_Service_YouTubeReporting_MediaResource extends Google_Service_Resou
   {
     $params = array('resourceName' => $resourceName);
     $params = array_merge($params, $optParams);
-    return $this->call('download', array($params), 'Google_Service_Media');
+    return $this->call('download', array($params), "Google_Service_YouTubeReporting_Media");
   }
 }

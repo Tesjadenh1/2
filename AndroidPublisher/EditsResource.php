@@ -38,7 +38,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
   {
     $params = array('packageName' => $packageName, 'editId' => $editId);
     $params = array_merge($params, $optParams);
-    return $this->call('commit', array($params), 'Google_Service_AppEdit');
+    return $this->call('commit', array($params), "Google_Service_AndroidPublisher_AppEdit");
   }
   /**
    * Deletes an edit for an app. Creating a new edit will automatically delete any
@@ -70,7 +70,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
   {
     $params = array('packageName' => $packageName, 'editId' => $editId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AppEdit');
+    return $this->call('get', array($params), "Google_Service_AndroidPublisher_AppEdit");
   }
   /**
    * Creates a new edit for an app, populated with the app's current state.
@@ -86,7 +86,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
   {
     $params = array('packageName' => $packageName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_AppEdit');
+    return $this->call('insert', array($params), "Google_Service_AndroidPublisher_AppEdit");
   }
   /**
    * Checks that the edit can be successfully committed. The edit's changes are
@@ -102,6 +102,6 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
   {
     $params = array('packageName' => $packageName, 'editId' => $editId);
     $params = array_merge($params, $optParams);
-    return $this->call('validate', array($params), 'Google_Service_AppEdit');
+    return $this->call('validate', array($params), "Google_Service_AndroidPublisher_AppEdit");
   }
 }

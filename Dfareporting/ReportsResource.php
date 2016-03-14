@@ -50,7 +50,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Report');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Report");
   }
   /**
    * Creates a report. (reports.insert)
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Report');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_Report");
   }
   /**
    * Retrieves list of reports. (reports.listReports)
@@ -85,7 +85,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ReportList');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_ReportList");
   }
   /**
    * Updates a report. This method supports patch semantics. (reports.patch)
@@ -100,7 +100,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Report');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_Report");
   }
   /**
    * Runs a report. (reports.run)
@@ -117,7 +117,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId);
     $params = array_merge($params, $optParams);
-    return $this->call('run', array($params), 'Google_Service_File');
+    return $this->call('run', array($params), "Google_Service_Dfareporting_File");
   }
   /**
    * Updates a report. (reports.update)
@@ -132,6 +132,6 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Report');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_Report");
   }
 }

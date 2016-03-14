@@ -46,7 +46,7 @@ class Google_Service_Webmasters_UrlcrawlerrorssamplesResource extends Google_Ser
   {
     $params = array('siteUrl' => $siteUrl, 'url' => $url, 'category' => $category, 'platform' => $platform);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UrlCrawlErrorsSample');
+    return $this->call('get', array($params), "Google_Service_Webmasters_UrlCrawlErrorsSample");
   }
   /**
    * Lists a site's sample URLs for the specified crawl error category and
@@ -65,7 +65,7 @@ class Google_Service_Webmasters_UrlcrawlerrorssamplesResource extends Google_Ser
   {
     $params = array('siteUrl' => $siteUrl, 'category' => $category, 'platform' => $platform);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UrlCrawlErrorsSamplesListResponse');
+    return $this->call('list', array($params), "Google_Service_Webmasters_UrlCrawlErrorsSamplesListResponse");
   }
   /**
    * Marks the provided site's sample URL as fixed, and removes it from the

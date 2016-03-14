@@ -50,7 +50,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Collection');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Collection");
   }
   /**
    * Creates a new collection. (collections.insert)
@@ -64,7 +64,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Collection');
+    return $this->call('insert', array($params), "Google_Service_AndroidEnterprise_Collection");
   }
   /**
    * Retrieves the IDs of all the collections for an enterprise.
@@ -78,7 +78,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CollectionsListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_CollectionsListResponse");
   }
   /**
    * Updates a collection. This method supports patch semantics.
@@ -94,7 +94,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Collection');
+    return $this->call('patch', array($params), "Google_Service_AndroidEnterprise_Collection");
   }
   /**
    * Updates a collection. (collections.update)
@@ -109,6 +109,6 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Collection');
+    return $this->call('update', array($params), "Google_Service_AndroidEnterprise_Collection");
   }
 }

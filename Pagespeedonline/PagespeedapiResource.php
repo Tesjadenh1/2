@@ -47,6 +47,6 @@ class Google_Service_Pagespeedonline_PagespeedapiResource extends Google_Service
   {
     $params = array('url' => $url);
     $params = array_merge($params, $optParams);
-    return $this->call('runpagespeed', array($params), 'Google_Service_Result');
+    return $this->call('runpagespeed', array($params), "Google_Service_Pagespeedonline_Result");
   }
 }

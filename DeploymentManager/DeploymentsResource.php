@@ -39,7 +39,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('cancelPreview', array($params), 'Google_Service_Operation');
+    return $this->call('cancelPreview', array($params), "Google_Service_DeploymentManager_Operation");
   }
   /**
    * Deletes a deployment and all of the resources in the deployment.
@@ -54,7 +54,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'deployment' => $deployment);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_DeploymentManager_Operation");
   }
   /**
    * Gets information about a specific deployment. (deployments.get)
@@ -68,7 +68,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'deployment' => $deployment);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Deployment');
+    return $this->call('get', array($params), "Google_Service_DeploymentManager_Deployment");
   }
   /**
    * Creates a deployment and all of the resources described by the deployment
@@ -92,7 +92,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_DeploymentManager_Operation");
   }
   /**
    * Lists all deployments for a given project. (deployments.listDeployments)
@@ -139,7 +139,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_DeploymentsListResponse');
+    return $this->call('list', array($params), "Google_Service_DeploymentManager_DeploymentsListResponse");
   }
   /**
    * Updates a deployment and all of the resources described by the deployment
@@ -169,7 +169,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Operation');
+    return $this->call('patch', array($params), "Google_Service_DeploymentManager_Operation");
   }
   /**
    * Stops an ongoing operation. This does not roll back any work that has already
@@ -186,7 +186,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('stop', array($params), 'Google_Service_Operation');
+    return $this->call('stop', array($params), "Google_Service_DeploymentManager_Operation");
   }
   /**
    * Updates a deployment and all of the resources described by the deployment
@@ -216,6 +216,6 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Operation');
+    return $this->call('update', array($params), "Google_Service_DeploymentManager_Operation");
   }
 }

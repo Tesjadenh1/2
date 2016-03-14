@@ -40,7 +40,7 @@ class Google_Service_Games_LeaderboardsResource extends Google_Service_Resource
   {
     $params = array('leaderboardId' => $leaderboardId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Leaderboard');
+    return $this->call('get', array($params), "Google_Service_Games_Leaderboard");
   }
   /**
    * Lists all the leaderboard metadata for your application.
@@ -60,6 +60,6 @@ class Google_Service_Games_LeaderboardsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_LeaderboardListResponse');
+    return $this->call('list', array($params), "Google_Service_Games_LeaderboardListResponse");
   }
 }

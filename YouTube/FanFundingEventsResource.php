@@ -55,6 +55,6 @@ class Google_Service_YouTube_FanFundingEventsResource extends Google_Service_Res
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_FanFundingEventListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_FanFundingEventListResponse");
   }
 }

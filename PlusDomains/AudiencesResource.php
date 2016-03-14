@@ -45,6 +45,6 @@ class Google_Service_PlusDomains_AudiencesResource extends Google_Service_Resour
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AudiencesFeed');
+    return $this->call('list', array($params), "Google_Service_PlusDomains_AudiencesFeed");
   }
 }

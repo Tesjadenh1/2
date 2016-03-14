@@ -38,7 +38,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('acknowledge', array($params), 'Google_Service_OrdersAcknowledgeResponse');
+    return $this->call('acknowledge', array($params), "Google_Service_ShoppingContent_OrdersAcknowledgeResponse");
   }
   /**
    * Sandbox only. Moves a test order from state "inProgress" to state
@@ -53,7 +53,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId);
     $params = array_merge($params, $optParams);
-    return $this->call('advancetestorder', array($params), 'Google_Service_OrdersAdvanceTestOrderResponse');
+    return $this->call('advancetestorder', array($params), "Google_Service_ShoppingContent_OrdersAdvanceTestOrderResponse");
   }
   /**
    * Cancels all line items in an order. (orders.cancel)
@@ -68,7 +68,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('cancel', array($params), 'Google_Service_OrdersCancelResponse');
+    return $this->call('cancel', array($params), "Google_Service_ShoppingContent_OrdersCancelResponse");
   }
   /**
    * Cancels a line item. (orders.cancellineitem)
@@ -83,7 +83,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('cancellineitem', array($params), 'Google_Service_OrdersCancelLineItemResponse');
+    return $this->call('cancellineitem', array($params), "Google_Service_ShoppingContent_OrdersCancelLineItemResponse");
   }
   /**
    * Sandbox only. Creates a test order. (orders.createtestorder)
@@ -97,7 +97,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('createtestorder', array($params), 'Google_Service_OrdersCreateTestOrderResponse');
+    return $this->call('createtestorder', array($params), "Google_Service_ShoppingContent_OrdersCreateTestOrderResponse");
   }
   /**
    * Retrieves or modifies multiple orders in a single request.
@@ -111,7 +111,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_OrdersCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_OrdersCustomBatchResponse");
   }
   /**
    * Retrieves an order from your Merchant Center account. (orders.get)
@@ -125,7 +125,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Order');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_Order");
   }
   /**
    * Retrieves an order using merchant order id. (orders.getbymerchantorderid)
@@ -139,7 +139,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'merchantOrderId' => $merchantOrderId);
     $params = array_merge($params, $optParams);
-    return $this->call('getbymerchantorderid', array($params), 'Google_Service_OrdersGetByMerchantOrderIdResponse');
+    return $this->call('getbymerchantorderid', array($params), "Google_Service_ShoppingContent_OrdersGetByMerchantOrderIdResponse");
   }
   /**
    * Sandbox only. Retrieves an order template that can be used to quickly create
@@ -154,7 +154,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'templateName' => $templateName);
     $params = array_merge($params, $optParams);
-    return $this->call('gettestordertemplate', array($params), 'Google_Service_OrdersGetTestOrderTemplateResponse');
+    return $this->call('gettestordertemplate', array($params), "Google_Service_ShoppingContent_OrdersGetTestOrderTemplateResponse");
   }
   /**
    * Lists the orders in your Merchant Center account. (orders.listOrders)
@@ -193,7 +193,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_OrdersListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_OrdersListResponse");
   }
   /**
    * Refund a portion of the order, up to the full amount paid. (orders.refund)
@@ -208,7 +208,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('refund', array($params), 'Google_Service_OrdersRefundResponse');
+    return $this->call('refund', array($params), "Google_Service_ShoppingContent_OrdersRefundResponse");
   }
   /**
    * Returns a line item. (orders.returnlineitem)
@@ -223,7 +223,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('returnlineitem', array($params), 'Google_Service_OrdersReturnLineItemResponse');
+    return $this->call('returnlineitem', array($params), "Google_Service_ShoppingContent_OrdersReturnLineItemResponse");
   }
   /**
    * Marks line item(s) as shipped. (orders.shiplineitems)
@@ -238,7 +238,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('shiplineitems', array($params), 'Google_Service_OrdersShipLineItemsResponse');
+    return $this->call('shiplineitems', array($params), "Google_Service_ShoppingContent_OrdersShipLineItemsResponse");
   }
   /**
    * Updates the merchant order ID for a given order.
@@ -254,7 +254,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('updatemerchantorderid', array($params), 'Google_Service_OrdersUpdateMerchantOrderIdResponse');
+    return $this->call('updatemerchantorderid', array($params), "Google_Service_ShoppingContent_OrdersUpdateMerchantOrderIdResponse");
   }
   /**
    * Updates a shipment's status, carrier, and/or tracking ID.
@@ -270,6 +270,6 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('updateshipment', array($params), 'Google_Service_OrdersUpdateShipmentResponse');
+    return $this->call('updateshipment', array($params), "Google_Service_ShoppingContent_OrdersUpdateShipmentResponse");
   }
 }

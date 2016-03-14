@@ -42,7 +42,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
   {
     $params = array('achievementId' => $achievementId, 'stepsToIncrement' => $stepsToIncrement);
     $params = array_merge($params, $optParams);
-    return $this->call('increment', array($params), 'Google_Service_AchievementIncrementResponse');
+    return $this->call('increment', array($params), "Google_Service_Games_AchievementIncrementResponse");
   }
   /**
    * Lists the progress for all your application's achievements for the currently
@@ -67,7 +67,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
   {
     $params = array('playerId' => $playerId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PlayerAchievementListResponse');
+    return $this->call('list', array($params), "Google_Service_Games_PlayerAchievementListResponse");
   }
   /**
    * Sets the state of the achievement with the given ID to REVEALED for the
@@ -81,7 +81,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
   {
     $params = array('achievementId' => $achievementId);
     $params = array_merge($params, $optParams);
-    return $this->call('reveal', array($params), 'Google_Service_AchievementRevealResponse');
+    return $this->call('reveal', array($params), "Google_Service_Games_AchievementRevealResponse");
   }
   /**
    * Sets the steps for the currently authenticated player towards unlocking an
@@ -98,7 +98,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
   {
     $params = array('achievementId' => $achievementId, 'steps' => $steps);
     $params = array_merge($params, $optParams);
-    return $this->call('setStepsAtLeast', array($params), 'Google_Service_AchievementSetStepsAtLeastResponse');
+    return $this->call('setStepsAtLeast', array($params), "Google_Service_Games_AchievementSetStepsAtLeastResponse");
   }
   /**
    * Unlocks this achievement for the currently authenticated player.
@@ -112,7 +112,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
   {
     $params = array('achievementId' => $achievementId);
     $params = array_merge($params, $optParams);
-    return $this->call('unlock', array($params), 'Google_Service_AchievementUnlockResponse');
+    return $this->call('unlock', array($params), "Google_Service_Games_AchievementUnlockResponse");
   }
   /**
    * Updates multiple achievements for the currently authenticated player.
@@ -126,6 +126,6 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('updateMultiple', array($params), 'Google_Service_AchievementUpdateMultipleResponse');
+    return $this->call('updateMultiple', array($params), "Google_Service_Games_AchievementUpdateMultipleResponse");
   }
 }

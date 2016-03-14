@@ -55,7 +55,7 @@ class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Servi
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'entitlementId' => $entitlementId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Entitlement');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Entitlement");
   }
   /**
    * List of all entitlements for the specified user. Only the ID is set.
@@ -70,7 +70,7 @@ class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Servi
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_EntitlementsListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_EntitlementsListResponse");
   }
   /**
    * Adds or updates an entitlement to an app for a user. This method supports
@@ -93,7 +93,7 @@ class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Servi
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'entitlementId' => $entitlementId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Entitlement');
+    return $this->call('patch', array($params), "Google_Service_AndroidEnterprise_Entitlement");
   }
   /**
    * Adds or updates an entitlement to an app for a user. (entitlements.update)
@@ -115,6 +115,6 @@ class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Servi
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'entitlementId' => $entitlementId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Entitlement');
+    return $this->call('update', array($params), "Google_Service_AndroidEnterprise_Entitlement");
   }
 }

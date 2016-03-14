@@ -41,7 +41,7 @@ class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Blog');
+    return $this->call('get', array($params), "Google_Service_Blogger_Blog");
   }
   /**
    * Retrieve a Blog by URL. (blogs.getByUrl)
@@ -57,7 +57,7 @@ class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
   {
     $params = array('url' => $url);
     $params = array_merge($params, $optParams);
-    return $this->call('getByUrl', array($params), 'Google_Service_Blog');
+    return $this->call('getByUrl', array($params), "Google_Service_Blogger_Blog");
   }
   /**
    * Retrieves a list of blogs, possibly filtered. (blogs.listByUser)
@@ -81,6 +81,6 @@ class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('listByUser', array($params), 'Google_Service_BlogList');
+    return $this->call('listByUser', array($params), "Google_Service_Blogger_BlogList");
   }
 }

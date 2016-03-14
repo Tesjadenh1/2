@@ -69,7 +69,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Event');
+    return $this->call('get', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Imports an event. This operation is used to add a private copy of an existing
@@ -89,7 +89,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('import', array($params), 'Google_Service_Event');
+    return $this->call('import', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Creates an event. (events.insert)
@@ -113,7 +113,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Event');
+    return $this->call('insert', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Returns instances of the specified recurring event. (events.instances)
@@ -158,7 +158,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId);
     $params = array_merge($params, $optParams);
-    return $this->call('instances', array($params), 'Google_Service_Events');
+    return $this->call('instances', array($params), "Google_Service_Calendar_Events");
   }
   /**
    * Returns events on the specified calendar. (events.listEvents)
@@ -244,7 +244,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Events');
+    return $this->call('list', array($params), "Google_Service_Calendar_Events");
   }
   /**
    * Moves an event to another calendar, i.e. changes an event's organizer.
@@ -265,7 +265,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId, 'destination' => $destination);
     $params = array_merge($params, $optParams);
-    return $this->call('move', array($params), 'Google_Service_Event');
+    return $this->call('move', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Updates an event. This method supports patch semantics. (events.patch)
@@ -297,7 +297,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Event');
+    return $this->call('patch', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Creates an event based on a simple text string. (events.quickAdd)
@@ -316,7 +316,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'text' => $text);
     $params = array_merge($params, $optParams);
-    return $this->call('quickAdd', array($params), 'Google_Service_Event');
+    return $this->call('quickAdd', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Updates an event. (events.update)
@@ -348,7 +348,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Event');
+    return $this->call('update', array($params), "Google_Service_Calendar_Event");
   }
   /**
    * Watch for changes to Events resources. (events.watch)
@@ -435,6 +435,6 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Calendar_Channel");
   }
 }

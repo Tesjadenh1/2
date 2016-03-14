@@ -38,7 +38,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
   {
     $params = array('adClientId' => $adClientId, 'customChannelId' => $customChannelId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_CustomChannel');
+    return $this->call('delete', array($params), "Google_Service_AdSenseHost_CustomChannel");
   }
   /**
    * Get a specific custom channel from the host AdSense account.
@@ -53,7 +53,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
   {
     $params = array('adClientId' => $adClientId, 'customChannelId' => $customChannelId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_CustomChannel');
+    return $this->call('get', array($params), "Google_Service_AdSenseHost_CustomChannel");
   }
   /**
    * Add a new custom channel to the host AdSense account. (customchannels.insert)
@@ -68,7 +68,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
   {
     $params = array('adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_CustomChannel');
+    return $this->call('insert', array($params), "Google_Service_AdSenseHost_CustomChannel");
   }
   /**
    * List all host custom channels in this AdSense account.
@@ -88,7 +88,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
   {
     $params = array('adClientId' => $adClientId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CustomChannels');
+    return $this->call('list', array($params), "Google_Service_AdSenseHost_CustomChannels");
   }
   /**
    * Update a custom channel in the host AdSense account. This method supports
@@ -105,7 +105,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
   {
     $params = array('adClientId' => $adClientId, 'customChannelId' => $customChannelId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_CustomChannel');
+    return $this->call('patch', array($params), "Google_Service_AdSenseHost_CustomChannel");
   }
   /**
    * Update a custom channel in the host AdSense account. (customchannels.update)
@@ -120,6 +120,6 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
   {
     $params = array('adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_CustomChannel');
+    return $this->call('update', array($params), "Google_Service_AdSenseHost_CustomChannel");
   }
 }

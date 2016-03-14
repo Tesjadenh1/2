@@ -38,7 +38,7 @@ class Google_Service_Compute_ZonesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Zone');
+    return $this->call('get', array($params), "Google_Service_Compute_Zone");
   }
   /**
    * Retrieves the list of Zone resources available to the specified project.
@@ -86,6 +86,6 @@ class Google_Service_Compute_ZonesResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ZoneList');
+    return $this->call('list', array($params), "Google_Service_Compute_ZoneList");
   }
 }

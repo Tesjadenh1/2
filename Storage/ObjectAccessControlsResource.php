@@ -66,7 +66,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'entity' => $entity);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ObjectAccessControl');
+    return $this->call('get', array($params), "Google_Service_Storage_ObjectAccessControl");
   }
   /**
    * Creates a new ACL entry on the specified object.
@@ -86,7 +86,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_ObjectAccessControl');
+    return $this->call('insert', array($params), "Google_Service_Storage_ObjectAccessControl");
   }
   /**
    * Retrieves ACL entries on the specified object.
@@ -105,7 +105,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'object' => $object);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ObjectAccessControls');
+    return $this->call('list', array($params), "Google_Service_Storage_ObjectAccessControls");
   }
   /**
    * Updates an ACL entry on the specified object. This method supports patch
@@ -128,7 +128,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'entity' => $entity, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_ObjectAccessControl');
+    return $this->call('patch', array($params), "Google_Service_Storage_ObjectAccessControl");
   }
   /**
    * Updates an ACL entry on the specified object. (objectAccessControls.update)
@@ -150,6 +150,6 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'entity' => $entity, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_ObjectAccessControl');
+    return $this->call('update', array($params), "Google_Service_Storage_ObjectAccessControl");
   }
 }

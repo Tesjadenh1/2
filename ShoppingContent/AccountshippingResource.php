@@ -39,7 +39,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_AccountshippingCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_AccountshippingCustomBatchResponse");
   }
   /**
    * Retrieves the shipping settings of the account. (accountshipping.get)
@@ -54,7 +54,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AccountShipping');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_AccountShipping");
   }
   /**
    * Lists the shipping settings of the sub-accounts in your Merchant Center
@@ -72,7 +72,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AccountshippingListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_AccountshippingListResponse");
   }
   /**
    * Updates the shipping settings of the account. This method supports patch
@@ -91,7 +91,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_AccountShipping');
+    return $this->call('patch', array($params), "Google_Service_ShoppingContent_AccountShipping");
   }
   /**
    * Updates the shipping settings of the account. (accountshipping.update)
@@ -109,6 +109,6 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_AccountShipping');
+    return $this->call('update', array($params), "Google_Service_ShoppingContent_AccountShipping");
   }
 }

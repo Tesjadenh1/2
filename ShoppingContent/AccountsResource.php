@@ -35,7 +35,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('authinfo', array($params), 'Google_Service_AccountsAuthInfoResponse');
+    return $this->call('authinfo', array($params), "Google_Service_ShoppingContent_AccountsAuthInfoResponse");
   }
   /**
    * Retrieves, inserts, updates, and deletes multiple Merchant Center
@@ -51,7 +51,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_AccountsCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_AccountsCustomBatchResponse");
   }
   /**
    * Deletes a Merchant Center sub-account. (accounts.delete)
@@ -80,7 +80,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Account');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_Account");
   }
   /**
    * Creates a Merchant Center sub-account. (accounts.insert)
@@ -96,7 +96,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Account');
+    return $this->call('insert', array($params), "Google_Service_ShoppingContent_Account");
   }
   /**
    * Lists the sub-accounts in your Merchant Center account.
@@ -114,7 +114,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AccountsListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_AccountsListResponse");
   }
   /**
    * Updates a Merchant Center account. This method supports patch semantics.
@@ -132,7 +132,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Account');
+    return $this->call('patch', array($params), "Google_Service_ShoppingContent_Account");
   }
   /**
    * Updates a Merchant Center account. (accounts.update)
@@ -149,6 +149,6 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Account');
+    return $this->call('update', array($params), "Google_Service_ShoppingContent_Account");
   }
 }

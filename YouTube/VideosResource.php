@@ -79,7 +79,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('getRating', array($params), 'Google_Service_VideoGetRatingResponse');
+    return $this->call('getRating', array($params), "Google_Service_YouTube_VideoGetRatingResponse");
   }
   /**
    * Uploads a video to YouTube and optionally sets the video's metadata.
@@ -145,7 +145,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Video');
+    return $this->call('insert', array($params), "Google_Service_YouTube_Video");
   }
   /**
    * Returns a list of videos that match the API request parameters.
@@ -219,7 +219,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_VideoListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_VideoListResponse");
   }
   /**
    * Add a like or dislike rating to a video or remove a rating from a video.
@@ -304,6 +304,6 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Video');
+    return $this->call('update', array($params), "Google_Service_YouTube_Video");
   }
 }

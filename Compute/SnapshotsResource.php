@@ -42,7 +42,7 @@ class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'snapshot' => $snapshot);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified Snapshot resource. Get a list of available snapshots by
@@ -57,7 +57,7 @@ class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'snapshot' => $snapshot);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Snapshot');
+    return $this->call('get', array($params), "Google_Service_Compute_Snapshot");
   }
   /**
    * Retrieves the list of Snapshot resources contained within the specified
@@ -105,6 +105,6 @@ class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SnapshotList');
+    return $this->call('list', array($params), "Google_Service_Compute_SnapshotList");
   }
 }

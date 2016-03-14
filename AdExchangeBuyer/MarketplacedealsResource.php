@@ -37,7 +37,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_DeleteOrderDealsResponse');
+    return $this->call('delete', array($params), "Google_Service_AdExchangeBuyer_DeleteOrderDealsResponse");
   }
   /**
    * Add new deals for the specified proposal (marketplacedeals.insert)
@@ -51,7 +51,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_AddOrderDealsResponse');
+    return $this->call('insert', array($params), "Google_Service_AdExchangeBuyer_AddOrderDealsResponse");
   }
   /**
    * List all the deals for a given proposal
@@ -65,7 +65,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
   {
     $params = array('proposalId' => $proposalId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_GetOrderDealsResponse');
+    return $this->call('list', array($params), "Google_Service_AdExchangeBuyer_GetOrderDealsResponse");
   }
   /**
    * Replaces all the deals in the proposal with the passed in deals
@@ -80,6 +80,6 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_EditAllOrderDealsResponse');
+    return $this->call('update', array($params), "Google_Service_AdExchangeBuyer_EditAllOrderDealsResponse");
   }
 }

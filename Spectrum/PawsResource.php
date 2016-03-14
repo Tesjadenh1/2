@@ -38,7 +38,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getSpectrum', array($params), 'Google_Service_PawsGetSpectrumResponse');
+    return $this->call('getSpectrum', array($params), "Google_Service_Spectrum_PawsGetSpectrumResponse");
   }
   /**
    * The Google Spectrum Database does not support batch requests, so this method
@@ -52,7 +52,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getSpectrumBatch', array($params), 'Google_Service_PawsGetSpectrumBatchResponse');
+    return $this->call('getSpectrumBatch', array($params), "Google_Service_Spectrum_PawsGetSpectrumBatchResponse");
   }
   /**
    * Initializes the connection between a white space device and the database.
@@ -66,7 +66,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('init', array($params), 'Google_Service_PawsInitResponse');
+    return $this->call('init', array($params), "Google_Service_Spectrum_PawsInitResponse");
   }
   /**
    * Notifies the database that the device has selected certain frequency ranges
@@ -83,7 +83,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('notifySpectrumUse', array($params), 'Google_Service_PawsNotifySpectrumUseResponse');
+    return $this->call('notifySpectrumUse', array($params), "Google_Service_Spectrum_PawsNotifySpectrumUseResponse");
   }
   /**
    * The Google Spectrum Database implements registration in the getSpectrum
@@ -97,7 +97,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('register', array($params), 'Google_Service_PawsRegisterResponse');
+    return $this->call('register', array($params), "Google_Service_Spectrum_PawsRegisterResponse");
   }
   /**
    * Validates a device for white space use in accordance with regulatory rules.
@@ -112,6 +112,6 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('verifyDevice', array($params), 'Google_Service_PawsVerifyDeviceResponse');
+    return $this->call('verifyDevice', array($params), "Google_Service_Spectrum_PawsVerifyDeviceResponse");
   }
 }

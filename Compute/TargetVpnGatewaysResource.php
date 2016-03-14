@@ -71,7 +71,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_TargetVpnGatewayAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_TargetVpnGatewayAggregatedList");
   }
   /**
    * Deletes the specified target VPN gateway. (targetVpnGateways.delete)
@@ -86,7 +86,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'region' => $region, 'targetVpnGateway' => $targetVpnGateway);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified target VPN gateway. Get a list of available target VPN
@@ -102,7 +102,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'region' => $region, 'targetVpnGateway' => $targetVpnGateway);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TargetVpnGateway');
+    return $this->call('get', array($params), "Google_Service_Compute_TargetVpnGateway");
   }
   /**
    * Creates a target VPN gateway in the specified project and region using the
@@ -118,7 +118,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of target VPN gateways available to the specified project
@@ -167,6 +167,6 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'region' => $region);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TargetVpnGatewayList');
+    return $this->call('list', array($params), "Google_Service_Compute_TargetVpnGatewayList");
   }
 }

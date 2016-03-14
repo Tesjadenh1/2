@@ -70,7 +70,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_VpnTunnelAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_VpnTunnelAggregatedList");
   }
   /**
    * Deletes the specified VpnTunnel resource. (vpnTunnels.delete)
@@ -85,7 +85,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'vpnTunnel' => $vpnTunnel);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified VpnTunnel resource. Get a list of available VPN tunnels
@@ -101,7 +101,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'vpnTunnel' => $vpnTunnel);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_VpnTunnel');
+    return $this->call('get', array($params), "Google_Service_Compute_VpnTunnel");
   }
   /**
    * Creates a VpnTunnel resource in the specified project and region using the
@@ -117,7 +117,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of VpnTunnel resources contained in the specified project
@@ -166,6 +166,6 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_VpnTunnelList');
+    return $this->call('list', array($params), "Google_Service_Compute_VpnTunnelList");
   }
 }

@@ -37,6 +37,6 @@ class Google_Service_AdExchangeBuyer_PubprofilesResource extends Google_Service_
   {
     $params = array('accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_GetPublisherProfilesByAccountIdResponse');
+    return $this->call('list', array($params), "Google_Service_AdExchangeBuyer_GetPublisherProfilesByAccountIdResponse");
   }
 }

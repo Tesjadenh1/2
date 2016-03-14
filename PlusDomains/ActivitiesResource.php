@@ -36,7 +36,7 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
   {
     $params = array('activityId' => $activityId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Activity');
+    return $this->call('get', array($params), "Google_Service_PlusDomains_Activity");
   }
   /**
    * Create a new activity for the authenticated user. (activities.insert)
@@ -55,7 +55,7 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Activity');
+    return $this->call('insert', array($params), "Google_Service_PlusDomains_Activity");
   }
   /**
    * List all of the activities in the specified collection for a particular user.
@@ -78,6 +78,6 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
   {
     $params = array('userId' => $userId, 'collection' => $collection);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ActivityFeed');
+    return $this->call('list', array($params), "Google_Service_PlusDomains_ActivityFeed");
   }
 }

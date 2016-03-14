@@ -36,7 +36,7 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_AccountstatusesCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_AccountstatusesCustomBatchResponse");
   }
   /**
    * Retrieves the status of a Merchant Center account. (accountstatuses.get)
@@ -50,7 +50,7 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AccountStatus');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_AccountStatus");
   }
   /**
    * Lists the statuses of the sub-accounts in your Merchant Center account.
@@ -68,6 +68,6 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AccountstatusesListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_AccountstatusesListResponse");
   }
 }

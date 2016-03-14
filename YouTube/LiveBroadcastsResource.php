@@ -80,7 +80,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
   {
     $params = array('id' => $id, 'part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('bind', array($params), 'Google_Service_LiveBroadcast');
+    return $this->call('bind', array($params), "Google_Service_YouTube_LiveBroadcast");
   }
   /**
    * Controls the settings for a slate that can be displayed in the broadcast
@@ -149,7 +149,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
   {
     $params = array('id' => $id, 'part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('control', array($params), 'Google_Service_LiveBroadcast');
+    return $this->call('control', array($params), "Google_Service_YouTube_LiveBroadcast");
   }
   /**
    * Deletes a broadcast. (liveBroadcasts.delete)
@@ -245,7 +245,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_LiveBroadcast');
+    return $this->call('insert', array($params), "Google_Service_YouTube_LiveBroadcast");
   }
   /**
    * Returns a list of YouTube broadcasts that match the API request parameters.
@@ -311,7 +311,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_LiveBroadcastListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_LiveBroadcastListResponse");
   }
   /**
    * Changes the status of a YouTube live broadcast and initiates any processes
@@ -370,7 +370,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
   {
     $params = array('broadcastStatus' => $broadcastStatus, 'id' => $id, 'part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('transition', array($params), 'Google_Service_LiveBroadcast');
+    return $this->call('transition', array($params), "Google_Service_YouTube_LiveBroadcast");
   }
   /**
    * Updates a broadcast. For example, you could modify the broadcast settings
@@ -433,6 +433,6 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_LiveBroadcast');
+    return $this->call('update', array($params), "Google_Service_YouTube_LiveBroadcast");
   }
 }

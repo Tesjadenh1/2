@@ -42,7 +42,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
   {
     $params = array('circleId' => $circleId);
     $params = array_merge($params, $optParams);
-    return $this->call('addPeople', array($params), 'Google_Service_Circle');
+    return $this->call('addPeople', array($params), "Google_Service_PlusDomains_Circle");
   }
   /**
    * Get a circle. (circles.get)
@@ -55,7 +55,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
   {
     $params = array('circleId' => $circleId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Circle');
+    return $this->call('get', array($params), "Google_Service_PlusDomains_Circle");
   }
   /**
    * Create a new circle for the authenticated user. (circles.insert)
@@ -70,7 +70,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Circle');
+    return $this->call('insert', array($params), "Google_Service_PlusDomains_Circle");
   }
   /**
    * List all of the circles for a user. (circles.listCircles)
@@ -91,7 +91,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CircleFeed');
+    return $this->call('list', array($params), "Google_Service_PlusDomains_CircleFeed");
   }
   /**
    * Update a circle's description. This method supports patch semantics.
@@ -106,7 +106,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
   {
     $params = array('circleId' => $circleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Circle');
+    return $this->call('patch', array($params), "Google_Service_PlusDomains_Circle");
   }
   /**
    * Delete a circle. (circles.remove)
@@ -149,6 +149,6 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
   {
     $params = array('circleId' => $circleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Circle');
+    return $this->call('update', array($params), "Google_Service_PlusDomains_Circle");
   }
 }

@@ -44,7 +44,7 @@ class Google_Service_Fusiontables_QueryResource extends Google_Service_Resource
   {
     $params = array('sql' => $sql);
     $params = array_merge($params, $optParams);
-    return $this->call('sql', array($params), 'Google_Service_Sqlresponse');
+    return $this->call('sql', array($params), "Google_Service_Fusiontables_Sqlresponse");
   }
   /**
    * Executes a SQL statement which can be any of - SELECT - SHOW - DESCRIBE
@@ -65,6 +65,6 @@ class Google_Service_Fusiontables_QueryResource extends Google_Service_Resource
   {
     $params = array('sql' => $sql);
     $params = array_merge($params, $optParams);
-    return $this->call('sqlGet', array($params), 'Google_Service_Sqlresponse');
+    return $this->call('sqlGet', array($params), "Google_Service_Fusiontables_Sqlresponse");
   }
 }

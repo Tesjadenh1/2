@@ -36,6 +36,6 @@ class Google_Service_QPXExpress_TripsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_TripsSearchResponse');
+    return $this->call('search', array($params), "Google_Service_QPXExpress_TripsSearchResponse");
   }
 }

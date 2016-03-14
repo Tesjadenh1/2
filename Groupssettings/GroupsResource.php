@@ -36,7 +36,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
   {
     $params = array('groupUniqueId' => $groupUniqueId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Groups');
+    return $this->call('get', array($params), "Google_Service_Groupssettings_Groups");
   }
   /**
    * Updates an existing resource. This method supports patch semantics.
@@ -51,7 +51,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
   {
     $params = array('groupUniqueId' => $groupUniqueId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Groups');
+    return $this->call('patch', array($params), "Google_Service_Groupssettings_Groups");
   }
   /**
    * Updates an existing resource. (groups.update)
@@ -65,6 +65,6 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
   {
     $params = array('groupUniqueId' => $groupUniqueId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Groups');
+    return $this->call('update', array($params), "Google_Service_Groupssettings_Groups");
   }
 }

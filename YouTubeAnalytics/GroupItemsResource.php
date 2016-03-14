@@ -75,7 +75,7 @@ class Google_Service_YouTubeAnalytics_GroupItemsResource extends Google_Service_
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_GroupItem');
+    return $this->call('insert', array($params), "Google_Service_YouTubeAnalytics_GroupItem");
   }
   /**
    * Returns a collection of group items that match the API request parameters.
@@ -103,6 +103,6 @@ class Google_Service_YouTubeAnalytics_GroupItemsResource extends Google_Service_
   {
     $params = array('groupId' => $groupId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_GroupItemListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTubeAnalytics_GroupItemListResponse");
   }
 }

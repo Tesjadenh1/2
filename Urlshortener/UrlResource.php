@@ -38,7 +38,7 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
   {
     $params = array('shortUrl' => $shortUrl);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Url');
+    return $this->call('get', array($params), "Google_Service_Urlshortener_Url");
   }
   /**
    * Creates a new short URL. (url.insert)
@@ -51,7 +51,7 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Url');
+    return $this->call('insert', array($params), "Google_Service_Urlshortener_Url");
   }
   /**
    * Retrieves a list of URLs shortened by a user. (url.listUrl)
@@ -67,6 +67,6 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UrlHistory');
+    return $this->call('list', array($params), "Google_Service_Urlshortener_UrlHistory");
   }
 }

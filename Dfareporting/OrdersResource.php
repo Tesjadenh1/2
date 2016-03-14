@@ -38,7 +38,7 @@ class Google_Service_Dfareporting_OrdersResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'projectId' => $projectId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Order');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Order");
   }
   /**
    * Retrieves a list of orders, possibly filtered. (orders.listOrders)
@@ -67,6 +67,6 @@ class Google_Service_Dfareporting_OrdersResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_OrdersListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_OrdersListResponse");
   }
 }

@@ -41,7 +41,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   {
     $params = array('readGroupSetId' => $readGroupSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_GenomicsEmpty');
+    return $this->call('delete', array($params), "Google_Service_Genomics_GenomicsEmpty");
   }
   /**
    * Exports a read group set to a BAM file in Google Cloud Storage. For the
@@ -63,7 +63,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   {
     $params = array('readGroupSetId' => $readGroupSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('export', array($params), 'Google_Service_Operation');
+    return $this->call('export', array($params), "Google_Service_Genomics_Operation");
   }
   /**
    * Gets a read group set by ID. For the definitions of read group sets and other
@@ -79,7 +79,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   {
     $params = array('readGroupSetId' => $readGroupSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ReadGroupSet');
+    return $this->call('get', array($params), "Google_Service_Genomics_ReadGroupSet");
   }
   /**
    * Creates read group sets by asynchronously importing the provided information.
@@ -103,7 +103,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('import', array($params), 'Google_Service_Operation');
+    return $this->call('import', array($params), "Google_Service_Genomics_Operation");
   }
   /**
    * Updates a read group set. For the definitions of read group sets and other
@@ -126,7 +126,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   {
     $params = array('readGroupSetId' => $readGroupSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_ReadGroupSet');
+    return $this->call('patch', array($params), "Google_Service_Genomics_ReadGroupSet");
   }
   /**
    * Searches for read group sets matching the criteria. For the definitions of
@@ -144,6 +144,6 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_SearchReadGroupSetsResponse');
+    return $this->call('search', array($params), "Google_Service_Genomics_SearchReadGroupSetsResponse");
   }
 }

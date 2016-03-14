@@ -40,7 +40,7 @@ class Google_Service_Bigquery_TabledataResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insertAll', array($params), 'Google_Service_TableDataInsertAllResponse');
+    return $this->call('insertAll', array($params), "Google_Service_Bigquery_TableDataInsertAllResponse");
   }
   /**
    * Retrieves table data from a specified set of rows. Requires the READER
@@ -61,6 +61,6 @@ class Google_Service_Bigquery_TabledataResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TableDataList');
+    return $this->call('list', array($params), "Google_Service_Bigquery_TableDataList");
   }
 }

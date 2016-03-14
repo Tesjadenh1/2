@@ -42,7 +42,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'networkInterface' => $networkInterface, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('addAccessConfig', array($params), 'Google_Service_Operation');
+    return $this->call('addAccessConfig', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves aggregated list of instances. (instances.aggregatedList)
@@ -89,7 +89,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_InstanceAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_InstanceAggregatedList");
   }
   /**
    * Attaches a Disk resource to an instance. (instances.attachDisk)
@@ -105,7 +105,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('attachDisk', array($params), 'Google_Service_Operation');
+    return $this->call('attachDisk', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Deletes the specified Instance resource. For more information, see Stopping
@@ -121,7 +121,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Deletes an access config from an instance's network interface.
@@ -139,7 +139,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'accessConfig' => $accessConfig, 'networkInterface' => $networkInterface);
     $params = array_merge($params, $optParams);
-    return $this->call('deleteAccessConfig', array($params), 'Google_Service_Operation');
+    return $this->call('deleteAccessConfig', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Detaches a disk from an instance. (instances.detachDisk)
@@ -155,7 +155,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'deviceName' => $deviceName);
     $params = array_merge($params, $optParams);
-    return $this->call('detachDisk', array($params), 'Google_Service_Operation');
+    return $this->call('detachDisk', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified Instance resource. Get a list of available instances by
@@ -171,7 +171,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Instance');
+    return $this->call('get', array($params), "Google_Service_Compute_Instance");
   }
   /**
    * Returns the specified instance's serial port output.
@@ -189,7 +189,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
     $params = array_merge($params, $optParams);
-    return $this->call('getSerialPortOutput', array($params), 'Google_Service_SerialPortOutput');
+    return $this->call('getSerialPortOutput', array($params), "Google_Service_Compute_SerialPortOutput");
   }
   /**
    * Creates an instance resource in the specified project using the data included
@@ -205,7 +205,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of instances contained within the specified zone.
@@ -254,7 +254,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_InstanceList');
+    return $this->call('list', array($params), "Google_Service_Compute_InstanceList");
   }
   /**
    * Performs a hard reset on the instance. (instances.reset)
@@ -269,7 +269,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
     $params = array_merge($params, $optParams);
-    return $this->call('reset', array($params), 'Google_Service_Operation');
+    return $this->call('reset', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Sets the auto-delete flag for a disk attached to an instance.
@@ -288,7 +288,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'autoDelete' => $autoDelete, 'deviceName' => $deviceName);
     $params = array_merge($params, $optParams);
-    return $this->call('setDiskAutoDelete', array($params), 'Google_Service_Operation');
+    return $this->call('setDiskAutoDelete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Changes the machine type for a stopped instance to the machine type specified
@@ -305,7 +305,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setMachineType', array($params), 'Google_Service_Operation');
+    return $this->call('setMachineType', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Sets metadata for the specified instance to the data included in the request.
@@ -322,7 +322,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setMetadata', array($params), 'Google_Service_Operation');
+    return $this->call('setMetadata', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Sets an instance's scheduling options. (instances.setScheduling)
@@ -338,7 +338,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setScheduling', array($params), 'Google_Service_Operation');
+    return $this->call('setScheduling', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Sets tags for the specified instance to the data included in the request.
@@ -355,7 +355,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setTags', array($params), 'Google_Service_Operation');
+    return $this->call('setTags', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Starts an instance that was stopped using the using the instances().stop
@@ -371,7 +371,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
     $params = array_merge($params, $optParams);
-    return $this->call('start', array($params), 'Google_Service_Operation');
+    return $this->call('start', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Stops a running instance, shutting it down cleanly, and allows you to restart
@@ -391,6 +391,6 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
     $params = array_merge($params, $optParams);
-    return $this->call('stop', array($params), 'Google_Service_Operation');
+    return $this->call('stop', array($params), "Google_Service_Compute_Operation");
   }
 }

@@ -129,7 +129,7 @@ class Google_Service_Oauth2 extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->base_methods->call('getCertForOpenIdConnect', array($params), 'Google_Service_Jwk');
+    return $this->base_methods->call('getCertForOpenIdConnect', array($params), "Google_Service_Oauth2_Jwk");
   }
   /**
    * (tokeninfo)
@@ -145,6 +145,6 @@ class Google_Service_Oauth2 extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->base_methods->call('tokeninfo', array($params), 'Google_Service_Tokeninfo');
+    return $this->base_methods->call('tokeninfo', array($params), "Google_Service_Oauth2_Tokeninfo");
   }
 }

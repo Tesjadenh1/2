@@ -38,6 +38,6 @@ class Google_Service_GamesConfiguration_ImageConfigurationsResource extends Goog
   {
     $params = array('resourceId' => $resourceId, 'imageType' => $imageType);
     $params = array_merge($params, $optParams);
-    return $this->call('upload', array($params), 'Google_Service_ImageConfiguration');
+    return $this->call('upload', array($params), "Google_Service_GamesConfiguration_ImageConfiguration");
   }
 }

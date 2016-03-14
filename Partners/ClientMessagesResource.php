@@ -38,6 +38,6 @@ class Google_Service_Partners_ClientMessagesResource extends Google_Service_Reso
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('log', array($params), 'Google_Service_LogMessageResponse');
+    return $this->call('log', array($params), "Google_Service_Partners_LogMessageResponse");
   }
 }

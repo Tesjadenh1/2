@@ -40,7 +40,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_CommentThread');
+    return $this->call('insert', array($params), "Google_Service_YouTube_CommentThread");
   }
   /**
    * Returns a list of comment threads that match the API request parameters.
@@ -99,7 +99,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CommentThreadListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_CommentThreadListResponse");
   }
   /**
    * Modifies the top-level comment in a comment thread. (commentThreads.update)
@@ -116,6 +116,6 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_CommentThread');
+    return $this->call('update', array($params), "Google_Service_YouTube_CommentThread");
   }
 }

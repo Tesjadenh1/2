@@ -37,7 +37,7 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_ProductstatusesCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_ProductstatusesCustomBatchResponse");
   }
   /**
    * Gets the status of a product from your Merchant Center account.
@@ -52,7 +52,7 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ProductStatus');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_ProductStatus");
   }
   /**
    * Lists the statuses of the products in your Merchant Center account.
@@ -73,6 +73,6 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ProductstatusesListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_ProductstatusesListResponse");
   }
 }

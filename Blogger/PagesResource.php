@@ -52,7 +52,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'pageId' => $pageId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Page');
+    return $this->call('get', array($params), "Google_Service_Blogger_Page");
   }
   /**
    * Add a page. (pages.insert)
@@ -69,7 +69,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Page');
+    return $this->call('insert', array($params), "Google_Service_Blogger_Page");
   }
   /**
    * Retrieves the pages for a blog, optionally including non-LIVE statuses.
@@ -90,7 +90,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PageList');
+    return $this->call('list', array($params), "Google_Service_Blogger_PageList");
   }
   /**
    * Update a page. This method supports patch semantics. (pages.patch)
@@ -110,7 +110,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Page');
+    return $this->call('patch', array($params), "Google_Service_Blogger_Page");
   }
   /**
    * Publishes a draft page. (pages.publish)
@@ -124,7 +124,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'pageId' => $pageId);
     $params = array_merge($params, $optParams);
-    return $this->call('publish', array($params), 'Google_Service_Page');
+    return $this->call('publish', array($params), "Google_Service_Blogger_Page");
   }
   /**
    * Revert a published or scheduled page to draft state. (pages.revert)
@@ -138,7 +138,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'pageId' => $pageId);
     $params = array_merge($params, $optParams);
-    return $this->call('revert', array($params), 'Google_Service_Page');
+    return $this->call('revert', array($params), "Google_Service_Blogger_Page");
   }
   /**
    * Update a page. (pages.update)
@@ -158,6 +158,6 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Page');
+    return $this->call('update', array($params), "Google_Service_Blogger_Page");
   }
 }

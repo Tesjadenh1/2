@@ -40,6 +40,6 @@ class Google_Service_Books_NotificationResource extends Google_Service_Resource
   {
     $params = array('notification_id' => $notificationId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Notification');
+    return $this->call('get', array($params), "Google_Service_Books_Notification");
   }
 }

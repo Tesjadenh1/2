@@ -37,7 +37,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_Comment');
+    return $this->call('create', array($params), "Google_Service_Drive_Comment");
   }
   /**
    * Deletes a comment. (comments.delete)
@@ -67,7 +67,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Comment');
+    return $this->call('get', array($params), "Google_Service_Drive_Comment");
   }
   /**
    * Lists a file's comments. (comments.listComments)
@@ -89,7 +89,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CommentList');
+    return $this->call('list', array($params), "Google_Service_Drive_CommentList");
   }
   /**
    * Updates a comment with patch semantics. (comments.update)
@@ -104,6 +104,6 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Comment');
+    return $this->call('update', array($params), "Google_Service_Drive_Comment");
   }
 }

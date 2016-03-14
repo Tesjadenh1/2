@@ -37,7 +37,7 @@ class Google_Service_Mirror_LocationsResource extends Google_Service_Resource
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Location');
+    return $this->call('get', array($params), "Google_Service_Mirror_Location");
   }
   /**
    * Retrieves a list of locations for the user. (locations.listLocations)
@@ -49,6 +49,6 @@ class Google_Service_Mirror_LocationsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_LocationsListResponse');
+    return $this->call('list', array($params), "Google_Service_Mirror_LocationsListResponse");
   }
 }

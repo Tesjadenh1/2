@@ -60,7 +60,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Post');
+    return $this->call('get', array($params), "Google_Service_Blogger_Post");
   }
   /**
    * Retrieve a Post by Path. (posts.getByPath)
@@ -79,7 +79,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'path' => $path);
     $params = array_merge($params, $optParams);
-    return $this->call('getByPath', array($params), 'Google_Service_Post');
+    return $this->call('getByPath', array($params), "Google_Service_Blogger_Post");
   }
   /**
    * Add a post. (posts.insert)
@@ -100,7 +100,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Post');
+    return $this->call('insert', array($params), "Google_Service_Blogger_Post");
   }
   /**
    * Retrieves a list of posts, possibly filtered. (posts.listPosts)
@@ -130,7 +130,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PostList');
+    return $this->call('list', array($params), "Google_Service_Blogger_PostList");
   }
   /**
    * Update a post. This method supports patch semantics. (posts.patch)
@@ -156,7 +156,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Post');
+    return $this->call('patch', array($params), "Google_Service_Blogger_Post");
   }
   /**
    * Publishes a draft post, optionally at the specific time of the given
@@ -177,7 +177,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId);
     $params = array_merge($params, $optParams);
-    return $this->call('publish', array($params), 'Google_Service_Post');
+    return $this->call('publish', array($params), "Google_Service_Blogger_Post");
   }
   /**
    * Revert a published or scheduled post to draft state. (posts.revert)
@@ -191,7 +191,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId);
     $params = array_merge($params, $optParams);
-    return $this->call('revert', array($params), 'Google_Service_Post');
+    return $this->call('revert', array($params), "Google_Service_Blogger_Post");
   }
   /**
    * Search for a post. (posts.search)
@@ -210,7 +210,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'q' => $q);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_PostList');
+    return $this->call('search', array($params), "Google_Service_Blogger_PostList");
   }
   /**
    * Update a post. (posts.update)
@@ -236,6 +236,6 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Post');
+    return $this->call('update', array($params), "Google_Service_Blogger_Post");
   }
 }

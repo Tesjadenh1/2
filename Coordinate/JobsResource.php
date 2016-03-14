@@ -37,7 +37,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Job');
+    return $this->call('get', array($params), "Google_Service_Coordinate_Job");
   }
   /**
    * Inserts a new job. Only the state field of the job should be set.
@@ -68,7 +68,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'address' => $address, 'lat' => $lat, 'lng' => $lng, 'title' => $title, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Job');
+    return $this->call('insert', array($params), "Google_Service_Coordinate_Job");
   }
   /**
    * Retrieves jobs created or modified since the given timestamp. (jobs.listJobs)
@@ -88,7 +88,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_JobListResponse');
+    return $this->call('list', array($params), "Google_Service_Coordinate_JobListResponse");
   }
   /**
    * Updates a job. Fields that are set in the job state will be updated. This
@@ -121,7 +121,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Job');
+    return $this->call('patch', array($params), "Google_Service_Coordinate_Job");
   }
   /**
    * Updates a job. Fields that are set in the job state will be updated.
@@ -154,6 +154,6 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Job');
+    return $this->call('update', array($params), "Google_Service_Coordinate_Job");
   }
 }

@@ -38,7 +38,7 @@ class Google_Service_DeploymentManager_ManifestsResource extends Google_Service_
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'manifest' => $manifest);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Manifest');
+    return $this->call('get', array($params), "Google_Service_DeploymentManager_Manifest");
   }
   /**
    * Lists all manifests for a given deployment. (manifests.listManifests)
@@ -86,6 +86,6 @@ class Google_Service_DeploymentManager_ManifestsResource extends Google_Service_
   {
     $params = array('project' => $project, 'deployment' => $deployment);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ManifestsListResponse');
+    return $this->call('list', array($params), "Google_Service_DeploymentManager_ManifestsListResponse");
   }
 }

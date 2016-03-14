@@ -53,7 +53,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_LicenseAssignment');
+    return $this->call('get', array($params), "Google_Service_Licensing_LicenseAssignment");
   }
   /**
    * Assign License. (licenseAssignments.insert)
@@ -68,7 +68,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_LicenseAssignment');
+    return $this->call('insert', array($params), "Google_Service_Licensing_LicenseAssignment");
   }
   /**
    * List license assignments for given product of the customer.
@@ -89,7 +89,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
   {
     $params = array('productId' => $productId, 'customerId' => $customerId);
     $params = array_merge($params, $optParams);
-    return $this->call('listForProduct', array($params), 'Google_Service_LicenseAssignmentList');
+    return $this->call('listForProduct', array($params), "Google_Service_Licensing_LicenseAssignmentList");
   }
   /**
    * List license assignments for given product and sku of the customer.
@@ -111,7 +111,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'customerId' => $customerId);
     $params = array_merge($params, $optParams);
-    return $this->call('listForProductAndSku', array($params), 'Google_Service_LicenseAssignmentList');
+    return $this->call('listForProductAndSku', array($params), "Google_Service_Licensing_LicenseAssignmentList");
   }
   /**
    * Assign License. This method supports patch semantics.
@@ -128,7 +128,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_LicenseAssignment');
+    return $this->call('patch', array($params), "Google_Service_Licensing_LicenseAssignment");
   }
   /**
    * Assign License. (licenseAssignments.update)
@@ -144,6 +144,6 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_LicenseAssignment');
+    return $this->call('update', array($params), "Google_Service_Licensing_LicenseAssignment");
   }
 }

@@ -36,7 +36,7 @@ class Google_Service_Games_MetagameResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('getMetagameConfig', array($params), 'Google_Service_MetagameConfig');
+    return $this->call('getMetagameConfig', array($params), "Google_Service_Games_MetagameConfig");
   }
   /**
    * List play data aggregated per category for the player corresponding to
@@ -60,6 +60,6 @@ class Google_Service_Games_MetagameResource extends Google_Service_Resource
   {
     $params = array('playerId' => $playerId, 'collection' => $collection);
     $params = array_merge($params, $optParams);
-    return $this->call('listCategoriesByPlayer', array($params), 'Google_Service_CategoryListResponse');
+    return $this->call('listCategoriesByPlayer', array($params), "Google_Service_Games_CategoryListResponse");
   }
 }

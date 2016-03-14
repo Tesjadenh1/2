@@ -38,7 +38,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('custombatch', array($params), 'Google_Service_DatafeedsCustomBatchResponse');
+    return $this->call('custombatch', array($params), "Google_Service_ShoppingContent_DatafeedsCustomBatchResponse");
   }
   /**
    * Deletes a datafeed from your Merchant Center account. (datafeeds.delete)
@@ -67,7 +67,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
   {
     $params = array('merchantId' => $merchantId, 'datafeedId' => $datafeedId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Datafeed');
+    return $this->call('get', array($params), "Google_Service_ShoppingContent_Datafeed");
   }
   /**
    * Registers a datafeed with your Merchant Center account. (datafeeds.insert)
@@ -83,7 +83,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Datafeed');
+    return $this->call('insert', array($params), "Google_Service_ShoppingContent_Datafeed");
   }
   /**
    * Lists the datafeeds in your Merchant Center account.
@@ -101,7 +101,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
   {
     $params = array('merchantId' => $merchantId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_DatafeedsListResponse');
+    return $this->call('list', array($params), "Google_Service_ShoppingContent_DatafeedsListResponse");
   }
   /**
    * Updates a datafeed of your Merchant Center account. This method supports
@@ -119,7 +119,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
   {
     $params = array('merchantId' => $merchantId, 'datafeedId' => $datafeedId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Datafeed');
+    return $this->call('patch', array($params), "Google_Service_ShoppingContent_Datafeed");
   }
   /**
    * Updates a datafeed of your Merchant Center account. (datafeeds.update)
@@ -136,6 +136,6 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
   {
     $params = array('merchantId' => $merchantId, 'datafeedId' => $datafeedId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Datafeed');
+    return $this->call('update', array($params), "Google_Service_ShoppingContent_Datafeed");
   }
 }

@@ -36,7 +36,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Account');
+    return $this->call('get', array($params), "Google_Service_AdExchangeBuyer_Account");
   }
   /**
    * Retrieves the authenticated user's list of accounts. (accounts.listAccounts)
@@ -48,7 +48,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AccountsList');
+    return $this->call('list', array($params), "Google_Service_AdExchangeBuyer_AccountsList");
   }
   /**
    * Updates an existing account. This method supports patch semantics.
@@ -63,7 +63,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Account');
+    return $this->call('patch', array($params), "Google_Service_AdExchangeBuyer_Account");
   }
   /**
    * Updates an existing account. (accounts.update)
@@ -77,6 +77,6 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Account');
+    return $this->call('update', array($params), "Google_Service_AdExchangeBuyer_Account");
   }
 }

@@ -54,7 +54,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_CreativeFieldValue');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_CreativeFieldValue");
   }
   /**
    * Inserts a new creative field value. (creativeFieldValues.insert)
@@ -70,7 +70,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_CreativeFieldValue');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_CreativeFieldValue");
   }
   /**
    * Retrieves a list of creative field values, possibly filtered.
@@ -95,7 +95,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CreativeFieldValuesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_CreativeFieldValuesListResponse");
   }
   /**
    * Updates an existing creative field value. This method supports patch
@@ -113,7 +113,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_CreativeFieldValue');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_CreativeFieldValue");
   }
   /**
    * Updates an existing creative field value. (creativeFieldValues.update)
@@ -129,6 +129,6 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_CreativeFieldValue');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_CreativeFieldValue");
   }
 }

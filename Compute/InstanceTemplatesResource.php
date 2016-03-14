@@ -41,7 +41,7 @@ class Google_Service_Compute_InstanceTemplatesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'instanceTemplate' => $instanceTemplate);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified instance template. Get a list of available instance
@@ -56,7 +56,7 @@ class Google_Service_Compute_InstanceTemplatesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'instanceTemplate' => $instanceTemplate);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_InstanceTemplate');
+    return $this->call('get', array($params), "Google_Service_Compute_InstanceTemplate");
   }
   /**
    * Creates an instance template in the specified project using the data that is
@@ -74,7 +74,7 @@ class Google_Service_Compute_InstanceTemplatesResource extends Google_Service_Re
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of instance templates that are contained within the
@@ -122,6 +122,6 @@ class Google_Service_Compute_InstanceTemplatesResource extends Google_Service_Re
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_InstanceTemplateList');
+    return $this->call('list', array($params), "Google_Service_Compute_InstanceTemplateList");
   }
 }

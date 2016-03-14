@@ -48,7 +48,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TimelineItem');
+    return $this->call('get', array($params), "Google_Service_Mirror_TimelineItem");
   }
   /**
    * Inserts a new item into the timeline. (timeline.insert)
@@ -61,7 +61,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_TimelineItem');
+    return $this->call('insert', array($params), "Google_Service_Mirror_TimelineItem");
   }
   /**
    * Retrieves a list of timeline items for the authenticated user.
@@ -87,7 +87,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TimelineListResponse');
+    return $this->call('list', array($params), "Google_Service_Mirror_TimelineListResponse");
   }
   /**
    * Updates a timeline item in place. This method supports patch semantics.
@@ -102,7 +102,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_TimelineItem');
+    return $this->call('patch', array($params), "Google_Service_Mirror_TimelineItem");
   }
   /**
    * Updates a timeline item in place. (timeline.update)
@@ -116,6 +116,6 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_TimelineItem');
+    return $this->call('update', array($params), "Google_Service_Mirror_TimelineItem");
   }
 }

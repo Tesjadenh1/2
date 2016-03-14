@@ -44,7 +44,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('accept', array($params), 'Google_Service_ClassroomEmpty');
+    return $this->call('accept', array($params), "Google_Service_Classroom_ClassroomEmpty");
   }
   /**
    * Creates an invitation. Only one invitation for a user and course may exist at
@@ -65,7 +65,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_Invitation');
+    return $this->call('create', array($params), "Google_Service_Classroom_Invitation");
   }
   /**
    * Deletes an invitation. This method returns the following error codes: *
@@ -81,7 +81,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_ClassroomEmpty');
+    return $this->call('delete', array($params), "Google_Service_Classroom_ClassroomEmpty");
   }
   /**
    * Returns an invitation. This method returns the following error codes: *
@@ -97,7 +97,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Invitation');
+    return $this->call('get', array($params), "Google_Service_Classroom_Invitation");
   }
   /**
    * Returns a list of invitations that the requesting user is permitted to view,
@@ -126,6 +126,6 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListInvitationsResponse');
+    return $this->call('list', array($params), "Google_Service_Classroom_ListInvitationsResponse");
   }
 }

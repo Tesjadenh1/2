@@ -36,7 +36,7 @@ class Google_Service_AdExchangeBuyer_ProductsResource extends Google_Service_Res
   {
     $params = array('productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Product');
+    return $this->call('get', array($params), "Google_Service_AdExchangeBuyer_Product");
   }
   /**
    * Gets the requested product. (products.search)
@@ -50,6 +50,6 @@ class Google_Service_AdExchangeBuyer_ProductsResource extends Google_Service_Res
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_GetOffersResponse');
+    return $this->call('search', array($params), "Google_Service_AdExchangeBuyer_GetOffersResponse");
   }
 }

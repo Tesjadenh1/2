@@ -38,7 +38,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'commentId' => $commentId);
     $params = array_merge($params, $optParams);
-    return $this->call('approve', array($params), 'Google_Service_Comment');
+    return $this->call('approve', array($params), "Google_Service_Blogger_Comment");
   }
   /**
    * Delete a comment by ID. (comments.delete)
@@ -72,7 +72,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'commentId' => $commentId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Comment');
+    return $this->call('get', array($params), "Google_Service_Blogger_Comment");
   }
   /**
    * Retrieves the comments for a post, possibly filtered. (comments.listComments)
@@ -99,7 +99,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CommentList');
+    return $this->call('list', array($params), "Google_Service_Blogger_CommentList");
   }
   /**
    * Retrieves the comments for a blog, across all posts, possibly filtered.
@@ -124,7 +124,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId);
     $params = array_merge($params, $optParams);
-    return $this->call('listByBlog', array($params), 'Google_Service_CommentList');
+    return $this->call('listByBlog', array($params), "Google_Service_Blogger_CommentList");
   }
   /**
    * Marks a comment as spam. (comments.markAsSpam)
@@ -139,7 +139,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'commentId' => $commentId);
     $params = array_merge($params, $optParams);
-    return $this->call('markAsSpam', array($params), 'Google_Service_Comment');
+    return $this->call('markAsSpam', array($params), "Google_Service_Blogger_Comment");
   }
   /**
    * Removes the content of a comment. (comments.removeContent)
@@ -154,6 +154,6 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'commentId' => $commentId);
     $params = array_merge($params, $optParams);
-    return $this->call('removeContent', array($params), 'Google_Service_Comment');
+    return $this->call('removeContent', array($params), "Google_Service_Blogger_Comment");
   }
 }

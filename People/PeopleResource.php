@@ -46,7 +46,7 @@ class Google_Service_People_PeopleResource extends Google_Service_Resource
   {
     $params = array('resourceName' => $resourceName);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Person');
+    return $this->call('get', array($params), "Google_Service_People_Person");
   }
   /**
    * Provides information about a list of specific people by specifying a list of
@@ -69,6 +69,6 @@ class Google_Service_People_PeopleResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('getBatchGet', array($params), 'Google_Service_GetPeopleResponse');
+    return $this->call('getBatchGet', array($params), "Google_Service_People_GetPeopleResponse");
   }
 }

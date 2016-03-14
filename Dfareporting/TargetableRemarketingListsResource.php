@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_TargetableRemarketingListsResource extends Goo
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TargetableRemarketingList');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_TargetableRemarketingList");
   }
   /**
    * Retrieves a list of targetable remarketing lists, possibly filtered.
@@ -68,6 +68,6 @@ class Google_Service_Dfareporting_TargetableRemarketingListsResource extends Goo
   {
     $params = array('profileId' => $profileId, 'advertiserId' => $advertiserId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TargetableRemarketingListsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_TargetableRemarketingListsListResponse");
   }
 }

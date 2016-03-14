@@ -54,7 +54,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'ruleId' => $ruleId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AclRule');
+    return $this->call('get', array($params), "Google_Service_Calendar_AclRule");
   }
   /**
    * Creates an access control rule. (acl.insert)
@@ -70,7 +70,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_AclRule');
+    return $this->call('insert', array($params), "Google_Service_Calendar_AclRule");
   }
   /**
    * Returns the rules in the access control list for the calendar. (acl.listAcl)
@@ -103,7 +103,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Acl');
+    return $this->call('list', array($params), "Google_Service_Calendar_Acl");
   }
   /**
    * Updates an access control rule. This method supports patch semantics.
@@ -121,7 +121,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'ruleId' => $ruleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_AclRule');
+    return $this->call('patch', array($params), "Google_Service_Calendar_AclRule");
   }
   /**
    * Updates an access control rule. (acl.update)
@@ -138,7 +138,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'ruleId' => $ruleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_AclRule');
+    return $this->call('update', array($params), "Google_Service_Calendar_AclRule");
   }
   /**
    * Watch for changes to ACL resources. (acl.watch)
@@ -172,6 +172,6 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Calendar_Channel");
   }
 }

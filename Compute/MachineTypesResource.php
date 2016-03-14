@@ -70,7 +70,7 @@ class Google_Service_Compute_MachineTypesResource extends Google_Service_Resourc
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_MachineTypeAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_MachineTypeAggregatedList");
   }
   /**
    * Returns the specified machine type. Get a list of available machine types by
@@ -86,7 +86,7 @@ class Google_Service_Compute_MachineTypesResource extends Google_Service_Resourc
   {
     $params = array('project' => $project, 'zone' => $zone, 'machineType' => $machineType);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_MachineType');
+    return $this->call('get', array($params), "Google_Service_Compute_MachineType");
   }
   /**
    * Retrieves a list of machine types available to the specified project.
@@ -135,6 +135,6 @@ class Google_Service_Compute_MachineTypesResource extends Google_Service_Resourc
   {
     $params = array('project' => $project, 'zone' => $zone);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_MachineTypeList');
+    return $this->call('list', array($params), "Google_Service_Compute_MachineTypeList");
   }
 }

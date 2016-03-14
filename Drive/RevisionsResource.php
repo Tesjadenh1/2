@@ -55,7 +55,7 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'revisionId' => $revisionId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Revision');
+    return $this->call('get', array($params), "Google_Service_Drive_Revision");
   }
   /**
    * Lists a file's revisions. (revisions.listRevisions)
@@ -68,7 +68,7 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_RevisionList');
+    return $this->call('list', array($params), "Google_Service_Drive_RevisionList");
   }
   /**
    * Updates a revision with patch semantics. (revisions.update)
@@ -83,6 +83,6 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
   {
     $params = array('fileId' => $fileId, 'revisionId' => $revisionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Revision');
+    return $this->call('update', array($params), "Google_Service_Drive_Revision");
   }
 }

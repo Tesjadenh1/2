@@ -38,7 +38,7 @@ class Google_Service_Dfareporting_InventoryItemsResource extends Google_Service_
   {
     $params = array('profileId' => $profileId, 'projectId' => $projectId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_InventoryItem');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_InventoryItem");
   }
   /**
    * Retrieves a list of inventory items, possibly filtered.
@@ -66,6 +66,6 @@ class Google_Service_Dfareporting_InventoryItemsResource extends Google_Service_
   {
     $params = array('profileId' => $profileId, 'projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_InventoryItemsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_InventoryItemsListResponse");
   }
 }

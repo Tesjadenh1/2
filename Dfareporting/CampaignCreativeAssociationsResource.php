@@ -40,7 +40,7 @@ class Google_Service_Dfareporting_CampaignCreativeAssociationsResource extends G
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_CampaignCreativeAssociation');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_CampaignCreativeAssociation");
   }
   /**
    * Retrieves the list of creative IDs associated with the specified campaign.
@@ -60,6 +60,6 @@ class Google_Service_Dfareporting_CampaignCreativeAssociationsResource extends G
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CampaignCreativeAssociationsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_CampaignCreativeAssociationsListResponse");
   }
 }

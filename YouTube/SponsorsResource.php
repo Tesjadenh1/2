@@ -46,6 +46,6 @@ class Google_Service_YouTube_SponsorsResource extends Google_Service_Resource
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SponsorListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_SponsorListResponse");
   }
 }

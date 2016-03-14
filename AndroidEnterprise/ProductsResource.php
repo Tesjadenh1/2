@@ -63,7 +63,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('generateApprovalUrl', array($params), 'Google_Service_ProductsGenerateApprovalUrlResponse');
+    return $this->call('generateApprovalUrl', array($params), "Google_Service_AndroidEnterprise_ProductsGenerateApprovalUrlResponse");
   }
   /**
    * Retrieves details of a product for display to an enterprise admin.
@@ -82,7 +82,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Product');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Product");
   }
   /**
    * Retrieves the schema defining app restrictions configurable for this product.
@@ -101,7 +101,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('getAppRestrictionsSchema', array($params), 'Google_Service_AppRestrictionsSchema');
+    return $this->call('getAppRestrictionsSchema', array($params), "Google_Service_AndroidEnterprise_AppRestrictionsSchema");
   }
   /**
    * Retrieves the Android app permissions required by this app.
@@ -116,7 +116,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
-    return $this->call('getPermissions', array($params), 'Google_Service_ProductPermissions');
+    return $this->call('getPermissions', array($params), "Google_Service_AndroidEnterprise_ProductPermissions");
   }
   /**
    * This method has been deprecated. To programmatically approve applications,
@@ -138,6 +138,6 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('updatePermissions', array($params), 'Google_Service_ProductPermissions');
+    return $this->call('updatePermissions', array($params), "Google_Service_AndroidEnterprise_ProductPermissions");
   }
 }

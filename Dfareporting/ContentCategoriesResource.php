@@ -50,7 +50,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ContentCategory');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_ContentCategory");
   }
   /**
    * Inserts a new content category. (contentCategories.insert)
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_ContentCategory');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_ContentCategory");
   }
   /**
    * Retrieves a list of content categories, possibly filtered.
@@ -92,7 +92,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ContentCategoriesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_ContentCategoriesListResponse");
   }
   /**
    * Updates an existing content category. This method supports patch semantics.
@@ -108,7 +108,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_ContentCategory');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_ContentCategory");
   }
   /**
    * Updates an existing content category. (contentCategories.update)
@@ -122,6 +122,6 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_ContentCategory');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_ContentCategory");
   }
 }

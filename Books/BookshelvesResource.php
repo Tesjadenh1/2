@@ -40,7 +40,7 @@ class Google_Service_Books_BookshelvesResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId, 'shelf' => $shelf);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Bookshelf');
+    return $this->call('get', array($params), "Google_Service_Books_Bookshelf");
   }
   /**
    * Retrieves a list of public bookshelves for the specified user.
@@ -56,6 +56,6 @@ class Google_Service_Books_BookshelvesResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Bookshelves');
+    return $this->call('list', array($params), "Google_Service_Books_Bookshelves");
   }
 }

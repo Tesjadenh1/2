@@ -36,7 +36,7 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
   {
     $params = array('setting' => $setting);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Setting');
+    return $this->call('get', array($params), "Google_Service_Calendar_Setting");
   }
   /**
    * Returns all user settings for the authenticated user. (settings.listSettings)
@@ -61,7 +61,7 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Settings');
+    return $this->call('list', array($params), "Google_Service_Calendar_Settings");
   }
   /**
    * Watch for changes to Settings resources. (settings.watch)
@@ -87,6 +87,6 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Calendar_Channel");
   }
 }

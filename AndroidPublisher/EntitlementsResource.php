@@ -44,6 +44,6 @@ class Google_Service_AndroidPublisher_EntitlementsResource extends Google_Servic
   {
     $params = array('packageName' => $packageName);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_EntitlementsListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidPublisher_EntitlementsListResponse");
   }
 }

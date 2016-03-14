@@ -51,6 +51,6 @@ class Google_Service_YouTube_ThumbnailsResource extends Google_Service_Resource
   {
     $params = array('videoId' => $videoId);
     $params = array_merge($params, $optParams);
-    return $this->call('set', array($params), 'Google_Service_ThumbnailSetResponse');
+    return $this->call('set', array($params), "Google_Service_YouTube_ThumbnailSetResponse");
   }
 }

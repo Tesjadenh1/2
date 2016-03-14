@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_FilesResource extends Google_Service_Resource
   {
     $params = array('reportId' => $reportId, 'fileId' => $fileId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_File');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_File");
   }
   /**
    * Lists files for a user profile. (files.listFiles)
@@ -58,6 +58,6 @@ class Google_Service_Dfareporting_FilesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_FileList');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_FileList");
   }
 }

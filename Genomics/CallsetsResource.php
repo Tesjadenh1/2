@@ -39,7 +39,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_CallSet');
+    return $this->call('create', array($params), "Google_Service_Genomics_CallSet");
   }
   /**
    * Deletes a call set. For the definitions of call sets and other genomics
@@ -55,7 +55,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
   {
     $params = array('callSetId' => $callSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_GenomicsEmpty');
+    return $this->call('delete', array($params), "Google_Service_Genomics_GenomicsEmpty");
   }
   /**
    * Gets a call set by ID. For the definitions of call sets and other genomics
@@ -71,7 +71,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
   {
     $params = array('callSetId' => $callSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_CallSet');
+    return $this->call('get', array($params), "Google_Service_Genomics_CallSet");
   }
   /**
    * Updates a call set. For the definitions of call sets and other genomics
@@ -92,7 +92,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
   {
     $params = array('callSetId' => $callSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_CallSet');
+    return $this->call('patch', array($params), "Google_Service_Genomics_CallSet");
   }
   /**
    * Gets a list of call sets matching the criteria. For the definitions of call
@@ -110,6 +110,6 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_SearchCallSetsResponse');
+    return $this->call('search', array($params), "Google_Service_Genomics_SearchCallSetsResponse");
   }
 }

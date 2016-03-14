@@ -48,7 +48,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_SiteVerificationWebResourceResource');
+    return $this->call('get', array($params), "Google_Service_SiteVerification_SiteVerificationWebResourceResource");
   }
   /**
    * Get a verification token for placing on a website or domain.
@@ -62,7 +62,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getToken', array($params), 'Google_Service_SiteVerificationWebResourceGettokenResponse');
+    return $this->call('getToken', array($params), "Google_Service_SiteVerification_SiteVerificationWebResourceGettokenResponse");
   }
   /**
    * Attempt verification of a website or domain. (webResource.insert)
@@ -77,7 +77,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
   {
     $params = array('verificationMethod' => $verificationMethod, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_SiteVerificationWebResourceResource');
+    return $this->call('insert', array($params), "Google_Service_SiteVerification_SiteVerificationWebResourceResource");
   }
   /**
    * Get the list of your verified websites and domains.
@@ -90,7 +90,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SiteVerificationWebResourceListResponse');
+    return $this->call('list', array($params), "Google_Service_SiteVerification_SiteVerificationWebResourceListResponse");
   }
   /**
    * Modify the list of owners for your website or domain. This method supports
@@ -105,7 +105,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_SiteVerificationWebResourceResource');
+    return $this->call('patch', array($params), "Google_Service_SiteVerification_SiteVerificationWebResourceResource");
   }
   /**
    * Modify the list of owners for your website or domain. (webResource.update)
@@ -119,6 +119,6 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_SiteVerificationWebResourceResource');
+    return $this->call('update', array($params), "Google_Service_SiteVerification_SiteVerificationWebResourceResource");
   }
 }

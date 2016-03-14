@@ -38,7 +38,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('cancel', array($params), 'Google_Service_StoragetransferEmpty');
+    return $this->call('cancel', array($params), "Google_Service_Storagetransfer_StoragetransferEmpty");
   }
   /**
    * This method is not supported and the server returns `UNIMPLEMENTED`.
@@ -52,7 +52,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_StoragetransferEmpty');
+    return $this->call('delete', array($params), "Google_Service_Storagetransfer_StoragetransferEmpty");
   }
   /**
    * Gets the latest state of a long-running operation. Clients can use this
@@ -67,7 +67,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Operation');
+    return $this->call('get', array($params), "Google_Service_Storagetransfer_Operation");
   }
   /**
    * Lists operations that match the specified filter in the request. If the
@@ -88,7 +88,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListOperationsResponse');
+    return $this->call('list', array($params), "Google_Service_Storagetransfer_ListOperationsResponse");
   }
   /**
    * Pauses a transfer operation. (transferOperations.pause)
@@ -102,7 +102,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('pause', array($params), 'Google_Service_StoragetransferEmpty');
+    return $this->call('pause', array($params), "Google_Service_Storagetransfer_StoragetransferEmpty");
   }
   /**
    * Resumes a transfer operation that is paused. (transferOperations.resume)
@@ -116,6 +116,6 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('resume', array($params), 'Google_Service_StoragetransferEmpty');
+    return $this->call('resume', array($params), "Google_Service_Storagetransfer_StoragetransferEmpty");
   }
 }

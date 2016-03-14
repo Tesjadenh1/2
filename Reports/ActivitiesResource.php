@@ -56,7 +56,7 @@ class Google_Service_Reports_ActivitiesResource extends Google_Service_Resource
   {
     $params = array('userKey' => $userKey, 'applicationName' => $applicationName);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Activities');
+    return $this->call('list', array($params), "Google_Service_Reports_Activities");
   }
   /**
    * Push changes to activities (activities.watch)
@@ -89,6 +89,6 @@ class Google_Service_Reports_ActivitiesResource extends Google_Service_Resource
   {
     $params = array('userKey' => $userKey, 'applicationName' => $applicationName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Reports_Channel");
   }
 }

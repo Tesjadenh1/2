@@ -38,7 +38,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Device');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Device");
   }
   /**
    * Retrieves whether a device is enabled or disabled for access by the user to
@@ -57,7 +57,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId);
     $params = array_merge($params, $optParams);
-    return $this->call('getState', array($params), 'Google_Service_DeviceState');
+    return $this->call('getState', array($params), "Google_Service_AndroidEnterprise_DeviceState");
   }
   /**
    * Retrieves the IDs of all of a user's devices. (devices.listDevices)
@@ -71,7 +71,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_DevicesListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_DevicesListResponse");
   }
   /**
    * Sets whether a device is enabled or disabled for access by the user to Google
@@ -91,6 +91,6 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setState', array($params), 'Google_Service_DeviceState');
+    return $this->call('setState', array($params), "Google_Service_AndroidEnterprise_DeviceState");
   }
 }

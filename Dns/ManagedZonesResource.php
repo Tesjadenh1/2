@@ -37,7 +37,7 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_ManagedZone');
+    return $this->call('create', array($params), "Google_Service_Dns_ManagedZone");
   }
   /**
    * Delete a previously created ManagedZone. (managedZones.delete)
@@ -66,7 +66,7 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'managedZone' => $managedZone);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_ManagedZone');
+    return $this->call('get', array($params), "Google_Service_Dns_ManagedZone");
   }
   /**
    * Enumerate ManagedZones that have been created but not yet deleted.
@@ -88,6 +88,6 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ManagedZonesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dns_ManagedZonesListResponse");
   }
 }

@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_OperatingSystemVersionsResource extends Google
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_OperatingSystemVersion');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_OperatingSystemVersion");
   }
   /**
    * Retrieves a list of operating system versions.
@@ -51,6 +51,6 @@ class Google_Service_Dfareporting_OperatingSystemVersionsResource extends Google
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_OperatingSystemVersionsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_OperatingSystemVersionsListResponse");
   }
 }

@@ -41,7 +41,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('generateToken', array($params), 'Google_Service_UserToken');
+    return $this->call('generateToken', array($params), "Google_Service_AndroidEnterprise_UserToken");
   }
   /**
    * Retrieves a user's details. (users.get)
@@ -55,7 +55,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_User');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_User");
   }
   /**
    * Retrieves the set of products a user is entitled to access.
@@ -70,7 +70,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('getAvailableProductSet', array($params), 'Google_Service_ProductSet');
+    return $this->call('getAvailableProductSet', array($params), "Google_Service_AndroidEnterprise_ProductSet");
   }
   /**
    * Looks up a user by their primary email address. (users.listUsers)
@@ -84,7 +84,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
   {
     $params = array('enterpriseId' => $enterpriseId, 'email' => $email);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UsersListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_UsersListResponse");
   }
   /**
    * Revokes a previously generated token (activation code) for the user.
@@ -114,6 +114,6 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setAvailableProductSet', array($params), 'Google_Service_ProductSet');
+    return $this->call('setAvailableProductSet', array($params), "Google_Service_AndroidEnterprise_ProductSet");
   }
 }

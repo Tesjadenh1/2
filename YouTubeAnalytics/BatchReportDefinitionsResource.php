@@ -38,6 +38,6 @@ class Google_Service_YouTubeAnalytics_BatchReportDefinitionsResource extends Goo
   {
     $params = array('onBehalfOfContentOwner' => $onBehalfOfContentOwner);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_BatchReportDefinitionList');
+    return $this->call('list', array($params), "Google_Service_YouTubeAnalytics_BatchReportDefinitionList");
   }
 }

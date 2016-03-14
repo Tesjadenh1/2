@@ -52,7 +52,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'clusterId' => $clusterId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_StoreCluster');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_StoreCluster");
   }
   /**
    * Inserts a new cluster in a page. (storelayoutclusters.insert)
@@ -67,7 +67,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_StoreCluster');
+    return $this->call('insert', array($params), "Google_Service_AndroidEnterprise_StoreCluster");
   }
   /**
    * Retrieves the details of all clusters on the specified page.
@@ -82,7 +82,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_StoreLayoutClustersListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_StoreLayoutClustersListResponse");
   }
   /**
    * Updates a cluster. This method supports patch semantics.
@@ -99,7 +99,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'clusterId' => $clusterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_StoreCluster');
+    return $this->call('patch', array($params), "Google_Service_AndroidEnterprise_StoreCluster");
   }
   /**
    * Updates a cluster. (storelayoutclusters.update)
@@ -115,6 +115,6 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'clusterId' => $clusterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_StoreCluster');
+    return $this->call('update', array($params), "Google_Service_AndroidEnterprise_StoreCluster");
   }
 }

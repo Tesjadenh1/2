@@ -38,7 +38,7 @@ class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_S
   {
     $params = array('profileId' => $profileId, 'remarketingListId' => $remarketingListId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_RemarketingListShare');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_RemarketingListShare");
   }
   /**
    * Updates an existing remarketing list share. This method supports patch
@@ -54,7 +54,7 @@ class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_S
   {
     $params = array('profileId' => $profileId, 'remarketingListId' => $remarketingListId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_RemarketingListShare');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_RemarketingListShare");
   }
   /**
    * Updates an existing remarketing list share. (remarketingListShares.update)
@@ -68,6 +68,6 @@ class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_S
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_RemarketingListShare');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_RemarketingListShare");
   }
 }

@@ -54,7 +54,7 @@ class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resour
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Subscription');
+    return $this->call('insert', array($params), "Google_Service_YouTube_Subscription");
   }
   /**
    * Returns subscription resources that match the API request criteria.
@@ -128,6 +128,6 @@ class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resour
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SubscriptionListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_SubscriptionListResponse");
   }
 }

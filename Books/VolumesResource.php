@@ -45,7 +45,7 @@ class Google_Service_Books_VolumesResource extends Google_Service_Resource
   {
     $params = array('volumeId' => $volumeId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Volume');
+    return $this->call('get', array($params), "Google_Service_Books_Volume");
   }
   /**
    * Performs a book search. (volumes.listVolumes)
@@ -75,6 +75,6 @@ class Google_Service_Books_VolumesResource extends Google_Service_Resource
   {
     $params = array('q' => $q);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Volumes');
+    return $this->call('list', array($params), "Google_Service_Books_Volumes");
   }
 }

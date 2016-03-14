@@ -89,6 +89,6 @@ class Google_Service_Customsearch_CseResource extends Google_Service_Resource
   {
     $params = array('q' => $q);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Search');
+    return $this->call('list', array($params), "Google_Service_Customsearch_Search");
   }
 }

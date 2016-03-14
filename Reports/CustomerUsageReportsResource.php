@@ -44,6 +44,6 @@ class Google_Service_Reports_CustomerUsageReportsResource extends Google_Service
   {
     $params = array('date' => $date);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UsageReports');
+    return $this->call('get', array($params), "Google_Service_Reports_UsageReports");
   }
 }

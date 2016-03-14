@@ -37,7 +37,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
   {
     $params = array('customerId' => $customerId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Customer');
+    return $this->call('get', array($params), "Google_Service_Reseller_Customer");
   }
   /**
    * Creates a customer resource if one does not already exist. (customers.insert)
@@ -54,7 +54,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Customer');
+    return $this->call('insert', array($params), "Google_Service_Reseller_Customer");
   }
   /**
    * Update a customer resource if one it exists and is owned by the reseller.
@@ -69,7 +69,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
   {
     $params = array('customerId' => $customerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Customer');
+    return $this->call('patch', array($params), "Google_Service_Reseller_Customer");
   }
   /**
    * Update a customer resource if one it exists and is owned by the reseller.
@@ -84,6 +84,6 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
   {
     $params = array('customerId' => $customerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Customer');
+    return $this->call('update', array($params), "Google_Service_Reseller_Customer");
   }
 }

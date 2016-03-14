@@ -39,7 +39,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Person');
+    return $this->call('get', array($params), "Google_Service_Plus_Person");
   }
   /**
    * List all of the people in the specified collection. (people.listPeople)
@@ -62,7 +62,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
   {
     $params = array('userId' => $userId, 'collection' => $collection);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PeopleFeed');
+    return $this->call('list', array($params), "Google_Service_Plus_PeopleFeed");
   }
   /**
    * List all of the people in the specified collection for a particular activity.
@@ -85,7 +85,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
   {
     $params = array('activityId' => $activityId, 'collection' => $collection);
     $params = array_merge($params, $optParams);
-    return $this->call('listByActivity', array($params), 'Google_Service_PeopleFeed');
+    return $this->call('listByActivity', array($params), "Google_Service_Plus_PeopleFeed");
   }
   /**
    * Search all public profiles. (people.search)
@@ -109,6 +109,6 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
   {
     $params = array('query' => $query);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_PeopleFeed');
+    return $this->call('search', array($params), "Google_Service_Plus_PeopleFeed");
   }
 }

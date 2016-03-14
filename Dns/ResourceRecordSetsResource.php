@@ -49,6 +49,6 @@ class Google_Service_Dns_ResourceRecordSetsResource extends Google_Service_Resou
   {
     $params = array('project' => $project, 'managedZone' => $managedZone);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ResourceRecordSetsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dns_ResourceRecordSetsListResponse");
   }
 }

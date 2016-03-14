@@ -38,7 +38,7 @@ class Google_Service_GamesManagement_ScoresResource extends Google_Service_Resou
   {
     $params = array('leaderboardId' => $leaderboardId);
     $params = array_merge($params, $optParams);
-    return $this->call('reset', array($params), 'Google_Service_PlayerScoreResetResponse');
+    return $this->call('reset', array($params), "Google_Service_GamesManagement_PlayerScoreResetResponse");
   }
   /**
    * Resets all scores for all leaderboards for the currently authenticated
@@ -52,7 +52,7 @@ class Google_Service_GamesManagement_ScoresResource extends Google_Service_Resou
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('resetAll', array($params), 'Google_Service_PlayerScoreResetAllResponse');
+    return $this->call('resetAll', array($params), "Google_Service_GamesManagement_PlayerScoreResetAllResponse");
   }
   /**
    * Resets scores for all draft leaderboards for all players. This method is only

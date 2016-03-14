@@ -48,7 +48,7 @@ class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resourc
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Subscription');
+    return $this->call('insert', array($params), "Google_Service_Mirror_Subscription");
   }
   /**
    * Retrieves a list of subscriptions for the authenticated user and service.
@@ -61,7 +61,7 @@ class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resourc
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SubscriptionsListResponse');
+    return $this->call('list', array($params), "Google_Service_Mirror_SubscriptionsListResponse");
   }
   /**
    * Updates an existing subscription in place. (subscriptions.update)
@@ -75,6 +75,6 @@ class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resourc
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Subscription');
+    return $this->call('update', array($params), "Google_Service_Mirror_Subscription");
   }
 }

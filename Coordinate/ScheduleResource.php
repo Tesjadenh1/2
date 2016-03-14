@@ -37,7 +37,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Schedule');
+    return $this->call('get', array($params), "Google_Service_Coordinate_Schedule");
   }
   /**
    * Replaces the schedule of a job with the provided schedule. This method
@@ -59,7 +59,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Schedule');
+    return $this->call('patch', array($params), "Google_Service_Coordinate_Schedule");
   }
   /**
    * Replaces the schedule of a job with the provided schedule. (schedule.update)
@@ -80,6 +80,6 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Schedule');
+    return $this->call('update', array($params), "Google_Service_Coordinate_Schedule");
   }
 }

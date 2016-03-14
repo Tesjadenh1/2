@@ -56,7 +56,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'userId' => $userId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_User');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_User");
   }
   /**
    * Retrieves the IDs of the users who have been specifically allowed to see the
@@ -73,7 +73,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CollectionViewersListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_CollectionViewersListResponse");
   }
   /**
    * Adds the user to the list of those specifically allowed to see the
@@ -92,7 +92,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_User');
+    return $this->call('patch', array($params), "Google_Service_AndroidEnterprise_User");
   }
   /**
    * Adds the user to the list of those specifically allowed to see the
@@ -110,6 +110,6 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_User');
+    return $this->call('update', array($params), "Google_Service_AndroidEnterprise_User");
   }
 }

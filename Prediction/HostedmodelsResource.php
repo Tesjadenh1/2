@@ -39,6 +39,6 @@ class Google_Service_Prediction_HostedmodelsResource extends Google_Service_Reso
   {
     $params = array('project' => $project, 'hostedModelName' => $hostedModelName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('predict', array($params), 'Google_Service_Output');
+    return $this->call('predict', array($params), "Google_Service_Prediction_Output");
   }
 }

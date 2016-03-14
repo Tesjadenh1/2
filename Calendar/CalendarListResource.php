@@ -52,7 +52,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
   {
     $params = array('calendarId' => $calendarId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_CalendarListEntry');
+    return $this->call('get', array($params), "Google_Service_Calendar_CalendarListEntry");
   }
   /**
    * Adds an entry to the user's calendar list. (calendarList.insert)
@@ -70,7 +70,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_CalendarListEntry');
+    return $this->call('insert', array($params), "Google_Service_Calendar_CalendarListEntry");
   }
   /**
    * Returns entries on the user's calendar list. (calendarList.listCalendarList)
@@ -106,7 +106,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_CalendarList');
+    return $this->call('list', array($params), "Google_Service_Calendar_CalendarList");
   }
   /**
    * Updates an entry on the user's calendar list. This method supports patch
@@ -128,7 +128,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_CalendarListEntry');
+    return $this->call('patch', array($params), "Google_Service_Calendar_CalendarListEntry");
   }
   /**
    * Updates an entry on the user's calendar list. (calendarList.update)
@@ -149,7 +149,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_CalendarListEntry');
+    return $this->call('update', array($params), "Google_Service_Calendar_CalendarListEntry");
   }
   /**
    * Watch for changes to CalendarList resources. (calendarList.watch)
@@ -186,6 +186,6 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('watch', array($params), 'Google_Service_Channel');
+    return $this->call('watch', array($params), "Google_Service_Calendar_Channel");
   }
 }

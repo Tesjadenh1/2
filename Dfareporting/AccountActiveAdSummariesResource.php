@@ -38,6 +38,6 @@ class Google_Service_Dfareporting_AccountActiveAdSummariesResource extends Googl
   {
     $params = array('profileId' => $profileId, 'summaryAccountId' => $summaryAccountId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AccountActiveAdSummary');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_AccountActiveAdSummary");
   }
 }

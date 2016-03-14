@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_UserRolePermissionGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_UserRolePermissionGroup');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_UserRolePermissionGroup");
   }
   /**
    * Gets a list of all supported user role permission groups.
@@ -51,6 +51,6 @@ class Google_Service_Dfareporting_UserRolePermissionGroupsResource extends Googl
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UserRolePermissionGroupsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_UserRolePermissionGroupsListResponse");
   }
 }

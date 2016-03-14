@@ -43,7 +43,7 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('listByPlayer', array($params), 'Google_Service_PlayerEventListResponse');
+    return $this->call('listByPlayer', array($params), "Google_Service_Games_PlayerEventListResponse");
   }
   /**
    * Returns a list of the event definitions in this application.
@@ -63,7 +63,7 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('listDefinitions', array($params), 'Google_Service_EventDefinitionListResponse');
+    return $this->call('listDefinitions', array($params), "Google_Service_Games_EventDefinitionListResponse");
   }
   /**
    * Records a batch of changes to the number of times events have occurred for
@@ -80,6 +80,6 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('record', array($params), 'Google_Service_EventUpdateResponse');
+    return $this->call('record', array($params), "Google_Service_Games_EventUpdateResponse");
   }
 }

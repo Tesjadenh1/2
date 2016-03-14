@@ -43,7 +43,7 @@ class Google_Service_Books_CloudloadingResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('addBook', array($params), 'Google_Service_BooksCloudloadingResource');
+    return $this->call('addBook', array($params), "Google_Service_Books_BooksCloudloadingResource");
   }
   /**
    * Remove the book and its contents (cloudloading.deleteBook)
@@ -68,6 +68,6 @@ class Google_Service_Books_CloudloadingResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('updateBook', array($params), 'Google_Service_BooksCloudloadingResource');
+    return $this->call('updateBook', array($params), "Google_Service_Books_BooksCloudloadingResource");
   }
 }

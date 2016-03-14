@@ -61,7 +61,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
   {
     $params = array('bucket' => $bucket);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Bucket');
+    return $this->call('get', array($params), "Google_Service_Storage_Bucket");
   }
   /**
    * Creates a new bucket. (buckets.insert)
@@ -83,7 +83,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Bucket');
+    return $this->call('insert', array($params), "Google_Service_Storage_Bucket");
   }
   /**
    * Retrieves a list of buckets for a given project. (buckets.listBuckets)
@@ -103,7 +103,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_Buckets');
+    return $this->call('list', array($params), "Google_Service_Storage_Buckets");
   }
   /**
    * Updates a bucket. This method supports patch semantics. (buckets.patch)
@@ -129,7 +129,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Bucket');
+    return $this->call('patch', array($params), "Google_Service_Storage_Bucket");
   }
   /**
    * Updates a bucket. (buckets.update)
@@ -155,6 +155,6 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Bucket');
+    return $this->call('update', array($params), "Google_Service_Storage_Bucket");
   }
 }

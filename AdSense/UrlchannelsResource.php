@@ -43,6 +43,6 @@ class Google_Service_AdSense_UrlchannelsResource extends Google_Service_Resource
   {
     $params = array('adClientId' => $adClientId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_UrlChannels');
+    return $this->call('list', array($params), "Google_Service_AdSense_UrlChannels");
   }
 }

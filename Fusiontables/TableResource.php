@@ -39,7 +39,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('copy', array($params), 'Google_Service_Table');
+    return $this->call('copy', array($params), "Google_Service_Fusiontables_Table");
   }
   /**
    * Deletes a table. (table.delete)
@@ -64,7 +64,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Table');
+    return $this->call('get', array($params), "Google_Service_Fusiontables_Table");
   }
   /**
    * Imports more rows into a table. (table.importRows)
@@ -91,7 +91,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('importRows', array($params), 'Google_Service_Import');
+    return $this->call('importRows', array($params), "Google_Service_Fusiontables_Import");
   }
   /**
    * Imports a new table. (table.importTable)
@@ -109,7 +109,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('importTable', array($params), 'Google_Service_Table');
+    return $this->call('importTable', array($params), "Google_Service_Fusiontables_Table");
   }
   /**
    * Creates a new table. (table.insert)
@@ -122,7 +122,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Table');
+    return $this->call('insert', array($params), "Google_Service_Fusiontables_Table");
   }
   /**
    * Retrieves a list of tables a user owns. (table.listTable)
@@ -139,7 +139,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TableList');
+    return $this->call('list', array($params), "Google_Service_Fusiontables_TableList");
   }
   /**
    * Updates an existing table. Unless explicitly requested, only the name,
@@ -159,7 +159,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Table');
+    return $this->call('patch', array($params), "Google_Service_Fusiontables_Table");
   }
   /**
    * Replaces rows of an existing table. Current rows remain visible until all
@@ -188,7 +188,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('replaceRows', array($params), 'Google_Service_Task');
+    return $this->call('replaceRows', array($params), "Google_Service_Fusiontables_Task");
   }
   /**
    * Updates an existing table. Unless explicitly requested, only the name,
@@ -207,6 +207,6 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Table');
+    return $this->call('update', array($params), "Google_Service_Fusiontables_Table");
   }
 }

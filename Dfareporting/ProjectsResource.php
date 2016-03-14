@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_ProjectsResource extends Google_Service_Resour
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Project');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Project");
   }
   /**
    * Retrieves a list of projects, possibly filtered. (projects.listProjects)
@@ -65,6 +65,6 @@ class Google_Service_Dfareporting_ProjectsResource extends Google_Service_Resour
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ProjectsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_ProjectsListResponse");
   }
 }

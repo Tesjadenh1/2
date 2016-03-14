@@ -57,6 +57,6 @@ class Google_Service_YouTube_ChannelBannersResource extends Google_Service_Resou
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_ChannelBannerResource');
+    return $this->call('insert', array($params), "Google_Service_YouTube_ChannelBannerResource");
   }
 }

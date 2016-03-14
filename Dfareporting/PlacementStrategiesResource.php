@@ -50,7 +50,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_PlacementStrategy');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_PlacementStrategy");
   }
   /**
    * Inserts a new placement strategy. (placementStrategies.insert)
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_PlacementStrategy');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_PlacementStrategy");
   }
   /**
    * Retrieves a list of placement strategies, possibly filtered.
@@ -93,7 +93,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PlacementStrategiesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_PlacementStrategiesListResponse");
   }
   /**
    * Updates an existing placement strategy. This method supports patch semantics.
@@ -109,7 +109,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_PlacementStrategy');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_PlacementStrategy");
   }
   /**
    * Updates an existing placement strategy. (placementStrategies.update)
@@ -123,6 +123,6 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_PlacementStrategy');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_PlacementStrategy");
   }
 }

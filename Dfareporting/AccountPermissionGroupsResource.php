@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_AccountPermissionGroupsResource extends Google
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_AccountPermissionGroup');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_AccountPermissionGroup");
   }
   /**
    * Retrieves the list of account permission groups.
@@ -51,6 +51,6 @@ class Google_Service_Dfareporting_AccountPermissionGroupsResource extends Google
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_AccountPermissionGroupsListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_AccountPermissionGroupsListResponse");
   }
 }

@@ -37,7 +37,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'image' => $image);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Sets the deprecation status of an image.
@@ -55,7 +55,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'image' => $image, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('deprecate', array($params), 'Google_Service_Operation');
+    return $this->call('deprecate', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified image. Get a list of available images by making a
@@ -70,7 +70,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'image' => $image);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Image');
+    return $this->call('get', array($params), "Google_Service_Compute_Image");
   }
   /**
    * Creates an image in the specified project using the data included in the
@@ -85,7 +85,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of private images available to the specified project.
@@ -139,6 +139,6 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ImageList');
+    return $this->call('list', array($params), "Google_Service_Compute_ImageList");
   }
 }

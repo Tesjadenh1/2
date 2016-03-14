@@ -38,7 +38,7 @@ class Google_Service_GamesManagement_AchievementsResource extends Google_Service
   {
     $params = array('achievementId' => $achievementId);
     $params = array_merge($params, $optParams);
-    return $this->call('reset', array($params), 'Google_Service_AchievementResetResponse');
+    return $this->call('reset', array($params), "Google_Service_GamesManagement_AchievementResetResponse");
   }
   /**
    * Resets all achievements for the currently authenticated player for your
@@ -52,7 +52,7 @@ class Google_Service_GamesManagement_AchievementsResource extends Google_Service
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('resetAll', array($params), 'Google_Service_AchievementResetAllResponse');
+    return $this->call('resetAll', array($params), "Google_Service_GamesManagement_AchievementResetAllResponse");
   }
   /**
    * Resets all draft achievements for all players. This method is only available

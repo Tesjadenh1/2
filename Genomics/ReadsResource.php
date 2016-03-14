@@ -51,7 +51,7 @@ class Google_Service_Genomics_ReadsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('search', array($params), 'Google_Service_SearchReadsResponse');
+    return $this->call('search', array($params), "Google_Service_Genomics_SearchReadsResponse");
   }
   /**
    * Returns a stream of all the reads matching the search request, ordered by
@@ -65,6 +65,6 @@ class Google_Service_Genomics_ReadsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('stream', array($params), 'Google_Service_StreamReadsResponse');
+    return $this->call('stream', array($params), "Google_Service_Genomics_StreamReadsResponse");
   }
 }

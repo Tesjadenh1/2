@@ -71,7 +71,7 @@ class Google_Service_Compute_GlobalOperationsResource extends Google_Service_Res
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_OperationAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_OperationAggregatedList");
   }
   /**
    * Deletes the specified Operations resource. (globalOperations.delete)
@@ -99,7 +99,7 @@ class Google_Service_Compute_GlobalOperationsResource extends Google_Service_Res
   {
     $params = array('project' => $project, 'operation' => $operation);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Operation');
+    return $this->call('get', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of Operation resources contained within the specified
@@ -147,6 +147,6 @@ class Google_Service_Compute_GlobalOperationsResource extends Google_Service_Res
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_OperationList');
+    return $this->call('list', array($params), "Google_Service_Compute_OperationList");
   }
 }

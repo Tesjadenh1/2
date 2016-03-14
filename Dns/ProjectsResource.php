@@ -36,6 +36,6 @@ class Google_Service_Dns_ProjectsResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Project');
+    return $this->call('get', array($params), "Google_Service_Dns_Project");
   }
 }

@@ -40,6 +40,6 @@ class Google_Service_AndroidEnterprise_PermissionsResource extends Google_Servic
   {
     $params = array('permissionId' => $permissionId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Permission');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Permission");
   }
 }

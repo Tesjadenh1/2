@@ -36,6 +36,6 @@ class Google_Service_Dfareporting_MetrosResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_MetrosListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_MetrosListResponse");
   }
 }

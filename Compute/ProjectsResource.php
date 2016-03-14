@@ -36,7 +36,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Project');
+    return $this->call('get', array($params), "Google_Service_Compute_Project");
   }
   /**
    * Moves a persistent disk from one zone to another. (projects.moveDisk)
@@ -50,7 +50,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('moveDisk', array($params), 'Google_Service_Operation');
+    return $this->call('moveDisk', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Moves an instance and its attached persistent disks from one zone to another.
@@ -65,7 +65,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('moveInstance', array($params), 'Google_Service_Operation');
+    return $this->call('moveInstance', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Sets metadata common to all instances within the specified project using the
@@ -80,7 +80,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setCommonInstanceMetadata', array($params), 'Google_Service_Operation');
+    return $this->call('setCommonInstanceMetadata', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Enables the usage export feature and sets the usage export bucket where
@@ -96,6 +96,6 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setUsageExportBucket', array($params), 'Google_Service_Operation');
+    return $this->call('setUsageExportBucket', array($params), "Google_Service_Compute_Operation");
   }
 }

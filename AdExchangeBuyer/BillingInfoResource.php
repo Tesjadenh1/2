@@ -37,7 +37,7 @@ class Google_Service_AdExchangeBuyer_BillingInfoResource extends Google_Service_
   {
     $params = array('accountId' => $accountId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_BillingInfo');
+    return $this->call('get', array($params), "Google_Service_AdExchangeBuyer_BillingInfo");
   }
   /**
    * Retrieves a list of billing information for all accounts of the authenticated
@@ -50,6 +50,6 @@ class Google_Service_AdExchangeBuyer_BillingInfoResource extends Google_Service_
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_BillingInfoList');
+    return $this->call('list', array($params), "Google_Service_AdExchangeBuyer_BillingInfoList");
   }
 }

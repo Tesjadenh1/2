@@ -39,7 +39,7 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'managedZone' => $managedZone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), 'Google_Service_Change');
+    return $this->call('create', array($params), "Google_Service_Dns_Change");
   }
   /**
    * Fetch the representation of an existing Change. (changes.get)
@@ -56,7 +56,7 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'managedZone' => $managedZone, 'changeId' => $changeId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Change');
+    return $this->call('get', array($params), "Google_Service_Dns_Change");
   }
   /**
    * Enumerate Changes to a ResourceRecordSet collection. (changes.listChanges)
@@ -81,6 +81,6 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'managedZone' => $managedZone);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ChangesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dns_ChangesListResponse");
   }
 }

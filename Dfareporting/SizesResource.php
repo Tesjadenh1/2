@@ -37,7 +37,7 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Size');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_Size");
   }
   /**
    * Inserts a new size. (sizes.insert)
@@ -51,7 +51,7 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Size');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_Size");
   }
   /**
    * Retrieves a list of sizes, possibly filtered. (sizes.listSizes)
@@ -69,6 +69,6 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
   {
     $params = array('profileId' => $profileId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SizesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_SizesListResponse");
   }
 }

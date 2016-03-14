@@ -37,7 +37,7 @@ class Google_Service_Compute_SslCertificatesResource extends Google_Service_Reso
   {
     $params = array('project' => $project, 'sslCertificate' => $sslCertificate);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified SslCertificate resource. Get a list of available SSL
@@ -52,7 +52,7 @@ class Google_Service_Compute_SslCertificatesResource extends Google_Service_Reso
   {
     $params = array('project' => $project, 'sslCertificate' => $sslCertificate);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_SslCertificate');
+    return $this->call('get', array($params), "Google_Service_Compute_SslCertificate");
   }
   /**
    * Creates a SslCertificate resource in the specified project using the data
@@ -67,7 +67,7 @@ class Google_Service_Compute_SslCertificatesResource extends Google_Service_Reso
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves the list of SslCertificate resources available to the specified
@@ -115,6 +115,6 @@ class Google_Service_Compute_SslCertificatesResource extends Google_Service_Reso
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_SslCertificateList');
+    return $this->call('list', array($params), "Google_Service_Compute_SslCertificateList");
   }
 }

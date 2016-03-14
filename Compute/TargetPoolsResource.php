@@ -39,7 +39,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('addHealthCheck', array($params), 'Google_Service_Operation');
+    return $this->call('addHealthCheck', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Adds an instance to a target pool. (targetPools.addInstance)
@@ -56,7 +56,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('addInstance', array($params), 'Google_Service_Operation');
+    return $this->call('addInstance', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves an aggregated list of target pools. (targetPools.aggregatedList)
@@ -103,7 +103,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('aggregatedList', array($params), 'Google_Service_TargetPoolAggregatedList');
+    return $this->call('aggregatedList', array($params), "Google_Service_Compute_TargetPoolAggregatedList");
   }
   /**
    * Deletes the specified target pool. (targetPools.delete)
@@ -118,7 +118,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), 'Google_Service_Operation');
+    return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Returns the specified target pool. Get a list of available target pools by
@@ -134,7 +134,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_TargetPool');
+    return $this->call('get', array($params), "Google_Service_Compute_TargetPool");
   }
   /**
    * Gets the most recent health check results for each IP for the instance that
@@ -152,7 +152,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getHealth', array($params), 'Google_Service_TargetPoolInstanceHealth');
+    return $this->call('getHealth', array($params), "Google_Service_Compute_TargetPoolInstanceHealth");
   }
   /**
    * Creates a target pool in the specified project and region using the data
@@ -168,7 +168,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Operation');
+    return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Retrieves a list of target pools available to the specified project and
@@ -217,7 +217,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TargetPoolList');
+    return $this->call('list', array($params), "Google_Service_Compute_TargetPoolList");
   }
   /**
    * Removes health check URL from a target pool. (targetPools.removeHealthCheck)
@@ -234,7 +234,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('removeHealthCheck', array($params), 'Google_Service_Operation');
+    return $this->call('removeHealthCheck', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Removes instance URL from a target pool. (targetPools.removeInstance)
@@ -251,7 +251,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('removeInstance', array($params), 'Google_Service_Operation');
+    return $this->call('removeInstance', array($params), "Google_Service_Compute_Operation");
   }
   /**
    * Changes a backup target pool's configurations. (targetPools.setBackup)
@@ -270,6 +270,6 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setBackup', array($params), 'Google_Service_Operation');
+    return $this->call('setBackup', array($params), "Google_Service_Compute_Operation");
   }
 }

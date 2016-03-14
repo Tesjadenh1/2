@@ -53,7 +53,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('token' => $token, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('enroll', array($params), 'Google_Service_Enterprise');
+    return $this->call('enroll', array($params), "Google_Service_AndroidEnterprise_Enterprise");
   }
   /**
    * Retrieves the name and domain of an enterprise. (enterprises.get)
@@ -66,7 +66,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Enterprise');
+    return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Enterprise");
   }
   /**
    * Returns the store layout resource. (enterprises.getStoreLayout)
@@ -79,7 +79,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId);
     $params = array_merge($params, $optParams);
-    return $this->call('getStoreLayout', array($params), 'Google_Service_StoreLayout');
+    return $this->call('getStoreLayout', array($params), "Google_Service_AndroidEnterprise_StoreLayout");
   }
   /**
    * Establishes the binding between the EMM and an enterprise. This is now
@@ -95,7 +95,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('token' => $token, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Enterprise');
+    return $this->call('insert', array($params), "Google_Service_AndroidEnterprise_Enterprise");
   }
   /**
    * Looks up an enterprise by domain name. (enterprises.listEnterprises)
@@ -109,7 +109,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('domain' => $domain);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_EnterprisesListResponse');
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_EnterprisesListResponse");
   }
   /**
    * Sends a test push notification to validate the EMM integration with the
@@ -124,7 +124,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId);
     $params = array_merge($params, $optParams);
-    return $this->call('sendTestPushNotification', array($params), 'Google_Service_EnterprisesSendTestPushNotificationResponse');
+    return $this->call('sendTestPushNotification', array($params), "Google_Service_AndroidEnterprise_EnterprisesSendTestPushNotificationResponse");
   }
   /**
    * Set the account that will be used to authenticate to the API as the
@@ -139,7 +139,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setAccount', array($params), 'Google_Service_EnterpriseAccount');
+    return $this->call('setAccount', array($params), "Google_Service_AndroidEnterprise_EnterpriseAccount");
   }
   /**
    * Sets the store layout resource. (enterprises.setStoreLayout)
@@ -153,7 +153,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setStoreLayout', array($params), 'Google_Service_StoreLayout');
+    return $this->call('setStoreLayout', array($params), "Google_Service_AndroidEnterprise_StoreLayout");
   }
   /**
    * Unenrolls an enterprise from the calling EMM. (enterprises.unenroll)

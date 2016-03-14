@@ -66,7 +66,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_PlaylistItem');
+    return $this->call('insert', array($params), "Google_Service_YouTube_PlaylistItem");
   }
   /**
    * Returns a collection of playlist items that match the API request parameters.
@@ -119,7 +119,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
   {
     $params = array('part' => $part);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_PlaylistItemListResponse');
+    return $this->call('list', array($params), "Google_Service_YouTube_PlaylistItemListResponse");
   }
   /**
    * Modifies a playlist item. For example, you could update the item's position
@@ -147,6 +147,6 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_PlaylistItem');
+    return $this->call('update', array($params), "Google_Service_YouTube_PlaylistItem");
   }
 }

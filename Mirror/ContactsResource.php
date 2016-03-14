@@ -48,7 +48,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
   {
     $params = array('id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Contact');
+    return $this->call('get', array($params), "Google_Service_Mirror_Contact");
   }
   /**
    * Inserts a new contact. (contacts.insert)
@@ -61,7 +61,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Contact');
+    return $this->call('insert', array($params), "Google_Service_Mirror_Contact");
   }
   /**
    * Retrieves a list of contacts for the authenticated user.
@@ -74,7 +74,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ContactsListResponse');
+    return $this->call('list', array($params), "Google_Service_Mirror_ContactsListResponse");
   }
   /**
    * Updates a contact in place. This method supports patch semantics.
@@ -89,7 +89,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Contact');
+    return $this->call('patch', array($params), "Google_Service_Mirror_Contact");
   }
   /**
    * Updates a contact in place. (contacts.update)
@@ -103,6 +103,6 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Contact');
+    return $this->call('update', array($params), "Google_Service_Mirror_Contact");
   }
 }

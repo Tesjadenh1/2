@@ -38,6 +38,6 @@ class Google_Service_Compute_LicensesResource extends Google_Service_Resource
   {
     $params = array('project' => $project, 'license' => $license);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_License');
+    return $this->call('get', array($params), "Google_Service_Compute_License");
   }
 }

@@ -52,7 +52,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'id' => $id);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_LandingPage');
+    return $this->call('get', array($params), "Google_Service_Dfareporting_LandingPage");
   }
   /**
    * Inserts a new landing page for the specified campaign. (landingPages.insert)
@@ -67,7 +67,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_LandingPage');
+    return $this->call('insert', array($params), "Google_Service_Dfareporting_LandingPage");
   }
   /**
    * Retrieves the list of landing pages for the specified campaign.
@@ -82,7 +82,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_LandingPagesListResponse');
+    return $this->call('list', array($params), "Google_Service_Dfareporting_LandingPagesListResponse");
   }
   /**
    * Updates an existing campaign landing page. This method supports patch
@@ -99,7 +99,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_LandingPage');
+    return $this->call('patch', array($params), "Google_Service_Dfareporting_LandingPage");
   }
   /**
    * Updates an existing campaign landing page. (landingPages.update)
@@ -114,6 +114,6 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_LandingPage');
+    return $this->call('update', array($params), "Google_Service_Dfareporting_LandingPage");
   }
 }

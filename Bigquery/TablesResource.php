@@ -55,7 +55,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'tableId' => $tableId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_Table');
+    return $this->call('get', array($params), "Google_Service_Bigquery_Table");
   }
   /**
    * Creates a new, empty table in the dataset. (tables.insert)
@@ -70,7 +70,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('insert', array($params), 'Google_Service_Table');
+    return $this->call('insert', array($params), "Google_Service_Bigquery_Table");
   }
   /**
    * Lists all tables in the specified dataset. Requires the READER dataset role.
@@ -89,7 +89,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_TableList');
+    return $this->call('list', array($params), "Google_Service_Bigquery_TableList");
   }
   /**
    * Updates information in an existing table. The update method replaces the
@@ -108,7 +108,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), 'Google_Service_Table');
+    return $this->call('patch', array($params), "Google_Service_Bigquery_Table");
   }
   /**
    * Updates information in an existing table. The update method replaces the
@@ -126,6 +126,6 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), 'Google_Service_Table');
+    return $this->call('update', array($params), "Google_Service_Bigquery_Table");
   }
 }

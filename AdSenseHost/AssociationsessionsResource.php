@@ -41,7 +41,7 @@ class Google_Service_AdSenseHost_AssociationsessionsResource extends Google_Serv
   {
     $params = array('productCode' => $productCode, 'websiteUrl' => $websiteUrl);
     $params = array_merge($params, $optParams);
-    return $this->call('start', array($params), 'Google_Service_AssociationSession');
+    return $this->call('start', array($params), "Google_Service_AdSenseHost_AssociationSession");
   }
   /**
    * Verify an association session after the association callback returns from
@@ -55,6 +55,6 @@ class Google_Service_AdSenseHost_AssociationsessionsResource extends Google_Serv
   {
     $params = array('token' => $token);
     $params = array_merge($params, $optParams);
-    return $this->call('verify', array($params), 'Google_Service_AssociationSession');
+    return $this->call('verify', array($params), "Google_Service_AdSenseHost_AssociationSession");
   }
 }

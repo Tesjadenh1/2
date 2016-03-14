@@ -65,7 +65,7 @@ class Google_Service_Partners_CompaniesResource extends Google_Service_Resource
   {
     $params = array('companyId' => $companyId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), 'Google_Service_GetCompanyResponse');
+    return $this->call('get', array($params), "Google_Service_Partners_GetCompanyResponse");
   }
   /**
    * Lists companies. (companies.listCompanies)
@@ -139,6 +139,6 @@ class Google_Service_Partners_CompaniesResource extends Google_Service_Resource
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), 'Google_Service_ListCompaniesResponse');
+    return $this->call('list', array($params), "Google_Service_Partners_ListCompaniesResponse");
   }
 }
