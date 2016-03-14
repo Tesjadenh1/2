@@ -118,7 +118,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Table
    */
-  public function insert(Table $postBody, $optParams = array())
+  public function insert(Google_Service_Fusiontables_Table $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -155,7 +155,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * can be updated with a new definition.
    * @return Google_Service_Table
    */
-  public function patch($tableId, Table $postBody, $optParams = array())
+  public function patch($tableId, Google_Service_Fusiontables_Table $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -203,7 +203,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * can be updated with a new definition.
    * @return Google_Service_Table
    */
-  public function update($tableId, Table $postBody, $optParams = array())
+  public function update($tableId, Google_Service_Fusiontables_Table $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

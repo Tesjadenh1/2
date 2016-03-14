@@ -47,7 +47,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccountsCustomBatchResponse
    */
-  public function custombatch(AccountsCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_AccountsCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -92,7 +92,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Account
    */
-  public function insert($merchantId, Account $postBody, $optParams = array())
+  public function insert($merchantId, Google_Service_ShoppingContent_Account $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -128,7 +128,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Account
    */
-  public function patch($merchantId, $accountId, Account $postBody, $optParams = array())
+  public function patch($merchantId, $accountId, Google_Service_ShoppingContent_Account $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -145,7 +145,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Account
    */
-  public function update($merchantId, $accountId, Account $postBody, $optParams = array())
+  public function update($merchantId, $accountId, Google_Service_ShoppingContent_Account $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

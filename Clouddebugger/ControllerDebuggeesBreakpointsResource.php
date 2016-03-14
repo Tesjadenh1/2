@@ -72,7 +72,7 @@ class Google_Service_Clouddebugger_ControllerDebuggeesBreakpointsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_UpdateActiveBreakpointResponse
    */
-  public function update($debuggeeId, $id, UpdateActiveBreakpointRequest $postBody, $optParams = array())
+  public function update($debuggeeId, $id, Google_Service_Clouddebugger_UpdateActiveBreakpointRequest $postBody, $optParams = array())
   {
     $params = array('debuggeeId' => $debuggeeId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

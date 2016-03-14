@@ -66,7 +66,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Circle
    */
-  public function insert($userId, Circle $postBody, $optParams = array())
+  public function insert($userId, Google_Service_PlusDomains_Circle $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -102,7 +102,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Circle
    */
-  public function patch($circleId, Circle $postBody, $optParams = array())
+  public function patch($circleId, Google_Service_PlusDomains_Circle $postBody, $optParams = array())
   {
     $params = array('circleId' => $circleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -145,7 +145,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Circle
    */
-  public function update($circleId, Circle $postBody, $optParams = array())
+  public function update($circleId, Google_Service_PlusDomains_Circle $postBody, $optParams = array())
   {
     $params = array('circleId' => $circleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

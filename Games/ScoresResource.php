@@ -144,7 +144,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * by this method.
    * @return Google_Service_PlayerScoreListResponse
    */
-  public function submitMultiple(PlayerScoreSubmissionList $postBody, $optParams = array())
+  public function submitMultiple(Google_Service_Games_PlayerScoreSubmissionList $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

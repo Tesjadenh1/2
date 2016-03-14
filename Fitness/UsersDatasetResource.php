@@ -37,7 +37,7 @@ class Google_Service_Fitness_UsersDatasetResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_AggregateResponse
    */
-  public function aggregate($userId, AggregateRequest $postBody, $optParams = array())
+  public function aggregate($userId, Google_Service_Fitness_AggregateRequest $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

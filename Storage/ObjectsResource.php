@@ -45,7 +45,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * whether the object's current metageneration matches the given value.
    * @return Google_Service_StorageObject
    */
-  public function compose($destinationBucket, $destinationObject, ComposeRequest $postBody, $optParams = array())
+  public function compose($destinationBucket, $destinationObject, Google_Service_Storage_ComposeRequest $postBody, $optParams = array())
   {
     $params = array('destinationBucket' => $destinationBucket, 'destinationObject' => $destinationObject, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -99,7 +99,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * the source object (as opposed to the latest version, the default).
    * @return Google_Service_StorageObject
    */
-  public function copy($sourceBucket, $sourceObject, $destinationBucket, $destinationObject, StorageObject $postBody, $optParams = array())
+  public function copy($sourceBucket, $sourceObject, $destinationBucket, $destinationObject, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
     $params = array('sourceBucket' => $sourceBucket, 'sourceObject' => $sourceObject, 'destinationBucket' => $destinationBucket, 'destinationObject' => $destinationObject, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -191,7 +191,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * full.
    * @return Google_Service_StorageObject
    */
-  public function insert($bucket, StorageObject $postBody, $optParams = array())
+  public function insert($bucket, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -251,7 +251,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to full.
    * @return Google_Service_StorageObject
    */
-  public function patch($bucket, $object, StorageObject $postBody, $optParams = array())
+  public function patch($bucket, $object, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -316,7 +316,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * the source object (as opposed to the latest version, the default).
    * @return Google_Service_RewriteResponse
    */
-  public function rewrite($sourceBucket, $sourceObject, $destinationBucket, $destinationObject, StorageObject $postBody, $optParams = array())
+  public function rewrite($sourceBucket, $sourceObject, $destinationBucket, $destinationObject, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
     $params = array('sourceBucket' => $sourceBucket, 'sourceObject' => $sourceObject, 'destinationBucket' => $destinationBucket, 'destinationObject' => $destinationObject, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -346,7 +346,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to full.
    * @return Google_Service_StorageObject
    */
-  public function update($bucket, $object, StorageObject $postBody, $optParams = array())
+  public function update($bucket, $object, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -376,7 +376,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * results. The default is false. For more information, see Object Versioning.
    * @return Google_Service_Channel
    */
-  public function watchAll($bucket, Channel $postBody, $optParams = array())
+  public function watchAll($bucket, Google_Service_Storage_Channel $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

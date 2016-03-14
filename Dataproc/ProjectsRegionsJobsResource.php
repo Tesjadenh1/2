@@ -40,7 +40,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Job
    */
-  public function cancel($projectId, $region, $jobId, CancelJobRequest $postBody, $optParams = array())
+  public function cancel($projectId, $region, $jobId, Google_Service_Dataproc_CancelJobRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'region' => $region, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -117,7 +117,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Job
    */
-  public function submit($projectId, $region, SubmitJobRequest $postBody, $optParams = array())
+  public function submit($projectId, $region, Google_Service_Dataproc_SubmitJobRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

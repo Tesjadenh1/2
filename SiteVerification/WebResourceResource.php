@@ -58,7 +58,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_SiteVerificationWebResourceGettokenResponse
    */
-  public function getToken(SiteVerificationWebResourceGettokenRequest $postBody, $optParams = array())
+  public function getToken(Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -73,7 +73,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_SiteVerificationWebResourceResource
    */
-  public function insert($verificationMethod, SiteVerificationWebResourceResource $postBody, $optParams = array())
+  public function insert($verificationMethod, Google_Service_SiteVerification_SiteVerificationWebResourceResource $postBody, $optParams = array())
   {
     $params = array('verificationMethod' => $verificationMethod, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -101,7 +101,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_SiteVerificationWebResourceResource
    */
-  public function patch($id, SiteVerificationWebResourceResource $postBody, $optParams = array())
+  public function patch($id, Google_Service_SiteVerification_SiteVerificationWebResourceResource $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -115,7 +115,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_SiteVerificationWebResourceResource
    */
-  public function update($id, SiteVerificationWebResourceResource $postBody, $optParams = array())
+  public function update($id, Google_Service_SiteVerification_SiteVerificationWebResourceResource $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

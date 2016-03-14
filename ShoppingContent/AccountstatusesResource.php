@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_AccountstatusesCustomBatchResponse
    */
-  public function custombatch(AccountstatusesCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_AccountstatusesCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

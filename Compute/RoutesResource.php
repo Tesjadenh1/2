@@ -63,7 +63,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, Route $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_Route $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

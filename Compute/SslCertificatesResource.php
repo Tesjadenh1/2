@@ -63,7 +63,7 @@ class Google_Service_Compute_SslCertificatesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, SslCertificate $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_SslCertificate $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

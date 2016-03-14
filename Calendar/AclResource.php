@@ -66,7 +66,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_AclRule
    */
-  public function insert($calendarId, AclRule $postBody, $optParams = array())
+  public function insert($calendarId, Google_Service_Calendar_AclRule $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -117,7 +117,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_AclRule
    */
-  public function patch($calendarId, $ruleId, AclRule $postBody, $optParams = array())
+  public function patch($calendarId, $ruleId, Google_Service_Calendar_AclRule $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'ruleId' => $ruleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -134,7 +134,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_AclRule
    */
-  public function update($calendarId, $ruleId, AclRule $postBody, $optParams = array())
+  public function update($calendarId, $ruleId, Google_Service_Calendar_AclRule $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'ruleId' => $ruleId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -168,7 +168,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * Optional. The default is to return all entries.
    * @return Google_Service_Channel
    */
-  public function watch($calendarId, Channel $postBody, $optParams = array())
+  public function watch($calendarId, Google_Service_Calendar_Channel $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

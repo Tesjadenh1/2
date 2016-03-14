@@ -38,7 +38,7 @@ class Google_Service_AndroidPublisher_EditsApksResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_ApksAddExternallyHostedResponse
    */
-  public function addexternallyhosted($packageName, $editId, ApksAddExternallyHostedRequest $postBody, $optParams = array())
+  public function addexternallyhosted($packageName, $editId, Google_Service_AndroidPublisher_ApksAddExternallyHostedRequest $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

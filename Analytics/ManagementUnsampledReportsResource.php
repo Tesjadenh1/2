@@ -71,7 +71,7 @@ class Google_Service_Analytics_ManagementUnsampledReportsResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_UnsampledReport
    */
-  public function insert($accountId, $webPropertyId, $profileId, UnsampledReport $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_UnsampledReport $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

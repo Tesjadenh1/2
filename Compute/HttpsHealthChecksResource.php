@@ -65,7 +65,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, HttpsHealthCheck $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_HttpsHealthCheck $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -131,7 +131,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function patch($project, $httpsHealthCheck, HttpsHealthCheck $postBody, $optParams = array())
+  public function patch($project, $httpsHealthCheck, Google_Service_Compute_HttpsHealthCheck $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'httpsHealthCheck' => $httpsHealthCheck, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -148,7 +148,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function update($project, $httpsHealthCheck, HttpsHealthCheck $postBody, $optParams = array())
+  public function update($project, $httpsHealthCheck, Google_Service_Compute_HttpsHealthCheck $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'httpsHealthCheck' => $httpsHealthCheck, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

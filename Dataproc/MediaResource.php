@@ -50,7 +50,7 @@ class Google_Service_Dataproc_MediaResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Media
    */
-  public function upload($resourceName, Media $postBody, $optParams = array())
+  public function upload($resourceName, Google_Service_Dataproc_Media $postBody, $optParams = array())
   {
     $params = array('resourceName' => $resourceName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

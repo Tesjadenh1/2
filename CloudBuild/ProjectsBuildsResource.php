@@ -34,7 +34,7 @@ class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Build
    */
-  public function cancel($projectId, $id, CancelBuildRequest $postBody, $optParams = array())
+  public function cancel($projectId, $id, Google_Service_CloudBuild_CancelBuildRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -52,7 +52,7 @@ class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function create($projectId, Build $postBody, $optParams = array())
+  public function create($projectId, Google_Service_CloudBuild_Build $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

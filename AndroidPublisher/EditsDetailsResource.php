@@ -52,7 +52,7 @@ class Google_Service_AndroidPublisher_EditsDetailsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_AppDetails
    */
-  public function patch($packageName, $editId, AppDetails $postBody, $optParams = array())
+  public function patch($packageName, $editId, Google_Service_AndroidPublisher_AppDetails $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -68,7 +68,7 @@ class Google_Service_AndroidPublisher_EditsDetailsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_AppDetails
    */
-  public function update($packageName, $editId, AppDetails $postBody, $optParams = array())
+  public function update($packageName, $editId, Google_Service_AndroidPublisher_AppDetails $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

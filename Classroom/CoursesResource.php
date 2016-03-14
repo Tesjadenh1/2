@@ -39,7 +39,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Course
    */
-  public function create(Course $postBody, $optParams = array())
+  public function create(Google_Service_Classroom_Course $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -133,7 +133,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * `updateMask=,,...`
    * @return Google_Service_Course
    */
-  public function patch($id, Course $postBody, $optParams = array())
+  public function patch($id, Google_Service_Classroom_Course $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -152,7 +152,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Course
    */
-  public function update($id, Course $postBody, $optParams = array())
+  public function update($id, Google_Service_Classroom_Course $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -51,7 +51,7 @@ class Google_Service_Books_MylibraryAnnotationsResource extends Google_Service_R
    * @opt_param string source String to identify the originator of this request.
    * @return Google_Service_Annotation
    */
-  public function insert(Annotation $postBody, $optParams = array())
+  public function insert(Google_Service_Books_Annotation $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_Books_MylibraryAnnotationsResource extends Google_Service_R
    * @opt_param string source String to identify the originator of this request.
    * @return Google_Service_Annotation
    */
-  public function update($annotationId, Annotation $postBody, $optParams = array())
+  public function update($annotationId, Google_Service_Books_Annotation $postBody, $optParams = array())
   {
     $params = array('annotationId' => $annotationId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

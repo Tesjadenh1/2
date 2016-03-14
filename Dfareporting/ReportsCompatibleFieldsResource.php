@@ -35,7 +35,7 @@ class Google_Service_Dfareporting_ReportsCompatibleFieldsResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_CompatibleFields
    */
-  public function query($profileId, Report $postBody, $optParams = array())
+  public function query($profileId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

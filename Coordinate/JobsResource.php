@@ -64,7 +64,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param string note Job note as newline (Unix) separated string
    * @return Google_Service_Job
    */
-  public function insert($teamId, $address, $lat, $lng, $title, Job $postBody, $optParams = array())
+  public function insert($teamId, $address, $lat, $lng, $title, Google_Service_Coordinate_Job $postBody, $optParams = array())
   {
     $params = array('teamId' => $teamId, 'address' => $address, 'lat' => $lat, 'lng' => $lng, 'title' => $title, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -117,7 +117,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param string title Job title
    * @return Google_Service_Job
    */
-  public function patch($teamId, $jobId, Job $postBody, $optParams = array())
+  public function patch($teamId, $jobId, Google_Service_Coordinate_Job $postBody, $optParams = array())
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -150,7 +150,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param string title Job title
    * @return Google_Service_Job
    */
-  public function update($teamId, $jobId, Job $postBody, $optParams = array())
+  public function update($teamId, $jobId, Google_Service_Coordinate_Job $postBody, $optParams = array())
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

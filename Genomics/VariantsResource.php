@@ -35,7 +35,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Variant
    */
-  public function create(Variant $postBody, $optParams = array())
+  public function create(Google_Service_Genomics_Variant $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -93,7 +93,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function import(ImportVariantsRequest $postBody, $optParams = array())
+  public function import(Google_Service_Genomics_ImportVariantsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -113,7 +113,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_GenomicsEmpty
    */
-  public function merge(MergeVariantsRequest $postBody, $optParams = array())
+  public function merge(Google_Service_Genomics_MergeVariantsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -135,7 +135,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * are "names" and "info". If unspecified, all mutable fields will be updated.
    * @return Google_Service_Variant
    */
-  public function patch($variantId, Variant $postBody, $optParams = array())
+  public function patch($variantId, Google_Service_Genomics_Variant $postBody, $optParams = array())
   {
     $params = array('variantId' => $variantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -153,7 +153,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchVariantsResponse
    */
-  public function search(SearchVariantsRequest $postBody, $optParams = array())
+  public function search(Google_Service_Genomics_SearchVariantsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -167,7 +167,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_StreamVariantsResponse
    */
-  public function stream(StreamVariantsRequest $postBody, $optParams = array())
+  public function stream(Google_Service_Genomics_StreamVariantsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

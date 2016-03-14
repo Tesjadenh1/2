@@ -38,7 +38,7 @@ class Google_Service_Dfareporting_DimensionValuesResource extends Google_Service
    * result page.
    * @return Google_Service_DimensionValueList
    */
-  public function query($profileId, DimensionValueRequest $postBody, $optParams = array())
+  public function query($profileId, Google_Service_Dfareporting_DimensionValueRequest $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

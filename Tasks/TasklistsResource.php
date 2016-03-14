@@ -58,7 +58,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TaskList
    */
-  public function insert(TaskList $postBody, $optParams = array())
+  public function insert(Google_Service_Tasks_TaskList $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -90,7 +90,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TaskList
    */
-  public function patch($tasklist, TaskList $postBody, $optParams = array())
+  public function patch($tasklist, Google_Service_Tasks_TaskList $postBody, $optParams = array())
   {
     $params = array('tasklist' => $tasklist, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -104,7 +104,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TaskList
    */
-  public function update($tasklist, TaskList $postBody, $optParams = array())
+  public function update($tasklist, Google_Service_Tasks_TaskList $postBody, $optParams = array())
   {
     $params = array('tasklist' => $tasklist, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -36,7 +36,7 @@ class Google_Service_Dfareporting_CampaignCreativeAssociationsResource extends G
    * @param array $optParams Optional parameters.
    * @return Google_Service_CampaignCreativeAssociation
    */
-  public function insert($profileId, $campaignId, CampaignCreativeAssociation $postBody, $optParams = array())
+  public function insert($profileId, $campaignId, Google_Service_Dfareporting_CampaignCreativeAssociation $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

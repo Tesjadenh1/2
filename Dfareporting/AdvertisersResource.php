@@ -47,7 +47,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Advertiser
    */
-  public function insert($profileId, Advertiser $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_Advertiser $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -102,7 +102,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Advertiser
    */
-  public function patch($profileId, $id, Advertiser $postBody, $optParams = array())
+  public function patch($profileId, $id, Google_Service_Dfareporting_Advertiser $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -116,7 +116,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Advertiser
    */
-  public function update($profileId, Advertiser $postBody, $optParams = array())
+  public function update($profileId, Google_Service_Dfareporting_Advertiser $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

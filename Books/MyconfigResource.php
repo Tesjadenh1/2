@@ -117,7 +117,7 @@ class Google_Service_Books_MyconfigResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Usersettings
    */
-  public function updateUserSettings(Usersettings $postBody, $optParams = array())
+  public function updateUserSettings(Google_Service_Books_Usersettings $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

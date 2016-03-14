@@ -50,7 +50,7 @@ class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Subscription
    */
-  public function insert($part, Subscription $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_Subscription $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

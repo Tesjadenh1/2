@@ -61,7 +61,7 @@ class Google_Service_TagManager_AccountsResource extends Google_Service_Resource
    * fingerprint of the account in storage.
    * @return Google_Service_Account
    */
-  public function update($accountId, Account $postBody, $optParams = array())
+  public function update($accountId, Google_Service_TagManager_Account $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

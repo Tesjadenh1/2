@@ -57,7 +57,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TimelineItem
    */
-  public function insert(TimelineItem $postBody, $optParams = array())
+  public function insert(Google_Service_Mirror_TimelineItem $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -98,7 +98,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TimelineItem
    */
-  public function patch($id, TimelineItem $postBody, $optParams = array())
+  public function patch($id, Google_Service_Mirror_TimelineItem $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TimelineItem
    */
-  public function update($id, TimelineItem $postBody, $optParams = array())
+  public function update($id, Google_Service_Mirror_TimelineItem $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

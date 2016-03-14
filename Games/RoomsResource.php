@@ -36,7 +36,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    * by this method.
    * @return Google_Service_Room
    */
-  public function create(RoomCreateRequest $postBody, $optParams = array())
+  public function create(Google_Service_Games_RoomCreateRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -100,7 +100,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    * by this method.
    * @return Google_Service_Room
    */
-  public function join($roomId, RoomJoinRequest $postBody, $optParams = array())
+  public function join($roomId, Google_Service_Games_RoomJoinRequest $postBody, $optParams = array())
   {
     $params = array('roomId' => $roomId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -118,7 +118,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    * by this method.
    * @return Google_Service_Room
    */
-  public function leave($roomId, RoomLeaveRequest $postBody, $optParams = array())
+  public function leave($roomId, Google_Service_Games_RoomLeaveRequest $postBody, $optParams = array())
   {
     $params = array('roomId' => $roomId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -156,7 +156,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    * by this method.
    * @return Google_Service_RoomStatus
    */
-  public function reportStatus($roomId, RoomP2PStatuses $postBody, $optParams = array())
+  public function reportStatus($roomId, Google_Service_Games_RoomP2PStatuses $postBody, $optParams = array())
   {
     $params = array('roomId' => $roomId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

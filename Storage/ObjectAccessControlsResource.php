@@ -82,7 +82,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    * object (as opposed to the latest version, the default).
    * @return Google_Service_ObjectAccessControl
    */
-  public function insert($bucket, $object, ObjectAccessControl $postBody, $optParams = array())
+  public function insert($bucket, $object, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -124,7 +124,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    * object (as opposed to the latest version, the default).
    * @return Google_Service_ObjectAccessControl
    */
-  public function patch($bucket, $object, $entity, ObjectAccessControl $postBody, $optParams = array())
+  public function patch($bucket, $object, $entity, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'entity' => $entity, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -146,7 +146,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    * object (as opposed to the latest version, the default).
    * @return Google_Service_ObjectAccessControl
    */
-  public function update($bucket, $object, $entity, ObjectAccessControl $postBody, $optParams = array())
+  public function update($bucket, $object, $entity, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'object' => $object, 'entity' => $entity, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

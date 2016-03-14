@@ -85,7 +85,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_AdUnit
    */
-  public function insert($accountId, $adClientId, AdUnit $postBody, $optParams = array())
+  public function insert($accountId, $adClientId, Google_Service_AdSenseHost_AdUnit $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -125,7 +125,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_AdUnit
    */
-  public function patch($accountId, $adClientId, $adUnitId, AdUnit $postBody, $optParams = array())
+  public function patch($accountId, $adClientId, $adUnitId, Google_Service_AdSenseHost_AdUnit $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'adClientId' => $adClientId, 'adUnitId' => $adUnitId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -141,7 +141,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_AdUnit
    */
-  public function update($accountId, $adClientId, AdUnit $postBody, $optParams = array())
+  public function update($accountId, $adClientId, Google_Service_AdSenseHost_AdUnit $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

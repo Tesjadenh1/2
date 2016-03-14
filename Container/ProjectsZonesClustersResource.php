@@ -43,7 +43,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function create($projectId, $zone, CreateClusterRequest $postBody, $optParams = array())
+  public function create($projectId, $zone, Google_Service_Container_CreateClusterRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -115,7 +115,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function update($projectId, $zone, $clusterId, UpdateClusterRequest $postBody, $optParams = array())
+  public function update($projectId, $zone, $clusterId, Google_Service_Container_UpdateClusterRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

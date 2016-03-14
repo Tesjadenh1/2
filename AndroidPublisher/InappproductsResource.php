@@ -32,7 +32,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_InappproductsBatchResponse
    */
-  public function batch(InappproductsBatchRequest $postBody, $optParams = array())
+  public function batch(Google_Service_AndroidPublisher_InappproductsBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -80,7 +80,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * price. Defaults to false.
    * @return Google_Service_InAppProduct
    */
-  public function insert($packageName, InAppProduct $postBody, $optParams = array())
+  public function insert($packageName, Google_Service_AndroidPublisher_InAppProduct $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -121,7 +121,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * price. Defaults to false.
    * @return Google_Service_InAppProduct
    */
-  public function patch($packageName, $sku, InAppProduct $postBody, $optParams = array())
+  public function patch($packageName, $sku, Google_Service_AndroidPublisher_InAppProduct $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'sku' => $sku, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -142,7 +142,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * price. Defaults to false.
    * @return Google_Service_InAppProduct
    */
-  public function update($packageName, $sku, InAppProduct $postBody, $optParams = array())
+  public function update($packageName, $sku, Google_Service_AndroidPublisher_InAppProduct $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'sku' => $sku, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

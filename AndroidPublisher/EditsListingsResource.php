@@ -104,7 +104,7 @@ class Google_Service_AndroidPublisher_EditsListingsResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_Listing
    */
-  public function patch($packageName, $editId, $language, Listing $postBody, $optParams = array())
+  public function patch($packageName, $editId, $language, Google_Service_AndroidPublisher_Listing $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'language' => $language, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -123,7 +123,7 @@ class Google_Service_AndroidPublisher_EditsListingsResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_Listing
    */
-  public function update($packageName, $editId, $language, Listing $postBody, $optParams = array())
+  public function update($packageName, $editId, $language, Google_Service_AndroidPublisher_Listing $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'language' => $language, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

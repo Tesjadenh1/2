@@ -33,7 +33,7 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_ManagedZone
    */
-  public function create($project, ManagedZone $postBody, $optParams = array())
+  public function create($project, Google_Service_Dns_ManagedZone $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

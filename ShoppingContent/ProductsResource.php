@@ -35,7 +35,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_ProductsCustomBatchResponse
    */
-  public function custombatch(ProductsCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_ProductsCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -80,7 +80,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Product
    */
-  public function insert($merchantId, Product $postBody, $optParams = array())
+  public function insert($merchantId, Google_Service_ShoppingContent_Product $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

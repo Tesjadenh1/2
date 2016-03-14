@@ -74,7 +74,7 @@ class Google_Service_Cloudbilling_ProjectsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProjectBillingInfo
    */
-  public function updateBillingInfo($name, ProjectBillingInfo $postBody, $optParams = array())
+  public function updateBillingInfo($name, Google_Service_Cloudbilling_ProjectBillingInfo $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

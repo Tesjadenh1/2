@@ -60,7 +60,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_StorePage
    */
-  public function insert($enterpriseId, StorePage $postBody, $optParams = array())
+  public function insert($enterpriseId, Google_Service_AndroidEnterprise_StorePage $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -90,7 +90,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_StorePage
    */
-  public function patch($enterpriseId, $pageId, StorePage $postBody, $optParams = array())
+  public function patch($enterpriseId, $pageId, Google_Service_AndroidEnterprise_StorePage $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -105,7 +105,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_StorePage
    */
-  public function update($enterpriseId, $pageId, StorePage $postBody, $optParams = array())
+  public function update($enterpriseId, $pageId, Google_Service_AndroidEnterprise_StorePage $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

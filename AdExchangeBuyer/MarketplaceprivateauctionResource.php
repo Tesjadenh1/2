@@ -32,7 +32,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceprivateauctionResource extends G
    * @param Google_UpdatePrivateAuctionProposalRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function updateproposal(UpdatePrivateAuctionProposalRequest $postBody, $optParams = array())
+  public function updateproposal(Google_Service_AdExchangeBuyer_UpdatePrivateAuctionProposalRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -48,7 +48,7 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_UrlChannel
    */
-  public function insert($adClientId, UrlChannel $postBody, $optParams = array())
+  public function insert($adClientId, Google_Service_AdSenseHost_UrlChannel $postBody, $optParams = array())
   {
     $params = array('adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

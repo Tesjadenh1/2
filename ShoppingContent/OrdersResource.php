@@ -34,7 +34,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersAcknowledgeResponse
    */
-  public function acknowledge($merchantId, $orderId, OrdersAcknowledgeRequest $postBody, $optParams = array())
+  public function acknowledge($merchantId, $orderId, Google_Service_ShoppingContent_OrdersAcknowledgeRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -64,7 +64,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersCancelResponse
    */
-  public function cancel($merchantId, $orderId, OrdersCancelRequest $postBody, $optParams = array())
+  public function cancel($merchantId, $orderId, Google_Service_ShoppingContent_OrdersCancelRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -79,7 +79,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersCancelLineItemResponse
    */
-  public function cancellineitem($merchantId, $orderId, OrdersCancelLineItemRequest $postBody, $optParams = array())
+  public function cancellineitem($merchantId, $orderId, Google_Service_ShoppingContent_OrdersCancelLineItemRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -93,7 +93,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersCreateTestOrderResponse
    */
-  public function createtestorder($merchantId, OrdersCreateTestOrderRequest $postBody, $optParams = array())
+  public function createtestorder($merchantId, Google_Service_ShoppingContent_OrdersCreateTestOrderRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -107,7 +107,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersCustomBatchResponse
    */
-  public function custombatch(OrdersCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_OrdersCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -204,7 +204,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersRefundResponse
    */
-  public function refund($merchantId, $orderId, OrdersRefundRequest $postBody, $optParams = array())
+  public function refund($merchantId, $orderId, Google_Service_ShoppingContent_OrdersRefundRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -219,7 +219,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersReturnLineItemResponse
    */
-  public function returnlineitem($merchantId, $orderId, OrdersReturnLineItemRequest $postBody, $optParams = array())
+  public function returnlineitem($merchantId, $orderId, Google_Service_ShoppingContent_OrdersReturnLineItemRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -234,7 +234,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersShipLineItemsResponse
    */
-  public function shiplineitems($merchantId, $orderId, OrdersShipLineItemsRequest $postBody, $optParams = array())
+  public function shiplineitems($merchantId, $orderId, Google_Service_ShoppingContent_OrdersShipLineItemsRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -250,7 +250,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersUpdateMerchantOrderIdResponse
    */
-  public function updatemerchantorderid($merchantId, $orderId, OrdersUpdateMerchantOrderIdRequest $postBody, $optParams = array())
+  public function updatemerchantorderid($merchantId, $orderId, Google_Service_ShoppingContent_OrdersUpdateMerchantOrderIdRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -266,7 +266,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_OrdersUpdateShipmentResponse
    */
-  public function updateshipment($merchantId, $orderId, OrdersUpdateShipmentRequest $postBody, $optParams = array())
+  public function updateshipment($merchantId, $orderId, Google_Service_ShoppingContent_OrdersUpdateShipmentRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'orderId' => $orderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

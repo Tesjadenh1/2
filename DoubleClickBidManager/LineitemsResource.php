@@ -32,7 +32,7 @@ class Google_Service_DoubleClickBidManager_LineitemsResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_DownloadLineItemsResponse
    */
-  public function downloadlineitems(DownloadLineItemsRequest $postBody, $optParams = array())
+  public function downloadlineitems(Google_Service_DoubleClickBidManager_DownloadLineItemsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -45,7 +45,7 @@ class Google_Service_DoubleClickBidManager_LineitemsResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_UploadLineItemsResponse
    */
-  public function uploadlineitems(UploadLineItemsRequest $postBody, $optParams = array())
+  public function uploadlineitems(Google_Service_DoubleClickBidManager_UploadLineItemsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

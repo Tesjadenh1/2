@@ -35,7 +35,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function addHealthCheck($project, $region, $targetPool, TargetPoolsAddHealthCheckRequest $postBody, $optParams = array())
+  public function addHealthCheck($project, $region, $targetPool, Google_Service_Compute_TargetPoolsAddHealthCheckRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -52,7 +52,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function addInstance($project, $region, $targetPool, TargetPoolsAddInstanceRequest $postBody, $optParams = array())
+  public function addInstance($project, $region, $targetPool, Google_Service_Compute_TargetPoolsAddInstanceRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -148,7 +148,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TargetPoolInstanceHealth
    */
-  public function getHealth($project, $region, $targetPool, InstanceReference $postBody, $optParams = array())
+  public function getHealth($project, $region, $targetPool, Google_Service_Compute_InstanceReference $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -164,7 +164,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $region, TargetPool $postBody, $optParams = array())
+  public function insert($project, $region, Google_Service_Compute_TargetPool $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -230,7 +230,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function removeHealthCheck($project, $region, $targetPool, TargetPoolsRemoveHealthCheckRequest $postBody, $optParams = array())
+  public function removeHealthCheck($project, $region, $targetPool, Google_Service_Compute_TargetPoolsRemoveHealthCheckRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -247,7 +247,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function removeInstance($project, $region, $targetPool, TargetPoolsRemoveInstanceRequest $postBody, $optParams = array())
+  public function removeInstance($project, $region, $targetPool, Google_Service_Compute_TargetPoolsRemoveInstanceRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -266,7 +266,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @opt_param float failoverRatio New failoverRatio value for the target pool.
    * @return Google_Service_Operation
    */
-  public function setBackup($project, $region, $targetPool, TargetReference $postBody, $optParams = array())
+  public function setBackup($project, $region, $targetPool, Google_Service_Compute_TargetReference $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'targetPool' => $targetPool, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

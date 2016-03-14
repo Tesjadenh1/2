@@ -98,7 +98,7 @@ class Google_Service_YouTube_ChannelSectionsResource extends Google_Service_Reso
    * channel.
    * @return Google_Service_ChannelSection
    */
-  public function insert($part, ChannelSection $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_ChannelSection $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -181,7 +181,7 @@ class Google_Service_YouTube_ChannelSectionsResource extends Google_Service_Reso
    * owner.
    * @return Google_Service_ChannelSection
    */
-  public function update($part, ChannelSection $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_ChannelSection $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

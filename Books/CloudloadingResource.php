@@ -64,7 +64,7 @@ class Google_Service_Books_CloudloadingResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_BooksCloudloadingResource
    */
-  public function updateBook(BooksCloudloadingResource $postBody, $optParams = array())
+  public function updateBook(Google_Service_Books_BooksCloudloadingResource $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

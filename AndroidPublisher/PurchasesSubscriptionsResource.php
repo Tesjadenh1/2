@@ -57,7 +57,7 @@ class Google_Service_AndroidPublisher_PurchasesSubscriptionsResource extends Goo
    * @param array $optParams Optional parameters.
    * @return Google_Service_SubscriptionPurchasesDeferResponse
    */
-  public function defer($packageName, $subscriptionId, $token, SubscriptionPurchasesDeferRequest $postBody, $optParams = array())
+  public function defer($packageName, $subscriptionId, $token, Google_Service_AndroidPublisher_SubscriptionPurchasesDeferRequest $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'subscriptionId' => $subscriptionId, 'token' => $token, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

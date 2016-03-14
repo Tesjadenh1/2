@@ -37,7 +37,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_VariantSet
    */
-  public function create(VariantSet $postBody, $optParams = array())
+  public function create(Google_Service_Genomics_VariantSet $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -73,7 +73,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function export($variantSetId, ExportVariantSetRequest $postBody, $optParams = array())
+  public function export($variantSetId, Google_Service_Genomics_ExportVariantSetRequest $postBody, $optParams = array())
   {
     $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -111,7 +111,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * equivalent to specifying all mutable fields.
    * @return Google_Service_VariantSet
    */
-  public function patch($variantSetId, VariantSet $postBody, $optParams = array())
+  public function patch($variantSetId, Google_Service_Genomics_VariantSet $postBody, $optParams = array())
   {
     $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -129,7 +129,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchVariantSetsResponse
    */
-  public function search(SearchVariantSetsRequest $postBody, $optParams = array())
+  public function search(Google_Service_Genomics_SearchVariantSetsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

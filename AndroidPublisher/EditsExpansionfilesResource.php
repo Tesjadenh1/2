@@ -59,7 +59,7 @@ class Google_Service_AndroidPublisher_EditsExpansionfilesResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_ExpansionFile
    */
-  public function patch($packageName, $editId, $apkVersionCode, $expansionFileType, ExpansionFile $postBody, $optParams = array())
+  public function patch($packageName, $editId, $apkVersionCode, $expansionFileType, Google_Service_AndroidPublisher_ExpansionFile $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'apkVersionCode' => $apkVersionCode, 'expansionFileType' => $expansionFileType, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -80,7 +80,7 @@ class Google_Service_AndroidPublisher_EditsExpansionfilesResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_ExpansionFile
    */
-  public function update($packageName, $editId, $apkVersionCode, $expansionFileType, ExpansionFile $postBody, $optParams = array())
+  public function update($packageName, $editId, $apkVersionCode, $expansionFileType, Google_Service_AndroidPublisher_ExpansionFile $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'apkVersionCode' => $apkVersionCode, 'expansionFileType' => $expansionFileType, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -45,7 +45,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * import (ISO 639-1 code).
    * @return Google_Service_File
    */
-  public function copy($fileId, File $postBody, $optParams = array())
+  public function copy($fileId, Google_Service_Drive_File $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -71,7 +71,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * as indexable text.
    * @return Google_Service_File
    */
-  public function create(File $postBody, $optParams = array())
+  public function create(Google_Service_Drive_File $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -199,7 +199,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * as indexable text.
    * @return Google_Service_File
    */
-  public function update($fileId, File $postBody, $optParams = array())
+  public function update($fileId, Google_Service_Drive_File $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -217,7 +217,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * when alt=media.
    * @return Google_Service_Channel
    */
-  public function watch($fileId, Channel $postBody, $optParams = array())
+  public function watch($fileId, Google_Service_Drive_Channel $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

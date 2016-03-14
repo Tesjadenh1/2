@@ -32,7 +32,7 @@ class Google_Service_Vision_ImagesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_BatchAnnotateImagesResponse
    */
-  public function annotate(BatchAnnotateImagesRequest $postBody, $optParams = array())
+  public function annotate(Google_Service_Vision_BatchAnnotateImagesRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

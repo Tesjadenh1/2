@@ -47,7 +47,7 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Size
    */
-  public function insert($profileId, Size $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_Size $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

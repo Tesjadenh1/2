@@ -61,7 +61,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Column
    */
-  public function insert($tableId, Column $postBody, $optParams = array())
+  public function insert($tableId, Google_Service_Fusiontables_Column $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -96,7 +96,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Column
    */
-  public function patch($tableId, $columnId, Column $postBody, $optParams = array())
+  public function patch($tableId, $columnId, Google_Service_Fusiontables_Column $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'columnId' => $columnId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Column
    */
-  public function update($tableId, $columnId, Column $postBody, $optParams = array())
+  public function update($tableId, $columnId, Google_Service_Fusiontables_Column $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'columnId' => $columnId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

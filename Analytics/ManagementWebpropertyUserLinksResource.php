@@ -48,7 +48,7 @@ class Google_Service_Analytics_ManagementWebpropertyUserLinksResource extends Go
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityUserLink
    */
-  public function insert($accountId, $webPropertyId, EntityUserLink $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -89,7 +89,7 @@ class Google_Service_Analytics_ManagementWebpropertyUserLinksResource extends Go
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityUserLink
    */
-  public function update($accountId, $webPropertyId, $linkId, EntityUserLink $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $linkId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'linkId' => $linkId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

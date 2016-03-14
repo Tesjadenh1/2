@@ -60,7 +60,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_Report
    */
-  public function insert($profileId, Report $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -96,7 +96,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_Report
    */
-  public function patch($profileId, $reportId, Report $postBody, $optParams = array())
+  public function patch($profileId, $reportId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -128,7 +128,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_Report
    */
-  public function update($profileId, $reportId, Report $postBody, $optParams = array())
+  public function update($profileId, $reportId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'reportId' => $reportId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

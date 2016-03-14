@@ -41,7 +41,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_DataSource
    */
-  public function create($userId, DataSource $postBody, $optParams = array())
+  public function create($userId, Google_Service_Fitness_DataSource $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -115,7 +115,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_DataSource
    */
-  public function patch($userId, $dataSourceId, DataSource $postBody, $optParams = array())
+  public function patch($userId, $dataSourceId, Google_Service_Fitness_DataSource $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'dataSourceId' => $dataSourceId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -136,7 +136,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_DataSource
    */
-  public function update($userId, $dataSourceId, DataSource $postBody, $optParams = array())
+  public function update($userId, $dataSourceId, Google_Service_Fitness_DataSource $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'dataSourceId' => $dataSourceId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

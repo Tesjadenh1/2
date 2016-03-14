@@ -60,7 +60,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_ContentCategory
    */
-  public function insert($profileId, ContentCategory $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_ContentCategory $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -104,7 +104,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_ContentCategory
    */
-  public function patch($profileId, $id, ContentCategory $postBody, $optParams = array())
+  public function patch($profileId, $id, Google_Service_Dfareporting_ContentCategory $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -118,7 +118,7 @@ class Google_Service_Dfareporting_ContentCategoriesResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_ContentCategory
    */
-  public function update($profileId, ContentCategory $postBody, $optParams = array())
+  public function update($profileId, Google_Service_Dfareporting_ContentCategory $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

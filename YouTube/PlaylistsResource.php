@@ -94,7 +94,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
    * channel.
    * @return Google_Service_Playlist
    */
-  public function insert($part, Playlist $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_Playlist $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -202,7 +202,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
    * owner.
    * @return Google_Service_Playlist
    */
-  public function update($part, Playlist $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_Playlist $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

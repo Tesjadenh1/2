@@ -114,7 +114,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $region, TargetVpnGateway $postBody, $optParams = array())
+  public function insert($project, $region, Google_Service_Compute_TargetVpnGateway $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

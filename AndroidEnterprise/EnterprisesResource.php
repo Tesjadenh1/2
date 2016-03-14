@@ -49,7 +49,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Enterprise
    */
-  public function enroll($token, Enterprise $postBody, $optParams = array())
+  public function enroll($token, Google_Service_AndroidEnterprise_Enterprise $postBody, $optParams = array())
   {
     $params = array('token' => $token, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -91,7 +91,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Enterprise
    */
-  public function insert($token, Enterprise $postBody, $optParams = array())
+  public function insert($token, Google_Service_AndroidEnterprise_Enterprise $postBody, $optParams = array())
   {
     $params = array('token' => $token, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -135,7 +135,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_EnterpriseAccount
    */
-  public function setAccount($enterpriseId, EnterpriseAccount $postBody, $optParams = array())
+  public function setAccount($enterpriseId, Google_Service_AndroidEnterprise_EnterpriseAccount $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -149,7 +149,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_StoreLayout
    */
-  public function setStoreLayout($enterpriseId, StoreLayout $postBody, $optParams = array())
+  public function setStoreLayout($enterpriseId, Google_Service_AndroidEnterprise_StoreLayout $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

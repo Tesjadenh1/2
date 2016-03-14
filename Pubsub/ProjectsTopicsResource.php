@@ -38,7 +38,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Topic
    */
-  public function create($name, Topic $postBody, $optParams = array())
+  public function create($name, Google_Service_Pubsub_Topic $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -121,7 +121,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_PublishResponse
    */
-  public function publish($topic, PublishRequest $postBody, $optParams = array())
+  public function publish($topic, Google_Service_Pubsub_PublishRequest $postBody, $optParams = array())
   {
     $params = array('topic' => $topic, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -140,7 +140,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = array())
+  public function setIamPolicy($resource, Google_Service_Pubsub_SetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -159,7 +159,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse
    */
-  public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = array())
+  public function testIamPermissions($resource, Google_Service_Pubsub_TestIamPermissionsRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

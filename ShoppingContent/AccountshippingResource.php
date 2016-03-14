@@ -35,7 +35,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccountshippingCustomBatchResponse
    */
-  public function custombatch(AccountshippingCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_AccountshippingCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -87,7 +87,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccountShipping
    */
-  public function patch($merchantId, $accountId, AccountShipping $postBody, $optParams = array())
+  public function patch($merchantId, $accountId, Google_Service_ShoppingContent_AccountShipping $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -105,7 +105,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccountShipping
    */
-  public function update($merchantId, $accountId, AccountShipping $postBody, $optParams = array())
+  public function update($merchantId, $accountId, Google_Service_ShoppingContent_AccountShipping $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -33,7 +33,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Comment
    */
-  public function create($fileId, Comment $postBody, $optParams = array())
+  public function create($fileId, Google_Service_Drive_Comment $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -100,7 +100,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Comment
    */
-  public function update($fileId, $commentId, Comment $postBody, $optParams = array())
+  public function update($fileId, $commentId, Google_Service_Drive_Comment $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'commentId' => $commentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

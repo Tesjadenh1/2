@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_DatafeedstatusesResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_DatafeedstatusesCustomBatchResponse
    */
-  public function custombatch(DatafeedstatusesCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_DatafeedstatusesCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

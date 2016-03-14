@@ -89,7 +89,7 @@ class Google_Service_GamesManagement_ScoresResource extends Google_Service_Resou
    * @param Google_ScoresResetMultipleForAllRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function resetMultipleForAllPlayers(ScoresResetMultipleForAllRequest $postBody, $optParams = array())
+  public function resetMultipleForAllPlayers(Google_Service_GamesManagement_ScoresResetMultipleForAllRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

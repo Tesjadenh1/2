@@ -35,7 +35,7 @@ class Google_Service_Prediction_HostedmodelsResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Output
    */
-  public function predict($project, $hostedModelName, Input $postBody, $optParams = array())
+  public function predict($project, $hostedModelName, Google_Service_Prediction_Input $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'hostedModelName' => $hostedModelName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

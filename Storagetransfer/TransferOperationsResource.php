@@ -98,7 +98,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_StoragetransferEmpty
    */
-  public function pause($name, PauseTransferOperationRequest $postBody, $optParams = array())
+  public function pause($name, Google_Service_Storagetransfer_PauseTransferOperationRequest $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_StoragetransferEmpty
    */
-  public function resume($name, ResumeTransferOperationRequest $postBody, $optParams = array())
+  public function resume($name, Google_Service_Storagetransfer_ResumeTransferOperationRequest $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

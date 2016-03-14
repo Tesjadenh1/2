@@ -85,7 +85,7 @@ class Google_Service_Reports_ActivitiesResource extends Google_Service_Resource
    * time.
    * @return Google_Service_Channel
    */
-  public function watch($userKey, $applicationName, Channel $postBody, $optParams = array())
+  public function watch($userKey, $applicationName, Google_Service_Reports_Channel $postBody, $optParams = array())
   {
     $params = array('userKey' => $userKey, 'applicationName' => $applicationName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

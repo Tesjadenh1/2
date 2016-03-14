@@ -33,7 +33,7 @@ class Google_Service_TagManager_AccountsContainersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Container
    */
-  public function create($accountId, Container $postBody, $optParams = array())
+  public function create($accountId, Google_Service_TagManager_Container $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -92,7 +92,7 @@ class Google_Service_TagManager_AccountsContainersResource extends Google_Servic
    * fingerprint of the container in storage.
    * @return Google_Service_Container
    */
-  public function update($accountId, $containerId, Container $postBody, $optParams = array())
+  public function update($accountId, $containerId, Google_Service_TagManager_Container $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

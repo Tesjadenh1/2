@@ -32,7 +32,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Query
    */
-  public function createquery(Query $postBody, $optParams = array())
+  public function createquery(Google_Service_DoubleClickBidManager_Query $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -83,7 +83,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
    * @param Google_RunQueryRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function runquery($queryId, RunQueryRequest $postBody, $optParams = array())
+  public function runquery($queryId, Google_Service_DoubleClickBidManager_RunQueryRequest $postBody, $optParams = array())
   {
     $params = array('queryId' => $queryId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

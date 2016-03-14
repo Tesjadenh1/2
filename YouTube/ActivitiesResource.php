@@ -43,7 +43,7 @@ class Google_Service_YouTube_ActivitiesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Activity
    */
-  public function insert($part, Activity $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_Activity $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

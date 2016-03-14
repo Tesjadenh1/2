@@ -35,7 +35,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_CallSet
    */
-  public function create(CallSet $postBody, $optParams = array())
+  public function create(Google_Service_Genomics_CallSet $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -88,7 +88,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    * value is "name". If unspecified, all mutable fields will be updated.
    * @return Google_Service_CallSet
    */
-  public function patch($callSetId, CallSet $postBody, $optParams = array())
+  public function patch($callSetId, Google_Service_Genomics_CallSet $postBody, $optParams = array())
   {
     $params = array('callSetId' => $callSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -106,7 +106,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchCallSetsResponse
    */
-  public function search(SearchCallSetsRequest $postBody, $optParams = array())
+  public function search(Google_Service_Genomics_SearchCallSetsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

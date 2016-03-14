@@ -68,7 +68,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityAdWordsLink
    */
-  public function insert($accountId, $webPropertyId, EntityAdWordsLink $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, Google_Service_Analytics_EntityAdWordsLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityAdWordsLink
    */
-  public function patch($accountId, $webPropertyId, $webPropertyAdWordsLinkId, EntityAdWordsLink $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, $webPropertyAdWordsLinkId, Google_Service_Analytics_EntityAdWordsLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'webPropertyAdWordsLinkId' => $webPropertyAdWordsLinkId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -129,7 +129,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityAdWordsLink
    */
-  public function update($accountId, $webPropertyId, $webPropertyAdWordsLinkId, EntityAdWordsLink $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $webPropertyAdWordsLinkId, Google_Service_Analytics_EntityAdWordsLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'webPropertyAdWordsLinkId' => $webPropertyAdWordsLinkId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

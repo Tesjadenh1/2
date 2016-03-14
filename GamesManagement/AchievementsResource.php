@@ -89,7 +89,7 @@ class Google_Service_GamesManagement_AchievementsResource extends Google_Service
    * @param Google_AchievementResetMultipleForAllRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function resetMultipleForAllPlayers(AchievementResetMultipleForAllRequest $postBody, $optParams = array())
+  public function resetMultipleForAllPlayers(Google_Service_GamesManagement_AchievementResetMultipleForAllRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

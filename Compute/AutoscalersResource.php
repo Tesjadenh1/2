@@ -113,7 +113,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $zone, Autoscaler $postBody, $optParams = array())
+  public function insert($project, $zone, Google_Service_Compute_Autoscaler $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -179,7 +179,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function patch($project, $zone, $autoscaler, Autoscaler $postBody, $optParams = array())
+  public function patch($project, $zone, $autoscaler, Google_Service_Compute_Autoscaler $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'autoscaler' => $autoscaler, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -197,7 +197,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @opt_param string autoscaler Name of the autoscaler to update.
    * @return Google_Service_Operation
    */
-  public function update($project, $zone, Autoscaler $postBody, $optParams = array())
+  public function update($project, $zone, Google_Service_Compute_Autoscaler $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

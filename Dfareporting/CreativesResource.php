@@ -47,7 +47,7 @@ class Google_Service_Dfareporting_CreativesResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Creative
    */
-  public function insert($profileId, Creative $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_Creative $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -106,7 +106,7 @@ class Google_Service_Dfareporting_CreativesResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Creative
    */
-  public function patch($profileId, $id, Creative $postBody, $optParams = array())
+  public function patch($profileId, $id, Google_Service_Dfareporting_Creative $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -120,7 +120,7 @@ class Google_Service_Dfareporting_CreativesResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Creative
    */
-  public function update($profileId, Creative $postBody, $optParams = array())
+  public function update($profileId, Google_Service_Dfareporting_Creative $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

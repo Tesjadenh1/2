@@ -87,7 +87,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_DeviceState
    */
-  public function setState($enterpriseId, $userId, $deviceId, DeviceState $postBody, $optParams = array())
+  public function setState($enterpriseId, $userId, $deviceId, Google_Service_AndroidEnterprise_DeviceState $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

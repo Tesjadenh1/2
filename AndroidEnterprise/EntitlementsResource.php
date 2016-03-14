@@ -89,7 +89,7 @@ class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Servi
    * entitlement was successfully assigned to the user.
    * @return Google_Service_Entitlement
    */
-  public function patch($enterpriseId, $userId, $entitlementId, Entitlement $postBody, $optParams = array())
+  public function patch($enterpriseId, $userId, $entitlementId, Google_Service_AndroidEnterprise_Entitlement $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'entitlementId' => $entitlementId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -111,7 +111,7 @@ class Google_Service_AndroidEnterprise_EntitlementsResource extends Google_Servi
    * entitlement was successfully assigned to the user.
    * @return Google_Service_Entitlement
    */
-  public function update($enterpriseId, $userId, $entitlementId, Entitlement $postBody, $optParams = array())
+  public function update($enterpriseId, $userId, $entitlementId, Google_Service_AndroidEnterprise_Entitlement $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'entitlementId' => $entitlementId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

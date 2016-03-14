@@ -37,7 +37,7 @@ class Google_Service_Mirror_AccountsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Account
    */
-  public function insert($userToken, $accountType, $accountName, Account $postBody, $optParams = array())
+  public function insert($userToken, $accountType, $accountName, Google_Service_Mirror_Account $postBody, $optParams = array())
   {
     $params = array('userToken' => $userToken, 'accountType' => $accountType, 'accountName' => $accountName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

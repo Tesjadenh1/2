@@ -36,7 +36,7 @@ class Google_Service_ShoppingContent_InventoryResource extends Google_Service_Re
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_InventoryCustomBatchResponse
    */
-  public function custombatch(InventoryCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_InventoryCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -59,7 +59,7 @@ class Google_Service_ShoppingContent_InventoryResource extends Google_Service_Re
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_InventorySetResponse
    */
-  public function set($merchantId, $storeCode, $productId, InventorySetRequest $postBody, $optParams = array())
+  public function set($merchantId, $storeCode, $productId, Google_Service_ShoppingContent_InventorySetRequest $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'storeCode' => $storeCode, 'productId' => $productId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

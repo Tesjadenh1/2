@@ -35,7 +35,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccounttaxCustomBatchResponse
    */
-  public function custombatch(AccounttaxCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_AccounttaxCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -87,7 +87,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccountTax
    */
-  public function patch($merchantId, $accountId, AccountTax $postBody, $optParams = array())
+  public function patch($merchantId, $accountId, Google_Service_ShoppingContent_AccountTax $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -105,7 +105,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_AccountTax
    */
-  public function update($merchantId, $accountId, AccountTax $postBody, $optParams = array())
+  public function update($merchantId, $accountId, Google_Service_ShoppingContent_AccountTax $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

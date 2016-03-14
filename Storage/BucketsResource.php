@@ -79,7 +79,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * it defaults to full.
    * @return Google_Service_Bucket
    */
-  public function insert($project, Bucket $postBody, $optParams = array())
+  public function insert($project, Google_Service_Storage_Bucket $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -125,7 +125,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to full.
    * @return Google_Service_Bucket
    */
-  public function patch($bucket, Bucket $postBody, $optParams = array())
+  public function patch($bucket, Google_Service_Storage_Bucket $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -151,7 +151,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to full.
    * @return Google_Service_Bucket
    */
-  public function update($bucket, Bucket $postBody, $optParams = array())
+  public function update($bucket, Google_Service_Storage_Bucket $postBody, $optParams = array())
   {
     $params = array('bucket' => $bucket, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

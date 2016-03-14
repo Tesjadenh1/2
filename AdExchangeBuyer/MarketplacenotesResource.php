@@ -33,7 +33,7 @@ class Google_Service_AdExchangeBuyer_MarketplacenotesResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_AddOrderNotesResponse
    */
-  public function insert($proposalId, AddOrderNotesRequest $postBody, $optParams = array())
+  public function insert($proposalId, Google_Service_AdExchangeBuyer_AddOrderNotesRequest $postBody, $optParams = array())
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -110,7 +110,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProductSet
    */
-  public function setAvailableProductSet($enterpriseId, $userId, ProductSet $postBody, $optParams = array())
+  public function setAvailableProductSet($enterpriseId, $userId, Google_Service_AndroidEnterprise_ProductSet $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

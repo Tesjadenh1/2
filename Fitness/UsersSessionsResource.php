@@ -80,7 +80,7 @@ class Google_Service_Fitness_UsersSessionsResource extends Google_Service_Resour
    * since epoch.
    * @return Google_Service_Session
    */
-  public function update($userId, $sessionId, Session $postBody, $optParams = array())
+  public function update($userId, $sessionId, Google_Service_Fitness_Session $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'sessionId' => $sessionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

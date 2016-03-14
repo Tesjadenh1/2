@@ -32,7 +32,7 @@ class Google_Service_Calendar_FreebusyResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_FreeBusyResponse
    */
-  public function query(FreeBusyRequest $postBody, $optParams = array())
+  public function query(Google_Service_Calendar_FreeBusyRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

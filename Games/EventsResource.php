@@ -76,7 +76,7 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
    * by this method.
    * @return Google_Service_EventUpdateResponse
    */
-  public function record(EventRecordRequest $postBody, $optParams = array())
+  public function record(Google_Service_Games_EventRecordRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

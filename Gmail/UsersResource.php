@@ -62,7 +62,7 @@ class Google_Service_Gmail_UsersResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_WatchResponse
    */
-  public function watch($userId, WatchRequest $postBody, $optParams = array())
+  public function watch($userId, Google_Service_Gmail_WatchRequest $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -82,7 +82,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_AppEdit
    */
-  public function insert($packageName, AppEdit $postBody, $optParams = array())
+  public function insert($packageName, Google_Service_AndroidPublisher_AppEdit $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -79,7 +79,7 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Revision
    */
-  public function update($fileId, $revisionId, Revision $postBody, $optParams = array())
+  public function update($fileId, $revisionId, Google_Service_Drive_Revision $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'revisionId' => $revisionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

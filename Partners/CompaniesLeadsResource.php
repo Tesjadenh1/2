@@ -33,7 +33,7 @@ class Google_Service_Partners_CompaniesLeadsResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreateLeadResponse
    */
-  public function create($companyId, CreateLeadRequest $postBody, $optParams = array())
+  public function create($companyId, Google_Service_Partners_CreateLeadRequest $postBody, $optParams = array())
   {
     $params = array('companyId' => $companyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

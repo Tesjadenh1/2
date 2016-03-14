@@ -86,7 +86,7 @@ class Google_Service_GamesManagement_QuestsResource extends Google_Service_Resou
    * @param Google_QuestsResetMultipleForAllRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function resetMultipleForAllPlayers(QuestsResetMultipleForAllRequest $postBody, $optParams = array())
+  public function resetMultipleForAllPlayers(Google_Service_GamesManagement_QuestsResetMultipleForAllRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

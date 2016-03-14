@@ -36,7 +36,7 @@ class Google_Service_Iam_ProjectsServiceAccountsKeysResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceAccountKey
    */
-  public function create($name, CreateServiceAccountKeyRequest $postBody, $optParams = array())
+  public function create($name, Google_Service_Iam_CreateServiceAccountKeyRequest $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

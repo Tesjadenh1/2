@@ -38,7 +38,7 @@ class Google_Service_TagManager_AccountsContainersMoveFoldersResource extends Go
    * @opt_param string triggerId The triggers to be moved to the folder.
    * @opt_param string variableId The variables to be moved to the folder.
    */
-  public function update($accountId, $containerId, $folderId, Folder $postBody, $optParams = array())
+  public function update($accountId, $containerId, $folderId, Google_Service_TagManager_Folder $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'folderId' => $folderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

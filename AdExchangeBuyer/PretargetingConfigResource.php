@@ -62,7 +62,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_PretargetingConfig
    */
-  public function insert($accountId, PretargetingConfig $postBody, $optParams = array())
+  public function insert($accountId, Google_Service_AdExchangeBuyer_PretargetingConfig $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -93,7 +93,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_PretargetingConfig
    */
-  public function patch($accountId, $configId, PretargetingConfig $postBody, $optParams = array())
+  public function patch($accountId, $configId, Google_Service_AdExchangeBuyer_PretargetingConfig $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'configId' => $configId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -109,7 +109,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * @param array $optParams Optional parameters.
    * @return Google_Service_PretargetingConfig
    */
-  public function update($accountId, $configId, PretargetingConfig $postBody, $optParams = array())
+  public function update($accountId, $configId, Google_Service_AdExchangeBuyer_PretargetingConfig $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'configId' => $configId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

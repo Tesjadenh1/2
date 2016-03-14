@@ -76,7 +76,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_FloodlightActivity
    */
-  public function insert($profileId, FloodlightActivity $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_FloodlightActivity $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -139,7 +139,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_FloodlightActivity
    */
-  public function patch($profileId, $id, FloodlightActivity $postBody, $optParams = array())
+  public function patch($profileId, $id, Google_Service_Dfareporting_FloodlightActivity $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -153,7 +153,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_FloodlightActivity
    */
-  public function update($profileId, FloodlightActivity $postBody, $optParams = array())
+  public function update($profileId, Google_Service_Dfareporting_FloodlightActivity $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

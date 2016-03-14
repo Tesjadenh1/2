@@ -33,7 +33,7 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProductstatusesCustomBatchResponse
    */
-  public function custombatch(ProductstatusesCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_ProductstatusesCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

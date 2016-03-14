@@ -241,7 +241,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * channel.
    * @return Google_Service_LiveBroadcast
    */
-  public function insert($part, LiveBroadcast $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_LiveBroadcast $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -429,7 +429,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * channel.
    * @return Google_Service_LiveBroadcast
    */
-  public function update($part, LiveBroadcast $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_LiveBroadcast $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

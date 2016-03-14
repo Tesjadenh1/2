@@ -31,7 +31,7 @@ class Google_Service_Drive_ChannelsResource extends Google_Service_Resource
    * @param Google_Channel $postBody
    * @param array $optParams Optional parameters.
    */
-  public function stop(Channel $postBody, $optParams = array())
+  public function stop(Google_Service_Drive_Channel $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

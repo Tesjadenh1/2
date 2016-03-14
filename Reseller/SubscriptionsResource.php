@@ -51,7 +51,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Subscription
    */
-  public function changePlan($customerId, $subscriptionId, ChangePlanRequest $postBody, $optParams = array())
+  public function changePlan($customerId, $subscriptionId, Google_Service_Reseller_ChangePlanRequest $postBody, $optParams = array())
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -68,7 +68,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Subscription
    */
-  public function changeRenewalSettings($customerId, $subscriptionId, RenewalSettings $postBody, $optParams = array())
+  public function changeRenewalSettings($customerId, $subscriptionId, Google_Service_Reseller_RenewalSettings $postBody, $optParams = array())
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -84,7 +84,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Subscription
    */
-  public function changeSeats($customerId, $subscriptionId, Seats $postBody, $optParams = array())
+  public function changeSeats($customerId, $subscriptionId, Google_Service_Reseller_Seats $postBody, $optParams = array())
   {
     $params = array('customerId' => $customerId, 'subscriptionId' => $subscriptionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -133,7 +133,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * domain/TransferToken. Optional.
    * @return Google_Service_Subscription
    */
-  public function insert($customerId, Subscription $postBody, $optParams = array())
+  public function insert($customerId, Google_Service_Reseller_Subscription $postBody, $optParams = array())
   {
     $params = array('customerId' => $customerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

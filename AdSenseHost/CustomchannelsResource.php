@@ -64,7 +64,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_CustomChannel
    */
-  public function insert($adClientId, CustomChannel $postBody, $optParams = array())
+  public function insert($adClientId, Google_Service_AdSenseHost_CustomChannel $postBody, $optParams = array())
   {
     $params = array('adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -101,7 +101,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_CustomChannel
    */
-  public function patch($adClientId, $customChannelId, CustomChannel $postBody, $optParams = array())
+  public function patch($adClientId, $customChannelId, Google_Service_AdSenseHost_CustomChannel $postBody, $optParams = array())
   {
     $params = array('adClientId' => $adClientId, 'customChannelId' => $customChannelId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -116,7 +116,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_CustomChannel
    */
-  public function update($adClientId, CustomChannel $postBody, $optParams = array())
+  public function update($adClientId, Google_Service_AdSenseHost_CustomChannel $postBody, $optParams = array())
   {
     $params = array('adClientId' => $adClientId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

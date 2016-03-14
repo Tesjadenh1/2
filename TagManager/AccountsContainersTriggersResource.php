@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersTriggersResource extends Googl
    * @param array $optParams Optional parameters.
    * @return Google_Service_Trigger
    */
-  public function create($accountId, $containerId, Trigger $postBody, $optParams = array())
+  public function create($accountId, $containerId, Google_Service_TagManager_Trigger $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -97,7 +97,7 @@ class Google_Service_TagManager_AccountsContainersTriggersResource extends Googl
    * fingerprint of the trigger in storage.
    * @return Google_Service_Trigger
    */
-  public function update($accountId, $containerId, $triggerId, Trigger $postBody, $optParams = array())
+  public function update($accountId, $containerId, $triggerId, Google_Service_TagManager_Trigger $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'triggerId' => $triggerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

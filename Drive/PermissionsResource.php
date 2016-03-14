@@ -43,7 +43,7 @@ class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
    * required as an acknowledgement of the side effect.
    * @return Google_Service_Permission
    */
-  public function create($fileId, Permission $postBody, $optParams = array())
+  public function create($fileId, Google_Service_Drive_Permission $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -102,7 +102,7 @@ class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
    * required as an acknowledgement of the side effect.
    * @return Google_Service_Permission
    */
-  public function update($fileId, $permissionId, Permission $postBody, $optParams = array())
+  public function update($fileId, $permissionId, Google_Service_Drive_Permission $postBody, $optParams = array())
   {
     $params = array('fileId' => $fileId, 'permissionId' => $permissionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

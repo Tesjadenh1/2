@@ -63,7 +63,7 @@ class Google_Service_Compute_UrlMapsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, UrlMap $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_UrlMap $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -127,7 +127,7 @@ class Google_Service_Compute_UrlMapsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function patch($project, $urlMap, UrlMap $postBody, $optParams = array())
+  public function patch($project, $urlMap, Google_Service_Compute_UrlMap $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'urlMap' => $urlMap, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -142,7 +142,7 @@ class Google_Service_Compute_UrlMapsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function update($project, $urlMap, UrlMap $postBody, $optParams = array())
+  public function update($project, $urlMap, Google_Service_Compute_UrlMap $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'urlMap' => $urlMap, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -159,7 +159,7 @@ class Google_Service_Compute_UrlMapsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_UrlMapsValidateResponse
    */
-  public function validate($project, $urlMap, UrlMapsValidateRequest $postBody, $optParams = array())
+  public function validate($project, $urlMap, Google_Service_Compute_UrlMapsValidateRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'urlMap' => $urlMap, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

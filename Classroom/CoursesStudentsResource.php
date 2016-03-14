@@ -46,7 +46,7 @@ class Google_Service_Classroom_CoursesStudentsResource extends Google_Service_Re
    * to create students for any user.
    * @return Google_Service_Student
    */
-  public function create($courseId, Student $postBody, $optParams = array())
+  public function create($courseId, Google_Service_Classroom_Student $postBody, $optParams = array())
   {
     $params = array('courseId' => $courseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

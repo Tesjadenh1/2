@@ -47,7 +47,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Site
    */
-  public function insert($profileId, Site $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_Site $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -102,7 +102,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Site
    */
-  public function patch($profileId, $id, Site $postBody, $optParams = array())
+  public function patch($profileId, $id, Google_Service_Dfareporting_Site $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -116,7 +116,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Site
    */
-  public function update($profileId, Site $postBody, $optParams = array())
+  public function update($profileId, Google_Service_Dfareporting_Site $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

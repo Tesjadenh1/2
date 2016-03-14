@@ -122,7 +122,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_AchievementUpdateMultipleResponse
    */
-  public function updateMultiple(AchievementUpdateMultipleRequest $postBody, $optParams = array())
+  public function updateMultiple(Google_Service_Games_AchievementUpdateMultipleRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

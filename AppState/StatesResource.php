@@ -104,7 +104,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
    * of this parameter.
    * @return Google_Service_WriteResult
    */
-  public function update($stateKey, UpdateRequest $postBody, $optParams = array())
+  public function update($stateKey, Google_Service_AppState_UpdateRequest $postBody, $optParams = array())
   {
     $params = array('stateKey' => $stateKey, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

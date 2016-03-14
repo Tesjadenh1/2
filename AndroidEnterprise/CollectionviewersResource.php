@@ -88,7 +88,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
    * @param array $optParams Optional parameters.
    * @return Google_Service_User
    */
-  public function patch($enterpriseId, $collectionId, $userId, User $postBody, $optParams = array())
+  public function patch($enterpriseId, $collectionId, $userId, Google_Service_AndroidEnterprise_User $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -106,7 +106,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
    * @param array $optParams Optional parameters.
    * @return Google_Service_User
    */
-  public function update($enterpriseId, $collectionId, $userId, User $postBody, $optParams = array())
+  public function update($enterpriseId, $collectionId, $userId, Google_Service_AndroidEnterprise_User $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

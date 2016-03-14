@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersFoldersResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_Folder
    */
-  public function create($accountId, $containerId, Folder $postBody, $optParams = array())
+  public function create($accountId, $containerId, Google_Service_TagManager_Folder $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -96,7 +96,7 @@ class Google_Service_TagManager_AccountsContainersFoldersResource extends Google
    * fingerprint of the folder in storage.
    * @return Google_Service_Folder
    */
-  public function update($accountId, $containerId, $folderId, Folder $postBody, $optParams = array())
+  public function update($accountId, $containerId, $folderId, Google_Service_TagManager_Folder $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'folderId' => $folderId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

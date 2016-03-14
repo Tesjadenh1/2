@@ -63,7 +63,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_LandingPage
    */
-  public function insert($profileId, $campaignId, LandingPage $postBody, $optParams = array())
+  public function insert($profileId, $campaignId, Google_Service_Dfareporting_LandingPage $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_LandingPage
    */
-  public function patch($profileId, $campaignId, $id, LandingPage $postBody, $optParams = array())
+  public function patch($profileId, $campaignId, $id, Google_Service_Dfareporting_LandingPage $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_Dfareporting_LandingPagesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_LandingPage
    */
-  public function update($profileId, $campaignId, LandingPage $postBody, $optParams = array())
+  public function update($profileId, $campaignId, Google_Service_Dfareporting_LandingPage $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'campaignId' => $campaignId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

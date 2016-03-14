@@ -35,7 +35,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function cancelPreview($project, $deployment, DeploymentsCancelPreviewRequest $postBody, $optParams = array())
+  public function cancelPreview($project, $deployment, Google_Service_DeploymentManager_DeploymentsCancelPreviewRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -88,7 +88,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * to remove it.
    * @return Google_Service_Operation
    */
-  public function insert($project, Deployment $postBody, $optParams = array())
+  public function insert($project, Google_Service_DeploymentManager_Deployment $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -165,7 +165,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * to remove it.
    * @return Google_Service_Operation
    */
-  public function patch($project, $deployment, Deployment $postBody, $optParams = array())
+  public function patch($project, $deployment, Google_Service_DeploymentManager_Deployment $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -182,7 +182,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function stop($project, $deployment, DeploymentsStopRequest $postBody, $optParams = array())
+  public function stop($project, $deployment, Google_Service_DeploymentManager_DeploymentsStopRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -212,7 +212,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * to remove it.
    * @return Google_Service_Operation
    */
-  public function update($project, $deployment, Deployment $postBody, $optParams = array())
+  public function update($project, $deployment, Google_Service_DeploymentManager_Deployment $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'deployment' => $deployment, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

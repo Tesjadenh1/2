@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreateContainerVersionResponse
    */
-  public function create($accountId, $containerId, CreateContainerVersionRequestVersionOptions $postBody, $optParams = array())
+  public function create($accountId, $containerId, Google_Service_TagManager_CreateContainerVersionRequestVersionOptions $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -153,7 +153,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * fingerprint of the container version in storage.
    * @return Google_Service_ContainerVersion
    */
-  public function update($accountId, $containerId, $containerVersionId, ContainerVersion $postBody, $optParams = array())
+  public function update($accountId, $containerId, $containerVersionId, Google_Service_TagManager_ContainerVersion $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'containerVersionId' => $containerVersionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

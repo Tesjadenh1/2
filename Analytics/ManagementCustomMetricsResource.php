@@ -51,7 +51,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_CustomMetric
    */
-  public function insert($accountId, $webPropertyId, CustomMetric $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, Google_Service_Analytics_CustomMetric $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -94,7 +94,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * data set.
    * @return Google_Service_CustomMetric
    */
-  public function patch($accountId, $webPropertyId, $customMetricId, CustomMetric $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, $customMetricId, Google_Service_Analytics_CustomMetric $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'customMetricId' => $customMetricId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -115,7 +115,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * data set.
    * @return Google_Service_CustomMetric
    */
-  public function update($accountId, $webPropertyId, $customMetricId, CustomMetric $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $customMetricId, Google_Service_Analytics_CustomMetric $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'customMetricId' => $customMetricId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

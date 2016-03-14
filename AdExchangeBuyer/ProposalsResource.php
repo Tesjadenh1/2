@@ -45,7 +45,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreateOrdersResponse
    */
-  public function insert(CreateOrdersRequest $postBody, $optParams = array())
+  public function insert(Google_Service_AdExchangeBuyer_CreateOrdersRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -65,7 +65,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Proposal
    */
-  public function patch($proposalId, $revisionNumber, $updateAction, Proposal $postBody, $optParams = array())
+  public function patch($proposalId, $revisionNumber, $updateAction, Google_Service_AdExchangeBuyer_Proposal $postBody, $optParams = array())
   {
     $params = array('proposalId' => $proposalId, 'revisionNumber' => $revisionNumber, 'updateAction' => $updateAction, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -111,7 +111,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Proposal
    */
-  public function update($proposalId, $revisionNumber, $updateAction, Proposal $postBody, $optParams = array())
+  public function update($proposalId, $revisionNumber, $updateAction, Google_Service_AdExchangeBuyer_Proposal $postBody, $optParams = array())
   {
     $params = array('proposalId' => $proposalId, 'revisionNumber' => $revisionNumber, 'updateAction' => $updateAction, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

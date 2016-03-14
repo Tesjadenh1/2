@@ -67,7 +67,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Dataset
    */
-  public function insert($projectId, Dataset $postBody, $optParams = array())
+  public function insert($projectId, Google_Service_Bigquery_Dataset $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -104,7 +104,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Dataset
    */
-  public function patch($projectId, $datasetId, Dataset $postBody, $optParams = array())
+  public function patch($projectId, $datasetId, Google_Service_Bigquery_Dataset $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -121,7 +121,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Dataset
    */
-  public function update($projectId, $datasetId, Dataset $postBody, $optParams = array())
+  public function update($projectId, $datasetId, Google_Service_Bigquery_Dataset $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

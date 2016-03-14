@@ -71,7 +71,7 @@ class Google_Service_AndroidPublisher_EditsTracksResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Track
    */
-  public function patch($packageName, $editId, $track, Track $postBody, $optParams = array())
+  public function patch($packageName, $editId, $track, Google_Service_AndroidPublisher_Track $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'track' => $track, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -90,7 +90,7 @@ class Google_Service_AndroidPublisher_EditsTracksResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Track
    */
-  public function update($packageName, $editId, $track, Track $postBody, $optParams = array())
+  public function update($packageName, $editId, $track, Google_Service_AndroidPublisher_Track $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'track' => $track, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

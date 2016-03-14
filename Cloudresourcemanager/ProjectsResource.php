@@ -80,7 +80,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = array())
+  public function getIamPolicy($resource, Google_Service_Cloudresourcemanager_GetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -140,7 +140,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = array())
+  public function setIamPolicy($resource, Google_Service_Cloudresourcemanager_SetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -159,7 +159,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse
    */
-  public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = array())
+  public function testIamPermissions($resource, Google_Service_Cloudresourcemanager_TestIamPermissionsRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -178,7 +178,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudresourcemanagerEmpty
    */
-  public function undelete($projectId, UndeleteProjectRequest $postBody, $optParams = array())
+  public function undelete($projectId, Google_Service_Cloudresourcemanager_UndeleteProjectRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -195,7 +195,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Project
    */
-  public function update($projectId, Project $postBody, $optParams = array())
+  public function update($projectId, Google_Service_Cloudresourcemanager_Project $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

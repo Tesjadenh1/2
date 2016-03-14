@@ -117,7 +117,7 @@ class Google_Service_AndroidPublisher_EditsApklistingsResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_ApkListing
    */
-  public function patch($packageName, $editId, $apkVersionCode, $language, ApkListing $postBody, $optParams = array())
+  public function patch($packageName, $editId, $apkVersionCode, $language, Google_Service_AndroidPublisher_ApkListing $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'apkVersionCode' => $apkVersionCode, 'language' => $language, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -139,7 +139,7 @@ class Google_Service_AndroidPublisher_EditsApklistingsResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_ApkListing
    */
-  public function update($packageName, $editId, $apkVersionCode, $language, ApkListing $postBody, $optParams = array())
+  public function update($packageName, $editId, $apkVersionCode, $language, Google_Service_AndroidPublisher_ApkListing $postBody, $optParams = array())
   {
     $params = array('packageName' => $packageName, 'editId' => $editId, 'apkVersionCode' => $apkVersionCode, 'language' => $language, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

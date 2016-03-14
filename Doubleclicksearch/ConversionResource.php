@@ -61,7 +61,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_ConversionList
    */
-  public function insert(ConversionList $postBody, $optParams = array())
+  public function insert(Google_Service_Doubleclicksearch_ConversionList $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -85,7 +85,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_ConversionList
    */
-  public function patch($advertiserId, $agencyId, $endDate, $engineAccountId, $rowCount, $startDate, $startRow, ConversionList $postBody, $optParams = array())
+  public function patch($advertiserId, $agencyId, $endDate, $engineAccountId, $rowCount, $startDate, $startRow, Google_Service_Doubleclicksearch_ConversionList $postBody, $optParams = array())
   {
     $params = array('advertiserId' => $advertiserId, 'agencyId' => $agencyId, 'endDate' => $endDate, 'engineAccountId' => $engineAccountId, 'rowCount' => $rowCount, 'startDate' => $startDate, 'startRow' => $startRow, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -98,7 +98,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_ConversionList
    */
-  public function update(ConversionList $postBody, $optParams = array())
+  public function update(Google_Service_Doubleclicksearch_ConversionList $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_UpdateAvailabilityResponse
    */
-  public function updateAvailability(UpdateAvailabilityRequest $postBody, $optParams = array())
+  public function updateAvailability(Google_Service_Doubleclicksearch_UpdateAvailabilityRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

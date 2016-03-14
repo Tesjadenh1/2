@@ -44,7 +44,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function abandonInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersAbandonInstancesRequest $postBody, $optParams = array())
+  public function abandonInstances($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersAbandonInstancesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -135,7 +135,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function deleteInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersDeleteInstancesRequest $postBody, $optParams = array())
+  public function deleteInstances($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersDeleteInstancesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -175,7 +175,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $zone, InstanceGroupManager $postBody, $optParams = array())
+  public function insert($project, $zone, Google_Service_Compute_InstanceGroupManager $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -269,7 +269,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function recreateInstances($project, $zone, $instanceGroupManager, InstanceGroupManagersRecreateInstancesRequest $postBody, $optParams = array())
+  public function recreateInstances($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersRecreateInstancesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -314,7 +314,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setInstanceTemplate($project, $zone, $instanceGroupManager, InstanceGroupManagersSetInstanceTemplateRequest $postBody, $optParams = array())
+  public function setInstanceTemplate($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersSetInstanceTemplateRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -337,7 +337,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setTargetPools($project, $zone, $instanceGroupManager, InstanceGroupManagersSetTargetPoolsRequest $postBody, $optParams = array())
+  public function setTargetPools($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersSetTargetPoolsRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

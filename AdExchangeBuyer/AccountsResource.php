@@ -59,7 +59,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Account
    */
-  public function patch($id, Account $postBody, $optParams = array())
+  public function patch($id, Google_Service_AdExchangeBuyer_Account $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -73,7 +73,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Account
    */
-  public function update($id, Account $postBody, $optParams = array())
+  public function update($id, Google_Service_AdExchangeBuyer_Account $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

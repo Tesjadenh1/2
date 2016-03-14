@@ -113,7 +113,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $region, ForwardingRule $postBody, $optParams = array())
+  public function insert($project, $region, Google_Service_Compute_ForwardingRule $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -180,7 +180,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setTarget($project, $region, $forwardingRule, TargetReference $postBody, $optParams = array())
+  public function setTarget($project, $region, $forwardingRule, Google_Service_Compute_TargetReference $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'forwardingRule' => $forwardingRule, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

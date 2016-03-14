@@ -116,7 +116,7 @@ class Google_Service_YouTube_LiveStreamsResource extends Google_Service_Resource
    * channel.
    * @return Google_Service_LiveStream
    */
-  public function insert($part, LiveStream $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_LiveStream $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -235,7 +235,7 @@ class Google_Service_YouTube_LiveStreamsResource extends Google_Service_Resource
    * channel.
    * @return Google_Service_LiveStream
    */
-  public function update($part, LiveStream $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_LiveStream $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

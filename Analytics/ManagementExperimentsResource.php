@@ -66,7 +66,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_Experiment
    */
-  public function insert($accountId, $webPropertyId, $profileId, Experiment $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Experiment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -106,7 +106,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_Experiment
    */
-  public function patch($accountId, $webPropertyId, $profileId, $experimentId, Experiment $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, $profileId, $experimentId, Google_Service_Analytics_Experiment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'experimentId' => $experimentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -123,7 +123,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param array $optParams Optional parameters.
    * @return Google_Service_Experiment
    */
-  public function update($accountId, $webPropertyId, $profileId, $experimentId, Experiment $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $profileId, $experimentId, Google_Service_Analytics_Experiment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'experimentId' => $experimentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

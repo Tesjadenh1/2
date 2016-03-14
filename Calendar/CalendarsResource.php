@@ -77,7 +77,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Calendar
    */
-  public function insert(Calendar $postBody, $optParams = array())
+  public function insert(Google_Service_Calendar_Calendar $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -94,7 +94,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Calendar
    */
-  public function patch($calendarId, Calendar $postBody, $optParams = array())
+  public function patch($calendarId, Google_Service_Calendar_Calendar $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Calendar
    */
-  public function update($calendarId, Calendar $postBody, $optParams = array())
+  public function update($calendarId, Google_Service_Calendar_Calendar $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

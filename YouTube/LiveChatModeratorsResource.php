@@ -48,7 +48,7 @@ class Google_Service_YouTube_LiveChatModeratorsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_LiveChatModerator
    */
-  public function insert($part, LiveChatModerator $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_LiveChatModerator $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

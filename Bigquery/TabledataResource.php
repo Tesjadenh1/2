@@ -36,7 +36,7 @@ class Google_Service_Bigquery_TabledataResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TableDataInsertAllResponse
    */
-  public function insertAll($projectId, $datasetId, $tableId, TableDataInsertAllRequest $postBody, $optParams = array())
+  public function insertAll($projectId, $datasetId, $tableId, Google_Service_Bigquery_TableDataInsertAllRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'datasetId' => $datasetId, 'tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

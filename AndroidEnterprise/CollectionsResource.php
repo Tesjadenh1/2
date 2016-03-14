@@ -60,7 +60,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Collection
    */
-  public function insert($enterpriseId, Collection $postBody, $optParams = array())
+  public function insert($enterpriseId, Google_Service_AndroidEnterprise_Collection $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -90,7 +90,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Collection
    */
-  public function patch($enterpriseId, $collectionId, Collection $postBody, $optParams = array())
+  public function patch($enterpriseId, $collectionId, Google_Service_AndroidEnterprise_Collection $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -105,7 +105,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Collection
    */
-  public function update($enterpriseId, $collectionId, Collection $postBody, $optParams = array())
+  public function update($enterpriseId, $collectionId, Google_Service_AndroidEnterprise_Collection $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'collectionId' => $collectionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

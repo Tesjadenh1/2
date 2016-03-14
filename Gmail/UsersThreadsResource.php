@@ -95,7 +95,7 @@ class Google_Service_Gmail_UsersThreadsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Thread
    */
-  public function modify($userId, $id, ModifyThreadRequest $postBody, $optParams = array())
+  public function modify($userId, $id, Google_Service_Gmail_ModifyThreadRequest $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

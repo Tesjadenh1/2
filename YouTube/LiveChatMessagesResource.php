@@ -48,7 +48,7 @@ class Google_Service_YouTube_LiveChatMessagesResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_LiveChatMessage
    */
-  public function insert($part, LiveChatMessage $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_LiveChatMessage $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

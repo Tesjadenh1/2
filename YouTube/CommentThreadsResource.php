@@ -36,7 +36,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_CommentThread
    */
-  public function insert($part, CommentThread $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_CommentThread $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_CommentThread
    */
-  public function update($part, CommentThread $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_CommentThread $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

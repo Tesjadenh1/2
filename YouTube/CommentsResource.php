@@ -49,7 +49,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Comment
    */
-  public function insert($part, Comment $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_Comment $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -142,7 +142,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Comment
    */
-  public function update($part, Comment $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_Comment $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

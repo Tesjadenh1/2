@@ -37,7 +37,7 @@ class Google_Service_Classroom_CoursesAliasesResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_CourseAlias
    */
-  public function create($courseId, CourseAlias $postBody, $optParams = array())
+  public function create($courseId, Google_Service_Classroom_CourseAlias $postBody, $optParams = array())
   {
     $params = array('courseId' => $courseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

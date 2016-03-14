@@ -47,7 +47,7 @@ class Google_Service_Dfareporting_DirectorySitesResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_DirectorySite
    */
-  public function insert($profileId, DirectorySite $postBody, $optParams = array())
+  public function insert($profileId, Google_Service_Dfareporting_DirectorySite $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

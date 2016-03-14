@@ -96,7 +96,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * false).
    * @return Google_Service_Post
    */
-  public function insert($blogId, Post $postBody, $optParams = array())
+  public function insert($blogId, Google_Service_Blogger_Post $postBody, $optParams = array())
   {
     $params = array('blogId' => $blogId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -152,7 +152,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * post is updated (default: false).
    * @return Google_Service_Post
    */
-  public function patch($blogId, $postId, Post $postBody, $optParams = array())
+  public function patch($blogId, $postId, Google_Service_Blogger_Post $postBody, $optParams = array())
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -232,7 +232,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * post is updated (default: false).
    * @return Google_Service_Post
    */
-  public function update($blogId, $postId, Post $postBody, $optParams = array())
+  public function update($blogId, $postId, Google_Service_Blogger_Post $postBody, $optParams = array())
   {
     $params = array('blogId' => $blogId, 'postId' => $postId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

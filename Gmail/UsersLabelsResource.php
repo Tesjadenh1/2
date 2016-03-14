@@ -34,7 +34,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Label
    */
-  public function create($userId, Label $postBody, $optParams = array())
+  public function create($userId, Google_Service_Gmail_Label $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Label
    */
-  public function patch($userId, $id, Label $postBody, $optParams = array())
+  public function patch($userId, $id, Google_Service_Gmail_Label $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -111,7 +111,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Label
    */
-  public function update($userId, $id, Label $postBody, $optParams = array())
+  public function update($userId, $id, Google_Service_Gmail_Label $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

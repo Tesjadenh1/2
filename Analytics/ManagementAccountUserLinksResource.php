@@ -46,7 +46,7 @@ class Google_Service_Analytics_ManagementAccountUserLinksResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityUserLink
    */
-  public function insert($accountId, EntityUserLink $postBody, $optParams = array())
+  public function insert($accountId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -82,7 +82,7 @@ class Google_Service_Analytics_ManagementAccountUserLinksResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_EntityUserLink
    */
-  public function update($accountId, $linkId, EntityUserLink $postBody, $optParams = array())
+  public function update($accountId, $linkId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'linkId' => $linkId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

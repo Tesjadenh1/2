@@ -41,7 +41,7 @@ class Google_Service_Webmasters_SearchanalyticsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchAnalyticsQueryResponse
    */
-  public function query($siteUrl, SearchAnalyticsQueryRequest $postBody, $optParams = array())
+  public function query($siteUrl, Google_Service_Webmasters_SearchAnalyticsQueryRequest $postBody, $optParams = array())
   {
     $params = array('siteUrl' => $siteUrl, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

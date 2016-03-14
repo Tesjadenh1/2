@@ -32,7 +32,7 @@ class Google_Service_Analytics_ProvisioningResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_AccountTicket
    */
-  public function createAccountTicket(AccountTicket $postBody, $optParams = array())
+  public function createAccountTicket(Google_Service_Analytics_AccountTicket $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

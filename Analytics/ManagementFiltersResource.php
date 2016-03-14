@@ -61,7 +61,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_Filter
    */
-  public function insert($accountId, Filter $postBody, $optParams = array())
+  public function insert($accountId, Google_Service_Analytics_Filter $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_Filter
    */
-  public function patch($accountId, $filterId, Filter $postBody, $optParams = array())
+  public function patch($accountId, $filterId, Google_Service_Analytics_Filter $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'filterId' => $filterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_Filter
    */
-  public function update($accountId, $filterId, Filter $postBody, $optParams = array())
+  public function update($accountId, $filterId, Google_Service_Analytics_Filter $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'filterId' => $filterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

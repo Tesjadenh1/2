@@ -35,7 +35,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Dataset
    */
-  public function create(Dataset $postBody, $optParams = array())
+  public function create(Google_Service_Genomics_Dataset $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -86,7 +86,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function getIamPolicy($resource, GetIamPolicyRequest $postBody, $optParams = array())
+  public function getIamPolicy($resource, Google_Service_Genomics_GetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -129,7 +129,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * value is "name". If unspecified, all mutable fields will be updated.
    * @return Google_Service_Dataset
    */
-  public function patch($datasetId, Dataset $postBody, $optParams = array())
+  public function patch($datasetId, Google_Service_Genomics_Dataset $postBody, $optParams = array())
   {
     $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -148,7 +148,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = array())
+  public function setIamPolicy($resource, Google_Service_Genomics_SetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -167,7 +167,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse
    */
-  public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = array())
+  public function testIamPermissions($resource, Google_Service_Genomics_TestIamPermissionsRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -185,7 +185,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Dataset
    */
-  public function undelete($datasetId, UndeleteDatasetRequest $postBody, $optParams = array())
+  public function undelete($datasetId, Google_Service_Genomics_UndeleteDatasetRequest $postBody, $optParams = array())
   {
     $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

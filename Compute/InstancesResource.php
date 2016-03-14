@@ -38,7 +38,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function addAccessConfig($project, $zone, $instance, $networkInterface, AccessConfig $postBody, $optParams = array())
+  public function addAccessConfig($project, $zone, $instance, $networkInterface, Google_Service_Compute_AccessConfig $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'networkInterface' => $networkInterface, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -101,7 +101,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function attachDisk($project, $zone, $instance, AttachedDisk $postBody, $optParams = array())
+  public function attachDisk($project, $zone, $instance, Google_Service_Compute_AttachedDisk $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -201,7 +201,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $zone, Instance $postBody, $optParams = array())
+  public function insert($project, $zone, Google_Service_Compute_Instance $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -301,7 +301,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setMachineType($project, $zone, $instance, InstancesSetMachineTypeRequest $postBody, $optParams = array())
+  public function setMachineType($project, $zone, $instance, Google_Service_Compute_InstancesSetMachineTypeRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -318,7 +318,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setMetadata($project, $zone, $instance, Metadata $postBody, $optParams = array())
+  public function setMetadata($project, $zone, $instance, Google_Service_Compute_Metadata $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -334,7 +334,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setScheduling($project, $zone, $instance, Scheduling $postBody, $optParams = array())
+  public function setScheduling($project, $zone, $instance, Google_Service_Compute_Scheduling $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -351,7 +351,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setTags($project, $zone, $instance, Tags $postBody, $optParams = array())
+  public function setTags($project, $zone, $instance, Google_Service_Compute_Tags $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

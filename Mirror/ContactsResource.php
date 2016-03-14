@@ -57,7 +57,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Contact
    */
-  public function insert(Contact $postBody, $optParams = array())
+  public function insert(Google_Service_Mirror_Contact $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -85,7 +85,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Contact
    */
-  public function patch($id, Contact $postBody, $optParams = array())
+  public function patch($id, Google_Service_Mirror_Contact $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -99,7 +99,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Contact
    */
-  public function update($id, Contact $postBody, $optParams = array())
+  public function update($id, Google_Service_Mirror_Contact $postBody, $optParams = array())
   {
     $params = array('id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

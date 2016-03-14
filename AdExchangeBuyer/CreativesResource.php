@@ -61,7 +61,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Creative
    */
-  public function insert(Creative $postBody, $optParams = array())
+  public function insert(Google_Service_AdExchangeBuyer_Creative $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

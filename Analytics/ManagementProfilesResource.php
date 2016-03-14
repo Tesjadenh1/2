@@ -67,7 +67,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Profile
    */
-  public function insert($accountId, $webPropertyId, Profile $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, Google_Service_Analytics_Profile $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -109,7 +109,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Profile
    */
-  public function patch($accountId, $webPropertyId, $profileId, Profile $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Profile $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -126,7 +126,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Profile
    */
-  public function update($accountId, $webPropertyId, $profileId, Profile $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Profile $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

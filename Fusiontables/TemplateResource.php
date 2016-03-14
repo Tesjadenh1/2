@@ -60,7 +60,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Template
    */
-  public function insert($tableId, Template $postBody, $optParams = array())
+  public function insert($tableId, Google_Service_Fusiontables_Template $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Template
    */
-  public function patch($tableId, $templateId, Template $postBody, $optParams = array())
+  public function patch($tableId, $templateId, Google_Service_Fusiontables_Template $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'templateId' => $templateId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Template
    */
-  public function update($tableId, $templateId, Template $postBody, $optParams = array())
+  public function update($tableId, $templateId, Google_Service_Fusiontables_Template $postBody, $optParams = array())
   {
     $params = array('tableId' => $tableId, 'templateId' => $templateId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

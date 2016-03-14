@@ -59,7 +59,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function export($readGroupSetId, ExportReadGroupSetRequest $postBody, $optParams = array())
+  public function export($readGroupSetId, Google_Service_Genomics_ExportReadGroupSetRequest $postBody, $optParams = array())
   {
     $params = array('readGroupSetId' => $readGroupSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -99,7 +99,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function import(ImportReadGroupSetsRequest $postBody, $optParams = array())
+  public function import(Google_Service_Genomics_ImportReadGroupSetsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -122,7 +122,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * unset is equivalent to specifying all mutable fields.
    * @return Google_Service_ReadGroupSet
    */
-  public function patch($readGroupSetId, ReadGroupSet $postBody, $optParams = array())
+  public function patch($readGroupSetId, Google_Service_Genomics_ReadGroupSet $postBody, $optParams = array())
   {
     $params = array('readGroupSetId' => $readGroupSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -140,7 +140,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchReadGroupSetsResponse
    */
-  public function search(SearchReadGroupSetsRequest $postBody, $optParams = array())
+  public function search(Google_Service_Genomics_SearchReadGroupSetsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

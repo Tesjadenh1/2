@@ -75,7 +75,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Insert2
    */
-  public function insert($project, Insert $postBody, $optParams = array())
+  public function insert($project, Google_Service_Prediction_Insert $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -106,7 +106,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Output
    */
-  public function predict($project, $id, Input $postBody, $optParams = array())
+  public function predict($project, $id, Google_Service_Prediction_Input $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -121,7 +121,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    * @return Google_Service_Insert2
    */
-  public function update($project, $id, Update $postBody, $optParams = array())
+  public function update($project, $id, Google_Service_Prediction_Update $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

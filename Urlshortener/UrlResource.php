@@ -47,7 +47,7 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Url
    */
-  public function insert(Url $postBody, $optParams = array())
+  public function insert(Google_Service_Urlshortener_Url $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

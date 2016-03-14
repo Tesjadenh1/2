@@ -46,7 +46,7 @@ class Google_Service_PlusDomains_CommentsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_Comment
    */
-  public function insert($activityId, Comment $postBody, $optParams = array())
+  public function insert($activityId, Google_Service_PlusDomains_Comment $postBody, $optParams = array())
   {
     $params = array('activityId' => $activityId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

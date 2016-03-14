@@ -47,7 +47,7 @@ class Google_Service_YouTube_WatermarksResource extends Google_Service_Resource
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
    */
-  public function set($channelId, InvideoBranding $postBody, $optParams = array())
+  public function set($channelId, Google_Service_YouTube_InvideoBranding $postBody, $optParams = array())
   {
     $params = array('channelId' => $channelId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

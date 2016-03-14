@@ -70,7 +70,7 @@ class Google_Service_Compute_InstanceTemplatesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, InstanceTemplate $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_InstanceTemplate $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

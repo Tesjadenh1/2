@@ -34,7 +34,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Draft
    */
-  public function create($userId, Draft $postBody, $optParams = array())
+  public function create($userId, Google_Service_Gmail_Draft $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -102,7 +102,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Message
    */
-  public function send($userId, Draft $postBody, $optParams = array())
+  public function send($userId, Google_Service_Gmail_Draft $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -118,7 +118,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Draft
    */
-  public function update($userId, $id, Draft $postBody, $optParams = array())
+  public function update($userId, $id, Google_Service_Gmail_Draft $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

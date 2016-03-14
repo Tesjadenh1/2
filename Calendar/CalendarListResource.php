@@ -66,7 +66,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * automatically. Optional. The default is False.
    * @return Google_Service_CalendarListEntry
    */
-  public function insert(CalendarListEntry $postBody, $optParams = array())
+  public function insert(Google_Service_Calendar_CalendarListEntry $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -124,7 +124,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * automatically. Optional. The default is False.
    * @return Google_Service_CalendarListEntry
    */
-  public function patch($calendarId, CalendarListEntry $postBody, $optParams = array())
+  public function patch($calendarId, Google_Service_Calendar_CalendarListEntry $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -145,7 +145,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * automatically. Optional. The default is False.
    * @return Google_Service_CalendarListEntry
    */
-  public function update($calendarId, CalendarListEntry $postBody, $optParams = array())
+  public function update($calendarId, Google_Service_Calendar_CalendarListEntry $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -182,7 +182,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * synchronization. Optional. The default is to return all entries.
    * @return Google_Service_Channel
    */
-  public function watch(Channel $postBody, $optParams = array())
+  public function watch(Google_Service_Calendar_Channel $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

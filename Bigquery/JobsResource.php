@@ -90,7 +90,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Job
    */
-  public function insert($projectId, Job $postBody, $optParams = array())
+  public function insert($projectId, Google_Service_Bigquery_Job $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -131,7 +131,7 @@ class Google_Service_Bigquery_JobsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_QueryResponse
    */
-  public function query($projectId, QueryRequest $postBody, $optParams = array())
+  public function query($projectId, Google_Service_Bigquery_QueryRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

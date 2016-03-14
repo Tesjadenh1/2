@@ -90,7 +90,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_Install
    */
-  public function patch($enterpriseId, $userId, $deviceId, $installId, Install $postBody, $optParams = array())
+  public function patch($enterpriseId, $userId, $deviceId, $installId, Google_Service_AndroidEnterprise_Install $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'installId' => $installId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -110,7 +110,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_Install
    */
-  public function update($enterpriseId, $userId, $deviceId, $installId, Install $postBody, $optParams = array())
+  public function update($enterpriseId, $userId, $deviceId, $installId, Google_Service_AndroidEnterprise_Install $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'userId' => $userId, 'deviceId' => $deviceId, 'installId' => $installId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

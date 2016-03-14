@@ -126,7 +126,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
    * incorrect and want YouTube to try to fix them.
    * @return Google_Service_Caption
    */
-  public function insert($part, Caption $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_Caption $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -206,7 +206,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
    * track.
    * @return Google_Service_Caption
    */
-  public function update($part, Caption $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_Caption $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

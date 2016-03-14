@@ -49,7 +49,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_Webproperty
    */
-  public function insert($accountId, Webproperty $postBody, $optParams = array())
+  public function insert($accountId, Google_Service_Analytics_Webproperty $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -86,7 +86,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_Webproperty
    */
-  public function patch($accountId, $webPropertyId, Webproperty $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, Google_Service_Analytics_Webproperty $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -101,7 +101,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_Webproperty
    */
-  public function update($accountId, $webPropertyId, Webproperty $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, Google_Service_Analytics_Webproperty $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

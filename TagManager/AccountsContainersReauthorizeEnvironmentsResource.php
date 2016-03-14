@@ -36,7 +36,7 @@ class Google_Service_TagManager_AccountsContainersReauthorizeEnvironmentsResourc
    * @param array $optParams Optional parameters.
    * @return Google_Service_Environment
    */
-  public function update($accountId, $containerId, $environmentId, Environment $postBody, $optParams = array())
+  public function update($accountId, $containerId, $environmentId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'environmentId' => $environmentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

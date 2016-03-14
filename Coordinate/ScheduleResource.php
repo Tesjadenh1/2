@@ -55,7 +55,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
    * @opt_param string startTime Scheduled start time in milliseconds since epoch.
    * @return Google_Service_Schedule
    */
-  public function patch($teamId, $jobId, Schedule $postBody, $optParams = array())
+  public function patch($teamId, $jobId, Google_Service_Coordinate_Schedule $postBody, $optParams = array())
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -76,7 +76,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
    * @opt_param string startTime Scheduled start time in milliseconds since epoch.
    * @return Google_Service_Schedule
    */
-  public function update($teamId, $jobId, Schedule $postBody, $optParams = array())
+  public function update($teamId, $jobId, Google_Service_Coordinate_Schedule $postBody, $optParams = array())
   {
     $params = array('teamId' => $teamId, 'jobId' => $jobId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

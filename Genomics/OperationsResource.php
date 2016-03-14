@@ -37,7 +37,7 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_GenomicsEmpty
    */
-  public function cancel($name, CancelOperationRequest $postBody, $optParams = array())
+  public function cancel($name, Google_Service_Genomics_CancelOperationRequest $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

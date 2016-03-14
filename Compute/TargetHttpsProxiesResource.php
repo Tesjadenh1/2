@@ -65,7 +65,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, TargetHttpsProxy $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_TargetHttpsProxy $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -130,7 +130,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setSslCertificates($project, $targetHttpsProxy, TargetHttpsProxiesSetSslCertificatesRequest $postBody, $optParams = array())
+  public function setSslCertificates($project, $targetHttpsProxy, Google_Service_Compute_TargetHttpsProxiesSetSslCertificatesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'targetHttpsProxy' => $targetHttpsProxy, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -146,7 +146,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setUrlMap($project, $targetHttpsProxy, UrlMapReference $postBody, $optParams = array())
+  public function setUrlMap($project, $targetHttpsProxy, Google_Service_Compute_UrlMapReference $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'targetHttpsProxy' => $targetHttpsProxy, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

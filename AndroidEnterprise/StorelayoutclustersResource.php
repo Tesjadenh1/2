@@ -63,7 +63,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param array $optParams Optional parameters.
    * @return Google_Service_StoreCluster
    */
-  public function insert($enterpriseId, $pageId, StoreCluster $postBody, $optParams = array())
+  public function insert($enterpriseId, $pageId, Google_Service_AndroidEnterprise_StoreCluster $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param array $optParams Optional parameters.
    * @return Google_Service_StoreCluster
    */
-  public function patch($enterpriseId, $pageId, $clusterId, StoreCluster $postBody, $optParams = array())
+  public function patch($enterpriseId, $pageId, $clusterId, Google_Service_AndroidEnterprise_StoreCluster $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'clusterId' => $clusterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -111,7 +111,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param array $optParams Optional parameters.
    * @return Google_Service_StoreCluster
    */
-  public function update($enterpriseId, $pageId, $clusterId, StoreCluster $postBody, $optParams = array())
+  public function update($enterpriseId, $pageId, $clusterId, Google_Service_AndroidEnterprise_StoreCluster $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'pageId' => $pageId, 'clusterId' => $clusterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -38,7 +38,7 @@ class Google_Service_Cloudtrace_ProjectsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudtraceEmpty
    */
-  public function patchTraces($projectId, Traces $postBody, $optParams = array())
+  public function patchTraces($projectId, Google_Service_Cloudtrace_Traces $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

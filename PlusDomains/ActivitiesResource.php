@@ -51,7 +51,7 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
    * including video, photos, and articles based on the content of the page.
    * @return Google_Service_Activity
    */
-  public function insert($userId, Activity $postBody, $optParams = array())
+  public function insert($userId, Google_Service_PlusDomains_Activity $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

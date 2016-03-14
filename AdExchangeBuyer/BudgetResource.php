@@ -53,7 +53,7 @@ class Google_Service_AdExchangeBuyer_BudgetResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Budget
    */
-  public function patch($accountId, $billingId, Budget $postBody, $optParams = array())
+  public function patch($accountId, $billingId, Google_Service_AdExchangeBuyer_Budget $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'billingId' => $billingId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -72,7 +72,7 @@ class Google_Service_AdExchangeBuyer_BudgetResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Budget
    */
-  public function update($accountId, $billingId, Budget $postBody, $optParams = array())
+  public function update($accountId, $billingId, Google_Service_AdExchangeBuyer_Budget $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'billingId' => $billingId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

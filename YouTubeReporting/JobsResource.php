@@ -36,7 +36,7 @@ class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resour
    * himself (his own channel).
    * @return Google_Service_Job
    */
-  public function create(Job $postBody, $optParams = array())
+  public function create(Google_Service_YouTubeReporting_Job $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

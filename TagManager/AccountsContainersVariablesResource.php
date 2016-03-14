@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersVariablesResource extends Goog
    * @param array $optParams Optional parameters.
    * @return Google_Service_Variable
    */
-  public function create($accountId, $containerId, Variable $postBody, $optParams = array())
+  public function create($accountId, $containerId, Google_Service_TagManager_Variable $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -97,7 +97,7 @@ class Google_Service_TagManager_AccountsContainersVariablesResource extends Goog
    * fingerprint of the variable in storage.
    * @return Google_Service_Variable
    */
-  public function update($accountId, $containerId, $variableId, Variable $postBody, $optParams = array())
+  public function update($accountId, $containerId, $variableId, Google_Service_TagManager_Variable $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'variableId' => $variableId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

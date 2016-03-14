@@ -41,7 +41,7 @@ class Google_Service_Classroom_CoursesTeachersResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Teacher
    */
-  public function create($courseId, Teacher $postBody, $optParams = array())
+  public function create($courseId, Google_Service_Classroom_Teacher $postBody, $optParams = array())
   {
     $params = array('courseId' => $courseId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

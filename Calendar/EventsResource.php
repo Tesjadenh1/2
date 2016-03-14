@@ -85,7 +85,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Event
    */
-  public function import($calendarId, Event $postBody, $optParams = array())
+  public function import($calendarId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -109,7 +109,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Event
    */
-  public function insert($calendarId, Event $postBody, $optParams = array())
+  public function insert($calendarId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -293,7 +293,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Event
    */
-  public function patch($calendarId, $eventId, Event $postBody, $optParams = array())
+  public function patch($calendarId, $eventId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -344,7 +344,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Event
    */
-  public function update($calendarId, $eventId, Event $postBody, $optParams = array())
+  public function update($calendarId, $eventId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'eventId' => $eventId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -431,7 +431,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * The default is not to filter by last modification time.
    * @return Google_Service_Channel
    */
-  public function watch($calendarId, Channel $postBody, $optParams = array())
+  public function watch($calendarId, Google_Service_Calendar_Channel $postBody, $optParams = array())
   {
     $params = array('calendarId' => $calendarId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

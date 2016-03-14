@@ -47,7 +47,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Groups
    */
-  public function patch($groupUniqueId, Groups $postBody, $optParams = array())
+  public function patch($groupUniqueId, Google_Service_Groupssettings_Groups $postBody, $optParams = array())
   {
     $params = array('groupUniqueId' => $groupUniqueId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -61,7 +61,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Groups
    */
-  public function update($groupUniqueId, Groups $postBody, $optParams = array())
+  public function update($groupUniqueId, Google_Service_Groupssettings_Groups $postBody, $optParams = array())
   {
     $params = array('groupUniqueId' => $groupUniqueId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -34,7 +34,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    * @param Google_ProductsApproveRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function approve($enterpriseId, $productId, ProductsApproveRequest $postBody, $optParams = array())
+  public function approve($enterpriseId, $productId, Google_Service_AndroidEnterprise_ProductsApproveRequest $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -134,7 +134,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProductPermissions
    */
-  public function updatePermissions($enterpriseId, $productId, ProductPermissions $postBody, $optParams = array())
+  public function updatePermissions($enterpriseId, $productId, Google_Service_AndroidEnterprise_ProductPermissions $postBody, $optParams = array())
   {
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

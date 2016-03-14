@@ -51,7 +51,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * @param array $optParams Optional parameters.
    * @return Google_Service_CustomDimension
    */
-  public function insert($accountId, $webPropertyId, CustomDimension $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, Google_Service_Analytics_CustomDimension $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * / data set.
    * @return Google_Service_CustomDimension
    */
-  public function patch($accountId, $webPropertyId, $customDimensionId, CustomDimension $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, $customDimensionId, Google_Service_Analytics_CustomDimension $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'customDimensionId' => $customDimensionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -117,7 +117,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * / data set.
    * @return Google_Service_CustomDimension
    */
-  public function update($accountId, $webPropertyId, $customDimensionId, CustomDimension $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $customDimensionId, Google_Service_Analytics_CustomDimension $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'customDimensionId' => $customDimensionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -114,7 +114,7 @@ class Google_Service_Compute_TargetInstancesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $zone, TargetInstance $postBody, $optParams = array())
+  public function insert($project, $zone, Google_Service_Compute_TargetInstance $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

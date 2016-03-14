@@ -32,7 +32,7 @@ class Google_Service_Doubleclicksearch_ReportsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Report
    */
-  public function generate(ReportRequest $postBody, $optParams = array())
+  public function generate(Google_Service_Doubleclicksearch_ReportRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -71,7 +71,7 @@ class Google_Service_Doubleclicksearch_ReportsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Report
    */
-  public function request(ReportRequest $postBody, $optParams = array())
+  public function request(Google_Service_Doubleclicksearch_ReportRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

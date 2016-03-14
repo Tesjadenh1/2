@@ -71,7 +71,7 @@ class Google_Service_YouTubeAnalytics_GroupItemsResource extends Google_Service_
    * owner.
    * @return Google_Service_GroupItem
    */
-  public function insert(GroupItem $postBody, $optParams = array())
+  public function insert(Google_Service_YouTubeAnalytics_GroupItem $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

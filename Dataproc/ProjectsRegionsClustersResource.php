@@ -36,7 +36,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function create($projectId, $region, Cluster $postBody, $optParams = array())
+  public function create($projectId, $region, Google_Service_Dataproc_Cluster $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -73,7 +73,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function diagnose($projectId, $region, $clusterName, DiagnoseClusterRequest $postBody, $optParams = array())
+  public function diagnose($projectId, $region, $clusterName, Google_Service_Dataproc_DiagnoseClusterRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'region' => $region, 'clusterName' => $clusterName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -136,7 +136,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * is the only field that can be updated.
    * @return Google_Service_Operation
    */
-  public function patch($projectId, $region, $clusterName, Cluster $postBody, $optParams = array())
+  public function patch($projectId, $region, $clusterName, Google_Service_Dataproc_Cluster $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'region' => $region, 'clusterName' => $clusterName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

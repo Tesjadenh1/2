@@ -39,7 +39,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_PubsubEmpty
    */
-  public function acknowledge($subscription, AcknowledgeRequest $postBody, $optParams = array())
+  public function acknowledge($subscription, Google_Service_Pubsub_AcknowledgeRequest $postBody, $optParams = array())
   {
     $params = array('subscription' => $subscription, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -62,7 +62,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Subscription
    */
-  public function create($name, Subscription $postBody, $optParams = array())
+  public function create($name, Google_Service_Pubsub_Subscription $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -147,7 +147,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_PubsubEmpty
    */
-  public function modifyAckDeadline($subscription, ModifyAckDeadlineRequest $postBody, $optParams = array())
+  public function modifyAckDeadline($subscription, Google_Service_Pubsub_ModifyAckDeadlineRequest $postBody, $optParams = array())
   {
     $params = array('subscription' => $subscription, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -166,7 +166,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_PubsubEmpty
    */
-  public function modifyPushConfig($subscription, ModifyPushConfigRequest $postBody, $optParams = array())
+  public function modifyPushConfig($subscription, Google_Service_Pubsub_ModifyPushConfigRequest $postBody, $optParams = array())
   {
     $params = array('subscription' => $subscription, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -184,7 +184,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_PullResponse
    */
-  public function pull($subscription, PullRequest $postBody, $optParams = array())
+  public function pull($subscription, Google_Service_Pubsub_PullRequest $postBody, $optParams = array())
   {
     $params = array('subscription' => $subscription, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -203,7 +203,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = array())
+  public function setIamPolicy($resource, Google_Service_Pubsub_SetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -222,7 +222,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse
    */
-  public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = array())
+  public function testIamPermissions($resource, Google_Service_Pubsub_TestIamPermissionsRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

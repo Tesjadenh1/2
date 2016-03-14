@@ -53,7 +53,7 @@ class Google_Service_YouTube_ChannelBannersResource extends Google_Service_Resou
    * owner.
    * @return Google_Service_ChannelBannerResource
    */
-  public function insert(ChannelBannerResource $postBody, $optParams = array())
+  public function insert(Google_Service_YouTube_ChannelBannerResource $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

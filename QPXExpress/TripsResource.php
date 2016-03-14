@@ -32,7 +32,7 @@ class Google_Service_QPXExpress_TripsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_TripsSearchResponse
    */
-  public function search(TripsSearchRequest $postBody, $optParams = array())
+  public function search(Google_Service_QPXExpress_TripsSearchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

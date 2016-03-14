@@ -33,7 +33,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_DeleteOrderDealsResponse
    */
-  public function delete($proposalId, DeleteOrderDealsRequest $postBody, $optParams = array())
+  public function delete($proposalId, Google_Service_AdExchangeBuyer_DeleteOrderDealsRequest $postBody, $optParams = array())
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -47,7 +47,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_AddOrderDealsResponse
    */
-  public function insert($proposalId, AddOrderDealsRequest $postBody, $optParams = array())
+  public function insert($proposalId, Google_Service_AdExchangeBuyer_AddOrderDealsRequest $postBody, $optParams = array())
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -76,7 +76,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_EditAllOrderDealsResponse
    */
-  public function update($proposalId, EditAllOrderDealsRequest $postBody, $optParams = array())
+  public function update($proposalId, Google_Service_AdExchangeBuyer_EditAllOrderDealsRequest $postBody, $optParams = array())
   {
     $params = array('proposalId' => $proposalId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

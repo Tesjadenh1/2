@@ -62,7 +62,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
    * owner.
    * @return Google_Service_PlaylistItem
    */
-  public function insert($part, PlaylistItem $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_PlaylistItem $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -143,7 +143,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_PlaylistItem
    */
-  public function update($part, PlaylistItem $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_PlaylistItem $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

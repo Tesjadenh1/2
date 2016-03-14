@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    * @param array $optParams Optional parameters.
    * @return Google_Service_Environment
    */
-  public function create($accountId, $containerId, Environment $postBody, $optParams = array())
+  public function create($accountId, $containerId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -98,7 +98,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    * fingerprint of the environment in storage.
    * @return Google_Service_Environment
    */
-  public function patch($accountId, $containerId, $environmentId, Environment $postBody, $optParams = array())
+  public function patch($accountId, $containerId, $environmentId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'environmentId' => $environmentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -117,7 +117,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    * fingerprint of the environment in storage.
    * @return Google_Service_Environment
    */
-  public function update($accountId, $containerId, $environmentId, Environment $postBody, $optParams = array())
+  public function update($accountId, $containerId, $environmentId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'environmentId' => $environmentId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

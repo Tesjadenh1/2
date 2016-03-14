@@ -62,7 +62,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, Firewall $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_Firewall $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -126,7 +126,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function patch($project, $firewall, Firewall $postBody, $optParams = array())
+  public function patch($project, $firewall, Google_Service_Compute_Firewall $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'firewall' => $firewall, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -142,7 +142,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function update($project, $firewall, Firewall $postBody, $optParams = array())
+  public function update($project, $firewall, Google_Service_Compute_Firewall $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'firewall' => $firewall, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

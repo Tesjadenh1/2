@@ -113,7 +113,7 @@ class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $region, Subnetwork $postBody, $optParams = array())
+  public function insert($project, $region, Google_Service_Compute_Subnetwork $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'region' => $region, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -32,7 +32,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_TransferJob
    */
-  public function create(TransferJob $postBody, $optParams = array())
+  public function create(Google_Service_Storagetransfer_TransferJob $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -87,7 +87,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_TransferJob
    */
-  public function patch($jobName, UpdateTransferJobRequest $postBody, $optParams = array())
+  public function patch($jobName, Google_Service_Storagetransfer_UpdateTransferJobRequest $postBody, $optParams = array())
   {
     $params = array('jobName' => $jobName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

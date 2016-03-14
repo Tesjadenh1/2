@@ -35,7 +35,7 @@ class Google_Service_Dfareporting_CreativeAssetsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreativeAssetMetadata
    */
-  public function insert($profileId, $advertiserId, CreativeAssetMetadata $postBody, $optParams = array())
+  public function insert($profileId, $advertiserId, Google_Service_Dfareporting_CreativeAssetMetadata $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'advertiserId' => $advertiserId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

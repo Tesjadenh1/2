@@ -50,7 +50,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    * https://admin.google.com/TransferToken. Optional.
    * @return Google_Service_Customer
    */
-  public function insert(Customer $postBody, $optParams = array())
+  public function insert(Google_Service_Reseller_Customer $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -65,7 +65,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Customer
    */
-  public function patch($customerId, Customer $postBody, $optParams = array())
+  public function patch($customerId, Google_Service_Reseller_Customer $postBody, $optParams = array())
   {
     $params = array('customerId' => $customerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -80,7 +80,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Customer
    */
-  public function update($customerId, Customer $postBody, $optParams = array())
+  public function update($customerId, Google_Service_Reseller_Customer $postBody, $optParams = array())
   {
     $params = array('customerId' => $customerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

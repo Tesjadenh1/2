@@ -62,7 +62,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_LeaderboardConfiguration
    */
-  public function insert($applicationId, LeaderboardConfiguration $postBody, $optParams = array())
+  public function insert($applicationId, Google_Service_GamesConfiguration_LeaderboardConfiguration $postBody, $optParams = array())
   {
     $params = array('applicationId' => $applicationId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -97,7 +97,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_LeaderboardConfiguration
    */
-  public function patch($leaderboardId, LeaderboardConfiguration $postBody, $optParams = array())
+  public function patch($leaderboardId, Google_Service_GamesConfiguration_LeaderboardConfiguration $postBody, $optParams = array())
   {
     $params = array('leaderboardId' => $leaderboardId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_LeaderboardConfiguration
    */
-  public function update($leaderboardId, LeaderboardConfiguration $postBody, $optParams = array())
+  public function update($leaderboardId, Google_Service_GamesConfiguration_LeaderboardConfiguration $postBody, $optParams = array())
   {
     $params = array('leaderboardId' => $leaderboardId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

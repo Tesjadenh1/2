@@ -61,7 +61,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    * @return Google_Service_Invitation
    */
-  public function create(Invitation $postBody, $optParams = array())
+  public function create(Google_Service_Classroom_Invitation $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

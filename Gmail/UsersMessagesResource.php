@@ -34,7 +34,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * @param Google_BatchDeleteMessagesRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function batchDelete($userId, BatchDeleteMessagesRequest $postBody, $optParams = array())
+  public function batchDelete($userId, Google_Service_Gmail_BatchDeleteMessagesRequest $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -95,7 +95,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * add any extracted meetings to the Google Calendar for this user.
    * @return Google_Service_Message
    */
-  public function import($userId, Message $postBody, $optParams = array())
+  public function import($userId, Google_Service_Gmail_Message $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -118,7 +118,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * message.
    * @return Google_Service_Message
    */
-  public function insert($userId, Message $postBody, $optParams = array())
+  public function insert($userId, Google_Service_Gmail_Message $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -159,7 +159,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Message
    */
-  public function modify($userId, $id, ModifyMessageRequest $postBody, $optParams = array())
+  public function modify($userId, $id, Google_Service_Gmail_ModifyMessageRequest $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -175,7 +175,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Message
    */
-  public function send($userId, Message $postBody, $optParams = array())
+  public function send($userId, Google_Service_Gmail_Message $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

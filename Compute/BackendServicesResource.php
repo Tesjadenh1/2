@@ -65,7 +65,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_BackendServiceGroupHealth
    */
-  public function getHealth($project, $backendService, ResourceGroupReference $postBody, $optParams = array())
+  public function getHealth($project, $backendService, Google_Service_Compute_ResourceGroupReference $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'backendService' => $backendService, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -82,7 +82,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, BackendService $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_BackendService $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -148,7 +148,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function patch($project, $backendService, BackendService $postBody, $optParams = array())
+  public function patch($project, $backendService, Google_Service_Compute_BackendService $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'backendService' => $backendService, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -166,7 +166,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function update($project, $backendService, BackendService $postBody, $optParams = array())
+  public function update($project, $backendService, Google_Service_Compute_BackendService $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'backendService' => $backendService, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

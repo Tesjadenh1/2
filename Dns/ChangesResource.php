@@ -35,7 +35,7 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Change
    */
-  public function create($project, $managedZone, Change $postBody, $optParams = array())
+  public function create($project, $managedZone, Google_Service_Dns_Change $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'managedZone' => $managedZone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

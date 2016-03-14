@@ -47,7 +47,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * by this method.
    * @return Google_Service_TurnBasedMatch
    */
-  public function create(TurnBasedMatchCreateRequest $postBody, $optParams = array())
+  public function create(Google_Service_Games_TurnBasedMatchCreateRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -96,7 +96,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * by this method.
    * @return Google_Service_TurnBasedMatch
    */
-  public function finish($matchId, TurnBasedMatchResults $postBody, $optParams = array())
+  public function finish($matchId, Google_Service_Games_TurnBasedMatchResults $postBody, $optParams = array())
   {
     $params = array('matchId' => $matchId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -265,7 +265,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * by this method.
    * @return Google_Service_TurnBasedMatch
    */
-  public function takeTurn($matchId, TurnBasedMatchTurn $postBody, $optParams = array())
+  public function takeTurn($matchId, Google_Service_Games_TurnBasedMatchTurn $postBody, $optParams = array())
   {
     $params = array('matchId' => $matchId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

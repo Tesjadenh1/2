@@ -46,7 +46,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function moveDisk($project, DiskMoveRequest $postBody, $optParams = array())
+  public function moveDisk($project, Google_Service_Compute_DiskMoveRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -61,7 +61,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function moveInstance($project, InstanceMoveRequest $postBody, $optParams = array())
+  public function moveInstance($project, Google_Service_Compute_InstanceMoveRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -76,7 +76,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setCommonInstanceMetadata($project, Metadata $postBody, $optParams = array())
+  public function setCommonInstanceMetadata($project, Google_Service_Compute_Metadata $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -92,7 +92,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setUsageExportBucket($project, UsageExportLocation $postBody, $optParams = array())
+  public function setUsageExportBucket($project, Google_Service_Compute_UsageExportLocation $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

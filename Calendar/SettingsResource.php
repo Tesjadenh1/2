@@ -83,7 +83,7 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
    * synchronization. Optional. The default is to return all entries.
    * @return Google_Service_Channel
    */
-  public function watch(Channel $postBody, $optParams = array())
+  public function watch(Google_Service_Calendar_Channel $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

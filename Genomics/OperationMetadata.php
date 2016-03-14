@@ -15,45 +15,6 @@
  * the License.
  */
 
-class Google_Service_Genomics_OperationMetadata extends Google_Collection
+class Google_Service_Genomics_OperationMetadata extends Google_Model
 {
-  protected $collection_key = 'events';
-  public $createTime;
-  protected $eventsType = 'Google_Service_Genomics_OperationEvent';
-  protected $eventsDataType = 'array';
-  public $projectId;
-  public $request;
-
-  public function setCreateTime($createTime)
-  {
-    $this->createTime = $createTime;
-  }
-  public function getCreateTime()
-  {
-    return $this->createTime;
-  }
-  public function setEvents($events)
-  {
-    $this->events = $events;
-  }
-  public function getEvents()
-  {
-    return $this->events;
-  }
-  public function setProjectId($projectId)
-  {
-    $this->projectId = $projectId;
-  }
-  public function getProjectId()
-  {
-    return $this->projectId;
-  }
-  public function setRequest($request)
-  {
-    $this->request = $request;
-  }
-  public function getRequest()
-  {
-    return $this->request;
-  }
 }

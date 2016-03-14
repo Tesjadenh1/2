@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersTagsResource extends Google_Se
    * @param array $optParams Optional parameters.
    * @return Google_Service_Tag
    */
-  public function create($accountId, $containerId, Tag $postBody, $optParams = array())
+  public function create($accountId, $containerId, Google_Service_TagManager_Tag $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -96,7 +96,7 @@ class Google_Service_TagManager_AccountsContainersTagsResource extends Google_Se
    * fingerprint of the tag in storage.
    * @return Google_Service_Tag
    */
-  public function update($accountId, $containerId, $tagId, Tag $postBody, $optParams = array())
+  public function update($accountId, $containerId, $tagId, Google_Service_TagManager_Tag $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'containerId' => $containerId, 'tagId' => $tagId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

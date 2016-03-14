@@ -32,7 +32,7 @@ class Google_Service_DoubleClickBidManager_RubiconResource extends Google_Servic
    * @param Google_NotifyProposalChangeRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function notifyproposalchange(NotifyProposalChangeRequest $postBody, $optParams = array())
+  public function notifyproposalchange(Google_Service_DoubleClickBidManager_NotifyProposalChangeRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -91,7 +91,7 @@ class Google_Service_GamesManagement_EventsResource extends Google_Service_Resou
    * @param Google_EventsResetMultipleForAllRequest $postBody
    * @param array $optParams Optional parameters.
    */
-  public function resetMultipleForAllPlayers(EventsResetMultipleForAllRequest $postBody, $optParams = array())
+  public function resetMultipleForAllPlayers(Google_Service_GamesManagement_EventsResetMultipleForAllRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

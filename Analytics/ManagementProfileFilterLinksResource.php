@@ -69,7 +69,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProfileFilterLink
    */
-  public function insert($accountId, $webPropertyId, $profileId, ProfileFilterLink $postBody, $optParams = array())
+  public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_ProfileFilterLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -113,7 +113,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProfileFilterLink
    */
-  public function patch($accountId, $webPropertyId, $profileId, $linkId, ProfileFilterLink $postBody, $optParams = array())
+  public function patch($accountId, $webPropertyId, $profileId, $linkId, Google_Service_Analytics_ProfileFilterLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'linkId' => $linkId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -131,7 +131,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param array $optParams Optional parameters.
    * @return Google_Service_ProfileFilterLink
    */
-  public function update($accountId, $webPropertyId, $profileId, $linkId, ProfileFilterLink $postBody, $optParams = array())
+  public function update($accountId, $webPropertyId, $profileId, $linkId, Google_Service_Analytics_ProfileFilterLink $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'profileId' => $profileId, 'linkId' => $linkId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

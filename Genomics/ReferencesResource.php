@@ -55,7 +55,7 @@ class Google_Service_Genomics_ReferencesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchReferencesResponse
    */
-  public function search(SearchReferencesRequest $postBody, $optParams = array())
+  public function search(Google_Service_Genomics_SearchReferencesRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

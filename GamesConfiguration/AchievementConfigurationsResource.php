@@ -62,7 +62,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_AchievementConfiguration
    */
-  public function insert($applicationId, AchievementConfiguration $postBody, $optParams = array())
+  public function insert($applicationId, Google_Service_GamesConfiguration_AchievementConfiguration $postBody, $optParams = array())
   {
     $params = array('applicationId' => $applicationId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -97,7 +97,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_AchievementConfiguration
    */
-  public function patch($achievementId, AchievementConfiguration $postBody, $optParams = array())
+  public function patch($achievementId, Google_Service_GamesConfiguration_AchievementConfiguration $postBody, $optParams = array())
   {
     $params = array('achievementId' => $achievementId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -112,7 +112,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * @param array $optParams Optional parameters.
    * @return Google_Service_AchievementConfiguration
    */
-  public function update($achievementId, AchievementConfiguration $postBody, $optParams = array())
+  public function update($achievementId, Google_Service_GamesConfiguration_AchievementConfiguration $postBody, $optParams = array())
   {
     $params = array('achievementId' => $achievementId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

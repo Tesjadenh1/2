@@ -85,7 +85,7 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
    * user corpus. Supported values are 'drive', 'appDataFolder' and 'photos'.
    * @return Google_Service_Channel
    */
-  public function watch($pageToken, Channel $postBody, $optParams = array())
+  public function watch($pageToken, Google_Service_Drive_Channel $postBody, $optParams = array())
   {
     $params = array('pageToken' => $pageToken, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

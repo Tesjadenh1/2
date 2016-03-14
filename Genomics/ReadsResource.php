@@ -47,7 +47,7 @@ class Google_Service_Genomics_ReadsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_SearchReadsResponse
    */
-  public function search(SearchReadsRequest $postBody, $optParams = array())
+  public function search(Google_Service_Genomics_SearchReadsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -61,7 +61,7 @@ class Google_Service_Genomics_ReadsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_StreamReadsResponse
    */
-  public function stream(StreamReadsRequest $postBody, $optParams = array())
+  public function stream(Google_Service_Genomics_StreamReadsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

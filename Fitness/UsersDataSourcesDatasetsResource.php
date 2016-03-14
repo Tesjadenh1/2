@@ -110,7 +110,7 @@ class Google_Service_Fitness_UsersDataSourcesDatasetsResource extends Google_Ser
    * request body are in nanoseconds instead of milliseconds.
    * @return Google_Service_Dataset
    */
-  public function patch($userId, $dataSourceId, $datasetId, Dataset $postBody, $optParams = array())
+  public function patch($userId, $dataSourceId, $datasetId, Google_Service_Fitness_Dataset $postBody, $optParams = array())
   {
     $params = array('userId' => $userId, 'dataSourceId' => $dataSourceId, 'datasetId' => $datasetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

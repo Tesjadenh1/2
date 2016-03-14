@@ -33,7 +33,7 @@ class Google_Service_TagManager_AccountsPermissionsResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_UserAccess
    */
-  public function create($accountId, UserAccess $postBody, $optParams = array())
+  public function create($accountId, Google_Service_TagManager_UserAccess $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -92,7 +92,7 @@ class Google_Service_TagManager_AccountsPermissionsResource extends Google_Servi
    * @param array $optParams Optional parameters.
    * @return Google_Service_UserAccess
    */
-  public function update($accountId, $permissionId, UserAccess $postBody, $optParams = array())
+  public function update($accountId, $permissionId, Google_Service_TagManager_UserAccess $postBody, $optParams = array())
   {
     $params = array('accountId' => $accountId, 'permissionId' => $permissionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -65,7 +65,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, TargetHttpProxy $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_TargetHttpProxy $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -129,7 +129,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setUrlMap($project, $targetHttpProxy, UrlMapReference $postBody, $optParams = array())
+  public function setUrlMap($project, $targetHttpProxy, Google_Service_Compute_UrlMapReference $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'targetHttpProxy' => $targetHttpProxy, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

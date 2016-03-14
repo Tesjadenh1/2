@@ -34,7 +34,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceAccount
    */
-  public function create($name, CreateServiceAccountRequest $postBody, $optParams = array())
+  public function create($name, Google_Service_Iam_CreateServiceAccountRequest $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -125,7 +125,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function setIamPolicy($resource, SetIamPolicyRequest $postBody, $optParams = array())
+  public function setIamPolicy($resource, Google_Service_Iam_SetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -142,7 +142,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_SignBlobResponse
    */
-  public function signBlob($name, SignBlobRequest $postBody, $optParams = array())
+  public function signBlob($name, Google_Service_Iam_SignBlobRequest $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -161,7 +161,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse
    */
-  public function testIamPermissions($resource, TestIamPermissionsRequest $postBody, $optParams = array())
+  public function testIamPermissions($resource, Google_Service_Iam_TestIamPermissionsRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -181,7 +181,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceAccount
    */
-  public function update($name, ServiceAccount $postBody, $optParams = array())
+  public function update($name, Google_Service_Iam_ServiceAccount $postBody, $optParams = array())
   {
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

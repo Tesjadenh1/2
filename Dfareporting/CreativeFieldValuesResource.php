@@ -66,7 +66,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreativeFieldValue
    */
-  public function insert($profileId, $creativeFieldId, CreativeFieldValue $postBody, $optParams = array())
+  public function insert($profileId, $creativeFieldId, Google_Service_Dfareporting_CreativeFieldValue $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -109,7 +109,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreativeFieldValue
    */
-  public function patch($profileId, $creativeFieldId, $id, CreativeFieldValue $postBody, $optParams = array())
+  public function patch($profileId, $creativeFieldId, $id, Google_Service_Dfareporting_CreativeFieldValue $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -125,7 +125,7 @@ class Google_Service_Dfareporting_CreativeFieldValuesResource extends Google_Ser
    * @param array $optParams Optional parameters.
    * @return Google_Service_CreativeFieldValue
    */
-  public function update($profileId, $creativeFieldId, CreativeFieldValue $postBody, $optParams = array())
+  public function update($profileId, $creativeFieldId, Google_Service_Dfareporting_CreativeFieldValue $postBody, $optParams = array())
   {
     $params = array('profileId' => $profileId, 'creativeFieldId' => $creativeFieldId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

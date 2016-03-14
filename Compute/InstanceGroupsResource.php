@@ -38,7 +38,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function addInstances($project, $zone, $instanceGroup, InstanceGroupsAddInstancesRequest $postBody, $optParams = array())
+  public function addInstances($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsAddInstancesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroup' => $instanceGroup, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -136,7 +136,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, $zone, InstanceGroup $postBody, $optParams = array())
+  public function insert($project, $zone, Google_Service_Compute_InstanceGroup $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -237,7 +237,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * results.
    * @return Google_Service_InstanceGroupsListInstances
    */
-  public function listInstances($project, $zone, $instanceGroup, InstanceGroupsListInstancesRequest $postBody, $optParams = array())
+  public function listInstances($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsListInstancesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroup' => $instanceGroup, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -255,7 +255,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function removeInstances($project, $zone, $instanceGroup, InstanceGroupsRemoveInstancesRequest $postBody, $optParams = array())
+  public function removeInstances($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsRemoveInstancesRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroup' => $instanceGroup, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -273,7 +273,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function setNamedPorts($project, $zone, $instanceGroup, InstanceGroupsSetNamedPortsRequest $postBody, $optParams = array())
+  public function setNamedPorts($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsSetNamedPortsRequest $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'instanceGroup' => $instanceGroup, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

@@ -64,7 +64,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_LicenseAssignment
    */
-  public function insert($productId, $skuId, LicenseAssignmentInsert $postBody, $optParams = array())
+  public function insert($productId, $skuId, Google_Service_Licensing_LicenseAssignmentInsert $postBody, $optParams = array())
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -124,7 +124,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_LicenseAssignment
    */
-  public function patch($productId, $skuId, $userId, LicenseAssignment $postBody, $optParams = array())
+  public function patch($productId, $skuId, $userId, Google_Service_Licensing_LicenseAssignment $postBody, $optParams = array())
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -140,7 +140,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param array $optParams Optional parameters.
    * @return Google_Service_LicenseAssignment
    */
-  public function update($productId, $skuId, $userId, LicenseAssignment $postBody, $optParams = array())
+  public function update($productId, $skuId, $userId, Google_Service_Licensing_LicenseAssignment $postBody, $optParams = array())
   {
     $params = array('productId' => $productId, 'skuId' => $skuId, 'userId' => $userId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

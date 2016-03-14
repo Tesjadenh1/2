@@ -117,7 +117,7 @@ class Google_Service_YouTube_ChannelsResource extends Google_Service_Resource
    * authenticates with needs to be linked to the specified YouTube content owner.
    * @return Google_Service_Channel
    */
-  public function update($part, Channel $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_Channel $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

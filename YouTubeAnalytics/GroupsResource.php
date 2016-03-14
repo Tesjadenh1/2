@@ -71,7 +71,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
    * owner.
    * @return Google_Service_Group
    */
-  public function insert(Group $postBody, $optParams = array())
+  public function insert(Google_Service_YouTubeAnalytics_Group $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -133,7 +133,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
    * owner.
    * @return Google_Service_Group
    */
-  public function update(Group $postBody, $optParams = array())
+  public function update(Google_Service_YouTubeAnalytics_Group $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

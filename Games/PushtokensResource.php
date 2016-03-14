@@ -32,7 +32,7 @@ class Google_Service_Games_PushtokensResource extends Google_Service_Resource
    * @param Google_PushTokenId $postBody
    * @param array $optParams Optional parameters.
    */
-  public function remove(PushTokenId $postBody, $optParams = array())
+  public function remove(Google_Service_Games_PushTokenId $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -45,7 +45,7 @@ class Google_Service_Games_PushtokensResource extends Google_Service_Resource
    * @param Google_PushToken $postBody
    * @param array $optParams Optional parameters.
    */
-  public function update(PushToken $postBody, $optParams = array())
+  public function update(Google_Service_Games_PushToken $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);

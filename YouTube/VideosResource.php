@@ -141,7 +141,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * should adjust the video to remove shaky camera motions.
    * @return Google_Service_Video
    */
-  public function insert($part, Video $postBody, $optParams = array())
+  public function insert($part, Google_Service_YouTube_Video $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -255,7 +255,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
    */
-  public function reportAbuse(VideoAbuseReport $postBody, $optParams = array())
+  public function reportAbuse(Google_Service_YouTube_VideoAbuseReport $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -300,7 +300,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * YouTube content owner.
    * @return Google_Service_Video
    */
-  public function update($part, Video $postBody, $optParams = array())
+  public function update($part, Google_Service_YouTube_Video $postBody, $optParams = array())
   {
     $params = array('part' => $part, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

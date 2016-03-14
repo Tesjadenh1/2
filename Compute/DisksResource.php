@@ -82,7 +82,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function createSnapshot($project, $zone, $disk, Snapshot $postBody, $optParams = array())
+  public function createSnapshot($project, $zone, $disk, Google_Service_Compute_Snapshot $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'disk' => $disk, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -137,7 +137,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @opt_param string sourceImage Optional. Source image to restore onto a disk.
    * @return Google_Service_Operation
    */
-  public function insert($project, $zone, Disk $postBody, $optParams = array())
+  public function insert($project, $zone, Google_Service_Compute_Disk $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'zone' => $zone, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

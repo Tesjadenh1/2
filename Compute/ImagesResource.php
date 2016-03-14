@@ -51,7 +51,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function deprecate($project, $image, DeprecationStatus $postBody, $optParams = array())
+  public function deprecate($project, $image, Google_Service_Compute_DeprecationStatus $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'image' => $image, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -81,7 +81,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    * @return Google_Service_Operation
    */
-  public function insert($project, Image $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_Image $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

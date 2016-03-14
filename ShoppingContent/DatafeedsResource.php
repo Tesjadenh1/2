@@ -34,7 +34,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_DatafeedsCustomBatchResponse
    */
-  public function custombatch(DatafeedsCustomBatchRequest $postBody, $optParams = array())
+  public function custombatch(Google_Service_ShoppingContent_DatafeedsCustomBatchRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -79,7 +79,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Datafeed
    */
-  public function insert($merchantId, Datafeed $postBody, $optParams = array())
+  public function insert($merchantId, Google_Service_ShoppingContent_Datafeed $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -115,7 +115,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Datafeed
    */
-  public function patch($merchantId, $datafeedId, Datafeed $postBody, $optParams = array())
+  public function patch($merchantId, $datafeedId, Google_Service_ShoppingContent_Datafeed $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'datafeedId' => $datafeedId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
@@ -132,7 +132,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
    * @return Google_Service_Datafeed
    */
-  public function update($merchantId, $datafeedId, Datafeed $postBody, $optParams = array())
+  public function update($merchantId, $datafeedId, Google_Service_ShoppingContent_Datafeed $postBody, $optParams = array())
   {
     $params = array('merchantId' => $merchantId, 'datafeedId' => $datafeedId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);

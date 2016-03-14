@@ -104,7 +104,7 @@ class Google_Service_Clouddebugger_DebuggerDebuggeesBreakpointsResource extends 
    * Following: `domain/type/version` (e.g., `google.com/intellij/v1`).
    * @return Google_Service_SetBreakpointResponse
    */
-  public function set($debuggeeId, Breakpoint $postBody, $optParams = array())
+  public function set($debuggeeId, Google_Service_Clouddebugger_Breakpoint $postBody, $optParams = array())
   {
     $params = array('debuggeeId' => $debuggeeId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
