@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_Policy extends Google_Collection
+class Google_Service_CloudResourceManager_Policy extends Google_Collection
 {
   protected $collection_key = 'bindings';
-  protected $bindingsType = 'Google_Service_Cloudresourcemanager_Binding';
+  protected $bindingsType = 'Google_Service_CloudResourceManager_Binding';
   protected $bindingsDataType = 'array';
   public $etag;
   public $version;

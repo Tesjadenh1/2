@@ -15,12 +15,12 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_SetIamPolicyRequest extends Google_Model
+class Google_Service_CloudResourceManager_SetIamPolicyRequest extends Google_Model
 {
-  protected $policyType = 'Google_Service_Cloudresourcemanager_Policy';
+  protected $policyType = 'Google_Service_CloudResourceManager_Policy';
   protected $policyDataType = '';
 
-  public function setPolicy(Google_Service_Cloudresourcemanager_Policy $policy)
+  public function setPolicy(Google_Service_CloudResourceManager_Policy $policy)
   {
     $this->policy = $policy;
   }

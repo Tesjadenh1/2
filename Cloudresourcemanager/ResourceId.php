@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_ResourceId extends Google_Model
+class Google_Service_CloudResourceManager_ResourceId extends Google_Model
 {
   public $id;
   public $type;

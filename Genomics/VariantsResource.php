@@ -81,13 +81,11 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * any existing variant that matches its reference sequence, start, end,
    * reference bases, and alternative bases. If no such variant exists, a new one
    * will be created. When variants are merged, the call information from the new
-   * variant is added to the existing variant, and other fields (such as key/value
-   * pairs) are discarded. In particular, this means for merged VCF variants that
-   * have conflicting INFO fields, some data will be arbitrarily discarded. As a
-   * special case, for single-sample VCF files, QUAL and FILTER fields will be
-   * moved to the call level; these are sometimes interpreted in a call-specific
-   * context. Imported VCF headers are appended to the metadata already in a
-   * variant set. (variants.import)
+   * variant is added to the existing variant, and Variant info fields are merged
+   * as specified in InfoMergeConfig. As a special case, for single-sample VCF
+   * files, QUAL and FILTER fields will be moved to the call level; these are
+   * sometimes interpreted in a call-specific context. Imported VCF headers are
+   * appended to the metadata already in a variant set. (variants.import)
    *
    * @param Google_ImportVariantsRequest $postBody
    * @param array $optParams Optional parameters.
@@ -106,8 +104,9 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * Each variant will be merged with an existing variant that matches its
    * reference sequence, start, end, reference bases, and alternative bases. If no
    * such variant exists, a new one will be created. When variants are merged, the
-   * call information from the new variant is added to the existing variant, and
-   * other fields (such as key/value pairs) are discarded. (variants.merge)
+   * call information from the new variant is added to the existing variant.
+   * Variant info fields are merged as specified in the InfoMergeConfig field of
+   * the MergeVariantsRequest. (variants.merge)
    *
    * @param Google_MergeVariantsRequest $postBody
    * @param array $optParams Optional parameters.

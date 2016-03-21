@@ -21,6 +21,7 @@ class Google_Service_YouTubeReporting_Job extends Google_Model
   public $id;
   public $name;
   public $reportTypeId;
+  public $systemManaged;
 
   public function setCreateTime($createTime)
   {
@@ -53,5 +54,13 @@ class Google_Service_YouTubeReporting_Job extends Google_Model
   public function getReportTypeId()
   {
     return $this->reportTypeId;
+  }
+  public function setSystemManaged($systemManaged)
+  {
+    $this->systemManaged = $systemManaged;
+  }
+  public function getSystemManaged()
+  {
+    return $this->systemManaged;
   }
 }

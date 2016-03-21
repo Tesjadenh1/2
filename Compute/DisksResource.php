@@ -125,7 +125,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
   /**
    * Creates a persistent disk in the specified project using the data in the
    * request. You can create a disk with a sourceImage, a sourceSnapshot, or
-   * create an empty 200 GB data disk by omitting all properties. You can also
+   * create an empty 500 GB data disk by omitting all properties. You can also
    * create a disk that is larger than the default size by specifying the sizeGb
    * property. (disks.insert)
    *
@@ -191,5 +191,21 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
     $params = array('project' => $project, 'zone' => $zone);
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_Compute_DiskList");
+  }
+  /**
+   * Resizes the specified persistent disk. (disks.resize)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $zone The name of the zone for this request.
+   * @param string $disk The name of the persistent disk.
+   * @param Google_DisksResizeRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Operation
+   */
+  public function resize($project, $zone, $disk, Google_Service_Compute_DisksResizeRequest $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'zone' => $zone, 'disk' => $disk, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('resize', array($params), "Google_Service_Compute_Operation");
   }
 }

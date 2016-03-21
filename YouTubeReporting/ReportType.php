@@ -19,6 +19,7 @@ class Google_Service_YouTubeReporting_ReportType extends Google_Model
 {
   public $id;
   public $name;
+  public $systemManaged;
 
   public function setId($id)
   {
@@ -35,5 +36,13 @@ class Google_Service_YouTubeReporting_ReportType extends Google_Model
   public function getName()
   {
     return $this->name;
+  }
+  public function setSystemManaged($systemManaged)
+  {
+    $this->systemManaged = $systemManaged;
+  }
+  public function getSystemManaged()
+  {
+    return $this->systemManaged;
   }
 }

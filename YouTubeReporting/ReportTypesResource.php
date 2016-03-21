@@ -40,6 +40,9 @@ class Google_Service_YouTubeReporting_ReportTypesResource extends Google_Service
    * should return. Typically, this is the value of
    * ListReportTypesResponse.next_page_token returned in response to the previous
    * call to the `ListReportTypes` method.
+   * @opt_param bool includeSystemManaged If set to true, also system-managed
+   * report types will be returned; otherwise only the report types that can be
+   * used to create new reporting jobs will be returned.
    * @return Google_Service_ListReportTypesResponse
    */
   public function listReportTypes($optParams = array())

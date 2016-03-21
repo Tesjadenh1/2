@@ -19,6 +19,7 @@ class Google_Service_Genomics_ImportVariantsRequest extends Google_Collection
 {
   protected $collection_key = 'sourceUris';
   public $format;
+  public $infoMergeConfig;
   public $normalizeReferenceNames;
   public $sourceUris;
   public $variantSetId;
@@ -30,6 +31,14 @@ class Google_Service_Genomics_ImportVariantsRequest extends Google_Collection
   public function getFormat()
   {
     return $this->format;
+  }
+  public function setInfoMergeConfig($infoMergeConfig)
+  {
+    $this->infoMergeConfig = $infoMergeConfig;
+  }
+  public function getInfoMergeConfig()
+  {
+    return $this->infoMergeConfig;
   }
   public function setNormalizeReferenceNames($normalizeReferenceNames)
   {

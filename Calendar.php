@@ -19,7 +19,7 @@
  * Service definition for Calendar (v3).
  *
  * <p>
- * Lets you manipulate events and other calendar data.</p>
+ * Manipulates events and other calendar data.</p>
  *
  * <p>
  * For more information about this service, see the API

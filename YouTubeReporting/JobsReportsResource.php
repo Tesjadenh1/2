@@ -62,6 +62,10 @@ class Google_Service_YouTubeReporting_JobsReportsResource extends Google_Service
    * to the `ListReports` method.
    * @opt_param string createdAfter If set, only reports created after the
    * specified date/time are returned.
+   * @opt_param string startTimeAtOrAfter If set, only reports whose start time is
+   * greater than or equal the specified date/time are returned.
+   * @opt_param string startTimeBefore If set, only reports whose start time is
+   * smaller than the specified date/time are returned.
    * @return Google_Service_ListReportsResponse
    */
   public function listJobsReports($jobId, $optParams = array())

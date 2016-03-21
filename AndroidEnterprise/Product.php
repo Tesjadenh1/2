@@ -28,6 +28,7 @@ class Google_Service_AndroidEnterprise_Product extends Google_Collection
   public $productId;
   public $productPricing;
   public $requiresContainerApp;
+  public $smallIconUrl;
   public $title;
   public $workDetailsUrl;
 
@@ -102,6 +103,14 @@ class Google_Service_AndroidEnterprise_Product extends Google_Collection
   public function getRequiresContainerApp()
   {
     return $this->requiresContainerApp;
+  }
+  public function setSmallIconUrl($smallIconUrl)
+  {
+    $this->smallIconUrl = $smallIconUrl;
+  }
+  public function getSmallIconUrl()
+  {
+    return $this->smallIconUrl;
   }
   public function setTitle($title)
   {

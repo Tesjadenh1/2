@@ -373,7 +373,12 @@ class Google_Service_AdExchangeBuyer extends Google_Service
             'updateproposal' => array(
               'path' => 'privateauction/{private_auction_id}/updateproposal',
               'httpMethod' => 'POST',
-              'parameters' => array(),
+              'parameters' => array(
+                'privateAuctionId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),
           )
         )

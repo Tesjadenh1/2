@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_Project extends Google_Model
+class Google_Service_CloudResourceManager_Project extends Google_Model
 {
   public $createTime;
   public $labels;
   public $lifecycleState;
   public $name;
-  protected $parentType = 'Google_Service_Cloudresourcemanager_ResourceId';
+  protected $parentType = 'Google_Service_CloudResourceManager_ResourceId';
   protected $parentDataType = '';
   public $projectId;
   public $projectNumber;
@@ -58,7 +58,7 @@ class Google_Service_Cloudresourcemanager_Project extends Google_Model
   {
     return $this->name;
   }
-  public function setParent(Google_Service_Cloudresourcemanager_ResourceId $parent)
+  public function setParent(Google_Service_CloudResourceManager_ResourceId $parent)
   {
     $this->parent = $parent;
   }

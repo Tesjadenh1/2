@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for Cloudresourcemanager (v1).
+ * Service definition for CloudResourceManager (v1).
  *
  * <p>
  * The Google Cloud Resource Manager API provides methods for creating, reading,
@@ -29,7 +29,7 @@
  *
  * @author Google, Inc.
  */
-class Google_Service_Cloudresourcemanager extends Google_Service
+class Google_Service_CloudResourceManager extends Google_Service
 {
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
@@ -41,7 +41,7 @@ class Google_Service_Cloudresourcemanager extends Google_Service
   public $projects;
   
   /**
-   * Constructs the internal representation of the Cloudresourcemanager service.
+   * Constructs the internal representation of the CloudResourceManager service.
    *
    * @param Google_Client $client
    */
@@ -53,7 +53,7 @@ class Google_Service_Cloudresourcemanager extends Google_Service
     $this->version = 'v1';
     $this->serviceName = 'cloudresourcemanager';
 
-    $this->projects = new Google_Service_Cloudresourcemanager_ProjectsResource(
+    $this->projects = new Google_Service_CloudResourceManager_ProjectsResource(
         $this,
         $this->serviceName,
         'projects',

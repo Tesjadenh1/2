@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_Binding extends Google_Collection
+class Google_Service_CloudResourceManager_Binding extends Google_Collection
 {
   protected $collection_key = 'members';
   public $members;

@@ -19,7 +19,7 @@
  * Service definition for Webmasters (v3).
  *
  * <p>
- * Lets you view Google Search Console data for your verified sites.</p>
+ * View Google Search Console data for your verified sites.</p>
  *
  * <p>
  * For more information about this service, see the API

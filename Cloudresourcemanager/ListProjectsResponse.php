@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_ListProjectsResponse extends Google_Collection
+class Google_Service_CloudResourceManager_ListProjectsResponse extends Google_Collection
 {
   protected $collection_key = 'projects';
   public $nextPageToken;
-  protected $projectsType = 'Google_Service_Cloudresourcemanager_Project';
+  protected $projectsType = 'Google_Service_CloudResourceManager_Project';
   protected $projectsDataType = 'array';
 
   public function setNextPageToken($nextPageToken)

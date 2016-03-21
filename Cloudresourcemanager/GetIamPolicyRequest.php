@@ -15,6 +15,6 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_GetIamPolicyRequest extends Google_Model
+class Google_Service_CloudResourceManager_GetIamPolicyRequest extends Google_Model
 {
 }

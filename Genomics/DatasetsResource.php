@@ -42,10 +42,12 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
     return $this->call('create', array($params), "Google_Service_Genomics_Dataset");
   }
   /**
-   * Deletes a dataset. For the definitions of datasets and other genomics
-   * resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (datasets.delete)
+   * Deletes a dataset and all of its contents (all read group sets, reference
+   * sets, variant sets, call sets, annotation sets, etc.) This is reversible (up
+   * to one week after the deletion) via the datasets.undelete operation. For the
+   * definitions of datasets and other genomics resources, see [Fundamentals of
+   * Google Genomics](https://cloud.google.com/genomics/fundamentals-of-google-
+   * genomics) (datasets.delete)
    *
    * @param string $datasetId The ID of the dataset to be deleted.
    * @param array $optParams Optional parameters.

@@ -15,36 +15,28 @@
  * the License.
  */
 
-class Google_Service_Compute_ZoneMaintenanceWindows extends Google_Model
+class Google_Service_Appengine_Network extends Google_Collection
 {
-  public $beginTime;
-  public $description;
-  public $endTime;
+  protected $collection_key = 'forwardedPorts';
+  public $forwardedPorts;
+  public $instanceTag;
   public $name;
 
-  public function setBeginTime($beginTime)
+  public function setForwardedPorts($forwardedPorts)
   {
-    $this->beginTime = $beginTime;
+    $this->forwardedPorts = $forwardedPorts;
   }
-  public function getBeginTime()
+  public function getForwardedPorts()
   {
-    return $this->beginTime;
+    return $this->forwardedPorts;
   }
-  public function setDescription($description)
+  public function setInstanceTag($instanceTag)
   {
-    $this->description = $description;
+    $this->instanceTag = $instanceTag;
   }
-  public function getDescription()
+  public function getInstanceTag()
   {
-    return $this->description;
-  }
-  public function setEndTime($endTime)
-  {
-    $this->endTime = $endTime;
-  }
-  public function getEndTime()
-  {
-    return $this->endTime;
+    return $this->instanceTag;
   }
   public function setName($name)
   {

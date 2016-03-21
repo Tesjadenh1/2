@@ -20,7 +20,6 @@ class Google_Service_AdExchangeBuyer_UpdatePrivateAuctionProposalRequest extends
   public $externalDealId;
   protected $noteType = 'Google_Service_AdExchangeBuyer_MarketplaceNote';
   protected $noteDataType = '';
-  public $privateAuctionId;
   public $proposalRevisionNumber;
   public $updateAction;
 
@@ -39,14 +38,6 @@ class Google_Service_AdExchangeBuyer_UpdatePrivateAuctionProposalRequest extends
   public function getNote()
   {
     return $this->note;
-  }
-  public function setPrivateAuctionId($privateAuctionId)
-  {
-    $this->privateAuctionId = $privateAuctionId;
-  }
-  public function getPrivateAuctionId()
-  {
-    return $this->privateAuctionId;
   }
   public function setProposalRevisionNumber($proposalRevisionNumber)
   {

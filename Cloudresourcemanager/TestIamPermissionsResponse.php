@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Cloudresourcemanager_TestIamPermissionsResponse extends Google_Collection
+class Google_Service_CloudResourceManager_TestIamPermissionsResponse extends Google_Collection
 {
   protected $collection_key = 'permissions';
   public $permissions;

@@ -19,7 +19,7 @@
  * Service definition for Oauth2 (v2).
  *
  * <p>
- * Lets you access OAuth2 protocol related APIs.</p>
+ * Obtains end-user authorization grants for use with other Google APIs.</p>
  *
  * <p>
  * For more information about this service, see the API

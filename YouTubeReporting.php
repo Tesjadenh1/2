@@ -115,6 +115,10 @@ class Google_Service_YouTubeReporting extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'includeSystemManaged' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
               ),
             ),
           )
@@ -170,6 +174,14 @@ class Google_Service_YouTubeReporting extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'startTimeAtOrAfter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'startTimeBefore' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),
           )
@@ -216,6 +228,10 @@ class Google_Service_YouTubeReporting extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'includeSystemManaged' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),

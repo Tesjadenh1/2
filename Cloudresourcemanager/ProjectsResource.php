@@ -19,11 +19,11 @@
  * The "projects" collection of methods.
  * Typical usage is:
  *  <code>
- *   $cloudresourcemanagerService = new Google_Service_Cloudresourcemanager(...);
+ *   $cloudresourcemanagerService = new Google_Service_CloudResourceManager(...);
  *   $projects = $cloudresourcemanagerService->projects;
  *  </code>
  */
-class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Service_Resource
+class Google_Service_CloudResourceManager_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Marks the Project identified by the specified `project_id` (for example, `my-
@@ -48,7 +48,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), "Google_Service_Cloudresourcemanager_CloudresourcemanagerEmpty");
+    return $this->call('delete', array($params), "Google_Service_CloudResourceManager_CloudresourcemanagerEmpty");
   }
   /**
    * Retrieves the Project identified by the specified `project_id` (for example,
@@ -64,7 +64,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Cloudresourcemanager_Project");
+    return $this->call('get', array($params), "Google_Service_CloudResourceManager_Project");
   }
   /**
    * Returns the IAM access control policy for the specified Project. Permission
@@ -80,11 +80,11 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function getIamPolicy($resource, Google_Service_Cloudresourcemanager_GetIamPolicyRequest $postBody, $optParams = array())
+  public function getIamPolicy($resource, Google_Service_CloudResourceManager_GetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('getIamPolicy', array($params), "Google_Service_Cloudresourcemanager_Policy");
+    return $this->call('getIamPolicy', array($params), "Google_Service_CloudResourceManager_Policy");
   }
   /**
    * Lists Projects that are visible to the user and satisfy the specified filter.
@@ -114,7 +114,7 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Cloudresourcemanager_ListProjectsResponse");
+    return $this->call('list', array($params), "Google_Service_CloudResourceManager_ListProjectsResponse");
   }
   /**
    * Sets the IAM access control policy for the specified Project. Replaces any
@@ -140,11 +140,11 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
-  public function setIamPolicy($resource, Google_Service_Cloudresourcemanager_SetIamPolicyRequest $postBody, $optParams = array())
+  public function setIamPolicy($resource, Google_Service_CloudResourceManager_SetIamPolicyRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('setIamPolicy', array($params), "Google_Service_Cloudresourcemanager_Policy");
+    return $this->call('setIamPolicy', array($params), "Google_Service_CloudResourceManager_Policy");
   }
   /**
    * Returns permissions that a caller has on the specified Project.
@@ -159,11 +159,11 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse
    */
-  public function testIamPermissions($resource, Google_Service_Cloudresourcemanager_TestIamPermissionsRequest $postBody, $optParams = array())
+  public function testIamPermissions($resource, Google_Service_CloudResourceManager_TestIamPermissionsRequest $postBody, $optParams = array())
   {
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('testIamPermissions', array($params), "Google_Service_Cloudresourcemanager_TestIamPermissionsResponse");
+    return $this->call('testIamPermissions', array($params), "Google_Service_CloudResourceManager_TestIamPermissionsResponse");
   }
   /**
    * Restores the Project identified by the specified `project_id` (for example,
@@ -178,11 +178,11 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudresourcemanagerEmpty
    */
-  public function undelete($projectId, Google_Service_Cloudresourcemanager_UndeleteProjectRequest $postBody, $optParams = array())
+  public function undelete($projectId, Google_Service_CloudResourceManager_UndeleteProjectRequest $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('undelete', array($params), "Google_Service_Cloudresourcemanager_CloudresourcemanagerEmpty");
+    return $this->call('undelete', array($params), "Google_Service_CloudResourceManager_CloudresourcemanagerEmpty");
   }
   /**
    * Updates the attributes of the Project identified by the specified
@@ -195,10 +195,10 @@ class Google_Service_Cloudresourcemanager_ProjectsResource extends Google_Servic
    * @param array $optParams Optional parameters.
    * @return Google_Service_Project
    */
-  public function update($projectId, Google_Service_Cloudresourcemanager_Project $postBody, $optParams = array())
+  public function update($projectId, Google_Service_CloudResourceManager_Project $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('update', array($params), "Google_Service_Cloudresourcemanager_Project");
+    return $this->call('update', array($params), "Google_Service_CloudResourceManager_Project");
   }
 }

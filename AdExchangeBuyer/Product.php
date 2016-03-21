@@ -35,6 +35,7 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   public $name;
   public $privateAuctionId;
   public $productId;
+  public $publisherProfileId;
   public $revisionNumber;
   protected $sellerType = 'Google_Service_AdExchangeBuyer_Seller';
   protected $sellerDataType = '';
@@ -157,6 +158,14 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   public function getProductId()
   {
     return $this->productId;
+  }
+  public function setPublisherProfileId($publisherProfileId)
+  {
+    $this->publisherProfileId = $publisherProfileId;
+  }
+  public function getPublisherProfileId()
+  {
+    return $this->publisherProfileId;
   }
   public function setRevisionNumber($revisionNumber)
   {

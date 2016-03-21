@@ -26,6 +26,7 @@ class Google_Service_Webmasters_SearchAnalyticsQueryRequest extends Google_Colle
   public $rowLimit;
   public $searchType;
   public $startDate;
+  public $startRow;
 
   public function setAggregationType($aggregationType)
   {
@@ -82,5 +83,13 @@ class Google_Service_Webmasters_SearchAnalyticsQueryRequest extends Google_Colle
   public function getStartDate()
   {
     return $this->startDate;
+  }
+  public function setStartRow($startRow)
+  {
+    $this->startRow = $startRow;
+  }
+  public function getStartRow()
+  {
+    return $this->startRow;
   }
 }

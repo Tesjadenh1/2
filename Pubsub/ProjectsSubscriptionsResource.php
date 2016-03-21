@@ -46,11 +46,11 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
     return $this->call('acknowledge', array($params), "Google_Service_Pubsub_PubsubEmpty");
   }
   /**
-   * Creates a subscription to a given topic for a given subscriber. If the
-   * subscription already exists, returns `ALREADY_EXISTS`. If the corresponding
-   * topic doesn't exist, returns `NOT_FOUND`. If the name is not provided in the
-   * request, the server will assign a random name for this subscription on the
-   * same project as the topic. (subscriptions.create)
+   * Creates a subscription to a given topic. If the subscription already exists,
+   * returns `ALREADY_EXISTS`. If the corresponding topic doesn't exist, returns
+   * `NOT_FOUND`. If the name is not provided in the request, the server will
+   * assign a random name for this subscription on the same project as the topic.
+   * (subscriptions.create)
    *
    * @param string $name The name of the subscription. It must have the format
    * `"projects/{project}/subscriptions/{subscription}"`. `{subscription}` must
@@ -99,14 +99,15 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
     return $this->call('get', array($params), "Google_Service_Pubsub_Subscription");
   }
   /**
-   * Gets the access control policy for a `resource`. Is empty if the policy or
-   * the resource does not exist. (subscriptions.getIamPolicy)
+   * Gets the access control policy for a `resource`. Returns an empty policy if
+   * the resource exists and does not have a policy set.
+   * (subscriptions.getIamPolicy)
    *
-   * @param string $resource REQUIRED: The resource for which policy is being
-   * requested. `resource` is usually specified as a path, such as,
-   * `projects/{project}/zones/{zone}/disks/{disk}`. The format for the path
-   * specified in this value is resource specific and is specified in the
-   * documentation for the respective GetIamPolicy rpc.
+   * @param string $resource REQUIRED: The resource for which the policy is being
+   * requested. `resource` is usually specified as a path, such as
+   * `projectsprojectzoneszonedisksdisk*`. The format for the path specified in
+   * this value is resource specific and is specified in the `getIamPolicy`
+   * documentation.
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
    */
@@ -194,11 +195,11 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * Sets the access control policy on the specified resource. Replaces any
    * existing policy. (subscriptions.setIamPolicy)
    *
-   * @param string $resource REQUIRED: The resource for which policy is being
-   * specified. `resource` is usually specified as a path, such as,
-   * `projects/{project}/zones/{zone}/disks/{disk}`. The format for the path
-   * specified in this value is resource specific and is specified in the
-   * documentation for the respective SetIamPolicy rpc.
+   * @param string $resource REQUIRED: The resource for which the policy is being
+   * specified. `resource` is usually specified as a path, such as
+   * `projectsprojectzoneszonedisksdisk*`. The format for the path specified in
+   * this value is resource specific and is specified in the `setIamPolicy`
+   * documentation.
    * @param Google_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Policy
@@ -213,11 +214,11 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * Returns permissions that a caller has on the specified resource.
    * (subscriptions.testIamPermissions)
    *
-   * @param string $resource REQUIRED: The resource for which policy detail is
-   * being requested. `resource` is usually specified as a path, such as,
-   * `projects/{project}/zones/{zone}/disks/{disk}`. The format for the path
-   * specified in this value is resource specific and is specified in the
-   * documentation for the respective TestIamPermissions rpc.
+   * @param string $resource REQUIRED: The resource for which the policy detail is
+   * being requested. `resource` is usually specified as a path, such as
+   * `projectsprojectzoneszonedisksdisk*`. The format for the path specified in
+   * this value is resource specific and is specified in the `testIamPermissions`
+   * documentation.
    * @param Google_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_TestIamPermissionsResponse

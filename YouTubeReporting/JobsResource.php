@@ -90,6 +90,9 @@ class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resour
    * should return. Typically, this is the value of
    * ListReportTypesResponse.next_page_token returned in response to the previous
    * call to the `ListJobs` method.
+   * @opt_param bool includeSystemManaged If set to true, also system-managed jobs
+   * will be returned; otherwise only user-created jobs will be returned. System-
+   * managed jobs can neither be modified nor deleted.
    * @return Google_Service_ListJobsResponse
    */
   public function listJobs($optParams = array())
