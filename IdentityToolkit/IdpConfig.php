@@ -21,6 +21,7 @@ class Google_Service_IdentityToolkit_IdpConfig extends Google_Model
   public $enabled;
   public $experimentPercent;
   public $provider;
+  public $secret;
 
   public function setClientId($clientId)
   {
@@ -53,5 +54,13 @@ class Google_Service_IdentityToolkit_IdpConfig extends Google_Model
   public function getProvider()
   {
     return $this->provider;
+  }
+  public function setSecret($secret)
+  {
+    $this->secret = $secret;
+  }
+  public function getSecret()
+  {
+    return $this->secret;
   }
 }

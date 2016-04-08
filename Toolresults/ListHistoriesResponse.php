@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ListHistoriesResponse extends Google_Collection
+class Google_Service_ToolResults_ListHistoriesResponse extends Google_Collection
 {
   protected $collection_key = 'histories';
-  protected $historiesType = 'Google_Service_Toolresults_History';
+  protected $historiesType = 'Google_Service_ToolResults_History';
   protected $historiesDataType = 'array';
   public $nextPageToken;
 

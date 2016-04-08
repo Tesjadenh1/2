@@ -17,7 +17,10 @@
 
 class Google_Service_Logging_HttpRequest extends Google_Model
 {
+  public $cacheFillBytes;
   public $cacheHit;
+  public $cacheLookup;
+  public $cacheValidatedWithOriginServer;
   public $referer;
   public $remoteIp;
   public $requestMethod;
@@ -26,8 +29,15 @@ class Google_Service_Logging_HttpRequest extends Google_Model
   public $responseSize;
   public $status;
   public $userAgent;
-  public $validatedWithOriginServer;
 
+  public function setCacheFillBytes($cacheFillBytes)
+  {
+    $this->cacheFillBytes = $cacheFillBytes;
+  }
+  public function getCacheFillBytes()
+  {
+    return $this->cacheFillBytes;
+  }
   public function setCacheHit($cacheHit)
   {
     $this->cacheHit = $cacheHit;
@@ -35,6 +45,22 @@ class Google_Service_Logging_HttpRequest extends Google_Model
   public function getCacheHit()
   {
     return $this->cacheHit;
+  }
+  public function setCacheLookup($cacheLookup)
+  {
+    $this->cacheLookup = $cacheLookup;
+  }
+  public function getCacheLookup()
+  {
+    return $this->cacheLookup;
+  }
+  public function setCacheValidatedWithOriginServer($cacheValidatedWithOriginServer)
+  {
+    $this->cacheValidatedWithOriginServer = $cacheValidatedWithOriginServer;
+  }
+  public function getCacheValidatedWithOriginServer()
+  {
+    return $this->cacheValidatedWithOriginServer;
   }
   public function setReferer($referer)
   {
@@ -99,13 +125,5 @@ class Google_Service_Logging_HttpRequest extends Google_Model
   public function getUserAgent()
   {
     return $this->userAgent;
-  }
-  public function setValidatedWithOriginServer($validatedWithOriginServer)
-  {
-    $this->validatedWithOriginServer = $validatedWithOriginServer;
-  }
-  public function getValidatedWithOriginServer()
-  {
-    return $this->validatedWithOriginServer;
   }
 }

@@ -48,6 +48,8 @@ class Google_Service_Genomics extends Google_Service
   const GENOMICS_READONLY =
       "https://www.googleapis.com/auth/genomics.readonly";
 
+  public $annotations;
+  public $annotationsets;
   public $callsets;
   public $datasets;
   public $operations;
@@ -73,6 +75,114 @@ class Google_Service_Genomics extends Google_Service
     $this->version = 'v1';
     $this->serviceName = 'genomics';
 
+    $this->annotations = new Google_Service_Genomics_AnnotationsResource(
+        $this,
+        $this->serviceName,
+        'annotations',
+        array(
+          'methods' => array(
+            'batchCreate' => array(
+              'path' => 'v1/annotations:batchCreate',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'create' => array(
+              'path' => 'v1/annotations',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'delete' => array(
+              'path' => 'v1/annotations/{annotationId}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'annotationId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1/annotations/{annotationId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'annotationId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'search' => array(
+              'path' => 'v1/annotations/search',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'update' => array(
+              'path' => 'v1/annotations/{annotationId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'annotationId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->annotationsets = new Google_Service_Genomics_AnnotationsetsResource(
+        $this,
+        $this->serviceName,
+        'annotationsets',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1/annotationsets',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'delete' => array(
+              'path' => 'v1/annotationsets/{annotationSetId}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1/annotationsets/{annotationSetId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'search' => array(
+              'path' => 'v1/annotationsets/search',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'update' => array(
+              'path' => 'v1/annotationsets/{annotationSetId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->callsets = new Google_Service_Genomics_CallsetsResource(
         $this,
         $this->serviceName,

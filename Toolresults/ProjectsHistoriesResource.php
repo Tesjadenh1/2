@@ -19,11 +19,11 @@
  * The "histories" collection of methods.
  * Typical usage is:
  *  <code>
- *   $toolresultsService = new Google_Service_Toolresults(...);
+ *   $toolresultsService = new Google_Service_ToolResults(...);
  *   $histories = $toolresultsService->histories;
  *  </code>
  */
-class Google_Service_Toolresults_ProjectsHistoriesResource extends Google_Service_Resource
+class Google_Service_ToolResults_ProjectsHistoriesResource extends Google_Service_Resource
 {
   /**
    * Creates a History.
@@ -48,11 +48,11 @@ class Google_Service_Toolresults_ProjectsHistoriesResource extends Google_Servic
    * Optional, but strongly recommended.
    * @return Google_Service_History
    */
-  public function create($projectId, Google_Service_Toolresults_History $postBody, $optParams = array())
+  public function create($projectId, Google_Service_ToolResults_History $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), "Google_Service_Toolresults_History");
+    return $this->call('create', array($params), "Google_Service_ToolResults_History");
   }
   /**
    * Gets a History.
@@ -76,7 +76,7 @@ class Google_Service_Toolresults_ProjectsHistoriesResource extends Google_Servic
   {
     $params = array('projectId' => $projectId, 'historyId' => $historyId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Toolresults_History");
+    return $this->call('get', array($params), "Google_Service_ToolResults_History");
   }
   /**
    * Lists Histories for a given Project.
@@ -116,6 +116,6 @@ class Google_Service_Toolresults_ProjectsHistoriesResource extends Google_Servic
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Toolresults_ListHistoriesResponse");
+    return $this->call('list', array($params), "Google_Service_ToolResults_ListHistoriesResponse");
   }
 }

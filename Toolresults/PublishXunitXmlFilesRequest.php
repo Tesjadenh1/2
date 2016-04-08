@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_Toolresults_PublishXunitXmlFilesRequest extends Google_Collection
+class Google_Service_ToolResults_PublishXunitXmlFilesRequest extends Google_Collection
 {
   protected $collection_key = 'xunitXmlFiles';
-  protected $xunitXmlFilesType = 'Google_Service_Toolresults_FileReference';
+  protected $xunitXmlFilesType = 'Google_Service_ToolResults_FileReference';
   protected $xunitXmlFilesDataType = 'array';
 
   public function setXunitXmlFiles($xunitXmlFiles)

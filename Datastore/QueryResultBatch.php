@@ -23,6 +23,7 @@ class Google_Service_Datastore_QueryResultBatch extends Google_Collection
   protected $entityResultsType = 'Google_Service_Datastore_EntityResult';
   protected $entityResultsDataType = 'array';
   public $moreResults;
+  public $skippedCursor;
   public $skippedResults;
 
   public function setEndCursor($endCursor)
@@ -56,6 +57,14 @@ class Google_Service_Datastore_QueryResultBatch extends Google_Collection
   public function getMoreResults()
   {
     return $this->moreResults;
+  }
+  public function setSkippedCursor($skippedCursor)
+  {
+    $this->skippedCursor = $skippedCursor;
+  }
+  public function getSkippedCursor()
+  {
+    return $this->skippedCursor;
   }
   public function setSkippedResults($skippedResults)
   {

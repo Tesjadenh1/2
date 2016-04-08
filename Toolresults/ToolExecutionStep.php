@@ -15,12 +15,12 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ToolExecutionStep extends Google_Model
+class Google_Service_ToolResults_ToolExecutionStep extends Google_Model
 {
-  protected $toolExecutionType = 'Google_Service_Toolresults_ToolExecution';
+  protected $toolExecutionType = 'Google_Service_ToolResults_ToolExecution';
   protected $toolExecutionDataType = '';
 
-  public function setToolExecution(Google_Service_Toolresults_ToolExecution $toolExecution)
+  public function setToolExecution(Google_Service_ToolResults_ToolExecution $toolExecution)
   {
     $this->toolExecution = $toolExecution;
   }

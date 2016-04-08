@@ -34,6 +34,7 @@ class Google_Service_Drive_DriveFile extends Google_Collection
   public $id;
   protected $imageMediaMetadataType = 'Google_Service_Drive_DriveFileImageMediaMetadata';
   protected $imageMediaMetadataDataType = '';
+  public $isAppAuthorized;
   public $kind;
   protected $lastModifyingUserType = 'Google_Service_Drive_User';
   protected $lastModifyingUserDataType = '';
@@ -173,6 +174,14 @@ class Google_Service_Drive_DriveFile extends Google_Collection
   public function getImageMediaMetadata()
   {
     return $this->imageMediaMetadata;
+  }
+  public function setIsAppAuthorized($isAppAuthorized)
+  {
+    $this->isAppAuthorized = $isAppAuthorized;
+  }
+  public function getIsAppAuthorized()
+  {
+    return $this->isAppAuthorized;
   }
   public function setKind($kind)
   {

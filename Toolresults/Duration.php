@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Duration extends Google_Model
+class Google_Service_ToolResults_Duration extends Google_Model
 {
   public $nanos;
   public $seconds;

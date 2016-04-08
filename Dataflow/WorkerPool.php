@@ -30,6 +30,7 @@ class Google_Service_Dataflow_WorkerPool extends Google_Collection
   public $machineType;
   public $metadata;
   public $network;
+  public $numThreadsPerWorker;
   public $numWorkers;
   public $onHostMaintenance;
   protected $packagesType = 'Google_Service_Dataflow_Package';
@@ -121,6 +122,14 @@ class Google_Service_Dataflow_WorkerPool extends Google_Collection
   public function getNetwork()
   {
     return $this->network;
+  }
+  public function setNumThreadsPerWorker($numThreadsPerWorker)
+  {
+    $this->numThreadsPerWorker = $numThreadsPerWorker;
+  }
+  public function getNumThreadsPerWorker()
+  {
+    return $this->numThreadsPerWorker;
   }
   public function setNumWorkers($numWorkers)
   {

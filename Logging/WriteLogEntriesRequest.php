@@ -22,6 +22,7 @@ class Google_Service_Logging_WriteLogEntriesRequest extends Google_Collection
   protected $entriesDataType = 'array';
   public $labels;
   public $logName;
+  public $partialSuccess;
   protected $resourceType = 'Google_Service_Logging_MonitoredResource';
   protected $resourceDataType = '';
 
@@ -48,6 +49,14 @@ class Google_Service_Logging_WriteLogEntriesRequest extends Google_Collection
   public function getLogName()
   {
     return $this->logName;
+  }
+  public function setPartialSuccess($partialSuccess)
+  {
+    $this->partialSuccess = $partialSuccess;
+  }
+  public function getPartialSuccess()
+  {
+    return $this->partialSuccess;
   }
   public function setResource(Google_Service_Logging_MonitoredResource $resource)
   {

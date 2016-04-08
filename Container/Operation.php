@@ -17,6 +17,7 @@
 
 class Google_Service_Container_Operation extends Google_Model
 {
+  public $detail;
   public $name;
   public $operationType;
   public $selfLink;
@@ -25,6 +26,14 @@ class Google_Service_Container_Operation extends Google_Model
   public $targetLink;
   public $zone;
 
+  public function setDetail($detail)
+  {
+    $this->detail = $detail;
+  }
+  public function getDetail()
+  {
+    return $this->detail;
+  }
   public function setName($name)
   {
     $this->name = $name;

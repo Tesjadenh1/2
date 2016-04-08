@@ -15,26 +15,34 @@
  * the License.
  */
 
-class Google_Service_Datastore_PropertyExpression extends Google_Model
+class Google_Service_AnalyticsReporting_OrderBy extends Google_Model
 {
-  public $aggregationFunction;
-  protected $propertyType = 'Google_Service_Datastore_PropertyReference';
-  protected $propertyDataType = '';
+  public $fieldName;
+  public $orderType;
+  public $sortOrder;
 
-  public function setAggregationFunction($aggregationFunction)
+  public function setFieldName($fieldName)
   {
-    $this->aggregationFunction = $aggregationFunction;
+    $this->fieldName = $fieldName;
   }
-  public function getAggregationFunction()
+  public function getFieldName()
   {
-    return $this->aggregationFunction;
+    return $this->fieldName;
   }
-  public function setProperty(Google_Service_Datastore_PropertyReference $property)
+  public function setOrderType($orderType)
   {
-    $this->property = $property;
+    $this->orderType = $orderType;
   }
-  public function getProperty()
+  public function getOrderType()
   {
-    return $this->property;
+    return $this->orderType;
+  }
+  public function setSortOrder($sortOrder)
+  {
+    $this->sortOrder = $sortOrder;
+  }
+  public function getSortOrder()
+  {
+    return $this->sortOrder;
   }
 }

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Thumbnail extends Google_Model
+class Google_Service_ToolResults_Thumbnail extends Google_Model
 {
   public $contentType;
   public $data;

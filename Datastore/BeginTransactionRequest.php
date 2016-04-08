@@ -17,14 +17,4 @@
 
 class Google_Service_Datastore_BeginTransactionRequest extends Google_Model
 {
-  public $isolationLevel;
-
-  public function setIsolationLevel($isolationLevel)
-  {
-    $this->isolationLevel = $isolationLevel;
-  }
-  public function getIsolationLevel()
-  {
-    return $this->isolationLevel;
-  }
 }

@@ -30,10 +30,9 @@ class Google_Service_Container_ProjectsZonesResource extends Google_Service_Reso
    * (zones.getServerconfig)
    *
    * @param string $projectId The Google Developers Console [project ID or project
-   * number](https://developers.google.com/console/help/new/#projectnumber).
+   * number](https://support.google.com/cloud/answer/6158840).
    * @param string $zone The name of the Google Compute Engine
-   * [zone](/compute/docs/zones#available) to return operations for, or "-" for
-   * all zones.
+   * [zone](/compute/docs/zones#available) to return operations for.
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServerConfig
    */

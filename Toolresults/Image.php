@@ -15,17 +15,17 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Image extends Google_Model
+class Google_Service_ToolResults_Image extends Google_Model
 {
-  protected $errorType = 'Google_Service_Toolresults_Status';
+  protected $errorType = 'Google_Service_ToolResults_Status';
   protected $errorDataType = '';
-  protected $sourceImageType = 'Google_Service_Toolresults_ToolOutputReference';
+  protected $sourceImageType = 'Google_Service_ToolResults_ToolOutputReference';
   protected $sourceImageDataType = '';
   public $stepId;
-  protected $thumbnailType = 'Google_Service_Toolresults_Thumbnail';
+  protected $thumbnailType = 'Google_Service_ToolResults_Thumbnail';
   protected $thumbnailDataType = '';
 
-  public function setError(Google_Service_Toolresults_Status $error)
+  public function setError(Google_Service_ToolResults_Status $error)
   {
     $this->error = $error;
   }
@@ -33,7 +33,7 @@ class Google_Service_Toolresults_Image extends Google_Model
   {
     return $this->error;
   }
-  public function setSourceImage(Google_Service_Toolresults_ToolOutputReference $sourceImage)
+  public function setSourceImage(Google_Service_ToolResults_ToolOutputReference $sourceImage)
   {
     $this->sourceImage = $sourceImage;
   }
@@ -49,7 +49,7 @@ class Google_Service_Toolresults_Image extends Google_Model
   {
     return $this->stepId;
   }
-  public function setThumbnail(Google_Service_Toolresults_Thumbnail $thumbnail)
+  public function setThumbnail(Google_Service_ToolResults_Thumbnail $thumbnail)
   {
     $this->thumbnail = $thumbnail;
   }

@@ -15,19 +15,19 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Outcome extends Google_Model
+class Google_Service_ToolResults_Outcome extends Google_Model
 {
-  protected $failureDetailType = 'Google_Service_Toolresults_FailureDetail';
+  protected $failureDetailType = 'Google_Service_ToolResults_FailureDetail';
   protected $failureDetailDataType = '';
-  protected $inconclusiveDetailType = 'Google_Service_Toolresults_InconclusiveDetail';
+  protected $inconclusiveDetailType = 'Google_Service_ToolResults_InconclusiveDetail';
   protected $inconclusiveDetailDataType = '';
-  protected $skippedDetailType = 'Google_Service_Toolresults_SkippedDetail';
+  protected $skippedDetailType = 'Google_Service_ToolResults_SkippedDetail';
   protected $skippedDetailDataType = '';
-  protected $successDetailType = 'Google_Service_Toolresults_SuccessDetail';
+  protected $successDetailType = 'Google_Service_ToolResults_SuccessDetail';
   protected $successDetailDataType = '';
   public $summary;
 
-  public function setFailureDetail(Google_Service_Toolresults_FailureDetail $failureDetail)
+  public function setFailureDetail(Google_Service_ToolResults_FailureDetail $failureDetail)
   {
     $this->failureDetail = $failureDetail;
   }
@@ -35,7 +35,7 @@ class Google_Service_Toolresults_Outcome extends Google_Model
   {
     return $this->failureDetail;
   }
-  public function setInconclusiveDetail(Google_Service_Toolresults_InconclusiveDetail $inconclusiveDetail)
+  public function setInconclusiveDetail(Google_Service_ToolResults_InconclusiveDetail $inconclusiveDetail)
   {
     $this->inconclusiveDetail = $inconclusiveDetail;
   }
@@ -43,7 +43,7 @@ class Google_Service_Toolresults_Outcome extends Google_Model
   {
     return $this->inconclusiveDetail;
   }
-  public function setSkippedDetail(Google_Service_Toolresults_SkippedDetail $skippedDetail)
+  public function setSkippedDetail(Google_Service_ToolResults_SkippedDetail $skippedDetail)
   {
     $this->skippedDetail = $skippedDetail;
   }
@@ -51,7 +51,7 @@ class Google_Service_Toolresults_Outcome extends Google_Model
   {
     return $this->skippedDetail;
   }
-  public function setSuccessDetail(Google_Service_Toolresults_SuccessDetail $successDetail)
+  public function setSuccessDetail(Google_Service_ToolResults_SuccessDetail $successDetail)
   {
     $this->successDetail = $successDetail;
   }

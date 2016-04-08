@@ -16,14 +16,15 @@
  */
 
 /**
- * Service definition for Datastore (v1beta2).
+ * Service definition for Datastore (v1beta3).
  *
  * <p>
- * Stores and queries data in Google Cloud Datastore.</p>
+ * Google Cloud Datastore is a schemaless NoSQL datastore providing robust,
+ * scalable storage for your application.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://developers.google.com/datastore/" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/datastore/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
@@ -36,11 +37,8 @@ class Google_Service_Datastore extends Google_Service
   /** View and manage your Google Cloud Datastore data. */
   const DATASTORE =
       "https://www.googleapis.com/auth/datastore";
-  /** View your email address. */
-  const USERINFO_EMAIL =
-      "https://www.googleapis.com/auth/userinfo.email";
 
-  public $datasets;
+  public $projects;
   
   /**
    * Constructs the internal representation of the Datastore service.
@@ -50,72 +48,72 @@ class Google_Service_Datastore extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://www.googleapis.com/';
-    $this->servicePath = 'datastore/v1beta2/datasets/';
-    $this->version = 'v1beta2';
+    $this->rootUrl = 'https://datastore.googleapis.com/';
+    $this->servicePath = '';
+    $this->version = 'v1beta3';
     $this->serviceName = 'datastore';
 
-    $this->datasets = new Google_Service_Datastore_DatasetsResource(
+    $this->projects = new Google_Service_Datastore_ProjectsResource(
         $this,
         $this->serviceName,
-        'datasets',
+        'projects',
         array(
           'methods' => array(
             'allocateIds' => array(
-              'path' => '{datasetId}/allocateIds',
+              'path' => 'v1beta3/projects/{projectId}:allocateIds',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'datasetId' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'beginTransaction' => array(
-              'path' => '{datasetId}/beginTransaction',
+              'path' => 'v1beta3/projects/{projectId}:beginTransaction',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'datasetId' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'commit' => array(
-              'path' => '{datasetId}/commit',
+              'path' => 'v1beta3/projects/{projectId}:commit',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'datasetId' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'lookup' => array(
-              'path' => '{datasetId}/lookup',
+              'path' => 'v1beta3/projects/{projectId}:lookup',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'datasetId' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'rollback' => array(
-              'path' => '{datasetId}/rollback',
+              'path' => 'v1beta3/projects/{projectId}:rollback',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'datasetId' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'runQuery' => array(
-              'path' => '{datasetId}/runQuery',
+              'path' => 'v1beta3/projects/{projectId}:runQuery',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'datasetId' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,

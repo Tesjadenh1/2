@@ -20,7 +20,7 @@ class Google_Service_Datastore_CompositeFilter extends Google_Collection
   protected $collection_key = 'filters';
   protected $filtersType = 'Google_Service_Datastore_Filter';
   protected $filtersDataType = 'array';
-  public $operator;
+  public $op;
 
   public function setFilters($filters)
   {
@@ -30,12 +30,12 @@ class Google_Service_Datastore_CompositeFilter extends Google_Collection
   {
     return $this->filters;
   }
-  public function setOperator($operator)
+  public function setOp($op)
   {
-    $this->operator = $operator;
+    $this->op = $op;
   }
-  public function getOperator()
+  public function getOp()
   {
-    return $this->operator;
+    return $this->op;
   }
 }

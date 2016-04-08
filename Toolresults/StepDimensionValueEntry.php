@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_StepDimensionValueEntry extends Google_Model
+class Google_Service_ToolResults_StepDimensionValueEntry extends Google_Model
 {
   public $key;
   public $value;

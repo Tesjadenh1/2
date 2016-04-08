@@ -15,34 +15,35 @@
  * the License.
  */
 
-class Google_Service_Datastore_KeyPathElement extends Google_Model
+class Google_Service_Logging_Status extends Google_Collection
 {
-  public $id;
-  public $kind;
-  public $name;
+  protected $collection_key = 'details';
+  public $code;
+  public $details;
+  public $message;
 
-  public function setId($id)
+  public function setCode($code)
   {
-    $this->id = $id;
+    $this->code = $code;
   }
-  public function getId()
+  public function getCode()
   {
-    return $this->id;
+    return $this->code;
   }
-  public function setKind($kind)
+  public function setDetails($details)
   {
-    $this->kind = $kind;
+    $this->details = $details;
   }
-  public function getKind()
+  public function getDetails()
   {
-    return $this->kind;
+    return $this->details;
   }
-  public function setName($name)
+  public function setMessage($message)
   {
-    $this->name = $name;
+    $this->message = $message;
   }
-  public function getName()
+  public function getMessage()
   {
-    return $this->name;
+    return $this->message;
   }
 }

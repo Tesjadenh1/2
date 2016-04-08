@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Status extends Google_Collection
+class Google_Service_ToolResults_Status extends Google_Collection
 {
   protected $collection_key = 'details';
   public $code;
-  protected $detailsType = 'Google_Service_Toolresults_Any';
+  protected $detailsType = 'Google_Service_ToolResults_Any';
   protected $detailsDataType = 'array';
   public $message;
 

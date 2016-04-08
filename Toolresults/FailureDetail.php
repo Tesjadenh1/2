@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_FailureDetail extends Google_Model
+class Google_Service_ToolResults_FailureDetail extends Google_Model
 {
   public $crashed;
   public $notInstalled;

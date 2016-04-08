@@ -17,23 +17,23 @@
 
 class Google_Service_Datastore_PartitionId extends Google_Model
 {
-  public $datasetId;
-  public $namespace;
+  public $namespaceId;
+  public $projectId;
 
-  public function setDatasetId($datasetId)
+  public function setNamespaceId($namespaceId)
   {
-    $this->datasetId = $datasetId;
+    $this->namespaceId = $namespaceId;
   }
-  public function getDatasetId()
+  public function getNamespaceId()
   {
-    return $this->datasetId;
+    return $this->namespaceId;
   }
-  public function setNamespace($namespace)
+  public function setProjectId($projectId)
   {
-    $this->namespace = $namespace;
+    $this->projectId = $projectId;
   }
-  public function getNamespace()
+  public function getProjectId()
   {
-    return $this->namespace;
+    return $this->projectId;
   }
 }

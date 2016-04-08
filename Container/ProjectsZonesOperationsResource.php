@@ -29,7 +29,7 @@ class Google_Service_Container_ProjectsZonesOperationsResource extends Google_Se
    * Gets the specified operation. (operations.get)
    *
    * @param string $projectId The Google Developers Console [project ID or project
-   * number](https://developers.google.com/console/help/new/#projectnumber).
+   * number](https://support.google.com/cloud/answer/6158840).
    * @param string $zone The name of the Google Compute Engine
    * [zone](/compute/docs/zones#available) in which the cluster resides.
    * @param string $operationId The server-assigned `name` of the operation.
@@ -47,9 +47,9 @@ class Google_Service_Container_ProjectsZonesOperationsResource extends Google_Se
    * (operations.listProjectsZonesOperations)
    *
    * @param string $projectId The Google Developers Console [project ID or project
-   * number](https://developers.google.com/console/help/new/#projectnumber).
+   * number](https://support.google.com/cloud/answer/6158840).
    * @param string $zone The name of the Google Compute Engine
-   * [zone](/compute/docs/zones#available) to return operations for, or "-" for
+   * [zone](/compute/docs/zones#available) to return operations for, or `-` for
    * all zones.
    * @param array $optParams Optional parameters.
    * @return Google_Service_ListOperationsResponse

@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ListExecutionsResponse extends Google_Collection
+class Google_Service_ToolResults_ListExecutionsResponse extends Google_Collection
 {
   protected $collection_key = 'executions';
-  protected $executionsType = 'Google_Service_Toolresults_Execution';
+  protected $executionsType = 'Google_Service_ToolResults_Execution';
   protected $executionsDataType = 'array';
   public $nextPageToken;
 

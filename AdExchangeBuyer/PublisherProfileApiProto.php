@@ -19,18 +19,31 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
 {
   protected $collection_key = 'topHeadlines';
   public $accountId;
+  public $audience;
   public $buyerPitchStatement;
+  protected $directContactType = 'Google_Service_AdExchangeBuyer_ContactInformation';
+  protected $directContactDataType = '';
+  public $exchange;
   public $googlePlusLink;
   public $isParent;
+  public $isPublished;
   public $kind;
   public $logoUrl;
   public $mediaKitLink;
   public $name;
   public $overview;
   public $profileId;
+  protected $programmaticContactType = 'Google_Service_AdExchangeBuyer_ContactInformation';
+  protected $programmaticContactDataType = '';
   public $publisherDomains;
+  public $publisherProfileId;
+  protected $publisherProvidedForecastType = 'Google_Service_AdExchangeBuyer_PublisherProvidedForecast';
+  protected $publisherProvidedForecastDataType = '';
   public $rateCardInfoLink;
   public $samplePageLink;
+  protected $sellerType = 'Google_Service_AdExchangeBuyer_Seller';
+  protected $sellerDataType = '';
+  public $state;
   public $topHeadlines;
 
   public function setAccountId($accountId)
@@ -41,6 +54,14 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
   {
     return $this->accountId;
   }
+  public function setAudience($audience)
+  {
+    $this->audience = $audience;
+  }
+  public function getAudience()
+  {
+    return $this->audience;
+  }
   public function setBuyerPitchStatement($buyerPitchStatement)
   {
     $this->buyerPitchStatement = $buyerPitchStatement;
@@ -48,6 +69,22 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
   public function getBuyerPitchStatement()
   {
     return $this->buyerPitchStatement;
+  }
+  public function setDirectContact(Google_Service_AdExchangeBuyer_ContactInformation $directContact)
+  {
+    $this->directContact = $directContact;
+  }
+  public function getDirectContact()
+  {
+    return $this->directContact;
+  }
+  public function setExchange($exchange)
+  {
+    $this->exchange = $exchange;
+  }
+  public function getExchange()
+  {
+    return $this->exchange;
   }
   public function setGooglePlusLink($googlePlusLink)
   {
@@ -64,6 +101,14 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
   public function getIsParent()
   {
     return $this->isParent;
+  }
+  public function setIsPublished($isPublished)
+  {
+    $this->isPublished = $isPublished;
+  }
+  public function getIsPublished()
+  {
+    return $this->isPublished;
   }
   public function setKind($kind)
   {
@@ -113,6 +158,14 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
   {
     return $this->profileId;
   }
+  public function setProgrammaticContact(Google_Service_AdExchangeBuyer_ContactInformation $programmaticContact)
+  {
+    $this->programmaticContact = $programmaticContact;
+  }
+  public function getProgrammaticContact()
+  {
+    return $this->programmaticContact;
+  }
   public function setPublisherDomains($publisherDomains)
   {
     $this->publisherDomains = $publisherDomains;
@@ -120,6 +173,22 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
   public function getPublisherDomains()
   {
     return $this->publisherDomains;
+  }
+  public function setPublisherProfileId($publisherProfileId)
+  {
+    $this->publisherProfileId = $publisherProfileId;
+  }
+  public function getPublisherProfileId()
+  {
+    return $this->publisherProfileId;
+  }
+  public function setPublisherProvidedForecast(Google_Service_AdExchangeBuyer_PublisherProvidedForecast $publisherProvidedForecast)
+  {
+    $this->publisherProvidedForecast = $publisherProvidedForecast;
+  }
+  public function getPublisherProvidedForecast()
+  {
+    return $this->publisherProvidedForecast;
   }
   public function setRateCardInfoLink($rateCardInfoLink)
   {
@@ -136,6 +205,22 @@ class Google_Service_AdExchangeBuyer_PublisherProfileApiProto extends Google_Col
   public function getSamplePageLink()
   {
     return $this->samplePageLink;
+  }
+  public function setSeller(Google_Service_AdExchangeBuyer_Seller $seller)
+  {
+    $this->seller = $seller;
+  }
+  public function getSeller()
+  {
+    return $this->seller;
+  }
+  public function setState($state)
+  {
+    $this->state = $state;
+  }
+  public function getState()
+  {
+    return $this->state;
   }
   public function setTopHeadlines($topHeadlines)
   {

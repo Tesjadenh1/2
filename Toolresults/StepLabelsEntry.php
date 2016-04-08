@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_StepLabelsEntry extends Google_Model
+class Google_Service_ToolResults_StepLabelsEntry extends Google_Model
 {
   public $key;
   public $value;

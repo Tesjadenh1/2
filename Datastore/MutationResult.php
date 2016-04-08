@@ -15,27 +15,17 @@
  * the License.
  */
 
-class Google_Service_Datastore_MutationResult extends Google_Collection
+class Google_Service_Datastore_MutationResult extends Google_Model
 {
-  protected $collection_key = 'insertAutoIdKeys';
-  public $indexUpdates;
-  protected $insertAutoIdKeysType = 'Google_Service_Datastore_Key';
-  protected $insertAutoIdKeysDataType = 'array';
+  protected $keyType = 'Google_Service_Datastore_Key';
+  protected $keyDataType = '';
 
-  public function setIndexUpdates($indexUpdates)
+  public function setKey(Google_Service_Datastore_Key $key)
   {
-    $this->indexUpdates = $indexUpdates;
+    $this->key = $key;
   }
-  public function getIndexUpdates()
+  public function getKey()
   {
-    return $this->indexUpdates;
-  }
-  public function setInsertAutoIdKeys($insertAutoIdKeys)
-  {
-    $this->insertAutoIdKeys = $insertAutoIdKeys;
-  }
-  public function getInsertAutoIdKeys()
-  {
-    return $this->insertAutoIdKeys;
+    return $this->key;
   }
 }

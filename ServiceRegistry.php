@@ -19,8 +19,8 @@
  * Service definition for ServiceRegistry (alpha).
  *
  * <p>
- * The Service Registry API allows users to manage service endpoints in Service
- * Registry and use DNS-based service discovery / name resolution.</p>
+ * Manages service endpoints in Service Registry and provides integration with
+ * DNS for service discovery and name resolution.</p>
  *
  * <p>
  * For more information about this service, see the API

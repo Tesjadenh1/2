@@ -19,8 +19,8 @@
  * Service definition for Dataflow (v1b3).
  *
  * <p>
- * Google Cloud Dataflow is a simple, flexible, and powerful system you can use
- * to perform data processing tasks.</p>
+ * Develops and executes data processing patterns like ETL, batch computation,
+ * and continuous computation.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -146,6 +146,10 @@ class Google_Service_Dataflow extends Google_Service
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
                 'view' => array(
                   'location' => 'query',

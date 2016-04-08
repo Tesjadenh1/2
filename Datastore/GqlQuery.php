@@ -17,37 +17,37 @@
 
 class Google_Service_Datastore_GqlQuery extends Google_Collection
 {
-  protected $collection_key = 'numberArgs';
-  public $allowLiteral;
-  protected $nameArgsType = 'Google_Service_Datastore_GqlQueryArg';
-  protected $nameArgsDataType = 'array';
-  protected $numberArgsType = 'Google_Service_Datastore_GqlQueryArg';
-  protected $numberArgsDataType = 'array';
+  protected $collection_key = 'positionalBindings';
+  public $allowLiterals;
+  protected $namedBindingsType = 'Google_Service_Datastore_GqlQueryParameter';
+  protected $namedBindingsDataType = 'map';
+  protected $positionalBindingsType = 'Google_Service_Datastore_GqlQueryParameter';
+  protected $positionalBindingsDataType = 'array';
   public $queryString;
 
-  public function setAllowLiteral($allowLiteral)
+  public function setAllowLiterals($allowLiterals)
   {
-    $this->allowLiteral = $allowLiteral;
+    $this->allowLiterals = $allowLiterals;
   }
-  public function getAllowLiteral()
+  public function getAllowLiterals()
   {
-    return $this->allowLiteral;
+    return $this->allowLiterals;
   }
-  public function setNameArgs($nameArgs)
+  public function setNamedBindings($namedBindings)
   {
-    $this->nameArgs = $nameArgs;
+    $this->namedBindings = $namedBindings;
   }
-  public function getNameArgs()
+  public function getNamedBindings()
   {
-    return $this->nameArgs;
+    return $this->namedBindings;
   }
-  public function setNumberArgs($numberArgs)
+  public function setPositionalBindings($positionalBindings)
   {
-    $this->numberArgs = $numberArgs;
+    $this->positionalBindings = $positionalBindings;
   }
-  public function getNumberArgs()
+  public function getPositionalBindings()
   {
-    return $this->numberArgs;
+    return $this->positionalBindings;
   }
   public function setQueryString($queryString)
   {

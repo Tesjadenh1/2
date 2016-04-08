@@ -17,18 +17,8 @@
 
 class Google_Service_Datastore_BeginTransactionResponse extends Google_Model
 {
-  protected $headerType = 'Google_Service_Datastore_ResponseHeader';
-  protected $headerDataType = '';
   public $transaction;
 
-  public function setHeader(Google_Service_Datastore_ResponseHeader $header)
-  {
-    $this->header = $header;
-  }
-  public function getHeader()
-  {
-    return $this->header;
-  }
   public function setTransaction($transaction)
   {
     $this->transaction = $transaction;

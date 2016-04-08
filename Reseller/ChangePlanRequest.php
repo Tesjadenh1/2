@@ -17,12 +17,21 @@
 
 class Google_Service_Reseller_ChangePlanRequest extends Google_Model
 {
+  public $dealCode;
   public $kind;
   public $planName;
   public $purchaseOrderId;
   protected $seatsType = 'Google_Service_Reseller_Seats';
   protected $seatsDataType = '';
 
+  public function setDealCode($dealCode)
+  {
+    $this->dealCode = $dealCode;
+  }
+  public function getDealCode()
+  {
+    return $this->dealCode;
+  }
   public function setKind($kind)
   {
     $this->kind = $kind;

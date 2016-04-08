@@ -15,27 +15,27 @@
  * the License.
  */
 
-class Google_Service_Datastore_CommitResponse extends Google_Model
+class Google_Service_Datastore_CommitResponse extends Google_Collection
 {
-  protected $headerType = 'Google_Service_Datastore_ResponseHeader';
-  protected $headerDataType = '';
-  protected $mutationResultType = 'Google_Service_Datastore_MutationResult';
-  protected $mutationResultDataType = '';
+  protected $collection_key = 'mutationResults';
+  public $indexUpdates;
+  protected $mutationResultsType = 'Google_Service_Datastore_MutationResult';
+  protected $mutationResultsDataType = 'array';
 
-  public function setHeader(Google_Service_Datastore_ResponseHeader $header)
+  public function setIndexUpdates($indexUpdates)
   {
-    $this->header = $header;
+    $this->indexUpdates = $indexUpdates;
   }
-  public function getHeader()
+  public function getIndexUpdates()
   {
-    return $this->header;
+    return $this->indexUpdates;
   }
-  public function setMutationResult(Google_Service_Datastore_MutationResult $mutationResult)
+  public function setMutationResults($mutationResults)
   {
-    $this->mutationResult = $mutationResult;
+    $this->mutationResults = $mutationResults;
   }
-  public function getMutationResult()
+  public function getMutationResults()
   {
-    return $this->mutationResult;
+    return $this->mutationResults;
   }
 }

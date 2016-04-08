@@ -22,8 +22,6 @@ class Google_Service_Datastore_LookupResponse extends Google_Collection
   protected $deferredDataType = 'array';
   protected $foundType = 'Google_Service_Datastore_EntityResult';
   protected $foundDataType = 'array';
-  protected $headerType = 'Google_Service_Datastore_ResponseHeader';
-  protected $headerDataType = '';
   protected $missingType = 'Google_Service_Datastore_EntityResult';
   protected $missingDataType = 'array';
 
@@ -42,14 +40,6 @@ class Google_Service_Datastore_LookupResponse extends Google_Collection
   public function getFound()
   {
     return $this->found;
-  }
-  public function setHeader(Google_Service_Datastore_ResponseHeader $header)
-  {
-    $this->header = $header;
-  }
-  public function getHeader()
-  {
-    return $this->header;
   }
   public function setMissing($missing)
   {

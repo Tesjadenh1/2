@@ -15,34 +15,34 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Step extends Google_Collection
+class Google_Service_ToolResults_Step extends Google_Collection
 {
   protected $collection_key = 'labels';
-  protected $completionTimeType = 'Google_Service_Toolresults_Timestamp';
+  protected $completionTimeType = 'Google_Service_ToolResults_Timestamp';
   protected $completionTimeDataType = '';
-  protected $creationTimeType = 'Google_Service_Toolresults_Timestamp';
+  protected $creationTimeType = 'Google_Service_ToolResults_Timestamp';
   protected $creationTimeDataType = '';
   public $description;
-  protected $deviceUsageDurationType = 'Google_Service_Toolresults_Duration';
+  protected $deviceUsageDurationType = 'Google_Service_ToolResults_Duration';
   protected $deviceUsageDurationDataType = '';
-  protected $dimensionValueType = 'Google_Service_Toolresults_StepDimensionValueEntry';
+  protected $dimensionValueType = 'Google_Service_ToolResults_StepDimensionValueEntry';
   protected $dimensionValueDataType = 'array';
   public $hasImages;
-  protected $labelsType = 'Google_Service_Toolresults_StepLabelsEntry';
+  protected $labelsType = 'Google_Service_ToolResults_StepLabelsEntry';
   protected $labelsDataType = 'array';
   public $name;
-  protected $outcomeType = 'Google_Service_Toolresults_Outcome';
+  protected $outcomeType = 'Google_Service_ToolResults_Outcome';
   protected $outcomeDataType = '';
-  protected $runDurationType = 'Google_Service_Toolresults_Duration';
+  protected $runDurationType = 'Google_Service_ToolResults_Duration';
   protected $runDurationDataType = '';
   public $state;
   public $stepId;
-  protected $testExecutionStepType = 'Google_Service_Toolresults_TestExecutionStep';
+  protected $testExecutionStepType = 'Google_Service_ToolResults_TestExecutionStep';
   protected $testExecutionStepDataType = '';
-  protected $toolExecutionStepType = 'Google_Service_Toolresults_ToolExecutionStep';
+  protected $toolExecutionStepType = 'Google_Service_ToolResults_ToolExecutionStep';
   protected $toolExecutionStepDataType = '';
 
-  public function setCompletionTime(Google_Service_Toolresults_Timestamp $completionTime)
+  public function setCompletionTime(Google_Service_ToolResults_Timestamp $completionTime)
   {
     $this->completionTime = $completionTime;
   }
@@ -50,7 +50,7 @@ class Google_Service_Toolresults_Step extends Google_Collection
   {
     return $this->completionTime;
   }
-  public function setCreationTime(Google_Service_Toolresults_Timestamp $creationTime)
+  public function setCreationTime(Google_Service_ToolResults_Timestamp $creationTime)
   {
     $this->creationTime = $creationTime;
   }
@@ -66,7 +66,7 @@ class Google_Service_Toolresults_Step extends Google_Collection
   {
     return $this->description;
   }
-  public function setDeviceUsageDuration(Google_Service_Toolresults_Duration $deviceUsageDuration)
+  public function setDeviceUsageDuration(Google_Service_ToolResults_Duration $deviceUsageDuration)
   {
     $this->deviceUsageDuration = $deviceUsageDuration;
   }
@@ -106,7 +106,7 @@ class Google_Service_Toolresults_Step extends Google_Collection
   {
     return $this->name;
   }
-  public function setOutcome(Google_Service_Toolresults_Outcome $outcome)
+  public function setOutcome(Google_Service_ToolResults_Outcome $outcome)
   {
     $this->outcome = $outcome;
   }
@@ -114,7 +114,7 @@ class Google_Service_Toolresults_Step extends Google_Collection
   {
     return $this->outcome;
   }
-  public function setRunDuration(Google_Service_Toolresults_Duration $runDuration)
+  public function setRunDuration(Google_Service_ToolResults_Duration $runDuration)
   {
     $this->runDuration = $runDuration;
   }
@@ -138,7 +138,7 @@ class Google_Service_Toolresults_Step extends Google_Collection
   {
     return $this->stepId;
   }
-  public function setTestExecutionStep(Google_Service_Toolresults_TestExecutionStep $testExecutionStep)
+  public function setTestExecutionStep(Google_Service_ToolResults_TestExecutionStep $testExecutionStep)
   {
     $this->testExecutionStep = $testExecutionStep;
   }
@@ -146,7 +146,7 @@ class Google_Service_Toolresults_Step extends Google_Collection
   {
     return $this->testExecutionStep;
   }
-  public function setToolExecutionStep(Google_Service_Toolresults_ToolExecutionStep $toolExecutionStep)
+  public function setToolExecutionStep(Google_Service_ToolResults_ToolExecutionStep $toolExecutionStep)
   {
     $this->toolExecutionStep = $toolExecutionStep;
   }

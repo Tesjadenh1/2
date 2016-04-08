@@ -15,35 +15,27 @@
  * the License.
  */
 
-class Google_Service_Datastore_GqlQueryArg extends Google_Model
+class Google_Service_Genomics_SearchAnnotationSetsResponse extends Google_Collection
 {
-  public $cursor;
-  public $name;
-  protected $valueType = 'Google_Service_Datastore_Value';
-  protected $valueDataType = '';
+  protected $collection_key = 'annotationSets';
+  protected $annotationSetsType = 'Google_Service_Genomics_AnnotationSet';
+  protected $annotationSetsDataType = 'array';
+  public $nextPageToken;
 
-  public function setCursor($cursor)
+  public function setAnnotationSets($annotationSets)
   {
-    $this->cursor = $cursor;
+    $this->annotationSets = $annotationSets;
   }
-  public function getCursor()
+  public function getAnnotationSets()
   {
-    return $this->cursor;
+    return $this->annotationSets;
   }
-  public function setName($name)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->name = $name;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getName()
+  public function getNextPageToken()
   {
-    return $this->name;
-  }
-  public function setValue(Google_Service_Datastore_Value $value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->nextPageToken;
   }
 }

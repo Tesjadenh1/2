@@ -19,8 +19,7 @@
  * Service definition for AndroidEnterprise (v1).
  *
  * <p>
- * Allows MDMs/EMMs and enterprises to manage the deployment of apps to Android
- * for Work users.</p>
+ * Manages the deployment of apps to Android for Work users.</p>
  *
  * <p>
  * For more information about this service, see the API

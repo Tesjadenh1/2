@@ -15,16 +15,26 @@
  * the License.
  */
 
-class Google_Service_Toolresults_TestExecutionStep extends Google_Collection
+class Google_Service_ToolResults_TestExecutionStep extends Google_Collection
 {
   protected $collection_key = 'testSuiteOverviews';
-  protected $testSuiteOverviewsType = 'Google_Service_Toolresults_TestSuiteOverview';
+  protected $testIssuesType = 'Google_Service_ToolResults_TestIssue';
+  protected $testIssuesDataType = 'array';
+  protected $testSuiteOverviewsType = 'Google_Service_ToolResults_TestSuiteOverview';
   protected $testSuiteOverviewsDataType = 'array';
-  protected $testTimingType = 'Google_Service_Toolresults_TestTiming';
+  protected $testTimingType = 'Google_Service_ToolResults_TestTiming';
   protected $testTimingDataType = '';
-  protected $toolExecutionType = 'Google_Service_Toolresults_ToolExecution';
+  protected $toolExecutionType = 'Google_Service_ToolResults_ToolExecution';
   protected $toolExecutionDataType = '';
 
+  public function setTestIssues($testIssues)
+  {
+    $this->testIssues = $testIssues;
+  }
+  public function getTestIssues()
+  {
+    return $this->testIssues;
+  }
   public function setTestSuiteOverviews($testSuiteOverviews)
   {
     $this->testSuiteOverviews = $testSuiteOverviews;
@@ -33,7 +43,7 @@ class Google_Service_Toolresults_TestExecutionStep extends Google_Collection
   {
     return $this->testSuiteOverviews;
   }
-  public function setTestTiming(Google_Service_Toolresults_TestTiming $testTiming)
+  public function setTestTiming(Google_Service_ToolResults_TestTiming $testTiming)
   {
     $this->testTiming = $testTiming;
   }
@@ -41,7 +51,7 @@ class Google_Service_Toolresults_TestExecutionStep extends Google_Collection
   {
     return $this->testTiming;
   }
-  public function setToolExecution(Google_Service_Toolresults_ToolExecution $toolExecution)
+  public function setToolExecution(Google_Service_ToolResults_ToolExecution $toolExecution)
   {
     $this->toolExecution = $toolExecution;
   }

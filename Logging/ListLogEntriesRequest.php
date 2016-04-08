@@ -22,6 +22,7 @@ class Google_Service_Logging_ListLogEntriesRequest extends Google_Collection
   public $orderBy;
   public $pageSize;
   public $pageToken;
+  public $partialSuccess;
   public $projectIds;
 
   public function setFilter($filter)
@@ -55,6 +56,14 @@ class Google_Service_Logging_ListLogEntriesRequest extends Google_Collection
   public function getPageToken()
   {
     return $this->pageToken;
+  }
+  public function setPartialSuccess($partialSuccess)
+  {
+    $this->partialSuccess = $partialSuccess;
+  }
+  public function getPartialSuccess()
+  {
+    return $this->partialSuccess;
   }
   public function setProjectIds($projectIds)
   {

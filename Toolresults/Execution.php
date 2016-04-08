@@ -15,19 +15,19 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Execution extends Google_Model
+class Google_Service_ToolResults_Execution extends Google_Model
 {
-  protected $completionTimeType = 'Google_Service_Toolresults_Timestamp';
+  protected $completionTimeType = 'Google_Service_ToolResults_Timestamp';
   protected $completionTimeDataType = '';
-  protected $creationTimeType = 'Google_Service_Toolresults_Timestamp';
+  protected $creationTimeType = 'Google_Service_ToolResults_Timestamp';
   protected $creationTimeDataType = '';
   public $executionId;
-  protected $outcomeType = 'Google_Service_Toolresults_Outcome';
+  protected $outcomeType = 'Google_Service_ToolResults_Outcome';
   protected $outcomeDataType = '';
   public $state;
   public $testExecutionMatrixId;
 
-  public function setCompletionTime(Google_Service_Toolresults_Timestamp $completionTime)
+  public function setCompletionTime(Google_Service_ToolResults_Timestamp $completionTime)
   {
     $this->completionTime = $completionTime;
   }
@@ -35,7 +35,7 @@ class Google_Service_Toolresults_Execution extends Google_Model
   {
     return $this->completionTime;
   }
-  public function setCreationTime(Google_Service_Toolresults_Timestamp $creationTime)
+  public function setCreationTime(Google_Service_ToolResults_Timestamp $creationTime)
   {
     $this->creationTime = $creationTime;
   }
@@ -51,7 +51,7 @@ class Google_Service_Toolresults_Execution extends Google_Model
   {
     return $this->executionId;
   }
-  public function setOutcome(Google_Service_Toolresults_Outcome $outcome)
+  public function setOutcome(Google_Service_ToolResults_Outcome $outcome)
   {
     $this->outcome = $outcome;
   }

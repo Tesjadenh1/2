@@ -15,15 +15,15 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ToolExecution extends Google_Collection
+class Google_Service_ToolResults_ToolExecution extends Google_Collection
 {
   protected $collection_key = 'toolOutputs';
   public $commandLineArguments;
-  protected $exitCodeType = 'Google_Service_Toolresults_ToolExitCode';
+  protected $exitCodeType = 'Google_Service_ToolResults_ToolExitCode';
   protected $exitCodeDataType = '';
-  protected $toolLogsType = 'Google_Service_Toolresults_FileReference';
+  protected $toolLogsType = 'Google_Service_ToolResults_FileReference';
   protected $toolLogsDataType = 'array';
-  protected $toolOutputsType = 'Google_Service_Toolresults_ToolOutputReference';
+  protected $toolOutputsType = 'Google_Service_ToolResults_ToolOutputReference';
   protected $toolOutputsDataType = 'array';
 
   public function setCommandLineArguments($commandLineArguments)
@@ -34,7 +34,7 @@ class Google_Service_Toolresults_ToolExecution extends Google_Collection
   {
     return $this->commandLineArguments;
   }
-  public function setExitCode(Google_Service_Toolresults_ToolExitCode $exitCode)
+  public function setExitCode(Google_Service_ToolResults_ToolExitCode $exitCode)
   {
     $this->exitCode = $exitCode;
   }

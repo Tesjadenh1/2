@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_SuccessDetail extends Google_Model
+class Google_Service_ToolResults_SuccessDetail extends Google_Model
 {
   public $otherNativeCrash;
 

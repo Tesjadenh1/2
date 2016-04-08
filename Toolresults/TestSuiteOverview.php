@@ -15,14 +15,14 @@
  * the License.
  */
 
-class Google_Service_Toolresults_TestSuiteOverview extends Google_Model
+class Google_Service_ToolResults_TestSuiteOverview extends Google_Model
 {
   public $errorCount;
   public $failureCount;
   public $name;
   public $skippedCount;
   public $totalCount;
-  protected $xmlSourceType = 'Google_Service_Toolresults_FileReference';
+  protected $xmlSourceType = 'Google_Service_ToolResults_FileReference';
   protected $xmlSourceDataType = '';
 
   public function setErrorCount($errorCount)
@@ -65,7 +65,7 @@ class Google_Service_Toolresults_TestSuiteOverview extends Google_Model
   {
     return $this->totalCount;
   }
-  public function setXmlSource(Google_Service_Toolresults_FileReference $xmlSource)
+  public function setXmlSource(Google_Service_ToolResults_FileReference $xmlSource)
   {
     $this->xmlSource = $xmlSource;
   }

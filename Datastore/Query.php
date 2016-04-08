@@ -18,21 +18,29 @@
 class Google_Service_Datastore_Query extends Google_Collection
 {
   protected $collection_key = 'projection';
+  protected $distinctOnType = 'Google_Service_Datastore_PropertyReference';
+  protected $distinctOnDataType = 'array';
   public $endCursor;
   protected $filterType = 'Google_Service_Datastore_Filter';
   protected $filterDataType = '';
-  protected $groupByType = 'Google_Service_Datastore_PropertyReference';
-  protected $groupByDataType = 'array';
-  protected $kindsType = 'Google_Service_Datastore_KindExpression';
-  protected $kindsDataType = 'array';
+  protected $kindType = 'Google_Service_Datastore_KindExpression';
+  protected $kindDataType = 'array';
   public $limit;
   public $offset;
   protected $orderType = 'Google_Service_Datastore_PropertyOrder';
   protected $orderDataType = 'array';
-  protected $projectionType = 'Google_Service_Datastore_PropertyExpression';
+  protected $projectionType = 'Google_Service_Datastore_Projection';
   protected $projectionDataType = 'array';
   public $startCursor;
 
+  public function setDistinctOn($distinctOn)
+  {
+    $this->distinctOn = $distinctOn;
+  }
+  public function getDistinctOn()
+  {
+    return $this->distinctOn;
+  }
   public function setEndCursor($endCursor)
   {
     $this->endCursor = $endCursor;
@@ -49,21 +57,13 @@ class Google_Service_Datastore_Query extends Google_Collection
   {
     return $this->filter;
   }
-  public function setGroupBy($groupBy)
+  public function setKind($kind)
   {
-    $this->groupBy = $groupBy;
+    $this->kind = $kind;
   }
-  public function getGroupBy()
+  public function getKind()
   {
-    return $this->groupBy;
-  }
-  public function setKinds($kinds)
-  {
-    $this->kinds = $kinds;
-  }
-  public function getKinds()
-  {
-    return $this->kinds;
+    return $this->kind;
   }
   public function setLimit($limit)
   {

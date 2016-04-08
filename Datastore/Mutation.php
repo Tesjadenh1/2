@@ -15,22 +15,18 @@
  * the License.
  */
 
-class Google_Service_Datastore_Mutation extends Google_Collection
+class Google_Service_Datastore_Mutation extends Google_Model
 {
-  protected $collection_key = 'upsert';
   protected $deleteType = 'Google_Service_Datastore_Key';
-  protected $deleteDataType = 'array';
-  public $force;
+  protected $deleteDataType = '';
   protected $insertType = 'Google_Service_Datastore_Entity';
-  protected $insertDataType = 'array';
-  protected $insertAutoIdType = 'Google_Service_Datastore_Entity';
-  protected $insertAutoIdDataType = 'array';
+  protected $insertDataType = '';
   protected $updateType = 'Google_Service_Datastore_Entity';
-  protected $updateDataType = 'array';
+  protected $updateDataType = '';
   protected $upsertType = 'Google_Service_Datastore_Entity';
-  protected $upsertDataType = 'array';
+  protected $upsertDataType = '';
 
-  public function setDelete($delete)
+  public function setDelete(Google_Service_Datastore_Key $delete)
   {
     $this->delete = $delete;
   }
@@ -38,15 +34,7 @@ class Google_Service_Datastore_Mutation extends Google_Collection
   {
     return $this->delete;
   }
-  public function setForce($force)
-  {
-    $this->force = $force;
-  }
-  public function getForce()
-  {
-    return $this->force;
-  }
-  public function setInsert($insert)
+  public function setInsert(Google_Service_Datastore_Entity $insert)
   {
     $this->insert = $insert;
   }
@@ -54,15 +42,7 @@ class Google_Service_Datastore_Mutation extends Google_Collection
   {
     return $this->insert;
   }
-  public function setInsertAutoId($insertAutoId)
-  {
-    $this->insertAutoId = $insertAutoId;
-  }
-  public function getInsertAutoId()
-  {
-    return $this->insertAutoId;
-  }
-  public function setUpdate($update)
+  public function setUpdate(Google_Service_Datastore_Entity $update)
   {
     $this->update = $update;
   }
@@ -70,7 +50,7 @@ class Google_Service_Datastore_Mutation extends Google_Collection
   {
     return $this->update;
   }
-  public function setUpsert($upsert)
+  public function setUpsert(Google_Service_Datastore_Entity $upsert)
   {
     $this->upsert = $upsert;
   }

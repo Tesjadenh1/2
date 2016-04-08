@@ -15,16 +15,26 @@
  * the License.
  */
 
-class Google_Service_Datastore_ResponseHeader extends Google_Model
+class Google_Service_Consumersurveys_SurveysStopResponse extends Google_Model
 {
-  public $kind;
+  public $requestId;
+  protected $resourceType = 'Google_Service_Consumersurveys_Survey';
+  protected $resourceDataType = '';
 
-  public function setKind($kind)
+  public function setRequestId($requestId)
   {
-    $this->kind = $kind;
+    $this->requestId = $requestId;
   }
-  public function getKind()
+  public function getRequestId()
   {
-    return $this->kind;
+    return $this->requestId;
+  }
+  public function setResource(Google_Service_Consumersurveys_Survey $resource)
+  {
+    $this->resource = $resource;
+  }
+  public function getResource()
+  {
+    return $this->resource;
   }
 }

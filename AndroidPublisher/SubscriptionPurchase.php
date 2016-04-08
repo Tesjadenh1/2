@@ -18,8 +18,14 @@
 class Google_Service_AndroidPublisher_SubscriptionPurchase extends Google_Model
 {
   public $autoRenewing;
+  public $cancelReason;
+  public $countryCode;
+  public $developerPayload;
   public $expiryTimeMillis;
   public $kind;
+  public $paymentState;
+  public $priceAmountMicros;
+  public $priceCurrencyCode;
   public $startTimeMillis;
 
   public function setAutoRenewing($autoRenewing)
@@ -29,6 +35,30 @@ class Google_Service_AndroidPublisher_SubscriptionPurchase extends Google_Model
   public function getAutoRenewing()
   {
     return $this->autoRenewing;
+  }
+  public function setCancelReason($cancelReason)
+  {
+    $this->cancelReason = $cancelReason;
+  }
+  public function getCancelReason()
+  {
+    return $this->cancelReason;
+  }
+  public function setCountryCode($countryCode)
+  {
+    $this->countryCode = $countryCode;
+  }
+  public function getCountryCode()
+  {
+    return $this->countryCode;
+  }
+  public function setDeveloperPayload($developerPayload)
+  {
+    $this->developerPayload = $developerPayload;
+  }
+  public function getDeveloperPayload()
+  {
+    return $this->developerPayload;
   }
   public function setExpiryTimeMillis($expiryTimeMillis)
   {
@@ -45,6 +75,30 @@ class Google_Service_AndroidPublisher_SubscriptionPurchase extends Google_Model
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setPaymentState($paymentState)
+  {
+    $this->paymentState = $paymentState;
+  }
+  public function getPaymentState()
+  {
+    return $this->paymentState;
+  }
+  public function setPriceAmountMicros($priceAmountMicros)
+  {
+    $this->priceAmountMicros = $priceAmountMicros;
+  }
+  public function getPriceAmountMicros()
+  {
+    return $this->priceAmountMicros;
+  }
+  public function setPriceCurrencyCode($priceCurrencyCode)
+  {
+    $this->priceCurrencyCode = $priceCurrencyCode;
+  }
+  public function getPriceCurrencyCode()
+  {
+    return $this->priceCurrencyCode;
   }
   public function setStartTimeMillis($startTimeMillis)
   {

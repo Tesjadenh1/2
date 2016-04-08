@@ -19,7 +19,8 @@
  * Service definition for SQLAdmin (v1beta4).
  *
  * <p>
- * API for Cloud SQL database instance management.</p>
+ * Creates and configures Cloud SQL instances, which provide fully-managed MySQL
+ * databases.</p>
  *
  * <p>
  * For more information about this service, see the API

@@ -19,11 +19,11 @@
  * The "executions" collection of methods.
  * Typical usage is:
  *  <code>
- *   $toolresultsService = new Google_Service_Toolresults(...);
+ *   $toolresultsService = new Google_Service_ToolResults(...);
  *   $executions = $toolresultsService->executions;
  *  </code>
  */
-class Google_Service_Toolresults_ProjectsHistoriesExecutionsResource extends Google_Service_Resource
+class Google_Service_ToolResults_ProjectsHistoriesExecutionsResource extends Google_Service_Resource
 {
   /**
    * Creates an Execution.
@@ -51,11 +51,11 @@ class Google_Service_Toolresults_ProjectsHistoriesExecutionsResource extends Goo
    * Optional, but strongly recommended.
    * @return Google_Service_Execution
    */
-  public function create($projectId, $historyId, Google_Service_Toolresults_Execution $postBody, $optParams = array())
+  public function create($projectId, $historyId, Google_Service_ToolResults_Execution $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'historyId' => $historyId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('create', array($params), "Google_Service_Toolresults_Execution");
+    return $this->call('create', array($params), "Google_Service_ToolResults_Execution");
   }
   /**
    * Gets an Execution.
@@ -82,7 +82,7 @@ class Google_Service_Toolresults_ProjectsHistoriesExecutionsResource extends Goo
   {
     $params = array('projectId' => $projectId, 'historyId' => $historyId, 'executionId' => $executionId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Toolresults_Execution");
+    return $this->call('get', array($params), "Google_Service_ToolResults_Execution");
   }
   /**
    * Lists Histories for a given Project.
@@ -122,7 +122,7 @@ class Google_Service_Toolresults_ProjectsHistoriesExecutionsResource extends Goo
   {
     $params = array('projectId' => $projectId, 'historyId' => $historyId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Toolresults_ListExecutionsResponse");
+    return $this->call('list', array($params), "Google_Service_ToolResults_ListExecutionsResponse");
   }
   /**
    * Updates an existing Execution with the supplied partial entity.
@@ -146,10 +146,10 @@ class Google_Service_Toolresults_ProjectsHistoriesExecutionsResource extends Goo
    * Optional, but strongly recommended.
    * @return Google_Service_Execution
    */
-  public function patch($projectId, $historyId, $executionId, Google_Service_Toolresults_Execution $postBody, $optParams = array())
+  public function patch($projectId, $historyId, $executionId, Google_Service_ToolResults_Execution $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'historyId' => $historyId, 'executionId' => $executionId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), "Google_Service_Toolresults_Execution");
+    return $this->call('patch', array($params), "Google_Service_ToolResults_Execution");
   }
 }

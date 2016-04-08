@@ -20,6 +20,7 @@ class Google_Service_Container_NodeConfig extends Google_Collection
   protected $collection_key = 'oauthScopes';
   public $diskSizeGb;
   public $machineType;
+  public $metadata;
   public $oauthScopes;
 
   public function setDiskSizeGb($diskSizeGb)
@@ -37,6 +38,14 @@ class Google_Service_Container_NodeConfig extends Google_Collection
   public function getMachineType()
   {
     return $this->machineType;
+  }
+  public function setMetadata($metadata)
+  {
+    $this->metadata = $metadata;
+  }
+  public function getMetadata()
+  {
+    return $this->metadata;
   }
   public function setOauthScopes($oauthScopes)
   {

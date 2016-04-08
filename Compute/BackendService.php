@@ -30,6 +30,7 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public $port;
   public $portName;
   public $protocol;
+  public $region;
   public $selfLink;
   public $timeoutSec;
 
@@ -120,6 +121,14 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public function getProtocol()
   {
     return $this->protocol;
+  }
+  public function setRegion($region)
+  {
+    $this->region = $region;
+  }
+  public function getRegion()
+  {
+    return $this->region;
   }
   public function setSelfLink($selfLink)
   {

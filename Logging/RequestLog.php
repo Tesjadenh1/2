@@ -23,6 +23,7 @@ class Google_Service_Logging_RequestLog extends Google_Collection
   public $cost;
   public $endTime;
   public $finished;
+  public $first;
   public $host;
   public $httpVersion;
   public $instanceId;
@@ -91,6 +92,14 @@ class Google_Service_Logging_RequestLog extends Google_Collection
   public function getFinished()
   {
     return $this->finished;
+  }
+  public function setFirst($first)
+  {
+    $this->first = $first;
+  }
+  public function getFirst()
+  {
+    return $this->first;
   }
   public function setHost($host)
   {

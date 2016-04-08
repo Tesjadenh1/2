@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ListStepThumbnailsResponse extends Google_Collection
+class Google_Service_ToolResults_ListStepThumbnailsResponse extends Google_Collection
 {
   protected $collection_key = 'thumbnails';
   public $nextPageToken;
-  protected $thumbnailsType = 'Google_Service_Toolresults_Image';
+  protected $thumbnailsType = 'Google_Service_ToolResults_Image';
   protected $thumbnailsDataType = 'array';
 
   public function setNextPageToken($nextPageToken)

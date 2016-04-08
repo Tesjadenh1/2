@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_TestCaseReference extends Google_Model
+class Google_Service_ToolResults_TestCaseReference extends Google_Model
 {
   public $className;
   public $name;

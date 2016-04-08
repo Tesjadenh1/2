@@ -371,12 +371,13 @@ class Google_Service_AdExchangeBuyer extends Google_Service
         array(
           'methods' => array(
             'updateproposal' => array(
-              'path' => 'privateauction/{private_auction_id}/updateproposal',
+              'path' => 'privateauction/{privateAuctionId}/updateproposal',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'privateAuctionId' => array(
-                  'location' => 'query',
+                  'location' => 'path',
                   'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),

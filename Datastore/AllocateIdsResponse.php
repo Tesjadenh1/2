@@ -18,19 +18,9 @@
 class Google_Service_Datastore_AllocateIdsResponse extends Google_Collection
 {
   protected $collection_key = 'keys';
-  protected $headerType = 'Google_Service_Datastore_ResponseHeader';
-  protected $headerDataType = '';
   protected $keysType = 'Google_Service_Datastore_Key';
   protected $keysDataType = 'array';
 
-  public function setHeader(Google_Service_Datastore_ResponseHeader $header)
-  {
-    $this->header = $header;
-  }
-  public function getHeader()
-  {
-    return $this->header;
-  }
   public function setKeys($keys)
   {
     $this->keys = $keys;

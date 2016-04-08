@@ -22,6 +22,7 @@ class Google_Service_Logging_MonitoredResourceDescriptor extends Google_Collecti
   public $displayName;
   protected $labelsType = 'Google_Service_Logging_LabelDescriptor';
   protected $labelsDataType = 'array';
+  public $name;
   public $type;
 
   public function setDescription($description)
@@ -47,6 +48,14 @@ class Google_Service_Logging_MonitoredResourceDescriptor extends Google_Collecti
   public function getLabels()
   {
     return $this->labels;
+  }
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+  public function getName()
+  {
+    return $this->name;
   }
   public function setType($type)
   {

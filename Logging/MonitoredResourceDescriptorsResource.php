@@ -32,14 +32,14 @@ class Google_Service_Logging_MonitoredResourceDescriptorsResource extends Google
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize Optional. The maximum number of results to return
-   * from this request. Fewer results might be returned. You must check for the
-   * `nextPageToken` result to determine if additional results are available,
-   * which you can retrieve by passing the `nextPageToken` value in the
-   * `pageToken` parameter to the next request.
-   * @opt_param string pageToken Optional. If the `pageToken` request parameter is
-   * supplied, then the next page of results in the set are retrieved. The
-   * `pageToken` parameter must be set with the value of the `nextPageToken`
-   * result parameter from the previous request.
+   * from this request. You must check for presence of `nextPageToken` to
+   * determine if additional results are available, which you can retrieve by
+   * passing the `nextPageToken` value as the `pageToken` parameter in the next
+   * request.
+   * @opt_param string pageToken Optional. If the `pageToken` parameter is
+   * supplied, then the next page of results is retrieved. The `pageToken`
+   * parameter must be set to the value of the `nextPageToken` from the previous
+   * response.
    * @return Google_Service_ListMonitoredResourceDescriptorsResponse
    */
   public function listMonitoredResourceDescriptors($optParams = array())

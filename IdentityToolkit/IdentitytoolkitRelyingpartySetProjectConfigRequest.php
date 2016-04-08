@@ -23,8 +23,11 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfig
   protected $changeEmailTemplateType = 'Google_Service_IdentityToolkit_EmailTemplate';
   protected $changeEmailTemplateDataType = '';
   public $delegatedProjectNumber;
+  public $enableAnonymousUser;
   protected $idpConfigType = 'Google_Service_IdentityToolkit_IdpConfig';
   protected $idpConfigDataType = 'array';
+  protected $legacyResetPasswordTemplateType = 'Google_Service_IdentityToolkit_EmailTemplate';
+  protected $legacyResetPasswordTemplateDataType = '';
   protected $resetPasswordTemplateType = 'Google_Service_IdentityToolkit_EmailTemplate';
   protected $resetPasswordTemplateDataType = '';
   public $useEmailSending;
@@ -63,6 +66,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfig
   {
     return $this->delegatedProjectNumber;
   }
+  public function setEnableAnonymousUser($enableAnonymousUser)
+  {
+    $this->enableAnonymousUser = $enableAnonymousUser;
+  }
+  public function getEnableAnonymousUser()
+  {
+    return $this->enableAnonymousUser;
+  }
   public function setIdpConfig($idpConfig)
   {
     $this->idpConfig = $idpConfig;
@@ -70,6 +81,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfig
   public function getIdpConfig()
   {
     return $this->idpConfig;
+  }
+  public function setLegacyResetPasswordTemplate(Google_Service_IdentityToolkit_EmailTemplate $legacyResetPasswordTemplate)
+  {
+    $this->legacyResetPasswordTemplate = $legacyResetPasswordTemplate;
+  }
+  public function getLegacyResetPasswordTemplate()
+  {
+    return $this->legacyResetPasswordTemplate;
   }
   public function setResetPasswordTemplate(Google_Service_IdentityToolkit_EmailTemplate $resetPasswordTemplate)
   {

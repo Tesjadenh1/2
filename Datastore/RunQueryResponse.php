@@ -19,8 +19,8 @@ class Google_Service_Datastore_RunQueryResponse extends Google_Model
 {
   protected $batchType = 'Google_Service_Datastore_QueryResultBatch';
   protected $batchDataType = '';
-  protected $headerType = 'Google_Service_Datastore_ResponseHeader';
-  protected $headerDataType = '';
+  protected $queryType = 'Google_Service_Datastore_Query';
+  protected $queryDataType = '';
 
   public function setBatch(Google_Service_Datastore_QueryResultBatch $batch)
   {
@@ -30,12 +30,12 @@ class Google_Service_Datastore_RunQueryResponse extends Google_Model
   {
     return $this->batch;
   }
-  public function setHeader(Google_Service_Datastore_ResponseHeader $header)
+  public function setQuery(Google_Service_Datastore_Query $query)
   {
-    $this->header = $header;
+    $this->query = $query;
   }
-  public function getHeader()
+  public function getQuery()
   {
-    return $this->header;
+    return $this->query;
   }
 }

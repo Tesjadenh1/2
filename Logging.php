@@ -19,8 +19,7 @@
  * Service definition for Logging (v2beta1).
  *
  * <p>
- * The Google Cloud Logging API lets you write log entries and manage your logs,
- * log sinks and logs-based metrics.</p>
+ * Writes log entries and manages your logs, log sinks, and logs-based metrics.</p>
  *
  * <p>
  * For more information about this service, see the API

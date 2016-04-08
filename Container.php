@@ -19,8 +19,8 @@
  * Service definition for Container (v1).
  *
  * <p>
- * The Google Container Engine API is used for building and managing container
- * based applications, powered by the open source Kubernetes technology.</p>
+ * Builds and manages clusters that run container-based applications, powered by
+ * open source Kubernetes technology.</p>
  *
  * <p>
  * For more information about this service, see the API

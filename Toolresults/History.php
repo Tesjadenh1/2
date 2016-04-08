@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_History extends Google_Model
+class Google_Service_ToolResults_History extends Google_Model
 {
   public $displayName;
   public $historyId;

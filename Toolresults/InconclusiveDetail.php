@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_InconclusiveDetail extends Google_Model
+class Google_Service_ToolResults_InconclusiveDetail extends Google_Model
 {
   public $abortedByUser;
   public $infrastructureFailure;

@@ -73,20 +73,19 @@ class Google_Service_Logging_ProjectsSinksResource extends Google_Service_Resour
    * Lists sinks. (sinks.listProjectsSinks)
    *
    * @param string $projectName Required. The resource name of the project
-   * containing the sinks. Example: `"projects/my-logging-project"`,
-   * `"projects/01234567890"`.
+   * containing the sinks. Example: `"projects/my-logging-project"`.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken Optional. If the `pageToken` request parameter is
-   * supplied, then the next page of results in the set are retrieved. The
-   * `pageToken` parameter must be set with the value of the `nextPageToken`
-   * result parameter from the previous request. The value of `projectName` must
-   * be the same as in the previous request.
+   * @opt_param string pageToken Optional. If the `pageToken` parameter is
+   * supplied, then the next page of results is retrieved. The `pageToken`
+   * parameter must be set to the value of the `nextPageToken` from the previous
+   * response. The value of `projectName` must be the same as in the previous
+   * request.
    * @opt_param int pageSize Optional. The maximum number of results to return
-   * from this request. Fewer results might be returned. You must check for the
-   * `nextPageToken` result to determine if additional results are available,
-   * which you can retrieve by passing the `nextPageToken` value in the
-   * `pageToken` parameter to the next request.
+   * from this request. You must check for presence of `nextPageToken` to
+   * determine if additional results are available, which you can retrieve by
+   * passing the `nextPageToken` value as the `pageToken` parameter in the next
+   * request.
    * @return Google_Service_ListSinksResponse
    */
   public function listProjectsSinks($projectName, $optParams = array())

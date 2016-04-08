@@ -83,6 +83,7 @@ class Google_Service_Dataflow_ProjectsJobsResource extends Google_Service_Resour
    * @param string $projectId The project which owns the jobs.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string filter The kind of filter to use.
    * @opt_param string view Level of information requested in response. Default is
    * SUMMARY.
    * @opt_param int pageSize If there are many jobs, limit response to at most

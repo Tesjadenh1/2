@@ -19,11 +19,11 @@
  * The "thumbnails" collection of methods.
  * Typical usage is:
  *  <code>
- *   $toolresultsService = new Google_Service_Toolresults(...);
+ *   $toolresultsService = new Google_Service_ToolResults(...);
  *   $thumbnails = $toolresultsService->thumbnails;
  *  </code>
  */
-class Google_Service_Toolresults_ProjectsHistoriesExecutionsStepsThumbnailsResource extends Google_Service_Resource
+class Google_Service_ToolResults_ProjectsHistoriesExecutionsStepsThumbnailsResource extends Google_Service_Resource
 {
   /**
    * Lists thumbnails of images attached to a step.
@@ -64,6 +64,6 @@ class Google_Service_Toolresults_ProjectsHistoriesExecutionsStepsThumbnailsResou
   {
     $params = array('projectId' => $projectId, 'historyId' => $historyId, 'executionId' => $executionId, 'stepId' => $stepId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Toolresults_ListStepThumbnailsResponse");
+    return $this->call('list', array($params), "Google_Service_ToolResults_ListStepThumbnailsResponse");
   }
 }

@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ListStepsResponse extends Google_Collection
+class Google_Service_ToolResults_ListStepsResponse extends Google_Collection
 {
   protected $collection_key = 'steps';
   public $nextPageToken;
-  protected $stepsType = 'Google_Service_Toolresults_Step';
+  protected $stepsType = 'Google_Service_ToolResults_Step';
   protected $stepsDataType = 'array';
 
   public function setNextPageToken($nextPageToken)

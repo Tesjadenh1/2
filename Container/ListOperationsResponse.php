@@ -18,9 +18,18 @@
 class Google_Service_Container_ListOperationsResponse extends Google_Collection
 {
   protected $collection_key = 'operations';
+  public $missingZones;
   protected $operationsType = 'Google_Service_Container_Operation';
   protected $operationsDataType = 'array';
 
+  public function setMissingZones($missingZones)
+  {
+    $this->missingZones = $missingZones;
+  }
+  public function getMissingZones()
+  {
+    return $this->missingZones;
+  }
   public function setOperations($operations)
   {
     $this->operations = $operations;

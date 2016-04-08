@@ -19,11 +19,11 @@
  * The "projects" collection of methods.
  * Typical usage is:
  *  <code>
- *   $toolresultsService = new Google_Service_Toolresults(...);
+ *   $toolresultsService = new Google_Service_ToolResults(...);
  *   $projects = $toolresultsService->projects;
  *  </code>
  */
-class Google_Service_Toolresults_ProjectsResource extends Google_Service_Resource
+class Google_Service_ToolResults_ProjectsResource extends Google_Service_Resource
 {
   /**
    * Gets the Tool Results settings for a project.
@@ -43,7 +43,7 @@ class Google_Service_Toolresults_ProjectsResource extends Google_Service_Resourc
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('getSettings', array($params), "Google_Service_Toolresults_ProjectSettings");
+    return $this->call('getSettings', array($params), "Google_Service_ToolResults_ProjectSettings");
   }
   /**
    * Creates resources for settings which have not yet been set.
@@ -81,6 +81,6 @@ class Google_Service_Toolresults_ProjectsResource extends Google_Service_Resourc
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('initializeSettings', array($params), "Google_Service_Toolresults_ProjectSettings");
+    return $this->call('initializeSettings', array($params), "Google_Service_ToolResults_ProjectSettings");
   }
 }

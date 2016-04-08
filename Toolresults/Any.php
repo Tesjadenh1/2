@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_Any extends Google_Model
+class Google_Service_ToolResults_Any extends Google_Model
 {
   public $typeUrl;
   public $value;

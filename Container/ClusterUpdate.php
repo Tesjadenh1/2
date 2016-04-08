@@ -17,8 +17,36 @@
 
 class Google_Service_Container_ClusterUpdate extends Google_Model
 {
+  protected $desiredAddonsConfigType = 'Google_Service_Container_AddonsConfig';
+  protected $desiredAddonsConfigDataType = '';
+  public $desiredMasterVersion;
+  public $desiredMonitoringService;
   public $desiredNodeVersion;
 
+  public function setDesiredAddonsConfig(Google_Service_Container_AddonsConfig $desiredAddonsConfig)
+  {
+    $this->desiredAddonsConfig = $desiredAddonsConfig;
+  }
+  public function getDesiredAddonsConfig()
+  {
+    return $this->desiredAddonsConfig;
+  }
+  public function setDesiredMasterVersion($desiredMasterVersion)
+  {
+    $this->desiredMasterVersion = $desiredMasterVersion;
+  }
+  public function getDesiredMasterVersion()
+  {
+    return $this->desiredMasterVersion;
+  }
+  public function setDesiredMonitoringService($desiredMonitoringService)
+  {
+    $this->desiredMonitoringService = $desiredMonitoringService;
+  }
+  public function getDesiredMonitoringService()
+  {
+    return $this->desiredMonitoringService;
+  }
   public function setDesiredNodeVersion($desiredNodeVersion)
   {
     $this->desiredNodeVersion = $desiredNodeVersion;

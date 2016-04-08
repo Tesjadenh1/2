@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ProjectSettings extends Google_Model
+class Google_Service_ToolResults_ProjectSettings extends Google_Model
 {
   public $defaultBucket;
   public $name;

@@ -87,9 +87,9 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * @opt_param string compatibilities Select only placements that are associated
    * with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to
    * rendering either on desktop or on mobile devices for regular or interstitial
-   * ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile
-   * apps.IN_STREAM_VIDEO refers to rendering in in-stream video ads developed
-   * with the VAST standard.
+   * ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps.
+   * IN_STREAM_VIDEO refers to rendering in in-stream video ads developed with the
+   * VAST standard.
    * @opt_param string contentCategoryIds Select only placements that are
    * associated with these content categories.
    * @opt_param string directorySiteIds Select only placements that are associated

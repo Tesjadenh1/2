@@ -28,6 +28,7 @@ class Google_Service_DeploymentManager_Deployment extends Google_Collection
   public $name;
   protected $operationType = 'Google_Service_DeploymentManager_Operation';
   protected $operationDataType = '';
+  public $selfLink;
   protected $targetType = 'Google_Service_DeploymentManager_TargetConfiguration';
   protected $targetDataType = '';
   protected $updateType = 'Google_Service_DeploymentManager_DeploymentUpdate';
@@ -96,6 +97,14 @@ class Google_Service_DeploymentManager_Deployment extends Google_Collection
   public function getOperation()
   {
     return $this->operation;
+  }
+  public function setSelfLink($selfLink)
+  {
+    $this->selfLink = $selfLink;
+  }
+  public function getSelfLink()
+  {
+    return $this->selfLink;
   }
   public function setTarget(Google_Service_DeploymentManager_TargetConfiguration $target)
   {

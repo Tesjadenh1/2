@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_SkippedDetail extends Google_Model
+class Google_Service_ToolResults_SkippedDetail extends Google_Model
 {
   public $incompatibleAppVersion;
   public $incompatibleArchitecture;

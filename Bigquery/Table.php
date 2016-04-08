@@ -15,8 +15,9 @@
  * the License.
  */
 
-class Google_Service_Bigquery_Table extends Google_Model
+class Google_Service_Bigquery_Table extends Google_Collection
 {
+  protected $collection_key = 'partitionConfigurations';
   public $creationTime;
   public $description;
   public $etag;
@@ -30,6 +31,8 @@ class Google_Service_Bigquery_Table extends Google_Model
   public $location;
   public $numBytes;
   public $numRows;
+  protected $partitionConfigurationsType = 'Google_Service_Bigquery_TablePartitionConfiguration';
+  protected $partitionConfigurationsDataType = 'array';
   protected $schemaType = 'Google_Service_Bigquery_TableSchema';
   protected $schemaDataType = '';
   public $selfLink;
@@ -136,6 +139,14 @@ class Google_Service_Bigquery_Table extends Google_Model
   public function getNumRows()
   {
     return $this->numRows;
+  }
+  public function setPartitionConfigurations($partitionConfigurations)
+  {
+    $this->partitionConfigurations = $partitionConfigurations;
+  }
+  public function getPartitionConfigurations()
+  {
+    return $this->partitionConfigurations;
   }
   public function setSchema(Google_Service_Bigquery_TableSchema $schema)
   {

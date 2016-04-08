@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ToolExitCode extends Google_Model
+class Google_Service_ToolResults_ToolExitCode extends Google_Model
 {
   public $number;
 

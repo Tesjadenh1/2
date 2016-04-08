@@ -16,98 +16,104 @@
  */
 
 /**
- * The "datasets" collection of methods.
+ * The "projects" collection of methods.
  * Typical usage is:
  *  <code>
  *   $datastoreService = new Google_Service_Datastore(...);
- *   $datasets = $datastoreService->datasets;
+ *   $projects = $datastoreService->projects;
  *  </code>
  */
-class Google_Service_Datastore_DatasetsResource extends Google_Service_Resource
+class Google_Service_Datastore_ProjectsResource extends Google_Service_Resource
 {
   /**
-   * Allocate IDs for incomplete keys (useful for referencing an entity before it
-   * is inserted). (datasets.allocateIds)
+   * Allocates IDs for the given keys, which is useful for referencing an entity
+   * before it is inserted. (projects.allocateIds)
    *
-   * @param string $datasetId Identifies the dataset.
+   * @param string $projectId The ID of the project against which to make the
+   * request.
    * @param Google_AllocateIdsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_AllocateIdsResponse
    */
-  public function allocateIds($datasetId, Google_Service_Datastore_AllocateIdsRequest $postBody, $optParams = array())
+  public function allocateIds($projectId, Google_Service_Datastore_AllocateIdsRequest $postBody, $optParams = array())
   {
-    $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
+    $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('allocateIds', array($params), "Google_Service_Datastore_AllocateIdsResponse");
   }
   /**
-   * Begin a new transaction. (datasets.beginTransaction)
+   * Begins a new transaction. (projects.beginTransaction)
    *
-   * @param string $datasetId Identifies the dataset.
+   * @param string $projectId The ID of the project against which to make the
+   * request.
    * @param Google_BeginTransactionRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_BeginTransactionResponse
    */
-  public function beginTransaction($datasetId, Google_Service_Datastore_BeginTransactionRequest $postBody, $optParams = array())
+  public function beginTransaction($projectId, Google_Service_Datastore_BeginTransactionRequest $postBody, $optParams = array())
   {
-    $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
+    $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('beginTransaction', array($params), "Google_Service_Datastore_BeginTransactionResponse");
   }
   /**
-   * Commit a transaction, optionally creating, deleting or modifying some
-   * entities. (datasets.commit)
+   * Commits a transaction, optionally creating, deleting or modifying some
+   * entities. (projects.commit)
    *
-   * @param string $datasetId Identifies the dataset.
+   * @param string $projectId The ID of the project against which to make the
+   * request.
    * @param Google_CommitRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_CommitResponse
    */
-  public function commit($datasetId, Google_Service_Datastore_CommitRequest $postBody, $optParams = array())
+  public function commit($projectId, Google_Service_Datastore_CommitRequest $postBody, $optParams = array())
   {
-    $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
+    $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('commit', array($params), "Google_Service_Datastore_CommitResponse");
   }
   /**
-   * Look up some entities by key. (datasets.lookup)
+   * Looks up entities by key. (projects.lookup)
    *
-   * @param string $datasetId Identifies the dataset.
+   * @param string $projectId The ID of the project against which to make the
+   * request.
    * @param Google_LookupRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_LookupResponse
    */
-  public function lookup($datasetId, Google_Service_Datastore_LookupRequest $postBody, $optParams = array())
+  public function lookup($projectId, Google_Service_Datastore_LookupRequest $postBody, $optParams = array())
   {
-    $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
+    $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('lookup', array($params), "Google_Service_Datastore_LookupResponse");
   }
   /**
-   * Roll back a transaction. (datasets.rollback)
+   * Rolls back a transaction. (projects.rollback)
    *
-   * @param string $datasetId Identifies the dataset.
+   * @param string $projectId The ID of the project against which to make the
+   * request.
    * @param Google_RollbackRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_RollbackResponse
    */
-  public function rollback($datasetId, Google_Service_Datastore_RollbackRequest $postBody, $optParams = array())
+  public function rollback($projectId, Google_Service_Datastore_RollbackRequest $postBody, $optParams = array())
   {
-    $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
+    $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('rollback', array($params), "Google_Service_Datastore_RollbackResponse");
   }
   /**
-   * Query for entities. (datasets.runQuery)
+   * Queries for entities. (projects.runQuery)
    *
-   * @param string $datasetId Identifies the dataset.
+   * @param string $projectId The ID of the project against which to make the
+   * request.
    * @param Google_RunQueryRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_RunQueryResponse
    */
-  public function runQuery($datasetId, Google_Service_Datastore_RunQueryRequest $postBody, $optParams = array())
+  public function runQuery($projectId, Google_Service_Datastore_RunQueryRequest $postBody, $optParams = array())
   {
-    $params = array('datasetId' => $datasetId, 'postBody' => $postBody);
+    $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('runQuery', array($params), "Google_Service_Datastore_RunQueryResponse");
   }

@@ -18,9 +18,12 @@
 class Google_Service_Container_Cluster extends Google_Collection
 {
   protected $collection_key = 'instanceGroupUrls';
+  protected $addonsConfigType = 'Google_Service_Container_AddonsConfig';
+  protected $addonsConfigDataType = '';
   public $clusterIpv4Cidr;
   public $createTime;
   public $currentMasterVersion;
+  public $currentNodeCount;
   public $currentNodeVersion;
   public $description;
   public $endpoint;
@@ -40,8 +43,17 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $servicesIpv4Cidr;
   public $status;
   public $statusMessage;
+  public $subnetwork;
   public $zone;
 
+  public function setAddonsConfig(Google_Service_Container_AddonsConfig $addonsConfig)
+  {
+    $this->addonsConfig = $addonsConfig;
+  }
+  public function getAddonsConfig()
+  {
+    return $this->addonsConfig;
+  }
   public function setClusterIpv4Cidr($clusterIpv4Cidr)
   {
     $this->clusterIpv4Cidr = $clusterIpv4Cidr;
@@ -65,6 +77,14 @@ class Google_Service_Container_Cluster extends Google_Collection
   public function getCurrentMasterVersion()
   {
     return $this->currentMasterVersion;
+  }
+  public function setCurrentNodeCount($currentNodeCount)
+  {
+    $this->currentNodeCount = $currentNodeCount;
+  }
+  public function getCurrentNodeCount()
+  {
+    return $this->currentNodeCount;
   }
   public function setCurrentNodeVersion($currentNodeVersion)
   {
@@ -201,6 +221,14 @@ class Google_Service_Container_Cluster extends Google_Collection
   public function getStatusMessage()
   {
     return $this->statusMessage;
+  }
+  public function setSubnetwork($subnetwork)
+  {
+    $this->subnetwork = $subnetwork;
+  }
+  public function getSubnetwork()
+  {
+    return $this->subnetwork;
   }
   public function setZone($zone)
   {

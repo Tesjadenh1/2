@@ -22,6 +22,7 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   public $creationTime;
   public $customerDomain;
   public $customerId;
+  public $dealCode;
   public $kind;
   protected $planType = 'Google_Service_Reseller_SubscriptionPlan';
   protected $planDataType = '';
@@ -71,6 +72,14 @@ class Google_Service_Reseller_Subscription extends Google_Collection
   public function getCustomerId()
   {
     return $this->customerId;
+  }
+  public function setDealCode($dealCode)
+  {
+    $this->dealCode = $dealCode;
+  }
+  public function getDealCode()
+  {
+    return $this->dealCode;
   }
   public function setKind($kind)
   {

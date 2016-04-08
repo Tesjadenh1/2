@@ -15,22 +15,14 @@
  * the License.
  */
 
-class Google_Service_Datastore_CommitRequest extends Google_Model
+class Google_Service_Datastore_CommitRequest extends Google_Collection
 {
-  public $ignoreReadOnly;
+  protected $collection_key = 'mutations';
   public $mode;
-  protected $mutationType = 'Google_Service_Datastore_Mutation';
-  protected $mutationDataType = '';
+  protected $mutationsType = 'Google_Service_Datastore_Mutation';
+  protected $mutationsDataType = 'array';
   public $transaction;
 
-  public function setIgnoreReadOnly($ignoreReadOnly)
-  {
-    $this->ignoreReadOnly = $ignoreReadOnly;
-  }
-  public function getIgnoreReadOnly()
-  {
-    return $this->ignoreReadOnly;
-  }
   public function setMode($mode)
   {
     $this->mode = $mode;
@@ -39,13 +31,13 @@ class Google_Service_Datastore_CommitRequest extends Google_Model
   {
     return $this->mode;
   }
-  public function setMutation(Google_Service_Datastore_Mutation $mutation)
+  public function setMutations($mutations)
   {
-    $this->mutation = $mutation;
+    $this->mutations = $mutations;
   }
-  public function getMutation()
+  public function getMutations()
   {
-    return $this->mutation;
+    return $this->mutations;
   }
   public function setTransaction($transaction)
   {

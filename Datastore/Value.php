@@ -15,32 +15,33 @@
  * the License.
  */
 
-class Google_Service_Datastore_Value extends Google_Collection
+class Google_Service_Datastore_Value extends Google_Model
 {
-  protected $collection_key = 'listValue';
-  public $blobKeyValue;
+  protected $arrayValueType = 'Google_Service_Datastore_ArrayValue';
+  protected $arrayValueDataType = '';
   public $blobValue;
   public $booleanValue;
-  public $dateTimeValue;
   public $doubleValue;
   protected $entityValueType = 'Google_Service_Datastore_Entity';
   protected $entityValueDataType = '';
-  public $indexed;
+  public $excludeFromIndexes;
+  protected $geoPointValueType = 'Google_Service_Datastore_LatLng';
+  protected $geoPointValueDataType = '';
   public $integerValue;
   protected $keyValueType = 'Google_Service_Datastore_Key';
   protected $keyValueDataType = '';
-  protected $listValueType = 'Google_Service_Datastore_Value';
-  protected $listValueDataType = 'array';
   public $meaning;
+  public $nullValue;
   public $stringValue;
+  public $timestampValue;
 
-  public function setBlobKeyValue($blobKeyValue)
+  public function setArrayValue(Google_Service_Datastore_ArrayValue $arrayValue)
   {
-    $this->blobKeyValue = $blobKeyValue;
+    $this->arrayValue = $arrayValue;
   }
-  public function getBlobKeyValue()
+  public function getArrayValue()
   {
-    return $this->blobKeyValue;
+    return $this->arrayValue;
   }
   public function setBlobValue($blobValue)
   {
@@ -58,14 +59,6 @@ class Google_Service_Datastore_Value extends Google_Collection
   {
     return $this->booleanValue;
   }
-  public function setDateTimeValue($dateTimeValue)
-  {
-    $this->dateTimeValue = $dateTimeValue;
-  }
-  public function getDateTimeValue()
-  {
-    return $this->dateTimeValue;
-  }
   public function setDoubleValue($doubleValue)
   {
     $this->doubleValue = $doubleValue;
@@ -82,13 +75,21 @@ class Google_Service_Datastore_Value extends Google_Collection
   {
     return $this->entityValue;
   }
-  public function setIndexed($indexed)
+  public function setExcludeFromIndexes($excludeFromIndexes)
   {
-    $this->indexed = $indexed;
+    $this->excludeFromIndexes = $excludeFromIndexes;
   }
-  public function getIndexed()
+  public function getExcludeFromIndexes()
   {
-    return $this->indexed;
+    return $this->excludeFromIndexes;
+  }
+  public function setGeoPointValue(Google_Service_Datastore_LatLng $geoPointValue)
+  {
+    $this->geoPointValue = $geoPointValue;
+  }
+  public function getGeoPointValue()
+  {
+    return $this->geoPointValue;
   }
   public function setIntegerValue($integerValue)
   {
@@ -106,14 +107,6 @@ class Google_Service_Datastore_Value extends Google_Collection
   {
     return $this->keyValue;
   }
-  public function setListValue($listValue)
-  {
-    $this->listValue = $listValue;
-  }
-  public function getListValue()
-  {
-    return $this->listValue;
-  }
   public function setMeaning($meaning)
   {
     $this->meaning = $meaning;
@@ -122,6 +115,14 @@ class Google_Service_Datastore_Value extends Google_Collection
   {
     return $this->meaning;
   }
+  public function setNullValue($nullValue)
+  {
+    $this->nullValue = $nullValue;
+  }
+  public function getNullValue()
+  {
+    return $this->nullValue;
+  }
   public function setStringValue($stringValue)
   {
     $this->stringValue = $stringValue;
@@ -129,5 +130,13 @@ class Google_Service_Datastore_Value extends Google_Collection
   public function getStringValue()
   {
     return $this->stringValue;
+  }
+  public function setTimestampValue($timestampValue)
+  {
+    $this->timestampValue = $timestampValue;
+  }
+  public function getTimestampValue()
+  {
+    return $this->timestampValue;
   }
 }

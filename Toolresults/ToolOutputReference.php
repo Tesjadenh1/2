@@ -15,16 +15,16 @@
  * the License.
  */
 
-class Google_Service_Toolresults_ToolOutputReference extends Google_Model
+class Google_Service_ToolResults_ToolOutputReference extends Google_Model
 {
-  protected $creationTimeType = 'Google_Service_Toolresults_Timestamp';
+  protected $creationTimeType = 'Google_Service_ToolResults_Timestamp';
   protected $creationTimeDataType = '';
-  protected $outputType = 'Google_Service_Toolresults_FileReference';
+  protected $outputType = 'Google_Service_ToolResults_FileReference';
   protected $outputDataType = '';
-  protected $testCaseType = 'Google_Service_Toolresults_TestCaseReference';
+  protected $testCaseType = 'Google_Service_ToolResults_TestCaseReference';
   protected $testCaseDataType = '';
 
-  public function setCreationTime(Google_Service_Toolresults_Timestamp $creationTime)
+  public function setCreationTime(Google_Service_ToolResults_Timestamp $creationTime)
   {
     $this->creationTime = $creationTime;
   }
@@ -32,7 +32,7 @@ class Google_Service_Toolresults_ToolOutputReference extends Google_Model
   {
     return $this->creationTime;
   }
-  public function setOutput(Google_Service_Toolresults_FileReference $output)
+  public function setOutput(Google_Service_ToolResults_FileReference $output)
   {
     $this->output = $output;
   }
@@ -40,7 +40,7 @@ class Google_Service_Toolresults_ToolOutputReference extends Google_Model
   {
     return $this->output;
   }
-  public function setTestCase(Google_Service_Toolresults_TestCaseReference $testCase)
+  public function setTestCase(Google_Service_ToolResults_TestCaseReference $testCase)
   {
     $this->testCase = $testCase;
   }

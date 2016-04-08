@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for Toolresults (v1beta3).
+ * Service definition for ToolResults (v1beta3).
  *
  * <p>
  * Read and publish results from Cloud Test Lab.</p>
@@ -28,7 +28,7 @@
  *
  * @author Google, Inc.
  */
-class Google_Service_Toolresults extends Google_Service
+class Google_Service_ToolResults extends Google_Service
 {
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
@@ -41,7 +41,7 @@ class Google_Service_Toolresults extends Google_Service
   public $projects_histories_executions_steps_thumbnails;
   
   /**
-   * Constructs the internal representation of the Toolresults service.
+   * Constructs the internal representation of the ToolResults service.
    *
    * @param Google_Client $client
    */
@@ -53,7 +53,7 @@ class Google_Service_Toolresults extends Google_Service
     $this->version = 'v1beta3';
     $this->serviceName = 'toolresults';
 
-    $this->projects = new Google_Service_Toolresults_ProjectsResource(
+    $this->projects = new Google_Service_ToolResults_ProjectsResource(
         $this,
         $this->serviceName,
         'projects',
@@ -83,7 +83,7 @@ class Google_Service_Toolresults extends Google_Service
           )
         )
     );
-    $this->projects_histories = new Google_Service_Toolresults_ProjectsHistoriesResource(
+    $this->projects_histories = new Google_Service_ToolResults_ProjectsHistoriesResource(
         $this,
         $this->serviceName,
         'histories',
@@ -144,7 +144,7 @@ class Google_Service_Toolresults extends Google_Service
           )
         )
     );
-    $this->projects_histories_executions = new Google_Service_Toolresults_ProjectsHistoriesExecutionsResource(
+    $this->projects_histories_executions = new Google_Service_ToolResults_ProjectsHistoriesExecutionsResource(
         $this,
         $this->serviceName,
         'executions',
@@ -240,7 +240,7 @@ class Google_Service_Toolresults extends Google_Service
           )
         )
     );
-    $this->projects_histories_executions_steps = new Google_Service_Toolresults_ProjectsHistoriesExecutionsStepsResource(
+    $this->projects_histories_executions_steps = new Google_Service_ToolResults_ProjectsHistoriesExecutionsStepsResource(
         $this,
         $this->serviceName,
         'steps',
@@ -381,7 +381,7 @@ class Google_Service_Toolresults extends Google_Service
           )
         )
     );
-    $this->projects_histories_executions_steps_thumbnails = new Google_Service_Toolresults_ProjectsHistoriesExecutionsStepsThumbnailsResource(
+    $this->projects_histories_executions_steps_thumbnails = new Google_Service_ToolResults_ProjectsHistoriesExecutionsStepsThumbnailsResource(
         $this,
         $this->serviceName,
         'thumbnails',

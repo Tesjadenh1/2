@@ -17,15 +17,4 @@
 
 class Google_Service_Datastore_RollbackResponse extends Google_Model
 {
-  protected $headerType = 'Google_Service_Datastore_ResponseHeader';
-  protected $headerDataType = '';
-
-  public function setHeader(Google_Service_Datastore_ResponseHeader $header)
-  {
-    $this->header = $header;
-  }
-  public function getHeader()
-  {
-    return $this->header;
-  }
 }
