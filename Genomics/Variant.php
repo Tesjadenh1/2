@@ -19,7 +19,7 @@ class Google_Service_Genomics_Variant extends Google_Collection
 {
   protected $collection_key = 'names';
   public $alternateBases;
-  protected $callsType = 'Google_Service_Genomics_VariantCall';
+  protected $callsType = 'Google_Service_Genomics_GenomicsCall';
   protected $callsDataType = 'array';
   public $created;
   public $end;

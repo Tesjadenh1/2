@@ -20,7 +20,7 @@ class Google_Service_Genomics_VariantSet extends Google_Collection
   protected $collection_key = 'referenceBounds';
   public $datasetId;
   public $id;
-  protected $metadataType = 'Google_Service_Genomics_VariantSetMetadata';
+  protected $metadataType = 'Google_Service_Genomics_Metadata';
   protected $metadataDataType = 'array';
   protected $referenceBoundsType = 'Google_Service_Genomics_ReferenceBound';
   protected $referenceBoundsDataType = 'array';

@@ -15,17 +15,35 @@
  * the License.
  */
 
-class Google_Service_Genomics_TestIamPermissionsRequest extends Google_Collection
+class Google_Service_Genomics_JobRequest extends Google_Collection
 {
-  protected $collection_key = 'permissions';
-  public $permissions;
+  protected $collection_key = 'source';
+  public $destination;
+  public $source;
+  public $type;
 
-  public function setPermissions($permissions)
+  public function setDestination($destination)
   {
-    $this->permissions = $permissions;
+    $this->destination = $destination;
   }
-  public function getPermissions()
+  public function getDestination()
   {
-    return $this->permissions;
+    return $this->destination;
+  }
+  public function setSource($source)
+  {
+    $this->source = $source;
+  }
+  public function getSource()
+  {
+    return $this->source;
+  }
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
   }
 }

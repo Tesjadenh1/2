@@ -26,12 +26,9 @@
 class Google_Service_Genomics_ReferencesetsResource extends Google_Service_Resource
 {
   /**
-   * Gets a reference set. For the definitions of references and other genomics
-   * resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * Implements [GlobalAllianceApi.getReferenceSet](https://github.com/ga4gh/schem
-   * as/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L83).
-   * (referencesets.get)
+   * Gets a reference set.
+   *
+   * Implements GlobalAllianceApi.getReferenceSet. (referencesets.get)
    *
    * @param string $referenceSetId The ID of the reference set.
    * @param array $optParams Optional parameters.
@@ -44,12 +41,9 @@ class Google_Service_Genomics_ReferencesetsResource extends Google_Service_Resou
     return $this->call('get', array($params), "Google_Service_Genomics_ReferenceSet");
   }
   /**
-   * Searches for reference sets which match the given criteria. For the
-   * definitions of references and other genomics resources, see [Fundamentals of
-   * Google Genomics](https://cloud.google.com/genomics/fundamentals-of-google-
-   * genomics) Implements [GlobalAllianceApi.searchReferenceSets](https://github.c
-   * om/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L7
-   * 1) (referencesets.search)
+   * Searches for reference sets which match the given criteria.
+   *
+   * Implements GlobalAllianceApi.searchReferenceSets. (referencesets.search)
    *
    * @param Google_SearchReferenceSetsRequest $postBody
    * @param array $optParams Optional parameters.

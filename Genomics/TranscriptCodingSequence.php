@@ -15,6 +15,25 @@
  * the License.
  */
 
-class Google_Service_Genomics_UndeleteDatasetRequest extends Google_Model
+class Google_Service_Genomics_TranscriptCodingSequence extends Google_Model
 {
+  public $end;
+  public $start;
+
+  public function setEnd($end)
+  {
+    $this->end = $end;
+  }
+  public function getEnd()
+  {
+    return $this->end;
+  }
+  public function setStart($start)
+  {
+    $this->start = $start;
+  }
+  public function getStart()
+  {
+    return $this->start;
+  }
 }

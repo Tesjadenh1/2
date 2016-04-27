@@ -26,12 +26,11 @@
 class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resource
 {
   /**
-   * Creates a new variant set. For the definitions of variant sets and other
-   * genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * The provided variant set must have a valid `datasetId` set - all other fields
-   * are optional. Note that the `id` field will be ignored, as this is assigned
-   * by the server. (variantsets.create)
+   * Creates a new variant set (only necessary in v1).
+   *
+   * The provided variant set must have a valid datasetId set - all other fields
+   * are optional. Note that the id field will be ignored, as this is assigned by
+   * the server. (variantsets.create)
    *
    * @param Google_VariantSet $postBody
    * @param array $optParams Optional parameters.
@@ -45,47 +44,38 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
   }
   /**
    * Deletes a variant set including all variants, call sets, and calls within.
-   * This is not reversible. For the definitions of variant sets and other
-   * genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (variantsets.delete)
+   * This is not reversible. (variantsets.delete)
    *
    * @param string $variantSetId The ID of the variant set to be deleted.
+   * Required.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
    */
   public function delete($variantSetId, $optParams = array())
   {
     $params = array('variantSetId' => $variantSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), "Google_Service_Genomics_GenomicsEmpty");
+    return $this->call('delete', array($params));
   }
   /**
-   * Exports variant set data to an external destination. For the definitions of
-   * variant sets and other genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (variantsets.export)
+   * Exports variant set data to an external destination. (variantsets.export)
    *
-   * @param string $variantSetId Required. The ID of the variant set that contains
-   * variant data which should be exported. The caller must have READ access to
+   * @param string $variantSetId The ID of the variant set that contains variant
+   * data which should be exported. Required. The caller must have READ access to
    * this variant set.
    * @param Google_ExportVariantSetRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_ExportVariantSetResponse
    */
   public function export($variantSetId, Google_Service_Genomics_ExportVariantSetRequest $postBody, $optParams = array())
   {
     $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('export', array($params), "Google_Service_Genomics_Operation");
+    return $this->call('export', array($params), "Google_Service_Genomics_ExportVariantSetResponse");
   }
   /**
-   * Gets a variant set by ID. For the definitions of variant sets and other
-   * genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (variantsets.get)
+   * Gets a variant set by ID. (variantsets.get)
    *
-   * @param string $variantSetId Required. The ID of the variant set.
+   * @param string $variantSetId The ID of the variant set. Required.
    * @param array $optParams Optional parameters.
    * @return Google_Service_VariantSet
    */
@@ -96,19 +86,58 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
     return $this->call('get', array($params), "Google_Service_Genomics_VariantSet");
   }
   /**
-   * Updates a variant set using patch semantics. For the definitions of variant
-   * sets and other genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (variantsets.patch)
+   * Creates variant data by asynchronously importing the provided information.
    *
-   * @param string $variantSetId The ID of the variant to be updated (must already
-   * exist).
+   * The variants for import will be merged with any existing data and each other
+   * according to the behavior of mergeVariants. In particular, this means for
+   * merged VCF variants that have conflicting info fields, some data will be
+   * arbitrarily discarded unless otherwise specified in the InfoMergeConfig field
+   * of ImportVariantsRequest. As a special case, for single-sample VCF files,
+   * QUAL and FILTER fields will be moved to the call level; these are sometimes
+   * interpreted in a call-specific context. Imported VCF headers are appended to
+   * the metadata already in a variant set. (variantsets.importVariants)
+   *
+   * @param string $variantSetId Required. The variant set to which variant data
+   * should be imported.
+   * @param Google_ImportVariantsRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_ImportVariantsResponse
+   */
+  public function importVariants($variantSetId, Google_Service_Genomics_ImportVariantsRequest $postBody, $optParams = array())
+  {
+    $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('importVariants', array($params), "Google_Service_Genomics_ImportVariantsResponse");
+  }
+  /**
+   * Merges the given variants with existing variants. Each variant will be merged
+   * with an existing variant that matches its reference sequence, start, end,
+   * reference bases, and alternative bases. If no such variant exists, a new one
+   * will be created.
+   *
+   * When variants are merged, the call information from the new variant is added
+   * to the existing variant. Variant info fields are merged as specified in the
+   * InfoMergeConfig field of the MergeVariantsRequest.
+   * (variantsets.mergeVariants)
+   *
+   * @param string $variantSetId The destination variant set.
+   * @param Google_MergeVariantsRequest $postBody
+   * @param array $optParams Optional parameters.
+   */
+  public function mergeVariants($variantSetId, Google_Service_Genomics_MergeVariantsRequest $postBody, $optParams = array())
+  {
+    $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('mergeVariants', array($params));
+  }
+  /**
+   * Updates a variant set's metadata. All other modifications are silently
+   * ignored. This method supports patch semantics. (variantsets.patch)
+   *
+   * @param string $variantSetId The ID of the variant set to be updated (must
+   * already exist).
    * @param Google_VariantSet $postBody
    * @param array $optParams Optional parameters.
-   *
-   * @opt_param string updateMask An optional mask specifying which fields to
-   * update. Supported fields: * metadata. Leaving `updateMask` unset is
-   * equivalent to specifying all mutable fields.
    * @return Google_Service_VariantSet
    */
   public function patch($variantSetId, Google_Service_Genomics_VariantSet $postBody, $optParams = array())
@@ -118,12 +147,9 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
     return $this->call('patch', array($params), "Google_Service_Genomics_VariantSet");
   }
   /**
-   * Returns a list of all variant sets matching search criteria. For the
-   * definitions of variant sets and other genomics resources, see [Fundamentals
-   * of Google Genomics](https://cloud.google.com/genomics/fundamentals-of-google-
-   * genomics) Implements [GlobalAllianceApi.searchVariantSets](https://github.com
-   * /ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49).
-   * (variantsets.search)
+   * Returns a list of all variant sets matching search criteria.
+   *
+   * Implements GlobalAllianceApi.searchVariantSets. (variantsets.search)
    *
    * @param Google_SearchVariantSetsRequest $postBody
    * @param array $optParams Optional parameters.
@@ -134,5 +160,21 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('search', array($params), "Google_Service_Genomics_SearchVariantSetsResponse");
+  }
+  /**
+   * Updates a variant set's metadata. All other modifications are silently
+   * ignored. (variantsets.update)
+   *
+   * @param string $variantSetId The ID of the variant set to be updated (must
+   * already exist).
+   * @param Google_VariantSet $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_VariantSet
+   */
+  public function update($variantSetId, Google_Service_Genomics_VariantSet $postBody, $optParams = array())
+  {
+    $params = array('variantSetId' => $variantSetId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('update', array($params), "Google_Service_Genomics_VariantSet");
   }
 }

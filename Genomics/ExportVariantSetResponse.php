@@ -15,16 +15,16 @@
  * the License.
  */
 
-class Google_Service_Genomics_OperationEvent extends Google_Model
+class Google_Service_Genomics_ExportVariantSetResponse extends Google_Model
 {
-  public $description;
+  public $jobId;
 
-  public function setDescription($description)
+  public function setJobId($jobId)
   {
-    $this->description = $description;
+    $this->jobId = $jobId;
   }
-  public function getDescription()
+  public function getJobId()
   {
-    return $this->description;
+    return $this->jobId;
   }
 }

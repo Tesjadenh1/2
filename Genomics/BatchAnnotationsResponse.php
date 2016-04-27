@@ -15,6 +15,18 @@
  * the License.
  */
 
-class Google_Service_Genomics_GenomicsEmpty extends Google_Model
+class Google_Service_Genomics_BatchAnnotationsResponse extends Google_Collection
 {
+  protected $collection_key = 'entries';
+  protected $entriesType = 'Google_Service_Genomics_BatchAnnotationsResponseEntry';
+  protected $entriesDataType = 'array';
+
+  public function setEntries($entries)
+  {
+    $this->entries = $entries;
+  }
+  public function getEntries()
+  {
+    return $this->entries;
+  }
 }

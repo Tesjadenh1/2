@@ -19,8 +19,9 @@ class Google_Service_Genomics_Dataset extends Google_Model
 {
   public $createTime;
   public $id;
+  public $isPublic;
   public $name;
-  public $projectId;
+  public $projectNumber;
 
   public function setCreateTime($createTime)
   {
@@ -38,6 +39,14 @@ class Google_Service_Genomics_Dataset extends Google_Model
   {
     return $this->id;
   }
+  public function setIsPublic($isPublic)
+  {
+    $this->isPublic = $isPublic;
+  }
+  public function getIsPublic()
+  {
+    return $this->isPublic;
+  }
   public function setName($name)
   {
     $this->name = $name;
@@ -46,12 +55,12 @@ class Google_Service_Genomics_Dataset extends Google_Model
   {
     return $this->name;
   }
-  public function setProjectId($projectId)
+  public function setProjectNumber($projectNumber)
   {
-    $this->projectId = $projectId;
+    $this->projectNumber = $projectNumber;
   }
-  public function getProjectId()
+  public function getProjectNumber()
   {
-    return $this->projectId;
+    return $this->projectNumber;
   }
 }

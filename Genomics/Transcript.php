@@ -18,13 +18,13 @@
 class Google_Service_Genomics_Transcript extends Google_Collection
 {
   protected $collection_key = 'exons';
-  protected $codingSequenceType = 'Google_Service_Genomics_CodingSequence';
+  protected $codingSequenceType = 'Google_Service_Genomics_TranscriptCodingSequence';
   protected $codingSequenceDataType = '';
-  protected $exonsType = 'Google_Service_Genomics_Exon';
+  protected $exonsType = 'Google_Service_Genomics_TranscriptExon';
   protected $exonsDataType = 'array';
   public $geneId;
 
-  public function setCodingSequence(Google_Service_Genomics_CodingSequence $codingSequence)
+  public function setCodingSequence(Google_Service_Genomics_TranscriptCodingSequence $codingSequence)
   {
     $this->codingSequence = $codingSequence;
   }

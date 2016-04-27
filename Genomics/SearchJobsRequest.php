@@ -15,22 +15,31 @@
  * the License.
  */
 
-class Google_Service_Genomics_SearchAnnotationsRequest extends Google_Collection
+class Google_Service_Genomics_SearchJobsRequest extends Google_Collection
 {
-  protected $collection_key = 'annotationSetIds';
-  public $annotationSetIds;
+  protected $collection_key = 'status';
+  public $createdAfter;
+  public $createdBefore;
   public $pageSize;
   public $pageToken;
-  protected $rangeType = 'Google_Service_Genomics_QueryRange';
-  protected $rangeDataType = '';
+  public $projectNumber;
+  public $status;
 
-  public function setAnnotationSetIds($annotationSetIds)
+  public function setCreatedAfter($createdAfter)
   {
-    $this->annotationSetIds = $annotationSetIds;
+    $this->createdAfter = $createdAfter;
   }
-  public function getAnnotationSetIds()
+  public function getCreatedAfter()
   {
-    return $this->annotationSetIds;
+    return $this->createdAfter;
+  }
+  public function setCreatedBefore($createdBefore)
+  {
+    $this->createdBefore = $createdBefore;
+  }
+  public function getCreatedBefore()
+  {
+    return $this->createdBefore;
   }
   public function setPageSize($pageSize)
   {
@@ -48,12 +57,20 @@ class Google_Service_Genomics_SearchAnnotationsRequest extends Google_Collection
   {
     return $this->pageToken;
   }
-  public function setRange(Google_Service_Genomics_QueryRange $range)
+  public function setProjectNumber($projectNumber)
   {
-    $this->range = $range;
+    $this->projectNumber = $projectNumber;
   }
-  public function getRange()
+  public function getProjectNumber()
   {
-    return $this->range;
+    return $this->projectNumber;
+  }
+  public function setStatus($status)
+  {
+    $this->status = $status;
+  }
+  public function getStatus()
+  {
+    return $this->status;
   }
 }

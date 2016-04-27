@@ -15,18 +15,14 @@
  * the License.
  */
 
-class Google_Service_Genomics_BatchCreateAnnotationsResponse extends Google_Collection
+/**
+ * The "experimental" collection of methods.
+ * Typical usage is:
+ *  <code>
+ *   $genomicsService = new Google_Service_Genomics(...);
+ *   $experimental = $genomicsService->experimental;
+ *  </code>
+ */
+class Google_Service_Genomics_ExperimentalResource extends Google_Service_Resource
 {
-  protected $collection_key = 'entries';
-  protected $entriesType = 'Google_Service_Genomics_Entry';
-  protected $entriesDataType = 'array';
-
-  public function setEntries($entries)
-  {
-    $this->entries = $entries;
-  }
-  public function getEntries()
-  {
-    return $this->entries;
-  }
 }

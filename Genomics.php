@@ -16,16 +16,14 @@
  */
 
 /**
- * Service definition for Genomics (v1).
+ * Service definition for Genomics (v1beta2).
  *
  * <p>
- * Stores, processes, explores and shares genomic data. This API implements the
- * Global Alliance for Genomics and Health (GA4GH) v0.5.1 API as well as several
- * extensions.</p>
+ * Provides access to Genomics data.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://cloud.google.com/genomics/" target="_blank">Documentation</a>
+ * <a href="https://developers.google.com/genomics/v1beta2/reference" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
@@ -48,11 +46,12 @@ class Google_Service_Genomics extends Google_Service
   const GENOMICS_READONLY =
       "https://www.googleapis.com/auth/genomics.readonly";
 
+  public $annotationSets;
   public $annotations;
-  public $annotationsets;
   public $callsets;
   public $datasets;
-  public $operations;
+  public $experimental_jobs;
+  public $jobs;
   public $readgroupsets;
   public $readgroupsets_coveragebuckets;
   public $reads;
@@ -70,11 +69,69 @@ class Google_Service_Genomics extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://genomics.googleapis.com/';
-    $this->servicePath = '';
-    $this->version = 'v1';
+    $this->rootUrl = 'https://www.googleapis.com/';
+    $this->servicePath = 'genomics/v1beta2/';
+    $this->version = 'v1beta2';
     $this->serviceName = 'genomics';
 
+    $this->annotationSets = new Google_Service_Genomics_AnnotationSetsResource(
+        $this,
+        $this->serviceName,
+        'annotationSets',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'annotationSets',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'delete' => array(
+              'path' => 'annotationSets/{annotationSetId}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'annotationSets/{annotationSetId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'annotationSets/{annotationSetId}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'search' => array(
+              'path' => 'annotationSets/search',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'update' => array(
+              'path' => 'annotationSets/{annotationSetId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'annotationSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->annotations = new Google_Service_Genomics_AnnotationsResource(
         $this,
         $this->serviceName,
@@ -82,15 +139,15 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'batchCreate' => array(
-              'path' => 'v1/annotations:batchCreate',
+              'path' => 'annotations:batchCreate',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'create' => array(
-              'path' => 'v1/annotations',
+              'path' => 'annotations',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'delete' => array(
-              'path' => 'v1/annotations/{annotationId}',
+              'path' => 'annotations/{annotationId}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'annotationId' => array(
@@ -100,7 +157,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/annotations/{annotationId}',
+              'path' => 'annotations/{annotationId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'annotationId' => array(
@@ -109,74 +166,28 @@ class Google_Service_Genomics extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'search' => array(
-              'path' => 'v1/annotations/search',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
-            ),'update' => array(
-              'path' => 'v1/annotations/{annotationId}',
-              'httpMethod' => 'PUT',
+            ),'patch' => array(
+              'path' => 'annotations/{annotationId}',
+              'httpMethod' => 'PATCH',
               'parameters' => array(
                 'annotationId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->annotationsets = new Google_Service_Genomics_AnnotationsetsResource(
-        $this,
-        $this->serviceName,
-        'annotationsets',
-        array(
-          'methods' => array(
-            'create' => array(
-              'path' => 'v1/annotationsets',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
-            ),'delete' => array(
-              'path' => 'v1/annotationsets/{annotationSetId}',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'annotationSetId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1/annotationsets/{annotationSetId}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'annotationSetId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
               ),
             ),'search' => array(
-              'path' => 'v1/annotationsets/search',
+              'path' => 'annotations/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'update' => array(
-              'path' => 'v1/annotationsets/{annotationSetId}',
+              'path' => 'annotations/{annotationId}',
               'httpMethod' => 'PUT',
               'parameters' => array(
-                'annotationSetId' => array(
+                'annotationId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
-                ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
@@ -190,11 +201,11 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1/callsets',
+              'path' => 'callsets',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'delete' => array(
-              'path' => 'v1/callsets/{callSetId}',
+              'path' => 'callsets/{callSetId}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'callSetId' => array(
@@ -204,7 +215,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/callsets/{callSetId}',
+              'path' => 'callsets/{callSetId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'callSetId' => array(
@@ -214,7 +225,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'patch' => array(
-              'path' => 'v1/callsets/{callSetId}',
+              'path' => 'callsets/{callSetId}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
                 'callSetId' => array(
@@ -222,15 +233,21 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
               ),
             ),'search' => array(
-              'path' => 'v1/callsets/search',
+              'path' => 'callsets/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
+            ),'update' => array(
+              'path' => 'callsets/{callSetId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'callSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),
           )
         )
@@ -242,11 +259,11 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1/datasets',
+              'path' => 'datasets',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'delete' => array(
-              'path' => 'v1/datasets/{datasetId}',
+              'path' => 'datasets/{datasetId}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'datasetId' => array(
@@ -256,7 +273,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/datasets/{datasetId}',
+              'path' => 'datasets/{datasetId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'datasetId' => array(
@@ -265,24 +282,10 @@ class Google_Service_Genomics extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'getIamPolicy' => array(
-              'path' => 'v1/{+resource}:getIamPolicy',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
             ),'list' => array(
-              'path' => 'v1/datasets',
+              'path' => 'datasets',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'projectId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -291,9 +294,13 @@ class Google_Service_Genomics extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'projectNumber' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'patch' => array(
-              'path' => 'v1/datasets/{datasetId}',
+              'path' => 'datasets/{datasetId}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
                 'datasetId' => array(
@@ -301,34 +308,20 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'setIamPolicy' => array(
-              'path' => 'v1/{+resource}:setIamPolicy',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'testIamPermissions' => array(
-              'path' => 'v1/{+resource}:testIamPermissions',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
               ),
             ),'undelete' => array(
-              'path' => 'v1/datasets/{datasetId}:undelete',
+              'path' => 'datasets/{datasetId}/undelete',
               'httpMethod' => 'POST',
+              'parameters' => array(
+                'datasetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'datasets/{datasetId}',
+              'httpMethod' => 'PUT',
               'parameters' => array(
                 'datasetId' => array(
                   'location' => 'path',
@@ -340,54 +333,50 @@ class Google_Service_Genomics extends Google_Service
           )
         )
     );
-    $this->operations = new Google_Service_Genomics_OperationsResource(
+    $this->experimental_jobs = new Google_Service_Genomics_ExperimentalJobsResource(
         $this,
         $this->serviceName,
-        'operations',
+        'jobs',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'experimental/jobs/create',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),
+          )
+        )
+    );
+    $this->jobs = new Google_Service_Genomics_JobsResource(
+        $this,
+        $this->serviceName,
+        'jobs',
         array(
           'methods' => array(
             'cancel' => array(
-              'path' => 'v1/{+name}:cancel',
+              'path' => 'jobs/{jobId}/cancel',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'name' => array(
+                'jobId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/{+name}',
+              'path' => 'jobs/{jobId}',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'name' => array(
+                'jobId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
-            ),'list' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
+            ),'search' => array(
+              'path' => 'jobs/search',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
             ),
           )
         )
@@ -399,7 +388,7 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'delete' => array(
-              'path' => 'v1/readgroupsets/{readGroupSetId}',
+              'path' => 'readgroupsets/{readGroupSetId}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'readGroupSetId' => array(
@@ -409,17 +398,11 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'export' => array(
-              'path' => 'v1/readgroupsets/{readGroupSetId}:export',
+              'path' => 'readgroupsets/export',
               'httpMethod' => 'POST',
-              'parameters' => array(
-                'readGroupSetId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
+              'parameters' => array(),
             ),'get' => array(
-              'path' => 'v1/readgroupsets/{readGroupSetId}',
+              'path' => 'readgroupsets/{readGroupSetId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'readGroupSetId' => array(
@@ -429,11 +412,11 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'import' => array(
-              'path' => 'v1/readgroupsets:import',
+              'path' => 'readgroupsets/import',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'patch' => array(
-              'path' => 'v1/readgroupsets/{readGroupSetId}',
+              'path' => 'readgroupsets/{readGroupSetId}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
                 'readGroupSetId' => array(
@@ -441,15 +424,21 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
               ),
             ),'search' => array(
-              'path' => 'v1/readgroupsets/search',
+              'path' => 'readgroupsets/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
+            ),'update' => array(
+              'path' => 'readgroupsets/{readGroupSetId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'readGroupSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),
           )
         )
@@ -461,7 +450,7 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'list' => array(
-              'path' => 'v1/readgroupsets/{readGroupSetId}/coveragebuckets',
+              'path' => 'readgroupsets/{readGroupSetId}/coveragebuckets',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'readGroupSetId' => array(
@@ -469,29 +458,29 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'referenceName' => array(
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'start' => array(
+                'range.end' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'end' => array(
+                'range.referenceName' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'range.start' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'targetBucketWidth' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),
@@ -505,11 +494,7 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'search' => array(
-              'path' => 'v1/reads/search',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
-            ),'stream' => array(
-              'path' => 'v1/reads:stream',
+              'path' => 'reads/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),
@@ -523,7 +508,7 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'get' => array(
-              'path' => 'v1/references/{referenceId}',
+              'path' => 'references/{referenceId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'referenceId' => array(
@@ -533,7 +518,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'search' => array(
-              'path' => 'v1/references/search',
+              'path' => 'references/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),
@@ -547,7 +532,7 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'list' => array(
-              'path' => 'v1/references/{referenceId}/bases',
+              'path' => 'references/{referenceId}/bases',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'referenceId' => array(
@@ -555,21 +540,21 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'start' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'end' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'start' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -583,7 +568,7 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'get' => array(
-              'path' => 'v1/referencesets/{referenceSetId}',
+              'path' => 'referencesets/{referenceSetId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'referenceSetId' => array(
@@ -593,7 +578,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'search' => array(
-              'path' => 'v1/referencesets/search',
+              'path' => 'referencesets/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),
@@ -607,11 +592,11 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1/variants',
+              'path' => 'variants',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'delete' => array(
-              'path' => 'v1/variants/{variantId}',
+              'path' => 'variants/{variantId}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'variantId' => array(
@@ -621,7 +606,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/variants/{variantId}',
+              'path' => 'variants/{variantId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'variantId' => array(
@@ -630,36 +615,20 @@ class Google_Service_Genomics extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'import' => array(
-              'path' => 'v1/variants:import',
+            ),'search' => array(
+              'path' => 'variants/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
-            ),'merge' => array(
-              'path' => 'v1/variants:merge',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
-            ),'patch' => array(
-              'path' => 'v1/variants/{variantId}',
-              'httpMethod' => 'PATCH',
+            ),'update' => array(
+              'path' => 'variants/{variantId}',
+              'httpMethod' => 'PUT',
               'parameters' => array(
                 'variantId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
               ),
-            ),'search' => array(
-              'path' => 'v1/variants/search',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
-            ),'stream' => array(
-              'path' => 'v1/variants:stream',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
             ),
           )
         )
@@ -671,11 +640,11 @@ class Google_Service_Genomics extends Google_Service
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1/variantsets',
+              'path' => 'variantsets',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'delete' => array(
-              'path' => 'v1/variantsets/{variantSetId}',
+              'path' => 'variantsets/{variantSetId}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'variantSetId' => array(
@@ -685,7 +654,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'export' => array(
-              'path' => 'v1/variantsets/{variantSetId}:export',
+              'path' => 'variantsets/{variantSetId}/export',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'variantSetId' => array(
@@ -695,7 +664,7 @@ class Google_Service_Genomics extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/variantsets/{variantSetId}',
+              'path' => 'variantsets/{variantSetId}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'variantSetId' => array(
@@ -704,8 +673,28 @@ class Google_Service_Genomics extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'importVariants' => array(
+              'path' => 'variantsets/{variantSetId}/importVariants',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'variantSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'mergeVariants' => array(
+              'path' => 'variantsets/{variantSetId}/mergeVariants',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'variantSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'patch' => array(
-              'path' => 'v1/variantsets/{variantSetId}',
+              'path' => 'variantsets/{variantSetId}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
                 'variantSetId' => array(
@@ -713,15 +702,21 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
               ),
             ),'search' => array(
-              'path' => 'v1/variantsets/search',
+              'path' => 'variantsets/search',
               'httpMethod' => 'POST',
               'parameters' => array(),
+            ),'update' => array(
+              'path' => 'variantsets/{variantSetId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'variantSetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),
           )
         )

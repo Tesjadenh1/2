@@ -15,15 +15,13 @@
  * the License.
  */
 
-class Google_Service_Genomics_StreamReadsRequest extends Google_Model
+class Google_Service_Genomics_RangePosition extends Google_Model
 {
   public $end;
-  public $projectId;
-  public $readGroupSetId;
+  public $referenceId;
   public $referenceName;
-  public $shard;
+  public $reverseStrand;
   public $start;
-  public $totalShards;
 
   public function setEnd($end)
   {
@@ -33,21 +31,13 @@ class Google_Service_Genomics_StreamReadsRequest extends Google_Model
   {
     return $this->end;
   }
-  public function setProjectId($projectId)
+  public function setReferenceId($referenceId)
   {
-    $this->projectId = $projectId;
+    $this->referenceId = $referenceId;
   }
-  public function getProjectId()
+  public function getReferenceId()
   {
-    return $this->projectId;
-  }
-  public function setReadGroupSetId($readGroupSetId)
-  {
-    $this->readGroupSetId = $readGroupSetId;
-  }
-  public function getReadGroupSetId()
-  {
-    return $this->readGroupSetId;
+    return $this->referenceId;
   }
   public function setReferenceName($referenceName)
   {
@@ -57,13 +47,13 @@ class Google_Service_Genomics_StreamReadsRequest extends Google_Model
   {
     return $this->referenceName;
   }
-  public function setShard($shard)
+  public function setReverseStrand($reverseStrand)
   {
-    $this->shard = $shard;
+    $this->reverseStrand = $reverseStrand;
   }
-  public function getShard()
+  public function getReverseStrand()
   {
-    return $this->shard;
+    return $this->reverseStrand;
   }
   public function setStart($start)
   {
@@ -72,13 +62,5 @@ class Google_Service_Genomics_StreamReadsRequest extends Google_Model
   public function getStart()
   {
     return $this->start;
-  }
-  public function setTotalShards($totalShards)
-  {
-    $this->totalShards = $totalShards;
-  }
-  public function getTotalShards()
-  {
-    return $this->totalShards;
   }
 }

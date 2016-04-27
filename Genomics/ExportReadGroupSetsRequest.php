@@ -15,11 +15,12 @@
  * the License.
  */
 
-class Google_Service_Genomics_ExportReadGroupSetRequest extends Google_Collection
+class Google_Service_Genomics_ExportReadGroupSetsRequest extends Google_Collection
 {
   protected $collection_key = 'referenceNames';
   public $exportUri;
-  public $projectId;
+  public $projectNumber;
+  public $readGroupSetIds;
   public $referenceNames;
 
   public function setExportUri($exportUri)
@@ -30,13 +31,21 @@ class Google_Service_Genomics_ExportReadGroupSetRequest extends Google_Collectio
   {
     return $this->exportUri;
   }
-  public function setProjectId($projectId)
+  public function setProjectNumber($projectNumber)
   {
-    $this->projectId = $projectId;
+    $this->projectNumber = $projectNumber;
   }
-  public function getProjectId()
+  public function getProjectNumber()
   {
-    return $this->projectId;
+    return $this->projectNumber;
+  }
+  public function setReadGroupSetIds($readGroupSetIds)
+  {
+    $this->readGroupSetIds = $readGroupSetIds;
+  }
+  public function getReadGroupSetIds()
+  {
+    return $this->readGroupSetIds;
   }
   public function setReferenceNames($referenceNames)
   {

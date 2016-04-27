@@ -26,50 +26,38 @@
 class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resource
 {
   /**
-   * Deletes a read group set. For the definitions of read group sets and other
-   * genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (readgroupsets.delete)
+   * Deletes a read group set. (readgroupsets.delete)
    *
    * @param string $readGroupSetId The ID of the read group set to be deleted. The
    * caller must have WRITE permissions to the dataset associated with this read
    * group set.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
    */
   public function delete($readGroupSetId, $optParams = array())
   {
     $params = array('readGroupSetId' => $readGroupSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), "Google_Service_Genomics_GenomicsEmpty");
+    return $this->call('delete', array($params));
   }
   /**
-   * Exports a read group set to a BAM file in Google Cloud Storage. For the
-   * definitions of read group sets and other genomics resources, see
-   * [Fundamentals of Google Genomics](https://cloud.google.com/genomics
-   * /fundamentals-of-google-genomics) Note that currently there may be some
-   * differences between exported BAM files and the original BAM file at the time
-   * of import. See
-   * [ImportReadGroupSets](google.genomics.v1.ReadServiceV1.ImportReadGroupSets)
-   * for caveats. (readgroupsets.export)
+   * Exports read group sets to a BAM file in Google Cloud Storage.
    *
-   * @param string $readGroupSetId Required. The ID of the read group set to
-   * export. The caller must have READ access to this read group set.
-   * @param Google_ExportReadGroupSetRequest $postBody
+   * Note that currently there may be some differences between exported BAM files
+   * and the original BAM file at the time of import. See ImportReadGroupSets for
+   * details. (readgroupsets.export)
+   *
+   * @param Google_ExportReadGroupSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_ExportReadGroupSetsResponse
    */
-  public function export($readGroupSetId, Google_Service_Genomics_ExportReadGroupSetRequest $postBody, $optParams = array())
+  public function export(Google_Service_Genomics_ExportReadGroupSetsRequest $postBody, $optParams = array())
   {
-    $params = array('readGroupSetId' => $readGroupSetId, 'postBody' => $postBody);
+    $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('export', array($params), "Google_Service_Genomics_Operation");
+    return $this->call('export', array($params), "Google_Service_Genomics_ExportReadGroupSetsResponse");
   }
   /**
-   * Gets a read group set by ID. For the definitions of read group sets and other
-   * genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * (readgroupsets.get)
+   * Gets a read group set by ID. (readgroupsets.get)
    *
    * @param string $readGroupSetId The ID of the read group set.
    * @param array $optParams Optional parameters.
@@ -83,43 +71,35 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
   }
   /**
    * Creates read group sets by asynchronously importing the provided information.
-   * For the definitions of read group sets and other genomics resources, see
-   * [Fundamentals of Google Genomics](https://cloud.google.com/genomics
-   * /fundamentals-of-google-genomics) The caller must have WRITE permissions to
-   * the dataset. ## Notes on [BAM](https://samtools.github.io/hts-
-   * specs/SAMv1.pdf) import - Tags will be converted to strings - tag types are
-   * not preserved - Comments (`@CO`) in the input file header will not be
-   * preserved - Original header order of references (`@SQ`) will not be preserved
-   * - Any reverse stranded unmapped reads will be reverse complemented, and their
-   * qualities (also the "BQ" and "OQ" tags, if any) will be reversed - Unmapped
-   * reads will be stripped of positional information (reference name and
-   * position) (readgroupsets.import)
+   * The caller must have WRITE permissions to the dataset.
+   *
+   * Notes on BAM import:   - Tags will be converted to strings - tag types are
+   * not preserved - Comments (@CO) in the input file header are not imported -
+   * Original order of reference headers is not preserved - Any reverse stranded
+   * unmapped reads will be reverse complemented, and their qualities (also the
+   * "BQ" and "OQ" tags, if any) will be reversed - Unmapped reads will be
+   * stripped of positional information (referenceName and position)
+   * (readgroupsets.import)
    *
    * @param Google_ImportReadGroupSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_ImportReadGroupSetsResponse
    */
   public function import(Google_Service_Genomics_ImportReadGroupSetsRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('import', array($params), "Google_Service_Genomics_Operation");
+    return $this->call('import', array($params), "Google_Service_Genomics_ImportReadGroupSetsResponse");
   }
   /**
-   * Updates a read group set. For the definitions of read group sets and other
-   * genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * This method supports patch semantics. (readgroupsets.patch)
+   * Updates a read group set. This method supports patch semantics.
+   * (readgroupsets.patch)
    *
    * @param string $readGroupSetId The ID of the read group set to be updated. The
    * caller must have WRITE permissions to the dataset associated with this read
    * group set.
    * @param Google_ReadGroupSet $postBody
    * @param array $optParams Optional parameters.
-   *
-   * @opt_param string updateMask An optional mask specifying which fields to
-   * update. Supported fields: * name. * referenceSetId. Leaving `updateMask`
-   * unset is equivalent to specifying all mutable fields.
    * @return Google_Service_ReadGroupSet
    */
   public function patch($readGroupSetId, Google_Service_Genomics_ReadGroupSet $postBody, $optParams = array())
@@ -129,12 +109,9 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
     return $this->call('patch', array($params), "Google_Service_Genomics_ReadGroupSet");
   }
   /**
-   * Searches for read group sets matching the criteria. For the definitions of
-   * read group sets and other genomics resources, see [Fundamentals of Google
-   * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
-   * Implements [GlobalAllianceApi.searchReadGroupSets](https://github.com/ga4gh/s
-   * chemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135).
-   * (readgroupsets.search)
+   * Searches for read group sets matching the criteria.
+   *
+   * Implements GlobalAllianceApi.searchReadGroupSets. (readgroupsets.search)
    *
    * @param Google_SearchReadGroupSetsRequest $postBody
    * @param array $optParams Optional parameters.
@@ -145,5 +122,21 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('search', array($params), "Google_Service_Genomics_SearchReadGroupSetsResponse");
+  }
+  /**
+   * Updates a read group set. (readgroupsets.update)
+   *
+   * @param string $readGroupSetId The ID of the read group set to be updated. The
+   * caller must have WRITE permissions to the dataset associated with this read
+   * group set.
+   * @param Google_ReadGroupSet $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_ReadGroupSet
+   */
+  public function update($readGroupSetId, Google_Service_Genomics_ReadGroupSet $postBody, $optParams = array())
+  {
+    $params = array('readGroupSetId' => $readGroupSetId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('update', array($params), "Google_Service_Genomics_ReadGroupSet");
   }
 }

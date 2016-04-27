@@ -15,36 +15,27 @@
  * the License.
  */
 
-class Google_Service_Genomics_Policy extends Google_Collection
+class Google_Service_Genomics_SearchJobsResponse extends Google_Collection
 {
-  protected $collection_key = 'bindings';
-  protected $bindingsType = 'Google_Service_Genomics_Binding';
-  protected $bindingsDataType = 'array';
-  public $etag;
-  public $version;
+  protected $collection_key = 'jobs';
+  protected $jobsType = 'Google_Service_Genomics_Job';
+  protected $jobsDataType = 'array';
+  public $nextPageToken;
 
-  public function setBindings($bindings)
+  public function setJobs($jobs)
   {
-    $this->bindings = $bindings;
+    $this->jobs = $jobs;
   }
-  public function getBindings()
+  public function getJobs()
   {
-    return $this->bindings;
+    return $this->jobs;
   }
-  public function setEtag($etag)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->etag = $etag;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getEtag()
+  public function getNextPageToken()
   {
-    return $this->etag;
-  }
-  public function setVersion($version)
-  {
-    $this->version = $version;
-  }
-  public function getVersion()
-  {
-    return $this->version;
+    return $this->nextPageToken;
   }
 }

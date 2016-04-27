@@ -15,17 +15,16 @@
  * the License.
  */
 
-class Google_Service_Genomics_ImportReadGroupSetsResponse extends Google_Collection
+class Google_Service_Genomics_ImportReadGroupSetsResponse extends Google_Model
 {
-  protected $collection_key = 'readGroupSetIds';
-  public $readGroupSetIds;
+  public $jobId;
 
-  public function setReadGroupSetIds($readGroupSetIds)
+  public function setJobId($jobId)
   {
-    $this->readGroupSetIds = $readGroupSetIds;
+    $this->jobId = $jobId;
   }
-  public function getReadGroupSetIds()
+  public function getJobId()
   {
-    return $this->readGroupSetIds;
+    return $this->jobId;
   }
 }

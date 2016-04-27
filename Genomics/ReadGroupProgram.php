@@ -15,38 +15,29 @@
  * the License.
  */
 
-class Google_Service_Genomics_Operation extends Google_Model
+class Google_Service_Genomics_ReadGroupProgram extends Google_Model
 {
-  public $done;
-  protected $errorType = 'Google_Service_Genomics_Status';
-  protected $errorDataType = '';
-  public $metadata;
+  public $commandLine;
+  public $id;
   public $name;
-  public $response;
+  public $prevProgramId;
+  public $version;
 
-  public function setDone($done)
+  public function setCommandLine($commandLine)
   {
-    $this->done = $done;
+    $this->commandLine = $commandLine;
   }
-  public function getDone()
+  public function getCommandLine()
   {
-    return $this->done;
+    return $this->commandLine;
   }
-  public function setError(Google_Service_Genomics_Status $error)
+  public function setId($id)
   {
-    $this->error = $error;
+    $this->id = $id;
   }
-  public function getError()
+  public function getId()
   {
-    return $this->error;
-  }
-  public function setMetadata($metadata)
-  {
-    $this->metadata = $metadata;
-  }
-  public function getMetadata()
-  {
-    return $this->metadata;
+    return $this->id;
   }
   public function setName($name)
   {
@@ -56,12 +47,20 @@ class Google_Service_Genomics_Operation extends Google_Model
   {
     return $this->name;
   }
-  public function setResponse($response)
+  public function setPrevProgramId($prevProgramId)
   {
-    $this->response = $response;
+    $this->prevProgramId = $prevProgramId;
   }
-  public function getResponse()
+  public function getPrevProgramId()
   {
-    return $this->response;
+    return $this->prevProgramId;
+  }
+  public function setVersion($version)
+  {
+    $this->version = $version;
+  }
+  public function getVersion()
+  {
+    return $this->version;
   }
 }

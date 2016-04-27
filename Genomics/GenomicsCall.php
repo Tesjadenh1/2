@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Genomics_VariantCall extends Google_Collection
+class Google_Service_Genomics_GenomicsCall extends Google_Collection
 {
   protected $collection_key = 'genotypeLikelihood';
   public $callSetId;

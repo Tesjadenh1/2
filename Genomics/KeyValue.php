@@ -15,26 +15,26 @@
  * the License.
  */
 
-class Google_Service_Genomics_Binding extends Google_Collection
+class Google_Service_Genomics_KeyValue extends Google_Collection
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $collection_key = 'value';
+  public $key;
+  public $value;
 
-  public function setMembers($members)
+  public function setKey($key)
   {
-    $this->members = $members;
+    $this->key = $key;
   }
-  public function getMembers()
+  public function getKey()
   {
-    return $this->members;
+    return $this->key;
   }
-  public function setRole($role)
+  public function setValue($value)
   {
-    $this->role = $role;
+    $this->value = $value;
   }
-  public function getRole()
+  public function getValue()
   {
-    return $this->role;
+    return $this->value;
   }
 }

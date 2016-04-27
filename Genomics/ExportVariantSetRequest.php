@@ -22,7 +22,7 @@ class Google_Service_Genomics_ExportVariantSetRequest extends Google_Collection
   public $bigqueryTable;
   public $callSetIds;
   public $format;
-  public $projectId;
+  public $projectNumber;
 
   public function setBigqueryDataset($bigqueryDataset)
   {
@@ -56,12 +56,12 @@ class Google_Service_Genomics_ExportVariantSetRequest extends Google_Collection
   {
     return $this->format;
   }
-  public function setProjectId($projectId)
+  public function setProjectNumber($projectNumber)
   {
-    $this->projectId = $projectId;
+    $this->projectNumber = $projectNumber;
   }
-  public function getProjectId()
+  public function getProjectNumber()
   {
-    return $this->projectId;
+    return $this->projectNumber;
   }
 }
