@@ -19,7 +19,7 @@
  * Service definition for Compute (v1).
  *
  * <p>
- * API for the Google Compute Engine service.</p>
+ * Creates and runs virtual machines on Google Cloud Platform.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -1449,6 +1449,21 @@ class Google_Service_Compute extends Google_Service
                   'required' => true,
                 ),
                 'image' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'getFromFamily' => array(
+              'path' => '{project}/global/images/family/{family}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'family' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,

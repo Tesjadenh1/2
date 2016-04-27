@@ -24,6 +24,7 @@ class Google_Service_Compute_Image extends Google_Collection
   protected $deprecatedDataType = '';
   public $description;
   public $diskSizeGb;
+  public $family;
   public $id;
   public $kind;
   public $licenses;
@@ -75,6 +76,14 @@ class Google_Service_Compute_Image extends Google_Collection
   public function getDiskSizeGb()
   {
     return $this->diskSizeGb;
+  }
+  public function setFamily($family)
+  {
+    $this->family = $family;
+  }
+  public function getFamily()
+  {
+    return $this->family;
   }
   public function setId($id)
   {
