@@ -15,31 +15,16 @@
  * the License.
  */
 
-class Google_Service_Genomics_ExportVariantSetRequest extends Google_Collection
+class Google_Service_Genomics_StreamVariantsRequest extends Google_Collection
 {
   protected $collection_key = 'callSetIds';
-  public $bigqueryDataset;
-  public $bigqueryTable;
   public $callSetIds;
-  public $format;
+  public $end;
   public $projectId;
+  public $referenceName;
+  public $start;
+  public $variantSetId;
 
-  public function setBigqueryDataset($bigqueryDataset)
-  {
-    $this->bigqueryDataset = $bigqueryDataset;
-  }
-  public function getBigqueryDataset()
-  {
-    return $this->bigqueryDataset;
-  }
-  public function setBigqueryTable($bigqueryTable)
-  {
-    $this->bigqueryTable = $bigqueryTable;
-  }
-  public function getBigqueryTable()
-  {
-    return $this->bigqueryTable;
-  }
   public function setCallSetIds($callSetIds)
   {
     $this->callSetIds = $callSetIds;
@@ -48,13 +33,13 @@ class Google_Service_Genomics_ExportVariantSetRequest extends Google_Collection
   {
     return $this->callSetIds;
   }
-  public function setFormat($format)
+  public function setEnd($end)
   {
-    $this->format = $format;
+    $this->end = $end;
   }
-  public function getFormat()
+  public function getEnd()
   {
-    return $this->format;
+    return $this->end;
   }
   public function setProjectId($projectId)
   {
@@ -63,5 +48,29 @@ class Google_Service_Genomics_ExportVariantSetRequest extends Google_Collection
   public function getProjectId()
   {
     return $this->projectId;
+  }
+  public function setReferenceName($referenceName)
+  {
+    $this->referenceName = $referenceName;
+  }
+  public function getReferenceName()
+  {
+    return $this->referenceName;
+  }
+  public function setStart($start)
+  {
+    $this->start = $start;
+  }
+  public function getStart()
+  {
+    return $this->start;
+  }
+  public function setVariantSetId($variantSetId)
+  {
+    $this->variantSetId = $variantSetId;
+  }
+  public function getVariantSetId()
+  {
+    return $this->variantSetId;
   }
 }

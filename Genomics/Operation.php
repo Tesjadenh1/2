@@ -15,28 +15,38 @@
  * the License.
  */
 
-class Google_Service_Genomics_Dataset extends Google_Model
+class Google_Service_Genomics_Operation extends Google_Model
 {
-  public $createTime;
-  public $id;
+  public $done;
+  protected $errorType = 'Google_Service_Genomics_Status';
+  protected $errorDataType = '';
+  public $metadata;
   public $name;
-  public $projectId;
+  public $response;
 
-  public function setCreateTime($createTime)
+  public function setDone($done)
   {
-    $this->createTime = $createTime;
+    $this->done = $done;
   }
-  public function getCreateTime()
+  public function getDone()
   {
-    return $this->createTime;
+    return $this->done;
   }
-  public function setId($id)
+  public function setError(Google_Service_Genomics_Status $error)
   {
-    $this->id = $id;
+    $this->error = $error;
   }
-  public function getId()
+  public function getError()
   {
-    return $this->id;
+    return $this->error;
+  }
+  public function setMetadata($metadata)
+  {
+    $this->metadata = $metadata;
+  }
+  public function getMetadata()
+  {
+    return $this->metadata;
   }
   public function setName($name)
   {
@@ -46,12 +56,12 @@ class Google_Service_Genomics_Dataset extends Google_Model
   {
     return $this->name;
   }
-  public function setProjectId($projectId)
+  public function setResponse($response)
   {
-    $this->projectId = $projectId;
+    $this->response = $response;
   }
-  public function getProjectId()
+  public function getResponse()
   {
-    return $this->projectId;
+    return $this->response;
   }
 }

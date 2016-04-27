@@ -15,16 +15,18 @@
  * the License.
  */
 
-class Google_Service_Genomics_ExportReadGroupSetsResponse extends Google_Model
+class Google_Service_Genomics_StreamVariantsResponse extends Google_Collection
 {
-  public $jobId;
+  protected $collection_key = 'variants';
+  protected $variantsType = 'Google_Service_Genomics_Variant';
+  protected $variantsDataType = 'array';
 
-  public function setJobId($jobId)
+  public function setVariants($variants)
   {
-    $this->jobId = $jobId;
+    $this->variants = $variants;
   }
-  public function getJobId()
+  public function getVariants()
   {
-    return $this->jobId;
+    return $this->variants;
   }
 }

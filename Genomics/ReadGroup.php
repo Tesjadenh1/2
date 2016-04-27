@@ -20,13 +20,13 @@ class Google_Service_Genomics_ReadGroup extends Google_Collection
   protected $collection_key = 'programs';
   public $datasetId;
   public $description;
-  protected $experimentType = 'Google_Service_Genomics_ReadGroupExperiment';
+  protected $experimentType = 'Google_Service_Genomics_Experiment';
   protected $experimentDataType = '';
   public $id;
   public $info;
   public $name;
   public $predictedInsertSize;
-  protected $programsType = 'Google_Service_Genomics_ReadGroupProgram';
+  protected $programsType = 'Google_Service_Genomics_Program';
   protected $programsDataType = 'array';
   public $referenceSetId;
   public $sampleId;
@@ -47,7 +47,7 @@ class Google_Service_Genomics_ReadGroup extends Google_Collection
   {
     return $this->description;
   }
-  public function setExperiment(Google_Service_Genomics_ReadGroupExperiment $experiment)
+  public function setExperiment(Google_Service_Genomics_Experiment $experiment)
   {
     $this->experiment = $experiment;
   }

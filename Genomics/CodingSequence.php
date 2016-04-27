@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_Genomics_ExperimentalCreateJobResponse extends Google_Model
+class Google_Service_Genomics_CodingSequence extends Google_Model
 {
-  public $jobId;
+  public $end;
+  public $start;
 
-  public function setJobId($jobId)
+  public function setEnd($end)
   {
-    $this->jobId = $jobId;
+    $this->end = $end;
   }
-  public function getJobId()
+  public function getEnd()
   {
-    return $this->jobId;
+    return $this->end;
+  }
+  public function setStart($start)
+  {
+    $this->start = $start;
+  }
+  public function getStart()
+  {
+    return $this->start;
   }
 }

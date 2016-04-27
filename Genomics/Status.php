@@ -15,35 +15,35 @@
  * the License.
  */
 
-class Google_Service_Genomics_TranscriptExon extends Google_Model
+class Google_Service_Genomics_Status extends Google_Collection
 {
-  public $end;
-  protected $frameType = 'Google_Service_Genomics_Int32Value';
-  protected $frameDataType = '';
-  public $start;
+  protected $collection_key = 'details';
+  public $code;
+  public $details;
+  public $message;
 
-  public function setEnd($end)
+  public function setCode($code)
   {
-    $this->end = $end;
+    $this->code = $code;
   }
-  public function getEnd()
+  public function getCode()
   {
-    return $this->end;
+    return $this->code;
   }
-  public function setFrame(Google_Service_Genomics_Int32Value $frame)
+  public function setDetails($details)
   {
-    $this->frame = $frame;
+    $this->details = $details;
   }
-  public function getFrame()
+  public function getDetails()
   {
-    return $this->frame;
+    return $this->details;
   }
-  public function setStart($start)
+  public function setMessage($message)
   {
-    $this->start = $start;
+    $this->message = $message;
   }
-  public function getStart()
+  public function getMessage()
   {
-    return $this->start;
+    return $this->message;
   }
 }

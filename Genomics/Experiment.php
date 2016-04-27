@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Genomics_ReadGroupExperiment extends Google_Model
+class Google_Service_Genomics_Experiment extends Google_Model
 {
   public $instrumentModel;
   public $libraryId;

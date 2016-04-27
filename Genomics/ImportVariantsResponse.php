@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_Genomics_ImportVariantsResponse extends Google_Model
+class Google_Service_Genomics_ImportVariantsResponse extends Google_Collection
 {
-  public $jobId;
+  protected $collection_key = 'callSetIds';
+  public $callSetIds;
 
-  public function setJobId($jobId)
+  public function setCallSetIds($callSetIds)
   {
-    $this->jobId = $jobId;
+    $this->callSetIds = $callSetIds;
   }
-  public function getJobId()
+  public function getCallSetIds()
   {
-    return $this->jobId;
+    return $this->callSetIds;
   }
 }

@@ -15,11 +15,10 @@
  * the License.
  */
 
-class Google_Service_Genomics_QueryRange extends Google_Model
+class Google_Service_Genomics_Exon extends Google_Model
 {
   public $end;
-  public $referenceId;
-  public $referenceName;
+  public $frame;
   public $start;
 
   public function setEnd($end)
@@ -30,21 +29,13 @@ class Google_Service_Genomics_QueryRange extends Google_Model
   {
     return $this->end;
   }
-  public function setReferenceId($referenceId)
+  public function setFrame($frame)
   {
-    $this->referenceId = $referenceId;
+    $this->frame = $frame;
   }
-  public function getReferenceId()
+  public function getFrame()
   {
-    return $this->referenceId;
-  }
-  public function setReferenceName($referenceName)
-  {
-    $this->referenceName = $referenceName;
-  }
-  public function getReferenceName()
-  {
-    return $this->referenceName;
+    return $this->frame;
   }
   public function setStart($start)
   {

@@ -15,27 +15,16 @@
  * the License.
  */
 
-class Google_Service_Genomics_SearchJobsResponse extends Google_Collection
+class Google_Service_Genomics_OperationEvent extends Google_Model
 {
-  protected $collection_key = 'jobs';
-  protected $jobsType = 'Google_Service_Genomics_Job';
-  protected $jobsDataType = 'array';
-  public $nextPageToken;
+  public $description;
 
-  public function setJobs($jobs)
+  public function setDescription($description)
   {
-    $this->jobs = $jobs;
+    $this->description = $description;
   }
-  public function getJobs()
+  public function getDescription()
   {
-    return $this->jobs;
-  }
-  public function setNextPageToken($nextPageToken)
-  {
-    $this->nextPageToken = $nextPageToken;
-  }
-  public function getNextPageToken()
-  {
-    return $this->nextPageToken;
+    return $this->description;
   }
 }

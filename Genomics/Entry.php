@@ -15,25 +15,27 @@
  * the License.
  */
 
-class Google_Service_Genomics_BatchAnnotationsResponseEntryStatus extends Google_Model
+class Google_Service_Genomics_Entry extends Google_Model
 {
-  public $code;
-  public $message;
+  protected $annotationType = 'Google_Service_Genomics_Annotation';
+  protected $annotationDataType = '';
+  protected $statusType = 'Google_Service_Genomics_Status';
+  protected $statusDataType = '';
 
-  public function setCode($code)
+  public function setAnnotation(Google_Service_Genomics_Annotation $annotation)
   {
-    $this->code = $code;
+    $this->annotation = $annotation;
   }
-  public function getCode()
+  public function getAnnotation()
   {
-    return $this->code;
+    return $this->annotation;
   }
-  public function setMessage($message)
+  public function setStatus(Google_Service_Genomics_Status $status)
   {
-    $this->message = $message;
+    $this->status = $status;
   }
-  public function getMessage()
+  public function getStatus()
   {
-    return $this->message;
+    return $this->status;
   }
 }

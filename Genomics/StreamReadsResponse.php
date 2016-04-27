@@ -15,17 +15,18 @@
  * the License.
  */
 
-class Google_Service_Genomics_ImportReadGroupSetsResponse extends Google_Collection
+class Google_Service_Genomics_StreamReadsResponse extends Google_Collection
 {
-  protected $collection_key = 'readGroupSetIds';
-  public $readGroupSetIds;
+  protected $collection_key = 'alignments';
+  protected $alignmentsType = 'Google_Service_Genomics_Read';
+  protected $alignmentsDataType = 'array';
 
-  public function setReadGroupSetIds($readGroupSetIds)
+  public function setAlignments($alignments)
   {
-    $this->readGroupSetIds = $readGroupSetIds;
+    $this->alignments = $alignments;
   }
-  public function getReadGroupSetIds()
+  public function getAlignments()
   {
-    return $this->readGroupSetIds;
+    return $this->alignments;
   }
 }

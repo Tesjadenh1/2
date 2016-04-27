@@ -15,45 +15,29 @@
  * the License.
  */
 
-class Google_Service_Genomics_ReadGroupProgram extends Google_Model
+class Google_Service_Genomics_Policy extends Google_Collection
 {
-  public $commandLine;
-  public $id;
-  public $name;
-  public $prevProgramId;
+  protected $collection_key = 'bindings';
+  protected $bindingsType = 'Google_Service_Genomics_Binding';
+  protected $bindingsDataType = 'array';
+  public $etag;
   public $version;
 
-  public function setCommandLine($commandLine)
+  public function setBindings($bindings)
   {
-    $this->commandLine = $commandLine;
+    $this->bindings = $bindings;
   }
-  public function getCommandLine()
+  public function getBindings()
   {
-    return $this->commandLine;
+    return $this->bindings;
   }
-  public function setId($id)
+  public function setEtag($etag)
   {
-    $this->id = $id;
+    $this->etag = $etag;
   }
-  public function getId()
+  public function getEtag()
   {
-    return $this->id;
-  }
-  public function setName($name)
-  {
-    $this->name = $name;
-  }
-  public function getName()
-  {
-    return $this->name;
-  }
-  public function setPrevProgramId($prevProgramId)
-  {
-    $this->prevProgramId = $prevProgramId;
-  }
-  public function getPrevProgramId()
-  {
-    return $this->prevProgramId;
+    return $this->etag;
   }
   public function setVersion($version)
   {

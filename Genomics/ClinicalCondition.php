@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Genomics_VariantAnnotationCondition extends Google_Collection
+class Google_Service_Genomics_ClinicalCondition extends Google_Collection
 {
   protected $collection_key = 'names';
   public $conceptId;

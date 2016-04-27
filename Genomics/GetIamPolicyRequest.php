@@ -15,17 +15,6 @@
  * the License.
  */
 
-class Google_Service_Genomics_ImportReadGroupSetsResponse extends Google_Collection
+class Google_Service_Genomics_GetIamPolicyRequest extends Google_Model
 {
-  protected $collection_key = 'readGroupSetIds';
-  public $readGroupSetIds;
-
-  public function setReadGroupSetIds($readGroupSetIds)
-  {
-    $this->readGroupSetIds = $readGroupSetIds;
-  }
-  public function getReadGroupSetIds()
-  {
-    return $this->readGroupSetIds;
-  }
 }

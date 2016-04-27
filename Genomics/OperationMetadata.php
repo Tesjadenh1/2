@@ -15,12 +15,15 @@
  * the License.
  */
 
-class Google_Service_Genomics_Dataset extends Google_Model
+class Google_Service_Genomics_OperationMetadata extends Google_Collection
 {
+  protected $collection_key = 'events';
   public $createTime;
-  public $id;
-  public $name;
+  public $endTime;
+  protected $eventsType = 'Google_Service_Genomics_OperationEvent';
+  protected $eventsDataType = 'array';
   public $projectId;
+  public $request;
 
   public function setCreateTime($createTime)
   {
@@ -30,21 +33,21 @@ class Google_Service_Genomics_Dataset extends Google_Model
   {
     return $this->createTime;
   }
-  public function setId($id)
+  public function setEndTime($endTime)
   {
-    $this->id = $id;
+    $this->endTime = $endTime;
   }
-  public function getId()
+  public function getEndTime()
   {
-    return $this->id;
+    return $this->endTime;
   }
-  public function setName($name)
+  public function setEvents($events)
   {
-    $this->name = $name;
+    $this->events = $events;
   }
-  public function getName()
+  public function getEvents()
   {
-    return $this->name;
+    return $this->events;
   }
   public function setProjectId($projectId)
   {
@@ -53,5 +56,13 @@ class Google_Service_Genomics_Dataset extends Google_Model
   public function getProjectId()
   {
     return $this->projectId;
+  }
+  public function setRequest($request)
+  {
+    $this->request = $request;
+  }
+  public function getRequest()
+  {
+    return $this->request;
   }
 }

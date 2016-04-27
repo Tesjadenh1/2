@@ -16,23 +16,21 @@
  */
 
 /**
- * The "annotationSets" collection of methods.
+ * The "annotationsets" collection of methods.
  * Typical usage is:
  *  <code>
  *   $genomicsService = new Google_Service_Genomics(...);
- *   $annotationSets = $genomicsService->annotationSets;
+ *   $annotationsets = $genomicsService->annotationsets;
  *  </code>
  */
-class Google_Service_Genomics_AnnotationSetsResource extends Google_Service_Resource
+class Google_Service_Genomics_AnnotationsetsResource extends Google_Service_Resource
 {
   /**
    * Creates a new annotation set. Caller must have WRITE permission for the
-   * associated dataset.
-   *
-   * The following fields must be provided when creating an annotation set:   -
-   * datasetId  - referenceSetId   All other fields may be optionally specified,
-   * unless documented as being server-generated (for example, the id field).
-   * (annotationSets.create)
+   * associated dataset. The following fields are required: * datasetId *
+   * referenceSetId All other fields may be optionally specified, unless
+   * documented as being server-generated (for example, the `id` field).
+   * (annotationsets.create)
    *
    * @param Google_AnnotationSet $postBody
    * @param array $optParams Optional parameters.
@@ -46,20 +44,21 @@ class Google_Service_Genomics_AnnotationSetsResource extends Google_Service_Reso
   }
   /**
    * Deletes an annotation set. Caller must have WRITE permission for the
-   * associated annotation set. (annotationSets.delete)
+   * associated annotation set. (annotationsets.delete)
    *
    * @param string $annotationSetId The ID of the annotation set to be deleted.
    * @param array $optParams Optional parameters.
+   * @return Google_Service_GenomicsEmpty
    */
   public function delete($annotationSetId, $optParams = array())
   {
     $params = array('annotationSetId' => $annotationSetId);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params));
+    return $this->call('delete', array($params), "Google_Service_Genomics_GenomicsEmpty");
   }
   /**
    * Gets an annotation set. Caller must have READ permission for the associated
-   * dataset. (annotationSets.get)
+   * dataset. (annotationsets.get)
    *
    * @param string $annotationSetId The ID of the annotation set to be retrieved.
    * @param array $optParams Optional parameters.
@@ -72,29 +71,12 @@ class Google_Service_Genomics_AnnotationSetsResource extends Google_Service_Reso
     return $this->call('get', array($params), "Google_Service_Genomics_AnnotationSet");
   }
   /**
-   * Updates an annotation set. The update must respect all mutability
-   * restrictions and other invariants described on the annotation set resource.
-   * Caller must have WRITE permission for the associated dataset. This method
-   * supports patch semantics. (annotationSets.patch)
-   *
-   * @param string $annotationSetId The ID of the annotation set to be updated.
-   * @param Google_AnnotationSet $postBody
-   * @param array $optParams Optional parameters.
-   * @return Google_Service_AnnotationSet
-   */
-  public function patch($annotationSetId, Google_Service_Genomics_AnnotationSet $postBody, $optParams = array())
-  {
-    $params = array('annotationSetId' => $annotationSetId, 'postBody' => $postBody);
-    $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), "Google_Service_Genomics_AnnotationSet");
-  }
-  /**
    * Searches for annotation sets that match the given criteria. Annotation sets
    * are returned in an unspecified order. This order is consistent, such that two
    * queries for the same content (regardless of page size) yield annotation sets
    * in the same order across their respective streams of paginated responses.
    * Caller must have READ permission for the queried datasets.
-   * (annotationSets.search)
+   * (annotationsets.search)
    *
    * @param Google_SearchAnnotationSetsRequest $postBody
    * @param array $optParams Optional parameters.
@@ -110,11 +92,15 @@ class Google_Service_Genomics_AnnotationSetsResource extends Google_Service_Reso
    * Updates an annotation set. The update must respect all mutability
    * restrictions and other invariants described on the annotation set resource.
    * Caller must have WRITE permission for the associated dataset.
-   * (annotationSets.update)
+   * (annotationsets.update)
    *
    * @param string $annotationSetId The ID of the annotation set to be updated.
    * @param Google_AnnotationSet $postBody
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string updateMask An optional mask specifying which fields to
+   * update. Mutable fields are name, source_uri, and info. If unspecified, all
+   * mutable fields will be updated.
    * @return Google_Service_AnnotationSet
    */
   public function update($annotationSetId, Google_Service_Genomics_AnnotationSet $postBody, $optParams = array())

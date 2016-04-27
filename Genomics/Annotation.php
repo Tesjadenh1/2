@@ -18,11 +18,14 @@
 class Google_Service_Genomics_Annotation extends Google_Model
 {
   public $annotationSetId;
+  public $end;
   public $id;
   public $info;
   public $name;
-  protected $positionType = 'Google_Service_Genomics_RangePosition';
-  protected $positionDataType = '';
+  public $referenceId;
+  public $referenceName;
+  public $reverseStrand;
+  public $start;
   protected $transcriptType = 'Google_Service_Genomics_Transcript';
   protected $transcriptDataType = '';
   public $type;
@@ -36,6 +39,14 @@ class Google_Service_Genomics_Annotation extends Google_Model
   public function getAnnotationSetId()
   {
     return $this->annotationSetId;
+  }
+  public function setEnd($end)
+  {
+    $this->end = $end;
+  }
+  public function getEnd()
+  {
+    return $this->end;
   }
   public function setId($id)
   {
@@ -61,13 +72,37 @@ class Google_Service_Genomics_Annotation extends Google_Model
   {
     return $this->name;
   }
-  public function setPosition(Google_Service_Genomics_RangePosition $position)
+  public function setReferenceId($referenceId)
   {
-    $this->position = $position;
+    $this->referenceId = $referenceId;
   }
-  public function getPosition()
+  public function getReferenceId()
   {
-    return $this->position;
+    return $this->referenceId;
+  }
+  public function setReferenceName($referenceName)
+  {
+    $this->referenceName = $referenceName;
+  }
+  public function getReferenceName()
+  {
+    return $this->referenceName;
+  }
+  public function setReverseStrand($reverseStrand)
+  {
+    $this->reverseStrand = $reverseStrand;
+  }
+  public function getReverseStrand()
+  {
+    return $this->reverseStrand;
+  }
+  public function setStart($start)
+  {
+    $this->start = $start;
+  }
+  public function getStart()
+  {
+    return $this->start;
   }
   public function setTranscript(Google_Service_Genomics_Transcript $transcript)
   {

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Genomics_Metadata extends Google_Model
+class Google_Service_Genomics_VariantSetMetadata extends Google_Model
 {
   public $description;
   public $id;

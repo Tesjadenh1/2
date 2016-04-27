@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_Genomics_ExportVariantSetResponse extends Google_Model
+class Google_Service_Genomics_TestIamPermissionsResponse extends Google_Collection
 {
-  public $jobId;
+  protected $collection_key = 'permissions';
+  public $permissions;
 
-  public function setJobId($jobId)
+  public function setPermissions($permissions)
   {
-    $this->jobId = $jobId;
+    $this->permissions = $permissions;
   }
-  public function getJobId()
+  public function getPermissions()
   {
-    return $this->jobId;
+    return $this->permissions;
   }
 }

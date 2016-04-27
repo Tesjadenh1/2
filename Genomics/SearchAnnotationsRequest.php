@@ -19,10 +19,12 @@ class Google_Service_Genomics_SearchAnnotationsRequest extends Google_Collection
 {
   protected $collection_key = 'annotationSetIds';
   public $annotationSetIds;
+  public $end;
   public $pageSize;
   public $pageToken;
-  protected $rangeType = 'Google_Service_Genomics_QueryRange';
-  protected $rangeDataType = '';
+  public $referenceId;
+  public $referenceName;
+  public $start;
 
   public function setAnnotationSetIds($annotationSetIds)
   {
@@ -31,6 +33,14 @@ class Google_Service_Genomics_SearchAnnotationsRequest extends Google_Collection
   public function getAnnotationSetIds()
   {
     return $this->annotationSetIds;
+  }
+  public function setEnd($end)
+  {
+    $this->end = $end;
+  }
+  public function getEnd()
+  {
+    return $this->end;
   }
   public function setPageSize($pageSize)
   {
@@ -48,12 +58,28 @@ class Google_Service_Genomics_SearchAnnotationsRequest extends Google_Collection
   {
     return $this->pageToken;
   }
-  public function setRange(Google_Service_Genomics_QueryRange $range)
+  public function setReferenceId($referenceId)
   {
-    $this->range = $range;
+    $this->referenceId = $referenceId;
   }
-  public function getRange()
+  public function getReferenceId()
   {
-    return $this->range;
+    return $this->referenceId;
+  }
+  public function setReferenceName($referenceName)
+  {
+    $this->referenceName = $referenceName;
+  }
+  public function getReferenceName()
+  {
+    return $this->referenceName;
+  }
+  public function setStart($start)
+  {
+    $this->start = $start;
+  }
+  public function getStart()
+  {
+    return $this->start;
   }
 }

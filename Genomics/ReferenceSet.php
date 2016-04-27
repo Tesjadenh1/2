@@ -25,7 +25,7 @@ class Google_Service_Genomics_ReferenceSet extends Google_Collection
   public $ncbiTaxonId;
   public $referenceIds;
   public $sourceAccessions;
-  public $sourceURI;
+  public $sourceUri;
 
   public function setAssemblyId($assemblyId)
   {
@@ -83,12 +83,12 @@ class Google_Service_Genomics_ReferenceSet extends Google_Collection
   {
     return $this->sourceAccessions;
   }
-  public function setSourceURI($sourceURI)
+  public function setSourceUri($sourceUri)
   {
-    $this->sourceURI = $sourceURI;
+    $this->sourceUri = $sourceUri;
   }
-  public function getSourceURI()
+  public function getSourceUri()
   {
-    return $this->sourceURI;
+    return $this->sourceUri;
   }
 }

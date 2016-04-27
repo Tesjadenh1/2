@@ -15,17 +15,27 @@
  * the License.
  */
 
-class Google_Service_Genomics_ImportReadGroupSetsResponse extends Google_Collection
+class Google_Service_Genomics_ListOperationsResponse extends Google_Collection
 {
-  protected $collection_key = 'readGroupSetIds';
-  public $readGroupSetIds;
+  protected $collection_key = 'operations';
+  public $nextPageToken;
+  protected $operationsType = 'Google_Service_Genomics_Operation';
+  protected $operationsDataType = 'array';
 
-  public function setReadGroupSetIds($readGroupSetIds)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->readGroupSetIds = $readGroupSetIds;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getReadGroupSetIds()
+  public function getNextPageToken()
   {
-    return $this->readGroupSetIds;
+    return $this->nextPageToken;
+  }
+  public function setOperations($operations)
+  {
+    $this->operations = $operations;
+  }
+  public function getOperations()
+  {
+    return $this->operations;
   }
 }

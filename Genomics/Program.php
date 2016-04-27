@@ -15,20 +15,21 @@
  * the License.
  */
 
-class Google_Service_Genomics_Dataset extends Google_Model
+class Google_Service_Genomics_Program extends Google_Model
 {
-  public $createTime;
+  public $commandLine;
   public $id;
   public $name;
-  public $projectId;
+  public $prevProgramId;
+  public $version;
 
-  public function setCreateTime($createTime)
+  public function setCommandLine($commandLine)
   {
-    $this->createTime = $createTime;
+    $this->commandLine = $commandLine;
   }
-  public function getCreateTime()
+  public function getCommandLine()
   {
-    return $this->createTime;
+    return $this->commandLine;
   }
   public function setId($id)
   {
@@ -46,12 +47,20 @@ class Google_Service_Genomics_Dataset extends Google_Model
   {
     return $this->name;
   }
-  public function setProjectId($projectId)
+  public function setPrevProgramId($prevProgramId)
   {
-    $this->projectId = $projectId;
+    $this->prevProgramId = $prevProgramId;
   }
-  public function getProjectId()
+  public function getPrevProgramId()
   {
-    return $this->projectId;
+    return $this->prevProgramId;
+  }
+  public function setVersion($version)
+  {
+    $this->version = $version;
+  }
+  public function getVersion()
+  {
+    return $this->version;
   }
 }

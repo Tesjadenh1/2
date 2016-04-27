@@ -15,16 +15,6 @@
  * the License.
  */
 
-class Google_Service_Genomics_Int32Value extends Google_Model
+class Google_Service_Genomics_CancelOperationRequest extends Google_Model
 {
-  public $value;
-
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
-  }
 }
