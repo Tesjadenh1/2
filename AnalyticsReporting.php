@@ -19,7 +19,7 @@
  * Service definition for AnalyticsReporting (v4).
  *
  * <p>
- * The Analytics Reporting API provides access to Analytics report data.</p>
+ * Accesses Analytics report data.</p>
  *
  * <p>
  * For more information about this service, see the API
