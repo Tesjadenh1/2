@@ -19,8 +19,7 @@
  * Service definition for Dns (v1).
  *
  * <p>
- * The Google Cloud DNS API provides services for configuring and serving
- * authoritative DNS records.</p>
+ * Configures and serves authoritative DNS records.</p>
  *
  * <p>
  * For more information about this service, see the API
