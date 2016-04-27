@@ -38,6 +38,7 @@ class Google_Service_Appengine extends Google_Service
   public $apps_operations;
   public $apps_services;
   public $apps_services_versions;
+  public $apps_services_versions_instances;
   
   /**
    * Constructs the internal representation of the Appengine service.
@@ -316,6 +317,44 @@ class Google_Service_Appengine extends Google_Service
                   'required' => true,
                 ),
                 'mask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->apps_services_versions_instances = new Google_Service_Appengine_AppsServicesVersionsInstancesResource(
+        $this,
+        $this->serviceName,
+        'instances',
+        array(
+          'methods' => array(
+            'list' => array(
+              'path' => 'v1beta5/apps/{appsId}/services/{servicesId}/versions/{versionsId}/instances',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'appsId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'servicesId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'versionsId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
