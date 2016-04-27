@@ -59,7 +59,8 @@ class Google_Service_Monitoring_ProjectsMetricDescriptorsResource extends Google
     return $this->call('delete', array($params), "Google_Service_Monitoring_MonitoringEmpty");
   }
   /**
-   * Gets a single metric descriptor. (metricDescriptors.get)
+   * Gets a single metric descriptor. This method does not require a Stackdriver
+   * account. (metricDescriptors.get)
    *
    * @param string $name The metric descriptor on which to execute the request.
    * The format is
@@ -76,8 +77,8 @@ class Google_Service_Monitoring_ProjectsMetricDescriptorsResource extends Google
     return $this->call('get', array($params), "Google_Service_Monitoring_MetricDescriptor");
   }
   /**
-   * Lists metric descriptors that match a filter.
-   * (metricDescriptors.listProjectsMetricDescriptors)
+   * Lists metric descriptors that match a filter. This method does not require a
+   * Stackdriver account. (metricDescriptors.listProjectsMetricDescriptors)
    *
    * @param string $name The project on which to execute the request. The format
    * is `"projects/{project_id_or_number}"`.

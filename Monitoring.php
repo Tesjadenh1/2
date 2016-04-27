@@ -19,8 +19,13 @@
  * Service definition for Monitoring (v3).
  *
  * <p>
- * The Google Monitoring API lets you manage your monitoring data and
- * configurations.</p>
+ * Manages your Stackdriver monitoring data and configurations. Projects must be
+ * associated with a Stackdriver account, except for the following methods: [mon
+ * itoredResourceDescriptors.list](v3/projects.monitoredResourceDescriptors/list
+ * ), [monitoredResourceDescriptors.get](v3/projects.monitoredResourceDescriptor
+ * s/get), [metricDescriptors.list](v3/projects.metricDescriptors/list),
+ * [metricDescriptors.get](v3/projects.metricDescriptors/get), and
+ * [timeSeries.list](v3/projects.timeSeries/list).</p>
  *
  * <p>
  * For more information about this service, see the API

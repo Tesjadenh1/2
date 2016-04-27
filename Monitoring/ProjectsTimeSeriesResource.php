@@ -44,7 +44,8 @@ class Google_Service_Monitoring_ProjectsTimeSeriesResource extends Google_Servic
     return $this->call('create', array($params), "Google_Service_Monitoring_MonitoringEmpty");
   }
   /**
-   * Lists time series that match a filter. (timeSeries.listProjectsTimeSeries)
+   * Lists time series that match a filter. This method does not require a
+   * Stackdriver account. (timeSeries.listProjectsTimeSeries)
    *
    * @param string $name The project on which to execute the request. The format
    * is "projects/{project_id_or_number}".
@@ -56,11 +57,11 @@ class Google_Service_Monitoring_ProjectsTimeSeriesResource extends Google_Servic
    * information. For example: metric.type =
    * "compute.googleapis.com/instance/cpu/usage_time" AND
    * metric.label.instance_name = "my-instance-name"
-   * @opt_param string interval.endTime (required) The end of the interval. The
+   * @opt_param string interval.endTime Required. The end of the interval. The
    * interval includes this time.
-   * @opt_param string interval.startTime (optional) If omitted, the interval is a
-   * point in time, `endTime`. If `startTime` is present, it must be earlier than
-   * (less than) `endTime`. The interval begins after `startTime`—it does not
+   * @opt_param string interval.startTime If this value is omitted, the interval
+   * is a point in time, `endTime`. If `startTime` is present, it must be earlier
+   * than (less than) `endTime`. The interval begins after `startTime`—it does not
    * include `startTime`.
    * @opt_param string aggregation.alignmentPeriod The alignment period for
    * per-[time series](TimeSeries) alignment. If present, `alignmentPeriod` must

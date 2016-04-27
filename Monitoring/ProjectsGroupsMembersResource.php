@@ -45,11 +45,11 @@ class Google_Service_Monitoring_ProjectsGroupsMembersResource extends Google_Ser
    * monitored resources that comprise the group. For example, to return only
    * resources representing Compute Engine VM instances, use this filter:
    * resource.type = "gce_instance"
-   * @opt_param string interval.endTime (required) The end of the interval. The
+   * @opt_param string interval.endTime Required. The end of the interval. The
    * interval includes this time.
-   * @opt_param string interval.startTime (optional) If omitted, the interval is a
-   * point in time, `endTime`. If `startTime` is present, it must be earlier than
-   * (less than) `endTime`. The interval begins after `startTime`—it does not
+   * @opt_param string interval.startTime If this value is omitted, the interval
+   * is a point in time, `endTime`. If `startTime` is present, it must be earlier
+   * than (less than) `endTime`. The interval begins after `startTime`—it does not
    * include `startTime`.
    * @return Google_Service_ListGroupMembersResponse
    */

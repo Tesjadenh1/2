@@ -26,8 +26,8 @@
 class Google_Service_Monitoring_ProjectsMonitoredResourceDescriptorsResource extends Google_Service_Resource
 {
   /**
-   * Gets a single monitored resource descriptor.
-   * (monitoredResourceDescriptors.get)
+   * Gets a single monitored resource descriptor. This method does not require a
+   * Stackdriver account. (monitoredResourceDescriptors.get)
    *
    * @param string $name The monitored resource descriptor to get. The format is `
    * "projects/{project_id_or_number}/monitoredResourceDescriptors/{resource_type}
@@ -42,7 +42,8 @@ class Google_Service_Monitoring_ProjectsMonitoredResourceDescriptorsResource ext
     return $this->call('get', array($params), "Google_Service_Monitoring_MonitoredResourceDescriptor");
   }
   /**
-   * Lists monitored resource descriptors that match a filter.
+   * Lists monitored resource descriptors that match a filter. This method does
+   * not require a Stackdriver account.
    * (monitoredResourceDescriptors.listProjectsMonitoredResourceDescriptors)
    *
    * @param string $name The project on which to execute the request. The format
