@@ -19,7 +19,7 @@
  * Service definition for Plus (v1).
  *
  * <p>
- * The Google+ API enables developers to build on top of the Google+ platform.</p>
+ * Builds on top of the Google+ platform.</p>
  *
  * <p>
  * For more information about this service, see the API
