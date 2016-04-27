@@ -19,8 +19,8 @@
  * Service definition for Replicapool (v1beta2).
  *
  * <p>
- * The Google Compute Engine Instance Group Manager API provides groups of
- * homogenous Compute Engine Instances.</p>
+ * [Deprecated. Please use Instance Group Manager in Compute API] Provides
+ * groups of homogenous Compute Engine instances.</p>
  *
  * <p>
  * For more information about this service, see the API
