@@ -19,9 +19,9 @@
  * Service definition for Clouderrorreporting (v1beta1).
  *
  * <p>
- * Collects errors from Cloud Logging data or sent directly from client
- * applications. Groups and counts similar errors to provide an overview on the
- * health of the application and to enable further analysis.</p>
+ * Google Stackdriver Error Reporting groups and counts similar errors from
+ * cloud services. The Google Stackdriver Error Reporting API provides read
+ * access to error groups and their associated errors.</p>
  *
  * <p>
  * For more information about this service, see the API
