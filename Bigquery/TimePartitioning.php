@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Bigquery_IntervalPartitionConfiguration extends Google_Model
+class Google_Service_Bigquery_TimePartitioning extends Google_Model
 {
   public $expirationMs;
   public $type;
