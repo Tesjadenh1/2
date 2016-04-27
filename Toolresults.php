@@ -19,7 +19,7 @@
  * Service definition for ToolResults (v1beta3).
  *
  * <p>
- * Read and publish results from Cloud Test Lab.</p>
+ * Reads and publishes results from Cloud Test Lab.</p>
  *
  * <p>
  * For more information about this service, see the API
