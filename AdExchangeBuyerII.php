@@ -19,8 +19,8 @@
  * Service definition for AdExchangeBuyerII (v2beta1).
  *
  * <p>
- * The Ad Exchange Buyer API II lets you access the latest features for managing
- * Ad Exchange accounts and Real-Time Bidding configurations.</p>
+ * Accesses the latest features for managing Ad Exchange accounts and Real-Time
+ * Bidding configurations.</p>
  *
  * <p>
  * For more information about this service, see the API
