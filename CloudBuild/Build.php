@@ -30,6 +30,7 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   protected $sourceDataType = '';
   public $startTime;
   public $status;
+  public $statusDetail;
   protected $stepsType = 'Google_Service_CloudBuild_BuildStep';
   protected $stepsDataType = 'array';
   public $timeout;
@@ -113,6 +114,14 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   public function getStatus()
   {
     return $this->status;
+  }
+  public function setStatusDetail($statusDetail)
+  {
+    $this->statusDetail = $statusDetail;
+  }
+  public function getStatusDetail()
+  {
+    return $this->statusDetail;
   }
   public function setSteps($steps)
   {
