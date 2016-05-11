@@ -57,8 +57,11 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * List all the deals for a given proposal
    * (marketplacedeals.listMarketplacedeals)
    *
-   * @param string $proposalId The proposalId to get deals for.
+   * @param string $proposalId The proposalId to get deals for. To search across
+   * proposals specify order_id = '-' as part of the URL.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string pqlQuery Query string to retrieve specific deals.
    * @return Google_Service_GetOrderDealsResponse
    */
   public function listMarketplacedeals($proposalId, $optParams = array())

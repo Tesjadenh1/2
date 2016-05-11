@@ -15,29 +15,28 @@
  * the License.
  */
 
-class Google_Service_AdExchangeBuyer_PricePerBuyer extends Google_Model
+class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingInfo extends Google_Model
 {
-  public $auctionTier;
-  protected $buyerType = 'Google_Service_AdExchangeBuyer_Buyer';
-  protected $buyerDataType = '';
+  public $currencyConversionTimeMs;
+  public $originalContractedQuantity;
   protected $priceType = 'Google_Service_AdExchangeBuyer_Price';
   protected $priceDataType = '';
 
-  public function setAuctionTier($auctionTier)
+  public function setCurrencyConversionTimeMs($currencyConversionTimeMs)
   {
-    $this->auctionTier = $auctionTier;
+    $this->currencyConversionTimeMs = $currencyConversionTimeMs;
   }
-  public function getAuctionTier()
+  public function getCurrencyConversionTimeMs()
   {
-    return $this->auctionTier;
+    return $this->currencyConversionTimeMs;
   }
-  public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
+  public function setOriginalContractedQuantity($originalContractedQuantity)
   {
-    $this->buyer = $buyer;
+    $this->originalContractedQuantity = $originalContractedQuantity;
   }
-  public function getBuyer()
+  public function getOriginalContractedQuantity()
   {
-    return $this->buyer;
+    return $this->originalContractedQuantity;
   }
   public function setPrice(Google_Service_AdExchangeBuyer_Price $price)
   {

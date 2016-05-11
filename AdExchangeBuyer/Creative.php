@@ -23,6 +23,7 @@ class Google_Service_AdExchangeBuyer_Creative extends Google_Collection
   );
   public $hTMLSnippet;
   public $accountId;
+  public $adChoicesDestinationUrl;
   public $advertiserId;
   public $advertiserName;
   public $agencyId;
@@ -66,6 +67,14 @@ class Google_Service_AdExchangeBuyer_Creative extends Google_Collection
   public function getAccountId()
   {
     return $this->accountId;
+  }
+  public function setAdChoicesDestinationUrl($adChoicesDestinationUrl)
+  {
+    $this->adChoicesDestinationUrl = $adChoicesDestinationUrl;
+  }
+  public function getAdChoicesDestinationUrl()
+  {
+    return $this->adChoicesDestinationUrl;
   }
   public function setAdvertiserId($advertiserId)
   {
