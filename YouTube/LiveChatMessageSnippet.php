@@ -23,10 +23,16 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   protected $fanFundingEventDetailsDataType = '';
   public $hasDisplayContent;
   public $liveChatId;
+  protected $messageDeletedDetailsType = 'Google_Service_YouTube_LiveChatMessageDeletedDetails';
+  protected $messageDeletedDetailsDataType = '';
+  protected $messageRetractedDetailsType = 'Google_Service_YouTube_LiveChatMessageRetractedDetails';
+  protected $messageRetractedDetailsDataType = '';
   public $publishedAt;
   protected $textMessageDetailsType = 'Google_Service_YouTube_LiveChatTextMessageDetails';
   protected $textMessageDetailsDataType = '';
   public $type;
+  protected $userBannedDetailsType = 'Google_Service_YouTube_LiveChatUserBannedMessageDetails';
+  protected $userBannedDetailsDataType = '';
 
   public function setAuthorChannelId($authorChannelId)
   {
@@ -68,6 +74,22 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   {
     return $this->liveChatId;
   }
+  public function setMessageDeletedDetails(Google_Service_YouTube_LiveChatMessageDeletedDetails $messageDeletedDetails)
+  {
+    $this->messageDeletedDetails = $messageDeletedDetails;
+  }
+  public function getMessageDeletedDetails()
+  {
+    return $this->messageDeletedDetails;
+  }
+  public function setMessageRetractedDetails(Google_Service_YouTube_LiveChatMessageRetractedDetails $messageRetractedDetails)
+  {
+    $this->messageRetractedDetails = $messageRetractedDetails;
+  }
+  public function getMessageRetractedDetails()
+  {
+    return $this->messageRetractedDetails;
+  }
   public function setPublishedAt($publishedAt)
   {
     $this->publishedAt = $publishedAt;
@@ -91,5 +113,13 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   public function getType()
   {
     return $this->type;
+  }
+  public function setUserBannedDetails(Google_Service_YouTube_LiveChatUserBannedMessageDetails $userBannedDetails)
+  {
+    $this->userBannedDetails = $userBannedDetails;
+  }
+  public function getUserBannedDetails()
+  {
+    return $this->userBannedDetails;
   }
 }

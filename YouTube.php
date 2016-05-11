@@ -19,7 +19,8 @@
  * Service definition for YouTube (v3).
  *
  * <p>
- * Programmatic access to YouTube features.</p>
+ * Supports core YouTube features, such as uploading videos, creating and
+ * managing playlists, searching for content, and much more.</p>
  *
  * <p>
  * For more information about this service, see the API
