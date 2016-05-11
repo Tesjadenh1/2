@@ -19,7 +19,8 @@
  * Service definition for Consumersurveys (v2).
  *
  * <p>
- * API for Google Consumer Surveys.</p>
+ * Creates and conducts surveys, lists the surveys that an authenticated user
+ * owns, and retrieves survey results and information about specified surveys.</p>
  *
  * <p>
  * For more information about this service, see the API
