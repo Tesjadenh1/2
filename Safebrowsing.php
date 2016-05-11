@@ -19,9 +19,8 @@
  * Service definition for Safebrowsing (v4).
  *
  * <p>
- * The Safe Browsing APIs enable client applications to check web resources
- * (most commonly URLs) against Google's constantly updated lists of unsafe web
- * resources.</p>
+ * Enables client applications to check web resources (most commonly URLs)
+ * against Google-generated lists of unsafe web resources.</p>
  *
  * <p>
  * For more information about this service, see the API
