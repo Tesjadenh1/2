@@ -19,7 +19,7 @@
  * Service definition for Classroom (v1).
  *
  * <p>
- * Google Classroom API</p>
+ * Manages classes, rosters, and invitations in Google Classroom.</p>
  *
  * <p>
  * For more information about this service, see the API
