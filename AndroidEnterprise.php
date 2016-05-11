@@ -871,6 +871,36 @@ class Google_Service_AndroidEnterprise extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'list' => array(
+              'path' => 'enterprises/{enterpriseId}/products',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'approved' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'language' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'query' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'token' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),'updatePermissions' => array(
               'path' => 'enterprises/{enterpriseId}/products/{productId}/permissions',
               'httpMethod' => 'PUT',

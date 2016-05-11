@@ -26,7 +26,12 @@
 class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_Resource
 {
   /**
-   * Approves the specified product (and the relevant app permissions, if any).
+   * Approves the specified product and the relevant app permissions, if any. The
+   * maximum number of products that you can approve per enterprise customer is
+   * 1,000.
+   *
+   * To learn how to use Google Play for Work to design and create a store layout
+   * to display approved products to your users, see Store Layout Design.
    * (products.approve)
    *
    * @param string $enterpriseId The ID of the enterprise.
@@ -117,6 +122,36 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
     $params = array('enterpriseId' => $enterpriseId, 'productId' => $productId);
     $params = array_merge($params, $optParams);
     return $this->call('getPermissions', array($params), "Google_Service_AndroidEnterprise_ProductPermissions");
+  }
+  /**
+   * Finds approved products that match a query. (products.listProducts)
+   *
+   * @param string $enterpriseId The ID of the enterprise.
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param bool approved Specifies whether to search among all products
+   * (false) or among only products that have been approved (true). Only "true" is
+   * supported, and should be specified.
+   * @opt_param string language The BCP47 tag for the user's preferred language
+   * (e.g. "en-US", "de"). Results are returned in the language best matching the
+   * preferred language.
+   * @opt_param string maxResults Specifies the maximum number of products that
+   * can be returned per request. If not specified, uses a default value of 100,
+   * which is also the maximum retrievable within a single response.
+   * @opt_param string query The search query as typed in the Google Play Store
+   * search box. If omitted, all approved apps will be returned (using the
+   * pagination parameters).
+   * @opt_param string token A pagination token is contained in a requests
+   * response when there are more products. The token can be used in a subsequent
+   * request to obtain more products, and so forth. This parameter cannot be used
+   * in the initial request.
+   * @return Google_Service_ProductsListResponse
+   */
+  public function listProducts($enterpriseId, $optParams = array())
+  {
+    $params = array('enterpriseId' => $enterpriseId);
+    $params = array_merge($params, $optParams);
+    return $this->call('list', array($params), "Google_Service_AndroidEnterprise_ProductsListResponse");
   }
   /**
    * This method has been deprecated. To programmatically approve applications,
