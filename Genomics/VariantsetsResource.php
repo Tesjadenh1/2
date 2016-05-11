@@ -107,8 +107,8 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * @param array $optParams Optional parameters.
    *
    * @opt_param string updateMask An optional mask specifying which fields to
-   * update. Supported fields: * metadata. Leaving `updateMask` unset is
-   * equivalent to specifying all mutable fields.
+   * update. Supported fields: * metadata. * name. * description. Leaving
+   * `updateMask` unset is equivalent to specifying all mutable fields.
    * @return Google_Service_VariantSet
    */
   public function patch($variantSetId, Google_Service_Genomics_VariantSet $postBody, $optParams = array())
