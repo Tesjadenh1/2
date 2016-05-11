@@ -64,7 +64,7 @@ class Google_Service_Compute_MachineTypesResource extends Google_Service_Resourc
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_MachineTypeAggregatedList
+   * @return Google_Service_Compute_MachineTypeAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_MachineTypesResource extends Google_Service_Resourc
    * @param string $zone The name of the zone for this request.
    * @param string $machineType Name of the machine type to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MachineType
+   * @return Google_Service_Compute_MachineType
    */
   public function get($project, $zone, $machineType, $optParams = array())
   {
@@ -129,7 +129,7 @@ class Google_Service_Compute_MachineTypesResource extends Google_Service_Resourc
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_MachineTypeList
+   * @return Google_Service_Compute_MachineTypeList
    */
   public function listMachineTypes($project, $zone, $optParams = array())
   {

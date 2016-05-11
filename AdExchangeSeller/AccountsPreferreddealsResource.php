@@ -32,7 +32,7 @@ class Google_Service_AdExchangeSeller_AccountsPreferreddealsResource extends Goo
    * @param string $accountId Account owning the deal.
    * @param string $dealId Preferred deal to get information about.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PreferredDeal
+   * @return Google_Service_AdExchangeSeller_PreferredDeal
    */
   public function get($accountId, $dealId, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_AdExchangeSeller_AccountsPreferreddealsResource extends Goo
    *
    * @param string $accountId Account owning the deals.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PreferredDeals
+   * @return Google_Service_AdExchangeSeller_PreferredDeals
    */
   public function listAccountsPreferreddeals($accountId, $optParams = array())
   {

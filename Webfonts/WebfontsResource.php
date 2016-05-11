@@ -32,7 +32,7 @@ class Google_Service_Webfonts_WebfontsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string sort Enables sorting of the list
-   * @return Google_Service_WebfontList
+   * @return Google_Service_Webfonts_WebfontList
    */
   public function listWebfonts($optParams = array())
   {

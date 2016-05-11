@@ -43,7 +43,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * in Drive.
    * @opt_param string ocrLanguage A language hint for OCR processing during image
    * import (ISO 639-1 code).
-   * @return Google_Service_DriveFile
+   * @return Google_Service_Drive_DriveFile
    */
   public function copy($fileId, Google_Service_Drive_DriveFile $postBody, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * import (ISO 639-1 code).
    * @opt_param bool useContentAsIndexableText Whether to use the uploaded content
    * as indexable text.
-   * @return Google_Service_DriveFile
+   * @return Google_Service_Drive_DriveFile
    */
   public function create(Google_Service_Drive_DriveFile $postBody, $optParams = array())
   {
@@ -126,7 +126,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * @opt_param int count The number of IDs to return.
    * @opt_param string space The space in which the IDs can be used to create new
    * files. Supported values are 'drive' and 'appDataFolder'.
-   * @return Google_Service_GeneratedIds
+   * @return Google_Service_Drive_GeneratedIds
    */
   public function generateIds($optParams = array())
   {
@@ -143,7 +143,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * @opt_param bool acknowledgeAbuse Whether the user is acknowledging the risk
    * of downloading known malware or other abusive files. This is only applicable
    * when alt=media.
-   * @return Google_Service_DriveFile
+   * @return Google_Service_Drive_DriveFile
    */
   public function get($fileId, $optParams = array())
   {
@@ -172,7 +172,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * for Files" guide for supported syntax.
    * @opt_param string spaces A comma-separated list of spaces to query within the
    * corpus. Supported values are 'drive', 'appDataFolder' and 'photos'.
-   * @return Google_Service_FileList
+   * @return Google_Service_Drive_FileList
    */
   public function listFiles($optParams = array())
   {
@@ -197,7 +197,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * remove.
    * @opt_param bool useContentAsIndexableText Whether to use the uploaded content
    * as indexable text.
-   * @return Google_Service_DriveFile
+   * @return Google_Service_Drive_DriveFile
    */
   public function update($fileId, Google_Service_Drive_DriveFile $postBody, $optParams = array())
   {
@@ -215,7 +215,7 @@ class Google_Service_Drive_FilesResource extends Google_Service_Resource
    * @opt_param bool acknowledgeAbuse Whether the user is acknowledging the risk
    * of downloading known malware or other abusive files. This is only applicable
    * when alt=media.
-   * @return Google_Service_Channel
+   * @return Google_Service_Drive_Channel
    */
   public function watch($fileId, Google_Service_Drive_Channel $postBody, $optParams = array())
   {

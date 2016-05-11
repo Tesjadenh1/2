@@ -33,7 +33,7 @@ class Google_Service_Monitoring_ProjectsMetricDescriptorsResource extends Google
    * is `"projects/{project_id_or_number}"`.
    * @param Google_MetricDescriptor $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MetricDescriptor
+   * @return Google_Service_Monitoring_MetricDescriptor
    */
   public function create($name, Google_Service_Monitoring_MetricDescriptor $postBody, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_Monitoring_ProjectsMetricDescriptorsResource extends Google
    * `"projects/{project_id_or_number}/metricDescriptors/{metric_id}"`. An example
    * of `{metric_id}` is: `"custom.googleapis.com/my_test_metric"`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MonitoringEmpty
+   * @return Google_Service_Monitoring_MonitoringEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_Monitoring_ProjectsMetricDescriptorsResource extends Google
    * value of `{metric_id}` is
    * `"compute.googleapis.com/instance/disk/read_bytes_count"`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MetricDescriptor
+   * @return Google_Service_Monitoring_MetricDescriptor
    */
   public function get($name, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_Monitoring_ProjectsMetricDescriptorsResource extends Google
    * the `nextPageToken` value returned by a previous call to this method. Using
    * this field causes the method to return additional results from the previous
    * method call.
-   * @return Google_Service_ListMetricDescriptorsResponse
+   * @return Google_Service_Monitoring_ListMetricDescriptorsResponse
    */
   public function listProjectsMetricDescriptors($name, $optParams = array())
   {

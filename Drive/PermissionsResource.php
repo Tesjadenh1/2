@@ -41,7 +41,7 @@ class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
    * @opt_param bool transferOwnership Whether to transfer ownership to the
    * specified user and downgrade the current owner to a writer. This parameter is
    * required as an acknowledgement of the side effect.
-   * @return Google_Service_Permission
+   * @return Google_Service_Drive_Permission
    */
   public function create($fileId, Google_Service_Drive_Permission $postBody, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
    * @param string $fileId The ID of the file.
    * @param string $permissionId The ID of the permission.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Permission
+   * @return Google_Service_Drive_Permission
    */
   public function get($fileId, $permissionId, $optParams = array())
   {
@@ -81,7 +81,7 @@ class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
    *
    * @param string $fileId The ID of the file.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PermissionList
+   * @return Google_Service_Drive_PermissionList
    */
   public function listPermissions($fileId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Drive_PermissionsResource extends Google_Service_Resource
    * @opt_param bool transferOwnership Whether to transfer ownership to the
    * specified user and downgrade the current owner to a writer. This parameter is
    * required as an acknowledgement of the side effect.
-   * @return Google_Service_Permission
+   * @return Google_Service_Drive_Permission
    */
   public function update($fileId, $permissionId, Google_Service_Drive_Permission $postBody, $optParams = array())
   {

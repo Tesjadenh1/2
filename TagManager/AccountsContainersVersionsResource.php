@@ -32,7 +32,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * @param string $containerId The GTM Container ID.
    * @param Google_CreateContainerVersionRequestVersionOptions $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreateContainerVersionResponse
+   * @return Google_Service_TagManager_CreateContainerVersionResponse
    */
   public function create($accountId, $containerId, Google_Service_TagManager_CreateContainerVersionRequestVersionOptions $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * @param string $containerVersionId The GTM Container Version ID. Specify
    * published to retrieve the currently published version.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ContainerVersion
+   * @return Google_Service_TagManager_ContainerVersion
    */
   public function get($accountId, $containerId, $containerVersionId, $optParams = array())
   {
@@ -81,7 +81,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * @opt_param bool headers Retrieve headers only when true.
    * @opt_param bool includeDeleted Also retrieve deleted (archived) versions when
    * true.
-   * @return Google_Service_ListContainerVersionsResponse
+   * @return Google_Service_TagManager_ListContainerVersionsResponse
    */
   public function listAccountsContainersVersions($accountId, $containerId, $optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the container version in storage.
-   * @return Google_Service_PublishContainerVersionResponse
+   * @return Google_Service_TagManager_PublishContainerVersionResponse
    */
   public function publish($accountId, $containerId, $containerVersionId, $optParams = array())
   {
@@ -117,7 +117,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * @param string $containerId The GTM Container ID.
    * @param string $containerVersionId The GTM Container Version ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ContainerVersion
+   * @return Google_Service_TagManager_ContainerVersion
    */
   public function restore($accountId, $containerId, $containerVersionId, $optParams = array())
   {
@@ -132,7 +132,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    * @param string $containerId The GTM Container ID.
    * @param string $containerVersionId The GTM Container Version ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ContainerVersion
+   * @return Google_Service_TagManager_ContainerVersion
    */
   public function undelete($accountId, $containerId, $containerVersionId, $optParams = array())
   {
@@ -151,7 +151,7 @@ class Google_Service_TagManager_AccountsContainersVersionsResource extends Googl
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the container version in storage.
-   * @return Google_Service_ContainerVersion
+   * @return Google_Service_TagManager_ContainerVersion
    */
   public function update($accountId, $containerId, $containerVersionId, Google_Service_TagManager_ContainerVersion $postBody, $optParams = array())
   {

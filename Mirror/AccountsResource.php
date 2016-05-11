@@ -35,7 +35,7 @@ class Google_Service_Mirror_AccountsResource extends Google_Service_Resource
    * Android Account Manager.
    * @param Google_Account $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_Mirror_Account
    */
   public function insert($userToken, $accountType, $accountName, Google_Service_Mirror_Account $postBody, $optParams = array())
   {

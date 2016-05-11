@@ -33,7 +33,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * retrieve.
    * @param string $customMetricId The ID of the custom metric to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomMetric
+   * @return Google_Service_Analytics_CustomMetric
    */
   public function get($accountId, $webPropertyId, $customMetricId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * create.
    * @param Google_CustomMetric $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomMetric
+   * @return Google_Service_Analytics_CustomMetric
    */
   public function insert($accountId, $webPropertyId, Google_Service_Analytics_CustomMetric $postBody, $optParams = array())
   {
@@ -70,7 +70,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * this response.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_CustomMetrics
+   * @return Google_Service_Analytics_CustomMetrics
    */
   public function listManagementCustomMetrics($accountId, $webPropertyId, $optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
    * warnings related to the custom metric being linked to a custom data source /
    * data set.
-   * @return Google_Service_CustomMetric
+   * @return Google_Service_Analytics_CustomMetric
    */
   public function patch($accountId, $webPropertyId, $customMetricId, Google_Service_Analytics_CustomMetric $postBody, $optParams = array())
   {
@@ -113,7 +113,7 @@ class Google_Service_Analytics_ManagementCustomMetricsResource extends Google_Se
    * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
    * warnings related to the custom metric being linked to a custom data source /
    * data set.
-   * @return Google_Service_CustomMetric
+   * @return Google_Service_Analytics_CustomMetric
    */
   public function update($accountId, $webPropertyId, $customMetricId, Google_Service_Analytics_CustomMetric $postBody, $optParams = array())
   {

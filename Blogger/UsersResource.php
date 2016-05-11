@@ -30,7 +30,7 @@ class Google_Service_Blogger_UsersResource extends Google_Service_Resource
    *
    * @param string $userId The ID of the user to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_User
+   * @return Google_Service_Blogger_User
    */
   public function get($userId, $optParams = array())
   {

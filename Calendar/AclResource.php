@@ -48,7 +48,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * the currently logged in user, use the "primary" keyword.
    * @param string $ruleId ACL rule identifier.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AclRule
+   * @return Google_Service_Calendar_AclRule
    */
   public function get($calendarId, $ruleId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * the currently logged in user, use the "primary" keyword.
    * @param Google_AclRule $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AclRule
+   * @return Google_Service_Calendar_AclRule
    */
   public function insert($calendarId, Google_Service_Calendar_AclRule $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * the client should clear its storage and perform a full synchronization
    * without any syncToken. Learn more about incremental synchronization.
    * Optional. The default is to return all entries.
-   * @return Google_Service_Acl
+   * @return Google_Service_Calendar_Acl
    */
   public function listAcl($calendarId, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * @param string $ruleId ACL rule identifier.
    * @param Google_AclRule $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AclRule
+   * @return Google_Service_Calendar_AclRule
    */
   public function patch($calendarId, $ruleId, Google_Service_Calendar_AclRule $postBody, $optParams = array())
   {
@@ -132,7 +132,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * @param string $ruleId ACL rule identifier.
    * @param Google_AclRule $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AclRule
+   * @return Google_Service_Calendar_AclRule
    */
   public function update($calendarId, $ruleId, Google_Service_Calendar_AclRule $postBody, $optParams = array())
   {
@@ -166,7 +166,7 @@ class Google_Service_Calendar_AclResource extends Google_Service_Resource
    * the client should clear its storage and perform a full synchronization
    * without any syncToken. Learn more about incremental synchronization.
    * Optional. The default is to return all entries.
-   * @return Google_Service_Channel
+   * @return Google_Service_Calendar_Channel
    */
   public function watch($calendarId, Google_Service_Calendar_Channel $postBody, $optParams = array())
   {

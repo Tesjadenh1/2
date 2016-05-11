@@ -37,7 +37,7 @@ class Google_Service_Clouddebugger_DebuggerDebuggeesResource extends Google_Serv
    * debuggees. Otherwise, the result includes only debuggees that are active.
    * @opt_param string clientVersion The client version making the call.
    * Following: `domain/type/version` (e.g., `google.com/intellij/v1`).
-   * @return Google_Service_ListDebuggeesResponse
+   * @return Google_Service_Clouddebugger_ListDebuggeesResponse
    */
   public function listDebuggerDebuggees($optParams = array())
   {

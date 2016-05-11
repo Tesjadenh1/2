@@ -42,7 +42,7 @@ class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resourc
    *
    * @param Google_Subscription $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Mirror_Subscription
    */
   public function insert(Google_Service_Mirror_Subscription $postBody, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resourc
    * (subscriptions.listSubscriptions)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SubscriptionsListResponse
+   * @return Google_Service_Mirror_SubscriptionsListResponse
    */
   public function listSubscriptions($optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Mirror_SubscriptionsResource extends Google_Service_Resourc
    * @param string $id The ID of the subscription.
    * @param Google_Subscription $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Mirror_Subscription
    */
   public function update($id, Google_Service_Mirror_Subscription $postBody, $optParams = array())
   {

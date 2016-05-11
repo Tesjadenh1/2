@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_AccountPermissionsResource extends Google_Serv
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Account permission ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountPermission
+   * @return Google_Service_Dfareporting_AccountPermission
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_AccountPermissionsResource extends Google_Serv
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountPermissionsListResponse
+   * @return Google_Service_Dfareporting_AccountPermissionsListResponse
    */
   public function listAccountPermissions($profileId, $optParams = array())
   {

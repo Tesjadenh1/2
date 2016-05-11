@@ -33,7 +33,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    *
    * @opt_param bool copyPresentation Whether to also copy tabs, styles, and
    * templates. Default is false.
-   * @return Google_Service_Table
+   * @return Google_Service_Fusiontables_Table
    */
   public function copy($tableId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    *
    * @param string $tableId Identifier for the table being requested.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Table
+   * @return Google_Service_Fusiontables_Table
    */
   public function get($tableId, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * empty values. Default is true.
    * @opt_param int startLine The index of the first line from which to start
    * importing, inclusive. Default is 0.
-   * @return Google_Service_Import
+   * @return Google_Service_Fusiontables_Import
    */
   public function importRows($tableId, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * can only consist of a single character. Default is ,.
    * @opt_param string encoding The encoding of the content. Default is UTF-8. Use
    * auto-detect if you are unsure of the encoding.
-   * @return Google_Service_Table
+   * @return Google_Service_Fusiontables_Table
    */
   public function importTable($name, $optParams = array())
   {
@@ -116,7 +116,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    *
    * @param Google_Table $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Table
+   * @return Google_Service_Fusiontables_Table
    */
   public function insert(Google_Service_Fusiontables_Table $postBody, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * 5.
    * @opt_param string pageToken Continuation token specifying which result page
    * to return.
-   * @return Google_Service_TableList
+   * @return Google_Service_Fusiontables_TableList
    */
   public function listTable($optParams = array())
   {
@@ -153,7 +153,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * @opt_param bool replaceViewDefinition Whether the view definition is also
    * updated. The specified view definition replaces the existing one. Only a view
    * can be updated with a new definition.
-   * @return Google_Service_Table
+   * @return Google_Service_Fusiontables_Table
    */
   public function patch($tableId, Google_Service_Fusiontables_Table $postBody, $optParams = array())
   {
@@ -182,7 +182,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * will be padded with empty values. Default is true.
    * @opt_param int startLine The index of the first line from which to start
    * importing, inclusive. Default is 0.
-   * @return Google_Service_Task
+   * @return Google_Service_Fusiontables_Task
    */
   public function replaceRows($tableId, $optParams = array())
   {
@@ -201,7 +201,7 @@ class Google_Service_Fusiontables_TableResource extends Google_Service_Resource
    * @opt_param bool replaceViewDefinition Whether the view definition is also
    * updated. The specified view definition replaces the existing one. Only a view
    * can be updated with a new definition.
-   * @return Google_Service_Table
+   * @return Google_Service_Fusiontables_Table
    */
   public function update($tableId, Google_Service_Fusiontables_Table $postBody, $optParams = array())
   {

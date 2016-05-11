@@ -50,7 +50,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param string $profileId Profile ID to retrieve filter link for.
    * @param string $linkId ID of the profile filter link.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProfileFilterLink
+   * @return Google_Service_Analytics_ProfileFilterLink
    */
   public function get($accountId, $webPropertyId, $profileId, $linkId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param string $profileId Profile ID to create filter link for.
    * @param Google_ProfileFilterLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProfileFilterLink
+   * @return Google_Service_Analytics_ProfileFilterLink
    */
   public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_ProfileFilterLink $postBody, $optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * include in this response.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_ProfileFilterLinks
+   * @return Google_Service_Analytics_ProfileFilterLinks
    */
   public function listManagementProfileFilterLinks($accountId, $webPropertyId, $profileId, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param string $linkId ID of the profile filter link to be updated.
    * @param Google_ProfileFilterLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProfileFilterLink
+   * @return Google_Service_Analytics_ProfileFilterLink
    */
   public function patch($accountId, $webPropertyId, $profileId, $linkId, Google_Service_Analytics_ProfileFilterLink $postBody, $optParams = array())
   {
@@ -129,7 +129,7 @@ class Google_Service_Analytics_ManagementProfileFilterLinksResource extends Goog
    * @param string $linkId ID of the profile filter link to be updated.
    * @param Google_ProfileFilterLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProfileFilterLink
+   * @return Google_Service_Analytics_ProfileFilterLink
    */
   public function update($accountId, $webPropertyId, $profileId, $linkId, Google_Service_Analytics_ProfileFilterLink $postBody, $optParams = array())
   {

@@ -48,7 +48,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param string $profileId View (Profile) ID to retrieve the experiment for.
    * @param string $experimentId Experiment ID to retrieve the experiment for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Experiment
+   * @return Google_Service_Analytics_Experiment
    */
   public function get($accountId, $webPropertyId, $profileId, $experimentId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param string $profileId View (Profile) ID to create the experiment for.
    * @param Google_Experiment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Experiment
+   * @return Google_Service_Analytics_Experiment
    */
   public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Experiment $postBody, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @opt_param int start-index An index of the first experiment to retrieve. Use
    * this parameter as a pagination mechanism along with the max-results
    * parameter.
-   * @return Google_Service_Experiments
+   * @return Google_Service_Analytics_Experiments
    */
   public function listManagementExperiments($accountId, $webPropertyId, $profileId, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param string $experimentId Experiment ID of the experiment to update.
    * @param Google_Experiment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Experiment
+   * @return Google_Service_Analytics_Experiment
    */
   public function patch($accountId, $webPropertyId, $profileId, $experimentId, Google_Service_Analytics_Experiment $postBody, $optParams = array())
   {
@@ -121,7 +121,7 @@ class Google_Service_Analytics_ManagementExperimentsResource extends Google_Serv
    * @param string $experimentId Experiment ID of the experiment to update.
    * @param Google_Experiment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Experiment
+   * @return Google_Service_Analytics_Experiment
    */
   public function update($accountId, $webPropertyId, $profileId, $experimentId, Google_Service_Analytics_Experiment $postBody, $optParams = array())
   {

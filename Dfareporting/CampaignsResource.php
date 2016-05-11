@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Campaign ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Campaign
+   * @return Google_Service_Dfareporting_Campaign
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
    * campaign.
    * @param Google_Campaign $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Campaign
+   * @return Google_Service_Dfareporting_Campaign
    */
   public function insert($profileId, $defaultLandingPageName, $defaultLandingPageUrl, Google_Service_Dfareporting_Campaign $postBody, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
    * @opt_param string subaccountId Select only campaigns that belong to this
    * subaccount.
-   * @return Google_Service_CampaignsListResponse
+   * @return Google_Service_Dfareporting_CampaignsListResponse
    */
   public function listCampaigns($profileId, $optParams = array())
   {
@@ -105,7 +105,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
    * @param string $id Campaign ID.
    * @param Google_Campaign $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Campaign
+   * @return Google_Service_Dfareporting_Campaign
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_Campaign $postBody, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_Dfareporting_CampaignsResource extends Google_Service_Resou
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Campaign $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Campaign
+   * @return Google_Service_Dfareporting_Campaign
    */
   public function update($profileId, Google_Service_Dfareporting_Campaign $postBody, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $route Name of the Route resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $route, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $route Name of the Route resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Route
+   * @return Google_Service_Compute_Route
    */
   public function get($project, $route, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_Route $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_Route $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Compute_RoutesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_RouteList
+   * @return Google_Service_Compute_RouteList
    */
   public function listRoutes($project, $optParams = array())
   {

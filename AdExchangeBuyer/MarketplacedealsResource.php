@@ -31,7 +31,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param string $proposalId The proposalId to delete deals from.
    * @param Google_DeleteOrderDealsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DeleteOrderDealsResponse
+   * @return Google_Service_AdExchangeBuyer_DeleteOrderDealsResponse
    */
   public function delete($proposalId, Google_Service_AdExchangeBuyer_DeleteOrderDealsRequest $postBody, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param string $proposalId proposalId for which deals need to be added.
    * @param Google_AddOrderDealsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AddOrderDealsResponse
+   * @return Google_Service_AdExchangeBuyer_AddOrderDealsResponse
    */
   public function insert($proposalId, Google_Service_AdExchangeBuyer_AddOrderDealsRequest $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pqlQuery Query string to retrieve specific deals.
-   * @return Google_Service_GetOrderDealsResponse
+   * @return Google_Service_AdExchangeBuyer_GetOrderDealsResponse
    */
   public function listMarketplacedeals($proposalId, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_AdExchangeBuyer_MarketplacedealsResource extends Google_Ser
    * @param string $proposalId The proposalId to edit deals on.
    * @param Google_EditAllOrderDealsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EditAllOrderDealsResponse
+   * @return Google_Service_AdExchangeBuyer_EditAllOrderDealsResponse
    */
   public function update($proposalId, Google_Service_AdExchangeBuyer_EditAllOrderDealsRequest $postBody, $optParams = array())
   {

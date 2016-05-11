@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Placement strategy ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementStrategy
+   * @return Google_Service_Dfareporting_PlacementStrategy
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param Google_PlacementStrategy $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementStrategy
+   * @return Google_Service_Dfareporting_PlacementStrategy
    */
   public function insert($profileId, Google_Service_Dfareporting_PlacementStrategy $postBody, $optParams = array())
   {
@@ -87,7 +87,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
    * "placementstrategy".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_PlacementStrategiesListResponse
+   * @return Google_Service_Dfareporting_PlacementStrategiesListResponse
    */
   public function listPlacementStrategies($profileId, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
    * @param string $id Placement strategy ID.
    * @param Google_PlacementStrategy $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementStrategy
+   * @return Google_Service_Dfareporting_PlacementStrategy
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_PlacementStrategy $postBody, $optParams = array())
   {
@@ -117,7 +117,7 @@ class Google_Service_Dfareporting_PlacementStrategiesResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param Google_PlacementStrategy $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementStrategy
+   * @return Google_Service_Dfareporting_PlacementStrategy
    */
   public function update($profileId, Google_Service_Dfareporting_PlacementStrategy $postBody, $optParams = array())
   {

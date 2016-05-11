@@ -31,7 +31,7 @@ class Google_Service_Safebrowsing_ThreatListUpdatesResource extends Google_Servi
    *
    * @param Google_FetchThreatListUpdatesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FetchThreatListUpdatesResponse
+   * @return Google_Service_Safebrowsing_FetchThreatListUpdatesResponse
    */
   public function fetch(Google_Service_Safebrowsing_FetchThreatListUpdatesRequest $postBody, $optParams = array())
   {

@@ -64,7 +64,7 @@ class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_SubnetworkAggregatedList
+   * @return Google_Service_Compute_SubnetworkAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
    * @param string $region Name of the region scoping this request.
    * @param string $subnetwork Name of the Subnetwork resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $region, $subnetwork, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
    * @param string $region Name of the region scoping this request.
    * @param string $subnetwork Name of the Subnetwork resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subnetwork
+   * @return Google_Service_Compute_Subnetwork
    */
   public function get($project, $region, $subnetwork, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
    * @param string $region Name of the region scoping this request.
    * @param Google_Subnetwork $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $region, Google_Service_Compute_Subnetwork $postBody, $optParams = array())
   {
@@ -160,7 +160,7 @@ class Google_Service_Compute_SubnetworksResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_SubnetworkList
+   * @return Google_Service_Compute_SubnetworkList
    */
   public function listSubnetworks($project, $region, $optParams = array())
   {

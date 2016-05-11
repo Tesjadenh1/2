@@ -32,7 +32,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
    * @param string $commentId The ID of the comment.
    * @param Google_Reply $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Reply
+   * @return Google_Service_Drive_Reply
    */
   public function create($fileId, $commentId, Google_Service_Drive_Reply $postBody, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
    *
    * @opt_param bool includeDeleted Whether to return deleted replies. Deleted
    * replies will not include their original content.
-   * @return Google_Service_Reply
+   * @return Google_Service_Drive_Reply
    */
   public function get($fileId, $commentId, $replyId, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
    * @opt_param string pageToken The token for continuing a previous list request
    * on the next page. This should be set to the value of 'nextPageToken' from the
    * previous response.
-   * @return Google_Service_ReplyList
+   * @return Google_Service_Drive_ReplyList
    */
   public function listReplies($fileId, $commentId, $optParams = array())
   {
@@ -101,7 +101,7 @@ class Google_Service_Drive_RepliesResource extends Google_Service_Resource
    * @param string $replyId The ID of the reply.
    * @param Google_Reply $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Reply
+   * @return Google_Service_Drive_Reply
    */
   public function update($fileId, $commentId, $replyId, Google_Service_Drive_Reply $postBody, $optParams = array())
   {

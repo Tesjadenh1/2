@@ -32,7 +32,7 @@ class Google_Service_AdSense_AccountsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool tree Whether the tree of sub accounts should be returned.
-   * @return Google_Service_Account
+   * @return Google_Service_AdSense_Account
    */
   public function get($accountId, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_AdSense_AccountsResource extends Google_Service_Resource
    * @opt_param string pageToken A continuation token, used to page through
    * accounts. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_Accounts
+   * @return Google_Service_AdSense_Accounts
    */
   public function listAccounts($optParams = array())
   {

@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_UserProfilesResource extends Google_Service_Re
    *
    * @param string $profileId The user profile ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserProfile
+   * @return Google_Service_Dfareporting_UserProfile
    */
   public function get($profileId, $optParams = array())
   {
@@ -42,7 +42,7 @@ class Google_Service_Dfareporting_UserProfilesResource extends Google_Service_Re
    * Retrieves list of user profiles for a user. (userProfiles.listUserProfiles)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserProfileList
+   * @return Google_Service_Dfareporting_UserProfileList
    */
   public function listUserProfiles($optParams = array())
   {

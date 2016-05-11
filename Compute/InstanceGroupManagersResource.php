@@ -42,7 +42,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param Google_InstanceGroupManagersAbandonInstancesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function abandonInstances($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersAbandonInstancesRequest $postBody, $optParams = array())
   {
@@ -90,7 +90,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceGroupManagerAggregatedList
+   * @return Google_Service_Compute_InstanceGroupManagerAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param string $instanceGroupManager The name of the managed instance group to
    * delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $zone, $instanceGroupManager, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param Google_InstanceGroupManagersDeleteInstancesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function deleteInstances($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersDeleteInstancesRequest $postBody, $optParams = array())
   {
@@ -151,7 +151,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * located.
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InstanceGroupManager
+   * @return Google_Service_Compute_InstanceGroupManager
    */
   public function get($project, $zone, $instanceGroupManager, $optParams = array())
   {
@@ -173,7 +173,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * instance group.
    * @param Google_InstanceGroupManager $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $zone, Google_Service_Compute_InstanceGroupManager $postBody, $optParams = array())
   {
@@ -223,7 +223,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceGroupManagerList
+   * @return Google_Service_Compute_InstanceGroupManagerList
    */
   public function listInstanceGroupManagers($project, $zone, $optParams = array())
   {
@@ -244,7 +244,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * located.
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InstanceGroupManagersListManagedInstancesResponse
+   * @return Google_Service_Compute_InstanceGroupManagersListManagedInstancesResponse
    */
   public function listManagedInstances($project, $zone, $instanceGroupManager, $optParams = array())
   {
@@ -267,7 +267,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param Google_InstanceGroupManagersRecreateInstancesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function recreateInstances($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersRecreateInstancesRequest $postBody, $optParams = array())
   {
@@ -293,7 +293,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * removes instances to maintain the number of instances specified by this
    * parameter.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function resize($project, $zone, $instanceGroupManager, $size, $optParams = array())
   {
@@ -312,7 +312,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param Google_InstanceGroupManagersSetInstanceTemplateRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setInstanceTemplate($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersSetInstanceTemplateRequest $postBody, $optParams = array())
   {
@@ -335,7 +335,7 @@ class Google_Service_Compute_InstanceGroupManagersResource extends Google_Servic
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param Google_InstanceGroupManagersSetTargetPoolsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setTargetPools($project, $zone, $instanceGroupManager, Google_Service_Compute_InstanceGroupManagersSetTargetPoolsRequest $postBody, $optParams = array())
   {

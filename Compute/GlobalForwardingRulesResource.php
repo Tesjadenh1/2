@@ -31,7 +31,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
    * @param string $project Project ID for this request.
    * @param string $forwardingRule Name of the ForwardingRule resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $forwardingRule, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
    * @param string $project Project ID for this request.
    * @param string $forwardingRule Name of the ForwardingRule resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ForwardingRule
+   * @return Google_Service_Compute_ForwardingRule
    */
   public function get($project, $forwardingRule, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
    * @param string $project Project ID for this request.
    * @param Google_ForwardingRule $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_ForwardingRule $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ForwardingRuleList
+   * @return Google_Service_Compute_ForwardingRuleList
    */
   public function listGlobalForwardingRules($project, $optParams = array())
   {
@@ -126,7 +126,7 @@ class Google_Service_Compute_GlobalForwardingRulesResource extends Google_Servic
    * target is to be set.
    * @param Google_TargetReference $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setTarget($project, $forwardingRule, Google_Service_Compute_TargetReference $postBody, $optParams = array())
   {

@@ -36,7 +36,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * start with `"goog"`.
    * @param Google_Topic $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Topic
+   * @return Google_Service_Pubsub_Topic
    */
   public function create($name, Google_Service_Pubsub_Topic $postBody, $optParams = array())
   {
@@ -53,7 +53,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    *
    * @param string $topic Name of the topic to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PubsubEmpty
+   * @return Google_Service_Pubsub_PubsubEmpty
    */
   public function delete($topic, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    *
    * @param string $topic The name of the topic to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Topic
+   * @return Google_Service_Pubsub_Topic
    */
   public function get($topic, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * this value is resource specific and is specified in the `getIamPolicy`
    * documentation.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Pubsub_Policy
    */
   public function getIamPolicy($resource, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * @opt_param string pageToken The value returned by the last
    * `ListTopicsResponse`; indicates that this is a continuation of a prior
    * `ListTopics` call, and that the system should return the next page of data.
-   * @return Google_Service_ListTopicsResponse
+   * @return Google_Service_Pubsub_ListTopicsResponse
    */
   public function listProjectsTopics($project, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * topic.
    * @param Google_PublishRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PublishResponse
+   * @return Google_Service_Pubsub_PublishResponse
    */
   public function publish($topic, Google_Service_Pubsub_PublishRequest $postBody, $optParams = array())
   {
@@ -138,7 +138,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * documentation.
    * @param Google_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Pubsub_Policy
    */
   public function setIamPolicy($resource, Google_Service_Pubsub_SetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -157,7 +157,7 @@ class Google_Service_Pubsub_ProjectsTopicsResource extends Google_Service_Resour
    * documentation.
    * @param Google_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TestIamPermissionsResponse
+   * @return Google_Service_Pubsub_TestIamPermissionsResponse
    */
   public function testIamPermissions($resource, Google_Service_Pubsub_TestIamPermissionsRequest $postBody, $optParams = array())
   {

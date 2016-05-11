@@ -69,7 +69,7 @@ class Google_Service_YouTubeAnalytics_GroupItemsResource extends Google_Service_
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_GroupItem
+   * @return Google_Service_YouTubeAnalytics_GroupItem
    */
   public function insert(Google_Service_YouTubeAnalytics_GroupItem $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_YouTubeAnalytics_GroupItemsResource extends Google_Service_
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_GroupItemListResponse
+   * @return Google_Service_YouTubeAnalytics_GroupItemListResponse
    */
   public function listGroupItems($groupId, $optParams = array())
   {

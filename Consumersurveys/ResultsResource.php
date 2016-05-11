@@ -31,7 +31,7 @@ class Google_Service_Consumersurveys_ResultsResource extends Google_Service_Reso
    *
    * @param string $surveyUrlId External URL ID for the survey.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SurveyResults
+   * @return Google_Service_Consumersurveys_SurveyResults
    */
   public function get($surveyUrlId, $optParams = array())
   {

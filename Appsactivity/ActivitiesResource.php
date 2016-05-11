@@ -48,7 +48,7 @@ class Google_Service_Appsactivity_ActivitiesResource extends Google_Service_Reso
    * Possible values of source are: - drive.google.com
    * @opt_param string userId Indicates the user to return activity for. Use the
    * special value me to indicate the currently authenticated user.
-   * @return Google_Service_ListActivitiesResponse
+   * @return Google_Service_Appsactivity_ListActivitiesResponse
    */
   public function listActivities($optParams = array())
   {

@@ -30,7 +30,7 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
    *
    * @param Google_AccountstatusesCustomBatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountstatusesCustomBatchResponse
+   * @return Google_Service_ShoppingContent_AccountstatusesCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_AccountstatusesCustomBatchRequest $postBody, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
    * @param string $merchantId The ID of the managing account.
    * @param string $accountId The ID of the account.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountStatus
+   * @return Google_Service_ShoppingContent_AccountStatus
    */
   public function get($merchantId, $accountId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_ShoppingContent_AccountstatusesResource extends Google_Serv
    * @opt_param string maxResults The maximum number of account statuses to return
    * in the response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_AccountstatusesListResponse
+   * @return Google_Service_ShoppingContent_AccountstatusesListResponse
    */
   public function listAccountstatuses($merchantId, $optParams = array())
   {

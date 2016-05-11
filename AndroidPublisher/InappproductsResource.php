@@ -30,7 +30,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    *
    * @param Google_InappproductsBatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InappproductsBatchResponse
+   * @return Google_Service_AndroidPublisher_InappproductsBatchResponse
    */
   public function batch(Google_Service_AndroidPublisher_InappproductsBatchRequest $postBody, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * @param string $packageName
    * @param string $sku Unique identifier for the in-app product.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InAppProduct
+   * @return Google_Service_AndroidPublisher_InAppProduct
    */
   public function get($packageName, $sku, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * targeted by the parent app that don't have a price specified for this in-app
    * product will be auto converted to the target currency based on the default
    * price. Defaults to false.
-   * @return Google_Service_InAppProduct
+   * @return Google_Service_AndroidPublisher_InAppProduct
    */
   public function insert($packageName, Google_Service_AndroidPublisher_InAppProduct $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * @opt_param string maxResults
    * @opt_param string startIndex
    * @opt_param string token
-   * @return Google_Service_InappproductsListResponse
+   * @return Google_Service_AndroidPublisher_InappproductsListResponse
    */
   public function listInappproducts($packageName, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * targeted by the parent app that don't have a price specified for this in-app
    * product will be auto converted to the target currency based on the default
    * price. Defaults to false.
-   * @return Google_Service_InAppProduct
+   * @return Google_Service_AndroidPublisher_InAppProduct
    */
   public function patch($packageName, $sku, Google_Service_AndroidPublisher_InAppProduct $postBody, $optParams = array())
   {
@@ -140,7 +140,7 @@ class Google_Service_AndroidPublisher_InappproductsResource extends Google_Servi
    * targeted by the parent app that don't have a price specified for this in-app
    * product will be auto converted to the target currency based on the default
    * price. Defaults to false.
-   * @return Google_Service_InAppProduct
+   * @return Google_Service_AndroidPublisher_InAppProduct
    */
   public function update($packageName, $sku, Google_Service_AndroidPublisher_InAppProduct $postBody, $optParams = array())
   {

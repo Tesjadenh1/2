@@ -43,7 +43,7 @@ class Google_Service_YouTube_GuideCategoriesResource extends Google_Service_Reso
    * @opt_param string regionCode The regionCode parameter instructs the API to
    * return the list of guide categories available in the specified country. The
    * parameter value is an ISO 3166-1 alpha-2 country code.
-   * @return Google_Service_GuideCategoryListResponse
+   * @return Google_Service_YouTube_GuideCategoryListResponse
    */
   public function listGuideCategories($part, $optParams = array())
   {

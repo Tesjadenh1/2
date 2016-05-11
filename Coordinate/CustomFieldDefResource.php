@@ -31,7 +31,7 @@ class Google_Service_Coordinate_CustomFieldDefResource extends Google_Service_Re
    *
    * @param string $teamId Team ID
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomFieldDefListResponse
+   * @return Google_Service_Coordinate_CustomFieldDefListResponse
    */
   public function listCustomFieldDef($teamId, $optParams = array())
   {

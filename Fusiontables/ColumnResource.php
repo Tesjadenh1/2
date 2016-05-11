@@ -45,7 +45,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * @param string $columnId Name or identifier for the column that is being
    * requested.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Column
+   * @return Google_Service_Fusiontables_Column
    */
   public function get($tableId, $columnId, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * @param string $tableId Table for which a new column is being added.
    * @param Google_Column $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Column
+   * @return Google_Service_Fusiontables_Column
    */
   public function insert($tableId, Google_Service_Fusiontables_Column $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * 5.
    * @opt_param string pageToken Continuation token specifying which result page
    * to return.
-   * @return Google_Service_ColumnList
+   * @return Google_Service_Fusiontables_ColumnList
    */
   public function listColumn($tableId, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * updated.
    * @param Google_Column $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Column
+   * @return Google_Service_Fusiontables_Column
    */
   public function patch($tableId, $columnId, Google_Service_Fusiontables_Column $postBody, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_Fusiontables_ColumnResource extends Google_Service_Resource
    * updated.
    * @param Google_Column $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Column
+   * @return Google_Service_Fusiontables_Column
    */
   public function update($tableId, $columnId, Google_Service_Fusiontables_Column $postBody, $optParams = array())
   {

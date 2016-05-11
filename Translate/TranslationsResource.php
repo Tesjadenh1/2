@@ -37,7 +37,7 @@ class Google_Service_Translate_TranslationsResource extends Google_Service_Resou
    * @opt_param string cid The customization id for translate
    * @opt_param string format The format of the text
    * @opt_param string source The source language of the text
-   * @return Google_Service_TranslationsListResponse
+   * @return Google_Service_Translate_TranslationsListResponse
    */
   public function listTranslations($q, $target, $optParams = array())
   {

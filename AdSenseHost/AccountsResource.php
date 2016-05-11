@@ -30,7 +30,7 @@ class Google_Service_AdSenseHost_AccountsResource extends Google_Service_Resourc
    *
    * @param string $accountId Account to get information about.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_AdSenseHost_Account
    */
   public function get($accountId, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_AdSenseHost_AccountsResource extends Google_Service_Resourc
    *
    * @param string $filterAdClientId Ad clients to list accounts for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Accounts
+   * @return Google_Service_AdSenseHost_Accounts
    */
   public function listAccounts($filterAdClientId, $optParams = array())
   {

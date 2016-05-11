@@ -33,7 +33,7 @@ class Google_Service_Dfareporting_ReportsCompatibleFieldsResource extends Google
    * @param string $profileId The DFA user profile ID.
    * @param Google_Report $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CompatibleFields
+   * @return Google_Service_Dfareporting_CompatibleFields
    */
   public function query($profileId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {

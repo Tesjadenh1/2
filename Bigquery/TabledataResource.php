@@ -34,7 +34,7 @@ class Google_Service_Bigquery_TabledataResource extends Google_Service_Resource
    * @param string $tableId Table ID of the destination table.
    * @param Google_TableDataInsertAllRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TableDataInsertAllResponse
+   * @return Google_Service_Bigquery_TableDataInsertAllResponse
    */
   public function insertAll($projectId, $datasetId, $tableId, Google_Service_Bigquery_TableDataInsertAllRequest $postBody, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Bigquery_TabledataResource extends Google_Service_Resource
    * @opt_param string pageToken Page token, returned by a previous call,
    * identifying the result set
    * @opt_param string startIndex Zero-based index of the starting row to read
-   * @return Google_Service_TableDataList
+   * @return Google_Service_Bigquery_TableDataList
    */
   public function listTabledata($projectId, $datasetId, $tableId, $optParams = array())
   {

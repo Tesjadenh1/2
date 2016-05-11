@@ -33,7 +33,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * retrieve.
    * @param string $customDimensionId The ID of the custom dimension to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomDimension
+   * @return Google_Service_Analytics_CustomDimension
    */
   public function get($accountId, $webPropertyId, $customDimensionId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * create.
    * @param Google_CustomDimension $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomDimension
+   * @return Google_Service_Analytics_CustomDimension
    */
   public function insert($accountId, $webPropertyId, Google_Service_Analytics_CustomDimension $postBody, $optParams = array())
   {
@@ -70,7 +70,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * in this response.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_CustomDimensions
+   * @return Google_Service_Analytics_CustomDimensions
    */
   public function listManagementCustomDimensions($accountId, $webPropertyId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
    * warnings related to the custom dimension being linked to a custom data source
    * / data set.
-   * @return Google_Service_CustomDimension
+   * @return Google_Service_Analytics_CustomDimension
    */
   public function patch($accountId, $webPropertyId, $customDimensionId, Google_Service_Analytics_CustomDimension $postBody, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Analytics_ManagementCustomDimensionsResource extends Google
    * @opt_param bool ignoreCustomDataSourceLinks Force the update and ignore any
    * warnings related to the custom dimension being linked to a custom data source
    * / data set.
-   * @return Google_Service_CustomDimension
+   * @return Google_Service_Analytics_CustomDimension
    */
   public function update($accountId, $webPropertyId, $customDimensionId, Google_Service_Analytics_CustomDimension $postBody, $optParams = array())
   {

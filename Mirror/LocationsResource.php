@@ -31,7 +31,7 @@ class Google_Service_Mirror_LocationsResource extends Google_Service_Resource
    * @param string $id The ID of the location or latest for the last known
    * location.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Location
+   * @return Google_Service_Mirror_Location
    */
   public function get($id, $optParams = array())
   {
@@ -43,7 +43,7 @@ class Google_Service_Mirror_LocationsResource extends Google_Service_Resource
    * Retrieves a list of locations for the user. (locations.listLocations)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LocationsListResponse
+   * @return Google_Service_Mirror_LocationsListResponse
    */
   public function listLocations($optParams = array())
   {

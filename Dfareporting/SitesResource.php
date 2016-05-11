@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Site ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Site
+   * @return Google_Service_Dfareporting_Site
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Site $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Site
+   * @return Google_Service_Dfareporting_Site
    */
   public function insert($profileId, Google_Service_Dfareporting_Site $postBody, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @opt_param string subaccountId Select only sites with this subaccount ID.
    * @opt_param bool unmappedSite Select only sites that have not been mapped to a
    * directory site.
-   * @return Google_Service_SitesListResponse
+   * @return Google_Service_Dfareporting_SitesListResponse
    */
   public function listSites($profileId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param string $id Site ID.
    * @param Google_Site $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Site
+   * @return Google_Service_Dfareporting_Site
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_Site $postBody, $optParams = array())
   {
@@ -114,7 +114,7 @@ class Google_Service_Dfareporting_SitesResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Site $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Site
+   * @return Google_Service_Dfareporting_Site
    */
   public function update($profileId, Google_Service_Dfareporting_Site $postBody, $optParams = array())
   {

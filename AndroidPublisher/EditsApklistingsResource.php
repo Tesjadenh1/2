@@ -75,7 +75,7 @@ class Google_Service_AndroidPublisher_EditsApklistingsResource extends Google_Se
    * specific localized listing to read or modify. For example, to select Austrian
    * German, pass "de-AT".
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApkListing
+   * @return Google_Service_AndroidPublisher_ApkListing
    */
   public function get($packageName, $editId, $apkVersionCode, $language, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_AndroidPublisher_EditsApklistingsResource extends Google_Se
    * @param int $apkVersionCode The APK version code whose APK-specific listings
    * should be read or modified.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApkListingsListResponse
+   * @return Google_Service_AndroidPublisher_ApkListingsListResponse
    */
   public function listEditsApklistings($packageName, $editId, $apkVersionCode, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_AndroidPublisher_EditsApklistingsResource extends Google_Se
    * German, pass "de-AT".
    * @param Google_ApkListing $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApkListing
+   * @return Google_Service_AndroidPublisher_ApkListing
    */
   public function patch($packageName, $editId, $apkVersionCode, $language, Google_Service_AndroidPublisher_ApkListing $postBody, $optParams = array())
   {
@@ -137,7 +137,7 @@ class Google_Service_AndroidPublisher_EditsApklistingsResource extends Google_Se
    * German, pass "de-AT".
    * @param Google_ApkListing $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApkListing
+   * @return Google_Service_AndroidPublisher_ApkListing
    */
   public function update($packageName, $editId, $apkVersionCode, $language, Google_Service_AndroidPublisher_ApkListing $postBody, $optParams = array())
   {

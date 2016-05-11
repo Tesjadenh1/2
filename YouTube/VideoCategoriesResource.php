@@ -41,7 +41,7 @@ class Google_Service_YouTube_VideoCategoriesResource extends Google_Service_Reso
    * @opt_param string regionCode The regionCode parameter instructs the API to
    * return the list of video categories available in the specified country. The
    * parameter value is an ISO 3166-1 alpha-2 country code.
-   * @return Google_Service_VideoCategoryListResponse
+   * @return Google_Service_YouTube_VideoCategoryListResponse
    */
   public function listVideoCategories($part, $optParams = array())
   {

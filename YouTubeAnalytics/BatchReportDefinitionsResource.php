@@ -32,7 +32,7 @@ class Google_Service_YouTubeAnalytics_BatchReportDefinitionsResource extends Goo
    * @param string $onBehalfOfContentOwner The onBehalfOfContentOwner parameter
    * identifies the content owner that the user is acting on behalf of.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BatchReportDefinitionList
+   * @return Google_Service_YouTubeAnalytics_BatchReportDefinitionList
    */
   public function listBatchReportDefinitions($onBehalfOfContentOwner, $optParams = array())
   {

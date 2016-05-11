@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_DatafeedsCustomBatchResponse
+   * @return Google_Service_ShoppingContent_DatafeedsCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_DatafeedsCustomBatchRequest $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @param string $merchantId
    * @param string $datafeedId
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Datafeed
+   * @return Google_Service_ShoppingContent_Datafeed
    */
   public function get($merchantId, $datafeedId, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Datafeed
+   * @return Google_Service_ShoppingContent_Datafeed
    */
   public function insert($merchantId, Google_Service_ShoppingContent_Datafeed $postBody, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @opt_param string maxResults The maximum number of products to return in the
    * response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_DatafeedsListResponse
+   * @return Google_Service_ShoppingContent_DatafeedsListResponse
    */
   public function listDatafeeds($merchantId, $optParams = array())
   {
@@ -113,7 +113,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Datafeed
+   * @return Google_Service_ShoppingContent_Datafeed
    */
   public function patch($merchantId, $datafeedId, Google_Service_ShoppingContent_Datafeed $postBody, $optParams = array())
   {
@@ -130,7 +130,7 @@ class Google_Service_ShoppingContent_DatafeedsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Datafeed
+   * @return Google_Service_ShoppingContent_Datafeed
    */
   public function update($merchantId, $datafeedId, Google_Service_ShoppingContent_Datafeed $postBody, $optParams = array())
   {

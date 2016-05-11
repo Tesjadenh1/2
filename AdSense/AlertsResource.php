@@ -46,7 +46,7 @@ class Google_Service_AdSense_AlertsResource extends Google_Service_Resource
    * @opt_param string locale The locale to use for translating alert messages.
    * The account locale will be used if this is not supplied. The AdSense default
    * (English) will be used if the supplied locale is invalid or unsupported.
-   * @return Google_Service_Alerts
+   * @return Google_Service_AdSense_Alerts
    */
   public function listAlerts($optParams = array())
   {

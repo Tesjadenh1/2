@@ -41,7 +41,7 @@ class Google_Service_YouTube_ActivitiesResource extends Google_Service_Resource
    * properties that the API response will include.
    * @param Google_Activity $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Activity
+   * @return Google_Service_YouTube_Activity
    */
   public function insert($part, Google_Service_YouTube_Activity $postBody, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_YouTube_ActivitiesResource extends Google_Service_Resource
    * 3166-1 alpha-2 country code. YouTube uses this value when the authorized
    * user's previous activity on YouTube does not provide enough information to
    * generate the activity feed.
-   * @return Google_Service_ActivityListResponse
+   * @return Google_Service_YouTube_ActivityListResponse
    */
   public function listActivities($part, $optParams = array())
   {

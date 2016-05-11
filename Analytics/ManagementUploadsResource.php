@@ -50,7 +50,7 @@ class Google_Service_Analytics_ManagementUploadsResource extends Google_Service_
    * retrieve.
    * @param string $uploadId Upload Id to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Upload
+   * @return Google_Service_Analytics_Upload
    */
   public function get($accountId, $webPropertyId, $customDataSourceId, $uploadId, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Analytics_ManagementUploadsResource extends Google_Service_
    * @opt_param int start-index A 1-based index of the first upload to retrieve.
    * Use this parameter as a pagination mechanism along with the max-results
    * parameter.
-   * @return Google_Service_Uploads
+   * @return Google_Service_Analytics_Uploads
    */
   public function listManagementUploads($accountId, $webPropertyId, $customDataSourceId, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Analytics_ManagementUploadsResource extends Google_Service_
    * @param string $customDataSourceId Custom data source Id to which the data
    * being uploaded belongs.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Upload
+   * @return Google_Service_Analytics_Upload
    */
   public function uploadData($accountId, $webPropertyId, $customDataSourceId, $optParams = array())
   {

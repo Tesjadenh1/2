@@ -51,7 +51,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param string $projectId Project ID of the requested dataset
    * @param string $datasetId Dataset ID of the requested dataset
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Bigquery_Dataset
    */
   public function get($projectId, $datasetId, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param string $projectId Project ID of the new dataset
    * @param Google_Dataset $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Bigquery_Dataset
    */
   public function insert($projectId, Google_Service_Bigquery_Dataset $postBody, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @opt_param string maxResults The maximum number of results to return
    * @opt_param string pageToken Page token, returned by a previous call, to
    * request the next page of results
-   * @return Google_Service_DatasetList
+   * @return Google_Service_Bigquery_DatasetList
    */
   public function listDatasets($projectId, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param string $datasetId Dataset ID of the dataset being updated
    * @param Google_Dataset $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Bigquery_Dataset
    */
   public function patch($projectId, $datasetId, Google_Service_Bigquery_Dataset $postBody, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_Bigquery_DatasetsResource extends Google_Service_Resource
    * @param string $datasetId Dataset ID of the dataset being updated
    * @param Google_Dataset $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Bigquery_Dataset
    */
   public function update($projectId, $datasetId, Google_Service_Bigquery_Dataset $postBody, $optParams = array())
   {

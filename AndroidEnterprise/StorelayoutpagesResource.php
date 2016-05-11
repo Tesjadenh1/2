@@ -44,7 +44,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $pageId The ID of the page.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StorePage
+   * @return Google_Service_AndroidEnterprise_StorePage
    */
   public function get($enterpriseId, $pageId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param string $enterpriseId The ID of the enterprise.
    * @param Google_StorePage $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StorePage
+   * @return Google_Service_AndroidEnterprise_StorePage
    */
   public function insert($enterpriseId, Google_Service_AndroidEnterprise_StorePage $postBody, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreLayoutPagesListResponse
+   * @return Google_Service_AndroidEnterprise_StoreLayoutPagesListResponse
    */
   public function listStorelayoutpages($enterpriseId, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param string $pageId The ID of the page.
    * @param Google_StorePage $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StorePage
+   * @return Google_Service_AndroidEnterprise_StorePage
    */
   public function patch($enterpriseId, $pageId, Google_Service_AndroidEnterprise_StorePage $postBody, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_AndroidEnterprise_StorelayoutpagesResource extends Google_S
    * @param string $pageId The ID of the page.
    * @param Google_StorePage $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StorePage
+   * @return Google_Service_AndroidEnterprise_StorePage
    */
   public function update($enterpriseId, $pageId, Google_Service_AndroidEnterprise_StorePage $postBody, $optParams = array())
   {

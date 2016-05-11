@@ -60,7 +60,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_PlaylistItem
+   * @return Google_Service_YouTube_PlaylistItem
    */
   public function insert($part, Google_Service_YouTube_PlaylistItem $postBody, $optParams = array())
   {
@@ -113,7 +113,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
    * parameter.
    * @opt_param string videoId The videoId parameter specifies that the request
    * should return only the playlist items that contain the specified video.
-   * @return Google_Service_PlaylistItemListResponse
+   * @return Google_Service_YouTube_PlaylistItemListResponse
    */
   public function listPlaylistItems($part, $optParams = array())
   {
@@ -141,7 +141,7 @@ class Google_Service_YouTube_PlaylistItemsResource extends Google_Service_Resour
    * replaced with the default settings.
    * @param Google_PlaylistItem $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlaylistItem
+   * @return Google_Service_YouTube_PlaylistItem
    */
   public function update($part, Google_Service_YouTube_PlaylistItem $postBody, $optParams = array())
   {

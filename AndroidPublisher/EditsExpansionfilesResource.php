@@ -36,7 +36,7 @@ class Google_Service_AndroidPublisher_EditsExpansionfilesResource extends Google
    * configuration is being read or modified.
    * @param string $expansionFileType
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ExpansionFile
+   * @return Google_Service_AndroidPublisher_ExpansionFile
    */
   public function get($packageName, $editId, $apkVersionCode, $expansionFileType, $optParams = array())
   {
@@ -57,7 +57,7 @@ class Google_Service_AndroidPublisher_EditsExpansionfilesResource extends Google
    * @param string $expansionFileType
    * @param Google_ExpansionFile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ExpansionFile
+   * @return Google_Service_AndroidPublisher_ExpansionFile
    */
   public function patch($packageName, $editId, $apkVersionCode, $expansionFileType, Google_Service_AndroidPublisher_ExpansionFile $postBody, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_AndroidPublisher_EditsExpansionfilesResource extends Google
    * @param string $expansionFileType
    * @param Google_ExpansionFile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ExpansionFile
+   * @return Google_Service_AndroidPublisher_ExpansionFile
    */
   public function update($packageName, $editId, $apkVersionCode, $expansionFileType, Google_Service_AndroidPublisher_ExpansionFile $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_AndroidPublisher_EditsExpansionfilesResource extends Google
    * configuration is being read or modified.
    * @param string $expansionFileType
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ExpansionFilesUploadResponse
+   * @return Google_Service_AndroidPublisher_ExpansionFilesUploadResponse
    */
   public function upload($packageName, $editId, $apkVersionCode, $expansionFileType, $optParams = array())
   {

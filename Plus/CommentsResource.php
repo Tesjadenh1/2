@@ -30,7 +30,7 @@ class Google_Service_Plus_CommentsResource extends Google_Service_Resource
    *
    * @param string $commentId The ID of the comment to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_Plus_Comment
    */
   public function get($commentId, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Plus_CommentsResource extends Google_Service_Resource
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
    * @opt_param string sortOrder The order in which to sort the list of comments.
-   * @return Google_Service_CommentFeed
+   * @return Google_Service_Plus_CommentFeed
    */
   public function listComments($activityId, $optParams = array())
   {

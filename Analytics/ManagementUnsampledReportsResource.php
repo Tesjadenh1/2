@@ -51,7 +51,7 @@ class Google_Service_Analytics_ManagementUnsampledReportsResource extends Google
    * @param string $profileId View (Profile) ID to retrieve unsampled report for.
    * @param string $unsampledReportId ID of the unsampled report to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UnsampledReport
+   * @return Google_Service_Analytics_UnsampledReport
    */
   public function get($accountId, $webPropertyId, $profileId, $unsampledReportId, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Analytics_ManagementUnsampledReportsResource extends Google
    * for.
    * @param Google_UnsampledReport $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UnsampledReport
+   * @return Google_Service_Analytics_UnsampledReport
    */
   public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_UnsampledReport $postBody, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Analytics_ManagementUnsampledReportsResource extends Google
    * @opt_param int start-index An index of the first unsampled report to
    * retrieve. Use this parameter as a pagination mechanism along with the max-
    * results parameter.
-   * @return Google_Service_UnsampledReports
+   * @return Google_Service_Analytics_UnsampledReports
    */
   public function listManagementUnsampledReports($accountId, $webPropertyId, $profileId, $optParams = array())
   {

@@ -53,7 +53,7 @@ class Google_Service_AdSense_ReportsResource extends Google_Service_Resource
    * @opt_param bool useTimezoneReporting Whether the report should be generated
    * in the AdSense account's local timezone. If false default PST/PDT timezone
    * will be used.
-   * @return Google_Service_AdsenseReportsGenerateResponse
+   * @return Google_Service_AdSense_AdsenseReportsGenerateResponse
    */
   public function generate($startDate, $endDate, $optParams = array())
   {

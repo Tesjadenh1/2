@@ -38,7 +38,7 @@ class Google_Service_GamesManagement_ApplicationsResource extends Google_Service
    * the response, used for paging. For any response, the actual number of player
    * resources returned may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_HiddenPlayerList
+   * @return Google_Service_GamesManagement_HiddenPlayerList
    */
   public function listHidden($applicationId, $optParams = array())
   {

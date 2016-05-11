@@ -30,7 +30,7 @@ class Google_Service_AdSense_MetadataDimensionsResource extends Google_Service_R
    * (dimensions.listMetadataDimensions)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Metadata
+   * @return Google_Service_AdSense_Metadata
    */
   public function listMetadataDimensions($optParams = array())
   {

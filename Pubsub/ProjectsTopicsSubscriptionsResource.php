@@ -38,7 +38,7 @@ class Google_Service_Pubsub_ProjectsTopicsSubscriptionsResource extends Google_S
    * `ListTopicSubscriptionsResponse`; indicates that this is a continuation of a
    * prior `ListTopicSubscriptions` call, and that the system should return the
    * next page of data.
-   * @return Google_Service_ListTopicSubscriptionsResponse
+   * @return Google_Service_Pubsub_ListTopicSubscriptionsResponse
    */
   public function listProjectsTopicsSubscriptions($topic, $optParams = array())
   {

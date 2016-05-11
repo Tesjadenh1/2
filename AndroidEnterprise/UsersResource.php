@@ -35,7 +35,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $userId The ID of the user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserToken
+   * @return Google_Service_AndroidEnterprise_UserToken
    */
   public function generateToken($enterpriseId, $userId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $userId The ID of the user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_User
+   * @return Google_Service_AndroidEnterprise_User
    */
   public function get($enterpriseId, $userId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $userId The ID of the user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductSet
+   * @return Google_Service_AndroidEnterprise_ProductSet
    */
   public function getAvailableProductSet($enterpriseId, $userId, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $email The exact primary email address of the user to look up.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UsersListResponse
+   * @return Google_Service_AndroidEnterprise_UsersListResponse
    */
   public function listUsers($enterpriseId, $email, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_AndroidEnterprise_UsersResource extends Google_Service_Reso
    * @param string $userId The ID of the user.
    * @param Google_ProductSet $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductSet
+   * @return Google_Service_AndroidEnterprise_ProductSet
    */
   public function setAvailableProductSet($enterpriseId, $userId, Google_Service_AndroidEnterprise_ProductSet $postBody, $optParams = array())
   {

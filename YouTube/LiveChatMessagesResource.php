@@ -46,7 +46,7 @@ class Google_Service_YouTube_LiveChatMessagesResource extends Google_Service_Res
    * the API response will include. Set the parameter value to snippet.
    * @param Google_LiveChatMessage $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LiveChatMessage
+   * @return Google_Service_YouTube_LiveChatMessage
    */
   public function insert($part, Google_Service_YouTube_LiveChatMessage $postBody, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_YouTube_LiveChatMessagesResource extends Google_Service_Res
    * @opt_param string profileImageSize The profileImageSize parameter specifies
    * the size of the user profile pictures that should be returned in the result
    * set. Default: 88.
-   * @return Google_Service_LiveChatMessageListResponse
+   * @return Google_Service_YouTube_LiveChatMessageListResponse
    */
   public function listLiveChatMessages($liveChatId, $part, $optParams = array())
   {

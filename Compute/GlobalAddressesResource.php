@@ -31,7 +31,7 @@ class Google_Service_Compute_GlobalAddressesResource extends Google_Service_Reso
    * @param string $project Project ID for this request.
    * @param string $address Name of the address resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $address, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Compute_GlobalAddressesResource extends Google_Service_Reso
    * @param string $project Project ID for this request.
    * @param string $address Name of the address resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Address
+   * @return Google_Service_Compute_Address
    */
   public function get($project, $address, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Compute_GlobalAddressesResource extends Google_Service_Reso
    * @param string $project Project ID for this request.
    * @param Google_Address $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_Address $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Compute_GlobalAddressesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_AddressList
+   * @return Google_Service_Compute_AddressList
    */
   public function listGlobalAddresses($project, $optParams = array())
   {

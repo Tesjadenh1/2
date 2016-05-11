@@ -41,7 +41,7 @@ class Google_Service_AdSense_AccountsCustomchannelsAdunitsResource extends Googl
    * @opt_param string pageToken A continuation token, used to page through ad
    * units. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_AdUnits
+   * @return Google_Service_AdSense_AdUnits
    */
   public function listAccountsCustomchannelsAdunits($accountId, $adClientId, $customChannelId, $optParams = array())
   {

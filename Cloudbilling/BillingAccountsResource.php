@@ -34,7 +34,7 @@ class Google_Service_Cloudbilling_BillingAccountsResource extends Google_Service
    * @param string $name The resource name of the billing account to retrieve. For
    * example, `billingAccounts/012345-567890-ABCDEF`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BillingAccount
+   * @return Google_Service_Cloudbilling_BillingAccount
    */
   public function get($name, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Cloudbilling_BillingAccountsResource extends Google_Service
    * This should be a `next_page_token` value returned from a previous
    * `ListBillingAccounts` call. If unspecified, the first page of results is
    * returned.
-   * @return Google_Service_ListBillingAccountsResponse
+   * @return Google_Service_Cloudbilling_ListBillingAccountsResponse
    */
   public function listBillingAccounts($optParams = array())
   {

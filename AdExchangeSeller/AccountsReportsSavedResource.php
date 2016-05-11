@@ -38,7 +38,7 @@ class Google_Service_AdExchangeSeller_AccountsReportsSavedResource extends Googl
    * @opt_param int maxResults The maximum number of rows of report data to
    * return.
    * @opt_param int startIndex Index of the first row of report data to return.
-   * @return Google_Service_Report
+   * @return Google_Service_AdExchangeSeller_Report
    */
   public function generate($accountId, $savedReportId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_AdExchangeSeller_AccountsReportsSavedResource extends Googl
    * @opt_param string pageToken A continuation token, used to page through saved
    * reports. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_SavedReports
+   * @return Google_Service_AdExchangeSeller_SavedReports
    */
   public function listAccountsReportsSaved($accountId, $optParams = array())
   {

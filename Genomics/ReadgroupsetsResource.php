@@ -35,7 +35,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * caller must have WRITE permissions to the dataset associated with this read
    * group set.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function delete($readGroupSetId, $optParams = array())
   {
@@ -57,7 +57,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * export. The caller must have READ access to this read group set.
    * @param Google_ExportReadGroupSetRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Genomics_Operation
    */
   public function export($readGroupSetId, Google_Service_Genomics_ExportReadGroupSetRequest $postBody, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    *
    * @param string $readGroupSetId The ID of the read group set.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ReadGroupSet
+   * @return Google_Service_Genomics_ReadGroupSet
    */
   public function get($readGroupSetId, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    *
    * @param Google_ImportReadGroupSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Genomics_Operation
    */
   public function import(Google_Service_Genomics_ImportReadGroupSetsRequest $postBody, $optParams = array())
   {
@@ -120,7 +120,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    * @opt_param string updateMask An optional mask specifying which fields to
    * update. Supported fields: * name. * referenceSetId. Leaving `updateMask`
    * unset is equivalent to specifying all mutable fields.
-   * @return Google_Service_ReadGroupSet
+   * @return Google_Service_Genomics_ReadGroupSet
    */
   public function patch($readGroupSetId, Google_Service_Genomics_ReadGroupSet $postBody, $optParams = array())
   {
@@ -138,7 +138,7 @@ class Google_Service_Genomics_ReadgroupsetsResource extends Google_Service_Resou
    *
    * @param Google_SearchReadGroupSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SearchReadGroupSetsResponse
+   * @return Google_Service_Genomics_SearchReadGroupSetsResponse
    */
   public function search(Google_Service_Genomics_SearchReadGroupSetsRequest $postBody, $optParams = array())
   {

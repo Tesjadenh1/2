@@ -31,7 +31,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    *
    * @param string $customerId Id of the Customer
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Customer
+   * @return Google_Service_Reseller_Customer
    */
   public function get($customerId, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    * @opt_param string customerAuthToken An auth token needed for inserting a
    * customer for which domain already exists. Can be generated at
    * https://admin.google.com/TransferToken. Optional.
-   * @return Google_Service_Customer
+   * @return Google_Service_Reseller_Customer
    */
   public function insert(Google_Service_Reseller_Customer $postBody, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    * @param string $customerId Id of the Customer
    * @param Google_Customer $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Customer
+   * @return Google_Service_Reseller_Customer
    */
   public function patch($customerId, Google_Service_Reseller_Customer $postBody, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_Reseller_CustomersResource extends Google_Service_Resource
    * @param string $customerId Id of the Customer
    * @param Google_Customer $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Customer
+   * @return Google_Service_Reseller_Customer
    */
   public function update($customerId, Google_Service_Reseller_Customer $postBody, $optParams = array())
   {

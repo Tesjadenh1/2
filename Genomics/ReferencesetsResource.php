@@ -35,7 +35,7 @@ class Google_Service_Genomics_ReferencesetsResource extends Google_Service_Resou
    *
    * @param string $referenceSetId The ID of the reference set.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ReferenceSet
+   * @return Google_Service_Genomics_ReferenceSet
    */
   public function get($referenceSetId, $optParams = array())
   {
@@ -53,7 +53,7 @@ class Google_Service_Genomics_ReferencesetsResource extends Google_Service_Resou
    *
    * @param Google_SearchReferenceSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SearchReferenceSetsResponse
+   * @return Google_Service_Genomics_SearchReferenceSetsResponse
    */
   public function search(Google_Service_Genomics_SearchReferenceSetsRequest $postBody, $optParams = array())
   {

@@ -37,7 +37,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * acknowledged.
    * @param Google_AcknowledgeRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PubsubEmpty
+   * @return Google_Service_Pubsub_PubsubEmpty
    */
   public function acknowledge($subscription, Google_Service_Pubsub_AcknowledgeRequest $postBody, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * length, and it must not start with `"goog"`.
    * @param Google_Subscription $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Pubsub_Subscription
    */
   public function create($name, Google_Service_Pubsub_Subscription $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    *
    * @param string $subscription The subscription to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PubsubEmpty
+   * @return Google_Service_Pubsub_PubsubEmpty
    */
   public function delete($subscription, $optParams = array())
   {
@@ -90,7 +90,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    *
    * @param string $subscription The name of the subscription to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Pubsub_Subscription
    */
   public function get($subscription, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * this value is resource specific and is specified in the `getIamPolicy`
    * documentation.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Pubsub_Policy
    */
   public function getIamPolicy($resource, $optParams = array())
   {
@@ -129,7 +129,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * `ListSubscriptionsResponse`; indicates that this is a continuation of a prior
    * `ListSubscriptions` call, and that the system should return the next page of
    * data.
-   * @return Google_Service_ListSubscriptionsResponse
+   * @return Google_Service_Pubsub_ListSubscriptionsResponse
    */
   public function listProjectsSubscriptions($project, $optParams = array())
   {
@@ -146,7 +146,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param string $subscription The name of the subscription.
    * @param Google_ModifyAckDeadlineRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PubsubEmpty
+   * @return Google_Service_Pubsub_PubsubEmpty
    */
   public function modifyAckDeadline($subscription, Google_Service_Pubsub_ModifyAckDeadlineRequest $postBody, $optParams = array())
   {
@@ -165,7 +165,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * @param string $subscription The name of the subscription.
    * @param Google_ModifyPushConfigRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PubsubEmpty
+   * @return Google_Service_Pubsub_PubsubEmpty
    */
   public function modifyPushConfig($subscription, Google_Service_Pubsub_ModifyPushConfigRequest $postBody, $optParams = array())
   {
@@ -183,7 +183,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * pulled.
    * @param Google_PullRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PullResponse
+   * @return Google_Service_Pubsub_PullResponse
    */
   public function pull($subscription, Google_Service_Pubsub_PullRequest $postBody, $optParams = array())
   {
@@ -202,7 +202,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * documentation.
    * @param Google_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Pubsub_Policy
    */
   public function setIamPolicy($resource, Google_Service_Pubsub_SetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -221,7 +221,7 @@ class Google_Service_Pubsub_ProjectsSubscriptionsResource extends Google_Service
    * documentation.
    * @param Google_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TestIamPermissionsResponse
+   * @return Google_Service_Pubsub_TestIamPermissionsResponse
    */
   public function testIamPermissions($resource, Google_Service_Pubsub_TestIamPermissionsRequest $postBody, $optParams = array())
   {

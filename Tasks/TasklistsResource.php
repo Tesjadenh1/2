@@ -42,7 +42,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    *
    * @param string $tasklist Task list identifier.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TaskList
+   * @return Google_Service_Tasks_TaskList
    */
   public function get($tasklist, $optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    *
    * @param Google_TaskList $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TaskList
+   * @return Google_Service_Tasks_TaskList
    */
   public function insert(Google_Service_Tasks_TaskList $postBody, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    * page. Optional. The default is 100.
    * @opt_param string pageToken Token specifying the result page to return.
    * Optional.
-   * @return Google_Service_TaskLists
+   * @return Google_Service_Tasks_TaskLists
    */
   public function listTasklists($optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    * @param string $tasklist Task list identifier.
    * @param Google_TaskList $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TaskList
+   * @return Google_Service_Tasks_TaskList
    */
   public function patch($tasklist, Google_Service_Tasks_TaskList $postBody, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_Tasks_TasklistsResource extends Google_Service_Resource
    * @param string $tasklist Task list identifier.
    * @param Google_TaskList $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TaskList
+   * @return Google_Service_Tasks_TaskList
    */
   public function update($tasklist, Google_Service_Tasks_TaskList $postBody, $optParams = array())
   {

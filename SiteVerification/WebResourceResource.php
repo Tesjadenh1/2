@@ -42,7 +42,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    *
    * @param string $id The id of a verified site or domain.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SiteVerificationWebResourceResource
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceResource
    */
   public function get($id, $optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    *
    * @param Google_SiteVerificationWebResourceGettokenRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SiteVerificationWebResourceGettokenResponse
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceGettokenResponse
    */
   public function getToken(Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequest $postBody, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * domain.
    * @param Google_SiteVerificationWebResourceResource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SiteVerificationWebResourceResource
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceResource
    */
   public function insert($verificationMethod, Google_Service_SiteVerification_SiteVerificationWebResourceResource $postBody, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * (webResource.listWebResource)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SiteVerificationWebResourceListResponse
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceListResponse
    */
   public function listWebResource($optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * @param string $id The id of a verified site or domain.
    * @param Google_SiteVerificationWebResourceResource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SiteVerificationWebResourceResource
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceResource
    */
   public function patch($id, Google_Service_SiteVerification_SiteVerificationWebResourceResource $postBody, $optParams = array())
   {
@@ -113,7 +113,7 @@ class Google_Service_SiteVerification_WebResourceResource extends Google_Service
    * @param string $id The id of a verified site or domain.
    * @param Google_SiteVerificationWebResourceResource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SiteVerificationWebResourceResource
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceResource
    */
   public function update($id, Google_Service_SiteVerification_SiteVerificationWebResourceResource $postBody, $optParams = array())
   {

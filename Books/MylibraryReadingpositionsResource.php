@@ -36,7 +36,7 @@ class Google_Service_Books_MylibraryReadingpositionsResource extends Google_Serv
    * @opt_param string contentVersion Volume content version for which this
    * reading position is requested.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_ReadingPosition
+   * @return Google_Service_Books_ReadingPosition
    */
   public function get($volumeId, $optParams = array())
   {

@@ -51,7 +51,7 @@ class Google_Service_Gmail_UsersThreadsResource extends Google_Service_Resource
    * @opt_param string format The format to return the messages in.
    * @opt_param string metadataHeaders When given and format is METADATA, only
    * include headers specified.
-   * @return Google_Service_Thread
+   * @return Google_Service_Gmail_Thread
    */
   public function get($userId, $id, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_Gmail_UsersThreadsResource extends Google_Service_Resource
    * @opt_param string q Only return threads matching the specified query.
    * Supports the same query format as the Gmail search box. For example,
    * "from:someuser@example.com rfc822msgid: is:unread".
-   * @return Google_Service_ListThreadsResponse
+   * @return Google_Service_Gmail_ListThreadsResponse
    */
   public function listUsersThreads($userId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Gmail_UsersThreadsResource extends Google_Service_Resource
    * @param string $id The ID of the thread to modify.
    * @param Google_ModifyThreadRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Thread
+   * @return Google_Service_Gmail_Thread
    */
   public function modify($userId, $id, Google_Service_Gmail_ModifyThreadRequest $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Gmail_UsersThreadsResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param string $id The ID of the thread to Trash.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Thread
+   * @return Google_Service_Gmail_Thread
    */
   public function trash($userId, $id, $optParams = array())
   {
@@ -123,7 +123,7 @@ class Google_Service_Gmail_UsersThreadsResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param string $id The ID of the thread to remove from Trash.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Thread
+   * @return Google_Service_Gmail_Thread
    */
   public function untrash($userId, $id, $optParams = array())
   {

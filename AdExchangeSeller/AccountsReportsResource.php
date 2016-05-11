@@ -48,7 +48,7 @@ class Google_Service_AdExchangeSeller_AccountsReportsResource extends Google_Ser
    * resulting report on, optionally prefixed with "+" to sort ascending or "-" to
    * sort descending. If no prefix is specified, the column is sorted ascending.
    * @opt_param string startIndex Index of the first row of report data to return.
-   * @return Google_Service_Report
+   * @return Google_Service_AdExchangeSeller_Report
    */
   public function generate($accountId, $startDate, $endDate, $optParams = array())
   {

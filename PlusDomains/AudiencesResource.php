@@ -39,7 +39,7 @@ class Google_Service_PlusDomains_AudiencesResource extends Google_Service_Resour
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
-   * @return Google_Service_AudiencesFeed
+   * @return Google_Service_PlusDomains_AudiencesFeed
    */
   public function listAudiences($userId, $optParams = array())
   {

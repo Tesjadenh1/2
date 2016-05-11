@@ -34,7 +34,7 @@ class Google_Service_Dfareporting_CampaignCreativeAssociationsResource extends G
    * @param string $campaignId Campaign ID in this association.
    * @param Google_CampaignCreativeAssociation $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CampaignCreativeAssociation
+   * @return Google_Service_Dfareporting_CampaignCreativeAssociation
    */
   public function insert($profileId, $campaignId, Google_Service_Dfareporting_CampaignCreativeAssociation $postBody, $optParams = array())
   {
@@ -54,7 +54,7 @@ class Google_Service_Dfareporting_CampaignCreativeAssociationsResource extends G
    * @opt_param string pageToken Value of the nextPageToken from the previous
    * result page.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_CampaignCreativeAssociationsListResponse
+   * @return Google_Service_Dfareporting_CampaignCreativeAssociationsListResponse
    */
   public function listCampaignCreativeAssociations($profileId, $campaignId, $optParams = array())
   {

@@ -33,7 +33,7 @@ class Google_Service_Analytics_ManagementGoalsResource extends Google_Service_Re
    * @param string $profileId View (Profile) ID to retrieve the goal for.
    * @param string $goalId Goal ID to retrieve the goal for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Goal
+   * @return Google_Service_Analytics_Goal
    */
   public function get($accountId, $webPropertyId, $profileId, $goalId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Analytics_ManagementGoalsResource extends Google_Service_Re
    * @param string $profileId View (Profile) ID to create the goal for.
    * @param Google_Goal $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Goal
+   * @return Google_Service_Analytics_Goal
    */
   public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Goal $postBody, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Analytics_ManagementGoalsResource extends Google_Service_Re
    * response.
    * @opt_param int start-index An index of the first goal to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_Goals
+   * @return Google_Service_Analytics_Goals
    */
   public function listManagementGoals($accountId, $webPropertyId, $profileId, $optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Analytics_ManagementGoalsResource extends Google_Service_Re
    * @param string $goalId Index of the goal to be updated.
    * @param Google_Goal $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Goal
+   * @return Google_Service_Analytics_Goal
    */
   public function patch($accountId, $webPropertyId, $profileId, $goalId, Google_Service_Analytics_Goal $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Analytics_ManagementGoalsResource extends Google_Service_Re
    * @param string $goalId Index of the goal to be updated.
    * @param Google_Goal $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Goal
+   * @return Google_Service_Analytics_Goal
    */
   public function update($accountId, $webPropertyId, $profileId, $goalId, Google_Service_Analytics_Goal $postBody, $optParams = array())
   {

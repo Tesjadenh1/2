@@ -42,7 +42,7 @@ class Google_Service_Cloudbilling_BillingAccountsProjectsResource extends Google
    * returned. This should be a `next_page_token` value returned from a previous
    * `ListProjectBillingInfo` call. If unspecified, the first page of results is
    * returned.
-   * @return Google_Service_ListProjectBillingInfoResponse
+   * @return Google_Service_Cloudbilling_ListProjectBillingInfoResponse
    */
   public function listBillingAccountsProjects($name, $optParams = array())
   {

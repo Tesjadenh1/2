@@ -54,7 +54,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * post.
    * @opt_param string view Access level with which to view the returned result.
    * Note that some fields require elevated access.
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function get($blogId, $postId, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * post.
    * @opt_param string view Access level with which to view the returned result.
    * Note that some fields require elevated access.
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function getByPath($blogId, $path, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * included in the returned result (default: false).
    * @opt_param bool isDraft Whether to create the post as a draft (default:
    * false).
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function insert($blogId, Google_Service_Blogger_Post $postBody, $optParams = array())
   {
@@ -124,7 +124,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * @opt_param string status Statuses to include in the results.
    * @opt_param string view Access level with which to view the returned result.
    * Note that some fields require escalated access.
-   * @return Google_Service_PostList
+   * @return Google_Service_Blogger_PostList
    */
   public function listPosts($blogId, $optParams = array())
   {
@@ -150,7 +150,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * post is updated (default: false).
    * @opt_param bool revert Whether a revert action should be performed when the
    * post is updated (default: false).
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function patch($blogId, $postId, Google_Service_Blogger_Post $postBody, $optParams = array())
   {
@@ -171,7 +171,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * either published at the a previously saved schedule date (if present), or the
    * current time. If a future date is given, the post will be scheduled to be
    * published.
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function publish($blogId, $postId, $optParams = array())
   {
@@ -185,7 +185,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * @param string $blogId The ID of the Blog.
    * @param string $postId The ID of the Post.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function revert($blogId, $postId, $optParams = array())
   {
@@ -204,7 +204,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * (default: true). This should be set to false when the post bodies are not
    * required, to help minimize traffic.
    * @opt_param string orderBy Sort search results
-   * @return Google_Service_PostList
+   * @return Google_Service_Blogger_PostList
    */
   public function search($blogId, $q, $optParams = array())
   {
@@ -230,7 +230,7 @@ class Google_Service_Blogger_PostsResource extends Google_Service_Resource
    * post is updated (default: false).
    * @opt_param bool revert Whether a revert action should be performed when the
    * post is updated (default: false).
-   * @return Google_Service_Post
+   * @return Google_Service_Blogger_Post
    */
   public function update($blogId, $postId, Google_Service_Blogger_Post $postBody, $optParams = array())
   {

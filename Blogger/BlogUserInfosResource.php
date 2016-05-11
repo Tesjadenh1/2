@@ -35,7 +35,7 @@ class Google_Service_Blogger_BlogUserInfosResource extends Google_Service_Resour
    *
    * @opt_param string maxPosts Maximum number of posts to pull back with the
    * blog.
-   * @return Google_Service_BlogUserInfo
+   * @return Google_Service_Blogger_BlogUserInfo
    */
   public function get($userId, $blogId, $optParams = array())
   {

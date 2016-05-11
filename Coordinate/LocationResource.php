@@ -36,7 +36,7 @@ class Google_Service_Coordinate_LocationResource extends Google_Service_Resource
    *
    * @opt_param string maxResults Maximum number of results to return in one page.
    * @opt_param string pageToken Continuation token
-   * @return Google_Service_LocationListResponse
+   * @return Google_Service_Coordinate_LocationListResponse
    */
   public function listLocation($teamId, $workerEmail, $startTimestampMs, $optParams = array())
   {

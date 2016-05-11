@@ -44,7 +44,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    *
    * @param string $leaderboardId The ID of the leaderboard.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LeaderboardConfiguration
+   * @return Google_Service_GamesConfiguration_LeaderboardConfiguration
    */
   public function get($leaderboardId, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * developer console.
    * @param Google_LeaderboardConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LeaderboardConfiguration
+   * @return Google_Service_GamesConfiguration_LeaderboardConfiguration
    */
   public function insert($applicationId, Google_Service_GamesConfiguration_LeaderboardConfiguration $postBody, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * return in the response, used for paging. For any response, the actual number
    * of resources returned may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_LeaderboardConfigurationListResponse
+   * @return Google_Service_GamesConfiguration_LeaderboardConfigurationListResponse
    */
   public function listLeaderboardConfigurations($applicationId, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * @param string $leaderboardId The ID of the leaderboard.
    * @param Google_LeaderboardConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LeaderboardConfiguration
+   * @return Google_Service_GamesConfiguration_LeaderboardConfiguration
    */
   public function patch($leaderboardId, Google_Service_GamesConfiguration_LeaderboardConfiguration $postBody, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationsResource extend
    * @param string $leaderboardId The ID of the leaderboard.
    * @param Google_LeaderboardConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LeaderboardConfiguration
+   * @return Google_Service_GamesConfiguration_LeaderboardConfiguration
    */
   public function update($leaderboardId, Google_Service_GamesConfiguration_LeaderboardConfiguration $postBody, $optParams = array())
   {

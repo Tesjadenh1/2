@@ -32,7 +32,7 @@ class Google_Service_TagManager_AccountsContainersFoldersResource extends Google
    * @param string $containerId The GTM Container ID.
    * @param Google_Folder $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Folder
+   * @return Google_Service_TagManager_Folder
    */
   public function create($accountId, $containerId, Google_Service_TagManager_Folder $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_TagManager_AccountsContainersFoldersResource extends Google
    * @param string $containerId The GTM Container ID.
    * @param string $folderId The GTM Folder ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Folder
+   * @return Google_Service_TagManager_Folder
    */
   public function get($accountId, $containerId, $folderId, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_TagManager_AccountsContainersFoldersResource extends Google
    * @param string $accountId The GTM Account ID.
    * @param string $containerId The GTM Container ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListFoldersResponse
+   * @return Google_Service_TagManager_ListFoldersResponse
    */
   public function listAccountsContainersFolders($accountId, $containerId, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_TagManager_AccountsContainersFoldersResource extends Google
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the folder in storage.
-   * @return Google_Service_Folder
+   * @return Google_Service_TagManager_Folder
    */
   public function update($accountId, $containerId, $folderId, Google_Service_TagManager_Folder $postBody, $optParams = array())
   {

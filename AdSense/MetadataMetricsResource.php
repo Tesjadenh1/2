@@ -30,7 +30,7 @@ class Google_Service_AdSense_MetadataMetricsResource extends Google_Service_Reso
    * (metrics.listMetadataMetrics)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Metadata
+   * @return Google_Service_AdSense_Metadata
    */
   public function listMetadataMetrics($optParams = array())
   {

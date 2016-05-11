@@ -31,7 +31,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param string $project Project ID for this request.
    * @param string $backendService Name of the BackendService resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $backendService, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param string $project Project ID for this request.
    * @param string $backendService Name of the BackendService resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BackendService
+   * @return Google_Service_Compute_BackendService
    */
   public function get($project, $backendService, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * the queried instance belongs.
    * @param Google_ResourceGroupReference $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BackendServiceGroupHealth
+   * @return Google_Service_Compute_BackendServiceGroupHealth
    */
   public function getHealth($project, $backendService, Google_Service_Compute_ResourceGroupReference $postBody, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param string $project Project ID for this request.
    * @param Google_BackendService $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_BackendService $postBody, $optParams = array())
   {
@@ -128,7 +128,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_BackendServiceList
+   * @return Google_Service_Compute_BackendServiceList
    */
   public function listBackendServices($project, $optParams = array())
   {
@@ -146,7 +146,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param string $backendService Name of the BackendService resource to update.
    * @param Google_BackendService $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function patch($project, $backendService, Google_Service_Compute_BackendService $postBody, $optParams = array())
   {
@@ -164,7 +164,7 @@ class Google_Service_Compute_BackendServicesResource extends Google_Service_Reso
    * @param string $backendService Name of the BackendService resource to update.
    * @param Google_BackendService $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function update($project, $backendService, Google_Service_Compute_BackendService $postBody, $optParams = array())
   {

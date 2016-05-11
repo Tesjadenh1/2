@@ -29,7 +29,7 @@ class Google_Service_Oauth2_UserinfoV2MeResource extends Google_Service_Resource
    * (me.get)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Userinfoplus
+   * @return Google_Service_Oauth2_Userinfoplus
    */
   public function get($optParams = array())
   {

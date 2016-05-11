@@ -36,7 +36,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * can be repeated.
    * @opt_param string userId IDs of the people to add to the circle. Optional,
    * can be repeated.
-   * @return Google_Service_Circle
+   * @return Google_Service_PlusDomains_Circle
    */
   public function addPeople($circleId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    *
    * @param string $circleId The ID of the circle to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Circle
+   * @return Google_Service_PlusDomains_Circle
    */
   public function get($circleId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * The value "me" can be used to indicate the authenticated user.
    * @param Google_Circle $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Circle
+   * @return Google_Service_PlusDomains_Circle
    */
   public function insert($userId, Google_Service_PlusDomains_Circle $postBody, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
-   * @return Google_Service_CircleFeed
+   * @return Google_Service_PlusDomains_CircleFeed
    */
   public function listCircles($userId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * @param string $circleId The ID of the circle to update.
    * @param Google_Circle $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Circle
+   * @return Google_Service_PlusDomains_Circle
    */
   public function patch($circleId, Google_Service_PlusDomains_Circle $postBody, $optParams = array())
   {
@@ -143,7 +143,7 @@ class Google_Service_PlusDomains_CirclesResource extends Google_Service_Resource
    * @param string $circleId The ID of the circle to update.
    * @param Google_Circle $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Circle
+   * @return Google_Service_PlusDomains_Circle
    */
   public function update($circleId, Google_Service_PlusDomains_Circle $postBody, $optParams = array())
   {

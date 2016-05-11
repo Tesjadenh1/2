@@ -30,7 +30,7 @@ class Google_Service_GroupsMigration_ArchiveResource extends Google_Service_Reso
    *
    * @param string $groupId The group ID
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Groups
+   * @return Google_Service_GroupsMigration_Groups
    */
   public function insert($groupId, $optParams = array())
   {

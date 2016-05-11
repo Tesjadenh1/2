@@ -30,7 +30,7 @@ class Google_Service_PlusDomains_CommentsResource extends Google_Service_Resourc
    *
    * @param string $commentId The ID of the comment to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_PlusDomains_Comment
    */
   public function get($commentId, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_PlusDomains_CommentsResource extends Google_Service_Resourc
    * @param string $activityId The ID of the activity to reply to.
    * @param Google_Comment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_PlusDomains_Comment
    */
   public function insert($activityId, Google_Service_PlusDomains_Comment $postBody, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_PlusDomains_CommentsResource extends Google_Service_Resourc
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
    * @opt_param string sortOrder The order in which to sort the list of comments.
-   * @return Google_Service_CommentFeed
+   * @return Google_Service_PlusDomains_CommentFeed
    */
   public function listComments($activityId, $optParams = array())
   {

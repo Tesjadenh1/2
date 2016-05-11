@@ -36,7 +36,7 @@ class Google_Service_Classroom_UserProfilesResource extends Google_Service_Resou
    * address of the user * the string literal `"me"`, indicating the requesting
    * user
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserProfile
+   * @return Google_Service_Classroom_UserProfile
    */
   public function get($userId, $optParams = array())
   {

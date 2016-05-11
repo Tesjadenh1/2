@@ -45,7 +45,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * @param string $accountId The account id to get the pretargeting config for.
    * @param string $configId The specific id of the configuration to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PretargetingConfig
+   * @return Google_Service_AdExchangeBuyer_PretargetingConfig
    */
   public function get($accountId, $configId, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * for.
    * @param Google_PretargetingConfig $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PretargetingConfig
+   * @return Google_Service_AdExchangeBuyer_PretargetingConfig
    */
   public function insert($accountId, Google_Service_AdExchangeBuyer_PretargetingConfig $postBody, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    *
    * @param string $accountId The account id to get the pretargeting configs for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PretargetingConfigList
+   * @return Google_Service_AdExchangeBuyer_PretargetingConfigList
    */
   public function listPretargetingConfig($accountId, $optParams = array())
   {
@@ -91,7 +91,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * @param string $configId The specific id of the configuration to update.
    * @param Google_PretargetingConfig $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PretargetingConfig
+   * @return Google_Service_AdExchangeBuyer_PretargetingConfig
    */
   public function patch($accountId, $configId, Google_Service_AdExchangeBuyer_PretargetingConfig $postBody, $optParams = array())
   {
@@ -107,7 +107,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigResource extends Google_S
    * @param string $configId The specific id of the configuration to update.
    * @param Google_PretargetingConfig $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PretargetingConfig
+   * @return Google_Service_AdExchangeBuyer_PretargetingConfig
    */
   public function update($accountId, $configId, Google_Service_AdExchangeBuyer_PretargetingConfig $postBody, $optParams = array())
   {

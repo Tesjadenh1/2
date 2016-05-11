@@ -43,7 +43,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * whether the object's current generation matches the given value.
    * @opt_param string ifMetagenerationMatch Makes the operation conditional on
    * whether the object's current metageneration matches the given value.
-   * @return Google_Service_StorageObject
+   * @return Google_Service_Storage_StorageObject
    */
   public function compose($destinationBucket, $destinationObject, Google_Service_Storage_ComposeRequest $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * full.
    * @opt_param string sourceGeneration If present, selects a specific revision of
    * the source object (as opposed to the latest version, the default).
-   * @return Google_Service_StorageObject
+   * @return Google_Service_Storage_StorageObject
    */
   public function copy($sourceBucket, $sourceObject, $destinationBucket, $destinationObject, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
@@ -151,7 +151,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string ifMetagenerationNotMatch Makes the operation conditional on
    * whether the object's current metageneration does not match the given value.
    * @opt_param string projection Set of properties to return. Defaults to noAcl.
-   * @return Google_Service_StorageObject
+   * @return Google_Service_Storage_StorageObject
    */
   public function get($bucket, $object, $optParams = array())
   {
@@ -189,7 +189,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to noAcl,
    * unless the object resource specifies the acl property, when it defaults to
    * full.
-   * @return Google_Service_StorageObject
+   * @return Google_Service_Storage_StorageObject
    */
   public function insert($bucket, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
@@ -218,7 +218,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to noAcl.
    * @opt_param bool versions If true, lists all versions of an object as distinct
    * results. The default is false. For more information, see Object Versioning.
-   * @return Google_Service_Objects
+   * @return Google_Service_Storage_Objects
    */
   public function listObjects($bucket, $optParams = array())
   {
@@ -249,7 +249,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string predefinedAcl Apply a predefined set of access controls to
    * this object.
    * @opt_param string projection Set of properties to return. Defaults to full.
-   * @return Google_Service_StorageObject
+   * @return Google_Service_Storage_StorageObject
    */
   public function patch($bucket, $object, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
@@ -314,7 +314,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * provided in the first rewrite request.
    * @opt_param string sourceGeneration If present, selects a specific revision of
    * the source object (as opposed to the latest version, the default).
-   * @return Google_Service_RewriteResponse
+   * @return Google_Service_Storage_RewriteResponse
    */
   public function rewrite($sourceBucket, $sourceObject, $destinationBucket, $destinationObject, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
@@ -344,7 +344,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string predefinedAcl Apply a predefined set of access controls to
    * this object.
    * @opt_param string projection Set of properties to return. Defaults to full.
-   * @return Google_Service_StorageObject
+   * @return Google_Service_Storage_StorageObject
    */
   public function update($bucket, $object, Google_Service_Storage_StorageObject $postBody, $optParams = array())
   {
@@ -374,7 +374,7 @@ class Google_Service_Storage_ObjectsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to noAcl.
    * @opt_param bool versions If true, lists all versions of an object as distinct
    * results. The default is false. For more information, see Object Versioning.
-   * @return Google_Service_Channel
+   * @return Google_Service_Storage_Channel
    */
   public function watchAll($bucket, Google_Service_Storage_Channel $postBody, $optParams = array())
   {

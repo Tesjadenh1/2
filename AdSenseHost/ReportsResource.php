@@ -47,7 +47,7 @@ class Google_Service_AdSenseHost_ReportsResource extends Google_Service_Resource
    * resulting report on, optionally prefixed with "+" to sort ascending or "-" to
    * sort descending. If no prefix is specified, the column is sorted ascending.
    * @opt_param string startIndex Index of the first row of report data to return.
-   * @return Google_Service_Report
+   * @return Google_Service_AdSenseHost_Report
    */
   public function generate($startDate, $endDate, $optParams = array())
   {

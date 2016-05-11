@@ -64,7 +64,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_VpnTunnelAggregatedList
+   * @return Google_Service_Compute_VpnTunnelAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
    * @param string $region Name of the region for this request.
    * @param string $vpnTunnel Name of the VpnTunnel resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $region, $vpnTunnel, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
    * @param string $region Name of the region for this request.
    * @param string $vpnTunnel Name of the VpnTunnel resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_VpnTunnel
+   * @return Google_Service_Compute_VpnTunnel
    */
   public function get($project, $region, $vpnTunnel, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
    * @param string $region Name of the region for this request.
    * @param Google_VpnTunnel $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $region, Google_Service_Compute_VpnTunnel $postBody, $optParams = array())
   {
@@ -160,7 +160,7 @@ class Google_Service_Compute_VpnTunnelsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_VpnTunnelList
+   * @return Google_Service_Compute_VpnTunnelList
    */
   public function listVpnTunnels($project, $region, $optParams = array())
   {

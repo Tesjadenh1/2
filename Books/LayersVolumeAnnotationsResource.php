@@ -36,7 +36,7 @@ class Google_Service_Books_LayersVolumeAnnotationsResource extends Google_Servic
    * @opt_param string locale The locale information for the data. ISO-639-1
    * language and ISO-3166-1 country code. Ex: 'en_US'.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Volumeannotation
+   * @return Google_Service_Books_Volumeannotation
    */
   public function get($volumeId, $layerId, $annotationId, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Books_LayersVolumeAnnotationsResource extends Google_Servic
    * since this timestamp (inclusive).
    * @opt_param string volumeAnnotationsVersion The version of the volume
    * annotations that you are requesting.
-   * @return Google_Service_Volumeannotations
+   * @return Google_Service_Books_Volumeannotations
    */
   public function listLayersVolumeAnnotations($volumeId, $layerId, $contentVersion, $optParams = array())
   {

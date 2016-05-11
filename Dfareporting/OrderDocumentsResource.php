@@ -32,7 +32,7 @@ class Google_Service_Dfareporting_OrderDocumentsResource extends Google_Service_
    * @param string $projectId Project ID for order documents.
    * @param string $id Order document ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrderDocument
+   * @return Google_Service_Dfareporting_OrderDocument
    */
   public function get($profileId, $projectId, $id, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_Dfareporting_OrderDocumentsResource extends Google_Service_
    * these sites.
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_OrderDocumentsListResponse
+   * @return Google_Service_Dfareporting_OrderDocumentsListResponse
    */
   public function listOrderDocuments($profileId, $projectId, $optParams = array())
   {

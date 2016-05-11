@@ -35,7 +35,7 @@ class Google_Service_AndroidPublisher_PurchasesProductsResource extends Google_S
    * @param string $token The token provided to the user's device when the inapp
    * product was purchased.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductPurchase
+   * @return Google_Service_AndroidPublisher_ProductPurchase
    */
   public function get($packageName, $productId, $token, $optParams = array())
   {

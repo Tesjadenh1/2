@@ -36,7 +36,7 @@ class Google_Service_AndroidPublisher_EditsApksResource extends Google_Service_R
    * @param string $editId Unique identifier for this edit.
    * @param Google_ApksAddExternallyHostedRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApksAddExternallyHostedResponse
+   * @return Google_Service_AndroidPublisher_ApksAddExternallyHostedResponse
    */
   public function addexternallyhosted($packageName, $editId, Google_Service_AndroidPublisher_ApksAddExternallyHostedRequest $postBody, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_AndroidPublisher_EditsApksResource extends Google_Service_R
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApksListResponse
+   * @return Google_Service_AndroidPublisher_ApksListResponse
    */
   public function listEditsApks($packageName, $editId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_AndroidPublisher_EditsApksResource extends Google_Service_R
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Apk
+   * @return Google_Service_AndroidPublisher_Apk
    */
   public function upload($packageName, $editId, $optParams = array())
   {

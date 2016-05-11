@@ -32,7 +32,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @param string $adClientId Ad client from which to delete the custom channel.
    * @param string $customChannelId Custom channel to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomChannel
+   * @return Google_Service_AdSenseHost_CustomChannel
    */
   public function delete($adClientId, $customChannelId, $optParams = array())
   {
@@ -47,7 +47,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @param string $adClientId Ad client from which to get the custom channel.
    * @param string $customChannelId Custom channel to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomChannel
+   * @return Google_Service_AdSenseHost_CustomChannel
    */
   public function get($adClientId, $customChannelId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * added.
    * @param Google_CustomChannel $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomChannel
+   * @return Google_Service_AdSenseHost_CustomChannel
    */
   public function insert($adClientId, Google_Service_AdSenseHost_CustomChannel $postBody, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @opt_param string pageToken A continuation token, used to page through custom
    * channels. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_CustomChannels
+   * @return Google_Service_AdSenseHost_CustomChannels
    */
   public function listCustomchannels($adClientId, $optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * @param string $customChannelId Custom channel to get.
    * @param Google_CustomChannel $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomChannel
+   * @return Google_Service_AdSenseHost_CustomChannel
    */
   public function patch($adClientId, $customChannelId, Google_Service_AdSenseHost_CustomChannel $postBody, $optParams = array())
   {
@@ -114,7 +114,7 @@ class Google_Service_AdSenseHost_CustomchannelsResource extends Google_Service_R
    * updated.
    * @param Google_CustomChannel $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CustomChannel
+   * @return Google_Service_AdSenseHost_CustomChannel
    */
   public function update($adClientId, Google_Service_AdSenseHost_CustomChannel $postBody, $optParams = array())
   {

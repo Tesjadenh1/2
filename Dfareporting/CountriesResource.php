@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_CountriesResource extends Google_Service_Resou
    * @param string $profileId User profile ID associated with this request.
    * @param string $dartId Country DART ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Country
+   * @return Google_Service_Dfareporting_Country
    */
   public function get($profileId, $dartId, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_CountriesResource extends Google_Service_Resou
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CountriesListResponse
+   * @return Google_Service_Dfareporting_CountriesListResponse
    */
   public function listCountries($profileId, $optParams = array())
   {

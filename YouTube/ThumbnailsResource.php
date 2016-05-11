@@ -45,7 +45,7 @@ class Google_Service_YouTube_ThumbnailsResource extends Google_Service_Resource
    * authentication credentials for each individual channel. The actual CMS
    * account that the user authenticates with must be linked to the specified
    * YouTube content owner.
-   * @return Google_Service_ThumbnailSetResponse
+   * @return Google_Service_YouTube_ThumbnailSetResponse
    */
   public function set($videoId, $optParams = array())
   {

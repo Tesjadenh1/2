@@ -32,7 +32,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param Google_Label $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Label
+   * @return Google_Service_Gmail_Label
    */
   public function create($userId, Google_Service_Gmail_Label $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param string $id The ID of the label to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Label
+   * @return Google_Service_Gmail_Label
    */
   public function get($userId, $id, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * @param string $userId The user's email address. The special value me can be
    * used to indicate the authenticated user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListLabelsResponse
+   * @return Google_Service_Gmail_ListLabelsResponse
    */
   public function listUsersLabels($userId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * @param string $id The ID of the label to update.
    * @param Google_Label $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Label
+   * @return Google_Service_Gmail_Label
    */
   public function patch($userId, $id, Google_Service_Gmail_Label $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Gmail_UsersLabelsResource extends Google_Service_Resource
    * @param string $id The ID of the label to update.
    * @param Google_Label $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Label
+   * @return Google_Service_Gmail_Label
    */
   public function update($userId, $id, Google_Service_Gmail_Label $postBody, $optParams = array())
   {

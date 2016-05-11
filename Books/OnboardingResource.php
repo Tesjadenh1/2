@@ -32,7 +32,7 @@ class Google_Service_Books_OnboardingResource extends Google_Service_Resource
    *
    * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code.
    * Default is en-US if unset.
-   * @return Google_Service_Category
+   * @return Google_Service_Books_Category
    */
   public function listCategories($optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_Books_OnboardingResource extends Google_Service_Resource
    * in the response.
    * @opt_param string pageToken The value of the nextToken from the previous
    * page.
-   * @return Google_Service_Volume2
+   * @return Google_Service_Books_Volume2
    */
   public function listCategoryVolumes($optParams = array())
   {

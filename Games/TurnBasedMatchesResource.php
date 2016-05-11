@@ -45,7 +45,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function create(Google_Service_Games_TurnBasedMatchCreateRequest $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function decline($matchId, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function finish($matchId, Google_Service_Games_TurnBasedMatchResults $postBody, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @opt_param bool includeMatchData Get match data along with metadata.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function get($matchId, $optParams = array())
   {
@@ -127,7 +127,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function join($matchId, $optParams = array())
   {
@@ -144,7 +144,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function leave($matchId, $optParams = array())
   {
@@ -166,7 +166,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * should take their turn next. If not set, the match will wait for other
    * player(s) to join via automatching; this is only valid if automatch criteria
    * is set on the match with remaining slots for automatched players.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function leaveTurn($matchId, $matchVersion, $optParams = array())
   {
@@ -194,7 +194,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * response, used for paging. For any response, the actual number of matches to
    * return may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_TurnBasedMatchList
+   * @return Google_Service_Games_TurnBasedMatchList
    */
   public function listTurnBasedMatches($optParams = array())
   {
@@ -216,7 +216,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @opt_param string requestId A randomly generated numeric ID for each request
    * specified by the caller. This number is used at the server to ensure that the
    * request is handled correctly across retries.
-   * @return Google_Service_TurnBasedMatchRematch
+   * @return Google_Service_Games_TurnBasedMatchRematch
    */
   public function rematch($matchId, $optParams = array())
   {
@@ -246,7 +246,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * response, used for paging. For any response, the actual number of matches to
    * return may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_TurnBasedMatchSync
+   * @return Google_Service_Games_TurnBasedMatchSync
    */
   public function sync($optParams = array())
   {
@@ -263,7 +263,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_TurnBasedMatch
+   * @return Google_Service_Games_TurnBasedMatch
    */
   public function takeTurn($matchId, Google_Service_Games_TurnBasedMatchTurn $postBody, $optParams = array())
   {

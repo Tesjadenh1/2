@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_PlatformTypesResource extends Google_Service_R
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Platform type ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlatformType
+   * @return Google_Service_Dfareporting_PlatformType
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_PlatformTypesResource extends Google_Service_R
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlatformTypesListResponse
+   * @return Google_Service_Dfareporting_PlatformTypesListResponse
    */
   public function listPlatformTypes($profileId, $optParams = array())
   {

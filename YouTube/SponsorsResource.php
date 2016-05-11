@@ -40,7 +40,7 @@ class Google_Service_YouTube_SponsorsResource extends Google_Service_Resource
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_SponsorListResponse
+   * @return Google_Service_YouTube_SponsorListResponse
    */
   public function listSponsors($part, $optParams = array())
   {

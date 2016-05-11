@@ -55,7 +55,7 @@ class Google_Service_AndroidPublisher_PurchasesSubscriptionsResource extends Goo
    * subscription was purchased.
    * @param Google_SubscriptionPurchasesDeferRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SubscriptionPurchasesDeferResponse
+   * @return Google_Service_AndroidPublisher_SubscriptionPurchasesDeferResponse
    */
   public function defer($packageName, $subscriptionId, $token, Google_Service_AndroidPublisher_SubscriptionPurchasesDeferRequest $postBody, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_AndroidPublisher_PurchasesSubscriptionsResource extends Goo
    * @param string $token The token provided to the user's device when the
    * subscription was purchased.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SubscriptionPurchase
+   * @return Google_Service_AndroidPublisher_SubscriptionPurchase
    */
   public function get($packageName, $subscriptionId, $token, $optParams = array())
   {

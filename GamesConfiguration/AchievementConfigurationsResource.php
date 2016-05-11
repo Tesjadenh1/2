@@ -44,7 +44,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    *
    * @param string $achievementId The ID of the achievement used by this method.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementConfiguration
+   * @return Google_Service_GamesConfiguration_AchievementConfiguration
    */
   public function get($achievementId, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * developer console.
    * @param Google_AchievementConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementConfiguration
+   * @return Google_Service_GamesConfiguration_AchievementConfiguration
    */
   public function insert($applicationId, Google_Service_GamesConfiguration_AchievementConfiguration $postBody, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * return in the response, used for paging. For any response, the actual number
    * of resources returned may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_AchievementConfigurationListResponse
+   * @return Google_Service_GamesConfiguration_AchievementConfigurationListResponse
    */
   public function listAchievementConfigurations($applicationId, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * @param string $achievementId The ID of the achievement used by this method.
    * @param Google_AchievementConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementConfiguration
+   * @return Google_Service_GamesConfiguration_AchievementConfiguration
    */
   public function patch($achievementId, Google_Service_GamesConfiguration_AchievementConfiguration $postBody, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_GamesConfiguration_AchievementConfigurationsResource extend
    * @param string $achievementId The ID of the achievement used by this method.
    * @param Google_AchievementConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementConfiguration
+   * @return Google_Service_GamesConfiguration_AchievementConfiguration
    */
   public function update($achievementId, Google_Service_GamesConfiguration_AchievementConfiguration $postBody, $optParams = array())
   {

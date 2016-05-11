@@ -56,7 +56,7 @@ class Google_Service_Analytics_DataGaResource extends Google_Service_Resource
    * determine the sort order for Analytics data.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_GaData
+   * @return Google_Service_Analytics_GaData
    */
   public function get($ids, $startDate, $endDate, $metrics, $optParams = array())
   {

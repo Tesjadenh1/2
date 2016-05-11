@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_BrowsersResource extends Google_Service_Resour
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BrowsersListResponse
+   * @return Google_Service_Dfareporting_BrowsersListResponse
    */
   public function listBrowsers($profileId, $optParams = array())
   {

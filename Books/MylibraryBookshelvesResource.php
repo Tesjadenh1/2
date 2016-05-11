@@ -64,7 +64,7 @@ class Google_Service_Books_MylibraryBookshelvesResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    *
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Bookshelf
+   * @return Google_Service_Books_Bookshelf
    */
   public function get($shelf, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Books_MylibraryBookshelvesResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    *
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Bookshelves
+   * @return Google_Service_Books_Bookshelves
    */
   public function listMylibraryBookshelves($optParams = array())
   {

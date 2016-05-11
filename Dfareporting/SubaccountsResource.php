@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_SubaccountsResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Subaccount ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subaccount
+   * @return Google_Service_Dfareporting_Subaccount
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_SubaccountsResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Subaccount $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subaccount
+   * @return Google_Service_Dfareporting_Subaccount
    */
   public function insert($profileId, Google_Service_Dfareporting_Subaccount $postBody, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Dfareporting_SubaccountsResource extends Google_Service_Res
    * or simply "subaccount".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_SubaccountsListResponse
+   * @return Google_Service_Dfareporting_SubaccountsListResponse
    */
   public function listSubaccounts($profileId, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_Dfareporting_SubaccountsResource extends Google_Service_Res
    * @param string $id Subaccount ID.
    * @param Google_Subaccount $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subaccount
+   * @return Google_Service_Dfareporting_Subaccount
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_Subaccount $postBody, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_Dfareporting_SubaccountsResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Subaccount $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subaccount
+   * @return Google_Service_Dfareporting_Subaccount
    */
   public function update($profileId, Google_Service_Dfareporting_Subaccount $postBody, $optParams = array())
   {

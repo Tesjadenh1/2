@@ -49,7 +49,7 @@ class Google_Service_Clouddebugger_ControllerDebuggeesBreakpointsResource extend
    * `true` when the server-selected timeout has expired (recommended). If set to
    * `false`, returns `google.rpc.Code.ABORTED` status when the server-selected
    * timeout has expired (deprecated).
-   * @return Google_Service_ListActiveBreakpointsResponse
+   * @return Google_Service_Clouddebugger_ListActiveBreakpointsResponse
    */
   public function listControllerDebuggeesBreakpoints($debuggeeId, $optParams = array())
   {
@@ -70,7 +70,7 @@ class Google_Service_Clouddebugger_ControllerDebuggeesBreakpointsResource extend
    * @param string $id Breakpoint identifier, unique in the scope of the debuggee.
    * @param Google_UpdateActiveBreakpointRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UpdateActiveBreakpointResponse
+   * @return Google_Service_Clouddebugger_UpdateActiveBreakpointResponse
    */
   public function update($debuggeeId, $id, Google_Service_Clouddebugger_UpdateActiveBreakpointRequest $postBody, $optParams = array())
   {

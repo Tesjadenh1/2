@@ -32,7 +32,7 @@ class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Re
    * @param string $id ID of the build.
    * @param Google_CancelBuildRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Build
+   * @return Google_Service_CloudBuild_Build
    */
   public function cancel($projectId, $id, Google_Service_CloudBuild_CancelBuildRequest $postBody, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Re
    * @param string $projectId ID of the project.
    * @param Google_Build $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_CloudBuild_Operation
    */
   public function create($projectId, Google_Service_CloudBuild_Build $postBody, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Re
    * @param string $projectId ID of the project.
    * @param string $id ID of the build.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Build
+   * @return Google_Service_CloudBuild_Build
    */
   public function get($projectId, $id, $optParams = array())
   {
@@ -87,7 +87,7 @@ class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Re
    * @opt_param int pageSize Number of results to return in the list.
    * @opt_param string pageToken Token to provide to skip to a particular spot in
    * the list.
-   * @return Google_Service_ListBuildsResponse
+   * @return Google_Service_CloudBuild_ListBuildsResponse
    */
   public function listProjectsBuilds($projectId, $optParams = array())
   {

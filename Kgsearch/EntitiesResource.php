@@ -43,7 +43,7 @@ class Google_Service_Kgsearch_EntitiesResource extends Google_Service_Resource
    * @opt_param bool prefix Enables prefix match against names and aliases of
    * entities
    * @opt_param int limit Limits the number of entities to be returned.
-   * @return Google_Service_SearchResponse
+   * @return Google_Service_Kgsearch_SearchResponse
    */
   public function search($optParams = array())
   {

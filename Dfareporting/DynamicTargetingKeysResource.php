@@ -54,7 +54,7 @@ class Google_Service_Dfareporting_DynamicTargetingKeysResource extends Google_Se
    * @param string $profileId User profile ID associated with this request.
    * @param Google_DynamicTargetingKey $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DynamicTargetingKey
+   * @return Google_Service_Dfareporting_DynamicTargetingKey
    */
   public function insert($profileId, Google_Service_Dfareporting_DynamicTargetingKey $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Dfareporting_DynamicTargetingKeysResource extends Google_Se
    * object ID.
    * @opt_param string objectType Select only dynamic targeting keys with this
    * object type.
-   * @return Google_Service_DynamicTargetingKeysListResponse
+   * @return Google_Service_Dfareporting_DynamicTargetingKeysListResponse
    */
   public function listDynamicTargetingKeys($profileId, $optParams = array())
   {

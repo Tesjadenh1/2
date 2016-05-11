@@ -33,7 +33,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @param string $deployment The name of the deployment for this request.
    * @param Google_DeploymentsCancelPreviewRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function cancelPreview($project, $deployment, Google_Service_DeploymentManager_DeploymentsCancelPreviewRequest $postBody, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @param string $project The project ID for this request.
    * @param string $deployment The name of the deployment for this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function delete($project, $deployment, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @param string $project The project ID for this request.
    * @param string $deployment The name of the deployment for this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Deployment
+   * @return Google_Service_DeploymentManager_Deployment
    */
   public function get($project, $deployment, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * preview altogether. Note that the deployment will still exist after you
    * cancel the preview and you must separately delete this deployment if you want
    * to remove it.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function insert($project, Google_Service_DeploymentManager_Deployment $postBody, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_DeploymentsListResponse
+   * @return Google_Service_DeploymentManager_DeploymentsListResponse
    */
   public function listDeployments($project, $optParams = array())
   {
@@ -163,7 +163,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * preview altogether. Note that the deployment will still exist after you
    * cancel the preview and you must separately delete this deployment if you want
    * to remove it.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function patch($project, $deployment, Google_Service_DeploymentManager_Deployment $postBody, $optParams = array())
   {
@@ -180,7 +180,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * @param string $deployment The name of the deployment for this request.
    * @param Google_DeploymentsStopRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function stop($project, $deployment, Google_Service_DeploymentManager_DeploymentsStopRequest $postBody, $optParams = array())
   {
@@ -210,7 +210,7 @@ class Google_Service_DeploymentManager_DeploymentsResource extends Google_Servic
    * preview altogether. Note that the deployment will still exist after you
    * cancel the preview and you must separately delete this deployment if you want
    * to remove it.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function update($project, $deployment, Google_Service_DeploymentManager_Deployment $postBody, $optParams = array())
   {

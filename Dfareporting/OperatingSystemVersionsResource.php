@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_OperatingSystemVersionsResource extends Google
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Operating system version ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OperatingSystemVersion
+   * @return Google_Service_Dfareporting_OperatingSystemVersion
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_OperatingSystemVersionsResource extends Google
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OperatingSystemVersionsListResponse
+   * @return Google_Service_Dfareporting_OperatingSystemVersionsListResponse
    */
   public function listOperatingSystemVersions($profileId, $optParams = array())
   {

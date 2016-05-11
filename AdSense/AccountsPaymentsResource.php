@@ -31,7 +31,7 @@ class Google_Service_AdSense_AccountsPaymentsResource extends Google_Service_Res
    *
    * @param string $accountId Account for which to retrieve the payments.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Payments
+   * @return Google_Service_AdSense_Payments
    */
   public function listAccountsPayments($accountId, $optParams = array())
   {

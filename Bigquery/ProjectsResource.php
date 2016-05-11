@@ -34,7 +34,7 @@ class Google_Service_Bigquery_ProjectsResource extends Google_Service_Resource
    * @opt_param string maxResults Maximum number of results to return
    * @opt_param string pageToken Page token, returned by a previous call, to
    * request the next page of results
-   * @return Google_Service_ProjectList
+   * @return Google_Service_Bigquery_ProjectList
    */
   public function listProjects($optParams = array())
   {

@@ -30,7 +30,7 @@ class Google_Service_ShoppingContent_DatafeedstatusesResource extends Google_Ser
    *
    * @param Google_DatafeedstatusesCustomBatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DatafeedstatusesCustomBatchResponse
+   * @return Google_Service_ShoppingContent_DatafeedstatusesCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_DatafeedstatusesCustomBatchRequest $postBody, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_ShoppingContent_DatafeedstatusesResource extends Google_Ser
    * @param string $merchantId
    * @param string $datafeedId
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DatafeedStatus
+   * @return Google_Service_ShoppingContent_DatafeedStatus
    */
   public function get($merchantId, $datafeedId, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_ShoppingContent_DatafeedstatusesResource extends Google_Ser
    * @opt_param string maxResults The maximum number of products to return in the
    * response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_DatafeedstatusesListResponse
+   * @return Google_Service_ShoppingContent_DatafeedstatusesListResponse
    */
   public function listDatafeedstatuses($merchantId, $optParams = array())
   {

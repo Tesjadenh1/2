@@ -40,7 +40,7 @@ class Google_Service_People_PeopleResource extends Google_Service_Resource
    * be included in the response. Omitting this field will include all fields.
    * Each path should start with `person.`: for example, `person.names` or
    * `person.photos`.
-   * @return Google_Service_Person
+   * @return Google_Service_People_Person
    */
   public function get($resourceName, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_People_PeopleResource extends Google_Service_Resource
    * be included in the response. Omitting this field will include all fields.
    * Each path should start with `person.`: for example, `person.names` or
    * `person.photos`.
-   * @return Google_Service_GetPeopleResponse
+   * @return Google_Service_People_GetPeopleResponse
    */
   public function getBatchGet($optParams = array())
   {

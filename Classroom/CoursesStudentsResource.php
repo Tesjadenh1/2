@@ -44,7 +44,7 @@ class Google_Service_Classroom_CoursesStudentsResource extends Google_Service_Re
    * student in. This code is required if userId corresponds to the requesting
    * user; it may be omitted if the requesting user has administrative permissions
    * to create students for any user.
-   * @return Google_Service_Student
+   * @return Google_Service_Classroom_Student
    */
   public function create($courseId, Google_Service_Classroom_Student $postBody, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Classroom_CoursesStudentsResource extends Google_Service_Re
    * address of the user * the string literal `"me"`, indicating the requesting
    * user
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ClassroomEmpty
+   * @return Google_Service_Classroom_ClassroomEmpty
    */
   public function delete($courseId, $userId, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_Classroom_CoursesStudentsResource extends Google_Service_Re
    * address of the user * the string literal `"me"`, indicating the requesting
    * user
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Student
+   * @return Google_Service_Classroom_Student
    */
   public function get($courseId, $userId, $optParams = array())
   {
@@ -112,7 +112,7 @@ class Google_Service_Classroom_CoursesStudentsResource extends Google_Service_Re
    * call, indicating that the subsequent page of results should be returned. The
    * list request must be otherwise identical to the one that resulted in this
    * token.
-   * @return Google_Service_ListStudentsResponse
+   * @return Google_Service_Classroom_ListStudentsResponse
    */
   public function listCoursesStudents($courseId, $optParams = array())
   {

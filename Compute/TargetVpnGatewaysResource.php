@@ -65,7 +65,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetVpnGatewayAggregatedList
+   * @return Google_Service_Compute_TargetVpnGatewayAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
    * @param string $region Name of the region for this request.
    * @param string $targetVpnGateway Name of the target VPN gateway to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $region, $targetVpnGateway, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
    * @param string $region Name of the region for this request.
    * @param string $targetVpnGateway Name of the target VPN gateway to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetVpnGateway
+   * @return Google_Service_Compute_TargetVpnGateway
    */
   public function get($project, $region, $targetVpnGateway, $optParams = array())
   {
@@ -112,7 +112,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
    * @param string $region Name of the region for this request.
    * @param Google_TargetVpnGateway $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $region, Google_Service_Compute_TargetVpnGateway $postBody, $optParams = array())
   {
@@ -161,7 +161,7 @@ class Google_Service_Compute_TargetVpnGatewaysResource extends Google_Service_Re
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetVpnGatewayList
+   * @return Google_Service_Compute_TargetVpnGatewayList
    */
   public function listTargetVpnGateways($project, $region, $optParams = array())
   {

@@ -30,7 +30,7 @@ class Google_Service_Books_SeriesResource extends Google_Service_Resource
    *
    * @param string $seriesId String that identifies the series
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Series
+   * @return Google_Service_Books_Series
    */
   public function get($seriesId, $optParams = array())
   {

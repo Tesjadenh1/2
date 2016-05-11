@@ -63,7 +63,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * participant is returned. Optional.
    * @opt_param string timeZone Time zone used in the response. Optional. The
    * default is the time zone of the calendar.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function get($calendarId, $eventId, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    *
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function import($calendarId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
@@ -107,7 +107,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * creation of the new event. Optional. The default is False.
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function insert($calendarId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
@@ -152,7 +152,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * RFC3339 timestamp with mandatory time zone offset.
    * @opt_param string timeZone Time zone used in the response. Optional. The
    * default is the time zone of the calendar.
-   * @return Google_Service_Events
+   * @return Google_Service_Calendar_Events
    */
   public function instances($calendarId, $eventId, $optParams = array())
   {
@@ -238,7 +238,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * time (as a RFC3339 timestamp) to filter by. When specified, entries deleted
    * since this time will always be included regardless of showDeleted. Optional.
    * The default is not to filter by last modification time.
-   * @return Google_Service_Events
+   * @return Google_Service_Calendar_Events
    */
   public function listEvents($calendarId, $optParams = array())
   {
@@ -259,7 +259,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    *
    * @opt_param bool sendNotifications Whether to send notifications about the
    * change of the event's organizer. Optional. The default is False.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function move($calendarId, $eventId, $destination, $optParams = array())
   {
@@ -291,7 +291,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * default is False.
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function patch($calendarId, $eventId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
@@ -310,7 +310,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    *
    * @opt_param bool sendNotifications Whether to send notifications about the
    * creation of the event. Optional. The default is False.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function quickAdd($calendarId, $text, $optParams = array())
   {
@@ -342,7 +342,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * default is False.
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
-   * @return Google_Service_Event
+   * @return Google_Service_Calendar_Event
    */
   public function update($calendarId, $eventId, Google_Service_Calendar_Event $postBody, $optParams = array())
   {
@@ -429,7 +429,7 @@ class Google_Service_Calendar_EventsResource extends Google_Service_Resource
    * time (as a RFC3339 timestamp) to filter by. When specified, entries deleted
    * since this time will always be included regardless of showDeleted. Optional.
    * The default is not to filter by last modification time.
-   * @return Google_Service_Channel
+   * @return Google_Service_Calendar_Channel
    */
   public function watch($calendarId, Google_Service_Calendar_Channel $postBody, $optParams = array())
   {

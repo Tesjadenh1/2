@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_PlacementGroupsResource extends Google_Service
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Placement group ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementGroup
+   * @return Google_Service_Dfareporting_PlacementGroup
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_PlacementGroupsResource extends Google_Service
    * @param string $profileId User profile ID associated with this request.
    * @param Google_PlacementGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementGroup
+   * @return Google_Service_Dfareporting_PlacementGroup
    */
   public function insert($profileId, Google_Service_Dfareporting_PlacementGroup $postBody, $optParams = array())
   {
@@ -107,7 +107,7 @@ class Google_Service_Dfareporting_PlacementGroupsResource extends Google_Service
    * with these sites.
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_PlacementGroupsListResponse
+   * @return Google_Service_Dfareporting_PlacementGroupsListResponse
    */
   public function listPlacementGroups($profileId, $optParams = array())
   {
@@ -123,7 +123,7 @@ class Google_Service_Dfareporting_PlacementGroupsResource extends Google_Service
    * @param string $id Placement group ID.
    * @param Google_PlacementGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementGroup
+   * @return Google_Service_Dfareporting_PlacementGroup
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_PlacementGroup $postBody, $optParams = array())
   {
@@ -137,7 +137,7 @@ class Google_Service_Dfareporting_PlacementGroupsResource extends Google_Service
    * @param string $profileId User profile ID associated with this request.
    * @param Google_PlacementGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlacementGroup
+   * @return Google_Service_Dfareporting_PlacementGroup
    */
   public function update($profileId, Google_Service_Dfareporting_PlacementGroup $postBody, $optParams = array())
   {

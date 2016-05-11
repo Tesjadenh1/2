@@ -31,7 +31,7 @@ class Google_Service_Books_DictionaryResource extends Google_Service_Resource
    *
    * @param string $cpksver The device/version ID from which to request the data.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Metadata
+   * @return Google_Service_Books_Metadata
    */
   public function listOfflineMetadata($cpksver, $optParams = array())
   {

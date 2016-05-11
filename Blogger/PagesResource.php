@@ -46,7 +46,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string view
-   * @return Google_Service_Page
+   * @return Google_Service_Blogger_Page
    */
   public function get($blogId, $pageId, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    *
    * @opt_param bool isDraft Whether to create the page as a draft (default:
    * false).
-   * @return Google_Service_Page
+   * @return Google_Service_Blogger_Page
    */
   public function insert($blogId, Google_Service_Blogger_Page $postBody, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    * @opt_param string status
    * @opt_param string view Access level with which to view the returned result.
    * Note that some fields require elevated access.
-   * @return Google_Service_PageList
+   * @return Google_Service_Blogger_PageList
    */
   public function listPages($blogId, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    * page is updated (default: false).
    * @opt_param bool revert Whether a revert action should be performed when the
    * page is updated (default: false).
-   * @return Google_Service_Page
+   * @return Google_Service_Blogger_Page
    */
   public function patch($blogId, $pageId, Google_Service_Blogger_Page $postBody, $optParams = array())
   {
@@ -118,7 +118,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    * @param string $blogId The ID of the blog.
    * @param string $pageId The ID of the page.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Page
+   * @return Google_Service_Blogger_Page
    */
   public function publish($blogId, $pageId, $optParams = array())
   {
@@ -132,7 +132,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    * @param string $blogId The ID of the blog.
    * @param string $pageId The ID of the page.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Page
+   * @return Google_Service_Blogger_Page
    */
   public function revert($blogId, $pageId, $optParams = array())
   {
@@ -152,7 +152,7 @@ class Google_Service_Blogger_PagesResource extends Google_Service_Resource
    * page is updated (default: false).
    * @opt_param bool revert Whether a revert action should be performed when the
    * page is updated (default: false).
-   * @return Google_Service_Page
+   * @return Google_Service_Blogger_Page
    */
   public function update($blogId, $pageId, Google_Service_Blogger_Page $postBody, $optParams = array())
   {

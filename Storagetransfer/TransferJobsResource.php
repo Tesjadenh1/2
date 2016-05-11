@@ -30,7 +30,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
    *
    * @param Google_TransferJob $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TransferJob
+   * @return Google_Service_Storagetransfer_TransferJob
    */
   public function create(Google_Service_Storagetransfer_TransferJob $postBody, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
    *
    * @opt_param string projectId The ID of the Google Developers Console project
    * that owns the job. Required.
-   * @return Google_Service_TransferJob
+   * @return Google_Service_Storagetransfer_TransferJob
    */
   public function get($jobName, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
    * `ENABLED`, `DISABLED`, and `DELETED`.
    * @opt_param int pageSize The list page size. The max allowed value is 256.
    * @opt_param string pageToken The list page token.
-   * @return Google_Service_ListTransferJobsResponse
+   * @return Google_Service_Storagetransfer_ListTransferJobsResponse
    */
   public function listTransferJobs($optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Storagetransfer_TransferJobsResource extends Google_Service
    * @param string $jobName The name of job to update. Required.
    * @param Google_UpdateTransferJobRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TransferJob
+   * @return Google_Service_Storagetransfer_TransferJob
    */
   public function patch($jobName, Google_Service_Storagetransfer_UpdateTransferJobRequest $postBody, $optParams = array())
   {

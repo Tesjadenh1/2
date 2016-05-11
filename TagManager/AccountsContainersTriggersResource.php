@@ -32,7 +32,7 @@ class Google_Service_TagManager_AccountsContainersTriggersResource extends Googl
    * @param string $containerId The GTM Container ID.
    * @param Google_Trigger $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Trigger
+   * @return Google_Service_TagManager_Trigger
    */
   public function create($accountId, $containerId, Google_Service_TagManager_Trigger $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_TagManager_AccountsContainersTriggersResource extends Googl
    * @param string $containerId The GTM Container ID.
    * @param string $triggerId The GTM Trigger ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Trigger
+   * @return Google_Service_TagManager_Trigger
    */
   public function get($accountId, $containerId, $triggerId, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_TagManager_AccountsContainersTriggersResource extends Googl
    * @param string $accountId The GTM Account ID.
    * @param string $containerId The GTM Container ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListTriggersResponse
+   * @return Google_Service_TagManager_ListTriggersResponse
    */
   public function listAccountsContainersTriggers($accountId, $containerId, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_TagManager_AccountsContainersTriggersResource extends Googl
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the trigger in storage.
-   * @return Google_Service_Trigger
+   * @return Google_Service_TagManager_Trigger
    */
   public function update($accountId, $containerId, $triggerId, Google_Service_TagManager_Trigger $postBody, $optParams = array())
   {

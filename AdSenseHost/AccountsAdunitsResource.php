@@ -33,7 +33,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param string $adClientId Ad client for which to get ad unit.
    * @param string $adUnitId Ad unit to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdUnit
+   * @return Google_Service_AdSenseHost_AdUnit
    */
   public function delete($accountId, $adClientId, $adUnitId, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param string $adClientId Ad client for which to get ad unit.
    * @param string $adUnitId Ad unit to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdUnit
+   * @return Google_Service_AdSenseHost_AdUnit
    */
   public function get($accountId, $adClientId, $adUnitId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    *
    * @opt_param string hostCustomChannelId Host custom channel to attach to the ad
    * code.
-   * @return Google_Service_AdCode
+   * @return Google_Service_AdSenseHost_AdCode
    */
   public function getAdCode($accountId, $adClientId, $adUnitId, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param string $adClientId Ad client into which to insert the ad unit.
    * @param Google_AdUnit $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdUnit
+   * @return Google_Service_AdSenseHost_AdUnit
    */
   public function insert($accountId, $adClientId, Google_Service_AdSenseHost_AdUnit $postBody, $optParams = array())
   {
@@ -106,7 +106,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @opt_param string pageToken A continuation token, used to page through ad
    * units. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_AdUnits
+   * @return Google_Service_AdSenseHost_AdUnits
    */
   public function listAccountsAdunits($accountId, $adClientId, $optParams = array())
   {
@@ -123,7 +123,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param string $adUnitId Ad unit to get.
    * @param Google_AdUnit $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdUnit
+   * @return Google_Service_AdSenseHost_AdUnit
    */
   public function patch($accountId, $adClientId, $adUnitId, Google_Service_AdSenseHost_AdUnit $postBody, $optParams = array())
   {
@@ -139,7 +139,7 @@ class Google_Service_AdSenseHost_AccountsAdunitsResource extends Google_Service_
    * @param string $adClientId Ad client which contains the ad unit.
    * @param Google_AdUnit $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdUnit
+   * @return Google_Service_AdSenseHost_AdUnit
    */
   public function update($accountId, $adClientId, Google_Service_AdSenseHost_AdUnit $postBody, $optParams = array())
   {

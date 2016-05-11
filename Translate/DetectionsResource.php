@@ -30,7 +30,7 @@ class Google_Service_Translate_DetectionsResource extends Google_Service_Resourc
    *
    * @param string $q The text to detect
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DetectionsListResponse
+   * @return Google_Service_Translate_DetectionsListResponse
    */
   public function listDetections($q, $optParams = array())
   {

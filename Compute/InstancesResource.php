@@ -36,7 +36,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * this instance.
    * @param Google_AccessConfig $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function addAccessConfig($project, $zone, $instance, $networkInterface, Google_Service_Compute_AccessConfig $postBody, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceAggregatedList
+   * @return Google_Service_Compute_InstanceAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $instance The instance name for this request.
    * @param Google_AttachedDisk $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function attachDisk($project, $zone, $instance, Google_Service_Compute_AttachedDisk $postBody, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $instance Name of the instance resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $zone, $instance, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $accessConfig The name of the access config to delete.
    * @param string $networkInterface The name of the network interface.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function deleteAccessConfig($project, $zone, $instance, $accessConfig, $networkInterface, $optParams = array())
   {
@@ -149,7 +149,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $instance Instance name.
    * @param string $deviceName Disk device name to detach.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function detachDisk($project, $zone, $instance, $deviceName, $optParams = array())
   {
@@ -165,7 +165,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $instance Name of the instance resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Instance
+   * @return Google_Service_Compute_Instance
    */
   public function get($project, $zone, $instance, $optParams = array())
   {
@@ -183,7 +183,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param int port Specifies which COM or serial port to retrieve data from.
-   * @return Google_Service_SerialPortOutput
+   * @return Google_Service_Compute_SerialPortOutput
    */
   public function getSerialPortOutput($project, $zone, $instance, $optParams = array())
   {
@@ -199,7 +199,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param Google_Instance $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $zone, Google_Service_Compute_Instance $postBody, $optParams = array())
   {
@@ -248,7 +248,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceList
+   * @return Google_Service_Compute_InstanceList
    */
   public function listInstances($project, $zone, $optParams = array())
   {
@@ -263,7 +263,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $instance Name of the instance scoping this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function reset($project, $zone, $instance, $optParams = array())
   {
@@ -282,7 +282,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * deleted.
    * @param string $deviceName The device name of the disk to modify.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setDiskAutoDelete($project, $zone, $instance, $autoDelete, $deviceName, $optParams = array())
   {
@@ -299,7 +299,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $instance Name of the instance scoping this request.
    * @param Google_InstancesSetMachineTypeRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setMachineType($project, $zone, $instance, Google_Service_Compute_InstancesSetMachineTypeRequest $postBody, $optParams = array())
   {
@@ -316,7 +316,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $instance Name of the instance scoping this request.
    * @param Google_Metadata $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setMetadata($project, $zone, $instance, Google_Service_Compute_Metadata $postBody, $optParams = array())
   {
@@ -332,7 +332,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $instance Instance name.
    * @param Google_Scheduling $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setScheduling($project, $zone, $instance, Google_Service_Compute_Scheduling $postBody, $optParams = array())
   {
@@ -349,7 +349,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $instance Name of the instance scoping this request.
    * @param Google_Tags $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setTags($project, $zone, $instance, Google_Service_Compute_Tags $postBody, $optParams = array())
   {
@@ -365,7 +365,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $instance Name of the instance resource to start.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function start($project, $zone, $instance, $optParams = array())
   {
@@ -385,7 +385,7 @@ class Google_Service_Compute_InstancesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $instance Name of the instance resource to stop.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function stop($project, $zone, $instance, $optParams = array())
   {

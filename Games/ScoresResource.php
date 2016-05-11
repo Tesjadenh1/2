@@ -48,7 +48,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * in the response. For any response, the actual number of leaderboard scores
    * returned may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_PlayerLeaderboardScoreListResponse
+   * @return Google_Service_Games_PlayerLeaderboardScoreListResponse
    */
   public function get($playerId, $leaderboardId, $timeSpan, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * in the response. For any response, the actual number of leaderboard scores
    * returned may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_LeaderboardScores
+   * @return Google_Service_Games_LeaderboardScores
    */
   public function listScores($leaderboardId, $collection, $timeSpan, $optParams = array())
   {
@@ -101,7 +101,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * Must be less than or equal to maxResults.
    * @opt_param bool returnTopIfAbsent True if the top scores should be returned
    * when the player is not in the leaderboard. Defaults to true.
-   * @return Google_Service_LeaderboardScores
+   * @return Google_Service_Games_LeaderboardScores
    */
   public function listWindow($leaderboardId, $collection, $timeSpan, $optParams = array())
   {
@@ -126,7 +126,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * @opt_param string scoreTag Additional information about the score you're
    * submitting. Values must contain no more than 64 URI-safe characters as
    * defined by section 2.3 of RFC 3986.
-   * @return Google_Service_PlayerScoreResponse
+   * @return Google_Service_Games_PlayerScoreResponse
    */
   public function submit($leaderboardId, $score, $optParams = array())
   {
@@ -142,7 +142,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_PlayerScoreListResponse
+   * @return Google_Service_Games_PlayerScoreListResponse
    */
   public function submitMultiple(Google_Service_Games_PlayerScoreSubmissionList $postBody, $optParams = array())
   {

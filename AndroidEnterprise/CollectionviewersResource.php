@@ -50,7 +50,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
    * @param string $collectionId The ID of the collection.
    * @param string $userId The ID of the user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_User
+   * @return Google_Service_AndroidEnterprise_User
    */
   public function get($enterpriseId, $collectionId, $userId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $collectionId The ID of the collection.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CollectionViewersListResponse
+   * @return Google_Service_AndroidEnterprise_CollectionViewersListResponse
    */
   public function listCollectionviewers($enterpriseId, $collectionId, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
    * @param string $userId The ID of the user.
    * @param Google_User $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_User
+   * @return Google_Service_AndroidEnterprise_User
    */
   public function patch($enterpriseId, $collectionId, $userId, Google_Service_AndroidEnterprise_User $postBody, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_AndroidEnterprise_CollectionviewersResource extends Google_
    * @param string $userId The ID of the user.
    * @param Google_User $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_User
+   * @return Google_Service_AndroidEnterprise_User
    */
   public function update($enterpriseId, $collectionId, $userId, Google_Service_AndroidEnterprise_User $postBody, $optParams = array())
   {

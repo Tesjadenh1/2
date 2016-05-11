@@ -96,7 +96,7 @@ class Google_Service_YouTube_ChannelSectionsResource extends Google_Service_Reso
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_ChannelSection
+   * @return Google_Service_YouTube_ChannelSection
    */
   public function insert($part, Google_Service_YouTube_ChannelSection $postBody, $optParams = array())
   {
@@ -147,7 +147,7 @@ class Google_Service_YouTube_ChannelSectionsResource extends Google_Service_Reso
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_ChannelSectionListResponse
+   * @return Google_Service_YouTube_ChannelSectionListResponse
    */
   public function listChannelSections($part, $optParams = array())
   {
@@ -179,7 +179,7 @@ class Google_Service_YouTube_ChannelSectionsResource extends Google_Service_Reso
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_ChannelSection
+   * @return Google_Service_YouTube_ChannelSection
    */
   public function update($part, Google_Service_YouTube_ChannelSection $postBody, $optParams = array())
   {

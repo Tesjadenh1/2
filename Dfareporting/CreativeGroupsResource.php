@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_CreativeGroupsResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Creative group ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeGroup
+   * @return Google_Service_Dfareporting_CreativeGroup
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_CreativeGroupsResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param Google_CreativeGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeGroup
+   * @return Google_Service_Dfareporting_CreativeGroup
    */
   public function insert($profileId, Google_Service_Dfareporting_CreativeGroup $postBody, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_Dfareporting_CreativeGroupsResource extends Google_Service_
    * simply "creativegroup".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_CreativeGroupsListResponse
+   * @return Google_Service_Dfareporting_CreativeGroupsListResponse
    */
   public function listCreativeGroups($profileId, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Dfareporting_CreativeGroupsResource extends Google_Service_
    * @param string $id Creative group ID.
    * @param Google_CreativeGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeGroup
+   * @return Google_Service_Dfareporting_CreativeGroup
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_CreativeGroup $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Dfareporting_CreativeGroupsResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param Google_CreativeGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeGroup
+   * @return Google_Service_Dfareporting_CreativeGroup
    */
   public function update($profileId, Google_Service_Dfareporting_CreativeGroup $postBody, $optParams = array())
   {

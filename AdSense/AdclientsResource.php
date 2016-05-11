@@ -35,7 +35,7 @@ class Google_Service_AdSense_AdclientsResource extends Google_Service_Resource
    * @opt_param string pageToken A continuation token, used to page through ad
    * clients. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_AdClients
+   * @return Google_Service_AdSense_AdClients
    */
   public function listAdclients($optParams = array())
   {

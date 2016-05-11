@@ -38,7 +38,7 @@ class Google_Service_AndroidPublisher_EntitlementsResource extends Google_Servic
    * 'sku1'). This can be used to restrict the result set.
    * @opt_param string startIndex
    * @opt_param string token
-   * @return Google_Service_EntitlementsListResponse
+   * @return Google_Service_AndroidPublisher_EntitlementsListResponse
    */
   public function listEntitlements($packageName, $optParams = array())
   {

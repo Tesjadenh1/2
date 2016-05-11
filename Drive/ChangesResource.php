@@ -30,7 +30,7 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
    * (changes.getStartPageToken)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StartPageToken
+   * @return Google_Service_Drive_StartPageToken
    */
   public function getStartPageToken($optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
    * Drive.
    * @opt_param string spaces A comma-separated list of spaces to query within the
    * user corpus. Supported values are 'drive', 'appDataFolder' and 'photos'.
-   * @return Google_Service_ChangeList
+   * @return Google_Service_Drive_ChangeList
    */
   public function listChanges($pageToken, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Drive_ChangesResource extends Google_Service_Resource
    * Drive.
    * @opt_param string spaces A comma-separated list of spaces to query within the
    * user corpus. Supported values are 'drive', 'appDataFolder' and 'photos'.
-   * @return Google_Service_Channel
+   * @return Google_Service_Drive_Channel
    */
   public function watch($pageToken, Google_Service_Drive_Channel $postBody, $optParams = array())
   {

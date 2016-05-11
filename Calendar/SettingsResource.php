@@ -30,7 +30,7 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
    *
    * @param string $setting The id of the user setting.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Setting
+   * @return Google_Service_Calendar_Setting
    */
   public function get($setting, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
    * response code and the client should clear its storage and perform a full
    * synchronization without any syncToken. Learn more about incremental
    * synchronization. Optional. The default is to return all entries.
-   * @return Google_Service_Settings
+   * @return Google_Service_Calendar_Settings
    */
   public function listSettings($optParams = array())
   {
@@ -81,7 +81,7 @@ class Google_Service_Calendar_SettingsResource extends Google_Service_Resource
    * response code and the client should clear its storage and perform a full
    * synchronization without any syncToken. Learn more about incremental
    * synchronization. Optional. The default is to return all entries.
-   * @return Google_Service_Channel
+   * @return Google_Service_Calendar_Channel
    */
   public function watch(Google_Service_Calendar_Channel $postBody, $optParams = array())
   {

@@ -33,7 +33,7 @@ class Google_Service_Monitoring_ProjectsMonitoredResourceDescriptorsResource ext
    * "projects/{project_id_or_number}/monitoredResourceDescriptors/{resource_type}
    * "`. The `{resource_type}` is a predefined type, such as `cloudsql_database`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MonitoredResourceDescriptor
+   * @return Google_Service_Monitoring_MonitoredResourceDescriptor
    */
   public function get($name, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Monitoring_ProjectsMonitoredResourceDescriptorsResource ext
    * the `nextPageToken` value returned by a previous call to this method. Using
    * this field causes the method to return additional results from the previous
    * method call.
-   * @return Google_Service_ListMonitoredResourceDescriptorsResponse
+   * @return Google_Service_Monitoring_ListMonitoredResourceDescriptorsResponse
    */
   public function listProjectsMonitoredResourceDescriptors($name, $optParams = array())
   {

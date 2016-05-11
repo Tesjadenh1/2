@@ -64,7 +64,7 @@ class Google_Service_Compute_DiskTypesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_DiskTypeAggregatedList
+   * @return Google_Service_Compute_DiskTypeAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_DiskTypesResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $diskType Name of the disk type to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DiskType
+   * @return Google_Service_Compute_DiskType
    */
   public function get($project, $zone, $diskType, $optParams = array())
   {
@@ -129,7 +129,7 @@ class Google_Service_Compute_DiskTypesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_DiskTypeList
+   * @return Google_Service_Compute_DiskTypeList
    */
   public function listDiskTypes($project, $zone, $optParams = array())
   {

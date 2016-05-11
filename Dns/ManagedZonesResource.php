@@ -31,7 +31,7 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
    * @param string $project Identifies the project addressed by this request.
    * @param Google_ManagedZone $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ManagedZone
+   * @return Google_Service_Dns_ManagedZone
    */
   public function create($project, Google_Service_Dns_ManagedZone $postBody, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
    * @param string $managedZone Identifies the managed zone addressed by this
    * request. Can be the managed zone name or id.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ManagedZone
+   * @return Google_Service_Dns_ManagedZone
    */
   public function get($project, $managedZone, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_Dns_ManagedZonesResource extends Google_Service_Resource
    * @opt_param string pageToken Optional. A tag returned by a previous list
    * request that was truncated. Use this parameter to continue a previous list
    * request.
-   * @return Google_Service_ManagedZonesListResponse
+   * @return Google_Service_Dns_ManagedZonesListResponse
    */
   public function listManagedZones($project, $optParams = array())
   {

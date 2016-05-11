@@ -59,7 +59,7 @@ class Google_Service_Fitness_UsersSessionsResource extends Google_Service_Resour
    * parameter to the value of nextPageToken from the previous response.
    * @opt_param string startTime An RFC3339 timestamp. Only sessions ending
    * between the start and end times will be included in the response.
-   * @return Google_Service_ListSessionsResponse
+   * @return Google_Service_Fitness_ListSessionsResponse
    */
   public function listUsersSessions($userId, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_Fitness_UsersSessionsResource extends Google_Service_Resour
    *
    * @opt_param string currentTimeMillis The client's current time in milliseconds
    * since epoch.
-   * @return Google_Service_Session
+   * @return Google_Service_Fitness_Session
    */
   public function update($userId, $sessionId, Google_Service_Fitness_Session $postBody, $optParams = array())
   {

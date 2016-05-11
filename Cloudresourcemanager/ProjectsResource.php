@@ -42,7 +42,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * @param string $projectId The Project ID (for example, `foo-bar-123`).
    * Required.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CloudresourcemanagerEmpty
+   * @return Google_Service_CloudResourceManager_CloudresourcemanagerEmpty
    */
   public function delete($projectId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * @param string $projectId The Project ID (for example, `my-project-123`).
    * Required.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Project
+   * @return Google_Service_CloudResourceManager_Project
    */
   public function get($projectId, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * documentation.
    * @param Google_GetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_CloudResourceManager_Policy
    */
   public function getIamPolicy($resource, Google_Service_CloudResourceManager_GetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * `color`.| |labels.color:red|The project's label `color` has the value `red`.|
    * |labels.color:red label.size:big|The project's label `color` has the value
    * `red` and its label `size` has the value `big`. Optional.
-   * @return Google_Service_ListProjectsResponse
+   * @return Google_Service_CloudResourceManager_ListProjectsResponse
    */
   public function listProjects($optParams = array())
   {
@@ -138,7 +138,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * documentation.
    * @param Google_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_CloudResourceManager_Policy
    */
   public function setIamPolicy($resource, Google_Service_CloudResourceManager_SetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -157,7 +157,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * documentation.
    * @param Google_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TestIamPermissionsResponse
+   * @return Google_Service_CloudResourceManager_TestIamPermissionsResponse
    */
   public function testIamPermissions($resource, Google_Service_CloudResourceManager_TestIamPermissionsRequest $postBody, $optParams = array())
   {
@@ -176,7 +176,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * Required.
    * @param Google_UndeleteProjectRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CloudresourcemanagerEmpty
+   * @return Google_Service_CloudResourceManager_CloudresourcemanagerEmpty
    */
   public function undelete($projectId, Google_Service_CloudResourceManager_UndeleteProjectRequest $postBody, $optParams = array())
   {
@@ -193,7 +193,7 @@ class Google_Service_CloudResourceManager_ProjectsResource extends Google_Servic
    * Required.
    * @param Google_Project $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Project
+   * @return Google_Service_CloudResourceManager_Project
    */
   public function update($projectId, Google_Service_CloudResourceManager_Project $postBody, $optParams = array())
   {

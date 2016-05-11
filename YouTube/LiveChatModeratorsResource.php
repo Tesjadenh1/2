@@ -46,7 +46,7 @@ class Google_Service_YouTube_LiveChatModeratorsResource extends Google_Service_R
    * properties that the API response returns. Set the parameter value to snippet.
    * @param Google_LiveChatModerator $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LiveChatModerator
+   * @return Google_Service_YouTube_LiveChatModerator
    */
   public function insert($part, Google_Service_YouTube_LiveChatModerator $postBody, $optParams = array())
   {
@@ -70,7 +70,7 @@ class Google_Service_YouTube_LiveChatModeratorsResource extends Google_Service_R
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_LiveChatModeratorListResponse
+   * @return Google_Service_YouTube_LiveChatModeratorListResponse
    */
   public function listLiveChatModerators($liveChatId, $part, $optParams = array())
   {

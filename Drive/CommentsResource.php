@@ -31,7 +31,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
    * @param string $fileId The ID of the file.
    * @param Google_Comment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_Drive_Comment
    */
   public function create($fileId, Google_Service_Drive_Comment $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
    *
    * @opt_param bool includeDeleted Whether to return deleted comments. Deleted
    * comments will not include their original content.
-   * @return Google_Service_Comment
+   * @return Google_Service_Drive_Comment
    */
   public function get($fileId, $commentId, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
    * previous response.
    * @opt_param string startModifiedTime The minimum value of 'modifiedTime' for
    * the result comments (RFC 3339 date-time).
-   * @return Google_Service_CommentList
+   * @return Google_Service_Drive_CommentList
    */
   public function listComments($fileId, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_Drive_CommentsResource extends Google_Service_Resource
    * @param string $commentId The ID of the comment.
    * @param Google_Comment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_Drive_Comment
    */
   public function update($fileId, $commentId, Google_Service_Drive_Comment $postBody, $optParams = array())
   {

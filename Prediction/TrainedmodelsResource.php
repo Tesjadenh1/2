@@ -32,7 +32,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param string $project The project associated with the model.
    * @param string $id The unique name for the predictive model.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Analyze
+   * @return Google_Service_Prediction_Analyze
    */
   public function analyze($project, $id, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param string $project The project associated with the model.
    * @param string $id The unique name for the predictive model.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Insert2
+   * @return Google_Service_Prediction_Insert2
    */
   public function get($project, $id, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param string $project The project associated with the model.
    * @param Google_Insert $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Insert2
+   * @return Google_Service_Prediction_Insert2
    */
   public function insert($project, Google_Service_Prediction_Insert $postBody, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    *
    * @opt_param string maxResults Maximum number of results to return.
    * @opt_param string pageToken Pagination token.
-   * @return Google_Service_PredictionList
+   * @return Google_Service_Prediction_PredictionList
    */
   public function listTrainedmodels($project, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param string $id The unique name for the predictive model.
    * @param Google_Input $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Output
+   * @return Google_Service_Prediction_Output
    */
   public function predict($project, $id, Google_Service_Prediction_Input $postBody, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_Prediction_TrainedmodelsResource extends Google_Service_Res
    * @param string $id The unique name for the predictive model.
    * @param Google_Update $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Insert2
+   * @return Google_Service_Prediction_Insert2
    */
   public function update($project, $id, Google_Service_Prediction_Update $postBody, $optParams = array())
   {

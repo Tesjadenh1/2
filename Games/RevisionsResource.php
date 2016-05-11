@@ -34,7 +34,7 @@ class Google_Service_Games_RevisionsResource extends Google_Service_Resource
    * "IOS" - Client is running the iOS SDK.  - "WEB_APP" - Client is running as a
    * Web App.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RevisionCheckResponse
+   * @return Google_Service_Games_RevisionCheckResponse
    */
   public function check($clientRevision, $optParams = array())
   {

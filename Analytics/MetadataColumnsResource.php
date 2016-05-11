@@ -31,7 +31,7 @@ class Google_Service_Analytics_MetadataColumnsResource extends Google_Service_Re
    * @param string $reportType Report type. Allowed Values: 'ga'. Where 'ga'
    * corresponds to the Core Reporting API
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Columns
+   * @return Google_Service_Analytics_Columns
    */
   public function listMetadataColumns($reportType, $optParams = array())
   {

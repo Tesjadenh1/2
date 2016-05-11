@@ -31,7 +31,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @param string $teamId Team ID
    * @param string $jobId Job number
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Job
+   * @return Google_Service_Coordinate_Job
    */
   public function get($teamId, $jobId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param string customerName Customer name
    * @opt_param string customerPhoneNumber Customer phone number
    * @opt_param string note Job note as newline (Unix) separated string
-   * @return Google_Service_Job
+   * @return Google_Service_Coordinate_Job
    */
   public function insert($teamId, $address, $lat, $lng, $title, Google_Service_Coordinate_Job $postBody, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param bool omitJobChanges Whether to omit detail job history
    * information.
    * @opt_param string pageToken Continuation token
-   * @return Google_Service_JobListResponse
+   * @return Google_Service_Coordinate_JobListResponse
    */
   public function listJobs($teamId, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param string note Job note as newline (Unix) separated string
    * @opt_param string progress Job progress
    * @opt_param string title Job title
-   * @return Google_Service_Job
+   * @return Google_Service_Coordinate_Job
    */
   public function patch($teamId, $jobId, Google_Service_Coordinate_Job $postBody, $optParams = array())
   {
@@ -148,7 +148,7 @@ class Google_Service_Coordinate_JobsResource extends Google_Service_Resource
    * @opt_param string note Job note as newline (Unix) separated string
    * @opt_param string progress Job progress
    * @opt_param string title Job title
-   * @return Google_Service_Job
+   * @return Google_Service_Coordinate_Job
    */
   public function update($teamId, $jobId, Google_Service_Coordinate_Job $postBody, $optParams = array())
   {

@@ -34,7 +34,7 @@ class Google_Service_Iam_ProjectsServiceAccountsKeysResource extends Google_Serv
    * be the email address or the unique_id of the service account.
    * @param Google_CreateServiceAccountKeyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ServiceAccountKey
+   * @return Google_Service_Iam_ServiceAccountKey
    */
   public function create($name, Google_Service_Iam_CreateServiceAccountKeyRequest $postBody, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Iam_ProjectsServiceAccountsKeysResource extends Google_Serv
    * account value can be the email address or the unique_id of the service
    * account.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_IamEmpty
+   * @return Google_Service_Iam_IamEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_Iam_ProjectsServiceAccountsKeysResource extends Google_Serv
    * account value can be the email address or the unique_id of the service
    * account.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ServiceAccountKey
+   * @return Google_Service_Iam_ServiceAccountKey
    */
   public function get($name, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_Iam_ProjectsServiceAccountsKeysResource extends Google_Serv
    * @opt_param string keyTypes The type of keys the user wants to list. If empty,
    * all key types are included in the response. Duplicate key types are not
    * allowed.
-   * @return Google_Service_ListServiceAccountKeysResponse
+   * @return Google_Service_Iam_ListServiceAccountKeysResponse
    */
   public function listProjectsServiceAccountsKeys($name, $optParams = array())
   {

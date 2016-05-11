@@ -30,7 +30,7 @@ class Google_Service_Dns_ProjectsResource extends Google_Service_Resource
    *
    * @param string $project Identifies the project addressed by this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Project
+   * @return Google_Service_Dns_Project
    */
   public function get($project, $optParams = array())
   {

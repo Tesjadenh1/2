@@ -30,7 +30,7 @@ class Google_Service_Cloudlatencytest_StatscollectionResource extends Google_Ser
    *
    * @param Google_AggregatedStats $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AggregatedStatsReply
+   * @return Google_Service_Cloudlatencytest_AggregatedStatsReply
    */
   public function updateaggregatedstats(Google_Service_Cloudlatencytest_AggregatedStats $postBody, $optParams = array())
   {
@@ -43,7 +43,7 @@ class Google_Service_Cloudlatencytest_StatscollectionResource extends Google_Ser
    *
    * @param Google_Stats $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StatsReply
+   * @return Google_Service_Cloudlatencytest_StatsReply
    */
   public function updatestats(Google_Service_Cloudlatencytest_Stats $postBody, $optParams = array())
   {

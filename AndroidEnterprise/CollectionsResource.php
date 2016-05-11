@@ -44,7 +44,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $collectionId The ID of the collection.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Collection
+   * @return Google_Service_AndroidEnterprise_Collection
    */
   public function get($enterpriseId, $collectionId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param string $enterpriseId The ID of the enterprise.
    * @param Google_Collection $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Collection
+   * @return Google_Service_AndroidEnterprise_Collection
    */
   public function insert($enterpriseId, Google_Service_AndroidEnterprise_Collection $postBody, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CollectionsListResponse
+   * @return Google_Service_AndroidEnterprise_CollectionsListResponse
    */
   public function listCollections($enterpriseId, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param string $collectionId The ID of the collection.
    * @param Google_Collection $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Collection
+   * @return Google_Service_AndroidEnterprise_Collection
    */
   public function patch($enterpriseId, $collectionId, Google_Service_AndroidEnterprise_Collection $postBody, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_AndroidEnterprise_CollectionsResource extends Google_Servic
    * @param string $collectionId The ID of the collection.
    * @param Google_Collection $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Collection
+   * @return Google_Service_AndroidEnterprise_Collection
    */
   public function update($enterpriseId, $collectionId, Google_Service_AndroidEnterprise_Collection $postBody, $optParams = array())
   {

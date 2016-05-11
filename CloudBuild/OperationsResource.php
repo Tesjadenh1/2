@@ -32,7 +32,7 @@ class Google_Service_CloudBuild_OperationsResource extends Google_Service_Resour
    *
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_CloudBuild_Operation
    */
   public function get($name, $optParams = array())
   {
@@ -54,7 +54,7 @@ class Google_Service_CloudBuild_OperationsResource extends Google_Service_Resour
    * @opt_param int pageSize The standard list page size.
    * @opt_param string filter The standard list filter.
    * @opt_param string pageToken The standard list page token.
-   * @return Google_Service_ListOperationsResponse
+   * @return Google_Service_CloudBuild_ListOperationsResponse
    */
   public function listOperations($name, $optParams = array())
   {

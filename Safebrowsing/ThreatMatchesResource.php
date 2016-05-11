@@ -31,7 +31,7 @@ class Google_Service_Safebrowsing_ThreatMatchesResource extends Google_Service_R
    *
    * @param Google_FindThreatMatchesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FindThreatMatchesResponse
+   * @return Google_Service_Safebrowsing_FindThreatMatchesResponse
    */
   public function find(Google_Service_Safebrowsing_FindThreatMatchesRequest $postBody, $optParams = array())
   {

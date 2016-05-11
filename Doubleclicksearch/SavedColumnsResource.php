@@ -32,7 +32,7 @@ class Google_Service_Doubleclicksearch_SavedColumnsResource extends Google_Servi
    * @param string $agencyId DS ID of the agency.
    * @param string $advertiserId DS ID of the advertiser.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SavedColumnList
+   * @return Google_Service_Doubleclicksearch_SavedColumnList
    */
   public function listSavedColumns($agencyId, $advertiserId, $optParams = array())
   {

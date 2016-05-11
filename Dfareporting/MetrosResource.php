@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_MetrosResource extends Google_Service_Resource
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MetrosListResponse
+   * @return Google_Service_Dfareporting_MetrosListResponse
    */
   public function listMetros($profileId, $optParams = array())
   {

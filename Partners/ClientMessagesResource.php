@@ -32,7 +32,7 @@ class Google_Service_Partners_ClientMessagesResource extends Google_Service_Reso
    *
    * @param Google_LogMessageRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LogMessageResponse
+   * @return Google_Service_Partners_LogMessageResponse
    */
   public function log(Google_Service_Partners_LogMessageRequest $postBody, $optParams = array())
   {

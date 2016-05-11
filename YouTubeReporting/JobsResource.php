@@ -34,7 +34,7 @@ class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resour
    * @opt_param string onBehalfOfContentOwner The content owner's external ID on
    * which behalf the user is acting on. If not set, the user is acting for
    * himself (his own channel).
-   * @return Google_Service_Job
+   * @return Google_Service_YouTubeReporting_Job
    */
   public function create(Google_Service_YouTubeReporting_Job $postBody, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resour
    * @opt_param string onBehalfOfContentOwner The content owner's external ID on
    * which behalf the user is acting on. If not set, the user is acting for
    * himself (his own channel).
-   * @return Google_Service_YoutubereportingEmpty
+   * @return Google_Service_YouTubeReporting_YoutubereportingEmpty
    */
   public function delete($jobId, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resour
    * @opt_param string onBehalfOfContentOwner The content owner's external ID on
    * which behalf the user is acting on. If not set, the user is acting for
    * himself (his own channel).
-   * @return Google_Service_Job
+   * @return Google_Service_YouTubeReporting_Job
    */
   public function get($jobId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_YouTubeReporting_JobsResource extends Google_Service_Resour
    * @opt_param bool includeSystemManaged If set to true, also system-managed jobs
    * will be returned; otherwise only user-created jobs will be returned. System-
    * managed jobs can neither be modified nor deleted.
-   * @return Google_Service_ListJobsResponse
+   * @return Google_Service_YouTubeReporting_ListJobsResponse
    */
   public function listJobs($optParams = array())
   {

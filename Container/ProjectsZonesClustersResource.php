@@ -41,7 +41,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * [zone](/compute/docs/zones#available) in which the cluster resides.
    * @param Google_CreateClusterRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Container_Operation
    */
   public function create($projectId, $zone, Google_Service_Container_CreateClusterRequest $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * [zone](/compute/docs/zones#available) in which the cluster resides.
    * @param string $clusterId The name of the cluster to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Container_Operation
    */
   public function delete($projectId, $zone, $clusterId, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * [zone](/compute/docs/zones#available) in which the cluster resides.
    * @param string $clusterId The name of the cluster to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Cluster
+   * @return Google_Service_Container_Cluster
    */
   public function get($projectId, $zone, $clusterId, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * [zone](/compute/docs/zones#available) in which the cluster resides, or "-"
    * for all zones.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListClustersResponse
+   * @return Google_Service_Container_ListClustersResponse
    */
   public function listProjectsZonesClusters($projectId, $zone, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Container_ProjectsZonesClustersResource extends Google_Serv
    * @param string $clusterId The name of the cluster to upgrade.
    * @param Google_UpdateClusterRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Container_Operation
    */
   public function update($projectId, $zone, $clusterId, Google_Service_Container_UpdateClusterRequest $postBody, $optParams = array())
   {

@@ -124,7 +124,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
    * You should set the sync parameter to true if you are uploading a transcript,
    * which has no time codes, or if you suspect the time codes in your file are
    * incorrect and want YouTube to try to fix them.
-   * @return Google_Service_Caption
+   * @return Google_Service_YouTube_Caption
    */
   public function insert($part, Google_Service_YouTube_Caption $postBody, $optParams = array())
   {
@@ -162,7 +162,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
    * authentication credentials for each individual channel. The actual CMS
    * account that the user authenticates with must be linked to the specified
    * YouTube content owner.
-   * @return Google_Service_CaptionListResponse
+   * @return Google_Service_YouTube_CaptionListResponse
    */
   public function listCaptions($part, $videoId, $optParams = array())
   {
@@ -204,7 +204,7 @@ class Google_Service_YouTube_CaptionsResource extends Google_Service_Resource
    * the caption file with the audio track of the video. If you set the value to
    * true, YouTube will automatically synchronize the caption track with the audio
    * track.
-   * @return Google_Service_Caption
+   * @return Google_Service_YouTube_Caption
    */
   public function update($part, Google_Service_YouTube_Caption $postBody, $optParams = array())
   {

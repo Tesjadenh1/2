@@ -33,7 +33,7 @@ class Google_Service_AndroidPublisher_EditsTestersResource extends Google_Servic
    * @param string $editId Unique identifier for this edit.
    * @param string $track
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Testers
+   * @return Google_Service_AndroidPublisher_Testers
    */
   public function get($packageName, $editId, $track, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_AndroidPublisher_EditsTestersResource extends Google_Servic
    * @param string $track
    * @param Google_Testers $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Testers
+   * @return Google_Service_AndroidPublisher_Testers
    */
   public function patch($packageName, $editId, $track, Google_Service_AndroidPublisher_Testers $postBody, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_AndroidPublisher_EditsTestersResource extends Google_Servic
    * @param string $track
    * @param Google_Testers $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Testers
+   * @return Google_Service_AndroidPublisher_Testers
    */
   public function update($packageName, $editId, $track, Google_Service_AndroidPublisher_Testers $postBody, $optParams = array())
   {

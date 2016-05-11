@@ -38,7 +38,7 @@ class Google_Service_Fusiontables_QueryResource extends Google_Service_Resource
    * @opt_param bool typed Whether typed values are returned in the (JSON)
    * response: numbers for numeric values and parsed geometries for KML values.
    * Default is true.
-   * @return Google_Service_Sqlresponse
+   * @return Google_Service_Fusiontables_Sqlresponse
    */
   public function sql($sql, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Fusiontables_QueryResource extends Google_Service_Resource
    * @opt_param bool typed Whether typed values are returned in the (JSON)
    * response: numbers for numeric values and parsed geometries for KML values.
    * Default is true.
-   * @return Google_Service_Sqlresponse
+   * @return Google_Service_Fusiontables_Sqlresponse
    */
   public function sqlGet($sql, $optParams = array())
   {

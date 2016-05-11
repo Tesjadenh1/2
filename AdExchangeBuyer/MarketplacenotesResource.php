@@ -31,7 +31,7 @@ class Google_Service_AdExchangeBuyer_MarketplacenotesResource extends Google_Ser
    * @param string $proposalId The proposalId to add notes for.
    * @param Google_AddOrderNotesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AddOrderNotesResponse
+   * @return Google_Service_AdExchangeBuyer_AddOrderNotesResponse
    */
   public function insert($proposalId, Google_Service_AdExchangeBuyer_AddOrderNotesRequest $postBody, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_AdExchangeBuyer_MarketplacenotesResource extends Google_Ser
    *
    * @param string $proposalId The proposalId to get notes for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetOrderNotesResponse
+   * @return Google_Service_AdExchangeBuyer_GetOrderNotesResponse
    */
   public function listMarketplacenotes($proposalId, $optParams = array())
   {

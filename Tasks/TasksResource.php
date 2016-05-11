@@ -58,7 +58,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
    * @param string $tasklist Task list identifier.
    * @param string $task Task identifier.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Task
+   * @return Google_Service_Tasks_Task
    */
   public function get($tasklist, $task, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
    * @opt_param string previous Previous sibling task identifier. If the task is
    * created at the first position among its siblings, this parameter is omitted.
    * Optional.
-   * @return Google_Service_Task
+   * @return Google_Service_Tasks_Task
    */
   public function insert($tasklist, Google_Service_Tasks_Task $postBody, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
    * @opt_param string updatedMin Lower bound for a task's last modification time
    * (as a RFC 3339 timestamp) to filter by. Optional. The default is not to
    * filter by last modification time.
-   * @return Google_Service_Tasks
+   * @return Google_Service_Tasks_Tasks
    */
   public function listTasks($tasklist, $optParams = array())
   {
@@ -137,7 +137,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
    * @opt_param string previous New previous sibling task identifier. If the task
    * is moved to the first position among its siblings, this parameter is omitted.
    * Optional.
-   * @return Google_Service_Task
+   * @return Google_Service_Tasks_Task
    */
   public function move($tasklist, $task, $optParams = array())
   {
@@ -153,7 +153,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
    * @param string $task Task identifier.
    * @param Google_Task $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Task
+   * @return Google_Service_Tasks_Task
    */
   public function patch($tasklist, $task, Google_Service_Tasks_Task $postBody, $optParams = array())
   {
@@ -168,7 +168,7 @@ class Google_Service_Tasks_TasksResource extends Google_Service_Resource
    * @param string $task Task identifier.
    * @param Google_Task $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Task
+   * @return Google_Service_Tasks_Task
    */
   public function update($tasklist, $task, Google_Service_Tasks_Task $postBody, $optParams = array())
   {

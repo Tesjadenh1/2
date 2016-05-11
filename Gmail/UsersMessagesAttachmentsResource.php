@@ -33,7 +33,7 @@ class Google_Service_Gmail_UsersMessagesAttachmentsResource extends Google_Servi
    * @param string $messageId The ID of the message containing the attachment.
    * @param string $id The ID of the attachment.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MessagePartBody
+   * @return Google_Service_Gmail_MessagePartBody
    */
   public function get($userId, $messageId, $id, $optParams = array())
   {

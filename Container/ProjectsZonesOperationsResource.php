@@ -34,7 +34,7 @@ class Google_Service_Container_ProjectsZonesOperationsResource extends Google_Se
    * [zone](/compute/docs/zones#available) in which the cluster resides.
    * @param string $operationId The server-assigned `name` of the operation.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Container_Operation
    */
   public function get($projectId, $zone, $operationId, $optParams = array())
   {
@@ -52,7 +52,7 @@ class Google_Service_Container_ProjectsZonesOperationsResource extends Google_Se
    * [zone](/compute/docs/zones#available) to return operations for, or `-` for
    * all zones.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListOperationsResponse
+   * @return Google_Service_Container_ListOperationsResponse
    */
   public function listProjectsZonesOperations($projectId, $zone, $optParams = array())
   {

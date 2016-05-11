@@ -33,7 +33,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param string $targetPool Name of the target pool to add a health check to.
    * @param Google_TargetPoolsAddHealthCheckRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function addHealthCheck($project, $region, $targetPool, Google_Service_Compute_TargetPoolsAddHealthCheckRequest $postBody, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * to.
    * @param Google_TargetPoolsAddInstanceRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function addInstance($project, $region, $targetPool, Google_Service_Compute_TargetPoolsAddInstanceRequest $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetPoolAggregatedList
+   * @return Google_Service_Compute_TargetPoolAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -112,7 +112,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param string $region Name of the region scoping this request.
    * @param string $targetPool Name of the TargetPool resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $region, $targetPool, $optParams = array())
   {
@@ -128,7 +128,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param string $region Name of the region scoping this request.
    * @param string $targetPool Name of the TargetPool resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetPool
+   * @return Google_Service_Compute_TargetPool
    */
   public function get($project, $region, $targetPool, $optParams = array())
   {
@@ -146,7 +146,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * queried instance belongs.
    * @param Google_InstanceReference $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetPoolInstanceHealth
+   * @return Google_Service_Compute_TargetPoolInstanceHealth
    */
   public function getHealth($project, $region, $targetPool, Google_Service_Compute_InstanceReference $postBody, $optParams = array())
   {
@@ -162,7 +162,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param string $region Name of the region scoping this request.
    * @param Google_TargetPool $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $region, Google_Service_Compute_TargetPool $postBody, $optParams = array())
   {
@@ -211,7 +211,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetPoolList
+   * @return Google_Service_Compute_TargetPoolList
    */
   public function listTargetPools($project, $region, $optParams = array())
   {
@@ -228,7 +228,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * from.
    * @param Google_TargetPoolsRemoveHealthCheckRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function removeHealthCheck($project, $region, $targetPool, Google_Service_Compute_TargetPoolsRemoveHealthCheckRequest $postBody, $optParams = array())
   {
@@ -245,7 +245,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * from.
    * @param Google_TargetPoolsRemoveInstanceRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function removeInstance($project, $region, $targetPool, Google_Service_Compute_TargetPoolsRemoveInstanceRequest $postBody, $optParams = array())
   {
@@ -264,7 +264,7 @@ class Google_Service_Compute_TargetPoolsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param float failoverRatio New failoverRatio value for the target pool.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setBackup($project, $region, $targetPool, Google_Service_Compute_TargetReference $postBody, $optParams = array())
   {

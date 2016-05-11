@@ -59,7 +59,7 @@ class Google_Service_Partners_CompaniesResource extends Google_Service_Resource
    * @opt_param string address The address to use for sorting the company's
    * addresses by proximity. If not given, the geo-located address of the request
    * is used. Used when order_by is set.
-   * @return Google_Service_GetCompanyResponse
+   * @return Google_Service_Partners_GetCompanyResponse
    */
   public function get($companyId, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_Partners_CompaniesResource extends Google_Service_Resource
    * Search to get companies.
    * @opt_param string websiteUrl Website URL that will help to find a better
    * matched company. .
-   * @return Google_Service_ListCompaniesResponse
+   * @return Google_Service_Partners_ListCompaniesResponse
    */
   public function listCompanies($optParams = array())
   {

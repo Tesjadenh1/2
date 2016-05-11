@@ -52,7 +52,7 @@ class Google_Service_Analytics_DataMcfResource extends Google_Service_Resource
    * determine the sort order for the Analytics data.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_McfData
+   * @return Google_Service_Analytics_McfData
    */
   public function get($ids, $startDate, $endDate, $metrics, $optParams = array())
   {

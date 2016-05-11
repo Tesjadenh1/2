@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Advertiser ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Advertiser
+   * @return Google_Service_Dfareporting_Advertiser
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Advertiser $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Advertiser
+   * @return Google_Service_Dfareporting_Advertiser
    */
   public function insert($profileId, Google_Service_Dfareporting_Advertiser $postBody, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @opt_param string status Select only advertisers with the specified status.
    * @opt_param string subaccountId Select only advertisers with these subaccount
    * IDs.
-   * @return Google_Service_AdvertisersListResponse
+   * @return Google_Service_Dfareporting_AdvertisersListResponse
    */
   public function listAdvertisers($profileId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param string $id Advertiser ID.
    * @param Google_Advertiser $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Advertiser
+   * @return Google_Service_Dfareporting_Advertiser
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_Advertiser $postBody, $optParams = array())
   {
@@ -114,7 +114,7 @@ class Google_Service_Dfareporting_AdvertisersResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Advertiser $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Advertiser
+   * @return Google_Service_Dfareporting_Advertiser
    */
   public function update($profileId, Google_Service_Dfareporting_Advertiser $postBody, $optParams = array())
   {

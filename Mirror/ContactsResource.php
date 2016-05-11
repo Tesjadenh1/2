@@ -42,7 +42,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    *
    * @param string $id The ID of the contact.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Contact
+   * @return Google_Service_Mirror_Contact
    */
   public function get($id, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    *
    * @param Google_Contact $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Contact
+   * @return Google_Service_Mirror_Contact
    */
   public function insert(Google_Service_Mirror_Contact $postBody, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    * (contacts.listContacts)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ContactsListResponse
+   * @return Google_Service_Mirror_ContactsListResponse
    */
   public function listContacts($optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    * @param string $id The ID of the contact.
    * @param Google_Contact $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Contact
+   * @return Google_Service_Mirror_Contact
    */
   public function patch($id, Google_Service_Mirror_Contact $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Mirror_ContactsResource extends Google_Service_Resource
    * @param string $id The ID of the contact.
    * @param Google_Contact $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Contact
+   * @return Google_Service_Mirror_Contact
    */
   public function update($id, Google_Service_Mirror_Contact $postBody, $optParams = array())
   {

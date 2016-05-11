@@ -49,7 +49,7 @@ class Google_Service_Gmail_UsersHistoryResource extends Google_Service_Resource
    * full sync. If you receive no nextPageToken in the response, there are no
    * updates to retrieve and you can store the returned historyId for a future
    * request.
-   * @return Google_Service_ListHistoryResponse
+   * @return Google_Service_Gmail_ListHistoryResponse
    */
   public function listUsersHistory($userId, $optParams = array())
   {

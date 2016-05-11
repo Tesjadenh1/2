@@ -64,7 +64,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_AddressAggregatedList
+   * @return Google_Service_Compute_AddressAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
    * @param string $region Name of the region for this request.
    * @param string $address Name of the address resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $region, $address, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
    * @param string $region Name of the region for this request.
    * @param string $address Name of the address resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Address
+   * @return Google_Service_Compute_Address
    */
   public function get($project, $region, $address, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
    * @param string $region Name of the region for this request.
    * @param Google_Address $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $region, Google_Service_Compute_Address $postBody, $optParams = array())
   {
@@ -159,7 +159,7 @@ class Google_Service_Compute_AddressesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_AddressList
+   * @return Google_Service_Compute_AddressList
    */
   public function listAddresses($project, $region, $optParams = array())
   {

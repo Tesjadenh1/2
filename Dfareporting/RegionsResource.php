@@ -30,7 +30,7 @@ class Google_Service_Dfareporting_RegionsResource extends Google_Service_Resourc
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RegionsListResponse
+   * @return Google_Service_Dfareporting_RegionsListResponse
    */
   public function listRegions($profileId, $optParams = array())
   {

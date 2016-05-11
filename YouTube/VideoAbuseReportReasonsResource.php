@@ -36,7 +36,7 @@ class Google_Service_YouTube_VideoAbuseReportReasonsResource extends Google_Serv
    *
    * @opt_param string hl The hl parameter specifies the language that should be
    * used for text values in the API response.
-   * @return Google_Service_VideoAbuseReportReasonListResponse
+   * @return Google_Service_YouTube_VideoAbuseReportReasonListResponse
    */
   public function listVideoAbuseReportReasons($part, $optParams = array())
   {

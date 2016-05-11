@@ -30,7 +30,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
    *
    * @param Google_Query $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Query
+   * @return Google_Service_DoubleClickBidManager_Query
    */
   public function createquery(Google_Service_DoubleClickBidManager_Query $postBody, $optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
    *
    * @param string $queryId Query ID to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Query
+   * @return Google_Service_DoubleClickBidManager_Query
    */
   public function getquery($queryId, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_DoubleClickBidManager_QueriesResource extends Google_Servic
    * Retrieves stored queries. (queries.listqueries)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListQueriesResponse
+   * @return Google_Service_DoubleClickBidManager_ListQueriesResponse
    */
   public function listqueries($optParams = array())
   {

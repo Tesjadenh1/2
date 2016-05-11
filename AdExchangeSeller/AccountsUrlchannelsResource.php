@@ -38,7 +38,7 @@ class Google_Service_AdExchangeSeller_AccountsUrlchannelsResource extends Google
    * @opt_param string pageToken A continuation token, used to page through URL
    * channels. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_UrlChannels
+   * @return Google_Service_AdExchangeSeller_UrlChannels
    */
   public function listAccountsUrlchannels($accountId, $adClientId, $optParams = array())
   {

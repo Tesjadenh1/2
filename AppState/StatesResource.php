@@ -35,7 +35,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
    *
    * @opt_param string currentDataVersion The version of the data to be cleared.
    * Version strings are returned by the server.
-   * @return Google_Service_WriteResult
+   * @return Google_Service_AppState_WriteResult
    */
   public function clear($stateKey, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
    *
    * @param int $stateKey The key for the data to be retrieved.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetResponse
+   * @return Google_Service_AppState_GetResponse
    */
   public function get($stateKey, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
    *
    * @opt_param bool includeData Whether to include the full data in addition to
    * the version number
-   * @return Google_Service_ListResponse
+   * @return Google_Service_AppState_ListResponse
    */
   public function listStates($optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_AppState_StatesResource extends Google_Service_Resource
    * version, this method will return a conflict error. If there is no data stored
    * on the server for this key, the update will succeed irrespective of the value
    * of this parameter.
-   * @return Google_Service_WriteResult
+   * @return Google_Service_AppState_WriteResult
    */
   public function update($stateKey, Google_Service_AppState_UpdateRequest $postBody, $optParams = array())
   {

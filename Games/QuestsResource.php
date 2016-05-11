@@ -34,7 +34,7 @@ class Google_Service_Games_QuestsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Quest
+   * @return Google_Service_Games_Quest
    */
   public function accept($questId, $optParams = array())
   {
@@ -57,7 +57,7 @@ class Google_Service_Games_QuestsResource extends Google_Service_Resource
    * resources returned may be less than the specified maxResults. Acceptable
    * values are 1 to 50, inclusive. (Default: 50).
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_QuestListResponse
+   * @return Google_Service_Games_QuestListResponse
    */
   public function listQuests($playerId, $optParams = array())
   {

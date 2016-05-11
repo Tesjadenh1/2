@@ -30,7 +30,7 @@ class Google_Service_Drive_AboutResource extends Google_Service_Resource
    * (about.get)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_About
+   * @return Google_Service_Drive_About
    */
   public function get($optParams = array())
   {

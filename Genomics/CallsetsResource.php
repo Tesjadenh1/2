@@ -33,7 +33,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    *
    * @param Google_CallSet $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CallSet
+   * @return Google_Service_Genomics_CallSet
    */
   public function create(Google_Service_Genomics_CallSet $postBody, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    *
    * @param string $callSetId The ID of the call set to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function delete($callSetId, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    *
    * @param string $callSetId The ID of the call set.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CallSet
+   * @return Google_Service_Genomics_CallSet
    */
   public function get($callSetId, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    * @opt_param string updateMask An optional mask specifying which fields to
    * update. At this time, the only mutable field is name. The only acceptable
    * value is "name". If unspecified, all mutable fields will be updated.
-   * @return Google_Service_CallSet
+   * @return Google_Service_Genomics_CallSet
    */
   public function patch($callSetId, Google_Service_Genomics_CallSet $postBody, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_Genomics_CallsetsResource extends Google_Service_Resource
    *
    * @param Google_SearchCallSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SearchCallSetsResponse
+   * @return Google_Service_Genomics_SearchCallSetsResponse
    */
   public function search(Google_Service_Genomics_SearchCallSetsRequest $postBody, $optParams = array())
   {

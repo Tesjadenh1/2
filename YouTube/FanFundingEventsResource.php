@@ -49,7 +49,7 @@ class Google_Service_YouTube_FanFundingEventsResource extends Google_Service_Res
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_FanFundingEventListResponse
+   * @return Google_Service_YouTube_FanFundingEventListResponse
    */
   public function listFanFundingEvents($part, $optParams = array())
   {

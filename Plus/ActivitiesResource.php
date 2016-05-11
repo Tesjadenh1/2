@@ -30,7 +30,7 @@ class Google_Service_Plus_ActivitiesResource extends Google_Service_Resource
    *
    * @param string $activityId The ID of the activity to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Activity
+   * @return Google_Service_Plus_Activity
    */
   public function get($activityId, $optParams = array())
   {
@@ -53,7 +53,7 @@ class Google_Service_Plus_ActivitiesResource extends Google_Service_Resource
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
-   * @return Google_Service_ActivityFeed
+   * @return Google_Service_Plus_ActivityFeed
    */
   public function listActivities($userId, $collection, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Plus_ActivitiesResource extends Google_Service_Resource
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response. This
    * token can be of any length.
-   * @return Google_Service_ActivityFeed
+   * @return Google_Service_Plus_ActivityFeed
    */
   public function search($query, $optParams = array())
   {

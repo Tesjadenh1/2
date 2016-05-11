@@ -47,7 +47,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * EMM.
    * @param Google_Enterprise $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Enterprise
+   * @return Google_Service_AndroidEnterprise_Enterprise
    */
   public function enroll($token, Google_Service_AndroidEnterprise_Enterprise $postBody, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Enterprise
+   * @return Google_Service_AndroidEnterprise_Enterprise
    */
   public function get($enterpriseId, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreLayout
+   * @return Google_Service_AndroidEnterprise_StoreLayout
    */
   public function getStoreLayout($enterpriseId, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * EMM.
    * @param Google_Enterprise $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Enterprise
+   * @return Google_Service_AndroidEnterprise_Enterprise
    */
   public function insert($token, Google_Service_AndroidEnterprise_Enterprise $postBody, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param string $domain The exact primary domain name of the enterprise to look
    * up.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EnterprisesListResponse
+   * @return Google_Service_AndroidEnterprise_EnterprisesListResponse
    */
   public function listEnterprises($domain, $optParams = array())
   {
@@ -118,7 +118,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EnterprisesSendTestPushNotificationResponse
+   * @return Google_Service_AndroidEnterprise_EnterprisesSendTestPushNotificationResponse
    */
   public function sendTestPushNotification($enterpriseId, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param string $enterpriseId The ID of the enterprise.
    * @param Google_EnterpriseAccount $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EnterpriseAccount
+   * @return Google_Service_AndroidEnterprise_EnterpriseAccount
    */
   public function setAccount($enterpriseId, Google_Service_AndroidEnterprise_EnterpriseAccount $postBody, $optParams = array())
   {
@@ -147,7 +147,7 @@ class Google_Service_AndroidEnterprise_EnterprisesResource extends Google_Servic
    * @param string $enterpriseId The ID of the enterprise.
    * @param Google_StoreLayout $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreLayout
+   * @return Google_Service_AndroidEnterprise_StoreLayout
    */
   public function setStoreLayout($enterpriseId, Google_Service_AndroidEnterprise_StoreLayout $postBody, $optParams = array())
   {

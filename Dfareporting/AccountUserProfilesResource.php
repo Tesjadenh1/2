@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param string $id User profile ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountUserProfile
+   * @return Google_Service_Dfareporting_AccountUserProfile
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param Google_AccountUserProfile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountUserProfile
+   * @return Google_Service_Dfareporting_AccountUserProfile
    */
   public function insert($profileId, Google_Service_Dfareporting_AccountUserProfile $postBody, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
    * subaccount ID.
    * @opt_param string userRoleId Select only user profiles with the specified
    * user role ID.
-   * @return Google_Service_AccountUserProfilesListResponse
+   * @return Google_Service_Dfareporting_AccountUserProfilesListResponse
    */
   public function listAccountUserProfiles($profileId, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
    * @param string $id User profile ID.
    * @param Google_AccountUserProfile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountUserProfile
+   * @return Google_Service_Dfareporting_AccountUserProfile
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_AccountUserProfile $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Dfareporting_AccountUserProfilesResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param Google_AccountUserProfile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountUserProfile
+   * @return Google_Service_Dfareporting_AccountUserProfile
    */
   public function update($profileId, Google_Service_Dfareporting_AccountUserProfile $postBody, $optParams = array())
   {

@@ -48,7 +48,7 @@ class Google_Service_Webmasters_SitemapsResource extends Google_Service_Resource
    * @param string $feedpath The URL of the actual sitemap. For example:
    * http://www.example.com/sitemap.xml
    * @param array $optParams Optional parameters.
-   * @return Google_Service_WmxSitemap
+   * @return Google_Service_Webmasters_WmxSitemap
    */
   public function get($siteUrl, $feedpath, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_Webmasters_SitemapsResource extends Google_Service_Resource
    *
    * @opt_param string sitemapIndex A URL of a site's sitemap index. For example:
    * http://www.example.com/sitemapindex.xml
-   * @return Google_Service_SitemapsListResponse
+   * @return Google_Service_Webmasters_SitemapsListResponse
    */
   public function listSitemaps($siteUrl, $optParams = array())
   {

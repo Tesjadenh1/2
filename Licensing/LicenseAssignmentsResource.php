@@ -47,7 +47,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param string $skuId Name for sku
    * @param string $userId email id or unique Id of the user
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LicenseAssignment
+   * @return Google_Service_Licensing_LicenseAssignment
    */
   public function get($productId, $skuId, $userId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param string $skuId Name for sku
    * @param Google_LicenseAssignmentInsert $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LicenseAssignment
+   * @return Google_Service_Licensing_LicenseAssignment
    */
   public function insert($productId, $skuId, Google_Service_Licensing_LicenseAssignmentInsert $postBody, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * time. Must be positive. Optional. Default value is 100.
    * @opt_param string pageToken Token to fetch the next page.Optional. By default
    * server will return first page
-   * @return Google_Service_LicenseAssignmentList
+   * @return Google_Service_Licensing_LicenseAssignmentList
    */
   public function listForProduct($productId, $customerId, $optParams = array())
   {
@@ -105,7 +105,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * time. Must be positive. Optional. Default value is 100.
    * @opt_param string pageToken Token to fetch the next page.Optional. By default
    * server will return first page
-   * @return Google_Service_LicenseAssignmentList
+   * @return Google_Service_Licensing_LicenseAssignmentList
    */
   public function listForProductAndSku($productId, $skuId, $customerId, $optParams = array())
   {
@@ -122,7 +122,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param string $userId email id or unique Id of the user
    * @param Google_LicenseAssignment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LicenseAssignment
+   * @return Google_Service_Licensing_LicenseAssignment
    */
   public function patch($productId, $skuId, $userId, Google_Service_Licensing_LicenseAssignment $postBody, $optParams = array())
   {
@@ -138,7 +138,7 @@ class Google_Service_Licensing_LicenseAssignmentsResource extends Google_Service
    * @param string $userId email id or unique Id of the user
    * @param Google_LicenseAssignment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LicenseAssignment
+   * @return Google_Service_Licensing_LicenseAssignment
    */
   public function update($productId, $skuId, $userId, Google_Service_Licensing_LicenseAssignment $postBody, $optParams = array())
   {

@@ -32,7 +32,7 @@ class Google_Service_TagManager_AccountsContainersVariablesResource extends Goog
    * @param string $containerId The GTM Container ID.
    * @param Google_Variable $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Variable
+   * @return Google_Service_TagManager_Variable
    */
   public function create($accountId, $containerId, Google_Service_TagManager_Variable $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_TagManager_AccountsContainersVariablesResource extends Goog
    * @param string $containerId The GTM Container ID.
    * @param string $variableId The GTM Variable ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Variable
+   * @return Google_Service_TagManager_Variable
    */
   public function get($accountId, $containerId, $variableId, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_TagManager_AccountsContainersVariablesResource extends Goog
    * @param string $accountId The GTM Account ID.
    * @param string $containerId The GTM Container ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListVariablesResponse
+   * @return Google_Service_TagManager_ListVariablesResponse
    */
   public function listAccountsContainersVariables($accountId, $containerId, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_TagManager_AccountsContainersVariablesResource extends Goog
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the variable in storage.
-   * @return Google_Service_Variable
+   * @return Google_Service_TagManager_Variable
    */
   public function update($accountId, $containerId, $variableId, Google_Service_TagManager_Variable $postBody, $optParams = array())
   {

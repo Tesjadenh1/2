@@ -33,7 +33,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccounttaxCustomBatchResponse
+   * @return Google_Service_ShoppingContent_AccounttaxCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_AccounttaxCustomBatchRequest $postBody, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @param string $accountId The ID of the account for which to get/update
    * account tax settings.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountTax
+   * @return Google_Service_ShoppingContent_AccountTax
    */
   public function get($merchantId, $accountId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @opt_param string maxResults The maximum number of tax settings to return in
    * the response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_AccounttaxListResponse
+   * @return Google_Service_ShoppingContent_AccounttaxListResponse
    */
   public function listAccounttax($merchantId, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccountTax
+   * @return Google_Service_ShoppingContent_AccountTax
    */
   public function patch($merchantId, $accountId, Google_Service_ShoppingContent_AccountTax $postBody, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_ShoppingContent_AccounttaxResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccountTax
+   * @return Google_Service_ShoppingContent_AccountTax
    */
   public function update($merchantId, $accountId, Google_Service_ShoppingContent_AccountTax $postBody, $optParams = array())
   {

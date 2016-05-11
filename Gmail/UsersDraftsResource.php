@@ -32,7 +32,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param Google_Draft $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Draft
+   * @return Google_Service_Gmail_Draft
    */
   public function create($userId, Google_Service_Gmail_Draft $postBody, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string format The format to return the draft in.
-   * @return Google_Service_Draft
+   * @return Google_Service_Gmail_Draft
    */
   public function get($userId, $id, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * @opt_param string maxResults Maximum number of drafts to return.
    * @opt_param string pageToken Page token to retrieve a specific page of results
    * in the list.
-   * @return Google_Service_ListDraftsResponse
+   * @return Google_Service_Gmail_ListDraftsResponse
    */
   public function listUsersDrafts($userId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param Google_Draft $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function send($userId, Google_Service_Gmail_Draft $postBody, $optParams = array())
   {
@@ -116,7 +116,7 @@ class Google_Service_Gmail_UsersDraftsResource extends Google_Service_Resource
    * @param string $id The ID of the draft to update.
    * @param Google_Draft $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Draft
+   * @return Google_Service_Gmail_Draft
    */
   public function update($userId, $id, Google_Service_Gmail_Draft $postBody, $optParams = array())
   {

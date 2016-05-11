@@ -41,7 +41,7 @@ class Google_Service_Books_VolumesUseruploadedResource extends Google_Service_Re
    * 0)
    * @opt_param string volumeId The ids of the volumes to be returned. If not
    * specified all that match the processingState are returned.
-   * @return Google_Service_Volumes
+   * @return Google_Service_Books_Volumes
    */
   public function listVolumesUseruploaded($optParams = array())
   {

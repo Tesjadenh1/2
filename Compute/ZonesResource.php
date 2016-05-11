@@ -32,7 +32,7 @@ class Google_Service_Compute_ZonesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $zone Name of the zone resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Zone
+   * @return Google_Service_Compute_Zone
    */
   public function get($project, $zone, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_ZonesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ZoneList
+   * @return Google_Service_Compute_ZoneList
    */
   public function listZones($project, $optParams = array())
   {

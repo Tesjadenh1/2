@@ -31,7 +31,7 @@ class Google_Service_Gmail_UsersResource extends Google_Service_Resource
    * @param string $userId The user's email address. The special value me can be
    * used to indicate the authenticated user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Profile
+   * @return Google_Service_Gmail_Profile
    */
   public function getProfile($userId, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Gmail_UsersResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param Google_WatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_WatchResponse
+   * @return Google_Service_Gmail_WatchResponse
    */
   public function watch($userId, Google_Service_Gmail_WatchRequest $postBody, $optParams = array())
   {

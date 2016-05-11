@@ -73,7 +73,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_VideoGetRatingResponse
+   * @return Google_Service_YouTube_VideoGetRatingResponse
    */
   public function getRating($id, $optParams = array())
   {
@@ -139,7 +139,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * channel.
    * @opt_param bool stabilize The stabilize parameter indicates whether YouTube
    * should adjust the video to remove shaky camera motions.
-   * @return Google_Service_Video
+   * @return Google_Service_YouTube_Video
    */
   public function insert($part, Google_Service_YouTube_Video $postBody, $optParams = array())
   {
@@ -213,7 +213,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * the video category for which the chart should be retrieved. This parameter
    * can only be used in conjunction with the chart parameter. By default, charts
    * are not restricted to a particular category.
-   * @return Google_Service_VideoListResponse
+   * @return Google_Service_YouTube_VideoListResponse
    */
   public function listVideos($part, $optParams = array())
   {
@@ -298,7 +298,7 @@ class Google_Service_YouTube_VideosResource extends Google_Service_Resource
    * authentication credentials for each individual channel. The actual CMS
    * account that the user authenticates with must be linked to the specified
    * YouTube content owner.
-   * @return Google_Service_Video
+   * @return Google_Service_YouTube_Video
    */
   public function update($part, Google_Service_YouTube_Video $postBody, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_ConnectionTypesResource extends Google_Service
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Connection type ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ConnectionType
+   * @return Google_Service_Dfareporting_ConnectionType
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_ConnectionTypesResource extends Google_Service
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ConnectionTypesListResponse
+   * @return Google_Service_Dfareporting_ConnectionTypesListResponse
    */
   public function listConnectionTypes($profileId, $optParams = array())
   {
