@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for Dfareporting (v2.4).
+ * Service definition for Dfareporting (v2.5).
  *
  * <p>
  * Manages your DoubleClick Campaign Manager ad campaigns and reports.</p>
@@ -30,6 +30,9 @@
  */
 class Google_Service_Dfareporting extends Google_Service
 {
+  /** Manage DoubleClick Digital Marketing conversions. */
+  const DDMCONVERSIONS =
+      "https://www.googleapis.com/auth/ddmconversions";
   /** View and manage DoubleClick for Advertisers reports. */
   const DFAREPORTING =
       "https://www.googleapis.com/auth/dfareporting";
@@ -52,6 +55,7 @@ class Google_Service_Dfareporting extends Google_Service
   public $cities;
   public $connectionTypes;
   public $contentCategories;
+  public $conversions;
   public $countries;
   public $creativeAssets;
   public $creativeFieldValues;
@@ -61,6 +65,7 @@ class Google_Service_Dfareporting extends Google_Service
   public $dimensionValues;
   public $directorySiteContacts;
   public $directorySites;
+  public $dynamicTargetingKeys;
   public $eventTags;
   public $files;
   public $floodlightActivities;
@@ -104,8 +109,8 @@ class Google_Service_Dfareporting extends Google_Service
   {
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
-    $this->servicePath = 'dfareporting/v2.4/';
-    $this->version = 'v2.4';
+    $this->servicePath = 'dfareporting/v2.5/';
+    $this->version = 'v2.5';
     $this->serviceName = 'dfareporting';
 
     $this->accountActiveAdSummaries = new Google_Service_Dfareporting_AccountActiveAdSummariesResource(
@@ -1276,6 +1281,26 @@ class Google_Service_Dfareporting extends Google_Service
           )
         )
     );
+    $this->conversions = new Google_Service_Dfareporting_ConversionsResource(
+        $this,
+        $this->serviceName,
+        'conversions',
+        array(
+          'methods' => array(
+            'batchinsert' => array(
+              'path' => 'userprofiles/{profileId}/conversions/batchinsert',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->countries = new Google_Service_Dfareporting_CountriesResource(
         $this,
         $this->serviceName,
@@ -2018,6 +2043,78 @@ class Google_Service_Dfareporting extends Google_Service
                   'type' => 'string',
                 ),
                 'sortOrder' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->dynamicTargetingKeys = new Google_Service_Dfareporting_DynamicTargetingKeysResource(
+        $this,
+        $this->serviceName,
+        'dynamicTargetingKeys',
+        array(
+          'methods' => array(
+            'delete' => array(
+              'path' => 'userprofiles/{profileId}/dynamicTargetingKeys/{objectId}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'objectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'name' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'objectType' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'insert' => array(
+              'path' => 'userprofiles/{profileId}/dynamicTargetingKeys',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'userprofiles/{profileId}/dynamicTargetingKeys',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'advertiserId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'names' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'objectId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'objectType' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
