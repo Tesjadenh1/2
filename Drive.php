@@ -19,7 +19,8 @@
  * Service definition for Drive (v3).
  *
  * <p>
- * The API to interact with Drive.</p>
+ * Manages files in Drive including uploading, downloading, searching, detecting
+ * changes, and updating sharing permissions.</p>
  *
  * <p>
  * For more information about this service, see the API
