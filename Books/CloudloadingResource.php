@@ -37,7 +37,7 @@ class Google_Service_Books_CloudloadingResource extends Google_Service_Resource
    * @opt_param string name The document name. It can be set only if the
    * drive_document_id is set.
    * @opt_param string upload_client_token
-   * @return Google_Service_BooksCloudloadingResource
+   * @return Google_Service_Books_BooksCloudloadingResource
    */
   public function addBook($optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Books_CloudloadingResource extends Google_Service_Resource
    *
    * @param Google_BooksCloudloadingResource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BooksCloudloadingResource
+   * @return Google_Service_Books_BooksCloudloadingResource
    */
   public function updateBook(Google_Service_Books_BooksCloudloadingResource $postBody, $optParams = array())
   {

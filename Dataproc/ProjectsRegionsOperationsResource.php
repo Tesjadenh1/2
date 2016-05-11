@@ -35,7 +35,7 @@ class Google_Service_Dataproc_ProjectsRegionsOperationsResource extends Google_S
    *
    * @param string $name The name of the operation resource to be cancelled.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataprocEmpty
+   * @return Google_Service_Dataproc_DataprocEmpty
    */
   public function cancel($name, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Dataproc_ProjectsRegionsOperationsResource extends Google_S
    *
    * @param string $name The name of the operation resource to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataprocEmpty
+   * @return Google_Service_Dataproc_DataprocEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Dataproc_ProjectsRegionsOperationsResource extends Google_S
    *
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Dataproc_Operation
    */
   public function get($name, $optParams = array())
   {
@@ -87,7 +87,7 @@ class Google_Service_Dataproc_ProjectsRegionsOperationsResource extends Google_S
    * @opt_param string filter The standard list filter.
    * @opt_param int pageSize The standard list page size.
    * @opt_param string pageToken The standard list page token.
-   * @return Google_Service_ListOperationsResponse
+   * @return Google_Service_Dataproc_ListOperationsResponse
    */
   public function listProjectsRegionsOperations($name, $optParams = array())
   {

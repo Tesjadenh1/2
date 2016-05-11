@@ -32,7 +32,7 @@ class Google_Service_GamesManagement_AchievementsResource extends Google_Service
    *
    * @param string $achievementId The ID of the achievement used by this method.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementResetResponse
+   * @return Google_Service_GamesManagement_AchievementResetResponse
    */
   public function reset($achievementId, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_GamesManagement_AchievementsResource extends Google_Service
    * for your application. (achievements.resetAll)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementResetAllResponse
+   * @return Google_Service_GamesManagement_AchievementResetAllResponse
    */
   public function resetAll($optParams = array())
   {

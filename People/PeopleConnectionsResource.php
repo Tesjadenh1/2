@@ -45,7 +45,7 @@ class Google_Service_People_PeopleConnectionsResource extends Google_Service_Res
    * be included in the response. Omitting this field will include all fields.
    * Each path should start with `person.`: for example, `person.names` or
    * `person.photos`.
-   * @return Google_Service_ListConnectionsResponse
+   * @return Google_Service_People_ListConnectionsResponse
    */
   public function listPeopleConnections($resourceName, $optParams = array())
   {

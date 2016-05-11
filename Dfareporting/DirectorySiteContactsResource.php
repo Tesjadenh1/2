@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_DirectorySiteContactsResource extends Google_S
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Directory site contact ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DirectorySiteContact
+   * @return Google_Service_Dfareporting_DirectorySiteContact
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Dfareporting_DirectorySiteContactsResource extends Google_S
    * site contact 2015", or simply "directory site contact".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_DirectorySiteContactsListResponse
+   * @return Google_Service_Dfareporting_DirectorySiteContactsListResponse
    */
   public function listDirectorySiteContacts($profileId, $optParams = array())
   {

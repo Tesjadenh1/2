@@ -35,7 +35,7 @@ class Google_Service_Monitoring_ProjectsGroupsResource extends Google_Service_Re
    *
    * @opt_param bool validateOnly If true, validate this request but do not create
    * the group.
-   * @return Google_Service_Group
+   * @return Google_Service_Monitoring_Group
    */
   public function create($name, Google_Service_Monitoring_Group $postBody, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Monitoring_ProjectsGroupsResource extends Google_Service_Re
    * @param string $name The group to delete. The format is
    * `"projects/{project_id_or_number}/groups/{group_id}"`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MonitoringEmpty
+   * @return Google_Service_Monitoring_MonitoringEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Monitoring_ProjectsGroupsResource extends Google_Service_Re
    * @param string $name The group to retrieve. The format is
    * `"projects/{project_id_or_number}/groups/{group_id}"`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Group
+   * @return Google_Service_Monitoring_Group
    */
   public function get($name, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_Monitoring_ProjectsGroupsResource extends Google_Service_Re
    * the `nextPageToken` value returned by a previous call to this method. Using
    * this field causes the method to return additional results from the previous
    * method call.
-   * @return Google_Service_ListGroupsResponse
+   * @return Google_Service_Monitoring_ListGroupsResponse
    */
   public function listProjectsGroups($name, $optParams = array())
   {
@@ -120,7 +120,7 @@ class Google_Service_Monitoring_ProjectsGroupsResource extends Google_Service_Re
    *
    * @opt_param bool validateOnly If true, validate this request but do not update
    * the existing group.
-   * @return Google_Service_Group
+   * @return Google_Service_Monitoring_Group
    */
   public function update($name, Google_Service_Monitoring_Group $postBody, $optParams = array())
   {

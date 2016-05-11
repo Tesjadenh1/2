@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_OperatingSystemsResource extends Google_Servic
    * @param string $profileId User profile ID associated with this request.
    * @param string $dartId Operating system DART ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OperatingSystem
+   * @return Google_Service_Dfareporting_OperatingSystem
    */
   public function get($profileId, $dartId, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_OperatingSystemsResource extends Google_Servic
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OperatingSystemsListResponse
+   * @return Google_Service_Dfareporting_OperatingSystemsListResponse
    */
   public function listOperatingSystems($profileId, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
    * @param string $teamId Team ID
    * @param string $jobId Job number
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Schedule
+   * @return Google_Service_Coordinate_Schedule
    */
   public function get($teamId, $jobId, $optParams = array())
   {
@@ -53,7 +53,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
    * @opt_param string duration Job duration in milliseconds.
    * @opt_param string endTime Scheduled end time in milliseconds since epoch.
    * @opt_param string startTime Scheduled start time in milliseconds since epoch.
-   * @return Google_Service_Schedule
+   * @return Google_Service_Coordinate_Schedule
    */
   public function patch($teamId, $jobId, Google_Service_Coordinate_Schedule $postBody, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_Coordinate_ScheduleResource extends Google_Service_Resource
    * @opt_param string duration Job duration in milliseconds.
    * @opt_param string endTime Scheduled end time in milliseconds since epoch.
    * @opt_param string startTime Scheduled start time in milliseconds since epoch.
-   * @return Google_Service_Schedule
+   * @return Google_Service_Coordinate_Schedule
    */
   public function update($teamId, $jobId, Google_Service_Coordinate_Schedule $postBody, $optParams = array())
   {

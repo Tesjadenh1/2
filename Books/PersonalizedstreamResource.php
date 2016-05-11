@@ -36,7 +36,7 @@ class Google_Service_Books_PersonalizedstreamResource extends Google_Service_Res
    * rating of returned recommendations. Books with a higher maturity rating are
    * filtered out.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Discoveryclusters
+   * @return Google_Service_Books_Discoveryclusters
    */
   public function get($optParams = array())
   {

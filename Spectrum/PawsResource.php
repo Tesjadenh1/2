@@ -32,7 +32,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
    *
    * @param Google_PawsGetSpectrumRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PawsGetSpectrumResponse
+   * @return Google_Service_Spectrum_PawsGetSpectrumResponse
    */
   public function getSpectrum(Google_Service_Spectrum_PawsGetSpectrumRequest $postBody, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
    *
    * @param Google_PawsGetSpectrumBatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PawsGetSpectrumBatchResponse
+   * @return Google_Service_Spectrum_PawsGetSpectrumBatchResponse
    */
   public function getSpectrumBatch(Google_Service_Spectrum_PawsGetSpectrumBatchRequest $postBody, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
    *
    * @param Google_PawsInitRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PawsInitResponse
+   * @return Google_Service_Spectrum_PawsInitResponse
    */
   public function init(Google_Service_Spectrum_PawsInitRequest $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
    *
    * @param Google_PawsNotifySpectrumUseRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PawsNotifySpectrumUseResponse
+   * @return Google_Service_Spectrum_PawsNotifySpectrumUseResponse
    */
   public function notifySpectrumUse(Google_Service_Spectrum_PawsNotifySpectrumUseRequest $postBody, $optParams = array())
   {
@@ -91,7 +91,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
    *
    * @param Google_PawsRegisterRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PawsRegisterResponse
+   * @return Google_Service_Spectrum_PawsRegisterResponse
    */
   public function register(Google_Service_Spectrum_PawsRegisterRequest $postBody, $optParams = array())
   {
@@ -106,7 +106,7 @@ class Google_Service_Spectrum_PawsResource extends Google_Service_Resource
    *
    * @param Google_PawsVerifyDeviceRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PawsVerifyDeviceResponse
+   * @return Google_Service_Spectrum_PawsVerifyDeviceResponse
    */
   public function verifyDevice(Google_Service_Spectrum_PawsVerifyDeviceRequest $postBody, $optParams = array())
   {

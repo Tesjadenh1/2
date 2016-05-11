@@ -64,7 +64,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_DiskAggregatedList
+   * @return Google_Service_Compute_DiskAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @param string $disk Name of the persistent disk to snapshot.
    * @param Google_Snapshot $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function createSnapshot($project, $zone, $disk, Google_Service_Compute_Snapshot $postBody, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $disk Name of the persistent disk to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $zone, $disk, $optParams = array())
   {
@@ -114,7 +114,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @param string $zone The name of the zone for this request.
    * @param string $disk Name of the persistent disk to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Disk
+   * @return Google_Service_Compute_Disk
    */
   public function get($project, $zone, $disk, $optParams = array())
   {
@@ -135,7 +135,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string sourceImage Optional. Source image to restore onto a disk.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $zone, Google_Service_Compute_Disk $postBody, $optParams = array())
   {
@@ -184,7 +184,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_DiskList
+   * @return Google_Service_Compute_DiskList
    */
   public function listDisks($project, $zone, $optParams = array())
   {
@@ -200,7 +200,7 @@ class Google_Service_Compute_DisksResource extends Google_Service_Resource
    * @param string $disk The name of the persistent disk.
    * @param Google_DisksResizeRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function resize($project, $zone, $disk, Google_Service_Compute_DisksResizeRequest $postBody, $optParams = array())
   {

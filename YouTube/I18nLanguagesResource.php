@@ -36,7 +36,7 @@ class Google_Service_YouTube_I18nLanguagesResource extends Google_Service_Resour
    *
    * @opt_param string hl The hl parameter specifies the language that should be
    * used for text values in the API response.
-   * @return Google_Service_I18nLanguageListResponse
+   * @return Google_Service_YouTube_I18nLanguageListResponse
    */
   public function listI18nLanguages($part, $optParams = array())
   {

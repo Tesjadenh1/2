@@ -40,7 +40,7 @@ class Google_Service_Webmasters_UrlcrawlerrorssamplesResource extends Google_Ser
    * @param string $platform The user agent type (platform) that made the request.
    * For example: web
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UrlCrawlErrorsSample
+   * @return Google_Service_Webmasters_UrlCrawlErrorsSample
    */
   public function get($siteUrl, $url, $category, $platform, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Webmasters_UrlcrawlerrorssamplesResource extends Google_Ser
    * @param string $platform The user agent type (platform) that made the request.
    * For example: web
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UrlCrawlErrorsSamplesListResponse
+   * @return Google_Service_Webmasters_UrlCrawlErrorsSamplesListResponse
    */
   public function listUrlcrawlerrorssamples($siteUrl, $category, $platform, $optParams = array())
   {

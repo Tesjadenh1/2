@@ -32,7 +32,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
    * @param string $postId The ID of the Post.
    * @param string $commentId The ID of the comment to mark as not spam.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_Blogger_Comment
    */
   public function approve($blogId, $postId, $commentId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
    * READER). Note that some comments will require elevated permissions, for
    * example comments where the parent posts which is in a draft state, or
    * comments that are pending moderation.
-   * @return Google_Service_Comment
+   * @return Google_Service_Blogger_Comment
    */
   public function get($blogId, $postId, $commentId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
    * @opt_param string status
    * @opt_param string view Access level with which to view the returned result.
    * Note that some fields require elevated access.
-   * @return Google_Service_CommentList
+   * @return Google_Service_Blogger_CommentList
    */
   public function listComments($blogId, $postId, $optParams = array())
   {
@@ -118,7 +118,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
    * @opt_param string startDate Earliest date of comment to fetch, a date-time
    * with RFC 3339 formatting.
    * @opt_param string status
-   * @return Google_Service_CommentList
+   * @return Google_Service_Blogger_CommentList
    */
   public function listByBlog($blogId, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
    * @param string $postId The ID of the Post.
    * @param string $commentId The ID of the comment to mark as spam.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_Blogger_Comment
    */
   public function markAsSpam($blogId, $postId, $commentId, $optParams = array())
   {
@@ -148,7 +148,7 @@ class Google_Service_Blogger_CommentsResource extends Google_Service_Resource
    * @param string $postId The ID of the Post.
    * @param string $commentId The ID of the comment to delete content from.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_Blogger_Comment
    */
   public function removeContent($blogId, $postId, $commentId, $optParams = array())
   {

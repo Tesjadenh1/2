@@ -46,7 +46,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * the calendarList.list method. If you want to access the primary calendar of
    * the currently logged in user, use the "primary" keyword.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CalendarListEntry
+   * @return Google_Service_Calendar_CalendarListEntry
    */
   public function get($calendarId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * backgroundColor fields to write the calendar colors (RGB). If this feature is
    * used, the index-based colorId field will be set to the best matching option
    * automatically. Optional. The default is False.
-   * @return Google_Service_CalendarListEntry
+   * @return Google_Service_Calendar_CalendarListEntry
    */
   public function insert(Google_Service_Calendar_CalendarListEntry $postBody, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * 410 GONE response code and the client should clear its storage and perform a
    * full synchronization without any syncToken. Learn more about incremental
    * synchronization. Optional. The default is to return all entries.
-   * @return Google_Service_CalendarList
+   * @return Google_Service_Calendar_CalendarList
    */
   public function listCalendarList($optParams = array())
   {
@@ -122,7 +122,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * backgroundColor fields to write the calendar colors (RGB). If this feature is
    * used, the index-based colorId field will be set to the best matching option
    * automatically. Optional. The default is False.
-   * @return Google_Service_CalendarListEntry
+   * @return Google_Service_Calendar_CalendarListEntry
    */
   public function patch($calendarId, Google_Service_Calendar_CalendarListEntry $postBody, $optParams = array())
   {
@@ -143,7 +143,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * backgroundColor fields to write the calendar colors (RGB). If this feature is
    * used, the index-based colorId field will be set to the best matching option
    * automatically. Optional. The default is False.
-   * @return Google_Service_CalendarListEntry
+   * @return Google_Service_Calendar_CalendarListEntry
    */
   public function update($calendarId, Google_Service_Calendar_CalendarListEntry $postBody, $optParams = array())
   {
@@ -180,7 +180,7 @@ class Google_Service_Calendar_CalendarListResource extends Google_Service_Resour
    * 410 GONE response code and the client should clear its storage and perform a
    * full synchronization without any syncToken. Learn more about incremental
    * synchronization. Optional. The default is to return all entries.
-   * @return Google_Service_Channel
+   * @return Google_Service_Calendar_Channel
    */
   public function watch(Google_Service_Calendar_Channel $postBody, $optParams = array())
   {

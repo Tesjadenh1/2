@@ -80,7 +80,7 @@ class Google_Service_Fitness_UsersDataSourcesDatasetsResource extends Google_Ser
    * to the value of nextPageToken from the previous response. Each subsequent
    * call will yield a partial dataset with data point end timestamps that are
    * strictly smaller than those in the previous partial response.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Fitness_Dataset
    */
   public function get($userId, $dataSourceId, $datasetId, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Fitness_UsersDataSourcesDatasetsResource extends Google_Ser
    * @opt_param string currentTimeMillis The client's current time in milliseconds
    * since epoch. Note that the minStartTimeNs and maxEndTimeNs properties in the
    * request body are in nanoseconds instead of milliseconds.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Fitness_Dataset
    */
   public function patch($userId, $dataSourceId, $datasetId, Google_Service_Fitness_Dataset $postBody, $optParams = array())
   {

@@ -29,7 +29,7 @@ class Google_Service_Calendar_ColorsResource extends Google_Service_Resource
    * Returns the color definitions for calendars and events. (colors.get)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Colors
+   * @return Google_Service_Calendar_Colors
    */
   public function get($optParams = array())
   {

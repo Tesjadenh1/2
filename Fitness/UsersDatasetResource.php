@@ -35,7 +35,7 @@ class Google_Service_Fitness_UsersDatasetResource extends Google_Service_Resourc
    * indicate the authenticated user. Only me is supported at this time.
    * @param Google_AggregateRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AggregateResponse
+   * @return Google_Service_Fitness_AggregateResponse
    */
   public function aggregate($userId, Google_Service_Fitness_AggregateRequest $postBody, $optParams = array())
   {

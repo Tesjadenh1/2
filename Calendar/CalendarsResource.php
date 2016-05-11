@@ -62,7 +62,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    * the calendarList.list method. If you want to access the primary calendar of
    * the currently logged in user, use the "primary" keyword.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Calendar
+   * @return Google_Service_Calendar_Calendar
    */
   public function get($calendarId, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    *
    * @param Google_Calendar $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Calendar
+   * @return Google_Service_Calendar_Calendar
    */
   public function insert(Google_Service_Calendar_Calendar $postBody, $optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    * the currently logged in user, use the "primary" keyword.
    * @param Google_Calendar $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Calendar
+   * @return Google_Service_Calendar_Calendar
    */
   public function patch($calendarId, Google_Service_Calendar_Calendar $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Calendar_CalendarsResource extends Google_Service_Resource
    * the currently logged in user, use the "primary" keyword.
    * @param Google_Calendar $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Calendar
+   * @return Google_Service_Calendar_Calendar
    */
   public function update($calendarId, Google_Service_Calendar_Calendar $postBody, $optParams = array())
   {

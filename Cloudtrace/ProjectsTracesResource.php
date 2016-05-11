@@ -32,7 +32,7 @@ class Google_Service_Cloudtrace_ProjectsTracesResource extends Google_Service_Re
    * stored.
    * @param string $traceId ID of the trace to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Trace
+   * @return Google_Service_Cloudtrace_Trace
    */
   public function get($projectId, $traceId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_Cloudtrace_ProjectsTracesResource extends Google_Service_Re
    * fields of the root span) * `start` (`start_time` field of the root span)
    * Descending order can be specified by appending `desc` to the sort field (for
    * example, `name desc`). Only one sort field is permitted.
-   * @return Google_Service_ListTracesResponse
+   * @return Google_Service_Cloudtrace_ListTracesResponse
    */
   public function listProjectsTraces($projectId, $optParams = array())
   {

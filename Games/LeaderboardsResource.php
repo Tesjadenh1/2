@@ -34,7 +34,7 @@ class Google_Service_Games_LeaderboardsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Leaderboard
+   * @return Google_Service_Games_Leaderboard
    */
   public function get($leaderboardId, $optParams = array())
   {
@@ -54,7 +54,7 @@ class Google_Service_Games_LeaderboardsResource extends Google_Service_Resource
    * response. For any response, the actual number of leaderboards returned may be
    * less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_LeaderboardListResponse
+   * @return Google_Service_Games_LeaderboardListResponse
    */
   public function listLeaderboards($optParams = array())
   {

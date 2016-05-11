@@ -32,7 +32,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    *
    * @param string $name The name of the operation resource to be cancelled.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoragetransferEmpty
+   * @return Google_Service_Storagetransfer_StoragetransferEmpty
    */
   public function cancel($name, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    *
    * @param string $name The name of the operation resource to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoragetransferEmpty
+   * @return Google_Service_Storagetransfer_StoragetransferEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    *
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Storagetransfer_Operation
    */
   public function get($name, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    * @opt_param string filter The standard list filter.
    * @opt_param int pageSize The standard list page size.
    * @opt_param string pageToken The standard list page token.
-   * @return Google_Service_ListOperationsResponse
+   * @return Google_Service_Storagetransfer_ListOperationsResponse
    */
   public function listTransferOperations($name, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    * @param string $name The name of the transfer operation. Required.
    * @param Google_PauseTransferOperationRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoragetransferEmpty
+   * @return Google_Service_Storagetransfer_StoragetransferEmpty
    */
   public function pause($name, Google_Service_Storagetransfer_PauseTransferOperationRequest $postBody, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_Storagetransfer_TransferOperationsResource extends Google_S
    * @param string $name The name of the transfer operation. Required.
    * @param Google_ResumeTransferOperationRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoragetransferEmpty
+   * @return Google_Service_Storagetransfer_StoragetransferEmpty
    */
   public function resume($name, Google_Service_Storagetransfer_ResumeTransferOperationRequest $postBody, $optParams = array())
   {

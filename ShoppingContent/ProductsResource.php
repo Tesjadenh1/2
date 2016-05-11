@@ -33,7 +33,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_ProductsCustomBatchResponse
+   * @return Google_Service_ShoppingContent_ProductsCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_ProductsCustomBatchRequest $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
    * @param string $merchantId The ID of the managing account.
    * @param string $productId The ID of the product.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Product
+   * @return Google_Service_ShoppingContent_Product
    */
   public function get($merchantId, $productId, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Product
+   * @return Google_Service_ShoppingContent_Product
    */
   public function insert($merchantId, Google_Service_ShoppingContent_Product $postBody, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_ShoppingContent_ProductsResource extends Google_Service_Res
    * @opt_param string maxResults The maximum number of products to return in the
    * response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_ProductsListResponse
+   * @return Google_Service_ShoppingContent_ProductsListResponse
    */
   public function listProducts($merchantId, $optParams = array())
   {

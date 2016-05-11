@@ -32,7 +32,7 @@ class Google_Service_GamesConfiguration_ImageConfigurationsResource extends Goog
    * @param string $resourceId The ID of the resource used by this method.
    * @param string $imageType Selects which image in a resource for this method.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ImageConfiguration
+   * @return Google_Service_GamesConfiguration_ImageConfiguration
    */
   public function upload($resourceId, $imageType, $optParams = array())
   {

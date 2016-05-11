@@ -31,7 +31,7 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
    * @param string $adClientId Ad client from which to delete the URL channel.
    * @param string $urlChannelId URL channel to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UrlChannel
+   * @return Google_Service_AdSenseHost_UrlChannel
    */
   public function delete($adClientId, $urlChannelId, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
    * added.
    * @param Google_UrlChannel $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UrlChannel
+   * @return Google_Service_AdSenseHost_UrlChannel
    */
   public function insert($adClientId, Google_Service_AdSenseHost_UrlChannel $postBody, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_AdSenseHost_UrlchannelsResource extends Google_Service_Reso
    * @opt_param string pageToken A continuation token, used to page through URL
    * channels. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_UrlChannels
+   * @return Google_Service_AdSenseHost_UrlChannels
    */
   public function listUrlchannels($adClientId, $optParams = array())
   {

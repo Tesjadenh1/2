@@ -42,7 +42,7 @@ class Google_Service_CivicInfo_RepresentativesResource extends Google_Service_Re
    * @opt_param string roles A list of office roles to filter by. Only offices
    * fulfilling one of these roles will be returned. Divisions that don't contain
    * a matching office will not be returned.
-   * @return Google_Service_RepresentativeInfoResponse
+   * @return Google_Service_CivicInfo_RepresentativeInfoResponse
    */
   public function representativeInfoByAddress($optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_CivicInfo_RepresentativesResource extends Google_Service_Re
    * @opt_param string roles A list of office roles to filter by. Only offices
    * fulfilling one of these roles will be returned. Divisions that don't contain
    * a matching office will not be returned.
-   * @return Google_Service_RepresentativeInfoData
+   * @return Google_Service_CivicInfo_RepresentativeInfoData
    */
   public function representativeInfoByDivision($ocdId, $optParams = array())
   {

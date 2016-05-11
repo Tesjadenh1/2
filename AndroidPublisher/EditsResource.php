@@ -32,7 +32,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppEdit
+   * @return Google_Service_AndroidPublisher_AppEdit
    */
   public function commit($packageName, $editId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppEdit
+   * @return Google_Service_AndroidPublisher_AppEdit
    */
   public function get($packageName, $editId, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
    * being updated; for example, "com.spiffygame".
    * @param Google_AppEdit $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppEdit
+   * @return Google_Service_AndroidPublisher_AppEdit
    */
   public function insert($packageName, Google_Service_AndroidPublisher_AppEdit $postBody, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_AndroidPublisher_EditsResource extends Google_Service_Resou
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppEdit
+   * @return Google_Service_AndroidPublisher_AppEdit
    */
   public function validate($packageName, $editId, $optParams = array())
   {

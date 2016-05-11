@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_CreativeFieldsResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Creative Field ID
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeField
+   * @return Google_Service_Dfareporting_CreativeField
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Dfareporting_CreativeFieldsResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param Google_CreativeField $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeField
+   * @return Google_Service_Dfareporting_CreativeField
    */
   public function insert($profileId, Google_Service_Dfareporting_CreativeField $postBody, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Dfareporting_CreativeFieldsResource extends Google_Service_
    * simply "creativefield".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_CreativeFieldsListResponse
+   * @return Google_Service_Dfareporting_CreativeFieldsListResponse
    */
   public function listCreativeFields($profileId, $optParams = array())
   {
@@ -105,7 +105,7 @@ class Google_Service_Dfareporting_CreativeFieldsResource extends Google_Service_
    * @param string $id Creative Field ID
    * @param Google_CreativeField $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeField
+   * @return Google_Service_Dfareporting_CreativeField
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_CreativeField $postBody, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_Dfareporting_CreativeFieldsResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param Google_CreativeField $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreativeField
+   * @return Google_Service_Dfareporting_CreativeField
    */
   public function update($profileId, Google_Service_Dfareporting_CreativeField $postBody, $optParams = array())
   {

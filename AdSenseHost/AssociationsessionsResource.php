@@ -35,7 +35,7 @@ class Google_Service_AdSenseHost_AssociationsessionsResource extends Google_Serv
    *
    * @opt_param string userLocale The preferred locale of the user.
    * @opt_param string websiteLocale The locale of the user's hosted website.
-   * @return Google_Service_AssociationSession
+   * @return Google_Service_AdSenseHost_AssociationSession
    */
   public function start($productCode, $websiteUrl, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_AdSenseHost_AssociationsessionsResource extends Google_Serv
    *
    * @param string $token The token returned to the association callback URL.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AssociationSession
+   * @return Google_Service_AdSenseHost_AssociationSession
    */
   public function verify($token, $optParams = array())
   {

@@ -42,7 +42,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    *
    * @param string $id The ID of the timeline item.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TimelineItem
+   * @return Google_Service_Mirror_TimelineItem
    */
   public function get($id, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    *
    * @param Google_TimelineItem $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TimelineItem
+   * @return Google_Service_Mirror_TimelineItem
    */
   public function insert(Google_Service_Mirror_TimelineItem $postBody, $optParams = array())
   {
@@ -81,7 +81,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    * @opt_param bool pinnedOnly If true, only pinned items will be returned.
    * @opt_param string sourceItemId If provided, only items with the given
    * sourceItemId will be returned.
-   * @return Google_Service_TimelineListResponse
+   * @return Google_Service_Mirror_TimelineListResponse
    */
   public function listTimeline($optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    * @param string $id The ID of the timeline item.
    * @param Google_TimelineItem $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TimelineItem
+   * @return Google_Service_Mirror_TimelineItem
    */
   public function patch($id, Google_Service_Mirror_TimelineItem $postBody, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_Mirror_TimelineResource extends Google_Service_Resource
    * @param string $id The ID of the timeline item.
    * @param Google_TimelineItem $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TimelineItem
+   * @return Google_Service_Mirror_TimelineItem
    */
   public function update($id, Google_Service_Mirror_TimelineItem $postBody, $optParams = array())
   {

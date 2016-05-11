@@ -31,7 +31,7 @@ class Google_Service_Safebrowsing_FullHashesResource extends Google_Service_Reso
    *
    * @param Google_FindFullHashesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FindFullHashesResponse
+   * @return Google_Service_Safebrowsing_FindFullHashesResponse
    */
   public function find(Google_Service_Safebrowsing_FindFullHashesRequest $postBody, $optParams = array())
   {

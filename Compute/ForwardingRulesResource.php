@@ -65,7 +65,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ForwardingRuleAggregatedList
+   * @return Google_Service_Compute_ForwardingRuleAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @param string $region Name of the region scoping this request.
    * @param string $forwardingRule Name of the ForwardingRule resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $region, $forwardingRule, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @param string $region Name of the region scoping this request.
    * @param string $forwardingRule Name of the ForwardingRule resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ForwardingRule
+   * @return Google_Service_Compute_ForwardingRule
    */
   public function get($project, $region, $forwardingRule, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @param string $region Name of the region scoping this request.
    * @param Google_ForwardingRule $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $region, Google_Service_Compute_ForwardingRule $postBody, $optParams = array())
   {
@@ -160,7 +160,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ForwardingRuleList
+   * @return Google_Service_Compute_ForwardingRuleList
    */
   public function listForwardingRules($project, $region, $optParams = array())
   {
@@ -178,7 +178,7 @@ class Google_Service_Compute_ForwardingRulesResource extends Google_Service_Reso
    * target is to be set.
    * @param Google_TargetReference $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setTarget($project, $region, $forwardingRule, Google_Service_Compute_TargetReference $postBody, $optParams = array())
   {

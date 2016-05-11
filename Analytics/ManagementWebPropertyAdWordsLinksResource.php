@@ -50,7 +50,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * for.
    * @param string $webPropertyAdWordsLinkId Web property-AdWords link ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityAdWordsLink
+   * @return Google_Service_Analytics_EntityAdWordsLink
    */
   public function get($accountId, $webPropertyId, $webPropertyAdWordsLinkId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @param string $webPropertyId Web property ID to create the link for.
    * @param Google_EntityAdWordsLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityAdWordsLink
+   * @return Google_Service_Analytics_EntityAdWordsLink
    */
   public function insert($accountId, $webPropertyId, Google_Service_Analytics_EntityAdWordsLink $postBody, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @opt_param int start-index An index of the first webProperty-AdWords link to
    * retrieve. Use this parameter as a pagination mechanism along with the max-
    * results parameter.
-   * @return Google_Service_EntityAdWordsLinks
+   * @return Google_Service_Analytics_EntityAdWordsLinks
    */
   public function listManagementWebPropertyAdWordsLinks($accountId, $webPropertyId, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @param string $webPropertyAdWordsLinkId Web property-AdWords link ID.
    * @param Google_EntityAdWordsLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityAdWordsLink
+   * @return Google_Service_Analytics_EntityAdWordsLink
    */
   public function patch($accountId, $webPropertyId, $webPropertyAdWordsLinkId, Google_Service_Analytics_EntityAdWordsLink $postBody, $optParams = array())
   {
@@ -127,7 +127,7 @@ class Google_Service_Analytics_ManagementWebPropertyAdWordsLinksResource extends
    * @param string $webPropertyAdWordsLinkId Web property-AdWords link ID.
    * @param Google_EntityAdWordsLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityAdWordsLink
+   * @return Google_Service_Analytics_EntityAdWordsLink
    */
   public function update($accountId, $webPropertyId, $webPropertyAdWordsLinkId, Google_Service_Analytics_EntityAdWordsLink $postBody, $optParams = array())
   {

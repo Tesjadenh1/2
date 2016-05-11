@@ -34,7 +34,7 @@ class Google_Service_Clouddebugger_DebuggerDebuggeesBreakpointsResource extends 
    *
    * @opt_param string clientVersion The client version making the call.
    * Following: `domain/type/version` (e.g., `google.com/intellij/v1`).
-   * @return Google_Service_ClouddebuggerEmpty
+   * @return Google_Service_Clouddebugger_ClouddebuggerEmpty
    */
   public function delete($debuggeeId, $breakpointId, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Clouddebugger_DebuggerDebuggeesBreakpointsResource extends 
    *
    * @opt_param string clientVersion The client version making the call.
    * Following: `domain/type/version` (e.g., `google.com/intellij/v1`).
-   * @return Google_Service_GetBreakpointResponse
+   * @return Google_Service_Clouddebugger_GetBreakpointResponse
    */
   public function get($debuggeeId, $breakpointId, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Clouddebugger_DebuggerDebuggeesBreakpointsResource extends 
    * called again with the same `wait_token`.
    * @opt_param string clientVersion The client version making the call.
    * Following: `domain/type/version` (e.g., `google.com/intellij/v1`).
-   * @return Google_Service_ListBreakpointsResponse
+   * @return Google_Service_Clouddebugger_ListBreakpointsResponse
    */
   public function listDebuggerDebuggeesBreakpoints($debuggeeId, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_Clouddebugger_DebuggerDebuggeesBreakpointsResource extends 
    *
    * @opt_param string clientVersion The client version making the call.
    * Following: `domain/type/version` (e.g., `google.com/intellij/v1`).
-   * @return Google_Service_SetBreakpointResponse
+   * @return Google_Service_Clouddebugger_SetBreakpointResponse
    */
   public function set($debuggeeId, Google_Service_Clouddebugger_Breakpoint $postBody, $optParams = array())
   {

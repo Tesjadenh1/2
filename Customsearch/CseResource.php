@@ -83,7 +83,7 @@ class Google_Service_Customsearch_CseResource extends Google_Service_Resource
    * results from the site named in the as_sitesearch parameter
    * @opt_param string sort The sort expression to apply to the results
    * @opt_param string start The index of the first result to return
-   * @return Google_Service_Search
+   * @return Google_Service_Customsearch_Search
    */
   public function listCse($q, $optParams = array())
   {

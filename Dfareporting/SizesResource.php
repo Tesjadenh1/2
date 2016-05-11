@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Size ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Size
+   * @return Google_Service_Dfareporting_Size
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Size $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Size
+   * @return Google_Service_Dfareporting_Size
    */
   public function insert($profileId, Google_Service_Dfareporting_Size $postBody, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Dfareporting_SizesResource extends Google_Service_Resource
    * @opt_param bool iabStandard Select only IAB standard sizes.
    * @opt_param string ids Select only sizes with these IDs.
    * @opt_param int width Select only sizes with this width.
-   * @return Google_Service_SizesListResponse
+   * @return Google_Service_Dfareporting_SizesListResponse
    */
   public function listSizes($profileId, $optParams = array())
   {

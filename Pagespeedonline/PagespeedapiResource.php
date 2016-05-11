@@ -41,7 +41,7 @@ class Google_Service_Pagespeedonline_PagespeedapiResource extends Google_Service
    * @opt_param bool screenshot Indicates if binary data containing a screenshot
    * should be included
    * @opt_param string strategy The analysis strategy to use
-   * @return Google_Service_Result
+   * @return Google_Service_Pagespeedonline_Result
    */
   public function runpagespeed($url, $optParams = array())
   {

@@ -51,7 +51,7 @@ class Google_Service_YouTube_ChannelBannersResource extends Google_Service_Resou
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_ChannelBannerResource
+   * @return Google_Service_YouTube_ChannelBannerResource
    */
   public function insert(Google_Service_YouTube_ChannelBannerResource $postBody, $optParams = array())
   {

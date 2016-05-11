@@ -33,7 +33,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    *
    * @param Google_Dataset $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Genomics_Dataset
    */
   public function create(Google_Service_Genomics_Dataset $postBody, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    *
    * @param string $datasetId The ID of the dataset to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function delete($datasetId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    *
    * @param string $datasetId The ID of the dataset.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Genomics_Dataset
    */
   public function get($datasetId, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * specified. Format is `datasets/`.
    * @param Google_GetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Genomics_Policy
    */
   public function getIamPolicy($resource, Google_Service_Genomics_GetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of `nextPageToken` from the previous response.
-   * @return Google_Service_ListDatasetsResponse
+   * @return Google_Service_Genomics_ListDatasetsResponse
    */
   public function listDatasets($optParams = array())
   {
@@ -129,7 +129,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @opt_param string updateMask An optional mask specifying which fields to
    * update. At this time, the only mutable field is name. The only acceptable
    * value is "name". If unspecified, all mutable fields will be updated.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Genomics_Dataset
    */
   public function patch($datasetId, Google_Service_Genomics_Dataset $postBody, $optParams = array())
   {
@@ -148,7 +148,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * specified. Format is `datasets/`.
    * @param Google_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Genomics_Policy
    */
   public function setIamPolicy($resource, Google_Service_Genomics_SetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -167,7 +167,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * specified. Format is `datasets/`.
    * @param Google_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TestIamPermissionsResponse
+   * @return Google_Service_Genomics_TestIamPermissionsResponse
    */
   public function testIamPermissions($resource, Google_Service_Genomics_TestIamPermissionsRequest $postBody, $optParams = array())
   {
@@ -185,7 +185,7 @@ class Google_Service_Genomics_DatasetsResource extends Google_Service_Resource
    * @param string $datasetId The ID of the dataset to be undeleted.
    * @param Google_UndeleteDatasetRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Dataset
+   * @return Google_Service_Genomics_Dataset
    */
   public function undelete($datasetId, Google_Service_Genomics_UndeleteDatasetRequest $postBody, $optParams = array())
   {

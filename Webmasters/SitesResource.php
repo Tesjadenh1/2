@@ -57,7 +57,7 @@ class Google_Service_Webmasters_SitesResource extends Google_Service_Resource
    * @param string $siteUrl The URI of the property as defined in Search Console.
    * Examples: http://www.example.com/ or android-app://com.example/
    * @param array $optParams Optional parameters.
-   * @return Google_Service_WmxSite
+   * @return Google_Service_Webmasters_WmxSite
    */
   public function get($siteUrl, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Webmasters_SitesResource extends Google_Service_Resource
    * Lists the user's Search Console sites. (sites.listSites)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SitesListResponse
+   * @return Google_Service_Webmasters_SitesListResponse
    */
   public function listSites($optParams = array())
   {

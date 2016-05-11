@@ -65,7 +65,7 @@ class Google_Service_Compute_TargetInstancesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetInstanceAggregatedList
+   * @return Google_Service_Compute_TargetInstanceAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_TargetInstancesResource extends Google_Service_Reso
    * @param string $zone Name of the zone scoping this request.
    * @param string $targetInstance Name of the TargetInstance resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $zone, $targetInstance, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_Compute_TargetInstancesResource extends Google_Service_Reso
    * @param string $zone Name of the zone scoping this request.
    * @param string $targetInstance Name of the TargetInstance resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetInstance
+   * @return Google_Service_Compute_TargetInstance
    */
   public function get($project, $zone, $targetInstance, $optParams = array())
   {
@@ -112,7 +112,7 @@ class Google_Service_Compute_TargetInstancesResource extends Google_Service_Reso
    * @param string $zone Name of the zone scoping this request.
    * @param Google_TargetInstance $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $zone, Google_Service_Compute_TargetInstance $postBody, $optParams = array())
   {
@@ -161,7 +161,7 @@ class Google_Service_Compute_TargetInstancesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetInstanceList
+   * @return Google_Service_Compute_TargetInstanceList
    */
   public function listTargetInstances($project, $zone, $optParams = array())
   {

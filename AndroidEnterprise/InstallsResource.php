@@ -52,7 +52,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
    * @param string $installId The ID of the product represented by the install,
    * e.g. "app:com.google.android.gm".
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Install
+   * @return Google_Service_AndroidEnterprise_Install
    */
   public function get($enterpriseId, $userId, $deviceId, $installId, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
    * @param string $userId The ID of the user.
    * @param string $deviceId The Android ID of the device.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InstallsListResponse
+   * @return Google_Service_AndroidEnterprise_InstallsListResponse
    */
   public function listInstalls($enterpriseId, $userId, $deviceId, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
    * e.g. "app:com.google.android.gm".
    * @param Google_Install $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Install
+   * @return Google_Service_AndroidEnterprise_Install
    */
   public function patch($enterpriseId, $userId, $deviceId, $installId, Google_Service_AndroidEnterprise_Install $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_AndroidEnterprise_InstallsResource extends Google_Service_R
    * e.g. "app:com.google.android.gm".
    * @param Google_Install $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Install
+   * @return Google_Service_AndroidEnterprise_Install
    */
   public function update($enterpriseId, $userId, $deviceId, $installId, Google_Service_AndroidEnterprise_Install $postBody, $optParams = array())
   {

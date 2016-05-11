@@ -33,7 +33,7 @@ class Google_Service_Cloudbilling_ProjectsResource extends Google_Service_Resour
    * @param string $name The resource name of the project for which billing
    * information is retrieved. For example, `projects/tokyo-rain-123`.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProjectBillingInfo
+   * @return Google_Service_Cloudbilling_ProjectBillingInfo
    */
   public function getBillingInfo($name, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Cloudbilling_ProjectsResource extends Google_Service_Resour
    * rain-123`.
    * @param Google_ProjectBillingInfo $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProjectBillingInfo
+   * @return Google_Service_Cloudbilling_ProjectBillingInfo
    */
   public function updateBillingInfo($name, Google_Service_Cloudbilling_ProjectBillingInfo $postBody, $optParams = array())
   {

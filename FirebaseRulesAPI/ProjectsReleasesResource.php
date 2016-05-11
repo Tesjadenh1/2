@@ -56,7 +56,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsReleasesResource extends Google_Se
    * Format: `projects/{project_id}`
    * @param Google_Release $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Release
+   * @return Google_Service_FirebaseRulesAPI_Release
    */
   public function create($name, Google_Service_FirebaseRulesAPI_Release $postBody, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsReleasesResource extends Google_Se
    *
    * Format: `projects/{project_id}/releases/{release_id}`
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FirebaserulesEmpty
+   * @return Google_Service_FirebaseRulesAPI_FirebaserulesEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsReleasesResource extends Google_Se
    *
    * Format: `projects/{project_id}/releases/{release_id}`
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Release
+   * @return Google_Service_FirebaseRulesAPI_Release
    */
   public function get($name, $optParams = array())
   {
@@ -135,7 +135,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsReleasesResource extends Google_Se
    * `name=projects/foo/releases/prod* ruleset_name=projects/foo/rulesets/uuid1`
    * @opt_param string pageToken Next page token for the next batch of `Release`
    * instances.
-   * @return Google_Service_ListReleasesResponse
+   * @return Google_Service_FirebaseRulesAPI_ListReleasesResponse
    */
   public function listProjectsReleases($name, $optParams = array())
   {
@@ -175,7 +175,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsReleasesResource extends Google_Se
    * Format: `projects/{project_id}/releases/{release_id}`
    * @param Google_Release $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Release
+   * @return Google_Service_FirebaseRulesAPI_Release
    */
   public function update($name, Google_Service_FirebaseRulesAPI_Release $postBody, $optParams = array())
   {

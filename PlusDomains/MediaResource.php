@@ -35,7 +35,7 @@ class Google_Service_PlusDomains_MediaResource extends Google_Service_Resource
    * @param string $collection
    * @param Google_Media $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Media
+   * @return Google_Service_PlusDomains_Media
    */
   public function insert($userId, $collection, Google_Service_PlusDomains_Media $postBody, $optParams = array())
   {

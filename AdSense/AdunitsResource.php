@@ -31,7 +31,7 @@ class Google_Service_AdSense_AdunitsResource extends Google_Service_Resource
    * @param string $adClientId Ad client for which to get the ad unit.
    * @param string $adUnitId Ad unit to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdUnit
+   * @return Google_Service_AdSense_AdUnit
    */
   public function get($adClientId, $adUnitId, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_AdSense_AdunitsResource extends Google_Service_Resource
    * @param string $adClientId Ad client with contains the ad unit.
    * @param string $adUnitId Ad unit to get the code for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AdCode
+   * @return Google_Service_AdSense_AdCode
    */
   public function getAdCode($adClientId, $adUnitId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_AdSense_AdunitsResource extends Google_Service_Resource
    * @opt_param string pageToken A continuation token, used to page through ad
    * units. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_AdUnits
+   * @return Google_Service_AdSense_AdUnits
    */
   public function listAdunits($adClientId, $optParams = array())
   {

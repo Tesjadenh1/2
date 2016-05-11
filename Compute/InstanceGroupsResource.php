@@ -36,7 +36,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * adding instances.
    * @param Google_InstanceGroupsAddInstancesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function addInstances($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsAddInstancesRequest $postBody, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceGroupAggregatedList
+   * @return Google_Service_Compute_InstanceGroupAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -101,7 +101,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @param string $zone The name of the zone where the instance group is located.
    * @param string $instanceGroup The name of the instance group to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $zone, $instanceGroup, $optParams = array())
   {
@@ -117,7 +117,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @param string $zone The name of the zone where the instance group is located.
    * @param string $instanceGroup The name of the instance group.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InstanceGroup
+   * @return Google_Service_Compute_InstanceGroup
    */
   public function get($project, $zone, $instanceGroup, $optParams = array())
   {
@@ -134,7 +134,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * instance group.
    * @param Google_InstanceGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $zone, Google_Service_Compute_InstanceGroup $postBody, $optParams = array())
   {
@@ -183,7 +183,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceGroupList
+   * @return Google_Service_Compute_InstanceGroupList
    */
   public function listInstanceGroups($project, $zone, $optParams = array())
   {
@@ -235,7 +235,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_InstanceGroupsListInstances
+   * @return Google_Service_Compute_InstanceGroupsListInstances
    */
   public function listInstances($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsListInstancesRequest $postBody, $optParams = array())
   {
@@ -253,7 +253,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * specified instances will be removed.
    * @param Google_InstanceGroupsRemoveInstancesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function removeInstances($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsRemoveInstancesRequest $postBody, $optParams = array())
   {
@@ -271,7 +271,7 @@ class Google_Service_Compute_InstanceGroupsResource extends Google_Service_Resou
    * ports are updated.
    * @param Google_InstanceGroupsSetNamedPortsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setNamedPorts($project, $zone, $instanceGroup, Google_Service_Compute_InstanceGroupsSetNamedPortsRequest $postBody, $optParams = array())
   {

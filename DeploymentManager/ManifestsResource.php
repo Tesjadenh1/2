@@ -32,7 +32,7 @@ class Google_Service_DeploymentManager_ManifestsResource extends Google_Service_
    * @param string $deployment The name of the deployment for this request.
    * @param string $manifest The name of the manifest for this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Manifest
+   * @return Google_Service_DeploymentManager_Manifest
    */
   public function get($project, $deployment, $manifest, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_DeploymentManager_ManifestsResource extends Google_Service_
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ManifestsListResponse
+   * @return Google_Service_DeploymentManager_ManifestsListResponse
    */
   public function listManifests($project, $deployment, $optParams = array())
   {

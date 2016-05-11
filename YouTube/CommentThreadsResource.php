@@ -34,7 +34,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
    * has a quota cost of 2 units.
    * @param Google_CommentThread $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CommentThread
+   * @return Google_Service_YouTube_CommentThread
    */
   public function insert($part, Google_Service_YouTube_CommentThread $postBody, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
    * in plain text.
    * @opt_param string videoId The videoId parameter instructs the API to return
    * comment threads associated with the specified video ID.
-   * @return Google_Service_CommentThreadListResponse
+   * @return Google_Service_YouTube_CommentThreadListResponse
    */
   public function listCommentThreads($part, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_YouTube_CommentThreadsResource extends Google_Service_Resou
    * contains all of the properties that the API request can update.
    * @param Google_CommentThread $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CommentThread
+   * @return Google_Service_YouTube_CommentThread
    */
   public function update($part, Google_Service_YouTube_CommentThread $postBody, $optParams = array())
   {

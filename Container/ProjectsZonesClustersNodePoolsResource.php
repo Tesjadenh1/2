@@ -35,7 +35,7 @@ class Google_Service_Container_ProjectsZonesClustersNodePoolsResource extends Go
    * @param string $clusterId The name of the cluster.
    * @param Google_CreateNodePoolRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Container_Operation
    */
   public function create($projectId, $zone, $clusterId, Google_Service_Container_CreateNodePoolRequest $postBody, $optParams = array())
   {
@@ -53,7 +53,7 @@ class Google_Service_Container_ProjectsZonesClustersNodePoolsResource extends Go
    * @param string $clusterId The name of the cluster.
    * @param string $nodePoolId The name of the node pool to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Container_Operation
    */
   public function delete($projectId, $zone, $clusterId, $nodePoolId, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_Container_ProjectsZonesClustersNodePoolsResource extends Go
    * @param string $clusterId The name of the cluster.
    * @param string $nodePoolId The name of the node pool.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_NodePool
+   * @return Google_Service_Container_NodePool
    */
   public function get($projectId, $zone, $clusterId, $nodePoolId, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Container_ProjectsZonesClustersNodePoolsResource extends Go
    * [zone](/compute/docs/zones#available) in which the cluster resides.
    * @param string $clusterId The name of the cluster.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListNodePoolsResponse
+   * @return Google_Service_Container_ListNodePoolsResponse
    */
   public function listProjectsZonesClustersNodePools($projectId, $zone, $clusterId, $optParams = array())
   {

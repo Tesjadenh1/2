@@ -30,7 +30,7 @@ class Google_Service_Partners_UserEventsResource extends Google_Service_Resource
    *
    * @param Google_LogUserEventRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LogUserEventResponse
+   * @return Google_Service_Partners_LogUserEventResponse
    */
   public function log(Google_Service_Partners_LogUserEventRequest $postBody, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_ChangeLogsResource extends Google_Service_Reso
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Change log ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ChangeLog
+   * @return Google_Service_Dfareporting_ChangeLog
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Dfareporting_ChangeLogsResource extends Google_Service_Reso
    * name, old or new values match the search string.
    * @opt_param string userProfileIds Select only change logs with these user
    * profile IDs.
-   * @return Google_Service_ChangeLogsListResponse
+   * @return Google_Service_Dfareporting_ChangeLogsListResponse
    */
   public function listChangeLogs($profileId, $optParams = array())
   {

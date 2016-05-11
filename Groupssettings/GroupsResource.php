@@ -30,7 +30,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
    *
    * @param string $groupUniqueId The resource ID
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Groups
+   * @return Google_Service_Groupssettings_Groups
    */
   public function get($groupUniqueId, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
    * @param string $groupUniqueId The resource ID
    * @param Google_Groups $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Groups
+   * @return Google_Service_Groupssettings_Groups
    */
   public function patch($groupUniqueId, Google_Service_Groupssettings_Groups $postBody, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Groupssettings_GroupsResource extends Google_Service_Resour
    * @param string $groupUniqueId The resource ID
    * @param Google_Groups $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Groups
+   * @return Google_Service_Groupssettings_Groups
    */
   public function update($groupUniqueId, Google_Service_Groupssettings_Groups $postBody, $optParams = array())
   {

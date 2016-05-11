@@ -36,7 +36,7 @@ class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $snapshot Name of the Snapshot resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $snapshot, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $snapshot Name of the Snapshot resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Snapshot
+   * @return Google_Service_Compute_Snapshot
    */
   public function get($project, $snapshot, $optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_Compute_SnapshotsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_SnapshotList
+   * @return Google_Service_Compute_SnapshotList
    */
   public function listSnapshots($project, $optParams = array())
   {

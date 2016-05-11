@@ -66,7 +66,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * @opt_param string format The format to return the message in.
    * @opt_param string metadataHeaders When given and format is METADATA, only
    * include headers specified.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function get($userId, $id, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * never mark this email as SPAM in the mailbox.
    * @opt_param bool processForCalendar Process calendar invites in the email and
    * add any extracted meetings to the Google Calendar for this user.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function import($userId, Google_Service_Gmail_Message $postBody, $optParams = array())
   {
@@ -116,7 +116,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * Google Apps for Work accounts.
    * @opt_param string internalDateSource Source for Gmail's internal date of the
    * message.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function insert($userId, Google_Service_Gmail_Message $postBody, $optParams = array())
   {
@@ -141,7 +141,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * @opt_param string q Only return messages matching the specified query.
    * Supports the same query format as the Gmail search box. For example,
    * "from:someuser@example.com rfc822msgid: is:unread".
-   * @return Google_Service_ListMessagesResponse
+   * @return Google_Service_Gmail_ListMessagesResponse
    */
   public function listUsersMessages($userId, $optParams = array())
   {
@@ -157,7 +157,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * @param string $id The ID of the message to modify.
    * @param Google_ModifyMessageRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function modify($userId, $id, Google_Service_Gmail_ModifyMessageRequest $postBody, $optParams = array())
   {
@@ -173,7 +173,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param Google_Message $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function send($userId, Google_Service_Gmail_Message $postBody, $optParams = array())
   {
@@ -188,7 +188,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param string $id The ID of the message to Trash.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function trash($userId, $id, $optParams = array())
   {
@@ -203,7 +203,7 @@ class Google_Service_Gmail_UsersMessagesResource extends Google_Service_Resource
    * used to indicate the authenticated user.
    * @param string $id The ID of the message to remove from Trash.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Message
+   * @return Google_Service_Gmail_Message
    */
   public function untrash($userId, $id, $optParams = array())
   {

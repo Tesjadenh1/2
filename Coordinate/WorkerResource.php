@@ -30,7 +30,7 @@ class Google_Service_Coordinate_WorkerResource extends Google_Service_Resource
    *
    * @param string $teamId Team ID
    * @param array $optParams Optional parameters.
-   * @return Google_Service_WorkerListResponse
+   * @return Google_Service_Coordinate_WorkerListResponse
    */
   public function listWorker($teamId, $optParams = array())
   {

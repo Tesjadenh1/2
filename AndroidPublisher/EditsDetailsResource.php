@@ -33,7 +33,7 @@ class Google_Service_AndroidPublisher_EditsDetailsResource extends Google_Servic
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppDetails
+   * @return Google_Service_AndroidPublisher_AppDetails
    */
   public function get($packageName, $editId, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_AndroidPublisher_EditsDetailsResource extends Google_Servic
    * @param string $editId Unique identifier for this edit.
    * @param Google_AppDetails $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppDetails
+   * @return Google_Service_AndroidPublisher_AppDetails
    */
   public function patch($packageName, $editId, Google_Service_AndroidPublisher_AppDetails $postBody, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_AndroidPublisher_EditsDetailsResource extends Google_Servic
    * @param string $editId Unique identifier for this edit.
    * @param Google_AppDetails $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AppDetails
+   * @return Google_Service_AndroidPublisher_AppDetails
    */
   public function update($packageName, $editId, Google_Service_AndroidPublisher_AppDetails $postBody, $optParams = array())
   {

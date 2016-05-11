@@ -37,7 +37,7 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
    * response, used for paging. For any response, the actual number of events to
    * return may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_PlayerEventListResponse
+   * @return Google_Service_Games_PlayerEventListResponse
    */
   public function listByPlayer($optParams = array())
   {
@@ -57,7 +57,7 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
    * in the response, used for paging. For any response, the actual number of
    * event definitions to return may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_EventDefinitionListResponse
+   * @return Google_Service_Games_EventDefinitionListResponse
    */
   public function listDefinitions($optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_Games_EventsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_EventUpdateResponse
+   * @return Google_Service_Games_EventUpdateResponse
    */
   public function record(Google_Service_Games_EventRecordRequest $postBody, $optParams = array())
   {

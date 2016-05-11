@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_UserRolePermissionsResource extends Google_Ser
    * @param string $profileId User profile ID associated with this request.
    * @param string $id User role permission ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserRolePermission
+   * @return Google_Service_Dfareporting_UserRolePermission
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -47,7 +47,7 @@ class Google_Service_Dfareporting_UserRolePermissionsResource extends Google_Ser
    * @param array $optParams Optional parameters.
    *
    * @opt_param string ids Select only user role permissions with these IDs.
-   * @return Google_Service_UserRolePermissionsListResponse
+   * @return Google_Service_Dfareporting_UserRolePermissionsListResponse
    */
   public function listUserRolePermissions($profileId, $optParams = array())
   {

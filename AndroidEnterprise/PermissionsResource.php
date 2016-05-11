@@ -34,7 +34,7 @@ class Google_Service_AndroidEnterprise_PermissionsResource extends Google_Servic
    *
    * @opt_param string language The BCP47 tag for the user's preferred language
    * (e.g. "en-US", "de")
-   * @return Google_Service_Permission
+   * @return Google_Service_AndroidEnterprise_Permission
    */
   public function get($permissionId, $optParams = array())
   {

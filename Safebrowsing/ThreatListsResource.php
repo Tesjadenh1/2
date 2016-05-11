@@ -30,7 +30,7 @@ class Google_Service_Safebrowsing_ThreatListsResource extends Google_Service_Res
    * (threatLists.listThreatLists)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListThreatListsResponse
+   * @return Google_Service_Safebrowsing_ListThreatListsResponse
    */
   public function listThreatLists($optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $firewall Name of the firewall rule to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $firewall, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $firewall Name of the firewall rule to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Firewall
+   * @return Google_Service_Compute_Firewall
    */
   public function get($project, $firewall, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_Firewall $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_Firewall $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_FirewallList
+   * @return Google_Service_Compute_FirewallList
    */
   public function listFirewalls($project, $optParams = array())
   {
@@ -124,7 +124,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param string $firewall Name of the firewall rule to update.
    * @param Google_Firewall $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function patch($project, $firewall, Google_Service_Compute_Firewall $postBody, $optParams = array())
   {
@@ -140,7 +140,7 @@ class Google_Service_Compute_FirewallsResource extends Google_Service_Resource
    * @param string $firewall Name of the firewall rule to update.
    * @param Google_Firewall $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function update($project, $firewall, Google_Service_Compute_Firewall $postBody, $optParams = array())
   {

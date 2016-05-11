@@ -30,7 +30,7 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    *
    * @param string $surveyUrlId External URL ID for the survey.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Survey
+   * @return Google_Service_Consumersurveys_Survey
    */
   public function get($surveyUrlId, $optParams = array())
   {
@@ -43,7 +43,7 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    *
    * @param Google_Survey $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Survey
+   * @return Google_Service_Consumersurveys_Survey
    */
   public function insert(Google_Service_Consumersurveys_Survey $postBody, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    * @opt_param string maxResults
    * @opt_param string startIndex
    * @opt_param string token
-   * @return Google_Service_SurveysListResponse
+   * @return Google_Service_Consumersurveys_SurveysListResponse
    */
   public function listSurveys($optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    *
    * @param string $resourceId
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SurveysStartResponse
+   * @return Google_Service_Consumersurveys_SurveysStartResponse
    */
   public function start($resourceId, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    *
    * @param string $resourceId
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SurveysStopResponse
+   * @return Google_Service_Consumersurveys_SurveysStopResponse
    */
   public function stop($resourceId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    * @param string $surveyUrlId External URL ID for the survey.
    * @param Google_Survey $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Survey
+   * @return Google_Service_Consumersurveys_Survey
    */
   public function update($surveyUrlId, Google_Service_Consumersurveys_Survey $postBody, $optParams = array())
   {

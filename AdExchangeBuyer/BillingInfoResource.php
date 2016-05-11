@@ -31,7 +31,7 @@ class Google_Service_AdExchangeBuyer_BillingInfoResource extends Google_Service_
    *
    * @param int $accountId The account id.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BillingInfo
+   * @return Google_Service_AdExchangeBuyer_BillingInfo
    */
   public function get($accountId, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_AdExchangeBuyer_BillingInfoResource extends Google_Service_
    * user. (billingInfo.listBillingInfo)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BillingInfoList
+   * @return Google_Service_AdExchangeBuyer_BillingInfoList
    */
   public function listBillingInfo($optParams = array())
   {

@@ -46,7 +46,7 @@ class Google_Service_Analytics_ManagementWebpropertyUserLinksResource extends Go
    * @param string $webPropertyId Web Property ID to create the user link for.
    * @param Google_EntityUserLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityUserLink
+   * @return Google_Service_Analytics_EntityUserLink
    */
   public function insert($accountId, $webPropertyId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Analytics_ManagementWebpropertyUserLinksResource extends Go
    * @opt_param int start-index An index of the first webProperty-user link to
    * retrieve. Use this parameter as a pagination mechanism along with the max-
    * results parameter.
-   * @return Google_Service_EntityUserLinks
+   * @return Google_Service_Analytics_EntityUserLinks
    */
   public function listManagementWebpropertyUserLinks($accountId, $webPropertyId, $optParams = array())
   {
@@ -87,7 +87,7 @@ class Google_Service_Analytics_ManagementWebpropertyUserLinksResource extends Go
    * @param string $linkId Link ID to update the account-user link for.
    * @param Google_EntityUserLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityUserLink
+   * @return Google_Service_Analytics_EntityUserLink
    */
   public function update($accountId, $webPropertyId, $linkId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {

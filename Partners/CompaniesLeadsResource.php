@@ -31,7 +31,7 @@ class Google_Service_Partners_CompaniesLeadsResource extends Google_Service_Reso
    * @param string $companyId The ID of the company to contact.
    * @param Google_CreateLeadRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreateLeadResponse
+   * @return Google_Service_Partners_CreateLeadResponse
    */
   public function create($companyId, Google_Service_Partners_CreateLeadRequest $postBody, $optParams = array())
   {

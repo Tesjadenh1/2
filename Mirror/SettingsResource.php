@@ -34,7 +34,7 @@ class Google_Service_Mirror_SettingsResource extends Google_Service_Resource
    * the user’s current time zone region as defined in the tz database. Example:
    * America/Los_Angeles.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Setting
+   * @return Google_Service_Mirror_Setting
    */
   public function get($id, $optParams = array())
   {

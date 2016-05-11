@@ -51,7 +51,7 @@ class Google_Service_Monitoring_ProjectsGroupsMembersResource extends Google_Ser
    * is a point in time, `endTime`. If `startTime` is present, it must be earlier
    * than (less than) `endTime`. The interval begins after `startTime`—it does not
    * include `startTime`.
-   * @return Google_Service_ListGroupMembersResponse
+   * @return Google_Service_Monitoring_ListGroupMembersResponse
    */
   public function listProjectsGroupsMembers($name, $optParams = array())
   {

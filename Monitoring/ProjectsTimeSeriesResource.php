@@ -35,7 +35,7 @@ class Google_Service_Monitoring_ProjectsTimeSeriesResource extends Google_Servic
    * is `"projects/{project_id_or_number}"`.
    * @param Google_CreateTimeSeriesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_MonitoringEmpty
+   * @return Google_Service_Monitoring_MonitoringEmpty
    */
   public function create($name, Google_Service_Monitoring_CreateTimeSeriesRequest $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Monitoring_ProjectsTimeSeriesResource extends Google_Servic
    * the `nextPageToken` value returned by a previous call to this method. Using
    * this field causes the method to return additional results from the previous
    * method call.
-   * @return Google_Service_ListTimeSeriesResponse
+   * @return Google_Service_Monitoring_ListTimeSeriesResponse
    */
   public function listProjectsTimeSeries($name, $optParams = array())
   {

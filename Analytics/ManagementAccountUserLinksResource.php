@@ -44,7 +44,7 @@ class Google_Service_Analytics_ManagementAccountUserLinksResource extends Google
    * @param string $accountId Account ID to create the user link for.
    * @param Google_EntityUserLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityUserLink
+   * @return Google_Service_Analytics_EntityUserLink
    */
   public function insert($accountId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Analytics_ManagementAccountUserLinksResource extends Google
    * @opt_param int start-index An index of the first account-user link to
    * retrieve. Use this parameter as a pagination mechanism along with the max-
    * results parameter.
-   * @return Google_Service_EntityUserLinks
+   * @return Google_Service_Analytics_EntityUserLinks
    */
   public function listManagementAccountUserLinks($accountId, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Analytics_ManagementAccountUserLinksResource extends Google
    * @param string $linkId Link ID to update the account-user link for.
    * @param Google_EntityUserLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityUserLink
+   * @return Google_Service_Analytics_EntityUserLink
    */
   public function update($accountId, $linkId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {

@@ -38,7 +38,7 @@ class Google_Service_Reports_CustomerUsageReportsResource extends Google_Service
    * @opt_param string pageToken Token to specify next page.
    * @opt_param string parameters Represents the application name, parameter name
    * pairs to fetch in csv as app_name1:param_name1, app_name2:param_name2.
-   * @return Google_Service_UsageReports
+   * @return Google_Service_Reports_UsageReports
    */
   public function get($date, $optParams = array())
   {

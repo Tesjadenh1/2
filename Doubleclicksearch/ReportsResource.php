@@ -30,7 +30,7 @@ class Google_Service_Doubleclicksearch_ReportsResource extends Google_Service_Re
    *
    * @param Google_ReportRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Doubleclicksearch_Report
    */
   public function generate(Google_Service_Doubleclicksearch_ReportRequest $postBody, $optParams = array())
   {
@@ -43,7 +43,7 @@ class Google_Service_Doubleclicksearch_ReportsResource extends Google_Service_Re
    *
    * @param string $reportId ID of the report request being polled.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Doubleclicksearch_Report
    */
   public function get($reportId, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_Doubleclicksearch_ReportsResource extends Google_Service_Re
    *
    * @param Google_ReportRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Doubleclicksearch_Report
    */
   public function request(Google_Service_Doubleclicksearch_ReportRequest $postBody, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_DeploymentManager_OperationsResource extends Google_Service
    * @param string $project The project ID for this request.
    * @param string $operation The name of the operation for this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_DeploymentManager_Operation
    */
   public function get($project, $operation, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_DeploymentManager_OperationsResource extends Google_Service
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_OperationsListResponse
+   * @return Google_Service_DeploymentManager_OperationsListResponse
    */
   public function listOperations($project, $optParams = array())
   {

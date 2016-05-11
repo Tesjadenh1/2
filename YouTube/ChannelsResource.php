@@ -80,7 +80,7 @@ class Google_Service_YouTube_ChannelsResource extends Google_Service_Resource
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_ChannelListResponse
+   * @return Google_Service_YouTube_ChannelListResponse
    */
   public function listChannels($part, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_YouTube_ChannelsResource extends Google_Service_Resource
    * video and channel data, without having to provide authentication credentials
    * for each individual channel. The actual CMS account that the user
    * authenticates with needs to be linked to the specified YouTube content owner.
-   * @return Google_Service_Channel
+   * @return Google_Service_YouTube_Channel
    */
   public function update($part, Google_Service_YouTube_Channel $postBody, $optParams = array())
   {

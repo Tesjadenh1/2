@@ -33,7 +33,7 @@ class Google_Service_AndroidEnterprise_GrouplicensesResource extends Google_Serv
    * @param string $groupLicenseId The ID of the product the group license is for,
    * e.g. "app:com.google.android.gm".
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GroupLicense
+   * @return Google_Service_AndroidEnterprise_GroupLicense
    */
   public function get($enterpriseId, $groupLicenseId, $optParams = array())
   {
@@ -47,7 +47,7 @@ class Google_Service_AndroidEnterprise_GrouplicensesResource extends Google_Serv
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GroupLicensesListResponse
+   * @return Google_Service_AndroidEnterprise_GroupLicensesListResponse
    */
   public function listGrouplicenses($enterpriseId, $optParams = array())
   {

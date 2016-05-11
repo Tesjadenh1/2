@@ -30,7 +30,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    *
    * @param string $project Project ID for this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Project
+   * @return Google_Service_Compute_Project
    */
   public function get($project, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_DiskMoveRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function moveDisk($project, Google_Service_Compute_DiskMoveRequest $postBody, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_InstanceMoveRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function moveInstance($project, Google_Service_Compute_InstanceMoveRequest $postBody, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_Metadata $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setCommonInstanceMetadata($project, Google_Service_Compute_Metadata $postBody, $optParams = array())
   {
@@ -90,7 +90,7 @@ class Google_Service_Compute_ProjectsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_UsageExportLocation $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setUsageExportBucket($project, Google_Service_Compute_UsageExportLocation $postBody, $optParams = array())
   {

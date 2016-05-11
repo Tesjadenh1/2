@@ -46,7 +46,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
    * @param int $accountId The id for the account that will serve this creative.
    * @param string $buyerCreativeId The buyer-specific id for this creative.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Creative
+   * @return Google_Service_AdExchangeBuyer_Creative
    */
   public function get($accountId, $buyerCreativeId, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
    *
    * @param Google_Creative $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Creative
+   * @return Google_Service_AdExchangeBuyer_Creative
    */
   public function insert(Google_Service_AdExchangeBuyer_Creative $postBody, $optParams = array())
   {
@@ -86,7 +86,7 @@ class Google_Service_AdExchangeBuyer_CreativesResource extends Google_Service_Re
    * @opt_param string pageToken A continuation token, used to page through ad
    * clients. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response. Optional.
-   * @return Google_Service_CreativesList
+   * @return Google_Service_AdExchangeBuyer_CreativesList
    */
   public function listCreatives($optParams = array())
   {

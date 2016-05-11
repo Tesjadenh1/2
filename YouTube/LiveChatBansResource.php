@@ -46,7 +46,7 @@ class Google_Service_YouTube_LiveChatBansResource extends Google_Service_Resourc
    * properties that the API response returns. Set the parameter value to snippet.
    * @param Google_LiveChatBan $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_LiveChatBan
+   * @return Google_Service_YouTube_LiveChatBan
    */
   public function insert($part, Google_Service_YouTube_LiveChatBan $postBody, $optParams = array())
   {

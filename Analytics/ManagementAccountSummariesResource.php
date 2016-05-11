@@ -36,7 +36,7 @@ class Google_Service_Analytics_ManagementAccountSummariesResource extends Google
    * in this response, where the largest acceptable value is 1000.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_AccountSummaries
+   * @return Google_Service_Analytics_AccountSummaries
    */
   public function listManagementAccountSummaries($optParams = array())
   {

@@ -33,7 +33,7 @@ class Google_Service_TagManager_AccountsContainersFoldersEntitiesResource extend
    * @param string $containerId The GTM Container ID.
    * @param string $folderId The GTM Folder ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FolderEntities
+   * @return Google_Service_TagManager_FolderEntities
    */
   public function listAccountsContainersFoldersEntities($accountId, $containerId, $folderId, $optParams = array())
   {

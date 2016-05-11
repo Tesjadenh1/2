@@ -64,7 +64,7 @@ class Google_Service_DeploymentManager_TypesResource extends Google_Service_Reso
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TypesListResponse
+   * @return Google_Service_DeploymentManager_TypesListResponse
    */
   public function listTypes($project, $optParams = array())
   {

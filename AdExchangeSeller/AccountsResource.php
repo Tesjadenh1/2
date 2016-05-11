@@ -31,7 +31,7 @@ class Google_Service_AdExchangeSeller_AccountsResource extends Google_Service_Re
    * @param string $accountId Account to get information about. Tip: 'myaccount'
    * is a valid ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_AdExchangeSeller_Account
    */
   public function get($accountId, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_AdExchangeSeller_AccountsResource extends Google_Service_Re
    * @opt_param string pageToken A continuation token, used to page through
    * accounts. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_Accounts
+   * @return Google_Service_AdExchangeSeller_Accounts
    */
   public function listAccounts($optParams = array())
   {

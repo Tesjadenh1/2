@@ -31,7 +31,7 @@ class Google_Service_AdExchangeBuyer_PubprofilesResource extends Google_Service_
    *
    * @param int $accountId The accountId of the publisher to get profiles for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetPublisherProfilesByAccountIdResponse
+   * @return Google_Service_AdExchangeBuyer_GetPublisherProfilesByAccountIdResponse
    */
   public function listPubprofiles($accountId, $optParams = array())
   {

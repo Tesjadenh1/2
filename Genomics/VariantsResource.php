@@ -33,7 +33,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param Google_Variant $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Variant
+   * @return Google_Service_Genomics_Variant
    */
   public function create(Google_Service_Genomics_Variant $postBody, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param string $variantId The ID of the variant to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function delete($variantId, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param string $variantId The ID of the variant.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Variant
+   * @return Google_Service_Genomics_Variant
    */
   public function get($variantId, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param Google_ImportVariantsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Genomics_Operation
    */
   public function import(Google_Service_Genomics_ImportVariantsRequest $postBody, $optParams = array())
   {
@@ -128,7 +128,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param Google_MergeVariantsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function merge(Google_Service_Genomics_MergeVariantsRequest $postBody, $optParams = array())
   {
@@ -150,7 +150,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    * @opt_param string updateMask An optional mask specifying which fields to
    * update. At this time, mutable fields are names and info. Acceptable values
    * are "names" and "info". If unspecified, all mutable fields will be updated.
-   * @return Google_Service_Variant
+   * @return Google_Service_Genomics_Variant
    */
   public function patch($variantId, Google_Service_Genomics_Variant $postBody, $optParams = array())
   {
@@ -168,7 +168,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param Google_SearchVariantsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SearchVariantsResponse
+   * @return Google_Service_Genomics_SearchVariantsResponse
    */
   public function search(Google_Service_Genomics_SearchVariantsRequest $postBody, $optParams = array())
   {
@@ -182,7 +182,7 @@ class Google_Service_Genomics_VariantsResource extends Google_Service_Resource
    *
    * @param Google_StreamVariantsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StreamVariantsResponse
+   * @return Google_Service_Genomics_StreamVariantsResponse
    */
   public function stream(Google_Service_Genomics_StreamVariantsRequest $postBody, $optParams = array())
   {

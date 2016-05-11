@@ -38,7 +38,7 @@ class Google_Service_Books_VolumesAssociatedResource extends Google_Service_Reso
    * rating of returned recommendations. Books with a higher maturity rating are
    * filtered out.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Volumes
+   * @return Google_Service_Books_Volumes
    */
   public function listVolumesAssociated($volumeId, $optParams = array())
   {

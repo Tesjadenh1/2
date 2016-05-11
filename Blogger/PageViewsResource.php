@@ -32,7 +32,7 @@ class Google_Service_Blogger_PageViewsResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string range
-   * @return Google_Service_Pageviews
+   * @return Google_Service_Blogger_Pageviews
    */
   public function get($blogId, $optParams = array())
   {

@@ -34,7 +34,7 @@ class Google_Service_AndroidPublisher_EditsTracksResource extends Google_Service
    * @param string $editId Unique identifier for this edit.
    * @param string $track The track type to read or modify.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Track
+   * @return Google_Service_AndroidPublisher_Track
    */
   public function get($packageName, $editId, $track, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_AndroidPublisher_EditsTracksResource extends Google_Service
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TracksListResponse
+   * @return Google_Service_AndroidPublisher_TracksListResponse
    */
   public function listEditsTracks($packageName, $editId, $optParams = array())
   {
@@ -69,7 +69,7 @@ class Google_Service_AndroidPublisher_EditsTracksResource extends Google_Service
    * @param string $track The track type to read or modify.
    * @param Google_Track $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Track
+   * @return Google_Service_AndroidPublisher_Track
    */
   public function patch($packageName, $editId, $track, Google_Service_AndroidPublisher_Track $postBody, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_AndroidPublisher_EditsTracksResource extends Google_Service
    * @param string $track The track type to read or modify.
    * @param Google_Track $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Track
+   * @return Google_Service_AndroidPublisher_Track
    */
   public function update($packageName, $editId, $track, Google_Service_AndroidPublisher_Track $postBody, $optParams = array())
   {

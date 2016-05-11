@@ -31,7 +31,7 @@ class Google_Service_AdExchangeSeller_AccountsMetadataDimensionsResource extends
    *
    * @param string $accountId Account with visibility to the dimensions.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Metadata
+   * @return Google_Service_AdExchangeSeller_Metadata
    */
   public function listAccountsMetadataDimensions($accountId, $optParams = array())
   {

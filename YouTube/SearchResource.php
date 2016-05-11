@@ -174,7 +174,7 @@ class Google_Service_YouTube_SearchResource extends Google_Service_Resource
    * @opt_param string videoType The videoType parameter lets you restrict a
    * search to a particular type of videos. If you specify a value for this
    * parameter, you must also set the type parameter's value to video.
-   * @return Google_Service_SearchListResponse
+   * @return Google_Service_YouTube_SearchListResponse
    */
   public function listSearch($part, $optParams = array())
   {

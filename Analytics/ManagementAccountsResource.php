@@ -36,7 +36,7 @@ class Google_Service_Analytics_ManagementAccountsResource extends Google_Service
    * @opt_param int start-index An index of the first account to retrieve. Use
    * this parameter as a pagination mechanism along with the max-results
    * parameter.
-   * @return Google_Service_Accounts
+   * @return Google_Service_Analytics_Accounts
    */
   public function listManagementAccounts($optParams = array())
   {

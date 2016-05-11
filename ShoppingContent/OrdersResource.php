@@ -32,7 +32,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order.
    * @param Google_OrdersAcknowledgeRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersAcknowledgeResponse
+   * @return Google_Service_ShoppingContent_OrdersAcknowledgeResponse
    */
   public function acknowledge($merchantId, $orderId, Google_Service_ShoppingContent_OrdersAcknowledgeRequest $postBody, $optParams = array())
   {
@@ -47,7 +47,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $merchantId The ID of the managing account.
    * @param string $orderId The ID of the test order to modify.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersAdvanceTestOrderResponse
+   * @return Google_Service_ShoppingContent_OrdersAdvanceTestOrderResponse
    */
   public function advancetestorder($merchantId, $orderId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order to cancel.
    * @param Google_OrdersCancelRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersCancelResponse
+   * @return Google_Service_ShoppingContent_OrdersCancelResponse
    */
   public function cancel($merchantId, $orderId, Google_Service_ShoppingContent_OrdersCancelRequest $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order.
    * @param Google_OrdersCancelLineItemRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersCancelLineItemResponse
+   * @return Google_Service_ShoppingContent_OrdersCancelLineItemResponse
    */
   public function cancellineitem($merchantId, $orderId, Google_Service_ShoppingContent_OrdersCancelLineItemRequest $postBody, $optParams = array())
   {
@@ -91,7 +91,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $merchantId The ID of the managing account.
    * @param Google_OrdersCreateTestOrderRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersCreateTestOrderResponse
+   * @return Google_Service_ShoppingContent_OrdersCreateTestOrderResponse
    */
   public function createtestorder($merchantId, Google_Service_ShoppingContent_OrdersCreateTestOrderRequest $postBody, $optParams = array())
   {
@@ -105,7 +105,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    *
    * @param Google_OrdersCustomBatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersCustomBatchResponse
+   * @return Google_Service_ShoppingContent_OrdersCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_OrdersCustomBatchRequest $postBody, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $merchantId The ID of the managing account.
    * @param string $orderId The ID of the order.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Order
+   * @return Google_Service_ShoppingContent_Order
    */
   public function get($merchantId, $orderId, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $merchantId The ID of the managing account.
    * @param string $merchantOrderId The merchant order id to be looked for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersGetByMerchantOrderIdResponse
+   * @return Google_Service_ShoppingContent_OrdersGetByMerchantOrderIdResponse
    */
   public function getbymerchantorderid($merchantId, $merchantOrderId, $optParams = array())
   {
@@ -148,7 +148,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $merchantId The ID of the managing account.
    * @param string $templateName The name of the template to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersGetTestOrderTemplateResponse
+   * @return Google_Service_ShoppingContent_OrdersGetTestOrderTemplateResponse
    */
   public function gettestordertemplate($merchantId, $templateName, $optParams = array())
   {
@@ -187,7 +187,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * Additionally, please note that active is a shortcut for pendingShipment and
    * partiallyShipped, and completed is a shortcut for shipped ,
    * partiallyDelivered, delivered, partiallyReturned, returned, and canceled.
-   * @return Google_Service_OrdersListResponse
+   * @return Google_Service_ShoppingContent_OrdersListResponse
    */
   public function listOrders($merchantId, $optParams = array())
   {
@@ -202,7 +202,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order to refund.
    * @param Google_OrdersRefundRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersRefundResponse
+   * @return Google_Service_ShoppingContent_OrdersRefundResponse
    */
   public function refund($merchantId, $orderId, Google_Service_ShoppingContent_OrdersRefundRequest $postBody, $optParams = array())
   {
@@ -217,7 +217,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order.
    * @param Google_OrdersReturnLineItemRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersReturnLineItemResponse
+   * @return Google_Service_ShoppingContent_OrdersReturnLineItemResponse
    */
   public function returnlineitem($merchantId, $orderId, Google_Service_ShoppingContent_OrdersReturnLineItemRequest $postBody, $optParams = array())
   {
@@ -232,7 +232,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order.
    * @param Google_OrdersShipLineItemsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersShipLineItemsResponse
+   * @return Google_Service_ShoppingContent_OrdersShipLineItemsResponse
    */
   public function shiplineitems($merchantId, $orderId, Google_Service_ShoppingContent_OrdersShipLineItemsRequest $postBody, $optParams = array())
   {
@@ -248,7 +248,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order.
    * @param Google_OrdersUpdateMerchantOrderIdRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersUpdateMerchantOrderIdResponse
+   * @return Google_Service_ShoppingContent_OrdersUpdateMerchantOrderIdResponse
    */
   public function updatemerchantorderid($merchantId, $orderId, Google_Service_ShoppingContent_OrdersUpdateMerchantOrderIdRequest $postBody, $optParams = array())
   {
@@ -264,7 +264,7 @@ class Google_Service_ShoppingContent_OrdersResource extends Google_Service_Resou
    * @param string $orderId The ID of the order.
    * @param Google_OrdersUpdateShipmentRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_OrdersUpdateShipmentResponse
+   * @return Google_Service_ShoppingContent_OrdersUpdateShipmentResponse
    */
   public function updateshipment($merchantId, $orderId, Google_Service_ShoppingContent_OrdersUpdateShipmentRequest $postBody, $optParams = array())
   {

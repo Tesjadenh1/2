@@ -92,7 +92,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_Playlist
+   * @return Google_Service_YouTube_Playlist
    */
   public function insert($part, Google_Service_YouTube_Playlist $postBody, $optParams = array())
   {
@@ -163,7 +163,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_PlaylistListResponse
+   * @return Google_Service_YouTube_PlaylistListResponse
    */
   public function listPlaylists($part, $optParams = array())
   {
@@ -200,7 +200,7 @@ class Google_Service_YouTube_PlaylistsResource extends Google_Service_Resource
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_Playlist
+   * @return Google_Service_YouTube_Playlist
    */
   public function update($part, Google_Service_YouTube_Playlist $postBody, $optParams = array())
   {

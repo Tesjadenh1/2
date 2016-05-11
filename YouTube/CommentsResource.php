@@ -47,7 +47,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
    * has a quota cost of 2 units.
    * @param Google_Comment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_YouTube_Comment
    */
   public function insert($part, Google_Service_YouTube_Comment $postBody, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
    * However, replies to replies may be supported in the future.
    * @opt_param string textFormat This parameter indicates whether the API should
    * return comments formatted as HTML or as plain text.
-   * @return Google_Service_CommentListResponse
+   * @return Google_Service_YouTube_CommentListResponse
    */
   public function listComments($part, $optParams = array())
   {
@@ -140,7 +140,7 @@ class Google_Service_YouTube_CommentsResource extends Google_Service_Resource
    * request can update.
    * @param Google_Comment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Comment
+   * @return Google_Service_YouTube_Comment
    */
   public function update($part, Google_Service_YouTube_Comment $postBody, $optParams = array())
   {

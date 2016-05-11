@@ -31,7 +31,7 @@ class Google_Service_Compute_NetworksResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $network Name of the network to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $network, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_Compute_NetworksResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $network Name of the network to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Network
+   * @return Google_Service_Compute_Network
    */
   public function get($project, $network, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Compute_NetworksResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_Network $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_Network $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Compute_NetworksResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_NetworkList
+   * @return Google_Service_Compute_NetworkList
    */
   public function listNetworks($project, $optParams = array())
   {

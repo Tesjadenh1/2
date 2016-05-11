@@ -32,7 +32,7 @@ class Google_Service_GamesManagement_ScoresResource extends Google_Service_Resou
    *
    * @param string $leaderboardId The ID of the leaderboard.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlayerScoreResetResponse
+   * @return Google_Service_GamesManagement_PlayerScoreResetResponse
    */
   public function reset($leaderboardId, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_GamesManagement_ScoresResource extends Google_Service_Resou
    * your application. (scores.resetAll)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PlayerScoreResetAllResponse
+   * @return Google_Service_GamesManagement_PlayerScoreResetAllResponse
    */
   public function resetAll($optParams = array())
   {

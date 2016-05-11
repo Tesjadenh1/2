@@ -32,7 +32,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    * @param string $containerId The GTM Container ID.
    * @param Google_Environment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Environment
+   * @return Google_Service_TagManager_Environment
    */
   public function create($accountId, $containerId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    * @param string $containerId The GTM Container ID.
    * @param string $environmentId The GTM Environment ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Environment
+   * @return Google_Service_TagManager_Environment
    */
   public function get($accountId, $containerId, $environmentId, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    * @param string $accountId The GTM Account ID.
    * @param string $containerId The GTM Container ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListEnvironmentsResponse
+   * @return Google_Service_TagManager_ListEnvironmentsResponse
    */
   public function listAccountsContainersEnvironments($accountId, $containerId, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the environment in storage.
-   * @return Google_Service_Environment
+   * @return Google_Service_TagManager_Environment
    */
   public function patch($accountId, $containerId, $environmentId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_TagManager_AccountsContainersEnvironmentsResource extends G
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the environment in storage.
-   * @return Google_Service_Environment
+   * @return Google_Service_TagManager_Environment
    */
   public function update($accountId, $containerId, $environmentId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {

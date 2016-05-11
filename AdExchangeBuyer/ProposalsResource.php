@@ -30,7 +30,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    *
    * @param string $proposalId Id of the proposal to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Proposal
+   * @return Google_Service_AdExchangeBuyer_Proposal
    */
   public function get($proposalId, $optParams = array())
   {
@@ -43,7 +43,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    *
    * @param Google_CreateOrdersRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreateOrdersResponse
+   * @return Google_Service_AdExchangeBuyer_CreateOrdersResponse
    */
   public function insert(Google_Service_AdExchangeBuyer_CreateOrdersRequest $postBody, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    * @param string $updateAction The proposed action to take on the proposal.
    * @param Google_Proposal $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Proposal
+   * @return Google_Service_AdExchangeBuyer_Proposal
    */
   public function patch($proposalId, $revisionNumber, $updateAction, Google_Service_AdExchangeBuyer_Proposal $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pqlQuery Query string to retrieve specific proposals.
-   * @return Google_Service_GetOrdersResponse
+   * @return Google_Service_AdExchangeBuyer_GetOrdersResponse
    */
   public function search($optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_AdExchangeBuyer_ProposalsResource extends Google_Service_Re
    * @param string $updateAction The proposed action to take on the proposal.
    * @param Google_Proposal $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Proposal
+   * @return Google_Service_AdExchangeBuyer_Proposal
    */
   public function update($proposalId, $revisionNumber, $updateAction, Google_Service_AdExchangeBuyer_Proposal $postBody, $optParams = array())
   {

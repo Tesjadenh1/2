@@ -45,7 +45,7 @@ class Google_Service_Mirror_TimelineAttachmentsResource extends Google_Service_R
    * @param string $itemId The ID of the timeline item the attachment belongs to.
    * @param string $attachmentId The ID of the attachment.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Attachment
+   * @return Google_Service_Mirror_Attachment
    */
   public function get($itemId, $attachmentId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Mirror_TimelineAttachmentsResource extends Google_Service_R
    *
    * @param string $itemId The ID of the timeline item the attachment belongs to.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Attachment
+   * @return Google_Service_Mirror_Attachment
    */
   public function insert($itemId, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_Mirror_TimelineAttachmentsResource extends Google_Service_R
    * @param string $itemId The ID of the timeline item whose attachments should be
    * listed.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AttachmentsListResponse
+   * @return Google_Service_Mirror_AttachmentsListResponse
    */
   public function listTimelineAttachments($itemId, $optParams = array())
   {

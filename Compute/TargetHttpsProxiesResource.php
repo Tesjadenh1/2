@@ -32,7 +32,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @param string $targetHttpsProxy Name of the TargetHttpsProxy resource to
    * delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $targetHttpsProxy, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @param string $targetHttpsProxy Name of the TargetHttpsProxy resource to
    * return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetHttpsProxy
+   * @return Google_Service_Compute_TargetHttpsProxy
    */
   public function get($project, $targetHttpsProxy, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @param string $project Project ID for this request.
    * @param Google_TargetHttpsProxy $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_TargetHttpsProxy $postBody, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetHttpsProxyList
+   * @return Google_Service_Compute_TargetHttpsProxyList
    */
   public function listTargetHttpsProxies($project, $optParams = array())
   {
@@ -128,7 +128,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * an SslCertificates resource for.
    * @param Google_TargetHttpsProxiesSetSslCertificatesRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setSslCertificates($project, $targetHttpsProxy, Google_Service_Compute_TargetHttpsProxiesSetSslCertificatesRequest $postBody, $optParams = array())
   {
@@ -144,7 +144,7 @@ class Google_Service_Compute_TargetHttpsProxiesResource extends Google_Service_R
    * URL map is to be set.
    * @param Google_UrlMapReference $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setUrlMap($project, $targetHttpsProxy, Google_Service_Compute_UrlMapReference $postBody, $optParams = array())
   {

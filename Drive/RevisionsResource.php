@@ -49,7 +49,7 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
    * @opt_param bool acknowledgeAbuse Whether the user is acknowledging the risk
    * of downloading known malware or other abusive files. This is only applicable
    * when alt=media.
-   * @return Google_Service_Revision
+   * @return Google_Service_Drive_Revision
    */
   public function get($fileId, $revisionId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
    *
    * @param string $fileId The ID of the file.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RevisionList
+   * @return Google_Service_Drive_RevisionList
    */
   public function listRevisions($fileId, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Drive_RevisionsResource extends Google_Service_Resource
    * @param string $revisionId The ID of the revision.
    * @param Google_Revision $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Revision
+   * @return Google_Service_Drive_Revision
    */
   public function update($fileId, $revisionId, Google_Service_Drive_Revision $postBody, $optParams = array())
   {

@@ -40,7 +40,7 @@ class Google_Service_Script_ScriptsResource extends Google_Service_Resource
    * Project properties**.
    * @param Google_ExecutionRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Script_Operation
    */
   public function run($scriptId, Google_Service_Script_ExecutionRequest $postBody, $optParams = array())
   {

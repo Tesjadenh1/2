@@ -39,7 +39,7 @@ class Google_Service_Blogger_PostUserInfosResource extends Google_Service_Resour
    *
    * @opt_param string maxComments Maximum number of comments to pull back on a
    * post.
-   * @return Google_Service_PostUserInfo
+   * @return Google_Service_Blogger_PostUserInfo
    */
   public function get($userId, $blogId, $postId, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Blogger_PostUserInfosResource extends Google_Service_Resour
    * @opt_param string status
    * @opt_param string view Access level with which to view the returned result.
    * Note that some fields require elevated access.
-   * @return Google_Service_PostUserInfosList
+   * @return Google_Service_Blogger_PostUserInfosList
    */
   public function listPostUserInfos($userId, $blogId, $optParams = array())
   {

@@ -36,7 +36,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    * @opt_param string requestId A randomly generated numeric ID for each request
    * specified by the caller. This number is used at the server to ensure that the
    * request is handled correctly across retries.
-   * @return Google_Service_AchievementIncrementResponse
+   * @return Google_Service_Games_AchievementIncrementResponse
    */
   public function increment($achievementId, $stepsToIncrement, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    * @opt_param string state Tells the server to return only achievements with the
    * specified state. If this parameter isn't specified, all achievements are
    * returned.
-   * @return Google_Service_PlayerAchievementListResponse
+   * @return Google_Service_Games_PlayerAchievementListResponse
    */
   public function listAchievements($playerId, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    *
    * @param string $achievementId The ID of the achievement used by this method.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementRevealResponse
+   * @return Google_Service_Games_AchievementRevealResponse
    */
   public function reveal($achievementId, $optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    * @param string $achievementId The ID of the achievement used by this method.
    * @param int $steps The minimum value to set the steps to.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementSetStepsAtLeastResponse
+   * @return Google_Service_Games_AchievementSetStepsAtLeastResponse
    */
   public function setStepsAtLeast($achievementId, $steps, $optParams = array())
   {
@@ -106,7 +106,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    *
    * @param string $achievementId The ID of the achievement used by this method.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementUnlockResponse
+   * @return Google_Service_Games_AchievementUnlockResponse
    */
   public function unlock($achievementId, $optParams = array())
   {
@@ -120,7 +120,7 @@ class Google_Service_Games_AchievementsResource extends Google_Service_Resource
    *
    * @param Google_AchievementUpdateMultipleRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AchievementUpdateMultipleResponse
+   * @return Google_Service_Games_AchievementUpdateMultipleResponse
    */
   public function updateMultiple(Google_Service_Games_AchievementUpdateMultipleRequest $postBody, $optParams = array())
   {

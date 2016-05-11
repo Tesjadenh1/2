@@ -31,7 +31,7 @@ class Google_Service_AdExchangeSeller_AccountsMetadataMetricsResource extends Go
    *
    * @param string $accountId Account with visibility to the metrics.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Metadata
+   * @return Google_Service_AdExchangeSeller_Metadata
    */
   public function listAccountsMetadataMetrics($accountId, $optParams = array())
   {

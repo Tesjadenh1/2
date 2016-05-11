@@ -60,7 +60,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    *
    * @opt_param string generation If present, selects a specific revision of this
    * object (as opposed to the latest version, the default).
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function get($bucket, $object, $entity, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    *
    * @opt_param string generation If present, selects a specific revision of this
    * object (as opposed to the latest version, the default).
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function insert($bucket, $object, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    *
    * @opt_param string generation If present, selects a specific revision of this
    * object (as opposed to the latest version, the default).
-   * @return Google_Service_ObjectAccessControls
+   * @return Google_Service_Storage_ObjectAccessControls
    */
   public function listObjectAccessControls($bucket, $object, $optParams = array())
   {
@@ -122,7 +122,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    *
    * @opt_param string generation If present, selects a specific revision of this
    * object (as opposed to the latest version, the default).
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function patch($bucket, $object, $entity, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
@@ -144,7 +144,7 @@ class Google_Service_Storage_ObjectAccessControlsResource extends Google_Service
    *
    * @opt_param string generation If present, selects a specific revision of this
    * object (as opposed to the latest version, the default).
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function update($bucket, $object, $entity, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {

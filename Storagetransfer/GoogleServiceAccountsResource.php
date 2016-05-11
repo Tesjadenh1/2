@@ -37,7 +37,7 @@ class Google_Service_Storagetransfer_GoogleServiceAccountsResource extends Googl
    * @param string $projectId The ID of the Google Developers Console project that
    * the Google service account is associated with. Required.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GoogleServiceAccount
+   * @return Google_Service_Storagetransfer_GoogleServiceAccount
    */
   public function get($projectId, $optParams = array())
   {

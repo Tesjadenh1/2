@@ -33,7 +33,7 @@ class Google_Service_AndroidEnterprise_GrouplicenseusersResource extends Google_
    * @param string $groupLicenseId The ID of the product the group license is for,
    * e.g. "app:com.google.android.gm".
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GroupLicenseUsersListResponse
+   * @return Google_Service_AndroidEnterprise_GroupLicenseUsersListResponse
    */
   public function listGrouplicenseusers($enterpriseId, $groupLicenseId, $optParams = array())
   {

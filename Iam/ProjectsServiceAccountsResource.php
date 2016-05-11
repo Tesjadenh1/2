@@ -32,7 +32,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * with the service accounts, such as "projects/123"
    * @param Google_CreateServiceAccountRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ServiceAccount
+   * @return Google_Service_Iam_ServiceAccount
    */
   public function create($name, Google_Service_Iam_CreateServiceAccountRequest $postBody, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * the project, will infer the project from the account. The account value can
    * be the email address or the unique_id of the service account.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_IamEmpty
+   * @return Google_Service_Iam_IamEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * the project, will infer the project from the account. The account value can
    * be the email address or the unique_id of the service account.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ServiceAccount
+   * @return Google_Service_Iam_ServiceAccount
    */
   public function get($name, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * this value is resource specific and is specified in the `getIamPolicy`
    * documentation.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Iam_Policy
    */
   public function getIamPolicy($resource, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * request.
    * @opt_param string pageToken Optional pagination token returned in an earlier
    * [ListServiceAccountsResponse.next_page_token].
-   * @return Google_Service_ListServiceAccountsResponse
+   * @return Google_Service_Iam_ListServiceAccountsResponse
    */
   public function listProjectsServiceAccounts($name, $optParams = array())
   {
@@ -123,7 +123,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * documentation.
    * @param Google_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Policy
+   * @return Google_Service_Iam_Policy
    */
   public function setIamPolicy($resource, Google_Service_Iam_SetIamPolicyRequest $postBody, $optParams = array())
   {
@@ -140,7 +140,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * be the email address or the unique_id of the service account.
    * @param Google_SignBlobRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SignBlobResponse
+   * @return Google_Service_Iam_SignBlobResponse
    */
   public function signBlob($name, Google_Service_Iam_SignBlobRequest $postBody, $optParams = array())
   {
@@ -159,7 +159,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * documentation.
    * @param Google_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TestIamPermissionsResponse
+   * @return Google_Service_Iam_TestIamPermissionsResponse
    */
   public function testIamPermissions($resource, Google_Service_Iam_TestIamPermissionsRequest $postBody, $optParams = array())
   {
@@ -179,7 +179,7 @@ class Google_Service_Iam_ProjectsServiceAccountsResource extends Google_Service_
    * "projects/{project}/serviceAccounts/{email}".
    * @param Google_ServiceAccount $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ServiceAccount
+   * @return Google_Service_Iam_ServiceAccount
    */
   public function update($name, Google_Service_Iam_ServiceAccount $postBody, $optParams = array())
   {

@@ -46,7 +46,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param string $pageId The ID of the page.
    * @param string $clusterId The ID of the cluster.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreCluster
+   * @return Google_Service_AndroidEnterprise_StoreCluster
    */
   public function get($enterpriseId, $pageId, $clusterId, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param string $pageId The ID of the page.
    * @param Google_StoreCluster $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreCluster
+   * @return Google_Service_AndroidEnterprise_StoreCluster
    */
   public function insert($enterpriseId, $pageId, Google_Service_AndroidEnterprise_StoreCluster $postBody, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $pageId The ID of the page.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreLayoutClustersListResponse
+   * @return Google_Service_AndroidEnterprise_StoreLayoutClustersListResponse
    */
   public function listStorelayoutclusters($enterpriseId, $pageId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param string $clusterId The ID of the cluster.
    * @param Google_StoreCluster $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreCluster
+   * @return Google_Service_AndroidEnterprise_StoreCluster
    */
   public function patch($enterpriseId, $pageId, $clusterId, Google_Service_AndroidEnterprise_StoreCluster $postBody, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_AndroidEnterprise_StorelayoutclustersResource extends Googl
    * @param string $clusterId The ID of the cluster.
    * @param Google_StoreCluster $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StoreCluster
+   * @return Google_Service_AndroidEnterprise_StoreCluster
    */
   public function update($enterpriseId, $pageId, $clusterId, Google_Service_AndroidEnterprise_StoreCluster $postBody, $optParams = array())
   {

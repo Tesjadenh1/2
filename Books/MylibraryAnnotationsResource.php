@@ -49,7 +49,7 @@ class Google_Service_Books_MylibraryAnnotationsResource extends Google_Service_R
    * @opt_param bool showOnlySummaryInResponse Requests that only the summary of
    * the specified layer be provided in the response.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Annotation
+   * @return Google_Service_Books_Annotation
    */
   public function insert(Google_Service_Books_Annotation $postBody, $optParams = array())
   {
@@ -78,7 +78,7 @@ class Google_Service_Books_MylibraryAnnotationsResource extends Google_Service_R
    * @opt_param string updatedMin RFC 3339 timestamp to restrict to items updated
    * since this timestamp (inclusive).
    * @opt_param string volumeId The volume to restrict annotations to.
-   * @return Google_Service_Annotations
+   * @return Google_Service_Books_Annotations
    */
   public function listMylibraryAnnotations($optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Books_MylibraryAnnotationsResource extends Google_Service_R
    * @param string $layerIds Array of layer IDs to get the summary for.
    * @param string $volumeId Volume id to get the summary for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AnnotationsSummary
+   * @return Google_Service_Books_AnnotationsSummary
    */
   public function summary($layerIds, $volumeId, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Books_MylibraryAnnotationsResource extends Google_Service_R
    * @param array $optParams Optional parameters.
    *
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Annotation
+   * @return Google_Service_Books_Annotation
    */
   public function update($annotationId, Google_Service_Books_Annotation $postBody, $optParams = array())
   {

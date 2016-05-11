@@ -38,7 +38,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * @param string $jobId [Required] The job ID.
    * @param Google_CancelJobRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Job
+   * @return Google_Service_Dataproc_Job
    */
   public function cancel($projectId, $region, $jobId, Google_Service_Dataproc_CancelJobRequest $postBody, $optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * the request.
    * @param string $jobId [Required] The job ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataprocEmpty
+   * @return Google_Service_Dataproc_DataprocEmpty
    */
   public function delete($projectId, $region, $jobId, $optParams = array())
   {
@@ -73,7 +73,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * the request.
    * @param string $jobId [Required] The job ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Job
+   * @return Google_Service_Dataproc_Job
    */
   public function get($projectId, $region, $jobId, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * includes only jobs that were submitted to the named cluster.
    * @opt_param string jobStateMatcher [Optional] Specifies enumerated categories
    * of jobs to list.
-   * @return Google_Service_ListJobsResponse
+   * @return Google_Service_Dataproc_ListJobsResponse
    */
   public function listProjectsRegionsJobs($projectId, $region, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Dataproc_ProjectsRegionsJobsResource extends Google_Service
    * the request.
    * @param Google_SubmitJobRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Job
+   * @return Google_Service_Dataproc_Job
    */
   public function submit($projectId, $region, Google_Service_Dataproc_SubmitJobRequest $postBody, $optParams = array())
   {

@@ -44,7 +44,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param string $tableId Table to which the template belongs
    * @param int $templateId Identifier for the template that is being requested
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Template
+   * @return Google_Service_Fusiontables_Template
    */
   public function get($tableId, $templateId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param string $tableId Table for which a new template is being created
    * @param Google_Template $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Template
+   * @return Google_Service_Fusiontables_Template
    */
   public function insert($tableId, Google_Service_Fusiontables_Template $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * Default is 5.
    * @opt_param string pageToken Continuation token specifying which results page
    * to return. Optional.
-   * @return Google_Service_TemplateList
+   * @return Google_Service_Fusiontables_TemplateList
    */
   public function listTemplate($tableId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param int $templateId Identifier for the template that is being updated
    * @param Google_Template $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Template
+   * @return Google_Service_Fusiontables_Template
    */
   public function patch($tableId, $templateId, Google_Service_Fusiontables_Template $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Fusiontables_TemplateResource extends Google_Service_Resour
    * @param int $templateId Identifier for the template that is being updated
    * @param Google_Template $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Template
+   * @return Google_Service_Fusiontables_Template
    */
   public function update($tableId, $templateId, Google_Service_Fusiontables_Template $postBody, $optParams = array())
   {

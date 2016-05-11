@@ -64,7 +64,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_AutoscalerAggregatedList
+   * @return Google_Service_Compute_AutoscalerAggregatedList
    */
   public function aggregatedList($project, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param string $zone Name of the zone for this request.
    * @param string $autoscaler Name of the autoscaler to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $zone, $autoscaler, $optParams = array())
   {
@@ -95,7 +95,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param string $zone Name of the zone for this request.
    * @param string $autoscaler Name of the autoscaler to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Autoscaler
+   * @return Google_Service_Compute_Autoscaler
    */
   public function get($project, $zone, $autoscaler, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param string $zone Name of the zone for this request.
    * @param Google_Autoscaler $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, $zone, Google_Service_Compute_Autoscaler $postBody, $optParams = array())
   {
@@ -160,7 +160,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_AutoscalerList
+   * @return Google_Service_Compute_AutoscalerList
    */
   public function listAutoscalers($project, $zone, $optParams = array())
   {
@@ -177,7 +177,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param string $autoscaler Name of the autoscaler to update.
    * @param Google_Autoscaler $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function patch($project, $zone, $autoscaler, Google_Service_Compute_Autoscaler $postBody, $optParams = array())
   {
@@ -195,7 +195,7 @@ class Google_Service_Compute_AutoscalersResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string autoscaler Name of the autoscaler to update.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function update($project, $zone, Google_Service_Compute_Autoscaler $postBody, $optParams = array())
   {

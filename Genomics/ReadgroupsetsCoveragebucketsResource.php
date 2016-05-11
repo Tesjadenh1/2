@@ -61,7 +61,7 @@ class Google_Service_Genomics_ReadgroupsetsCoveragebucketsResource extends Googl
    * parameter to the value of `nextPageToken` from the previous response.
    * @opt_param int pageSize The maximum number of results to return in a single
    * page. If unspecified, defaults to 1024. The maximum value is 2048.
-   * @return Google_Service_ListCoverageBucketsResponse
+   * @return Google_Service_Genomics_ListCoverageBucketsResponse
    */
   public function listReadgroupsetsCoveragebuckets($readGroupSetId, $optParams = array())
   {

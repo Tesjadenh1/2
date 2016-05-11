@@ -34,7 +34,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Room
+   * @return Google_Service_Games_Room
    */
   public function create(Google_Service_Games_RoomCreateRequest $postBody, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Room
+   * @return Google_Service_Games_Room
    */
   public function decline($roomId, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Room
+   * @return Google_Service_Games_Room
    */
   public function get($roomId, $optParams = array())
   {
@@ -98,7 +98,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Room
+   * @return Google_Service_Games_Room
    */
   public function join($roomId, Google_Service_Games_RoomJoinRequest $postBody, $optParams = array())
   {
@@ -116,7 +116,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_Room
+   * @return Google_Service_Games_Room
    */
   public function leave($roomId, Google_Service_Games_RoomLeaveRequest $postBody, $optParams = array())
   {
@@ -135,7 +135,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    * response, used for paging. For any response, the actual number of rooms to
    * return may be less than the specified maxResults.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_RoomList
+   * @return Google_Service_Games_RoomList
    */
   public function listRooms($optParams = array())
   {
@@ -154,7 +154,7 @@ class Google_Service_Games_RoomsResource extends Google_Service_Resource
    *
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
-   * @return Google_Service_RoomStatus
+   * @return Google_Service_Games_RoomStatus
    */
   public function reportStatus($roomId, Google_Service_Games_RoomP2PStatuses $postBody, $optParams = array())
   {

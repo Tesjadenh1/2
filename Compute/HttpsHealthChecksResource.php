@@ -32,7 +32,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @param string $httpsHealthCheck Name of the HttpsHealthCheck resource to
    * delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $httpsHealthCheck, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @param string $httpsHealthCheck Name of the HttpsHealthCheck resource to
    * return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_HttpsHealthCheck
+   * @return Google_Service_Compute_HttpsHealthCheck
    */
   public function get($project, $httpsHealthCheck, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @param string $project Project ID for this request.
    * @param Google_HttpsHealthCheck $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_HttpsHealthCheck $postBody, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_HttpsHealthCheckList
+   * @return Google_Service_Compute_HttpsHealthCheckList
    */
   public function listHttpsHealthChecks($project, $optParams = array())
   {
@@ -129,7 +129,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * update.
    * @param Google_HttpsHealthCheck $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function patch($project, $httpsHealthCheck, Google_Service_Compute_HttpsHealthCheck $postBody, $optParams = array())
   {
@@ -146,7 +146,7 @@ class Google_Service_Compute_HttpsHealthChecksResource extends Google_Service_Re
    * update.
    * @param Google_HttpsHealthCheck $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function update($project, $httpsHealthCheck, Google_Service_Compute_HttpsHealthCheck $postBody, $optParams = array())
   {

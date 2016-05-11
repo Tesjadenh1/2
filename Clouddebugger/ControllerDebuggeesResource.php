@@ -36,7 +36,7 @@ class Google_Service_Clouddebugger_ControllerDebuggeesResource extends Google_Se
    *
    * @param Google_RegisterDebuggeeRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RegisterDebuggeeResponse
+   * @return Google_Service_Clouddebugger_RegisterDebuggeeResponse
    */
   public function register(Google_Service_Clouddebugger_RegisterDebuggeeRequest $postBody, $optParams = array())
   {

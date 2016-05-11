@@ -33,7 +33,7 @@ class Google_Service_Translate_LanguagesResource extends Google_Service_Resource
    *
    * @opt_param string target the language and collation in which the localized
    * results should be returned
-   * @return Google_Service_LanguagesListResponse
+   * @return Google_Service_Translate_LanguagesListResponse
    */
   public function listLanguages($optParams = array())
   {

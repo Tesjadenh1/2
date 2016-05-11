@@ -39,7 +39,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * me to indicate the authenticated user. Only me is supported at this time.
    * @param Google_DataSource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataSource
+   * @return Google_Service_Fitness_DataSource
    */
   public function create($userId, Google_Service_Fitness_DataSource $postBody, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * me to indicate the authenticated user. Only me is supported at this time.
    * @param string $dataSourceId The data stream ID of the data source to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataSource
+   * @return Google_Service_Fitness_DataSource
    */
   public function delete($userId, $dataSourceId, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * @param string $dataSourceId The data stream ID of the data source to
    * retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataSource
+   * @return Google_Service_Fitness_DataSource
    */
   public function get($userId, $dataSourceId, $optParams = array())
   {
@@ -91,7 +91,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    *
    * @opt_param string dataTypeName The names of data types to include in the
    * list. If not specified, all data sources will be returned.
-   * @return Google_Service_ListDataSourcesResponse
+   * @return Google_Service_Fitness_ListDataSourcesResponse
    */
   public function listUsersDataSources($userId, $optParams = array())
   {
@@ -113,7 +113,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * @param string $dataSourceId The data stream ID of the data source to update.
    * @param Google_DataSource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataSource
+   * @return Google_Service_Fitness_DataSource
    */
   public function patch($userId, $dataSourceId, Google_Service_Fitness_DataSource $postBody, $optParams = array())
   {
@@ -134,7 +134,7 @@ class Google_Service_Fitness_UsersDataSourcesResource extends Google_Service_Res
    * @param string $dataSourceId The data stream ID of the data source to update.
    * @param Google_DataSource $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DataSource
+   * @return Google_Service_Fitness_DataSource
    */
   public function update($userId, $dataSourceId, Google_Service_Fitness_DataSource $postBody, $optParams = array())
   {

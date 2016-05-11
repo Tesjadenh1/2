@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_DirectorySitesResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Directory site ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DirectorySite
+   * @return Google_Service_Dfareporting_DirectorySite
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_DirectorySitesResource extends Google_Service_
    * @param string $profileId User profile ID associated with this request.
    * @param Google_DirectorySite $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DirectorySite
+   * @return Google_Service_Dfareporting_DirectorySite
    */
   public function insert($profileId, Google_Service_Dfareporting_DirectorySite $postBody, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Dfareporting_DirectorySitesResource extends Google_Service_
    * directory site", "directory site 2015" or simply, "directory site".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_DirectorySitesListResponse
+   * @return Google_Service_Dfareporting_DirectorySitesListResponse
    */
   public function listDirectorySites($profileId, $optParams = array())
   {

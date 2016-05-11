@@ -36,7 +36,7 @@ class Google_Service_CivicInfo_DivisionsResource extends Google_Service_Resource
    * treated as required patterns. In addition to that, most query operators of
    * the Apache Lucene library are supported. See
    * http://lucene.apache.org/core/2_9_4/queryparsersyntax.html
-   * @return Google_Service_DivisionSearchResponse
+   * @return Google_Service_CivicInfo_DivisionSearchResponse
    */
   public function search($optParams = array())
   {

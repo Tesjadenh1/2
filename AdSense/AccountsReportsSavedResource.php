@@ -38,7 +38,7 @@ class Google_Service_AdSense_AccountsReportsSavedResource extends Google_Service
    * @opt_param int maxResults The maximum number of rows of report data to
    * return.
    * @opt_param int startIndex Index of the first row of report data to return.
-   * @return Google_Service_AdsenseReportsGenerateResponse
+   * @return Google_Service_AdSense_AdsenseReportsGenerateResponse
    */
   public function generate($accountId, $savedReportId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_AdSense_AccountsReportsSavedResource extends Google_Service
    * @opt_param string pageToken A continuation token, used to page through saved
    * reports. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_SavedReports
+   * @return Google_Service_AdSense_SavedReports
    */
   public function listAccountsReportsSaved($accountId, $optParams = array())
   {

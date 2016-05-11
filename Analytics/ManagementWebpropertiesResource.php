@@ -31,7 +31,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param string $accountId Account ID to retrieve the web property for.
    * @param string $webPropertyId ID to retrieve the web property for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Webproperty
+   * @return Google_Service_Analytics_Webproperty
    */
   public function get($accountId, $webPropertyId, $optParams = array())
   {
@@ -47,7 +47,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param string $accountId Account ID to create the web property for.
    * @param Google_Webproperty $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Webproperty
+   * @return Google_Service_Analytics_Webproperty
    */
   public function insert($accountId, Google_Service_Analytics_Webproperty $postBody, $optParams = array())
   {
@@ -68,7 +68,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * this response.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_Webproperties
+   * @return Google_Service_Analytics_Webproperties
    */
   public function listManagementWebproperties($accountId, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param string $webPropertyId Web property ID
    * @param Google_Webproperty $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Webproperty
+   * @return Google_Service_Analytics_Webproperty
    */
   public function patch($accountId, $webPropertyId, Google_Service_Analytics_Webproperty $postBody, $optParams = array())
   {
@@ -99,7 +99,7 @@ class Google_Service_Analytics_ManagementWebpropertiesResource extends Google_Se
    * @param string $webPropertyId Web property ID
    * @param Google_Webproperty $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Webproperty
+   * @return Google_Service_Analytics_Webproperty
    */
   public function update($accountId, $webPropertyId, Google_Service_Analytics_Webproperty $postBody, $optParams = array())
   {

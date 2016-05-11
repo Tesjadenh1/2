@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_AccountPermissionGroupsResource extends Google
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Account permission group ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountPermissionGroup
+   * @return Google_Service_Dfareporting_AccountPermissionGroup
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_AccountPermissionGroupsResource extends Google
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountPermissionGroupsListResponse
+   * @return Google_Service_Dfareporting_AccountPermissionGroupsListResponse
    */
   public function listAccountPermissionGroups($profileId, $optParams = array())
   {

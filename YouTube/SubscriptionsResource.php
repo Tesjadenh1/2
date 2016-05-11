@@ -48,7 +48,7 @@ class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resour
    * properties that the API response will include.
    * @param Google_Subscription $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_YouTube_Subscription
    */
   public function insert($part, Google_Service_YouTube_Subscription $postBody, $optParams = array())
   {
@@ -122,7 +122,7 @@ class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resour
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_SubscriptionListResponse
+   * @return Google_Service_YouTube_SubscriptionListResponse
    */
   public function listSubscriptions($part, $optParams = array())
   {

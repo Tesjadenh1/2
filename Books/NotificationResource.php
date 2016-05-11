@@ -34,7 +34,7 @@ class Google_Service_Books_NotificationResource extends Google_Service_Resource
    * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
    * 'en_US'. Used for generating notification title and body.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Notification
+   * @return Google_Service_Books_Notification
    */
   public function get($notificationId, $optParams = array())
   {

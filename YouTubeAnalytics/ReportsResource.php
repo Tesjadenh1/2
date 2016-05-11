@@ -69,7 +69,7 @@ class Google_Service_YouTubeAnalytics_ReportsResource extends Google_Service_Res
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter
    * (one-based, inclusive).
-   * @return Google_Service_ResultTable
+   * @return Google_Service_YouTubeAnalytics_ResultTable
    */
   public function query($ids, $startDate, $endDate, $metrics, $optParams = array())
   {

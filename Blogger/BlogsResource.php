@@ -35,7 +35,7 @@ class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
    * blog.
    * @opt_param string view Access level with which to view the blog. Note that
    * some fields require elevated access.
-   * @return Google_Service_Blog
+   * @return Google_Service_Blogger_Blog
    */
   public function get($blogId, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
    *
    * @opt_param string view Access level with which to view the blog. Note that
    * some fields require elevated access.
-   * @return Google_Service_Blog
+   * @return Google_Service_Blogger_Blog
    */
   public function getByUrl($url, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Blogger_BlogsResource extends Google_Service_Resource
    * Live blogs only). Note that ADMIN access is required to view deleted blogs.
    * @opt_param string view Access level with which to view the blogs. Note that
    * some fields require elevated access.
-   * @return Google_Service_BlogList
+   * @return Google_Service_Blogger_BlogList
    */
   public function listByUser($userId, $optParams = array())
   {

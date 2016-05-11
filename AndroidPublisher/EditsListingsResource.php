@@ -66,7 +66,7 @@ class Google_Service_AndroidPublisher_EditsListingsResource extends Google_Servi
    * localized listing to read or modify. For example, to select Austrian German,
    * pass "de-AT".
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Listing
+   * @return Google_Service_AndroidPublisher_Listing
    */
   public function get($packageName, $editId, $language, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_AndroidPublisher_EditsListingsResource extends Google_Servi
    * being updated; for example, "com.spiffygame".
    * @param string $editId Unique identifier for this edit.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListingsListResponse
+   * @return Google_Service_AndroidPublisher_ListingsListResponse
    */
   public function listEditsListings($packageName, $editId, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_AndroidPublisher_EditsListingsResource extends Google_Servi
    * pass "de-AT".
    * @param Google_Listing $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Listing
+   * @return Google_Service_AndroidPublisher_Listing
    */
   public function patch($packageName, $editId, $language, Google_Service_AndroidPublisher_Listing $postBody, $optParams = array())
   {
@@ -121,7 +121,7 @@ class Google_Service_AndroidPublisher_EditsListingsResource extends Google_Servi
    * pass "de-AT".
    * @param Google_Listing $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Listing
+   * @return Google_Service_AndroidPublisher_Listing
    */
   public function update($packageName, $editId, $language, Google_Service_AndroidPublisher_Listing $postBody, $optParams = array())
   {

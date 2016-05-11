@@ -45,7 +45,7 @@ class Google_Service_Fusiontables_TaskResource extends Google_Service_Resource
    * @param string $tableId Table to which the task belongs.
    * @param string $taskId The identifier of the task to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Task
+   * @return Google_Service_Fusiontables_Task
    */
   public function get($tableId, $taskId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Fusiontables_TaskResource extends Google_Service_Resource
    * to return.
    * @opt_param string startIndex Index of the first result returned in the
    * current page.
-   * @return Google_Service_TaskList
+   * @return Google_Service_Fusiontables_TaskList
    */
   public function listTask($tableId, $optParams = array())
   {

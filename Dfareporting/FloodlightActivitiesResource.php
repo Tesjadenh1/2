@@ -46,7 +46,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    *
    * @opt_param string floodlightActivityId Floodlight activity ID for which we
    * want to generate a tag.
-   * @return Google_Service_FloodlightActivitiesGenerateTagResponse
+   * @return Google_Service_Dfareporting_FloodlightActivitiesGenerateTagResponse
    */
   public function generatetag($profileId, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Floodlight activity ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivity
+   * @return Google_Service_Dfareporting_FloodlightActivity
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param string $profileId User profile ID associated with this request.
    * @param Google_FloodlightActivity $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivity
+   * @return Google_Service_Dfareporting_FloodlightActivity
    */
   public function insert($profileId, Google_Service_Dfareporting_FloodlightActivity $postBody, $optParams = array())
   {
@@ -121,7 +121,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
    * @opt_param string tagString Select only floodlight activities with the
    * specified tag string.
-   * @return Google_Service_FloodlightActivitiesListResponse
+   * @return Google_Service_Dfareporting_FloodlightActivitiesListResponse
    */
   public function listFloodlightActivities($profileId, $optParams = array())
   {
@@ -137,7 +137,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param string $id Floodlight activity ID.
    * @param Google_FloodlightActivity $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivity
+   * @return Google_Service_Dfareporting_FloodlightActivity
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_FloodlightActivity $postBody, $optParams = array())
   {
@@ -151,7 +151,7 @@ class Google_Service_Dfareporting_FloodlightActivitiesResource extends Google_Se
    * @param string $profileId User profile ID associated with this request.
    * @param Google_FloodlightActivity $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivity
+   * @return Google_Service_Dfareporting_FloodlightActivity
    */
   public function update($profileId, Google_Service_Dfareporting_FloodlightActivity $postBody, $optParams = array())
   {

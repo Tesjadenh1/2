@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_PostalCodesResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param string $code Postal code ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PostalCode
+   * @return Google_Service_Dfareporting_PostalCode
    */
   public function get($profileId, $code, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_PostalCodesResource extends Google_Service_Res
    *
    * @param string $profileId User profile ID associated with this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_PostalCodesListResponse
+   * @return Google_Service_Dfareporting_PostalCodesListResponse
    */
   public function listPostalCodes($profileId, $optParams = array())
   {

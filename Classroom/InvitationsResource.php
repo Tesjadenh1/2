@@ -38,7 +38,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
    *
    * @param string $id Identifier of the invitation to accept.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ClassroomEmpty
+   * @return Google_Service_Classroom_ClassroomEmpty
    */
   public function accept($id, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
    *
    * @param Google_Invitation $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Invitation
+   * @return Google_Service_Classroom_Invitation
    */
   public function create(Google_Service_Classroom_Invitation $postBody, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
    *
    * @param string $id Identifier of the invitation to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ClassroomEmpty
+   * @return Google_Service_Classroom_ClassroomEmpty
    */
   public function delete($id, $optParams = array())
   {
@@ -91,7 +91,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
    *
    * @param string $id Identifier of the invitation to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Invitation
+   * @return Google_Service_Classroom_Invitation
    */
   public function get($id, $optParams = array())
   {
@@ -120,7 +120,7 @@ class Google_Service_Classroom_InvitationsResource extends Google_Service_Resour
    * call, indicating that the subsequent page of results should be returned. The
    * list request must be otherwise identical to the one that resulted in this
    * token.
-   * @return Google_Service_ListInvitationsResponse
+   * @return Google_Service_Classroom_ListInvitationsResponse
    */
   public function listInvitations($optParams = array())
   {

@@ -38,7 +38,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsRulesetsResource extends Google_Se
    * Format: `projects/{project_id}`
    * @param Google_Ruleset $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Ruleset
+   * @return Google_Service_FirebaseRulesAPI_Ruleset
    */
   public function create($name, Google_Service_FirebaseRulesAPI_Ruleset $postBody, $optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsRulesetsResource extends Google_Se
    *
    * Format: `projects/{project_id}/rulesets/{ruleset_id}`
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FirebaserulesEmpty
+   * @return Google_Service_FirebaseRulesAPI_FirebaserulesEmpty
    */
   public function delete($name, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsRulesetsResource extends Google_Se
    *
    * Format: `projects/{project_id}/rulesets/{ruleset_id}`
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Ruleset
+   * @return Google_Service_FirebaseRulesAPI_Ruleset
    */
   public function get($name, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_FirebaseRulesAPI_ProjectsRulesetsResource extends Google_Se
    * caller should iterate until the `page_token` is empty.
    * @opt_param string pageToken Next page token for loading the next batch of
    * `Ruleset` instances.
-   * @return Google_Service_ListRulesetsResponse
+   * @return Google_Service_FirebaseRulesAPI_ListRulesetsResponse
    */
   public function listProjectsRulesets($name, $optParams = array())
   {

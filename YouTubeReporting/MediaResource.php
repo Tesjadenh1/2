@@ -32,7 +32,7 @@ class Google_Service_YouTubeReporting_MediaResource extends Google_Service_Resou
    * @param string $resourceName Name of the media that is being downloaded. See
    * ByteStream.ReadRequest.resource_name.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Media
+   * @return Google_Service_YouTubeReporting_Media
    */
   public function download($resourceName, $optParams = array())
   {

@@ -33,7 +33,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
    * @param string $userId The ID of the person to get the profile for. The
    * special value "me" can be used to indicate the authenticated user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Person
+   * @return Google_Service_Plus_Person
    */
   public function get($userId, $optParams = array())
   {
@@ -56,7 +56,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
-   * @return Google_Service_PeopleFeed
+   * @return Google_Service_Plus_PeopleFeed
    */
   public function listPeople($userId, $collection, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
-   * @return Google_Service_PeopleFeed
+   * @return Google_Service_Plus_PeopleFeed
    */
   public function listByActivity($activityId, $collection, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_Plus_PeopleResource extends Google_Service_Resource
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response. This
    * token can be of any length.
-   * @return Google_Service_PeopleFeed
+   * @return Google_Service_Plus_PeopleFeed
    */
   public function search($query, $optParams = array())
   {

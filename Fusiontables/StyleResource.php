@@ -44,7 +44,7 @@ class Google_Service_Fusiontables_StyleResource extends Google_Service_Resource
    * @param string $tableId Table to which the requested style belongs
    * @param int $styleId Identifier (integer) for a specific style in a table
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StyleSetting
+   * @return Google_Service_Fusiontables_StyleSetting
    */
   public function get($tableId, $styleId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Fusiontables_StyleResource extends Google_Service_Resource
    * @param string $tableId Table for which a new style is being added
    * @param Google_StyleSetting $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StyleSetting
+   * @return Google_Service_Fusiontables_StyleSetting
    */
   public function insert($tableId, Google_Service_Fusiontables_StyleSetting $postBody, $optParams = array())
   {
@@ -76,7 +76,7 @@ class Google_Service_Fusiontables_StyleResource extends Google_Service_Resource
    * Default is 5.
    * @opt_param string pageToken Continuation token specifying which result page
    * to return. Optional.
-   * @return Google_Service_StyleSettingList
+   * @return Google_Service_Fusiontables_StyleSettingList
    */
   public function listStyle($tableId, $optParams = array())
   {
@@ -92,7 +92,7 @@ class Google_Service_Fusiontables_StyleResource extends Google_Service_Resource
    * @param int $styleId Identifier (within a table) for the style being updated.
    * @param Google_StyleSetting $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StyleSetting
+   * @return Google_Service_Fusiontables_StyleSetting
    */
   public function patch($tableId, $styleId, Google_Service_Fusiontables_StyleSetting $postBody, $optParams = array())
   {
@@ -107,7 +107,7 @@ class Google_Service_Fusiontables_StyleResource extends Google_Service_Resource
    * @param int $styleId Identifier (within a table) for the style being updated.
    * @param Google_StyleSetting $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_StyleSetting
+   * @return Google_Service_Fusiontables_StyleSetting
    */
   public function update($tableId, $styleId, Google_Service_Fusiontables_StyleSetting $postBody, $optParams = array())
   {

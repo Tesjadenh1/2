@@ -32,7 +32,7 @@ class Google_Service_Dfareporting_ReportsFilesResource extends Google_Service_Re
    * @param string $reportId The ID of the report.
    * @param string $fileId The ID of the report file.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DfareportingFile
+   * @return Google_Service_Dfareporting_DfareportingFile
    */
   public function get($profileId, $reportId, $fileId, $optParams = array())
   {
@@ -52,7 +52,7 @@ class Google_Service_Dfareporting_ReportsFilesResource extends Google_Service_Re
    * result page.
    * @opt_param string sortField The field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is 'DESCENDING'.
-   * @return Google_Service_FileList
+   * @return Google_Service_Dfareporting_FileList
    */
   public function listReportsFiles($profileId, $reportId, $optParams = array())
   {

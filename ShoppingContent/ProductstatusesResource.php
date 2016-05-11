@@ -31,7 +31,7 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
    *
    * @param Google_ProductstatusesCustomBatchRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductstatusesCustomBatchResponse
+   * @return Google_Service_ShoppingContent_ProductstatusesCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_ProductstatusesCustomBatchRequest $postBody, $optParams = array())
   {
@@ -46,7 +46,7 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
    * @param string $merchantId The ID of the managing account.
    * @param string $productId The ID of the product.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductStatus
+   * @return Google_Service_ShoppingContent_ProductStatus
    */
   public function get($merchantId, $productId, $optParams = array())
   {
@@ -67,7 +67,7 @@ class Google_Service_ShoppingContent_ProductstatusesResource extends Google_Serv
    * @opt_param string maxResults The maximum number of product statuses to return
    * in the response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_ProductstatusesListResponse
+   * @return Google_Service_ShoppingContent_ProductstatusesListResponse
    */
   public function listProductstatuses($merchantId, $optParams = array())
   {

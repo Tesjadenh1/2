@@ -41,7 +41,7 @@ class Google_Service_AdExchangeBuyer_PerformanceReportResource extends Google_Se
    * @opt_param string pageToken A continuation token, used to page through
    * performance reports. To retrieve the next page, set this parameter to the
    * value of "nextPageToken" from the previous response. Optional.
-   * @return Google_Service_PerformanceReportList
+   * @return Google_Service_AdExchangeBuyer_PerformanceReportList
    */
   public function listPerformanceReport($accountId, $endDateTime, $startDateTime, $optParams = array())
   {

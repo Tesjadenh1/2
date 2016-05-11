@@ -37,7 +37,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    *
    * @param Google_Course $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Course
+   * @return Google_Service_Classroom_Course
    */
   public function create(Google_Service_Classroom_Course $postBody, $optParams = array())
   {
@@ -54,7 +54,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * @param string $id Identifier of the course to delete. This identifier can be
    * either the Classroom-assigned identifier or an alias.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ClassroomEmpty
+   * @return Google_Service_Classroom_ClassroomEmpty
    */
   public function delete($id, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * @param string $id Identifier of the course to return. This identifier can be
    * either the Classroom-assigned identifier or an alias.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Course
+   * @return Google_Service_Classroom_Course
    */
   public function get($id, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * call, indicating that the subsequent page of results should be returned. The
    * list request must be otherwise identical to the one that resulted in this
    * token.
-   * @return Google_Service_ListCoursesResponse
+   * @return Google_Service_Classroom_ListCoursesResponse
    */
   public function listCourses($optParams = array())
   {
@@ -131,7 +131,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * `section` * `descriptionHeading` * `description` * `room` * `courseState`
    * When set in a query parameter, this field should be specified as
    * `updateMask=,,...`
-   * @return Google_Service_Course
+   * @return Google_Service_Classroom_Course
    */
   public function patch($id, Google_Service_Classroom_Course $postBody, $optParams = array())
   {
@@ -150,7 +150,7 @@ class Google_Service_Classroom_CoursesResource extends Google_Service_Resource
    * either the Classroom-assigned identifier or an alias.
    * @param Google_Course $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Course
+   * @return Google_Service_Classroom_Course
    */
   public function update($id, Google_Service_Classroom_Course $postBody, $optParams = array())
   {

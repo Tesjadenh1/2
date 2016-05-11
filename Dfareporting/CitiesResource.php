@@ -36,7 +36,7 @@ class Google_Service_Dfareporting_CitiesResource extends Google_Service_Resource
    * @opt_param string namePrefix Select only cities with names starting with this
    * prefix.
    * @opt_param string regionDartIds Select only cities from these regions.
-   * @return Google_Service_CitiesListResponse
+   * @return Google_Service_Dfareporting_CitiesListResponse
    */
   public function listCities($profileId, $optParams = array())
   {

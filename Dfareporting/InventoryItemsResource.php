@@ -32,7 +32,7 @@ class Google_Service_Dfareporting_InventoryItemsResource extends Google_Service_
    * @param string $projectId Project ID for order documents.
    * @param string $id Inventory item ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_InventoryItem
+   * @return Google_Service_Dfareporting_InventoryItem
    */
   public function get($profileId, $projectId, $id, $optParams = array())
   {
@@ -60,7 +60,7 @@ class Google_Service_Dfareporting_InventoryItemsResource extends Google_Service_
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
    * @opt_param string type Select only inventory items with this type.
-   * @return Google_Service_InventoryItemsListResponse
+   * @return Google_Service_Dfareporting_InventoryItemsListResponse
    */
   public function listInventoryItems($profileId, $projectId, $optParams = array())
   {

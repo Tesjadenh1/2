@@ -29,7 +29,7 @@ class Google_Service_Books_MyconfigResource extends Google_Service_Resource
    * Gets the current settings for the user. (myconfig.getUserSettings)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Usersettings
+   * @return Google_Service_Books_Usersettings
    */
   public function getUserSettings($optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Books_MyconfigResource extends Google_Service_Resource
    * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
    * localization, i.e. en_US.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_DownloadAccesses
+   * @return Google_Service_Books_DownloadAccesses
    */
   public function releaseDownloadAccess($volumeIds, $cpksver, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_Books_MyconfigResource extends Google_Service_Resource
    * specified, the default is BOTH.
    * @opt_param string locale ISO-639-1, ISO-3166-1 codes for message
    * localization, i.e. en_US.
-   * @return Google_Service_RequestAccess
+   * @return Google_Service_Books_RequestAccess
    */
   public function requestAccess($source, $volumeId, $nonce, $cpksver, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_Books_MyconfigResource extends Google_Service_Resource
    * to false.
    * @opt_param string volumeIds The volume(s) to request download restrictions
    * for.
-   * @return Google_Service_Volumes
+   * @return Google_Service_Books_Volumes
    */
   public function syncVolumeLicenses($source, $nonce, $cpksver, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_Books_MyconfigResource extends Google_Service_Resource
    *
    * @param Google_Usersettings $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Usersettings
+   * @return Google_Service_Books_Usersettings
    */
   public function updateUserSettings(Google_Service_Books_Usersettings $postBody, $optParams = array())
   {

@@ -50,7 +50,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
    * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
    * allAuthenticatedUsers.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BucketAccessControl
+   * @return Google_Service_Storage_BucketAccessControl
    */
   public function get($bucket, $entity, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
    * @param string $bucket Name of a bucket.
    * @param Google_BucketAccessControl $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BucketAccessControl
+   * @return Google_Service_Storage_BucketAccessControl
    */
   public function insert($bucket, Google_Service_Storage_BucketAccessControl $postBody, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
    *
    * @param string $bucket Name of a bucket.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BucketAccessControls
+   * @return Google_Service_Storage_BucketAccessControls
    */
   public function listBucketAccessControls($bucket, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
    * allAuthenticatedUsers.
    * @param Google_BucketAccessControl $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BucketAccessControl
+   * @return Google_Service_Storage_BucketAccessControl
    */
   public function patch($bucket, $entity, Google_Service_Storage_BucketAccessControl $postBody, $optParams = array())
   {
@@ -114,7 +114,7 @@ class Google_Service_Storage_BucketAccessControlsResource extends Google_Service
    * allAuthenticatedUsers.
    * @param Google_BucketAccessControl $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_BucketAccessControl
+   * @return Google_Service_Storage_BucketAccessControl
    */
   public function update($bucket, $entity, Google_Service_Storage_BucketAccessControl $postBody, $optParams = array())
   {

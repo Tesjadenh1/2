@@ -32,7 +32,7 @@ class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_S
    * @param string $profileId User profile ID associated with this request.
    * @param string $remarketingListId Remarketing list ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RemarketingListShare
+   * @return Google_Service_Dfareporting_RemarketingListShare
    */
   public function get($profileId, $remarketingListId, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_S
    * @param string $remarketingListId Remarketing list ID.
    * @param Google_RemarketingListShare $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RemarketingListShare
+   * @return Google_Service_Dfareporting_RemarketingListShare
    */
   public function patch($profileId, $remarketingListId, Google_Service_Dfareporting_RemarketingListShare $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Dfareporting_RemarketingListSharesResource extends Google_S
    * @param string $profileId User profile ID associated with this request.
    * @param Google_RemarketingListShare $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_RemarketingListShare
+   * @return Google_Service_Dfareporting_RemarketingListShare
    */
   public function update($profileId, Google_Service_Dfareporting_RemarketingListShare $postBody, $optParams = array())
   {

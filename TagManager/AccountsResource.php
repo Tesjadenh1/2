@@ -30,7 +30,7 @@ class Google_Service_TagManager_AccountsResource extends Google_Service_Resource
    *
    * @param string $accountId The GTM Account ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_TagManager_Account
    */
   public function get($accountId, $optParams = array())
   {
@@ -42,7 +42,7 @@ class Google_Service_TagManager_AccountsResource extends Google_Service_Resource
    * Lists all GTM Accounts that a user has access to. (accounts.listAccounts)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListAccountsResponse
+   * @return Google_Service_TagManager_ListAccountsResponse
    */
   public function listAccounts($optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_TagManager_AccountsResource extends Google_Service_Resource
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the account in storage.
-   * @return Google_Service_Account
+   * @return Google_Service_TagManager_Account
    */
   public function update($accountId, Google_Service_TagManager_Account $postBody, $optParams = array())
   {

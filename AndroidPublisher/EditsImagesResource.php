@@ -57,7 +57,7 @@ class Google_Service_AndroidPublisher_EditsImagesResource extends Google_Service
    * select Austrian German, pass "de-AT".
    * @param string $imageType
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ImagesDeleteAllResponse
+   * @return Google_Service_AndroidPublisher_ImagesDeleteAllResponse
    */
   public function deleteall($packageName, $editId, $language, $imageType, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_AndroidPublisher_EditsImagesResource extends Google_Service
    * select Austrian German, pass "de-AT".
    * @param string $imageType
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ImagesListResponse
+   * @return Google_Service_AndroidPublisher_ImagesListResponse
    */
   public function listEditsImages($packageName, $editId, $language, $imageType, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_AndroidPublisher_EditsImagesResource extends Google_Service
    * select Austrian German, pass "de-AT".
    * @param string $imageType
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ImagesUploadResponse
+   * @return Google_Service_AndroidPublisher_ImagesUploadResponse
    */
   public function upload($packageName, $editId, $language, $imageType, $optParams = array())
   {

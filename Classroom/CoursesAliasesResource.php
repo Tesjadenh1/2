@@ -35,7 +35,7 @@ class Google_Service_Classroom_CoursesAliasesResource extends Google_Service_Res
    * can be either the Classroom-assigned identifier or an alias.
    * @param Google_CourseAlias $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CourseAlias
+   * @return Google_Service_Classroom_CourseAlias
    */
   public function create($courseId, Google_Service_Classroom_CourseAlias $postBody, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Classroom_CoursesAliasesResource extends Google_Service_Res
    * @param string $alias Alias to delete. This may not be the Classroom-assigned
    * identifier.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ClassroomEmpty
+   * @return Google_Service_Classroom_ClassroomEmpty
    */
   public function delete($courseId, $alias, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Classroom_CoursesAliasesResource extends Google_Service_Res
    * call, indicating that the subsequent page of results should be returned. The
    * list request must be otherwise identical to the one that resulted in this
    * token.
-   * @return Google_Service_ListCourseAliasesResponse
+   * @return Google_Service_Classroom_ListCourseAliasesResponse
    */
   public function listCoursesAliases($courseId, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Floodlight activity Group ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivityGroup
+   * @return Google_Service_Dfareporting_FloodlightActivityGroup
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
    * @param string $profileId User profile ID associated with this request.
    * @param Google_FloodlightActivityGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivityGroup
+   * @return Google_Service_Dfareporting_FloodlightActivityGroup
    */
   public function insert($profileId, Google_Service_Dfareporting_FloodlightActivityGroup $postBody, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
    * @opt_param string type Select only floodlight activity groups with the
    * specified floodlight activity group type.
-   * @return Google_Service_FloodlightActivityGroupsListResponse
+   * @return Google_Service_Dfareporting_FloodlightActivityGroupsListResponse
    */
   public function listFloodlightActivityGroups($profileId, $optParams = array())
   {
@@ -101,7 +101,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
    * @param string $id Floodlight activity Group ID.
    * @param Google_FloodlightActivityGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivityGroup
+   * @return Google_Service_Dfareporting_FloodlightActivityGroup
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_FloodlightActivityGroup $postBody, $optParams = array())
   {
@@ -116,7 +116,7 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsResource extends Googl
    * @param string $profileId User profile ID associated with this request.
    * @param Google_FloodlightActivityGroup $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightActivityGroup
+   * @return Google_Service_Dfareporting_FloodlightActivityGroup
    */
   public function update($profileId, Google_Service_Dfareporting_FloodlightActivityGroup $postBody, $optParams = array())
   {

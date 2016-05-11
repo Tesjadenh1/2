@@ -30,7 +30,7 @@ class Google_Service_AnalyticsReporting_ReportsResource extends Google_Service_R
    *
    * @param Google_GetReportsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetReportsResponse
+   * @return Google_Service_AnalyticsReporting_GetReportsResponse
    */
   public function batchGet(Google_Service_AnalyticsReporting_GetReportsRequest $postBody, $optParams = array())
   {

@@ -45,7 +45,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    * @opt_param string adId Numeric ID of the ad.
    * @opt_param string campaignId Numeric ID of the campaign.
    * @opt_param string criterionId Numeric ID of the criterion.
-   * @return Google_Service_ConversionList
+   * @return Google_Service_Doubleclicksearch_ConversionList
    */
   public function get($agencyId, $advertiserId, $engineAccountId, $endDate, $rowCount, $startDate, $startRow, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    *
    * @param Google_ConversionList $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ConversionList
+   * @return Google_Service_Doubleclicksearch_ConversionList
    */
   public function insert(Google_Service_Doubleclicksearch_ConversionList $postBody, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    * results.
    * @param Google_ConversionList $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ConversionList
+   * @return Google_Service_Doubleclicksearch_ConversionList
    */
   public function patch($advertiserId, $agencyId, $endDate, $engineAccountId, $rowCount, $startDate, $startRow, Google_Service_Doubleclicksearch_ConversionList $postBody, $optParams = array())
   {
@@ -96,7 +96,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    *
    * @param Google_ConversionList $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ConversionList
+   * @return Google_Service_Doubleclicksearch_ConversionList
    */
   public function update(Google_Service_Doubleclicksearch_ConversionList $postBody, $optParams = array())
   {
@@ -110,7 +110,7 @@ class Google_Service_Doubleclicksearch_ConversionResource extends Google_Service
    *
    * @param Google_UpdateAvailabilityRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UpdateAvailabilityResponse
+   * @return Google_Service_Doubleclicksearch_UpdateAvailabilityResponse
    */
   public function updateAvailability(Google_Service_Doubleclicksearch_UpdateAvailabilityRequest $postBody, $optParams = array())
   {

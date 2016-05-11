@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_ConversionsResource extends Google_Service_Res
    * @param string $profileId User profile ID associated with this request.
    * @param Google_ConversionsBatchInsertRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ConversionsBatchInsertResponse
+   * @return Google_Service_Dfareporting_ConversionsBatchInsertResponse
    */
   public function batchinsert($profileId, Google_Service_Dfareporting_ConversionsBatchInsertRequest $postBody, $optParams = array())
   {

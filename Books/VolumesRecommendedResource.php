@@ -37,7 +37,7 @@ class Google_Service_Books_VolumesRecommendedResource extends Google_Service_Res
    * rating of returned recommendations. Books with a higher maturity rating are
    * filtered out.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Volumes
+   * @return Google_Service_Books_Volumes
    */
   public function listVolumesRecommended($optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Books_VolumesRecommendedResource extends Google_Service_Res
    * @opt_param string locale ISO-639-1 language and ISO-3166-1 country code. Ex:
    * 'en_US'. Used for generating recommendations.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_BooksVolumesRecommendedRateResponse
+   * @return Google_Service_Books_BooksVolumesRecommendedRateResponse
    */
   public function rate($rating, $volumeId, $optParams = array())
   {

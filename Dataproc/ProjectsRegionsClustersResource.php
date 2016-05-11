@@ -34,7 +34,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * the request.
    * @param Google_Cluster $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Dataproc_Operation
    */
   public function create($projectId, $region, Google_Service_Dataproc_Cluster $postBody, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * the request.
    * @param string $clusterName [Required] The cluster name.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Dataproc_Operation
    */
   public function delete($projectId, $region, $clusterName, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * @param string $clusterName [Required] The cluster name.
    * @param Google_DiagnoseClusterRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Dataproc_Operation
    */
   public function diagnose($projectId, $region, $clusterName, Google_Service_Dataproc_DiagnoseClusterRequest $postBody, $optParams = array())
   {
@@ -88,7 +88,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * the request.
    * @param string $clusterName [Required] The cluster name.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Cluster
+   * @return Google_Service_Dataproc_Cluster
    */
   public function get($projectId, $region, $clusterName, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    *
    * @opt_param int pageSize The standard List page size.
    * @opt_param string pageToken The standard List page token.
-   * @return Google_Service_ListClustersResponse
+   * @return Google_Service_Dataproc_ListClustersResponse
    */
   public function listProjectsRegionsClusters($projectId, $region, $optParams = array())
   {
@@ -139,7 +139,7 @@ class Google_Service_Dataproc_ProjectsRegionsClustersResource extends Google_Ser
    * "numInstances":"5" } } } Note: Currently, config.worker_config.num_instances
    * and config.secondary_worker_config.num_instances are the only fields that can
    * be updated.
-   * @return Google_Service_Operation
+   * @return Google_Service_Dataproc_Operation
    */
   public function patch($projectId, $region, $clusterName, Google_Service_Dataproc_Cluster $postBody, $optParams = array())
   {

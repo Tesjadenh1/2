@@ -62,7 +62,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    *
    * @opt_param string languageCode The BCP 47 language code used for permission
    * names and descriptions in the returned iframe, for instance "en-US".
-   * @return Google_Service_ProductsGenerateApprovalUrlResponse
+   * @return Google_Service_AndroidEnterprise_ProductsGenerateApprovalUrlResponse
    */
   public function generateApprovalUrl($enterpriseId, $productId, $optParams = array())
   {
@@ -81,7 +81,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    *
    * @opt_param string language The BCP47 tag for the user's preferred language
    * (e.g. "en-US", "de").
-   * @return Google_Service_Product
+   * @return Google_Service_AndroidEnterprise_Product
    */
   public function get($enterpriseId, $productId, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    *
    * @opt_param string language The BCP47 tag for the user's preferred language
    * (e.g. "en-US", "de").
-   * @return Google_Service_AppRestrictionsSchema
+   * @return Google_Service_AndroidEnterprise_AppRestrictionsSchema
    */
   public function getAppRestrictionsSchema($enterpriseId, $productId, $optParams = array())
   {
@@ -115,7 +115,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $productId The ID of the product.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductPermissions
+   * @return Google_Service_AndroidEnterprise_ProductPermissions
    */
   public function getPermissions($enterpriseId, $productId, $optParams = array())
   {
@@ -145,7 +145,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    * response when there are more products. The token can be used in a subsequent
    * request to obtain more products, and so forth. This parameter cannot be used
    * in the initial request.
-   * @return Google_Service_ProductsListResponse
+   * @return Google_Service_AndroidEnterprise_ProductsListResponse
    */
   public function listProducts($enterpriseId, $optParams = array())
   {
@@ -167,7 +167,7 @@ class Google_Service_AndroidEnterprise_ProductsResource extends Google_Service_R
    * @param string $productId The ID of the product.
    * @param Google_ProductPermissions $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ProductPermissions
+   * @return Google_Service_AndroidEnterprise_ProductPermissions
    */
   public function updatePermissions($enterpriseId, $productId, Google_Service_AndroidEnterprise_ProductPermissions $postBody, $optParams = array())
   {

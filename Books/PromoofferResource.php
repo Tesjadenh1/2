@@ -75,7 +75,7 @@ class Google_Service_Books_PromoofferResource extends Google_Service_Resource
    * @opt_param string model device model
    * @opt_param string product device product
    * @opt_param string serial device serial
-   * @return Google_Service_Offers
+   * @return Google_Service_Books_Offers
    */
   public function get($optParams = array())
   {

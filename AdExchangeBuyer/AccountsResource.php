@@ -30,7 +30,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
    *
    * @param int $id The account id
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_AdExchangeBuyer_Account
    */
   public function get($id, $optParams = array())
   {
@@ -42,7 +42,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
    * Retrieves the authenticated user's list of accounts. (accounts.listAccounts)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountsList
+   * @return Google_Service_AdExchangeBuyer_AccountsList
    */
   public function listAccounts($optParams = array())
   {
@@ -57,7 +57,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
    * @param int $id The account id
    * @param Google_Account $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_AdExchangeBuyer_Account
    */
   public function patch($id, Google_Service_AdExchangeBuyer_Account $postBody, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_AdExchangeBuyer_AccountsResource extends Google_Service_Res
    * @param int $id The account id
    * @param Google_Account $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_AdExchangeBuyer_Account
    */
   public function update($id, Google_Service_AdExchangeBuyer_Account $postBody, $optParams = array())
   {

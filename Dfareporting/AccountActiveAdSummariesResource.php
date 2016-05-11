@@ -32,7 +32,7 @@ class Google_Service_Dfareporting_AccountActiveAdSummariesResource extends Googl
    * @param string $profileId User profile ID associated with this request.
    * @param string $summaryAccountId Account ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountActiveAdSummary
+   * @return Google_Service_Dfareporting_AccountActiveAdSummary
    */
   public function get($profileId, $summaryAccountId, $optParams = array())
   {

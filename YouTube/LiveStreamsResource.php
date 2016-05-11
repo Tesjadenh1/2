@@ -114,7 +114,7 @@ class Google_Service_YouTube_LiveStreamsResource extends Google_Service_Resource
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_LiveStream
+   * @return Google_Service_YouTube_LiveStream
    */
   public function insert($part, Google_Service_YouTube_LiveStream $postBody, $optParams = array())
   {
@@ -175,7 +175,7 @@ class Google_Service_YouTube_LiveStreamsResource extends Google_Service_Resource
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_LiveStreamListResponse
+   * @return Google_Service_YouTube_LiveStreamListResponse
    */
   public function listLiveStreams($part, $optParams = array())
   {
@@ -233,7 +233,7 @@ class Google_Service_YouTube_LiveStreamsResource extends Google_Service_Resource
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_LiveStream
+   * @return Google_Service_YouTube_LiveStream
    */
   public function update($part, Google_Service_YouTube_LiveStream $postBody, $optParams = array())
   {

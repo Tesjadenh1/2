@@ -48,7 +48,7 @@ class Google_Service_Analytics_ManagementProfileUserLinksResource extends Google
    * @param string $profileId View (Profile) ID to create the user link for.
    * @param Google_EntityUserLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityUserLink
+   * @return Google_Service_Analytics_EntityUserLink
    */
   public function insert($accountId, $webPropertyId, $profileId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Analytics_ManagementProfileUserLinksResource extends Google
    * @opt_param int start-index An index of the first profile-user link to
    * retrieve. Use this parameter as a pagination mechanism along with the max-
    * results parameter.
-   * @return Google_Service_EntityUserLinks
+   * @return Google_Service_Analytics_EntityUserLinks
    */
   public function listManagementProfileUserLinks($accountId, $webPropertyId, $profileId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Analytics_ManagementProfileUserLinksResource extends Google
    * @param string $linkId Link ID to update the user link for.
    * @param Google_EntityUserLink $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_EntityUserLink
+   * @return Google_Service_Analytics_EntityUserLink
    */
   public function update($accountId, $webPropertyId, $profileId, $linkId, Google_Service_Analytics_EntityUserLink $postBody, $optParams = array())
   {

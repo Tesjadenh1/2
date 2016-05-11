@@ -29,7 +29,7 @@ class Google_Service_CivicInfo_ElectionsResource extends Google_Service_Resource
    * List of available elections to query. (elections.electionQuery)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ElectionsQueryResponse
+   * @return Google_Service_CivicInfo_ElectionsQueryResponse
    */
   public function electionQuery($optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_CivicInfo_ElectionsResource extends Google_Service_Resource
    * https://www.googleapis.com/civicinfo/{version}/elections
    * @opt_param bool officialOnly If set to true, only data from official state
    * sources will be returned.
-   * @return Google_Service_VoterInfoResponse
+   * @return Google_Service_CivicInfo_VoterInfoResponse
    */
   public function voterInfoQuery($address, $optParams = array())
   {

@@ -32,7 +32,7 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param string projection Additional information to return.
-   * @return Google_Service_Url
+   * @return Google_Service_Urlshortener_Url
    */
   public function get($shortUrl, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
    *
    * @param Google_Url $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Url
+   * @return Google_Service_Urlshortener_Url
    */
   public function insert(Google_Service_Urlshortener_Url $postBody, $optParams = array())
   {
@@ -61,7 +61,7 @@ class Google_Service_Urlshortener_UrlResource extends Google_Service_Resource
    * @opt_param string projection Additional information to return.
    * @opt_param string start-token Token for requesting successive pages of
    * results.
-   * @return Google_Service_UrlHistory
+   * @return Google_Service_Urlshortener_UrlHistory
    */
   public function listUrl($optParams = array())
   {

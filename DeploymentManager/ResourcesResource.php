@@ -32,7 +32,7 @@ class Google_Service_DeploymentManager_ResourcesResource extends Google_Service_
    * @param string $deployment The name of the deployment for this request.
    * @param string $resource The name of the resource for this request.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DeploymentmanagerResource
+   * @return Google_Service_DeploymentManager_DeploymentmanagerResource
    */
   public function get($project, $deployment, $resource, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_DeploymentManager_ResourcesResource extends Google_Service_
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ResourcesListResponse
+   * @return Google_Service_DeploymentManager_ResourcesListResponse
    */
   public function listResources($project, $deployment, $optParams = array())
   {

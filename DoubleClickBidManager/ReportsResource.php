@@ -30,7 +30,7 @@ class Google_Service_DoubleClickBidManager_ReportsResource extends Google_Servic
    *
    * @param string $queryId Query ID with which the reports are associated.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListReportsResponse
+   * @return Google_Service_DoubleClickBidManager_ListReportsResponse
    */
   public function listreports($queryId, $optParams = array())
   {

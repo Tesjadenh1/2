@@ -50,7 +50,7 @@ class Google_Service_Storage_DefaultObjectAccessControlsResource extends Google_
    * user-emailAddress, group-groupId, group-emailAddress, allUsers, or
    * allAuthenticatedUsers.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function get($bucket, $entity, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_Storage_DefaultObjectAccessControlsResource extends Google_
    * @param string $bucket Name of a bucket.
    * @param Google_ObjectAccessControl $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function insert($bucket, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_Storage_DefaultObjectAccessControlsResource extends Google_
    * @opt_param string ifMetagenerationNotMatch If present, only return default
    * ACL listing if the bucket's current metageneration does not match the given
    * value.
-   * @return Google_Service_ObjectAccessControls
+   * @return Google_Service_Storage_ObjectAccessControls
    */
   public function listDefaultObjectAccessControls($bucket, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_Storage_DefaultObjectAccessControlsResource extends Google_
    * allAuthenticatedUsers.
    * @param Google_ObjectAccessControl $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function patch($bucket, $entity, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {
@@ -121,7 +121,7 @@ class Google_Service_Storage_DefaultObjectAccessControlsResource extends Google_
    * allAuthenticatedUsers.
    * @param Google_ObjectAccessControl $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ObjectAccessControl
+   * @return Google_Service_Storage_ObjectAccessControl
    */
   public function update($bucket, $entity, Google_Service_Storage_ObjectAccessControl $postBody, $optParams = array())
   {

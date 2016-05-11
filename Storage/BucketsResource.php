@@ -55,7 +55,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * metadata conditional on whether the bucket's current metageneration does not
    * match the given value.
    * @opt_param string projection Set of properties to return. Defaults to noAcl.
-   * @return Google_Service_Bucket
+   * @return Google_Service_Storage_Bucket
    */
   public function get($bucket, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to noAcl,
    * unless the bucket resource specifies acl or defaultObjectAcl properties, when
    * it defaults to full.
-   * @return Google_Service_Bucket
+   * @return Google_Service_Storage_Bucket
    */
   public function insert($project, Google_Service_Storage_Bucket $postBody, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * @opt_param string prefix Filter results to buckets whose names begin with
    * this prefix.
    * @opt_param string projection Set of properties to return. Defaults to noAcl.
-   * @return Google_Service_Buckets
+   * @return Google_Service_Storage_Buckets
    */
   public function listBuckets($project, $optParams = array())
   {
@@ -123,7 +123,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * @opt_param string predefinedDefaultObjectAcl Apply a predefined set of
    * default object access controls to this bucket.
    * @opt_param string projection Set of properties to return. Defaults to full.
-   * @return Google_Service_Bucket
+   * @return Google_Service_Storage_Bucket
    */
   public function patch($bucket, Google_Service_Storage_Bucket $postBody, $optParams = array())
   {
@@ -149,7 +149,7 @@ class Google_Service_Storage_BucketsResource extends Google_Service_Resource
    * @opt_param string predefinedDefaultObjectAcl Apply a predefined set of
    * default object access controls to this bucket.
    * @opt_param string projection Set of properties to return. Defaults to full.
-   * @return Google_Service_Bucket
+   * @return Google_Service_Storage_Bucket
    */
   public function update($bucket, Google_Service_Storage_Bucket $postBody, $optParams = array())
   {

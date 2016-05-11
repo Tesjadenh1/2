@@ -44,7 +44,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param string $profileId The DFA user profile ID.
    * @param string $reportId The ID of the report.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Dfareporting_Report
    */
   public function get($profileId, $reportId, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param string $profileId The DFA user profile ID.
    * @param Google_Report $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Dfareporting_Report
    */
   public function insert($profileId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * default is 'MINE'.
    * @opt_param string sortField The field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is 'DESCENDING'.
-   * @return Google_Service_ReportList
+   * @return Google_Service_Dfareporting_ReportList
    */
   public function listReports($profileId, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param string $reportId The ID of the report.
    * @param Google_Report $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Dfareporting_Report
    */
   public function patch($profileId, $reportId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    *
    * @opt_param bool synchronous If set and true, tries to run the report
    * synchronously.
-   * @return Google_Service_DfareportingFile
+   * @return Google_Service_Dfareporting_DfareportingFile
    */
   public function run($profileId, $reportId, $optParams = array())
   {
@@ -126,7 +126,7 @@ class Google_Service_Dfareporting_ReportsResource extends Google_Service_Resourc
    * @param string $reportId The ID of the report.
    * @param Google_Report $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Report
+   * @return Google_Service_Dfareporting_Report
    */
   public function update($profileId, $reportId, Google_Service_Dfareporting_Report $postBody, $optParams = array())
   {

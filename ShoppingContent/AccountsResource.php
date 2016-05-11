@@ -29,7 +29,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * Returns information about the authenticated user. (accounts.authinfo)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountsAuthInfoResponse
+   * @return Google_Service_ShoppingContent_AccountsAuthInfoResponse
    */
   public function authinfo($optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccountsCustomBatchResponse
+   * @return Google_Service_ShoppingContent_AccountsCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_AccountsCustomBatchRequest $postBody, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @param string $merchantId The ID of the managing account.
    * @param string $accountId The ID of the account.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Account
+   * @return Google_Service_ShoppingContent_Account
    */
   public function get($merchantId, $accountId, $optParams = array())
   {
@@ -90,7 +90,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Account
+   * @return Google_Service_ShoppingContent_Account
    */
   public function insert($merchantId, Google_Service_ShoppingContent_Account $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @opt_param string maxResults The maximum number of accounts to return in the
    * response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_AccountsListResponse
+   * @return Google_Service_ShoppingContent_AccountsListResponse
    */
   public function listAccounts($merchantId, $optParams = array())
   {
@@ -126,7 +126,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Account
+   * @return Google_Service_ShoppingContent_Account
    */
   public function patch($merchantId, $accountId, Google_Service_ShoppingContent_Account $postBody, $optParams = array())
   {
@@ -143,7 +143,7 @@ class Google_Service_ShoppingContent_AccountsResource extends Google_Service_Res
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_Account
+   * @return Google_Service_ShoppingContent_Account
    */
   public function update($merchantId, $accountId, Google_Service_ShoppingContent_Account $postBody, $optParams = array())
   {

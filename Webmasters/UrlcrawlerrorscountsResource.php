@@ -40,7 +40,7 @@ class Google_Service_Webmasters_UrlcrawlerrorscountsResource extends Google_Serv
    * @opt_param string platform The user agent type (platform) that made the
    * request. For example: web. If not specified, returns results for all
    * platforms.
-   * @return Google_Service_UrlCrawlErrorsCountsQueryResponse
+   * @return Google_Service_Webmasters_UrlCrawlErrorsCountsQueryResponse
    */
   public function query($siteUrl, $optParams = array())
   {

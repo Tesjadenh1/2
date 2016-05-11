@@ -35,7 +35,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    *
    * @param Google_VariantSet $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_VariantSet
+   * @return Google_Service_Genomics_VariantSet
    */
   public function create(Google_Service_Genomics_VariantSet $postBody, $optParams = array())
   {
@@ -52,7 +52,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    *
    * @param string $variantSetId The ID of the variant set to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function delete($variantSetId, $optParams = array())
   {
@@ -71,7 +71,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * this variant set.
    * @param Google_ExportVariantSetRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Genomics_Operation
    */
   public function export($variantSetId, Google_Service_Genomics_ExportVariantSetRequest $postBody, $optParams = array())
   {
@@ -87,7 +87,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    *
    * @param string $variantSetId Required. The ID of the variant set.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_VariantSet
+   * @return Google_Service_Genomics_VariantSet
    */
   public function get($variantSetId, $optParams = array())
   {
@@ -109,7 +109,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    * @opt_param string updateMask An optional mask specifying which fields to
    * update. Supported fields: * metadata. * name. * description. Leaving
    * `updateMask` unset is equivalent to specifying all mutable fields.
-   * @return Google_Service_VariantSet
+   * @return Google_Service_Genomics_VariantSet
    */
   public function patch($variantSetId, Google_Service_Genomics_VariantSet $postBody, $optParams = array())
   {
@@ -127,7 +127,7 @@ class Google_Service_Genomics_VariantsetsResource extends Google_Service_Resourc
    *
    * @param Google_SearchVariantSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SearchVariantSetsResponse
+   * @return Google_Service_Genomics_SearchVariantSetsResponse
    */
   public function search(Google_Service_Genomics_SearchVariantSetsRequest $postBody, $optParams = array())
   {

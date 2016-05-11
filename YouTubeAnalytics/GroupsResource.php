@@ -69,7 +69,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_Group
+   * @return Google_Service_YouTubeAnalytics_Group
    */
   public function insert(Google_Service_YouTubeAnalytics_Group $postBody, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
    * @opt_param string pageToken The pageToken parameter identifies a specific
    * page in the result set that should be returned. In an API response, the
    * nextPageToken property identifies the next page that can be retrieved.
-   * @return Google_Service_GroupListResponse
+   * @return Google_Service_YouTubeAnalytics_GroupListResponse
    */
   public function listGroups($optParams = array())
   {
@@ -131,7 +131,7 @@ class Google_Service_YouTubeAnalytics_GroupsResource extends Google_Service_Reso
    * authentication credentials for each individual channel. The CMS account that
    * the user authenticates with must be linked to the specified YouTube content
    * owner.
-   * @return Google_Service_Group
+   * @return Google_Service_YouTubeAnalytics_Group
    */
   public function update(Google_Service_YouTubeAnalytics_Group $postBody, $optParams = array())
   {

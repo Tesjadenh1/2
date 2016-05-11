@@ -36,7 +36,7 @@ class Google_Service_Coordinate_TeamResource extends Google_Service_Resource
    * the Dispatcher role.
    * @opt_param bool worker Whether to include teams for which the user has the
    * Worker role.
-   * @return Google_Service_TeamListResponse
+   * @return Google_Service_Coordinate_TeamListResponse
    */
   public function listTeam($optParams = array())
   {

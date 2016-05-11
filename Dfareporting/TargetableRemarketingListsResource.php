@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_TargetableRemarketingListsResource extends Goo
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Remarketing list ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetableRemarketingList
+   * @return Google_Service_Dfareporting_TargetableRemarketingList
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Dfareporting_TargetableRemarketingListsResource extends Goo
    * result page.
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_TargetableRemarketingListsListResponse
+   * @return Google_Service_Dfareporting_TargetableRemarketingListsListResponse
    */
   public function listTargetableRemarketingLists($profileId, $advertiserId, $optParams = array())
   {

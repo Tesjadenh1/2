@@ -48,7 +48,7 @@ class Google_Service_Compute_RegionOperationsResource extends Google_Service_Res
    * @param string $region Name of the region for this request.
    * @param string $operation Name of the Operations resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function get($project, $region, $operation, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Compute_RegionOperationsResource extends Google_Service_Res
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_OperationList
+   * @return Google_Service_Compute_OperationList
    */
   public function listRegionOperations($project, $region, $optParams = array())
   {

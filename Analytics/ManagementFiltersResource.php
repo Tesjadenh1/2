@@ -31,7 +31,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param string $accountId Account ID to delete the filter for.
    * @param string $filterId ID of the filter to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Filter
+   * @return Google_Service_Analytics_Filter
    */
   public function delete($accountId, $filterId, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param string $accountId Account ID to retrieve filters for.
    * @param string $filterId Filter ID to retrieve filters for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Filter
+   * @return Google_Service_Analytics_Filter
    */
   public function get($accountId, $filterId, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param string $accountId Account ID to create filter for.
    * @param Google_Filter $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Filter
+   * @return Google_Service_Analytics_Filter
    */
   public function insert($accountId, Google_Service_Analytics_Filter $postBody, $optParams = array())
   {
@@ -77,7 +77,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * response.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_Filters
+   * @return Google_Service_Analytics_Filters
    */
   public function listManagementFilters($accountId, $optParams = array())
   {
@@ -93,7 +93,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param string $filterId ID of the filter to be updated.
    * @param Google_Filter $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Filter
+   * @return Google_Service_Analytics_Filter
    */
   public function patch($accountId, $filterId, Google_Service_Analytics_Filter $postBody, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Analytics_ManagementFiltersResource extends Google_Service_
    * @param string $filterId ID of the filter to be updated.
    * @param Google_Filter $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Filter
+   * @return Google_Service_Analytics_Filter
    */
   public function update($accountId, $filterId, Google_Service_Analytics_Filter $postBody, $optParams = array())
   {

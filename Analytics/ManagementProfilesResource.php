@@ -49,7 +49,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * @param string $profileId View (Profile) ID to retrieve the view (profile)
    * for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Profile
+   * @return Google_Service_Analytics_Profile
    */
   public function get($accountId, $webPropertyId, $profileId, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * for.
    * @param Google_Profile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Profile
+   * @return Google_Service_Analytics_Profile
    */
   public function insert($accountId, $webPropertyId, Google_Service_Analytics_Profile $postBody, $optParams = array())
   {
@@ -89,7 +89,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * in this response.
    * @opt_param int start-index An index of the first entity to retrieve. Use this
    * parameter as a pagination mechanism along with the max-results parameter.
-   * @return Google_Service_Profiles
+   * @return Google_Service_Analytics_Profiles
    */
   public function listManagementProfiles($accountId, $webPropertyId, $optParams = array())
   {
@@ -107,7 +107,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * @param string $profileId ID of the view (profile) to be updated.
    * @param Google_Profile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Profile
+   * @return Google_Service_Analytics_Profile
    */
   public function patch($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Profile $postBody, $optParams = array())
   {
@@ -124,7 +124,7 @@ class Google_Service_Analytics_ManagementProfilesResource extends Google_Service
    * @param string $profileId ID of the view (profile) to be updated.
    * @param Google_Profile $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Profile
+   * @return Google_Service_Analytics_Profile
    */
   public function update($accountId, $webPropertyId, $profileId, Google_Service_Analytics_Profile $postBody, $optParams = array())
   {

@@ -42,7 +42,7 @@ class Google_Service_Analytics_DataRealtimeResource extends Google_Service_Resou
    * feed.
    * @opt_param string sort A comma-separated list of dimensions or metrics that
    * determine the sort order for real time data.
-   * @return Google_Service_RealtimeData
+   * @return Google_Service_Analytics_RealtimeData
    */
   public function get($ids, $metrics, $optParams = array())
   {

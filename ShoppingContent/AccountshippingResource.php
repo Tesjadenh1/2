@@ -33,7 +33,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccountshippingCustomBatchResponse
+   * @return Google_Service_ShoppingContent_AccountshippingCustomBatchResponse
    */
   public function custombatch(Google_Service_ShoppingContent_AccountshippingCustomBatchRequest $postBody, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @param string $accountId The ID of the account for which to get/update
    * account shipping settings.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AccountShipping
+   * @return Google_Service_ShoppingContent_AccountShipping
    */
   public function get($merchantId, $accountId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @opt_param string maxResults The maximum number of shipping settings to
    * return in the response, used for paging.
    * @opt_param string pageToken The token returned by the previous request.
-   * @return Google_Service_AccountshippingListResponse
+   * @return Google_Service_ShoppingContent_AccountshippingListResponse
    */
   public function listAccountshipping($merchantId, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccountShipping
+   * @return Google_Service_ShoppingContent_AccountShipping
    */
   public function patch($merchantId, $accountId, Google_Service_ShoppingContent_AccountShipping $postBody, $optParams = array())
   {
@@ -103,7 +103,7 @@ class Google_Service_ShoppingContent_AccountshippingResource extends Google_Serv
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool dryRun Flag to run the request in dry-run mode.
-   * @return Google_Service_AccountShipping
+   * @return Google_Service_ShoppingContent_AccountShipping
    */
   public function update($merchantId, $accountId, Google_Service_ShoppingContent_AccountShipping $postBody, $optParams = array())
   {

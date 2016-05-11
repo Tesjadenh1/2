@@ -35,7 +35,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * This is a required field.
    * @opt_param string placementIds Generate tags for these placements.
    * @opt_param string tagFormats Tag formats to generate for these placements.
-   * @return Google_Service_PlacementsGenerateTagsResponse
+   * @return Google_Service_Dfareporting_PlacementsGenerateTagsResponse
    */
   public function generatetags($profileId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Placement ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Placement
+   * @return Google_Service_Dfareporting_Placement
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Placement $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Placement
+   * @return Google_Service_Dfareporting_Placement
    */
   public function insert($profileId, Google_Service_Dfareporting_Placement $postBody, $optParams = array())
   {
@@ -131,7 +131,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * these sizes.
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_PlacementsListResponse
+   * @return Google_Service_Dfareporting_PlacementsListResponse
    */
   public function listPlacements($profileId, $optParams = array())
   {
@@ -147,7 +147,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * @param string $id Placement ID.
    * @param Google_Placement $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Placement
+   * @return Google_Service_Dfareporting_Placement
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_Placement $postBody, $optParams = array())
   {
@@ -161,7 +161,7 @@ class Google_Service_Dfareporting_PlacementsResource extends Google_Service_Reso
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Placement $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Placement
+   * @return Google_Service_Dfareporting_Placement
    */
   public function update($profileId, Google_Service_Dfareporting_Placement $postBody, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_TagManager_AccountsPermissionsResource extends Google_Servi
    * @param string $accountId The GTM Account ID.
    * @param Google_UserAccess $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserAccess
+   * @return Google_Service_TagManager_UserAccess
    */
   public function create($accountId, Google_Service_TagManager_UserAccess $postBody, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_TagManager_AccountsPermissionsResource extends Google_Servi
    * @param string $accountId The GTM Account ID.
    * @param string $permissionId The GTM User ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserAccess
+   * @return Google_Service_TagManager_UserAccess
    */
   public function get($accountId, $permissionId, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_TagManager_AccountsPermissionsResource extends Google_Servi
    * @param string $accountId The GTM Account ID. @required
    * tagmanager.accounts.permissions.list
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListAccountUsersResponse
+   * @return Google_Service_TagManager_ListAccountUsersResponse
    */
   public function listAccountsPermissions($accountId, $optParams = array())
   {
@@ -90,7 +90,7 @@ class Google_Service_TagManager_AccountsPermissionsResource extends Google_Servi
    * @param string $permissionId The GTM User ID.
    * @param Google_UserAccess $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UserAccess
+   * @return Google_Service_TagManager_UserAccess
    */
   public function update($accountId, $permissionId, Google_Service_TagManager_UserAccess $postBody, $optParams = array())
   {

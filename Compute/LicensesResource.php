@@ -32,7 +32,7 @@ class Google_Service_Compute_LicensesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $license Name of the License resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_License
+   * @return Google_Service_Compute_License
    */
   public function get($project, $license, $optParams = array())
   {

@@ -46,7 +46,7 @@ class Google_Service_Genomics_ReferencesBasesResource extends Google_Service_Res
    * @opt_param int pageSize The maximum number of bases to return in a single
    * page. If unspecified, defaults to 200Kbp (kilo base pairs). The maximum value
    * is 10Mbp (mega base pairs).
-   * @return Google_Service_ListBasesResponse
+   * @return Google_Service_Genomics_ListBasesResponse
    */
   public function listReferencesBases($referenceId, $optParams = array())
   {

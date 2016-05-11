@@ -33,7 +33,7 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
    * request. Can be the managed zone name or id.
    * @param Google_Change $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Change
+   * @return Google_Service_Dns_Change
    */
   public function create($project, $managedZone, Google_Service_Dns_Change $postBody, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
    * @param string $changeId The identifier of the requested change, from a
    * previous ResourceRecordSetsChangeResponse.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Change
+   * @return Google_Service_Dns_Change
    */
   public function get($project, $managedZone, $changeId, $optParams = array())
   {
@@ -75,7 +75,7 @@ class Google_Service_Dns_ChangesResource extends Google_Service_Resource
    * change sequence.
    * @opt_param string sortOrder Sorting order direction: 'ascending' or
    * 'descending'.
-   * @return Google_Service_ChangesListResponse
+   * @return Google_Service_Dns_ChangesListResponse
    */
   public function listChanges($project, $managedZone, $optParams = array())
   {

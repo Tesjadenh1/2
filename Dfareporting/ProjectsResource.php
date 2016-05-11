@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_ProjectsResource extends Google_Service_Resour
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Project ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Project
+   * @return Google_Service_Dfareporting_Project
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -59,7 +59,7 @@ class Google_Service_Dfareporting_ProjectsResource extends Google_Service_Resour
    * match projects with name "my project", "project 2015", or simply "project".
    * @opt_param string sortField Field by which to sort the list.
    * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
-   * @return Google_Service_ProjectsListResponse
+   * @return Google_Service_Dfareporting_ProjectsListResponse
    */
   public function listProjects($profileId, $optParams = array())
   {

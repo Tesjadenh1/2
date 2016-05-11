@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_FloodlightConfigurationsResource extends Googl
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Floodlight configuration ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightConfiguration
+   * @return Google_Service_Dfareporting_FloodlightConfiguration
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Dfareporting_FloodlightConfigurationsResource extends Googl
    *
    * @opt_param string ids Set of IDs of floodlight configurations to retrieve.
    * Required field; otherwise an empty list will be returned.
-   * @return Google_Service_FloodlightConfigurationsListResponse
+   * @return Google_Service_Dfareporting_FloodlightConfigurationsListResponse
    */
   public function listFloodlightConfigurations($profileId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Dfareporting_FloodlightConfigurationsResource extends Googl
    * @param string $id Floodlight configuration ID.
    * @param Google_FloodlightConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightConfiguration
+   * @return Google_Service_Dfareporting_FloodlightConfiguration
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_FloodlightConfiguration $postBody, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Dfareporting_FloodlightConfigurationsResource extends Googl
    * @param string $profileId User profile ID associated with this request.
    * @param Google_FloodlightConfiguration $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_FloodlightConfiguration
+   * @return Google_Service_Dfareporting_FloodlightConfiguration
    */
   public function update($profileId, Google_Service_Dfareporting_FloodlightConfiguration $postBody, $optParams = array())
   {

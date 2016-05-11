@@ -38,7 +38,7 @@ class Google_Service_Games_ApplicationsResource extends Google_Service_Resource
    * by this method.
    * @opt_param string platformType Restrict application details returned to the
    * specific platform.
-   * @return Google_Service_Application
+   * @return Google_Service_Games_Application
    */
   public function get($applicationId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Games_ApplicationsResource extends Google_Service_Resource
    * @param string $applicationId The application ID from the Google Play
    * developer console.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ApplicationVerifyResponse
+   * @return Google_Service_Games_ApplicationVerifyResponse
    */
   public function verify($applicationId, $optParams = array())
   {

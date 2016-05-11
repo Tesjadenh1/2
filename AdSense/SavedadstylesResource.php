@@ -30,7 +30,7 @@ class Google_Service_AdSense_SavedadstylesResource extends Google_Service_Resour
    *
    * @param string $savedAdStyleId Saved ad style to retrieve.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SavedAdStyle
+   * @return Google_Service_AdSense_SavedAdStyle
    */
   public function get($savedAdStyleId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_AdSense_SavedadstylesResource extends Google_Service_Resour
    * @opt_param string pageToken A continuation token, used to page through saved
    * ad styles. To retrieve the next page, set this parameter to the value of
    * "nextPageToken" from the previous response.
-   * @return Google_Service_SavedAdStyles
+   * @return Google_Service_AdSense_SavedAdStyles
    */
   public function listSavedadstyles($optParams = array())
   {

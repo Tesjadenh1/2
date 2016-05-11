@@ -32,7 +32,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
    * @param string $userId The ID of the user.
    * @param string $deviceId The ID of the device.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Device
+   * @return Google_Service_AndroidEnterprise_Device
    */
   public function get($enterpriseId, $userId, $deviceId, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
    * @param string $userId The ID of the user.
    * @param string $deviceId The ID of the device.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DeviceState
+   * @return Google_Service_AndroidEnterprise_DeviceState
    */
   public function getState($enterpriseId, $userId, $deviceId, $optParams = array())
   {
@@ -65,7 +65,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $userId The ID of the user.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DevicesListResponse
+   * @return Google_Service_AndroidEnterprise_DevicesListResponse
    */
   public function listDevices($enterpriseId, $userId, $optParams = array())
   {
@@ -85,7 +85,7 @@ class Google_Service_AndroidEnterprise_DevicesResource extends Google_Service_Re
    * @param string $deviceId The ID of the device.
    * @param Google_DeviceState $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DeviceState
+   * @return Google_Service_AndroidEnterprise_DeviceState
    */
   public function setState($enterpriseId, $userId, $deviceId, Google_Service_AndroidEnterprise_DeviceState $postBody, $optParams = array())
   {

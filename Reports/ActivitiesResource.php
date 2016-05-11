@@ -50,7 +50,7 @@ class Google_Service_Reports_ActivitiesResource extends Google_Service_Resource
    * @opt_param string pageToken Token to specify next page.
    * @opt_param string startTime Return events which occured at or after this
    * time.
-   * @return Google_Service_Activities
+   * @return Google_Service_Reports_Activities
    */
   public function listActivities($userKey, $applicationName, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Reports_ActivitiesResource extends Google_Service_Resource
    * @opt_param string pageToken Token to specify next page.
    * @opt_param string startTime Return events which occured at or after this
    * time.
-   * @return Google_Service_Channel
+   * @return Google_Service_Reports_Channel
    */
   public function watch($userKey, $applicationName, Google_Service_Reports_Channel $postBody, $optParams = array())
   {

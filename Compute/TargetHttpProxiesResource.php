@@ -32,7 +32,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * @param string $targetHttpProxy Name of the TargetHttpProxy resource to
    * delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $targetHttpProxy, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * @param string $targetHttpProxy Name of the TargetHttpProxy resource to
    * return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TargetHttpProxy
+   * @return Google_Service_Compute_TargetHttpProxy
    */
   public function get($project, $targetHttpProxy, $optParams = array())
   {
@@ -63,7 +63,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * @param string $project Project ID for this request.
    * @param Google_TargetHttpProxy $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_TargetHttpProxy $postBody, $optParams = array())
   {
@@ -111,7 +111,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_TargetHttpProxyList
+   * @return Google_Service_Compute_TargetHttpProxyList
    */
   public function listTargetHttpProxies($project, $optParams = array())
   {
@@ -127,7 +127,7 @@ class Google_Service_Compute_TargetHttpProxiesResource extends Google_Service_Re
    * for.
    * @param Google_UrlMapReference $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function setUrlMap($project, $targetHttpProxy, Google_Service_Compute_UrlMapReference $postBody, $optParams = array())
   {

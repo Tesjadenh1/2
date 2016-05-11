@@ -34,7 +34,7 @@ class Google_Service_TagManager_AccountsContainersReauthorizeEnvironmentsResourc
    * @param string $environmentId The GTM Environment ID.
    * @param Google_Environment $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Environment
+   * @return Google_Service_TagManager_Environment
    */
   public function update($accountId, $containerId, $environmentId, Google_Service_TagManager_Environment $postBody, $optParams = array())
   {

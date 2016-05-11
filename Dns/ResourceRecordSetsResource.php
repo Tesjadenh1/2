@@ -43,7 +43,7 @@ class Google_Service_Dns_ResourceRecordSetsResource extends Google_Service_Resou
    * request.
    * @opt_param string type Restricts the list to return only records of this
    * type. If present, the "name" parameter must also be present.
-   * @return Google_Service_ResourceRecordSetsListResponse
+   * @return Google_Service_Dns_ResourceRecordSetsListResponse
    */
   public function listResourceRecordSets($project, $managedZone, $optParams = array())
   {

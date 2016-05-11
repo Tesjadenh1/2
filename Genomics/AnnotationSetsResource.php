@@ -34,7 +34,7 @@ class Google_Service_Genomics_AnnotationsetsResource extends Google_Service_Reso
    *
    * @param Google_AnnotationSet $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AnnotationSet
+   * @return Google_Service_Genomics_AnnotationSet
    */
   public function create(Google_Service_Genomics_AnnotationSet $postBody, $optParams = array())
   {
@@ -48,7 +48,7 @@ class Google_Service_Genomics_AnnotationsetsResource extends Google_Service_Reso
    *
    * @param string $annotationSetId The ID of the annotation set to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function delete($annotationSetId, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Genomics_AnnotationsetsResource extends Google_Service_Reso
    *
    * @param string $annotationSetId The ID of the annotation set to be retrieved.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_AnnotationSet
+   * @return Google_Service_Genomics_AnnotationSet
    */
   public function get($annotationSetId, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Genomics_AnnotationsetsResource extends Google_Service_Reso
    *
    * @param Google_SearchAnnotationSetsRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SearchAnnotationSetsResponse
+   * @return Google_Service_Genomics_SearchAnnotationSetsResponse
    */
   public function search(Google_Service_Genomics_SearchAnnotationSetsRequest $postBody, $optParams = array())
   {
@@ -101,7 +101,7 @@ class Google_Service_Genomics_AnnotationsetsResource extends Google_Service_Reso
    * @opt_param string updateMask An optional mask specifying which fields to
    * update. Mutable fields are name, source_uri, and info. If unspecified, all
    * mutable fields will be updated.
-   * @return Google_Service_AnnotationSet
+   * @return Google_Service_Genomics_AnnotationSet
    */
   public function update($annotationSetId, Google_Service_Genomics_AnnotationSet $postBody, $optParams = array())
   {

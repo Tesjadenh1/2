@@ -30,7 +30,7 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
    *
    * @param string $activityId The ID of the activity to get.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Activity
+   * @return Google_Service_PlusDomains_Activity
    */
   public function get($activityId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
    * @opt_param bool preview If "true", extract the potential media attachments
    * for a URL. The response will include all possible attachments for a URL,
    * including video, photos, and articles based on the content of the page.
-   * @return Google_Service_Activity
+   * @return Google_Service_PlusDomains_Activity
    */
   public function insert($userId, Google_Service_PlusDomains_Activity $postBody, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_PlusDomains_ActivitiesResource extends Google_Service_Resou
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of "nextPageToken" from the previous response.
-   * @return Google_Service_ActivityFeed
+   * @return Google_Service_PlusDomains_ActivityFeed
    */
   public function listActivities($userId, $collection, $optParams = array())
   {

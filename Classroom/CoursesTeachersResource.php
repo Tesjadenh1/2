@@ -39,7 +39,7 @@ class Google_Service_Classroom_CoursesTeachersResource extends Google_Service_Re
    * either the Classroom-assigned identifier or an alias.
    * @param Google_Teacher $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Teacher
+   * @return Google_Service_Classroom_Teacher
    */
   public function create($courseId, Google_Service_Classroom_Teacher $postBody, $optParams = array())
   {
@@ -62,7 +62,7 @@ class Google_Service_Classroom_CoursesTeachersResource extends Google_Service_Re
    * address of the user * the string literal `"me"`, indicating the requesting
    * user
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ClassroomEmpty
+   * @return Google_Service_Classroom_ClassroomEmpty
    */
   public function delete($courseId, $userId, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_Classroom_CoursesTeachersResource extends Google_Service_Re
    * address of the user * the string literal `"me"`, indicating the requesting
    * user
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Teacher
+   * @return Google_Service_Classroom_Teacher
    */
   public function get($courseId, $userId, $optParams = array())
   {
@@ -108,7 +108,7 @@ class Google_Service_Classroom_CoursesTeachersResource extends Google_Service_Re
    * call, indicating that the subsequent page of results should be returned. The
    * list request must be otherwise identical to the one that resulted in this
    * token.
-   * @return Google_Service_ListTeachersResponse
+   * @return Google_Service_Classroom_ListTeachersResponse
    */
   public function listCoursesTeachers($courseId, $optParams = array())
   {

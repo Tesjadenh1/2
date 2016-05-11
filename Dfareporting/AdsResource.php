@@ -31,7 +31,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param string $id Ad ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Ad
+   * @return Google_Service_Dfareporting_Ad
    */
   public function get($profileId, $id, $optParams = array())
   {
@@ -45,7 +45,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Ad $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Ad
+   * @return Google_Service_Dfareporting_Ad
    */
   public function insert($profileId, Google_Service_Dfareporting_Ad $postBody, $optParams = array())
   {
@@ -104,7 +104,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
    * @opt_param bool sslCompliant Select only ads that are SSL-compliant.
    * @opt_param bool sslRequired Select only ads that require SSL.
    * @opt_param string type Select only ads with these types.
-   * @return Google_Service_AdsListResponse
+   * @return Google_Service_Dfareporting_AdsListResponse
    */
   public function listAds($profileId, $optParams = array())
   {
@@ -119,7 +119,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
    * @param string $id Ad ID.
    * @param Google_Ad $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Ad
+   * @return Google_Service_Dfareporting_Ad
    */
   public function patch($profileId, $id, Google_Service_Dfareporting_Ad $postBody, $optParams = array())
   {
@@ -133,7 +133,7 @@ class Google_Service_Dfareporting_AdsResource extends Google_Service_Resource
    * @param string $profileId User profile ID associated with this request.
    * @param Google_Ad $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Ad
+   * @return Google_Service_Dfareporting_Ad
    */
   public function update($profileId, Google_Service_Dfareporting_Ad $postBody, $optParams = array())
   {

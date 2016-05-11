@@ -35,7 +35,7 @@ class Google_Service_YouTubeReporting_JobsReportsResource extends Google_Service
    * @opt_param string onBehalfOfContentOwner The content owner's external ID on
    * which behalf the user is acting on. If not set, the user is acting for
    * himself (his own channel).
-   * @return Google_Service_Report
+   * @return Google_Service_YouTubeReporting_Report
    */
   public function get($jobId, $reportId, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_YouTubeReporting_JobsReportsResource extends Google_Service
    * greater than or equal the specified date/time are returned.
    * @opt_param string startTimeBefore If set, only reports whose start time is
    * smaller than the specified date/time are returned.
-   * @return Google_Service_ListReportsResponse
+   * @return Google_Service_YouTubeReporting_ListReportsResponse
    */
   public function listJobsReports($jobId, $optParams = array())
   {

@@ -31,7 +31,7 @@ class Google_Service_TagManager_AccountsContainersResource extends Google_Servic
    * @param string $accountId The GTM Account ID.
    * @param Google_Container $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Container
+   * @return Google_Service_TagManager_Container
    */
   public function create($accountId, Google_Service_TagManager_Container $postBody, $optParams = array())
   {
@@ -58,7 +58,7 @@ class Google_Service_TagManager_AccountsContainersResource extends Google_Servic
    * @param string $accountId The GTM Account ID.
    * @param string $containerId The GTM Container ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Container
+   * @return Google_Service_TagManager_Container
    */
   public function get($accountId, $containerId, $optParams = array())
   {
@@ -72,7 +72,7 @@ class Google_Service_TagManager_AccountsContainersResource extends Google_Servic
    *
    * @param string $accountId The GTM Account ID.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ListContainersResponse
+   * @return Google_Service_TagManager_ListContainersResponse
    */
   public function listAccountsContainers($accountId, $optParams = array())
   {
@@ -90,7 +90,7 @@ class Google_Service_TagManager_AccountsContainersResource extends Google_Servic
    *
    * @opt_param string fingerprint When provided, this fingerprint must match the
    * fingerprint of the container in storage.
-   * @return Google_Service_Container
+   * @return Google_Service_TagManager_Container
    */
   public function update($accountId, $containerId, Google_Service_TagManager_Container $postBody, $optParams = array())
   {

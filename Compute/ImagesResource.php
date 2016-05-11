@@ -31,7 +31,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $image Name of the image resource to delete.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function delete($project, $image, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param string $image Image name.
    * @param Google_DeprecationStatus $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function deprecate($project, $image, Google_Service_Compute_DeprecationStatus $postBody, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $image Name of the image resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Image
+   * @return Google_Service_Compute_Image
    */
   public function get($project, $image, $optParams = array())
   {
@@ -79,7 +79,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $family Name of the image resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Image
+   * @return Google_Service_Compute_Image
    */
   public function getFromFamily($project, $family, $optParams = array())
   {
@@ -94,7 +94,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param Google_Image $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function insert($project, Google_Service_Compute_Image $postBody, $optParams = array())
   {
@@ -148,7 +148,7 @@ class Google_Service_Compute_ImagesResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_ImageList
+   * @return Google_Service_Compute_ImageList
    */
   public function listImages($project, $optParams = array())
   {

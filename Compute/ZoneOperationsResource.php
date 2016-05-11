@@ -48,7 +48,7 @@ class Google_Service_Compute_ZoneOperationsResource extends Google_Service_Resou
    * @param string $zone Name of the zone for this request.
    * @param string $operation Name of the Operations resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Compute_Operation
    */
   public function get($project, $zone, $operation, $optParams = array())
   {
@@ -97,7 +97,7 @@ class Google_Service_Compute_ZoneOperationsResource extends Google_Service_Resou
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_OperationList
+   * @return Google_Service_Compute_OperationList
    */
   public function listZoneOperations($project, $zone, $optParams = array())
   {

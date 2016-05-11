@@ -34,7 +34,7 @@ class Google_Service_Container_ProjectsZonesResource extends Google_Service_Reso
    * @param string $zone The name of the Google Compute Engine
    * [zone](/compute/docs/zones#available) to return operations for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ServerConfig
+   * @return Google_Service_Container_ServerConfig
    */
   public function getServerconfig($projectId, $zone, $optParams = array())
   {

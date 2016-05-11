@@ -32,7 +32,7 @@ class Google_Service_Compute_RegionsResource extends Google_Service_Resource
    * @param string $project Project ID for this request.
    * @param string $region Name of the region resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Region
+   * @return Google_Service_Compute_Region
    */
   public function get($project, $region, $optParams = array())
   {
@@ -80,7 +80,7 @@ class Google_Service_Compute_RegionsResource extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_RegionList
+   * @return Google_Service_Compute_RegionList
    */
   public function listRegions($project, $optParams = array())
   {

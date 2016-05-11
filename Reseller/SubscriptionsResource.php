@@ -33,7 +33,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param string $subscriptionId Id of the subscription, which is unique for a
    * customer
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function activate($customerId, $subscriptionId, $optParams = array())
   {
@@ -49,7 +49,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * customer
    * @param Google_ChangePlanRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function changePlan($customerId, $subscriptionId, Google_Service_Reseller_ChangePlanRequest $postBody, $optParams = array())
   {
@@ -66,7 +66,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * customer
    * @param Google_RenewalSettings $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function changeRenewalSettings($customerId, $subscriptionId, Google_Service_Reseller_RenewalSettings $postBody, $optParams = array())
   {
@@ -82,7 +82,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * customer
    * @param Google_Seats $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function changeSeats($customerId, $subscriptionId, Google_Service_Reseller_Seats $postBody, $optParams = array())
   {
@@ -113,7 +113,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param string $subscriptionId Id of the subscription, which is unique for a
    * customer
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function get($customerId, $subscriptionId, $optParams = array())
   {
@@ -131,7 +131,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @opt_param string customerAuthToken An auth token needed for transferring a
    * subscription. Can be generated at https://www.google.com/a/cpanel/customer-
    * domain/TransferToken. Optional.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function insert($customerId, Google_Service_Reseller_Subscription $postBody, $optParams = array())
   {
@@ -153,7 +153,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * which the subscriptions should be filtered. Optional
    * @opt_param string maxResults Maximum number of results to return
    * @opt_param string pageToken Token to specify next page in the list
-   * @return Google_Service_Subscriptions
+   * @return Google_Service_Reseller_Subscriptions
    */
   public function listSubscriptions($optParams = array())
   {
@@ -168,7 +168,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param string $subscriptionId Id of the subscription, which is unique for a
    * customer
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function startPaidService($customerId, $subscriptionId, $optParams = array())
   {
@@ -183,7 +183,7 @@ class Google_Service_Reseller_SubscriptionsResource extends Google_Service_Resou
    * @param string $subscriptionId Id of the subscription, which is unique for a
    * customer
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Subscription
+   * @return Google_Service_Reseller_Subscription
    */
   public function suspend($customerId, $subscriptionId, $optParams = array())
   {

@@ -35,7 +35,7 @@ class Google_Service_Books_SeriesMembershipResource extends Google_Service_Resou
    * in the response.
    * @opt_param string page_token The value of the nextToken from the previous
    * page.
-   * @return Google_Service_Seriesmembership
+   * @return Google_Service_Books_Seriesmembership
    */
   public function get($seriesId, $optParams = array())
   {

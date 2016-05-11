@@ -35,7 +35,7 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
    * @param string $name The name of the operation resource to be cancelled.
    * @param Google_CancelOperationRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GenomicsEmpty
+   * @return Google_Service_Genomics_GenomicsEmpty
    */
   public function cancel($name, Google_Service_Genomics_CancelOperationRequest $postBody, $optParams = array())
   {
@@ -50,7 +50,7 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
    *
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Operation
+   * @return Google_Service_Genomics_Operation
    */
   public function get($name, $optParams = array())
   {
@@ -74,7 +74,7 @@ class Google_Service_Genomics_OperationsResource extends Google_Service_Resource
    * @opt_param int pageSize The maximum number of results to return. If
    * unspecified, defaults to 256. The maximum value is 2048.
    * @opt_param string pageToken The standard list page token.
-   * @return Google_Service_ListOperationsResponse
+   * @return Google_Service_Genomics_ListOperationsResponse
    */
   public function listOperations($name, $optParams = array())
   {

@@ -49,7 +49,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
    * @param string $datasetId Dataset ID of the requested table
    * @param string $tableId Table ID of the requested table
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Table
+   * @return Google_Service_Bigquery_Table
    */
   public function get($projectId, $datasetId, $tableId, $optParams = array())
   {
@@ -64,7 +64,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
    * @param string $datasetId Dataset ID of the new table
    * @param Google_Table $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Table
+   * @return Google_Service_Bigquery_Table
    */
   public function insert($projectId, $datasetId, Google_Service_Bigquery_Table $postBody, $optParams = array())
   {
@@ -83,7 +83,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
    * @opt_param string maxResults Maximum number of results to return
    * @opt_param string pageToken Page token, returned by a previous call, to
    * request the next page of results
-   * @return Google_Service_TableList
+   * @return Google_Service_Bigquery_TableList
    */
   public function listTables($projectId, $datasetId, $optParams = array())
   {
@@ -102,7 +102,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
    * @param string $tableId Table ID of the table to update
    * @param Google_Table $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Table
+   * @return Google_Service_Bigquery_Table
    */
   public function patch($projectId, $datasetId, $tableId, Google_Service_Bigquery_Table $postBody, $optParams = array())
   {
@@ -120,7 +120,7 @@ class Google_Service_Bigquery_TablesResource extends Google_Service_Resource
    * @param string $tableId Table ID of the table to update
    * @param Google_Table $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Table
+   * @return Google_Service_Bigquery_Table
    */
   public function update($projectId, $datasetId, $tableId, Google_Service_Bigquery_Table $postBody, $optParams = array())
   {

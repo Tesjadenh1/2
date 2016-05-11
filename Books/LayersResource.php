@@ -35,7 +35,7 @@ class Google_Service_Books_LayersResource extends Google_Service_Resource
    * @opt_param string contentVersion The content version for the requested
    * volume.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Layersummary
+   * @return Google_Service_Books_Layersummary
    */
   public function get($volumeId, $summaryId, $optParams = array())
   {
@@ -55,7 +55,7 @@ class Google_Service_Books_LayersResource extends Google_Service_Resource
    * @opt_param string pageToken The value of the nextToken from the previous
    * page.
    * @opt_param string source String to identify the originator of this request.
-   * @return Google_Service_Layersummaries
+   * @return Google_Service_Books_Layersummaries
    */
   public function listLayers($volumeId, $optParams = array())
   {

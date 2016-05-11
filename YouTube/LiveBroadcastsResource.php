@@ -74,7 +74,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * the video stream that is being bound to a broadcast. If this parameter is
    * omitted, the API will remove any existing binding between the broadcast and a
    * video stream.
-   * @return Google_Service_LiveBroadcast
+   * @return Google_Service_YouTube_LiveBroadcast
    */
   public function bind($id, $part, $optParams = array())
   {
@@ -143,7 +143,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * @opt_param string walltime The walltime parameter specifies the wall clock
    * time at which the specified slate change will occur. The value is specified
    * in ISO 8601 (YYYY-MM-DDThh:mm:ss.sssZ) format.
-   * @return Google_Service_LiveBroadcast
+   * @return Google_Service_YouTube_LiveBroadcast
    */
   public function control($id, $part, $optParams = array())
   {
@@ -239,7 +239,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_LiveBroadcast
+   * @return Google_Service_YouTube_LiveBroadcast
    */
   public function insert($part, Google_Service_YouTube_LiveBroadcast $postBody, $optParams = array())
   {
@@ -305,7 +305,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * page in the result set that should be returned. In an API response, the
    * nextPageToken and prevPageToken properties identify other pages that could be
    * retrieved.
-   * @return Google_Service_LiveBroadcastListResponse
+   * @return Google_Service_YouTube_LiveBroadcastListResponse
    */
   public function listLiveBroadcasts($part, $optParams = array())
   {
@@ -364,7 +364,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_LiveBroadcast
+   * @return Google_Service_YouTube_LiveBroadcast
    */
   public function transition($broadcastStatus, $id, $part, $optParams = array())
   {
@@ -427,7 +427,7 @@ class Google_Service_YouTube_LiveBroadcastsResource extends Google_Service_Resou
    * once and perform actions on behalf of the channel specified in the parameter
    * value, without having to provide authentication credentials for each separate
    * channel.
-   * @return Google_Service_LiveBroadcast
+   * @return Google_Service_YouTube_LiveBroadcast
    */
   public function update($part, Google_Service_YouTube_LiveBroadcast $postBody, $optParams = array())
   {

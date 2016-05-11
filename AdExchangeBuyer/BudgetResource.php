@@ -32,7 +32,7 @@ class Google_Service_AdExchangeBuyer_BudgetResource extends Google_Service_Resou
    * @param string $accountId The account id to get the budget information for.
    * @param string $billingId The billing id to get the budget information for.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Budget
+   * @return Google_Service_AdExchangeBuyer_Budget
    */
   public function get($accountId, $billingId, $optParams = array())
   {
@@ -51,7 +51,7 @@ class Google_Service_AdExchangeBuyer_BudgetResource extends Google_Service_Resou
    * updated.
    * @param Google_Budget $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Budget
+   * @return Google_Service_AdExchangeBuyer_Budget
    */
   public function patch($accountId, $billingId, Google_Service_AdExchangeBuyer_Budget $postBody, $optParams = array())
   {
@@ -70,7 +70,7 @@ class Google_Service_AdExchangeBuyer_BudgetResource extends Google_Service_Resou
    * updated.
    * @param Google_Budget $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Budget
+   * @return Google_Service_AdExchangeBuyer_Budget
    */
   public function update($accountId, $billingId, Google_Service_AdExchangeBuyer_Budget $postBody, $optParams = array())
   {

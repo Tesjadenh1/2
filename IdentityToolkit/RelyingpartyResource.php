@@ -31,7 +31,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyCreateAuthUriRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CreateAuthUriResponse
+   * @return Google_Service_IdentityToolkit_CreateAuthUriResponse
    */
   public function createAuthUri(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyCreateAuthUriRequest $postBody, $optParams = array())
   {
@@ -44,7 +44,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyDeleteAccountRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DeleteAccountResponse
+   * @return Google_Service_IdentityToolkit_DeleteAccountResponse
    */
   public function deleteAccount(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyDeleteAccountRequest $postBody, $optParams = array())
   {
@@ -57,7 +57,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyDownloadAccountRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DownloadAccountResponse
+   * @return Google_Service_IdentityToolkit_DownloadAccountResponse
    */
   public function downloadAccount(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyDownloadAccountRequest $postBody, $optParams = array())
   {
@@ -70,7 +70,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyGetAccountInfoRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetAccountInfoResponse
+   * @return Google_Service_IdentityToolkit_GetAccountInfoResponse
    */
   public function getAccountInfo(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetAccountInfoRequest $postBody, $optParams = array())
   {
@@ -84,7 +84,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_Relyingparty $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetOobConfirmationCodeResponse
+   * @return Google_Service_IdentityToolkit_GetOobConfirmationCodeResponse
    */
   public function getOobConfirmationCode(Google_Service_IdentityToolkit_Relyingparty $postBody, $optParams = array())
   {
@@ -100,7 +100,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    * @opt_param string delegatedProjectNumber Delegated GCP project number of the
    * request.
    * @opt_param string projectNumber GCP project number of the request.
-   * @return Google_Service_IdentitytoolkitRelyingpartyGetProjectConfigResponse
+   * @return Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetProjectConfigResponse
    */
   public function getProjectConfig($optParams = array())
   {
@@ -112,7 +112,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    * Get token signing public key. (relyingparty.getPublicKeys)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_IdentitytoolkitRelyingpartyGetPublicKeysResponse
+   * @return Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetPublicKeysResponse
    */
   public function getPublicKeys($optParams = array())
   {
@@ -124,7 +124,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    * Get recaptcha secure param. (relyingparty.getRecaptchaParam)
    *
    * @param array $optParams Optional parameters.
-   * @return Google_Service_GetRecaptchaParamResponse
+   * @return Google_Service_IdentityToolkit_GetRecaptchaParamResponse
    */
   public function getRecaptchaParam($optParams = array())
   {
@@ -137,7 +137,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyResetPasswordRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_ResetPasswordResponse
+   * @return Google_Service_IdentityToolkit_ResetPasswordResponse
    */
   public function resetPassword(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyResetPasswordRequest $postBody, $optParams = array())
   {
@@ -150,7 +150,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartySetAccountInfoRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SetAccountInfoResponse
+   * @return Google_Service_IdentityToolkit_SetAccountInfoResponse
    */
   public function setAccountInfo(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetAccountInfoRequest $postBody, $optParams = array())
   {
@@ -163,7 +163,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartySetProjectConfigRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_IdentitytoolkitRelyingpartySetProjectConfigResponse
+   * @return Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfigResponse
    */
   public function setProjectConfig(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetProjectConfigRequest $postBody, $optParams = array())
   {
@@ -176,7 +176,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartySignOutUserRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_IdentitytoolkitRelyingpartySignOutUserResponse
+   * @return Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignOutUserResponse
    */
   public function signOutUser(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignOutUserRequest $postBody, $optParams = array())
   {
@@ -189,7 +189,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartySignupNewUserRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_SignupNewUserResponse
+   * @return Google_Service_IdentityToolkit_SignupNewUserResponse
    */
   public function signupNewUser(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignupNewUserRequest $postBody, $optParams = array())
   {
@@ -202,7 +202,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyUploadAccountRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_UploadAccountResponse
+   * @return Google_Service_IdentityToolkit_UploadAccountResponse
    */
   public function uploadAccount(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyUploadAccountRequest $postBody, $optParams = array())
   {
@@ -215,7 +215,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyVerifyAssertionRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_VerifyAssertionResponse
+   * @return Google_Service_IdentityToolkit_VerifyAssertionResponse
    */
   public function verifyAssertion(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyAssertionRequest $postBody, $optParams = array())
   {
@@ -228,7 +228,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyVerifyCustomTokenRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_VerifyCustomTokenResponse
+   * @return Google_Service_IdentityToolkit_VerifyCustomTokenResponse
    */
   public function verifyCustomToken(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyCustomTokenRequest $postBody, $optParams = array())
   {
@@ -241,7 +241,7 @@ class Google_Service_IdentityToolkit_RelyingpartyResource extends Google_Service
    *
    * @param Google_IdentitytoolkitRelyingpartyVerifyPasswordRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_VerifyPasswordResponse
+   * @return Google_Service_IdentityToolkit_VerifyPasswordResponse
    */
   public function verifyPassword(Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyPasswordRequest $postBody, $optParams = array())
   {

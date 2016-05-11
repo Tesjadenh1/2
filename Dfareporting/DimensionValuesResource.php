@@ -36,7 +36,7 @@ class Google_Service_Dfareporting_DimensionValuesResource extends Google_Service
    * @opt_param int maxResults Maximum number of results to return.
    * @opt_param string pageToken The value of the nextToken from the previous
    * result page.
-   * @return Google_Service_DimensionValueList
+   * @return Google_Service_Dfareporting_DimensionValueList
    */
   public function query($profileId, Google_Service_Dfareporting_DimensionValueRequest $postBody, $optParams = array())
   {
