@@ -29,6 +29,7 @@ class Google_Service_Bigquery_Table extends Google_Model
   public $lastModifiedTime;
   public $location;
   public $numBytes;
+  public $numLongTermBytes;
   public $numRows;
   protected $schemaType = 'Google_Service_Bigquery_TableSchema';
   protected $schemaDataType = '';
@@ -130,6 +131,14 @@ class Google_Service_Bigquery_Table extends Google_Model
   public function getNumBytes()
   {
     return $this->numBytes;
+  }
+  public function setNumLongTermBytes($numLongTermBytes)
+  {
+    $this->numLongTermBytes = $numLongTermBytes;
+  }
+  public function getNumLongTermBytes()
+  {
+    return $this->numLongTermBytes;
   }
   public function setNumRows($numRows)
   {
