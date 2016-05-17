@@ -19,7 +19,7 @@
  * Service definition for YouTubeAnalytics (v1).
  *
  * <p>
- * Retrieves your YouTube Analytics reports.</p>
+ * Retrieves your YouTube Analytics data.</p>
  *
  * <p>
  * For more information about this service, see the API
