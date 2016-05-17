@@ -47,6 +47,7 @@ class Google_Service_AndroidPublisher extends Google_Service
   public $inappproducts;
   public $purchases_products;
   public $purchases_subscriptions;
+  public $reviews;
   
   /**
    * Constructs the internal representation of the AndroidPublisher service.
@@ -1186,6 +1187,68 @@ class Google_Service_AndroidPublisher extends Google_Service
                   'required' => true,
                 ),
                 'token' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->reviews = new Google_Service_AndroidPublisher_ReviewsResource(
+        $this,
+        $this->serviceName,
+        'reviews',
+        array(
+          'methods' => array(
+            'get' => array(
+              'path' => '{packageName}/reviews/{reviewId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'reviewId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => '{packageName}/reviews',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'startIndex' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'token' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'reply' => array(
+              'path' => '{packageName}/reviews/{reviewId}:reply',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'reviewId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
