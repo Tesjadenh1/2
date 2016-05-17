@@ -19,8 +19,8 @@
  * Service definition for FirebaseRulesAPI (v1).
  *
  * <p>
- * The Firebase Rules API allows developers to create and manage rules that
- * determine when a Firebase Rules-enabled service should permit a request.</p>
+ * Creates and manages rules that determine when a Firebase Rules-enabled
+ * service should permit a request.</p>
  *
  * <p>
  * For more information about this service, see the API
