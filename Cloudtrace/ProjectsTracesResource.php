@@ -19,11 +19,11 @@
  * The "traces" collection of methods.
  * Typical usage is:
  *  <code>
- *   $cloudtraceService = new Google_Service_Cloudtrace(...);
+ *   $cloudtraceService = new Google_Service_CloudTrace(...);
  *   $traces = $cloudtraceService->traces;
  *  </code>
  */
-class Google_Service_Cloudtrace_ProjectsTracesResource extends Google_Service_Resource
+class Google_Service_CloudTrace_ProjectsTracesResource extends Google_Service_Resource
 {
   /**
    * Gets a single trace by its ID. (traces.get)
@@ -32,13 +32,13 @@ class Google_Service_Cloudtrace_ProjectsTracesResource extends Google_Service_Re
    * stored.
    * @param string $traceId ID of the trace to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Cloudtrace_Trace
+   * @return Google_Service_CloudTrace_Trace
    */
   public function get($projectId, $traceId, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'traceId' => $traceId);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Cloudtrace_Trace");
+    return $this->call('get', array($params), "Google_Service_CloudTrace_Trace");
   }
   /**
    * Returns of a list of traces that match the specified filter conditions.
@@ -67,12 +67,12 @@ class Google_Service_Cloudtrace_ProjectsTracesResource extends Google_Service_Re
    * fields of the root span) * `start` (`start_time` field of the root span)
    * Descending order can be specified by appending `desc` to the sort field (for
    * example, `name desc`). Only one sort field is permitted.
-   * @return Google_Service_Cloudtrace_ListTracesResponse
+   * @return Google_Service_CloudTrace_ListTracesResponse
    */
   public function listProjectsTraces($projectId, $optParams = array())
   {
     $params = array('projectId' => $projectId);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Cloudtrace_ListTracesResponse");
+    return $this->call('list', array($params), "Google_Service_CloudTrace_ListTracesResponse");
   }
 }

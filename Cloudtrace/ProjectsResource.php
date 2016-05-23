@@ -19,15 +19,15 @@
  * The "projects" collection of methods.
  * Typical usage is:
  *  <code>
- *   $cloudtraceService = new Google_Service_Cloudtrace(...);
+ *   $cloudtraceService = new Google_Service_CloudTrace(...);
  *   $projects = $cloudtraceService->projects;
  *  </code>
  */
-class Google_Service_Cloudtrace_ProjectsResource extends Google_Service_Resource
+class Google_Service_CloudTrace_ProjectsResource extends Google_Service_Resource
 {
   /**
-   * Sends new traces to Cloud Trace or updates existing traces. If the ID of a
-   * trace that you send matches that of an existing trace, any fields in the
+   * Sends new traces to Stackdriver Trace or updates existing traces. If the ID
+   * of a trace that you send matches that of an existing trace, any fields in the
    * existing trace and its spans are overwritten by the provided values, and any
    * new fields provided are merged with the existing trace data. If the ID does
    * not match, a new trace is created. (projects.patchTraces)
@@ -36,12 +36,12 @@ class Google_Service_Cloudtrace_ProjectsResource extends Google_Service_Resource
    * stored.
    * @param Google_Traces $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Cloudtrace_CloudtraceEmpty
+   * @return Google_Service_CloudTrace_CloudtraceEmpty
    */
-  public function patchTraces($projectId, Google_Service_Cloudtrace_Traces $postBody, $optParams = array())
+  public function patchTraces($projectId, Google_Service_CloudTrace_Traces $postBody, $optParams = array())
   {
     $params = array('projectId' => $projectId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('patchTraces', array($params), "Google_Service_Cloudtrace_CloudtraceEmpty");
+    return $this->call('patchTraces', array($params), "Google_Service_CloudTrace_CloudtraceEmpty");
   }
 }
