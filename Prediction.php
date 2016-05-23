@@ -31,6 +31,9 @@
  */
 class Google_Service_Prediction extends Google_Service
 {
+  /** View and manage your data across Google Cloud Platform services. */
+  const CLOUD_PLATFORM =
+      "https://www.googleapis.com/auth/cloud-platform";
   /** Manage your data and permissions in Google Cloud Storage. */
   const DEVSTORAGE_FULL_CONTROL =
       "https://www.googleapis.com/auth/devstorage.full_control";
