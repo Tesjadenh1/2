@@ -71,12 +71,13 @@ class Google_Service_Consumersurveys_SurveysResource extends Google_Service_Reso
    * Begins running a survey. (surveys.start)
    *
    * @param string $resourceId
+   * @param Google_SurveysStartRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Consumersurveys_SurveysStartResponse
    */
-  public function start($resourceId, $optParams = array())
+  public function start($resourceId, Google_Service_Consumersurveys_SurveysStartRequest $postBody, $optParams = array())
   {
-    $params = array('resourceId' => $resourceId);
+    $params = array('resourceId' => $resourceId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('start', array($params), "Google_Service_Consumersurveys_SurveysStartResponse");
   }
