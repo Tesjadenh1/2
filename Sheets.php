@@ -19,7 +19,7 @@
  * Service definition for Sheets (v4).
  *
  * <p>
- * An API for reading and modifying Google Sheets.</p>
+ * Reads and writes Google Sheets.</p>
  *
  * <p>
  * For more information about this service, see the API

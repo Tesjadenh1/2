@@ -29,14 +29,14 @@ class Google_Service_Sheets_SpreadsheetsValuesResource extends Google_Service_Re
    * Returns one or more ranges of values from a spreadsheet. The caller must
    * specify the spreadsheet ID and one or more ranges. (values.batchGet)
    *
-   * @param string $spreadsheetId The id of the spreadsheet to retrieve data from.
+   * @param string $spreadsheetId The ID of the spreadsheet to retrieve data from.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string ranges The A1 notation of the values to retrieve.
    * @opt_param string valueRenderOption How values should be represented in the
    * output.
    * @opt_param string dateTimeRenderOption How dates, times, and durations should
-   * be represented in the output. This is ignored if ValueRenderOption option is
+   * be represented in the output. This is ignored if value_render_option is
    * FORMATTED_VALUE.
    * @opt_param string majorDimension The major dimension that results should use.
    *
@@ -53,11 +53,11 @@ class Google_Service_Sheets_SpreadsheetsValuesResource extends Google_Service_Re
     return $this->call('batchGet', array($params), "Google_Service_Sheets_BatchGetValuesResponse");
   }
   /**
-   * Sets values in a range of a spreadsheet. The caller must specify the
-   * spreadsheet ID, a valueInputOption, and one or more ValueRanges.
+   * Sets values in one or more ranges of a spreadsheet. The caller must specify
+   * the spreadsheet ID, a valueInputOption, and one or more ValueRanges.
    * (values.batchUpdate)
    *
-   * @param string $spreadsheetId The id of the spreadsheet to update.
+   * @param string $spreadsheetId The ID of the spreadsheet to update.
    * @param Google_BatchUpdateValuesRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Sheets_BatchUpdateValuesResponse
@@ -72,15 +72,15 @@ class Google_Service_Sheets_SpreadsheetsValuesResource extends Google_Service_Re
    * Returns a range of values from a spreadsheet. The caller must specify the
    * spreadsheet ID and a range. (values.get)
    *
-   * @param string $spreadsheetId The id of the spreadsheet to retrieve data from.
+   * @param string $spreadsheetId The ID of the spreadsheet to retrieve data from.
    * @param string $range The A1 notation of the values to retrieve.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string valueRenderOption How values should be represented in the
    * output.
    * @opt_param string dateTimeRenderOption How dates, times, and durations should
-   * be represented in the output. This is ignored if the ValueRenderOption option
-   * is FORMATTED_VALUE.
+   * be represented in the output. This is ignored if value_render_option is
+   * FORMATTED_VALUE.
    * @opt_param string majorDimension The major dimension that results should use.
    *
    * For example, if the spreadsheet data is: `A1=1,B1=2,A2=3,B2=4`, then
@@ -99,7 +99,7 @@ class Google_Service_Sheets_SpreadsheetsValuesResource extends Google_Service_Re
    * Sets values in a range of a spreadsheet. The caller must specify the
    * spreadsheet ID, range, and a valueInputOption. (values.update)
    *
-   * @param string $spreadsheetId The id of the spreadsheet to update.
+   * @param string $spreadsheetId The ID of the spreadsheet to update.
    * @param string $range The A1 notation of the values to update.
    * @param Google_ValueRange $postBody
    * @param array $optParams Optional parameters.

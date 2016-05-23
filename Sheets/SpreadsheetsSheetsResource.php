@@ -29,7 +29,7 @@ class Google_Service_Sheets_SpreadsheetsSheetsResource extends Google_Service_Re
    * Copies a single sheet from a spreadsheet to another spreadsheet. Returns the
    * properties of the newly created sheet. (sheets.copyTo)
    *
-   * @param string $spreadsheetId The id of the spreadsheet containing the sheet
+   * @param string $spreadsheetId The ID of the spreadsheet containing the sheet
    * to copy.
    * @param int $sheetId The ID of the sheet to copy.
    * @param Google_CopySheetToAnotherSpreadsheetRequest $postBody
