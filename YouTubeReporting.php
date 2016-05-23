@@ -19,8 +19,8 @@
  * Service definition for YouTubeReporting (v1).
  *
  * <p>
- * Schedules reporting jobs and downloads the resulting bulk data reports about
- * YouTube channels, videos, etc. in the form of CSV files.</p>
+ * Schedules reporting jobs containing your YouTube Analytics data and downloads
+ * the resulting bulk data reports in the form of CSV files.</p>
  *
  * <p>
  * For more information about this service, see the API
