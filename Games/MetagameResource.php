@@ -30,6 +30,8 @@ class Google_Service_Games_MetagameResource extends Google_Service_Resource
    * (metagame.getMetagameConfig)
    *
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @return Google_Service_Games_MetagameConfig
    */
   public function getMetagameConfig($optParams = array())
@@ -48,6 +50,7 @@ class Google_Service_Games_MetagameResource extends Google_Service_Resource
    * returned.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param int maxResults The maximum number of category resources to return

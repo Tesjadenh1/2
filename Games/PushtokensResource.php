@@ -31,6 +31,8 @@ class Google_Service_Games_PushtokensResource extends Google_Service_Resource
    *
    * @param Google_PushTokenId $postBody
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    */
   public function remove(Google_Service_Games_PushTokenId $postBody, $optParams = array())
   {
@@ -44,6 +46,8 @@ class Google_Service_Games_PushtokensResource extends Google_Service_Resource
    *
    * @param Google_PushToken $postBody
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    */
   public function update(Google_Service_Games_PushToken $postBody, $optParams = array())
   {

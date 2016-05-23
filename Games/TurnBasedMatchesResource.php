@@ -30,6 +30,8 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    */
   public function cancel($matchId, $optParams = array())
   {
@@ -43,6 +45,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param Google_TurnBasedMatchCreateRequest $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_TurnBasedMatch
@@ -59,6 +62,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_TurnBasedMatch
@@ -76,6 +80,8 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    */
   public function dismiss($matchId, $optParams = array())
   {
@@ -92,6 +98,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param Google_TurnBasedMatchResults $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_TurnBasedMatch
@@ -108,6 +115,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param bool includeMatchData Get match data along with metadata.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
@@ -125,6 +133,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_TurnBasedMatch
@@ -142,6 +151,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_TurnBasedMatch
@@ -160,6 +170,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param int $matchVersion The version of the match being updated.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param string pendingParticipantId The ID of another participant who
@@ -180,6 +191,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param bool includeMatchData True if match data should be returned in the
    * response. Note that not all data will necessarily be returned if
    * include_match_data is true; the server may decide to only return data for
@@ -211,6 +223,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param string $matchId The ID of the match.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param string requestId A randomly generated numeric ID for each request
@@ -232,6 +245,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param bool includeMatchData True if match data should be returned in the
    * response. Note that not all data will necessarily be returned if
    * include_match_data is true; the server may decide to only return data for
@@ -261,6 +275,7 @@ class Google_Service_Games_TurnBasedMatchesResource extends Google_Service_Resou
    * @param Google_TurnBasedMatchTurn $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_TurnBasedMatch

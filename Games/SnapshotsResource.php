@@ -31,6 +31,7 @@ class Google_Service_Games_SnapshotsResource extends Google_Service_Resource
    * @param string $snapshotId The ID of the snapshot.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_Snapshot
@@ -49,6 +50,7 @@ class Google_Service_Games_SnapshotsResource extends Google_Service_Resource
    * the authenticated player's ID.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param int maxResults The maximum number of snapshot resources to return

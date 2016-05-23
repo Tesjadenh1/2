@@ -40,6 +40,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * requesting.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string includeRankType The types of ranks to return. If the
    * parameter is omitted, no ranks will be returned.
    * @opt_param string language The preferred language to use for strings returned
@@ -65,6 +66,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * requesting.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param int maxResults The maximum number of leaderboard scores to return
@@ -89,6 +91,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * requesting.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param int maxResults The maximum number of leaderboard scores to return
@@ -121,6 +124,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * the score represents a value in micro units.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @opt_param string scoreTag Additional information about the score you're
@@ -140,6 +144,7 @@ class Google_Service_Games_ScoresResource extends Google_Service_Resource
    * @param Google_PlayerScoreSubmissionList $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string consistencyToken The last-seen mutation timestamp.
    * @opt_param string language The preferred language to use for strings returned
    * by this method.
    * @return Google_Service_Games_PlayerScoreListResponse
