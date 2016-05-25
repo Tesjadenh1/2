@@ -19,10 +19,8 @@
  * Service definition for Acceleratedmobilepageurl (v1).
  *
  * <p>
- * This API contains a single method, [batchGet](/amp/cache/reference/accelerate
- * dmobilepageurl/rest/v1/ampUrls/batchGet). Call this method to retrieve the
- * AMP URL (and equivalent AMP Cache URL) for given public URL(s). For more
- * information, see [Link to AMP Content](/amp/cache/use-amp-url).</p>
+ * This API contains a single method, batchGet. Call this method to retrieve the
+ * AMP URL (and equivalent AMP Cache URL) for given public URL(s).</p>
  *
  * <p>
  * For more information about this service, see the API
