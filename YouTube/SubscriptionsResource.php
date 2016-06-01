@@ -83,8 +83,11 @@ class Google_Service_YouTube_SubscriptionsResource extends Google_Service_Resour
    * number of items that should be returned in the result set.
    * @opt_param bool mine Set this parameter's value to true to retrieve a feed of
    * the authenticated user's subscriptions.
+   * @opt_param bool myRecentSubscribers Set this parameter's value to true to
+   * retrieve a feed of the subscribers of the authenticated user in reverse
+   * chronological order (newest first).
    * @opt_param bool mySubscribers Set this parameter's value to true to retrieve
-   * a feed of the subscribers of the authenticated user.
+   * a feed of the subscribers of the authenticated user in no particular order.
    * @opt_param string onBehalfOfContentOwner Note: This parameter is intended
    * exclusively for YouTube content partners.
    *

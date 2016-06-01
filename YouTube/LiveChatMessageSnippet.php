@@ -27,6 +27,14 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   protected $messageDeletedDetailsDataType = '';
   protected $messageRetractedDetailsType = 'Google_Service_YouTube_LiveChatMessageRetractedDetails';
   protected $messageRetractedDetailsDataType = '';
+  protected $pollClosedDetailsType = 'Google_Service_YouTube_LiveChatPollClosedDetails';
+  protected $pollClosedDetailsDataType = '';
+  protected $pollEditedDetailsType = 'Google_Service_YouTube_LiveChatPollEditedDetails';
+  protected $pollEditedDetailsDataType = '';
+  protected $pollOpenedDetailsType = 'Google_Service_YouTube_LiveChatPollOpenedDetails';
+  protected $pollOpenedDetailsDataType = '';
+  protected $pollVotedDetailsType = 'Google_Service_YouTube_LiveChatPollVotedDetails';
+  protected $pollVotedDetailsDataType = '';
   public $publishedAt;
   protected $textMessageDetailsType = 'Google_Service_YouTube_LiveChatTextMessageDetails';
   protected $textMessageDetailsDataType = '';
@@ -89,6 +97,38 @@ class Google_Service_YouTube_LiveChatMessageSnippet extends Google_Model
   public function getMessageRetractedDetails()
   {
     return $this->messageRetractedDetails;
+  }
+  public function setPollClosedDetails(Google_Service_YouTube_LiveChatPollClosedDetails $pollClosedDetails)
+  {
+    $this->pollClosedDetails = $pollClosedDetails;
+  }
+  public function getPollClosedDetails()
+  {
+    return $this->pollClosedDetails;
+  }
+  public function setPollEditedDetails(Google_Service_YouTube_LiveChatPollEditedDetails $pollEditedDetails)
+  {
+    $this->pollEditedDetails = $pollEditedDetails;
+  }
+  public function getPollEditedDetails()
+  {
+    return $this->pollEditedDetails;
+  }
+  public function setPollOpenedDetails(Google_Service_YouTube_LiveChatPollOpenedDetails $pollOpenedDetails)
+  {
+    $this->pollOpenedDetails = $pollOpenedDetails;
+  }
+  public function getPollOpenedDetails()
+  {
+    return $this->pollOpenedDetails;
+  }
+  public function setPollVotedDetails(Google_Service_YouTube_LiveChatPollVotedDetails $pollVotedDetails)
+  {
+    $this->pollVotedDetails = $pollVotedDetails;
+  }
+  public function getPollVotedDetails()
+  {
+    return $this->pollVotedDetails;
   }
   public function setPublishedAt($publishedAt)
   {

@@ -1588,6 +1588,10 @@ class Google_Service_YouTube extends Google_Service
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
+                'myRecentSubscribers' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
                 'mySubscribers' => array(
                   'location' => 'query',
                   'type' => 'boolean',
