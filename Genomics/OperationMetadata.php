@@ -24,6 +24,7 @@ class Google_Service_Genomics_OperationMetadata extends Google_Collection
   protected $eventsDataType = 'array';
   public $projectId;
   public $request;
+  public $runtimeMetadata;
 
   public function setCreateTime($createTime)
   {
@@ -64,5 +65,13 @@ class Google_Service_Genomics_OperationMetadata extends Google_Collection
   public function getRequest()
   {
     return $this->request;
+  }
+  public function setRuntimeMetadata($runtimeMetadata)
+  {
+    $this->runtimeMetadata = $runtimeMetadata;
+  }
+  public function getRuntimeMetadata()
+  {
+    return $this->runtimeMetadata;
   }
 }
