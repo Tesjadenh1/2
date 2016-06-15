@@ -17,7 +17,7 @@
 
 class Google_Service_Dataflow_WorkItemStatus extends Google_Collection
 {
-  protected $collection_key = 'metricUpdates';
+  protected $collection_key = 'workItemMetricUpdates';
   public $completed;
   protected $dynamicSourceSplitType = 'Google_Service_Dataflow_DynamicSourceSplit';
   protected $dynamicSourceSplitDataType = '';
@@ -38,6 +38,8 @@ class Google_Service_Dataflow_WorkItemStatus extends Google_Collection
   protected $stopPositionType = 'Google_Service_Dataflow_Position';
   protected $stopPositionDataType = '';
   public $workItemId;
+  protected $workItemMetricUpdatesType = 'Google_Service_Dataflow_WorkItemMetricUpdate';
+  protected $workItemMetricUpdatesDataType = 'array';
 
   public function setCompleted($completed)
   {
@@ -134,5 +136,13 @@ class Google_Service_Dataflow_WorkItemStatus extends Google_Collection
   public function getWorkItemId()
   {
     return $this->workItemId;
+  }
+  public function setWorkItemMetricUpdates($workItemMetricUpdates)
+  {
+    $this->workItemMetricUpdates = $workItemMetricUpdates;
+  }
+  public function getWorkItemMetricUpdates()
+  {
+    return $this->workItemMetricUpdates;
   }
 }
