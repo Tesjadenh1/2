@@ -17,15 +17,15 @@
 
 class Google_Service_Genomics_RuntimeMetadata extends Google_Model
 {
-  protected $gceType = 'Google_Service_Genomics_GCE';
-  protected $gceDataType = '';
+  protected $computeEngineType = 'Google_Service_Genomics_ComputeEngine';
+  protected $computeEngineDataType = '';
 
-  public function setGce(Google_Service_Genomics_GCE $gce)
+  public function setComputeEngine(Google_Service_Genomics_ComputeEngine $computeEngine)
   {
-    $this->gce = $gce;
+    $this->computeEngine = $computeEngine;
   }
-  public function getGce()
+  public function getComputeEngine()
   {
-    return $this->gce;
+    return $this->computeEngine;
   }
 }

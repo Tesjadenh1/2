@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Genomics_GCE extends Google_Collection
+class Google_Service_Genomics_ComputeEngine extends Google_Collection
 {
   protected $collection_key = 'diskNames';
   public $diskNames;
