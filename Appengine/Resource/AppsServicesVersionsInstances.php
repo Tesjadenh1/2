@@ -29,10 +29,11 @@ class Google_Service_Appengine_Resource_AppsServicesVersionsInstances extends Go
    * Lists the instances of a version.
    * (instances.listAppsServicesVersionsInstances)
    *
-   * @param string $appsId Part of `name`. Name of the resource requested. For
-   * example: "apps/myapp/services/default/versions/v1".
-   * @param string $servicesId Part of `name`. See documentation of `appsId`.
-   * @param string $versionsId Part of `name`. See documentation of `appsId`.
+   * @param string $appsId Part of `parent`. Name of the parent Version resource
+   * to list instances for. For example:
+   * "apps/myapp/services/default/versions/v1".
+   * @param string $servicesId Part of `parent`. See documentation of `appsId`.
+   * @param string $versionsId Part of `parent`. See documentation of `appsId`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize Maximum results to return per page.

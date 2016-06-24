@@ -28,16 +28,9 @@ class Google_Service_Appengine_Resource_Apps extends Google_Service_Resource
   /**
    * Gets information about an application. (apps.get)
    *
-   * @param string $appsId Part of `name`. Name of the application to get. For
-   * example: "apps/myapp".
+   * @param string $appsId Part of `name`. The name of the Application resource to
+   * get. For example: "apps/myapp".
    * @param array $optParams Optional parameters.
-   *
-   * @opt_param bool ensureResourcesExist Certain resources associated with an
-   * application are created on-demand. Controls whether these resources should be
-   * created when performing the `GET` operation. If specified and any resources
-   * could not be created, the request will fail with an error code. Additionally,
-   * this parameter can cause the request to take longer to complete. Note: This
-   * parameter will be deprecated in a future version of the API.
    * @return Google_Service_Appengine_Application
    */
   public function get($appsId, $optParams = array())
@@ -45,5 +38,21 @@ class Google_Service_Appengine_Resource_Apps extends Google_Service_Resource
     $params = array('appsId' => $appsId);
     $params = array_merge($params, $optParams);
     return $this->call('get', array($params), "Google_Service_Appengine_Application");
+  }
+  /**
+   * Ensures that all special features required for App Engine, such as the
+   * appspot bucket and appengine robot, exist for this project. (apps.repair)
+   *
+   * @param string $appsId Part of `name`. Name of the application to repair. For
+   * example: "apps/myapp".
+   * @param Google_Service_Appengine_RepairApplicationRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Appengine_Operation
+   */
+  public function repair($appsId, Google_Service_Appengine_RepairApplicationRequest $postBody, $optParams = array())
+  {
+    $params = array('appsId' => $appsId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('repair', array($params), "Google_Service_Appengine_Operation");
   }
 }

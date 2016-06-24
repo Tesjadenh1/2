@@ -15,25 +15,6 @@
  * the License.
  */
 
-class Google_Service_Appengine_SourceReference extends Google_Model
+class Google_Service_Appengine_RepairApplicationRequest extends Google_Model
 {
-  public $repository;
-  public $revisionId;
-
-  public function setRepository($repository)
-  {
-    $this->repository = $repository;
-  }
-  public function getRepository()
-  {
-    return $this->repository;
-  }
-  public function setRevisionId($revisionId)
-  {
-    $this->revisionId = $revisionId;
-  }
-  public function getRevisionId()
-  {
-    return $this->revisionId;
-  }
 }

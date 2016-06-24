@@ -15,27 +15,6 @@
  * the License.
  */
 
-class Google_Service_Appengine_Deployment extends Google_Model
+class Google_Service_Appengine_LocationMetadata extends Google_Model
 {
-  protected $containerType = 'Google_Service_Appengine_ContainerInfo';
-  protected $containerDataType = '';
-  protected $filesType = 'Google_Service_Appengine_FileInfo';
-  protected $filesDataType = 'map';
-
-  public function setContainer(Google_Service_Appengine_ContainerInfo $container)
-  {
-    $this->container = $container;
-  }
-  public function getContainer()
-  {
-    return $this->container;
-  }
-  public function setFiles($files)
-  {
-    $this->files = $files;
-  }
-  public function getFiles()
-  {
-    return $this->files;
-  }
 }

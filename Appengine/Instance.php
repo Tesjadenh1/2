@@ -26,7 +26,7 @@ class Google_Service_Appengine_Instance extends Google_Model
   public $name;
   public $qps;
   public $requests;
-  public $startTimestamp;
+  public $startTime;
   public $vmId;
   public $vmName;
   public $vmStatus;
@@ -105,13 +105,13 @@ class Google_Service_Appengine_Instance extends Google_Model
   {
     return $this->requests;
   }
-  public function setStartTimestamp($startTimestamp)
+  public function setStartTime($startTime)
   {
-    $this->startTimestamp = $startTimestamp;
+    $this->startTime = $startTime;
   }
-  public function getStartTimestamp()
+  public function getStartTime()
   {
-    return $this->startTimestamp;
+    return $this->startTime;
   }
   public function setVmId($vmId)
   {
