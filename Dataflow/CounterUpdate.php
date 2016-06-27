@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Dataflow_WorkItemMetricUpdate extends Google_Model
+class Google_Service_Dataflow_CounterUpdate extends Google_Model
 {
   public $boolean;
   public $cumulative;
@@ -36,6 +36,8 @@ class Google_Service_Dataflow_WorkItemMetricUpdate extends Google_Model
   public $shortId;
   protected $stringListType = 'Google_Service_Dataflow_StringList';
   protected $stringListDataType = '';
+  protected $structuredNameAndMetadataType = 'Google_Service_Dataflow_CounterStructuredNameAndMetadata';
+  protected $structuredNameAndMetadataDataType = '';
 
   public function setBoolean($boolean)
   {
@@ -132,5 +134,13 @@ class Google_Service_Dataflow_WorkItemMetricUpdate extends Google_Model
   public function getStringList()
   {
     return $this->stringList;
+  }
+  public function setStructuredNameAndMetadata(Google_Service_Dataflow_CounterStructuredNameAndMetadata $structuredNameAndMetadata)
+  {
+    $this->structuredNameAndMetadata = $structuredNameAndMetadata;
+  }
+  public function getStructuredNameAndMetadata()
+  {
+    return $this->structuredNameAndMetadata;
   }
 }
