@@ -15,14 +15,18 @@
  * the License.
  */
 
-/**
- * The "projects" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudbuildService = new Google_Service_CloudBuild(...);
- *   $projects = $cloudbuildService->projects;
- *  </code>
- */
-class Google_Service_CloudBuild_ProjectsResource extends Google_Service_Resource
+class Google_Service_CloudBuild_FileHashes extends Google_Collection
 {
+  protected $collection_key = 'fileHash';
+  protected $fileHashType = 'Google_Service_CloudBuild_Hash';
+  protected $fileHashDataType = 'array';
+
+  public function setFileHash($fileHash)
+  {
+    $this->fileHash = $fileHash;
+  }
+  public function getFileHash()
+  {
+    return $this->fileHash;
+  }
 }

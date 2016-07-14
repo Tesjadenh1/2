@@ -23,7 +23,7 @@
  *   $builds = $cloudbuildService->builds;
  *  </code>
  */
-class Google_Service_CloudBuild_ProjectsBuildsResource extends Google_Service_Resource
+class Google_Service_CloudBuild_Resource_ProjectsBuilds extends Google_Service_Resource
 {
   /**
    * Cancels a requested build in progress. (builds.cancel)
