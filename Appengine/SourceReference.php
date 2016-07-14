@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_Appengine_RequestUtilization extends Google_Model
+class Google_Service_Appengine_SourceReference extends Google_Model
 {
-  public $targetConcurrentRequests;
-  public $targetRequestCountPerSec;
+  public $repository;
+  public $revisionId;
 
-  public function setTargetConcurrentRequests($targetConcurrentRequests)
+  public function setRepository($repository)
   {
-    $this->targetConcurrentRequests = $targetConcurrentRequests;
+    $this->repository = $repository;
   }
-  public function getTargetConcurrentRequests()
+  public function getRepository()
   {
-    return $this->targetConcurrentRequests;
+    return $this->repository;
   }
-  public function setTargetRequestCountPerSec($targetRequestCountPerSec)
+  public function setRevisionId($revisionId)
   {
-    $this->targetRequestCountPerSec = $targetRequestCountPerSec;
+    $this->revisionId = $revisionId;
   }
-  public function getTargetRequestCountPerSec()
+  public function getRevisionId()
   {
-    return $this->targetRequestCountPerSec;
+    return $this->revisionId;
   }
 }

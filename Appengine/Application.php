@@ -26,7 +26,7 @@ class Google_Service_Appengine_Application extends Google_Collection
   protected $dispatchRulesType = 'Google_Service_Appengine_UrlDispatchRule';
   protected $dispatchRulesDataType = 'array';
   public $id;
-  public $locationId;
+  public $location;
   public $name;
 
   public function setAuthDomain($authDomain)
@@ -85,13 +85,13 @@ class Google_Service_Appengine_Application extends Google_Collection
   {
     return $this->id;
   }
-  public function setLocationId($locationId)
+  public function setLocation($location)
   {
-    $this->locationId = $locationId;
+    $this->location = $location;
   }
-  public function getLocationId()
+  public function getLocation()
   {
-    return $this->locationId;
+    return $this->location;
   }
   public function setName($name)
   {

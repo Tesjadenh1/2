@@ -15,25 +15,27 @@
  * the License.
  */
 
-class Google_Service_Appengine_RequestUtilization extends Google_Model
+class Google_Service_Appengine_ListLocationsResponse extends Google_Collection
 {
-  public $targetConcurrentRequests;
-  public $targetRequestCountPerSec;
+  protected $collection_key = 'locations';
+  protected $locationsType = 'Google_Service_Appengine_Location';
+  protected $locationsDataType = 'array';
+  public $nextPageToken;
 
-  public function setTargetConcurrentRequests($targetConcurrentRequests)
+  public function setLocations($locations)
   {
-    $this->targetConcurrentRequests = $targetConcurrentRequests;
+    $this->locations = $locations;
   }
-  public function getTargetConcurrentRequests()
+  public function getLocations()
   {
-    return $this->targetConcurrentRequests;
+    return $this->locations;
   }
-  public function setTargetRequestCountPerSec($targetRequestCountPerSec)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->targetRequestCountPerSec = $targetRequestCountPerSec;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getTargetRequestCountPerSec()
+  public function getNextPageToken()
   {
-    return $this->targetRequestCountPerSec;
+    return $this->nextPageToken;
   }
 }

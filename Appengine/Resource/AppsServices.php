@@ -26,7 +26,7 @@
 class Google_Service_Appengine_Resource_AppsServices extends Google_Service_Resource
 {
   /**
-   * Deletes the specified service and all enclosed versions. (services.delete)
+   * Deletes a service and all enclosed versions. (services.delete)
    *
    * @param string $appsId Part of `name`. Name of the resource requested. For
    * example: "apps/myapp/services/default".
@@ -41,7 +41,7 @@ class Google_Service_Appengine_Resource_AppsServices extends Google_Service_Reso
     return $this->call('delete', array($params), "Google_Service_Appengine_Operation");
   }
   /**
-   * Gets the current configuration of the specified service. (services.get)
+   * Gets the current configuration of the service. (services.get)
    *
    * @param string $appsId Part of `name`. Name of the resource requested. For
    * example: "apps/myapp/services/default".
@@ -58,8 +58,8 @@ class Google_Service_Appengine_Resource_AppsServices extends Google_Service_Reso
   /**
    * Lists all the services in the application. (services.listAppsServices)
    *
-   * @param string $appsId Part of `parent`. Name of the parent Application
-   * resource. For example: "apps/myapp".
+   * @param string $appsId Part of `name`. Name of the resource requested. For
+   * example: "apps/myapp".
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize Maximum results to return per page.
@@ -82,13 +82,11 @@ class Google_Service_Appengine_Resource_AppsServices extends Google_Service_Reso
    * @param Google_Service_Appengine_Service $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string updateMask Standard field mask for the set of fields to be
+   * @opt_param string mask Standard field mask for the set of fields to be
    * updated.
-   * @opt_param bool migrateTraffic Whether to use traffic migration to shift
+   * @opt_param bool migrateTraffic Whether to use Traffic Migration to shift
    * traffic gradually. Traffic can only be migrated from a single version to
-   * another single version. More information is available in the documentation
-   * for traffic migration: https://cloud.google.com/appengine/docs/python
-   * /migrating-traffic
+   * another single version.
    * @return Google_Service_Appengine_Operation
    */
   public function patch($appsId, $servicesId, Google_Service_Appengine_Service $postBody, $optParams = array())

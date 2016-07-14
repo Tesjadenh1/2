@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_Appengine_RequestUtilization extends Google_Model
+class Google_Service_Appengine_Location extends Google_Model
 {
-  public $targetConcurrentRequests;
-  public $targetRequestCountPerSec;
+  public $labels;
+  public $metadata;
+  public $name;
 
-  public function setTargetConcurrentRequests($targetConcurrentRequests)
+  public function setLabels($labels)
   {
-    $this->targetConcurrentRequests = $targetConcurrentRequests;
+    $this->labels = $labels;
   }
-  public function getTargetConcurrentRequests()
+  public function getLabels()
   {
-    return $this->targetConcurrentRequests;
+    return $this->labels;
   }
-  public function setTargetRequestCountPerSec($targetRequestCountPerSec)
+  public function setMetadata($metadata)
   {
-    $this->targetRequestCountPerSec = $targetRequestCountPerSec;
+    $this->metadata = $metadata;
   }
-  public function getTargetRequestCountPerSec()
+  public function getMetadata()
   {
-    return $this->targetRequestCountPerSec;
+    return $this->metadata;
+  }
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+  public function getName()
+  {
+    return $this->name;
   }
 }

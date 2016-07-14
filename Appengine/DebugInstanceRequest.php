@@ -15,6 +15,6 @@
  * the License.
  */
 
-class Google_Service_Appengine_RepairApplicationRequest extends Google_Model
+class Google_Service_Appengine_DebugInstanceRequest extends Google_Model
 {
 }

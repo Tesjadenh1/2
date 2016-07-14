@@ -17,41 +17,41 @@
 
 class Google_Service_Appengine_DiskUtilization extends Google_Model
 {
-  public $targetReadBytesPerSecond;
-  public $targetReadOpsPerSecond;
-  public $targetWriteBytesPerSecond;
-  public $targetWriteOpsPerSecond;
+  public $targetReadBytesPerSec;
+  public $targetReadOpsPerSec;
+  public $targetWriteBytesPerSec;
+  public $targetWriteOpsPerSec;
 
-  public function setTargetReadBytesPerSecond($targetReadBytesPerSecond)
+  public function setTargetReadBytesPerSec($targetReadBytesPerSec)
   {
-    $this->targetReadBytesPerSecond = $targetReadBytesPerSecond;
+    $this->targetReadBytesPerSec = $targetReadBytesPerSec;
   }
-  public function getTargetReadBytesPerSecond()
+  public function getTargetReadBytesPerSec()
   {
-    return $this->targetReadBytesPerSecond;
+    return $this->targetReadBytesPerSec;
   }
-  public function setTargetReadOpsPerSecond($targetReadOpsPerSecond)
+  public function setTargetReadOpsPerSec($targetReadOpsPerSec)
   {
-    $this->targetReadOpsPerSecond = $targetReadOpsPerSecond;
+    $this->targetReadOpsPerSec = $targetReadOpsPerSec;
   }
-  public function getTargetReadOpsPerSecond()
+  public function getTargetReadOpsPerSec()
   {
-    return $this->targetReadOpsPerSecond;
+    return $this->targetReadOpsPerSec;
   }
-  public function setTargetWriteBytesPerSecond($targetWriteBytesPerSecond)
+  public function setTargetWriteBytesPerSec($targetWriteBytesPerSec)
   {
-    $this->targetWriteBytesPerSecond = $targetWriteBytesPerSecond;
+    $this->targetWriteBytesPerSec = $targetWriteBytesPerSec;
   }
-  public function getTargetWriteBytesPerSecond()
+  public function getTargetWriteBytesPerSec()
   {
-    return $this->targetWriteBytesPerSecond;
+    return $this->targetWriteBytesPerSec;
   }
-  public function setTargetWriteOpsPerSecond($targetWriteOpsPerSecond)
+  public function setTargetWriteOpsPerSec($targetWriteOpsPerSec)
   {
-    $this->targetWriteOpsPerSecond = $targetWriteOpsPerSecond;
+    $this->targetWriteOpsPerSec = $targetWriteOpsPerSec;
   }
-  public function getTargetWriteOpsPerSecond()
+  public function getTargetWriteOpsPerSec()
   {
-    return $this->targetWriteOpsPerSecond;
+    return $this->targetWriteOpsPerSec;
   }
 }
