@@ -15,31 +15,20 @@
  * the License.
  */
 
-class Google_Service_AndroidEnterprise_Enterprise extends Google_Collection
+class Google_Service_AndroidEnterprise_ServiceAccount extends Google_Model
 {
-  protected $collection_key = 'administrator';
-  protected $administratorType = 'Google_Service_AndroidEnterprise_Administrator';
-  protected $administratorDataType = 'array';
-  public $id;
+  protected $keyType = 'Google_Service_AndroidEnterprise_ServiceAccountKey';
+  protected $keyDataType = '';
   public $kind;
   public $name;
-  public $primaryDomain;
 
-  public function setAdministrator($administrator)
+  public function setKey(Google_Service_AndroidEnterprise_ServiceAccountKey $key)
   {
-    $this->administrator = $administrator;
+    $this->key = $key;
   }
-  public function getAdministrator()
+  public function getKey()
   {
-    return $this->administrator;
-  }
-  public function setId($id)
-  {
-    $this->id = $id;
-  }
-  public function getId()
-  {
-    return $this->id;
+    return $this->key;
   }
   public function setKind($kind)
   {
@@ -56,13 +45,5 @@ class Google_Service_AndroidEnterprise_Enterprise extends Google_Collection
   public function getName()
   {
     return $this->name;
-  }
-  public function setPrimaryDomain($primaryDomain)
-  {
-    $this->primaryDomain = $primaryDomain;
-  }
-  public function getPrimaryDomain()
-  {
-    return $this->primaryDomain;
   }
 }
