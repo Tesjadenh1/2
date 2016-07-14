@@ -56,4 +56,27 @@ class Google_Service_Clouderrorreporting_Resource_ProjectsEvents extends Google_
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_Clouderrorreporting_ListEventsResponse");
   }
+  /**
+   * Report an individual error event.
+   *
+   * This endpoint accepts either an OAuth token, or an API key for
+   * authentication. To use an API key, append it to the URL as the value of a
+   * `key` parameter. For example: POST
+   * https://clouderrorreporting.googleapis.com/v1beta1/projects/example-
+   * project/events:report?key=123ABC456 (events.report)
+   *
+   * @param string $projectName [Required] The resource name of the Google Cloud
+   * Platform project. Written as `projects/` plus the [Google Cloud Platform
+   * project ID](https://support.google.com/cloud/answer/6158840). Example:
+   * `projects/my-project-123`.
+   * @param Google_Service_Clouderrorreporting_ReportedErrorEvent $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Clouderrorreporting_ReportErrorEventResponse
+   */
+  public function report($projectName, Google_Service_Clouderrorreporting_ReportedErrorEvent $postBody, $optParams = array())
+  {
+    $params = array('projectName' => $projectName, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('report', array($params), "Google_Service_Clouderrorreporting_ReportErrorEventResponse");
+  }
 }
