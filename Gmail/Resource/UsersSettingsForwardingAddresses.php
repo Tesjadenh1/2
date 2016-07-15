@@ -28,8 +28,8 @@ class Google_Service_Gmail_Resource_UsersSettingsForwardingAddresses extends Goo
   /**
    * Creates a forwarding address. If ownership verification is required, a
    * message will be sent to the recipient and the resource's verification status
-   * will be set to `pending`; otherwise, the resource will be created with
-   * verification status set to `accepted`. (forwardingAddresses.create)
+   * will be set to pending; otherwise, the resource will be created with
+   * verification status set to accepted. (forwardingAddresses.create)
    *
    * @param string $userId User's email address. The special value "me" can be
    * used to indicate the authenticated user.
