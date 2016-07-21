@@ -19,6 +19,8 @@ class Google_Service_CloudBuild_SourceProvenance extends Google_Model
 {
   protected $fileHashesType = 'Google_Service_CloudBuild_FileHashes';
   protected $fileHashesDataType = 'map';
+  protected $resolvedStorageSourceType = 'Google_Service_CloudBuild_StorageSource';
+  protected $resolvedStorageSourceDataType = '';
 
   public function setFileHashes($fileHashes)
   {
@@ -27,5 +29,13 @@ class Google_Service_CloudBuild_SourceProvenance extends Google_Model
   public function getFileHashes()
   {
     return $this->fileHashes;
+  }
+  public function setResolvedStorageSource(Google_Service_CloudBuild_StorageSource $resolvedStorageSource)
+  {
+    $this->resolvedStorageSource = $resolvedStorageSource;
+  }
+  public function getResolvedStorageSource()
+  {
+    return $this->resolvedStorageSource;
   }
 }
