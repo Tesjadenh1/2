@@ -21,6 +21,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyCreateAuthUriReq
   public $clientId;
   public $context;
   public $continueUri;
+  public $hostedDomain;
   public $identifier;
   public $oauthConsumerKey;
   public $oauthScope;
@@ -59,6 +60,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyCreateAuthUriReq
   public function getContinueUri()
   {
     return $this->continueUri;
+  }
+  public function setHostedDomain($hostedDomain)
+  {
+    $this->hostedDomain = $hostedDomain;
+  }
+  public function getHostedDomain()
+  {
+    return $this->hostedDomain;
   }
   public function setIdentifier($identifier)
   {

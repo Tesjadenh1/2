@@ -51,6 +51,7 @@ class Google_Service_IdentityToolkit_VerifyAssertionResponse extends Google_Coll
   public $photoUrl;
   public $providerId;
   public $refreshToken;
+  public $screenName;
   public $timeZone;
   public $verifiedProvider;
 
@@ -317,6 +318,14 @@ class Google_Service_IdentityToolkit_VerifyAssertionResponse extends Google_Coll
   public function getRefreshToken()
   {
     return $this->refreshToken;
+  }
+  public function setScreenName($screenName)
+  {
+    $this->screenName = $screenName;
+  }
+  public function getScreenName()
+  {
+    return $this->screenName;
   }
   public function setTimeZone($timeZone)
   {
