@@ -90,9 +90,12 @@ class Google_Service_AndroidEnterprise_Resource_Products extends Google_Service_
     return $this->call('get', array($params), "Google_Service_AndroidEnterprise_Product");
   }
   /**
-   * Retrieves the schema defining app restrictions configurable for this product.
-   * All products have a schema, but this may be empty if no app restrictions are
-   * defined. (products.getAppRestrictionsSchema)
+   * Retrieves the schema that defines the configurable properties for this
+   * product. All products have a schema, but this schema may be empty if no
+   * managed configurations have been defined. This schema can be used to populate
+   * a UI that allows an administrator to configure the product. To apply a
+   * managed configuration based on the schema obtained using this API, see
+   * Managed Configurations through Play. (products.getAppRestrictionsSchema)
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param string $productId The ID of the product.

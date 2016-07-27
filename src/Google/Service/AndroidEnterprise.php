@@ -42,6 +42,8 @@ class Google_Service_AndroidEnterprise extends Google_Service
   public $grouplicenses;
   public $grouplicenseusers;
   public $installs;
+  public $managedconfigurationsfordevice;
+  public $managedconfigurationsforuser;
   public $permissions;
   public $products;
   public $serviceaccountkeys;
@@ -800,6 +802,241 @@ class Google_Service_AndroidEnterprise extends Google_Service
                   'required' => true,
                 ),
                 'installId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->managedconfigurationsfordevice = new Google_Service_AndroidEnterprise_Resource_Managedconfigurationsfordevice(
+        $this,
+        $this->serviceName,
+        'managedconfigurationsfordevice',
+        array(
+          'methods' => array(
+            'delete' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice/{managedConfigurationForDeviceId}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'deviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForDeviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice/{managedConfigurationForDeviceId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'deviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForDeviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'deviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice/{managedConfigurationForDeviceId}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'deviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForDeviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/devices/{deviceId}/managedConfigurationsForDevice/{managedConfigurationForDeviceId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'deviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForDeviceId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->managedconfigurationsforuser = new Google_Service_AndroidEnterprise_Resource_Managedconfigurationsforuser(
+        $this,
+        $this->serviceName,
+        'managedconfigurationsforuser',
+        array(
+          'methods' => array(
+            'delete' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser/{managedConfigurationForUserId}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForUserId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser/{managedConfigurationForUserId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForUserId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser/{managedConfigurationForUserId}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForUserId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'enterprises/{enterpriseId}/users/{userId}/managedConfigurationsForUser/{managedConfigurationForUserId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'managedConfigurationForUserId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,

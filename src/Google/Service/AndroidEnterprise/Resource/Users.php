@@ -105,7 +105,10 @@ class Google_Service_AndroidEnterprise_Resource_Users extends Google_Service_Res
     return $this->call('getAvailableProductSet', array($params), "Google_Service_AndroidEnterprise_ProductSet");
   }
   /**
-   * Inserts a new resource into this collection. (users.insert)
+   * Creates a new EMM-managed user.
+   *
+   * The Users resource passed in the body of the request should include an
+   * accountIdentifier and an accountType. (users.insert)
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param Google_Service_AndroidEnterprise_User $postBody

@@ -154,8 +154,8 @@ class Google_Service_AndroidEnterprise_Resource_Enterprises extends Google_Servi
     return $this->call('getServiceAccount', array($params), "Google_Service_AndroidEnterprise_ServiceAccount");
   }
   /**
-   * Returns the store layout resource for the enterprise. If store layout has not
-   * been set, or if store layout has no homepage set, returns a NOT_FOUND error.
+   * Returns the store layout for the enterprise. If the store layout has not been
+   * set, or if the store layout has no homepageId set, returns a NOT_FOUND error.
    * (enterprises.getStoreLayout)
    *
    * @param string $enterpriseId The ID of the enterprise.
@@ -261,7 +261,7 @@ class Google_Service_AndroidEnterprise_Resource_Enterprises extends Google_Servi
     return $this->call('setAccount', array($params), "Google_Service_AndroidEnterprise_EnterpriseAccount");
   }
   /**
-   * Sets the store layout resource. (enterprises.setStoreLayout)
+   * Sets the store layout for the enterprise. (enterprises.setStoreLayout)
    *
    * @param string $enterpriseId The ID of the enterprise.
    * @param Google_Service_AndroidEnterprise_StoreLayout $postBody

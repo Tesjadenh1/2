@@ -17,13 +17,15 @@
 
 class Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction extends Google_Collection
 {
-  protected $collection_key = 'entryValue';
+  protected $collection_key = 'nestedRestriction';
   protected $defaultValueType = 'Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestrictionRestrictionValue';
   protected $defaultValueDataType = '';
   public $description;
   public $entry;
   public $entryValue;
   public $key;
+  protected $nestedRestrictionType = 'Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction';
+  protected $nestedRestrictionDataType = 'array';
   public $restrictionType;
   public $title;
 
@@ -66,6 +68,14 @@ class Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction extends 
   public function getKey()
   {
     return $this->key;
+  }
+  public function setNestedRestriction($nestedRestriction)
+  {
+    $this->nestedRestriction = $nestedRestriction;
+  }
+  public function getNestedRestriction()
+  {
+    return $this->nestedRestriction;
   }
   public function setRestrictionType($restrictionType)
   {
