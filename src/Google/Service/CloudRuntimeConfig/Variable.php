@@ -19,6 +19,7 @@ class Google_Service_CloudRuntimeConfig_Variable extends Google_Model
 {
   public $name;
   public $state;
+  public $text;
   public $updateTime;
   public $value;
 
@@ -37,6 +38,14 @@ class Google_Service_CloudRuntimeConfig_Variable extends Google_Model
   public function getState()
   {
     return $this->state;
+  }
+  public function setText($text)
+  {
+    $this->text = $text;
+  }
+  public function getText()
+  {
+    return $this->text;
   }
   public function setUpdateTime($updateTime)
   {
