@@ -134,7 +134,30 @@ class Google_Service_Sheets extends Google_Service
         'values',
         array(
           'methods' => array(
-            'batchGet' => array(
+            'append' => array(
+              'path' => 'v4/spreadsheets/{spreadsheetId}/values/{range}:append',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'spreadsheetId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'range' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'valueInputOption' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'insertDataOption' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'batchGet' => array(
               'path' => 'v4/spreadsheets/{spreadsheetId}/values:batchGet',
               'httpMethod' => 'GET',
               'parameters' => array(

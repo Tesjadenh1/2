@@ -26,6 +26,54 @@
 class Google_Service_Sheets_Resource_SpreadsheetsValues extends Google_Service_Resource
 {
   /**
+   * Appends values to a spreadsheet. The input range is used to search for
+   * existing data and find a "table" within that range. Values will be appended
+   * to the next row of the table, starting with the first column of the table.
+   * For example, given a sheet `Sheet1` that looks like:
+   *
+   *         A   B   C   D   E      1  x   y   z      2  x   y   z      3      4
+   * x   y      5          y   z      6      x   y   z      7
+   *
+   * There are two "tables" in the spreadsheet: `A1:C2`, and `B4:D6`. Appending
+   * values would start writing at 'B7' for all the following input `range`
+   * parameters:
+   *
+   *   * `Sheet1`, because it will examine all the data in the sheet, determine
+   * that the "table" at `B4:D6` is the last table, and start a               new
+   * row at `B7`.   * `B4` or `C5:D5`, because it's contained in the `B4:D6`
+   * table.   * `B2:D4`, because the last table contained in the range is the
+   * `B4:D6` table (despite it also containing the `A1:C2` table).   * `A3:G10`,
+   * because the last table contained in the range is the               `B4:D6`
+   * table (despite starting before and ending after it).
+   *
+   *  The following input `range` parameters would not start writing at `B7`:
+   *
+   *   * `A1` would start writing at `A3`, because that's within the `A1:C2`
+   * table.   * `E4` would start writing at `E4`, because it's not contained in
+   * any     table. (`A4` would also start writing at `A4`.)
+   *
+   * The caller must specify the spreadsheet ID, range, and a valueInputOption.
+   * The `valueInputOption` only controls how the input data will be added to the
+   * sheet (column-wise or row-wise), it does not influence what cell the data
+   * starts being written to. (values.append)
+   *
+   * @param string $spreadsheetId The ID of the spreadsheet to update.
+   * @param string $range The A1 notation of a range to search for a logical table
+   * of data. Values will be appended after the last row of the table.
+   * @param Google_Service_Sheets_ValueRange $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string valueInputOption How the input data should be interpreted.
+   * @opt_param string insertDataOption How the input data should be inserted.
+   * @return Google_Service_Sheets_AppendValuesResponse
+   */
+  public function append($spreadsheetId, $range, Google_Service_Sheets_ValueRange $postBody, $optParams = array())
+  {
+    $params = array('spreadsheetId' => $spreadsheetId, 'range' => $range, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('append', array($params), "Google_Service_Sheets_AppendValuesResponse");
+  }
+  /**
    * Returns one or more ranges of values from a spreadsheet. The caller must
    * specify the spreadsheet ID and one or more ranges. (values.batchGet)
    *
