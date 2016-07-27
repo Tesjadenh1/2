@@ -28,6 +28,8 @@ class Google_Service_AdExchangeBuyer_DealTerms extends Google_Model
   protected $nonGuaranteedAuctionTermsDataType = '';
   protected $nonGuaranteedFixedPriceTermsType = 'Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedFixedPriceTerms';
   protected $nonGuaranteedFixedPriceTermsDataType = '';
+  protected $rubiconNonGuaranteedTermsType = 'Google_Service_AdExchangeBuyer_DealTermsRubiconNonGuaranteedTerms';
+  protected $rubiconNonGuaranteedTermsDataType = '';
   public $sellerTimeZone;
 
   public function setBrandingType($brandingType)
@@ -85,6 +87,14 @@ class Google_Service_AdExchangeBuyer_DealTerms extends Google_Model
   public function getNonGuaranteedFixedPriceTerms()
   {
     return $this->nonGuaranteedFixedPriceTerms;
+  }
+  public function setRubiconNonGuaranteedTerms(Google_Service_AdExchangeBuyer_DealTermsRubiconNonGuaranteedTerms $rubiconNonGuaranteedTerms)
+  {
+    $this->rubiconNonGuaranteedTerms = $rubiconNonGuaranteedTerms;
+  }
+  public function getRubiconNonGuaranteedTerms()
+  {
+    return $this->rubiconNonGuaranteedTerms;
   }
   public function setSellerTimeZone($sellerTimeZone)
   {

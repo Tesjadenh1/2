@@ -17,10 +17,20 @@
 
 class Google_Service_AdExchangeBuyer_DealServingMetadataDealPauseStatus extends Google_Model
 {
+  public $buyerPauseReason;
   public $firstPausedBy;
   public $hasBuyerPaused;
   public $hasSellerPaused;
+  public $sellerPauseReason;
 
+  public function setBuyerPauseReason($buyerPauseReason)
+  {
+    $this->buyerPauseReason = $buyerPauseReason;
+  }
+  public function getBuyerPauseReason()
+  {
+    return $this->buyerPauseReason;
+  }
   public function setFirstPausedBy($firstPausedBy)
   {
     $this->firstPausedBy = $firstPausedBy;
@@ -44,5 +54,13 @@ class Google_Service_AdExchangeBuyer_DealServingMetadataDealPauseStatus extends 
   public function getHasSellerPaused()
   {
     return $this->hasSellerPaused;
+  }
+  public function setSellerPauseReason($sellerPauseReason)
+  {
+    $this->sellerPauseReason = $sellerPauseReason;
+  }
+  public function getSellerPauseReason()
+  {
+    return $this->sellerPauseReason;
   }
 }

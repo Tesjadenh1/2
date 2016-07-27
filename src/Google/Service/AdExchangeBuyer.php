@@ -363,6 +363,10 @@ class Google_Service_AdExchangeBuyer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pqlQuery' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),
           )

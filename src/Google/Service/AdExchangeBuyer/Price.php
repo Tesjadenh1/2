@@ -19,6 +19,7 @@ class Google_Service_AdExchangeBuyer_Price extends Google_Model
 {
   public $amountMicros;
   public $currencyCode;
+  public $expectedCpmMicros;
   public $pricingType;
 
   public function setAmountMicros($amountMicros)
@@ -36,6 +37,14 @@ class Google_Service_AdExchangeBuyer_Price extends Google_Model
   public function getCurrencyCode()
   {
     return $this->currencyCode;
+  }
+  public function setExpectedCpmMicros($expectedCpmMicros)
+  {
+    $this->expectedCpmMicros = $expectedCpmMicros;
+  }
+  public function getExpectedCpmMicros()
+  {
+    return $this->expectedCpmMicros;
   }
   public function setPricingType($pricingType)
   {

@@ -24,6 +24,7 @@ class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTerms extends 
   protected $fixedPricesDataType = 'array';
   public $guaranteedImpressions;
   public $guaranteedLooks;
+  public $minimumDailyLooks;
 
   public function setBillingInfo(Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingInfo $billingInfo)
   {
@@ -56,5 +57,13 @@ class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTerms extends 
   public function getGuaranteedLooks()
   {
     return $this->guaranteedLooks;
+  }
+  public function setMinimumDailyLooks($minimumDailyLooks)
+  {
+    $this->minimumDailyLooks = $minimumDailyLooks;
+  }
+  public function getMinimumDailyLooks()
+  {
+    return $this->minimumDailyLooks;
   }
 }

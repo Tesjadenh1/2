@@ -43,8 +43,13 @@ class Google_Service_AdExchangeBuyer_Resource_Marketplacenotes extends Google_Se
    * Get all the notes associated with a proposal
    * (marketplacenotes.listMarketplacenotes)
    *
-   * @param string $proposalId The proposalId to get notes for.
+   * @param string $proposalId The proposalId to get notes for. To search across
+   * all proposals specify order_id = '-' as part of the URL.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string pqlQuery Query string to retrieve specific notes. To search
+   * the text contents of notes, please use syntax like "WHERE note.note = "foo"
+   * or "WHERE note.note LIKE "%bar%"
    * @return Google_Service_AdExchangeBuyer_GetOrderNotesResponse
    */
   public function listMarketplacenotes($proposalId, $optParams = array())

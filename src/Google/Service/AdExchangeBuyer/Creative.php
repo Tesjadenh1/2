@@ -34,6 +34,7 @@ class Google_Service_AdExchangeBuyer_Creative extends Google_Collection
   protected $correctionsType = 'Google_Service_AdExchangeBuyer_CreativeCorrections';
   protected $correctionsDataType = 'array';
   public $dealsStatus;
+  public $detectedDomains;
   protected $filteringReasonsType = 'Google_Service_AdExchangeBuyer_CreativeFilteringReasons';
   protected $filteringReasonsDataType = '';
   public $height;
@@ -148,6 +149,14 @@ class Google_Service_AdExchangeBuyer_Creative extends Google_Collection
   public function getDealsStatus()
   {
     return $this->dealsStatus;
+  }
+  public function setDetectedDomains($detectedDomains)
+  {
+    $this->detectedDomains = $detectedDomains;
+  }
+  public function getDetectedDomains()
+  {
+    return $this->detectedDomains;
   }
   public function setFilteringReasons(Google_Service_AdExchangeBuyer_CreativeFilteringReasons $filteringReasons)
   {
