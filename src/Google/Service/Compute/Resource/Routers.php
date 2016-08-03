@@ -198,6 +198,23 @@ class Google_Service_Compute_Resource_Routers extends Google_Service_Resource
     return $this->call('patch', array($params), "Google_Service_Compute_Operation");
   }
   /**
+   * Preview fields auto-generated during router create and update operations.
+   * Calling this method does NOT create or update the router. (routers.preview)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $region Name of the region for this request.
+   * @param string $router Name of the Router resource to query.
+   * @param Google_Service_Compute_Router $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Compute_RoutersPreviewResponse
+   */
+  public function preview($project, $region, $router, Google_Service_Compute_Router $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'region' => $region, 'router' => $router, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('preview', array($params), "Google_Service_Compute_RoutersPreviewResponse");
+  }
+  /**
    * Updates the entire content of the Router resource. (routers.update)
    *
    * @param string $project Project ID for this request.

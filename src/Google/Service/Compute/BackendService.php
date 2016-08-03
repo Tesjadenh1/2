@@ -18,6 +18,7 @@
 class Google_Service_Compute_BackendService extends Google_Collection
 {
   protected $collection_key = 'healthChecks';
+  public $affinityCookieTtlSec;
   protected $backendsType = 'Google_Service_Compute_Backend';
   protected $backendsDataType = 'array';
   public $creationTimestamp;
@@ -33,8 +34,17 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public $protocol;
   public $region;
   public $selfLink;
+  public $sessionAffinity;
   public $timeoutSec;
 
+  public function setAffinityCookieTtlSec($affinityCookieTtlSec)
+  {
+    $this->affinityCookieTtlSec = $affinityCookieTtlSec;
+  }
+  public function getAffinityCookieTtlSec()
+  {
+    return $this->affinityCookieTtlSec;
+  }
   public function setBackends($backends)
   {
     $this->backends = $backends;
@@ -146,6 +156,14 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public function getSelfLink()
   {
     return $this->selfLink;
+  }
+  public function setSessionAffinity($sessionAffinity)
+  {
+    $this->sessionAffinity = $sessionAffinity;
+  }
+  public function getSessionAffinity()
+  {
+    return $this->sessionAffinity;
   }
   public function setTimeoutSec($timeoutSec)
   {

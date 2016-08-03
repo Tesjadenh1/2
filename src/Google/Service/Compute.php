@@ -2981,6 +2981,26 @@ class Google_Service_Compute extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'preview' => array(
+              'path' => '{project}/regions/{region}/routers/{router}/preview',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'region' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'router' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'update' => array(
               'path' => '{project}/regions/{region}/routers/{router}',
               'httpMethod' => 'PUT',
