@@ -20,8 +20,8 @@
  *
  * <p>
  * Stackdriver Error Reporting groups and counts similar errors from cloud
- * services. The Stackdriver Error Reporting API provides read access to error
- * groups and their associated errors.</p>
+ * services. The Stackdriver Error Reporting API provides a way to report new
+ * errors and read access to error groups and their associated errors.</p>
  *
  * <p>
  * For more information about this service, see the API
