@@ -20,6 +20,7 @@ class Google_Service_Bigquery_JobStatistics2 extends Google_Collection
   protected $collection_key = 'referencedTables';
   public $billingTier;
   public $cacheHit;
+  public $numDmlAffectedRows;
   protected $queryPlanType = 'Google_Service_Bigquery_ExplainQueryStage';
   protected $queryPlanDataType = 'array';
   protected $referencedTablesType = 'Google_Service_Bigquery_TableReference';
@@ -44,6 +45,14 @@ class Google_Service_Bigquery_JobStatistics2 extends Google_Collection
   public function getCacheHit()
   {
     return $this->cacheHit;
+  }
+  public function setNumDmlAffectedRows($numDmlAffectedRows)
+  {
+    $this->numDmlAffectedRows = $numDmlAffectedRows;
+  }
+  public function getNumDmlAffectedRows()
+  {
+    return $this->numDmlAffectedRows;
   }
   public function setQueryPlan($queryPlan)
   {
