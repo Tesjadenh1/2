@@ -40,8 +40,10 @@ class Google_Service_Dataflow extends Google_Service
 
   public $projects;
   public $projects_jobs;
+  public $projects_jobs_debug;
   public $projects_jobs_messages;
   public $projects_jobs_workItems;
+  public $projects_templates;
   
   /**
    * Constructs the internal representation of the Dataflow service.
@@ -183,6 +185,46 @@ class Google_Service_Dataflow extends Google_Service
           )
         )
     );
+    $this->projects_jobs_debug = new Google_Service_Dataflow_Resource_ProjectsJobsDebug(
+        $this,
+        $this->serviceName,
+        'debug',
+        array(
+          'methods' => array(
+            'getConfig' => array(
+              'path' => 'v1b3/projects/{projectId}/jobs/{jobId}/debug/getConfig',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'jobId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'sendCapture' => array(
+              'path' => 'v1b3/projects/{projectId}/jobs/{jobId}/debug/sendCapture',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'jobId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->projects_jobs_messages = new Google_Service_Dataflow_Resource_ProjectsJobsMessages(
         $this,
         $this->serviceName,
@@ -259,6 +301,26 @@ class Google_Service_Dataflow extends Google_Service
                   'required' => true,
                 ),
                 'jobId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_templates = new Google_Service_Dataflow_Resource_ProjectsTemplates(
+        $this,
+        $this->serviceName,
+        'templates',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1b3/projects/{projectId}/templates',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
