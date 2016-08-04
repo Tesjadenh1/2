@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_Appengine_RequestUtilization extends Google_Model
+class Google_Service_Appengine_ZipInfo extends Google_Model
 {
-  public $targetConcurrentRequests;
-  public $targetRequestCountPerSecond;
+  public $filesCount;
+  public $sourceUrl;
 
-  public function setTargetConcurrentRequests($targetConcurrentRequests)
+  public function setFilesCount($filesCount)
   {
-    $this->targetConcurrentRequests = $targetConcurrentRequests;
+    $this->filesCount = $filesCount;
   }
-  public function getTargetConcurrentRequests()
+  public function getFilesCount()
   {
-    return $this->targetConcurrentRequests;
+    return $this->filesCount;
   }
-  public function setTargetRequestCountPerSecond($targetRequestCountPerSecond)
+  public function setSourceUrl($sourceUrl)
   {
-    $this->targetRequestCountPerSecond = $targetRequestCountPerSecond;
+    $this->sourceUrl = $sourceUrl;
   }
-  public function getTargetRequestCountPerSecond()
+  public function getSourceUrl()
   {
-    return $this->targetRequestCountPerSecond;
+    return $this->sourceUrl;
   }
 }

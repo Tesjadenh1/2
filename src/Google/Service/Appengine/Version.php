@@ -25,9 +25,9 @@ class Google_Service_Appengine_Version extends Google_Collection
   protected $basicScalingType = 'Google_Service_Appengine_BasicScaling';
   protected $basicScalingDataType = '';
   public $betaSettings;
-  public $creationTime;
+  public $createTime;
+  public $createdBy;
   public $defaultExpiration;
-  public $deployer;
   protected $deploymentType = 'Google_Service_Appengine_Deployment';
   protected $deploymentDataType = '';
   public $diskUsageBytes;
@@ -55,6 +55,7 @@ class Google_Service_Appengine_Version extends Google_Collection
   public $runtime;
   public $servingStatus;
   public $threadsafe;
+  public $versionUrl;
   public $vm;
 
   public function setApiConfig(Google_Service_Appengine_ApiConfigHandler $apiConfig)
@@ -89,13 +90,21 @@ class Google_Service_Appengine_Version extends Google_Collection
   {
     return $this->betaSettings;
   }
-  public function setCreationTime($creationTime)
+  public function setCreateTime($createTime)
   {
-    $this->creationTime = $creationTime;
+    $this->createTime = $createTime;
   }
-  public function getCreationTime()
+  public function getCreateTime()
   {
-    return $this->creationTime;
+    return $this->createTime;
+  }
+  public function setCreatedBy($createdBy)
+  {
+    $this->createdBy = $createdBy;
+  }
+  public function getCreatedBy()
+  {
+    return $this->createdBy;
   }
   public function setDefaultExpiration($defaultExpiration)
   {
@@ -104,14 +113,6 @@ class Google_Service_Appengine_Version extends Google_Collection
   public function getDefaultExpiration()
   {
     return $this->defaultExpiration;
-  }
-  public function setDeployer($deployer)
-  {
-    $this->deployer = $deployer;
-  }
-  public function getDeployer()
-  {
-    return $this->deployer;
   }
   public function setDeployment(Google_Service_Appengine_Deployment $deployment)
   {
@@ -264,6 +265,14 @@ class Google_Service_Appengine_Version extends Google_Collection
   public function getThreadsafe()
   {
     return $this->threadsafe;
+  }
+  public function setVersionUrl($versionUrl)
+  {
+    $this->versionUrl = $versionUrl;
+  }
+  public function getVersionUrl()
+  {
+    return $this->versionUrl;
   }
   public function setVm($vm)
   {
