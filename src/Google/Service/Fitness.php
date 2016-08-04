@@ -48,6 +48,12 @@ class Google_Service_Fitness extends Google_Service
   /** View and store your location data in Google Fit. */
   const FITNESS_LOCATION_WRITE =
       "https://www.googleapis.com/auth/fitness.location.write";
+  /** View nutrition information in Google Fit. */
+  const FITNESS_NUTRITION_READ =
+      "https://www.googleapis.com/auth/fitness.nutrition.read";
+  /** View and store nutrition information in Google Fit. */
+  const FITNESS_NUTRITION_WRITE =
+      "https://www.googleapis.com/auth/fitness.nutrition.write";
 
   public $users_dataSources;
   public $users_dataSources_datasets;
