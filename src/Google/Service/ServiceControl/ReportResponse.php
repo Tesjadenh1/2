@@ -20,6 +20,7 @@ class Google_Service_ServiceControl_ReportResponse extends Google_Collection
   protected $collection_key = 'reportErrors';
   protected $reportErrorsType = 'Google_Service_ServiceControl_ReportError';
   protected $reportErrorsDataType = 'array';
+  public $serviceConfigId;
 
   public function setReportErrors($reportErrors)
   {
@@ -28,5 +29,13 @@ class Google_Service_ServiceControl_ReportResponse extends Google_Collection
   public function getReportErrors()
   {
     return $this->reportErrors;
+  }
+  public function setServiceConfigId($serviceConfigId)
+  {
+    $this->serviceConfigId = $serviceConfigId;
+  }
+  public function getServiceConfigId()
+  {
+    return $this->serviceConfigId;
   }
 }

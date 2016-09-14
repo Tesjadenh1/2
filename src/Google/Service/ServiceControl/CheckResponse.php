@@ -21,6 +21,7 @@ class Google_Service_ServiceControl_CheckResponse extends Google_Collection
   protected $checkErrorsType = 'Google_Service_ServiceControl_CheckError';
   protected $checkErrorsDataType = 'array';
   public $operationId;
+  public $serviceConfigId;
 
   public function setCheckErrors($checkErrors)
   {
@@ -37,5 +38,13 @@ class Google_Service_ServiceControl_CheckResponse extends Google_Collection
   public function getOperationId()
   {
     return $this->operationId;
+  }
+  public function setServiceConfigId($serviceConfigId)
+  {
+    $this->serviceConfigId = $serviceConfigId;
+  }
+  public function getServiceConfigId()
+  {
+    return $this->serviceConfigId;
   }
 }
