@@ -90,6 +90,10 @@ class Google_Service_AdExchangeBuyer extends Google_Service
                   'type' => 'integer',
                   'required' => true,
                 ),
+                'confirmUnsafeAccountChange' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
               ),
             ),'update' => array(
               'path' => 'accounts/{id}',
@@ -99,6 +103,10 @@ class Google_Service_AdExchangeBuyer extends Google_Service
                   'location' => 'path',
                   'type' => 'integer',
                   'required' => true,
+                ),
+                'confirmUnsafeAccountChange' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),
