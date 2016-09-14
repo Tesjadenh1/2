@@ -23,6 +23,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyUploadAccountReq
   public $memoryCost;
   public $rounds;
   public $saltSeparator;
+  public $sanityCheck;
   public $signerKey;
   protected $usersType = 'Google_Service_IdentityToolkit_UserInfo';
   protected $usersDataType = 'array';
@@ -66,6 +67,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyUploadAccountReq
   public function getSaltSeparator()
   {
     return $this->saltSeparator;
+  }
+  public function setSanityCheck($sanityCheck)
+  {
+    $this->sanityCheck = $sanityCheck;
+  }
+  public function getSanityCheck()
+  {
+    return $this->sanityCheck;
   }
   public function setSignerKey($signerKey)
   {

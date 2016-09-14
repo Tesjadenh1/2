@@ -19,6 +19,7 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
 {
   protected $collection_key = 'providerUserInfo';
   public $createdAt;
+  public $customAuth;
   public $disabled;
   public $displayName;
   public $email;
@@ -31,6 +32,7 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
   protected $providerUserInfoType = 'Google_Service_IdentityToolkit_UserInfoProviderUserInfo';
   protected $providerUserInfoDataType = 'array';
   public $salt;
+  public $screenName;
   public $validSince;
   public $version;
 
@@ -41,6 +43,14 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
   public function getCreatedAt()
   {
     return $this->createdAt;
+  }
+  public function setCustomAuth($customAuth)
+  {
+    $this->customAuth = $customAuth;
+  }
+  public function getCustomAuth()
+  {
+    return $this->customAuth;
   }
   public function setDisabled($disabled)
   {
@@ -129,6 +139,14 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
   public function getSalt()
   {
     return $this->salt;
+  }
+  public function setScreenName($screenName)
+  {
+    $this->screenName = $screenName;
+  }
+  public function getScreenName()
+  {
+    return $this->screenName;
   }
   public function setValidSince($validSince)
   {
