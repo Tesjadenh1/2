@@ -21,6 +21,8 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public $affinityCookieTtlSec;
   protected $backendsType = 'Google_Service_Compute_Backend';
   protected $backendsDataType = 'array';
+  protected $connectionDrainingType = 'Google_Service_Compute_ConnectionDraining';
+  protected $connectionDrainingDataType = '';
   public $creationTimestamp;
   public $description;
   public $enableCDN;
@@ -52,6 +54,14 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public function getBackends()
   {
     return $this->backends;
+  }
+  public function setConnectionDraining(Google_Service_Compute_ConnectionDraining $connectionDraining)
+  {
+    $this->connectionDraining = $connectionDraining;
+  }
+  public function getConnectionDraining()
+  {
+    return $this->connectionDraining;
   }
   public function setCreationTimestamp($creationTimestamp)
   {
