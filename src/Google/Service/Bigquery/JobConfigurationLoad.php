@@ -34,6 +34,7 @@ class Google_Service_Bigquery_JobConfigurationLoad extends Google_Collection
   protected $schemaDataType = '';
   public $schemaInline;
   public $schemaInlineFormat;
+  public $schemaUpdateOptions;
   public $skipLeadingRows;
   public $sourceFormat;
   public $sourceUris;
@@ -150,6 +151,14 @@ class Google_Service_Bigquery_JobConfigurationLoad extends Google_Collection
   public function getSchemaInlineFormat()
   {
     return $this->schemaInlineFormat;
+  }
+  public function setSchemaUpdateOptions($schemaUpdateOptions)
+  {
+    $this->schemaUpdateOptions = $schemaUpdateOptions;
+  }
+  public function getSchemaUpdateOptions()
+  {
+    return $this->schemaUpdateOptions;
   }
   public function setSkipLeadingRows($skipLeadingRows)
   {

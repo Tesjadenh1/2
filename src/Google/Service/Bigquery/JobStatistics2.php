@@ -17,7 +17,7 @@
 
 class Google_Service_Bigquery_JobStatistics2 extends Google_Collection
 {
-  protected $collection_key = 'referencedTables';
+  protected $collection_key = 'undeclaredQueryParameters';
   public $billingTier;
   public $cacheHit;
   public $numDmlAffectedRows;
@@ -29,6 +29,8 @@ class Google_Service_Bigquery_JobStatistics2 extends Google_Collection
   protected $schemaDataType = '';
   public $totalBytesBilled;
   public $totalBytesProcessed;
+  protected $undeclaredQueryParametersType = 'Google_Service_Bigquery_QueryParameter';
+  protected $undeclaredQueryParametersDataType = 'array';
 
   public function setBillingTier($billingTier)
   {
@@ -93,5 +95,13 @@ class Google_Service_Bigquery_JobStatistics2 extends Google_Collection
   public function getTotalBytesProcessed()
   {
     return $this->totalBytesProcessed;
+  }
+  public function setUndeclaredQueryParameters($undeclaredQueryParameters)
+  {
+    $this->undeclaredQueryParameters = $undeclaredQueryParameters;
+  }
+  public function getUndeclaredQueryParameters()
+  {
+    return $this->undeclaredQueryParameters;
   }
 }
