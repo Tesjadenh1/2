@@ -16,14 +16,14 @@
  */
 
 /**
- * Service definition for Dfareporting (v2.5).
+ * Service definition for Dfareporting (v2.6).
  *
  * <p>
  * Manages your DoubleClick Campaign Manager ad campaigns and reports.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://developers.google.com/doubleclick-advertisers/reporting/" target="_blank">Documentation</a>
+ * <a href="https://developers.google.com/doubleclick-advertisers/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
@@ -73,6 +73,7 @@ class Google_Service_Dfareporting extends Google_Service
   public $floodlightConfigurations;
   public $inventoryItems;
   public $landingPages;
+  public $languages;
   public $metros;
   public $mobileCarriers;
   public $operatingSystemVersions;
@@ -95,6 +96,7 @@ class Google_Service_Dfareporting extends Google_Service
   public $sizes;
   public $subaccounts;
   public $targetableRemarketingLists;
+  public $targetingTemplates;
   public $userProfiles;
   public $userRolePermissionGroups;
   public $userRolePermissions;
@@ -109,8 +111,8 @@ class Google_Service_Dfareporting extends Google_Service
   {
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
-    $this->servicePath = 'dfareporting/v2.5/';
-    $this->version = 'v2.5';
+    $this->servicePath = 'dfareporting/v2.6/';
+    $this->version = 'v2.6';
     $this->serviceName = 'dfareporting';
 
     $this->accountActiveAdSummaries = new Google_Service_Dfareporting_Resource_AccountActiveAdSummaries(
@@ -2829,6 +2831,26 @@ class Google_Service_Dfareporting extends Google_Service
           )
         )
     );
+    $this->languages = new Google_Service_Dfareporting_Resource_Languages(
+        $this,
+        $this->serviceName,
+        'languages',
+        array(
+          'methods' => array(
+            'list' => array(
+              'path' => 'userprofiles/{profileId}/languages',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->metros = new Google_Service_Dfareporting_Resource_Metros(
         $this,
         $this->serviceName,
@@ -4436,6 +4458,105 @@ class Google_Service_Dfareporting extends Google_Service
                 'sortOrder' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->targetingTemplates = new Google_Service_Dfareporting_Resource_TargetingTemplates(
+        $this,
+        $this->serviceName,
+        'targetingTemplates',
+        array(
+          'methods' => array(
+            'get' => array(
+              'path' => 'userprofiles/{profileId}/targetingTemplates/{id}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'id' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'insert' => array(
+              'path' => 'userprofiles/{profileId}/targetingTemplates',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'userprofiles/{profileId}/targetingTemplates',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'advertiserId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'ids' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'searchString' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'sortField' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'sortOrder' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'userprofiles/{profileId}/targetingTemplates',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'id' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'userprofiles/{profileId}/targetingTemplates',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'profileId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),

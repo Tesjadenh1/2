@@ -46,11 +46,14 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   public $convertFlashToHtml5;
   protected $counterCustomEventsType = 'Google_Service_Dfareporting_CreativeCustomEvent';
   protected $counterCustomEventsDataType = 'array';
+  protected $creativeAssetSelectionType = 'Google_Service_Dfareporting_CreativeAssetSelection';
+  protected $creativeAssetSelectionDataType = '';
   protected $creativeAssetsType = 'Google_Service_Dfareporting_CreativeAsset';
   protected $creativeAssetsDataType = 'array';
   protected $creativeFieldAssignmentsType = 'Google_Service_Dfareporting_CreativeFieldAssignment';
   protected $creativeFieldAssignmentsDataType = 'array';
   public $customKeyValues;
+  public $dynamicAssetSelection;
   protected $exitCustomEventsType = 'Google_Service_Dfareporting_CreativeCustomEvent';
   protected $exitCustomEventsDataType = 'array';
   protected $fsCommandType = 'Google_Service_Dfareporting_FsCommand';
@@ -269,6 +272,14 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   {
     return $this->counterCustomEvents;
   }
+  public function setCreativeAssetSelection(Google_Service_Dfareporting_CreativeAssetSelection $creativeAssetSelection)
+  {
+    $this->creativeAssetSelection = $creativeAssetSelection;
+  }
+  public function getCreativeAssetSelection()
+  {
+    return $this->creativeAssetSelection;
+  }
   public function setCreativeAssets($creativeAssets)
   {
     $this->creativeAssets = $creativeAssets;
@@ -292,6 +303,14 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   public function getCustomKeyValues()
   {
     return $this->customKeyValues;
+  }
+  public function setDynamicAssetSelection($dynamicAssetSelection)
+  {
+    $this->dynamicAssetSelection = $dynamicAssetSelection;
+  }
+  public function getDynamicAssetSelection()
+  {
+    return $this->dynamicAssetSelection;
   }
   public function setExitCustomEvents($exitCustomEvents)
   {
