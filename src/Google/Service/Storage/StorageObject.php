@@ -34,6 +34,7 @@ class Google_Service_Storage_StorageObject extends Google_Collection
   public $generation;
   public $id;
   public $kind;
+  public $kmsKeyName;
   public $md5Hash;
   public $mediaLink;
   public $metadata;
@@ -159,6 +160,14 @@ class Google_Service_Storage_StorageObject extends Google_Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setKmsKeyName($kmsKeyName)
+  {
+    $this->kmsKeyName = $kmsKeyName;
+  }
+  public function getKmsKeyName()
+  {
+    return $this->kmsKeyName;
   }
   public function setMd5Hash($md5Hash)
   {
