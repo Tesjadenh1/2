@@ -26,7 +26,8 @@
 class Google_Service_ServiceManagement_Resource_Services extends Google_Service_Resource
 {
   /**
-   * Creates a new managed service.
+   * Creates a new managed service. Please note one producer project can own no
+   * more than 20 services.
    *
    * Operation (services.create)
    *
@@ -48,8 +49,9 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
    *
    * Operation (services.delete)
    *
-   * @param string $serviceName The name of the service.  See the `ServiceManager`
-   * overview for naming requirements.  For example: `example.googleapis.com`.
+   * @param string $serviceName The name of the service.  See the [overview
+   * ](/service-management/overview) for naming requirements.  For example:
+   * `example.googleapis.com`.
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceManagement_Operation
    */
@@ -79,7 +81,10 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
   /**
    * Enable a managed service for a project with default setting.
    *
-   * Operation (services.enable)
+   * Operation
+   *
+   * google.rpc.Status errors may contain a google.rpc.PreconditionFailure error
+   * detail. (services.enable)
    *
    * @param string $serviceName Name of the service to enable. Specifying an
    * unknown service name will cause the request to fail.
@@ -133,8 +138,9 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
    * Gets a service configuration (version) for a managed service.
    * (services.getConfig)
    *
-   * @param string $serviceName The name of the service.  See the `ServiceManager`
-   * overview for naming requirements.  For example: `example.googleapis.com`.
+   * @param string $serviceName The name of the service.  See the [overview
+   * ](/service-management/overview) for naming requirements.  For example:
+   * `example.googleapis.com`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string configId
@@ -222,8 +228,9 @@ class Google_Service_ServiceManagement_Resource_Services extends Google_Service_
    *
    * Operation (services.undelete)
    *
-   * @param string $serviceName The name of the service. See the `ServiceManager`
-   * overview for naming requirements. For example: `example.googleapis.com`.
+   * @param string $serviceName The name of the service. See the [overview
+   * ](/service-management/overview) for naming requirements. For example:
+   * `example.googleapis.com`.
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceManagement_Operation
    */

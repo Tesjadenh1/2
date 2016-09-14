@@ -31,10 +31,15 @@ class Google_Service_ServiceManagement_Resource_ServicesRollouts extends Google_
    * backend services. For example, the logging configuration will be pushed to
    * Google Cloud Logging.
    *
+   * Please note that any previous pending and running Rollouts and associated
+   * Operations will be automatically cancelled so that the latest Rollout will
+   * not be blocked by previous Rollouts.
+   *
    * Operation (rollouts.create)
    *
-   * @param string $serviceName The name of the service.  See the `ServiceManager`
-   * overview for naming requirements.  For example: `example.googleapis.com`.
+   * @param string $serviceName The name of the service.  See the [overview
+   * ](/service-management/overview) for naming requirements.  For example:
+   * `example.googleapis.com`.
    * @param Google_Service_ServiceManagement_Rollout $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceManagement_Operation
@@ -48,8 +53,9 @@ class Google_Service_ServiceManagement_Resource_ServicesRollouts extends Google_
   /**
    * Gets a service configuration rollout. (rollouts.get)
    *
-   * @param string $serviceName The name of the service.  See the `ServiceManager`
-   * overview for naming requirements.  For example: `example.googleapis.com`.
+   * @param string $serviceName The name of the service.  See the [overview
+   * ](/service-management/overview) for naming requirements.  For example:
+   * `example.googleapis.com`.
    * @param string $rolloutId The id of the rollout resource.
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceManagement_Rollout
@@ -64,8 +70,9 @@ class Google_Service_ServiceManagement_Resource_ServicesRollouts extends Google_
    * Lists the history of the service configuration rollouts for a managed
    * service, from the newest to the oldest. (rollouts.listServicesRollouts)
    *
-   * @param string $serviceName The name of the service.  See the `ServiceManager`
-   * overview for naming requirements.  For example: `example.googleapis.com`.
+   * @param string $serviceName The name of the service.  See the [overview
+   * ](/service-management/overview) for naming requirements.  For example:
+   * `example.googleapis.com`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param int pageSize The max number of items to include in the response

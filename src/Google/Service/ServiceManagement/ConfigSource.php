@@ -21,8 +21,6 @@ class Google_Service_ServiceManagement_ConfigSource extends Google_Collection
   protected $filesType = 'Google_Service_ServiceManagement_ConfigFile';
   protected $filesDataType = 'array';
   public $id;
-  protected $optionsType = 'Google_Service_ServiceManagement_ConfigOptions';
-  protected $optionsDataType = '';
 
   public function setFiles($files)
   {
@@ -39,13 +37,5 @@ class Google_Service_ServiceManagement_ConfigSource extends Google_Collection
   public function getId()
   {
     return $this->id;
-  }
-  public function setOptions(Google_Service_ServiceManagement_ConfigOptions $options)
-  {
-    $this->options = $options;
-  }
-  public function getOptions()
-  {
-    return $this->options;
   }
 }

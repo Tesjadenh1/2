@@ -19,7 +19,9 @@
  * Service definition for ServiceManagement (v1).
  *
  * <p>
- * The service management API for Google Cloud Platform</p>
+ * Google Service Management allows service producers to publish their services
+ * on Google Cloud Platform so that they can be discovered and used by service
+ * consumers.</p>
  *
  * <p>
  * For more information about this service, see the API

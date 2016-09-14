@@ -33,6 +33,8 @@ class Google_Service_ServiceManagement_Service extends Google_Collection
   protected $customErrorDataType = '';
   protected $documentationType = 'Google_Service_ServiceManagement_Documentation';
   protected $documentationDataType = '';
+  protected $endpointsType = 'Google_Service_ServiceManagement_Endpoint';
+  protected $endpointsDataType = 'array';
   protected $enumsType = 'Google_Service_ServiceManagement_Enum';
   protected $enumsDataType = 'array';
   protected $httpType = 'Google_Service_ServiceManagement_Http';
@@ -125,6 +127,14 @@ class Google_Service_ServiceManagement_Service extends Google_Collection
   public function getDocumentation()
   {
     return $this->documentation;
+  }
+  public function setEndpoints($endpoints)
+  {
+    $this->endpoints = $endpoints;
+  }
+  public function getEndpoints()
+  {
+    return $this->endpoints;
   }
   public function setEnums($enums)
   {
