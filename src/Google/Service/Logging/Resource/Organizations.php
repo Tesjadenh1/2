@@ -15,27 +15,14 @@
  * the License.
  */
 
-class Google_Service_Logging_ListLogEntriesResponse extends Google_Collection
+/**
+ * The "organizations" collection of methods.
+ * Typical usage is:
+ *  <code>
+ *   $loggingService = new Google_Service_Logging(...);
+ *   $organizations = $loggingService->organizations;
+ *  </code>
+ */
+class Google_Service_Logging_Resource_Organizations extends Google_Service_Resource
 {
-  protected $collection_key = 'entries';
-  protected $entriesType = 'Google_Service_Logging_LogEntry';
-  protected $entriesDataType = 'array';
-  public $nextPageToken;
-
-  public function setEntries($entries)
-  {
-    $this->entries = $entries;
-  }
-  public function getEntries()
-  {
-    return $this->entries;
-  }
-  public function setNextPageToken($nextPageToken)
-  {
-    $this->nextPageToken = $nextPageToken;
-  }
-  public function getNextPageToken()
-  {
-    return $this->nextPageToken;
-  }
 }

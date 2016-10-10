@@ -21,6 +21,7 @@ class Google_Service_Logging_LogSink extends Google_Model
   public $filter;
   public $name;
   public $outputVersionFormat;
+  public $writerIdentity;
 
   public function setDestination($destination)
   {
@@ -53,5 +54,13 @@ class Google_Service_Logging_LogSink extends Google_Model
   public function getOutputVersionFormat()
   {
     return $this->outputVersionFormat;
+  }
+  public function setWriterIdentity($writerIdentity)
+  {
+    $this->writerIdentity = $writerIdentity;
+  }
+  public function getWriterIdentity()
+  {
+    return $this->writerIdentity;
   }
 }
