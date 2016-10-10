@@ -15,25 +15,18 @@
  * the License.
  */
 
-class Google_Service_Iam_CreateServiceAccountKeyRequest extends Google_Model
+class Google_Service_Iam_QueryGrantableRolesResponse extends Google_Collection
 {
-  public $keyAlgorithm;
-  public $privateKeyType;
+  protected $collection_key = 'roles';
+  protected $rolesType = 'Google_Service_Iam_Role';
+  protected $rolesDataType = 'array';
 
-  public function setKeyAlgorithm($keyAlgorithm)
+  public function setRoles($roles)
   {
-    $this->keyAlgorithm = $keyAlgorithm;
+    $this->roles = $roles;
   }
-  public function getKeyAlgorithm()
+  public function getRoles()
   {
-    return $this->keyAlgorithm;
-  }
-  public function setPrivateKeyType($privateKeyType)
-  {
-    $this->privateKeyType = $privateKeyType;
-  }
-  public function getPrivateKeyType()
-  {
-    return $this->privateKeyType;
+    return $this->roles;
   }
 }

@@ -15,25 +15,18 @@
  * the License.
  */
 
-class Google_Service_Iam_CreateServiceAccountKeyRequest extends Google_Model
+class Google_Service_Iam_PolicyDelta extends Google_Collection
 {
-  public $keyAlgorithm;
-  public $privateKeyType;
+  protected $collection_key = 'bindingDeltas';
+  protected $bindingDeltasType = 'Google_Service_Iam_BindingDelta';
+  protected $bindingDeltasDataType = 'array';
 
-  public function setKeyAlgorithm($keyAlgorithm)
+  public function setBindingDeltas($bindingDeltas)
   {
-    $this->keyAlgorithm = $keyAlgorithm;
+    $this->bindingDeltas = $bindingDeltas;
   }
-  public function getKeyAlgorithm()
+  public function getBindingDeltas()
   {
-    return $this->keyAlgorithm;
-  }
-  public function setPrivateKeyType($privateKeyType)
-  {
-    $this->privateKeyType = $privateKeyType;
-  }
-  public function getPrivateKeyType()
-  {
-    return $this->privateKeyType;
+    return $this->bindingDeltas;
   }
 }

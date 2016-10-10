@@ -15,36 +15,34 @@
  * the License.
  */
 
-class Google_Service_Iam_Policy extends Google_Collection
+class Google_Service_Iam_BindingDelta extends Google_Model
 {
-  protected $collection_key = 'bindings';
-  protected $bindingsType = 'Google_Service_Iam_Binding';
-  protected $bindingsDataType = 'array';
-  public $etag;
-  public $version;
+  public $action;
+  public $member;
+  public $role;
 
-  public function setBindings($bindings)
+  public function setAction($action)
   {
-    $this->bindings = $bindings;
+    $this->action = $action;
   }
-  public function getBindings()
+  public function getAction()
   {
-    return $this->bindings;
+    return $this->action;
   }
-  public function setEtag($etag)
+  public function setMember($member)
   {
-    $this->etag = $etag;
+    $this->member = $member;
   }
-  public function getEtag()
+  public function getMember()
   {
-    return $this->etag;
+    return $this->member;
   }
-  public function setVersion($version)
+  public function setRole($role)
   {
-    $this->version = $version;
+    $this->role = $role;
   }
-  public function getVersion()
+  public function getRole()
   {
-    return $this->version;
+    return $this->role;
   }
 }

@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_Iam_CreateServiceAccountKeyRequest extends Google_Model
+class Google_Service_Iam_AuditData extends Google_Model
 {
-  public $keyAlgorithm;
-  public $privateKeyType;
+  protected $policyDeltaType = 'Google_Service_Iam_PolicyDelta';
+  protected $policyDeltaDataType = '';
 
-  public function setKeyAlgorithm($keyAlgorithm)
+  public function setPolicyDelta(Google_Service_Iam_PolicyDelta $policyDelta)
   {
-    $this->keyAlgorithm = $keyAlgorithm;
+    $this->policyDelta = $policyDelta;
   }
-  public function getKeyAlgorithm()
+  public function getPolicyDelta()
   {
-    return $this->keyAlgorithm;
-  }
-  public function setPrivateKeyType($privateKeyType)
-  {
-    $this->privateKeyType = $privateKeyType;
-  }
-  public function getPrivateKeyType()
-  {
-    return $this->privateKeyType;
+    return $this->policyDelta;
   }
 }
