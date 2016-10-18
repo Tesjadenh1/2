@@ -61,6 +61,23 @@ class Google_Service_AndroidEnterprise_Resource_Enterprises extends Google_Servi
     return $this->call('completeSignup', array($params), "Google_Service_AndroidEnterprise_Enterprise");
   }
   /**
+   * Returns a unique token to access an embeddable UI. To generate a web UI, pass
+   * the generated token into the Play for Work javascript API. Each token may
+   * only be used to start one UI session. See the javascript API documentation
+   * for further information. (enterprises.createWebToken)
+   *
+   * @param string $enterpriseId The ID of the enterprise.
+   * @param Google_Service_AndroidEnterprise_AdministratorWebTokenSpec $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_AndroidEnterprise_AdministratorWebToken
+   */
+  public function createWebToken($enterpriseId, Google_Service_AndroidEnterprise_AdministratorWebTokenSpec $postBody, $optParams = array())
+  {
+    $params = array('enterpriseId' => $enterpriseId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('createWebToken', array($params), "Google_Service_AndroidEnterprise_AdministratorWebToken");
+  }
+  /**
    * Deletes the binding between the EMM and enterprise. This is now deprecated;
    * use this to unenroll customers that were previously enrolled with the
    * 'insert' call, then enroll them again with the 'enroll' call.

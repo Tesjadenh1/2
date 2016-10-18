@@ -15,12 +15,10 @@
  * the License.
  */
 
-class Google_Service_AndroidEnterprise_ProductSet extends Google_Collection
+class Google_Service_AndroidEnterprise_AdministratorWebToken extends Google_Model
 {
-  protected $collection_key = 'productId';
   public $kind;
-  public $productId;
-  public $productSetBehavior;
+  public $token;
 
   public function setKind($kind)
   {
@@ -30,20 +28,12 @@ class Google_Service_AndroidEnterprise_ProductSet extends Google_Collection
   {
     return $this->kind;
   }
-  public function setProductId($productId)
+  public function setToken($token)
   {
-    $this->productId = $productId;
+    $this->token = $token;
   }
-  public function getProductId()
+  public function getToken()
   {
-    return $this->productId;
-  }
-  public function setProductSetBehavior($productSetBehavior)
-  {
-    $this->productSetBehavior = $productSetBehavior;
-  }
-  public function getProductSetBehavior()
-  {
-    return $this->productSetBehavior;
+    return $this->token;
   }
 }
