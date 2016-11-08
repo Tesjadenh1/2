@@ -23,7 +23,7 @@
  *   $sinks = $loggingService->sinks;
  *  </code>
  */
-class Google_Service_Logging_Resource_ProjectsSinks extends Google_Service_Resource
+class Google_Service_Logging_Resource_OrganizationsSinks extends Google_Service_Resource
 {
   /**
    * Creates a sink. (sinks.create)
@@ -78,7 +78,7 @@ class Google_Service_Logging_Resource_ProjectsSinks extends Google_Service_Resou
     return $this->call('get', array($params), "Google_Service_Logging_LogSink");
   }
   /**
-   * Lists sinks. (sinks.listProjectsSinks)
+   * Lists sinks. (sinks.listOrganizationsSinks)
    *
    * @param string $parent Required. The resource name where this sink was
    * created. Example: `"projects/my-logging-project"`.
@@ -94,7 +94,7 @@ class Google_Service_Logging_Resource_ProjectsSinks extends Google_Service_Resou
    * method parameters should be identical to those in the previous call.
    * @return Google_Service_Logging_ListSinksResponse
    */
-  public function listProjectsSinks($parent, $optParams = array())
+  public function listOrganizationsSinks($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
     $params = array_merge($params, $optParams);
