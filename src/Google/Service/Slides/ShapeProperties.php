@@ -17,6 +17,8 @@
 
 class Google_Service_Slides_ShapeProperties extends Google_Model
 {
+  protected $linkType = 'Google_Service_Slides_Link';
+  protected $linkDataType = '';
   protected $outlineType = 'Google_Service_Slides_Outline';
   protected $outlineDataType = '';
   protected $shadowType = 'Google_Service_Slides_Shadow';
@@ -24,6 +26,14 @@ class Google_Service_Slides_ShapeProperties extends Google_Model
   protected $shapeBackgroundFillType = 'Google_Service_Slides_ShapeBackgroundFill';
   protected $shapeBackgroundFillDataType = '';
 
+  public function setLink(Google_Service_Slides_Link $link)
+  {
+    $this->link = $link;
+  }
+  public function getLink()
+  {
+    return $this->link;
+  }
   public function setOutline(Google_Service_Slides_Outline $outline)
   {
     $this->outline = $outline;

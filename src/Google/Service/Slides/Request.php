@@ -19,6 +19,8 @@ class Google_Service_Slides_Request extends Google_Model
 {
   protected $createImageType = 'Google_Service_Slides_CreateImageRequest';
   protected $createImageDataType = '';
+  protected $createLineType = 'Google_Service_Slides_CreateLineRequest';
+  protected $createLineDataType = '';
   protected $createParagraphBulletsType = 'Google_Service_Slides_CreateParagraphBulletsRequest';
   protected $createParagraphBulletsDataType = '';
   protected $createShapeType = 'Google_Service_Slides_CreateShapeRequest';
@@ -55,6 +57,8 @@ class Google_Service_Slides_Request extends Google_Model
   protected $replaceAllTextDataType = '';
   protected $updateImagePropertiesType = 'Google_Service_Slides_UpdateImagePropertiesRequest';
   protected $updateImagePropertiesDataType = '';
+  protected $updateLinePropertiesType = 'Google_Service_Slides_UpdateLinePropertiesRequest';
+  protected $updateLinePropertiesDataType = '';
   protected $updatePageElementTransformType = 'Google_Service_Slides_UpdatePageElementTransformRequest';
   protected $updatePageElementTransformDataType = '';
   protected $updatePagePropertiesType = 'Google_Service_Slides_UpdatePagePropertiesRequest';
@@ -77,6 +81,14 @@ class Google_Service_Slides_Request extends Google_Model
   public function getCreateImage()
   {
     return $this->createImage;
+  }
+  public function setCreateLine(Google_Service_Slides_CreateLineRequest $createLine)
+  {
+    $this->createLine = $createLine;
+  }
+  public function getCreateLine()
+  {
+    return $this->createLine;
   }
   public function setCreateParagraphBullets(Google_Service_Slides_CreateParagraphBulletsRequest $createParagraphBullets)
   {
@@ -221,6 +233,14 @@ class Google_Service_Slides_Request extends Google_Model
   public function getUpdateImageProperties()
   {
     return $this->updateImageProperties;
+  }
+  public function setUpdateLineProperties(Google_Service_Slides_UpdateLinePropertiesRequest $updateLineProperties)
+  {
+    $this->updateLineProperties = $updateLineProperties;
+  }
+  public function getUpdateLineProperties()
+  {
+    return $this->updateLineProperties;
   }
   public function setUpdatePageElementTransform(Google_Service_Slides_UpdatePageElementTransformRequest $updatePageElementTransform)
   {

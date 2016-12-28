@@ -28,7 +28,7 @@ class Google_Service_Slides_Resource_Presentations extends Google_Service_Resour
   /**
    * Applies one or more updates to the presentation.
    *
-   * Each request is validated before being applied. If any request is not valid
+   * Each request is validated before being applied. If any request is not valid,
    * then the entire request will fail and nothing will be applied.
    *
    * Some requests have replies to give you some information about how they are
@@ -36,15 +36,14 @@ class Google_Service_Slides_Resource_Presentations extends Google_Service_Resour
    * an empty reply. The order of replies matches that of the requests.
    *
    * For example, suppose you call batchUpdate with four updates, and only the
-   * third one returns information. The response would have two empty replies, the
+   * third one returns information. The response would have two empty replies: the
    * reply to the third request, and another empty reply, in that order.
    *
-   * Because other users may be editing the presentation, it is not guaranteed
-   * that the presentation will exactly reflect your changes: your changes may be
-   * altered with respect to collaborator changes. If there are no collaborators,
-   * the presentation should reflect your changes. In any case, it is guaranteed
-   * that the updates in your request will be applied together atomically.
-   * (presentations.batchUpdate)
+   * Because other users may be editing the presentation, the presentation might
+   * not exactly reflect your changes: your changes may be altered with respect to
+   * collaborator changes. If there are no collaborators, the presentation should
+   * reflect your changes. In any case, the updates in your request are guaranteed
+   * to be applied together atomically. (presentations.batchUpdate)
    *
    * @param string $presentationId The presentation to apply the updates to.
    * @param Google_Service_Slides_BatchUpdatePresentationRequest $postBody

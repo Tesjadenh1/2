@@ -17,10 +17,19 @@
 
 class Google_Service_Slides_AutoText extends Google_Model
 {
+  public $content;
   protected $styleType = 'Google_Service_Slides_TextStyle';
   protected $styleDataType = '';
   public $type;
 
+  public function setContent($content)
+  {
+    $this->content = $content;
+  }
+  public function getContent()
+  {
+    return $this->content;
+  }
   public function setStyle(Google_Service_Slides_TextStyle $style)
   {
     $this->style = $style;

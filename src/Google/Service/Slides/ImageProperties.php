@@ -21,6 +21,8 @@ class Google_Service_Slides_ImageProperties extends Google_Model
   public $contrast;
   protected $cropPropertiesType = 'Google_Service_Slides_CropProperties';
   protected $cropPropertiesDataType = '';
+  protected $linkType = 'Google_Service_Slides_Link';
+  protected $linkDataType = '';
   protected $outlineType = 'Google_Service_Slides_Outline';
   protected $outlineDataType = '';
   protected $recolorType = 'Google_Service_Slides_Recolor';
@@ -52,6 +54,14 @@ class Google_Service_Slides_ImageProperties extends Google_Model
   public function getCropProperties()
   {
     return $this->cropProperties;
+  }
+  public function setLink(Google_Service_Slides_Link $link)
+  {
+    $this->link = $link;
+  }
+  public function getLink()
+  {
+    return $this->link;
   }
   public function setOutline(Google_Service_Slides_Outline $outline)
   {

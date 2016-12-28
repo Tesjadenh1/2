@@ -21,6 +21,8 @@ class Google_Service_Slides_LineProperties extends Google_Model
   public $endArrow;
   protected $lineFillType = 'Google_Service_Slides_LineFill';
   protected $lineFillDataType = '';
+  protected $linkType = 'Google_Service_Slides_Link';
+  protected $linkDataType = '';
   public $startArrow;
   protected $weightType = 'Google_Service_Slides_Dimension';
   protected $weightDataType = '';
@@ -48,6 +50,14 @@ class Google_Service_Slides_LineProperties extends Google_Model
   public function getLineFill()
   {
     return $this->lineFill;
+  }
+  public function setLink(Google_Service_Slides_Link $link)
+  {
+    $this->link = $link;
+  }
+  public function getLink()
+  {
+    return $this->link;
   }
   public function setStartArrow($startArrow)
   {
