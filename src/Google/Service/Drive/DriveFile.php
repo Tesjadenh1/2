@@ -29,6 +29,7 @@ class Google_Service_Drive_DriveFile extends Google_Collection
   public $fileExtension;
   public $folderColorRgb;
   public $fullFileExtension;
+  public $hasThumbnail;
   public $headRevisionId;
   public $iconLink;
   public $id;
@@ -61,6 +62,7 @@ class Google_Service_Drive_DriveFile extends Google_Collection
   public $spaces;
   public $starred;
   public $thumbnailLink;
+  public $thumbnailVersion;
   public $trashed;
   public $version;
   protected $videoMediaMetadataType = 'Google_Service_Drive_DriveFileVideoMediaMetadata';
@@ -143,6 +145,14 @@ class Google_Service_Drive_DriveFile extends Google_Collection
   public function getFullFileExtension()
   {
     return $this->fullFileExtension;
+  }
+  public function setHasThumbnail($hasThumbnail)
+  {
+    $this->hasThumbnail = $hasThumbnail;
+  }
+  public function getHasThumbnail()
+  {
+    return $this->hasThumbnail;
   }
   public function setHeadRevisionId($headRevisionId)
   {
@@ -359,6 +369,14 @@ class Google_Service_Drive_DriveFile extends Google_Collection
   public function getThumbnailLink()
   {
     return $this->thumbnailLink;
+  }
+  public function setThumbnailVersion($thumbnailVersion)
+  {
+    $this->thumbnailVersion = $thumbnailVersion;
+  }
+  public function getThumbnailVersion()
+  {
+    return $this->thumbnailVersion;
   }
   public function setTrashed($trashed)
   {
