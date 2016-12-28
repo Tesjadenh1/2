@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for CloudNaturalLanguage (v1beta1).
+ * Service definition for CloudNaturalLanguage (v1).
  *
  * <p>
  * Google Cloud Natural Language API provides natural language understanding
@@ -48,7 +48,7 @@ class Google_Service_CloudNaturalLanguage extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://language.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1beta1';
+    $this->version = 'v1';
     $this->serviceName = 'language';
 
     $this->documents = new Google_Service_CloudNaturalLanguage_Resource_Documents(
@@ -58,15 +58,19 @@ class Google_Service_CloudNaturalLanguage extends Google_Service
         array(
           'methods' => array(
             'analyzeEntities' => array(
-              'path' => 'v1beta1/documents:analyzeEntities',
+              'path' => 'v1/documents:analyzeEntities',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'analyzeSentiment' => array(
-              'path' => 'v1beta1/documents:analyzeSentiment',
+              'path' => 'v1/documents:analyzeSentiment',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'analyzeSyntax' => array(
+              'path' => 'v1/documents:analyzeSyntax',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'annotateText' => array(
-              'path' => 'v1beta1/documents:annotateText',
+              'path' => 'v1/documents:annotateText',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),

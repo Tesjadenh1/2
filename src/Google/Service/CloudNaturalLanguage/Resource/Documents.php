@@ -54,6 +54,21 @@ class Google_Service_CloudNaturalLanguage_Resource_Documents extends Google_Serv
     return $this->call('analyzeSentiment', array($params), "Google_Service_CloudNaturalLanguage_AnalyzeSentimentResponse");
   }
   /**
+   * Analyzes the syntax of the text and provides sentence boundaries and
+   * tokenization along with part of speech tags, dependency trees, and other
+   * properties. (documents.analyzeSyntax)
+   *
+   * @param Google_Service_CloudNaturalLanguage_AnalyzeSyntaxRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudNaturalLanguage_AnalyzeSyntaxResponse
+   */
+  public function analyzeSyntax(Google_Service_CloudNaturalLanguage_AnalyzeSyntaxRequest $postBody, $optParams = array())
+  {
+    $params = array('postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('analyzeSyntax', array($params), "Google_Service_CloudNaturalLanguage_AnalyzeSyntaxResponse");
+  }
+  /**
    * A convenience method that provides all the features that analyzeSentiment,
    * analyzeEntities, and analyzeSyntax provide in one call.
    * (documents.annotateText)

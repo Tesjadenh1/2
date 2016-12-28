@@ -15,23 +15,15 @@
  * the License.
  */
 
-class Google_Service_CloudNaturalLanguage_AnalyzeSentimentResponse extends Google_Collection
+class Google_Service_CloudNaturalLanguage_AnalyzeSyntaxResponse extends Google_Collection
 {
-  protected $collection_key = 'sentences';
-  protected $documentSentimentType = 'Google_Service_CloudNaturalLanguage_Sentiment';
-  protected $documentSentimentDataType = '';
+  protected $collection_key = 'tokens';
   public $language;
   protected $sentencesType = 'Google_Service_CloudNaturalLanguage_Sentence';
   protected $sentencesDataType = 'array';
+  protected $tokensType = 'Google_Service_CloudNaturalLanguage_Token';
+  protected $tokensDataType = 'array';
 
-  public function setDocumentSentiment(Google_Service_CloudNaturalLanguage_Sentiment $documentSentiment)
-  {
-    $this->documentSentiment = $documentSentiment;
-  }
-  public function getDocumentSentiment()
-  {
-    return $this->documentSentiment;
-  }
   public function setLanguage($language)
   {
     $this->language = $language;
@@ -47,5 +39,13 @@ class Google_Service_CloudNaturalLanguage_AnalyzeSentimentResponse extends Googl
   public function getSentences()
   {
     return $this->sentences;
+  }
+  public function setTokens($tokens)
+  {
+    $this->tokens = $tokens;
+  }
+  public function getTokens()
+  {
+    return $this->tokens;
   }
 }

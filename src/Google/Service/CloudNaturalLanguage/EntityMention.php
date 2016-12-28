@@ -19,6 +19,7 @@ class Google_Service_CloudNaturalLanguage_EntityMention extends Google_Model
 {
   protected $textType = 'Google_Service_CloudNaturalLanguage_TextSpan';
   protected $textDataType = '';
+  public $type;
 
   public function setText(Google_Service_CloudNaturalLanguage_TextSpan $text)
   {
@@ -27,5 +28,13 @@ class Google_Service_CloudNaturalLanguage_EntityMention extends Google_Model
   public function getText()
   {
     return $this->text;
+  }
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
   }
 }

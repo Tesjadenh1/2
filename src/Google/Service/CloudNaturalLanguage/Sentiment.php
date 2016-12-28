@@ -18,7 +18,7 @@
 class Google_Service_CloudNaturalLanguage_Sentiment extends Google_Model
 {
   public $magnitude;
-  public $polarity;
+  public $score;
 
   public function setMagnitude($magnitude)
   {
@@ -28,12 +28,12 @@ class Google_Service_CloudNaturalLanguage_Sentiment extends Google_Model
   {
     return $this->magnitude;
   }
-  public function setPolarity($polarity)
+  public function setScore($score)
   {
-    $this->polarity = $polarity;
+    $this->score = $score;
   }
-  public function getPolarity()
+  public function getScore()
   {
-    return $this->polarity;
+    return $this->score;
   }
 }

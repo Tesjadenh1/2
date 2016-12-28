@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_CloudNaturalLanguage_AnalyzeSentimentRequest extends Google_Model
+class Google_Service_CloudNaturalLanguage_AnalyzeSyntaxRequest extends Google_Model
 {
   protected $documentType = 'Google_Service_CloudNaturalLanguage_Document';
   protected $documentDataType = '';
