@@ -15,29 +15,18 @@
  * the License.
  */
 
-class Google_Service_Appengine_Network extends Google_Collection
+class Google_Service_Appengine_EndpointsApiService extends Google_Model
 {
-  protected $collection_key = 'forwardedPorts';
-  public $forwardedPorts;
-  public $instanceTag;
+  public $configId;
   public $name;
-  public $subnetworkName;
 
-  public function setForwardedPorts($forwardedPorts)
+  public function setConfigId($configId)
   {
-    $this->forwardedPorts = $forwardedPorts;
+    $this->configId = $configId;
   }
-  public function getForwardedPorts()
+  public function getConfigId()
   {
-    return $this->forwardedPorts;
-  }
-  public function setInstanceTag($instanceTag)
-  {
-    $this->instanceTag = $instanceTag;
-  }
-  public function getInstanceTag()
-  {
-    return $this->instanceTag;
+    return $this->configId;
   }
   public function setName($name)
   {
@@ -46,13 +35,5 @@ class Google_Service_Appengine_Network extends Google_Collection
   public function getName()
   {
     return $this->name;
-  }
-  public function setSubnetworkName($subnetworkName)
-  {
-    $this->subnetworkName = $subnetworkName;
-  }
-  public function getSubnetworkName()
-  {
-    return $this->subnetworkName;
   }
 }

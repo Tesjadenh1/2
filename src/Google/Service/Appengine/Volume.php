@@ -15,30 +15,12 @@
  * the License.
  */
 
-class Google_Service_Appengine_Network extends Google_Collection
+class Google_Service_Appengine_Volume extends Google_Model
 {
-  protected $collection_key = 'forwardedPorts';
-  public $forwardedPorts;
-  public $instanceTag;
   public $name;
-  public $subnetworkName;
+  public $sizeGb;
+  public $volumeType;
 
-  public function setForwardedPorts($forwardedPorts)
-  {
-    $this->forwardedPorts = $forwardedPorts;
-  }
-  public function getForwardedPorts()
-  {
-    return $this->forwardedPorts;
-  }
-  public function setInstanceTag($instanceTag)
-  {
-    $this->instanceTag = $instanceTag;
-  }
-  public function getInstanceTag()
-  {
-    return $this->instanceTag;
-  }
   public function setName($name)
   {
     $this->name = $name;
@@ -47,12 +29,20 @@ class Google_Service_Appengine_Network extends Google_Collection
   {
     return $this->name;
   }
-  public function setSubnetworkName($subnetworkName)
+  public function setSizeGb($sizeGb)
   {
-    $this->subnetworkName = $subnetworkName;
+    $this->sizeGb = $sizeGb;
   }
-  public function getSubnetworkName()
+  public function getSizeGb()
   {
-    return $this->subnetworkName;
+    return $this->sizeGb;
+  }
+  public function setVolumeType($volumeType)
+  {
+    $this->volumeType = $volumeType;
+  }
+  public function getVolumeType()
+  {
+    return $this->volumeType;
   }
 }
