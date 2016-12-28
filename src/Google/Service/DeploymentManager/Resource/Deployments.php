@@ -48,6 +48,8 @@ class Google_Service_DeploymentManager_Resource_Deployments extends Google_Servi
    * @param string $project The project ID for this request.
    * @param string $deployment The name of the deployment for this request.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string deletePolicy Sets the policy to use for deleting resources.
    * @return Google_Service_DeploymentManager_Operation
    */
   public function delete($project, $deployment, $optParams = array())

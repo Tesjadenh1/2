@@ -97,6 +97,10 @@ class Google_Service_DeploymentManager extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'deletePolicy' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'get' => array(
               'path' => '{project}/global/deployments/{deployment}',
