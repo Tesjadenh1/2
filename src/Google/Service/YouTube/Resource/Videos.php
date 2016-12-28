@@ -183,8 +183,8 @@ class Google_Service_YouTube_Resource_Videos extends Google_Service_Resource
    * number of items that should be returned in the result set.
    *
    * Note: This parameter is supported for use in conjunction with the myRating
-   * parameter, but it is not supported for use in conjunction with the id
-   * parameter.
+   * and chart parameters, but it is not supported for use in conjunction with the
+   * id parameter.
    * @opt_param string maxWidth The maxWidth parameter specifies a maximum width
    * of the embedded player. If maxHeight is provided, maxWidth may not be reached
    * in order to not violate the height request.
@@ -209,8 +209,8 @@ class Google_Service_YouTube_Resource_Videos extends Google_Service_Resource
    * retrieved.
    *
    * Note: This parameter is supported for use in conjunction with the myRating
-   * parameter, but it is not supported for use in conjunction with the id
-   * parameter.
+   * and chart parameters, but it is not supported for use in conjunction with the
+   * id parameter.
    * @opt_param string regionCode The regionCode parameter instructs the API to
    * select a video chart available in the specified region. This parameter can
    * only be used in conjunction with the chart parameter. The parameter value is
