@@ -373,6 +373,16 @@ class Google_Service_Gmail extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'batchModify' => array(
+              'path' => '{userId}/messages/batchModify',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'userId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'delete' => array(
               'path' => '{userId}/messages/{id}',
               'httpMethod' => 'DELETE',
