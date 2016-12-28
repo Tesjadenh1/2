@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_SQLAdmin_IpMapping extends Google_Model
+class Google_Service_SQLAdmin_TruncateLogContext extends Google_Model
 {
-  public $ipAddress;
-  public $timeToRetire;
-  public $type;
+  public $kind;
+  public $logType;
 
-  public function setIpAddress($ipAddress)
+  public function setKind($kind)
   {
-    $this->ipAddress = $ipAddress;
+    $this->kind = $kind;
   }
-  public function getIpAddress()
+  public function getKind()
   {
-    return $this->ipAddress;
+    return $this->kind;
   }
-  public function setTimeToRetire($timeToRetire)
+  public function setLogType($logType)
   {
-    $this->timeToRetire = $timeToRetire;
+    $this->logType = $logType;
   }
-  public function getTimeToRetire()
+  public function getLogType()
   {
-    return $this->timeToRetire;
-  }
-  public function setType($type)
-  {
-    $this->type = $type;
-  }
-  public function getType()
-  {
-    return $this->type;
+    return $this->logType;
   }
 }
