@@ -195,6 +195,11 @@ class Google_Service_Compute_Resource_RegionInstanceGroupManagers extends Google
    * @param string $region Name of the region scoping this request.
    * @param string $instanceGroupManager The name of the managed instance group.
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string filter
+   * @opt_param string maxResults
+   * @opt_param string order_by
+   * @opt_param string pageToken
    * @return Google_Service_Compute_RegionInstanceGroupManagersListInstancesResponse
    */
   public function listManagedInstances($project, $region, $instanceGroupManager, $optParams = array())

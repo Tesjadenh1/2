@@ -15,10 +15,13 @@
  * the License.
  */
 
-class Google_Service_Compute_CacheInvalidationRule extends Google_Model
+class Google_Service_Compute_HTTPSHealthCheck extends Google_Model
 {
   public $host;
-  public $path;
+  public $port;
+  public $portName;
+  public $proxyHeader;
+  public $requestPath;
 
   public function setHost($host)
   {
@@ -28,12 +31,36 @@ class Google_Service_Compute_CacheInvalidationRule extends Google_Model
   {
     return $this->host;
   }
-  public function setPath($path)
+  public function setPort($port)
   {
-    $this->path = $path;
+    $this->port = $port;
   }
-  public function getPath()
+  public function getPort()
   {
-    return $this->path;
+    return $this->port;
+  }
+  public function setPortName($portName)
+  {
+    $this->portName = $portName;
+  }
+  public function getPortName()
+  {
+    return $this->portName;
+  }
+  public function setProxyHeader($proxyHeader)
+  {
+    $this->proxyHeader = $proxyHeader;
+  }
+  public function getProxyHeader()
+  {
+    return $this->proxyHeader;
+  }
+  public function setRequestPath($requestPath)
+  {
+    $this->requestPath = $requestPath;
+  }
+  public function getRequestPath()
+  {
+    return $this->requestPath;
   }
 }
