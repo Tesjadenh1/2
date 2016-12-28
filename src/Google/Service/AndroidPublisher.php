@@ -48,6 +48,7 @@ class Google_Service_AndroidPublisher extends Google_Service
   public $inappproducts;
   public $purchases_products;
   public $purchases_subscriptions;
+  public $purchases_voidedpurchases;
   public $reviews;
   
   /**
@@ -1232,6 +1233,46 @@ class Google_Service_AndroidPublisher extends Google_Service
           )
         )
     );
+    $this->purchases_voidedpurchases = new Google_Service_AndroidPublisher_Resource_PurchasesVoidedpurchases(
+        $this,
+        $this->serviceName,
+        'voidedpurchases',
+        array(
+          'methods' => array(
+            'list' => array(
+              'path' => '{packageName}/purchases/voidedpurchases',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'endTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'startIndex' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'startTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'token' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->reviews = new Google_Service_AndroidPublisher_Resource_Reviews(
         $this,
         $this->serviceName,
@@ -1252,6 +1293,10 @@ class Google_Service_AndroidPublisher extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'translationLanguage' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'list' => array(
               'path' => '{packageName}/reviews',
@@ -1271,6 +1316,10 @@ class Google_Service_AndroidPublisher extends Google_Service
                   'type' => 'integer',
                 ),
                 'token' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'translationLanguage' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
