@@ -15,22 +15,12 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_AuditConfig extends Google_Collection
+class Google_Service_ServiceManagement_AuditLogConfig extends Google_Collection
 {
   protected $collection_key = 'exemptedMembers';
-  protected $auditLogConfigsType = 'Google_Service_ServiceManagement_AuditLogConfig';
-  protected $auditLogConfigsDataType = 'array';
   public $exemptedMembers;
-  public $service;
+  public $logType;
 
-  public function setAuditLogConfigs($auditLogConfigs)
-  {
-    $this->auditLogConfigs = $auditLogConfigs;
-  }
-  public function getAuditLogConfigs()
-  {
-    return $this->auditLogConfigs;
-  }
   public function setExemptedMembers($exemptedMembers)
   {
     $this->exemptedMembers = $exemptedMembers;
@@ -39,12 +29,12 @@ class Google_Service_ServiceManagement_AuditConfig extends Google_Collection
   {
     return $this->exemptedMembers;
   }
-  public function setService($service)
+  public function setLogType($logType)
   {
-    $this->service = $service;
+    $this->logType = $logType;
   }
-  public function getService()
+  public function getLogType()
   {
-    return $this->service;
+    return $this->logType;
   }
 }
