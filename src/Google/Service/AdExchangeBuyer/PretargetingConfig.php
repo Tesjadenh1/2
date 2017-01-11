@@ -34,6 +34,7 @@ class Google_Service_AdExchangeBuyer_PretargetingConfig extends Google_Collectio
   public $isActive;
   public $kind;
   public $languages;
+  public $minimumViewabilityDecile;
   public $mobileCarriers;
   public $mobileDevices;
   public $mobileOperatingSystemVersions;
@@ -159,6 +160,14 @@ class Google_Service_AdExchangeBuyer_PretargetingConfig extends Google_Collectio
   public function getLanguages()
   {
     return $this->languages;
+  }
+  public function setMinimumViewabilityDecile($minimumViewabilityDecile)
+  {
+    $this->minimumViewabilityDecile = $minimumViewabilityDecile;
+  }
+  public function getMinimumViewabilityDecile()
+  {
+    return $this->minimumViewabilityDecile;
   }
   public function setMobileCarriers($mobileCarriers)
   {
