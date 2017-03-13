@@ -64,6 +64,17 @@ class Google_Service_Tracing_Resource_ProjectsTraces extends Google_Service_Reso
    * @param string $parent ID of the Cloud project where the trace data is stored.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string orderBy Field used to sort the returned traces. Optional.
+   * Can be one of the following:
+   *
+   * *   `trace_id` *   `name` (`name` field of root span in the trace) *
+   * `duration` (difference between `end_time` and `start_time` fields of      the
+   * root span) *   `start` (`start_time` field of the root span)
+   *
+   * Descending order can be specified by appending `desc` to the sort field (for
+   * example, `name desc`).
+   *
+   * Only one sort field is permitted.
    * @opt_param string filter An optional filter for the request. Example:
    * "version_label_key:a some_label:some_label_key" returns traces from version a
    * and has some_label with some_label_key.
@@ -77,17 +88,6 @@ class Google_Service_Tracing_Resource_ProjectsTraces extends Google_Service_Reso
    * @opt_param int pageSize Maximum number of traces to return. If not specified
    * or <= 0, the implementation selects a reasonable value.  The implementation
    * may return fewer traces than the requested page size. Optional.
-   * @opt_param string orderBy Field used to sort the returned traces. Optional.
-   * Can be one of the following:
-   *
-   * *   `trace_id` *   `name` (`name` field of root span in the trace) *
-   * `duration` (difference between `end_time` and `start_time` fields of      the
-   * root span) *   `start` (`start_time` field of the root span)
-   *
-   * Descending order can be specified by appending `desc` to the sort field (for
-   * example, `name desc`).
-   *
-   * Only one sort field is permitted.
    * @return Google_Service_Tracing_ListTracesResponse
    */
   public function listProjectsTraces($parent, $optParams = array())

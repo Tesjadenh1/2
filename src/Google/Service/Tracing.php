@@ -90,6 +90,10 @@ class Google_Service_Tracing extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'orderBy' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -109,10 +113,6 @@ class Google_Service_Tracing extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'orderBy' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'listSpans' => array(
