@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_MediaUpload extends Google_Model
+class Google_Service_ServiceManagement_Experimental extends Google_Model
 {
-  public $enabled;
-  public $uploadService;
+  protected $authorizationType = 'Google_Service_ServiceManagement_AuthorizationConfig';
+  protected $authorizationDataType = '';
 
-  public function setEnabled($enabled)
+  public function setAuthorization(Google_Service_ServiceManagement_AuthorizationConfig $authorization)
   {
-    $this->enabled = $enabled;
+    $this->authorization = $authorization;
   }
-  public function getEnabled()
+  public function getAuthorization()
   {
-    return $this->enabled;
-  }
-  public function setUploadService($uploadService)
-  {
-    $this->uploadService = $uploadService;
-  }
-  public function getUploadService()
-  {
-    return $this->uploadService;
+    return $this->authorization;
   }
 }

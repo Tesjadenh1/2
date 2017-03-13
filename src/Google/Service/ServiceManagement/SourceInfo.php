@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_MediaUpload extends Google_Model
+class Google_Service_ServiceManagement_SourceInfo extends Google_Collection
 {
-  public $enabled;
-  public $uploadService;
+  protected $collection_key = 'sourceFiles';
+  public $sourceFiles;
 
-  public function setEnabled($enabled)
+  public function setSourceFiles($sourceFiles)
   {
-    $this->enabled = $enabled;
+    $this->sourceFiles = $sourceFiles;
   }
-  public function getEnabled()
+  public function getSourceFiles()
   {
-    return $this->enabled;
-  }
-  public function setUploadService($uploadService)
-  {
-    $this->uploadService = $uploadService;
-  }
-  public function getUploadService()
-  {
-    return $this->uploadService;
+    return $this->sourceFiles;
   }
 }

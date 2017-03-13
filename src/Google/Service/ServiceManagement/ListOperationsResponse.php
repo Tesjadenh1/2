@@ -15,25 +15,27 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_MediaUpload extends Google_Model
+class Google_Service_ServiceManagement_ListOperationsResponse extends Google_Collection
 {
-  public $enabled;
-  public $uploadService;
+  protected $collection_key = 'operations';
+  public $nextPageToken;
+  protected $operationsType = 'Google_Service_ServiceManagement_Operation';
+  protected $operationsDataType = 'array';
 
-  public function setEnabled($enabled)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->enabled = $enabled;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getEnabled()
+  public function getNextPageToken()
   {
-    return $this->enabled;
+    return $this->nextPageToken;
   }
-  public function setUploadService($uploadService)
+  public function setOperations($operations)
   {
-    $this->uploadService = $uploadService;
+    $this->operations = $operations;
   }
-  public function getUploadService()
+  public function getOperations()
   {
-    return $this->uploadService;
+    return $this->operations;
   }
 }
