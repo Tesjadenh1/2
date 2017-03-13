@@ -103,10 +103,6 @@ class Google_Service_FirebaseRulesAPI_Resource_ProjectsReleases extends Google_S
    * Format: `projects/{project_id}`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Page size to load. Maximum of 100. Defaults to 10.
-   * Note: `page_size` is just a hint and the service may choose to load less than
-   * `page_size` due to the size of the output. To traverse all of the releases,
-   * caller should iterate until the `page_token` is empty.
    * @opt_param string filter `Release` filter. The list method supports filters
    * with restrictions on the `Release` `name` and also on the `Ruleset`
    * `ruleset_name`.
@@ -135,6 +131,10 @@ class Google_Service_FirebaseRulesAPI_Resource_ProjectsReleases extends Google_S
    * `name=projects/foo/releases/prod* ruleset_name=projects/foo/rulesets/uuid1`
    * @opt_param string pageToken Next page token for the next batch of `Release`
    * instances.
+   * @opt_param int pageSize Page size to load. Maximum of 100. Defaults to 10.
+   * Note: `page_size` is just a hint and the service may choose to load less than
+   * `page_size` due to the size of the output. To traverse all of the releases,
+   * caller should iterate until the `page_token` is empty.
    * @return Google_Service_FirebaseRulesAPI_ListReleasesResponse
    */
   public function listProjectsReleases($name, $optParams = array())
