@@ -15,30 +15,28 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_ReportResponse extends Google_Collection
+class Google_Service_ServiceControl_AllocateQuotaRequest extends Google_Model
 {
-  protected $collection_key = 'reportInfos';
-  protected $reportErrorsType = 'Google_Service_ServiceControl_ReportError';
-  protected $reportErrorsDataType = 'array';
-  protected $reportInfosType = 'Google_Service_ServiceControl_ReportInfo';
-  protected $reportInfosDataType = 'array';
+  protected $allocateOperationType = 'Google_Service_ServiceControl_QuotaOperation';
+  protected $allocateOperationDataType = '';
+  public $allocationMode;
   public $serviceConfigId;
 
-  public function setReportErrors($reportErrors)
+  public function setAllocateOperation(Google_Service_ServiceControl_QuotaOperation $allocateOperation)
   {
-    $this->reportErrors = $reportErrors;
+    $this->allocateOperation = $allocateOperation;
   }
-  public function getReportErrors()
+  public function getAllocateOperation()
   {
-    return $this->reportErrors;
+    return $this->allocateOperation;
   }
-  public function setReportInfos($reportInfos)
+  public function setAllocationMode($allocationMode)
   {
-    $this->reportInfos = $reportInfos;
+    $this->allocationMode = $allocationMode;
   }
-  public function getReportInfos()
+  public function getAllocationMode()
   {
-    return $this->reportInfos;
+    return $this->allocationMode;
   }
   public function setServiceConfigId($serviceConfigId)
   {

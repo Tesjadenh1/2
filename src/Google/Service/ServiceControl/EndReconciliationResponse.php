@@ -15,34 +15,16 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_CheckResponse extends Google_Collection
+class Google_Service_ServiceControl_EndReconciliationResponse extends Google_Collection
 {
-  protected $collection_key = 'checkErrors';
-  protected $checkErrorsType = 'Google_Service_ServiceControl_CheckError';
-  protected $checkErrorsDataType = 'array';
-  protected $checkInfoType = 'Google_Service_ServiceControl_CheckInfo';
-  protected $checkInfoDataType = '';
+  protected $collection_key = 'reconciliationErrors';
   public $operationId;
-  protected $quotaInfoType = 'Google_Service_ServiceControl_QuotaInfo';
-  protected $quotaInfoDataType = '';
+  protected $quotaMetricsType = 'Google_Service_ServiceControl_MetricValueSet';
+  protected $quotaMetricsDataType = 'array';
+  protected $reconciliationErrorsType = 'Google_Service_ServiceControl_QuotaError';
+  protected $reconciliationErrorsDataType = 'array';
   public $serviceConfigId;
 
-  public function setCheckErrors($checkErrors)
-  {
-    $this->checkErrors = $checkErrors;
-  }
-  public function getCheckErrors()
-  {
-    return $this->checkErrors;
-  }
-  public function setCheckInfo(Google_Service_ServiceControl_CheckInfo $checkInfo)
-  {
-    $this->checkInfo = $checkInfo;
-  }
-  public function getCheckInfo()
-  {
-    return $this->checkInfo;
-  }
   public function setOperationId($operationId)
   {
     $this->operationId = $operationId;
@@ -51,13 +33,21 @@ class Google_Service_ServiceControl_CheckResponse extends Google_Collection
   {
     return $this->operationId;
   }
-  public function setQuotaInfo(Google_Service_ServiceControl_QuotaInfo $quotaInfo)
+  public function setQuotaMetrics($quotaMetrics)
   {
-    $this->quotaInfo = $quotaInfo;
+    $this->quotaMetrics = $quotaMetrics;
   }
-  public function getQuotaInfo()
+  public function getQuotaMetrics()
   {
-    return $this->quotaInfo;
+    return $this->quotaMetrics;
+  }
+  public function setReconciliationErrors($reconciliationErrors)
+  {
+    $this->reconciliationErrors = $reconciliationErrors;
+  }
+  public function getReconciliationErrors()
+  {
+    return $this->reconciliationErrors;
   }
   public function setServiceConfigId($serviceConfigId)
   {

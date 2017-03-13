@@ -15,30 +15,19 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_ReportResponse extends Google_Collection
+class Google_Service_ServiceControl_EndReconciliationRequest extends Google_Model
 {
-  protected $collection_key = 'reportInfos';
-  protected $reportErrorsType = 'Google_Service_ServiceControl_ReportError';
-  protected $reportErrorsDataType = 'array';
-  protected $reportInfosType = 'Google_Service_ServiceControl_ReportInfo';
-  protected $reportInfosDataType = 'array';
+  protected $reconciliationOperationType = 'Google_Service_ServiceControl_QuotaOperation';
+  protected $reconciliationOperationDataType = '';
   public $serviceConfigId;
 
-  public function setReportErrors($reportErrors)
+  public function setReconciliationOperation(Google_Service_ServiceControl_QuotaOperation $reconciliationOperation)
   {
-    $this->reportErrors = $reportErrors;
+    $this->reconciliationOperation = $reconciliationOperation;
   }
-  public function getReportErrors()
+  public function getReconciliationOperation()
   {
-    return $this->reportErrors;
-  }
-  public function setReportInfos($reportInfos)
-  {
-    $this->reportInfos = $reportInfos;
-  }
-  public function getReportInfos()
-  {
-    return $this->reportInfos;
+    return $this->reconciliationOperation;
   }
   public function setServiceConfigId($serviceConfigId)
   {
