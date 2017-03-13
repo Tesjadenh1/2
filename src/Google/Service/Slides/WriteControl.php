@@ -15,27 +15,16 @@
  * the License.
  */
 
-class Google_Service_Slides_Recolor extends Google_Collection
+class Google_Service_Slides_WriteControl extends Google_Model
 {
-  protected $collection_key = 'recolorStops';
-  public $name;
-  protected $recolorStopsType = 'Google_Service_Slides_ColorStop';
-  protected $recolorStopsDataType = 'array';
+  public $requiredRevisionId;
 
-  public function setName($name)
+  public function setRequiredRevisionId($requiredRevisionId)
   {
-    $this->name = $name;
+    $this->requiredRevisionId = $requiredRevisionId;
   }
-  public function getName()
+  public function getRequiredRevisionId()
   {
-    return $this->name;
-  }
-  public function setRecolorStops($recolorStops)
-  {
-    $this->recolorStops = $recolorStops;
-  }
-  public function getRecolorStops()
-  {
-    return $this->recolorStops;
+    return $this->requiredRevisionId;
   }
 }

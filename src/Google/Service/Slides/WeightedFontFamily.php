@@ -15,27 +15,25 @@
  * the License.
  */
 
-class Google_Service_Slides_Recolor extends Google_Collection
+class Google_Service_Slides_WeightedFontFamily extends Google_Model
 {
-  protected $collection_key = 'recolorStops';
-  public $name;
-  protected $recolorStopsType = 'Google_Service_Slides_ColorStop';
-  protected $recolorStopsDataType = 'array';
+  public $fontFamily;
+  public $weight;
 
-  public function setName($name)
+  public function setFontFamily($fontFamily)
   {
-    $this->name = $name;
+    $this->fontFamily = $fontFamily;
   }
-  public function getName()
+  public function getFontFamily()
   {
-    return $this->name;
+    return $this->fontFamily;
   }
-  public function setRecolorStops($recolorStops)
+  public function setWeight($weight)
   {
-    $this->recolorStops = $recolorStops;
+    $this->weight = $weight;
   }
-  public function getRecolorStops()
+  public function getWeight()
   {
-    return $this->recolorStops;
+    return $this->weight;
   }
 }
