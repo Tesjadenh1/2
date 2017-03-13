@@ -15,20 +15,19 @@
  * the License.
  */
 
-class Google_Service_People_Biography extends Google_Model
+class Google_Service_People_AgeRangeType extends Google_Model
 {
-  public $contentType;
+  public $ageRange;
   protected $metadataType = 'Google_Service_People_FieldMetadata';
   protected $metadataDataType = '';
-  public $value;
 
-  public function setContentType($contentType)
+  public function setAgeRange($ageRange)
   {
-    $this->contentType = $contentType;
+    $this->ageRange = $ageRange;
   }
-  public function getContentType()
+  public function getAgeRange()
   {
-    return $this->contentType;
+    return $this->ageRange;
   }
   public function setMetadata(Google_Service_People_FieldMetadata $metadata)
   {
@@ -37,13 +36,5 @@ class Google_Service_People_Biography extends Google_Model
   public function getMetadata()
   {
     return $this->metadata;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
   }
 }
