@@ -127,14 +127,6 @@ class Google_Service_People extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'requestSyncToken' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'requestMask.includeField' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -148,6 +140,14 @@ class Google_Service_People extends Google_Service
                   'type' => 'string',
                 ),
                 'sortOrder' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'requestSyncToken' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
