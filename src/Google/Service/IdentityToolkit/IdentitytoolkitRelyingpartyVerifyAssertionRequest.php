@@ -17,6 +17,7 @@
 
 class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyAssertionRequest extends Google_Model
 {
+  public $autoCreate;
   public $delegatedProjectNumber;
   public $idToken;
   public $instanceId;
@@ -28,6 +29,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyVerifyAssertionR
   public $returnSecureToken;
   public $sessionId;
 
+  public function setAutoCreate($autoCreate)
+  {
+    $this->autoCreate = $autoCreate;
+  }
+  public function getAutoCreate()
+  {
+    return $this->autoCreate;
+  }
   public function setDelegatedProjectNumber($delegatedProjectNumber)
   {
     $this->delegatedProjectNumber = $delegatedProjectNumber;
