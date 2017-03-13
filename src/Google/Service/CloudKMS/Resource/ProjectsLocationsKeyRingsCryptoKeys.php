@@ -97,8 +97,8 @@ class Google_Service_CloudKMS_Resource_ProjectsLocationsKeyRingsCryptoKeys exten
    * resource exists and does not have a policy set. (cryptoKeys.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
-   * requested. `resource` is usually specified as a path. For example, a Project
-   * resource is specified as `projects/{project}`.
+   * requested. See the operation documentation for the appropriate value for this
+   * field.
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudKMS_Policy
    */
@@ -152,8 +152,8 @@ class Google_Service_CloudKMS_Resource_ProjectsLocationsKeyRingsCryptoKeys exten
    * existing policy. (cryptoKeys.setIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
-   * specified. `resource` is usually specified as a path. For example, a Project
-   * resource is specified as `projects/{project}`.
+   * specified. See the operation documentation for the appropriate value for this
+   * field.
    * @param Google_Service_CloudKMS_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudKMS_Policy
@@ -167,11 +167,15 @@ class Google_Service_CloudKMS_Resource_ProjectsLocationsKeyRingsCryptoKeys exten
   /**
    * Returns permissions that a caller has on the specified resource. If the
    * resource does not exist, this will return an empty set of permissions, not a
-   * NOT_FOUND error. (cryptoKeys.testIamPermissions)
+   * NOT_FOUND error.
+   *
+   * Note: This operation is designed to be used for building permission-aware UIs
+   * and command-line tools, not for authorization checking. This operation may
+   * "fail open" without warning. (cryptoKeys.testIamPermissions)
    *
    * @param string $resource REQUIRED: The resource for which the policy detail is
-   * being requested. `resource` is usually specified as a path. For example, a
-   * Project resource is specified as `projects/{project}`.
+   * being requested. See the operation documentation for the appropriate value
+   * for this field.
    * @param Google_Service_CloudKMS_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudKMS_TestIamPermissionsResponse
