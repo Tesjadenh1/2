@@ -15,30 +15,29 @@
  * the License.
  */
 
-class Google_Service_Drive_FileList extends Google_Collection
+class Google_Service_Drive_TeamDrive extends Google_Model
 {
-  protected $collection_key = 'files';
-  protected $filesType = 'Google_Service_Drive_DriveFile';
-  protected $filesDataType = 'array';
-  public $incompleteSearch;
+  protected $capabilitiesType = 'Google_Service_Drive_TeamDriveCapabilities';
+  protected $capabilitiesDataType = '';
+  public $id;
   public $kind;
-  public $nextPageToken;
+  public $name;
 
-  public function setFiles($files)
+  public function setCapabilities(Google_Service_Drive_TeamDriveCapabilities $capabilities)
   {
-    $this->files = $files;
+    $this->capabilities = $capabilities;
   }
-  public function getFiles()
+  public function getCapabilities()
   {
-    return $this->files;
+    return $this->capabilities;
   }
-  public function setIncompleteSearch($incompleteSearch)
+  public function setId($id)
   {
-    $this->incompleteSearch = $incompleteSearch;
+    $this->id = $id;
   }
-  public function getIncompleteSearch()
+  public function getId()
   {
-    return $this->incompleteSearch;
+    return $this->id;
   }
   public function setKind($kind)
   {
@@ -48,12 +47,12 @@ class Google_Service_Drive_FileList extends Google_Collection
   {
     return $this->kind;
   }
-  public function setNextPageToken($nextPageToken)
+  public function setName($name)
   {
-    $this->nextPageToken = $nextPageToken;
+    $this->name = $name;
   }
-  public function getNextPageToken()
+  public function getName()
   {
-    return $this->nextPageToken;
+    return $this->name;
   }
 }

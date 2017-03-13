@@ -15,24 +15,21 @@
  * the License.
  */
 
-class Google_Service_Drive_DriveFileCapabilities extends Google_Model
+class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
 {
   public $canAddChildren;
   public $canComment;
   public $canCopy;
-  public $canDelete;
+  public $canDeleteTeamDrive;
   public $canDownload;
   public $canEdit;
   public $canListChildren;
-  public $canMoveItemIntoTeamDrive;
-  public $canMoveTeamDriveItem;
+  public $canManageMembers;
   public $canReadRevisions;
-  public $canReadTeamDrive;
   public $canRemoveChildren;
   public $canRename;
+  public $canRenameTeamDrive;
   public $canShare;
-  public $canTrash;
-  public $canUntrash;
 
   public function setCanAddChildren($canAddChildren)
   {
@@ -58,13 +55,13 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   {
     return $this->canCopy;
   }
-  public function setCanDelete($canDelete)
+  public function setCanDeleteTeamDrive($canDeleteTeamDrive)
   {
-    $this->canDelete = $canDelete;
+    $this->canDeleteTeamDrive = $canDeleteTeamDrive;
   }
-  public function getCanDelete()
+  public function getCanDeleteTeamDrive()
   {
-    return $this->canDelete;
+    return $this->canDeleteTeamDrive;
   }
   public function setCanDownload($canDownload)
   {
@@ -90,21 +87,13 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   {
     return $this->canListChildren;
   }
-  public function setCanMoveItemIntoTeamDrive($canMoveItemIntoTeamDrive)
+  public function setCanManageMembers($canManageMembers)
   {
-    $this->canMoveItemIntoTeamDrive = $canMoveItemIntoTeamDrive;
+    $this->canManageMembers = $canManageMembers;
   }
-  public function getCanMoveItemIntoTeamDrive()
+  public function getCanManageMembers()
   {
-    return $this->canMoveItemIntoTeamDrive;
-  }
-  public function setCanMoveTeamDriveItem($canMoveTeamDriveItem)
-  {
-    $this->canMoveTeamDriveItem = $canMoveTeamDriveItem;
-  }
-  public function getCanMoveTeamDriveItem()
-  {
-    return $this->canMoveTeamDriveItem;
+    return $this->canManageMembers;
   }
   public function setCanReadRevisions($canReadRevisions)
   {
@@ -113,14 +102,6 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public function getCanReadRevisions()
   {
     return $this->canReadRevisions;
-  }
-  public function setCanReadTeamDrive($canReadTeamDrive)
-  {
-    $this->canReadTeamDrive = $canReadTeamDrive;
-  }
-  public function getCanReadTeamDrive()
-  {
-    return $this->canReadTeamDrive;
   }
   public function setCanRemoveChildren($canRemoveChildren)
   {
@@ -138,6 +119,14 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   {
     return $this->canRename;
   }
+  public function setCanRenameTeamDrive($canRenameTeamDrive)
+  {
+    $this->canRenameTeamDrive = $canRenameTeamDrive;
+  }
+  public function getCanRenameTeamDrive()
+  {
+    return $this->canRenameTeamDrive;
+  }
   public function setCanShare($canShare)
   {
     $this->canShare = $canShare;
@@ -145,21 +134,5 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public function getCanShare()
   {
     return $this->canShare;
-  }
-  public function setCanTrash($canTrash)
-  {
-    $this->canTrash = $canTrash;
-  }
-  public function getCanTrash()
-  {
-    return $this->canTrash;
-  }
-  public function setCanUntrash($canUntrash)
-  {
-    $this->canUntrash = $canUntrash;
-  }
-  public function getCanUntrash()
-  {
-    return $this->canUntrash;
   }
 }

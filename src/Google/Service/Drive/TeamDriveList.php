@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_Drive_PermissionList extends Google_Collection
+class Google_Service_Drive_TeamDriveList extends Google_Collection
 {
-  protected $collection_key = 'permissions';
+  protected $collection_key = 'teamDrives';
   public $kind;
   public $nextPageToken;
-  protected $permissionsType = 'Google_Service_Drive_Permission';
-  protected $permissionsDataType = 'array';
+  protected $teamDrivesType = 'Google_Service_Drive_TeamDrive';
+  protected $teamDrivesDataType = 'array';
 
   public function setKind($kind)
   {
@@ -39,12 +39,12 @@ class Google_Service_Drive_PermissionList extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  public function setPermissions($permissions)
+  public function setTeamDrives($teamDrives)
   {
-    $this->permissions = $permissions;
+    $this->teamDrives = $teamDrives;
   }
-  public function getPermissions()
+  public function getTeamDrives()
   {
-    return $this->permissions;
+    return $this->teamDrives;
   }
 }
