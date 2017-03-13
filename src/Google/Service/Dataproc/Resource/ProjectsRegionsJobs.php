@@ -89,10 +89,6 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsJobs extends Google_Servic
    * the request.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken Optional The page token, returned by a previous
-   * call, to request the next page of results.
-   * @opt_param int pageSize Optional The number of results to return in each
-   * response.
    * @opt_param string clusterName Optional If set, the returned jobs list
    * includes only jobs that were submitted to the named cluster.
    * @opt_param string filter Optional A filter constraining the jobs to list.
@@ -104,6 +100,10 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsJobs extends Google_Servic
    * filter:status.state = ACTIVE AND labels.env = staging AND labels.starred = *
    * @opt_param string jobStateMatcher Optional Specifies enumerated categories of
    * jobs to list (default = match ALL jobs).
+   * @opt_param string pageToken Optional The page token, returned by a previous
+   * call, to request the next page of results.
+   * @opt_param int pageSize Optional The number of results to return in each
+   * response.
    * @return Google_Service_Dataproc_ListJobsResponse
    */
   public function listProjectsRegionsJobs($projectId, $region, $optParams = array())
