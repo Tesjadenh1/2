@@ -16,24 +16,27 @@
  */
 
 /**
- * The "userStates" collection of methods.
+ * The "leads" collection of methods.
  * Typical usage is:
  *  <code>
  *   $partnersService = new Google_Service_Partners(...);
- *   $userStates = $partnersService->userStates;
+ *   $leads = $partnersService->leads;
  *  </code>
  */
-class Google_Service_Partners_Resource_UserStates extends Google_Service_Resource
+class Google_Service_Partners_Resource_Leads extends Google_Service_Resource
 {
   /**
-   * Lists states for current user. (userStates.listUserStates)
+   * Lists advertiser leads for a user's associated company. Should only be called
+   * within the context of an authorized logged in user. (leads.listLeads)
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string requestMetadata.userOverrides.userId Logged-in user ID to
-   * impersonate instead of the user's ID.
-   * @opt_param string requestMetadata.partnersSessionId Google Partners session
-   * ID.
+   * @opt_param string pageToken A token identifying a page of results that the
+   * server returns. Typically, this is the value of
+   * `ListLeadsResponse.next_page_token` returned from the previous call to
+   * ListLeads.
+   * @opt_param int pageSize Requested page size. Server may return fewer leads
+   * than requested. If unspecified, server picks an appropriate default.
    * @opt_param string requestMetadata.trafficSource.trafficSourceId Identifier to
    * indicate where the traffic comes from. An identifier has multiple letters
    * created by a team which redirected the traffic to us.
@@ -46,12 +49,18 @@ class Google_Service_Partners_Resource_UserStates extends Google_Service_Resourc
    * @opt_param string requestMetadata.trafficSource.trafficSubId Second level
    * identifier to indicate where the traffic comes from. An identifier has
    * multiple letters created by a team which redirected the traffic to us.
-   * @return Google_Service_Partners_ListUserStatesResponse
+   * @opt_param string orderBy How to order Leads. Currently, only `create_time`
+   * and `create_time desc` are supported
+   * @opt_param string requestMetadata.partnersSessionId Google Partners session
+   * ID.
+   * @opt_param string requestMetadata.userOverrides.userId Logged-in user ID to
+   * impersonate instead of the user's ID.
+   * @return Google_Service_Partners_ListLeadsResponse
    */
-  public function listUserStates($optParams = array())
+  public function listLeads($optParams = array())
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Partners_ListUserStatesResponse");
+    return $this->call('list', array($params), "Google_Service_Partners_ListLeadsResponse");
   }
 }
