@@ -81,7 +81,6 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsJobs extends Go
    * Authorization: requires `Viewer` role on the specified project.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter Optional. Specifies the subset of jobs to retrieve.
    * @opt_param string pageToken Optional. A page token to request the next page
    * of results.
    *
@@ -92,6 +91,7 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsJobs extends Go
    * response message will contain a valid value in the `next_page_token` field.
    *
    * The default value is 20, and the maximum page size is 100.
+   * @opt_param string filter Optional. Specifies the subset of jobs to retrieve.
    * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListJobsResponse
    */
   public function listProjectsJobs($parent, $optParams = array())
