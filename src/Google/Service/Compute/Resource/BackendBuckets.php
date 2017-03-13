@@ -16,62 +16,62 @@
  */
 
 /**
- * The "routes" collection of methods.
+ * The "backendBuckets" collection of methods.
  * Typical usage is:
  *  <code>
  *   $computeService = new Google_Service_Compute(...);
- *   $routes = $computeService->routes;
+ *   $backendBuckets = $computeService->backendBuckets;
  *  </code>
  */
-class Google_Service_Compute_Resource_Routes extends Google_Service_Resource
+class Google_Service_Compute_Resource_BackendBuckets extends Google_Service_Resource
 {
   /**
-   * Deletes the specified Route resource. (routes.delete)
+   * Deletes the specified BackendBucket resource. (backendBuckets.delete)
    *
    * @param string $project Project ID for this request.
-   * @param string $route Name of the Route resource to delete.
+   * @param string $backendBucket Name of the BackendBucket resource to delete.
    * @param array $optParams Optional parameters.
    * @return Google_Service_Compute_Operation
    */
-  public function delete($project, $route, $optParams = array())
+  public function delete($project, $backendBucket, $optParams = array())
   {
-    $params = array('project' => $project, 'route' => $route);
+    $params = array('project' => $project, 'backendBucket' => $backendBucket);
     $params = array_merge($params, $optParams);
     return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Returns the specified Route resource. Get a list of available routes by
-   * making a list() request. (routes.get)
+   * Returns the specified BackendBucket resource. Get a list of available backend
+   * buckets by making a list() request. (backendBuckets.get)
    *
    * @param string $project Project ID for this request.
-   * @param string $route Name of the Route resource to return.
+   * @param string $backendBucket Name of the BackendBucket resource to return.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_Compute_Route
+   * @return Google_Service_Compute_BackendBucket
    */
-  public function get($project, $route, $optParams = array())
+  public function get($project, $backendBucket, $optParams = array())
   {
-    $params = array('project' => $project, 'route' => $route);
+    $params = array('project' => $project, 'backendBucket' => $backendBucket);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Compute_Route");
+    return $this->call('get', array($params), "Google_Service_Compute_BackendBucket");
   }
   /**
-   * Creates a Route resource in the specified project using the data included in
-   * the request. (routes.insert)
+   * Creates a BackendBucket resource in the specified project using the data
+   * included in the request. (backendBuckets.insert)
    *
    * @param string $project Project ID for this request.
-   * @param Google_Service_Compute_Route $postBody
+   * @param Google_Service_Compute_BackendBucket $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Compute_Operation
    */
-  public function insert($project, Google_Service_Compute_Route $postBody, $optParams = array())
+  public function insert($project, Google_Service_Compute_BackendBucket $postBody, $optParams = array())
   {
     $params = array('project' => $project, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('insert', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Retrieves the list of Route resources available to the specified project.
-   * (routes.listRoutes)
+   * Retrieves the list of BackendBucket resources available to the specified
+   * project. (backendBuckets.listBackendBuckets)
    *
    * @param string $project Project ID for this request.
    * @param array $optParams Optional parameters.
@@ -118,12 +118,44 @@ class Google_Service_Compute_Resource_Routes extends Google_Service_Resource
    * @opt_param string pageToken Specifies a page token to use. Set pageToken to
    * the nextPageToken returned by a previous list request to get the next page of
    * results.
-   * @return Google_Service_Compute_RouteList
+   * @return Google_Service_Compute_BackendBucketList
    */
-  public function listRoutes($project, $optParams = array())
+  public function listBackendBuckets($project, $optParams = array())
   {
     $params = array('project' => $project);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_Compute_RouteList");
+    return $this->call('list', array($params), "Google_Service_Compute_BackendBucketList");
+  }
+  /**
+   * Updates the specified BackendBucket resource with the data included in the
+   * request. This method supports patch semantics. (backendBuckets.patch)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $backendBucket Name of the BackendBucket resource to update.
+   * @param Google_Service_Compute_BackendBucket $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Compute_Operation
+   */
+  public function patch($project, $backendBucket, Google_Service_Compute_BackendBucket $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'backendBucket' => $backendBucket, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('patch', array($params), "Google_Service_Compute_Operation");
+  }
+  /**
+   * Updates the specified BackendBucket resource with the data included in the
+   * request. (backendBuckets.update)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $backendBucket Name of the BackendBucket resource to update.
+   * @param Google_Service_Compute_BackendBucket $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Compute_Operation
+   */
+  public function update($project, $backendBucket, Google_Service_Compute_BackendBucket $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'backendBucket' => $backendBucket, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('update', array($params), "Google_Service_Compute_Operation");
   }
 }
