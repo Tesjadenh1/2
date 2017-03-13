@@ -15,26 +15,27 @@
  * the License.
  */
 
-class Google_Service_CloudResourceManager_SetIamPolicyRequest extends Google_Model
+class Google_Service_CloudResourceManager_AuditConfig extends Google_Collection
 {
-  protected $policyType = 'Google_Service_CloudResourceManager_Policy';
-  protected $policyDataType = '';
-  public $updateMask;
+  protected $collection_key = 'auditLogConfigs';
+  protected $auditLogConfigsType = 'Google_Service_CloudResourceManager_AuditLogConfig';
+  protected $auditLogConfigsDataType = 'array';
+  public $service;
 
-  public function setPolicy(Google_Service_CloudResourceManager_Policy $policy)
+  public function setAuditLogConfigs($auditLogConfigs)
   {
-    $this->policy = $policy;
+    $this->auditLogConfigs = $auditLogConfigs;
   }
-  public function getPolicy()
+  public function getAuditLogConfigs()
   {
-    return $this->policy;
+    return $this->auditLogConfigs;
   }
-  public function setUpdateMask($updateMask)
+  public function setService($service)
   {
-    $this->updateMask = $updateMask;
+    $this->service = $service;
   }
-  public function getUpdateMask()
+  public function getService()
   {
-    return $this->updateMask;
+    return $this->service;
   }
 }

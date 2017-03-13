@@ -15,26 +15,27 @@
  * the License.
  */
 
-class Google_Service_CloudResourceManager_SetIamPolicyRequest extends Google_Model
+class Google_Service_CloudResourceManager_ListLiensResponse extends Google_Collection
 {
-  protected $policyType = 'Google_Service_CloudResourceManager_Policy';
-  protected $policyDataType = '';
-  public $updateMask;
+  protected $collection_key = 'liens';
+  protected $liensType = 'Google_Service_CloudResourceManager_Lien';
+  protected $liensDataType = 'array';
+  public $nextPageToken;
 
-  public function setPolicy(Google_Service_CloudResourceManager_Policy $policy)
+  public function setLiens($liens)
   {
-    $this->policy = $policy;
+    $this->liens = $liens;
   }
-  public function getPolicy()
+  public function getLiens()
   {
-    return $this->policy;
+    return $this->liens;
   }
-  public function setUpdateMask($updateMask)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->updateMask = $updateMask;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getUpdateMask()
+  public function getNextPageToken()
   {
-    return $this->updateMask;
+    return $this->nextPageToken;
   }
 }
