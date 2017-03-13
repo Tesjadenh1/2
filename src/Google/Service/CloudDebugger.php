@@ -123,15 +123,15 @@ class Google_Service_CloudDebugger extends Google_Service
               'path' => 'v2/debugger/debuggees',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'clientVersion' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'includeInactive' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
                 'project' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'clientVersion' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -193,11 +193,11 @@ class Google_Service_CloudDebugger extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'waitToken' => array(
+                'stripResults' => array(
                   'location' => 'query',
-                  'type' => 'string',
+                  'type' => 'boolean',
                 ),
-                'action.value' => array(
+                'waitToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -205,15 +205,15 @@ class Google_Service_CloudDebugger extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'includeInactive' => array(
+                'action.value' => array(
                   'location' => 'query',
-                  'type' => 'boolean',
+                  'type' => 'string',
                 ),
                 'includeAllUsers' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
-                'stripResults' => array(
+                'includeInactive' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
