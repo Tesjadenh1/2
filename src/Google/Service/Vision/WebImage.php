@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Vision_Property extends Google_Model
+class Google_Service_Vision_WebImage extends Google_Model
 {
-  public $name;
-  public $uint64Value;
-  public $value;
+  public $score;
+  public $url;
 
-  public function setName($name)
+  public function setScore($score)
   {
-    $this->name = $name;
+    $this->score = $score;
   }
-  public function getName()
+  public function getScore()
   {
-    return $this->name;
+    return $this->score;
   }
-  public function setUint64Value($uint64Value)
+  public function setUrl($url)
   {
-    $this->uint64Value = $uint64Value;
+    $this->url = $url;
   }
-  public function getUint64Value()
+  public function getUrl()
   {
-    return $this->uint64Value;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->url;
   }
 }

@@ -15,34 +15,18 @@
  * the License.
  */
 
-class Google_Service_Vision_Property extends Google_Model
+class Google_Service_Vision_CropHintsAnnotation extends Google_Collection
 {
-  public $name;
-  public $uint64Value;
-  public $value;
+  protected $collection_key = 'cropHints';
+  protected $cropHintsType = 'Google_Service_Vision_CropHint';
+  protected $cropHintsDataType = 'array';
 
-  public function setName($name)
+  public function setCropHints($cropHints)
   {
-    $this->name = $name;
+    $this->cropHints = $cropHints;
   }
-  public function getName()
+  public function getCropHints()
   {
-    return $this->name;
-  }
-  public function setUint64Value($uint64Value)
-  {
-    $this->uint64Value = $uint64Value;
-  }
-  public function getUint64Value()
-  {
-    return $this->uint64Value;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->cropHints;
   }
 }

@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Vision_Property extends Google_Model
+class Google_Service_Vision_DetectedLanguage extends Google_Model
 {
-  public $name;
-  public $uint64Value;
-  public $value;
+  public $confidence;
+  public $languageCode;
 
-  public function setName($name)
+  public function setConfidence($confidence)
   {
-    $this->name = $name;
+    $this->confidence = $confidence;
   }
-  public function getName()
+  public function getConfidence()
   {
-    return $this->name;
+    return $this->confidence;
   }
-  public function setUint64Value($uint64Value)
+  public function setLanguageCode($languageCode)
   {
-    $this->uint64Value = $uint64Value;
+    $this->languageCode = $languageCode;
   }
-  public function getUint64Value()
+  public function getLanguageCode()
   {
-    return $this->uint64Value;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->languageCode;
   }
 }

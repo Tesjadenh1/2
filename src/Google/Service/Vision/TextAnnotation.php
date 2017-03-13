@@ -15,34 +15,27 @@
  * the License.
  */
 
-class Google_Service_Vision_Property extends Google_Model
+class Google_Service_Vision_TextAnnotation extends Google_Collection
 {
-  public $name;
-  public $uint64Value;
-  public $value;
+  protected $collection_key = 'pages';
+  protected $pagesType = 'Google_Service_Vision_Page';
+  protected $pagesDataType = 'array';
+  public $text;
 
-  public function setName($name)
+  public function setPages($pages)
   {
-    $this->name = $name;
+    $this->pages = $pages;
   }
-  public function getName()
+  public function getPages()
   {
-    return $this->name;
+    return $this->pages;
   }
-  public function setUint64Value($uint64Value)
+  public function setText($text)
   {
-    $this->uint64Value = $uint64Value;
+    $this->text = $text;
   }
-  public function getUint64Value()
+  public function getText()
   {
-    return $this->uint64Value;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->text;
   }
 }

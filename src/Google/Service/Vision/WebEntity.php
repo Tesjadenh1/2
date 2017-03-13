@@ -15,34 +15,34 @@
  * the License.
  */
 
-class Google_Service_Vision_Property extends Google_Model
+class Google_Service_Vision_WebEntity extends Google_Model
 {
-  public $name;
-  public $uint64Value;
-  public $value;
+  public $description;
+  public $entityId;
+  public $score;
 
-  public function setName($name)
+  public function setDescription($description)
   {
-    $this->name = $name;
+    $this->description = $description;
   }
-  public function getName()
+  public function getDescription()
   {
-    return $this->name;
+    return $this->description;
   }
-  public function setUint64Value($uint64Value)
+  public function setEntityId($entityId)
   {
-    $this->uint64Value = $uint64Value;
+    $this->entityId = $entityId;
   }
-  public function getUint64Value()
+  public function getEntityId()
   {
-    return $this->uint64Value;
+    return $this->entityId;
   }
-  public function setValue($value)
+  public function setScore($score)
   {
-    $this->value = $value;
+    $this->score = $score;
   }
-  public function getValue()
+  public function getScore()
   {
-    return $this->value;
+    return $this->score;
   }
 }

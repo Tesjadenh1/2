@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Vision_Property extends Google_Model
+class Google_Service_Vision_DetectedBreak extends Google_Model
 {
-  public $name;
-  public $uint64Value;
-  public $value;
+  public $isPrefix;
+  public $type;
 
-  public function setName($name)
+  public function setIsPrefix($isPrefix)
   {
-    $this->name = $name;
+    $this->isPrefix = $isPrefix;
   }
-  public function getName()
+  public function getIsPrefix()
   {
-    return $this->name;
+    return $this->isPrefix;
   }
-  public function setUint64Value($uint64Value)
+  public function setType($type)
   {
-    $this->uint64Value = $uint64Value;
+    $this->type = $type;
   }
-  public function getUint64Value()
+  public function getType()
   {
-    return $this->uint64Value;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->type;
   }
 }
