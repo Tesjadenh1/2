@@ -82,19 +82,6 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'title' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'videoIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -119,6 +106,19 @@ class Google_Service_PlayMovies extends Google_Service
                   'repeated' => true,
                 ),
                 'territories' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'title' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'videoIds' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
@@ -158,16 +158,16 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'videoIds' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
                 ),
                 'customId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -185,14 +185,14 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'repeated' => true,
                 ),
-                'name' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'studioNames' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
+                ),
+                'name' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -214,32 +214,23 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'name' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'studioNames' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
                 'seasonIds' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
                 ),
-                'pageToken' => array(
+                'videoIds' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'repeated' => true,
                 ),
                 'videoId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'videoIds' => array(
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
-                  'repeated' => true,
                 ),
                 'pageSize' => array(
                   'location' => 'query',
@@ -259,6 +250,15 @@ class Google_Service_PlayMovies extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
+                ),
+                'studioNames' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'name' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),

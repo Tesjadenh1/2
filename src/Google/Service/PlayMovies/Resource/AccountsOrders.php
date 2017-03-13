@@ -53,20 +53,20 @@ class Google_Service_PlayMovies_Resource_AccountsOrders extends Google_Service_R
    * about this field.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken See _List methods rules_ for info about this
-   * field.
    * @opt_param string videoIds Filter Orders that match any of the given
    * `video_id`s.
    * @opt_param string customId Filter Orders that match a case-insensitive,
    * partner-specific custom id.
+   * @opt_param string pageToken See _List methods rules_ for info about this
+   * field.
    * @opt_param int pageSize See _List methods rules_ for info about this field.
    * @opt_param string pphNames See _List methods rules_ for info about this
    * field.
    * @opt_param string status Filter Orders that match one of the given status.
-   * @opt_param string name Filter that matches Orders with a `name`, `show`,
-   * `season` or `episode` that contains the given case-insensitive name.
    * @opt_param string studioNames See _List methods rules_ for info about this
    * field.
+   * @opt_param string name Filter that matches Orders with a `name`, `show`,
+   * `season` or `episode` that contains the given case-insensitive name.
    * @return Google_Service_PlayMovies_ListOrdersResponse
    */
   public function listAccountsOrders($accountId, $optParams = array())
