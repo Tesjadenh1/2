@@ -26,9 +26,9 @@
 class Google_Service_CloudNaturalLanguage_Resource_Documents extends Google_Service_Resource
 {
   /**
-   * Finds named entities (currently finds proper names) in the text, entity
-   * types, salience, mentions for each entity, and other properties.
-   * (documents.analyzeEntities)
+   * Finds named entities (currently proper names and common nouns) in the text
+   * along with entity types, salience, mentions for each entity, and other
+   * properties. (documents.analyzeEntities)
    *
    * @param Google_Service_CloudNaturalLanguage_AnalyzeEntitiesRequest $postBody
    * @param array $optParams Optional parameters.
