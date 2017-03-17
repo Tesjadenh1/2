@@ -19,8 +19,8 @@
  * Service definition for Reports (reports_v1).
  *
  * <p>
- * Fetches reports for the administrators of Google Apps customers about the
- * usage, collaboration, security, and risk for their users.</p>
+ * Fetches reports for the administrators of G Suite customers about the usage,
+ * collaboration, security, and risk for their users.</p>
  *
  * <p>
  * For more information about this service, see the API
