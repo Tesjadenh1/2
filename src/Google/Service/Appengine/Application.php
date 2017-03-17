@@ -25,9 +25,13 @@ class Google_Service_Appengine_Application extends Google_Collection
   public $defaultHostname;
   protected $dispatchRulesType = 'Google_Service_Appengine_UrlDispatchRule';
   protected $dispatchRulesDataType = 'array';
+  public $gcrDomain;
+  protected $iapType = 'Google_Service_Appengine_IdentityAwareProxy';
+  protected $iapDataType = '';
   public $id;
   public $locationId;
   public $name;
+  public $servingStatus;
 
   public function setAuthDomain($authDomain)
   {
@@ -77,6 +81,22 @@ class Google_Service_Appengine_Application extends Google_Collection
   {
     return $this->dispatchRules;
   }
+  public function setGcrDomain($gcrDomain)
+  {
+    $this->gcrDomain = $gcrDomain;
+  }
+  public function getGcrDomain()
+  {
+    return $this->gcrDomain;
+  }
+  public function setIap(Google_Service_Appengine_IdentityAwareProxy $iap)
+  {
+    $this->iap = $iap;
+  }
+  public function getIap()
+  {
+    return $this->iap;
+  }
   public function setId($id)
   {
     $this->id = $id;
@@ -100,5 +120,13 @@ class Google_Service_Appengine_Application extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  public function setServingStatus($servingStatus)
+  {
+    $this->servingStatus = $servingStatus;
+  }
+  public function getServingStatus()
+  {
+    return $this->servingStatus;
   }
 }

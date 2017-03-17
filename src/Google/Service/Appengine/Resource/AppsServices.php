@@ -84,9 +84,9 @@ class Google_Service_Appengine_Resource_AppsServices extends Google_Service_Reso
    *
    * @opt_param string updateMask Standard field mask for the set of fields to be
    * updated.
-   * @opt_param bool migrateTraffic Set to true to gradually shift traffic from
-   * one version to another single version. By default, traffic is shifted
-   * immediately. For gradual traffic migration, the target version must be
+   * @opt_param bool migrateTraffic Set to true to gradually shift traffic to one
+   * or more versions that you specify. By default, traffic is shifted
+   * immediately. For gradual traffic migration, the target versions must be
    * located within instances that are configured for both warmup requests
    * (https://cloud.google.com/appengine/docs/admin-
    * api/reference/rest/v1/apps.services.versions#inboundservicetype) and

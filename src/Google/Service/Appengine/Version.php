@@ -46,12 +46,16 @@ class Google_Service_Appengine_Version extends Google_Collection
   public $instanceClass;
   protected $librariesType = 'Google_Service_Appengine_Library';
   protected $librariesDataType = 'array';
+  protected $livenessCheckType = 'Google_Service_Appengine_LivenessCheck';
+  protected $livenessCheckDataType = '';
   protected $manualScalingType = 'Google_Service_Appengine_ManualScaling';
   protected $manualScalingDataType = '';
   public $name;
   protected $networkType = 'Google_Service_Appengine_Network';
   protected $networkDataType = '';
   public $nobuildFilesRegex;
+  protected $readinessCheckType = 'Google_Service_Appengine_ReadinessCheck';
+  protected $readinessCheckDataType = '';
   protected $resourcesType = 'Google_Service_Appengine_Resources';
   protected $resourcesDataType = '';
   public $runtime;
@@ -212,6 +216,14 @@ class Google_Service_Appengine_Version extends Google_Collection
   {
     return $this->libraries;
   }
+  public function setLivenessCheck(Google_Service_Appengine_LivenessCheck $livenessCheck)
+  {
+    $this->livenessCheck = $livenessCheck;
+  }
+  public function getLivenessCheck()
+  {
+    return $this->livenessCheck;
+  }
   public function setManualScaling(Google_Service_Appengine_ManualScaling $manualScaling)
   {
     $this->manualScaling = $manualScaling;
@@ -243,6 +255,14 @@ class Google_Service_Appengine_Version extends Google_Collection
   public function getNobuildFilesRegex()
   {
     return $this->nobuildFilesRegex;
+  }
+  public function setReadinessCheck(Google_Service_Appengine_ReadinessCheck $readinessCheck)
+  {
+    $this->readinessCheck = $readinessCheck;
+  }
+  public function getReadinessCheck()
+  {
+    return $this->readinessCheck;
   }
   public function setResources(Google_Service_Appengine_Resources $resources)
   {
