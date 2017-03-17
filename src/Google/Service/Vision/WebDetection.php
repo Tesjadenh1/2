@@ -24,6 +24,8 @@ class Google_Service_Vision_WebDetection extends Google_Collection
   protected $pagesWithMatchingImagesDataType = 'array';
   protected $partialMatchingImagesType = 'Google_Service_Vision_WebImage';
   protected $partialMatchingImagesDataType = 'array';
+  protected $visuallySimilarImagesType = 'Google_Service_Vision_WebImage';
+  protected $visuallySimilarImagesDataType = 'array';
   protected $webEntitiesType = 'Google_Service_Vision_WebEntity';
   protected $webEntitiesDataType = 'array';
 
@@ -50,6 +52,14 @@ class Google_Service_Vision_WebDetection extends Google_Collection
   public function getPartialMatchingImages()
   {
     return $this->partialMatchingImages;
+  }
+  public function setVisuallySimilarImages($visuallySimilarImages)
+  {
+    $this->visuallySimilarImages = $visuallySimilarImages;
+  }
+  public function getVisuallySimilarImages()
+  {
+    return $this->visuallySimilarImages;
   }
   public function setWebEntities($webEntities)
   {
