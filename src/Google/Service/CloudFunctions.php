@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for CloudFunctions (v1beta2).
+ * Service definition for CloudFunctions (v1).
  *
  * <p>
  * API for managing lightweight user-provided functions executed in response to
@@ -35,9 +35,7 @@ class Google_Service_CloudFunctions extends Google_Service
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
 
-  public $operations;
   public $projects_locations;
-  public $projects_locations_functions;
   
   /**
    * Constructs the internal representation of the CloudFunctions service.
@@ -49,149 +47,18 @@ class Google_Service_CloudFunctions extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://cloudfunctions.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1beta2';
+    $this->version = 'v1';
     $this->serviceName = 'cloudfunctions';
 
-    $this->operations = new Google_Service_CloudFunctions_Resource_Operations(
-        $this,
-        $this->serviceName,
-        'operations',
-        array(
-          'methods' => array(
-            'get' => array(
-              'path' => 'v1beta2/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1beta2/operations',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'name' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-              ),
-            ),
-          )
-        )
-    );
     $this->projects_locations = new Google_Service_CloudFunctions_Resource_ProjectsLocations(
         $this,
         $this->serviceName,
         'locations',
         array(
           'methods' => array(
-            'list' => array(
-              'path' => 'v1beta2/{+name}/locations',
+            'get' => array(
+              'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_locations_functions = new Google_Service_CloudFunctions_Resource_ProjectsLocationsFunctions(
-        $this,
-        $this->serviceName,
-        'functions',
-        array(
-          'methods' => array(
-            'call' => array(
-              'path' => 'v1beta2/{+name}:call',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'create' => array(
-              'path' => 'v1beta2/{+location}/functions',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'location' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'delete' => array(
-              'path' => 'v1beta2/{+name}',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1beta2/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1beta2/{+location}/functions',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'location' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'update' => array(
-              'path' => 'v1beta2/{+name}',
-              'httpMethod' => 'PUT',
               'parameters' => array(
                 'name' => array(
                   'location' => 'path',
