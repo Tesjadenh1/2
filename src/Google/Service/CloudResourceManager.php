@@ -225,10 +225,6 @@ class Google_Service_CloudResourceManager extends Google_Service
               'path' => 'v1/projects',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -236,6 +232,10 @@ class Google_Service_CloudResourceManager extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'setIamPolicy' => array(
