@@ -47,7 +47,8 @@ class Google_Service_Tracing_Resource_ProjectsTraces extends Google_Service_Reso
   /**
    * Returns a specific trace. (traces.get)
    *
-   * @param string $name ID of the trace which is "projects//traces/".
+   * @param string $name ID of the trace. Format is
+   * `projects/PROJECT_ID/traces/TRACE_ID`.
    * @param array $optParams Optional parameters.
    * @return Google_Service_Tracing_Trace
    */
@@ -76,8 +77,8 @@ class Google_Service_Tracing_Resource_ProjectsTraces extends Google_Service_Reso
    *
    * Only one sort field is permitted.
    * @opt_param string filter An optional filter for the request. Example:
-   * "version_label_key:a some_label:some_label_key" returns traces from version a
-   * and has some_label with some_label_key.
+   * `version_label_key:a some_label:some_label_key` returns traces from version
+   * `a` and has `some_label` with `some_label_key`.
    * @opt_param string endTime End of the time interval (inclusive) during which
    * the trace data was collected from the application.
    * @opt_param string pageToken Token identifying the page of results to return.
@@ -86,7 +87,7 @@ class Google_Service_Tracing_Resource_ProjectsTraces extends Google_Service_Reso
    * @opt_param string startTime Start of the time interval (inclusive) during
    * which the trace data was collected from the application.
    * @opt_param int pageSize Maximum number of traces to return. If not specified
-   * or <= 0, the implementation selects a reasonable value.  The implementation
+   * or <= 0, the implementation selects a reasonable value. The implementation
    * may return fewer traces than the requested page size. Optional.
    * @return Google_Service_Tracing_ListTracesResponse
    */
@@ -99,12 +100,13 @@ class Google_Service_Tracing_Resource_ProjectsTraces extends Google_Service_Reso
   /**
    * Returns a list of spans within a trace. (traces.listSpans)
    *
-   * @param string $name ID of the span set where is "projects//traces/".
+   * @param string $name ID of the trace for which to list child spans. Format is
+   * `projects/PROJECT_ID/traces/TRACE_ID`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken Token identifying the page of results to return.
-   * If provided, use the value of the `page_token` field from a previous request.
-   * Optional.
+   * If provided, use the value of the `nextPageToken` field from a previous
+   * request. Optional.
    * @return Google_Service_Tracing_ListSpansResponse
    */
   public function listSpans($name, $optParams = array())
