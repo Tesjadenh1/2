@@ -62,11 +62,11 @@ class Google_Service_CloudTrace_Resource_ProjectsTraces extends Google_Service_R
    * @opt_param string filter An optional filter for the request.
    * @opt_param string endTime Start of the time interval (inclusive) during which
    * the trace data was collected from the application.
+   * @opt_param string startTime End of the time interval (inclusive) during which
+   * the trace data was collected from the application.
    * @opt_param string pageToken Token identifying the page of results to return.
    * If provided, use the value of the `next_page_token` field from a previous
    * request. Optional.
-   * @opt_param string startTime End of the time interval (inclusive) during which
-   * the trace data was collected from the application.
    * @opt_param int pageSize Maximum number of traces to return. If not specified
    * or <= 0, the implementation selects a reasonable value.  The implementation
    * may return fewer traces than the requested page size. Optional.
