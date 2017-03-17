@@ -49,6 +49,9 @@ class Google_Service_Bigquery_Resource_Tables extends Google_Service_Resource
    * @param string $datasetId Dataset ID of the requested table
    * @param string $tableId Table ID of the requested table
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string selectedFields List of fields to return (comma-separated).
+   * If unspecified, all fields are returned
    * @return Google_Service_Bigquery_Table
    */
   public function get($projectId, $datasetId, $tableId, $optParams = array())
