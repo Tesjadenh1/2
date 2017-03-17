@@ -49,8 +49,10 @@ class Google_Service_Directory_User extends Google_Collection
   public $organizations;
   public $password;
   public $phones;
+  public $posixAccounts;
   public $primaryEmail;
   public $relations;
+  public $sshPublicKeys;
   public $suspended;
   public $suspensionReason;
   public $thumbnailPhotoEtag;
@@ -297,6 +299,14 @@ class Google_Service_Directory_User extends Google_Collection
   {
     return $this->phones;
   }
+  public function setPosixAccounts($posixAccounts)
+  {
+    $this->posixAccounts = $posixAccounts;
+  }
+  public function getPosixAccounts()
+  {
+    return $this->posixAccounts;
+  }
   public function setPrimaryEmail($primaryEmail)
   {
     $this->primaryEmail = $primaryEmail;
@@ -312,6 +322,14 @@ class Google_Service_Directory_User extends Google_Collection
   public function getRelations()
   {
     return $this->relations;
+  }
+  public function setSshPublicKeys($sshPublicKeys)
+  {
+    $this->sshPublicKeys = $sshPublicKeys;
+  }
+  public function getSshPublicKeys()
+  {
+    return $this->sshPublicKeys;
   }
   public function setSuspended($suspended)
   {
