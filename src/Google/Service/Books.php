@@ -646,6 +646,10 @@ class Google_Service_Books extends Google_Service
               'path' => 'mylibrary/annotations',
               'httpMethod' => 'POST',
               'parameters' => array(
+                'annotationId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'country' => array(
                   'location' => 'query',
                   'type' => 'string',

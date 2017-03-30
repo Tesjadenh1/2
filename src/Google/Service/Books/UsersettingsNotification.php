@@ -21,6 +21,8 @@ class Google_Service_Books_UsersettingsNotification extends Google_Model
   protected $moreFromAuthorsDataType = '';
   protected $moreFromSeriesType = 'Google_Service_Books_UsersettingsNotificationMoreFromSeries';
   protected $moreFromSeriesDataType = '';
+  protected $rewardExpirationsType = 'Google_Service_Books_UsersettingsNotificationRewardExpirations';
+  protected $rewardExpirationsDataType = '';
 
   public function setMoreFromAuthors(Google_Service_Books_UsersettingsNotificationMoreFromAuthors $moreFromAuthors)
   {
@@ -37,5 +39,13 @@ class Google_Service_Books_UsersettingsNotification extends Google_Model
   public function getMoreFromSeries()
   {
     return $this->moreFromSeries;
+  }
+  public function setRewardExpirations(Google_Service_Books_UsersettingsNotificationRewardExpirations $rewardExpirations)
+  {
+    $this->rewardExpirations = $rewardExpirations;
+  }
+  public function getRewardExpirations()
+  {
+    return $this->rewardExpirations;
   }
 }

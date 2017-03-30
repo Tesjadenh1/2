@@ -45,6 +45,7 @@ class Google_Service_Books_Resource_MylibraryAnnotations extends Google_Service_
    * @param Google_Service_Books_Annotation $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string annotationId The ID for the annotation to insert.
    * @opt_param string country ISO-3166-1 code to override the IP-based location.
    * @opt_param bool showOnlySummaryInResponse Requests that only the summary of
    * the specified layer be provided in the response.
