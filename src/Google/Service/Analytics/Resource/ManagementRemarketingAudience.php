@@ -26,6 +26,23 @@
 class Google_Service_Analytics_Resource_ManagementRemarketingAudience extends Google_Service_Resource
 {
   /**
+   * Delete a remarketing audience. (remarketingAudience.delete)
+   *
+   * @param string $accountId Account ID to which the remarketing audience
+   * belongs.
+   * @param string $webPropertyId Web property ID to which the remarketing
+   * audience belongs.
+   * @param string $remarketingAudienceId The ID of the remarketing audience to
+   * delete.
+   * @param array $optParams Optional parameters.
+   */
+  public function delete($accountId, $webPropertyId, $remarketingAudienceId, $optParams = array())
+  {
+    $params = array('accountId' => $accountId, 'webPropertyId' => $webPropertyId, 'remarketingAudienceId' => $remarketingAudienceId);
+    $params = array_merge($params, $optParams);
+    return $this->call('delete', array($params));
+  }
+  /**
    * Gets a remarketing audience to which the user has access.
    * (remarketingAudience.get)
    *
