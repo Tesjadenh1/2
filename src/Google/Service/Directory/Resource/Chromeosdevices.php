@@ -28,8 +28,8 @@ class Google_Service_Directory_Resource_Chromeosdevices extends Google_Service_R
   /**
    * Take action on Chrome OS Device (chromeosdevices.action)
    *
-   * @param string $customerId Immutable id of the Google Apps account
-   * @param string $resourceId Immutable id of Chrome OS Device
+   * @param string $customerId Immutable ID of the G Suite account
+   * @param string $resourceId Immutable ID of Chrome OS Device
    * @param Google_Service_Directory_ChromeOsDeviceAction $postBody
    * @param array $optParams Optional parameters.
    */
@@ -42,8 +42,8 @@ class Google_Service_Directory_Resource_Chromeosdevices extends Google_Service_R
   /**
    * Retrieve Chrome OS Device (chromeosdevices.get)
    *
-   * @param string $customerId Immutable id of the Google Apps account
-   * @param string $deviceId Immutable id of Chrome OS Device
+   * @param string $customerId Immutable ID of the G Suite account
+   * @param string $deviceId Immutable ID of Chrome OS Device
    * @param array $optParams Optional parameters.
    *
    * @opt_param string projection Restrict information returned to a set of
@@ -60,7 +60,7 @@ class Google_Service_Directory_Resource_Chromeosdevices extends Google_Service_R
    * Retrieve all Chrome OS Devices of a customer (paginated)
    * (chromeosdevices.listChromeosdevices)
    *
-   * @param string $customerId Immutable id of the Google Apps account
+   * @param string $customerId Immutable ID of the G Suite account
    * @param array $optParams Optional parameters.
    *
    * @opt_param int maxResults Maximum number of results to return. Default is 100
@@ -84,8 +84,8 @@ class Google_Service_Directory_Resource_Chromeosdevices extends Google_Service_R
    * Update Chrome OS Device. This method supports patch semantics.
    * (chromeosdevices.patch)
    *
-   * @param string $customerId Immutable id of the Google Apps account
-   * @param string $deviceId Immutable id of Chrome OS Device
+   * @param string $customerId Immutable ID of the G Suite account
+   * @param string $deviceId Immutable ID of Chrome OS Device
    * @param Google_Service_Directory_ChromeOsDevice $postBody
    * @param array $optParams Optional parameters.
    *
@@ -102,8 +102,8 @@ class Google_Service_Directory_Resource_Chromeosdevices extends Google_Service_R
   /**
    * Update Chrome OS Device (chromeosdevices.update)
    *
-   * @param string $customerId Immutable id of the Google Apps account
-   * @param string $deviceId Immutable id of Chrome OS Device
+   * @param string $customerId Immutable ID of the G Suite account
+   * @param string $deviceId Immutable ID of Chrome OS Device
    * @param Google_Service_Directory_ChromeOsDevice $postBody
    * @param array $optParams Optional parameters.
    *

@@ -41,6 +41,7 @@ class Google_Service_Directory_User extends Google_Collection
   public $isMailboxSetup;
   public $kind;
   public $lastLoginTime;
+  public $locations;
   protected $nameType = 'Google_Service_Directory_UserName';
   protected $nameDataType = '';
   public $nonEditableAliases;
@@ -242,6 +243,14 @@ class Google_Service_Directory_User extends Google_Collection
   public function getLastLoginTime()
   {
     return $this->lastLoginTime;
+  }
+  public function setLocations($locations)
+  {
+    $this->locations = $locations;
+  }
+  public function getLocations()
+  {
+    return $this->locations;
   }
   public function setName(Google_Service_Directory_UserName $name)
   {
