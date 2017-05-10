@@ -19,6 +19,7 @@ class Google_Service_AndroidEnterprise_ProductsApproveRequest extends Google_Mod
 {
   protected $approvalUrlInfoType = 'Google_Service_AndroidEnterprise_ApprovalUrlInfo';
   protected $approvalUrlInfoDataType = '';
+  public $approvedPermissions;
 
   public function setApprovalUrlInfo(Google_Service_AndroidEnterprise_ApprovalUrlInfo $approvalUrlInfo)
   {
@@ -27,5 +28,13 @@ class Google_Service_AndroidEnterprise_ProductsApproveRequest extends Google_Mod
   public function getApprovalUrlInfo()
   {
     return $this->approvalUrlInfo;
+  }
+  public function setApprovedPermissions($approvedPermissions)
+  {
+    $this->approvedPermissions = $approvedPermissions;
+  }
+  public function getApprovedPermissions()
+  {
+    return $this->approvedPermissions;
   }
 }

@@ -28,6 +28,7 @@ class Google_Service_AndroidEnterprise_Notification extends Google_Model
   protected $newDeviceEventDataType = '';
   protected $newPermissionsEventType = 'Google_Service_AndroidEnterprise_NewPermissionsEvent';
   protected $newPermissionsEventDataType = '';
+  public $notificationType;
   protected $productApprovalEventType = 'Google_Service_AndroidEnterprise_ProductApprovalEvent';
   protected $productApprovalEventDataType = '';
   protected $productAvailabilityChangeEventType = 'Google_Service_AndroidEnterprise_ProductAvailabilityChangeEvent';
@@ -81,6 +82,14 @@ class Google_Service_AndroidEnterprise_Notification extends Google_Model
   public function getNewPermissionsEvent()
   {
     return $this->newPermissionsEvent;
+  }
+  public function setNotificationType($notificationType)
+  {
+    $this->notificationType = $notificationType;
+  }
+  public function getNotificationType()
+  {
+    return $this->notificationType;
   }
   public function setProductApprovalEvent(Google_Service_AndroidEnterprise_ProductApprovalEvent $productApprovalEvent)
   {
