@@ -17,7 +17,7 @@
 
 class Google_Service_CloudBuild_Build extends Google_Collection
 {
-  protected $collection_key = 'steps';
+  protected $collection_key = 'tags';
   public $buildTriggerId;
   public $createTime;
   public $finishTime;
@@ -40,6 +40,7 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   protected $stepsType = 'Google_Service_CloudBuild_BuildStep';
   protected $stepsDataType = 'array';
   public $substitutions;
+  public $tags;
   public $timeout;
 
   public function setBuildTriggerId($buildTriggerId)
@@ -177,6 +178,14 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   public function getSubstitutions()
   {
     return $this->substitutions;
+  }
+  public function setTags($tags)
+  {
+    $this->tags = $tags;
+  }
+  public function getTags()
+  {
+    return $this->tags;
   }
   public function setTimeout($timeout)
   {
