@@ -21,6 +21,7 @@ class Google_Service_AdExchangeBuyer_TargetingValueCreativeSize extends Google_C
   protected $companionSizesType = 'Google_Service_AdExchangeBuyer_TargetingValueSize';
   protected $companionSizesDataType = 'array';
   public $creativeSizeType;
+  public $nativeTemplate;
   protected $sizeType = 'Google_Service_AdExchangeBuyer_TargetingValueSize';
   protected $sizeDataType = '';
   public $skippableAdType;
@@ -40,6 +41,14 @@ class Google_Service_AdExchangeBuyer_TargetingValueCreativeSize extends Google_C
   public function getCreativeSizeType()
   {
     return $this->creativeSizeType;
+  }
+  public function setNativeTemplate($nativeTemplate)
+  {
+    $this->nativeTemplate = $nativeTemplate;
+  }
+  public function getNativeTemplate()
+  {
+    return $this->nativeTemplate;
   }
   public function setSize(Google_Service_AdExchangeBuyer_TargetingValueSize $size)
   {

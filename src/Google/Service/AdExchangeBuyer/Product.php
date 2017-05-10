@@ -18,9 +18,14 @@
 class Google_Service_AdExchangeBuyer_Product extends Google_Collection
 {
   protected $collection_key = 'sharedTargetings';
+  protected $billedBuyerType = 'Google_Service_AdExchangeBuyer_Buyer';
+  protected $billedBuyerDataType = '';
+  protected $buyerType = 'Google_Service_AdExchangeBuyer_Buyer';
+  protected $buyerDataType = '';
   public $creationTimeMs;
   protected $creatorContactsType = 'Google_Service_AdExchangeBuyer_ContactInformation';
   protected $creatorContactsDataType = 'array';
+  public $creatorRole;
   protected $deliveryControlType = 'Google_Service_AdExchangeBuyer_DeliveryControl';
   protected $deliveryControlDataType = '';
   public $flightEndTimeMs;
@@ -50,6 +55,22 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   protected $termsDataType = '';
   public $webPropertyCode;
 
+  public function setBilledBuyer(Google_Service_AdExchangeBuyer_Buyer $billedBuyer)
+  {
+    $this->billedBuyer = $billedBuyer;
+  }
+  public function getBilledBuyer()
+  {
+    return $this->billedBuyer;
+  }
+  public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
+  {
+    $this->buyer = $buyer;
+  }
+  public function getBuyer()
+  {
+    return $this->buyer;
+  }
   public function setCreationTimeMs($creationTimeMs)
   {
     $this->creationTimeMs = $creationTimeMs;
@@ -65,6 +86,14 @@ class Google_Service_AdExchangeBuyer_Product extends Google_Collection
   public function getCreatorContacts()
   {
     return $this->creatorContacts;
+  }
+  public function setCreatorRole($creatorRole)
+  {
+    $this->creatorRole = $creatorRole;
+  }
+  public function getCreatorRole()
+  {
+    return $this->creatorRole;
   }
   public function setDeliveryControl(Google_Service_AdExchangeBuyer_DeliveryControl $deliveryControl)
   {

@@ -18,6 +18,8 @@
 class Google_Service_AdExchangeBuyer_PricePerBuyer extends Google_Model
 {
   public $auctionTier;
+  protected $billedBuyerType = 'Google_Service_AdExchangeBuyer_Buyer';
+  protected $billedBuyerDataType = '';
   protected $buyerType = 'Google_Service_AdExchangeBuyer_Buyer';
   protected $buyerDataType = '';
   protected $priceType = 'Google_Service_AdExchangeBuyer_Price';
@@ -30,6 +32,14 @@ class Google_Service_AdExchangeBuyer_PricePerBuyer extends Google_Model
   public function getAuctionTier()
   {
     return $this->auctionTier;
+  }
+  public function setBilledBuyer(Google_Service_AdExchangeBuyer_Buyer $billedBuyer)
+  {
+    $this->billedBuyer = $billedBuyer;
+  }
+  public function getBilledBuyer()
+  {
+    return $this->billedBuyer;
   }
   public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
   {

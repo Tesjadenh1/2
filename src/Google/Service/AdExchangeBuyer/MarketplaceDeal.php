@@ -33,6 +33,7 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   public $flightStartTimeMs;
   public $inventoryDescription;
   public $isRfpTemplate;
+  public $isSetupComplete;
   public $kind;
   public $lastUpdateTimeMs;
   public $name;
@@ -144,6 +145,14 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   public function getIsRfpTemplate()
   {
     return $this->isRfpTemplate;
+  }
+  public function setIsSetupComplete($isSetupComplete)
+  {
+    $this->isSetupComplete = $isSetupComplete;
+  }
+  public function getIsSetupComplete()
+  {
+    return $this->isSetupComplete;
   }
   public function setKind($kind)
   {
