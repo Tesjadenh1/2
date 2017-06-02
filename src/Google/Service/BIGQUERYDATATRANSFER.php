@@ -19,7 +19,8 @@
  * Service definition for BIGQUERYDATATRANSFER (v1).
  *
  * <p>
-</p>
+ * Transfers data from partner SaaS applications to Google BigQuery on a
+ * scheduled, managed basis.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -118,13 +119,13 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -180,11 +181,6 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'dataSourceIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -192,6 +188,11 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'dataSourceIds' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
                 ),
               ),
             ),'patch' => array(
@@ -203,11 +204,11 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'authorizationCode' => array(
+                'updateMask' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'updateMask' => array(
+                'authorizationCode' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -261,6 +262,10 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'runAttempt' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -273,10 +278,6 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'runAttempt' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
@@ -298,6 +299,10 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -306,10 +311,6 @@ class Google_Service_BIGQUERYDATATRANSFER extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
