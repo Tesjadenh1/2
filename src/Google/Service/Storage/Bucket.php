@@ -20,6 +20,8 @@ class Google_Service_Storage_Bucket extends Google_Collection
   protected $collection_key = 'defaultObjectAcl';
   protected $aclType = 'Google_Service_Storage_BucketAccessControl';
   protected $aclDataType = 'array';
+  protected $billingType = 'Google_Service_Storage_BucketBilling';
+  protected $billingDataType = '';
   protected $corsType = 'Google_Service_Storage_BucketCors';
   protected $corsDataType = 'array';
   protected $defaultObjectAclType = 'Google_Service_Storage_ObjectAccessControl';
@@ -27,6 +29,7 @@ class Google_Service_Storage_Bucket extends Google_Collection
   public $etag;
   public $id;
   public $kind;
+  public $labels;
   protected $lifecycleType = 'Google_Service_Storage_BucketLifecycle';
   protected $lifecycleDataType = '';
   public $location;
@@ -53,6 +56,14 @@ class Google_Service_Storage_Bucket extends Google_Collection
   public function getAcl()
   {
     return $this->acl;
+  }
+  public function setBilling(Google_Service_Storage_BucketBilling $billing)
+  {
+    $this->billing = $billing;
+  }
+  public function getBilling()
+  {
+    return $this->billing;
   }
   public function setCors($cors)
   {
@@ -93,6 +104,14 @@ class Google_Service_Storage_Bucket extends Google_Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  public function getLabels()
+  {
+    return $this->labels;
   }
   public function setLifecycle(Google_Service_Storage_BucketLifecycle $lifecycle)
   {

@@ -20,6 +20,7 @@ class Google_Service_ManufacturerCenter_Issue extends Google_Model
   public $attribute;
   public $description;
   public $severity;
+  public $timestamp;
   public $type;
 
   public function setAttribute($attribute)
@@ -45,6 +46,14 @@ class Google_Service_ManufacturerCenter_Issue extends Google_Model
   public function getSeverity()
   {
     return $this->severity;
+  }
+  public function setTimestamp($timestamp)
+  {
+    $this->timestamp = $timestamp;
+  }
+  public function getTimestamp()
+  {
+    return $this->timestamp;
   }
   public function setType($type)
   {

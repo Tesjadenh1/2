@@ -58,8 +58,8 @@ class Google_Service_ShoppingContent_Resource_Orders extends Google_Service_Reso
     return $this->call('advancetestorder', array($params), "Google_Service_ShoppingContent_OrdersAdvanceTestOrderResponse");
   }
   /**
-   * Cancels all line items in an order. This method can only be called for non-
-   * multi-client accounts. (orders.cancel)
+   * Cancels all line items in an order, making a full refund. This method can
+   * only be called for non-multi-client accounts. (orders.cancel)
    *
    * @param string $merchantId The ID of the managing account.
    * @param string $orderId The ID of the order to cancel.
@@ -74,8 +74,8 @@ class Google_Service_ShoppingContent_Resource_Orders extends Google_Service_Reso
     return $this->call('cancel', array($params), "Google_Service_ShoppingContent_OrdersCancelResponse");
   }
   /**
-   * Cancels a line item. This method can only be called for non-multi-client
-   * accounts. (orders.cancellineitem)
+   * Cancels a line item, making a full refund. This method can only be called for
+   * non-multi-client accounts. (orders.cancellineitem)
    *
    * @param string $merchantId The ID of the managing account.
    * @param string $orderId The ID of the order.

@@ -106,7 +106,7 @@ class Google_Service_Dfareporting_Resource_PlacementGroups extends Google_Servic
    * @opt_param string siteIds Select only placement groups that are associated
    * with these sites.
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_PlacementGroupsListResponse
    */
   public function listPlacementGroups($profileId, $optParams = array())

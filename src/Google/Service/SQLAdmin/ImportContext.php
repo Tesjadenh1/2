@@ -21,6 +21,7 @@ class Google_Service_SQLAdmin_ImportContext extends Google_Model
   protected $csvImportOptionsDataType = '';
   public $database;
   public $fileType;
+  public $importUser;
   public $kind;
   public $uri;
 
@@ -47,6 +48,14 @@ class Google_Service_SQLAdmin_ImportContext extends Google_Model
   public function getFileType()
   {
     return $this->fileType;
+  }
+  public function setImportUser($importUser)
+  {
+    $this->importUser = $importUser;
+  }
+  public function getImportUser()
+  {
+    return $this->importUser;
   }
   public function setKind($kind)
   {

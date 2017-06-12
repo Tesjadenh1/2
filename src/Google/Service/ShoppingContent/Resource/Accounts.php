@@ -38,6 +38,24 @@ class Google_Service_ShoppingContent_Resource_Accounts extends Google_Service_Re
     return $this->call('authinfo', array($params), "Google_Service_ShoppingContent_AccountsAuthInfoResponse");
   }
   /**
+   * Claims the website of a Merchant Center sub-account. This method can only be
+   * called for multi-client accounts. (accounts.claimwebsite)
+   *
+   * @param string $merchantId The ID of the managing account.
+   * @param string $accountId The ID of the account whose website is claimed.
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param bool overwrite Flag to remove any existing claim on the requested
+   * website by another account and replace it with a claim from this account.
+   * @return Google_Service_ShoppingContent_AccountsClaimWebsiteResponse
+   */
+  public function claimwebsite($merchantId, $accountId, $optParams = array())
+  {
+    $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
+    $params = array_merge($params, $optParams);
+    return $this->call('claimwebsite', array($params), "Google_Service_ShoppingContent_AccountsClaimWebsiteResponse");
+  }
+  /**
    * Retrieves, inserts, updates, and deletes multiple Merchant Center
    * (sub-)accounts in a single request. (accounts.custombatch)
    *

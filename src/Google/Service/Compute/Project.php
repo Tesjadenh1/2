@@ -32,6 +32,7 @@ class Google_Service_Compute_Project extends Google_Collection
   public $selfLink;
   protected $usageExportLocationType = 'Google_Service_Compute_UsageExportLocation';
   protected $usageExportLocationDataType = '';
+  public $xpnProjectStatus;
 
   public function setCommonInstanceMetadata(Google_Service_Compute_Metadata $commonInstanceMetadata)
   {
@@ -120,5 +121,13 @@ class Google_Service_Compute_Project extends Google_Collection
   public function getUsageExportLocation()
   {
     return $this->usageExportLocation;
+  }
+  public function setXpnProjectStatus($xpnProjectStatus)
+  {
+    $this->xpnProjectStatus = $xpnProjectStatus;
+  }
+  public function getXpnProjectStatus()
+  {
+    return $this->xpnProjectStatus;
   }
 }

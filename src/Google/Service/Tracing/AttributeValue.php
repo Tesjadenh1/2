@@ -19,7 +19,8 @@ class Google_Service_Tracing_AttributeValue extends Google_Model
 {
   public $boolValue;
   public $intValue;
-  public $stringValue;
+  protected $stringValueType = 'Google_Service_Tracing_TruncatableString';
+  protected $stringValueDataType = '';
 
   public function setBoolValue($boolValue)
   {
@@ -37,7 +38,7 @@ class Google_Service_Tracing_AttributeValue extends Google_Model
   {
     return $this->intValue;
   }
-  public function setStringValue($stringValue)
+  public function setStringValue(Google_Service_Tracing_TruncatableString $stringValue)
   {
     $this->stringValue = $stringValue;
   }

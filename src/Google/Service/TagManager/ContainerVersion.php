@@ -19,22 +19,22 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
 {
   protected $collection_key = 'variable';
   public $accountId;
+  protected $builtInVariableType = 'Google_Service_TagManager_BuiltInVariable';
+  protected $builtInVariableDataType = 'array';
   protected $containerType = 'Google_Service_TagManager_Container';
   protected $containerDataType = '';
   public $containerId;
   public $containerVersionId;
   public $deleted;
+  public $description;
   public $fingerprint;
   protected $folderType = 'Google_Service_TagManager_Folder';
   protected $folderDataType = 'array';
-  protected $macroType = 'Google_Service_TagManager_Macro';
-  protected $macroDataType = 'array';
   public $name;
-  public $notes;
-  protected $ruleType = 'Google_Service_TagManager_Rule';
-  protected $ruleDataType = 'array';
+  public $path;
   protected $tagType = 'Google_Service_TagManager_Tag';
   protected $tagDataType = 'array';
+  public $tagManagerUrl;
   protected $triggerType = 'Google_Service_TagManager_Trigger';
   protected $triggerDataType = 'array';
   protected $variableType = 'Google_Service_TagManager_Variable';
@@ -47,6 +47,14 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   public function getAccountId()
   {
     return $this->accountId;
+  }
+  public function setBuiltInVariable($builtInVariable)
+  {
+    $this->builtInVariable = $builtInVariable;
+  }
+  public function getBuiltInVariable()
+  {
+    return $this->builtInVariable;
   }
   public function setContainer(Google_Service_TagManager_Container $container)
   {
@@ -80,6 +88,14 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->deleted;
   }
+  public function setDescription($description)
+  {
+    $this->description = $description;
+  }
+  public function getDescription()
+  {
+    return $this->description;
+  }
   public function setFingerprint($fingerprint)
   {
     $this->fingerprint = $fingerprint;
@@ -96,14 +112,6 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->folder;
   }
-  public function setMacro($macro)
-  {
-    $this->macro = $macro;
-  }
-  public function getMacro()
-  {
-    return $this->macro;
-  }
   public function setName($name)
   {
     $this->name = $name;
@@ -112,21 +120,13 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->name;
   }
-  public function setNotes($notes)
+  public function setPath($path)
   {
-    $this->notes = $notes;
+    $this->path = $path;
   }
-  public function getNotes()
+  public function getPath()
   {
-    return $this->notes;
-  }
-  public function setRule($rule)
-  {
-    $this->rule = $rule;
-  }
-  public function getRule()
-  {
-    return $this->rule;
+    return $this->path;
   }
   public function setTag($tag)
   {
@@ -135,6 +135,14 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   public function getTag()
   {
     return $this->tag;
+  }
+  public function setTagManagerUrl($tagManagerUrl)
+  {
+    $this->tagManagerUrl = $tagManagerUrl;
+  }
+  public function getTagManagerUrl()
+  {
+    return $this->tagManagerUrl;
   }
   public function setTrigger($trigger)
   {

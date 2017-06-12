@@ -58,7 +58,7 @@ class Google_Service_Dfareporting_Resource_InventoryItems extends Google_Service
    * @opt_param string siteId Select only inventory items that are associated with
    * these sites.
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @opt_param string type Select only inventory items with this type.
    * @return Google_Service_Dfareporting_InventoryItemsListResponse
    */

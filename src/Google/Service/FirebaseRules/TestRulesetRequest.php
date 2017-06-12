@@ -19,6 +19,8 @@ class Google_Service_FirebaseRules_TestRulesetRequest extends Google_Model
 {
   protected $sourceType = 'Google_Service_FirebaseRules_Source';
   protected $sourceDataType = '';
+  protected $testSuiteType = 'Google_Service_FirebaseRules_TestSuite';
+  protected $testSuiteDataType = '';
 
   public function setSource(Google_Service_FirebaseRules_Source $source)
   {
@@ -27,5 +29,13 @@ class Google_Service_FirebaseRules_TestRulesetRequest extends Google_Model
   public function getSource()
   {
     return $this->source;
+  }
+  public function setTestSuite(Google_Service_FirebaseRules_TestSuite $testSuite)
+  {
+    $this->testSuite = $testSuite;
+  }
+  public function getTestSuite()
+  {
+    return $this->testSuite;
   }
 }

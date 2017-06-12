@@ -59,7 +59,7 @@ class Google_Service_Dfareporting_Resource_Projects extends Google_Service_Resou
    * the end of the search string. For example, a search string of "project" will
    * match projects with name "my project", "project 2015", or simply "project".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_ProjectsListResponse
    */
   public function listProjects($profileId, $optParams = array())

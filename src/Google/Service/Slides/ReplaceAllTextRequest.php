@@ -15,10 +15,12 @@
  * the License.
  */
 
-class Google_Service_Slides_ReplaceAllTextRequest extends Google_Model
+class Google_Service_Slides_ReplaceAllTextRequest extends Google_Collection
 {
+  protected $collection_key = 'pageObjectIds';
   protected $containsTextType = 'Google_Service_Slides_SubstringMatchCriteria';
   protected $containsTextDataType = '';
+  public $pageObjectIds;
   public $replaceText;
 
   public function setContainsText(Google_Service_Slides_SubstringMatchCriteria $containsText)
@@ -28,6 +30,14 @@ class Google_Service_Slides_ReplaceAllTextRequest extends Google_Model
   public function getContainsText()
   {
     return $this->containsText;
+  }
+  public function setPageObjectIds($pageObjectIds)
+  {
+    $this->pageObjectIds = $pageObjectIds;
+  }
+  public function getPageObjectIds()
+  {
+    return $this->pageObjectIds;
   }
   public function setReplaceText($replaceText)
   {

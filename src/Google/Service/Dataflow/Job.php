@@ -36,6 +36,8 @@ class Google_Service_Dataflow_Job extends Google_Collection
   public $replaceJobId;
   public $replacedByJobId;
   public $requestedState;
+  protected $stageStatesType = 'Google_Service_Dataflow_ExecutionStageState';
+  protected $stageStatesDataType = 'array';
   protected $stepsType = 'Google_Service_Dataflow_Step';
   protected $stepsDataType = 'array';
   public $tempFiles;
@@ -161,6 +163,14 @@ class Google_Service_Dataflow_Job extends Google_Collection
   public function getRequestedState()
   {
     return $this->requestedState;
+  }
+  public function setStageStates($stageStates)
+  {
+    $this->stageStates = $stageStates;
+  }
+  public function getStageStates()
+  {
+    return $this->stageStates;
   }
   public function setSteps($steps)
   {

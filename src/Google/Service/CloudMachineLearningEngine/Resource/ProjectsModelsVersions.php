@@ -32,8 +32,9 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModelsVersions 
    * version of the specified model, it will be made the default version of the
    * model. When you add a version to a model that already has one or more
    * versions, the default version does not automatically change. If you want a
-   * new version to be the default, you must call [projects.models.versions.setDef
-   * ault](/ml/reference/rest/v1/projects.models.versions/setDefault).
+   * new version to be the default, you must call
+   * [projects.models.versions.setDefault](/ml-
+   * engine/reference/rest/v1/projects.models.versions/setDefault).
    * (versions.create)
    *
    * @param string $parent Required. The name of the model.
@@ -59,8 +60,8 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModelsVersions 
    * model unless it is the only remaining version. (versions.delete)
    *
    * @param string $name Required. The name of the version. You can get the names
-   * of all the versions of a model by calling [projects.models.versions.list](/ml
-   * /reference/rest/v1/projects.models.versions/list).
+   * of all the versions of a model by calling [projects.models.versions.list
+   * ](/ml-engine/reference/rest/v1/projects.models.versions/list).
    *
    * Authorization: requires `Editor` role on the parent project.
    * @param array $optParams Optional parameters.
@@ -75,8 +76,9 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModelsVersions 
   /**
    * Gets information about a model version.
    *
-   * Models can have multiple versions. You can call [projects.models.versions.lis
-   * t](/ml/reference/rest/v1/projects.models.versions/list) to get the same
+   * Models can have multiple versions. You can call
+   * [projects.models.versions.list](/ml-
+   * engine/reference/rest/v1/projects.models.versions/list) to get the same
    * information that this method returns for all of the versions of a model.
    * (versions.get)
    *
@@ -134,9 +136,9 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModelsVersions 
    * manually using this method. (versions.setDefault)
    *
    * @param string $name Required. The name of the version to make the default for
-   * the model. You can get the names of all the versions of a model by calling [p
-   * rojects.models.versions.list](/ml/reference/rest/v1/projects.models.versions/
-   * list).
+   * the model. You can get the names of all the versions of a model by calling
+   * [projects.models.versions.list](/ml-
+   * engine/reference/rest/v1/projects.models.versions/list).
    *
    * Authorization: requires `Editor` role on the parent project.
    * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1SetDefaultVersionRequest $postBody

@@ -38,7 +38,6 @@ class Google_Service_Storagetransfer extends Google_Service
   public $googleServiceAccounts;
   public $transferJobs;
   public $transferOperations;
-  public $v1;
   
   /**
    * Constructs the internal representation of the Storagetransfer service.
@@ -101,7 +100,7 @@ class Google_Service_Storagetransfer extends Google_Service
               'path' => 'v1/transferJobs',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'filter' => array(
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -109,7 +108,7 @@ class Google_Service_Storagetransfer extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
-                'pageToken' => array(
+                'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -173,13 +172,13 @@ class Google_Service_Storagetransfer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
                 'pageToken' => array(
                   'location' => 'query',
@@ -204,25 +203,6 @@ class Google_Service_Storagetransfer extends Google_Service
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->v1 = new Google_Service_Storagetransfer_Resource_V1(
-        $this,
-        $this->serviceName,
-        'v1',
-        array(
-          'methods' => array(
-            'getGoogleServiceAccount' => array(
-              'path' => 'v1:getGoogleServiceAccount',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'projectId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),

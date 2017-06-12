@@ -17,16 +17,25 @@
 
 class Google_Service_TagManager_ListEnvironmentsResponse extends Google_Collection
 {
-  protected $collection_key = 'environments';
-  protected $environmentsType = 'Google_Service_TagManager_Environment';
-  protected $environmentsDataType = 'array';
+  protected $collection_key = 'environment';
+  protected $environmentType = 'Google_Service_TagManager_Environment';
+  protected $environmentDataType = 'array';
+  public $nextPageToken;
 
-  public function setEnvironments($environments)
+  public function setEnvironment($environment)
   {
-    $this->environments = $environments;
+    $this->environment = $environment;
   }
-  public function getEnvironments()
+  public function getEnvironment()
   {
-    return $this->environments;
+    return $this->environment;
+  }
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
 }

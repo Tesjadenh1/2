@@ -18,6 +18,7 @@
 class Google_Service_TagManager_FolderEntities extends Google_Collection
 {
   protected $collection_key = 'variable';
+  public $nextPageToken;
   protected $tagType = 'Google_Service_TagManager_Tag';
   protected $tagDataType = 'array';
   protected $triggerType = 'Google_Service_TagManager_Trigger';
@@ -25,6 +26,14 @@ class Google_Service_TagManager_FolderEntities extends Google_Collection
   protected $variableType = 'Google_Service_TagManager_Variable';
   protected $variableDataType = 'array';
 
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
+  }
   public function setTag($tag)
   {
     $this->tag = $tag;

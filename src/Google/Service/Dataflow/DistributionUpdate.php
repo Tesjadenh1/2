@@ -15,10 +15,13 @@
  * the License.
  */
 
-class Google_Service_Dataflow_DistributionUpdate extends Google_Model
+class Google_Service_Dataflow_DistributionUpdate extends Google_Collection
 {
+  protected $collection_key = 'logBuckets';
   protected $countType = 'Google_Service_Dataflow_SplitInt64';
   protected $countDataType = '';
+  protected $logBucketsType = 'Google_Service_Dataflow_LogBucket';
+  protected $logBucketsDataType = 'array';
   protected $maxType = 'Google_Service_Dataflow_SplitInt64';
   protected $maxDataType = '';
   protected $minType = 'Google_Service_Dataflow_SplitInt64';
@@ -34,6 +37,14 @@ class Google_Service_Dataflow_DistributionUpdate extends Google_Model
   public function getCount()
   {
     return $this->count;
+  }
+  public function setLogBuckets($logBuckets)
+  {
+    $this->logBuckets = $logBuckets;
+  }
+  public function getLogBuckets()
+  {
+    return $this->logBuckets;
   }
   public function setMax(Google_Service_Dataflow_SplitInt64 $max)
   {

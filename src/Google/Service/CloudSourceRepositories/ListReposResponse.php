@@ -18,9 +18,18 @@
 class Google_Service_CloudSourceRepositories_ListReposResponse extends Google_Collection
 {
   protected $collection_key = 'repos';
+  public $nextPageToken;
   protected $reposType = 'Google_Service_CloudSourceRepositories_Repo';
   protected $reposDataType = 'array';
 
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
+  }
   public function setRepos($repos)
   {
     $this->repos = $repos;

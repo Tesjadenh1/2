@@ -17,10 +17,6 @@
 
 class Google_Service_Dfareporting_DirectorySiteSettings extends Google_Model
 {
-  protected $internal_gapi_mappings = array(
-        "dfpSettings" => "dfp_settings",
-        "instreamVideoPlacementAccepted" => "instream_video_placement_accepted",
-  );
   public $activeViewOptOut;
   protected $dfpSettingsType = 'Google_Service_Dfareporting_DfpSettings';
   protected $dfpSettingsDataType = '';

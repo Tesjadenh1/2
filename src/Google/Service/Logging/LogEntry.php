@@ -26,6 +26,7 @@ class Google_Service_Logging_LogEntry extends Google_Model
   protected $operationType = 'Google_Service_Logging_LogEntryOperation';
   protected $operationDataType = '';
   public $protoPayload;
+  public $receiveTimestamp;
   protected $resourceType = 'Google_Service_Logging_MonitoredResource';
   protected $resourceDataType = '';
   public $severity;
@@ -90,6 +91,14 @@ class Google_Service_Logging_LogEntry extends Google_Model
   public function getProtoPayload()
   {
     return $this->protoPayload;
+  }
+  public function setReceiveTimestamp($receiveTimestamp)
+  {
+    $this->receiveTimestamp = $receiveTimestamp;
+  }
+  public function getReceiveTimestamp()
+  {
+    return $this->receiveTimestamp;
   }
   public function setResource(Google_Service_Logging_MonitoredResource $resource)
   {

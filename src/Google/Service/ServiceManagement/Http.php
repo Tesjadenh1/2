@@ -18,9 +18,18 @@
 class Google_Service_ServiceManagement_Http extends Google_Collection
 {
   protected $collection_key = 'rules';
+  public $fullyDecodeReservedExpansion;
   protected $rulesType = 'Google_Service_ServiceManagement_HttpRule';
   protected $rulesDataType = 'array';
 
+  public function setFullyDecodeReservedExpansion($fullyDecodeReservedExpansion)
+  {
+    $this->fullyDecodeReservedExpansion = $fullyDecodeReservedExpansion;
+  }
+  public function getFullyDecodeReservedExpansion()
+  {
+    return $this->fullyDecodeReservedExpansion;
+  }
   public function setRules($rules)
   {
     $this->rules = $rules;

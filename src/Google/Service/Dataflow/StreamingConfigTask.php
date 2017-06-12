@@ -21,6 +21,8 @@ class Google_Service_Dataflow_StreamingConfigTask extends Google_Collection
   protected $streamingComputationConfigsType = 'Google_Service_Dataflow_StreamingComputationConfig';
   protected $streamingComputationConfigsDataType = 'array';
   public $userStepToStateFamilyNameMap;
+  public $windmillServiceEndpoint;
+  public $windmillServicePort;
 
   public function setStreamingComputationConfigs($streamingComputationConfigs)
   {
@@ -37,5 +39,21 @@ class Google_Service_Dataflow_StreamingConfigTask extends Google_Collection
   public function getUserStepToStateFamilyNameMap()
   {
     return $this->userStepToStateFamilyNameMap;
+  }
+  public function setWindmillServiceEndpoint($windmillServiceEndpoint)
+  {
+    $this->windmillServiceEndpoint = $windmillServiceEndpoint;
+  }
+  public function getWindmillServiceEndpoint()
+  {
+    return $this->windmillServiceEndpoint;
+  }
+  public function setWindmillServicePort($windmillServicePort)
+  {
+    $this->windmillServicePort = $windmillServicePort;
+  }
+  public function getWindmillServicePort()
+  {
+    return $this->windmillServicePort;
   }
 }

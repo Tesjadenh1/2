@@ -59,7 +59,7 @@ class Google_Service_Dfareporting_Resource_Accounts extends Google_Service_Resou
    * the end of the search string. For example, a search string of "account" will
    * match objects with name "my account", "account 2015", or simply "account".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_AccountsListResponse
    */
   public function listAccounts($profileId, $optParams = array())

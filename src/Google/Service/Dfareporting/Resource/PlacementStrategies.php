@@ -86,7 +86,7 @@ class Google_Service_Dfareporting_Resource_PlacementStrategies extends Google_Se
    * "my placementstrategy", "placementstrategy 2015", or simply
    * "placementstrategy".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_PlacementStrategiesListResponse
    */
   public function listPlacementStrategies($profileId, $optParams = array())

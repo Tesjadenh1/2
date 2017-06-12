@@ -87,7 +87,7 @@ class Google_Service_Dfareporting_Resource_UserRoles extends Google_Service_Reso
    * "userrole" will match objects with name "my userrole", "userrole 2015", or
    * simply "userrole".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @opt_param string subaccountId Select only user roles that belong to this
    * subaccount.
    * @return Google_Service_Dfareporting_UserRolesListResponse

@@ -73,7 +73,7 @@ class Google_Service_Dfareporting_Resource_AccountUserProfiles extends Google_Se
    * search string of "user profile" will match objects with name "my user
    * profile", "user profile 2015", or simply "user profile".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @opt_param string subaccountId Select only user profiles with the specified
    * subaccount ID.
    * @opt_param string userRoleId Select only user profiles with the specified

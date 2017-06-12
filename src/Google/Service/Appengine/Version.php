@@ -59,6 +59,7 @@ class Google_Service_Appengine_Version extends Google_Collection
   protected $resourcesType = 'Google_Service_Appengine_Resources';
   protected $resourcesDataType = '';
   public $runtime;
+  public $runtimeApiVersion;
   public $servingStatus;
   public $threadsafe;
   public $versionUrl;
@@ -279,6 +280,14 @@ class Google_Service_Appengine_Version extends Google_Collection
   public function getRuntime()
   {
     return $this->runtime;
+  }
+  public function setRuntimeApiVersion($runtimeApiVersion)
+  {
+    $this->runtimeApiVersion = $runtimeApiVersion;
+  }
+  public function getRuntimeApiVersion()
+  {
+    return $this->runtimeApiVersion;
   }
   public function setServingStatus($servingStatus)
   {

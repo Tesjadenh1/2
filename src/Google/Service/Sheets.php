@@ -33,6 +33,9 @@ class Google_Service_Sheets extends Google_Service
   /** View and manage the files in your Google Drive. */
   const DRIVE =
       "https://www.googleapis.com/auth/drive";
+  /** View and manage Google Drive files and folders that you have opened or created with this app. */
+  const DRIVE_FILE =
+      "https://www.googleapis.com/auth/drive.file";
   /** View the files in your Google Drive. */
   const DRIVE_READONLY =
       "https://www.googleapis.com/auth/drive.readonly";
@@ -148,10 +151,6 @@ class Google_Service_Sheets extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'includeValuesInResponse' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
                 'responseValueRenderOption' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -167,6 +166,10 @@ class Google_Service_Sheets extends Google_Service
                 'responseDateTimeRenderOption' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'includeValuesInResponse' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'batchClear' => array(
@@ -272,6 +275,10 @@ class Google_Service_Sheets extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'responseValueRenderOption' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'valueInputOption' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -283,10 +290,6 @@ class Google_Service_Sheets extends Google_Service
                 'includeValuesInResponse' => array(
                   'location' => 'query',
                   'type' => 'boolean',
-                ),
-                'responseValueRenderOption' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),

@@ -31,6 +31,8 @@ class Google_Service_Compute_Image extends Google_Collection
   protected $imageEncryptionKeyType = 'Google_Service_Compute_CustomerEncryptionKey';
   protected $imageEncryptionKeyDataType = '';
   public $kind;
+  public $labelFingerprint;
+  public $labels;
   public $licenses;
   public $name;
   protected $rawDiskType = 'Google_Service_Compute_ImageRawDisk';
@@ -122,6 +124,22 @@ class Google_Service_Compute_Image extends Google_Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setLabelFingerprint($labelFingerprint)
+  {
+    $this->labelFingerprint = $labelFingerprint;
+  }
+  public function getLabelFingerprint()
+  {
+    return $this->labelFingerprint;
+  }
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  public function getLabels()
+  {
+    return $this->labels;
   }
   public function setLicenses($licenses)
   {

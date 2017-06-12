@@ -30,7 +30,9 @@
  */
 class Google_Service_DoubleClickBidManager extends Google_Service
 {
-
+  /** View and manage your reports in DoubleClick Bid Manager. */
+  const DOUBLECLICKBIDMANAGER =
+      "https://www.googleapis.com/auth/doubleclickbidmanager";
 
   public $lineitems;
   public $queries;

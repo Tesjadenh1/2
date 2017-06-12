@@ -24,6 +24,8 @@ class Google_Service_Compute_Disk extends Google_Collection
   protected $diskEncryptionKeyDataType = '';
   public $id;
   public $kind;
+  public $labelFingerprint;
+  public $labels;
   public $lastAttachTimestamp;
   public $lastDetachTimestamp;
   public $licenses;
@@ -83,6 +85,22 @@ class Google_Service_Compute_Disk extends Google_Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setLabelFingerprint($labelFingerprint)
+  {
+    $this->labelFingerprint = $labelFingerprint;
+  }
+  public function getLabelFingerprint()
+  {
+    return $this->labelFingerprint;
+  }
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  public function getLabels()
+  {
+    return $this->labels;
   }
   public function setLastAttachTimestamp($lastAttachTimestamp)
   {

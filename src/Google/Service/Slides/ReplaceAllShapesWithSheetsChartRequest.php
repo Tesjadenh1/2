@@ -15,12 +15,14 @@
  * the License.
  */
 
-class Google_Service_Slides_ReplaceAllShapesWithSheetsChartRequest extends Google_Model
+class Google_Service_Slides_ReplaceAllShapesWithSheetsChartRequest extends Google_Collection
 {
+  protected $collection_key = 'pageObjectIds';
   public $chartId;
   protected $containsTextType = 'Google_Service_Slides_SubstringMatchCriteria';
   protected $containsTextDataType = '';
   public $linkingMode;
+  public $pageObjectIds;
   public $spreadsheetId;
 
   public function setChartId($chartId)
@@ -46,6 +48,14 @@ class Google_Service_Slides_ReplaceAllShapesWithSheetsChartRequest extends Googl
   public function getLinkingMode()
   {
     return $this->linkingMode;
+  }
+  public function setPageObjectIds($pageObjectIds)
+  {
+    $this->pageObjectIds = $pageObjectIds;
+  }
+  public function getPageObjectIds()
+  {
+    return $this->pageObjectIds;
   }
   public function setSpreadsheetId($spreadsheetId)
   {

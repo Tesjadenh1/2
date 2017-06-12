@@ -18,12 +18,12 @@
 class Google_Service_Appengine_LivenessCheck extends Google_Model
 {
   public $checkInterval;
-  public $healthyThreshold;
+  public $failureThreshold;
   public $host;
   public $initialDelay;
   public $path;
+  public $successThreshold;
   public $timeout;
-  public $unhealthyThreshold;
 
   public function setCheckInterval($checkInterval)
   {
@@ -33,13 +33,13 @@ class Google_Service_Appengine_LivenessCheck extends Google_Model
   {
     return $this->checkInterval;
   }
-  public function setHealthyThreshold($healthyThreshold)
+  public function setFailureThreshold($failureThreshold)
   {
-    $this->healthyThreshold = $healthyThreshold;
+    $this->failureThreshold = $failureThreshold;
   }
-  public function getHealthyThreshold()
+  public function getFailureThreshold()
   {
-    return $this->healthyThreshold;
+    return $this->failureThreshold;
   }
   public function setHost($host)
   {
@@ -65,6 +65,14 @@ class Google_Service_Appengine_LivenessCheck extends Google_Model
   {
     return $this->path;
   }
+  public function setSuccessThreshold($successThreshold)
+  {
+    $this->successThreshold = $successThreshold;
+  }
+  public function getSuccessThreshold()
+  {
+    return $this->successThreshold;
+  }
   public function setTimeout($timeout)
   {
     $this->timeout = $timeout;
@@ -72,13 +80,5 @@ class Google_Service_Appengine_LivenessCheck extends Google_Model
   public function getTimeout()
   {
     return $this->timeout;
-  }
-  public function setUnhealthyThreshold($unhealthyThreshold)
-  {
-    $this->unhealthyThreshold = $unhealthyThreshold;
-  }
-  public function getUnhealthyThreshold()
-  {
-    return $this->unhealthyThreshold;
   }
 }

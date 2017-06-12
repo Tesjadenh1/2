@@ -32,6 +32,9 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $initialClusterVersion;
   public $initialNodeCount;
   public $instanceGroupUrls;
+  public $labelFingerprint;
+  protected $legacyAbacType = 'Google_Service_Container_LegacyAbac';
+  protected $legacyAbacDataType = '';
   public $locations;
   public $loggingService;
   protected $masterAuthType = 'Google_Service_Container_MasterAuth';
@@ -44,6 +47,7 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $nodeIpv4CidrSize;
   protected $nodePoolsType = 'Google_Service_Container_NodePool';
   protected $nodePoolsDataType = 'array';
+  public $resourceLabels;
   public $selfLink;
   public $servicesIpv4Cidr;
   public $status;
@@ -155,6 +159,22 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->instanceGroupUrls;
   }
+  public function setLabelFingerprint($labelFingerprint)
+  {
+    $this->labelFingerprint = $labelFingerprint;
+  }
+  public function getLabelFingerprint()
+  {
+    return $this->labelFingerprint;
+  }
+  public function setLegacyAbac(Google_Service_Container_LegacyAbac $legacyAbac)
+  {
+    $this->legacyAbac = $legacyAbac;
+  }
+  public function getLegacyAbac()
+  {
+    return $this->legacyAbac;
+  }
   public function setLocations($locations)
   {
     $this->locations = $locations;
@@ -226,6 +246,14 @@ class Google_Service_Container_Cluster extends Google_Collection
   public function getNodePools()
   {
     return $this->nodePools;
+  }
+  public function setResourceLabels($resourceLabels)
+  {
+    $this->resourceLabels = $resourceLabels;
+  }
+  public function getResourceLabels()
+  {
+    return $this->resourceLabels;
   }
   public function setSelfLink($selfLink)
   {

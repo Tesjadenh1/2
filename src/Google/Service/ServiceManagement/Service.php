@@ -54,6 +54,8 @@ class Google_Service_ServiceManagement_Service extends Google_Collection
   protected $monitoringDataType = '';
   public $name;
   public $producerProjectId;
+  protected $quotaType = 'Google_Service_ServiceManagement_Quota';
+  protected $quotaDataType = '';
   protected $sourceInfoType = 'Google_Service_ServiceManagement_SourceInfo';
   protected $sourceInfoDataType = '';
   protected $systemParametersType = 'Google_Service_ServiceManagement_SystemParameters';
@@ -227,6 +229,14 @@ class Google_Service_ServiceManagement_Service extends Google_Collection
   public function getProducerProjectId()
   {
     return $this->producerProjectId;
+  }
+  public function setQuota(Google_Service_ServiceManagement_Quota $quota)
+  {
+    $this->quota = $quota;
+  }
+  public function getQuota()
+  {
+    return $this->quota;
   }
   public function setSourceInfo(Google_Service_ServiceManagement_SourceInfo $sourceInfo)
   {

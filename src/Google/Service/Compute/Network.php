@@ -29,6 +29,8 @@ class Google_Service_Compute_Network extends Google_Collection
   public $id;
   public $kind;
   public $name;
+  protected $peeringsType = 'Google_Service_Compute_NetworkPeering';
+  protected $peeringsDataType = 'array';
   public $selfLink;
   public $subnetworks;
 
@@ -95,6 +97,14 @@ class Google_Service_Compute_Network extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  public function setPeerings($peerings)
+  {
+    $this->peerings = $peerings;
+  }
+  public function getPeerings()
+  {
+    return $this->peerings;
   }
   public function setSelfLink($selfLink)
   {

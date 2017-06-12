@@ -17,16 +17,25 @@
 
 class Google_Service_TagManager_ListContainersResponse extends Google_Collection
 {
-  protected $collection_key = 'containers';
-  protected $containersType = 'Google_Service_TagManager_Container';
-  protected $containersDataType = 'array';
+  protected $collection_key = 'container';
+  protected $containerType = 'Google_Service_TagManager_Container';
+  protected $containerDataType = 'array';
+  public $nextPageToken;
 
-  public function setContainers($containers)
+  public function setContainer($container)
   {
-    $this->containers = $containers;
+    $this->container = $container;
   }
-  public function getContainers()
+  public function getContainer()
   {
-    return $this->containers;
+    return $this->container;
+  }
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
 }

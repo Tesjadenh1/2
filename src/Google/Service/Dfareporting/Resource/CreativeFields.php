@@ -88,7 +88,7 @@ class Google_Service_Dfareporting_Resource_CreativeFields extends Google_Service
    * creative fields with the name "my creativefield", "creativefield 2015", or
    * simply "creativefield".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_CreativeFieldsListResponse
    */
   public function listCreativeFields($profileId, $optParams = array())

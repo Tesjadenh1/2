@@ -19,7 +19,7 @@
  * Service definition for CloudKMS (v1).
  *
  * <p>
- * Manages encryption for your cloud services the same way you do on-premise.
+ * Manages encryption for your cloud services the same way you do on-premises.
  * You can generate, use, rotate, and destroy AES256 encryption keys.</p>
  *
  * <p>
@@ -78,15 +78,15 @@ class Google_Service_CloudKMS extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -144,13 +144,13 @@ class Google_Service_CloudKMS extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'setIamPolicy' => array(
@@ -348,13 +348,13 @@ class Google_Service_CloudKMS extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(

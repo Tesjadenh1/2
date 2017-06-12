@@ -24,9 +24,13 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   protected $domainsType = 'Google_Service_Sheets_BasicChartDomain';
   protected $domainsDataType = 'array';
   public $headerCount;
+  public $interpolateNulls;
   public $legendPosition;
+  public $lineSmoothing;
   protected $seriesType = 'Google_Service_Sheets_BasicChartSeries';
   protected $seriesDataType = 'array';
+  public $stackedType;
+  public $threeDimensional;
 
   public function setAxis($axis)
   {
@@ -60,6 +64,14 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   {
     return $this->headerCount;
   }
+  public function setInterpolateNulls($interpolateNulls)
+  {
+    $this->interpolateNulls = $interpolateNulls;
+  }
+  public function getInterpolateNulls()
+  {
+    return $this->interpolateNulls;
+  }
   public function setLegendPosition($legendPosition)
   {
     $this->legendPosition = $legendPosition;
@@ -68,6 +80,14 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   {
     return $this->legendPosition;
   }
+  public function setLineSmoothing($lineSmoothing)
+  {
+    $this->lineSmoothing = $lineSmoothing;
+  }
+  public function getLineSmoothing()
+  {
+    return $this->lineSmoothing;
+  }
   public function setSeries($series)
   {
     $this->series = $series;
@@ -75,5 +95,21 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   public function getSeries()
   {
     return $this->series;
+  }
+  public function setStackedType($stackedType)
+  {
+    $this->stackedType = $stackedType;
+  }
+  public function getStackedType()
+  {
+    return $this->stackedType;
+  }
+  public function setThreeDimensional($threeDimensional)
+  {
+    $this->threeDimensional = $threeDimensional;
+  }
+  public function getThreeDimensional()
+  {
+    return $this->threeDimensional;
   }
 }

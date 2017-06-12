@@ -26,6 +26,20 @@
 class Google_Service_CloudResourceManager_Resource_Projects extends Google_Service_Resource
 {
   /**
+   * Clears a `Policy` from a resource. (projects.clearOrgPolicy)
+   *
+   * @param string $resource Name of the resource for the `Policy` to clear.
+   * @param Google_Service_CloudResourceManager_ClearOrgPolicyRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudResourceManager_CloudresourcemanagerEmpty
+   */
+  public function clearOrgPolicy($resource, Google_Service_CloudResourceManager_ClearOrgPolicyRequest $postBody, $optParams = array())
+  {
+    $params = array('resource' => $resource, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('clearOrgPolicy', array($params), "Google_Service_CloudResourceManager_CloudresourcemanagerEmpty");
+  }
+  /**
    * Request that a new Project be created. The result is an Operation which can
    * be used to track the creation process. It is automatically deleted after a
    * few hours, so there is no need to call DeleteOperation.
@@ -117,6 +131,24 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
     return $this->call('getAncestry', array($params), "Google_Service_CloudResourceManager_GetAncestryResponse");
   }
   /**
+   * Gets the effective `Policy` on a resource. This is the result of merging
+   * `Policies` in the resource hierarchy. The returned `Policy` will not have an
+   * `etag`set because it is a computed `Policy` across multiple resources.
+   * (projects.getEffectiveOrgPolicy)
+   *
+   * @param string $resource The name of the resource to start computing the
+   * effective `Policy`.
+   * @param Google_Service_CloudResourceManager_GetEffectiveOrgPolicyRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudResourceManager_OrgPolicy
+   */
+  public function getEffectiveOrgPolicy($resource, Google_Service_CloudResourceManager_GetEffectiveOrgPolicyRequest $postBody, $optParams = array())
+  {
+    $params = array('resource' => $resource, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('getEffectiveOrgPolicy', array($params), "Google_Service_CloudResourceManager_OrgPolicy");
+  }
+  /**
    * Returns the IAM access control policy for the specified Project. Permission
    * is denied if the policy or the resource does not exist.
    * (projects.getIamPolicy)
@@ -133,6 +165,25 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('getIamPolicy', array($params), "Google_Service_CloudResourceManager_Policy");
+  }
+  /**
+   * Gets a `Policy` on a resource.
+   *
+   * If no `Policy` is set on the resource, a `Policy` is returned with default
+   * values including `POLICY_TYPE_NOT_SET` for the `policy_type oneof`. The
+   * `etag` value can be used with `SetOrgPolicy()` to create or update a `Policy`
+   * during read-modify-write. (projects.getOrgPolicy)
+   *
+   * @param string $resource Name of the resource the `Policy` is set on.
+   * @param Google_Service_CloudResourceManager_GetOrgPolicyRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudResourceManager_OrgPolicy
+   */
+  public function getOrgPolicy($resource, Google_Service_CloudResourceManager_GetOrgPolicyRequest $postBody, $optParams = array())
+  {
+    $params = array('resource' => $resource, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('getOrgPolicy', array($params), "Google_Service_CloudResourceManager_OrgPolicy");
   }
   /**
    * Lists Projects that are visible to the user and satisfy the specified filter.
@@ -158,12 +209,13 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    *
    * Some examples of using labels as filters:
    *
-   * |Filter|Description| |------|-----------| |name:*|The project has a name.|
-   * |name:Howl|The project's name is `Howl` or `howl`.| |name:HOWL|Equivalent to
-   * above.| |NAME:howl|Equivalent to above.| |labels.color:*|The project has the
-   * label `color`.| |labels.color:red|The project's label `color` has the value
-   * `red`.| |labels.color:redlabel.size:big|The project's label `color` has the
-   * value `red` and its label `size` has the value `big`.
+   * |Filter|Description| |------|-----------| |name:how*|The project's name
+   * starts with "how".| |name:Howl|The project's name is `Howl` or `howl`.|
+   * |name:HOWL|Equivalent to above.| |NAME:howl|Equivalent to above.|
+   * |labels.color:*|The project has the label `color`.| |labels.color:red|The
+   * project's label `color` has the value `red`.|
+   * |labels.color:redlabels.size:big|The project's label `color` has the value
+   * `red` and its label `size` has the value `big`.
    *
    * Optional.
    * @return Google_Service_CloudResourceManager_ListProjectsResponse
@@ -173,6 +225,36 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
     $params = array();
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_CloudResourceManager_ListProjectsResponse");
+  }
+  /**
+   * Lists `Constraints` that could be applied on the specified resource.
+   * (projects.listAvailableOrgPolicyConstraints)
+   *
+   * @param string $resource Name of the resource to list `Constraints` for.
+   * @param Google_Service_CloudResourceManager_ListAvailableOrgPolicyConstraintsRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudResourceManager_ListAvailableOrgPolicyConstraintsResponse
+   */
+  public function listAvailableOrgPolicyConstraints($resource, Google_Service_CloudResourceManager_ListAvailableOrgPolicyConstraintsRequest $postBody, $optParams = array())
+  {
+    $params = array('resource' => $resource, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('listAvailableOrgPolicyConstraints', array($params), "Google_Service_CloudResourceManager_ListAvailableOrgPolicyConstraintsResponse");
+  }
+  /**
+   * Lists all the `Policies` set for a particular resource.
+   * (projects.listOrgPolicies)
+   *
+   * @param string $resource Name of the resource to list Policies for.
+   * @param Google_Service_CloudResourceManager_ListOrgPoliciesRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudResourceManager_ListOrgPoliciesResponse
+   */
+  public function listOrgPolicies($resource, Google_Service_CloudResourceManager_ListOrgPoliciesRequest $postBody, $optParams = array())
+  {
+    $params = array('resource' => $resource, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('listOrgPolicies', array($params), "Google_Service_CloudResourceManager_ListOrgPoliciesResponse");
   }
   /**
    * Sets the IAM access control policy for the specified Project. Replaces any
@@ -199,12 +281,12 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * + Membership changes that leave the project without any owners that have
    * accepted the Terms of Service (ToS) will be rejected.
    *
-   * + There must be at least one owner who has accepted the Terms of Service
-   * (ToS) agreement in the policy. Calling `setIamPolicy()` to to remove the last
-   * ToS-accepted owner from the policy will fail. This restriction also applies
-   * to legacy projects that no longer have owners who have accepted the ToS.
-   * Edits to IAM policies will be rejected until the lack of a ToS-accepting
-   * owner is rectified.
+   * + If the project is not part of an organization, there must be at least one
+   * owner who has accepted the Terms of Service (ToS) agreement in the policy.
+   * Calling `setIamPolicy()` to remove the last ToS-accepted owner from the
+   * policy will fail. This restriction also applies to legacy projects that no
+   * longer have owners who have accepted the ToS. Edits to IAM policies will be
+   * rejected until the lack of a ToS-accepting owner is rectified.
    *
    * + Calling this method requires enabling the App Engine Admin API.
    *
@@ -225,6 +307,24 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('setIamPolicy', array($params), "Google_Service_CloudResourceManager_Policy");
+  }
+  /**
+   * Updates the specified `Policy` on the resource. Creates a new `Policy` for
+   * that `Constraint` on the resource if one does not exist.
+   *
+   * Not supplying an `etag` on the request `Policy` results in an unconditional
+   * write of the `Policy`. (projects.setOrgPolicy)
+   *
+   * @param string $resource Resource name of the resource to attach the `Policy`.
+   * @param Google_Service_CloudResourceManager_SetOrgPolicyRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudResourceManager_OrgPolicy
+   */
+  public function setOrgPolicy($resource, Google_Service_CloudResourceManager_SetOrgPolicyRequest $postBody, $optParams = array())
+  {
+    $params = array('resource' => $resource, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('setOrgPolicy', array($params), "Google_Service_CloudResourceManager_OrgPolicy");
   }
   /**
    * Returns permissions that a caller has on the specified Project.

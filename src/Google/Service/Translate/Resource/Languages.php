@@ -26,13 +26,15 @@
 class Google_Service_Translate_Resource_Languages extends Google_Service_Resource
 {
   /**
-   * List the source/target languages supported by the API
+   * Returns a list of supported languages for translation.
    * (languages.listLanguages)
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string target the language and collation in which the localized
-   * results should be returned
+   * @opt_param string model The model type for which supported languages should
+   * be returned.
+   * @opt_param string target The language to use to return localized, human
+   * readable names of supported languages.
    * @return Google_Service_Translate_LanguagesListResponse
    */
   public function listLanguages($optParams = array())

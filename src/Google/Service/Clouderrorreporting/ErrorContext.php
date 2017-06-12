@@ -15,12 +15,15 @@
  * the License.
  */
 
-class Google_Service_Clouderrorreporting_ErrorContext extends Google_Model
+class Google_Service_Clouderrorreporting_ErrorContext extends Google_Collection
 {
+  protected $collection_key = 'sourceReferences';
   protected $httpRequestType = 'Google_Service_Clouderrorreporting_HttpRequestContext';
   protected $httpRequestDataType = '';
   protected $reportLocationType = 'Google_Service_Clouderrorreporting_SourceLocation';
   protected $reportLocationDataType = '';
+  protected $sourceReferencesType = 'Google_Service_Clouderrorreporting_SourceReference';
+  protected $sourceReferencesDataType = 'array';
   public $user;
 
   public function setHttpRequest(Google_Service_Clouderrorreporting_HttpRequestContext $httpRequest)
@@ -38,6 +41,14 @@ class Google_Service_Clouderrorreporting_ErrorContext extends Google_Model
   public function getReportLocation()
   {
     return $this->reportLocation;
+  }
+  public function setSourceReferences($sourceReferences)
+  {
+    $this->sourceReferences = $sourceReferences;
+  }
+  public function getSourceReferences()
+  {
+    return $this->sourceReferences;
   }
   public function setUser($user)
   {

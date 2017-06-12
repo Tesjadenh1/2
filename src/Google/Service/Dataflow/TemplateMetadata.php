@@ -18,20 +18,11 @@
 class Google_Service_Dataflow_TemplateMetadata extends Google_Collection
 {
   protected $collection_key = 'parameters';
-  public $bypassTempDirValidation;
   public $description;
   public $name;
   protected $parametersType = 'Google_Service_Dataflow_ParameterMetadata';
   protected $parametersDataType = 'array';
 
-  public function setBypassTempDirValidation($bypassTempDirValidation)
-  {
-    $this->bypassTempDirValidation = $bypassTempDirValidation;
-  }
-  public function getBypassTempDirValidation()
-  {
-    return $this->bypassTempDirValidation;
-  }
   public function setDescription($description)
   {
     $this->description = $description;

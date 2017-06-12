@@ -17,7 +17,7 @@
 
 class Google_Service_SQLAdmin_Settings extends Google_Collection
 {
-  protected $collection_key = 'labels';
+  protected $collection_key = 'databaseFlags';
   public $activationPolicy;
   public $authorizedGaeApplications;
   public $availabilityType;
@@ -32,8 +32,6 @@ class Google_Service_SQLAdmin_Settings extends Google_Collection
   protected $ipConfigurationType = 'Google_Service_SQLAdmin_IpConfiguration';
   protected $ipConfigurationDataType = '';
   public $kind;
-  protected $labelsType = 'Google_Service_SQLAdmin_Labels';
-  protected $labelsDataType = 'array';
   protected $locationPreferenceType = 'Google_Service_SQLAdmin_LocationPreference';
   protected $locationPreferenceDataType = '';
   protected $maintenanceWindowType = 'Google_Service_SQLAdmin_MaintenanceWindow';
@@ -44,6 +42,7 @@ class Google_Service_SQLAdmin_Settings extends Google_Collection
   public $storageAutoResize;
   public $storageAutoResizeLimit;
   public $tier;
+  public $userLabels;
 
   public function setActivationPolicy($activationPolicy)
   {
@@ -133,14 +132,6 @@ class Google_Service_SQLAdmin_Settings extends Google_Collection
   {
     return $this->kind;
   }
-  public function setLabels($labels)
-  {
-    $this->labels = $labels;
-  }
-  public function getLabels()
-  {
-    return $this->labels;
-  }
   public function setLocationPreference(Google_Service_SQLAdmin_LocationPreference $locationPreference)
   {
     $this->locationPreference = $locationPreference;
@@ -204,5 +195,13 @@ class Google_Service_SQLAdmin_Settings extends Google_Collection
   public function getTier()
   {
     return $this->tier;
+  }
+  public function setUserLabels($userLabels)
+  {
+    $this->userLabels = $userLabels;
+  }
+  public function getUserLabels()
+  {
+    return $this->userLabels;
   }
 }

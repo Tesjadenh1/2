@@ -17,10 +17,19 @@
 
 class Google_Service_Container_NodeManagement extends Google_Model
 {
+  public $autoRepair;
   public $autoUpgrade;
   protected $upgradeOptionsType = 'Google_Service_Container_AutoUpgradeOptions';
   protected $upgradeOptionsDataType = '';
 
+  public function setAutoRepair($autoRepair)
+  {
+    $this->autoRepair = $autoRepair;
+  }
+  public function getAutoRepair()
+  {
+    return $this->autoRepair;
+  }
   public function setAutoUpgrade($autoUpgrade)
   {
     $this->autoUpgrade = $autoUpgrade;

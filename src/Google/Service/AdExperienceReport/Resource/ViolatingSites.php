@@ -26,9 +26,8 @@
 class Google_Service_AdExperienceReport_Resource_ViolatingSites extends Google_Service_Resource
 {
   /**
-   * Lists sites with Ad Experience Report statuses of "Reviewed - out of
-   * compliance," "Reviewed - significantly out of compliance," or "Failed review
-   * - egregious issues found." (violatingSites.listViolatingSites)
+   * Lists sites with Ad Experience Report statuses of "Failing" or "Warning".
+   * (violatingSites.listViolatingSites)
    *
    * @param array $optParams Optional parameters.
    * @return Google_Service_AdExperienceReport_ViolatingSitesResponse

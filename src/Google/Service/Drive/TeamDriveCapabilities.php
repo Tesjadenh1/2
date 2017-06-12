@@ -18,6 +18,7 @@
 class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
 {
   public $canAddChildren;
+  public $canChangeTeamDriveBackground;
   public $canComment;
   public $canCopy;
   public $canDeleteTeamDrive;
@@ -38,6 +39,14 @@ class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
   public function getCanAddChildren()
   {
     return $this->canAddChildren;
+  }
+  public function setCanChangeTeamDriveBackground($canChangeTeamDriveBackground)
+  {
+    $this->canChangeTeamDriveBackground = $canChangeTeamDriveBackground;
+  }
+  public function getCanChangeTeamDriveBackground()
+  {
+    return $this->canChangeTeamDriveBackground;
   }
   public function setCanComment($canComment)
   {

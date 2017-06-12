@@ -17,10 +17,6 @@
 
 class Google_Service_Dfareporting_DfpSettings extends Google_Model
 {
-  protected $internal_gapi_mappings = array(
-        "dfpNetworkCode" => "dfp_network_code",
-        "dfpNetworkName" => "dfp_network_name",
-  );
   public $dfpNetworkCode;
   public $dfpNetworkName;
   public $programmaticPlacementAccepted;

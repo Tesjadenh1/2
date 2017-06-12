@@ -18,10 +18,20 @@
 class Google_Service_Dataflow_ListJobMessagesResponse extends Google_Collection
 {
   protected $collection_key = 'jobMessages';
+  protected $autoscalingEventsType = 'Google_Service_Dataflow_AutoscalingEvent';
+  protected $autoscalingEventsDataType = 'array';
   protected $jobMessagesType = 'Google_Service_Dataflow_JobMessage';
   protected $jobMessagesDataType = 'array';
   public $nextPageToken;
 
+  public function setAutoscalingEvents($autoscalingEvents)
+  {
+    $this->autoscalingEvents = $autoscalingEvents;
+  }
+  public function getAutoscalingEvents()
+  {
+    return $this->autoscalingEvents;
+  }
   public function setJobMessages($jobMessages)
   {
     $this->jobMessages = $jobMessages;

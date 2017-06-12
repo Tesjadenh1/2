@@ -68,6 +68,8 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   protected $loyaltyPointsType = 'Google_Service_ShoppingContent_LoyaltyPoints';
   protected $loyaltyPointsDataType = '';
   public $material;
+  public $maxHandlingTime;
+  public $minHandlingTime;
   public $mobileLink;
   public $mpn;
   public $multipack;
@@ -459,6 +461,22 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   public function getMaterial()
   {
     return $this->material;
+  }
+  public function setMaxHandlingTime($maxHandlingTime)
+  {
+    $this->maxHandlingTime = $maxHandlingTime;
+  }
+  public function getMaxHandlingTime()
+  {
+    return $this->maxHandlingTime;
+  }
+  public function setMinHandlingTime($minHandlingTime)
+  {
+    $this->minHandlingTime = $minHandlingTime;
+  }
+  public function getMinHandlingTime()
+  {
+    return $this->minHandlingTime;
   }
   public function setMobileLink($mobileLink)
   {

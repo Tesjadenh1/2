@@ -22,6 +22,7 @@ class Google_Service_Compute_Address extends Google_Collection
   public $creationTimestamp;
   public $description;
   public $id;
+  public $ipVersion;
   public $kind;
   public $name;
   public $region;
@@ -60,6 +61,14 @@ class Google_Service_Compute_Address extends Google_Collection
   public function getId()
   {
     return $this->id;
+  }
+  public function setIpVersion($ipVersion)
+  {
+    $this->ipVersion = $ipVersion;
+  }
+  public function getIpVersion()
+  {
+    return $this->ipVersion;
   }
   public function setKind($kind)
   {

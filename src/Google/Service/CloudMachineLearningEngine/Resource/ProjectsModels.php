@@ -29,8 +29,8 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModels extends 
    * Creates a model which will later contain one or more versions.
    *
    * You must add at least one version before you can request predictions from the
-   * model. Add versions by calling [projects.models.versions.create](/ml/referenc
-   * e/rest/v1/projects.models.versions/create). (models.create)
+   * model. Add versions by calling [projects.models.versions.create](/ml-
+   * engine/reference/rest/v1/projects.models.versions/create). (models.create)
    *
    * @param string $parent Required. The project name.
    *
@@ -49,8 +49,8 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModels extends 
    * Deletes a model.
    *
    * You can only delete a model if there are no versions in it. You can delete
-   * versions by calling [projects.models.versions.delete](/ml/reference/rest/v1/p
-   * rojects.models.versions/delete). (models.delete)
+   * versions by calling [projects.models.versions.delete](/ml-
+   * engine/reference/rest/v1/projects.models.versions/delete). (models.delete)
    *
    * @param string $name Required. The name of the model.
    *

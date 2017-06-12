@@ -19,8 +19,8 @@
  * Service definition for Container (v1).
  *
  * <p>
- * Builds and manages clusters that run container-based applications, powered by
- * open source Kubernetes technology.</p>
+ * The Google Container Engine API is used for building and managing container
+ * based applications, powered by the open source Kubernetes technology.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -84,7 +84,27 @@ class Google_Service_Container extends Google_Service
         'clusters',
         array(
           'methods' => array(
-            'create' => array(
+            'completeIpRotation' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:completeIpRotation',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'create' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters',
               'httpMethod' => 'POST',
               'parameters' => array(
@@ -139,6 +159,26 @@ class Google_Service_Container extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'legacyAbac' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/legacyAbac',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'list' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters',
               'httpMethod' => 'GET',
@@ -149,6 +189,66 @@ class Google_Service_Container extends Google_Service
                   'required' => true,
                 ),
                 'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'resourceLabels' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/resourceLabels',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'setMasterAuth' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:setMasterAuth',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'startIpRotation' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:startIpRotation',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,

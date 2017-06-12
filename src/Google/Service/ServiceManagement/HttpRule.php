@@ -33,6 +33,8 @@ class Google_Service_ServiceManagement_HttpRule extends Google_Collection
   public $post;
   public $put;
   public $responseBody;
+  public $restCollection;
+  public $restMethodName;
   public $selector;
 
   public function setAdditionalBindings($additionalBindings)
@@ -122,6 +124,22 @@ class Google_Service_ServiceManagement_HttpRule extends Google_Collection
   public function getResponseBody()
   {
     return $this->responseBody;
+  }
+  public function setRestCollection($restCollection)
+  {
+    $this->restCollection = $restCollection;
+  }
+  public function getRestCollection()
+  {
+    return $this->restCollection;
+  }
+  public function setRestMethodName($restMethodName)
+  {
+    $this->restMethodName = $restMethodName;
+  }
+  public function getRestMethodName()
+  {
+    return $this->restMethodName;
   }
   public function setSelector($selector)
   {

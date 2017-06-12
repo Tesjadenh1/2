@@ -69,7 +69,7 @@ class Google_Service_Dfareporting_Resource_DirectorySites extends Google_Service
    * @opt_param bool active Select only active directory sites. Leave blank to
    * retrieve both active and inactive directory sites.
    * @opt_param string countryId Select only directory sites with this country ID.
-   * @opt_param string dfp_network_code Select only directory sites with this DFP
+   * @opt_param string dfpNetworkCode Select only directory sites with this DFP
    * network code.
    * @opt_param string ids Select only directory sites with these IDs.
    * @opt_param int maxResults Maximum number of results to return.
@@ -84,7 +84,7 @@ class Google_Service_Dfareporting_Resource_DirectorySites extends Google_Service
    * example, a search string of "directory site" will match objects with name "my
    * directory site", "directory site 2015" or simply, "directory site".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_DirectorySitesListResponse
    */
   public function listDirectorySites($profileId, $optParams = array())

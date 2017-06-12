@@ -23,11 +23,16 @@ class Google_Service_Partners_CompanyRelation extends Google_Collection
   public $companyAdmin;
   public $companyId;
   public $creationTime;
+  public $internalCompanyId;
   public $isPending;
   public $logoUrl;
   public $managerAccount;
   public $name;
   public $phoneNumber;
+  protected $primaryAddressType = 'Google_Service_Partners_Location';
+  protected $primaryAddressDataType = '';
+  public $primaryCountryCode;
+  public $primaryLanguageCode;
   public $resolvedTimestamp;
   public $segment;
   protected $specializationStatusType = 'Google_Service_Partners_SpecializationStatus';
@@ -75,6 +80,14 @@ class Google_Service_Partners_CompanyRelation extends Google_Collection
   {
     return $this->creationTime;
   }
+  public function setInternalCompanyId($internalCompanyId)
+  {
+    $this->internalCompanyId = $internalCompanyId;
+  }
+  public function getInternalCompanyId()
+  {
+    return $this->internalCompanyId;
+  }
   public function setIsPending($isPending)
   {
     $this->isPending = $isPending;
@@ -114,6 +127,30 @@ class Google_Service_Partners_CompanyRelation extends Google_Collection
   public function getPhoneNumber()
   {
     return $this->phoneNumber;
+  }
+  public function setPrimaryAddress(Google_Service_Partners_Location $primaryAddress)
+  {
+    $this->primaryAddress = $primaryAddress;
+  }
+  public function getPrimaryAddress()
+  {
+    return $this->primaryAddress;
+  }
+  public function setPrimaryCountryCode($primaryCountryCode)
+  {
+    $this->primaryCountryCode = $primaryCountryCode;
+  }
+  public function getPrimaryCountryCode()
+  {
+    return $this->primaryCountryCode;
+  }
+  public function setPrimaryLanguageCode($primaryLanguageCode)
+  {
+    $this->primaryLanguageCode = $primaryLanguageCode;
+  }
+  public function getPrimaryLanguageCode()
+  {
+    return $this->primaryLanguageCode;
   }
   public function setResolvedTimestamp($resolvedTimestamp)
   {

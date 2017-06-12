@@ -17,7 +17,7 @@
 
 class Google_Service_Drive_About extends Google_Collection
 {
-  protected $collection_key = 'folderColorPalette';
+  protected $collection_key = 'teamDriveThemes';
   public $appInstalled;
   public $exportFormats;
   public $folderColorPalette;
@@ -27,6 +27,8 @@ class Google_Service_Drive_About extends Google_Collection
   public $maxUploadSize;
   protected $storageQuotaType = 'Google_Service_Drive_AboutStorageQuota';
   protected $storageQuotaDataType = '';
+  protected $teamDriveThemesType = 'Google_Service_Drive_AboutTeamDriveThemes';
+  protected $teamDriveThemesDataType = 'array';
   protected $userType = 'Google_Service_Drive_User';
   protected $userDataType = '';
 
@@ -93,6 +95,14 @@ class Google_Service_Drive_About extends Google_Collection
   public function getStorageQuota()
   {
     return $this->storageQuota;
+  }
+  public function setTeamDriveThemes($teamDriveThemes)
+  {
+    $this->teamDriveThemes = $teamDriveThemes;
+  }
+  public function getTeamDriveThemes()
+  {
+    return $this->teamDriveThemes;
   }
   public function setUser(Google_Service_Drive_User $user)
   {

@@ -15,20 +15,19 @@
  * the License.
  */
 
-class Google_Service_Tracing_StackTrace extends Google_Collection
+class Google_Service_Tracing_StackTrace extends Google_Model
 {
-  protected $collection_key = 'stackFrame';
-  protected $stackFrameType = 'Google_Service_Tracing_StackFrame';
-  protected $stackFrameDataType = 'array';
+  protected $stackFramesType = 'Google_Service_Tracing_StackFrames';
+  protected $stackFramesDataType = '';
   public $stackTraceHashId;
 
-  public function setStackFrame($stackFrame)
+  public function setStackFrames(Google_Service_Tracing_StackFrames $stackFrames)
   {
-    $this->stackFrame = $stackFrame;
+    $this->stackFrames = $stackFrames;
   }
-  public function getStackFrame()
+  public function getStackFrames()
   {
-    return $this->stackFrame;
+    return $this->stackFrames;
   }
   public function setStackTraceHashId($stackTraceHashId)
   {

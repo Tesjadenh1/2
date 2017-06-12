@@ -31,6 +31,7 @@ class Google_Service_TagManager_Tag extends Google_Collection
   protected $parameterType = 'Google_Service_TagManager_Parameter';
   protected $parameterDataType = 'array';
   public $parentFolderId;
+  public $path;
   protected $priorityType = 'Google_Service_TagManager_Parameter';
   protected $priorityDataType = '';
   public $scheduleEndMs;
@@ -39,9 +40,11 @@ class Google_Service_TagManager_Tag extends Google_Collection
   protected $setupTagDataType = 'array';
   public $tagFiringOption;
   public $tagId;
+  public $tagManagerUrl;
   protected $teardownTagType = 'Google_Service_TagManager_TeardownTag';
   protected $teardownTagDataType = 'array';
   public $type;
+  public $workspaceId;
 
   public function setAccountId($accountId)
   {
@@ -139,6 +142,14 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->parentFolderId;
   }
+  public function setPath($path)
+  {
+    $this->path = $path;
+  }
+  public function getPath()
+  {
+    return $this->path;
+  }
   public function setPriority(Google_Service_TagManager_Parameter $priority)
   {
     $this->priority = $priority;
@@ -187,6 +198,14 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->tagId;
   }
+  public function setTagManagerUrl($tagManagerUrl)
+  {
+    $this->tagManagerUrl = $tagManagerUrl;
+  }
+  public function getTagManagerUrl()
+  {
+    return $this->tagManagerUrl;
+  }
   public function setTeardownTag($teardownTag)
   {
     $this->teardownTag = $teardownTag;
@@ -202,5 +221,13 @@ class Google_Service_TagManager_Tag extends Google_Collection
   public function getType()
   {
     return $this->type;
+  }
+  public function setWorkspaceId($workspaceId)
+  {
+    $this->workspaceId = $workspaceId;
+  }
+  public function getWorkspaceId()
+  {
+    return $this->workspaceId;
   }
 }

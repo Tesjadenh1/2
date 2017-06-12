@@ -21,6 +21,8 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public $affinityCookieTtlSec;
   protected $backendsType = 'Google_Service_Compute_Backend';
   protected $backendsDataType = 'array';
+  protected $cdnPolicyType = 'Google_Service_Compute_BackendServiceCdnPolicy';
+  protected $cdnPolicyDataType = '';
   protected $connectionDrainingType = 'Google_Service_Compute_ConnectionDraining';
   protected $connectionDrainingDataType = '';
   public $creationTimestamp;
@@ -28,6 +30,8 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public $enableCDN;
   public $fingerprint;
   public $healthChecks;
+  protected $iapType = 'Google_Service_Compute_BackendServiceIAP';
+  protected $iapDataType = '';
   public $id;
   public $kind;
   public $loadBalancingScheme;
@@ -55,6 +59,14 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public function getBackends()
   {
     return $this->backends;
+  }
+  public function setCdnPolicy(Google_Service_Compute_BackendServiceCdnPolicy $cdnPolicy)
+  {
+    $this->cdnPolicy = $cdnPolicy;
+  }
+  public function getCdnPolicy()
+  {
+    return $this->cdnPolicy;
   }
   public function setConnectionDraining(Google_Service_Compute_ConnectionDraining $connectionDraining)
   {
@@ -103,6 +115,14 @@ class Google_Service_Compute_BackendService extends Google_Collection
   public function getHealthChecks()
   {
     return $this->healthChecks;
+  }
+  public function setIap(Google_Service_Compute_BackendServiceIAP $iap)
+  {
+    $this->iap = $iap;
+  }
+  public function getIap()
+  {
+    return $this->iap;
   }
   public function setId($id)
   {

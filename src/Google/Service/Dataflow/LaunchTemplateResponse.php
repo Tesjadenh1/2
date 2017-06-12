@@ -19,8 +19,6 @@ class Google_Service_Dataflow_LaunchTemplateResponse extends Google_Model
 {
   protected $jobType = 'Google_Service_Dataflow_Job';
   protected $jobDataType = '';
-  protected $statusType = 'Google_Service_Dataflow_Status';
-  protected $statusDataType = '';
 
   public function setJob(Google_Service_Dataflow_Job $job)
   {
@@ -29,13 +27,5 @@ class Google_Service_Dataflow_LaunchTemplateResponse extends Google_Model
   public function getJob()
   {
     return $this->job;
-  }
-  public function setStatus(Google_Service_Dataflow_Status $status)
-  {
-    $this->status = $status;
-  }
-  public function getStatus()
-  {
-    return $this->status;
   }
 }

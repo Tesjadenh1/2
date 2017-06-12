@@ -29,6 +29,7 @@ class Google_Service_Compute_Route extends Google_Collection
   public $nextHopInstance;
   public $nextHopIp;
   public $nextHopNetwork;
+  public $nextHopPeering;
   public $nextHopVpnTunnel;
   public $priority;
   public $selfLink;
@@ -123,6 +124,14 @@ class Google_Service_Compute_Route extends Google_Collection
   public function getNextHopNetwork()
   {
     return $this->nextHopNetwork;
+  }
+  public function setNextHopPeering($nextHopPeering)
+  {
+    $this->nextHopPeering = $nextHopPeering;
+  }
+  public function getNextHopPeering()
+  {
+    return $this->nextHopPeering;
   }
   public function setNextHopVpnTunnel($nextHopVpnTunnel)
   {

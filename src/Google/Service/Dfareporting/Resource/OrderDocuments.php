@@ -66,7 +66,7 @@ class Google_Service_Dfareporting_Resource_OrderDocuments extends Google_Service
    * @opt_param string siteId Select only order documents that are associated with
    * these sites.
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_OrderDocumentsListResponse
    */
   public function listOrderDocuments($profileId, $projectId, $optParams = array())

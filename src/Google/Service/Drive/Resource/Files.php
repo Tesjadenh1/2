@@ -183,6 +183,8 @@ class Google_Service_Drive_Resource_Files extends Google_Service_Resource
    * desc,name. Please note that there is a current limitation for users with
    * approximately one million files in which the requested sort order is ignored.
    * @opt_param int pageSize The maximum number of files to return per page.
+   * Partial or empty result pages are possible even before the end of the files
+   * list has been reached.
    * @opt_param string pageToken The token for continuing a previous list request
    * on the next page. This should be set to the value of 'nextPageToken' from the
    * previous response.

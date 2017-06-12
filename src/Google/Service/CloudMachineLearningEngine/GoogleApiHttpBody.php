@@ -15,10 +15,12 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody extends Google_Model
+class Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody extends Google_Collection
 {
+  protected $collection_key = 'extensions';
   public $contentType;
   public $data;
+  public $extensions;
 
   public function setContentType($contentType)
   {
@@ -35,5 +37,13 @@ class Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody extends Google
   public function getData()
   {
     return $this->data;
+  }
+  public function setExtensions($extensions)
+  {
+    $this->extensions = $extensions;
+  }
+  public function getExtensions()
+  {
+    return $this->extensions;
   }
 }

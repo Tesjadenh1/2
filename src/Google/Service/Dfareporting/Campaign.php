@@ -19,6 +19,8 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
 {
   protected $collection_key = 'traffickerEmails';
   public $accountId;
+  protected $adBlockingConfigurationType = 'Google_Service_Dfareporting_AdBlockingConfiguration';
+  protected $adBlockingConfigurationDataType = '';
   protected $additionalCreativeOptimizationConfigurationsType = 'Google_Service_Dfareporting_CreativeOptimizationConfiguration';
   protected $additionalCreativeOptimizationConfigurationsDataType = 'array';
   public $advertiserGroupId;
@@ -64,6 +66,14 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   public function getAccountId()
   {
     return $this->accountId;
+  }
+  public function setAdBlockingConfiguration(Google_Service_Dfareporting_AdBlockingConfiguration $adBlockingConfiguration)
+  {
+    $this->adBlockingConfiguration = $adBlockingConfiguration;
+  }
+  public function getAdBlockingConfiguration()
+  {
+    return $this->adBlockingConfiguration;
   }
   public function setAdditionalCreativeOptimizationConfigurations($additionalCreativeOptimizationConfigurations)
   {

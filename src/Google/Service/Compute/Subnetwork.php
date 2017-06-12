@@ -25,6 +25,7 @@ class Google_Service_Compute_Subnetwork extends Google_Model
   public $kind;
   public $name;
   public $network;
+  public $privateIpGoogleAccess;
   public $region;
   public $selfLink;
 
@@ -91,6 +92,14 @@ class Google_Service_Compute_Subnetwork extends Google_Model
   public function getNetwork()
   {
     return $this->network;
+  }
+  public function setPrivateIpGoogleAccess($privateIpGoogleAccess)
+  {
+    $this->privateIpGoogleAccess = $privateIpGoogleAccess;
+  }
+  public function getPrivateIpGoogleAccess()
+  {
+    return $this->privateIpGoogleAccess;
   }
   public function setRegion($region)
   {

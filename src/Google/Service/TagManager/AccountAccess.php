@@ -15,9 +15,8 @@
  * the License.
  */
 
-class Google_Service_TagManager_AccountAccess extends Google_Collection
+class Google_Service_TagManager_AccountAccess extends Google_Model
 {
-  protected $collection_key = 'permission';
   public $permission;
 
   public function setPermission($permission)

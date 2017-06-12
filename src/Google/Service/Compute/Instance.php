@@ -26,6 +26,8 @@ class Google_Service_Compute_Instance extends Google_Collection
   protected $disksDataType = 'array';
   public $id;
   public $kind;
+  public $labelFingerprint;
+  public $labels;
   public $machineType;
   protected $metadataType = 'Google_Service_Compute_Metadata';
   protected $metadataDataType = '';
@@ -37,6 +39,7 @@ class Google_Service_Compute_Instance extends Google_Collection
   public $selfLink;
   protected $serviceAccountsType = 'Google_Service_Compute_ServiceAccount';
   protected $serviceAccountsDataType = 'array';
+  public $startRestricted;
   public $status;
   public $statusMessage;
   protected $tagsType = 'Google_Service_Compute_Tags';
@@ -99,6 +102,22 @@ class Google_Service_Compute_Instance extends Google_Collection
   {
     return $this->kind;
   }
+  public function setLabelFingerprint($labelFingerprint)
+  {
+    $this->labelFingerprint = $labelFingerprint;
+  }
+  public function getLabelFingerprint()
+  {
+    return $this->labelFingerprint;
+  }
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  public function getLabels()
+  {
+    return $this->labels;
+  }
   public function setMachineType($machineType)
   {
     $this->machineType = $machineType;
@@ -154,6 +173,14 @@ class Google_Service_Compute_Instance extends Google_Collection
   public function getServiceAccounts()
   {
     return $this->serviceAccounts;
+  }
+  public function setStartRestricted($startRestricted)
+  {
+    $this->startRestricted = $startRestricted;
+  }
+  public function getStartRestricted()
+  {
+    return $this->startRestricted;
   }
   public function setStatus($status)
   {

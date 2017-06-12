@@ -54,7 +54,7 @@ class Google_Service_Dfareporting_Resource_CampaignCreativeAssociations extends 
    * @opt_param int maxResults Maximum number of results to return.
    * @opt_param string pageToken Value of the nextPageToken from the previous
    * result page.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_CampaignCreativeAssociationsListResponse
    */
   public function listCampaignCreativeAssociations($profileId, $campaignId, $optParams = array())

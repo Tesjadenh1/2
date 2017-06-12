@@ -15,15 +15,16 @@
  * the License.
  */
 
-class Google_Service_Speech_RecognitionConfig extends Google_Model
+class Google_Service_Speech_RecognitionConfig extends Google_Collection
 {
+  protected $collection_key = 'speechContexts';
   public $encoding;
   public $languageCode;
   public $maxAlternatives;
   public $profanityFilter;
-  public $sampleRate;
-  protected $speechContextType = 'Google_Service_Speech_SpeechContext';
-  protected $speechContextDataType = '';
+  public $sampleRateHertz;
+  protected $speechContextsType = 'Google_Service_Speech_SpeechContext';
+  protected $speechContextsDataType = 'array';
 
   public function setEncoding($encoding)
   {
@@ -57,20 +58,20 @@ class Google_Service_Speech_RecognitionConfig extends Google_Model
   {
     return $this->profanityFilter;
   }
-  public function setSampleRate($sampleRate)
+  public function setSampleRateHertz($sampleRateHertz)
   {
-    $this->sampleRate = $sampleRate;
+    $this->sampleRateHertz = $sampleRateHertz;
   }
-  public function getSampleRate()
+  public function getSampleRateHertz()
   {
-    return $this->sampleRate;
+    return $this->sampleRateHertz;
   }
-  public function setSpeechContext(Google_Service_Speech_SpeechContext $speechContext)
+  public function setSpeechContexts($speechContexts)
   {
-    $this->speechContext = $speechContext;
+    $this->speechContexts = $speechContexts;
   }
-  public function getSpeechContext()
+  public function getSpeechContexts()
   {
-    return $this->speechContext;
+    return $this->speechContexts;
   }
 }

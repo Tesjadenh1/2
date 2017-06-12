@@ -17,16 +17,25 @@
 
 class Google_Service_TagManager_ListAccountsResponse extends Google_Collection
 {
-  protected $collection_key = 'accounts';
-  protected $accountsType = 'Google_Service_TagManager_Account';
-  protected $accountsDataType = 'array';
+  protected $collection_key = 'account';
+  protected $accountType = 'Google_Service_TagManager_Account';
+  protected $accountDataType = 'array';
+  public $nextPageToken;
 
-  public function setAccounts($accounts)
+  public function setAccount($account)
   {
-    $this->accounts = $accounts;
+    $this->account = $account;
   }
-  public function getAccounts()
+  public function getAccount()
   {
-    return $this->accounts;
+    return $this->account;
+  }
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
 }

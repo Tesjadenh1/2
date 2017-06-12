@@ -80,7 +80,7 @@ class Google_Service_Dfareporting_Resource_Advertisers extends Google_Service_Re
    * "advertiser" will match objects with name "my advertiser", "advertiser 2015",
    * or simply "advertiser".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @opt_param string status Select only advertisers with the specified status.
    * @opt_param string subaccountId Select only advertisers with these subaccount
    * IDs.

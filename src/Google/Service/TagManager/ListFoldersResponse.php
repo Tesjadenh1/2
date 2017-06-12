@@ -17,16 +17,25 @@
 
 class Google_Service_TagManager_ListFoldersResponse extends Google_Collection
 {
-  protected $collection_key = 'folders';
-  protected $foldersType = 'Google_Service_TagManager_Folder';
-  protected $foldersDataType = 'array';
+  protected $collection_key = 'folder';
+  protected $folderType = 'Google_Service_TagManager_Folder';
+  protected $folderDataType = 'array';
+  public $nextPageToken;
 
-  public function setFolders($folders)
+  public function setFolder($folder)
   {
-    $this->folders = $folders;
+    $this->folder = $folder;
   }
-  public function getFolders()
+  public function getFolder()
   {
-    return $this->folders;
+    return $this->folder;
+  }
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
 }

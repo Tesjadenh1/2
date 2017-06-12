@@ -28,6 +28,7 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
   public $localId;
   public $passwordHash;
   public $passwordUpdatedAt;
+  public $phoneNumber;
   public $photoUrl;
   protected $providerUserInfoType = 'Google_Service_IdentityToolkit_UserInfoProviderUserInfo';
   protected $providerUserInfoDataType = 'array';
@@ -116,6 +117,14 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
   public function getPasswordUpdatedAt()
   {
     return $this->passwordUpdatedAt;
+  }
+  public function setPhoneNumber($phoneNumber)
+  {
+    $this->phoneNumber = $phoneNumber;
+  }
+  public function getPhoneNumber()
+  {
+    return $this->phoneNumber;
   }
   public function setPhotoUrl($photoUrl)
   {

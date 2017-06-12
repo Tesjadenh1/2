@@ -22,6 +22,7 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
   public $description;
   protected $disksType = 'Google_Service_Compute_AttachedDisk';
   protected $disksDataType = 'array';
+  public $labels;
   public $machineType;
   protected $metadataType = 'Google_Service_Compute_Metadata';
   protected $metadataDataType = '';
@@ -57,6 +58,14 @@ class Google_Service_Compute_InstanceProperties extends Google_Collection
   public function getDisks()
   {
     return $this->disks;
+  }
+  public function setLabels($labels)
+  {
+    $this->labels = $labels;
+  }
+  public function getLabels()
+  {
+    return $this->labels;
   }
   public function setMachineType($machineType)
   {

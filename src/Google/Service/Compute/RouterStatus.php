@@ -20,6 +20,8 @@ class Google_Service_Compute_RouterStatus extends Google_Collection
   protected $collection_key = 'bgpPeerStatus';
   protected $bestRoutesType = 'Google_Service_Compute_Route';
   protected $bestRoutesDataType = 'array';
+  protected $bestRoutesForRouterType = 'Google_Service_Compute_Route';
+  protected $bestRoutesForRouterDataType = 'array';
   protected $bgpPeerStatusType = 'Google_Service_Compute_RouterStatusBgpPeerStatus';
   protected $bgpPeerStatusDataType = 'array';
   public $network;
@@ -31,6 +33,14 @@ class Google_Service_Compute_RouterStatus extends Google_Collection
   public function getBestRoutes()
   {
     return $this->bestRoutes;
+  }
+  public function setBestRoutesForRouter($bestRoutesForRouter)
+  {
+    $this->bestRoutesForRouter = $bestRoutesForRouter;
+  }
+  public function getBestRoutesForRouter()
+  {
+    return $this->bestRoutesForRouter;
   }
   public function setBgpPeerStatus($bgpPeerStatus)
   {

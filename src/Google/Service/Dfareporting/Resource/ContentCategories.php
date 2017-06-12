@@ -85,7 +85,7 @@ class Google_Service_Dfareporting_Resource_ContentCategories extends Google_Serv
    * example, a search string of "contentcategory" will match objects with name
    * "my contentcategory", "contentcategory 2015", or simply "contentcategory".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_ContentCategoriesListResponse
    */
   public function listContentCategories($profileId, $optParams = array())

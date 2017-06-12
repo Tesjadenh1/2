@@ -17,6 +17,8 @@
 
 class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Version extends Google_Model
 {
+  protected $automaticScalingType = 'Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomaticScaling';
+  protected $automaticScalingDataType = '';
   public $createTime;
   public $deploymentUri;
   public $description;
@@ -27,6 +29,14 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Version extends G
   public $name;
   public $runtimeVersion;
 
+  public function setAutomaticScaling(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomaticScaling $automaticScaling)
+  {
+    $this->automaticScaling = $automaticScaling;
+  }
+  public function getAutomaticScaling()
+  {
+    return $this->automaticScaling;
+  }
   public function setCreateTime($createTime)
   {
     $this->createTime = $createTime;

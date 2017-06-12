@@ -20,6 +20,7 @@ class Google_Service_Logging_LogSink extends Google_Model
   public $destination;
   public $endTime;
   public $filter;
+  public $includeChildren;
   public $name;
   public $outputVersionFormat;
   public $startTime;
@@ -48,6 +49,14 @@ class Google_Service_Logging_LogSink extends Google_Model
   public function getFilter()
   {
     return $this->filter;
+  }
+  public function setIncludeChildren($includeChildren)
+  {
+    $this->includeChildren = $includeChildren;
+  }
+  public function getIncludeChildren()
+  {
+    return $this->includeChildren;
   }
   public function setName($name)
   {

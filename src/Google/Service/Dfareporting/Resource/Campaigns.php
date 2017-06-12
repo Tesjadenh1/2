@@ -87,7 +87,7 @@ class Google_Service_Dfareporting_Resource_Campaigns extends Google_Service_Reso
    * "campaign" will match campaigns with name "my campaign", "campaign 2015", or
    * simply "campaign".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @opt_param string subaccountId Select only campaigns that belong to this
    * subaccount.
    * @return Google_Service_Dfareporting_CampaignsListResponse

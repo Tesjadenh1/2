@@ -15,11 +15,13 @@
  * the License.
  */
 
-class Google_Service_Slides_ReplaceAllShapesWithImageRequest extends Google_Model
+class Google_Service_Slides_ReplaceAllShapesWithImageRequest extends Google_Collection
 {
+  protected $collection_key = 'pageObjectIds';
   protected $containsTextType = 'Google_Service_Slides_SubstringMatchCriteria';
   protected $containsTextDataType = '';
   public $imageUrl;
+  public $pageObjectIds;
   public $replaceMethod;
 
   public function setContainsText(Google_Service_Slides_SubstringMatchCriteria $containsText)
@@ -37,6 +39,14 @@ class Google_Service_Slides_ReplaceAllShapesWithImageRequest extends Google_Mode
   public function getImageUrl()
   {
     return $this->imageUrl;
+  }
+  public function setPageObjectIds($pageObjectIds)
+  {
+    $this->pageObjectIds = $pageObjectIds;
+  }
+  public function getPageObjectIds()
+  {
+    return $this->pageObjectIds;
   }
   public function setReplaceMethod($replaceMethod)
   {

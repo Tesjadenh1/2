@@ -42,16 +42,16 @@ class Google_Service_CloudDebugger_Resource_ControllerDebuggeesBreakpoints exten
    * @param string $debuggeeId Identifies the debuggee.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string waitToken A wait token that, if specified, blocks the
-   * method call until the list of active breakpoints has changed, or a server
-   * selected timeout has expired.  The value should be set from the last returned
-   * response.
    * @opt_param bool successOnTimeout If set to `true`, returns
    * `google.rpc.Code.OK` status and sets the `wait_expired` response field to
    * `true` when the server-selected timeout has expired (recommended).
    *
    * If set to `false`, returns `google.rpc.Code.ABORTED` status when the server-
    * selected timeout has expired (deprecated).
+   * @opt_param string waitToken A wait token that, if specified, blocks the
+   * method call until the list of active breakpoints has changed, or a server
+   * selected timeout has expired.  The value should be set from the last returned
+   * response.
    * @return Google_Service_CloudDebugger_ListActiveBreakpointsResponse
    */
   public function listControllerDebuggeesBreakpoints($debuggeeId, $optParams = array())

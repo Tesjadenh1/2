@@ -22,6 +22,7 @@ class Google_Service_ShoppingContent_AccountStatus extends Google_Collection
   protected $dataQualityIssuesType = 'Google_Service_ShoppingContent_AccountStatusDataQualityIssue';
   protected $dataQualityIssuesDataType = 'array';
   public $kind;
+  public $websiteClaimed;
 
   public function setAccountId($accountId)
   {
@@ -46,5 +47,13 @@ class Google_Service_ShoppingContent_AccountStatus extends Google_Collection
   public function getKind()
   {
     return $this->kind;
+  }
+  public function setWebsiteClaimed($websiteClaimed)
+  {
+    $this->websiteClaimed = $websiteClaimed;
+  }
+  public function getWebsiteClaimed()
+  {
+    return $this->websiteClaimed;
   }
 }

@@ -19,7 +19,6 @@ class Google_Service_Customsearch_Query extends Google_Model
 {
   public $count;
   public $cr;
-  public $cref;
   public $cx;
   public $dateRestrict;
   public $disableCnTwTranslation;
@@ -70,14 +69,6 @@ class Google_Service_Customsearch_Query extends Google_Model
   public function getCr()
   {
     return $this->cr;
-  }
-  public function setCref($cref)
-  {
-    $this->cref = $cref;
-  }
-  public function getCref()
-  {
-    return $this->cref;
   }
   public function setCx($cx)
   {

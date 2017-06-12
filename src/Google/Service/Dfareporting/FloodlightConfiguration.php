@@ -35,7 +35,6 @@ class Google_Service_Dfareporting_FloodlightConfiguration extends Google_Collect
   public $naturalSearchConversionAttributionOption;
   protected $omnitureSettingsType = 'Google_Service_Dfareporting_OmnitureSettings';
   protected $omnitureSettingsDataType = '';
-  public $standardVariableTypes;
   public $subaccountId;
   protected $tagSettingsType = 'Google_Service_Dfareporting_TagSettings';
   protected $tagSettingsDataType = '';
@@ -147,14 +146,6 @@ class Google_Service_Dfareporting_FloodlightConfiguration extends Google_Collect
   public function getOmnitureSettings()
   {
     return $this->omnitureSettings;
-  }
-  public function setStandardVariableTypes($standardVariableTypes)
-  {
-    $this->standardVariableTypes = $standardVariableTypes;
-  }
-  public function getStandardVariableTypes()
-  {
-    return $this->standardVariableTypes;
   }
   public function setSubaccountId($subaccountId)
   {

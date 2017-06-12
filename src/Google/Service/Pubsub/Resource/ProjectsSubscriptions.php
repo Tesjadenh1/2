@@ -111,8 +111,8 @@ class Google_Service_Pubsub_Resource_ProjectsSubscriptions extends Google_Servic
    * resource exists and does not have a policy set. (subscriptions.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
-   * requested. `resource` is usually specified as a path. For example, a Project
-   * resource is specified as `projects/{project}`.
+   * requested. See the operation documentation for the appropriate value for this
+   * field.
    * @param array $optParams Optional parameters.
    * @return Google_Service_Pubsub_Policy
    */
@@ -129,11 +129,11 @@ class Google_Service_Pubsub_Resource_ProjectsSubscriptions extends Google_Servic
    * belong to. Format is `projects/{project}`.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param int pageSize Maximum number of subscriptions to return.
    * @opt_param string pageToken The value returned by the last
    * `ListSubscriptionsResponse`; indicates that this is a continuation of a prior
    * `ListSubscriptions` call, and that the system should return the next page of
    * data.
-   * @opt_param int pageSize Maximum number of subscriptions to return.
    * @return Google_Service_Pubsub_ListSubscriptionsResponse
    */
   public function listProjectsSubscriptions($project, $optParams = array())
@@ -206,8 +206,8 @@ class Google_Service_Pubsub_Resource_ProjectsSubscriptions extends Google_Servic
    * existing policy. (subscriptions.setIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
-   * specified. `resource` is usually specified as a path. For example, a Project
-   * resource is specified as `projects/{project}`.
+   * specified. See the operation documentation for the appropriate value for this
+   * field.
    * @param Google_Service_Pubsub_SetIamPolicyRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Pubsub_Policy
@@ -228,8 +228,8 @@ class Google_Service_Pubsub_Resource_ProjectsSubscriptions extends Google_Servic
    * "fail open" without warning. (subscriptions.testIamPermissions)
    *
    * @param string $resource REQUIRED: The resource for which the policy detail is
-   * being requested. `resource` is usually specified as a path. For example, a
-   * Project resource is specified as `projects/{project}`.
+   * being requested. See the operation documentation for the appropriate value
+   * for this field.
    * @param Google_Service_Pubsub_TestIamPermissionsRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_Pubsub_TestIamPermissionsResponse

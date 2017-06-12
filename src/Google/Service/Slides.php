@@ -120,6 +120,29 @@ class Google_Service_Slides extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'getThumbnail' => array(
+              'path' => 'v1/presentations/{presentationId}/pages/{pageObjectId}/thumbnail',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'presentationId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageObjectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'thumbnailProperties.mimeType' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'thumbnailProperties.thumbnailSize' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),
           )
         )

@@ -23,6 +23,7 @@ class Google_Service_ServiceUser_Endpoint extends Google_Collection
   public $apis;
   public $features;
   public $name;
+  public $target;
 
   public function setAliases($aliases)
   {
@@ -63,5 +64,13 @@ class Google_Service_ServiceUser_Endpoint extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  public function setTarget($target)
+  {
+    $this->target = $target;
+  }
+  public function getTarget()
+  {
+    return $this->target;
   }
 }

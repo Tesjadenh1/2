@@ -18,9 +18,6 @@
 class Google_Service_Dfareporting_Creative extends Google_Collection
 {
   protected $collection_key = 'timerCustomEvents';
-  protected $internal_gapi_mappings = array(
-        "autoAdvanceImages" => "auto_advance_images",
-  );
   public $accountId;
   public $active;
   public $adParameters;
@@ -96,6 +93,8 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   protected $timerCustomEventsDataType = 'array';
   public $totalFileSize;
   public $type;
+  protected $universalAdIdType = 'Google_Service_Dfareporting_UniversalAdId';
+  protected $universalAdIdDataType = '';
   public $version;
   public $videoDescription;
   public $videoDuration;
@@ -571,6 +570,14 @@ class Google_Service_Dfareporting_Creative extends Google_Collection
   public function getType()
   {
     return $this->type;
+  }
+  public function setUniversalAdId(Google_Service_Dfareporting_UniversalAdId $universalAdId)
+  {
+    $this->universalAdId = $universalAdId;
+  }
+  public function getUniversalAdId()
+  {
+    return $this->universalAdId;
   }
   public function setVersion($version)
   {

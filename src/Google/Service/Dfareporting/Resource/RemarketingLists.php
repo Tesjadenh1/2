@@ -76,7 +76,7 @@ class Google_Service_Dfareporting_Resource_RemarketingLists extends Google_Servi
    * @opt_param string pageToken Value of the nextPageToken from the previous
    * result page.
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_RemarketingListsListResponse
    */
   public function listRemarketingLists($profileId, $advertiserId, $optParams = array())

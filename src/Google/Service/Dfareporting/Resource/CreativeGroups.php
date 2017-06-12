@@ -77,7 +77,7 @@ class Google_Service_Dfareporting_Resource_CreativeGroups extends Google_Service
    * creative groups with the name "my creativegroup", "creativegroup 2015", or
    * simply "creativegroup".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_CreativeGroupsListResponse
    */
   public function listCreativeGroups($profileId, $optParams = array())

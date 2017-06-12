@@ -19,7 +19,8 @@ class Google_Service_TagManager_Environment extends Google_Model
 {
   public $accountId;
   public $authorizationCode;
-  public $authorizationTimestampMs;
+  protected $authorizationTimestampType = 'Google_Service_TagManager_Timestamp';
+  protected $authorizationTimestampDataType = '';
   public $containerId;
   public $containerVersionId;
   public $description;
@@ -27,8 +28,11 @@ class Google_Service_TagManager_Environment extends Google_Model
   public $environmentId;
   public $fingerprint;
   public $name;
+  public $path;
+  public $tagManagerUrl;
   public $type;
   public $url;
+  public $workspaceId;
 
   public function setAccountId($accountId)
   {
@@ -46,13 +50,13 @@ class Google_Service_TagManager_Environment extends Google_Model
   {
     return $this->authorizationCode;
   }
-  public function setAuthorizationTimestampMs($authorizationTimestampMs)
+  public function setAuthorizationTimestamp(Google_Service_TagManager_Timestamp $authorizationTimestamp)
   {
-    $this->authorizationTimestampMs = $authorizationTimestampMs;
+    $this->authorizationTimestamp = $authorizationTimestamp;
   }
-  public function getAuthorizationTimestampMs()
+  public function getAuthorizationTimestamp()
   {
-    return $this->authorizationTimestampMs;
+    return $this->authorizationTimestamp;
   }
   public function setContainerId($containerId)
   {
@@ -110,6 +114,22 @@ class Google_Service_TagManager_Environment extends Google_Model
   {
     return $this->name;
   }
+  public function setPath($path)
+  {
+    $this->path = $path;
+  }
+  public function getPath()
+  {
+    return $this->path;
+  }
+  public function setTagManagerUrl($tagManagerUrl)
+  {
+    $this->tagManagerUrl = $tagManagerUrl;
+  }
+  public function getTagManagerUrl()
+  {
+    return $this->tagManagerUrl;
+  }
   public function setType($type)
   {
     $this->type = $type;
@@ -125,5 +145,13 @@ class Google_Service_TagManager_Environment extends Google_Model
   public function getUrl()
   {
     return $this->url;
+  }
+  public function setWorkspaceId($workspaceId)
+  {
+    $this->workspaceId = $workspaceId;
+  }
+  public function getWorkspaceId()
+  {
+    return $this->workspaceId;
   }
 }

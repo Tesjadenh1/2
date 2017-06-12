@@ -17,12 +17,33 @@
 
 class Google_Service_Drive_TeamDrive extends Google_Model
 {
+  protected $backgroundImageFileType = 'Google_Service_Drive_TeamDriveBackgroundImageFile';
+  protected $backgroundImageFileDataType = '';
+  public $backgroundImageLink;
   protected $capabilitiesType = 'Google_Service_Drive_TeamDriveCapabilities';
   protected $capabilitiesDataType = '';
+  public $colorRgb;
   public $id;
   public $kind;
   public $name;
+  public $themeId;
 
+  public function setBackgroundImageFile(Google_Service_Drive_TeamDriveBackgroundImageFile $backgroundImageFile)
+  {
+    $this->backgroundImageFile = $backgroundImageFile;
+  }
+  public function getBackgroundImageFile()
+  {
+    return $this->backgroundImageFile;
+  }
+  public function setBackgroundImageLink($backgroundImageLink)
+  {
+    $this->backgroundImageLink = $backgroundImageLink;
+  }
+  public function getBackgroundImageLink()
+  {
+    return $this->backgroundImageLink;
+  }
   public function setCapabilities(Google_Service_Drive_TeamDriveCapabilities $capabilities)
   {
     $this->capabilities = $capabilities;
@@ -30,6 +51,14 @@ class Google_Service_Drive_TeamDrive extends Google_Model
   public function getCapabilities()
   {
     return $this->capabilities;
+  }
+  public function setColorRgb($colorRgb)
+  {
+    $this->colorRgb = $colorRgb;
+  }
+  public function getColorRgb()
+  {
+    return $this->colorRgb;
   }
   public function setId($id)
   {
@@ -54,5 +83,13 @@ class Google_Service_Drive_TeamDrive extends Google_Model
   public function getName()
   {
     return $this->name;
+  }
+  public function setThemeId($themeId)
+  {
+    $this->themeId = $themeId;
+  }
+  public function getThemeId()
+  {
+    return $this->themeId;
   }
 }

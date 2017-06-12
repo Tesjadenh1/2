@@ -25,4 +25,19 @@
  */
 class Google_Service_Dataflow_Resource_ProjectsLocations extends Google_Service_Resource
 {
+  /**
+   * Send a worker_message to the service. (locations.workerMessages)
+   *
+   * @param string $projectId The project to send the WorkerMessages to.
+   * @param string $location The location which contains the job
+   * @param Google_Service_Dataflow_SendWorkerMessagesRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Dataflow_SendWorkerMessagesResponse
+   */
+  public function workerMessages($projectId, $location, Google_Service_Dataflow_SendWorkerMessagesRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'location' => $location, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('workerMessages', array($params), "Google_Service_Dataflow_SendWorkerMessagesResponse");
+  }
 }

@@ -28,6 +28,7 @@ class Google_Service_Partners_User extends Google_Collection
   protected $examStatusType = 'Google_Service_Partners_ExamStatus';
   protected $examStatusDataType = 'array';
   public $id;
+  public $internalId;
   public $lastAccessTime;
   public $primaryEmails;
   protected $profileType = 'Google_Service_Partners_UserProfile';
@@ -82,6 +83,14 @@ class Google_Service_Partners_User extends Google_Collection
   public function getId()
   {
     return $this->id;
+  }
+  public function setInternalId($internalId)
+  {
+    $this->internalId = $internalId;
+  }
+  public function getInternalId()
+  {
+    return $this->internalId;
   }
   public function setLastAccessTime($lastAccessTime)
   {

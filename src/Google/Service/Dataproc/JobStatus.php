@@ -20,6 +20,7 @@ class Google_Service_Dataproc_JobStatus extends Google_Model
   public $details;
   public $state;
   public $stateStartTime;
+  public $substate;
 
   public function setDetails($details)
   {
@@ -44,5 +45,13 @@ class Google_Service_Dataproc_JobStatus extends Google_Model
   public function getStateStartTime()
   {
     return $this->stateStartTime;
+  }
+  public function setSubstate($substate)
+  {
+    $this->substate = $substate;
+  }
+  public function getSubstate()
+  {
+    return $this->substate;
   }
 }

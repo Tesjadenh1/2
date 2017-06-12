@@ -23,6 +23,7 @@ class Google_Service_ShoppingContent_AccountsCustomBatchRequestEntry extends Goo
   public $batchId;
   public $merchantId;
   public $method;
+  public $overwrite;
 
   public function setAccount(Google_Service_ShoppingContent_Account $account)
   {
@@ -63,5 +64,13 @@ class Google_Service_ShoppingContent_AccountsCustomBatchRequestEntry extends Goo
   public function getMethod()
   {
     return $this->method;
+  }
+  public function setOverwrite($overwrite)
+  {
+    $this->overwrite = $overwrite;
+  }
+  public function getOverwrite()
+  {
+    return $this->overwrite;
   }
 }

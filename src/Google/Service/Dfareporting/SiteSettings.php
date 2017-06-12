@@ -18,9 +18,9 @@
 class Google_Service_Dfareporting_SiteSettings extends Google_Model
 {
   public $activeViewOptOut;
+  public $adBlockingOptOut;
   protected $creativeSettingsType = 'Google_Service_Dfareporting_CreativeSettings';
   protected $creativeSettingsDataType = '';
-  public $disableBrandSafeAds;
   public $disableNewCookie;
   protected $lookbackConfigurationType = 'Google_Service_Dfareporting_LookbackConfiguration';
   protected $lookbackConfigurationDataType = '';
@@ -37,6 +37,14 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   {
     return $this->activeViewOptOut;
   }
+  public function setAdBlockingOptOut($adBlockingOptOut)
+  {
+    $this->adBlockingOptOut = $adBlockingOptOut;
+  }
+  public function getAdBlockingOptOut()
+  {
+    return $this->adBlockingOptOut;
+  }
   public function setCreativeSettings(Google_Service_Dfareporting_CreativeSettings $creativeSettings)
   {
     $this->creativeSettings = $creativeSettings;
@@ -44,14 +52,6 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   public function getCreativeSettings()
   {
     return $this->creativeSettings;
-  }
-  public function setDisableBrandSafeAds($disableBrandSafeAds)
-  {
-    $this->disableBrandSafeAds = $disableBrandSafeAds;
-  }
-  public function getDisableBrandSafeAds()
-  {
-    return $this->disableBrandSafeAds;
   }
   public function setDisableNewCookie($disableNewCookie)
   {

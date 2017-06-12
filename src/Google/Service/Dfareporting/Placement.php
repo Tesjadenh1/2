@@ -19,6 +19,7 @@ class Google_Service_Dfareporting_Placement extends Google_Collection
 {
   protected $collection_key = 'tagFormats';
   public $accountId;
+  public $adBlockingOptOut;
   public $advertiserId;
   protected $advertiserIdDimensionValueType = 'Google_Service_Dfareporting_DimensionValue';
   protected $advertiserIdDimensionValueDataType = '';
@@ -79,6 +80,14 @@ class Google_Service_Dfareporting_Placement extends Google_Collection
   public function getAccountId()
   {
     return $this->accountId;
+  }
+  public function setAdBlockingOptOut($adBlockingOptOut)
+  {
+    $this->adBlockingOptOut = $adBlockingOptOut;
+  }
+  public function getAdBlockingOptOut()
+  {
+    return $this->adBlockingOptOut;
   }
   public function setAdvertiserId($advertiserId)
   {

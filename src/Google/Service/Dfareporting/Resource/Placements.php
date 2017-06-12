@@ -130,7 +130,7 @@ class Google_Service_Dfareporting_Resource_Placements extends Google_Service_Res
    * @opt_param string sizeIds Select only placements that are associated with
    * these sizes.
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_PlacementsListResponse
    */
   public function listPlacements($profileId, $optParams = array())

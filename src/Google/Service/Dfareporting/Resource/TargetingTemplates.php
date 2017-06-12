@@ -74,7 +74,7 @@ class Google_Service_Dfareporting_Resource_TargetingTemplates extends Google_Ser
    * "template" will match objects with name "my template", "template 2015", or
    * simply "template".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_TargetingTemplatesListResponse
    */
   public function listTargetingTemplates($profileId, $optParams = array())

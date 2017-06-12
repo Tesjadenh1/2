@@ -19,7 +19,7 @@
  * Service definition for Customsearch (v1).
  *
  * <p>
- * Lets you search over a website or collection of websites</p>
+ * Searches over a website or collection of websites</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -67,10 +67,6 @@ class Google_Service_Customsearch extends Google_Service
                   'type' => 'string',
                 ),
                 'cr' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'cref' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

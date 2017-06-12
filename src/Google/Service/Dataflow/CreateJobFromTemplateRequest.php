@@ -21,6 +21,7 @@ class Google_Service_Dataflow_CreateJobFromTemplateRequest extends Google_Model
   protected $environmentDataType = '';
   public $gcsPath;
   public $jobName;
+  public $location;
   public $parameters;
 
   public function setEnvironment(Google_Service_Dataflow_RuntimeEnvironment $environment)
@@ -46,6 +47,14 @@ class Google_Service_Dataflow_CreateJobFromTemplateRequest extends Google_Model
   public function getJobName()
   {
     return $this->jobName;
+  }
+  public function setLocation($location)
+  {
+    $this->location = $location;
+  }
+  public function getLocation()
+  {
+    return $this->location;
   }
   public function setParameters($parameters)
   {

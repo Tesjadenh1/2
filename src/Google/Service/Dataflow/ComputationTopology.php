@@ -28,7 +28,6 @@ class Google_Service_Dataflow_ComputationTopology extends Google_Collection
   protected $stateFamiliesType = 'Google_Service_Dataflow_StateFamilyConfig';
   protected $stateFamiliesDataType = 'array';
   public $systemStageName;
-  public $userStageName;
 
   public function setComputationId($computationId)
   {
@@ -77,13 +76,5 @@ class Google_Service_Dataflow_ComputationTopology extends Google_Collection
   public function getSystemStageName()
   {
     return $this->systemStageName;
-  }
-  public function setUserStageName($userStageName)
-  {
-    $this->userStageName = $userStageName;
-  }
-  public function getUserStageName()
-  {
-    return $this->userStageName;
   }
 }

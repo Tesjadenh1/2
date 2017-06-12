@@ -18,6 +18,7 @@
 class Google_Service_Drive_DriveFileCapabilities extends Google_Model
 {
   public $canAddChildren;
+  public $canChangeViewersCanCopyContent;
   public $canComment;
   public $canCopy;
   public $canDelete;
@@ -41,6 +42,14 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public function getCanAddChildren()
   {
     return $this->canAddChildren;
+  }
+  public function setCanChangeViewersCanCopyContent($canChangeViewersCanCopyContent)
+  {
+    $this->canChangeViewersCanCopyContent = $canChangeViewersCanCopyContent;
+  }
+  public function getCanChangeViewersCanCopyContent()
+  {
+    return $this->canChangeViewersCanCopyContent;
   }
   public function setCanComment($canComment)
   {

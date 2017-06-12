@@ -104,7 +104,7 @@ class Google_Service_Dfareporting_Resource_EventTags extends Google_Service_Reso
    * "eventtag" will match objects with name "my eventtag", "eventtag 2015", or
    * simply "eventtag".
    * @opt_param string sortField Field by which to sort the list.
-   * @opt_param string sortOrder Order of sorted results, default is ASCENDING.
+   * @opt_param string sortOrder Order of sorted results.
    * @return Google_Service_Dfareporting_EventTagsListResponse
    */
   public function listEventTags($profileId, $optParams = array())

@@ -18,6 +18,7 @@
 class Google_Service_Dataflow_GetDebugConfigRequest extends Google_Model
 {
   public $componentId;
+  public $location;
   public $workerId;
 
   public function setComponentId($componentId)
@@ -27,6 +28,14 @@ class Google_Service_Dataflow_GetDebugConfigRequest extends Google_Model
   public function getComponentId()
   {
     return $this->componentId;
+  }
+  public function setLocation($location)
+  {
+    $this->location = $location;
+  }
+  public function getLocation()
+  {
+    return $this->location;
   }
   public function setWorkerId($workerId)
   {

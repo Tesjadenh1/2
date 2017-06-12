@@ -19,6 +19,8 @@ class Google_Service_ServiceUser_AuthenticationRule extends Google_Collection
 {
   protected $collection_key = 'requirements';
   public $allowWithoutCredential;
+  protected $customAuthType = 'Google_Service_ServiceUser_CustomAuthRequirements';
+  protected $customAuthDataType = '';
   protected $oauthType = 'Google_Service_ServiceUser_OAuthRequirements';
   protected $oauthDataType = '';
   protected $requirementsType = 'Google_Service_ServiceUser_AuthRequirement';
@@ -32,6 +34,14 @@ class Google_Service_ServiceUser_AuthenticationRule extends Google_Collection
   public function getAllowWithoutCredential()
   {
     return $this->allowWithoutCredential;
+  }
+  public function setCustomAuth(Google_Service_ServiceUser_CustomAuthRequirements $customAuth)
+  {
+    $this->customAuth = $customAuth;
+  }
+  public function getCustomAuth()
+  {
+    return $this->customAuth;
   }
   public function setOauth(Google_Service_ServiceUser_OAuthRequirements $oauth)
   {

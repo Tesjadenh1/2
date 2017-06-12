@@ -17,4 +17,14 @@
 
 class Google_Service_ServiceManagement_CloudAuditOptions extends Google_Model
 {
+  public $logName;
+
+  public function setLogName($logName)
+  {
+    $this->logName = $logName;
+  }
+  public function getLogName()
+  {
+    return $this->logName;
+  }
 }

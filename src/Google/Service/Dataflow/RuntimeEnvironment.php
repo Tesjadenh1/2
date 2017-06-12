@@ -18,6 +18,7 @@
 class Google_Service_Dataflow_RuntimeEnvironment extends Google_Model
 {
   public $bypassTempDirValidation;
+  public $machineType;
   public $maxWorkers;
   public $serviceAccountEmail;
   public $tempLocation;
@@ -30,6 +31,14 @@ class Google_Service_Dataflow_RuntimeEnvironment extends Google_Model
   public function getBypassTempDirValidation()
   {
     return $this->bypassTempDirValidation;
+  }
+  public function setMachineType($machineType)
+  {
+    $this->machineType = $machineType;
+  }
+  public function getMachineType()
+  {
+    return $this->machineType;
   }
   public function setMaxWorkers($maxWorkers)
   {

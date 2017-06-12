@@ -19,6 +19,7 @@ class Google_Service_Drive_Permission extends Google_Collection
 {
   protected $collection_key = 'teamDrivePermissionDetails';
   public $allowFileDiscovery;
+  public $deleted;
   public $displayName;
   public $domain;
   public $emailAddress;
@@ -38,6 +39,14 @@ class Google_Service_Drive_Permission extends Google_Collection
   public function getAllowFileDiscovery()
   {
     return $this->allowFileDiscovery;
+  }
+  public function setDeleted($deleted)
+  {
+    $this->deleted = $deleted;
+  }
+  public function getDeleted()
+  {
+    return $this->deleted;
   }
   public function setDisplayName($displayName)
   {

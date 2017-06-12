@@ -17,16 +17,25 @@
 
 class Google_Service_TagManager_ListVariablesResponse extends Google_Collection
 {
-  protected $collection_key = 'variables';
-  protected $variablesType = 'Google_Service_TagManager_Variable';
-  protected $variablesDataType = 'array';
+  protected $collection_key = 'variable';
+  public $nextPageToken;
+  protected $variableType = 'Google_Service_TagManager_Variable';
+  protected $variableDataType = 'array';
 
-  public function setVariables($variables)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->variables = $variables;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getVariables()
+  public function getNextPageToken()
   {
-    return $this->variables;
+    return $this->nextPageToken;
+  }
+  public function setVariable($variable)
+  {
+    $this->variable = $variable;
+  }
+  public function getVariable()
+  {
+    return $this->variable;
   }
 }

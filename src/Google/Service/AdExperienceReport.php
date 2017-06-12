@@ -24,7 +24,7 @@
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://developers.google.com/apis-explorer/#search/adexperiencereport/adexperiencereport/v1/" target="_blank">Documentation</a>
+ * <a href="https://developers.google.com/ad-experience-report/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
