@@ -30,10 +30,16 @@ class Google_Service_Spectrum_SpectrumMessage extends Google_Collection
   {
     return $this->bandwidth;
   }
+  /**
+   * @param Google_Service_Spectrum_FrequencyRange
+   */
   public function setFrequencyRanges($frequencyRanges)
   {
     $this->frequencyRanges = $frequencyRanges;
   }
+  /**
+   * @return Google_Service_Spectrum_FrequencyRange
+   */
   public function getFrequencyRanges()
   {
     return $this->frequencyRanges;

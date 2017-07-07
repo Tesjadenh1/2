@@ -21,10 +21,16 @@ class Google_Service_Spectrum_DeviceCapabilities extends Google_Collection
   protected $frequencyRangesType = 'Google_Service_Spectrum_FrequencyRange';
   protected $frequencyRangesDataType = 'array';
 
+  /**
+   * @param Google_Service_Spectrum_FrequencyRange
+   */
   public function setFrequencyRanges($frequencyRanges)
   {
     $this->frequencyRanges = $frequencyRanges;
   }
+  /**
+   * @return Google_Service_Spectrum_FrequencyRange
+   */
   public function getFrequencyRanges()
   {
     return $this->frequencyRanges;

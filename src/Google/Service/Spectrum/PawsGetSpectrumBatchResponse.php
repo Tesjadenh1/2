@@ -34,26 +34,44 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchResponse extends Google_Collec
   public $type;
   public $version;
 
+  /**
+   * @param Google_Service_Spectrum_DbUpdateSpec
+   */
   public function setDatabaseChange(Google_Service_Spectrum_DbUpdateSpec $databaseChange)
   {
     $this->databaseChange = $databaseChange;
   }
+  /**
+   * @return Google_Service_Spectrum_DbUpdateSpec
+   */
   public function getDatabaseChange()
   {
     return $this->databaseChange;
   }
+  /**
+   * @param Google_Service_Spectrum_DeviceDescriptor
+   */
   public function setDeviceDesc(Google_Service_Spectrum_DeviceDescriptor $deviceDesc)
   {
     $this->deviceDesc = $deviceDesc;
   }
+  /**
+   * @return Google_Service_Spectrum_DeviceDescriptor
+   */
   public function getDeviceDesc()
   {
     return $this->deviceDesc;
   }
+  /**
+   * @param Google_Service_Spectrum_GeoSpectrumSchedule
+   */
   public function setGeoSpectrumSchedules($geoSpectrumSchedules)
   {
     $this->geoSpectrumSchedules = $geoSpectrumSchedules;
   }
+  /**
+   * @return Google_Service_Spectrum_GeoSpectrumSchedule
+   */
   public function getGeoSpectrumSchedules()
   {
     return $this->geoSpectrumSchedules;
@@ -90,10 +108,16 @@ class Google_Service_Spectrum_PawsGetSpectrumBatchResponse extends Google_Collec
   {
     return $this->needsSpectrumReport;
   }
+  /**
+   * @param Google_Service_Spectrum_RulesetInfo
+   */
   public function setRulesetInfo(Google_Service_Spectrum_RulesetInfo $rulesetInfo)
   {
     $this->rulesetInfo = $rulesetInfo;
   }
+  /**
+   * @return Google_Service_Spectrum_RulesetInfo
+   */
   public function getRulesetInfo()
   {
     return $this->rulesetInfo;

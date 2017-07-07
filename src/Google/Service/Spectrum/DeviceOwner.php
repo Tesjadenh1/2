@@ -22,18 +22,30 @@ class Google_Service_Spectrum_DeviceOwner extends Google_Model
   protected $ownerType = 'Google_Service_Spectrum_Vcard';
   protected $ownerDataType = '';
 
+  /**
+   * @param Google_Service_Spectrum_Vcard
+   */
   public function setOperator(Google_Service_Spectrum_Vcard $operator)
   {
     $this->operator = $operator;
   }
+  /**
+   * @return Google_Service_Spectrum_Vcard
+   */
   public function getOperator()
   {
     return $this->operator;
   }
+  /**
+   * @param Google_Service_Spectrum_Vcard
+   */
   public function setOwner(Google_Service_Spectrum_Vcard $owner)
   {
     $this->owner = $owner;
   }
+  /**
+   * @return Google_Service_Spectrum_Vcard
+   */
   public function getOwner()
   {
     return $this->owner;

@@ -23,10 +23,16 @@ class Google_Service_Spectrum_PawsVerifyDeviceRequest extends Google_Collection
   public $type;
   public $version;
 
+  /**
+   * @param Google_Service_Spectrum_DeviceDescriptor
+   */
   public function setDeviceDescs($deviceDescs)
   {
     $this->deviceDescs = $deviceDescs;
   }
+  /**
+   * @return Google_Service_Spectrum_DeviceDescriptor
+   */
   public function getDeviceDescs()
   {
     return $this->deviceDescs;

@@ -26,18 +26,30 @@ class Google_Service_Spectrum_PawsVerifyDeviceResponse extends Google_Collection
   public $type;
   public $version;
 
+  /**
+   * @param Google_Service_Spectrum_DbUpdateSpec
+   */
   public function setDatabaseChange(Google_Service_Spectrum_DbUpdateSpec $databaseChange)
   {
     $this->databaseChange = $databaseChange;
   }
+  /**
+   * @return Google_Service_Spectrum_DbUpdateSpec
+   */
   public function getDatabaseChange()
   {
     return $this->databaseChange;
   }
+  /**
+   * @param Google_Service_Spectrum_DeviceValidity
+   */
   public function setDeviceValidities($deviceValidities)
   {
     $this->deviceValidities = $deviceValidities;
   }
+  /**
+   * @return Google_Service_Spectrum_DeviceValidity
+   */
   public function getDeviceValidities()
   {
     return $this->deviceValidities;

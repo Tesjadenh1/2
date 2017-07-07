@@ -27,18 +27,30 @@ class Google_Service_Spectrum_Vcard extends Google_Model
   protected $telType = 'Google_Service_Spectrum_VcardTelephone';
   protected $telDataType = '';
 
+  /**
+   * @param Google_Service_Spectrum_VcardAddress
+   */
   public function setAdr(Google_Service_Spectrum_VcardAddress $adr)
   {
     $this->adr = $adr;
   }
+  /**
+   * @return Google_Service_Spectrum_VcardAddress
+   */
   public function getAdr()
   {
     return $this->adr;
   }
+  /**
+   * @param Google_Service_Spectrum_VcardTypedText
+   */
   public function setEmail(Google_Service_Spectrum_VcardTypedText $email)
   {
     $this->email = $email;
   }
+  /**
+   * @return Google_Service_Spectrum_VcardTypedText
+   */
   public function getEmail()
   {
     return $this->email;
@@ -51,18 +63,30 @@ class Google_Service_Spectrum_Vcard extends Google_Model
   {
     return $this->fn;
   }
+  /**
+   * @param Google_Service_Spectrum_VcardTypedText
+   */
   public function setOrg(Google_Service_Spectrum_VcardTypedText $org)
   {
     $this->org = $org;
   }
+  /**
+   * @return Google_Service_Spectrum_VcardTypedText
+   */
   public function getOrg()
   {
     return $this->org;
   }
+  /**
+   * @param Google_Service_Spectrum_VcardTelephone
+   */
   public function setTel(Google_Service_Spectrum_VcardTelephone $tel)
   {
     $this->tel = $tel;
   }
+  /**
+   * @return Google_Service_Spectrum_VcardTelephone
+   */
   public function getTel()
   {
     return $this->tel;

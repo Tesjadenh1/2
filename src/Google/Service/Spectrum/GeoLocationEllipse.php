@@ -23,10 +23,16 @@ class Google_Service_Spectrum_GeoLocationEllipse extends Google_Model
   public $semiMajorAxis;
   public $semiMinorAxis;
 
+  /**
+   * @param Google_Service_Spectrum_GeoLocationPoint
+   */
   public function setCenter(Google_Service_Spectrum_GeoLocationPoint $center)
   {
     $this->center = $center;
   }
+  /**
+   * @return Google_Service_Spectrum_GeoLocationPoint
+   */
   public function getCenter()
   {
     return $this->center;

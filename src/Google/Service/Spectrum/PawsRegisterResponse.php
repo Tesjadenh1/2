@@ -23,10 +23,16 @@ class Google_Service_Spectrum_PawsRegisterResponse extends Google_Model
   public $type;
   public $version;
 
+  /**
+   * @param Google_Service_Spectrum_DbUpdateSpec
+   */
   public function setDatabaseChange(Google_Service_Spectrum_DbUpdateSpec $databaseChange)
   {
     $this->databaseChange = $databaseChange;
   }
+  /**
+   * @return Google_Service_Spectrum_DbUpdateSpec
+   */
   public function getDatabaseChange()
   {
     return $this->databaseChange;

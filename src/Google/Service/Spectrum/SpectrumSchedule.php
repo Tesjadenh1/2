@@ -23,18 +23,30 @@ class Google_Service_Spectrum_SpectrumSchedule extends Google_Collection
   protected $spectraType = 'Google_Service_Spectrum_SpectrumMessage';
   protected $spectraDataType = 'array';
 
+  /**
+   * @param Google_Service_Spectrum_EventTime
+   */
   public function setEventTime(Google_Service_Spectrum_EventTime $eventTime)
   {
     $this->eventTime = $eventTime;
   }
+  /**
+   * @return Google_Service_Spectrum_EventTime
+   */
   public function getEventTime()
   {
     return $this->eventTime;
   }
+  /**
+   * @param Google_Service_Spectrum_SpectrumMessage
+   */
   public function setSpectra($spectra)
   {
     $this->spectra = $spectra;
   }
+  /**
+   * @return Google_Service_Spectrum_SpectrumMessage
+   */
   public function getSpectra()
   {
     return $this->spectra;
