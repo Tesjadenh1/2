@@ -24,18 +24,30 @@ class Google_Service_Spanner_CommitRequest extends Google_Collection
   protected $singleUseTransactionDataType = '';
   public $transactionId;
 
+  /**
+   * @param Google_Service_Spanner_Mutation
+   */
   public function setMutations($mutations)
   {
     $this->mutations = $mutations;
   }
+  /**
+   * @return Google_Service_Spanner_Mutation
+   */
   public function getMutations()
   {
     return $this->mutations;
   }
+  /**
+   * @param Google_Service_Spanner_TransactionOptions
+   */
   public function setSingleUseTransaction(Google_Service_Spanner_TransactionOptions $singleUseTransaction)
   {
     $this->singleUseTransaction = $singleUseTransaction;
   }
+  /**
+   * @return Google_Service_Spanner_TransactionOptions
+   */
   public function getSingleUseTransaction()
   {
     return $this->singleUseTransaction;

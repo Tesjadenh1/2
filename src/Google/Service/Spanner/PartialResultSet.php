@@ -34,10 +34,16 @@ class Google_Service_Spanner_PartialResultSet extends Google_Collection
   {
     return $this->chunkedValue;
   }
+  /**
+   * @param Google_Service_Spanner_ResultSetMetadata
+   */
   public function setMetadata(Google_Service_Spanner_ResultSetMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_Spanner_ResultSetMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;
@@ -50,10 +56,16 @@ class Google_Service_Spanner_PartialResultSet extends Google_Collection
   {
     return $this->resumeToken;
   }
+  /**
+   * @param Google_Service_Spanner_ResultSetStats
+   */
   public function setStats(Google_Service_Spanner_ResultSetStats $stats)
   {
     $this->stats = $stats;
   }
+  /**
+   * @return Google_Service_Spanner_ResultSetStats
+   */
   public function getStats()
   {
     return $this->stats;

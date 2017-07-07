@@ -21,10 +21,16 @@ class Google_Service_Spanner_StructType extends Google_Collection
   protected $fieldsType = 'Google_Service_Spanner_Field';
   protected $fieldsDataType = 'array';
 
+  /**
+   * @param Google_Service_Spanner_Field
+   */
   public function setFields($fields)
   {
     $this->fields = $fields;
   }
+  /**
+   * @return Google_Service_Spanner_Field
+   */
   public function getFields()
   {
     return $this->fields;

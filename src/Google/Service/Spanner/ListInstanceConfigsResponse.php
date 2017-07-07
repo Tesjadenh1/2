@@ -22,10 +22,16 @@ class Google_Service_Spanner_ListInstanceConfigsResponse extends Google_Collecti
   protected $instanceConfigsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Spanner_InstanceConfig
+   */
   public function setInstanceConfigs($instanceConfigs)
   {
     $this->instanceConfigs = $instanceConfigs;
   }
+  /**
+   * @return Google_Service_Spanner_InstanceConfig
+   */
   public function getInstanceConfigs()
   {
     return $this->instanceConfigs;

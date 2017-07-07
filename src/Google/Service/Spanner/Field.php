@@ -29,10 +29,16 @@ class Google_Service_Spanner_Field extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Spanner_Type
+   */
   public function setType(Google_Service_Spanner_Type $type)
   {
     $this->type = $type;
   }
+  /**
+   * @return Google_Service_Spanner_Type
+   */
   public function getType()
   {
     return $this->type;

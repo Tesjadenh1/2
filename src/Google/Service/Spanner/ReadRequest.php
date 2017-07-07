@@ -44,10 +44,16 @@ class Google_Service_Spanner_ReadRequest extends Google_Collection
   {
     return $this->index;
   }
+  /**
+   * @param Google_Service_Spanner_KeySet
+   */
   public function setKeySet(Google_Service_Spanner_KeySet $keySet)
   {
     $this->keySet = $keySet;
   }
+  /**
+   * @return Google_Service_Spanner_KeySet
+   */
   public function getKeySet()
   {
     return $this->keySet;
@@ -76,10 +82,16 @@ class Google_Service_Spanner_ReadRequest extends Google_Collection
   {
     return $this->table;
   }
+  /**
+   * @param Google_Service_Spanner_TransactionSelector
+   */
   public function setTransaction(Google_Service_Spanner_TransactionSelector $transaction)
   {
     $this->transaction = $transaction;
   }
+  /**
+   * @return Google_Service_Spanner_TransactionSelector
+   */
   public function getTransaction()
   {
     return $this->transaction;

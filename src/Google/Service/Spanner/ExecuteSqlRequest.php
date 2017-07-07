@@ -26,10 +26,16 @@ class Google_Service_Spanner_ExecuteSqlRequest extends Google_Model
   protected $transactionType = 'Google_Service_Spanner_TransactionSelector';
   protected $transactionDataType = '';
 
+  /**
+   * @param Google_Service_Spanner_Type
+   */
   public function setParamTypes($paramTypes)
   {
     $this->paramTypes = $paramTypes;
   }
+  /**
+   * @return Google_Service_Spanner_Type
+   */
   public function getParamTypes()
   {
     return $this->paramTypes;
@@ -66,10 +72,16 @@ class Google_Service_Spanner_ExecuteSqlRequest extends Google_Model
   {
     return $this->sql;
   }
+  /**
+   * @param Google_Service_Spanner_TransactionSelector
+   */
   public function setTransaction(Google_Service_Spanner_TransactionSelector $transaction)
   {
     $this->transaction = $transaction;
   }
+  /**
+   * @return Google_Service_Spanner_TransactionSelector
+   */
   public function getTransaction()
   {
     return $this->transaction;

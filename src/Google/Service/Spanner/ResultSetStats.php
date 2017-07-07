@@ -21,10 +21,16 @@ class Google_Service_Spanner_ResultSetStats extends Google_Model
   protected $queryPlanDataType = '';
   public $queryStats;
 
+  /**
+   * @param Google_Service_Spanner_QueryPlan
+   */
   public function setQueryPlan(Google_Service_Spanner_QueryPlan $queryPlan)
   {
     $this->queryPlan = $queryPlan;
   }
+  /**
+   * @return Google_Service_Spanner_QueryPlan
+   */
   public function getQueryPlan()
   {
     return $this->queryPlan;

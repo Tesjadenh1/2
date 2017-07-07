@@ -39,10 +39,16 @@ class Google_Service_Spanner_UpdateInstanceMetadata extends Google_Model
   {
     return $this->endTime;
   }
+  /**
+   * @param Google_Service_Spanner_Instance
+   */
   public function setInstance(Google_Service_Spanner_Instance $instance)
   {
     $this->instance = $instance;
   }
+  /**
+   * @return Google_Service_Spanner_Instance
+   */
   public function getInstance()
   {
     return $this->instance;

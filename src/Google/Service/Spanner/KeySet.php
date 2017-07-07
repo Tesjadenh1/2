@@ -39,10 +39,16 @@ class Google_Service_Spanner_KeySet extends Google_Collection
   {
     return $this->keys;
   }
+  /**
+   * @param Google_Service_Spanner_KeyRange
+   */
   public function setRanges($ranges)
   {
     $this->ranges = $ranges;
   }
+  /**
+   * @return Google_Service_Spanner_KeyRange
+   */
   public function getRanges()
   {
     return $this->ranges;

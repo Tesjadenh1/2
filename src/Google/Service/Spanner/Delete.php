@@ -21,10 +21,16 @@ class Google_Service_Spanner_Delete extends Google_Model
   protected $keySetDataType = '';
   public $table;
 
+  /**
+   * @param Google_Service_Spanner_KeySet
+   */
   public function setKeySet(Google_Service_Spanner_KeySet $keySet)
   {
     $this->keySet = $keySet;
   }
+  /**
+   * @return Google_Service_Spanner_KeySet
+   */
   public function getKeySet()
   {
     return $this->keySet;

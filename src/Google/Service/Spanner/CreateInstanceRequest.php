@@ -21,10 +21,16 @@ class Google_Service_Spanner_CreateInstanceRequest extends Google_Model
   protected $instanceDataType = '';
   public $instanceId;
 
+  /**
+   * @param Google_Service_Spanner_Instance
+   */
   public function setInstance(Google_Service_Spanner_Instance $instance)
   {
     $this->instance = $instance;
   }
+  /**
+   * @return Google_Service_Spanner_Instance
+   */
   public function getInstance()
   {
     return $this->instance;
