@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListCreativeStatusBreakdownByCreativeResp
   protected $filteredBidCreativeRowsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_FilteredBidCreativeRow
+   */
   public function setFilteredBidCreativeRows($filteredBidCreativeRows)
   {
     $this->filteredBidCreativeRows = $filteredBidCreativeRows;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_FilteredBidCreativeRow
+   */
   public function getFilteredBidCreativeRows()
   {
     return $this->filteredBidCreativeRows;

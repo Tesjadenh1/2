@@ -25,55 +25,107 @@ class Google_Service_AdExchangeBuyerII_BidMetricsRow extends Google_Model
   protected $billedImpressionsDataType = '';
   protected $impressionsWonType = 'Google_Service_AdExchangeBuyerII_MetricValue';
   protected $impressionsWonDataType = '';
+  protected $measurableImpressionsType = 'Google_Service_AdExchangeBuyerII_MetricValue';
+  protected $measurableImpressionsDataType = '';
   protected $rowDimensionsType = 'Google_Service_AdExchangeBuyerII_RowDimensions';
   protected $rowDimensionsDataType = '';
   protected $viewableImpressionsType = 'Google_Service_AdExchangeBuyerII_MetricValue';
   protected $viewableImpressionsDataType = '';
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setBids(Google_Service_AdExchangeBuyerII_MetricValue $bids)
   {
     $this->bids = $bids;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getBids()
   {
     return $this->bids;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setBidsInAuction(Google_Service_AdExchangeBuyerII_MetricValue $bidsInAuction)
   {
     $this->bidsInAuction = $bidsInAuction;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getBidsInAuction()
   {
     return $this->bidsInAuction;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setBilledImpressions(Google_Service_AdExchangeBuyerII_MetricValue $billedImpressions)
   {
     $this->billedImpressions = $billedImpressions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getBilledImpressions()
   {
     return $this->billedImpressions;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setImpressionsWon(Google_Service_AdExchangeBuyerII_MetricValue $impressionsWon)
   {
     $this->impressionsWon = $impressionsWon;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getImpressionsWon()
   {
     return $this->impressionsWon;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
+  public function setMeasurableImpressions(Google_Service_AdExchangeBuyerII_MetricValue $measurableImpressions)
+  {
+    $this->measurableImpressions = $measurableImpressions;
+  }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
+  public function getMeasurableImpressions()
+  {
+    return $this->measurableImpressions;
+  }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function setRowDimensions(Google_Service_AdExchangeBuyerII_RowDimensions $rowDimensions)
   {
     $this->rowDimensions = $rowDimensions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function getRowDimensions()
   {
     return $this->rowDimensions;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setViewableImpressions(Google_Service_AdExchangeBuyerII_MetricValue $viewableImpressions)
   {
     $this->viewableImpressions = $viewableImpressions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getViewableImpressions()
   {
     return $this->viewableImpressions;

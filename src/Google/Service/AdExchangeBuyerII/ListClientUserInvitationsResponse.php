@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListClientUserInvitationsResponse extends
   protected $invitationsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_ClientUserInvitation
+   */
   public function setInvitations($invitations)
   {
     $this->invitations = $invitations;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_ClientUserInvitation
+   */
   public function getInvitations()
   {
     return $this->invitations;

@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListImpressionMetricsResponse extends Goo
   protected $impressionMetricsRowsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_ImpressionMetricsRow
+   */
   public function setImpressionMetricsRows($impressionMetricsRows)
   {
     $this->impressionMetricsRows = $impressionMetricsRows;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_ImpressionMetricsRow
+   */
   public function getImpressionMetricsRows()
   {
     return $this->impressionMetricsRows;

@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListCreativesResponse extends Google_Coll
   protected $creativesDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_Creative
+   */
   public function setCreatives($creatives)
   {
     $this->creatives = $creatives;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_Creative
+   */
   public function getCreatives()
   {
     return $this->creatives;

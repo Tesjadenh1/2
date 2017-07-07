@@ -35,10 +35,16 @@ class Google_Service_AdExchangeBuyerII_FilterSet extends Google_Collection
   public $sellerNetworkIds;
   public $timeSeriesGranularity;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_AbsoluteDateRange
+   */
   public function setAbsoluteDateRange(Google_Service_AdExchangeBuyerII_AbsoluteDateRange $absoluteDateRange)
   {
     $this->absoluteDateRange = $absoluteDateRange;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_AbsoluteDateRange
+   */
   public function getAbsoluteDateRange()
   {
     return $this->absoluteDateRange;
@@ -107,18 +113,30 @@ class Google_Service_AdExchangeBuyerII_FilterSet extends Google_Collection
   {
     return $this->platforms;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_RealtimeTimeRange
+   */
   public function setRealtimeTimeRange(Google_Service_AdExchangeBuyerII_RealtimeTimeRange $realtimeTimeRange)
   {
     $this->realtimeTimeRange = $realtimeTimeRange;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_RealtimeTimeRange
+   */
   public function getRealtimeTimeRange()
   {
     return $this->realtimeTimeRange;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_RelativeDateRange
+   */
   public function setRelativeDateRange(Google_Service_AdExchangeBuyerII_RelativeDateRange $relativeDateRange)
   {
     $this->relativeDateRange = $relativeDateRange;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_RelativeDateRange
+   */
   public function getRelativeDateRange()
   {
     return $this->relativeDateRange;

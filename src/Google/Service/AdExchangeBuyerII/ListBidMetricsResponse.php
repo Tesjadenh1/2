@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListBidMetricsResponse extends Google_Col
   protected $bidMetricsRowsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_BidMetricsRow
+   */
   public function setBidMetricsRows($bidMetricsRows)
   {
     $this->bidMetricsRows = $bidMetricsRows;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_BidMetricsRow
+   */
   public function getBidMetricsRows()
   {
     return $this->bidMetricsRows;

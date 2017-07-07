@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListDealAssociationsResponse extends Goog
   protected $associationsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_CreativeDealAssociation
+   */
   public function setAssociations($associations)
   {
     $this->associations = $associations;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_CreativeDealAssociation
+   */
   public function getAssociations()
   {
     return $this->associations;

@@ -30,50 +30,86 @@ class Google_Service_AdExchangeBuyerII_ImpressionMetricsRow extends Google_Model
   protected $successfulResponsesType = 'Google_Service_AdExchangeBuyerII_MetricValue';
   protected $successfulResponsesDataType = '';
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setAvailableImpressions(Google_Service_AdExchangeBuyerII_MetricValue $availableImpressions)
   {
     $this->availableImpressions = $availableImpressions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getAvailableImpressions()
   {
     return $this->availableImpressions;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setBidRequests(Google_Service_AdExchangeBuyerII_MetricValue $bidRequests)
   {
     $this->bidRequests = $bidRequests;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getBidRequests()
   {
     return $this->bidRequests;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setInventoryMatches(Google_Service_AdExchangeBuyerII_MetricValue $inventoryMatches)
   {
     $this->inventoryMatches = $inventoryMatches;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getInventoryMatches()
   {
     return $this->inventoryMatches;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setResponsesWithBids(Google_Service_AdExchangeBuyerII_MetricValue $responsesWithBids)
   {
     $this->responsesWithBids = $responsesWithBids;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getResponsesWithBids()
   {
     return $this->responsesWithBids;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function setRowDimensions(Google_Service_AdExchangeBuyerII_RowDimensions $rowDimensions)
   {
     $this->rowDimensions = $rowDimensions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function getRowDimensions()
   {
     return $this->rowDimensions;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setSuccessfulResponses(Google_Service_AdExchangeBuyerII_MetricValue $successfulResponses)
   {
     $this->successfulResponses = $successfulResponses;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getSuccessfulResponses()
   {
     return $this->successfulResponses;

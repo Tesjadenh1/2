@@ -20,10 +20,16 @@ class Google_Service_AdExchangeBuyerII_RowDimensions extends Google_Model
   protected $timeIntervalType = 'Google_Service_AdExchangeBuyerII_TimeInterval';
   protected $timeIntervalDataType = '';
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_TimeInterval
+   */
   public function setTimeInterval(Google_Service_AdExchangeBuyerII_TimeInterval $timeInterval)
   {
     $this->timeInterval = $timeInterval;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_TimeInterval
+   */
   public function getTimeInterval()
   {
     return $this->timeInterval;

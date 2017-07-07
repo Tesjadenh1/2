@@ -23,18 +23,30 @@ class Google_Service_AdExchangeBuyerII_FilteringStats extends Google_Collection
   protected $reasonsType = 'Google_Service_AdExchangeBuyerII_Reason';
   protected $reasonsDataType = 'array';
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_Date
+   */
   public function setDate(Google_Service_AdExchangeBuyerII_Date $date)
   {
     $this->date = $date;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_Date
+   */
   public function getDate()
   {
     return $this->date;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_Reason
+   */
   public function setReasons($reasons)
   {
     $this->reasons = $reasons;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_Reason
+   */
   public function getReasons()
   {
     return $this->reasons;

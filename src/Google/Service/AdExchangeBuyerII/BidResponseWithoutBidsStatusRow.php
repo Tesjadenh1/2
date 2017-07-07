@@ -23,18 +23,30 @@ class Google_Service_AdExchangeBuyerII_BidResponseWithoutBidsStatusRow extends G
   protected $rowDimensionsDataType = '';
   public $status;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function setImpressionCount(Google_Service_AdExchangeBuyerII_MetricValue $impressionCount)
   {
     $this->impressionCount = $impressionCount;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
   public function getImpressionCount()
   {
     return $this->impressionCount;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function setRowDimensions(Google_Service_AdExchangeBuyerII_RowDimensions $rowDimensions)
   {
     $this->rowDimensions = $rowDimensions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function getRowDimensions()
   {
     return $this->rowDimensions;

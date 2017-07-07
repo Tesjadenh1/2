@@ -15,12 +15,12 @@
  * the License.
  */
 
-class Google_Service_AdExchangeBuyerII_ListClientUsersResponse extends Google_Collection
+class Google_Service_AdExchangeBuyerII_ListNonBillableWinningBidsResponse extends Google_Collection
 {
-  protected $collection_key = 'users';
+  protected $collection_key = 'nonBillableWinningBidStatusRows';
   public $nextPageToken;
-  protected $usersType = 'Google_Service_AdExchangeBuyerII_ClientUser';
-  protected $usersDataType = 'array';
+  protected $nonBillableWinningBidStatusRowsType = 'Google_Service_AdExchangeBuyerII_NonBillableWinningBidStatusRow';
+  protected $nonBillableWinningBidStatusRowsDataType = 'array';
 
   public function setNextPageToken($nextPageToken)
   {
@@ -31,17 +31,17 @@ class Google_Service_AdExchangeBuyerII_ListClientUsersResponse extends Google_Co
     return $this->nextPageToken;
   }
   /**
-   * @param Google_Service_AdExchangeBuyerII_ClientUser
+   * @param Google_Service_AdExchangeBuyerII_NonBillableWinningBidStatusRow
    */
-  public function setUsers($users)
+  public function setNonBillableWinningBidStatusRows($nonBillableWinningBidStatusRows)
   {
-    $this->users = $users;
+    $this->nonBillableWinningBidStatusRows = $nonBillableWinningBidStatusRows;
   }
   /**
-   * @return Google_Service_AdExchangeBuyerII_ClientUser
+   * @return Google_Service_AdExchangeBuyerII_NonBillableWinningBidStatusRow
    */
-  public function getUsers()
+  public function getNonBillableWinningBidStatusRows()
   {
-    return $this->users;
+    return $this->nonBillableWinningBidStatusRows;
   }
 }

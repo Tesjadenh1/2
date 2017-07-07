@@ -20,10 +20,16 @@ class Google_Service_AdExchangeBuyerII_AddDealAssociationRequest extends Google_
   protected $associationType = 'Google_Service_AdExchangeBuyerII_CreativeDealAssociation';
   protected $associationDataType = '';
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_CreativeDealAssociation
+   */
   public function setAssociation(Google_Service_AdExchangeBuyerII_CreativeDealAssociation $association)
   {
     $this->association = $association;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_CreativeDealAssociation
+   */
   public function getAssociation()
   {
     return $this->association;

@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListFilteredBidsResponse extends Google_C
   protected $creativeStatusRowsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_CreativeStatusRow
+   */
   public function setCreativeStatusRows($creativeStatusRows)
   {
     $this->creativeStatusRows = $creativeStatusRows;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_CreativeStatusRow
+   */
   public function getCreativeStatusRows()
   {
     return $this->creativeStatusRows;

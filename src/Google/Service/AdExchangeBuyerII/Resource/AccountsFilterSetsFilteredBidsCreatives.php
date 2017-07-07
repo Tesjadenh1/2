@@ -42,8 +42,9 @@ class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSetsFilteredBidsCr
    * should return. Typically, this is the value of
    * ListCreativeStatusBreakdownByCreativeResponse.nextPageToken returned from the
    * previous call to the accounts.filterSets.filteredBids.creatives.list method.
-   * @opt_param int pageSize Requested page size. The server may return fewer than
-   * requested. If unspecified, the server will pick an appropriate default.
+   * @opt_param int pageSize Requested page size. The server may return fewer
+   * results than requested. If unspecified, the server will pick an appropriate
+   * default.
    * @return Google_Service_AdExchangeBuyerII_ListCreativeStatusBreakdownByCreativeResponse
    */
   public function listAccountsFilterSetsFilteredBidsCreatives($accountId, $filterSetId, $creativeStatusId, $optParams = array())

@@ -15,26 +15,38 @@
  * the License.
  */
 
-class Google_Service_AdExchangeBuyerII_ImpressionStatusRow extends Google_Model
+class Google_Service_AdExchangeBuyerII_NonBillableWinningBidStatusRow extends Google_Model
 {
-  protected $impressionCountType = 'Google_Service_AdExchangeBuyerII_MetricValue';
-  protected $impressionCountDataType = '';
+  protected $bidCountType = 'Google_Service_AdExchangeBuyerII_MetricValue';
+  protected $bidCountDataType = '';
   protected $rowDimensionsType = 'Google_Service_AdExchangeBuyerII_RowDimensions';
   protected $rowDimensionsDataType = '';
   public $status;
 
-  public function setImpressionCount(Google_Service_AdExchangeBuyerII_MetricValue $impressionCount)
+  /**
+   * @param Google_Service_AdExchangeBuyerII_MetricValue
+   */
+  public function setBidCount(Google_Service_AdExchangeBuyerII_MetricValue $bidCount)
   {
-    $this->impressionCount = $impressionCount;
+    $this->bidCount = $bidCount;
   }
-  public function getImpressionCount()
+  /**
+   * @return Google_Service_AdExchangeBuyerII_MetricValue
+   */
+  public function getBidCount()
   {
-    return $this->impressionCount;
+    return $this->bidCount;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function setRowDimensions(Google_Service_AdExchangeBuyerII_RowDimensions $rowDimensions)
   {
     $this->rowDimensions = $rowDimensions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_RowDimensions
+   */
   public function getRowDimensions()
   {
     return $this->rowDimensions;

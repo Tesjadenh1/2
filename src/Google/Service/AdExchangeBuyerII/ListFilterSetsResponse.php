@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListFilterSetsResponse extends Google_Col
   protected $filterSetsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_FilterSet
+   */
   public function setFilterSets($filterSets)
   {
     $this->filterSets = $filterSets;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_FilterSet
+   */
   public function getFilterSets()
   {
     return $this->filterSets;

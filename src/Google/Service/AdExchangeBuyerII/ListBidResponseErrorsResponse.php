@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyerII_ListBidResponseErrorsResponse extends Goo
   protected $calloutStatusRowsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_AdExchangeBuyerII_CalloutStatusRow
+   */
   public function setCalloutStatusRows($calloutStatusRows)
   {
     $this->calloutStatusRows = $calloutStatusRows;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyerII_CalloutStatusRow
+   */
   public function getCalloutStatusRows()
   {
     return $this->calloutStatusRows;
