@@ -22,10 +22,16 @@ class Google_Service_Dataproc_ListJobsResponse extends Google_Collection
   protected $jobsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dataproc_Job
+   */
   public function setJobs($jobs)
   {
     $this->jobs = $jobs;
   }
+  /**
+   * @return Google_Service_Dataproc_Job
+   */
   public function getJobs()
   {
     return $this->jobs;

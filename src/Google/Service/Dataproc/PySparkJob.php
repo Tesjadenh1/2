@@ -60,10 +60,16 @@ class Google_Service_Dataproc_PySparkJob extends Google_Collection
   {
     return $this->jarFileUris;
   }
+  /**
+   * @param Google_Service_Dataproc_LoggingConfig
+   */
   public function setLoggingConfig(Google_Service_Dataproc_LoggingConfig $loggingConfig)
   {
     $this->loggingConfig = $loggingConfig;
   }
+  /**
+   * @return Google_Service_Dataproc_LoggingConfig
+   */
   public function getLoggingConfig()
   {
     return $this->loggingConfig;

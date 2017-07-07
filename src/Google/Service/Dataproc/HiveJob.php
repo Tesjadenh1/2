@@ -58,10 +58,16 @@ class Google_Service_Dataproc_HiveJob extends Google_Collection
   {
     return $this->queryFileUri;
   }
+  /**
+   * @param Google_Service_Dataproc_QueryList
+   */
   public function setQueryList(Google_Service_Dataproc_QueryList $queryList)
   {
     $this->queryList = $queryList;
   }
+  /**
+   * @return Google_Service_Dataproc_QueryList
+   */
   public function getQueryList()
   {
     return $this->queryList;

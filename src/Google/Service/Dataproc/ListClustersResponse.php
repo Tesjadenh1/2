@@ -22,10 +22,16 @@ class Google_Service_Dataproc_ListClustersResponse extends Google_Collection
   protected $clustersDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dataproc_Cluster
+   */
   public function setClusters($clusters)
   {
     $this->clusters = $clusters;
   }
+  /**
+   * @return Google_Service_Dataproc_Cluster
+   */
   public function getClusters()
   {
     return $this->clusters;

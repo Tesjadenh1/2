@@ -69,18 +69,30 @@ class Google_Service_Dataproc_ClusterOperationMetadata extends Google_Collection
   {
     return $this->operationType;
   }
+  /**
+   * @param Google_Service_Dataproc_ClusterOperationStatus
+   */
   public function setStatus(Google_Service_Dataproc_ClusterOperationStatus $status)
   {
     $this->status = $status;
   }
+  /**
+   * @return Google_Service_Dataproc_ClusterOperationStatus
+   */
   public function getStatus()
   {
     return $this->status;
   }
+  /**
+   * @param Google_Service_Dataproc_ClusterOperationStatus
+   */
   public function setStatusHistory($statusHistory)
   {
     $this->statusHistory = $statusHistory;
   }
+  /**
+   * @return Google_Service_Dataproc_ClusterOperationStatus
+   */
   public function getStatusHistory()
   {
     return $this->statusHistory;
