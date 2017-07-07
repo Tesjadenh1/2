@@ -23,18 +23,30 @@ class Google_Service_Appsactivity_PermissionChange extends Google_Collection
   protected $removedPermissionsType = 'Google_Service_Appsactivity_Permission';
   protected $removedPermissionsDataType = 'array';
 
+  /**
+   * @param Google_Service_Appsactivity_Permission
+   */
   public function setAddedPermissions($addedPermissions)
   {
     $this->addedPermissions = $addedPermissions;
   }
+  /**
+   * @return Google_Service_Appsactivity_Permission
+   */
   public function getAddedPermissions()
   {
     return $this->addedPermissions;
   }
+  /**
+   * @param Google_Service_Appsactivity_Permission
+   */
   public function setRemovedPermissions($removedPermissions)
   {
     $this->removedPermissions = $removedPermissions;
   }
+  /**
+   * @return Google_Service_Appsactivity_Permission
+   */
   public function getRemovedPermissions()
   {
     return $this->removedPermissions;

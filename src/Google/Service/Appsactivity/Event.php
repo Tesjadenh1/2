@@ -57,18 +57,30 @@ class Google_Service_Appsactivity_Event extends Google_Collection
   {
     return $this->fromUserDeletion;
   }
+  /**
+   * @param Google_Service_Appsactivity_Move
+   */
   public function setMove(Google_Service_Appsactivity_Move $move)
   {
     $this->move = $move;
   }
+  /**
+   * @return Google_Service_Appsactivity_Move
+   */
   public function getMove()
   {
     return $this->move;
   }
+  /**
+   * @param Google_Service_Appsactivity_PermissionChange
+   */
   public function setPermissionChanges($permissionChanges)
   {
     $this->permissionChanges = $permissionChanges;
   }
+  /**
+   * @return Google_Service_Appsactivity_PermissionChange
+   */
   public function getPermissionChanges()
   {
     return $this->permissionChanges;
@@ -81,26 +93,44 @@ class Google_Service_Appsactivity_Event extends Google_Collection
   {
     return $this->primaryEventType;
   }
+  /**
+   * @param Google_Service_Appsactivity_Rename
+   */
   public function setRename(Google_Service_Appsactivity_Rename $rename)
   {
     $this->rename = $rename;
   }
+  /**
+   * @return Google_Service_Appsactivity_Rename
+   */
   public function getRename()
   {
     return $this->rename;
   }
+  /**
+   * @param Google_Service_Appsactivity_Target
+   */
   public function setTarget(Google_Service_Appsactivity_Target $target)
   {
     $this->target = $target;
   }
+  /**
+   * @return Google_Service_Appsactivity_Target
+   */
   public function getTarget()
   {
     return $this->target;
   }
+  /**
+   * @param Google_Service_Appsactivity_User
+   */
   public function setUser(Google_Service_Appsactivity_User $user)
   {
     $this->user = $user;
   }
+  /**
+   * @return Google_Service_Appsactivity_User
+   */
   public function getUser()
   {
     return $this->user;
