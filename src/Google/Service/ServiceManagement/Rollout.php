@@ -43,10 +43,16 @@ class Google_Service_ServiceManagement_Rollout extends Google_Model
   {
     return $this->createdBy;
   }
+  /**
+   * @param Google_Service_ServiceManagement_DeleteServiceStrategy
+   */
   public function setDeleteServiceStrategy(Google_Service_ServiceManagement_DeleteServiceStrategy $deleteServiceStrategy)
   {
     $this->deleteServiceStrategy = $deleteServiceStrategy;
   }
+  /**
+   * @return Google_Service_ServiceManagement_DeleteServiceStrategy
+   */
   public function getDeleteServiceStrategy()
   {
     return $this->deleteServiceStrategy;
@@ -75,10 +81,16 @@ class Google_Service_ServiceManagement_Rollout extends Google_Model
   {
     return $this->status;
   }
+  /**
+   * @param Google_Service_ServiceManagement_TrafficPercentStrategy
+   */
   public function setTrafficPercentStrategy(Google_Service_ServiceManagement_TrafficPercentStrategy $trafficPercentStrategy)
   {
     $this->trafficPercentStrategy = $trafficPercentStrategy;
   }
+  /**
+   * @return Google_Service_ServiceManagement_TrafficPercentStrategy
+   */
   public function getTrafficPercentStrategy()
   {
     return $this->trafficPercentStrategy;

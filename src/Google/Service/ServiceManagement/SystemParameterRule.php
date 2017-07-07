@@ -22,10 +22,16 @@ class Google_Service_ServiceManagement_SystemParameterRule extends Google_Collec
   protected $parametersDataType = 'array';
   public $selector;
 
+  /**
+   * @param Google_Service_ServiceManagement_SystemParameter
+   */
   public function setParameters($parameters)
   {
     $this->parameters = $parameters;
   }
+  /**
+   * @return Google_Service_ServiceManagement_SystemParameter
+   */
   public function getParameters()
   {
     return $this->parameters;

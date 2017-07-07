@@ -35,26 +35,44 @@ class Google_Service_ServiceManagement_AuthenticationRule extends Google_Collect
   {
     return $this->allowWithoutCredential;
   }
+  /**
+   * @param Google_Service_ServiceManagement_CustomAuthRequirements
+   */
   public function setCustomAuth(Google_Service_ServiceManagement_CustomAuthRequirements $customAuth)
   {
     $this->customAuth = $customAuth;
   }
+  /**
+   * @return Google_Service_ServiceManagement_CustomAuthRequirements
+   */
   public function getCustomAuth()
   {
     return $this->customAuth;
   }
+  /**
+   * @param Google_Service_ServiceManagement_OAuthRequirements
+   */
   public function setOauth(Google_Service_ServiceManagement_OAuthRequirements $oauth)
   {
     $this->oauth = $oauth;
   }
+  /**
+   * @return Google_Service_ServiceManagement_OAuthRequirements
+   */
   public function getOauth()
   {
     return $this->oauth;
   }
+  /**
+   * @param Google_Service_ServiceManagement_AuthRequirement
+   */
   public function setRequirements($requirements)
   {
     $this->requirements = $requirements;
   }
+  /**
+   * @return Google_Service_ServiceManagement_AuthRequirement
+   */
   public function getRequirements()
   {
     return $this->requirements;

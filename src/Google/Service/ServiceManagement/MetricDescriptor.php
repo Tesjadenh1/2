@@ -44,10 +44,16 @@ class Google_Service_ServiceManagement_MetricDescriptor extends Google_Collectio
   {
     return $this->displayName;
   }
+  /**
+   * @param Google_Service_ServiceManagement_LabelDescriptor
+   */
   public function setLabels($labels)
   {
     $this->labels = $labels;
   }
+  /**
+   * @return Google_Service_ServiceManagement_LabelDescriptor
+   */
   public function getLabels()
   {
     return $this->labels;

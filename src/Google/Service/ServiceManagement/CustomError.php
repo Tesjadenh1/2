@@ -22,10 +22,16 @@ class Google_Service_ServiceManagement_CustomError extends Google_Collection
   protected $rulesDataType = 'array';
   public $types;
 
+  /**
+   * @param Google_Service_ServiceManagement_CustomErrorRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceManagement_CustomErrorRule
+   */
   public function getRules()
   {
     return $this->rules;

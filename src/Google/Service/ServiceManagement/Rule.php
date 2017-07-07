@@ -36,10 +36,16 @@ class Google_Service_ServiceManagement_Rule extends Google_Collection
   {
     return $this->action;
   }
+  /**
+   * @param Google_Service_ServiceManagement_Condition
+   */
   public function setConditions($conditions)
   {
     $this->conditions = $conditions;
   }
+  /**
+   * @return Google_Service_ServiceManagement_Condition
+   */
   public function getConditions()
   {
     return $this->conditions;
@@ -60,10 +66,16 @@ class Google_Service_ServiceManagement_Rule extends Google_Collection
   {
     return $this->in;
   }
+  /**
+   * @param Google_Service_ServiceManagement_LogConfig
+   */
   public function setLogConfig($logConfig)
   {
     $this->logConfig = $logConfig;
   }
+  /**
+   * @return Google_Service_ServiceManagement_LogConfig
+   */
   public function getLogConfig()
   {
     return $this->logConfig;

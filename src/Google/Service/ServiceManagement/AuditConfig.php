@@ -23,10 +23,16 @@ class Google_Service_ServiceManagement_AuditConfig extends Google_Collection
   public $exemptedMembers;
   public $service;
 
+  /**
+   * @param Google_Service_ServiceManagement_AuditLogConfig
+   */
   public function setAuditLogConfigs($auditLogConfigs)
   {
     $this->auditLogConfigs = $auditLogConfigs;
   }
+  /**
+   * @return Google_Service_ServiceManagement_AuditLogConfig
+   */
   public function getAuditLogConfigs()
   {
     return $this->auditLogConfigs;

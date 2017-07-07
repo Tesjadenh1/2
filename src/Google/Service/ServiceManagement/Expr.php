@@ -15,14 +15,12 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_LogDescriptor extends Google_Collection
+class Google_Service_ServiceManagement_Expr extends Google_Model
 {
-  protected $collection_key = 'labels';
   public $description;
-  public $displayName;
-  protected $labelsType = 'Google_Service_ServiceManagement_LabelDescriptor';
-  protected $labelsDataType = 'array';
-  public $name;
+  public $expression;
+  public $location;
+  public $title;
 
   public function setDescription($description)
   {
@@ -32,34 +30,28 @@ class Google_Service_ServiceManagement_LogDescriptor extends Google_Collection
   {
     return $this->description;
   }
-  public function setDisplayName($displayName)
+  public function setExpression($expression)
   {
-    $this->displayName = $displayName;
+    $this->expression = $expression;
   }
-  public function getDisplayName()
+  public function getExpression()
   {
-    return $this->displayName;
+    return $this->expression;
   }
-  /**
-   * @param Google_Service_ServiceManagement_LabelDescriptor
-   */
-  public function setLabels($labels)
+  public function setLocation($location)
   {
-    $this->labels = $labels;
+    $this->location = $location;
   }
-  /**
-   * @return Google_Service_ServiceManagement_LabelDescriptor
-   */
-  public function getLabels()
+  public function getLocation()
   {
-    return $this->labels;
+    return $this->location;
   }
-  public function setName($name)
+  public function setTitle($title)
   {
-    $this->name = $name;
+    $this->title = $title;
   }
-  public function getName()
+  public function getTitle()
   {
-    return $this->name;
+    return $this->title;
   }
 }

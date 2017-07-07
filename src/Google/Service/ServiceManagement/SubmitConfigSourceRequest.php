@@ -21,10 +21,16 @@ class Google_Service_ServiceManagement_SubmitConfigSourceRequest extends Google_
   protected $configSourceDataType = '';
   public $validateOnly;
 
+  /**
+   * @param Google_Service_ServiceManagement_ConfigSource
+   */
   public function setConfigSource(Google_Service_ServiceManagement_ConfigSource $configSource)
   {
     $this->configSource = $configSource;
   }
+  /**
+   * @return Google_Service_ServiceManagement_ConfigSource
+   */
   public function getConfigSource()
   {
     return $this->configSource;

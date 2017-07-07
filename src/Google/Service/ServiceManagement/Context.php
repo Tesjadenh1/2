@@ -21,10 +21,16 @@ class Google_Service_ServiceManagement_Context extends Google_Collection
   protected $rulesType = 'Google_Service_ServiceManagement_ContextRule';
   protected $rulesDataType = 'array';
 
+  /**
+   * @param Google_Service_ServiceManagement_ContextRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceManagement_ContextRule
+   */
   public function getRules()
   {
     return $this->rules;

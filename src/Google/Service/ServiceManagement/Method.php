@@ -35,10 +35,16 @@ class Google_Service_ServiceManagement_Method extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_ServiceManagement_Option
+   */
   public function setOptions($options)
   {
     $this->options = $options;
   }
+  /**
+   * @return Google_Service_ServiceManagement_Option
+   */
   public function getOptions()
   {
     return $this->options;

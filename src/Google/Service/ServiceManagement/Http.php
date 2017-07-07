@@ -30,10 +30,16 @@ class Google_Service_ServiceManagement_Http extends Google_Collection
   {
     return $this->fullyDecodeReservedExpansion;
   }
+  /**
+   * @param Google_Service_ServiceManagement_HttpRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceManagement_HttpRule
+   */
   public function getRules()
   {
     return $this->rules;

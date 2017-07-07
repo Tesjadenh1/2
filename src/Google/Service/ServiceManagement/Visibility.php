@@ -21,10 +21,16 @@ class Google_Service_ServiceManagement_Visibility extends Google_Collection
   protected $rulesType = 'Google_Service_ServiceManagement_VisibilityRule';
   protected $rulesDataType = 'array';
 
+  /**
+   * @param Google_Service_ServiceManagement_VisibilityRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceManagement_VisibilityRule
+   */
   public function getRules()
   {
     return $this->rules;
