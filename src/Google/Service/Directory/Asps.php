@@ -31,10 +31,16 @@ class Google_Service_Directory_Asps extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Directory_Asp
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Directory_Asp
+   */
   public function getItems()
   {
     return $this->items;

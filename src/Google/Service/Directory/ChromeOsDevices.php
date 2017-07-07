@@ -24,10 +24,16 @@ class Google_Service_Directory_ChromeOsDevices extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Directory_ChromeOsDevice
+   */
   public function setChromeosdevices($chromeosdevices)
   {
     $this->chromeosdevices = $chromeosdevices;
   }
+  /**
+   * @return Google_Service_Directory_ChromeOsDevice
+   */
   public function getChromeosdevices()
   {
     return $this->chromeosdevices;

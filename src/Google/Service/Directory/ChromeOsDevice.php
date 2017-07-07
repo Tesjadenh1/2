@@ -46,10 +46,16 @@ class Google_Service_Directory_ChromeOsDevice extends Google_Collection
   public $supportEndDate;
   public $willAutoRenew;
 
+  /**
+   * @param Google_Service_Directory_ChromeOsDeviceActiveTimeRanges
+   */
   public function setActiveTimeRanges($activeTimeRanges)
   {
     $this->activeTimeRanges = $activeTimeRanges;
   }
+  /**
+   * @return Google_Service_Directory_ChromeOsDeviceActiveTimeRanges
+   */
   public function getActiveTimeRanges()
   {
     return $this->activeTimeRanges;
@@ -206,10 +212,16 @@ class Google_Service_Directory_ChromeOsDevice extends Google_Collection
   {
     return $this->platformVersion;
   }
+  /**
+   * @param Google_Service_Directory_ChromeOsDeviceRecentUsers
+   */
   public function setRecentUsers($recentUsers)
   {
     $this->recentUsers = $recentUsers;
   }
+  /**
+   * @return Google_Service_Directory_ChromeOsDeviceRecentUsers
+   */
   public function getRecentUsers()
   {
     return $this->recentUsers;

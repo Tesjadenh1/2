@@ -33,10 +33,16 @@ class Google_Service_Directory_Schema extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Directory_SchemaFieldSpec
+   */
   public function setFields($fields)
   {
     $this->fields = $fields;
   }
+  /**
+   * @return Google_Service_Directory_SchemaFieldSpec
+   */
   public function getFields()
   {
     return $this->fields;

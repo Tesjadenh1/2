@@ -84,10 +84,16 @@ class Google_Service_Directory_Role extends Google_Collection
   {
     return $this->roleName;
   }
+  /**
+   * @param Google_Service_Directory_RoleRolePrivileges
+   */
   public function setRolePrivileges($rolePrivileges)
   {
     $this->rolePrivileges = $rolePrivileges;
   }
+  /**
+   * @return Google_Service_Directory_RoleRolePrivileges
+   */
   public function getRolePrivileges()
   {
     return $this->rolePrivileges;

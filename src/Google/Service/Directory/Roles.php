@@ -32,10 +32,16 @@ class Google_Service_Directory_Roles extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Directory_Role
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Directory_Role
+   */
   public function getItems()
   {
     return $this->items;

@@ -33,10 +33,16 @@ class Google_Service_Directory_Notifications extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Directory_Notification
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Directory_Notification
+   */
   public function getItems()
   {
     return $this->items;

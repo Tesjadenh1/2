@@ -65,6 +65,7 @@ class Google_Service_Directory_Resource_Chromeosdevices extends Google_Service_R
    *
    * @opt_param int maxResults Maximum number of results to return. Default is 100
    * @opt_param string orderBy Column to use for sorting results
+   * @opt_param string orgUnitPath Full path of the organization unit or its Id
    * @opt_param string pageToken Token to specify next page in the list
    * @opt_param string projection Restrict information returned to a set of
    * selected fields.

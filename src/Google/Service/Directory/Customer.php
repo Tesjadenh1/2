@@ -92,10 +92,16 @@ class Google_Service_Directory_Customer extends Google_Model
   {
     return $this->phoneNumber;
   }
+  /**
+   * @param Google_Service_Directory_CustomerPostalAddress
+   */
   public function setPostalAddress(Google_Service_Directory_CustomerPostalAddress $postalAddress)
   {
     $this->postalAddress = $postalAddress;
   }
+  /**
+   * @return Google_Service_Directory_CustomerPostalAddress
+   */
   public function getPostalAddress()
   {
     return $this->postalAddress;

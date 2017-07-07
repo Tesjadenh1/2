@@ -22,6 +22,7 @@ class Google_Service_Directory_UserOrganization extends Google_Model
   public $department;
   public $description;
   public $domain;
+  public $fullTimeEquivalent;
   public $location;
   public $name;
   public $primary;
@@ -68,6 +69,14 @@ class Google_Service_Directory_UserOrganization extends Google_Model
   public function getDomain()
   {
     return $this->domain;
+  }
+  public function setFullTimeEquivalent($fullTimeEquivalent)
+  {
+    $this->fullTimeEquivalent = $fullTimeEquivalent;
+  }
+  public function getFullTimeEquivalent()
+  {
+    return $this->fullTimeEquivalent;
   }
   public function setLocation($location)
   {

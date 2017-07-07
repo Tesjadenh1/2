@@ -271,6 +271,10 @@ class Google_Service_Directory extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'orgUnitPath' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',

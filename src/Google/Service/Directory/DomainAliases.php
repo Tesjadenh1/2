@@ -23,10 +23,16 @@ class Google_Service_Directory_DomainAliases extends Google_Collection
   public $etag;
   public $kind;
 
+  /**
+   * @param Google_Service_Directory_DomainAlias
+   */
   public function setDomainAliases($domainAliases)
   {
     $this->domainAliases = $domainAliases;
   }
+  /**
+   * @return Google_Service_Directory_DomainAlias
+   */
   public function getDomainAliases()
   {
     return $this->domainAliases;

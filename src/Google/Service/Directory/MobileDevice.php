@@ -68,10 +68,16 @@ class Google_Service_Directory_MobileDevice extends Google_Collection
   {
     return $this->adbStatus;
   }
+  /**
+   * @param Google_Service_Directory_MobileDeviceApplications
+   */
   public function setApplications($applications)
   {
     $this->applications = $applications;
   }
+  /**
+   * @return Google_Service_Directory_MobileDeviceApplications
+   */
   public function getApplications()
   {
     return $this->applications;
