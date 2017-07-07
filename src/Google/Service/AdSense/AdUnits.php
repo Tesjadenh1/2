@@ -32,10 +32,16 @@ class Google_Service_AdSense_AdUnits extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_AdSense_AdUnit
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdSense_AdUnit
+   */
   public function getItems()
   {
     return $this->items;

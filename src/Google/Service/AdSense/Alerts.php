@@ -22,10 +22,16 @@ class Google_Service_AdSense_Alerts extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AdSense_Alert
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdSense_Alert
+   */
   public function getItems()
   {
     return $this->items;

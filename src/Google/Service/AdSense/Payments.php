@@ -22,10 +22,16 @@ class Google_Service_AdSense_Payments extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AdSense_Payment
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdSense_Payment
+   */
   public function getItems()
   {
     return $this->items;

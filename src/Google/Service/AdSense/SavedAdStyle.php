@@ -23,10 +23,16 @@ class Google_Service_AdSense_SavedAdStyle extends Google_Model
   public $kind;
   public $name;
 
+  /**
+   * @param Google_Service_AdSense_AdStyle
+   */
   public function setAdStyle(Google_Service_AdSense_AdStyle $adStyle)
   {
     $this->adStyle = $adStyle;
   }
+  /**
+   * @return Google_Service_AdSense_AdStyle
+   */
   public function getAdStyle()
   {
     return $this->adStyle;
