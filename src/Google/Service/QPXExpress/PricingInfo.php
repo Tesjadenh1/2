@@ -44,10 +44,16 @@ class Google_Service_QPXExpress_PricingInfo extends Google_Collection
   {
     return $this->baseFareTotal;
   }
+  /**
+   * @param Google_Service_QPXExpress_FareInfo
+   */
   public function setFare($fare)
   {
     $this->fare = $fare;
   }
+  /**
+   * @return Google_Service_QPXExpress_FareInfo
+   */
   public function getFare()
   {
     return $this->fare;
@@ -76,10 +82,16 @@ class Google_Service_QPXExpress_PricingInfo extends Google_Collection
   {
     return $this->latestTicketingTime;
   }
+  /**
+   * @param Google_Service_QPXExpress_PassengerCounts
+   */
   public function setPassengers(Google_Service_QPXExpress_PassengerCounts $passengers)
   {
     $this->passengers = $passengers;
   }
+  /**
+   * @return Google_Service_QPXExpress_PassengerCounts
+   */
   public function getPassengers()
   {
     return $this->passengers;
@@ -124,18 +136,30 @@ class Google_Service_QPXExpress_PricingInfo extends Google_Collection
   {
     return $this->saleTotal;
   }
+  /**
+   * @param Google_Service_QPXExpress_SegmentPricing
+   */
   public function setSegmentPricing($segmentPricing)
   {
     $this->segmentPricing = $segmentPricing;
   }
+  /**
+   * @return Google_Service_QPXExpress_SegmentPricing
+   */
   public function getSegmentPricing()
   {
     return $this->segmentPricing;
   }
+  /**
+   * @param Google_Service_QPXExpress_TaxInfo
+   */
   public function setTax($tax)
   {
     $this->tax = $tax;
   }
+  /**
+   * @return Google_Service_QPXExpress_TaxInfo
+   */
   public function getTax()
   {
     return $this->tax;

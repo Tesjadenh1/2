@@ -32,10 +32,16 @@ class Google_Service_QPXExpress_SegmentPricing extends Google_Collection
   {
     return $this->fareId;
   }
+  /**
+   * @param Google_Service_QPXExpress_FreeBaggageAllowance
+   */
   public function setFreeBaggageOption($freeBaggageOption)
   {
     $this->freeBaggageOption = $freeBaggageOption;
   }
+  /**
+   * @return Google_Service_QPXExpress_FreeBaggageAllowance
+   */
   public function getFreeBaggageOption()
   {
     return $this->freeBaggageOption;

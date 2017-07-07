@@ -42,10 +42,16 @@ class Google_Service_QPXExpress_TripOption extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_QPXExpress_PricingInfo
+   */
   public function setPricing($pricing)
   {
     $this->pricing = $pricing;
   }
+  /**
+   * @return Google_Service_QPXExpress_PricingInfo
+   */
   public function getPricing()
   {
     return $this->pricing;
@@ -58,10 +64,16 @@ class Google_Service_QPXExpress_TripOption extends Google_Collection
   {
     return $this->saleTotal;
   }
+  /**
+   * @param Google_Service_QPXExpress_SliceInfo
+   */
   public function setSlice($slice)
   {
     $this->slice = $slice;
   }
+  /**
+   * @return Google_Service_QPXExpress_SliceInfo
+   */
   public function getSlice()
   {
     return $this->slice;

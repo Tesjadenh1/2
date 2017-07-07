@@ -29,10 +29,16 @@ class Google_Service_QPXExpress_TripsSearchResponse extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_QPXExpress_TripOptionsResponse
+   */
   public function setTrips(Google_Service_QPXExpress_TripOptionsResponse $trips)
   {
     $this->trips = $trips;
   }
+  /**
+   * @return Google_Service_QPXExpress_TripOptionsResponse
+   */
   public function getTrips()
   {
     return $this->trips;

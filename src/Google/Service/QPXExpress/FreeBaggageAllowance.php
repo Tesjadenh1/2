@@ -26,10 +26,16 @@ class Google_Service_QPXExpress_FreeBaggageAllowance extends Google_Collection
   public $pieces;
   public $pounds;
 
+  /**
+   * @param Google_Service_QPXExpress_BagDescriptor
+   */
   public function setBagDescriptor($bagDescriptor)
   {
     $this->bagDescriptor = $bagDescriptor;
   }
+  /**
+   * @return Google_Service_QPXExpress_BagDescriptor
+   */
   public function getBagDescriptor()
   {
     return $this->bagDescriptor;

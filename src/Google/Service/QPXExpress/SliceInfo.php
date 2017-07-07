@@ -39,10 +39,16 @@ class Google_Service_QPXExpress_SliceInfo extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_QPXExpress_SegmentInfo
+   */
   public function setSegment($segment)
   {
     $this->segment = $segment;
   }
+  /**
+   * @return Google_Service_QPXExpress_SegmentInfo
+   */
   public function getSegment()
   {
     return $this->segment;
