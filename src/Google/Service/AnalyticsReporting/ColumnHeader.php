@@ -30,10 +30,16 @@ class Google_Service_AnalyticsReporting_ColumnHeader extends Google_Collection
   {
     return $this->dimensions;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_MetricHeader
+   */
   public function setMetricHeader(Google_Service_AnalyticsReporting_MetricHeader $metricHeader)
   {
     $this->metricHeader = $metricHeader;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_MetricHeader
+   */
   public function getMetricHeader()
   {
     return $this->metricHeader;

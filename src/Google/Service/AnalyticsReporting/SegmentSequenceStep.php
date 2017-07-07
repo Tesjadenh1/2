@@ -30,10 +30,16 @@ class Google_Service_AnalyticsReporting_SegmentSequenceStep extends Google_Colle
   {
     return $this->matchType;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_OrFiltersForSegment
+   */
   public function setOrFiltersForSegment($orFiltersForSegment)
   {
     $this->orFiltersForSegment = $orFiltersForSegment;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_OrFiltersForSegment
+   */
   public function getOrFiltersForSegment()
   {
     return $this->orFiltersForSegment;

@@ -31,18 +31,30 @@ class Google_Service_AnalyticsReporting_SegmentFilter extends Google_Model
   {
     return $this->not;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_SequenceSegment
+   */
   public function setSequenceSegment(Google_Service_AnalyticsReporting_SequenceSegment $sequenceSegment)
   {
     $this->sequenceSegment = $sequenceSegment;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_SequenceSegment
+   */
   public function getSequenceSegment()
   {
     return $this->sequenceSegment;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_SimpleSegment
+   */
   public function setSimpleSegment(Google_Service_AnalyticsReporting_SimpleSegment $simpleSegment)
   {
     $this->simpleSegment = $simpleSegment;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_SimpleSegment
+   */
   public function getSimpleSegment()
   {
     return $this->simpleSegment;

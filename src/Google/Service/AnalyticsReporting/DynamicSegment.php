@@ -31,18 +31,30 @@ class Google_Service_AnalyticsReporting_DynamicSegment extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_SegmentDefinition
+   */
   public function setSessionSegment(Google_Service_AnalyticsReporting_SegmentDefinition $sessionSegment)
   {
     $this->sessionSegment = $sessionSegment;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_SegmentDefinition
+   */
   public function getSessionSegment()
   {
     return $this->sessionSegment;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_SegmentDefinition
+   */
   public function setUserSegment(Google_Service_AnalyticsReporting_SegmentDefinition $userSegment)
   {
     $this->userSegment = $userSegment;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_SegmentDefinition
+   */
   public function getUserSegment()
   {
     return $this->userSegment;

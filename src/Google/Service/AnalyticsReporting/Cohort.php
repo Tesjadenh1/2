@@ -22,10 +22,16 @@ class Google_Service_AnalyticsReporting_Cohort extends Google_Model
   public $name;
   public $type;
 
+  /**
+   * @param Google_Service_AnalyticsReporting_DateRange
+   */
   public function setDateRange(Google_Service_AnalyticsReporting_DateRange $dateRange)
   {
     $this->dateRange = $dateRange;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_DateRange
+   */
   public function getDateRange()
   {
     return $this->dateRange;

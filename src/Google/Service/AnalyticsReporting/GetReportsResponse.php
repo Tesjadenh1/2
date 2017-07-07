@@ -21,10 +21,16 @@ class Google_Service_AnalyticsReporting_GetReportsResponse extends Google_Collec
   protected $reportsType = 'Google_Service_AnalyticsReporting_Report';
   protected $reportsDataType = 'array';
 
+  /**
+   * @param Google_Service_AnalyticsReporting_Report
+   */
   public function setReports($reports)
   {
     $this->reports = $reports;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_Report
+   */
   public function getReports()
   {
     return $this->reports;

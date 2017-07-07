@@ -22,10 +22,16 @@ class Google_Service_AnalyticsReporting_CohortGroup extends Google_Collection
   protected $cohortsDataType = 'array';
   public $lifetimeValue;
 
+  /**
+   * @param Google_Service_AnalyticsReporting_Cohort
+   */
   public function setCohorts($cohorts)
   {
     $this->cohorts = $cohorts;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_Cohort
+   */
   public function getCohorts()
   {
     return $this->cohorts;

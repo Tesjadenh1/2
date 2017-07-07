@@ -22,10 +22,16 @@ class Google_Service_AnalyticsReporting_PivotHeader extends Google_Collection
   protected $pivotHeaderEntriesDataType = 'array';
   public $totalPivotGroupsCount;
 
+  /**
+   * @param Google_Service_AnalyticsReporting_PivotHeaderEntry
+   */
   public function setPivotHeaderEntries($pivotHeaderEntries)
   {
     $this->pivotHeaderEntries = $pivotHeaderEntries;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_PivotHeaderEntry
+   */
   public function getPivotHeaderEntries()
   {
     return $this->pivotHeaderEntries;

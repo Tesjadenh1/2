@@ -22,10 +22,16 @@ class Google_Service_AnalyticsReporting_DimensionFilterClause extends Google_Col
   protected $filtersDataType = 'array';
   public $operator;
 
+  /**
+   * @param Google_Service_AnalyticsReporting_DimensionFilter
+   */
   public function setFilters($filters)
   {
     $this->filters = $filters;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_DimensionFilter
+   */
   public function getFilters()
   {
     return $this->filters;

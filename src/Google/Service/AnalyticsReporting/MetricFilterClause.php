@@ -22,10 +22,16 @@ class Google_Service_AnalyticsReporting_MetricFilterClause extends Google_Collec
   protected $filtersDataType = 'array';
   public $operator;
 
+  /**
+   * @param Google_Service_AnalyticsReporting_MetricFilter
+   */
   public function setFilters($filters)
   {
     $this->filters = $filters;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_MetricFilter
+   */
   public function getFilters()
   {
     return $this->filters;

@@ -39,10 +39,16 @@ class Google_Service_AnalyticsReporting_PivotHeaderEntry extends Google_Collecti
   {
     return $this->dimensionValues;
   }
+  /**
+   * @param Google_Service_AnalyticsReporting_MetricHeaderEntry
+   */
   public function setMetric(Google_Service_AnalyticsReporting_MetricHeaderEntry $metric)
   {
     $this->metric = $metric;
   }
+  /**
+   * @return Google_Service_AnalyticsReporting_MetricHeaderEntry
+   */
   public function getMetric()
   {
     return $this->metric;
