@@ -32,10 +32,16 @@ class Google_Service_AdExchangeSeller_UrlChannels extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_AdExchangeSeller_UrlChannel
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdExchangeSeller_UrlChannel
+   */
   public function getItems()
   {
     return $this->items;

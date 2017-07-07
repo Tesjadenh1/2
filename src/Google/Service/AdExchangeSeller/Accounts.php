@@ -32,10 +32,16 @@ class Google_Service_AdExchangeSeller_Accounts extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_AdExchangeSeller_Account
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdExchangeSeller_Account
+   */
   public function getItems()
   {
     return $this->items;

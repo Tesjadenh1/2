@@ -22,10 +22,16 @@ class Google_Service_AdExchangeSeller_Metadata extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AdExchangeSeller_ReportingMetadataEntry
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdExchangeSeller_ReportingMetadataEntry
+   */
   public function getItems()
   {
     return $this->items;

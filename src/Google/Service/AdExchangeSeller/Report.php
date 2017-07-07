@@ -35,10 +35,16 @@ class Google_Service_AdExchangeSeller_Report extends Google_Collection
   {
     return $this->averages;
   }
+  /**
+   * @param Google_Service_AdExchangeSeller_ReportHeaders
+   */
   public function setHeaders($headers)
   {
     $this->headers = $headers;
   }
+  /**
+   * @return Google_Service_AdExchangeSeller_ReportHeaders
+   */
   public function getHeaders()
   {
     return $this->headers;
