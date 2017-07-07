@@ -32,18 +32,30 @@ class Google_Service_CloudNaturalLanguage_AnalyzeSyntaxResponse extends Google_C
   {
     return $this->language;
   }
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Sentence
+   */
   public function setSentences($sentences)
   {
     $this->sentences = $sentences;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Sentence
+   */
   public function getSentences()
   {
     return $this->sentences;
   }
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Token
+   */
   public function setTokens($tokens)
   {
     $this->tokens = $tokens;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Token
+   */
   public function getTokens()
   {
     return $this->tokens;

@@ -28,18 +28,30 @@ class Google_Service_CloudNaturalLanguage_AnnotateTextResponse extends Google_Co
   protected $tokensType = 'Google_Service_CloudNaturalLanguage_Token';
   protected $tokensDataType = 'array';
 
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Sentiment
+   */
   public function setDocumentSentiment(Google_Service_CloudNaturalLanguage_Sentiment $documentSentiment)
   {
     $this->documentSentiment = $documentSentiment;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Sentiment
+   */
   public function getDocumentSentiment()
   {
     return $this->documentSentiment;
   }
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Entity
+   */
   public function setEntities($entities)
   {
     $this->entities = $entities;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Entity
+   */
   public function getEntities()
   {
     return $this->entities;
@@ -52,18 +64,30 @@ class Google_Service_CloudNaturalLanguage_AnnotateTextResponse extends Google_Co
   {
     return $this->language;
   }
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Sentence
+   */
   public function setSentences($sentences)
   {
     $this->sentences = $sentences;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Sentence
+   */
   public function getSentences()
   {
     return $this->sentences;
   }
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Token
+   */
   public function setTokens($tokens)
   {
     $this->tokens = $tokens;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Token
+   */
   public function getTokens()
   {
     return $this->tokens;

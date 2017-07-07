@@ -21,10 +21,16 @@ class Google_Service_CloudNaturalLanguage_AnalyzeEntitiesRequest extends Google_
   protected $documentDataType = '';
   public $encodingType;
 
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Document
+   */
   public function setDocument(Google_Service_CloudNaturalLanguage_Document $document)
   {
     $this->document = $document;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Document
+   */
   public function getDocument()
   {
     return $this->document;

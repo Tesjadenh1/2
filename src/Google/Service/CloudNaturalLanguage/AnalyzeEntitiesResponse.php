@@ -22,10 +22,16 @@ class Google_Service_CloudNaturalLanguage_AnalyzeEntitiesResponse extends Google
   protected $entitiesDataType = 'array';
   public $language;
 
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Entity
+   */
   public function setEntities($entities)
   {
     $this->entities = $entities;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Entity
+   */
   public function getEntities()
   {
     return $this->entities;

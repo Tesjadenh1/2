@@ -24,10 +24,16 @@ class Google_Service_CloudNaturalLanguage_AnalyzeSentimentResponse extends Googl
   protected $sentencesType = 'Google_Service_CloudNaturalLanguage_Sentence';
   protected $sentencesDataType = 'array';
 
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Sentiment
+   */
   public function setDocumentSentiment(Google_Service_CloudNaturalLanguage_Sentiment $documentSentiment)
   {
     $this->documentSentiment = $documentSentiment;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Sentiment
+   */
   public function getDocumentSentiment()
   {
     return $this->documentSentiment;
@@ -40,10 +46,16 @@ class Google_Service_CloudNaturalLanguage_AnalyzeSentimentResponse extends Googl
   {
     return $this->language;
   }
+  /**
+   * @param Google_Service_CloudNaturalLanguage_Sentence
+   */
   public function setSentences($sentences)
   {
     $this->sentences = $sentences;
   }
+  /**
+   * @return Google_Service_CloudNaturalLanguage_Sentence
+   */
   public function getSentences()
   {
     return $this->sentences;
