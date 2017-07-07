@@ -49,10 +49,16 @@ class Google_Service_CloudKMS_CryptoKey extends Google_Model
   {
     return $this->nextRotationTime;
   }
+  /**
+   * @param Google_Service_CloudKMS_CryptoKeyVersion
+   */
   public function setPrimary(Google_Service_CloudKMS_CryptoKeyVersion $primary)
   {
     $this->primary = $primary;
   }
+  /**
+   * @return Google_Service_CloudKMS_CryptoKeyVersion
+   */
   public function getPrimary()
   {
     return $this->primary;

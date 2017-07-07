@@ -23,10 +23,16 @@ class Google_Service_CloudKMS_ListKeyRingsResponse extends Google_Collection
   public $nextPageToken;
   public $totalSize;
 
+  /**
+   * @param Google_Service_CloudKMS_KeyRing
+   */
   public function setKeyRings($keyRings)
   {
     $this->keyRings = $keyRings;
   }
+  /**
+   * @return Google_Service_CloudKMS_KeyRing
+   */
   public function getKeyRings()
   {
     return $this->keyRings;

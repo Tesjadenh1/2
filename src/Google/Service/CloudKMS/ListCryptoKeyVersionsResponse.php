@@ -23,10 +23,16 @@ class Google_Service_CloudKMS_ListCryptoKeyVersionsResponse extends Google_Colle
   public $nextPageToken;
   public $totalSize;
 
+  /**
+   * @param Google_Service_CloudKMS_CryptoKeyVersion
+   */
   public function setCryptoKeyVersions($cryptoKeyVersions)
   {
     $this->cryptoKeyVersions = $cryptoKeyVersions;
   }
+  /**
+   * @return Google_Service_CloudKMS_CryptoKeyVersion
+   */
   public function getCryptoKeyVersions()
   {
     return $this->cryptoKeyVersions;

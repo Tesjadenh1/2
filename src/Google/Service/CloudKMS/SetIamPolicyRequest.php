@@ -21,10 +21,16 @@ class Google_Service_CloudKMS_SetIamPolicyRequest extends Google_Model
   protected $policyDataType = '';
   public $updateMask;
 
+  /**
+   * @param Google_Service_CloudKMS_Policy
+   */
   public function setPolicy(Google_Service_CloudKMS_Policy $policy)
   {
     $this->policy = $policy;
   }
+  /**
+   * @return Google_Service_CloudKMS_Policy
+   */
   public function getPolicy()
   {
     return $this->policy;

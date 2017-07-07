@@ -23,10 +23,16 @@ class Google_Service_CloudKMS_ListCryptoKeysResponse extends Google_Collection
   public $nextPageToken;
   public $totalSize;
 
+  /**
+   * @param Google_Service_CloudKMS_CryptoKey
+   */
   public function setCryptoKeys($cryptoKeys)
   {
     $this->cryptoKeys = $cryptoKeys;
   }
+  /**
+   * @return Google_Service_CloudKMS_CryptoKey
+   */
   public function getCryptoKeys()
   {
     return $this->cryptoKeys;
