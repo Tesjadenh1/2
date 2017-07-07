@@ -24,10 +24,16 @@ class Google_Service_Replicapoolupdater_InstanceUpdateList extends Google_Collec
   public $nextPageToken;
   public $selfLink;
 
+  /**
+   * @param Google_Service_Replicapoolupdater_InstanceUpdate
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_InstanceUpdate
+   */
   public function getItems()
   {
     return $this->items;

@@ -24,10 +24,16 @@ class Google_Service_Replicapoolupdater_RollingUpdateList extends Google_Collect
   public $nextPageToken;
   public $selfLink;
 
+  /**
+   * @param Google_Service_Replicapoolupdater_RollingUpdate
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_RollingUpdate
+   */
   public function getItems()
   {
     return $this->items;

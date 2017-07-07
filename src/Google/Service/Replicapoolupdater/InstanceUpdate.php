@@ -22,10 +22,16 @@ class Google_Service_Replicapoolupdater_InstanceUpdate extends Google_Model
   public $instance;
   public $status;
 
+  /**
+   * @param Google_Service_Replicapoolupdater_InstanceUpdateError
+   */
   public function setError(Google_Service_Replicapoolupdater_InstanceUpdateError $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_InstanceUpdateError
+   */
   public function getError()
   {
     return $this->error;

@@ -21,10 +21,16 @@ class Google_Service_Replicapoolupdater_RollingUpdateError extends Google_Collec
   protected $errorsType = 'Google_Service_Replicapoolupdater_RollingUpdateErrorErrors';
   protected $errorsDataType = 'array';
 
+  /**
+   * @param Google_Service_Replicapoolupdater_RollingUpdateErrorErrors
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_RollingUpdateErrorErrors
+   */
   public function getErrors()
   {
     return $this->errors;

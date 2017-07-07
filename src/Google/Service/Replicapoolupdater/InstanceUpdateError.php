@@ -21,10 +21,16 @@ class Google_Service_Replicapoolupdater_InstanceUpdateError extends Google_Colle
   protected $errorsType = 'Google_Service_Replicapoolupdater_InstanceUpdateErrorErrors';
   protected $errorsDataType = 'array';
 
+  /**
+   * @param Google_Service_Replicapoolupdater_InstanceUpdateErrorErrors
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_InstanceUpdateErrorErrors
+   */
   public function getErrors()
   {
     return $this->errors;

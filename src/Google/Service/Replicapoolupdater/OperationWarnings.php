@@ -31,10 +31,16 @@ class Google_Service_Replicapoolupdater_OperationWarnings extends Google_Collect
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Replicapoolupdater_OperationWarningsData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_OperationWarningsData
+   */
   public function getData()
   {
     return $this->data;

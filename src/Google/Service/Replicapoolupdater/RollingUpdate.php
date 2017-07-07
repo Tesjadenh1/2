@@ -60,10 +60,16 @@ class Google_Service_Replicapoolupdater_RollingUpdate extends Google_Model
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Replicapoolupdater_RollingUpdateError
+   */
   public function setError(Google_Service_Replicapoolupdater_RollingUpdateError $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_RollingUpdateError
+   */
   public function getError()
   {
     return $this->error;
@@ -116,10 +122,16 @@ class Google_Service_Replicapoolupdater_RollingUpdate extends Google_Model
   {
     return $this->oldInstanceTemplate;
   }
+  /**
+   * @param Google_Service_Replicapoolupdater_RollingUpdatePolicy
+   */
   public function setPolicy(Google_Service_Replicapoolupdater_RollingUpdatePolicy $policy)
   {
     $this->policy = $policy;
   }
+  /**
+   * @return Google_Service_Replicapoolupdater_RollingUpdatePolicy
+   */
   public function getPolicy()
   {
     return $this->policy;
