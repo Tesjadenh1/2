@@ -30,10 +30,16 @@ class Google_Service_YouTubeReporting_ListReportTypesResponse extends Google_Col
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_YouTubeReporting_ReportType
+   */
   public function setReportTypes($reportTypes)
   {
     $this->reportTypes = $reportTypes;
   }
+  /**
+   * @return Google_Service_YouTubeReporting_ReportType
+   */
   public function getReportTypes()
   {
     return $this->reportTypes;
