@@ -23,18 +23,30 @@ class Google_Service_Prediction_AnalyzeDataDescriptionOutputFeature extends Goog
   protected $textType = 'Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureText';
   protected $textDataType = 'array';
 
+  /**
+   * @param Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureNumeric
+   */
   public function setNumeric(Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureNumeric $numeric)
   {
     $this->numeric = $numeric;
   }
+  /**
+   * @return Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureNumeric
+   */
   public function getNumeric()
   {
     return $this->numeric;
   }
+  /**
+   * @param Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureText
+   */
   public function setText($text)
   {
     $this->text = $text;
   }
+  /**
+   * @return Google_Service_Prediction_AnalyzeDataDescriptionOutputFeatureText
+   */
   public function getText()
   {
     return $this->text;

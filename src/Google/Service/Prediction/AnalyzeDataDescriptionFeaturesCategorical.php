@@ -30,10 +30,16 @@ class Google_Service_Prediction_AnalyzeDataDescriptionFeaturesCategorical extend
   {
     return $this->count;
   }
+  /**
+   * @param Google_Service_Prediction_AnalyzeDataDescriptionFeaturesCategoricalValues
+   */
   public function setValues($values)
   {
     $this->values = $values;
   }
+  /**
+   * @return Google_Service_Prediction_AnalyzeDataDescriptionFeaturesCategoricalValues
+   */
   public function getValues()
   {
     return $this->values;

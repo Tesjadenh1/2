@@ -54,10 +54,16 @@ class Google_Service_Prediction_Insert2 extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Prediction_Insert2ModelInfo
+   */
   public function setModelInfo(Google_Service_Prediction_Insert2ModelInfo $modelInfo)
   {
     $this->modelInfo = $modelInfo;
   }
+  /**
+   * @return Google_Service_Prediction_Insert2ModelInfo
+   */
   public function getModelInfo()
   {
     return $this->modelInfo;

@@ -76,10 +76,16 @@ class Google_Service_Prediction_Insert extends Google_Collection
   {
     return $this->storagePMMLModelLocation;
   }
+  /**
+   * @param Google_Service_Prediction_InsertTrainingInstances
+   */
   public function setTrainingInstances($trainingInstances)
   {
     $this->trainingInstances = $trainingInstances;
   }
+  /**
+   * @return Google_Service_Prediction_InsertTrainingInstances
+   */
   public function getTrainingInstances()
   {
     return $this->trainingInstances;

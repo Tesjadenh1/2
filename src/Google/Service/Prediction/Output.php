@@ -50,10 +50,16 @@ class Google_Service_Prediction_Output extends Google_Collection
   {
     return $this->outputLabel;
   }
+  /**
+   * @param Google_Service_Prediction_OutputOutputMulti
+   */
   public function setOutputMulti($outputMulti)
   {
     $this->outputMulti = $outputMulti;
   }
+  /**
+   * @return Google_Service_Prediction_OutputOutputMulti
+   */
   public function getOutputMulti()
   {
     return $this->outputMulti;

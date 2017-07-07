@@ -38,10 +38,16 @@ class Google_Service_Prediction_AnalyzeModelDescription extends Google_Model
   {
     return $this->confusionMatrixRowTotals;
   }
+  /**
+   * @param Google_Service_Prediction_Insert2
+   */
   public function setModelinfo(Google_Service_Prediction_Insert2 $modelinfo)
   {
     $this->modelinfo = $modelinfo;
   }
+  /**
+   * @return Google_Service_Prediction_Insert2
+   */
   public function getModelinfo()
   {
     return $this->modelinfo;

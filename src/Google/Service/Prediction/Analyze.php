@@ -27,10 +27,16 @@ class Google_Service_Prediction_Analyze extends Google_Collection
   protected $modelDescriptionDataType = '';
   public $selfLink;
 
+  /**
+   * @param Google_Service_Prediction_AnalyzeDataDescription
+   */
   public function setDataDescription(Google_Service_Prediction_AnalyzeDataDescription $dataDescription)
   {
     $this->dataDescription = $dataDescription;
   }
+  /**
+   * @return Google_Service_Prediction_AnalyzeDataDescription
+   */
   public function getDataDescription()
   {
     return $this->dataDescription;
@@ -59,10 +65,16 @@ class Google_Service_Prediction_Analyze extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Prediction_AnalyzeModelDescription
+   */
   public function setModelDescription(Google_Service_Prediction_AnalyzeModelDescription $modelDescription)
   {
     $this->modelDescription = $modelDescription;
   }
+  /**
+   * @return Google_Service_Prediction_AnalyzeModelDescription
+   */
   public function getModelDescription()
   {
     return $this->modelDescription;
