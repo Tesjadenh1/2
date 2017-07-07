@@ -55,7 +55,22 @@ class Google_Service_ManufacturerCenter extends Google_Service
         'products',
         array(
           'methods' => array(
-            'get' => array(
+            'delete' => array(
+              'path' => 'v1/{+parent}/products/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
               'path' => 'v1/{+parent}/products/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
@@ -86,6 +101,21 @@ class Google_Service_ManufacturerCenter extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'v1/{+parent}/products/{+name}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),

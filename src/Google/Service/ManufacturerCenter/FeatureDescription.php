@@ -30,10 +30,16 @@ class Google_Service_ManufacturerCenter_FeatureDescription extends Google_Model
   {
     return $this->headline;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_Image
+   */
   public function setImage(Google_Service_ManufacturerCenter_Image $image)
   {
     $this->image = $image;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_Image
+   */
   public function getImage()
   {
     return $this->image;

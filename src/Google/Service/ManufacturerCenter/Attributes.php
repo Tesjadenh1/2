@@ -58,10 +58,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   public $title;
   public $videoLink;
 
+  /**
+   * @param Google_Service_ManufacturerCenter_Image
+   */
   public function setAdditionalImageLink($additionalImageLink)
   {
     $this->additionalImageLink = $additionalImageLink;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_Image
+   */
   public function getAdditionalImageLink()
   {
     return $this->additionalImageLink;
@@ -82,10 +88,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   {
     return $this->brand;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_Capacity
+   */
   public function setCapacity(Google_Service_ManufacturerCenter_Capacity $capacity)
   {
     $this->capacity = $capacity;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_Capacity
+   */
   public function getCapacity()
   {
     return $this->capacity;
@@ -98,10 +110,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   {
     return $this->color;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_Count
+   */
   public function setCount(Google_Service_ManufacturerCenter_Count $count)
   {
     $this->count = $count;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_Count
+   */
   public function getCount()
   {
     return $this->count;
@@ -122,10 +140,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   {
     return $this->disclosureDate;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_FeatureDescription
+   */
   public function setFeatureDescription($featureDescription)
   {
     $this->featureDescription = $featureDescription;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_FeatureDescription
+   */
   public function getFeatureDescription()
   {
     return $this->featureDescription;
@@ -162,10 +186,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   {
     return $this->gtin;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_Image
+   */
   public function setImageLink(Google_Service_ManufacturerCenter_Image $imageLink)
   {
     $this->imageLink = $imageLink;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_Image
+   */
   public function getImageLink()
   {
     return $this->imageLink;
@@ -202,10 +232,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   {
     return $this->pattern;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_ProductDetail
+   */
   public function setProductDetail($productDetail)
   {
     $this->productDetail = $productDetail;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_ProductDetail
+   */
   public function getProductDetail()
   {
     return $this->productDetail;
@@ -282,10 +318,16 @@ class Google_Service_ManufacturerCenter_Attributes extends Google_Collection
   {
     return $this->sizeType;
   }
+  /**
+   * @param Google_Service_ManufacturerCenter_Price
+   */
   public function setSuggestedRetailPrice(Google_Service_ManufacturerCenter_Price $suggestedRetailPrice)
   {
     $this->suggestedRetailPrice = $suggestedRetailPrice;
   }
+  /**
+   * @return Google_Service_ManufacturerCenter_Price
+   */
   public function getSuggestedRetailPrice()
   {
     return $this->suggestedRetailPrice;
