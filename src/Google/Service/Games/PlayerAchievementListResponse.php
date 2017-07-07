@@ -23,10 +23,16 @@ class Google_Service_Games_PlayerAchievementListResponse extends Google_Collecti
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Games_PlayerAchievement
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Games_PlayerAchievement
+   */
   public function getItems()
   {
     return $this->items;

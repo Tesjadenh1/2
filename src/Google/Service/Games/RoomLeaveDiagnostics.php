@@ -76,10 +76,16 @@ class Google_Service_Games_RoomLeaveDiagnostics extends Google_Collection
   {
     return $this->networkOperatorName;
   }
+  /**
+   * @param Google_Service_Games_PeerSessionDiagnostics
+   */
   public function setPeerSession($peerSession)
   {
     $this->peerSession = $peerSession;
   }
+  /**
+   * @return Google_Service_Games_PeerSessionDiagnostics
+   */
   public function getPeerSession()
   {
     return $this->peerSession;

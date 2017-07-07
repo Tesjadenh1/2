@@ -25,10 +25,16 @@ class Google_Service_Games_TurnBasedMatchResults extends Google_Collection
   protected $resultsType = 'Google_Service_Games_ParticipantResult';
   protected $resultsDataType = 'array';
 
+  /**
+   * @param Google_Service_Games_TurnBasedMatchDataRequest
+   */
   public function setData(Google_Service_Games_TurnBasedMatchDataRequest $data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Games_TurnBasedMatchDataRequest
+   */
   public function getData()
   {
     return $this->data;
@@ -49,10 +55,16 @@ class Google_Service_Games_TurnBasedMatchResults extends Google_Collection
   {
     return $this->matchVersion;
   }
+  /**
+   * @param Google_Service_Games_ParticipantResult
+   */
   public function setResults($results)
   {
     $this->results = $results;
   }
+  /**
+   * @return Google_Service_Games_ParticipantResult
+   */
   public function getResults()
   {
     return $this->results;

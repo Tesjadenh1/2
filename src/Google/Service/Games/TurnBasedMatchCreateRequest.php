@@ -25,10 +25,16 @@ class Google_Service_Games_TurnBasedMatchCreateRequest extends Google_Collection
   public $requestId;
   public $variant;
 
+  /**
+   * @param Google_Service_Games_TurnBasedAutoMatchingCriteria
+   */
   public function setAutoMatchingCriteria(Google_Service_Games_TurnBasedAutoMatchingCriteria $autoMatchingCriteria)
   {
     $this->autoMatchingCriteria = $autoMatchingCriteria;
   }
+  /**
+   * @return Google_Service_Games_TurnBasedAutoMatchingCriteria
+   */
   public function getAutoMatchingCriteria()
   {
     return $this->autoMatchingCriteria;

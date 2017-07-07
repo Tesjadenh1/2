@@ -31,10 +31,16 @@ class Google_Service_Games_PushToken extends Google_Model
   {
     return $this->clientRevision;
   }
+  /**
+   * @param Google_Service_Games_PushTokenId
+   */
   public function setId(Google_Service_Games_PushTokenId $id)
   {
     $this->id = $id;
   }
+  /**
+   * @return Google_Service_Games_PushTokenId
+   */
   public function getId()
   {
     return $this->id;

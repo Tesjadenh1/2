@@ -27,10 +27,16 @@ class Google_Service_Games_LeaderboardScores extends Google_Collection
   protected $playerScoreDataType = '';
   public $prevPageToken;
 
+  /**
+   * @param Google_Service_Games_LeaderboardEntry
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Games_LeaderboardEntry
+   */
   public function getItems()
   {
     return $this->items;
@@ -59,10 +65,16 @@ class Google_Service_Games_LeaderboardScores extends Google_Collection
   {
     return $this->numScores;
   }
+  /**
+   * @param Google_Service_Games_LeaderboardEntry
+   */
   public function setPlayerScore(Google_Service_Games_LeaderboardEntry $playerScore)
   {
     $this->playerScore = $playerScore;
   }
+  /**
+   * @return Google_Service_Games_LeaderboardEntry
+   */
   public function getPlayerScore()
   {
     return $this->playerScore;

@@ -124,10 +124,16 @@ class Google_Service_Games_Quest extends Google_Collection
   {
     return $this->lastUpdatedTimestampMillis;
   }
+  /**
+   * @param Google_Service_Games_QuestMilestone
+   */
   public function setMilestones($milestones)
   {
     $this->milestones = $milestones;
   }
+  /**
+   * @return Google_Service_Games_QuestMilestone
+   */
   public function getMilestones()
   {
     return $this->milestones;

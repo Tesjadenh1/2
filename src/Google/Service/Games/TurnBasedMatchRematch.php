@@ -31,18 +31,30 @@ class Google_Service_Games_TurnBasedMatchRematch extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Games_TurnBasedMatch
+   */
   public function setPreviousMatch(Google_Service_Games_TurnBasedMatch $previousMatch)
   {
     $this->previousMatch = $previousMatch;
   }
+  /**
+   * @return Google_Service_Games_TurnBasedMatch
+   */
   public function getPreviousMatch()
   {
     return $this->previousMatch;
   }
+  /**
+   * @param Google_Service_Games_TurnBasedMatch
+   */
   public function setRematch(Google_Service_Games_TurnBasedMatch $rematch)
   {
     $this->rematch = $rematch;
   }
+  /**
+   * @return Google_Service_Games_TurnBasedMatch
+   */
   public function getRematch()
   {
     return $this->rematch;

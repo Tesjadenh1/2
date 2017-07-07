@@ -27,10 +27,16 @@ class Google_Service_Games_RoomStatus extends Google_Collection
   public $status;
   public $statusVersion;
 
+  /**
+   * @param Google_Service_Games_RoomAutoMatchStatus
+   */
   public function setAutoMatchingStatus(Google_Service_Games_RoomAutoMatchStatus $autoMatchingStatus)
   {
     $this->autoMatchingStatus = $autoMatchingStatus;
   }
+  /**
+   * @return Google_Service_Games_RoomAutoMatchStatus
+   */
   public function getAutoMatchingStatus()
   {
     return $this->autoMatchingStatus;
@@ -43,10 +49,16 @@ class Google_Service_Games_RoomStatus extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Games_RoomParticipant
+   */
   public function setParticipants($participants)
   {
     $this->participants = $participants;
   }
+  /**
+   * @return Google_Service_Games_RoomParticipant
+   */
   public function getParticipants()
   {
     return $this->participants;

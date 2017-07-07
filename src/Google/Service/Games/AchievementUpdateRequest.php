@@ -33,10 +33,16 @@ class Google_Service_Games_AchievementUpdateRequest extends Google_Model
   {
     return $this->achievementId;
   }
+  /**
+   * @param Google_Service_Games_GamesAchievementIncrement
+   */
   public function setIncrementPayload(Google_Service_Games_GamesAchievementIncrement $incrementPayload)
   {
     $this->incrementPayload = $incrementPayload;
   }
+  /**
+   * @return Google_Service_Games_GamesAchievementIncrement
+   */
   public function getIncrementPayload()
   {
     return $this->incrementPayload;
@@ -49,10 +55,16 @@ class Google_Service_Games_AchievementUpdateRequest extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Games_GamesAchievementSetStepsAtLeast
+   */
   public function setSetStepsAtLeastPayload(Google_Service_Games_GamesAchievementSetStepsAtLeast $setStepsAtLeastPayload)
   {
     $this->setStepsAtLeastPayload = $setStepsAtLeastPayload;
   }
+  /**
+   * @return Google_Service_Games_GamesAchievementSetStepsAtLeast
+   */
   public function getSetStepsAtLeastPayload()
   {
     return $this->setStepsAtLeastPayload;

@@ -33,10 +33,16 @@ class Google_Service_Games_QuestMilestone extends Google_Collection
   {
     return $this->completionRewardData;
   }
+  /**
+   * @param Google_Service_Games_QuestCriterion
+   */
   public function setCriteria($criteria)
   {
     $this->criteria = $criteria;
   }
+  /**
+   * @return Google_Service_Games_QuestCriterion
+   */
   public function getCriteria()
   {
     return $this->criteria;

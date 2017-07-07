@@ -23,10 +23,16 @@ class Google_Service_Games_TurnBasedMatchList extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Games_TurnBasedMatch
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Games_TurnBasedMatch
+   */
   public function getItems()
   {
     return $this->items;

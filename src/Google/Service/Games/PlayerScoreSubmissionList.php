@@ -30,10 +30,16 @@ class Google_Service_Games_PlayerScoreSubmissionList extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Games_ScoreSubmission
+   */
   public function setScores($scores)
   {
     $this->scores = $scores;
   }
+  /**
+   * @return Google_Service_Games_ScoreSubmission
+   */
   public function getScores()
   {
     return $this->scores;

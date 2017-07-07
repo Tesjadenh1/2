@@ -30,10 +30,16 @@ class Google_Service_Games_AchievementUpdateMultipleResponse extends Google_Coll
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Games_AchievementUpdateResponse
+   */
   public function setUpdatedAchievements($updatedAchievements)
   {
     $this->updatedAchievements = $updatedAchievements;
   }
+  /**
+   * @return Google_Service_Games_AchievementUpdateResponse
+   */
   public function getUpdatedAchievements()
   {
     return $this->updatedAchievements;

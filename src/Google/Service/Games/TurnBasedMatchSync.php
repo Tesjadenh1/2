@@ -24,10 +24,16 @@ class Google_Service_Games_TurnBasedMatchSync extends Google_Collection
   public $moreAvailable;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Games_TurnBasedMatch
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Games_TurnBasedMatch
+   */
   public function getItems()
   {
     return $this->items;

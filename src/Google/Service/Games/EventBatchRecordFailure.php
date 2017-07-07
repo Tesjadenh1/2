@@ -38,10 +38,16 @@ class Google_Service_Games_EventBatchRecordFailure extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Games_EventPeriodRange
+   */
   public function setRange(Google_Service_Games_EventPeriodRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Games_EventPeriodRange
+   */
   public function getRange()
   {
     return $this->range;

@@ -23,10 +23,16 @@ class Google_Service_Games_AchievementDefinitionsListResponse extends Google_Col
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Games_AchievementDefinition
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Games_AchievementDefinition
+   */
   public function getItems()
   {
     return $this->items;

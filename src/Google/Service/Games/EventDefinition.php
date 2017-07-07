@@ -28,10 +28,16 @@ class Google_Service_Games_EventDefinition extends Google_Collection
   public $kind;
   public $visibility;
 
+  /**
+   * @param Google_Service_Games_EventChild
+   */
   public function setChildEvents($childEvents)
   {
     $this->childEvents = $childEvents;
   }
+  /**
+   * @return Google_Service_Games_EventChild
+   */
   public function getChildEvents()
   {
     return $this->childEvents;
