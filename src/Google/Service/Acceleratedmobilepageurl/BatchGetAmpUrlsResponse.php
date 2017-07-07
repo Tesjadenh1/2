@@ -23,18 +23,30 @@ class Google_Service_Acceleratedmobilepageurl_BatchGetAmpUrlsResponse extends Go
   protected $urlErrorsType = 'Google_Service_Acceleratedmobilepageurl_AmpUrlError';
   protected $urlErrorsDataType = 'array';
 
+  /**
+   * @param Google_Service_Acceleratedmobilepageurl_AmpUrl
+   */
   public function setAmpUrls($ampUrls)
   {
     $this->ampUrls = $ampUrls;
   }
+  /**
+   * @return Google_Service_Acceleratedmobilepageurl_AmpUrl
+   */
   public function getAmpUrls()
   {
     return $this->ampUrls;
   }
+  /**
+   * @param Google_Service_Acceleratedmobilepageurl_AmpUrlError
+   */
   public function setUrlErrors($urlErrors)
   {
     $this->urlErrors = $urlErrors;
   }
+  /**
+   * @return Google_Service_Acceleratedmobilepageurl_AmpUrlError
+   */
   public function getUrlErrors()
   {
     return $this->urlErrors;
