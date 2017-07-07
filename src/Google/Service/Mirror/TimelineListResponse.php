@@ -23,10 +23,16 @@ class Google_Service_Mirror_TimelineListResponse extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Mirror_TimelineItem
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Mirror_TimelineItem
+   */
   public function getItems()
   {
     return $this->items;

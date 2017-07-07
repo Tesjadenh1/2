@@ -50,10 +50,16 @@ class Google_Service_Mirror_Notification extends Google_Collection
   {
     return $this->operation;
   }
+  /**
+   * @param Google_Service_Mirror_UserAction
+   */
   public function setUserActions($userActions)
   {
     $this->userActions = $userActions;
   }
+  /**
+   * @return Google_Service_Mirror_UserAction
+   */
   public function getUserActions()
   {
     return $this->userActions;

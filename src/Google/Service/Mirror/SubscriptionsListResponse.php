@@ -22,10 +22,16 @@ class Google_Service_Mirror_SubscriptionsListResponse extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Mirror_Subscription
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Mirror_Subscription
+   */
   public function getItems()
   {
     return $this->items;

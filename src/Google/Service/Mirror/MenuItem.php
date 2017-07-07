@@ -69,10 +69,16 @@ class Google_Service_Mirror_MenuItem extends Google_Collection
   {
     return $this->removeWhenSelected;
   }
+  /**
+   * @param Google_Service_Mirror_MenuValue
+   */
   public function setValues($values)
   {
     $this->values = $values;
   }
+  /**
+   * @return Google_Service_Mirror_MenuValue
+   */
   public function getValues()
   {
     return $this->values;

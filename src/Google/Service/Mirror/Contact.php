@@ -32,10 +32,16 @@ class Google_Service_Mirror_Contact extends Google_Collection
   public $speakableName;
   public $type;
 
+  /**
+   * @param Google_Service_Mirror_Command
+   */
   public function setAcceptCommands($acceptCommands)
   {
     $this->acceptCommands = $acceptCommands;
   }
+  /**
+   * @return Google_Service_Mirror_Command
+   */
   public function getAcceptCommands()
   {
     return $this->acceptCommands;

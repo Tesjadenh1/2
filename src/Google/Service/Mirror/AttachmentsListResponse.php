@@ -22,10 +22,16 @@ class Google_Service_Mirror_AttachmentsListResponse extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Mirror_Attachment
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Mirror_Attachment
+   */
   public function getItems()
   {
     return $this->items;
