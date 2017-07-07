@@ -91,10 +91,16 @@ class Google_Service_Tasks_Task extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Tasks_TaskLinks
+   */
   public function setLinks($links)
   {
     $this->links = $links;
   }
+  /**
+   * @return Google_Service_Tasks_TaskLinks
+   */
   public function getLinks()
   {
     return $this->links;
