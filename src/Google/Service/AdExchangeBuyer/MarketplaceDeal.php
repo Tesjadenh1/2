@@ -50,10 +50,16 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   protected $termsDataType = '';
   public $webPropertyCode;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_PrivateData
+   */
   public function setBuyerPrivateData(Google_Service_AdExchangeBuyer_PrivateData $buyerPrivateData)
   {
     $this->buyerPrivateData = $buyerPrivateData;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_PrivateData
+   */
   public function getBuyerPrivateData()
   {
     return $this->buyerPrivateData;
@@ -90,18 +96,30 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   {
     return $this->dealId;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_DealServingMetadata
+   */
   public function setDealServingMetadata(Google_Service_AdExchangeBuyer_DealServingMetadata $dealServingMetadata)
   {
     $this->dealServingMetadata = $dealServingMetadata;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_DealServingMetadata
+   */
   public function getDealServingMetadata()
   {
     return $this->dealServingMetadata;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_DeliveryControl
+   */
   public function setDeliveryControl(Google_Service_AdExchangeBuyer_DeliveryControl $deliveryControl)
   {
     $this->deliveryControl = $deliveryControl;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_DeliveryControl
+   */
   public function getDeliveryControl()
   {
     return $this->deliveryControl;
@@ -210,18 +228,30 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   {
     return $this->proposalId;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_ContactInformation
+   */
   public function setSellerContacts($sellerContacts)
   {
     $this->sellerContacts = $sellerContacts;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_ContactInformation
+   */
   public function getSellerContacts()
   {
     return $this->sellerContacts;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_SharedTargeting
+   */
   public function setSharedTargetings($sharedTargetings)
   {
     $this->sharedTargetings = $sharedTargetings;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_SharedTargeting
+   */
   public function getSharedTargetings()
   {
     return $this->sharedTargetings;
@@ -234,10 +264,16 @@ class Google_Service_AdExchangeBuyer_MarketplaceDeal extends Google_Collection
   {
     return $this->syndicationProduct;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_DealTerms
+   */
   public function setTerms(Google_Service_AdExchangeBuyer_DealTerms $terms)
   {
     $this->terms = $terms;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_DealTerms
+   */
   public function getTerms()
   {
     return $this->terms;

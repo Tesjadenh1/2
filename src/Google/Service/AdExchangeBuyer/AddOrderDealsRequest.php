@@ -23,10 +23,16 @@ class Google_Service_AdExchangeBuyer_AddOrderDealsRequest extends Google_Collect
   public $proposalRevisionNumber;
   public $updateAction;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function setDeals($deals)
   {
     $this->deals = $deals;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function getDeals()
   {
     return $this->deals;

@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyer_TargetingValueDayPartTargeting extends Goog
   protected $dayPartsDataType = 'array';
   public $timeZoneType;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_TargetingValueDayPartTargetingDayPart
+   */
   public function setDayParts($dayParts)
   {
     $this->dayParts = $dayParts;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_TargetingValueDayPartTargetingDayPart
+   */
   public function getDayParts()
   {
     return $this->dayParts;

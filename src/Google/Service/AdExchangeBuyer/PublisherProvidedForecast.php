@@ -23,10 +23,16 @@ class Google_Service_AdExchangeBuyer_PublisherProvidedForecast extends Google_Co
   public $weeklyImpressions;
   public $weeklyUniques;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_Dimension
+   */
   public function setDimensions($dimensions)
   {
     $this->dimensions = $dimensions;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Dimension
+   */
   public function getDimensions()
   {
     return $this->dimensions;

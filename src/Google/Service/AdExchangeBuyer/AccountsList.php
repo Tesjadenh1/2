@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyer_AccountsList extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_Account
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Account
+   */
   public function getItems()
   {
     return $this->items;

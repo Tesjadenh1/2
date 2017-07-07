@@ -30,10 +30,16 @@ class Google_Service_AdExchangeBuyer_PerformanceReportList extends Google_Collec
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_PerformanceReport
+   */
   public function setPerformanceReport($performanceReport)
   {
     $this->performanceReport = $performanceReport;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_PerformanceReport
+   */
   public function getPerformanceReport()
   {
     return $this->performanceReport;

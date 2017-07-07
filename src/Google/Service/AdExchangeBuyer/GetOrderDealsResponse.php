@@ -21,10 +21,16 @@ class Google_Service_AdExchangeBuyer_GetOrderDealsResponse extends Google_Collec
   protected $dealsType = 'Google_Service_AdExchangeBuyer_MarketplaceDeal';
   protected $dealsDataType = 'array';
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function setDeals($deals)
   {
     $this->deals = $deals;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function getDeals()
   {
     return $this->deals;

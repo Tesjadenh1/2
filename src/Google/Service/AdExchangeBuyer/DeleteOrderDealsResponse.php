@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyer_DeleteOrderDealsResponse extends Google_Col
   protected $dealsDataType = 'array';
   public $proposalRevisionNumber;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function setDeals($deals)
   {
     $this->deals = $deals;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function getDeals()
   {
     return $this->deals;

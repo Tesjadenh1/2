@@ -33,26 +33,44 @@ class Google_Service_AdExchangeBuyer_PricePerBuyer extends Google_Model
   {
     return $this->auctionTier;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_Buyer
+   */
   public function setBilledBuyer(Google_Service_AdExchangeBuyer_Buyer $billedBuyer)
   {
     $this->billedBuyer = $billedBuyer;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Buyer
+   */
   public function getBilledBuyer()
   {
     return $this->billedBuyer;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_Buyer
+   */
   public function setBuyer(Google_Service_AdExchangeBuyer_Buyer $buyer)
   {
     $this->buyer = $buyer;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Buyer
+   */
   public function getBuyer()
   {
     return $this->buyer;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_Price
+   */
   public function setPrice(Google_Service_AdExchangeBuyer_Price $price)
   {
     $this->price = $price;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Price
+   */
   public function getPrice()
   {
     return $this->price;

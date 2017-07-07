@@ -21,10 +21,16 @@ class Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedFixedPriceTerms exten
   protected $fixedPricesType = 'Google_Service_AdExchangeBuyer_PricePerBuyer';
   protected $fixedPricesDataType = 'array';
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_PricePerBuyer
+   */
   public function setFixedPrices($fixedPrices)
   {
     $this->fixedPrices = $fixedPrices;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_PricePerBuyer
+   */
   public function getFixedPrices()
   {
     return $this->fixedPrices;

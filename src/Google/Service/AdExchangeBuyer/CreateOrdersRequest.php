@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyer_CreateOrdersRequest extends Google_Collecti
   protected $proposalsDataType = 'array';
   public $webPropertyCode;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_Proposal
+   */
   public function setProposals($proposals)
   {
     $this->proposals = $proposals;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Proposal
+   */
   public function getProposals()
   {
     return $this->proposals;

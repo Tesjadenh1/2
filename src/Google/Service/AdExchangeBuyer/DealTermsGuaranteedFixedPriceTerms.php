@@ -26,18 +26,30 @@ class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTerms extends 
   public $guaranteedLooks;
   public $minimumDailyLooks;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingInfo
+   */
   public function setBillingInfo(Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingInfo $billingInfo)
   {
     $this->billingInfo = $billingInfo;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingInfo
+   */
   public function getBillingInfo()
   {
     return $this->billingInfo;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_PricePerBuyer
+   */
   public function setFixedPrices($fixedPrices)
   {
     $this->fixedPrices = $fixedPrices;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_PricePerBuyer
+   */
   public function getFixedPrices()
   {
     return $this->fixedPrices;

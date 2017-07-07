@@ -31,10 +31,16 @@ class Google_Service_AdExchangeBuyer_UpdatePrivateAuctionProposalRequest extends
   {
     return $this->externalDealId;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceNote
+   */
   public function setNote(Google_Service_AdExchangeBuyer_MarketplaceNote $note)
   {
     $this->note = $note;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceNote
+   */
   public function getNote()
   {
     return $this->note;

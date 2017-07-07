@@ -21,10 +21,16 @@ class Google_Service_AdExchangeBuyer_AddOrderNotesResponse extends Google_Collec
   protected $notesType = 'Google_Service_AdExchangeBuyer_MarketplaceNote';
   protected $notesDataType = 'array';
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceNote
+   */
   public function setNotes($notes)
   {
     $this->notes = $notes;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceNote
+   */
   public function getNotes()
   {
     return $this->notes;

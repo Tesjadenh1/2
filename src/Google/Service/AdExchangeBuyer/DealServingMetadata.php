@@ -29,10 +29,16 @@ class Google_Service_AdExchangeBuyer_DealServingMetadata extends Google_Model
   {
     return $this->alcoholAdsAllowed;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_DealServingMetadataDealPauseStatus
+   */
   public function setDealPauseStatus(Google_Service_AdExchangeBuyer_DealServingMetadataDealPauseStatus $dealPauseStatus)
   {
     $this->dealPauseStatus = $dealPauseStatus;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_DealServingMetadataDealPauseStatus
+   */
   public function getDealPauseStatus()
   {
     return $this->dealPauseStatus;

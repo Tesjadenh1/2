@@ -25,18 +25,30 @@ class Google_Service_AdExchangeBuyer_EditAllOrderDealsRequest extends Google_Col
   public $proposalRevisionNumber;
   public $updateAction;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function setDeals($deals)
   {
     $this->deals = $deals;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceDeal
+   */
   public function getDeals()
   {
     return $this->deals;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_Proposal
+   */
   public function setProposal(Google_Service_AdExchangeBuyer_Proposal $proposal)
   {
     $this->proposal = $proposal;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Proposal
+   */
   public function getProposal()
   {
     return $this->proposal;

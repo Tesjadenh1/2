@@ -30,10 +30,16 @@ class Google_Service_AdExchangeBuyer_CreativeFilteringReasons extends Google_Col
   {
     return $this->date;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_CreativeFilteringReasonsReasons
+   */
   public function setReasons($reasons)
   {
     $this->reasons = $reasons;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_CreativeFilteringReasonsReasons
+   */
   public function getReasons()
   {
     return $this->reasons;

@@ -47,10 +47,16 @@ class Google_Service_AdExchangeBuyer_DealTermsGuaranteedFixedPriceTermsBillingIn
   {
     return $this->originalContractedQuantity;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_Price
+   */
   public function setPrice(Google_Service_AdExchangeBuyer_Price $price)
   {
     $this->price = $price;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Price
+   */
   public function getPrice()
   {
     return $this->price;

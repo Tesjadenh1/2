@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyer_BillingInfoList extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_BillingInfo
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_BillingInfo
+   */
   public function getItems()
   {
     return $this->items;

@@ -39,10 +39,16 @@ class Google_Service_AdExchangeBuyer_MarketplaceLabel extends Google_Model
   {
     return $this->createTimeMs;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_MarketplaceDealParty
+   */
   public function setDeprecatedMarketplaceDealParty(Google_Service_AdExchangeBuyer_MarketplaceDealParty $deprecatedMarketplaceDealParty)
   {
     $this->deprecatedMarketplaceDealParty = $deprecatedMarketplaceDealParty;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_MarketplaceDealParty
+   */
   public function getDeprecatedMarketplaceDealParty()
   {
     return $this->deprecatedMarketplaceDealParty;

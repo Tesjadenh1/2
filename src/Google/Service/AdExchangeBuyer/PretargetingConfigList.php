@@ -22,10 +22,16 @@ class Google_Service_AdExchangeBuyer_PretargetingConfigList extends Google_Colle
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_PretargetingConfig
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_PretargetingConfig
+   */
   public function getItems()
   {
     return $this->items;

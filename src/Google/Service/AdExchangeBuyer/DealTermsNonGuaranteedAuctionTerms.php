@@ -30,10 +30,16 @@ class Google_Service_AdExchangeBuyer_DealTermsNonGuaranteedAuctionTerms extends 
   {
     return $this->autoOptimizePrivateAuction;
   }
+  /**
+   * @param Google_Service_AdExchangeBuyer_PricePerBuyer
+   */
   public function setReservePricePerBuyers($reservePricePerBuyers)
   {
     $this->reservePricePerBuyers = $reservePricePerBuyers;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_PricePerBuyer
+   */
   public function getReservePricePerBuyers()
   {
     return $this->reservePricePerBuyers;

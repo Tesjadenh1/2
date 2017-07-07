@@ -21,10 +21,16 @@ class Google_Service_AdExchangeBuyer_GetOrdersResponse extends Google_Collection
   protected $proposalsType = 'Google_Service_AdExchangeBuyer_Proposal';
   protected $proposalsDataType = 'array';
 
+  /**
+   * @param Google_Service_AdExchangeBuyer_Proposal
+   */
   public function setProposals($proposals)
   {
     $this->proposals = $proposals;
   }
+  /**
+   * @return Google_Service_AdExchangeBuyer_Proposal
+   */
   public function getProposals()
   {
     return $this->proposals;
