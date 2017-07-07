@@ -22,10 +22,16 @@ class Google_Service_AndroidEnterprise_ServiceAccount extends Google_Model
   public $kind;
   public $name;
 
+  /**
+   * @param Google_Service_AndroidEnterprise_ServiceAccountKey
+   */
   public function setKey(Google_Service_AndroidEnterprise_ServiceAccountKey $key)
   {
     $this->key = $key;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_ServiceAccountKey
+   */
   public function getKey()
   {
     return $this->key;

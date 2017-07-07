@@ -32,10 +32,16 @@ class Google_Service_AndroidEnterprise_Product extends Google_Collection
   public $title;
   public $workDetailsUrl;
 
+  /**
+   * @param Google_Service_AndroidEnterprise_AppVersion
+   */
   public function setAppVersion($appVersion)
   {
     $this->appVersion = $appVersion;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_AppVersion
+   */
   public function getAppVersion()
   {
     return $this->appVersion;

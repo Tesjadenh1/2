@@ -30,10 +30,16 @@ class Google_Service_AndroidEnterprise_StoreLayoutPagesListResponse extends Goog
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_StorePage
+   */
   public function setPage($page)
   {
     $this->page = $page;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_StorePage
+   */
   public function getPage()
   {
     return $this->page;

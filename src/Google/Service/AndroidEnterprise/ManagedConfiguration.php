@@ -31,10 +31,16 @@ class Google_Service_AndroidEnterprise_ManagedConfiguration extends Google_Colle
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_ManagedProperty
+   */
   public function setManagedProperty($managedProperty)
   {
     $this->managedProperty = $managedProperty;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_ManagedProperty
+   */
   public function getManagedProperty()
   {
     return $this->managedProperty;

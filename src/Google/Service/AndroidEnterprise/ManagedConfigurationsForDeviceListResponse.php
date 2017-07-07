@@ -30,10 +30,16 @@ class Google_Service_AndroidEnterprise_ManagedConfigurationsForDeviceListRespons
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_ManagedConfiguration
+   */
   public function setManagedConfigurationForDevice($managedConfigurationForDevice)
   {
     $this->managedConfigurationForDevice = $managedConfigurationForDevice;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_ManagedConfiguration
+   */
   public function getManagedConfigurationForDevice()
   {
     return $this->managedConfigurationForDevice;

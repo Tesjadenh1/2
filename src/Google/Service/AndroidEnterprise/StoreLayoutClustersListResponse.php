@@ -22,10 +22,16 @@ class Google_Service_AndroidEnterprise_StoreLayoutClustersListResponse extends G
   protected $clusterDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AndroidEnterprise_StoreCluster
+   */
   public function setCluster($cluster)
   {
     $this->cluster = $cluster;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_StoreCluster
+   */
   public function getCluster()
   {
     return $this->cluster;

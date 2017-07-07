@@ -35,18 +35,30 @@ class Google_Service_AndroidEnterprise_Notification extends Google_Model
   protected $productAvailabilityChangeEventDataType = '';
   public $timestampMillis;
 
+  /**
+   * @param Google_Service_AndroidEnterprise_AppRestrictionsSchemaChangeEvent
+   */
   public function setAppRestrictionsSchemaChangeEvent(Google_Service_AndroidEnterprise_AppRestrictionsSchemaChangeEvent $appRestrictionsSchemaChangeEvent)
   {
     $this->appRestrictionsSchemaChangeEvent = $appRestrictionsSchemaChangeEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_AppRestrictionsSchemaChangeEvent
+   */
   public function getAppRestrictionsSchemaChangeEvent()
   {
     return $this->appRestrictionsSchemaChangeEvent;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_AppUpdateEvent
+   */
   public function setAppUpdateEvent(Google_Service_AndroidEnterprise_AppUpdateEvent $appUpdateEvent)
   {
     $this->appUpdateEvent = $appUpdateEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_AppUpdateEvent
+   */
   public function getAppUpdateEvent()
   {
     return $this->appUpdateEvent;
@@ -59,26 +71,44 @@ class Google_Service_AndroidEnterprise_Notification extends Google_Model
   {
     return $this->enterpriseId;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_InstallFailureEvent
+   */
   public function setInstallFailureEvent(Google_Service_AndroidEnterprise_InstallFailureEvent $installFailureEvent)
   {
     $this->installFailureEvent = $installFailureEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_InstallFailureEvent
+   */
   public function getInstallFailureEvent()
   {
     return $this->installFailureEvent;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_NewDeviceEvent
+   */
   public function setNewDeviceEvent(Google_Service_AndroidEnterprise_NewDeviceEvent $newDeviceEvent)
   {
     $this->newDeviceEvent = $newDeviceEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_NewDeviceEvent
+   */
   public function getNewDeviceEvent()
   {
     return $this->newDeviceEvent;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_NewPermissionsEvent
+   */
   public function setNewPermissionsEvent(Google_Service_AndroidEnterprise_NewPermissionsEvent $newPermissionsEvent)
   {
     $this->newPermissionsEvent = $newPermissionsEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_NewPermissionsEvent
+   */
   public function getNewPermissionsEvent()
   {
     return $this->newPermissionsEvent;
@@ -91,18 +121,30 @@ class Google_Service_AndroidEnterprise_Notification extends Google_Model
   {
     return $this->notificationType;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_ProductApprovalEvent
+   */
   public function setProductApprovalEvent(Google_Service_AndroidEnterprise_ProductApprovalEvent $productApprovalEvent)
   {
     $this->productApprovalEvent = $productApprovalEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_ProductApprovalEvent
+   */
   public function getProductApprovalEvent()
   {
     return $this->productApprovalEvent;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_ProductAvailabilityChangeEvent
+   */
   public function setProductAvailabilityChangeEvent(Google_Service_AndroidEnterprise_ProductAvailabilityChangeEvent $productAvailabilityChangeEvent)
   {
     $this->productAvailabilityChangeEvent = $productAvailabilityChangeEvent;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_ProductAvailabilityChangeEvent
+   */
   public function getProductAvailabilityChangeEvent()
   {
     return $this->productAvailabilityChangeEvent;

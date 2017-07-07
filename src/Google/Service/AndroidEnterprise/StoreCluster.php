@@ -41,10 +41,16 @@ class Google_Service_AndroidEnterprise_StoreCluster extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_LocalizedText
+   */
   public function setName($name)
   {
     $this->name = $name;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_LocalizedText
+   */
   public function getName()
   {
     return $this->name;

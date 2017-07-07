@@ -30,10 +30,16 @@ class Google_Service_AndroidEnterprise_GroupLicenseUsersListResponse extends Goo
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_User
+   */
   public function setUser($user)
   {
     $this->user = $user;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_User
+   */
   public function getUser()
   {
     return $this->user;

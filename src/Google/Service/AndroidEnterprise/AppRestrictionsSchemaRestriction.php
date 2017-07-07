@@ -29,10 +29,16 @@ class Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction extends 
   public $restrictionType;
   public $title;
 
+  /**
+   * @param Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestrictionRestrictionValue
+   */
   public function setDefaultValue(Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestrictionRestrictionValue $defaultValue)
   {
     $this->defaultValue = $defaultValue;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestrictionRestrictionValue
+   */
   public function getDefaultValue()
   {
     return $this->defaultValue;
@@ -69,10 +75,16 @@ class Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction extends 
   {
     return $this->key;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction
+   */
   public function setNestedRestriction($nestedRestriction)
   {
     $this->nestedRestriction = $nestedRestriction;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_AppRestrictionsSchemaRestriction
+   */
   public function getNestedRestriction()
   {
     return $this->nestedRestriction;

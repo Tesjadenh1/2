@@ -22,10 +22,16 @@ class Google_Service_AndroidEnterprise_EnterprisesListResponse extends Google_Co
   protected $enterpriseDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AndroidEnterprise_Enterprise
+   */
   public function setEnterprise($enterprise)
   {
     $this->enterprise = $enterprise;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_Enterprise
+   */
   public function getEnterprise()
   {
     return $this->enterprise;

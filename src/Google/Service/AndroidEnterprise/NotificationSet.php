@@ -31,10 +31,16 @@ class Google_Service_AndroidEnterprise_NotificationSet extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_Notification
+   */
   public function setNotification($notification)
   {
     $this->notification = $notification;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_Notification
+   */
   public function getNotification()
   {
     return $this->notification;

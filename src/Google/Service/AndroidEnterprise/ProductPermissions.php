@@ -31,10 +31,16 @@ class Google_Service_AndroidEnterprise_ProductPermissions extends Google_Collect
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidEnterprise_ProductPermission
+   */
   public function setPermission($permission)
   {
     $this->permission = $permission;
   }
+  /**
+   * @return Google_Service_AndroidEnterprise_ProductPermission
+   */
   public function getPermission()
   {
     return $this->permission;
