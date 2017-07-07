@@ -39,10 +39,16 @@ class Google_Service_FirebaseDynamicLinks_CreateShortDynamicLinkResponse extends
   {
     return $this->shortLink;
   }
+  /**
+   * @param Google_Service_FirebaseDynamicLinks_DynamicLinkWarning
+   */
   public function setWarning($warning)
   {
     $this->warning = $warning;
   }
+  /**
+   * @return Google_Service_FirebaseDynamicLinks_DynamicLinkWarning
+   */
   public function getWarning()
   {
     return $this->warning;
