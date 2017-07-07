@@ -22,10 +22,16 @@ class Google_Service_Reseller_SubscriptionPlan extends Google_Model
   public $isCommitmentPlan;
   public $planName;
 
+  /**
+   * @param Google_Service_Reseller_SubscriptionPlanCommitmentInterval
+   */
   public function setCommitmentInterval(Google_Service_Reseller_SubscriptionPlanCommitmentInterval $commitmentInterval)
   {
     $this->commitmentInterval = $commitmentInterval;
   }
+  /**
+   * @return Google_Service_Reseller_SubscriptionPlanCommitmentInterval
+   */
   public function getCommitmentInterval()
   {
     return $this->commitmentInterval;
