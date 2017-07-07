@@ -39,10 +39,16 @@ class Google_Service_Storagetransfer_ErrorSummary extends Google_Collection
   {
     return $this->errorCount;
   }
+  /**
+   * @param Google_Service_Storagetransfer_ErrorLogEntry
+   */
   public function setErrorLogEntries($errorLogEntries)
   {
     $this->errorLogEntries = $errorLogEntries;
   }
+  /**
+   * @return Google_Service_Storagetransfer_ErrorLogEntry
+   */
   public function getErrorLogEntries()
   {
     return $this->errorLogEntries;

@@ -77,10 +77,16 @@ class Google_Service_Storagetransfer_TransferJob extends Google_Model
   {
     return $this->projectId;
   }
+  /**
+   * @param Google_Service_Storagetransfer_Schedule
+   */
   public function setSchedule(Google_Service_Storagetransfer_Schedule $schedule)
   {
     $this->schedule = $schedule;
   }
+  /**
+   * @return Google_Service_Storagetransfer_Schedule
+   */
   public function getSchedule()
   {
     return $this->schedule;
@@ -93,10 +99,16 @@ class Google_Service_Storagetransfer_TransferJob extends Google_Model
   {
     return $this->status;
   }
+  /**
+   * @param Google_Service_Storagetransfer_TransferSpec
+   */
   public function setTransferSpec(Google_Service_Storagetransfer_TransferSpec $transferSpec)
   {
     $this->transferSpec = $transferSpec;
   }
+  /**
+   * @return Google_Service_Storagetransfer_TransferSpec
+   */
   public function getTransferSpec()
   {
     return $this->transferSpec;

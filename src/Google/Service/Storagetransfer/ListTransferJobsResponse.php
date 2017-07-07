@@ -30,10 +30,16 @@ class Google_Service_Storagetransfer_ListTransferJobsResponse extends Google_Col
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Storagetransfer_TransferJob
+   */
   public function setTransferJobs($transferJobs)
   {
     $this->transferJobs = $transferJobs;
   }
+  /**
+   * @return Google_Service_Storagetransfer_TransferJob
+   */
   public function getTransferJobs()
   {
     return $this->transferJobs;
