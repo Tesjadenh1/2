@@ -23,10 +23,16 @@ class Google_Service_GamesManagement_HiddenPlayerList extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_GamesManagement_HiddenPlayer
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_GamesManagement_HiddenPlayer
+   */
   public function getItems()
   {
     return $this->items;
