@@ -21,10 +21,16 @@ class Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequest
   protected $siteDataType = '';
   public $verificationMethod;
 
+  /**
+   * @param Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequestSite
+   */
   public function setSite(Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequestSite $site)
   {
     $this->site = $site;
   }
+  /**
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceGettokenRequestSite
+   */
   public function getSite()
   {
     return $this->site;

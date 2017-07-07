@@ -39,10 +39,16 @@ class Google_Service_SiteVerification_SiteVerificationWebResourceResource extend
   {
     return $this->owners;
   }
+  /**
+   * @param Google_Service_SiteVerification_SiteVerificationWebResourceResourceSite
+   */
   public function setSite(Google_Service_SiteVerification_SiteVerificationWebResourceResourceSite $site)
   {
     $this->site = $site;
   }
+  /**
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceResourceSite
+   */
   public function getSite()
   {
     return $this->site;

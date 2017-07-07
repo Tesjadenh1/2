@@ -21,10 +21,16 @@ class Google_Service_SiteVerification_SiteVerificationWebResourceListResponse ex
   protected $itemsType = 'Google_Service_SiteVerification_SiteVerificationWebResourceResource';
   protected $itemsDataType = 'array';
 
+  /**
+   * @param Google_Service_SiteVerification_SiteVerificationWebResourceResource
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_SiteVerification_SiteVerificationWebResourceResource
+   */
   public function getItems()
   {
     return $this->items;
