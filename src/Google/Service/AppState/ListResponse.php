@@ -23,10 +23,16 @@ class Google_Service_AppState_ListResponse extends Google_Collection
   public $kind;
   public $maximumKeyCount;
 
+  /**
+   * @param Google_Service_AppState_GetResponse
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_AppState_GetResponse
+   */
   public function getItems()
   {
     return $this->items;
