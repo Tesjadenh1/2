@@ -22,10 +22,16 @@ class Google_Service_Calendar_DeepLinkData extends Google_Collection
   protected $linksDataType = 'array';
   public $url;
 
+  /**
+   * @param Google_Service_Calendar_Link
+   */
   public function setLinks($links)
   {
     $this->links = $links;
   }
+  /**
+   * @return Google_Service_Calendar_Link
+   */
   public function getLinks()
   {
     return $this->links;

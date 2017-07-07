@@ -30,10 +30,16 @@ class Google_Service_Calendar_FreeBusyGroup extends Google_Collection
   {
     return $this->calendars;
   }
+  /**
+   * @param Google_Service_Calendar_Error
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_Calendar_Error
+   */
   public function getErrors()
   {
     return $this->errors;

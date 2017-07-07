@@ -21,10 +21,16 @@ class Google_Service_Calendar_EventHabitInstance extends Google_Model
   protected $dataDataType = '';
   public $parentId;
 
+  /**
+   * @param Google_Service_Calendar_HabitInstanceData
+   */
   public function setData(Google_Service_Calendar_HabitInstanceData $data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Calendar_HabitInstanceData
+   */
   public function getData()
   {
     return $this->data;

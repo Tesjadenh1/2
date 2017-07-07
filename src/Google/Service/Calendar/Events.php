@@ -40,10 +40,16 @@ class Google_Service_Calendar_Events extends Google_Collection
   {
     return $this->accessRole;
   }
+  /**
+   * @param Google_Service_Calendar_EventReminder
+   */
   public function setDefaultReminders($defaultReminders)
   {
     $this->defaultReminders = $defaultReminders;
   }
+  /**
+   * @return Google_Service_Calendar_EventReminder
+   */
   public function getDefaultReminders()
   {
     return $this->defaultReminders;
@@ -64,10 +70,16 @@ class Google_Service_Calendar_Events extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Calendar_Event
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Calendar_Event
+   */
   public function getItems()
   {
     return $this->items;

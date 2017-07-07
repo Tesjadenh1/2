@@ -63,10 +63,16 @@ class Google_Service_Calendar_CalendarListEntry extends Google_Collection
   {
     return $this->colorId;
   }
+  /**
+   * @param Google_Service_Calendar_EventReminder
+   */
   public function setDefaultReminders($defaultReminders)
   {
     $this->defaultReminders = $defaultReminders;
   }
+  /**
+   * @return Google_Service_Calendar_EventReminder
+   */
   public function getDefaultReminders()
   {
     return $this->defaultReminders;
@@ -135,10 +141,16 @@ class Google_Service_Calendar_CalendarListEntry extends Google_Collection
   {
     return $this->location;
   }
+  /**
+   * @param Google_Service_Calendar_CalendarListEntryNotificationSettings
+   */
   public function setNotificationSettings(Google_Service_Calendar_CalendarListEntryNotificationSettings $notificationSettings)
   {
     $this->notificationSettings = $notificationSettings;
   }
+  /**
+   * @return Google_Service_Calendar_CalendarListEntryNotificationSettings
+   */
   public function getNotificationSettings()
   {
     return $this->notificationSettings;

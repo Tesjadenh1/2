@@ -33,18 +33,30 @@ class Google_Service_Calendar_Link extends Google_Model
   {
     return $this->applinkingSource;
   }
+  /**
+   * @param Google_Service_Calendar_DisplayInfo
+   */
   public function setDisplayInfo(Google_Service_Calendar_DisplayInfo $displayInfo)
   {
     $this->displayInfo = $displayInfo;
   }
+  /**
+   * @return Google_Service_Calendar_DisplayInfo
+   */
   public function getDisplayInfo()
   {
     return $this->displayInfo;
   }
+  /**
+   * @param Google_Service_Calendar_LaunchInfo
+   */
   public function setLaunchInfo(Google_Service_Calendar_LaunchInfo $launchInfo)
   {
     $this->launchInfo = $launchInfo;
   }
+  /**
+   * @return Google_Service_Calendar_LaunchInfo
+   */
   public function getLaunchInfo()
   {
     return $this->launchInfo;

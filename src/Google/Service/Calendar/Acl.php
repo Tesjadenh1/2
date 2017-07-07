@@ -33,10 +33,16 @@ class Google_Service_Calendar_Acl extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Calendar_AclRule
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Calendar_AclRule
+   */
   public function getItems()
   {
     return $this->items;

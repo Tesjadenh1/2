@@ -24,18 +24,30 @@ class Google_Service_Calendar_Colors extends Google_Model
   public $kind;
   public $updated;
 
+  /**
+   * @param Google_Service_Calendar_ColorDefinition
+   */
   public function setCalendar($calendar)
   {
     $this->calendar = $calendar;
   }
+  /**
+   * @return Google_Service_Calendar_ColorDefinition
+   */
   public function getCalendar()
   {
     return $this->calendar;
   }
+  /**
+   * @param Google_Service_Calendar_ColorDefinition
+   */
   public function setEvent($event)
   {
     $this->event = $event;
   }
+  /**
+   * @return Google_Service_Calendar_ColorDefinition
+   */
   public function getEvent()
   {
     return $this->event;
