@@ -26,31 +26,31 @@
 class Google_Service_DLP_Resource_Content extends Google_Service_Resource
 {
   /**
-   * Find potentially sensitive info in a list of strings. This method has limits
+   * Finds potentially sensitive info in a list of strings. This method has limits
    * on input size, processing time, and output size. (content.inspect)
    *
-   * @param Google_Service_DLP_InspectContentRequest $postBody
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1InspectContentRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DLP_InspectContentResponse
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1InspectContentResponse
    */
-  public function inspect(Google_Service_DLP_InspectContentRequest $postBody, $optParams = array())
+  public function inspect(Google_Service_DLP_GooglePrivacyDlpV2beta1InspectContentRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('inspect', array($params), "Google_Service_DLP_InspectContentResponse");
+    return $this->call('inspect', array($params), "Google_Service_DLP_GooglePrivacyDlpV2beta1InspectContentResponse");
   }
   /**
-   * Redact potentially sensitive info from a list of strings. This method has
+   * Redacts potentially sensitive info from a list of strings. This method has
    * limits on input size, processing time, and output size. (content.redact)
    *
-   * @param Google_Service_DLP_RedactContentRequest $postBody
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1RedactContentRequest $postBody
    * @param array $optParams Optional parameters.
-   * @return Google_Service_DLP_RedactContentResponse
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1RedactContentResponse
    */
-  public function redact(Google_Service_DLP_RedactContentRequest $postBody, $optParams = array())
+  public function redact(Google_Service_DLP_GooglePrivacyDlpV2beta1RedactContentRequest $postBody, $optParams = array())
   {
     $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('redact', array($params), "Google_Service_DLP_RedactContentResponse");
+    return $this->call('redact', array($params), "Google_Service_DLP_GooglePrivacyDlpV2beta1RedactContentResponse");
   }
 }

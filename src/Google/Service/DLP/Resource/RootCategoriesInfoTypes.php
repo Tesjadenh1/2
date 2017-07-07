@@ -35,12 +35,12 @@ class Google_Service_DLP_Resource_RootCategoriesInfoTypes extends Google_Service
    * @opt_param string languageCode Optional BCP-47 language code for localized
    * info type friendly names. If omitted, or if localized strings are not
    * available, en-US strings will be returned.
-   * @return Google_Service_DLP_ListInfoTypesResponse
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1ListInfoTypesResponse
    */
   public function listRootCategoriesInfoTypes($category, $optParams = array())
   {
     $params = array('category' => $category);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_DLP_ListInfoTypesResponse");
+    return $this->call('list', array($params), "Google_Service_DLP_GooglePrivacyDlpV2beta1ListInfoTypesResponse");
   }
 }

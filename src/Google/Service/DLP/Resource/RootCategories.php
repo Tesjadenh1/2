@@ -34,12 +34,12 @@ class Google_Service_DLP_Resource_RootCategories extends Google_Service_Resource
    * @opt_param string languageCode Optional language code for localized friendly
    * category names. If omitted or if localized strings are not available, en-US
    * strings will be returned.
-   * @return Google_Service_DLP_ListRootCategoriesResponse
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1ListRootCategoriesResponse
    */
   public function listRootCategories($optParams = array())
   {
     $params = array();
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_DLP_ListRootCategoriesResponse");
+    return $this->call('list', array($params), "Google_Service_DLP_GooglePrivacyDlpV2beta1ListRootCategoriesResponse");
   }
 }
