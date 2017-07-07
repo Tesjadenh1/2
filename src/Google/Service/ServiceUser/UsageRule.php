@@ -19,6 +19,7 @@ class Google_Service_ServiceUser_UsageRule extends Google_Model
 {
   public $allowUnregisteredCalls;
   public $selector;
+  public $skipServiceControl;
 
   public function setAllowUnregisteredCalls($allowUnregisteredCalls)
   {
@@ -35,5 +36,13 @@ class Google_Service_ServiceUser_UsageRule extends Google_Model
   public function getSelector()
   {
     return $this->selector;
+  }
+  public function setSkipServiceControl($skipServiceControl)
+  {
+    $this->skipServiceControl = $skipServiceControl;
+  }
+  public function getSkipServiceControl()
+  {
+    return $this->skipServiceControl;
   }
 }

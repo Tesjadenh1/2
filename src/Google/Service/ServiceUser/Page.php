@@ -39,10 +39,16 @@ class Google_Service_ServiceUser_Page extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_ServiceUser_Page
+   */
   public function setSubpages($subpages)
   {
     $this->subpages = $subpages;
   }
+  /**
+   * @return Google_Service_ServiceUser_Page
+   */
   public function getSubpages()
   {
     return $this->subpages;

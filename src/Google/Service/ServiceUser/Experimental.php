@@ -20,10 +20,16 @@ class Google_Service_ServiceUser_Experimental extends Google_Model
   protected $authorizationType = 'Google_Service_ServiceUser_AuthorizationConfig';
   protected $authorizationDataType = '';
 
+  /**
+   * @param Google_Service_ServiceUser_AuthorizationConfig
+   */
   public function setAuthorization(Google_Service_ServiceUser_AuthorizationConfig $authorization)
   {
     $this->authorization = $authorization;
   }
+  /**
+   * @return Google_Service_ServiceUser_AuthorizationConfig
+   */
   public function getAuthorization()
   {
     return $this->authorization;

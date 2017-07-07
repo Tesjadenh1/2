@@ -23,18 +23,30 @@ class Google_Service_ServiceUser_Quota extends Google_Collection
   protected $metricRulesType = 'Google_Service_ServiceUser_MetricRule';
   protected $metricRulesDataType = 'array';
 
+  /**
+   * @param Google_Service_ServiceUser_QuotaLimit
+   */
   public function setLimits($limits)
   {
     $this->limits = $limits;
   }
+  /**
+   * @return Google_Service_ServiceUser_QuotaLimit
+   */
   public function getLimits()
   {
     return $this->limits;
   }
+  /**
+   * @param Google_Service_ServiceUser_MetricRule
+   */
   public function setMetricRules($metricRules)
   {
     $this->metricRules = $metricRules;
   }
+  /**
+   * @return Google_Service_ServiceUser_MetricRule
+   */
   public function getMetricRules()
   {
     return $this->metricRules;

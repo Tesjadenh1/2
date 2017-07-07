@@ -40,10 +40,16 @@ class Google_Service_ServiceUser_LogDescriptor extends Google_Collection
   {
     return $this->displayName;
   }
+  /**
+   * @param Google_Service_ServiceUser_LabelDescriptor
+   */
   public function setLabels($labels)
   {
     $this->labels = $labels;
   }
+  /**
+   * @return Google_Service_ServiceUser_LabelDescriptor
+   */
   public function getLabels()
   {
     return $this->labels;

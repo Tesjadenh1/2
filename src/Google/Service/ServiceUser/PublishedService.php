@@ -29,10 +29,16 @@ class Google_Service_ServiceUser_PublishedService extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_ServiceUser_Service
+   */
   public function setService(Google_Service_ServiceUser_Service $service)
   {
     $this->service = $service;
   }
+  /**
+   * @return Google_Service_ServiceUser_Service
+   */
   public function getService()
   {
     return $this->service;

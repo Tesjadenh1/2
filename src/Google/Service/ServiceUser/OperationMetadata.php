@@ -48,10 +48,16 @@ class Google_Service_ServiceUser_OperationMetadata extends Google_Collection
   {
     return $this->startTime;
   }
+  /**
+   * @param Google_Service_ServiceUser_Step
+   */
   public function setSteps($steps)
   {
     $this->steps = $steps;
   }
+  /**
+   * @return Google_Service_ServiceUser_Step
+   */
   public function getSteps()
   {
     return $this->steps;

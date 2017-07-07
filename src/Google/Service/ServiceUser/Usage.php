@@ -39,10 +39,16 @@ class Google_Service_ServiceUser_Usage extends Google_Collection
   {
     return $this->requirements;
   }
+  /**
+   * @param Google_Service_ServiceUser_UsageRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceUser_UsageRule
+   */
   public function getRules()
   {
     return $this->rules;

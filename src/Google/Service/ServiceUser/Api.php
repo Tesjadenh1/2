@@ -30,18 +30,30 @@ class Google_Service_ServiceUser_Api extends Google_Collection
   public $syntax;
   public $version;
 
+  /**
+   * @param Google_Service_ServiceUser_Method
+   */
   public function setMethods($methods)
   {
     $this->methods = $methods;
   }
+  /**
+   * @return Google_Service_ServiceUser_Method
+   */
   public function getMethods()
   {
     return $this->methods;
   }
+  /**
+   * @param Google_Service_ServiceUser_Mixin
+   */
   public function setMixins($mixins)
   {
     $this->mixins = $mixins;
   }
+  /**
+   * @return Google_Service_ServiceUser_Mixin
+   */
   public function getMixins()
   {
     return $this->mixins;
@@ -54,18 +66,30 @@ class Google_Service_ServiceUser_Api extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_ServiceUser_Option
+   */
   public function setOptions($options)
   {
     $this->options = $options;
   }
+  /**
+   * @return Google_Service_ServiceUser_Option
+   */
   public function getOptions()
   {
     return $this->options;
   }
+  /**
+   * @param Google_Service_ServiceUser_SourceContext
+   */
   public function setSourceContext(Google_Service_ServiceUser_SourceContext $sourceContext)
   {
     $this->sourceContext = $sourceContext;
   }
+  /**
+   * @return Google_Service_ServiceUser_SourceContext
+   */
   public function getSourceContext()
   {
     return $this->sourceContext;

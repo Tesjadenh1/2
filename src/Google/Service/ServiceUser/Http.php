@@ -30,10 +30,16 @@ class Google_Service_ServiceUser_Http extends Google_Collection
   {
     return $this->fullyDecodeReservedExpansion;
   }
+  /**
+   * @param Google_Service_ServiceUser_HttpRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceUser_HttpRule
+   */
   public function getRules()
   {
     return $this->rules;

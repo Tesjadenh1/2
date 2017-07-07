@@ -21,10 +21,16 @@ class Google_Service_ServiceUser_Backend extends Google_Collection
   protected $rulesType = 'Google_Service_ServiceUser_BackendRule';
   protected $rulesDataType = 'array';
 
+  /**
+   * @param Google_Service_ServiceUser_BackendRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceUser_BackendRule
+   */
   public function getRules()
   {
     return $this->rules;

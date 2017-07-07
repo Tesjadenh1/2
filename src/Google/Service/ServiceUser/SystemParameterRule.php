@@ -22,10 +22,16 @@ class Google_Service_ServiceUser_SystemParameterRule extends Google_Collection
   protected $parametersDataType = 'array';
   public $selector;
 
+  /**
+   * @param Google_Service_ServiceUser_SystemParameter
+   */
   public function setParameters($parameters)
   {
     $this->parameters = $parameters;
   }
+  /**
+   * @return Google_Service_ServiceUser_SystemParameter
+   */
   public function getParameters()
   {
     return $this->parameters;

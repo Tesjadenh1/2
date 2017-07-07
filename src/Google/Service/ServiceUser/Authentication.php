@@ -23,18 +23,30 @@ class Google_Service_ServiceUser_Authentication extends Google_Collection
   protected $rulesType = 'Google_Service_ServiceUser_AuthenticationRule';
   protected $rulesDataType = 'array';
 
+  /**
+   * @param Google_Service_ServiceUser_AuthProvider
+   */
   public function setProviders($providers)
   {
     $this->providers = $providers;
   }
+  /**
+   * @return Google_Service_ServiceUser_AuthProvider
+   */
   public function getProviders()
   {
     return $this->providers;
   }
+  /**
+   * @param Google_Service_ServiceUser_AuthenticationRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ServiceUser_AuthenticationRule
+   */
   public function getRules()
   {
     return $this->rules;

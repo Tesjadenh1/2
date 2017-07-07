@@ -27,10 +27,16 @@ class Google_Service_ServiceUser_Enum extends Google_Collection
   protected $sourceContextDataType = '';
   public $syntax;
 
+  /**
+   * @param Google_Service_ServiceUser_EnumValue
+   */
   public function setEnumvalue($enumvalue)
   {
     $this->enumvalue = $enumvalue;
   }
+  /**
+   * @return Google_Service_ServiceUser_EnumValue
+   */
   public function getEnumvalue()
   {
     return $this->enumvalue;
@@ -43,18 +49,30 @@ class Google_Service_ServiceUser_Enum extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_ServiceUser_Option
+   */
   public function setOptions($options)
   {
     $this->options = $options;
   }
+  /**
+   * @return Google_Service_ServiceUser_Option
+   */
   public function getOptions()
   {
     return $this->options;
   }
+  /**
+   * @param Google_Service_ServiceUser_SourceContext
+   */
   public function setSourceContext(Google_Service_ServiceUser_SourceContext $sourceContext)
   {
     $this->sourceContext = $sourceContext;
   }
+  /**
+   * @return Google_Service_ServiceUser_SourceContext
+   */
   public function getSourceContext()
   {
     return $this->sourceContext;

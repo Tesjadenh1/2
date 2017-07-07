@@ -30,10 +30,16 @@ class Google_Service_ServiceUser_SearchServicesResponse extends Google_Collectio
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_ServiceUser_PublishedService
+   */
   public function setServices($services)
   {
     $this->services = $services;
   }
+  /**
+   * @return Google_Service_ServiceUser_PublishedService
+   */
   public function getServices()
   {
     return $this->services;
