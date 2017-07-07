@@ -20,10 +20,16 @@ class Google_Service_AndroidPublisher_DeobfuscationFilesUploadResponse extends G
   protected $deobfuscationFileType = 'Google_Service_AndroidPublisher_DeobfuscationFile';
   protected $deobfuscationFileDataType = '';
 
+  /**
+   * @param Google_Service_AndroidPublisher_DeobfuscationFile
+   */
   public function setDeobfuscationFile(Google_Service_AndroidPublisher_DeobfuscationFile $deobfuscationFile)
   {
     $this->deobfuscationFile = $deobfuscationFile;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_DeobfuscationFile
+   */
   public function getDeobfuscationFile()
   {
     return $this->deobfuscationFile;

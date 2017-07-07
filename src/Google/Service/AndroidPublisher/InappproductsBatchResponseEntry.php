@@ -31,18 +31,30 @@ class Google_Service_AndroidPublisher_InappproductsBatchResponseEntry extends Go
   {
     return $this->batchId;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_InappproductsInsertResponse
+   */
   public function setInappproductsinsertresponse(Google_Service_AndroidPublisher_InappproductsInsertResponse $inappproductsinsertresponse)
   {
     $this->inappproductsinsertresponse = $inappproductsinsertresponse;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InappproductsInsertResponse
+   */
   public function getInappproductsinsertresponse()
   {
     return $this->inappproductsinsertresponse;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_InappproductsUpdateResponse
+   */
   public function setInappproductsupdateresponse(Google_Service_AndroidPublisher_InappproductsUpdateResponse $inappproductsupdateresponse)
   {
     $this->inappproductsupdateresponse = $inappproductsupdateresponse;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InappproductsUpdateResponse
+   */
   public function getInappproductsupdateresponse()
   {
     return $this->inappproductsupdateresponse;

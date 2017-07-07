@@ -32,18 +32,30 @@ class Google_Service_AndroidPublisher_InappproductsBatchRequestEntry extends Goo
   {
     return $this->batchId;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_InappproductsInsertRequest
+   */
   public function setInappproductsinsertrequest(Google_Service_AndroidPublisher_InappproductsInsertRequest $inappproductsinsertrequest)
   {
     $this->inappproductsinsertrequest = $inappproductsinsertrequest;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InappproductsInsertRequest
+   */
   public function getInappproductsinsertrequest()
   {
     return $this->inappproductsinsertrequest;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_InappproductsUpdateRequest
+   */
   public function setInappproductsupdaterequest(Google_Service_AndroidPublisher_InappproductsUpdateRequest $inappproductsupdaterequest)
   {
     $this->inappproductsupdaterequest = $inappproductsupdaterequest;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InappproductsUpdateRequest
+   */
   public function getInappproductsupdaterequest()
   {
     return $this->inappproductsupdaterequest;

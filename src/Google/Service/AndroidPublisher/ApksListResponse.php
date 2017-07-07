@@ -22,10 +22,16 @@ class Google_Service_AndroidPublisher_ApksListResponse extends Google_Collection
   protected $apksDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AndroidPublisher_Apk
+   */
   public function setApks($apks)
   {
     $this->apks = $apks;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Apk
+   */
   public function getApks()
   {
     return $this->apks;

@@ -20,10 +20,16 @@ class Google_Service_AndroidPublisher_InappproductsInsertResponse extends Google
   protected $inappproductType = 'Google_Service_AndroidPublisher_InAppProduct';
   protected $inappproductDataType = '';
 
+  /**
+   * @param Google_Service_AndroidPublisher_InAppProduct
+   */
   public function setInappproduct(Google_Service_AndroidPublisher_InAppProduct $inappproduct)
   {
     $this->inappproduct = $inappproduct;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InAppProduct
+   */
   public function getInappproduct()
   {
     return $this->inappproduct;

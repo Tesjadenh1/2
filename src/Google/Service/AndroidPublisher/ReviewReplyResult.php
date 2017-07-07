@@ -21,10 +21,16 @@ class Google_Service_AndroidPublisher_ReviewReplyResult extends Google_Model
   protected $lastEditedDataType = '';
   public $replyText;
 
+  /**
+   * @param Google_Service_AndroidPublisher_Timestamp
+   */
   public function setLastEdited(Google_Service_AndroidPublisher_Timestamp $lastEdited)
   {
     $this->lastEdited = $lastEdited;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Timestamp
+   */
   public function getLastEdited()
   {
     return $this->lastEdited;

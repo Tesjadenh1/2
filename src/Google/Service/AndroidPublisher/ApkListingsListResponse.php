@@ -30,10 +30,16 @@ class Google_Service_AndroidPublisher_ApkListingsListResponse extends Google_Col
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_ApkListing
+   */
   public function setListings($listings)
   {
     $this->listings = $listings;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_ApkListing
+   */
   public function getListings()
   {
     return $this->listings;

@@ -21,10 +21,16 @@ class Google_Service_AndroidPublisher_InappproductsBatchRequest extends Google_C
   protected $entrysType = 'Google_Service_AndroidPublisher_InappproductsBatchRequestEntry';
   protected $entrysDataType = 'array';
 
+  /**
+   * @param Google_Service_AndroidPublisher_InappproductsBatchRequestEntry
+   */
   public function setEntrys($entrys)
   {
     $this->entrys = $entrys;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InappproductsBatchRequestEntry
+   */
   public function getEntrys()
   {
     return $this->entrys;

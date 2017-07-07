@@ -25,26 +25,44 @@ class Google_Service_AndroidPublisher_ReviewsListResponse extends Google_Collect
   protected $tokenPaginationType = 'Google_Service_AndroidPublisher_TokenPagination';
   protected $tokenPaginationDataType = '';
 
+  /**
+   * @param Google_Service_AndroidPublisher_PageInfo
+   */
   public function setPageInfo(Google_Service_AndroidPublisher_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_PageInfo
+   */
   public function getPageInfo()
   {
     return $this->pageInfo;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_Review
+   */
   public function setReviews($reviews)
   {
     $this->reviews = $reviews;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Review
+   */
   public function getReviews()
   {
     return $this->reviews;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_TokenPagination
+   */
   public function setTokenPagination(Google_Service_AndroidPublisher_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_TokenPagination
+   */
   public function getTokenPagination()
   {
     return $this->tokenPagination;

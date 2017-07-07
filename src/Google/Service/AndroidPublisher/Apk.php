@@ -21,10 +21,16 @@ class Google_Service_AndroidPublisher_Apk extends Google_Model
   protected $binaryDataType = '';
   public $versionCode;
 
+  /**
+   * @param Google_Service_AndroidPublisher_ApkBinary
+   */
   public function setBinary(Google_Service_AndroidPublisher_ApkBinary $binary)
   {
     $this->binary = $binary;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_ApkBinary
+   */
   public function getBinary()
   {
     return $this->binary;

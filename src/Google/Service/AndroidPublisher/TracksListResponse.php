@@ -30,10 +30,16 @@ class Google_Service_AndroidPublisher_TracksListResponse extends Google_Collecti
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_Track
+   */
   public function setTracks($tracks)
   {
     $this->tracks = $tracks;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Track
+   */
   public function getTracks()
   {
     return $this->tracks;

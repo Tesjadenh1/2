@@ -22,18 +22,30 @@ class Google_Service_AndroidPublisher_Prorate extends Google_Model
   protected $startType = 'Google_Service_AndroidPublisher_MonthDay';
   protected $startDataType = '';
 
+  /**
+   * @param Google_Service_AndroidPublisher_Price
+   */
   public function setDefaultPrice(Google_Service_AndroidPublisher_Price $defaultPrice)
   {
     $this->defaultPrice = $defaultPrice;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Price
+   */
   public function getDefaultPrice()
   {
     return $this->defaultPrice;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_MonthDay
+   */
   public function setStart(Google_Service_AndroidPublisher_MonthDay $start)
   {
     $this->start = $start;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_MonthDay
+   */
   public function getStart()
   {
     return $this->start;

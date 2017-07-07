@@ -21,10 +21,16 @@ class Google_Service_AndroidPublisher_ImagesDeleteAllResponse extends Google_Col
   protected $deletedType = 'Google_Service_AndroidPublisher_Image';
   protected $deletedDataType = 'array';
 
+  /**
+   * @param Google_Service_AndroidPublisher_Image
+   */
   public function setDeleted($deleted)
   {
     $this->deleted = $deleted;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Image
+   */
   public function getDeleted()
   {
     return $this->deleted;

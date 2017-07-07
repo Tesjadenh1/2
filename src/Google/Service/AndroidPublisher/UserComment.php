@@ -64,18 +64,30 @@ class Google_Service_AndroidPublisher_UserComment extends Google_Model
   {
     return $this->device;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_DeviceMetadata
+   */
   public function setDeviceMetadata(Google_Service_AndroidPublisher_DeviceMetadata $deviceMetadata)
   {
     $this->deviceMetadata = $deviceMetadata;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_DeviceMetadata
+   */
   public function getDeviceMetadata()
   {
     return $this->deviceMetadata;
   }
+  /**
+   * @param Google_Service_AndroidPublisher_Timestamp
+   */
   public function setLastModified(Google_Service_AndroidPublisher_Timestamp $lastModified)
   {
     $this->lastModified = $lastModified;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Timestamp
+   */
   public function getLastModified()
   {
     return $this->lastModified;

@@ -21,10 +21,16 @@ class Google_Service_AndroidPublisher_DeveloperComment extends Google_Model
   protected $lastModifiedDataType = '';
   public $text;
 
+  /**
+   * @param Google_Service_AndroidPublisher_Timestamp
+   */
   public function setLastModified(Google_Service_AndroidPublisher_Timestamp $lastModified)
   {
     $this->lastModified = $lastModified;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_Timestamp
+   */
   public function getLastModified()
   {
     return $this->lastModified;

@@ -22,10 +22,16 @@ class Google_Service_AndroidPublisher_InappproductsBatchResponse extends Google_
   protected $entrysDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_AndroidPublisher_InappproductsBatchResponseEntry
+   */
   public function setEntrys($entrys)
   {
     $this->entrys = $entrys;
   }
+  /**
+   * @return Google_Service_AndroidPublisher_InappproductsBatchResponseEntry
+   */
   public function getEntrys()
   {
     return $this->entrys;
