@@ -30,10 +30,16 @@ class Google_Service_Gmail_HistoryLabelRemoved extends Google_Collection
   {
     return $this->labelIds;
   }
+  /**
+   * @param Google_Service_Gmail_Message
+   */
   public function setMessage(Google_Service_Gmail_Message $message)
   {
     $this->message = $message;
   }
+  /**
+   * @return Google_Service_Gmail_Message
+   */
   public function getMessage()
   {
     return $this->message;

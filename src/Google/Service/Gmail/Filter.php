@@ -23,18 +23,30 @@ class Google_Service_Gmail_Filter extends Google_Model
   protected $criteriaDataType = '';
   public $id;
 
+  /**
+   * @param Google_Service_Gmail_FilterAction
+   */
   public function setAction(Google_Service_Gmail_FilterAction $action)
   {
     $this->action = $action;
   }
+  /**
+   * @return Google_Service_Gmail_FilterAction
+   */
   public function getAction()
   {
     return $this->action;
   }
+  /**
+   * @param Google_Service_Gmail_FilterCriteria
+   */
   public function setCriteria(Google_Service_Gmail_FilterCriteria $criteria)
   {
     $this->criteria = $criteria;
   }
+  /**
+   * @return Google_Service_Gmail_FilterCriteria
+   */
   public function getCriteria()
   {
     return $this->criteria;

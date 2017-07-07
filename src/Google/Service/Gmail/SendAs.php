@@ -76,10 +76,16 @@ class Google_Service_Gmail_SendAs extends Google_Model
   {
     return $this->signature;
   }
+  /**
+   * @param Google_Service_Gmail_SmtpMsa
+   */
   public function setSmtpMsa(Google_Service_Gmail_SmtpMsa $smtpMsa)
   {
     $this->smtpMsa = $smtpMsa;
   }
+  /**
+   * @return Google_Service_Gmail_SmtpMsa
+   */
   public function getSmtpMsa()
   {
     return $this->smtpMsa;

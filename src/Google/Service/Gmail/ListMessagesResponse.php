@@ -23,10 +23,16 @@ class Google_Service_Gmail_ListMessagesResponse extends Google_Collection
   public $nextPageToken;
   public $resultSizeEstimate;
 
+  /**
+   * @param Google_Service_Gmail_Message
+   */
   public function setMessages($messages)
   {
     $this->messages = $messages;
   }
+  /**
+   * @return Google_Service_Gmail_Message
+   */
   public function getMessages()
   {
     return $this->messages;

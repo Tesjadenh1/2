@@ -39,10 +39,16 @@ class Google_Service_Gmail_ListThreadsResponse extends Google_Collection
   {
     return $this->resultSizeEstimate;
   }
+  /**
+   * @param Google_Service_Gmail_Thread
+   */
   public function setThreads($threads)
   {
     $this->threads = $threads;
   }
+  /**
+   * @return Google_Service_Gmail_Thread
+   */
   public function getThreads()
   {
     return $this->threads;

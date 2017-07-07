@@ -61,10 +61,16 @@ class Google_Service_Gmail_Message extends Google_Collection
   {
     return $this->labelIds;
   }
+  /**
+   * @param Google_Service_Gmail_MessagePart
+   */
   public function setPayload(Google_Service_Gmail_MessagePart $payload)
   {
     $this->payload = $payload;
   }
+  /**
+   * @return Google_Service_Gmail_MessagePart
+   */
   public function getPayload()
   {
     return $this->payload;

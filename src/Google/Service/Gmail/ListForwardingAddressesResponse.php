@@ -21,10 +21,16 @@ class Google_Service_Gmail_ListForwardingAddressesResponse extends Google_Collec
   protected $forwardingAddressesType = 'Google_Service_Gmail_ForwardingAddress';
   protected $forwardingAddressesDataType = 'array';
 
+  /**
+   * @param Google_Service_Gmail_ForwardingAddress
+   */
   public function setForwardingAddresses($forwardingAddresses)
   {
     $this->forwardingAddresses = $forwardingAddresses;
   }
+  /**
+   * @return Google_Service_Gmail_ForwardingAddress
+   */
   public function getForwardingAddresses()
   {
     return $this->forwardingAddresses;

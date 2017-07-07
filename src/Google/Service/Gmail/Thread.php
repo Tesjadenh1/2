@@ -40,10 +40,16 @@ class Google_Service_Gmail_Thread extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Gmail_Message
+   */
   public function setMessages($messages)
   {
     $this->messages = $messages;
   }
+  /**
+   * @return Google_Service_Gmail_Message
+   */
   public function getMessages()
   {
     return $this->messages;

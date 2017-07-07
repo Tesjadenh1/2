@@ -23,10 +23,16 @@ class Google_Service_Gmail_ListDraftsResponse extends Google_Collection
   public $nextPageToken;
   public $resultSizeEstimate;
 
+  /**
+   * @param Google_Service_Gmail_Draft
+   */
   public function setDrafts($drafts)
   {
     $this->drafts = $drafts;
   }
+  /**
+   * @return Google_Service_Gmail_Draft
+   */
   public function getDrafts()
   {
     return $this->drafts;

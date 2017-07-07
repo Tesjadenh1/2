@@ -29,10 +29,16 @@ class Google_Service_Gmail_Draft extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Gmail_Message
+   */
   public function setMessage(Google_Service_Gmail_Message $message)
   {
     $this->message = $message;
   }
+  /**
+   * @return Google_Service_Gmail_Message
+   */
   public function getMessage()
   {
     return $this->message;
