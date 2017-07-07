@@ -15,16 +15,35 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_CloudTrace_Status extends Google_Collection
 {
-  public $name;
+  protected $collection_key = 'details';
+  public $code;
+  public $details;
+  public $message;
 
-  public function setName($name)
+  public function setCode($code)
   {
-    $this->name = $name;
+    $this->code = $code;
   }
-  public function getName()
+  public function getCode()
   {
-    return $this->name;
+    return $this->code;
+  }
+  public function setDetails($details)
+  {
+    $this->details = $details;
+  }
+  public function getDetails()
+  {
+    return $this->details;
+  }
+  public function setMessage($message)
+  {
+    $this->message = $message;
+  }
+  public function getMessage()
+  {
+    return $this->message;
   }
 }

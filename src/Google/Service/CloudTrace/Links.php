@@ -15,33 +15,33 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_ListTracesResponse extends Google_Collection
+class Google_Service_CloudTrace_Links extends Google_Collection
 {
-  protected $collection_key = 'traces';
-  public $nextPageToken;
-  protected $tracesType = 'Google_Service_CloudTrace_Trace';
-  protected $tracesDataType = 'array';
+  protected $collection_key = 'link';
+  public $droppedLinksCount;
+  protected $linkType = 'Google_Service_CloudTrace_Link';
+  protected $linkDataType = 'array';
 
-  public function setNextPageToken($nextPageToken)
+  public function setDroppedLinksCount($droppedLinksCount)
   {
-    $this->nextPageToken = $nextPageToken;
+    $this->droppedLinksCount = $droppedLinksCount;
   }
-  public function getNextPageToken()
+  public function getDroppedLinksCount()
   {
-    return $this->nextPageToken;
-  }
-  /**
-   * @param Google_Service_CloudTrace_Trace
-   */
-  public function setTraces($traces)
-  {
-    $this->traces = $traces;
+    return $this->droppedLinksCount;
   }
   /**
-   * @return Google_Service_CloudTrace_Trace
+   * @param Google_Service_CloudTrace_Link
    */
-  public function getTraces()
+  public function setLink($link)
   {
-    return $this->traces;
+    $this->link = $link;
+  }
+  /**
+   * @return Google_Service_CloudTrace_Link
+   */
+  public function getLink()
+  {
+    return $this->link;
   }
 }

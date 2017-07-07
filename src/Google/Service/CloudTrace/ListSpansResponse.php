@@ -15,12 +15,12 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_ListTracesResponse extends Google_Collection
+class Google_Service_CloudTrace_ListSpansResponse extends Google_Collection
 {
-  protected $collection_key = 'traces';
+  protected $collection_key = 'spans';
   public $nextPageToken;
-  protected $tracesType = 'Google_Service_CloudTrace_Trace';
-  protected $tracesDataType = 'array';
+  protected $spansType = 'Google_Service_CloudTrace_Span';
+  protected $spansDataType = 'array';
 
   public function setNextPageToken($nextPageToken)
   {
@@ -31,17 +31,17 @@ class Google_Service_CloudTrace_ListTracesResponse extends Google_Collection
     return $this->nextPageToken;
   }
   /**
-   * @param Google_Service_CloudTrace_Trace
+   * @param Google_Service_CloudTrace_Span
    */
-  public function setTraces($traces)
+  public function setSpans($spans)
   {
-    $this->traces = $traces;
+    $this->spans = $spans;
   }
   /**
-   * @return Google_Service_CloudTrace_Trace
+   * @return Google_Service_CloudTrace_Span
    */
-  public function getTraces()
+  public function getSpans()
   {
-    return $this->traces;
+    return $this->spans;
   }
 }
