@@ -26,10 +26,16 @@ class Google_Service_Surveys_MobileAppPanelsListResponse extends Google_Collecti
   protected $tokenPaginationType = 'Google_Service_Surveys_TokenPagination';
   protected $tokenPaginationDataType = '';
 
+  /**
+   * @param Google_Service_Surveys_PageInfo
+   */
   public function setPageInfo(Google_Service_Surveys_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
+  /**
+   * @return Google_Service_Surveys_PageInfo
+   */
   public function getPageInfo()
   {
     return $this->pageInfo;
@@ -42,18 +48,30 @@ class Google_Service_Surveys_MobileAppPanelsListResponse extends Google_Collecti
   {
     return $this->requestId;
   }
+  /**
+   * @param Google_Service_Surveys_MobileAppPanel
+   */
   public function setResources($resources)
   {
     $this->resources = $resources;
   }
+  /**
+   * @return Google_Service_Surveys_MobileAppPanel
+   */
   public function getResources()
   {
     return $this->resources;
   }
+  /**
+   * @param Google_Service_Surveys_TokenPagination
+   */
   public function setTokenPagination(Google_Service_Surveys_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }
+  /**
+   * @return Google_Service_Surveys_TokenPagination
+   */
   public function getTokenPagination()
   {
     return $this->tokenPagination;

@@ -22,10 +22,16 @@ class Google_Service_Surveys_ResultsMask extends Google_Collection
   protected $fieldsDataType = 'array';
   public $projection;
 
+  /**
+   * @param Google_Service_Surveys_FieldMask
+   */
   public function setFields($fields)
   {
     $this->fields = $fields;
   }
+  /**
+   * @return Google_Service_Surveys_FieldMask
+   */
   public function getFields()
   {
     return $this->fields;
