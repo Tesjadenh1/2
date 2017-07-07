@@ -32,10 +32,16 @@ class Google_Service_Dfareporting_DimensionValueList extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getItems()
   {
     return $this->items;

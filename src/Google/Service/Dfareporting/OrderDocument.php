@@ -77,10 +77,16 @@ class Google_Service_Dfareporting_OrderDocument extends Google_Collection
   {
     return $this->cancelled;
   }
+  /**
+   * @param Google_Service_Dfareporting_LastModifiedInfo
+   */
   public function setCreatedInfo(Google_Service_Dfareporting_LastModifiedInfo $createdInfo)
   {
     $this->createdInfo = $createdInfo;
   }
+  /**
+   * @return Google_Service_Dfareporting_LastModifiedInfo
+   */
   public function getCreatedInfo()
   {
     return $this->createdInfo;

@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_AccountUserProfilesListResponse extends Google
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_AccountUserProfile
+   */
   public function setAccountUserProfiles($accountUserProfiles)
   {
     $this->accountUserProfiles = $accountUserProfiles;
   }
+  /**
+   * @return Google_Service_Dfareporting_AccountUserProfile
+   */
   public function getAccountUserProfiles()
   {
     return $this->accountUserProfiles;

@@ -48,10 +48,16 @@ class Google_Service_Dfareporting_VideoFormat extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Dfareporting_Size
+   */
   public function setResolution(Google_Service_Dfareporting_Size $resolution)
   {
     $this->resolution = $resolution;
   }
+  /**
+   * @return Google_Service_Dfareporting_Size
+   */
   public function getResolution()
   {
     return $this->resolution;

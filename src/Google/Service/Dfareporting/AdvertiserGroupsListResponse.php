@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_AdvertiserGroupsListResponse extends Google_Co
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_AdvertiserGroup
+   */
   public function setAdvertiserGroups($advertiserGroups)
   {
     $this->advertiserGroups = $advertiserGroups;
   }
+  /**
+   * @return Google_Service_Dfareporting_AdvertiserGroup
+   */
   public function getAdvertiserGroups()
   {
     return $this->advertiserGroups;

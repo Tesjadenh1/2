@@ -41,10 +41,16 @@ class Google_Service_Dfareporting_DimensionValueRequest extends Google_Collectio
   {
     return $this->endDate;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionFilter
+   */
   public function setFilters($filters)
   {
     $this->filters = $filters;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionFilter
+   */
   public function getFilters()
   {
     return $this->filters;

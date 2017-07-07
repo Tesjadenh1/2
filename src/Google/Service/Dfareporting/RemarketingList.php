@@ -57,10 +57,16 @@ class Google_Service_Dfareporting_RemarketingList extends Google_Model
   {
     return $this->advertiserId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getAdvertiserIdDimensionValue()
   {
     return $this->advertiserIdDimensionValue;
@@ -97,10 +103,16 @@ class Google_Service_Dfareporting_RemarketingList extends Google_Model
   {
     return $this->lifeSpan;
   }
+  /**
+   * @param Google_Service_Dfareporting_ListPopulationRule
+   */
   public function setListPopulationRule(Google_Service_Dfareporting_ListPopulationRule $listPopulationRule)
   {
     $this->listPopulationRule = $listPopulationRule;
   }
+  /**
+   * @return Google_Service_Dfareporting_ListPopulationRule
+   */
   public function getListPopulationRule()
   {
     return $this->listPopulationRule;

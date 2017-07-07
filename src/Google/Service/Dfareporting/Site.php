@@ -59,10 +59,16 @@ class Google_Service_Dfareporting_Site extends Google_Collection
   {
     return $this->directorySiteId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setDirectorySiteIdDimensionValue(Google_Service_Dfareporting_DimensionValue $directorySiteIdDimensionValue)
   {
     $this->directorySiteIdDimensionValue = $directorySiteIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getDirectorySiteIdDimensionValue()
   {
     return $this->directorySiteIdDimensionValue;
@@ -75,10 +81,16 @@ class Google_Service_Dfareporting_Site extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getIdDimensionValue()
   {
     return $this->idDimensionValue;
@@ -107,18 +119,30 @@ class Google_Service_Dfareporting_Site extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Dfareporting_SiteContact
+   */
   public function setSiteContacts($siteContacts)
   {
     $this->siteContacts = $siteContacts;
   }
+  /**
+   * @return Google_Service_Dfareporting_SiteContact
+   */
   public function getSiteContacts()
   {
     return $this->siteContacts;
   }
+  /**
+   * @param Google_Service_Dfareporting_SiteSettings
+   */
   public function setSiteSettings(Google_Service_Dfareporting_SiteSettings $siteSettings)
   {
     $this->siteSettings = $siteSettings;
   }
+  /**
+   * @return Google_Service_Dfareporting_SiteSettings
+   */
   public function getSiteSettings()
   {
     return $this->siteSettings;

@@ -30,10 +30,16 @@ class Google_Service_Dfareporting_UserRolePermissionsListResponse extends Google
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Dfareporting_UserRolePermission
+   */
   public function setUserRolePermissions($userRolePermissions)
   {
     $this->userRolePermissions = $userRolePermissions;
   }
+  /**
+   * @return Google_Service_Dfareporting_UserRolePermission
+   */
   public function getUserRolePermissions()
   {
     return $this->userRolePermissions;

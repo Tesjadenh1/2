@@ -22,10 +22,16 @@ class Google_Service_Dfareporting_EventTagsListResponse extends Google_Collectio
   protected $eventTagsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Dfareporting_EventTag
+   */
   public function setEventTags($eventTags)
   {
     $this->eventTags = $eventTags;
   }
+  /**
+   * @return Google_Service_Dfareporting_EventTag
+   */
   public function getEventTags()
   {
     return $this->eventTags;

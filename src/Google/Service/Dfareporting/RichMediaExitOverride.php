@@ -22,10 +22,16 @@ class Google_Service_Dfareporting_RichMediaExitOverride extends Google_Model
   public $enabled;
   public $exitId;
 
+  /**
+   * @param Google_Service_Dfareporting_ClickThroughUrl
+   */
   public function setClickThroughUrl(Google_Service_Dfareporting_ClickThroughUrl $clickThroughUrl)
   {
     $this->clickThroughUrl = $clickThroughUrl;
   }
+  /**
+   * @return Google_Service_Dfareporting_ClickThroughUrl
+   */
   public function getClickThroughUrl()
   {
     return $this->clickThroughUrl;

@@ -85,10 +85,16 @@ class Google_Service_Dfareporting_CreativeCustomEvent extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Dfareporting_PopupWindowProperties
+   */
   public function setPopupWindowProperties(Google_Service_Dfareporting_PopupWindowProperties $popupWindowProperties)
   {
     $this->popupWindowProperties = $popupWindowProperties;
   }
+  /**
+   * @return Google_Service_Dfareporting_PopupWindowProperties
+   */
   public function getPopupWindowProperties()
   {
     return $this->popupWindowProperties;

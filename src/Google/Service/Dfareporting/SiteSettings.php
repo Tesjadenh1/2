@@ -45,10 +45,16 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   {
     return $this->adBlockingOptOut;
   }
+  /**
+   * @param Google_Service_Dfareporting_CreativeSettings
+   */
   public function setCreativeSettings(Google_Service_Dfareporting_CreativeSettings $creativeSettings)
   {
     $this->creativeSettings = $creativeSettings;
   }
+  /**
+   * @return Google_Service_Dfareporting_CreativeSettings
+   */
   public function getCreativeSettings()
   {
     return $this->creativeSettings;
@@ -61,18 +67,30 @@ class Google_Service_Dfareporting_SiteSettings extends Google_Model
   {
     return $this->disableNewCookie;
   }
+  /**
+   * @param Google_Service_Dfareporting_LookbackConfiguration
+   */
   public function setLookbackConfiguration(Google_Service_Dfareporting_LookbackConfiguration $lookbackConfiguration)
   {
     $this->lookbackConfiguration = $lookbackConfiguration;
   }
+  /**
+   * @return Google_Service_Dfareporting_LookbackConfiguration
+   */
   public function getLookbackConfiguration()
   {
     return $this->lookbackConfiguration;
   }
+  /**
+   * @param Google_Service_Dfareporting_TagSetting
+   */
   public function setTagSetting(Google_Service_Dfareporting_TagSetting $tagSetting)
   {
     $this->tagSetting = $tagSetting;
   }
+  /**
+   * @return Google_Service_Dfareporting_TagSetting
+   */
   public function getTagSetting()
   {
     return $this->tagSetting;

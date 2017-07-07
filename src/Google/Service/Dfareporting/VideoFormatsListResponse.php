@@ -30,10 +30,16 @@ class Google_Service_Dfareporting_VideoFormatsListResponse extends Google_Collec
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Dfareporting_VideoFormat
+   */
   public function setVideoFormats($videoFormats)
   {
     $this->videoFormats = $videoFormats;
   }
+  /**
+   * @return Google_Service_Dfareporting_VideoFormat
+   */
   public function getVideoFormats()
   {
     return $this->videoFormats;

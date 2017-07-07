@@ -21,10 +21,16 @@ class Google_Service_Dfareporting_CompanionClickThroughOverride extends Google_M
   protected $clickThroughUrlDataType = '';
   public $creativeId;
 
+  /**
+   * @param Google_Service_Dfareporting_ClickThroughUrl
+   */
   public function setClickThroughUrl(Google_Service_Dfareporting_ClickThroughUrl $clickThroughUrl)
   {
     $this->clickThroughUrl = $clickThroughUrl;
   }
+  /**
+   * @return Google_Service_Dfareporting_ClickThroughUrl
+   */
   public function getClickThroughUrl()
   {
     return $this->clickThroughUrl;

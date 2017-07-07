@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_DirectorySitesListResponse extends Google_Coll
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_DirectorySite
+   */
   public function setDirectorySites($directorySites)
   {
     $this->directorySites = $directorySites;
   }
+  /**
+   * @return Google_Service_Dfareporting_DirectorySite
+   */
   public function getDirectorySites()
   {
     return $this->directorySites;

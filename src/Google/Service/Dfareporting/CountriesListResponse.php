@@ -22,10 +22,16 @@ class Google_Service_Dfareporting_CountriesListResponse extends Google_Collectio
   protected $countriesDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Dfareporting_Country
+   */
   public function setCountries($countries)
   {
     $this->countries = $countries;
   }
+  /**
+   * @return Google_Service_Dfareporting_Country
+   */
   public function getCountries()
   {
     return $this->countries;

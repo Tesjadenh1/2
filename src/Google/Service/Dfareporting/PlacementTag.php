@@ -30,10 +30,16 @@ class Google_Service_Dfareporting_PlacementTag extends Google_Collection
   {
     return $this->placementId;
   }
+  /**
+   * @param Google_Service_Dfareporting_TagData
+   */
   public function setTagDatas($tagDatas)
   {
     $this->tagDatas = $tagDatas;
   }
+  /**
+   * @return Google_Service_Dfareporting_TagData
+   */
   public function getTagDatas()
   {
     return $this->tagDatas;

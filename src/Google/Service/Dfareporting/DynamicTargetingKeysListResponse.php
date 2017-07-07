@@ -22,10 +22,16 @@ class Google_Service_Dfareporting_DynamicTargetingKeysListResponse extends Googl
   protected $dynamicTargetingKeysDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Dfareporting_DynamicTargetingKey
+   */
   public function setDynamicTargetingKeys($dynamicTargetingKeys)
   {
     $this->dynamicTargetingKeys = $dynamicTargetingKeys;
   }
+  /**
+   * @return Google_Service_Dfareporting_DynamicTargetingKey
+   */
   public function getDynamicTargetingKeys()
   {
     return $this->dynamicTargetingKeys;

@@ -39,10 +39,16 @@ class Google_Service_Dfareporting_ListPopulationRule extends Google_Collection
   {
     return $this->floodlightActivityName;
   }
+  /**
+   * @param Google_Service_Dfareporting_ListPopulationClause
+   */
   public function setListPopulationClauses($listPopulationClauses)
   {
     $this->listPopulationClauses = $listPopulationClauses;
   }
+  /**
+   * @return Google_Service_Dfareporting_ListPopulationClause
+   */
   public function getListPopulationClauses()
   {
     return $this->listPopulationClauses;

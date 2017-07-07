@@ -67,18 +67,30 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->accountId;
   }
+  /**
+   * @param Google_Service_Dfareporting_AdBlockingConfiguration
+   */
   public function setAdBlockingConfiguration(Google_Service_Dfareporting_AdBlockingConfiguration $adBlockingConfiguration)
   {
     $this->adBlockingConfiguration = $adBlockingConfiguration;
   }
+  /**
+   * @return Google_Service_Dfareporting_AdBlockingConfiguration
+   */
   public function getAdBlockingConfiguration()
   {
     return $this->adBlockingConfiguration;
   }
+  /**
+   * @param Google_Service_Dfareporting_CreativeOptimizationConfiguration
+   */
   public function setAdditionalCreativeOptimizationConfigurations($additionalCreativeOptimizationConfigurations)
   {
     $this->additionalCreativeOptimizationConfigurations = $additionalCreativeOptimizationConfigurations;
   }
+  /**
+   * @return Google_Service_Dfareporting_CreativeOptimizationConfiguration
+   */
   public function getAdditionalCreativeOptimizationConfigurations()
   {
     return $this->additionalCreativeOptimizationConfigurations;
@@ -99,10 +111,16 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->advertiserId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getAdvertiserIdDimensionValue()
   {
     return $this->advertiserIdDimensionValue;
@@ -115,10 +133,16 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->archived;
   }
+  /**
+   * @param Google_Service_Dfareporting_AudienceSegmentGroup
+   */
   public function setAudienceSegmentGroups($audienceSegmentGroups)
   {
     $this->audienceSegmentGroups = $audienceSegmentGroups;
   }
+  /**
+   * @return Google_Service_Dfareporting_AudienceSegmentGroup
+   */
   public function getAudienceSegmentGroups()
   {
     return $this->audienceSegmentGroups;
@@ -131,10 +155,16 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->billingInvoiceCode;
   }
+  /**
+   * @param Google_Service_Dfareporting_ClickThroughUrlSuffixProperties
+   */
   public function setClickThroughUrlSuffixProperties(Google_Service_Dfareporting_ClickThroughUrlSuffixProperties $clickThroughUrlSuffixProperties)
   {
     $this->clickThroughUrlSuffixProperties = $clickThroughUrlSuffixProperties;
   }
+  /**
+   * @return Google_Service_Dfareporting_ClickThroughUrlSuffixProperties
+   */
   public function getClickThroughUrlSuffixProperties()
   {
     return $this->clickThroughUrlSuffixProperties;
@@ -147,10 +177,16 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->comment;
   }
+  /**
+   * @param Google_Service_Dfareporting_LastModifiedInfo
+   */
   public function setCreateInfo(Google_Service_Dfareporting_LastModifiedInfo $createInfo)
   {
     $this->createInfo = $createInfo;
   }
+  /**
+   * @return Google_Service_Dfareporting_LastModifiedInfo
+   */
   public function getCreateInfo()
   {
     return $this->createInfo;
@@ -163,18 +199,30 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->creativeGroupIds;
   }
+  /**
+   * @param Google_Service_Dfareporting_CreativeOptimizationConfiguration
+   */
   public function setCreativeOptimizationConfiguration(Google_Service_Dfareporting_CreativeOptimizationConfiguration $creativeOptimizationConfiguration)
   {
     $this->creativeOptimizationConfiguration = $creativeOptimizationConfiguration;
   }
+  /**
+   * @return Google_Service_Dfareporting_CreativeOptimizationConfiguration
+   */
   public function getCreativeOptimizationConfiguration()
   {
     return $this->creativeOptimizationConfiguration;
   }
+  /**
+   * @param Google_Service_Dfareporting_DefaultClickThroughEventTagProperties
+   */
   public function setDefaultClickThroughEventTagProperties(Google_Service_Dfareporting_DefaultClickThroughEventTagProperties $defaultClickThroughEventTagProperties)
   {
     $this->defaultClickThroughEventTagProperties = $defaultClickThroughEventTagProperties;
   }
+  /**
+   * @return Google_Service_Dfareporting_DefaultClickThroughEventTagProperties
+   */
   public function getDefaultClickThroughEventTagProperties()
   {
     return $this->defaultClickThroughEventTagProperties;
@@ -187,10 +235,16 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->endDate;
   }
+  /**
+   * @param Google_Service_Dfareporting_EventTagOverride
+   */
   public function setEventTagOverrides($eventTagOverrides)
   {
     $this->eventTagOverrides = $eventTagOverrides;
   }
+  /**
+   * @return Google_Service_Dfareporting_EventTagOverride
+   */
   public function getEventTagOverrides()
   {
     return $this->eventTagOverrides;
@@ -211,10 +265,16 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getIdDimensionValue()
   {
     return $this->idDimensionValue;
@@ -227,18 +287,30 @@ class Google_Service_Dfareporting_Campaign extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Dfareporting_LastModifiedInfo
+   */
   public function setLastModifiedInfo(Google_Service_Dfareporting_LastModifiedInfo $lastModifiedInfo)
   {
     $this->lastModifiedInfo = $lastModifiedInfo;
   }
+  /**
+   * @return Google_Service_Dfareporting_LastModifiedInfo
+   */
   public function getLastModifiedInfo()
   {
     return $this->lastModifiedInfo;
   }
+  /**
+   * @param Google_Service_Dfareporting_LookbackConfiguration
+   */
   public function setLookbackConfiguration(Google_Service_Dfareporting_LookbackConfiguration $lookbackConfiguration)
   {
     $this->lookbackConfiguration = $lookbackConfiguration;
   }
+  /**
+   * @return Google_Service_Dfareporting_LookbackConfiguration
+   */
   public function getLookbackConfiguration()
   {
     return $this->lookbackConfiguration;

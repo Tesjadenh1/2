@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_InventoryItemsListResponse extends Google_Coll
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_InventoryItem
+   */
   public function setInventoryItems($inventoryItems)
   {
     $this->inventoryItems = $inventoryItems;
   }
+  /**
+   * @return Google_Service_Dfareporting_InventoryItem
+   */
   public function getInventoryItems()
   {
     return $this->inventoryItems;

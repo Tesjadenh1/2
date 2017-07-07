@@ -22,10 +22,16 @@ class Google_Service_Dfareporting_FloodlightConfigurationsListResponse extends G
   protected $floodlightConfigurationsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Dfareporting_FloodlightConfiguration
+   */
   public function setFloodlightConfigurations($floodlightConfigurations)
   {
     $this->floodlightConfigurations = $floodlightConfigurations;
   }
+  /**
+   * @return Google_Service_Dfareporting_FloodlightConfiguration
+   */
   public function getFloodlightConfigurations()
   {
     return $this->floodlightConfigurations;

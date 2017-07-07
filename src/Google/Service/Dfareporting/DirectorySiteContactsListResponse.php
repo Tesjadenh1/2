@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_DirectorySiteContactsListResponse extends Goog
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_DirectorySiteContact
+   */
   public function setDirectorySiteContacts($directorySiteContacts)
   {
     $this->directorySiteContacts = $directorySiteContacts;
   }
+  /**
+   * @return Google_Service_Dfareporting_DirectorySiteContact
+   */
   public function getDirectorySiteContacts()
   {
     return $this->directorySiteContacts;

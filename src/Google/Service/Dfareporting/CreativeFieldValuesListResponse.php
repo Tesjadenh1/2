@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_CreativeFieldValuesListResponse extends Google
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_CreativeFieldValue
+   */
   public function setCreativeFieldValues($creativeFieldValues)
   {
     $this->creativeFieldValues = $creativeFieldValues;
   }
+  /**
+   * @return Google_Service_Dfareporting_CreativeFieldValue
+   */
   public function getCreativeFieldValues()
   {
     return $this->creativeFieldValues;

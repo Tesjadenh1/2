@@ -53,26 +53,44 @@ class Google_Service_Dfareporting_CreativeAssignment extends Google_Collection
   {
     return $this->applyEventTags;
   }
+  /**
+   * @param Google_Service_Dfareporting_ClickThroughUrl
+   */
   public function setClickThroughUrl(Google_Service_Dfareporting_ClickThroughUrl $clickThroughUrl)
   {
     $this->clickThroughUrl = $clickThroughUrl;
   }
+  /**
+   * @return Google_Service_Dfareporting_ClickThroughUrl
+   */
   public function getClickThroughUrl()
   {
     return $this->clickThroughUrl;
   }
+  /**
+   * @param Google_Service_Dfareporting_CompanionClickThroughOverride
+   */
   public function setCompanionCreativeOverrides($companionCreativeOverrides)
   {
     $this->companionCreativeOverrides = $companionCreativeOverrides;
   }
+  /**
+   * @return Google_Service_Dfareporting_CompanionClickThroughOverride
+   */
   public function getCompanionCreativeOverrides()
   {
     return $this->companionCreativeOverrides;
   }
+  /**
+   * @param Google_Service_Dfareporting_CreativeGroupAssignment
+   */
   public function setCreativeGroupAssignments($creativeGroupAssignments)
   {
     $this->creativeGroupAssignments = $creativeGroupAssignments;
   }
+  /**
+   * @return Google_Service_Dfareporting_CreativeGroupAssignment
+   */
   public function getCreativeGroupAssignments()
   {
     return $this->creativeGroupAssignments;
@@ -85,10 +103,16 @@ class Google_Service_Dfareporting_CreativeAssignment extends Google_Collection
   {
     return $this->creativeId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setCreativeIdDimensionValue(Google_Service_Dfareporting_DimensionValue $creativeIdDimensionValue)
   {
     $this->creativeIdDimensionValue = $creativeIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getCreativeIdDimensionValue()
   {
     return $this->creativeIdDimensionValue;
@@ -101,10 +125,16 @@ class Google_Service_Dfareporting_CreativeAssignment extends Google_Collection
   {
     return $this->endTime;
   }
+  /**
+   * @param Google_Service_Dfareporting_RichMediaExitOverride
+   */
   public function setRichMediaExitOverrides($richMediaExitOverrides)
   {
     $this->richMediaExitOverrides = $richMediaExitOverrides;
   }
+  /**
+   * @return Google_Service_Dfareporting_RichMediaExitOverride
+   */
   public function getRichMediaExitOverrides()
   {
     return $this->richMediaExitOverrides;

@@ -83,10 +83,16 @@ class Google_Service_Dfareporting_Advertiser extends Google_Model
   {
     return $this->floodlightConfigurationId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setFloodlightConfigurationIdDimensionValue(Google_Service_Dfareporting_DimensionValue $floodlightConfigurationIdDimensionValue)
   {
     $this->floodlightConfigurationIdDimensionValue = $floodlightConfigurationIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getFloodlightConfigurationIdDimensionValue()
   {
     return $this->floodlightConfigurationIdDimensionValue;
@@ -99,10 +105,16 @@ class Google_Service_Dfareporting_Advertiser extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setIdDimensionValue(Google_Service_Dfareporting_DimensionValue $idDimensionValue)
   {
     $this->idDimensionValue = $idDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getIdDimensionValue()
   {
     return $this->idDimensionValue;

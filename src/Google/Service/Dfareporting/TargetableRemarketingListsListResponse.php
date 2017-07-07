@@ -39,10 +39,16 @@ class Google_Service_Dfareporting_TargetableRemarketingListsListResponse extends
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Dfareporting_TargetableRemarketingList
+   */
   public function setTargetableRemarketingLists($targetableRemarketingLists)
   {
     $this->targetableRemarketingLists = $targetableRemarketingLists;
   }
+  /**
+   * @return Google_Service_Dfareporting_TargetableRemarketingList
+   */
   public function getTargetableRemarketingLists()
   {
     return $this->targetableRemarketingLists;

@@ -55,10 +55,16 @@ class Google_Service_Dfareporting_EventTag extends Google_Collection
   {
     return $this->advertiserId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setAdvertiserIdDimensionValue(Google_Service_Dfareporting_DimensionValue $advertiserIdDimensionValue)
   {
     $this->advertiserIdDimensionValue = $advertiserIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getAdvertiserIdDimensionValue()
   {
     return $this->advertiserIdDimensionValue;
@@ -71,10 +77,16 @@ class Google_Service_Dfareporting_EventTag extends Google_Collection
   {
     return $this->campaignId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setCampaignIdDimensionValue(Google_Service_Dfareporting_DimensionValue $campaignIdDimensionValue)
   {
     $this->campaignIdDimensionValue = $campaignIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getCampaignIdDimensionValue()
   {
     return $this->campaignIdDimensionValue;

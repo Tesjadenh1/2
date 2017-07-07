@@ -32,18 +32,30 @@ class Google_Service_Dfareporting_SkippableSetting extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Dfareporting_VideoOffset
+   */
   public function setProgressOffset(Google_Service_Dfareporting_VideoOffset $progressOffset)
   {
     $this->progressOffset = $progressOffset;
   }
+  /**
+   * @return Google_Service_Dfareporting_VideoOffset
+   */
   public function getProgressOffset()
   {
     return $this->progressOffset;
   }
+  /**
+   * @param Google_Service_Dfareporting_VideoOffset
+   */
   public function setSkipOffset(Google_Service_Dfareporting_VideoOffset $skipOffset)
   {
     $this->skipOffset = $skipOffset;
   }
+  /**
+   * @return Google_Service_Dfareporting_VideoOffset
+   */
   public function getSkipOffset()
   {
     return $this->skipOffset;

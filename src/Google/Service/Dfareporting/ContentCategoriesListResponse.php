@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_ContentCategoriesListResponse extends Google_C
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_ContentCategory
+   */
   public function setContentCategories($contentCategories)
   {
     $this->contentCategories = $contentCategories;
   }
+  /**
+   * @return Google_Service_Dfareporting_ContentCategory
+   */
   public function getContentCategories()
   {
     return $this->contentCategories;

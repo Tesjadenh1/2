@@ -32,10 +32,16 @@ class Google_Service_Dfareporting_ReportList extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Dfareporting_Report
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Dfareporting_Report
+   */
   public function getItems()
   {
     return $this->items;

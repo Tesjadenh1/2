@@ -42,10 +42,16 @@ class Google_Service_Dfareporting_FloodlightActivityPublisherDynamicTag extends 
   {
     return $this->directorySiteId;
   }
+  /**
+   * @param Google_Service_Dfareporting_FloodlightActivityDynamicTag
+   */
   public function setDynamicTag(Google_Service_Dfareporting_FloodlightActivityDynamicTag $dynamicTag)
   {
     $this->dynamicTag = $dynamicTag;
   }
+  /**
+   * @return Google_Service_Dfareporting_FloodlightActivityDynamicTag
+   */
   public function getDynamicTag()
   {
     return $this->dynamicTag;
@@ -58,10 +64,16 @@ class Google_Service_Dfareporting_FloodlightActivityPublisherDynamicTag extends 
   {
     return $this->siteId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setSiteIdDimensionValue(Google_Service_Dfareporting_DimensionValue $siteIdDimensionValue)
   {
     $this->siteIdDimensionValue = $siteIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getSiteIdDimensionValue()
   {
     return $this->siteIdDimensionValue;

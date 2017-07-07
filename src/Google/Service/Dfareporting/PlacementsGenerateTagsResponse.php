@@ -30,10 +30,16 @@ class Google_Service_Dfareporting_PlacementsGenerateTagsResponse extends Google_
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Dfareporting_PlacementTag
+   */
   public function setPlacementTags($placementTags)
   {
     $this->placementTags = $placementTags;
   }
+  /**
+   * @return Google_Service_Dfareporting_PlacementTag
+   */
   public function getPlacementTags()
   {
     return $this->placementTags;

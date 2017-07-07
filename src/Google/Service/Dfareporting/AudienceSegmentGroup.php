@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_AudienceSegmentGroup extends Google_Collection
   public $id;
   public $name;
 
+  /**
+   * @param Google_Service_Dfareporting_AudienceSegment
+   */
   public function setAudienceSegments($audienceSegments)
   {
     $this->audienceSegments = $audienceSegments;
   }
+  /**
+   * @return Google_Service_Dfareporting_AudienceSegment
+   */
   public function getAudienceSegments()
   {
     return $this->audienceSegments;

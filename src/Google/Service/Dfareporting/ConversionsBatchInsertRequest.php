@@ -24,18 +24,30 @@ class Google_Service_Dfareporting_ConversionsBatchInsertRequest extends Google_C
   protected $encryptionInfoDataType = '';
   public $kind;
 
+  /**
+   * @param Google_Service_Dfareporting_Conversion
+   */
   public function setConversions($conversions)
   {
     $this->conversions = $conversions;
   }
+  /**
+   * @return Google_Service_Dfareporting_Conversion
+   */
   public function getConversions()
   {
     return $this->conversions;
   }
+  /**
+   * @param Google_Service_Dfareporting_EncryptionInfo
+   */
   public function setEncryptionInfo(Google_Service_Dfareporting_EncryptionInfo $encryptionInfo)
   {
     $this->encryptionInfo = $encryptionInfo;
   }
+  /**
+   * @return Google_Service_Dfareporting_EncryptionInfo
+   */
   public function getEncryptionInfo()
   {
     return $this->encryptionInfo;

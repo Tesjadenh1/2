@@ -167,10 +167,16 @@ class Google_Service_Dfareporting_Account extends Google_Collection
   {
     return $this->nielsenOcrEnabled;
   }
+  /**
+   * @param Google_Service_Dfareporting_ReportsConfiguration
+   */
   public function setReportsConfiguration(Google_Service_Dfareporting_ReportsConfiguration $reportsConfiguration)
   {
     $this->reportsConfiguration = $reportsConfiguration;
   }
+  /**
+   * @return Google_Service_Dfareporting_ReportsConfiguration
+   */
   public function getReportsConfiguration()
   {
     return $this->reportsConfiguration;

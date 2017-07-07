@@ -30,10 +30,16 @@ class Google_Service_Dfareporting_OptimizationActivity extends Google_Model
   {
     return $this->floodlightActivityId;
   }
+  /**
+   * @param Google_Service_Dfareporting_DimensionValue
+   */
   public function setFloodlightActivityIdDimensionValue(Google_Service_Dfareporting_DimensionValue $floodlightActivityIdDimensionValue)
   {
     $this->floodlightActivityIdDimensionValue = $floodlightActivityIdDimensionValue;
   }
+  /**
+   * @return Google_Service_Dfareporting_DimensionValue
+   */
   public function getFloodlightActivityIdDimensionValue()
   {
     return $this->floodlightActivityIdDimensionValue;

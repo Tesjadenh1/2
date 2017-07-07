@@ -23,10 +23,16 @@ class Google_Service_Dfareporting_FloodlightActivityGroupsListResponse extends G
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dfareporting_FloodlightActivityGroup
+   */
   public function setFloodlightActivityGroups($floodlightActivityGroups)
   {
     $this->floodlightActivityGroups = $floodlightActivityGroups;
   }
+  /**
+   * @return Google_Service_Dfareporting_FloodlightActivityGroup
+   */
   public function getFloodlightActivityGroups()
   {
     return $this->floodlightActivityGroups;
