@@ -23,10 +23,16 @@ class Google_Service_YouTubeAnalytics_ResultTable extends Google_Collection
   public $kind;
   public $rows;
 
+  /**
+   * @param Google_Service_YouTubeAnalytics_ResultTableColumnHeaders
+   */
   public function setColumnHeaders($columnHeaders)
   {
     $this->columnHeaders = $columnHeaders;
   }
+  /**
+   * @return Google_Service_YouTubeAnalytics_ResultTableColumnHeaders
+   */
   public function getColumnHeaders()
   {
     return $this->columnHeaders;

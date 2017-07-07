@@ -32,10 +32,16 @@ class Google_Service_YouTubeAnalytics_GroupListResponse extends Google_Collectio
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_YouTubeAnalytics_Group
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTubeAnalytics_Group
+   */
   public function getItems()
   {
     return $this->items;

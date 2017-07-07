@@ -25,10 +25,16 @@ class Google_Service_YouTubeAnalytics_Group extends Google_Model
   protected $snippetType = 'Google_Service_YouTubeAnalytics_GroupSnippet';
   protected $snippetDataType = '';
 
+  /**
+   * @param Google_Service_YouTubeAnalytics_GroupContentDetails
+   */
   public function setContentDetails(Google_Service_YouTubeAnalytics_GroupContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
+  /**
+   * @return Google_Service_YouTubeAnalytics_GroupContentDetails
+   */
   public function getContentDetails()
   {
     return $this->contentDetails;
@@ -57,10 +63,16 @@ class Google_Service_YouTubeAnalytics_Group extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTubeAnalytics_GroupSnippet
+   */
   public function setSnippet(Google_Service_YouTubeAnalytics_GroupSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTubeAnalytics_GroupSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;

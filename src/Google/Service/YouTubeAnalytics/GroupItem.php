@@ -56,10 +56,16 @@ class Google_Service_YouTubeAnalytics_GroupItem extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTubeAnalytics_GroupItemResource
+   */
   public function setResource(Google_Service_YouTubeAnalytics_GroupItemResource $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_YouTubeAnalytics_GroupItemResource
+   */
   public function getResource()
   {
     return $this->resource;
