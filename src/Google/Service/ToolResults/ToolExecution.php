@@ -34,26 +34,44 @@ class Google_Service_ToolResults_ToolExecution extends Google_Collection
   {
     return $this->commandLineArguments;
   }
+  /**
+   * @param Google_Service_ToolResults_ToolExitCode
+   */
   public function setExitCode(Google_Service_ToolResults_ToolExitCode $exitCode)
   {
     $this->exitCode = $exitCode;
   }
+  /**
+   * @return Google_Service_ToolResults_ToolExitCode
+   */
   public function getExitCode()
   {
     return $this->exitCode;
   }
+  /**
+   * @param Google_Service_ToolResults_FileReference
+   */
   public function setToolLogs($toolLogs)
   {
     $this->toolLogs = $toolLogs;
   }
+  /**
+   * @return Google_Service_ToolResults_FileReference
+   */
   public function getToolLogs()
   {
     return $this->toolLogs;
   }
+  /**
+   * @param Google_Service_ToolResults_ToolOutputReference
+   */
   public function setToolOutputs($toolOutputs)
   {
     $this->toolOutputs = $toolOutputs;
   }
+  /**
+   * @return Google_Service_ToolResults_ToolOutputReference
+   */
   public function getToolOutputs()
   {
     return $this->toolOutputs;

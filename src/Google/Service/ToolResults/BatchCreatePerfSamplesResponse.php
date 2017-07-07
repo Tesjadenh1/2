@@ -21,10 +21,16 @@ class Google_Service_ToolResults_BatchCreatePerfSamplesResponse extends Google_C
   protected $perfSamplesType = 'Google_Service_ToolResults_PerfSample';
   protected $perfSamplesDataType = 'array';
 
+  /**
+   * @param Google_Service_ToolResults_PerfSample
+   */
   public function setPerfSamples($perfSamples)
   {
     $this->perfSamples = $perfSamples;
   }
+  /**
+   * @return Google_Service_ToolResults_PerfSample
+   */
   public function getPerfSamples()
   {
     return $this->perfSamples;

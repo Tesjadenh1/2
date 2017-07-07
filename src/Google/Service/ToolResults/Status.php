@@ -31,10 +31,16 @@ class Google_Service_ToolResults_Status extends Google_Collection
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_ToolResults_Any
+   */
   public function setDetails($details)
   {
     $this->details = $details;
   }
+  /**
+   * @return Google_Service_ToolResults_Any
+   */
   public function getDetails()
   {
     return $this->details;

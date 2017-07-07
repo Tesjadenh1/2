@@ -22,18 +22,30 @@ class Google_Service_ToolResults_PerfEnvironment extends Google_Model
   protected $memoryInfoType = 'Google_Service_ToolResults_MemoryInfo';
   protected $memoryInfoDataType = '';
 
+  /**
+   * @param Google_Service_ToolResults_CPUInfo
+   */
   public function setCpuInfo(Google_Service_ToolResults_CPUInfo $cpuInfo)
   {
     $this->cpuInfo = $cpuInfo;
   }
+  /**
+   * @return Google_Service_ToolResults_CPUInfo
+   */
   public function getCpuInfo()
   {
     return $this->cpuInfo;
   }
+  /**
+   * @param Google_Service_ToolResults_MemoryInfo
+   */
   public function setMemoryInfo(Google_Service_ToolResults_MemoryInfo $memoryInfo)
   {
     $this->memoryInfo = $memoryInfo;
   }
+  /**
+   * @return Google_Service_ToolResults_MemoryInfo
+   */
   public function getMemoryInfo()
   {
     return $this->memoryInfo;

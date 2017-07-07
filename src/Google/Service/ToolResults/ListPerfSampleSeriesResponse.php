@@ -21,10 +21,16 @@ class Google_Service_ToolResults_ListPerfSampleSeriesResponse extends Google_Col
   protected $perfSampleSeriesType = 'Google_Service_ToolResults_PerfSampleSeries';
   protected $perfSampleSeriesDataType = 'array';
 
+  /**
+   * @param Google_Service_ToolResults_PerfSampleSeries
+   */
   public function setPerfSampleSeries($perfSampleSeries)
   {
     $this->perfSampleSeries = $perfSampleSeries;
   }
+  /**
+   * @return Google_Service_ToolResults_PerfSampleSeries
+   */
   public function getPerfSampleSeries()
   {
     return $this->perfSampleSeries;

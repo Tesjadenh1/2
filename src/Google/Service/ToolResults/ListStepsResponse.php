@@ -30,10 +30,16 @@ class Google_Service_ToolResults_ListStepsResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_ToolResults_Step
+   */
   public function setSteps($steps)
   {
     $this->steps = $steps;
   }
+  /**
+   * @return Google_Service_ToolResults_Step
+   */
   public function getSteps()
   {
     return $this->steps;

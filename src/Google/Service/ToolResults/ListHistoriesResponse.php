@@ -22,10 +22,16 @@ class Google_Service_ToolResults_ListHistoriesResponse extends Google_Collection
   protected $historiesDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_ToolResults_History
+   */
   public function setHistories($histories)
   {
     $this->histories = $histories;
   }
+  /**
+   * @return Google_Service_ToolResults_History
+   */
   public function getHistories()
   {
     return $this->histories;

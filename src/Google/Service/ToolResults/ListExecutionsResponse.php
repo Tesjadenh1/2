@@ -22,10 +22,16 @@ class Google_Service_ToolResults_ListExecutionsResponse extends Google_Collectio
   protected $executionsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_ToolResults_Execution
+   */
   public function setExecutions($executions)
   {
     $this->executions = $executions;
   }
+  /**
+   * @return Google_Service_ToolResults_Execution
+   */
   public function getExecutions()
   {
     return $this->executions;

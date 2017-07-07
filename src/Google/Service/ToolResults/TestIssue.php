@@ -29,10 +29,16 @@ class Google_Service_ToolResults_TestIssue extends Google_Model
   {
     return $this->errorMessage;
   }
+  /**
+   * @param Google_Service_ToolResults_StackTrace
+   */
   public function setStackTrace(Google_Service_ToolResults_StackTrace $stackTrace)
   {
     $this->stackTrace = $stackTrace;
   }
+  /**
+   * @return Google_Service_ToolResults_StackTrace
+   */
   public function getStackTrace()
   {
     return $this->stackTrace;

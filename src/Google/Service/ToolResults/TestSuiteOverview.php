@@ -65,10 +65,16 @@ class Google_Service_ToolResults_TestSuiteOverview extends Google_Model
   {
     return $this->totalCount;
   }
+  /**
+   * @param Google_Service_ToolResults_FileReference
+   */
   public function setXmlSource(Google_Service_ToolResults_FileReference $xmlSource)
   {
     $this->xmlSource = $xmlSource;
   }
+  /**
+   * @return Google_Service_ToolResults_FileReference
+   */
   public function getXmlSource()
   {
     return $this->xmlSource;

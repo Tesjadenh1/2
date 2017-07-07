@@ -21,10 +21,16 @@ class Google_Service_ToolResults_PerfSample extends Google_Model
   protected $sampleTimeDataType = '';
   public $value;
 
+  /**
+   * @param Google_Service_ToolResults_Timestamp
+   */
   public function setSampleTime(Google_Service_ToolResults_Timestamp $sampleTime)
   {
     $this->sampleTime = $sampleTime;
   }
+  /**
+   * @return Google_Service_ToolResults_Timestamp
+   */
   public function getSampleTime()
   {
     return $this->sampleTime;

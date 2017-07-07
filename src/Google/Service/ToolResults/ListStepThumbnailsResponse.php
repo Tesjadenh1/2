@@ -30,10 +30,16 @@ class Google_Service_ToolResults_ListStepThumbnailsResponse extends Google_Colle
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_ToolResults_Image
+   */
   public function setThumbnails($thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }
+  /**
+   * @return Google_Service_ToolResults_Image
+   */
   public function getThumbnails()
   {
     return $this->thumbnails;
