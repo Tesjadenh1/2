@@ -32,6 +32,8 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $initialClusterVersion;
   public $initialNodeCount;
   public $instanceGroupUrls;
+  protected $ipAllocationPolicyType = 'Google_Service_Container_IPAllocationPolicy';
+  protected $ipAllocationPolicyDataType = '';
   public $labelFingerprint;
   protected $legacyAbacType = 'Google_Service_Container_LegacyAbac';
   protected $legacyAbacDataType = '';
@@ -42,6 +44,8 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $monitoringService;
   public $name;
   public $network;
+  protected $networkPolicyType = 'Google_Service_Container_NetworkPolicy';
+  protected $networkPolicyDataType = '';
   protected $nodeConfigType = 'Google_Service_Container_NodeConfig';
   protected $nodeConfigDataType = '';
   public $nodeIpv4CidrSize;
@@ -55,10 +59,16 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $subnetwork;
   public $zone;
 
+  /**
+   * @param Google_Service_Container_AddonsConfig
+   */
   public function setAddonsConfig(Google_Service_Container_AddonsConfig $addonsConfig)
   {
     $this->addonsConfig = $addonsConfig;
   }
+  /**
+   * @return Google_Service_Container_AddonsConfig
+   */
   public function getAddonsConfig()
   {
     return $this->addonsConfig;
@@ -159,6 +169,20 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->instanceGroupUrls;
   }
+  /**
+   * @param Google_Service_Container_IPAllocationPolicy
+   */
+  public function setIpAllocationPolicy(Google_Service_Container_IPAllocationPolicy $ipAllocationPolicy)
+  {
+    $this->ipAllocationPolicy = $ipAllocationPolicy;
+  }
+  /**
+   * @return Google_Service_Container_IPAllocationPolicy
+   */
+  public function getIpAllocationPolicy()
+  {
+    return $this->ipAllocationPolicy;
+  }
   public function setLabelFingerprint($labelFingerprint)
   {
     $this->labelFingerprint = $labelFingerprint;
@@ -167,10 +191,16 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->labelFingerprint;
   }
+  /**
+   * @param Google_Service_Container_LegacyAbac
+   */
   public function setLegacyAbac(Google_Service_Container_LegacyAbac $legacyAbac)
   {
     $this->legacyAbac = $legacyAbac;
   }
+  /**
+   * @return Google_Service_Container_LegacyAbac
+   */
   public function getLegacyAbac()
   {
     return $this->legacyAbac;
@@ -191,10 +221,16 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->loggingService;
   }
+  /**
+   * @param Google_Service_Container_MasterAuth
+   */
   public function setMasterAuth(Google_Service_Container_MasterAuth $masterAuth)
   {
     $this->masterAuth = $masterAuth;
   }
+  /**
+   * @return Google_Service_Container_MasterAuth
+   */
   public function getMasterAuth()
   {
     return $this->masterAuth;
@@ -223,10 +259,30 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->network;
   }
+  /**
+   * @param Google_Service_Container_NetworkPolicy
+   */
+  public function setNetworkPolicy(Google_Service_Container_NetworkPolicy $networkPolicy)
+  {
+    $this->networkPolicy = $networkPolicy;
+  }
+  /**
+   * @return Google_Service_Container_NetworkPolicy
+   */
+  public function getNetworkPolicy()
+  {
+    return $this->networkPolicy;
+  }
+  /**
+   * @param Google_Service_Container_NodeConfig
+   */
   public function setNodeConfig(Google_Service_Container_NodeConfig $nodeConfig)
   {
     $this->nodeConfig = $nodeConfig;
   }
+  /**
+   * @return Google_Service_Container_NodeConfig
+   */
   public function getNodeConfig()
   {
     return $this->nodeConfig;
@@ -239,10 +295,16 @@ class Google_Service_Container_Cluster extends Google_Collection
   {
     return $this->nodeIpv4CidrSize;
   }
+  /**
+   * @param Google_Service_Container_NodePool
+   */
   public function setNodePools($nodePools)
   {
     $this->nodePools = $nodePools;
   }
+  /**
+   * @return Google_Service_Container_NodePool
+   */
   public function getNodePools()
   {
     return $this->nodePools;

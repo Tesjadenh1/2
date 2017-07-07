@@ -15,23 +15,17 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_SetLocationsRequest extends Google_Collection
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  protected $collection_key = 'locations';
+  public $locations;
 
-  /**
-   * @param Google_Service_Container_NodeManagement
-   */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setLocations($locations)
   {
-    $this->management = $management;
+    $this->locations = $locations;
   }
-  /**
-   * @return Google_Service_Container_NodeManagement
-   */
-  public function getManagement()
+  public function getLocations()
   {
-    return $this->management;
+    return $this->locations;
   }
 }

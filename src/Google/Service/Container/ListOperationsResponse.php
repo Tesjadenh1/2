@@ -30,10 +30,16 @@ class Google_Service_Container_ListOperationsResponse extends Google_Collection
   {
     return $this->missingZones;
   }
+  /**
+   * @param Google_Service_Container_Operation
+   */
   public function setOperations($operations)
   {
     $this->operations = $operations;
   }
+  /**
+   * @return Google_Service_Container_Operation
+   */
   public function getOperations()
   {
     return $this->operations;

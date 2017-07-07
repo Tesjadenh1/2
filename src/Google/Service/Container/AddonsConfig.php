@@ -22,18 +22,30 @@ class Google_Service_Container_AddonsConfig extends Google_Model
   protected $httpLoadBalancingType = 'Google_Service_Container_HttpLoadBalancing';
   protected $httpLoadBalancingDataType = '';
 
+  /**
+   * @param Google_Service_Container_HorizontalPodAutoscaling
+   */
   public function setHorizontalPodAutoscaling(Google_Service_Container_HorizontalPodAutoscaling $horizontalPodAutoscaling)
   {
     $this->horizontalPodAutoscaling = $horizontalPodAutoscaling;
   }
+  /**
+   * @return Google_Service_Container_HorizontalPodAutoscaling
+   */
   public function getHorizontalPodAutoscaling()
   {
     return $this->horizontalPodAutoscaling;
   }
+  /**
+   * @param Google_Service_Container_HttpLoadBalancing
+   */
   public function setHttpLoadBalancing(Google_Service_Container_HttpLoadBalancing $httpLoadBalancing)
   {
     $this->httpLoadBalancing = $httpLoadBalancing;
   }
+  /**
+   * @return Google_Service_Container_HttpLoadBalancing
+   */
   public function getHttpLoadBalancing()
   {
     return $this->httpLoadBalancing;

@@ -29,10 +29,16 @@ class Google_Service_Container_SetMasterAuthRequest extends Google_Model
   {
     return $this->action;
   }
+  /**
+   * @param Google_Service_Container_MasterAuth
+   */
   public function setUpdate(Google_Service_Container_MasterAuth $update)
   {
     $this->update = $update;
   }
+  /**
+   * @return Google_Service_Container_MasterAuth
+   */
   public function getUpdate()
   {
     return $this->update;

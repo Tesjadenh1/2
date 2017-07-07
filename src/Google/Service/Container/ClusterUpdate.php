@@ -29,10 +29,16 @@ class Google_Service_Container_ClusterUpdate extends Google_Collection
   public $desiredNodePoolId;
   public $desiredNodeVersion;
 
+  /**
+   * @param Google_Service_Container_AddonsConfig
+   */
   public function setDesiredAddonsConfig(Google_Service_Container_AddonsConfig $desiredAddonsConfig)
   {
     $this->desiredAddonsConfig = $desiredAddonsConfig;
   }
+  /**
+   * @return Google_Service_Container_AddonsConfig
+   */
   public function getDesiredAddonsConfig()
   {
     return $this->desiredAddonsConfig;
@@ -69,10 +75,16 @@ class Google_Service_Container_ClusterUpdate extends Google_Collection
   {
     return $this->desiredMonitoringService;
   }
+  /**
+   * @param Google_Service_Container_NodePoolAutoscaling
+   */
   public function setDesiredNodePoolAutoscaling(Google_Service_Container_NodePoolAutoscaling $desiredNodePoolAutoscaling)
   {
     $this->desiredNodePoolAutoscaling = $desiredNodePoolAutoscaling;
   }
+  /**
+   * @return Google_Service_Container_NodePoolAutoscaling
+   */
   public function getDesiredNodePoolAutoscaling()
   {
     return $this->desiredNodePoolAutoscaling;

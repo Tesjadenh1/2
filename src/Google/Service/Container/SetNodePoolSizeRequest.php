@@ -15,23 +15,16 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_SetNodePoolSizeRequest extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  public $nodeCount;
 
-  /**
-   * @param Google_Service_Container_NodeManagement
-   */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setNodeCount($nodeCount)
   {
-    $this->management = $management;
+    $this->nodeCount = $nodeCount;
   }
-  /**
-   * @return Google_Service_Container_NodeManagement
-   */
-  public function getManagement()
+  public function getNodeCount()
   {
-    return $this->management;
+    return $this->nodeCount;
   }
 }

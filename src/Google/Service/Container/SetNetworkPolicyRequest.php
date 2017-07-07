@@ -15,23 +15,23 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_SetNetworkPolicyRequest extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  protected $networkPolicyType = 'Google_Service_Container_NetworkPolicy';
+  protected $networkPolicyDataType = '';
 
   /**
-   * @param Google_Service_Container_NodeManagement
+   * @param Google_Service_Container_NetworkPolicy
    */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setNetworkPolicy(Google_Service_Container_NetworkPolicy $networkPolicy)
   {
-    $this->management = $management;
+    $this->networkPolicy = $networkPolicy;
   }
   /**
-   * @return Google_Service_Container_NodeManagement
+   * @return Google_Service_Container_NetworkPolicy
    */
-  public function getManagement()
+  public function getNetworkPolicy()
   {
-    return $this->management;
+    return $this->networkPolicy;
   }
 }

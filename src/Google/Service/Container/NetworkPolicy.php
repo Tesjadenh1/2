@@ -15,23 +15,25 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_NetworkPolicy extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  public $enabled;
+  public $provider;
 
-  /**
-   * @param Google_Service_Container_NodeManagement
-   */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setEnabled($enabled)
   {
-    $this->management = $management;
+    $this->enabled = $enabled;
   }
-  /**
-   * @return Google_Service_Container_NodeManagement
-   */
-  public function getManagement()
+  public function getEnabled()
   {
-    return $this->management;
+    return $this->enabled;
+  }
+  public function setProvider($provider)
+  {
+    $this->provider = $provider;
+  }
+  public function getProvider()
+  {
+    return $this->provider;
   }
 }

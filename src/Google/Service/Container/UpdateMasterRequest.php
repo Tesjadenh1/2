@@ -15,23 +15,16 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_UpdateMasterRequest extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  public $masterVersion;
 
-  /**
-   * @param Google_Service_Container_NodeManagement
-   */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setMasterVersion($masterVersion)
   {
-    $this->management = $management;
+    $this->masterVersion = $masterVersion;
   }
-  /**
-   * @return Google_Service_Container_NodeManagement
-   */
-  public function getManagement()
+  public function getMasterVersion()
   {
-    return $this->management;
+    return $this->masterVersion;
   }
 }

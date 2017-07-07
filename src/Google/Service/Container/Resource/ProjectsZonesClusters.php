@@ -26,6 +26,24 @@
 class Google_Service_Container_Resource_ProjectsZonesClusters extends Google_Service_Resource
 {
   /**
+   * Sets the addons of a specific cluster. (clusters.addons)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://support.google.com/cloud/answer/6158840).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster to upgrade.
+   * @param Google_Service_Container_SetAddonsConfigRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function addons($projectId, $zone, $clusterId, Google_Service_Container_SetAddonsConfigRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('addons', array($params), "Google_Service_Container_Operation");
+  }
+  /**
    * Completes master IP rotation. (clusters.completeIpRotation)
    *
    * @param string $projectId The Google Developers Console [project ID or project
@@ -150,6 +168,78 @@ class Google_Service_Container_Resource_ProjectsZonesClusters extends Google_Ser
     return $this->call('list', array($params), "Google_Service_Container_ListClustersResponse");
   }
   /**
+   * Sets the locations of a specific cluster. (clusters.locations)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://support.google.com/cloud/answer/6158840).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster to upgrade.
+   * @param Google_Service_Container_SetLocationsRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function locations($projectId, $zone, $clusterId, Google_Service_Container_SetLocationsRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('locations', array($params), "Google_Service_Container_Operation");
+  }
+  /**
+   * Sets the logging service of a specific cluster. (clusters.logging)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://support.google.com/cloud/answer/6158840).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster to upgrade.
+   * @param Google_Service_Container_SetLoggingServiceRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function logging($projectId, $zone, $clusterId, Google_Service_Container_SetLoggingServiceRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('logging', array($params), "Google_Service_Container_Operation");
+  }
+  /**
+   * Updates the master of a specific cluster. (clusters.master)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://support.google.com/cloud/answer/6158840).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster to upgrade.
+   * @param Google_Service_Container_UpdateMasterRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function master($projectId, $zone, $clusterId, Google_Service_Container_UpdateMasterRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('master', array($params), "Google_Service_Container_Operation");
+  }
+  /**
+   * Sets the monitoring service of a specific cluster. (clusters.monitoring)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://support.google.com/cloud/answer/6158840).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster to upgrade.
+   * @param Google_Service_Container_SetMonitoringServiceRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function monitoring($projectId, $zone, $clusterId, Google_Service_Container_SetMonitoringServiceRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('monitoring', array($params), "Google_Service_Container_Operation");
+  }
+  /**
    * Sets labels on a cluster. (clusters.resourceLabels)
    *
    * @param string $projectId The Google Developers Console [project ID or project
@@ -186,6 +276,24 @@ class Google_Service_Container_Resource_ProjectsZonesClusters extends Google_Ser
     $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('setMasterAuth', array($params), "Google_Service_Container_Operation");
+  }
+  /**
+   * Enables/Disables Network Policy for a cluster. (clusters.setNetworkPolicy)
+   *
+   * @param string $projectId The Google Developers Console [project ID or project
+   * number](https://developers.google.com/console/help/new/#projectnumber).
+   * @param string $zone The name of the Google Compute Engine
+   * [zone](/compute/docs/zones#available) in which the cluster resides.
+   * @param string $clusterId The name of the cluster.
+   * @param Google_Service_Container_SetNetworkPolicyRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Container_Operation
+   */
+  public function setNetworkPolicy($projectId, $zone, $clusterId, Google_Service_Container_SetNetworkPolicyRequest $postBody, $optParams = array())
+  {
+    $params = array('projectId' => $projectId, 'zone' => $zone, 'clusterId' => $clusterId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('setNetworkPolicy', array($params), "Google_Service_Container_Operation");
   }
   /**
    * Start master IP rotation. (clusters.startIpRotation)

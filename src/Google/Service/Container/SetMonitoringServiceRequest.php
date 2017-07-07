@@ -15,23 +15,16 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_SetMonitoringServiceRequest extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  public $monitoringService;
 
-  /**
-   * @param Google_Service_Container_NodeManagement
-   */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setMonitoringService($monitoringService)
   {
-    $this->management = $management;
+    $this->monitoringService = $monitoringService;
   }
-  /**
-   * @return Google_Service_Container_NodeManagement
-   */
-  public function getManagement()
+  public function getMonitoringService()
   {
-    return $this->management;
+    return $this->monitoringService;
   }
 }

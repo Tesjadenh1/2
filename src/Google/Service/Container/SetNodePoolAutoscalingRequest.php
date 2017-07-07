@@ -15,23 +15,23 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_SetNodePoolAutoscalingRequest extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  protected $autoscalingType = 'Google_Service_Container_NodePoolAutoscaling';
+  protected $autoscalingDataType = '';
 
   /**
-   * @param Google_Service_Container_NodeManagement
+   * @param Google_Service_Container_NodePoolAutoscaling
    */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setAutoscaling(Google_Service_Container_NodePoolAutoscaling $autoscaling)
   {
-    $this->management = $management;
+    $this->autoscaling = $autoscaling;
   }
   /**
-   * @return Google_Service_Container_NodeManagement
+   * @return Google_Service_Container_NodePoolAutoscaling
    */
-  public function getManagement()
+  public function getAutoscaling()
   {
-    return $this->management;
+    return $this->autoscaling;
   }
 }

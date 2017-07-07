@@ -15,23 +15,23 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_SetAddonsConfigRequest extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  protected $addonsConfigType = 'Google_Service_Container_AddonsConfig';
+  protected $addonsConfigDataType = '';
 
   /**
-   * @param Google_Service_Container_NodeManagement
+   * @param Google_Service_Container_AddonsConfig
    */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setAddonsConfig(Google_Service_Container_AddonsConfig $addonsConfig)
   {
-    $this->management = $management;
+    $this->addonsConfig = $addonsConfig;
   }
   /**
-   * @return Google_Service_Container_NodeManagement
+   * @return Google_Service_Container_AddonsConfig
    */
-  public function getManagement()
+  public function getAddonsConfig()
   {
-    return $this->management;
+    return $this->addonsConfig;
   }
 }

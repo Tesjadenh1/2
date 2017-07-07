@@ -20,10 +20,16 @@ class Google_Service_Container_CreateClusterRequest extends Google_Model
   protected $clusterType = 'Google_Service_Container_Cluster';
   protected $clusterDataType = '';
 
+  /**
+   * @param Google_Service_Container_Cluster
+   */
   public function setCluster(Google_Service_Container_Cluster $cluster)
   {
     $this->cluster = $cluster;
   }
+  /**
+   * @return Google_Service_Container_Cluster
+   */
   public function getCluster()
   {
     return $this->cluster;

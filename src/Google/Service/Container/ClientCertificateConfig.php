@@ -15,23 +15,16 @@
  * the License.
  */
 
-class Google_Service_Container_SetNodePoolManagementRequest extends Google_Model
+class Google_Service_Container_ClientCertificateConfig extends Google_Model
 {
-  protected $managementType = 'Google_Service_Container_NodeManagement';
-  protected $managementDataType = '';
+  public $issueClientCertificate;
 
-  /**
-   * @param Google_Service_Container_NodeManagement
-   */
-  public function setManagement(Google_Service_Container_NodeManagement $management)
+  public function setIssueClientCertificate($issueClientCertificate)
   {
-    $this->management = $management;
+    $this->issueClientCertificate = $issueClientCertificate;
   }
-  /**
-   * @return Google_Service_Container_NodeManagement
-   */
-  public function getManagement()
+  public function getIssueClientCertificate()
   {
-    return $this->management;
+    return $this->issueClientCertificate;
   }
 }

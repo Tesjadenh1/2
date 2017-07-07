@@ -84,7 +84,27 @@ class Google_Service_Container extends Google_Service
         'clusters',
         array(
           'methods' => array(
-            'completeIpRotation' => array(
+            'addons' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/addons',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'completeIpRotation' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:completeIpRotation',
               'httpMethod' => 'POST',
               'parameters' => array(
@@ -194,6 +214,86 @@ class Google_Service_Container extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'locations' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/locations',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'logging' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/logging',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'master' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/master',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'monitoring' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/monitoring',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'resourceLabels' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/resourceLabels',
               'httpMethod' => 'POST',
@@ -216,6 +316,26 @@ class Google_Service_Container extends Google_Service
               ),
             ),'setMasterAuth' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:setMasterAuth',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'setNetworkPolicy' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}:setNetworkPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'projectId' => array(
@@ -284,7 +404,32 @@ class Google_Service_Container extends Google_Service
         'nodePools',
         array(
           'methods' => array(
-            'create' => array(
+            'autoscaling' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/autoscaling',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'nodePoolId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'create' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools',
               'httpMethod' => 'POST',
               'parameters' => array(
@@ -401,6 +546,56 @@ class Google_Service_Container extends Google_Service
               ),
             ),'setManagement' => array(
               'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/setManagement',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'nodePoolId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'setSize' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/setSize',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'projectId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'nodePoolId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'v1/projects/{projectId}/zones/{zone}/clusters/{clusterId}/nodePools/{nodePoolId}/update',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'projectId' => array(

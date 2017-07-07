@@ -38,10 +38,16 @@ class Google_Service_Container_NodeManagement extends Google_Model
   {
     return $this->autoUpgrade;
   }
+  /**
+   * @param Google_Service_Container_AutoUpgradeOptions
+   */
   public function setUpgradeOptions(Google_Service_Container_AutoUpgradeOptions $upgradeOptions)
   {
     $this->upgradeOptions = $upgradeOptions;
   }
+  /**
+   * @return Google_Service_Container_AutoUpgradeOptions
+   */
   public function getUpgradeOptions()
   {
     return $this->upgradeOptions;

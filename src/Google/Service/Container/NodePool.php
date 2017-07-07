@@ -32,18 +32,30 @@ class Google_Service_Container_NodePool extends Google_Collection
   public $statusMessage;
   public $version;
 
+  /**
+   * @param Google_Service_Container_NodePoolAutoscaling
+   */
   public function setAutoscaling(Google_Service_Container_NodePoolAutoscaling $autoscaling)
   {
     $this->autoscaling = $autoscaling;
   }
+  /**
+   * @return Google_Service_Container_NodePoolAutoscaling
+   */
   public function getAutoscaling()
   {
     return $this->autoscaling;
   }
+  /**
+   * @param Google_Service_Container_NodeConfig
+   */
   public function setConfig(Google_Service_Container_NodeConfig $config)
   {
     $this->config = $config;
   }
+  /**
+   * @return Google_Service_Container_NodeConfig
+   */
   public function getConfig()
   {
     return $this->config;
@@ -64,10 +76,16 @@ class Google_Service_Container_NodePool extends Google_Collection
   {
     return $this->instanceGroupUrls;
   }
+  /**
+   * @param Google_Service_Container_NodeManagement
+   */
   public function setManagement(Google_Service_Container_NodeManagement $management)
   {
     $this->management = $management;
   }
+  /**
+   * @return Google_Service_Container_NodeManagement
+   */
   public function getManagement()
   {
     return $this->management;
