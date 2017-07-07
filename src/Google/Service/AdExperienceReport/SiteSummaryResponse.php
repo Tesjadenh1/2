@@ -23,18 +23,30 @@ class Google_Service_AdExperienceReport_SiteSummaryResponse extends Google_Model
   protected $mobileSummaryDataType = '';
   public $reviewedSite;
 
+  /**
+   * @param Google_Service_AdExperienceReport_PlatformSummary
+   */
   public function setDesktopSummary(Google_Service_AdExperienceReport_PlatformSummary $desktopSummary)
   {
     $this->desktopSummary = $desktopSummary;
   }
+  /**
+   * @return Google_Service_AdExperienceReport_PlatformSummary
+   */
   public function getDesktopSummary()
   {
     return $this->desktopSummary;
   }
+  /**
+   * @param Google_Service_AdExperienceReport_PlatformSummary
+   */
   public function setMobileSummary(Google_Service_AdExperienceReport_PlatformSummary $mobileSummary)
   {
     $this->mobileSummary = $mobileSummary;
   }
+  /**
+   * @return Google_Service_AdExperienceReport_PlatformSummary
+   */
   public function getMobileSummary()
   {
     return $this->mobileSummary;
