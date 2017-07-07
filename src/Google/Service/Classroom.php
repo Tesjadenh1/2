@@ -687,10 +687,6 @@ class Google_Service_Classroom extends Google_Service
               'path' => 'v1/invitations',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'courseId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'userId' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -702,6 +698,10 @@ class Google_Service_Classroom extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'courseId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),

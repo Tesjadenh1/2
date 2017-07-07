@@ -22,10 +22,16 @@ class Google_Service_Classroom_ListCourseWorkResponse extends Google_Collection
   protected $courseWorkDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Classroom_CourseWork
+   */
   public function setCourseWork($courseWork)
   {
     $this->courseWork = $courseWork;
   }
+  /**
+   * @return Google_Service_Classroom_CourseWork
+   */
   public function getCourseWork()
   {
     return $this->courseWork;

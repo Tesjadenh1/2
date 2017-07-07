@@ -30,10 +30,16 @@ class Google_Service_Classroom_ListStudentsResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Classroom_Student
+   */
   public function setStudents($students)
   {
     $this->students = $students;
   }
+  /**
+   * @return Google_Service_Classroom_Student
+   */
   public function getStudents()
   {
     return $this->students;

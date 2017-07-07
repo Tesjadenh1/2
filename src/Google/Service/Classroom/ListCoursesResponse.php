@@ -22,10 +22,16 @@ class Google_Service_Classroom_ListCoursesResponse extends Google_Collection
   protected $coursesDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Classroom_Course
+   */
   public function setCourses($courses)
   {
     $this->courses = $courses;
   }
+  /**
+   * @return Google_Service_Classroom_Course
+   */
   public function getCourses()
   {
     return $this->courses;

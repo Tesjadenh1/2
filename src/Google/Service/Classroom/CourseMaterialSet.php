@@ -22,10 +22,16 @@ class Google_Service_Classroom_CourseMaterialSet extends Google_Collection
   protected $materialsDataType = 'array';
   public $title;
 
+  /**
+   * @param Google_Service_Classroom_CourseMaterial
+   */
   public function setMaterials($materials)
   {
     $this->materials = $materials;
   }
+  /**
+   * @return Google_Service_Classroom_CourseMaterial
+   */
   public function getMaterials()
   {
     return $this->materials;

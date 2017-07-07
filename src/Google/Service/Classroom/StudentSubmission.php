@@ -53,10 +53,16 @@ class Google_Service_Classroom_StudentSubmission extends Google_Model
   {
     return $this->assignedGrade;
   }
+  /**
+   * @param Google_Service_Classroom_AssignmentSubmission
+   */
   public function setAssignmentSubmission(Google_Service_Classroom_AssignmentSubmission $assignmentSubmission)
   {
     $this->assignmentSubmission = $assignmentSubmission;
   }
+  /**
+   * @return Google_Service_Classroom_AssignmentSubmission
+   */
   public function getAssignmentSubmission()
   {
     return $this->assignmentSubmission;
@@ -125,18 +131,30 @@ class Google_Service_Classroom_StudentSubmission extends Google_Model
   {
     return $this->late;
   }
+  /**
+   * @param Google_Service_Classroom_MultipleChoiceSubmission
+   */
   public function setMultipleChoiceSubmission(Google_Service_Classroom_MultipleChoiceSubmission $multipleChoiceSubmission)
   {
     $this->multipleChoiceSubmission = $multipleChoiceSubmission;
   }
+  /**
+   * @return Google_Service_Classroom_MultipleChoiceSubmission
+   */
   public function getMultipleChoiceSubmission()
   {
     return $this->multipleChoiceSubmission;
   }
+  /**
+   * @param Google_Service_Classroom_ShortAnswerSubmission
+   */
   public function setShortAnswerSubmission(Google_Service_Classroom_ShortAnswerSubmission $shortAnswerSubmission)
   {
     $this->shortAnswerSubmission = $shortAnswerSubmission;
   }
+  /**
+   * @return Google_Service_Classroom_ShortAnswerSubmission
+   */
   public function getShortAnswerSubmission()
   {
     return $this->shortAnswerSubmission;

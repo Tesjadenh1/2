@@ -30,10 +30,16 @@ class Google_Service_Classroom_Teacher extends Google_Model
   {
     return $this->courseId;
   }
+  /**
+   * @param Google_Service_Classroom_UserProfile
+   */
   public function setProfile(Google_Service_Classroom_UserProfile $profile)
   {
     $this->profile = $profile;
   }
+  /**
+   * @return Google_Service_Classroom_UserProfile
+   */
   public function getProfile()
   {
     return $this->profile;

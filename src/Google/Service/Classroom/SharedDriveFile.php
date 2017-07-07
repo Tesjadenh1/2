@@ -21,10 +21,16 @@ class Google_Service_Classroom_SharedDriveFile extends Google_Model
   protected $driveFileDataType = '';
   public $shareMode;
 
+  /**
+   * @param Google_Service_Classroom_DriveFile
+   */
   public function setDriveFile(Google_Service_Classroom_DriveFile $driveFile)
   {
     $this->driveFile = $driveFile;
   }
+  /**
+   * @return Google_Service_Classroom_DriveFile
+   */
   public function getDriveFile()
   {
     return $this->driveFile;

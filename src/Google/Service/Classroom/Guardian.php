@@ -31,10 +31,16 @@ class Google_Service_Classroom_Guardian extends Google_Model
   {
     return $this->guardianId;
   }
+  /**
+   * @param Google_Service_Classroom_UserProfile
+   */
   public function setGuardianProfile(Google_Service_Classroom_UserProfile $guardianProfile)
   {
     $this->guardianProfile = $guardianProfile;
   }
+  /**
+   * @return Google_Service_Classroom_UserProfile
+   */
   public function getGuardianProfile()
   {
     return $this->guardianProfile;

@@ -183,7 +183,7 @@ class Google_Service_Classroom_Resource_CoursesCourseWork extends Google_Service
    * returned.
    *
    * The following fields may be specified by teachers: * `title` * `description`
-   * * `state` * `due_date` * `due_time` * `max_points` *
+   * * `state` * `due_date` * `due_time` * `max_points` * `scheduled_time` *
    * `submission_modification_mode`
    * @return Google_Service_Classroom_CourseWork
    */

@@ -22,10 +22,16 @@ class Google_Service_Classroom_ListGuardiansResponse extends Google_Collection
   protected $guardiansDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Classroom_Guardian
+   */
   public function setGuardians($guardians)
   {
     $this->guardians = $guardians;
   }
+  /**
+   * @return Google_Service_Classroom_Guardian
+   */
   public function getGuardians()
   {
     return $this->guardians;

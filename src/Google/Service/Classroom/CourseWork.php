@@ -35,6 +35,7 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   public $maxPoints;
   protected $multipleChoiceQuestionType = 'Google_Service_Classroom_MultipleChoiceQuestion';
   protected $multipleChoiceQuestionDataType = '';
+  public $scheduledTime;
   public $state;
   public $submissionModificationMode;
   public $title;
@@ -49,10 +50,16 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   {
     return $this->alternateLink;
   }
+  /**
+   * @param Google_Service_Classroom_Assignment
+   */
   public function setAssignment(Google_Service_Classroom_Assignment $assignment)
   {
     $this->assignment = $assignment;
   }
+  /**
+   * @return Google_Service_Classroom_Assignment
+   */
   public function getAssignment()
   {
     return $this->assignment;
@@ -89,18 +96,30 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Classroom_Date
+   */
   public function setDueDate(Google_Service_Classroom_Date $dueDate)
   {
     $this->dueDate = $dueDate;
   }
+  /**
+   * @return Google_Service_Classroom_Date
+   */
   public function getDueDate()
   {
     return $this->dueDate;
   }
+  /**
+   * @param Google_Service_Classroom_TimeOfDay
+   */
   public function setDueTime(Google_Service_Classroom_TimeOfDay $dueTime)
   {
     $this->dueTime = $dueTime;
   }
+  /**
+   * @return Google_Service_Classroom_TimeOfDay
+   */
   public function getDueTime()
   {
     return $this->dueTime;
@@ -113,10 +132,16 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Classroom_Material
+   */
   public function setMaterials($materials)
   {
     $this->materials = $materials;
   }
+  /**
+   * @return Google_Service_Classroom_Material
+   */
   public function getMaterials()
   {
     return $this->materials;
@@ -129,13 +154,27 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   {
     return $this->maxPoints;
   }
+  /**
+   * @param Google_Service_Classroom_MultipleChoiceQuestion
+   */
   public function setMultipleChoiceQuestion(Google_Service_Classroom_MultipleChoiceQuestion $multipleChoiceQuestion)
   {
     $this->multipleChoiceQuestion = $multipleChoiceQuestion;
   }
+  /**
+   * @return Google_Service_Classroom_MultipleChoiceQuestion
+   */
   public function getMultipleChoiceQuestion()
   {
     return $this->multipleChoiceQuestion;
+  }
+  public function setScheduledTime($scheduledTime)
+  {
+    $this->scheduledTime = $scheduledTime;
+  }
+  public function getScheduledTime()
+  {
+    return $this->scheduledTime;
   }
   public function setState($state)
   {

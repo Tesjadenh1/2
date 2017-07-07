@@ -20,10 +20,16 @@ class Google_Service_Classroom_Assignment extends Google_Model
   protected $studentWorkFolderType = 'Google_Service_Classroom_DriveFolder';
   protected $studentWorkFolderDataType = '';
 
+  /**
+   * @param Google_Service_Classroom_DriveFolder
+   */
   public function setStudentWorkFolder(Google_Service_Classroom_DriveFolder $studentWorkFolder)
   {
     $this->studentWorkFolder = $studentWorkFolder;
   }
+  /**
+   * @return Google_Service_Classroom_DriveFolder
+   */
   public function getStudentWorkFolder()
   {
     return $this->studentWorkFolder;
