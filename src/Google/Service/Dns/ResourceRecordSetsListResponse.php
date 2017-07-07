@@ -39,10 +39,16 @@ class Google_Service_Dns_ResourceRecordSetsListResponse extends Google_Collectio
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Dns_ResourceRecordSet
+   */
   public function setRrsets($rrsets)
   {
     $this->rrsets = $rrsets;
   }
+  /**
+   * @return Google_Service_Dns_ResourceRecordSet
+   */
   public function getRrsets()
   {
     return $this->rrsets;

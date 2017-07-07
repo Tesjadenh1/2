@@ -23,10 +23,16 @@ class Google_Service_Dns_ChangesListResponse extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Dns_Change
+   */
   public function setChanges($changes)
   {
     $this->changes = $changes;
   }
+  /**
+   * @return Google_Service_Dns_Change
+   */
   public function getChanges()
   {
     return $this->changes;
