@@ -29,18 +29,30 @@ class Google_Service_CivicInfo_Official extends Google_Collection
   public $photoUrl;
   public $urls;
 
+  /**
+   * @param Google_Service_CivicInfo_SimpleAddressType
+   */
   public function setAddress($address)
   {
     $this->address = $address;
   }
+  /**
+   * @return Google_Service_CivicInfo_SimpleAddressType
+   */
   public function getAddress()
   {
     return $this->address;
   }
+  /**
+   * @param Google_Service_CivicInfo_Channel
+   */
   public function setChannels($channels)
   {
     $this->channels = $channels;
   }
+  /**
+   * @return Google_Service_CivicInfo_Channel
+   */
   public function getChannels()
   {
     return $this->channels;

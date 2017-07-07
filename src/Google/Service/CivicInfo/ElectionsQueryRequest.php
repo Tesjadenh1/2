@@ -20,10 +20,16 @@ class Google_Service_CivicInfo_ElectionsQueryRequest extends Google_Model
   protected $contextParamsType = 'Google_Service_CivicInfo_ContextParams';
   protected $contextParamsDataType = '';
 
+  /**
+   * @param Google_Service_CivicInfo_ContextParams
+   */
   public function setContextParams(Google_Service_CivicInfo_ContextParams $contextParams)
   {
     $this->contextParams = $contextParams;
   }
+  /**
+   * @return Google_Service_CivicInfo_ContextParams
+   */
   public function getContextParams()
   {
     return $this->contextParams;

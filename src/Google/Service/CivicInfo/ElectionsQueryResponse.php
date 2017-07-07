@@ -22,10 +22,16 @@ class Google_Service_CivicInfo_ElectionsQueryResponse extends Google_Collection
   protected $electionsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_CivicInfo_Election
+   */
   public function setElections($elections)
   {
     $this->elections = $elections;
   }
+  /**
+   * @return Google_Service_CivicInfo_Election
+   */
   public function getElections()
   {
     return $this->elections;
