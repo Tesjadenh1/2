@@ -21,10 +21,16 @@ class Google_Service_TagManager_CreateBuiltInVariableResponse extends Google_Col
   protected $builtInVariableType = 'Google_Service_TagManager_BuiltInVariable';
   protected $builtInVariableDataType = 'array';
 
+  /**
+   * @param Google_Service_TagManager_BuiltInVariable
+   */
   public function setBuiltInVariable($builtInVariable)
   {
     $this->builtInVariable = $builtInVariable;
   }
+  /**
+   * @return Google_Service_TagManager_BuiltInVariable
+   */
   public function getBuiltInVariable()
   {
     return $this->builtInVariable;

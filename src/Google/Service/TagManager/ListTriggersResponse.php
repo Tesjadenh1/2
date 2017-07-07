@@ -30,10 +30,16 @@ class Google_Service_TagManager_ListTriggersResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_TagManager_Trigger
+   */
   public function setTrigger($trigger)
   {
     $this->trigger = $trigger;
   }
+  /**
+   * @return Google_Service_TagManager_Trigger
+   */
   public function getTrigger()
   {
     return $this->trigger;

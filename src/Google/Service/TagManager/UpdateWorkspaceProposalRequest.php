@@ -33,18 +33,30 @@ class Google_Service_TagManager_UpdateWorkspaceProposalRequest extends Google_Co
   {
     return $this->fingerprint;
   }
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalHistoryComment
+   */
   public function setNewComment(Google_Service_TagManager_WorkspaceProposalHistoryComment $newComment)
   {
     $this->newComment = $newComment;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalHistoryComment
+   */
   public function getNewComment()
   {
     return $this->newComment;
   }
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function setReviewers($reviewers)
   {
     $this->reviewers = $reviewers;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function getReviewers()
   {
     return $this->reviewers;

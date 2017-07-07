@@ -50,10 +50,16 @@ class Google_Service_TagManager_Environment extends Google_Model
   {
     return $this->authorizationCode;
   }
+  /**
+   * @param Google_Service_TagManager_Timestamp
+   */
   public function setAuthorizationTimestamp(Google_Service_TagManager_Timestamp $authorizationTimestamp)
   {
     $this->authorizationTimestamp = $authorizationTimestamp;
   }
+  /**
+   * @return Google_Service_TagManager_Timestamp
+   */
   public function getAuthorizationTimestamp()
   {
     return $this->authorizationTimestamp;

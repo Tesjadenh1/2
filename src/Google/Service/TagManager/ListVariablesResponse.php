@@ -30,10 +30,16 @@ class Google_Service_TagManager_ListVariablesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_TagManager_Variable
+   */
   public function setVariable($variable)
   {
     $this->variable = $variable;
   }
+  /**
+   * @return Google_Service_TagManager_Variable
+   */
   public function getVariable()
   {
     return $this->variable;

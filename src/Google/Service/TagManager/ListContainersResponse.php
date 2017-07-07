@@ -22,10 +22,16 @@ class Google_Service_TagManager_ListContainersResponse extends Google_Collection
   protected $containerDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_TagManager_Container
+   */
   public function setContainer($container)
   {
     $this->container = $container;
   }
+  /**
+   * @return Google_Service_TagManager_Container
+   */
   public function getContainer()
   {
     return $this->container;

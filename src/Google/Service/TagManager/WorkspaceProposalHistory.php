@@ -27,34 +27,58 @@ class Google_Service_TagManager_WorkspaceProposalHistory extends Google_Model
   protected $statusChangeDataType = '';
   public $type;
 
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalHistoryComment
+   */
   public function setComment(Google_Service_TagManager_WorkspaceProposalHistoryComment $comment)
   {
     $this->comment = $comment;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalHistoryComment
+   */
   public function getComment()
   {
     return $this->comment;
   }
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function setCreatedBy(Google_Service_TagManager_WorkspaceProposalUser $createdBy)
   {
     $this->createdBy = $createdBy;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function getCreatedBy()
   {
     return $this->createdBy;
   }
+  /**
+   * @param Google_Service_TagManager_Timestamp
+   */
   public function setCreatedTimestamp(Google_Service_TagManager_Timestamp $createdTimestamp)
   {
     $this->createdTimestamp = $createdTimestamp;
   }
+  /**
+   * @return Google_Service_TagManager_Timestamp
+   */
   public function getCreatedTimestamp()
   {
     return $this->createdTimestamp;
   }
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalHistoryStatusChange
+   */
   public function setStatusChange(Google_Service_TagManager_WorkspaceProposalHistoryStatusChange $statusChange)
   {
     $this->statusChange = $statusChange;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalHistoryStatusChange
+   */
   public function getStatusChange()
   {
     return $this->statusChange;

@@ -20,10 +20,16 @@ class Google_Service_TagManager_RevertVariableResponse extends Google_Model
   protected $variableType = 'Google_Service_TagManager_Variable';
   protected $variableDataType = '';
 
+  /**
+   * @param Google_Service_TagManager_Variable
+   */
   public function setVariable(Google_Service_TagManager_Variable $variable)
   {
     $this->variable = $variable;
   }
+  /**
+   * @return Google_Service_TagManager_Variable
+   */
   public function getVariable()
   {
     return $this->variable;

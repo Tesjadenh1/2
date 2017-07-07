@@ -22,10 +22,16 @@ class Google_Service_TagManager_ListEnabledBuiltInVariablesResponse extends Goog
   protected $builtInVariableDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_TagManager_BuiltInVariable
+   */
   public function setBuiltInVariable($builtInVariable)
   {
     $this->builtInVariable = $builtInVariable;
   }
+  /**
+   * @return Google_Service_TagManager_BuiltInVariable
+   */
   public function getBuiltInVariable()
   {
     return $this->builtInVariable;

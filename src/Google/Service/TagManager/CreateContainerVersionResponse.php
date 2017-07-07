@@ -32,10 +32,16 @@ class Google_Service_TagManager_CreateContainerVersionResponse extends Google_Mo
   {
     return $this->compilerError;
   }
+  /**
+   * @param Google_Service_TagManager_ContainerVersion
+   */
   public function setContainerVersion(Google_Service_TagManager_ContainerVersion $containerVersion)
   {
     $this->containerVersion = $containerVersion;
   }
+  /**
+   * @return Google_Service_TagManager_ContainerVersion
+   */
   public function getContainerVersion()
   {
     return $this->containerVersion;
@@ -48,10 +54,16 @@ class Google_Service_TagManager_CreateContainerVersionResponse extends Google_Mo
   {
     return $this->newWorkspacePath;
   }
+  /**
+   * @param Google_Service_TagManager_SyncStatus
+   */
   public function setSyncStatus(Google_Service_TagManager_SyncStatus $syncStatus)
   {
     $this->syncStatus = $syncStatus;
   }
+  /**
+   * @return Google_Service_TagManager_SyncStatus
+   */
   public function getSyncStatus()
   {
     return $this->syncStatus;

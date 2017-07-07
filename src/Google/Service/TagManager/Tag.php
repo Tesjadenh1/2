@@ -126,10 +126,16 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->notes;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setParameter($parameter)
   {
     $this->parameter = $parameter;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getParameter()
   {
     return $this->parameter;
@@ -150,10 +156,16 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->path;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setPriority(Google_Service_TagManager_Parameter $priority)
   {
     $this->priority = $priority;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getPriority()
   {
     return $this->priority;
@@ -174,10 +186,16 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->scheduleStartMs;
   }
+  /**
+   * @param Google_Service_TagManager_SetupTag
+   */
   public function setSetupTag($setupTag)
   {
     $this->setupTag = $setupTag;
   }
+  /**
+   * @return Google_Service_TagManager_SetupTag
+   */
   public function getSetupTag()
   {
     return $this->setupTag;
@@ -206,10 +224,16 @@ class Google_Service_TagManager_Tag extends Google_Collection
   {
     return $this->tagManagerUrl;
   }
+  /**
+   * @param Google_Service_TagManager_TeardownTag
+   */
   public function setTeardownTag($teardownTag)
   {
     $this->teardownTag = $teardownTag;
   }
+  /**
+   * @return Google_Service_TagManager_TeardownTag
+   */
   public function getTeardownTag()
   {
     return $this->teardownTag;

@@ -28,10 +28,16 @@ class Google_Service_TagManager_WorkspaceProposal extends Google_Collection
   protected $reviewersDataType = 'array';
   public $status;
 
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function setAuthors($authors)
   {
     $this->authors = $authors;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function getAuthors()
   {
     return $this->authors;
@@ -44,10 +50,16 @@ class Google_Service_TagManager_WorkspaceProposal extends Google_Collection
   {
     return $this->fingerprint;
   }
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalHistory
+   */
   public function setHistory($history)
   {
     $this->history = $history;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalHistory
+   */
   public function getHistory()
   {
     return $this->history;
@@ -60,10 +72,16 @@ class Google_Service_TagManager_WorkspaceProposal extends Google_Collection
   {
     return $this->path;
   }
+  /**
+   * @param Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function setReviewers($reviewers)
   {
     $this->reviewers = $reviewers;
   }
+  /**
+   * @return Google_Service_TagManager_WorkspaceProposalUser
+   */
   public function getReviewers()
   {
     return $this->reviewers;

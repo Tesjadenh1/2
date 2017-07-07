@@ -30,10 +30,16 @@ class Google_Service_TagManager_ListUserPermissionsResponse extends Google_Colle
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_TagManager_UserPermission
+   */
   public function setUserPermission($userPermission)
   {
     $this->userPermission = $userPermission;
   }
+  /**
+   * @return Google_Service_TagManager_UserPermission
+   */
   public function getUserPermission()
   {
     return $this->userPermission;

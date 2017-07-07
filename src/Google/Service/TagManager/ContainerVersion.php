@@ -48,18 +48,30 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->accountId;
   }
+  /**
+   * @param Google_Service_TagManager_BuiltInVariable
+   */
   public function setBuiltInVariable($builtInVariable)
   {
     $this->builtInVariable = $builtInVariable;
   }
+  /**
+   * @return Google_Service_TagManager_BuiltInVariable
+   */
   public function getBuiltInVariable()
   {
     return $this->builtInVariable;
   }
+  /**
+   * @param Google_Service_TagManager_Container
+   */
   public function setContainer(Google_Service_TagManager_Container $container)
   {
     $this->container = $container;
   }
+  /**
+   * @return Google_Service_TagManager_Container
+   */
   public function getContainer()
   {
     return $this->container;
@@ -104,10 +116,16 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->fingerprint;
   }
+  /**
+   * @param Google_Service_TagManager_Folder
+   */
   public function setFolder($folder)
   {
     $this->folder = $folder;
   }
+  /**
+   * @return Google_Service_TagManager_Folder
+   */
   public function getFolder()
   {
     return $this->folder;
@@ -128,10 +146,16 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->path;
   }
+  /**
+   * @param Google_Service_TagManager_Tag
+   */
   public function setTag($tag)
   {
     $this->tag = $tag;
   }
+  /**
+   * @return Google_Service_TagManager_Tag
+   */
   public function getTag()
   {
     return $this->tag;
@@ -144,18 +168,30 @@ class Google_Service_TagManager_ContainerVersion extends Google_Collection
   {
     return $this->tagManagerUrl;
   }
+  /**
+   * @param Google_Service_TagManager_Trigger
+   */
   public function setTrigger($trigger)
   {
     $this->trigger = $trigger;
   }
+  /**
+   * @return Google_Service_TagManager_Trigger
+   */
   public function getTrigger()
   {
     return $this->trigger;
   }
+  /**
+   * @param Google_Service_TagManager_Variable
+   */
   public function setVariable($variable)
   {
     $this->variable = $variable;
   }
+  /**
+   * @return Google_Service_TagManager_Variable
+   */
   public function getVariable()
   {
     return $this->variable;

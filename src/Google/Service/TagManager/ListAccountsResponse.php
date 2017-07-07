@@ -22,10 +22,16 @@ class Google_Service_TagManager_ListAccountsResponse extends Google_Collection
   protected $accountDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_TagManager_Account
+   */
   public function setAccount($account)
   {
     $this->account = $account;
   }
+  /**
+   * @return Google_Service_TagManager_Account
+   */
   public function getAccount()
   {
     return $this->account;

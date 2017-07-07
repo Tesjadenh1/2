@@ -30,10 +30,16 @@ class Google_Service_TagManager_ListWorkspacesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_TagManager_Workspace
+   */
   public function setWorkspace($workspace)
   {
     $this->workspace = $workspace;
   }
+  /**
+   * @return Google_Service_TagManager_Workspace
+   */
   public function getWorkspace()
   {
     return $this->workspace;

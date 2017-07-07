@@ -78,18 +78,30 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->accountId;
   }
+  /**
+   * @param Google_Service_TagManager_Condition
+   */
   public function setAutoEventFilter($autoEventFilter)
   {
     $this->autoEventFilter = $autoEventFilter;
   }
+  /**
+   * @return Google_Service_TagManager_Condition
+   */
   public function getAutoEventFilter()
   {
     return $this->autoEventFilter;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setCheckValidation(Google_Service_TagManager_Parameter $checkValidation)
   {
     $this->checkValidation = $checkValidation;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getCheckValidation()
   {
     return $this->checkValidation;
@@ -102,34 +114,58 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->containerId;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setContinuousTimeMinMilliseconds(Google_Service_TagManager_Parameter $continuousTimeMinMilliseconds)
   {
     $this->continuousTimeMinMilliseconds = $continuousTimeMinMilliseconds;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getContinuousTimeMinMilliseconds()
   {
     return $this->continuousTimeMinMilliseconds;
   }
+  /**
+   * @param Google_Service_TagManager_Condition
+   */
   public function setCustomEventFilter($customEventFilter)
   {
     $this->customEventFilter = $customEventFilter;
   }
+  /**
+   * @return Google_Service_TagManager_Condition
+   */
   public function getCustomEventFilter()
   {
     return $this->customEventFilter;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setEventName(Google_Service_TagManager_Parameter $eventName)
   {
     $this->eventName = $eventName;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getEventName()
   {
     return $this->eventName;
   }
+  /**
+   * @param Google_Service_TagManager_Condition
+   */
   public function setFilter($filter)
   {
     $this->filter = $filter;
   }
+  /**
+   * @return Google_Service_TagManager_Condition
+   */
   public function getFilter()
   {
     return $this->filter;
@@ -142,42 +178,72 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->fingerprint;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setHorizontalScrollPercentageList(Google_Service_TagManager_Parameter $horizontalScrollPercentageList)
   {
     $this->horizontalScrollPercentageList = $horizontalScrollPercentageList;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getHorizontalScrollPercentageList()
   {
     return $this->horizontalScrollPercentageList;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setInterval(Google_Service_TagManager_Parameter $interval)
   {
     $this->interval = $interval;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getInterval()
   {
     return $this->interval;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setIntervalSeconds(Google_Service_TagManager_Parameter $intervalSeconds)
   {
     $this->intervalSeconds = $intervalSeconds;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getIntervalSeconds()
   {
     return $this->intervalSeconds;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setLimit(Google_Service_TagManager_Parameter $limit)
   {
     $this->limit = $limit;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getLimit()
   {
     return $this->limit;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setMaxTimerLengthSeconds(Google_Service_TagManager_Parameter $maxTimerLengthSeconds)
   {
     $this->maxTimerLengthSeconds = $maxTimerLengthSeconds;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getMaxTimerLengthSeconds()
   {
     return $this->maxTimerLengthSeconds;
@@ -214,10 +280,16 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->path;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setSelector(Google_Service_TagManager_Parameter $selector)
   {
     $this->selector = $selector;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getSelector()
   {
     return $this->selector;
@@ -230,10 +302,16 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->tagManagerUrl;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setTotalTimeMinMilliseconds(Google_Service_TagManager_Parameter $totalTimeMinMilliseconds)
   {
     $this->totalTimeMinMilliseconds = $totalTimeMinMilliseconds;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getTotalTimeMinMilliseconds()
   {
     return $this->totalTimeMinMilliseconds;
@@ -254,58 +332,100 @@ class Google_Service_TagManager_Trigger extends Google_Collection
   {
     return $this->type;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setUniqueTriggerId(Google_Service_TagManager_Parameter $uniqueTriggerId)
   {
     $this->uniqueTriggerId = $uniqueTriggerId;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getUniqueTriggerId()
   {
     return $this->uniqueTriggerId;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setVerticalScrollPercentageList(Google_Service_TagManager_Parameter $verticalScrollPercentageList)
   {
     $this->verticalScrollPercentageList = $verticalScrollPercentageList;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getVerticalScrollPercentageList()
   {
     return $this->verticalScrollPercentageList;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setVisibilitySelector(Google_Service_TagManager_Parameter $visibilitySelector)
   {
     $this->visibilitySelector = $visibilitySelector;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getVisibilitySelector()
   {
     return $this->visibilitySelector;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setVisiblePercentageMax(Google_Service_TagManager_Parameter $visiblePercentageMax)
   {
     $this->visiblePercentageMax = $visiblePercentageMax;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getVisiblePercentageMax()
   {
     return $this->visiblePercentageMax;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setVisiblePercentageMin(Google_Service_TagManager_Parameter $visiblePercentageMin)
   {
     $this->visiblePercentageMin = $visiblePercentageMin;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getVisiblePercentageMin()
   {
     return $this->visiblePercentageMin;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setWaitForTags(Google_Service_TagManager_Parameter $waitForTags)
   {
     $this->waitForTags = $waitForTags;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getWaitForTags()
   {
     return $this->waitForTags;
   }
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setWaitForTagsTimeout(Google_Service_TagManager_Parameter $waitForTagsTimeout)
   {
     $this->waitForTagsTimeout = $waitForTagsTimeout;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getWaitForTagsTimeout()
   {
     return $this->waitForTagsTimeout;

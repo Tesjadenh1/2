@@ -26,10 +26,16 @@ class Google_Service_TagManager_UserPermission extends Google_Collection
   public $emailAddress;
   public $path;
 
+  /**
+   * @param Google_Service_TagManager_AccountAccess
+   */
   public function setAccountAccess(Google_Service_TagManager_AccountAccess $accountAccess)
   {
     $this->accountAccess = $accountAccess;
   }
+  /**
+   * @return Google_Service_TagManager_AccountAccess
+   */
   public function getAccountAccess()
   {
     return $this->accountAccess;
@@ -42,10 +48,16 @@ class Google_Service_TagManager_UserPermission extends Google_Collection
   {
     return $this->accountId;
   }
+  /**
+   * @param Google_Service_TagManager_ContainerAccess
+   */
   public function setContainerAccess($containerAccess)
   {
     $this->containerAccess = $containerAccess;
   }
+  /**
+   * @return Google_Service_TagManager_ContainerAccess
+   */
   public function getContainerAccess()
   {
     return $this->containerAccess;

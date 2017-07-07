@@ -22,10 +22,16 @@ class Google_Service_TagManager_Condition extends Google_Collection
   protected $parameterDataType = 'array';
   public $type;
 
+  /**
+   * @param Google_Service_TagManager_Parameter
+   */
   public function setParameter($parameter)
   {
     $this->parameter = $parameter;
   }
+  /**
+   * @return Google_Service_TagManager_Parameter
+   */
   public function getParameter()
   {
     return $this->parameter;

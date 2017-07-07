@@ -22,10 +22,16 @@ class Google_Service_TagManager_ListEnvironmentsResponse extends Google_Collecti
   protected $environmentDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_TagManager_Environment
+   */
   public function setEnvironment($environment)
   {
     $this->environment = $environment;
   }
+  /**
+   * @return Google_Service_TagManager_Environment
+   */
   public function getEnvironment()
   {
     return $this->environment;

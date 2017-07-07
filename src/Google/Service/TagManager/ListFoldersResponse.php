@@ -22,10 +22,16 @@ class Google_Service_TagManager_ListFoldersResponse extends Google_Collection
   protected $folderDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_TagManager_Folder
+   */
   public function setFolder($folder)
   {
     $this->folder = $folder;
   }
+  /**
+   * @return Google_Service_TagManager_Folder
+   */
   public function getFolder()
   {
     return $this->folder;

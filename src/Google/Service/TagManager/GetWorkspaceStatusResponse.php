@@ -23,18 +23,30 @@ class Google_Service_TagManager_GetWorkspaceStatusResponse extends Google_Collec
   protected $workspaceChangeType = 'Google_Service_TagManager_Entity';
   protected $workspaceChangeDataType = 'array';
 
+  /**
+   * @param Google_Service_TagManager_MergeConflict
+   */
   public function setMergeConflict($mergeConflict)
   {
     $this->mergeConflict = $mergeConflict;
   }
+  /**
+   * @return Google_Service_TagManager_MergeConflict
+   */
   public function getMergeConflict()
   {
     return $this->mergeConflict;
   }
+  /**
+   * @param Google_Service_TagManager_Entity
+   */
   public function setWorkspaceChange($workspaceChange)
   {
     $this->workspaceChange = $workspaceChange;
   }
+  /**
+   * @return Google_Service_TagManager_Entity
+   */
   public function getWorkspaceChange()
   {
     return $this->workspaceChange;

@@ -31,18 +31,30 @@ class Google_Service_TagManager_QuickPreviewResponse extends Google_Model
   {
     return $this->compilerError;
   }
+  /**
+   * @param Google_Service_TagManager_ContainerVersion
+   */
   public function setContainerVersion(Google_Service_TagManager_ContainerVersion $containerVersion)
   {
     $this->containerVersion = $containerVersion;
   }
+  /**
+   * @return Google_Service_TagManager_ContainerVersion
+   */
   public function getContainerVersion()
   {
     return $this->containerVersion;
   }
+  /**
+   * @param Google_Service_TagManager_SyncStatus
+   */
   public function setSyncStatus(Google_Service_TagManager_SyncStatus $syncStatus)
   {
     $this->syncStatus = $syncStatus;
   }
+  /**
+   * @return Google_Service_TagManager_SyncStatus
+   */
   public function getSyncStatus()
   {
     return $this->syncStatus;
