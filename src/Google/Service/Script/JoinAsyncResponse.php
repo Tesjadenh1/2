@@ -20,10 +20,16 @@ class Google_Service_Script_JoinAsyncResponse extends Google_Model
   protected $resultsType = 'Google_Service_Script_Operation';
   protected $resultsDataType = 'map';
 
+  /**
+   * @param Google_Service_Script_Operation
+   */
   public function setResults($results)
   {
     $this->results = $results;
   }
+  /**
+   * @return Google_Service_Script_Operation
+   */
   public function getResults()
   {
     return $this->results;

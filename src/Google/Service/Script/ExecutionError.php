@@ -39,10 +39,16 @@ class Google_Service_Script_ExecutionError extends Google_Collection
   {
     return $this->errorType;
   }
+  /**
+   * @param Google_Service_Script_ScriptStackTraceElement
+   */
   public function setScriptStackTraceElements($scriptStackTraceElements)
   {
     $this->scriptStackTraceElements = $scriptStackTraceElements;
   }
+  /**
+   * @return Google_Service_Script_ScriptStackTraceElement
+   */
   public function getScriptStackTraceElements()
   {
     return $this->scriptStackTraceElements;
