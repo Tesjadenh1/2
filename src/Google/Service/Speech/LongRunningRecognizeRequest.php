@@ -22,18 +22,30 @@ class Google_Service_Speech_LongRunningRecognizeRequest extends Google_Model
   protected $configType = 'Google_Service_Speech_RecognitionConfig';
   protected $configDataType = '';
 
+  /**
+   * @param Google_Service_Speech_RecognitionAudio
+   */
   public function setAudio(Google_Service_Speech_RecognitionAudio $audio)
   {
     $this->audio = $audio;
   }
+  /**
+   * @return Google_Service_Speech_RecognitionAudio
+   */
   public function getAudio()
   {
     return $this->audio;
   }
+  /**
+   * @param Google_Service_Speech_RecognitionConfig
+   */
   public function setConfig(Google_Service_Speech_RecognitionConfig $config)
   {
     $this->config = $config;
   }
+  /**
+   * @return Google_Service_Speech_RecognitionConfig
+   */
   public function getConfig()
   {
     return $this->config;

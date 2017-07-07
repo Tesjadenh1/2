@@ -21,10 +21,16 @@ class Google_Service_Speech_RecognizeResponse extends Google_Collection
   protected $resultsType = 'Google_Service_Speech_SpeechRecognitionResult';
   protected $resultsDataType = 'array';
 
+  /**
+   * @param Google_Service_Speech_SpeechRecognitionResult
+   */
   public function setResults($results)
   {
     $this->results = $results;
   }
+  /**
+   * @return Google_Service_Speech_SpeechRecognitionResult
+   */
   public function getResults()
   {
     return $this->results;
