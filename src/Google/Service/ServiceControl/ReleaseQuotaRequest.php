@@ -21,10 +21,16 @@ class Google_Service_ServiceControl_ReleaseQuotaRequest extends Google_Model
   protected $releaseOperationDataType = '';
   public $serviceConfigId;
 
+  /**
+   * @param Google_Service_ServiceControl_QuotaOperation
+   */
   public function setReleaseOperation(Google_Service_ServiceControl_QuotaOperation $releaseOperation)
   {
     $this->releaseOperation = $releaseOperation;
   }
+  /**
+   * @return Google_Service_ServiceControl_QuotaOperation
+   */
   public function getReleaseOperation()
   {
     return $this->releaseOperation;

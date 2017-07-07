@@ -24,18 +24,30 @@ class Google_Service_ServiceControl_ReportResponse extends Google_Collection
   protected $reportInfosDataType = 'array';
   public $serviceConfigId;
 
+  /**
+   * @param Google_Service_ServiceControl_ReportError
+   */
   public function setReportErrors($reportErrors)
   {
     $this->reportErrors = $reportErrors;
   }
+  /**
+   * @return Google_Service_ServiceControl_ReportError
+   */
   public function getReportErrors()
   {
     return $this->reportErrors;
   }
+  /**
+   * @param Google_Service_ServiceControl_ReportInfo
+   */
   public function setReportInfos($reportInfos)
   {
     $this->reportInfos = $reportInfos;
   }
+  /**
+   * @return Google_Service_ServiceControl_ReportInfo
+   */
   public function getReportInfos()
   {
     return $this->reportInfos;

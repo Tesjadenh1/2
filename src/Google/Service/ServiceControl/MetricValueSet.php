@@ -30,10 +30,16 @@ class Google_Service_ServiceControl_MetricValueSet extends Google_Collection
   {
     return $this->metricName;
   }
+  /**
+   * @param Google_Service_ServiceControl_MetricValue
+   */
   public function setMetricValues($metricValues)
   {
     $this->metricValues = $metricValues;
   }
+  /**
+   * @return Google_Service_ServiceControl_MetricValue
+   */
   public function getMetricValues()
   {
     return $this->metricValues;

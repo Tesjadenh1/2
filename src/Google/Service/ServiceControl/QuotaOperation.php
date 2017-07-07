@@ -58,10 +58,16 @@ class Google_Service_ServiceControl_QuotaOperation extends Google_Collection
   {
     return $this->operationId;
   }
+  /**
+   * @param Google_Service_ServiceControl_MetricValueSet
+   */
   public function setQuotaMetrics($quotaMetrics)
   {
     $this->quotaMetrics = $quotaMetrics;
   }
+  /**
+   * @return Google_Service_ServiceControl_MetricValueSet
+   */
   public function getQuotaMetrics()
   {
     return $this->quotaMetrics;

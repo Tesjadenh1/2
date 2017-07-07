@@ -21,10 +21,16 @@ class Google_Service_ServiceControl_EndReconciliationRequest extends Google_Mode
   protected $reconciliationOperationDataType = '';
   public $serviceConfigId;
 
+  /**
+   * @param Google_Service_ServiceControl_QuotaOperation
+   */
   public function setReconciliationOperation(Google_Service_ServiceControl_QuotaOperation $reconciliationOperation)
   {
     $this->reconciliationOperation = $reconciliationOperation;
   }
+  /**
+   * @return Google_Service_ServiceControl_QuotaOperation
+   */
   public function getReconciliationOperation()
   {
     return $this->reconciliationOperation;

@@ -29,10 +29,16 @@ class Google_Service_ServiceControl_ReportError extends Google_Model
   {
     return $this->operationId;
   }
+  /**
+   * @param Google_Service_ServiceControl_Status
+   */
   public function setStatus(Google_Service_ServiceControl_Status $status)
   {
     $this->status = $status;
   }
+  /**
+   * @return Google_Service_ServiceControl_Status
+   */
   public function getStatus()
   {
     return $this->status;

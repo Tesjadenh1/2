@@ -33,18 +33,30 @@ class Google_Service_ServiceControl_StartReconciliationResponse extends Google_C
   {
     return $this->operationId;
   }
+  /**
+   * @param Google_Service_ServiceControl_MetricValueSet
+   */
   public function setQuotaMetrics($quotaMetrics)
   {
     $this->quotaMetrics = $quotaMetrics;
   }
+  /**
+   * @return Google_Service_ServiceControl_MetricValueSet
+   */
   public function getQuotaMetrics()
   {
     return $this->quotaMetrics;
   }
+  /**
+   * @param Google_Service_ServiceControl_QuotaError
+   */
   public function setReconciliationErrors($reconciliationErrors)
   {
     $this->reconciliationErrors = $reconciliationErrors;
   }
+  /**
+   * @return Google_Service_ServiceControl_QuotaError
+   */
   public function getReconciliationErrors()
   {
     return $this->reconciliationErrors;

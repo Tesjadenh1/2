@@ -22,10 +22,16 @@ class Google_Service_ServiceControl_AllocateQuotaRequest extends Google_Model
   public $allocationMode;
   public $serviceConfigId;
 
+  /**
+   * @param Google_Service_ServiceControl_QuotaOperation
+   */
   public function setAllocateOperation(Google_Service_ServiceControl_QuotaOperation $allocateOperation)
   {
     $this->allocateOperation = $allocateOperation;
   }
+  /**
+   * @return Google_Service_ServiceControl_QuotaOperation
+   */
   public function getAllocateOperation()
   {
     return $this->allocateOperation;

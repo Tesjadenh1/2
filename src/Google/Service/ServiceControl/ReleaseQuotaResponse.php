@@ -33,18 +33,30 @@ class Google_Service_ServiceControl_ReleaseQuotaResponse extends Google_Collecti
   {
     return $this->operationId;
   }
+  /**
+   * @param Google_Service_ServiceControl_MetricValueSet
+   */
   public function setQuotaMetrics($quotaMetrics)
   {
     $this->quotaMetrics = $quotaMetrics;
   }
+  /**
+   * @return Google_Service_ServiceControl_MetricValueSet
+   */
   public function getQuotaMetrics()
   {
     return $this->quotaMetrics;
   }
+  /**
+   * @param Google_Service_ServiceControl_QuotaError
+   */
   public function setReleaseErrors($releaseErrors)
   {
     $this->releaseErrors = $releaseErrors;
   }
+  /**
+   * @return Google_Service_ServiceControl_QuotaError
+   */
   public function getReleaseErrors()
   {
     return $this->releaseErrors;

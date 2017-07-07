@@ -29,10 +29,16 @@ class Google_Service_ServiceControl_ReportInfo extends Google_Model
   {
     return $this->operationId;
   }
+  /**
+   * @param Google_Service_ServiceControl_QuotaInfo
+   */
   public function setQuotaInfo(Google_Service_ServiceControl_QuotaInfo $quotaInfo)
   {
     $this->quotaInfo = $quotaInfo;
   }
+  /**
+   * @return Google_Service_ServiceControl_QuotaInfo
+   */
   public function getQuotaInfo()
   {
     return $this->quotaInfo;

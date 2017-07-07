@@ -23,10 +23,16 @@ class Google_Service_ServiceControl_CheckRequest extends Google_Model
   public $serviceConfigId;
   public $skipActivationCheck;
 
+  /**
+   * @param Google_Service_ServiceControl_Operation
+   */
   public function setOperation(Google_Service_ServiceControl_Operation $operation)
   {
     $this->operation = $operation;
   }
+  /**
+   * @return Google_Service_ServiceControl_Operation
+   */
   public function getOperation()
   {
     return $this->operation;
