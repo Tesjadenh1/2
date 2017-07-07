@@ -20,10 +20,16 @@ class Google_Service_Plus_CommentActorClientSpecificActorInfo extends Google_Mod
   protected $youtubeActorInfoType = 'Google_Service_Plus_CommentActorClientSpecificActorInfoYoutubeActorInfo';
   protected $youtubeActorInfoDataType = '';
 
+  /**
+   * @param Google_Service_Plus_CommentActorClientSpecificActorInfoYoutubeActorInfo
+   */
   public function setYoutubeActorInfo(Google_Service_Plus_CommentActorClientSpecificActorInfoYoutubeActorInfo $youtubeActorInfo)
   {
     $this->youtubeActorInfo = $youtubeActorInfo;
   }
+  /**
+   * @return Google_Service_Plus_CommentActorClientSpecificActorInfoYoutubeActorInfo
+   */
   public function getYoutubeActorInfo()
   {
     return $this->youtubeActorInfo;

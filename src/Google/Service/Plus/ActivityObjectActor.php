@@ -27,10 +27,16 @@ class Google_Service_Plus_ActivityObjectActor extends Google_Model
   protected $verificationType = 'Google_Service_Plus_ActivityObjectActorVerification';
   protected $verificationDataType = '';
 
+  /**
+   * @param Google_Service_Plus_ActivityObjectActorClientSpecificActorInfo
+   */
   public function setClientSpecificActorInfo(Google_Service_Plus_ActivityObjectActorClientSpecificActorInfo $clientSpecificActorInfo)
   {
     $this->clientSpecificActorInfo = $clientSpecificActorInfo;
   }
+  /**
+   * @return Google_Service_Plus_ActivityObjectActorClientSpecificActorInfo
+   */
   public function getClientSpecificActorInfo()
   {
     return $this->clientSpecificActorInfo;
@@ -51,10 +57,16 @@ class Google_Service_Plus_ActivityObjectActor extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Plus_ActivityObjectActorImage
+   */
   public function setImage(Google_Service_Plus_ActivityObjectActorImage $image)
   {
     $this->image = $image;
   }
+  /**
+   * @return Google_Service_Plus_ActivityObjectActorImage
+   */
   public function getImage()
   {
     return $this->image;
@@ -67,10 +79,16 @@ class Google_Service_Plus_ActivityObjectActor extends Google_Model
   {
     return $this->url;
   }
+  /**
+   * @param Google_Service_Plus_ActivityObjectActorVerification
+   */
   public function setVerification(Google_Service_Plus_ActivityObjectActorVerification $verification)
   {
     $this->verification = $verification;
   }
+  /**
+   * @return Google_Service_Plus_ActivityObjectActorVerification
+   */
   public function getVerification()
   {
     return $this->verification;

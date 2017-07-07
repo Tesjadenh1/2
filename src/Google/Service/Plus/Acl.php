@@ -31,10 +31,16 @@ class Google_Service_Plus_Acl extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Plus_PlusAclentryResource
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Plus_PlusAclentryResource
+   */
   public function getItems()
   {
     return $this->items;

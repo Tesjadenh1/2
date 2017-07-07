@@ -25,10 +25,16 @@ class Google_Service_Plus_Place extends Google_Model
   protected $positionType = 'Google_Service_Plus_PlacePosition';
   protected $positionDataType = '';
 
+  /**
+   * @param Google_Service_Plus_PlaceAddress
+   */
   public function setAddress(Google_Service_Plus_PlaceAddress $address)
   {
     $this->address = $address;
   }
+  /**
+   * @return Google_Service_Plus_PlaceAddress
+   */
   public function getAddress()
   {
     return $this->address;
@@ -57,10 +63,16 @@ class Google_Service_Plus_Place extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Plus_PlacePosition
+   */
   public function setPosition(Google_Service_Plus_PlacePosition $position)
   {
     $this->position = $position;
   }
+  /**
+   * @return Google_Service_Plus_PlacePosition
+   */
   public function getPosition()
   {
     return $this->position;
