@@ -188,7 +188,8 @@ class Google_Service_Compute_Resource_Autoscalers extends Google_Service_Resourc
   }
   /**
    * Updates an autoscaler in the specified project using the data included in the
-   * request. This method supports patch semantics. (autoscalers.patch)
+   * request. This method supports PATCH semantics and uses the JSON merge patch
+   * format and processing rules. (autoscalers.patch)
    *
    * @param string $project Project ID for this request.
    * @param string $zone Name of the zone for this request.

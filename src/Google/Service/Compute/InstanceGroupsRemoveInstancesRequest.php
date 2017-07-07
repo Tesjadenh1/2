@@ -21,10 +21,16 @@ class Google_Service_Compute_InstanceGroupsRemoveInstancesRequest extends Google
   protected $instancesType = 'Google_Service_Compute_InstanceReference';
   protected $instancesDataType = 'array';
 
+  /**
+   * @param Google_Service_Compute_InstanceReference
+   */
   public function setInstances($instances)
   {
     $this->instances = $instances;
   }
+  /**
+   * @return Google_Service_Compute_InstanceReference
+   */
   public function getInstances()
   {
     return $this->instances;

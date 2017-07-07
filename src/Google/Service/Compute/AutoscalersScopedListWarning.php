@@ -31,10 +31,16 @@ class Google_Service_Compute_AutoscalersScopedListWarning extends Google_Collect
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Compute_AutoscalersScopedListWarningData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Compute_AutoscalersScopedListWarningData
+   */
   public function getData()
   {
     return $this->data;

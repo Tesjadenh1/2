@@ -32,10 +32,16 @@ class Google_Service_Compute_TargetPoolAggregatedList extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_TargetPoolsScopedList
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_TargetPoolsScopedList
+   */
   public function getItems()
   {
     return $this->items;

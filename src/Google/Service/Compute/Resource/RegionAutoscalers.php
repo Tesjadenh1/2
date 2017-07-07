@@ -131,7 +131,8 @@ class Google_Service_Compute_Resource_RegionAutoscalers extends Google_Service_R
   }
   /**
    * Updates an autoscaler in the specified project using the data included in the
-   * request. This method supports patch semantics. (regionAutoscalers.patch)
+   * request. This method supports PATCH semantics and uses the JSON merge patch
+   * format and processing rules. (regionAutoscalers.patch)
    *
    * @param string $project Project ID for this request.
    * @param string $region Name of the region scoping this request.

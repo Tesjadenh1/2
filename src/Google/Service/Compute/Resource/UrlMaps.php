@@ -144,7 +144,8 @@ class Google_Service_Compute_Resource_UrlMaps extends Google_Service_Resource
   }
   /**
    * Patches the specified UrlMap resource with the data included in the request.
-   * This method supports patch semantics. (urlMaps.patch)
+   * This method supports PATCH semantics and uses the JSON merge patch format and
+   * processing rules. (urlMaps.patch)
    *
    * @param string $project Project ID for this request.
    * @param string $urlMap Name of the UrlMap resource to patch.

@@ -335,6 +335,23 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('setLabels', array($params), "Google_Service_Compute_Operation");
   }
   /**
+   * Changes the number and/or type of accelerator for a stopped instance to the
+   * values specified in the request. (instances.setMachineResources)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $zone The name of the zone for this request.
+   * @param string $instance Name of the instance scoping this request.
+   * @param Google_Service_Compute_InstancesSetMachineResourcesRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Compute_Operation
+   */
+  public function setMachineResources($project, $zone, $instance, Google_Service_Compute_InstancesSetMachineResourcesRequest $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('setMachineResources', array($params), "Google_Service_Compute_Operation");
+  }
+  /**
    * Changes the machine type for a stopped instance to the machine type specified
    * in the request. (instances.setMachineType)
    *

@@ -56,10 +56,16 @@ class Google_Service_Compute_ManagedInstance extends Google_Model
   {
     return $this->instanceStatus;
   }
+  /**
+   * @param Google_Service_Compute_ManagedInstanceLastAttempt
+   */
   public function setLastAttempt(Google_Service_Compute_ManagedInstanceLastAttempt $lastAttempt)
   {
     $this->lastAttempt = $lastAttempt;
   }
+  /**
+   * @return Google_Service_Compute_ManagedInstanceLastAttempt
+   */
   public function getLastAttempt()
   {
     return $this->lastAttempt;

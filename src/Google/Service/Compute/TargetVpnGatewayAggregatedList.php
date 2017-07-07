@@ -32,10 +32,16 @@ class Google_Service_Compute_TargetVpnGatewayAggregatedList extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_TargetVpnGatewaysScopedList
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_TargetVpnGatewaysScopedList
+   */
   public function getItems()
   {
     return $this->items;

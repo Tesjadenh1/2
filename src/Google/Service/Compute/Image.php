@@ -61,10 +61,16 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->creationTimestamp;
   }
+  /**
+   * @param Google_Service_Compute_DeprecationStatus
+   */
   public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
   {
     $this->deprecated = $deprecated;
   }
+  /**
+   * @return Google_Service_Compute_DeprecationStatus
+   */
   public function getDeprecated()
   {
     return $this->deprecated;
@@ -93,10 +99,16 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->family;
   }
+  /**
+   * @param Google_Service_Compute_GuestOsFeature
+   */
   public function setGuestOsFeatures($guestOsFeatures)
   {
     $this->guestOsFeatures = $guestOsFeatures;
   }
+  /**
+   * @return Google_Service_Compute_GuestOsFeature
+   */
   public function getGuestOsFeatures()
   {
     return $this->guestOsFeatures;
@@ -109,10 +121,16 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setImageEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $imageEncryptionKey)
   {
     $this->imageEncryptionKey = $imageEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getImageEncryptionKey()
   {
     return $this->imageEncryptionKey;
@@ -157,10 +175,16 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_ImageRawDisk
+   */
   public function setRawDisk(Google_Service_Compute_ImageRawDisk $rawDisk)
   {
     $this->rawDisk = $rawDisk;
   }
+  /**
+   * @return Google_Service_Compute_ImageRawDisk
+   */
   public function getRawDisk()
   {
     return $this->rawDisk;
@@ -181,10 +205,16 @@ class Google_Service_Compute_Image extends Google_Collection
   {
     return $this->sourceDisk;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setSourceDiskEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $sourceDiskEncryptionKey)
   {
     $this->sourceDiskEncryptionKey = $sourceDiskEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getSourceDiskEncryptionKey()
   {
     return $this->sourceDiskEncryptionKey;

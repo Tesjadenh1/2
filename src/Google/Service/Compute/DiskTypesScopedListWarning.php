@@ -31,10 +31,16 @@ class Google_Service_Compute_DiskTypesScopedListWarning extends Google_Collectio
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Compute_DiskTypesScopedListWarningData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Compute_DiskTypesScopedListWarningData
+   */
   public function getData()
   {
     return $this->data;

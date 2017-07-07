@@ -29,10 +29,16 @@ class Google_Service_Compute_RouterStatusResponse extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Compute_RouterStatus
+   */
   public function setResult(Google_Service_Compute_RouterStatus $result)
   {
     $this->result = $result;
   }
+  /**
+   * @return Google_Service_Compute_RouterStatus
+   */
   public function getResult()
   {
     return $this->result;

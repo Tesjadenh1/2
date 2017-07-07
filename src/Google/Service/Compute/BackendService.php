@@ -52,26 +52,44 @@ class Google_Service_Compute_BackendService extends Google_Collection
   {
     return $this->affinityCookieTtlSec;
   }
+  /**
+   * @param Google_Service_Compute_Backend
+   */
   public function setBackends($backends)
   {
     $this->backends = $backends;
   }
+  /**
+   * @return Google_Service_Compute_Backend
+   */
   public function getBackends()
   {
     return $this->backends;
   }
+  /**
+   * @param Google_Service_Compute_BackendServiceCdnPolicy
+   */
   public function setCdnPolicy(Google_Service_Compute_BackendServiceCdnPolicy $cdnPolicy)
   {
     $this->cdnPolicy = $cdnPolicy;
   }
+  /**
+   * @return Google_Service_Compute_BackendServiceCdnPolicy
+   */
   public function getCdnPolicy()
   {
     return $this->cdnPolicy;
   }
+  /**
+   * @param Google_Service_Compute_ConnectionDraining
+   */
   public function setConnectionDraining(Google_Service_Compute_ConnectionDraining $connectionDraining)
   {
     $this->connectionDraining = $connectionDraining;
   }
+  /**
+   * @return Google_Service_Compute_ConnectionDraining
+   */
   public function getConnectionDraining()
   {
     return $this->connectionDraining;
@@ -116,10 +134,16 @@ class Google_Service_Compute_BackendService extends Google_Collection
   {
     return $this->healthChecks;
   }
+  /**
+   * @param Google_Service_Compute_BackendServiceIAP
+   */
   public function setIap(Google_Service_Compute_BackendServiceIAP $iap)
   {
     $this->iap = $iap;
   }
+  /**
+   * @return Google_Service_Compute_BackendServiceIAP
+   */
   public function getIap()
   {
     return $this->iap;

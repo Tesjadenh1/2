@@ -32,10 +32,16 @@ class Google_Service_Compute_InstanceGroupManagerAggregatedList extends Google_M
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_InstanceGroupManagersScopedList
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_InstanceGroupManagersScopedList
+   */
   public function getItems()
   {
     return $this->items;

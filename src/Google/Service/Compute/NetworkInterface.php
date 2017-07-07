@@ -26,10 +26,16 @@ class Google_Service_Compute_NetworkInterface extends Google_Collection
   public $networkIP;
   public $subnetwork;
 
+  /**
+   * @param Google_Service_Compute_AccessConfig
+   */
   public function setAccessConfigs($accessConfigs)
   {
     $this->accessConfigs = $accessConfigs;
   }
+  /**
+   * @return Google_Service_Compute_AccessConfig
+   */
   public function getAccessConfigs()
   {
     return $this->accessConfigs;

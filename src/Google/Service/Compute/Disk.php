@@ -62,10 +62,16 @@ class Google_Service_Compute_Disk extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setDiskEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $diskEncryptionKey)
   {
     $this->diskEncryptionKey = $diskEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getDiskEncryptionKey()
   {
     return $this->diskEncryptionKey;
@@ -166,10 +172,16 @@ class Google_Service_Compute_Disk extends Google_Collection
   {
     return $this->sourceImage;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setSourceImageEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $sourceImageEncryptionKey)
   {
     $this->sourceImageEncryptionKey = $sourceImageEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getSourceImageEncryptionKey()
   {
     return $this->sourceImageEncryptionKey;
@@ -190,10 +202,16 @@ class Google_Service_Compute_Disk extends Google_Collection
   {
     return $this->sourceSnapshot;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setSourceSnapshotEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $sourceSnapshotEncryptionKey)
   {
     $this->sourceSnapshotEncryptionKey = $sourceSnapshotEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getSourceSnapshotEncryptionKey()
   {
     return $this->sourceSnapshotEncryptionKey;

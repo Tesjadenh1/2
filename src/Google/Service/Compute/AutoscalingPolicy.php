@@ -36,26 +36,44 @@ class Google_Service_Compute_AutoscalingPolicy extends Google_Collection
   {
     return $this->coolDownPeriodSec;
   }
+  /**
+   * @param Google_Service_Compute_AutoscalingPolicyCpuUtilization
+   */
   public function setCpuUtilization(Google_Service_Compute_AutoscalingPolicyCpuUtilization $cpuUtilization)
   {
     $this->cpuUtilization = $cpuUtilization;
   }
+  /**
+   * @return Google_Service_Compute_AutoscalingPolicyCpuUtilization
+   */
   public function getCpuUtilization()
   {
     return $this->cpuUtilization;
   }
+  /**
+   * @param Google_Service_Compute_AutoscalingPolicyCustomMetricUtilization
+   */
   public function setCustomMetricUtilizations($customMetricUtilizations)
   {
     $this->customMetricUtilizations = $customMetricUtilizations;
   }
+  /**
+   * @return Google_Service_Compute_AutoscalingPolicyCustomMetricUtilization
+   */
   public function getCustomMetricUtilizations()
   {
     return $this->customMetricUtilizations;
   }
+  /**
+   * @param Google_Service_Compute_AutoscalingPolicyLoadBalancingUtilization
+   */
   public function setLoadBalancingUtilization(Google_Service_Compute_AutoscalingPolicyLoadBalancingUtilization $loadBalancingUtilization)
   {
     $this->loadBalancingUtilization = $loadBalancingUtilization;
   }
+  /**
+   * @return Google_Service_Compute_AutoscalingPolicyLoadBalancingUtilization
+   */
   public function getLoadBalancingUtilization()
   {
     return $this->loadBalancingUtilization;

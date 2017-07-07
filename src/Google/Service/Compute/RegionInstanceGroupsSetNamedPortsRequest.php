@@ -30,10 +30,16 @@ class Google_Service_Compute_RegionInstanceGroupsSetNamedPortsRequest extends Go
   {
     return $this->fingerprint;
   }
+  /**
+   * @param Google_Service_Compute_NamedPort
+   */
   public function setNamedPorts($namedPorts)
   {
     $this->namedPorts = $namedPorts;
   }
+  /**
+   * @return Google_Service_Compute_NamedPort
+   */
   public function getNamedPorts()
   {
     return $this->namedPorts;

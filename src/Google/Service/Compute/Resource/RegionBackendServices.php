@@ -156,8 +156,8 @@ class Google_Service_Compute_Resource_RegionBackendServices extends Google_Servi
    * Updates the specified regional BackendService resource with the data included
    * in the request. There are several restrictions and guidelines to keep in mind
    * when updating a backend service. Read  Restrictions and Guidelines for more
-   * information. This method supports patch semantics.
-   * (regionBackendServices.patch)
+   * information. This method supports PATCH semantics and uses the JSON merge
+   * patch format and processing rules. (regionBackendServices.patch)
    *
    * @param string $project Project ID for this request.
    * @param string $region Name of the region scoping this request.

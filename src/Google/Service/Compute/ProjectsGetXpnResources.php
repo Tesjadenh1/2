@@ -39,10 +39,16 @@ class Google_Service_Compute_ProjectsGetXpnResources extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Compute_XpnResourceId
+   */
   public function setResources($resources)
   {
     $this->resources = $resources;
   }
+  /**
+   * @return Google_Service_Compute_XpnResourceId
+   */
   public function getResources()
   {
     return $this->resources;

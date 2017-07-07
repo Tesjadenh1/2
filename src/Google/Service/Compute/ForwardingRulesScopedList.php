@@ -23,18 +23,30 @@ class Google_Service_Compute_ForwardingRulesScopedList extends Google_Collection
   protected $warningType = 'Google_Service_Compute_ForwardingRulesScopedListWarning';
   protected $warningDataType = '';
 
+  /**
+   * @param Google_Service_Compute_ForwardingRule
+   */
   public function setForwardingRules($forwardingRules)
   {
     $this->forwardingRules = $forwardingRules;
   }
+  /**
+   * @return Google_Service_Compute_ForwardingRule
+   */
   public function getForwardingRules()
   {
     return $this->forwardingRules;
   }
+  /**
+   * @param Google_Service_Compute_ForwardingRulesScopedListWarning
+   */
   public function setWarning(Google_Service_Compute_ForwardingRulesScopedListWarning $warning)
   {
     $this->warning = $warning;
   }
+  /**
+   * @return Google_Service_Compute_ForwardingRulesScopedListWarning
+   */
   public function getWarning()
   {
     return $this->warning;

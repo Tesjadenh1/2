@@ -20,10 +20,16 @@ class Google_Service_Compute_UrlMapsValidateRequest extends Google_Model
   protected $resourceType = 'Google_Service_Compute_UrlMap';
   protected $resourceDataType = '';
 
+  /**
+   * @param Google_Service_Compute_UrlMap
+   */
   public function setResource(Google_Service_Compute_UrlMap $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_Compute_UrlMap
+   */
   public function getResource()
   {
     return $this->resource;

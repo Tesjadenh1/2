@@ -31,10 +31,16 @@ class Google_Service_Compute_OperationsScopedListWarning extends Google_Collecti
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Compute_OperationsScopedListWarningData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Compute_OperationsScopedListWarningData
+   */
   public function getData()
   {
     return $this->data;

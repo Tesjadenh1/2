@@ -128,7 +128,8 @@ class Google_Service_Compute_Resource_BackendBuckets extends Google_Service_Reso
   }
   /**
    * Updates the specified BackendBucket resource with the data included in the
-   * request. This method supports patch semantics. (backendBuckets.patch)
+   * request. This method supports PATCH semantics and uses the JSON merge patch
+   * format and processing rules. (backendBuckets.patch)
    *
    * @param string $project Project ID for this request.
    * @param string $backendBucket Name of the BackendBucket resource to patch.

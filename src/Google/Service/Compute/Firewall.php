@@ -31,10 +31,16 @@ class Google_Service_Compute_Firewall extends Google_Collection
   public $sourceTags;
   public $targetTags;
 
+  /**
+   * @param Google_Service_Compute_FirewallAllowed
+   */
   public function setAllowed($allowed)
   {
     $this->allowed = $allowed;
   }
+  /**
+   * @return Google_Service_Compute_FirewallAllowed
+   */
   public function getAllowed()
   {
     return $this->allowed;

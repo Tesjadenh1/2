@@ -23,18 +23,30 @@ class Google_Service_Compute_MachineTypesScopedList extends Google_Collection
   protected $warningType = 'Google_Service_Compute_MachineTypesScopedListWarning';
   protected $warningDataType = '';
 
+  /**
+   * @param Google_Service_Compute_MachineType
+   */
   public function setMachineTypes($machineTypes)
   {
     $this->machineTypes = $machineTypes;
   }
+  /**
+   * @return Google_Service_Compute_MachineType
+   */
   public function getMachineTypes()
   {
     return $this->machineTypes;
   }
+  /**
+   * @param Google_Service_Compute_MachineTypesScopedListWarning
+   */
   public function setWarning(Google_Service_Compute_MachineTypesScopedListWarning $warning)
   {
     $this->warning = $warning;
   }
+  /**
+   * @return Google_Service_Compute_MachineTypesScopedListWarning
+   */
   public function getWarning()
   {
     return $this->warning;

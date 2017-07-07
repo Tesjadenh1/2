@@ -31,10 +31,16 @@ class Google_Service_Compute_MachineTypesScopedListWarning extends Google_Collec
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Compute_MachineTypesScopedListWarningData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Compute_MachineTypesScopedListWarningData
+   */
   public function getData()
   {
     return $this->data;

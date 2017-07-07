@@ -32,10 +32,16 @@ class Google_Service_Compute_AutoscalerAggregatedList extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_AutoscalersScopedList
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_AutoscalersScopedList
+   */
   public function getItems()
   {
     return $this->items;

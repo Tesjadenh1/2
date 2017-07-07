@@ -66,10 +66,16 @@ class Google_Service_Compute_InstanceTemplate extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_InstanceProperties
+   */
   public function setProperties(Google_Service_Compute_InstanceProperties $properties)
   {
     $this->properties = $properties;
   }
+  /**
+   * @return Google_Service_Compute_InstanceProperties
+   */
   public function getProperties()
   {
     return $this->properties;

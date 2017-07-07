@@ -30,10 +30,16 @@ class Google_Service_Compute_RouterStatusBgpPeerStatus extends Google_Collection
   public $uptime;
   public $uptimeSeconds;
 
+  /**
+   * @param Google_Service_Compute_Route
+   */
   public function setAdvertisedRoutes($advertisedRoutes)
   {
     $this->advertisedRoutes = $advertisedRoutes;
   }
+  /**
+   * @return Google_Service_Compute_Route
+   */
   public function getAdvertisedRoutes()
   {
     return $this->advertisedRoutes;

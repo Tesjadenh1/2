@@ -33,10 +33,16 @@ class Google_Service_Compute_TargetHttpsProxyList extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_TargetHttpsProxy
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_TargetHttpsProxy
+   */
   public function getItems()
   {
     return $this->items;

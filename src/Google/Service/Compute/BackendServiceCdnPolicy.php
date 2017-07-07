@@ -20,10 +20,16 @@ class Google_Service_Compute_BackendServiceCdnPolicy extends Google_Model
   protected $cacheKeyPolicyType = 'Google_Service_Compute_CacheKeyPolicy';
   protected $cacheKeyPolicyDataType = '';
 
+  /**
+   * @param Google_Service_Compute_CacheKeyPolicy
+   */
   public function setCacheKeyPolicy(Google_Service_Compute_CacheKeyPolicy $cacheKeyPolicy)
   {
     $this->cacheKeyPolicy = $cacheKeyPolicy;
   }
+  /**
+   * @return Google_Service_Compute_CacheKeyPolicy
+   */
   public function getCacheKeyPolicy()
   {
     return $this->cacheKeyPolicy;

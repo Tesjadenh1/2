@@ -23,18 +23,30 @@ class Google_Service_Compute_AutoscalersScopedList extends Google_Collection
   protected $warningType = 'Google_Service_Compute_AutoscalersScopedListWarning';
   protected $warningDataType = '';
 
+  /**
+   * @param Google_Service_Compute_Autoscaler
+   */
   public function setAutoscalers($autoscalers)
   {
     $this->autoscalers = $autoscalers;
   }
+  /**
+   * @return Google_Service_Compute_Autoscaler
+   */
   public function getAutoscalers()
   {
     return $this->autoscalers;
   }
+  /**
+   * @param Google_Service_Compute_AutoscalersScopedListWarning
+   */
   public function setWarning(Google_Service_Compute_AutoscalersScopedListWarning $warning)
   {
     $this->warning = $warning;
   }
+  /**
+   * @return Google_Service_Compute_AutoscalersScopedListWarning
+   */
   public function getWarning()
   {
     return $this->warning;

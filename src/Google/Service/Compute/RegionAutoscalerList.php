@@ -33,10 +33,16 @@ class Google_Service_Compute_RegionAutoscalerList extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_Autoscaler
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_Autoscaler
+   */
   public function getItems()
   {
     return $this->items;

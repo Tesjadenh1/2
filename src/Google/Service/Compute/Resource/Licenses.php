@@ -26,8 +26,7 @@
 class Google_Service_Compute_Resource_Licenses extends Google_Service_Resource
 {
   /**
-   * Returns the specified License resource. Get a list of available licenses by
-   * making a list() request. (licenses.get)
+   * Returns the specified License resource. (licenses.get)
    *
    * @param string $project Project ID for this request.
    * @param string $license Name of the License resource to return.

@@ -23,18 +23,30 @@ class Google_Service_Compute_AddressesScopedList extends Google_Collection
   protected $warningType = 'Google_Service_Compute_AddressesScopedListWarning';
   protected $warningDataType = '';
 
+  /**
+   * @param Google_Service_Compute_Address
+   */
   public function setAddresses($addresses)
   {
     $this->addresses = $addresses;
   }
+  /**
+   * @return Google_Service_Compute_Address
+   */
   public function getAddresses()
   {
     return $this->addresses;
   }
+  /**
+   * @param Google_Service_Compute_AddressesScopedListWarning
+   */
   public function setWarning(Google_Service_Compute_AddressesScopedListWarning $warning)
   {
     $this->warning = $warning;
   }
+  /**
+   * @return Google_Service_Compute_AddressesScopedListWarning
+   */
   public function getWarning()
   {
     return $this->warning;

@@ -20,10 +20,16 @@ class Google_Service_Compute_UrlMapsValidateResponse extends Google_Model
   protected $resultType = 'Google_Service_Compute_UrlMapValidationResult';
   protected $resultDataType = '';
 
+  /**
+   * @param Google_Service_Compute_UrlMapValidationResult
+   */
   public function setResult(Google_Service_Compute_UrlMapValidationResult $result)
   {
     $this->result = $result;
   }
+  /**
+   * @return Google_Service_Compute_UrlMapValidationResult
+   */
   public function getResult()
   {
     return $this->result;

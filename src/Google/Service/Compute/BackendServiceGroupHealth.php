@@ -22,10 +22,16 @@ class Google_Service_Compute_BackendServiceGroupHealth extends Google_Collection
   protected $healthStatusDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Compute_HealthStatus
+   */
   public function setHealthStatus($healthStatus)
   {
     $this->healthStatus = $healthStatus;
   }
+  /**
+   * @return Google_Service_Compute_HealthStatus
+   */
   public function getHealthStatus()
   {
     return $this->healthStatus;

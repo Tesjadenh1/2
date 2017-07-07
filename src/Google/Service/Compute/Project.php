@@ -34,10 +34,16 @@ class Google_Service_Compute_Project extends Google_Collection
   protected $usageExportLocationDataType = '';
   public $xpnProjectStatus;
 
+  /**
+   * @param Google_Service_Compute_Metadata
+   */
   public function setCommonInstanceMetadata(Google_Service_Compute_Metadata $commonInstanceMetadata)
   {
     $this->commonInstanceMetadata = $commonInstanceMetadata;
   }
+  /**
+   * @return Google_Service_Compute_Metadata
+   */
   public function getCommonInstanceMetadata()
   {
     return $this->commonInstanceMetadata;
@@ -98,10 +104,16 @@ class Google_Service_Compute_Project extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_Quota
+   */
   public function setQuotas($quotas)
   {
     $this->quotas = $quotas;
   }
+  /**
+   * @return Google_Service_Compute_Quota
+   */
   public function getQuotas()
   {
     return $this->quotas;
@@ -114,10 +126,16 @@ class Google_Service_Compute_Project extends Google_Collection
   {
     return $this->selfLink;
   }
+  /**
+   * @param Google_Service_Compute_UsageExportLocation
+   */
   public function setUsageExportLocation(Google_Service_Compute_UsageExportLocation $usageExportLocation)
   {
     $this->usageExportLocation = $usageExportLocation;
   }
+  /**
+   * @return Google_Service_Compute_UsageExportLocation
+   */
   public function getUsageExportLocation()
   {
     return $this->usageExportLocation;

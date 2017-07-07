@@ -21,10 +21,16 @@ class Google_Service_Compute_CustomerEncryptionKeyProtectedDisk extends Google_M
   protected $diskEncryptionKeyDataType = '';
   public $source;
 
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setDiskEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $diskEncryptionKey)
   {
     $this->diskEncryptionKey = $diskEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getDiskEncryptionKey()
   {
     return $this->diskEncryptionKey;

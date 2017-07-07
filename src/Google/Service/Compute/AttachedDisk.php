@@ -57,10 +57,16 @@ class Google_Service_Compute_AttachedDisk extends Google_Collection
   {
     return $this->deviceName;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setDiskEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $diskEncryptionKey)
   {
     $this->diskEncryptionKey = $diskEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getDiskEncryptionKey()
   {
     return $this->diskEncryptionKey;
@@ -73,10 +79,16 @@ class Google_Service_Compute_AttachedDisk extends Google_Collection
   {
     return $this->index;
   }
+  /**
+   * @param Google_Service_Compute_AttachedDiskInitializeParams
+   */
   public function setInitializeParams(Google_Service_Compute_AttachedDiskInitializeParams $initializeParams)
   {
     $this->initializeParams = $initializeParams;
   }
+  /**
+   * @return Google_Service_Compute_AttachedDiskInitializeParams
+   */
   public function getInitializeParams()
   {
     return $this->initializeParams;

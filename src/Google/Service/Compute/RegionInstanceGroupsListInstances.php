@@ -33,10 +33,16 @@ class Google_Service_Compute_RegionInstanceGroupsListInstances extends Google_Co
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_InstanceWithNamedPorts
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_InstanceWithNamedPorts
+   */
   public function getItems()
   {
     return $this->items;

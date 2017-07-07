@@ -48,10 +48,16 @@ class Google_Service_Compute_PathMatcher extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_PathRule
+   */
   public function setPathRules($pathRules)
   {
     $this->pathRules = $pathRules;
   }
+  /**
+   * @return Google_Service_Compute_PathRule
+   */
   public function getPathRules()
   {
     return $this->pathRules;

@@ -65,10 +65,16 @@ class Google_Service_Compute_UrlMap extends Google_Collection
   {
     return $this->fingerprint;
   }
+  /**
+   * @param Google_Service_Compute_HostRule
+   */
   public function setHostRules($hostRules)
   {
     $this->hostRules = $hostRules;
   }
+  /**
+   * @return Google_Service_Compute_HostRule
+   */
   public function getHostRules()
   {
     return $this->hostRules;
@@ -97,10 +103,16 @@ class Google_Service_Compute_UrlMap extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_PathMatcher
+   */
   public function setPathMatchers($pathMatchers)
   {
     $this->pathMatchers = $pathMatchers;
   }
+  /**
+   * @return Google_Service_Compute_PathMatcher
+   */
   public function getPathMatchers()
   {
     return $this->pathMatchers;
@@ -113,10 +125,16 @@ class Google_Service_Compute_UrlMap extends Google_Collection
   {
     return $this->selfLink;
   }
+  /**
+   * @param Google_Service_Compute_UrlMapTest
+   */
   public function setTests($tests)
   {
     $this->tests = $tests;
   }
+  /**
+   * @return Google_Service_Compute_UrlMapTest
+   */
   public function getTests()
   {
     return $this->tests;

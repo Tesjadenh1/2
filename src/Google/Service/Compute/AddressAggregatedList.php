@@ -32,10 +32,16 @@ class Google_Service_Compute_AddressAggregatedList extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Compute_AddressesScopedList
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Compute_AddressesScopedList
+   */
   public function getItems()
   {
     return $this->items;

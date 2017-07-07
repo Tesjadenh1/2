@@ -56,10 +56,16 @@ class Google_Service_Compute_AttachedDiskInitializeParams extends Google_Model
   {
     return $this->sourceImage;
   }
+  /**
+   * @param Google_Service_Compute_CustomerEncryptionKey
+   */
   public function setSourceImageEncryptionKey(Google_Service_Compute_CustomerEncryptionKey $sourceImageEncryptionKey)
   {
     $this->sourceImageEncryptionKey = $sourceImageEncryptionKey;
   }
+  /**
+   * @return Google_Service_Compute_CustomerEncryptionKey
+   */
   public function getSourceImageEncryptionKey()
   {
     return $this->sourceImageEncryptionKey;

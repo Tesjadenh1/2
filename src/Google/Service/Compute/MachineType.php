@@ -44,10 +44,16 @@ class Google_Service_Compute_MachineType extends Google_Collection
   {
     return $this->creationTimestamp;
   }
+  /**
+   * @param Google_Service_Compute_DeprecationStatus
+   */
   public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
   {
     $this->deprecated = $deprecated;
   }
+  /**
+   * @return Google_Service_Compute_DeprecationStatus
+   */
   public function getDeprecated()
   {
     return $this->deprecated;
@@ -132,10 +138,16 @@ class Google_Service_Compute_MachineType extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_MachineTypeScratchDisks
+   */
   public function setScratchDisks($scratchDisks)
   {
     $this->scratchDisks = $scratchDisks;
   }
+  /**
+   * @return Google_Service_Compute_MachineTypeScratchDisks
+   */
   public function getScratchDisks()
   {
     return $this->scratchDisks;

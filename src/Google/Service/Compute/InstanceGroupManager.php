@@ -53,10 +53,16 @@ class Google_Service_Compute_InstanceGroupManager extends Google_Collection
   {
     return $this->creationTimestamp;
   }
+  /**
+   * @param Google_Service_Compute_InstanceGroupManagerActionsSummary
+   */
   public function setCurrentActions(Google_Service_Compute_InstanceGroupManagerActionsSummary $currentActions)
   {
     $this->currentActions = $currentActions;
   }
+  /**
+   * @return Google_Service_Compute_InstanceGroupManagerActionsSummary
+   */
   public function getCurrentActions()
   {
     return $this->currentActions;
@@ -117,10 +123,16 @@ class Google_Service_Compute_InstanceGroupManager extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_NamedPort
+   */
   public function setNamedPorts($namedPorts)
   {
     $this->namedPorts = $namedPorts;
   }
+  /**
+   * @return Google_Service_Compute_NamedPort
+   */
   public function getNamedPorts()
   {
     return $this->namedPorts;

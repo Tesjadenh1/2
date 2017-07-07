@@ -128,8 +128,8 @@ class Google_Service_Compute_Resource_HealthChecks extends Google_Service_Resour
   }
   /**
    * Updates a HealthCheck resource in the specified project using the data
-   * included in the request. This method supports patch semantics.
-   * (healthChecks.patch)
+   * included in the request. This method supports PATCH semantics and uses the
+   * JSON merge patch format and processing rules. (healthChecks.patch)
    *
    * @param string $project Project ID for this request.
    * @param string $healthCheck Name of the HealthCheck resource to patch.

@@ -98,10 +98,16 @@ class Google_Service_Compute_Network extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_NetworkPeering
+   */
   public function setPeerings($peerings)
   {
     $this->peerings = $peerings;
   }
+  /**
+   * @return Google_Service_Compute_NetworkPeering
+   */
   public function getPeerings()
   {
     return $this->peerings;

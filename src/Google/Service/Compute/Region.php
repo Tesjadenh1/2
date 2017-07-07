@@ -39,10 +39,16 @@ class Google_Service_Compute_Region extends Google_Collection
   {
     return $this->creationTimestamp;
   }
+  /**
+   * @param Google_Service_Compute_DeprecationStatus
+   */
   public function setDeprecated(Google_Service_Compute_DeprecationStatus $deprecated)
   {
     $this->deprecated = $deprecated;
   }
+  /**
+   * @return Google_Service_Compute_DeprecationStatus
+   */
   public function getDeprecated()
   {
     return $this->deprecated;
@@ -79,10 +85,16 @@ class Google_Service_Compute_Region extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Compute_Quota
+   */
   public function setQuotas($quotas)
   {
     $this->quotas = $quotas;
   }
+  /**
+   * @return Google_Service_Compute_Quota
+   */
   public function getQuotas()
   {
     return $this->quotas;
