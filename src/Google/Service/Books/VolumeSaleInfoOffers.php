@@ -42,26 +42,44 @@ class Google_Service_Books_VolumeSaleInfoOffers extends Google_Model
   {
     return $this->giftable;
   }
+  /**
+   * @param Google_Service_Books_VolumeSaleInfoOffersListPrice
+   */
   public function setListPrice(Google_Service_Books_VolumeSaleInfoOffersListPrice $listPrice)
   {
     $this->listPrice = $listPrice;
   }
+  /**
+   * @return Google_Service_Books_VolumeSaleInfoOffersListPrice
+   */
   public function getListPrice()
   {
     return $this->listPrice;
   }
+  /**
+   * @param Google_Service_Books_VolumeSaleInfoOffersRentalDuration
+   */
   public function setRentalDuration(Google_Service_Books_VolumeSaleInfoOffersRentalDuration $rentalDuration)
   {
     $this->rentalDuration = $rentalDuration;
   }
+  /**
+   * @return Google_Service_Books_VolumeSaleInfoOffersRentalDuration
+   */
   public function getRentalDuration()
   {
     return $this->rentalDuration;
   }
+  /**
+   * @param Google_Service_Books_VolumeSaleInfoOffersRetailPrice
+   */
   public function setRetailPrice(Google_Service_Books_VolumeSaleInfoOffersRetailPrice $retailPrice)
   {
     $this->retailPrice = $retailPrice;
   }
+  /**
+   * @return Google_Service_Books_VolumeSaleInfoOffersRetailPrice
+   */
   public function getRetailPrice()
   {
     return $this->retailPrice;

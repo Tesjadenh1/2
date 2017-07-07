@@ -21,10 +21,16 @@ class Google_Service_Books_DictlayerdataDictWordsSensesSynonyms extends Google_M
   protected $sourceDataType = '';
   public $text;
 
+  /**
+   * @param Google_Service_Books_DictlayerdataDictWordsSensesSynonymsSource
+   */
   public function setSource(Google_Service_Books_DictlayerdataDictWordsSensesSynonymsSource $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataDictWordsSensesSynonymsSource
+   */
   public function getSource()
   {
     return $this->source;

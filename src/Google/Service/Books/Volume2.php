@@ -23,10 +23,16 @@ class Google_Service_Books_Volume2 extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Books_Volume
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Books_Volume
+   */
   public function getItems()
   {
     return $this->items;

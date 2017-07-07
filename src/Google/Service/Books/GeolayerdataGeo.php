@@ -29,10 +29,16 @@ class Google_Service_Books_GeolayerdataGeo extends Google_Collection
   protected $viewportDataType = '';
   public $zoom;
 
+  /**
+   * @param Google_Service_Books_GeolayerdataGeoBoundary
+   */
   public function setBoundary($boundary)
   {
     $this->boundary = $boundary;
   }
+  /**
+   * @return Google_Service_Books_GeolayerdataGeoBoundary
+   */
   public function getBoundary()
   {
     return $this->boundary;
@@ -77,10 +83,16 @@ class Google_Service_Books_GeolayerdataGeo extends Google_Collection
   {
     return $this->mapType;
   }
+  /**
+   * @param Google_Service_Books_GeolayerdataGeoViewport
+   */
   public function setViewport(Google_Service_Books_GeolayerdataGeoViewport $viewport)
   {
     $this->viewport = $viewport;
   }
+  /**
+   * @return Google_Service_Books_GeolayerdataGeoViewport
+   */
   public function getViewport()
   {
     return $this->viewport;

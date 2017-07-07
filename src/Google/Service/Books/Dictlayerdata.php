@@ -23,18 +23,30 @@ class Google_Service_Books_Dictlayerdata extends Google_Model
   protected $dictDataType = '';
   public $kind;
 
+  /**
+   * @param Google_Service_Books_DictlayerdataCommon
+   */
   public function setCommon(Google_Service_Books_DictlayerdataCommon $common)
   {
     $this->common = $common;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataCommon
+   */
   public function getCommon()
   {
     return $this->common;
   }
+  /**
+   * @param Google_Service_Books_DictlayerdataDict
+   */
   public function setDict(Google_Service_Books_DictlayerdataDict $dict)
   {
     $this->dict = $dict;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataDict
+   */
   public function getDict()
   {
     return $this->dict;

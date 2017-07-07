@@ -48,10 +48,16 @@ class Google_Service_Books_Volumeseriesinfo extends Google_Collection
   {
     return $this->shortSeriesBookTitle;
   }
+  /**
+   * @param Google_Service_Books_VolumeseriesinfoVolumeSeries
+   */
   public function setVolumeSeries($volumeSeries)
   {
     $this->volumeSeries = $volumeSeries;
   }
+  /**
+   * @return Google_Service_Books_VolumeseriesinfoVolumeSeries
+   */
   public function getVolumeSeries()
   {
     return $this->volumeSeries;

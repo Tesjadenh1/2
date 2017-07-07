@@ -30,10 +30,16 @@ class Google_Service_Books_Series extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Books_SeriesSeries
+   */
   public function setSeries($series)
   {
     $this->series = $series;
   }
+  /**
+   * @return Google_Service_Books_SeriesSeries
+   */
   public function getSeries()
   {
     return $this->series;

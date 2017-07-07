@@ -30,10 +30,16 @@ class Google_Service_Books_DiscoveryclustersClusters extends Google_Collection
   protected $volumesType = 'Google_Service_Books_Volume';
   protected $volumesDataType = 'array';
 
+  /**
+   * @param Google_Service_Books_DiscoveryclustersClustersBannerWithContentContainer
+   */
   public function setBannerWithContentContainer(Google_Service_Books_DiscoveryclustersClustersBannerWithContentContainer $bannerWithContentContainer)
   {
     $this->bannerWithContentContainer = $bannerWithContentContainer;
   }
+  /**
+   * @return Google_Service_Books_DiscoveryclustersClustersBannerWithContentContainer
+   */
   public function getBannerWithContentContainer()
   {
     return $this->bannerWithContentContainer;
@@ -70,10 +76,16 @@ class Google_Service_Books_DiscoveryclustersClusters extends Google_Collection
   {
     return $this->uid;
   }
+  /**
+   * @param Google_Service_Books_Volume
+   */
   public function setVolumes($volumes)
   {
     $this->volumes = $volumes;
   }
+  /**
+   * @return Google_Service_Books_Volume
+   */
   public function getVolumes()
   {
     return $this->volumes;

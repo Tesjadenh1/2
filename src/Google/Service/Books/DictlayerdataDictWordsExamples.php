@@ -21,10 +21,16 @@ class Google_Service_Books_DictlayerdataDictWordsExamples extends Google_Model
   protected $sourceDataType = '';
   public $text;
 
+  /**
+   * @param Google_Service_Books_DictlayerdataDictWordsExamplesSource
+   */
   public function setSource(Google_Service_Books_DictlayerdataDictWordsExamplesSource $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataDictWordsExamplesSource
+   */
   public function getSource()
   {
     return $this->source;

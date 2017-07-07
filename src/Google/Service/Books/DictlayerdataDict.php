@@ -23,18 +23,30 @@ class Google_Service_Books_DictlayerdataDict extends Google_Collection
   protected $wordsType = 'Google_Service_Books_DictlayerdataDictWords';
   protected $wordsDataType = 'array';
 
+  /**
+   * @param Google_Service_Books_DictlayerdataDictSource
+   */
   public function setSource(Google_Service_Books_DictlayerdataDictSource $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataDictSource
+   */
   public function getSource()
   {
     return $this->source;
   }
+  /**
+   * @param Google_Service_Books_DictlayerdataDictWords
+   */
   public function setWords($words)
   {
     $this->words = $words;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataDictWords
+   */
   public function getWords()
   {
     return $this->words;

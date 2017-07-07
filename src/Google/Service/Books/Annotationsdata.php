@@ -24,10 +24,16 @@ class Google_Service_Books_Annotationsdata extends Google_Collection
   public $nextPageToken;
   public $totalItems;
 
+  /**
+   * @param Google_Service_Books_Annotationdata
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Books_Annotationdata
+   */
   public function getItems()
   {
     return $this->items;

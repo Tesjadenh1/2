@@ -21,10 +21,16 @@ class Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamples exten
   protected $sourceDataType = '';
   public $text;
 
+  /**
+   * @param Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamplesSource
+   */
   public function setSource(Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamplesSource $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Books_DictlayerdataDictWordsSensesDefinitionsExamplesSource
+   */
   public function getSource()
   {
     return $this->source;

@@ -22,10 +22,16 @@ class Google_Service_Books_Offers extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Books_OffersItems
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Books_OffersItems
+   */
   public function getItems()
   {
     return $this->items;

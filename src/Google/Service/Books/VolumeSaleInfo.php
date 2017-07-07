@@ -54,18 +54,30 @@ class Google_Service_Books_VolumeSaleInfo extends Google_Collection
   {
     return $this->isEbook;
   }
+  /**
+   * @param Google_Service_Books_VolumeSaleInfoListPrice
+   */
   public function setListPrice(Google_Service_Books_VolumeSaleInfoListPrice $listPrice)
   {
     $this->listPrice = $listPrice;
   }
+  /**
+   * @return Google_Service_Books_VolumeSaleInfoListPrice
+   */
   public function getListPrice()
   {
     return $this->listPrice;
   }
+  /**
+   * @param Google_Service_Books_VolumeSaleInfoOffers
+   */
   public function setOffers($offers)
   {
     $this->offers = $offers;
   }
+  /**
+   * @return Google_Service_Books_VolumeSaleInfoOffers
+   */
   public function getOffers()
   {
     return $this->offers;
@@ -78,10 +90,16 @@ class Google_Service_Books_VolumeSaleInfo extends Google_Collection
   {
     return $this->onSaleDate;
   }
+  /**
+   * @param Google_Service_Books_VolumeSaleInfoRetailPrice
+   */
   public function setRetailPrice(Google_Service_Books_VolumeSaleInfoRetailPrice $retailPrice)
   {
     $this->retailPrice = $retailPrice;
   }
+  /**
+   * @return Google_Service_Books_VolumeSaleInfoRetailPrice
+   */
   public function getRetailPrice()
   {
     return $this->retailPrice;
