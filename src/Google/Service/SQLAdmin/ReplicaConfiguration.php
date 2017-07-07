@@ -38,10 +38,16 @@ class Google_Service_SQLAdmin_ReplicaConfiguration extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_SQLAdmin_MySqlReplicaConfiguration
+   */
   public function setMysqlReplicaConfiguration(Google_Service_SQLAdmin_MySqlReplicaConfiguration $mysqlReplicaConfiguration)
   {
     $this->mysqlReplicaConfiguration = $mysqlReplicaConfiguration;
   }
+  /**
+   * @return Google_Service_SQLAdmin_MySqlReplicaConfiguration
+   */
   public function getMysqlReplicaConfiguration()
   {
     return $this->mysqlReplicaConfiguration;

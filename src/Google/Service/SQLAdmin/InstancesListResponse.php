@@ -23,10 +23,16 @@ class Google_Service_SQLAdmin_InstancesListResponse extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_SQLAdmin_DatabaseInstance
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_SQLAdmin_DatabaseInstance
+   */
   public function getItems()
   {
     return $this->items;

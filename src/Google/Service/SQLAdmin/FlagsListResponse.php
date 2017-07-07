@@ -22,10 +22,16 @@ class Google_Service_SQLAdmin_FlagsListResponse extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_SQLAdmin_Flag
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_SQLAdmin_Flag
+   */
   public function getItems()
   {
     return $this->items;

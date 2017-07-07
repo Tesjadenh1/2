@@ -21,10 +21,16 @@ class Google_Service_SQLAdmin_SslCertDetail extends Google_Model
   protected $certInfoDataType = '';
   public $certPrivateKey;
 
+  /**
+   * @param Google_Service_SQLAdmin_SslCert
+   */
   public function setCertInfo(Google_Service_SQLAdmin_SslCert $certInfo)
   {
     $this->certInfo = $certInfo;
   }
+  /**
+   * @return Google_Service_SQLAdmin_SslCert
+   */
   public function getCertInfo()
   {
     return $this->certInfo;

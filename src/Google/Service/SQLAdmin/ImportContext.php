@@ -25,10 +25,16 @@ class Google_Service_SQLAdmin_ImportContext extends Google_Model
   public $kind;
   public $uri;
 
+  /**
+   * @param Google_Service_SQLAdmin_ImportContextCsvImportOptions
+   */
   public function setCsvImportOptions(Google_Service_SQLAdmin_ImportContextCsvImportOptions $csvImportOptions)
   {
     $this->csvImportOptions = $csvImportOptions;
   }
+  /**
+   * @return Google_Service_SQLAdmin_ImportContextCsvImportOptions
+   */
   public function getCsvImportOptions()
   {
     return $this->csvImportOptions;

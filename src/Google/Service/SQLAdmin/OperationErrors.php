@@ -22,10 +22,16 @@ class Google_Service_SQLAdmin_OperationErrors extends Google_Collection
   protected $errorsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_SQLAdmin_OperationError
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_SQLAdmin_OperationError
+   */
   public function getErrors()
   {
     return $this->errors;

@@ -22,10 +22,16 @@ class Google_Service_SQLAdmin_DatabasesListResponse extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_SQLAdmin_Database
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_SQLAdmin_Database
+   */
   public function getItems()
   {
     return $this->items;

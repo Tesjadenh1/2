@@ -22,10 +22,16 @@ class Google_Service_SQLAdmin_CloneContext extends Google_Model
   public $destinationInstanceName;
   public $kind;
 
+  /**
+   * @param Google_Service_SQLAdmin_BinLogCoordinates
+   */
   public function setBinLogCoordinates(Google_Service_SQLAdmin_BinLogCoordinates $binLogCoordinates)
   {
     $this->binLogCoordinates = $binLogCoordinates;
   }
+  /**
+   * @return Google_Service_SQLAdmin_BinLogCoordinates
+   */
   public function getBinLogCoordinates()
   {
     return $this->binLogCoordinates;

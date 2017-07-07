@@ -55,10 +55,16 @@ class Google_Service_SQLAdmin_BackupRun extends Google_Model
   {
     return $this->enqueuedTime;
   }
+  /**
+   * @param Google_Service_SQLAdmin_OperationError
+   */
   public function setError(Google_Service_SQLAdmin_OperationError $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_SQLAdmin_OperationError
+   */
   public function getError()
   {
     return $this->error;

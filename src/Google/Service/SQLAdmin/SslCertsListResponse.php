@@ -22,10 +22,16 @@ class Google_Service_SQLAdmin_SslCertsListResponse extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_SQLAdmin_SslCert
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_SQLAdmin_SslCert
+   */
   public function getItems()
   {
     return $this->items;
