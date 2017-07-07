@@ -22,10 +22,16 @@ class Google_Service_Vision_ColorInfo extends Google_Model
   public $pixelFraction;
   public $score;
 
+  /**
+   * @param Google_Service_Vision_Color
+   */
   public function setColor(Google_Service_Vision_Color $color)
   {
     $this->color = $color;
   }
+  /**
+   * @return Google_Service_Vision_Color
+   */
   public function getColor()
   {
     return $this->color;

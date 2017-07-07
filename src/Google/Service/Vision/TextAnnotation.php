@@ -22,10 +22,16 @@ class Google_Service_Vision_TextAnnotation extends Google_Collection
   protected $pagesDataType = 'array';
   public $text;
 
+  /**
+   * @param Google_Service_Vision_Page
+   */
   public function setPages($pages)
   {
     $this->pages = $pages;
   }
+  /**
+   * @return Google_Service_Vision_Page
+   */
   public function getPages()
   {
     return $this->pages;

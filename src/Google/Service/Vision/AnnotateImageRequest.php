@@ -25,26 +25,44 @@ class Google_Service_Vision_AnnotateImageRequest extends Google_Collection
   protected $imageContextType = 'Google_Service_Vision_ImageContext';
   protected $imageContextDataType = '';
 
+  /**
+   * @param Google_Service_Vision_Feature
+   */
   public function setFeatures($features)
   {
     $this->features = $features;
   }
+  /**
+   * @return Google_Service_Vision_Feature
+   */
   public function getFeatures()
   {
     return $this->features;
   }
+  /**
+   * @param Google_Service_Vision_Image
+   */
   public function setImage(Google_Service_Vision_Image $image)
   {
     $this->image = $image;
   }
+  /**
+   * @return Google_Service_Vision_Image
+   */
   public function getImage()
   {
     return $this->image;
   }
+  /**
+   * @param Google_Service_Vision_ImageContext
+   */
   public function setImageContext(Google_Service_Vision_ImageContext $imageContext)
   {
     $this->imageContext = $imageContext;
   }
+  /**
+   * @return Google_Service_Vision_ImageContext
+   */
   public function getImageContext()
   {
     return $this->imageContext;

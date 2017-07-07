@@ -21,10 +21,16 @@ class Google_Service_Vision_CropHintsAnnotation extends Google_Collection
   protected $cropHintsType = 'Google_Service_Vision_CropHint';
   protected $cropHintsDataType = 'array';
 
+  /**
+   * @param Google_Service_Vision_CropHint
+   */
   public function setCropHints($cropHints)
   {
     $this->cropHints = $cropHints;
   }
+  /**
+   * @return Google_Service_Vision_CropHint
+   */
   public function getCropHints()
   {
     return $this->cropHints;

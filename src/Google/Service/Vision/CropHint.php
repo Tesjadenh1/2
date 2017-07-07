@@ -22,10 +22,16 @@ class Google_Service_Vision_CropHint extends Google_Model
   public $confidence;
   public $importanceFraction;
 
+  /**
+   * @param Google_Service_Vision_BoundingPoly
+   */
   public function setBoundingPoly(Google_Service_Vision_BoundingPoly $boundingPoly)
   {
     $this->boundingPoly = $boundingPoly;
   }
+  /**
+   * @return Google_Service_Vision_BoundingPoly
+   */
   public function getBoundingPoly()
   {
     return $this->boundingPoly;

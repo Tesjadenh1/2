@@ -21,10 +21,16 @@ class Google_Service_Vision_BatchAnnotateImagesRequest extends Google_Collection
   protected $requestsType = 'Google_Service_Vision_AnnotateImageRequest';
   protected $requestsDataType = 'array';
 
+  /**
+   * @param Google_Service_Vision_AnnotateImageRequest
+   */
   public function setRequests($requests)
   {
     $this->requests = $requests;
   }
+  /**
+   * @return Google_Service_Vision_AnnotateImageRequest
+   */
   public function getRequests()
   {
     return $this->requests;

@@ -35,6 +35,9 @@ class Google_Service_Vision extends Google_Service
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
+  /** Apply machine learning models to understand and label images. */
+  const CLOUD_VISION =
+      "https://www.googleapis.com/auth/cloud-vision";
 
   public $images;
   

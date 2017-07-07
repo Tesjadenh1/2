@@ -29,10 +29,16 @@ class Google_Service_Vision_Image extends Google_Model
   {
     return $this->content;
   }
+  /**
+   * @param Google_Service_Vision_ImageSource
+   */
   public function setSource(Google_Service_Vision_ImageSource $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Vision_ImageSource
+   */
   public function getSource()
   {
     return $this->source;

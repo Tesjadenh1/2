@@ -31,10 +31,16 @@ class Google_Service_Vision_EntityAnnotation extends Google_Collection
   public $score;
   public $topicality;
 
+  /**
+   * @param Google_Service_Vision_BoundingPoly
+   */
   public function setBoundingPoly(Google_Service_Vision_BoundingPoly $boundingPoly)
   {
     $this->boundingPoly = $boundingPoly;
   }
+  /**
+   * @return Google_Service_Vision_BoundingPoly
+   */
   public function getBoundingPoly()
   {
     return $this->boundingPoly;
@@ -63,10 +69,16 @@ class Google_Service_Vision_EntityAnnotation extends Google_Collection
   {
     return $this->locale;
   }
+  /**
+   * @param Google_Service_Vision_LocationInfo
+   */
   public function setLocations($locations)
   {
     $this->locations = $locations;
   }
+  /**
+   * @return Google_Service_Vision_LocationInfo
+   */
   public function getLocations()
   {
     return $this->locations;
@@ -79,10 +91,16 @@ class Google_Service_Vision_EntityAnnotation extends Google_Collection
   {
     return $this->mid;
   }
+  /**
+   * @param Google_Service_Vision_Property
+   */
   public function setProperties($properties)
   {
     $this->properties = $properties;
   }
+  /**
+   * @return Google_Service_Vision_Property
+   */
   public function getProperties()
   {
     return $this->properties;

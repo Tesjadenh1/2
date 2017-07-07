@@ -24,10 +24,16 @@ class Google_Service_Vision_ImageContext extends Google_Collection
   protected $latLongRectType = 'Google_Service_Vision_LatLongRect';
   protected $latLongRectDataType = '';
 
+  /**
+   * @param Google_Service_Vision_CropHintsParams
+   */
   public function setCropHintsParams(Google_Service_Vision_CropHintsParams $cropHintsParams)
   {
     $this->cropHintsParams = $cropHintsParams;
   }
+  /**
+   * @return Google_Service_Vision_CropHintsParams
+   */
   public function getCropHintsParams()
   {
     return $this->cropHintsParams;
@@ -40,10 +46,16 @@ class Google_Service_Vision_ImageContext extends Google_Collection
   {
     return $this->languageHints;
   }
+  /**
+   * @param Google_Service_Vision_LatLongRect
+   */
   public function setLatLongRect(Google_Service_Vision_LatLongRect $latLongRect)
   {
     $this->latLongRect = $latLongRect;
   }
+  /**
+   * @return Google_Service_Vision_LatLongRect
+   */
   public function getLatLongRect()
   {
     return $this->latLongRect;

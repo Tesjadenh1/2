@@ -25,10 +25,16 @@ class Google_Service_Vision_Page extends Google_Collection
   protected $propertyDataType = '';
   public $width;
 
+  /**
+   * @param Google_Service_Vision_Block
+   */
   public function setBlocks($blocks)
   {
     $this->blocks = $blocks;
   }
+  /**
+   * @return Google_Service_Vision_Block
+   */
   public function getBlocks()
   {
     return $this->blocks;
@@ -41,10 +47,16 @@ class Google_Service_Vision_Page extends Google_Collection
   {
     return $this->height;
   }
+  /**
+   * @param Google_Service_Vision_TextProperty
+   */
   public function setProperty(Google_Service_Vision_TextProperty $property)
   {
     $this->property = $property;
   }
+  /**
+   * @return Google_Service_Vision_TextProperty
+   */
   public function getProperty()
   {
     return $this->property;

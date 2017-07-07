@@ -25,26 +25,44 @@ class Google_Service_Vision_Word extends Google_Collection
   protected $symbolsType = 'Google_Service_Vision_Symbol';
   protected $symbolsDataType = 'array';
 
+  /**
+   * @param Google_Service_Vision_BoundingPoly
+   */
   public function setBoundingBox(Google_Service_Vision_BoundingPoly $boundingBox)
   {
     $this->boundingBox = $boundingBox;
   }
+  /**
+   * @return Google_Service_Vision_BoundingPoly
+   */
   public function getBoundingBox()
   {
     return $this->boundingBox;
   }
+  /**
+   * @param Google_Service_Vision_TextProperty
+   */
   public function setProperty(Google_Service_Vision_TextProperty $property)
   {
     $this->property = $property;
   }
+  /**
+   * @return Google_Service_Vision_TextProperty
+   */
   public function getProperty()
   {
     return $this->property;
   }
+  /**
+   * @param Google_Service_Vision_Symbol
+   */
   public function setSymbols($symbols)
   {
     $this->symbols = $symbols;
   }
+  /**
+   * @return Google_Service_Vision_Symbol
+   */
   public function getSymbols()
   {
     return $this->symbols;
