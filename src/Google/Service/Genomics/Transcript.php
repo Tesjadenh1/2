@@ -24,18 +24,30 @@ class Google_Service_Genomics_Transcript extends Google_Collection
   protected $exonsDataType = 'array';
   public $geneId;
 
+  /**
+   * @param Google_Service_Genomics_CodingSequence
+   */
   public function setCodingSequence(Google_Service_Genomics_CodingSequence $codingSequence)
   {
     $this->codingSequence = $codingSequence;
   }
+  /**
+   * @return Google_Service_Genomics_CodingSequence
+   */
   public function getCodingSequence()
   {
     return $this->codingSequence;
   }
+  /**
+   * @param Google_Service_Genomics_Exon
+   */
   public function setExons($exons)
   {
     $this->exons = $exons;
   }
+  /**
+   * @return Google_Service_Genomics_Exon
+   */
   public function getExons()
   {
     return $this->exons;

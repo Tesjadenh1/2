@@ -22,10 +22,16 @@ class Google_Service_Genomics_SearchReadsResponse extends Google_Collection
   protected $alignmentsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Genomics_Read
+   */
   public function setAlignments($alignments)
   {
     $this->alignments = $alignments;
   }
+  /**
+   * @return Google_Service_Genomics_Read
+   */
   public function getAlignments()
   {
     return $this->alignments;

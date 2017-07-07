@@ -30,10 +30,16 @@ class Google_Service_Genomics_SearchReferenceSetsResponse extends Google_Collect
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Genomics_ReferenceSet
+   */
   public function setReferenceSets($referenceSets)
   {
     $this->referenceSets = $referenceSets;
   }
+  /**
+   * @return Google_Service_Genomics_ReferenceSet
+   */
   public function getReferenceSets()
   {
     return $this->referenceSets;

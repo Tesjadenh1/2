@@ -22,10 +22,16 @@ class Google_Service_Genomics_SearchAnnotationsResponse extends Google_Collectio
   protected $annotationsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Genomics_Annotation
+   */
   public function setAnnotations($annotations)
   {
     $this->annotations = $annotations;
   }
+  /**
+   * @return Google_Service_Genomics_Annotation
+   */
   public function getAnnotations()
   {
     return $this->annotations;

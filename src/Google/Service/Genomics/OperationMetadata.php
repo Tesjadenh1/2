@@ -53,10 +53,16 @@ class Google_Service_Genomics_OperationMetadata extends Google_Collection
   {
     return $this->endTime;
   }
+  /**
+   * @param Google_Service_Genomics_OperationEvent
+   */
   public function setEvents($events)
   {
     $this->events = $events;
   }
+  /**
+   * @return Google_Service_Genomics_OperationEvent
+   */
   public function getEvents()
   {
     return $this->events;

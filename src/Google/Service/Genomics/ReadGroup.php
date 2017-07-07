@@ -47,10 +47,16 @@ class Google_Service_Genomics_ReadGroup extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Genomics_Experiment
+   */
   public function setExperiment(Google_Service_Genomics_Experiment $experiment)
   {
     $this->experiment = $experiment;
   }
+  /**
+   * @return Google_Service_Genomics_Experiment
+   */
   public function getExperiment()
   {
     return $this->experiment;
@@ -87,10 +93,16 @@ class Google_Service_Genomics_ReadGroup extends Google_Collection
   {
     return $this->predictedInsertSize;
   }
+  /**
+   * @param Google_Service_Genomics_Program
+   */
   public function setPrograms($programs)
   {
     $this->programs = $programs;
   }
+  /**
+   * @return Google_Service_Genomics_Program
+   */
   public function getPrograms()
   {
     return $this->programs;

@@ -30,10 +30,16 @@ class Google_Service_Genomics_SearchReadGroupSetsResponse extends Google_Collect
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Genomics_ReadGroupSet
+   */
   public function setReadGroupSets($readGroupSets)
   {
     $this->readGroupSets = $readGroupSets;
   }
+  /**
+   * @return Google_Service_Genomics_ReadGroupSet
+   */
   public function getReadGroupSets()
   {
     return $this->readGroupSets;

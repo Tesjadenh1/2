@@ -104,10 +104,16 @@ class Google_Service_Genomics_Annotation extends Google_Model
   {
     return $this->start;
   }
+  /**
+   * @param Google_Service_Genomics_Transcript
+   */
   public function setTranscript(Google_Service_Genomics_Transcript $transcript)
   {
     $this->transcript = $transcript;
   }
+  /**
+   * @return Google_Service_Genomics_Transcript
+   */
   public function getTranscript()
   {
     return $this->transcript;
@@ -120,10 +126,16 @@ class Google_Service_Genomics_Annotation extends Google_Model
   {
     return $this->type;
   }
+  /**
+   * @param Google_Service_Genomics_VariantAnnotation
+   */
   public function setVariant(Google_Service_Genomics_VariantAnnotation $variant)
   {
     $this->variant = $variant;
   }
+  /**
+   * @return Google_Service_Genomics_VariantAnnotation
+   */
   public function getVariant()
   {
     return $this->variant;

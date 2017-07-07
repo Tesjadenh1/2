@@ -31,10 +31,16 @@ class Google_Service_Genomics_ListCoverageBucketsResponse extends Google_Collect
   {
     return $this->bucketWidth;
   }
+  /**
+   * @param Google_Service_Genomics_CoverageBucket
+   */
   public function setCoverageBuckets($coverageBuckets)
   {
     $this->coverageBuckets = $coverageBuckets;
   }
+  /**
+   * @return Google_Service_Genomics_CoverageBucket
+   */
   public function getCoverageBuckets()
   {
     return $this->coverageBuckets;

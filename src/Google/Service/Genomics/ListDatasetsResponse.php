@@ -22,10 +22,16 @@ class Google_Service_Genomics_ListDatasetsResponse extends Google_Collection
   protected $datasetsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Genomics_Dataset
+   */
   public function setDatasets($datasets)
   {
     $this->datasets = $datasets;
   }
+  /**
+   * @return Google_Service_Genomics_Dataset
+   */
   public function getDatasets()
   {
     return $this->datasets;

@@ -22,10 +22,16 @@ class Google_Service_Genomics_SearchCallSetsResponse extends Google_Collection
   protected $callSetsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Genomics_CallSet
+   */
   public function setCallSets($callSets)
   {
     $this->callSets = $callSets;
   }
+  /**
+   * @return Google_Service_Genomics_CallSet
+   */
   public function getCallSets()
   {
     return $this->callSets;

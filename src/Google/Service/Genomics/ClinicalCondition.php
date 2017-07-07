@@ -32,10 +32,16 @@ class Google_Service_Genomics_ClinicalCondition extends Google_Collection
   {
     return $this->conceptId;
   }
+  /**
+   * @param Google_Service_Genomics_ExternalId
+   */
   public function setExternalIds($externalIds)
   {
     $this->externalIds = $externalIds;
   }
+  /**
+   * @return Google_Service_Genomics_ExternalId
+   */
   public function getExternalIds()
   {
     return $this->externalIds;

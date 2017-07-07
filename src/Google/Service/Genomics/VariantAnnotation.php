@@ -43,10 +43,16 @@ class Google_Service_Genomics_VariantAnnotation extends Google_Collection
   {
     return $this->clinicalSignificance;
   }
+  /**
+   * @param Google_Service_Genomics_ClinicalCondition
+   */
   public function setConditions($conditions)
   {
     $this->conditions = $conditions;
   }
+  /**
+   * @return Google_Service_Genomics_ClinicalCondition
+   */
   public function getConditions()
   {
     return $this->conditions;

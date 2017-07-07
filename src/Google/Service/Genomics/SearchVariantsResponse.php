@@ -30,10 +30,16 @@ class Google_Service_Genomics_SearchVariantsResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Genomics_Variant
+   */
   public function setVariants($variants)
   {
     $this->variants = $variants;
   }
+  /**
+   * @return Google_Service_Genomics_Variant
+   */
   public function getVariants()
   {
     return $this->variants;

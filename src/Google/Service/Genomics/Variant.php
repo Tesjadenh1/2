@@ -41,10 +41,16 @@ class Google_Service_Genomics_Variant extends Google_Collection
   {
     return $this->alternateBases;
   }
+  /**
+   * @param Google_Service_Genomics_VariantCall
+   */
   public function setCalls($calls)
   {
     $this->calls = $calls;
   }
+  /**
+   * @return Google_Service_Genomics_VariantCall
+   */
   public function getCalls()
   {
     return $this->calls;

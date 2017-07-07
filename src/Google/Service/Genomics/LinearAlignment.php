@@ -24,10 +24,16 @@ class Google_Service_Genomics_LinearAlignment extends Google_Collection
   protected $positionType = 'Google_Service_Genomics_Position';
   protected $positionDataType = '';
 
+  /**
+   * @param Google_Service_Genomics_CigarUnit
+   */
   public function setCigar($cigar)
   {
     $this->cigar = $cigar;
   }
+  /**
+   * @return Google_Service_Genomics_CigarUnit
+   */
   public function getCigar()
   {
     return $this->cigar;
@@ -40,10 +46,16 @@ class Google_Service_Genomics_LinearAlignment extends Google_Collection
   {
     return $this->mappingQuality;
   }
+  /**
+   * @param Google_Service_Genomics_Position
+   */
   public function setPosition(Google_Service_Genomics_Position $position)
   {
     $this->position = $position;
   }
+  /**
+   * @return Google_Service_Genomics_Position
+   */
   public function getPosition()
   {
     return $this->position;

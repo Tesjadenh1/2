@@ -67,10 +67,16 @@ class Google_Service_Genomics_ReadGroupSet extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Genomics_ReadGroup
+   */
   public function setReadGroups($readGroups)
   {
     $this->readGroups = $readGroups;
   }
+  /**
+   * @return Google_Service_Genomics_ReadGroup
+   */
   public function getReadGroups()
   {
     return $this->readGroups;
