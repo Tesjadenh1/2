@@ -22,10 +22,16 @@ class Google_Service_Iam_ListServiceAccountsResponse extends Google_Collection
   protected $accountsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Iam_ServiceAccount
+   */
   public function setAccounts($accounts)
   {
     $this->accounts = $accounts;
   }
+  /**
+   * @return Google_Service_Iam_ServiceAccount
+   */
   public function getAccounts()
   {
     return $this->accounts;

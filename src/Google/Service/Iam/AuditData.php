@@ -20,10 +20,16 @@ class Google_Service_Iam_AuditData extends Google_Model
   protected $policyDeltaType = 'Google_Service_Iam_PolicyDelta';
   protected $policyDeltaDataType = '';
 
+  /**
+   * @param Google_Service_Iam_PolicyDelta
+   */
   public function setPolicyDelta(Google_Service_Iam_PolicyDelta $policyDelta)
   {
     $this->policyDelta = $policyDelta;
   }
+  /**
+   * @return Google_Service_Iam_PolicyDelta
+   */
   public function getPolicyDelta()
   {
     return $this->policyDelta;

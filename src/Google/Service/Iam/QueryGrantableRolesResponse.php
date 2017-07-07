@@ -30,10 +30,16 @@ class Google_Service_Iam_QueryGrantableRolesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Iam_Role
+   */
   public function setRoles($roles)
   {
     $this->roles = $roles;
   }
+  /**
+   * @return Google_Service_Iam_Role
+   */
   public function getRoles()
   {
     return $this->roles;

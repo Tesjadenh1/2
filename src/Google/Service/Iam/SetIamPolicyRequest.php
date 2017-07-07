@@ -20,10 +20,16 @@ class Google_Service_Iam_SetIamPolicyRequest extends Google_Model
   protected $policyType = 'Google_Service_Iam_Policy';
   protected $policyDataType = '';
 
+  /**
+   * @param Google_Service_Iam_Policy
+   */
   public function setPolicy(Google_Service_Iam_Policy $policy)
   {
     $this->policy = $policy;
   }
+  /**
+   * @return Google_Service_Iam_Policy
+   */
   public function getPolicy()
   {
     return $this->policy;
