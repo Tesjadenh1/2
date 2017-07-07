@@ -22,18 +22,30 @@ class Google_Service_CloudBuild_Source extends Google_Model
   protected $storageSourceType = 'Google_Service_CloudBuild_StorageSource';
   protected $storageSourceDataType = '';
 
+  /**
+   * @param Google_Service_CloudBuild_RepoSource
+   */
   public function setRepoSource(Google_Service_CloudBuild_RepoSource $repoSource)
   {
     $this->repoSource = $repoSource;
   }
+  /**
+   * @return Google_Service_CloudBuild_RepoSource
+   */
   public function getRepoSource()
   {
     return $this->repoSource;
   }
+  /**
+   * @param Google_Service_CloudBuild_StorageSource
+   */
   public function setStorageSource(Google_Service_CloudBuild_StorageSource $storageSource)
   {
     $this->storageSource = $storageSource;
   }
+  /**
+   * @return Google_Service_CloudBuild_StorageSource
+   */
   public function getStorageSource()
   {
     return $this->storageSource;

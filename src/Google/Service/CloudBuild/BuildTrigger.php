@@ -28,10 +28,16 @@ class Google_Service_CloudBuild_BuildTrigger extends Google_Model
   protected $triggerTemplateType = 'Google_Service_CloudBuild_RepoSource';
   protected $triggerTemplateDataType = '';
 
+  /**
+   * @param Google_Service_CloudBuild_Build
+   */
   public function setBuild(Google_Service_CloudBuild_Build $build)
   {
     $this->build = $build;
   }
+  /**
+   * @return Google_Service_CloudBuild_Build
+   */
   public function getBuild()
   {
     return $this->build;
@@ -84,10 +90,16 @@ class Google_Service_CloudBuild_BuildTrigger extends Google_Model
   {
     return $this->substitutions;
   }
+  /**
+   * @param Google_Service_CloudBuild_RepoSource
+   */
   public function setTriggerTemplate(Google_Service_CloudBuild_RepoSource $triggerTemplate)
   {
     $this->triggerTemplate = $triggerTemplate;
   }
+  /**
+   * @return Google_Service_CloudBuild_RepoSource
+   */
   public function getTriggerTemplate()
   {
     return $this->triggerTemplate;

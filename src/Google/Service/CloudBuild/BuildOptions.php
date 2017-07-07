@@ -20,6 +20,7 @@ class Google_Service_CloudBuild_BuildOptions extends Google_Collection
   protected $collection_key = 'sourceProvenanceHash';
   public $requestedVerifyOption;
   public $sourceProvenanceHash;
+  public $substitutionOption;
 
   public function setRequestedVerifyOption($requestedVerifyOption)
   {
@@ -36,5 +37,13 @@ class Google_Service_CloudBuild_BuildOptions extends Google_Collection
   public function getSourceProvenanceHash()
   {
     return $this->sourceProvenanceHash;
+  }
+  public function setSubstitutionOption($substitutionOption)
+  {
+    $this->substitutionOption = $substitutionOption;
+  }
+  public function getSubstitutionOption()
+  {
+    return $this->substitutionOption;
   }
 }

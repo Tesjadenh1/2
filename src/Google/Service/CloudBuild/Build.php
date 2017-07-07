@@ -99,10 +99,16 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   {
     return $this->logsBucket;
   }
+  /**
+   * @param Google_Service_CloudBuild_BuildOptions
+   */
   public function setOptions(Google_Service_CloudBuild_BuildOptions $options)
   {
     $this->options = $options;
   }
+  /**
+   * @return Google_Service_CloudBuild_BuildOptions
+   */
   public function getOptions()
   {
     return $this->options;
@@ -115,26 +121,44 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   {
     return $this->projectId;
   }
+  /**
+   * @param Google_Service_CloudBuild_Results
+   */
   public function setResults(Google_Service_CloudBuild_Results $results)
   {
     $this->results = $results;
   }
+  /**
+   * @return Google_Service_CloudBuild_Results
+   */
   public function getResults()
   {
     return $this->results;
   }
+  /**
+   * @param Google_Service_CloudBuild_Source
+   */
   public function setSource(Google_Service_CloudBuild_Source $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_CloudBuild_Source
+   */
   public function getSource()
   {
     return $this->source;
   }
+  /**
+   * @param Google_Service_CloudBuild_SourceProvenance
+   */
   public function setSourceProvenance(Google_Service_CloudBuild_SourceProvenance $sourceProvenance)
   {
     $this->sourceProvenance = $sourceProvenance;
   }
+  /**
+   * @return Google_Service_CloudBuild_SourceProvenance
+   */
   public function getSourceProvenance()
   {
     return $this->sourceProvenance;
@@ -163,10 +187,16 @@ class Google_Service_CloudBuild_Build extends Google_Collection
   {
     return $this->statusDetail;
   }
+  /**
+   * @param Google_Service_CloudBuild_BuildStep
+   */
   public function setSteps($steps)
   {
     $this->steps = $steps;
   }
+  /**
+   * @return Google_Service_CloudBuild_BuildStep
+   */
   public function getSteps()
   {
     return $this->steps;

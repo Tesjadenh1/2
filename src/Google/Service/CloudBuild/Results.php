@@ -30,10 +30,16 @@ class Google_Service_CloudBuild_Results extends Google_Collection
   {
     return $this->buildStepImages;
   }
+  /**
+   * @param Google_Service_CloudBuild_BuiltImage
+   */
   public function setImages($images)
   {
     $this->images = $images;
   }
+  /**
+   * @return Google_Service_CloudBuild_BuiltImage
+   */
   public function getImages()
   {
     return $this->images;

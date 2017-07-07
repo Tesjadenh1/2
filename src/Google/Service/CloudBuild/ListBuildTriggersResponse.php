@@ -21,10 +21,16 @@ class Google_Service_CloudBuild_ListBuildTriggersResponse extends Google_Collect
   protected $triggersType = 'Google_Service_CloudBuild_BuildTrigger';
   protected $triggersDataType = 'array';
 
+  /**
+   * @param Google_Service_CloudBuild_BuildTrigger
+   */
   public function setTriggers($triggers)
   {
     $this->triggers = $triggers;
   }
+  /**
+   * @return Google_Service_CloudBuild_BuildTrigger
+   */
   public function getTriggers()
   {
     return $this->triggers;
