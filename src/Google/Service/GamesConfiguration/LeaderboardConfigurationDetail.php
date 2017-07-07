@@ -41,18 +41,30 @@ class Google_Service_GamesConfiguration_LeaderboardConfigurationDetail extends G
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_LocalizedStringBundle
+   */
   public function setName(Google_Service_GamesConfiguration_LocalizedStringBundle $name)
   {
     $this->name = $name;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_LocalizedStringBundle
+   */
   public function getName()
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_GamesNumberFormatConfiguration
+   */
   public function setScoreFormat(Google_Service_GamesConfiguration_GamesNumberFormatConfiguration $scoreFormat)
   {
     $this->scoreFormat = $scoreFormat;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_GamesNumberFormatConfiguration
+   */
   public function getScoreFormat()
   {
     return $this->scoreFormat;

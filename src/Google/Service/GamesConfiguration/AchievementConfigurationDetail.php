@@ -26,10 +26,16 @@ class Google_Service_GamesConfiguration_AchievementConfigurationDetail extends G
   public $pointValue;
   public $sortRank;
 
+  /**
+   * @param Google_Service_GamesConfiguration_LocalizedStringBundle
+   */
   public function setDescription(Google_Service_GamesConfiguration_LocalizedStringBundle $description)
   {
     $this->description = $description;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_LocalizedStringBundle
+   */
   public function getDescription()
   {
     return $this->description;
@@ -50,10 +56,16 @@ class Google_Service_GamesConfiguration_AchievementConfigurationDetail extends G
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_LocalizedStringBundle
+   */
   public function setName(Google_Service_GamesConfiguration_LocalizedStringBundle $name)
   {
     $this->name = $name;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_LocalizedStringBundle
+   */
   public function getName()
   {
     return $this->name;

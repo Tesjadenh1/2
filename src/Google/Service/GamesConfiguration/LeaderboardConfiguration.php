@@ -28,10 +28,16 @@ class Google_Service_GamesConfiguration_LeaderboardConfiguration extends Google_
   public $scoreOrder;
   public $token;
 
+  /**
+   * @param Google_Service_GamesConfiguration_LeaderboardConfigurationDetail
+   */
   public function setDraft(Google_Service_GamesConfiguration_LeaderboardConfigurationDetail $draft)
   {
     $this->draft = $draft;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_LeaderboardConfigurationDetail
+   */
   public function getDraft()
   {
     return $this->draft;
@@ -52,10 +58,16 @@ class Google_Service_GamesConfiguration_LeaderboardConfiguration extends Google_
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_LeaderboardConfigurationDetail
+   */
   public function setPublished(Google_Service_GamesConfiguration_LeaderboardConfigurationDetail $published)
   {
     $this->published = $published;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_LeaderboardConfigurationDetail
+   */
   public function getPublished()
   {
     return $this->published;

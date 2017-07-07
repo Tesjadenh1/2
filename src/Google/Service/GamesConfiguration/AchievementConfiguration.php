@@ -36,10 +36,16 @@ class Google_Service_GamesConfiguration_AchievementConfiguration extends Google_
   {
     return $this->achievementType;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_AchievementConfigurationDetail
+   */
   public function setDraft(Google_Service_GamesConfiguration_AchievementConfigurationDetail $draft)
   {
     $this->draft = $draft;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_AchievementConfigurationDetail
+   */
   public function getDraft()
   {
     return $this->draft;
@@ -68,10 +74,16 @@ class Google_Service_GamesConfiguration_AchievementConfiguration extends Google_
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_AchievementConfigurationDetail
+   */
   public function setPublished(Google_Service_GamesConfiguration_AchievementConfigurationDetail $published)
   {
     $this->published = $published;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_AchievementConfigurationDetail
+   */
   public function getPublished()
   {
     return $this->published;

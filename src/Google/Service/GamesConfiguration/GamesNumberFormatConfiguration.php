@@ -47,10 +47,16 @@ class Google_Service_GamesConfiguration_GamesNumberFormatConfiguration extends G
   {
     return $this->numberFormatType;
   }
+  /**
+   * @param Google_Service_GamesConfiguration_GamesNumberAffixConfiguration
+   */
   public function setSuffix(Google_Service_GamesConfiguration_GamesNumberAffixConfiguration $suffix)
   {
     $this->suffix = $suffix;
   }
+  /**
+   * @return Google_Service_GamesConfiguration_GamesNumberAffixConfiguration
+   */
   public function getSuffix()
   {
     return $this->suffix;
