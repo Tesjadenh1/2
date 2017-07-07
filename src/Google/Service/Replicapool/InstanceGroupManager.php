@@ -34,10 +34,16 @@ class Google_Service_Replicapool_InstanceGroupManager extends Google_Collection
   public $targetPools;
   public $targetSize;
 
+  /**
+   * @param Google_Service_Replicapool_ReplicaPoolAutoHealingPolicy
+   */
   public function setAutoHealingPolicies($autoHealingPolicies)
   {
     $this->autoHealingPolicies = $autoHealingPolicies;
   }
+  /**
+   * @return Google_Service_Replicapool_ReplicaPoolAutoHealingPolicy
+   */
   public function getAutoHealingPolicies()
   {
     return $this->autoHealingPolicies;

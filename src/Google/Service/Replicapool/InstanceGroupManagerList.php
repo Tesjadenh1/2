@@ -33,10 +33,16 @@ class Google_Service_Replicapool_InstanceGroupManagerList extends Google_Collect
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Replicapool_InstanceGroupManager
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Replicapool_InstanceGroupManager
+   */
   public function getItems()
   {
     return $this->items;
