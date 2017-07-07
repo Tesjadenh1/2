@@ -21,10 +21,16 @@ class Google_Service_Slides_DeleteTableColumnRequest extends Google_Model
   protected $cellLocationDataType = '';
   public $tableObjectId;
 
+  /**
+   * @param Google_Service_Slides_TableCellLocation
+   */
   public function setCellLocation(Google_Service_Slides_TableCellLocation $cellLocation)
   {
     $this->cellLocation = $cellLocation;
   }
+  /**
+   * @return Google_Service_Slides_TableCellLocation
+   */
   public function getCellLocation()
   {
     return $this->cellLocation;

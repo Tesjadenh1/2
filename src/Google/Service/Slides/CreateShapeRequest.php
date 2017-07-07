@@ -22,10 +22,16 @@ class Google_Service_Slides_CreateShapeRequest extends Google_Model
   public $objectId;
   public $shapeType;
 
+  /**
+   * @param Google_Service_Slides_PageElementProperties
+   */
   public function setElementProperties(Google_Service_Slides_PageElementProperties $elementProperties)
   {
     $this->elementProperties = $elementProperties;
   }
+  /**
+   * @return Google_Service_Slides_PageElementProperties
+   */
   public function getElementProperties()
   {
     return $this->elementProperties;

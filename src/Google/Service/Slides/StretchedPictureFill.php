@@ -29,10 +29,16 @@ class Google_Service_Slides_StretchedPictureFill extends Google_Model
   {
     return $this->contentUrl;
   }
+  /**
+   * @param Google_Service_Slides_Size
+   */
   public function setSize(Google_Service_Slides_Size $size)
   {
     $this->size = $size;
   }
+  /**
+   * @return Google_Service_Slides_Size
+   */
   public function getSize()
   {
     return $this->size;

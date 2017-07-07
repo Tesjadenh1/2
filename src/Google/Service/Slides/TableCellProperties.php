@@ -20,10 +20,16 @@ class Google_Service_Slides_TableCellProperties extends Google_Model
   protected $tableCellBackgroundFillType = 'Google_Service_Slides_TableCellBackgroundFill';
   protected $tableCellBackgroundFillDataType = '';
 
+  /**
+   * @param Google_Service_Slides_TableCellBackgroundFill
+   */
   public function setTableCellBackgroundFill(Google_Service_Slides_TableCellBackgroundFill $tableCellBackgroundFill)
   {
     $this->tableCellBackgroundFill = $tableCellBackgroundFill;
   }
+  /**
+   * @return Google_Service_Slides_TableCellBackgroundFill
+   */
   public function getTableCellBackgroundFill()
   {
     return $this->tableCellBackgroundFill;

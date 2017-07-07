@@ -30,10 +30,16 @@ class Google_Service_Slides_UpdateLinePropertiesRequest extends Google_Model
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Slides_LineProperties
+   */
   public function setLineProperties(Google_Service_Slides_LineProperties $lineProperties)
   {
     $this->lineProperties = $lineProperties;
   }
+  /**
+   * @return Google_Service_Slides_LineProperties
+   */
   public function getLineProperties()
   {
     return $this->lineProperties;

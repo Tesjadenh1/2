@@ -21,10 +21,16 @@ class Google_Service_Slides_Line extends Google_Model
   protected $linePropertiesDataType = '';
   public $lineType;
 
+  /**
+   * @param Google_Service_Slides_LineProperties
+   */
   public function setLineProperties(Google_Service_Slides_LineProperties $lineProperties)
   {
     $this->lineProperties = $lineProperties;
   }
+  /**
+   * @return Google_Service_Slides_LineProperties
+   */
   public function getLineProperties()
   {
     return $this->lineProperties;

@@ -20,10 +20,16 @@ class Google_Service_Slides_OptionalColor extends Google_Model
   protected $opaqueColorType = 'Google_Service_Slides_OpaqueColor';
   protected $opaqueColorDataType = '';
 
+  /**
+   * @param Google_Service_Slides_OpaqueColor
+   */
   public function setOpaqueColor(Google_Service_Slides_OpaqueColor $opaqueColor)
   {
     $this->opaqueColor = $opaqueColor;
   }
+  /**
+   * @return Google_Service_Slides_OpaqueColor
+   */
   public function getOpaqueColor()
   {
     return $this->opaqueColor;

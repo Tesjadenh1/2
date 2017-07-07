@@ -38,10 +38,16 @@ class Google_Service_Slides_SlideProperties extends Google_Model
   {
     return $this->masterObjectId;
   }
+  /**
+   * @param Google_Service_Slides_Page
+   */
   public function setNotesPage(Google_Service_Slides_Page $notesPage)
   {
     $this->notesPage = $notesPage;
   }
+  /**
+   * @return Google_Service_Slides_Page
+   */
   public function getNotesPage()
   {
     return $this->notesPage;

@@ -23,18 +23,30 @@ class Google_Service_Slides_TableRow extends Google_Collection
   protected $tableCellsType = 'Google_Service_Slides_TableCell';
   protected $tableCellsDataType = 'array';
 
+  /**
+   * @param Google_Service_Slides_Dimension
+   */
   public function setRowHeight(Google_Service_Slides_Dimension $rowHeight)
   {
     $this->rowHeight = $rowHeight;
   }
+  /**
+   * @return Google_Service_Slides_Dimension
+   */
   public function getRowHeight()
   {
     return $this->rowHeight;
   }
+  /**
+   * @param Google_Service_Slides_TableCell
+   */
   public function setTableCells($tableCells)
   {
     $this->tableCells = $tableCells;
   }
+  /**
+   * @return Google_Service_Slides_TableCell
+   */
   public function getTableCells()
   {
     return $this->tableCells;

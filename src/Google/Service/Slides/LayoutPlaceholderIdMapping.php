@@ -22,10 +22,16 @@ class Google_Service_Slides_LayoutPlaceholderIdMapping extends Google_Model
   public $layoutPlaceholderObjectId;
   public $objectId;
 
+  /**
+   * @param Google_Service_Slides_Placeholder
+   */
   public function setLayoutPlaceholder(Google_Service_Slides_Placeholder $layoutPlaceholder)
   {
     $this->layoutPlaceholder = $layoutPlaceholder;
   }
+  /**
+   * @return Google_Service_Slides_Placeholder
+   */
   public function getLayoutPlaceholder()
   {
     return $this->layoutPlaceholder;

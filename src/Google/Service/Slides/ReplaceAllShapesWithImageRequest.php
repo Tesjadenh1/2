@@ -24,10 +24,16 @@ class Google_Service_Slides_ReplaceAllShapesWithImageRequest extends Google_Coll
   public $pageObjectIds;
   public $replaceMethod;
 
+  /**
+   * @param Google_Service_Slides_SubstringMatchCriteria
+   */
   public function setContainsText(Google_Service_Slides_SubstringMatchCriteria $containsText)
   {
     $this->containsText = $containsText;
   }
+  /**
+   * @return Google_Service_Slides_SubstringMatchCriteria
+   */
   public function getContainsText()
   {
     return $this->containsText;

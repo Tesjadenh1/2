@@ -38,10 +38,16 @@ class Google_Service_Slides_UpdatePagePropertiesRequest extends Google_Model
   {
     return $this->objectId;
   }
+  /**
+   * @param Google_Service_Slides_PageProperties
+   */
   public function setPageProperties(Google_Service_Slides_PageProperties $pageProperties)
   {
     $this->pageProperties = $pageProperties;
   }
+  /**
+   * @return Google_Service_Slides_PageProperties
+   */
   public function getPageProperties()
   {
     return $this->pageProperties;

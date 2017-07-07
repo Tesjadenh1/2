@@ -22,10 +22,16 @@ class Google_Service_Slides_CreateLineRequest extends Google_Model
   public $lineCategory;
   public $objectId;
 
+  /**
+   * @param Google_Service_Slides_PageElementProperties
+   */
   public function setElementProperties(Google_Service_Slides_PageElementProperties $elementProperties)
   {
     $this->elementProperties = $elementProperties;
   }
+  /**
+   * @return Google_Service_Slides_PageElementProperties
+   */
   public function getElementProperties()
   {
     return $this->elementProperties;

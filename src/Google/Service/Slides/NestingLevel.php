@@ -20,10 +20,16 @@ class Google_Service_Slides_NestingLevel extends Google_Model
   protected $bulletStyleType = 'Google_Service_Slides_TextStyle';
   protected $bulletStyleDataType = '';
 
+  /**
+   * @param Google_Service_Slides_TextStyle
+   */
   public function setBulletStyle(Google_Service_Slides_TextStyle $bulletStyle)
   {
     $this->bulletStyle = $bulletStyle;
   }
+  /**
+   * @return Google_Service_Slides_TextStyle
+   */
   public function getBulletStyle()
   {
     return $this->bulletStyle;

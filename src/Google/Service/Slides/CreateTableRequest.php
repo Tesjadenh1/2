@@ -31,10 +31,16 @@ class Google_Service_Slides_CreateTableRequest extends Google_Model
   {
     return $this->columns;
   }
+  /**
+   * @param Google_Service_Slides_PageElementProperties
+   */
   public function setElementProperties(Google_Service_Slides_PageElementProperties $elementProperties)
   {
     $this->elementProperties = $elementProperties;
   }
+  /**
+   * @return Google_Service_Slides_PageElementProperties
+   */
   public function getElementProperties()
   {
     return $this->elementProperties;

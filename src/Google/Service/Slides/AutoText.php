@@ -30,10 +30,16 @@ class Google_Service_Slides_AutoText extends Google_Model
   {
     return $this->content;
   }
+  /**
+   * @param Google_Service_Slides_TextStyle
+   */
   public function setStyle(Google_Service_Slides_TextStyle $style)
   {
     $this->style = $style;
   }
+  /**
+   * @return Google_Service_Slides_TextStyle
+   */
   public function getStyle()
   {
     return $this->style;

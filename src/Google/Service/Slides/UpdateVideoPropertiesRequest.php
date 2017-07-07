@@ -38,10 +38,16 @@ class Google_Service_Slides_UpdateVideoPropertiesRequest extends Google_Model
   {
     return $this->objectId;
   }
+  /**
+   * @param Google_Service_Slides_VideoProperties
+   */
   public function setVideoProperties(Google_Service_Slides_VideoProperties $videoProperties)
   {
     $this->videoProperties = $videoProperties;
   }
+  /**
+   * @return Google_Service_Slides_VideoProperties
+   */
   public function getVideoProperties()
   {
     return $this->videoProperties;

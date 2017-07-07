@@ -30,10 +30,16 @@ class Google_Service_Slides_TableRange extends Google_Model
   {
     return $this->columnSpan;
   }
+  /**
+   * @param Google_Service_Slides_TableCellLocation
+   */
   public function setLocation(Google_Service_Slides_TableCellLocation $location)
   {
     $this->location = $location;
   }
+  /**
+   * @return Google_Service_Slides_TableCellLocation
+   */
   public function getLocation()
   {
     return $this->location;

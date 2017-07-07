@@ -23,10 +23,16 @@ class Google_Service_Slides_InsertTextRequest extends Google_Model
   public $objectId;
   public $text;
 
+  /**
+   * @param Google_Service_Slides_TableCellLocation
+   */
   public function setCellLocation(Google_Service_Slides_TableCellLocation $cellLocation)
   {
     $this->cellLocation = $cellLocation;
   }
+  /**
+   * @return Google_Service_Slides_TableCellLocation
+   */
   public function getCellLocation()
   {
     return $this->cellLocation;

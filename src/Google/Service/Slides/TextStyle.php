@@ -35,10 +35,16 @@ class Google_Service_Slides_TextStyle extends Google_Model
   protected $weightedFontFamilyType = 'Google_Service_Slides_WeightedFontFamily';
   protected $weightedFontFamilyDataType = '';
 
+  /**
+   * @param Google_Service_Slides_OptionalColor
+   */
   public function setBackgroundColor(Google_Service_Slides_OptionalColor $backgroundColor)
   {
     $this->backgroundColor = $backgroundColor;
   }
+  /**
+   * @return Google_Service_Slides_OptionalColor
+   */
   public function getBackgroundColor()
   {
     return $this->backgroundColor;
@@ -67,18 +73,30 @@ class Google_Service_Slides_TextStyle extends Google_Model
   {
     return $this->fontFamily;
   }
+  /**
+   * @param Google_Service_Slides_Dimension
+   */
   public function setFontSize(Google_Service_Slides_Dimension $fontSize)
   {
     $this->fontSize = $fontSize;
   }
+  /**
+   * @return Google_Service_Slides_Dimension
+   */
   public function getFontSize()
   {
     return $this->fontSize;
   }
+  /**
+   * @param Google_Service_Slides_OptionalColor
+   */
   public function setForegroundColor(Google_Service_Slides_OptionalColor $foregroundColor)
   {
     $this->foregroundColor = $foregroundColor;
   }
+  /**
+   * @return Google_Service_Slides_OptionalColor
+   */
   public function getForegroundColor()
   {
     return $this->foregroundColor;
@@ -91,10 +109,16 @@ class Google_Service_Slides_TextStyle extends Google_Model
   {
     return $this->italic;
   }
+  /**
+   * @param Google_Service_Slides_Link
+   */
   public function setLink(Google_Service_Slides_Link $link)
   {
     $this->link = $link;
   }
+  /**
+   * @return Google_Service_Slides_Link
+   */
   public function getLink()
   {
     return $this->link;
@@ -123,10 +147,16 @@ class Google_Service_Slides_TextStyle extends Google_Model
   {
     return $this->underline;
   }
+  /**
+   * @param Google_Service_Slides_WeightedFontFamily
+   */
   public function setWeightedFontFamily(Google_Service_Slides_WeightedFontFamily $weightedFontFamily)
   {
     $this->weightedFontFamily = $weightedFontFamily;
   }
+  /**
+   * @return Google_Service_Slides_WeightedFontFamily
+   */
   public function getWeightedFontFamily()
   {
     return $this->weightedFontFamily;

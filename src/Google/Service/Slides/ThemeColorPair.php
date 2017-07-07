@@ -21,10 +21,16 @@ class Google_Service_Slides_ThemeColorPair extends Google_Model
   protected $colorDataType = '';
   public $type;
 
+  /**
+   * @param Google_Service_Slides_RgbColor
+   */
   public function setColor(Google_Service_Slides_RgbColor $color)
   {
     $this->color = $color;
   }
+  /**
+   * @return Google_Service_Slides_RgbColor
+   */
   public function getColor()
   {
     return $this->color;

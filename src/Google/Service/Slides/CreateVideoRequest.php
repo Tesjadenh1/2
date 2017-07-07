@@ -23,10 +23,16 @@ class Google_Service_Slides_CreateVideoRequest extends Google_Model
   public $objectId;
   public $source;
 
+  /**
+   * @param Google_Service_Slides_PageElementProperties
+   */
   public function setElementProperties(Google_Service_Slides_PageElementProperties $elementProperties)
   {
     $this->elementProperties = $elementProperties;
   }
+  /**
+   * @return Google_Service_Slides_PageElementProperties
+   */
   public function getElementProperties()
   {
     return $this->elementProperties;

@@ -30,10 +30,16 @@ class Google_Service_Slides_UpdateImagePropertiesRequest extends Google_Model
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Slides_ImageProperties
+   */
   public function setImageProperties(Google_Service_Slides_ImageProperties $imageProperties)
   {
     $this->imageProperties = $imageProperties;
   }
+  /**
+   * @return Google_Service_Slides_ImageProperties
+   */
   public function getImageProperties()
   {
     return $this->imageProperties;

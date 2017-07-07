@@ -39,10 +39,16 @@ class Google_Service_Slides_SheetsChart extends Google_Model
   {
     return $this->contentUrl;
   }
+  /**
+   * @param Google_Service_Slides_SheetsChartProperties
+   */
   public function setSheetsChartProperties(Google_Service_Slides_SheetsChartProperties $sheetsChartProperties)
   {
     $this->sheetsChartProperties = $sheetsChartProperties;
   }
+  /**
+   * @return Google_Service_Slides_SheetsChartProperties
+   */
   public function getSheetsChartProperties()
   {
     return $this->sheetsChartProperties;

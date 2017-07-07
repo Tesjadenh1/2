@@ -31,18 +31,30 @@ class Google_Service_Slides_PageBackgroundFill extends Google_Model
   {
     return $this->propertyState;
   }
+  /**
+   * @param Google_Service_Slides_SolidFill
+   */
   public function setSolidFill(Google_Service_Slides_SolidFill $solidFill)
   {
     $this->solidFill = $solidFill;
   }
+  /**
+   * @return Google_Service_Slides_SolidFill
+   */
   public function getSolidFill()
   {
     return $this->solidFill;
   }
+  /**
+   * @param Google_Service_Slides_StretchedPictureFill
+   */
   public function setStretchedPictureFill(Google_Service_Slides_StretchedPictureFill $stretchedPictureFill)
   {
     $this->stretchedPictureFill = $stretchedPictureFill;
   }
+  /**
+   * @return Google_Service_Slides_StretchedPictureFill
+   */
   public function getStretchedPictureFill()
   {
     return $this->stretchedPictureFill;

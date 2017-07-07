@@ -21,10 +21,16 @@ class Google_Service_Slides_OpaqueColor extends Google_Model
   protected $rgbColorDataType = '';
   public $themeColor;
 
+  /**
+   * @param Google_Service_Slides_RgbColor
+   */
   public function setRgbColor(Google_Service_Slides_RgbColor $rgbColor)
   {
     $this->rgbColor = $rgbColor;
   }
+  /**
+   * @return Google_Service_Slides_RgbColor
+   */
   public function getRgbColor()
   {
     return $this->rgbColor;

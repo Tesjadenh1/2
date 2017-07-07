@@ -29,10 +29,16 @@ class Google_Service_Slides_Image extends Google_Model
   {
     return $this->contentUrl;
   }
+  /**
+   * @param Google_Service_Slides_ImageProperties
+   */
   public function setImageProperties(Google_Service_Slides_ImageProperties $imageProperties)
   {
     $this->imageProperties = $imageProperties;
   }
+  /**
+   * @return Google_Service_Slides_ImageProperties
+   */
   public function getImageProperties()
   {
     return $this->imageProperties;

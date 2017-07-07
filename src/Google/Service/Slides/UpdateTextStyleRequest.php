@@ -26,10 +26,16 @@ class Google_Service_Slides_UpdateTextStyleRequest extends Google_Model
   protected $textRangeType = 'Google_Service_Slides_Range';
   protected $textRangeDataType = '';
 
+  /**
+   * @param Google_Service_Slides_TableCellLocation
+   */
   public function setCellLocation(Google_Service_Slides_TableCellLocation $cellLocation)
   {
     $this->cellLocation = $cellLocation;
   }
+  /**
+   * @return Google_Service_Slides_TableCellLocation
+   */
   public function getCellLocation()
   {
     return $this->cellLocation;
@@ -50,18 +56,30 @@ class Google_Service_Slides_UpdateTextStyleRequest extends Google_Model
   {
     return $this->objectId;
   }
+  /**
+   * @param Google_Service_Slides_TextStyle
+   */
   public function setStyle(Google_Service_Slides_TextStyle $style)
   {
     $this->style = $style;
   }
+  /**
+   * @return Google_Service_Slides_TextStyle
+   */
   public function getStyle()
   {
     return $this->style;
   }
+  /**
+   * @param Google_Service_Slides_Range
+   */
   public function setTextRange(Google_Service_Slides_Range $textRange)
   {
     $this->textRange = $textRange;
   }
+  /**
+   * @return Google_Service_Slides_Range
+   */
   public function getTextRange()
   {
     return $this->textRange;

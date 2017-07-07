@@ -38,10 +38,16 @@ class Google_Service_Slides_UpdatePageElementTransformRequest extends Google_Mod
   {
     return $this->objectId;
   }
+  /**
+   * @param Google_Service_Slides_AffineTransform
+   */
   public function setTransform(Google_Service_Slides_AffineTransform $transform)
   {
     $this->transform = $transform;
   }
+  /**
+   * @return Google_Service_Slides_AffineTransform
+   */
   public function getTransform()
   {
     return $this->transform;

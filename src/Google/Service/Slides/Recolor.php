@@ -30,10 +30,16 @@ class Google_Service_Slides_Recolor extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Slides_ColorStop
+   */
   public function setRecolorStops($recolorStops)
   {
     $this->recolorStops = $recolorStops;
   }
+  /**
+   * @return Google_Service_Slides_ColorStop
+   */
   public function getRecolorStops()
   {
     return $this->recolorStops;

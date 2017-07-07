@@ -32,10 +32,16 @@ class Google_Service_Slides_Outline extends Google_Model
   {
     return $this->dashStyle;
   }
+  /**
+   * @param Google_Service_Slides_OutlineFill
+   */
   public function setOutlineFill(Google_Service_Slides_OutlineFill $outlineFill)
   {
     $this->outlineFill = $outlineFill;
   }
+  /**
+   * @return Google_Service_Slides_OutlineFill
+   */
   public function getOutlineFill()
   {
     return $this->outlineFill;
@@ -48,10 +54,16 @@ class Google_Service_Slides_Outline extends Google_Model
   {
     return $this->propertyState;
   }
+  /**
+   * @param Google_Service_Slides_Dimension
+   */
   public function setWeight(Google_Service_Slides_Dimension $weight)
   {
     $this->weight = $weight;
   }
+  /**
+   * @return Google_Service_Slides_Dimension
+   */
   public function getWeight()
   {
     return $this->weight;

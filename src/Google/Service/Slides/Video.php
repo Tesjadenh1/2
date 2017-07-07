@@ -47,10 +47,16 @@ class Google_Service_Slides_Video extends Google_Model
   {
     return $this->url;
   }
+  /**
+   * @param Google_Service_Slides_VideoProperties
+   */
   public function setVideoProperties(Google_Service_Slides_VideoProperties $videoProperties)
   {
     $this->videoProperties = $videoProperties;
   }
+  /**
+   * @return Google_Service_Slides_VideoProperties
+   */
   public function getVideoProperties()
   {
     return $this->videoProperties;

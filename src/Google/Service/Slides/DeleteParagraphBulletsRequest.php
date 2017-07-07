@@ -23,10 +23,16 @@ class Google_Service_Slides_DeleteParagraphBulletsRequest extends Google_Model
   protected $textRangeType = 'Google_Service_Slides_Range';
   protected $textRangeDataType = '';
 
+  /**
+   * @param Google_Service_Slides_TableCellLocation
+   */
   public function setCellLocation(Google_Service_Slides_TableCellLocation $cellLocation)
   {
     $this->cellLocation = $cellLocation;
   }
+  /**
+   * @return Google_Service_Slides_TableCellLocation
+   */
   public function getCellLocation()
   {
     return $this->cellLocation;
@@ -39,10 +45,16 @@ class Google_Service_Slides_DeleteParagraphBulletsRequest extends Google_Model
   {
     return $this->objectId;
   }
+  /**
+   * @param Google_Service_Slides_Range
+   */
   public function setTextRange(Google_Service_Slides_Range $textRange)
   {
     $this->textRange = $textRange;
   }
+  /**
+   * @return Google_Service_Slides_Range
+   */
   public function getTextRange()
   {
     return $this->textRange;

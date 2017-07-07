@@ -41,18 +41,30 @@ class Google_Service_Slides_Table extends Google_Collection
   {
     return $this->rows;
   }
+  /**
+   * @param Google_Service_Slides_TableColumnProperties
+   */
   public function setTableColumns($tableColumns)
   {
     $this->tableColumns = $tableColumns;
   }
+  /**
+   * @return Google_Service_Slides_TableColumnProperties
+   */
   public function getTableColumns()
   {
     return $this->tableColumns;
   }
+  /**
+   * @param Google_Service_Slides_TableRow
+   */
   public function setTableRows($tableRows)
   {
     $this->tableRows = $tableRows;
   }
+  /**
+   * @return Google_Service_Slides_TableRow
+   */
   public function getTableRows()
   {
     return $this->tableRows;

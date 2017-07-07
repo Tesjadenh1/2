@@ -38,10 +38,16 @@ class Google_Service_Slides_UpdateShapePropertiesRequest extends Google_Model
   {
     return $this->objectId;
   }
+  /**
+   * @param Google_Service_Slides_ShapeProperties
+   */
   public function setShapeProperties(Google_Service_Slides_ShapeProperties $shapeProperties)
   {
     $this->shapeProperties = $shapeProperties;
   }
+  /**
+   * @return Google_Service_Slides_ShapeProperties
+   */
   public function getShapeProperties()
   {
     return $this->shapeProperties;

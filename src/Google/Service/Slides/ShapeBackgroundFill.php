@@ -29,10 +29,16 @@ class Google_Service_Slides_ShapeBackgroundFill extends Google_Model
   {
     return $this->propertyState;
   }
+  /**
+   * @param Google_Service_Slides_SolidFill
+   */
   public function setSolidFill(Google_Service_Slides_SolidFill $solidFill)
   {
     $this->solidFill = $solidFill;
   }
+  /**
+   * @return Google_Service_Slides_SolidFill
+   */
   public function getSolidFill()
   {
     return $this->solidFill;
