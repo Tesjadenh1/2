@@ -21,10 +21,16 @@ class Google_Service_Webmasters_SitesListResponse extends Google_Collection
   protected $siteEntryType = 'Google_Service_Webmasters_WmxSite';
   protected $siteEntryDataType = 'array';
 
+  /**
+   * @param Google_Service_Webmasters_WmxSite
+   */
   public function setSiteEntry($siteEntry)
   {
     $this->siteEntry = $siteEntry;
   }
+  /**
+   * @return Google_Service_Webmasters_WmxSite
+   */
   public function getSiteEntry()
   {
     return $this->siteEntry;

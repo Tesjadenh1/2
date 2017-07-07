@@ -30,10 +30,16 @@ class Google_Service_Webmasters_SearchAnalyticsQueryResponse extends Google_Coll
   {
     return $this->responseAggregationType;
   }
+  /**
+   * @param Google_Service_Webmasters_ApiDataRow
+   */
   public function setRows($rows)
   {
     $this->rows = $rows;
   }
+  /**
+   * @return Google_Service_Webmasters_ApiDataRow
+   */
   public function getRows()
   {
     return $this->rows;

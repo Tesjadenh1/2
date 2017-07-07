@@ -22,10 +22,16 @@ class Google_Service_Webmasters_ApiDimensionFilterGroup extends Google_Collectio
   protected $filtersDataType = 'array';
   public $groupType;
 
+  /**
+   * @param Google_Service_Webmasters_ApiDimensionFilter
+   */
   public function setFilters($filters)
   {
     $this->filters = $filters;
   }
+  /**
+   * @return Google_Service_Webmasters_ApiDimensionFilter
+   */
   public function getFilters()
   {
     return $this->filters;

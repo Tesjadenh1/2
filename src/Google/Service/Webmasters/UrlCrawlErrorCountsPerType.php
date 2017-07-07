@@ -31,10 +31,16 @@ class Google_Service_Webmasters_UrlCrawlErrorCountsPerType extends Google_Collec
   {
     return $this->category;
   }
+  /**
+   * @param Google_Service_Webmasters_UrlCrawlErrorCount
+   */
   public function setEntries($entries)
   {
     $this->entries = $entries;
   }
+  /**
+   * @return Google_Service_Webmasters_UrlCrawlErrorCount
+   */
   public function getEntries()
   {
     return $this->entries;

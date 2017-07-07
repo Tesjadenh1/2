@@ -21,10 +21,16 @@ class Google_Service_Webmasters_UrlCrawlErrorsCountsQueryResponse extends Google
   protected $countPerTypesType = 'Google_Service_Webmasters_UrlCrawlErrorCountsPerType';
   protected $countPerTypesDataType = 'array';
 
+  /**
+   * @param Google_Service_Webmasters_UrlCrawlErrorCountsPerType
+   */
   public function setCountPerTypes($countPerTypes)
   {
     $this->countPerTypes = $countPerTypes;
   }
+  /**
+   * @return Google_Service_Webmasters_UrlCrawlErrorCountsPerType
+   */
   public function getCountPerTypes()
   {
     return $this->countPerTypes;

@@ -21,10 +21,16 @@ class Google_Service_Webmasters_UrlCrawlErrorsSamplesListResponse extends Google
   protected $urlCrawlErrorSampleType = 'Google_Service_Webmasters_UrlCrawlErrorsSample';
   protected $urlCrawlErrorSampleDataType = 'array';
 
+  /**
+   * @param Google_Service_Webmasters_UrlCrawlErrorsSample
+   */
   public function setUrlCrawlErrorSample($urlCrawlErrorSample)
   {
     $this->urlCrawlErrorSample = $urlCrawlErrorSample;
   }
+  /**
+   * @return Google_Service_Webmasters_UrlCrawlErrorsSample
+   */
   public function getUrlCrawlErrorSample()
   {
     return $this->urlCrawlErrorSample;
