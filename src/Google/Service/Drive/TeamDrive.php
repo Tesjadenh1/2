@@ -28,10 +28,16 @@ class Google_Service_Drive_TeamDrive extends Google_Model
   public $name;
   public $themeId;
 
+  /**
+   * @param Google_Service_Drive_TeamDriveBackgroundImageFile
+   */
   public function setBackgroundImageFile(Google_Service_Drive_TeamDriveBackgroundImageFile $backgroundImageFile)
   {
     $this->backgroundImageFile = $backgroundImageFile;
   }
+  /**
+   * @return Google_Service_Drive_TeamDriveBackgroundImageFile
+   */
   public function getBackgroundImageFile()
   {
     return $this->backgroundImageFile;
@@ -44,10 +50,16 @@ class Google_Service_Drive_TeamDrive extends Google_Model
   {
     return $this->backgroundImageLink;
   }
+  /**
+   * @param Google_Service_Drive_TeamDriveCapabilities
+   */
   public function setCapabilities(Google_Service_Drive_TeamDriveCapabilities $capabilities)
   {
     $this->capabilities = $capabilities;
   }
+  /**
+   * @return Google_Service_Drive_TeamDriveCapabilities
+   */
   public function getCapabilities()
   {
     return $this->capabilities;

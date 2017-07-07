@@ -88,26 +88,44 @@ class Google_Service_Drive_About extends Google_Collection
   {
     return $this->maxUploadSize;
   }
+  /**
+   * @param Google_Service_Drive_AboutStorageQuota
+   */
   public function setStorageQuota(Google_Service_Drive_AboutStorageQuota $storageQuota)
   {
     $this->storageQuota = $storageQuota;
   }
+  /**
+   * @return Google_Service_Drive_AboutStorageQuota
+   */
   public function getStorageQuota()
   {
     return $this->storageQuota;
   }
+  /**
+   * @param Google_Service_Drive_AboutTeamDriveThemes
+   */
   public function setTeamDriveThemes($teamDriveThemes)
   {
     $this->teamDriveThemes = $teamDriveThemes;
   }
+  /**
+   * @return Google_Service_Drive_AboutTeamDriveThemes
+   */
   public function getTeamDriveThemes()
   {
     return $this->teamDriveThemes;
   }
+  /**
+   * @param Google_Service_Drive_User
+   */
   public function setUser(Google_Service_Drive_User $user)
   {
     $this->user = $user;
   }
+  /**
+   * @return Google_Service_Drive_User
+   */
   public function getUser()
   {
     return $this->user;

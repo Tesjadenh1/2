@@ -112,7 +112,8 @@ class Google_Service_Drive_Resource_Files extends Google_Service_Resource
   }
   /**
    * Exports a Google Doc to the requested MIME type and returns the exported
-   * content. (files.export)
+   * content. Please note that the exported content is limited to 10MB.
+   * (files.export)
    *
    * @param string $fileId The ID of the file.
    * @param string $mimeType The MIME type of the format requested for this

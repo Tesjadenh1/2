@@ -23,10 +23,16 @@ class Google_Service_Drive_CommentList extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Drive_Comment
+   */
   public function setComments($comments)
   {
     $this->comments = $comments;
   }
+  /**
+   * @return Google_Service_Drive_Comment
+   */
   public function getComments()
   {
     return $this->comments;

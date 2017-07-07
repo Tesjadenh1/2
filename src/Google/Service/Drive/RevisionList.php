@@ -39,10 +39,16 @@ class Google_Service_Drive_RevisionList extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Drive_Revision
+   */
   public function setRevisions($revisions)
   {
     $this->revisions = $revisions;
   }
+  /**
+   * @return Google_Service_Drive_Revision
+   */
   public function getRevisions()
   {
     return $this->revisions;

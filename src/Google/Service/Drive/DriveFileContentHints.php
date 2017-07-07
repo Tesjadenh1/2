@@ -29,10 +29,16 @@ class Google_Service_Drive_DriveFileContentHints extends Google_Model
   {
     return $this->indexableText;
   }
+  /**
+   * @param Google_Service_Drive_DriveFileContentHintsThumbnail
+   */
   public function setThumbnail(Google_Service_Drive_DriveFileContentHintsThumbnail $thumbnail)
   {
     $this->thumbnail = $thumbnail;
   }
+  /**
+   * @return Google_Service_Drive_DriveFileContentHintsThumbnail
+   */
   public function getThumbnail()
   {
     return $this->thumbnail;

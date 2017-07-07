@@ -42,10 +42,16 @@ class Google_Service_Drive_Comment extends Google_Collection
   {
     return $this->anchor;
   }
+  /**
+   * @param Google_Service_Drive_User
+   */
   public function setAuthor(Google_Service_Drive_User $author)
   {
     $this->author = $author;
   }
+  /**
+   * @return Google_Service_Drive_User
+   */
   public function getAuthor()
   {
     return $this->author;
@@ -106,18 +112,30 @@ class Google_Service_Drive_Comment extends Google_Collection
   {
     return $this->modifiedTime;
   }
+  /**
+   * @param Google_Service_Drive_CommentQuotedFileContent
+   */
   public function setQuotedFileContent(Google_Service_Drive_CommentQuotedFileContent $quotedFileContent)
   {
     $this->quotedFileContent = $quotedFileContent;
   }
+  /**
+   * @return Google_Service_Drive_CommentQuotedFileContent
+   */
   public function getQuotedFileContent()
   {
     return $this->quotedFileContent;
   }
+  /**
+   * @param Google_Service_Drive_Reply
+   */
   public function setReplies($replies)
   {
     $this->replies = $replies;
   }
+  /**
+   * @return Google_Service_Drive_Reply
+   */
   public function getReplies()
   {
     return $this->replies;

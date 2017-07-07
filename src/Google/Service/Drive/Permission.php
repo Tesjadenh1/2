@@ -112,10 +112,16 @@ class Google_Service_Drive_Permission extends Google_Collection
   {
     return $this->role;
   }
+  /**
+   * @param Google_Service_Drive_PermissionTeamDrivePermissionDetails
+   */
   public function setTeamDrivePermissionDetails($teamDrivePermissionDetails)
   {
     $this->teamDrivePermissionDetails = $teamDrivePermissionDetails;
   }
+  /**
+   * @return Google_Service_Drive_PermissionTeamDrivePermissionDetails
+   */
   public function getTeamDrivePermissionDetails()
   {
     return $this->teamDrivePermissionDetails;
