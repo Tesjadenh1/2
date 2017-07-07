@@ -27,10 +27,16 @@ class Google_Service_Customsearch_Promotion extends Google_Collection
   public $link;
   public $title;
 
+  /**
+   * @param Google_Service_Customsearch_PromotionBodyLines
+   */
   public function setBodyLines($bodyLines)
   {
     $this->bodyLines = $bodyLines;
   }
+  /**
+   * @return Google_Service_Customsearch_PromotionBodyLines
+   */
   public function getBodyLines()
   {
     return $this->bodyLines;
@@ -51,10 +57,16 @@ class Google_Service_Customsearch_Promotion extends Google_Collection
   {
     return $this->htmlTitle;
   }
+  /**
+   * @param Google_Service_Customsearch_PromotionImage
+   */
   public function setImage(Google_Service_Customsearch_PromotionImage $image)
   {
     $this->image = $image;
   }
+  /**
+   * @return Google_Service_Customsearch_PromotionImage
+   */
   public function getImage()
   {
     return $this->image;

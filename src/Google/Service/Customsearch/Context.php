@@ -22,10 +22,16 @@ class Google_Service_Customsearch_Context extends Google_Collection
   protected $facetsDataType = 'array';
   public $title;
 
+  /**
+   * @param Google_Service_Customsearch_ContextFacets
+   */
   public function setFacets($facets)
   {
     $this->facets = $facets;
   }
+  /**
+   * @return Google_Service_Customsearch_ContextFacets
+   */
   public function getFacets()
   {
     return $this->facets;
