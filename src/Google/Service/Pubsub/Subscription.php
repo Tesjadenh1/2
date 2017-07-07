@@ -39,10 +39,16 @@ class Google_Service_Pubsub_Subscription extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Pubsub_PushConfig
+   */
   public function setPushConfig(Google_Service_Pubsub_PushConfig $pushConfig)
   {
     $this->pushConfig = $pushConfig;
   }
+  /**
+   * @return Google_Service_Pubsub_PushConfig
+   */
   public function getPushConfig()
   {
     return $this->pushConfig;

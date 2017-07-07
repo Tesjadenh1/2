@@ -21,10 +21,16 @@ class Google_Service_Pubsub_PullResponse extends Google_Collection
   protected $receivedMessagesType = 'Google_Service_Pubsub_ReceivedMessage';
   protected $receivedMessagesDataType = 'array';
 
+  /**
+   * @param Google_Service_Pubsub_ReceivedMessage
+   */
   public function setReceivedMessages($receivedMessages)
   {
     $this->receivedMessages = $receivedMessages;
   }
+  /**
+   * @return Google_Service_Pubsub_ReceivedMessage
+   */
   public function getReceivedMessages()
   {
     return $this->receivedMessages;

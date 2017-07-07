@@ -29,10 +29,16 @@ class Google_Service_Pubsub_ReceivedMessage extends Google_Model
   {
     return $this->ackId;
   }
+  /**
+   * @param Google_Service_Pubsub_PubsubMessage
+   */
   public function setMessage(Google_Service_Pubsub_PubsubMessage $message)
   {
     $this->message = $message;
   }
+  /**
+   * @return Google_Service_Pubsub_PubsubMessage
+   */
   public function getMessage()
   {
     return $this->message;

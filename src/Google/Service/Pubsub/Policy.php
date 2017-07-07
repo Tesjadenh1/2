@@ -23,10 +23,16 @@ class Google_Service_Pubsub_Policy extends Google_Collection
   public $etag;
   public $version;
 
+  /**
+   * @param Google_Service_Pubsub_Binding
+   */
   public function setBindings($bindings)
   {
     $this->bindings = $bindings;
   }
+  /**
+   * @return Google_Service_Pubsub_Binding
+   */
   public function getBindings()
   {
     return $this->bindings;
