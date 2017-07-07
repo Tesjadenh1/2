@@ -58,6 +58,8 @@ class Google_Service_PeopleService extends Google_Service
   const USERINFO_PROFILE =
       "https://www.googleapis.com/auth/userinfo.profile";
 
+  public $contactGroups;
+  public $contactGroups_members;
   public $people;
   public $people_connections;
   
@@ -74,13 +76,45 @@ class Google_Service_PeopleService extends Google_Service
     $this->version = 'v1';
     $this->serviceName = 'people';
 
-    $this->people = new Google_Service_PeopleService_Resource_People(
+    $this->contactGroups = new Google_Service_PeopleService_Resource_ContactGroups(
         $this,
         $this->serviceName,
-        'people',
+        'contactGroups',
         array(
           'methods' => array(
-            'get' => array(
+            'batchGet' => array(
+              'path' => 'v1/contactGroups:batchGet',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'resourceNames' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'maxMembers' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'create' => array(
+              'path' => 'v1/contactGroups',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'delete' => array(
+              'path' => 'v1/{+resourceName}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'resourceName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'deleteContacts' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
+            ),'get' => array(
               'path' => 'v1/{+resourceName}',
               'httpMethod' => 'GET',
               'parameters' => array(
@@ -88,6 +122,100 @@ class Google_Service_PeopleService extends Google_Service
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
+                ),
+                'maxMembers' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1/contactGroups',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'syncToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'v1/{+resourceName}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'resourceName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->contactGroups_members = new Google_Service_PeopleService_Resource_ContactGroupsMembers(
+        $this,
+        $this->serviceName,
+        'members',
+        array(
+          'methods' => array(
+            'modify' => array(
+              'path' => 'v1/{+resourceName}/members:modify',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resourceName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->people = new Google_Service_PeopleService_Resource_People(
+        $this,
+        $this->serviceName,
+        'people',
+        array(
+          'methods' => array(
+            'createContact' => array(
+              'path' => 'v1/people:createContact',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'deleteContact' => array(
+              'path' => 'v1/{+resourceName}:deleteContact',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'resourceName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1/{+resourceName}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'resourceName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'personFields' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
                 'requestMask.includeField' => array(
                   'location' => 'query',
@@ -98,6 +226,10 @@ class Google_Service_PeopleService extends Google_Service
               'path' => 'v1/people:batchGet',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'personFields' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'requestMask.includeField' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -106,6 +238,20 @@ class Google_Service_PeopleService extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
+                ),
+              ),
+            ),'updateContact' => array(
+              'path' => 'v1/{+resourceName}:updateContact',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'resourceName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updatePersonFields' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -127,14 +273,6 @@ class Google_Service_PeopleService extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'requestSyncToken' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'requestMask.includeField' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -147,7 +285,19 @@ class Google_Service_PeopleService extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'personFields' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'sortOrder' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'requestSyncToken' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

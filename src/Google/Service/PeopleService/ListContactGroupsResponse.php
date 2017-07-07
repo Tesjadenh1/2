@@ -15,29 +15,28 @@
  * the License.
  */
 
-class Google_Service_PeopleService_ListConnectionsResponse extends Google_Collection
+class Google_Service_PeopleService_ListContactGroupsResponse extends Google_Collection
 {
-  protected $collection_key = 'connections';
-  protected $connectionsType = 'Google_Service_PeopleService_Person';
-  protected $connectionsDataType = 'array';
+  protected $collection_key = 'contactGroups';
+  protected $contactGroupsType = 'Google_Service_PeopleService_ContactGroup';
+  protected $contactGroupsDataType = 'array';
   public $nextPageToken;
   public $nextSyncToken;
   public $totalItems;
-  public $totalPeople;
 
   /**
-   * @param Google_Service_PeopleService_Person
+   * @param Google_Service_PeopleService_ContactGroup
    */
-  public function setConnections($connections)
+  public function setContactGroups($contactGroups)
   {
-    $this->connections = $connections;
+    $this->contactGroups = $contactGroups;
   }
   /**
-   * @return Google_Service_PeopleService_Person
+   * @return Google_Service_PeopleService_ContactGroup
    */
-  public function getConnections()
+  public function getContactGroups()
   {
-    return $this->connections;
+    return $this->contactGroups;
   }
   public function setNextPageToken($nextPageToken)
   {
@@ -62,13 +61,5 @@ class Google_Service_PeopleService_ListConnectionsResponse extends Google_Collec
   public function getTotalItems()
   {
     return $this->totalItems;
-  }
-  public function setTotalPeople($totalPeople)
-  {
-    $this->totalPeople = $totalPeople;
-  }
-  public function getTotalPeople()
-  {
-    return $this->totalPeople;
   }
 }

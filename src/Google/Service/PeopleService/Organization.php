@@ -59,10 +59,16 @@ class Google_Service_PeopleService_Organization extends Google_Model
   {
     return $this->domain;
   }
+  /**
+   * @param Google_Service_PeopleService_Date
+   */
   public function setEndDate(Google_Service_PeopleService_Date $endDate)
   {
     $this->endDate = $endDate;
   }
+  /**
+   * @return Google_Service_PeopleService_Date
+   */
   public function getEndDate()
   {
     return $this->endDate;
@@ -91,10 +97,16 @@ class Google_Service_PeopleService_Organization extends Google_Model
   {
     return $this->location;
   }
+  /**
+   * @param Google_Service_PeopleService_FieldMetadata
+   */
   public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_PeopleService_FieldMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;
@@ -115,10 +127,16 @@ class Google_Service_PeopleService_Organization extends Google_Model
   {
     return $this->phoneticName;
   }
+  /**
+   * @param Google_Service_PeopleService_Date
+   */
   public function setStartDate(Google_Service_PeopleService_Date $startDate)
   {
     $this->startDate = $startDate;
   }
+  /**
+   * @return Google_Service_PeopleService_Date
+   */
   public function getStartDate()
   {
     return $this->startDate;

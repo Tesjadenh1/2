@@ -23,18 +23,30 @@ class Google_Service_PeopleService_Birthday extends Google_Model
   protected $metadataDataType = '';
   public $text;
 
+  /**
+   * @param Google_Service_PeopleService_Date
+   */
   public function setDate(Google_Service_PeopleService_Date $date)
   {
     $this->date = $date;
   }
+  /**
+   * @return Google_Service_PeopleService_Date
+   */
   public function getDate()
   {
     return $this->date;
   }
+  /**
+   * @param Google_Service_PeopleService_FieldMetadata
+   */
   public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_PeopleService_FieldMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;

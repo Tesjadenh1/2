@@ -24,26 +24,44 @@ class Google_Service_PeopleService_Membership extends Google_Model
   protected $metadataType = 'Google_Service_PeopleService_FieldMetadata';
   protected $metadataDataType = '';
 
+  /**
+   * @param Google_Service_PeopleService_ContactGroupMembership
+   */
   public function setContactGroupMembership(Google_Service_PeopleService_ContactGroupMembership $contactGroupMembership)
   {
     $this->contactGroupMembership = $contactGroupMembership;
   }
+  /**
+   * @return Google_Service_PeopleService_ContactGroupMembership
+   */
   public function getContactGroupMembership()
   {
     return $this->contactGroupMembership;
   }
+  /**
+   * @param Google_Service_PeopleService_DomainMembership
+   */
   public function setDomainMembership(Google_Service_PeopleService_DomainMembership $domainMembership)
   {
     $this->domainMembership = $domainMembership;
   }
+  /**
+   * @return Google_Service_PeopleService_DomainMembership
+   */
   public function getDomainMembership()
   {
     return $this->domainMembership;
   }
+  /**
+   * @param Google_Service_PeopleService_FieldMetadata
+   */
   public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_PeopleService_FieldMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;

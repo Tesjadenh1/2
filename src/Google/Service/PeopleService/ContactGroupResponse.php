@@ -15,36 +15,27 @@
  * the License.
  */
 
-class Google_Service_PeopleService_PersonResponse extends Google_Model
+class Google_Service_PeopleService_ContactGroupResponse extends Google_Model
 {
-  public $httpStatusCode;
-  protected $personType = 'Google_Service_PeopleService_Person';
-  protected $personDataType = '';
+  protected $contactGroupType = 'Google_Service_PeopleService_ContactGroup';
+  protected $contactGroupDataType = '';
   public $requestedResourceName;
   protected $statusType = 'Google_Service_PeopleService_Status';
   protected $statusDataType = '';
 
-  public function setHttpStatusCode($httpStatusCode)
+  /**
+   * @param Google_Service_PeopleService_ContactGroup
+   */
+  public function setContactGroup(Google_Service_PeopleService_ContactGroup $contactGroup)
   {
-    $this->httpStatusCode = $httpStatusCode;
-  }
-  public function getHttpStatusCode()
-  {
-    return $this->httpStatusCode;
+    $this->contactGroup = $contactGroup;
   }
   /**
-   * @param Google_Service_PeopleService_Person
+   * @return Google_Service_PeopleService_ContactGroup
    */
-  public function setPerson(Google_Service_PeopleService_Person $person)
+  public function getContactGroup()
   {
-    $this->person = $person;
-  }
-  /**
-   * @return Google_Service_PeopleService_Person
-   */
-  public function getPerson()
-  {
-    return $this->person;
+    return $this->contactGroup;
   }
   public function setRequestedResourceName($requestedResourceName)
   {

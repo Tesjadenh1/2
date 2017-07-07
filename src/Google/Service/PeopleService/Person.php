@@ -76,10 +76,16 @@ class Google_Service_PeopleService_Person extends Google_Collection
   protected $urlsType = 'Google_Service_PeopleService_Url';
   protected $urlsDataType = 'array';
 
+  /**
+   * @param Google_Service_PeopleService_Address
+   */
   public function setAddresses($addresses)
   {
     $this->addresses = $addresses;
   }
+  /**
+   * @return Google_Service_PeopleService_Address
+   */
   public function getAddresses()
   {
     return $this->addresses;
@@ -92,50 +98,86 @@ class Google_Service_PeopleService_Person extends Google_Collection
   {
     return $this->ageRange;
   }
+  /**
+   * @param Google_Service_PeopleService_AgeRangeType
+   */
   public function setAgeRanges($ageRanges)
   {
     $this->ageRanges = $ageRanges;
   }
+  /**
+   * @return Google_Service_PeopleService_AgeRangeType
+   */
   public function getAgeRanges()
   {
     return $this->ageRanges;
   }
+  /**
+   * @param Google_Service_PeopleService_Biography
+   */
   public function setBiographies($biographies)
   {
     $this->biographies = $biographies;
   }
+  /**
+   * @return Google_Service_PeopleService_Biography
+   */
   public function getBiographies()
   {
     return $this->biographies;
   }
+  /**
+   * @param Google_Service_PeopleService_Birthday
+   */
   public function setBirthdays($birthdays)
   {
     $this->birthdays = $birthdays;
   }
+  /**
+   * @return Google_Service_PeopleService_Birthday
+   */
   public function getBirthdays()
   {
     return $this->birthdays;
   }
+  /**
+   * @param Google_Service_PeopleService_BraggingRights
+   */
   public function setBraggingRights($braggingRights)
   {
     $this->braggingRights = $braggingRights;
   }
+  /**
+   * @return Google_Service_PeopleService_BraggingRights
+   */
   public function getBraggingRights()
   {
     return $this->braggingRights;
   }
+  /**
+   * @param Google_Service_PeopleService_CoverPhoto
+   */
   public function setCoverPhotos($coverPhotos)
   {
     $this->coverPhotos = $coverPhotos;
   }
+  /**
+   * @return Google_Service_PeopleService_CoverPhoto
+   */
   public function getCoverPhotos()
   {
     return $this->coverPhotos;
   }
+  /**
+   * @param Google_Service_PeopleService_EmailAddress
+   */
   public function setEmailAddresses($emailAddresses)
   {
     $this->emailAddresses = $emailAddresses;
   }
+  /**
+   * @return Google_Service_PeopleService_EmailAddress
+   */
   public function getEmailAddresses()
   {
     return $this->emailAddresses;
@@ -148,138 +190,240 @@ class Google_Service_PeopleService_Person extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_PeopleService_Event
+   */
   public function setEvents($events)
   {
     $this->events = $events;
   }
+  /**
+   * @return Google_Service_PeopleService_Event
+   */
   public function getEvents()
   {
     return $this->events;
   }
+  /**
+   * @param Google_Service_PeopleService_Gender
+   */
   public function setGenders($genders)
   {
     $this->genders = $genders;
   }
+  /**
+   * @return Google_Service_PeopleService_Gender
+   */
   public function getGenders()
   {
     return $this->genders;
   }
+  /**
+   * @param Google_Service_PeopleService_ImClient
+   */
   public function setImClients($imClients)
   {
     $this->imClients = $imClients;
   }
+  /**
+   * @return Google_Service_PeopleService_ImClient
+   */
   public function getImClients()
   {
     return $this->imClients;
   }
+  /**
+   * @param Google_Service_PeopleService_Interest
+   */
   public function setInterests($interests)
   {
     $this->interests = $interests;
   }
+  /**
+   * @return Google_Service_PeopleService_Interest
+   */
   public function getInterests()
   {
     return $this->interests;
   }
+  /**
+   * @param Google_Service_PeopleService_Locale
+   */
   public function setLocales($locales)
   {
     $this->locales = $locales;
   }
+  /**
+   * @return Google_Service_PeopleService_Locale
+   */
   public function getLocales()
   {
     return $this->locales;
   }
+  /**
+   * @param Google_Service_PeopleService_Membership
+   */
   public function setMemberships($memberships)
   {
     $this->memberships = $memberships;
   }
+  /**
+   * @return Google_Service_PeopleService_Membership
+   */
   public function getMemberships()
   {
     return $this->memberships;
   }
+  /**
+   * @param Google_Service_PeopleService_PersonMetadata
+   */
   public function setMetadata(Google_Service_PeopleService_PersonMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_PeopleService_PersonMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;
   }
+  /**
+   * @param Google_Service_PeopleService_Name
+   */
   public function setNames($names)
   {
     $this->names = $names;
   }
+  /**
+   * @return Google_Service_PeopleService_Name
+   */
   public function getNames()
   {
     return $this->names;
   }
+  /**
+   * @param Google_Service_PeopleService_Nickname
+   */
   public function setNicknames($nicknames)
   {
     $this->nicknames = $nicknames;
   }
+  /**
+   * @return Google_Service_PeopleService_Nickname
+   */
   public function getNicknames()
   {
     return $this->nicknames;
   }
+  /**
+   * @param Google_Service_PeopleService_Occupation
+   */
   public function setOccupations($occupations)
   {
     $this->occupations = $occupations;
   }
+  /**
+   * @return Google_Service_PeopleService_Occupation
+   */
   public function getOccupations()
   {
     return $this->occupations;
   }
+  /**
+   * @param Google_Service_PeopleService_Organization
+   */
   public function setOrganizations($organizations)
   {
     $this->organizations = $organizations;
   }
+  /**
+   * @return Google_Service_PeopleService_Organization
+   */
   public function getOrganizations()
   {
     return $this->organizations;
   }
+  /**
+   * @param Google_Service_PeopleService_PhoneNumber
+   */
   public function setPhoneNumbers($phoneNumbers)
   {
     $this->phoneNumbers = $phoneNumbers;
   }
+  /**
+   * @return Google_Service_PeopleService_PhoneNumber
+   */
   public function getPhoneNumbers()
   {
     return $this->phoneNumbers;
   }
+  /**
+   * @param Google_Service_PeopleService_Photo
+   */
   public function setPhotos($photos)
   {
     $this->photos = $photos;
   }
+  /**
+   * @return Google_Service_PeopleService_Photo
+   */
   public function getPhotos()
   {
     return $this->photos;
   }
+  /**
+   * @param Google_Service_PeopleService_Relation
+   */
   public function setRelations($relations)
   {
     $this->relations = $relations;
   }
+  /**
+   * @return Google_Service_PeopleService_Relation
+   */
   public function getRelations()
   {
     return $this->relations;
   }
+  /**
+   * @param Google_Service_PeopleService_RelationshipInterest
+   */
   public function setRelationshipInterests($relationshipInterests)
   {
     $this->relationshipInterests = $relationshipInterests;
   }
+  /**
+   * @return Google_Service_PeopleService_RelationshipInterest
+   */
   public function getRelationshipInterests()
   {
     return $this->relationshipInterests;
   }
+  /**
+   * @param Google_Service_PeopleService_RelationshipStatus
+   */
   public function setRelationshipStatuses($relationshipStatuses)
   {
     $this->relationshipStatuses = $relationshipStatuses;
   }
+  /**
+   * @return Google_Service_PeopleService_RelationshipStatus
+   */
   public function getRelationshipStatuses()
   {
     return $this->relationshipStatuses;
   }
+  /**
+   * @param Google_Service_PeopleService_Residence
+   */
   public function setResidences($residences)
   {
     $this->residences = $residences;
   }
+  /**
+   * @return Google_Service_PeopleService_Residence
+   */
   public function getResidences()
   {
     return $this->residences;
@@ -292,26 +436,44 @@ class Google_Service_PeopleService_Person extends Google_Collection
   {
     return $this->resourceName;
   }
+  /**
+   * @param Google_Service_PeopleService_Skill
+   */
   public function setSkills($skills)
   {
     $this->skills = $skills;
   }
+  /**
+   * @return Google_Service_PeopleService_Skill
+   */
   public function getSkills()
   {
     return $this->skills;
   }
+  /**
+   * @param Google_Service_PeopleService_Tagline
+   */
   public function setTaglines($taglines)
   {
     $this->taglines = $taglines;
   }
+  /**
+   * @return Google_Service_PeopleService_Tagline
+   */
   public function getTaglines()
   {
     return $this->taglines;
   }
+  /**
+   * @param Google_Service_PeopleService_Url
+   */
   public function setUrls($urls)
   {
     $this->urls = $urls;
   }
+  /**
+   * @return Google_Service_PeopleService_Url
+   */
   public function getUrls()
   {
     return $this->urls;

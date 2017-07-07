@@ -15,32 +15,23 @@
  * the License.
  */
 
-class Google_Service_PeopleService_Photo extends Google_Model
+class Google_Service_PeopleService_CreateContactGroupRequest extends Google_Model
 {
-  protected $metadataType = 'Google_Service_PeopleService_FieldMetadata';
-  protected $metadataDataType = '';
-  public $url;
+  protected $contactGroupType = 'Google_Service_PeopleService_ContactGroup';
+  protected $contactGroupDataType = '';
 
   /**
-   * @param Google_Service_PeopleService_FieldMetadata
+   * @param Google_Service_PeopleService_ContactGroup
    */
-  public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
+  public function setContactGroup(Google_Service_PeopleService_ContactGroup $contactGroup)
   {
-    $this->metadata = $metadata;
+    $this->contactGroup = $contactGroup;
   }
   /**
-   * @return Google_Service_PeopleService_FieldMetadata
+   * @return Google_Service_PeopleService_ContactGroup
    */
-  public function getMetadata()
+  public function getContactGroup()
   {
-    return $this->metadata;
-  }
-  public function setUrl($url)
-  {
-    $this->url = $url;
-  }
-  public function getUrl()
-  {
-    return $this->url;
+    return $this->contactGroup;
   }
 }

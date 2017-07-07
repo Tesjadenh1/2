@@ -30,10 +30,16 @@ class Google_Service_PeopleService_RelationshipInterest extends Google_Model
   {
     return $this->formattedValue;
   }
+  /**
+   * @param Google_Service_PeopleService_FieldMetadata
+   */
   public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_PeopleService_FieldMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;

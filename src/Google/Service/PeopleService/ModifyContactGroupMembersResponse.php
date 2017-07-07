@@ -15,32 +15,17 @@
  * the License.
  */
 
-class Google_Service_PeopleService_Photo extends Google_Model
+class Google_Service_PeopleService_ModifyContactGroupMembersResponse extends Google_Collection
 {
-  protected $metadataType = 'Google_Service_PeopleService_FieldMetadata';
-  protected $metadataDataType = '';
-  public $url;
+  protected $collection_key = 'notFoundResourceNames';
+  public $notFoundResourceNames;
 
-  /**
-   * @param Google_Service_PeopleService_FieldMetadata
-   */
-  public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
+  public function setNotFoundResourceNames($notFoundResourceNames)
   {
-    $this->metadata = $metadata;
+    $this->notFoundResourceNames = $notFoundResourceNames;
   }
-  /**
-   * @return Google_Service_PeopleService_FieldMetadata
-   */
-  public function getMetadata()
+  public function getNotFoundResourceNames()
   {
-    return $this->metadata;
-  }
-  public function setUrl($url)
-  {
-    $this->url = $url;
-  }
-  public function getUrl()
-  {
-    return $this->url;
+    return $this->notFoundResourceNames;
   }
 }

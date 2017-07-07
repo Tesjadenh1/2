@@ -21,10 +21,16 @@ class Google_Service_PeopleService_Tagline extends Google_Model
   protected $metadataDataType = '';
   public $value;
 
+  /**
+   * @param Google_Service_PeopleService_FieldMetadata
+   */
   public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_PeopleService_FieldMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;

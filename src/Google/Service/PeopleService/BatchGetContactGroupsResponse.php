@@ -15,32 +15,24 @@
  * the License.
  */
 
-class Google_Service_PeopleService_Photo extends Google_Model
+class Google_Service_PeopleService_BatchGetContactGroupsResponse extends Google_Collection
 {
-  protected $metadataType = 'Google_Service_PeopleService_FieldMetadata';
-  protected $metadataDataType = '';
-  public $url;
+  protected $collection_key = 'responses';
+  protected $responsesType = 'Google_Service_PeopleService_ContactGroupResponse';
+  protected $responsesDataType = 'array';
 
   /**
-   * @param Google_Service_PeopleService_FieldMetadata
+   * @param Google_Service_PeopleService_ContactGroupResponse
    */
-  public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
+  public function setResponses($responses)
   {
-    $this->metadata = $metadata;
+    $this->responses = $responses;
   }
   /**
-   * @return Google_Service_PeopleService_FieldMetadata
+   * @return Google_Service_PeopleService_ContactGroupResponse
    */
-  public function getMetadata()
+  public function getResponses()
   {
-    return $this->metadata;
-  }
-  public function setUrl($url)
-  {
-    $this->url = $url;
-  }
-  public function getUrl()
-  {
-    return $this->url;
+    return $this->responses;
   }
 }

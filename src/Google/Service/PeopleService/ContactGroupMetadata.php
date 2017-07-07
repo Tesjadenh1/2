@@ -15,32 +15,25 @@
  * the License.
  */
 
-class Google_Service_PeopleService_Photo extends Google_Model
+class Google_Service_PeopleService_ContactGroupMetadata extends Google_Model
 {
-  protected $metadataType = 'Google_Service_PeopleService_FieldMetadata';
-  protected $metadataDataType = '';
-  public $url;
+  public $deleted;
+  public $updateTime;
 
-  /**
-   * @param Google_Service_PeopleService_FieldMetadata
-   */
-  public function setMetadata(Google_Service_PeopleService_FieldMetadata $metadata)
+  public function setDeleted($deleted)
   {
-    $this->metadata = $metadata;
+    $this->deleted = $deleted;
   }
-  /**
-   * @return Google_Service_PeopleService_FieldMetadata
-   */
-  public function getMetadata()
+  public function getDeleted()
   {
-    return $this->metadata;
+    return $this->deleted;
   }
-  public function setUrl($url)
+  public function setUpdateTime($updateTime)
   {
-    $this->url = $url;
+    $this->updateTime = $updateTime;
   }
-  public function getUrl()
+  public function getUpdateTime()
   {
-    return $this->url;
+    return $this->updateTime;
   }
 }

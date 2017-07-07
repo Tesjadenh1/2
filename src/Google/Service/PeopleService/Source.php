@@ -22,6 +22,7 @@ class Google_Service_PeopleService_Source extends Google_Model
   protected $profileMetadataType = 'Google_Service_PeopleService_ProfileMetadata';
   protected $profileMetadataDataType = '';
   public $type;
+  public $updateTime;
 
   public function setEtag($etag)
   {
@@ -39,10 +40,16 @@ class Google_Service_PeopleService_Source extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_PeopleService_ProfileMetadata
+   */
   public function setProfileMetadata(Google_Service_PeopleService_ProfileMetadata $profileMetadata)
   {
     $this->profileMetadata = $profileMetadata;
   }
+  /**
+   * @return Google_Service_PeopleService_ProfileMetadata
+   */
   public function getProfileMetadata()
   {
     return $this->profileMetadata;
@@ -54,5 +61,13 @@ class Google_Service_PeopleService_Source extends Google_Model
   public function getType()
   {
     return $this->type;
+  }
+  public function setUpdateTime($updateTime)
+  {
+    $this->updateTime = $updateTime;
+  }
+  public function getUpdateTime()
+  {
+    return $this->updateTime;
   }
 }
