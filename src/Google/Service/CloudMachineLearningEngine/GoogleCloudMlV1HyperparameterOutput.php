@@ -25,18 +25,30 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOut
   public $hyperparameters;
   public $trialId;
 
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutputHyperparameterMetric
+   */
   public function setAllMetrics($allMetrics)
   {
     $this->allMetrics = $allMetrics;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutputHyperparameterMetric
+   */
   public function getAllMetrics()
   {
     return $this->allMetrics;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutputHyperparameterMetric
+   */
   public function setFinalMetric(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutputHyperparameterMetric $finalMetric)
   {
     $this->finalMetric = $finalMetric;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutputHyperparameterMetric
+   */
   public function getFinalMetric()
   {
     return $this->finalMetric;

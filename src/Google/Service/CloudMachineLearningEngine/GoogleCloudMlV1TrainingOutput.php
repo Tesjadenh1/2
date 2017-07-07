@@ -48,10 +48,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1TrainingOutput ex
   {
     return $this->isHyperparameterTuningJob;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutput
+   */
   public function setTrials($trials)
   {
     $this->trials = $trials;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterOutput
+   */
   public function getTrials()
   {
     return $this->trials;

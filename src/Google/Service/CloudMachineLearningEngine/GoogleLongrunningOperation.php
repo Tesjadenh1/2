@@ -32,10 +32,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleLongrunningOperation exten
   {
     return $this->done;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleRpcStatus
+   */
   public function setError(Google_Service_CloudMachineLearningEngine_GoogleRpcStatus $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleRpcStatus
+   */
   public function getError()
   {
     return $this->error;

@@ -74,10 +74,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1OperationMet
   {
     return $this->startTime;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version
+   */
   public function setVersion(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version $version)
   {
     $this->version = $version;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version
+   */
   public function getVersion()
   {
     return $this->version;

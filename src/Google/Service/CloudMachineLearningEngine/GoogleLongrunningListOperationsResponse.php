@@ -30,10 +30,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleLongrunningListOperationsR
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleLongrunningOperation
+   */
   public function setOperations($operations)
   {
     $this->operations = $operations;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleLongrunningOperation
+   */
   public function getOperations()
   {
     return $this->operations;

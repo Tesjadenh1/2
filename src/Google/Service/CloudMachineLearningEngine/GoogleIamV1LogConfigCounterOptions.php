@@ -15,23 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1PredictRequest extends Google_Model
+class Google_Service_CloudMachineLearningEngine_GoogleIamV1LogConfigCounterOptions extends Google_Model
 {
-  protected $httpBodyType = 'Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody';
-  protected $httpBodyDataType = '';
+  public $field;
+  public $metric;
 
-  /**
-   * @param Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody
-   */
-  public function setHttpBody(Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody $httpBody)
+  public function setField($field)
   {
-    $this->httpBody = $httpBody;
+    $this->field = $field;
   }
-  /**
-   * @return Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody
-   */
-  public function getHttpBody()
+  public function getField()
   {
-    return $this->httpBody;
+    return $this->field;
+  }
+  public function setMetric($metric)
+  {
+    $this->metric = $metric;
+  }
+  public function getMetric()
+  {
+    return $this->metric;
   }
 }

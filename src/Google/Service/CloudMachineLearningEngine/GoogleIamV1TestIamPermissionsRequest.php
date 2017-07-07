@@ -15,23 +15,17 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1PredictRequest extends Google_Model
+class Google_Service_CloudMachineLearningEngine_GoogleIamV1TestIamPermissionsRequest extends Google_Collection
 {
-  protected $httpBodyType = 'Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody';
-  protected $httpBodyDataType = '';
+  protected $collection_key = 'permissions';
+  public $permissions;
 
-  /**
-   * @param Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody
-   */
-  public function setHttpBody(Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody $httpBody)
+  public function setPermissions($permissions)
   {
-    $this->httpBody = $httpBody;
+    $this->permissions = $permissions;
   }
-  /**
-   * @return Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody
-   */
-  public function getHttpBody()
+  public function getPermissions()
   {
-    return $this->httpBody;
+    return $this->permissions;
   }
 }

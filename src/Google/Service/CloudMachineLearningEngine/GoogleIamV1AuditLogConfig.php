@@ -15,23 +15,26 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1PredictRequest extends Google_Model
+class Google_Service_CloudMachineLearningEngine_GoogleIamV1AuditLogConfig extends Google_Collection
 {
-  protected $httpBodyType = 'Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody';
-  protected $httpBodyDataType = '';
+  protected $collection_key = 'exemptedMembers';
+  public $exemptedMembers;
+  public $logType;
 
-  /**
-   * @param Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody
-   */
-  public function setHttpBody(Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody $httpBody)
+  public function setExemptedMembers($exemptedMembers)
   {
-    $this->httpBody = $httpBody;
+    $this->exemptedMembers = $exemptedMembers;
   }
-  /**
-   * @return Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody
-   */
-  public function getHttpBody()
+  public function getExemptedMembers()
   {
-    return $this->httpBody;
+    return $this->exemptedMembers;
+  }
+  public function setLogType($logType)
+  {
+    $this->logType = $logType;
+  }
+  public function getLogType()
+  {
+    return $this->logType;
   }
 }

@@ -22,10 +22,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListJobsResponse 
   protected $jobsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Job
+   */
   public function setJobs($jobs)
   {
     $this->jobs = $jobs;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Job
+   */
   public function getJobs()
   {
     return $this->jobs;

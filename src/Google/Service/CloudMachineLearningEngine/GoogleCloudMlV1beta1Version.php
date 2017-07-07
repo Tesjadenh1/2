@@ -22,17 +22,25 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version exte
   public $createTime;
   public $deploymentUri;
   public $description;
+  public $errorMessage;
   public $isDefault;
   public $lastUseTime;
   protected $manualScalingType = 'Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1ManualScaling';
   protected $manualScalingDataType = '';
   public $name;
   public $runtimeVersion;
+  public $state;
 
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1AutomaticScaling
+   */
   public function setAutomaticScaling(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1AutomaticScaling $automaticScaling)
   {
     $this->automaticScaling = $automaticScaling;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1AutomaticScaling
+   */
   public function getAutomaticScaling()
   {
     return $this->automaticScaling;
@@ -61,6 +69,14 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version exte
   {
     return $this->description;
   }
+  public function setErrorMessage($errorMessage)
+  {
+    $this->errorMessage = $errorMessage;
+  }
+  public function getErrorMessage()
+  {
+    return $this->errorMessage;
+  }
   public function setIsDefault($isDefault)
   {
     $this->isDefault = $isDefault;
@@ -77,10 +93,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version exte
   {
     return $this->lastUseTime;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1ManualScaling
+   */
   public function setManualScaling(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1ManualScaling $manualScaling)
   {
     $this->manualScaling = $manualScaling;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1ManualScaling
+   */
   public function getManualScaling()
   {
     return $this->manualScaling;
@@ -100,5 +122,13 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1Version exte
   public function getRuntimeVersion()
   {
     return $this->runtimeVersion;
+  }
+  public function setState($state)
+  {
+    $this->state = $state;
+  }
+  public function getState()
+  {
+    return $this->state;
   }
 }

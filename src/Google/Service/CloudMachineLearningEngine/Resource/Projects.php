@@ -32,8 +32,6 @@ class Google_Service_CloudMachineLearningEngine_Resource_Projects extends Google
    * training the model with Google Cloud Machine Learning. (projects.getConfig)
    *
    * @param string $name Required. The project name.
-   *
-   * Authorization: requires `Viewer` role on the specified project.
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1GetConfigResponse
    */
@@ -50,7 +48,7 @@ class Google_Service_CloudMachineLearningEngine_Resource_Projects extends Google
    *
    * @param string $name Required. The resource name of a model or a version.
    *
-   * Authorization: requires `Viewer` role on the parent project.
+   * Authorization: requires the `predict` permission on the specified resource.
    * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1PredictRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudMachineLearningEngine_GoogleApiHttpBody

@@ -41,10 +41,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1TrainingInput ext
   {
     return $this->args;
   }
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterSpec
+   */
   public function setHyperparameters(Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterSpec $hyperparameters)
   {
     $this->hyperparameters = $hyperparameters;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1HyperparameterSpec
+   */
   public function getHyperparameters()
   {
     return $this->hyperparameters;

@@ -22,10 +22,16 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListModelsRespons
   protected $modelsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Model
+   */
   public function setModels($models)
   {
     $this->models = $models;
   }
+  /**
+   * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Model
+   */
   public function getModels()
   {
     return $this->models;
