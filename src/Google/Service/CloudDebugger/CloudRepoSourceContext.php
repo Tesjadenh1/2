@@ -24,10 +24,16 @@ class Google_Service_CloudDebugger_CloudRepoSourceContext extends Google_Model
   protected $repoIdDataType = '';
   public $revisionId;
 
+  /**
+   * @param Google_Service_CloudDebugger_AliasContext
+   */
   public function setAliasContext(Google_Service_CloudDebugger_AliasContext $aliasContext)
   {
     $this->aliasContext = $aliasContext;
   }
+  /**
+   * @return Google_Service_CloudDebugger_AliasContext
+   */
   public function getAliasContext()
   {
     return $this->aliasContext;
@@ -40,10 +46,16 @@ class Google_Service_CloudDebugger_CloudRepoSourceContext extends Google_Model
   {
     return $this->aliasName;
   }
+  /**
+   * @param Google_Service_CloudDebugger_RepoId
+   */
   public function setRepoId(Google_Service_CloudDebugger_RepoId $repoId)
   {
     $this->repoId = $repoId;
   }
+  /**
+   * @return Google_Service_CloudDebugger_RepoId
+   */
   public function getRepoId()
   {
     return $this->repoId;

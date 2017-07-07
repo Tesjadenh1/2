@@ -27,10 +27,16 @@ class Google_Service_CloudDebugger_Variable extends Google_Collection
   public $value;
   public $varTableIndex;
 
+  /**
+   * @param Google_Service_CloudDebugger_Variable
+   */
   public function setMembers($members)
   {
     $this->members = $members;
   }
+  /**
+   * @return Google_Service_CloudDebugger_Variable
+   */
   public function getMembers()
   {
     return $this->members;
@@ -43,10 +49,16 @@ class Google_Service_CloudDebugger_Variable extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_CloudDebugger_StatusMessage
+   */
   public function setStatus(Google_Service_CloudDebugger_StatusMessage $status)
   {
     $this->status = $status;
   }
+  /**
+   * @return Google_Service_CloudDebugger_StatusMessage
+   */
   public function getStatus()
   {
     return $this->status;

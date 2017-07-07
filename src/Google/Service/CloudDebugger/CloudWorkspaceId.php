@@ -29,10 +29,16 @@ class Google_Service_CloudDebugger_CloudWorkspaceId extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_CloudDebugger_RepoId
+   */
   public function setRepoId(Google_Service_CloudDebugger_RepoId $repoId)
   {
     $this->repoId = $repoId;
   }
+  /**
+   * @return Google_Service_CloudDebugger_RepoId
+   */
   public function getRepoId()
   {
     return $this->repoId;

@@ -29,10 +29,16 @@ class Google_Service_CloudDebugger_CloudWorkspaceSourceContext extends Google_Mo
   {
     return $this->snapshotId;
   }
+  /**
+   * @param Google_Service_CloudDebugger_CloudWorkspaceId
+   */
   public function setWorkspaceId(Google_Service_CloudDebugger_CloudWorkspaceId $workspaceId)
   {
     $this->workspaceId = $workspaceId;
   }
+  /**
+   * @return Google_Service_CloudDebugger_CloudWorkspaceId
+   */
   public function getWorkspaceId()
   {
     return $this->workspaceId;

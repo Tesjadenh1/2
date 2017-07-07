@@ -22,10 +22,16 @@ class Google_Service_CloudDebugger_StatusMessage extends Google_Model
   public $isError;
   public $refersTo;
 
+  /**
+   * @param Google_Service_CloudDebugger_FormatMessage
+   */
   public function setDescription(Google_Service_CloudDebugger_FormatMessage $description)
   {
     $this->description = $description;
   }
+  /**
+   * @return Google_Service_CloudDebugger_FormatMessage
+   */
   public function getDescription()
   {
     return $this->description;
