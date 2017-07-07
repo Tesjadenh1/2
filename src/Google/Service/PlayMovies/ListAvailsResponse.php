@@ -23,10 +23,16 @@ class Google_Service_PlayMovies_ListAvailsResponse extends Google_Collection
   public $nextPageToken;
   public $totalSize;
 
+  /**
+   * @param Google_Service_PlayMovies_Avail
+   */
   public function setAvails($avails)
   {
     $this->avails = $avails;
   }
+  /**
+   * @return Google_Service_PlayMovies_Avail
+   */
   public function getAvails()
   {
     return $this->avails;

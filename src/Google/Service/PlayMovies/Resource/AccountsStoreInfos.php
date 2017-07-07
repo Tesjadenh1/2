@@ -35,6 +35,17 @@ class Google_Service_PlayMovies_Resource_AccountsStoreInfos extends Google_Servi
    * about this field.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param int pageSize See _List methods rules_ for info about this field.
+   * @opt_param string mids Filter StoreInfos that match any of the given `mid`s.
+   * @opt_param string pphNames See _List methods rules_ for info about this
+   * field.
+   * @opt_param string countries Filter StoreInfos that match (case-insensitive)
+   * any of the given country codes, using the "ISO 3166-1 alpha-2" format
+   * (examples: "US", "us", "Us").
+   * @opt_param string name Filter that matches StoreInfos with a `name` or
+   * `show_name` that contains the given case-insensitive name.
+   * @opt_param string studioNames See _List methods rules_ for info about this
+   * field.
    * @opt_param string seasonIds Filter StoreInfos that match any of the given
    * `season_id`s.
    * @opt_param string videoIds Filter StoreInfos that match any of the given
@@ -44,17 +55,6 @@ class Google_Service_PlayMovies_Resource_AccountsStoreInfos extends Google_Servi
    * be used instead.
    * @opt_param string pageToken See _List methods rules_ for info about this
    * field.
-   * @opt_param int pageSize See _List methods rules_ for info about this field.
-   * @opt_param string mids Filter StoreInfos that match any of the given `mid`s.
-   * @opt_param string pphNames See _List methods rules_ for info about this
-   * field.
-   * @opt_param string countries Filter StoreInfos that match (case-insensitive)
-   * any of the given country codes, using the "ISO 3166-1 alpha-2" format
-   * (examples: "US", "us", "Us").
-   * @opt_param string studioNames See _List methods rules_ for info about this
-   * field.
-   * @opt_param string name Filter that matches StoreInfos with a `name` or
-   * `show_name` that contains the given case-insensitive name.
    * @return Google_Service_PlayMovies_ListStoreInfosResponse
    */
   public function listAccountsStoreInfos($accountId, $optParams = array())

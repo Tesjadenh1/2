@@ -82,11 +82,6 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'altIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
                 'pphNames' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -123,6 +118,11 @@ class Google_Service_PlayMovies extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+                'altIds' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
               ),
             ),
           )
@@ -158,15 +158,6 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'pphNames' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
                 'status' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -185,14 +176,23 @@ class Google_Service_PlayMovies extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'customId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'videoIds' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
                 ),
-                'customId' => array(
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pphNames' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'repeated' => true,
                 ),
               ),
             ),
@@ -214,24 +214,6 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'seasonIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'videoIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'videoId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -251,12 +233,30 @@ class Google_Service_PlayMovies extends Google_Service
                   'type' => 'string',
                   'repeated' => true,
                 ),
+                'name' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'studioNames' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
                 ),
-                'name' => array(
+                'seasonIds' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'videoIds' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'videoId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

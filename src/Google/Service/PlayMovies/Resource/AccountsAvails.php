@@ -50,8 +50,6 @@ class Google_Service_PlayMovies_Resource_AccountsAvails extends Google_Service_R
    * about this field.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string altIds Filter Avails that match (case-insensitive) any of
-   * the given partner-specific custom ids.
    * @opt_param string pphNames See _List methods rules_ for info about this
    * field.
    * @opt_param string altId Filter Avails that match a case-insensitive, partner-
@@ -71,6 +69,8 @@ class Google_Service_PlayMovies_Resource_AccountsAvails extends Google_Service_R
    * @opt_param string pageToken See _List methods rules_ for info about this
    * field.
    * @opt_param int pageSize See _List methods rules_ for info about this field.
+   * @opt_param string altIds Filter Avails that match (case-insensitive) any of
+   * the given partner-specific custom ids.
    * @return Google_Service_PlayMovies_ListAvailsResponse
    */
   public function listAccountsAvails($accountId, $optParams = array())

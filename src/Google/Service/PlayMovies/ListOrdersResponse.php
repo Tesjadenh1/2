@@ -31,10 +31,16 @@ class Google_Service_PlayMovies_ListOrdersResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_PlayMovies_Order
+   */
   public function setOrders($orders)
   {
     $this->orders = $orders;
   }
+  /**
+   * @return Google_Service_PlayMovies_Order
+   */
   public function getOrders()
   {
     return $this->orders;

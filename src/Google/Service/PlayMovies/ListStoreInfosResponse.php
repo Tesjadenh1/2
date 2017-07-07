@@ -31,10 +31,16 @@ class Google_Service_PlayMovies_ListStoreInfosResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_PlayMovies_StoreInfo
+   */
   public function setStoreInfos($storeInfos)
   {
     $this->storeInfos = $storeInfos;
   }
+  /**
+   * @return Google_Service_PlayMovies_StoreInfo
+   */
   public function getStoreInfos()
   {
     return $this->storeInfos;
