@@ -65,10 +65,16 @@ class Google_Service_Bigquery_DatasetAccess extends Google_Model
   {
     return $this->userByEmail;
   }
+  /**
+   * @param Google_Service_Bigquery_TableReference
+   */
   public function setView(Google_Service_Bigquery_TableReference $view)
   {
     $this->view = $view;
   }
+  /**
+   * @return Google_Service_Bigquery_TableReference
+   */
   public function getView()
   {
     return $this->view;

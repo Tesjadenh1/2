@@ -31,18 +31,30 @@ class Google_Service_Bigquery_QueryParameter extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Bigquery_QueryParameterType
+   */
   public function setParameterType(Google_Service_Bigquery_QueryParameterType $parameterType)
   {
     $this->parameterType = $parameterType;
   }
+  /**
+   * @return Google_Service_Bigquery_QueryParameterType
+   */
   public function getParameterType()
   {
     return $this->parameterType;
   }
+  /**
+   * @param Google_Service_Bigquery_QueryParameterValue
+   */
   public function setParameterValue(Google_Service_Bigquery_QueryParameterValue $parameterValue)
   {
     $this->parameterValue = $parameterValue;
   }
+  /**
+   * @return Google_Service_Bigquery_QueryParameterValue
+   */
   public function getParameterValue()
   {
     return $this->parameterValue;

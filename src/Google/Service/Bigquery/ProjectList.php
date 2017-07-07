@@ -49,10 +49,16 @@ class Google_Service_Bigquery_ProjectList extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Bigquery_ProjectListProjects
+   */
   public function setProjects($projects)
   {
     $this->projects = $projects;
   }
+  /**
+   * @return Google_Service_Bigquery_ProjectListProjects
+   */
   public function getProjects()
   {
     return $this->projects;

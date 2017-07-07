@@ -21,10 +21,16 @@ class Google_Service_Bigquery_TableSchema extends Google_Collection
   protected $fieldsType = 'Google_Service_Bigquery_TableFieldSchema';
   protected $fieldsDataType = 'array';
 
+  /**
+   * @param Google_Service_Bigquery_TableFieldSchema
+   */
   public function setFields($fields)
   {
     $this->fields = $fields;
   }
+  /**
+   * @return Google_Service_Bigquery_TableFieldSchema
+   */
   public function getFields()
   {
     return $this->fields;

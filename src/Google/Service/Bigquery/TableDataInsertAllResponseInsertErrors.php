@@ -22,10 +22,16 @@ class Google_Service_Bigquery_TableDataInsertAllResponseInsertErrors extends Goo
   protected $errorsDataType = 'array';
   public $index;
 
+  /**
+   * @param Google_Service_Bigquery_ErrorProto
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_Bigquery_ErrorProto
+   */
   public function getErrors()
   {
     return $this->errors;

@@ -25,10 +25,16 @@ class Google_Service_Bigquery_BigtableColumnFamily extends Google_Collection
   public $onlyReadLatest;
   public $type;
 
+  /**
+   * @param Google_Service_Bigquery_BigtableColumn
+   */
   public function setColumns($columns)
   {
     $this->columns = $columns;
   }
+  /**
+   * @return Google_Service_Bigquery_BigtableColumn
+   */
   public function getColumns()
   {
     return $this->columns;

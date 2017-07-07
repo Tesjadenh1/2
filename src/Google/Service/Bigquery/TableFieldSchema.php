@@ -33,10 +33,16 @@ class Google_Service_Bigquery_TableFieldSchema extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Bigquery_TableFieldSchema
+   */
   public function setFields($fields)
   {
     $this->fields = $fields;
   }
+  /**
+   * @return Google_Service_Bigquery_TableFieldSchema
+   */
   public function getFields()
   {
     return $this->fields;

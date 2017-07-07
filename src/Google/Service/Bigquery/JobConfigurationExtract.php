@@ -75,10 +75,16 @@ class Google_Service_Bigquery_JobConfigurationExtract extends Google_Collection
   {
     return $this->printHeader;
   }
+  /**
+   * @param Google_Service_Bigquery_TableReference
+   */
   public function setSourceTable(Google_Service_Bigquery_TableReference $sourceTable)
   {
     $this->sourceTable = $sourceTable;
   }
+  /**
+   * @return Google_Service_Bigquery_TableReference
+   */
   public function getSourceTable()
   {
     return $this->sourceTable;

@@ -24,10 +24,16 @@ class Google_Service_Bigquery_DatasetListDatasets extends Google_Model
   public $kind;
   public $labels;
 
+  /**
+   * @param Google_Service_Bigquery_DatasetReference
+   */
   public function setDatasetReference(Google_Service_Bigquery_DatasetReference $datasetReference)
   {
     $this->datasetReference = $datasetReference;
   }
+  /**
+   * @return Google_Service_Bigquery_DatasetReference
+   */
   public function getDatasetReference()
   {
     return $this->datasetReference;

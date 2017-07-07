@@ -38,10 +38,16 @@ class Google_Service_Bigquery_QueryParameterTypeStructTypes extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Bigquery_QueryParameterType
+   */
   public function setType(Google_Service_Bigquery_QueryParameterType $type)
   {
     $this->type = $type;
   }
+  /**
+   * @return Google_Service_Bigquery_QueryParameterType
+   */
   public function getType()
   {
     return $this->type;

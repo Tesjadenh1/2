@@ -106,10 +106,16 @@ class Google_Service_Bigquery_ExplainQueryStage extends Google_Collection
   {
     return $this->status;
   }
+  /**
+   * @param Google_Service_Bigquery_ExplainQueryStep
+   */
   public function setSteps($steps)
   {
     $this->steps = $steps;
   }
+  /**
+   * @return Google_Service_Bigquery_ExplainQueryStep
+   */
   public function getSteps()
   {
     return $this->steps;

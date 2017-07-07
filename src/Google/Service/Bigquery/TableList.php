@@ -49,10 +49,16 @@ class Google_Service_Bigquery_TableList extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Bigquery_TableListTables
+   */
   public function setTables($tables)
   {
     $this->tables = $tables;
   }
+  /**
+   * @return Google_Service_Bigquery_TableListTables
+   */
   public function getTables()
   {
     return $this->tables;

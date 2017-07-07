@@ -34,10 +34,16 @@ class Google_Service_Bigquery_Dataset extends Google_Collection
   public $location;
   public $selfLink;
 
+  /**
+   * @param Google_Service_Bigquery_DatasetAccess
+   */
   public function setAccess($access)
   {
     $this->access = $access;
   }
+  /**
+   * @return Google_Service_Bigquery_DatasetAccess
+   */
   public function getAccess()
   {
     return $this->access;
@@ -50,10 +56,16 @@ class Google_Service_Bigquery_Dataset extends Google_Collection
   {
     return $this->creationTime;
   }
+  /**
+   * @param Google_Service_Bigquery_DatasetReference
+   */
   public function setDatasetReference(Google_Service_Bigquery_DatasetReference $datasetReference)
   {
     $this->datasetReference = $datasetReference;
   }
+  /**
+   * @return Google_Service_Bigquery_DatasetReference
+   */
   public function getDatasetReference()
   {
     return $this->datasetReference;

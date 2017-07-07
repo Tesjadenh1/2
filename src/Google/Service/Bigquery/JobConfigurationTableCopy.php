@@ -35,26 +35,44 @@ class Google_Service_Bigquery_JobConfigurationTableCopy extends Google_Collectio
   {
     return $this->createDisposition;
   }
+  /**
+   * @param Google_Service_Bigquery_TableReference
+   */
   public function setDestinationTable(Google_Service_Bigquery_TableReference $destinationTable)
   {
     $this->destinationTable = $destinationTable;
   }
+  /**
+   * @return Google_Service_Bigquery_TableReference
+   */
   public function getDestinationTable()
   {
     return $this->destinationTable;
   }
+  /**
+   * @param Google_Service_Bigquery_TableReference
+   */
   public function setSourceTable(Google_Service_Bigquery_TableReference $sourceTable)
   {
     $this->sourceTable = $sourceTable;
   }
+  /**
+   * @return Google_Service_Bigquery_TableReference
+   */
   public function getSourceTable()
   {
     return $this->sourceTable;
   }
+  /**
+   * @param Google_Service_Bigquery_TableReference
+   */
   public function setSourceTables($sourceTables)
   {
     $this->sourceTables = $sourceTables;
   }
+  /**
+   * @return Google_Service_Bigquery_TableReference
+   */
   public function getSourceTables()
   {
     return $this->sourceTables;

@@ -39,10 +39,16 @@ class Google_Service_Bigquery_ViewDefinition extends Google_Collection
   {
     return $this->useLegacySql;
   }
+  /**
+   * @param Google_Service_Bigquery_UserDefinedFunctionResource
+   */
   public function setUserDefinedFunctionResources($userDefinedFunctionResources)
   {
     $this->userDefinedFunctionResources = $userDefinedFunctionResources;
   }
+  /**
+   * @return Google_Service_Bigquery_UserDefinedFunctionResource
+   */
   public function getUserDefinedFunctionResources()
   {
     return $this->userDefinedFunctionResources;

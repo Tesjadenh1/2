@@ -41,10 +41,16 @@ class Google_Service_Bigquery_TableDataInsertAllRequest extends Google_Collectio
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Bigquery_TableDataInsertAllRequestRows
+   */
   public function setRows($rows)
   {
     $this->rows = $rows;
   }
+  /**
+   * @return Google_Service_Bigquery_TableDataInsertAllRequestRows
+   */
   public function getRows()
   {
     return $this->rows;

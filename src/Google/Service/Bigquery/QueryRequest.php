@@ -32,10 +32,16 @@ class Google_Service_Bigquery_QueryRequest extends Google_Collection
   public $useLegacySql;
   public $useQueryCache;
 
+  /**
+   * @param Google_Service_Bigquery_DatasetReference
+   */
   public function setDefaultDataset(Google_Service_Bigquery_DatasetReference $defaultDataset)
   {
     $this->defaultDataset = $defaultDataset;
   }
+  /**
+   * @return Google_Service_Bigquery_DatasetReference
+   */
   public function getDefaultDataset()
   {
     return $this->defaultDataset;
@@ -88,10 +94,16 @@ class Google_Service_Bigquery_QueryRequest extends Google_Collection
   {
     return $this->query;
   }
+  /**
+   * @param Google_Service_Bigquery_QueryParameter
+   */
   public function setQueryParameters($queryParameters)
   {
     $this->queryParameters = $queryParameters;
   }
+  /**
+   * @return Google_Service_Bigquery_QueryParameter
+   */
   public function getQueryParameters()
   {
     return $this->queryParameters;

@@ -21,10 +21,16 @@ class Google_Service_Bigquery_JobCancelResponse extends Google_Model
   protected $jobDataType = '';
   public $kind;
 
+  /**
+   * @param Google_Service_Bigquery_Job
+   */
   public function setJob(Google_Service_Bigquery_Job $job)
   {
     $this->job = $job;
   }
+  /**
+   * @return Google_Service_Bigquery_Job
+   */
   public function getJob()
   {
     return $this->job;

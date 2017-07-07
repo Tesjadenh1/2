@@ -24,18 +24,30 @@ class Google_Service_Bigquery_QueryParameterType extends Google_Collection
   protected $structTypesDataType = 'array';
   public $type;
 
+  /**
+   * @param Google_Service_Bigquery_QueryParameterType
+   */
   public function setArrayType(Google_Service_Bigquery_QueryParameterType $arrayType)
   {
     $this->arrayType = $arrayType;
   }
+  /**
+   * @return Google_Service_Bigquery_QueryParameterType
+   */
   public function getArrayType()
   {
     return $this->arrayType;
   }
+  /**
+   * @param Google_Service_Bigquery_QueryParameterTypeStructTypes
+   */
   public function setStructTypes($structTypes)
   {
     $this->structTypes = $structTypes;
   }
+  /**
+   * @return Google_Service_Bigquery_QueryParameterTypeStructTypes
+   */
   public function getStructTypes()
   {
     return $this->structTypes;

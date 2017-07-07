@@ -44,26 +44,44 @@ class Google_Service_Bigquery_JobStatistics extends Google_Model
   {
     return $this->endTime;
   }
+  /**
+   * @param Google_Service_Bigquery_JobStatistics4
+   */
   public function setExtract(Google_Service_Bigquery_JobStatistics4 $extract)
   {
     $this->extract = $extract;
   }
+  /**
+   * @return Google_Service_Bigquery_JobStatistics4
+   */
   public function getExtract()
   {
     return $this->extract;
   }
+  /**
+   * @param Google_Service_Bigquery_JobStatistics3
+   */
   public function setLoad(Google_Service_Bigquery_JobStatistics3 $load)
   {
     $this->load = $load;
   }
+  /**
+   * @return Google_Service_Bigquery_JobStatistics3
+   */
   public function getLoad()
   {
     return $this->load;
   }
+  /**
+   * @param Google_Service_Bigquery_JobStatistics2
+   */
   public function setQuery(Google_Service_Bigquery_JobStatistics2 $query)
   {
     $this->query = $query;
   }
+  /**
+   * @return Google_Service_Bigquery_JobStatistics2
+   */
   public function getQuery()
   {
     return $this->query;

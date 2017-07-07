@@ -23,10 +23,16 @@ class Google_Service_Bigquery_BigtableOptions extends Google_Collection
   public $ignoreUnspecifiedColumnFamilies;
   public $readRowkeyAsString;
 
+  /**
+   * @param Google_Service_Bigquery_BigtableColumnFamily
+   */
   public function setColumnFamilies($columnFamilies)
   {
     $this->columnFamilies = $columnFamilies;
   }
+  /**
+   * @return Google_Service_Bigquery_BigtableColumnFamily
+   */
   public function getColumnFamilies()
   {
     return $this->columnFamilies;
