@@ -39,10 +39,16 @@ class Google_Service_Blogger_PostAuthor extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_Blogger_PostAuthorImage
+   */
   public function setImage(Google_Service_Blogger_PostAuthorImage $image)
   {
     $this->image = $image;
   }
+  /**
+   * @return Google_Service_Blogger_PostAuthorImage
+   */
   public function getImage()
   {
     return $this->image;

@@ -24,18 +24,30 @@ class Google_Service_Blogger_BlogList extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Blogger_BlogUserInfo
+   */
   public function setBlogUserInfos($blogUserInfos)
   {
     $this->blogUserInfos = $blogUserInfos;
   }
+  /**
+   * @return Google_Service_Blogger_BlogUserInfo
+   */
   public function getBlogUserInfos()
   {
     return $this->blogUserInfos;
   }
+  /**
+   * @param Google_Service_Blogger_Blog
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Blogger_Blog
+   */
   public function getItems()
   {
     return $this->items;

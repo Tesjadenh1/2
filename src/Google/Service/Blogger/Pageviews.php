@@ -31,10 +31,16 @@ class Google_Service_Blogger_Pageviews extends Google_Collection
   {
     return $this->blogId;
   }
+  /**
+   * @param Google_Service_Blogger_PageviewsCounts
+   */
   public function setCounts($counts)
   {
     $this->counts = $counts;
   }
+  /**
+   * @return Google_Service_Blogger_PageviewsCounts
+   */
   public function getCounts()
   {
     return $this->counts;

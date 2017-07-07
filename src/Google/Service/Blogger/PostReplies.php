@@ -23,10 +23,16 @@ class Google_Service_Blogger_PostReplies extends Google_Collection
   public $selfLink;
   public $totalItems;
 
+  /**
+   * @param Google_Service_Blogger_Comment
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Blogger_Comment
+   */
   public function getItems()
   {
     return $this->items;

@@ -37,10 +37,16 @@ class Google_Service_Blogger_User extends Google_Model
   {
     return $this->about;
   }
+  /**
+   * @param Google_Service_Blogger_UserBlogs
+   */
   public function setBlogs(Google_Service_Blogger_UserBlogs $blogs)
   {
     $this->blogs = $blogs;
   }
+  /**
+   * @return Google_Service_Blogger_UserBlogs
+   */
   public function getBlogs()
   {
     return $this->blogs;
@@ -77,10 +83,16 @@ class Google_Service_Blogger_User extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Blogger_UserLocale
+   */
   public function setLocale(Google_Service_Blogger_UserLocale $locale)
   {
     $this->locale = $locale;
   }
+  /**
+   * @return Google_Service_Blogger_UserLocale
+   */
   public function getLocale()
   {
     return $this->locale;

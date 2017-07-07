@@ -33,10 +33,16 @@ class Google_Service_Blogger_CommentList extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Blogger_Comment
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Blogger_Comment
+   */
   public function getItems()
   {
     return $this->items;

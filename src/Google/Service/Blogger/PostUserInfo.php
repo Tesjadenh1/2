@@ -34,18 +34,30 @@ class Google_Service_Blogger_PostUserInfo extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Blogger_Post
+   */
   public function setPost(Google_Service_Blogger_Post $post)
   {
     $this->post = $post;
   }
+  /**
+   * @return Google_Service_Blogger_Post
+   */
   public function getPost()
   {
     return $this->post;
   }
+  /**
+   * @param Google_Service_Blogger_PostPerUserInfo
+   */
   public function setPostUserInfo(Google_Service_Blogger_PostPerUserInfo $postUserInfo)
   {
     $this->postUserInfo = $postUserInfo;
   }
+  /**
+   * @return Google_Service_Blogger_PostPerUserInfo
+   */
   public function getPostUserInfo()
   {
     return $this->postUserInfo;
