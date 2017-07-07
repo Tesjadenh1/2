@@ -28,10 +28,16 @@ class Google_Service_Analytics_CustomDataSources extends Google_Collection
   public $totalResults;
   public $username;
 
+  /**
+   * @param Google_Service_Analytics_CustomDataSource
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Analytics_CustomDataSource
+   */
   public function getItems()
   {
     return $this->items;

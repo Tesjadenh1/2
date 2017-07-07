@@ -29,10 +29,16 @@ class Google_Service_Analytics_Account extends Google_Model
   public $starred;
   public $updated;
 
+  /**
+   * @param Google_Service_Analytics_AccountChildLink
+   */
   public function setChildLink(Google_Service_Analytics_AccountChildLink $childLink)
   {
     $this->childLink = $childLink;
   }
+  /**
+   * @return Google_Service_Analytics_AccountChildLink
+   */
   public function getChildLink()
   {
     return $this->childLink;
@@ -69,10 +75,16 @@ class Google_Service_Analytics_Account extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Analytics_AccountPermissions
+   */
   public function setPermissions(Google_Service_Analytics_AccountPermissions $permissions)
   {
     $this->permissions = $permissions;
   }
+  /**
+   * @return Google_Service_Analytics_AccountPermissions
+   */
   public function getPermissions()
   {
     return $this->permissions;

@@ -28,18 +28,30 @@ class Google_Service_Analytics_EntityAdWordsLink extends Google_Collection
   public $profileIds;
   public $selfLink;
 
+  /**
+   * @param Google_Service_Analytics_AdWordsAccount
+   */
   public function setAdWordsAccounts($adWordsAccounts)
   {
     $this->adWordsAccounts = $adWordsAccounts;
   }
+  /**
+   * @return Google_Service_Analytics_AdWordsAccount
+   */
   public function getAdWordsAccounts()
   {
     return $this->adWordsAccounts;
   }
+  /**
+   * @param Google_Service_Analytics_EntityAdWordsLinkEntity
+   */
   public function setEntity(Google_Service_Analytics_EntityAdWordsLinkEntity $entity)
   {
     $this->entity = $entity;
   }
+  /**
+   * @return Google_Service_Analytics_EntityAdWordsLinkEntity
+   */
   public function getEntity()
   {
     return $this->entity;

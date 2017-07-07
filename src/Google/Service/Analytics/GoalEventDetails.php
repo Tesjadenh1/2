@@ -22,10 +22,16 @@ class Google_Service_Analytics_GoalEventDetails extends Google_Collection
   protected $eventConditionsDataType = 'array';
   public $useEventValue;
 
+  /**
+   * @param Google_Service_Analytics_GoalEventDetailsEventConditions
+   */
   public function setEventConditions($eventConditions)
   {
     $this->eventConditions = $eventConditions;
   }
+  /**
+   * @return Google_Service_Analytics_GoalEventDetailsEventConditions
+   */
   public function getEventConditions()
   {
     return $this->eventConditions;

@@ -20,10 +20,16 @@ class Google_Service_Analytics_RemarketingAudienceAudienceDefinition extends Goo
   protected $includeConditionsType = 'Google_Service_Analytics_IncludeConditions';
   protected $includeConditionsDataType = '';
 
+  /**
+   * @param Google_Service_Analytics_IncludeConditions
+   */
   public function setIncludeConditions(Google_Service_Analytics_IncludeConditions $includeConditions)
   {
     $this->includeConditions = $includeConditions;
   }
+  /**
+   * @return Google_Service_Analytics_IncludeConditions
+   */
   public function getIncludeConditions()
   {
     return $this->includeConditions;

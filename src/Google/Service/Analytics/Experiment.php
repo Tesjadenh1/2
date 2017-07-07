@@ -153,10 +153,16 @@ class Google_Service_Analytics_Experiment extends Google_Collection
   {
     return $this->optimizationType;
   }
+  /**
+   * @param Google_Service_Analytics_ExperimentParentLink
+   */
   public function setParentLink(Google_Service_Analytics_ExperimentParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }
+  /**
+   * @return Google_Service_Analytics_ExperimentParentLink
+   */
   public function getParentLink()
   {
     return $this->parentLink;
@@ -241,10 +247,16 @@ class Google_Service_Analytics_Experiment extends Google_Collection
   {
     return $this->updated;
   }
+  /**
+   * @param Google_Service_Analytics_ExperimentVariations
+   */
   public function setVariations($variations)
   {
     $this->variations = $variations;
   }
+  /**
+   * @return Google_Service_Analytics_ExperimentVariations
+   */
   public function getVariations()
   {
     return $this->variations;

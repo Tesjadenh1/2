@@ -40,10 +40,16 @@ class Google_Service_Analytics_GaData extends Google_Collection
   public $totalResults;
   public $totalsForAllResults;
 
+  /**
+   * @param Google_Service_Analytics_GaDataColumnHeaders
+   */
   public function setColumnHeaders($columnHeaders)
   {
     $this->columnHeaders = $columnHeaders;
   }
+  /**
+   * @return Google_Service_Analytics_GaDataColumnHeaders
+   */
   public function getColumnHeaders()
   {
     return $this->columnHeaders;
@@ -64,10 +70,16 @@ class Google_Service_Analytics_GaData extends Google_Collection
   {
     return $this->dataLastRefreshed;
   }
+  /**
+   * @param Google_Service_Analytics_GaDataDataTable
+   */
   public function setDataTable(Google_Service_Analytics_GaDataDataTable $dataTable)
   {
     $this->dataTable = $dataTable;
   }
+  /**
+   * @return Google_Service_Analytics_GaDataDataTable
+   */
   public function getDataTable()
   {
     return $this->dataTable;
@@ -112,18 +124,30 @@ class Google_Service_Analytics_GaData extends Google_Collection
   {
     return $this->previousLink;
   }
+  /**
+   * @param Google_Service_Analytics_GaDataProfileInfo
+   */
   public function setProfileInfo(Google_Service_Analytics_GaDataProfileInfo $profileInfo)
   {
     $this->profileInfo = $profileInfo;
   }
+  /**
+   * @return Google_Service_Analytics_GaDataProfileInfo
+   */
   public function getProfileInfo()
   {
     return $this->profileInfo;
   }
+  /**
+   * @param Google_Service_Analytics_GaDataQuery
+   */
   public function setQuery(Google_Service_Analytics_GaDataQuery $query)
   {
     $this->query = $query;
   }
+  /**
+   * @return Google_Service_Analytics_GaDataQuery
+   */
   public function getQuery()
   {
     return $this->query;

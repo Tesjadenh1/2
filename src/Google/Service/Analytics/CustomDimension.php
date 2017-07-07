@@ -87,10 +87,16 @@ class Google_Service_Analytics_CustomDimension extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Analytics_CustomDimensionParentLink
+   */
   public function setParentLink(Google_Service_Analytics_CustomDimensionParentLink $parentLink)
   {
     $this->parentLink = $parentLink;
   }
+  /**
+   * @return Google_Service_Analytics_CustomDimensionParentLink
+   */
   public function getParentLink()
   {
     return $this->parentLink;

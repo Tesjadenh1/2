@@ -41,10 +41,16 @@ class Google_Service_Analytics_Columns extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Analytics_Column
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Analytics_Column
+   */
   public function getItems()
   {
     return $this->items;

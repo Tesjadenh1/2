@@ -38,10 +38,16 @@ class Google_Service_Analytics_McfData extends Google_Collection
   public $totalResults;
   public $totalsForAllResults;
 
+  /**
+   * @param Google_Service_Analytics_McfDataColumnHeaders
+   */
   public function setColumnHeaders($columnHeaders)
   {
     $this->columnHeaders = $columnHeaders;
   }
+  /**
+   * @return Google_Service_Analytics_McfDataColumnHeaders
+   */
   public function getColumnHeaders()
   {
     return $this->columnHeaders;
@@ -94,26 +100,44 @@ class Google_Service_Analytics_McfData extends Google_Collection
   {
     return $this->previousLink;
   }
+  /**
+   * @param Google_Service_Analytics_McfDataProfileInfo
+   */
   public function setProfileInfo(Google_Service_Analytics_McfDataProfileInfo $profileInfo)
   {
     $this->profileInfo = $profileInfo;
   }
+  /**
+   * @return Google_Service_Analytics_McfDataProfileInfo
+   */
   public function getProfileInfo()
   {
     return $this->profileInfo;
   }
+  /**
+   * @param Google_Service_Analytics_McfDataQuery
+   */
   public function setQuery(Google_Service_Analytics_McfDataQuery $query)
   {
     $this->query = $query;
   }
+  /**
+   * @return Google_Service_Analytics_McfDataQuery
+   */
   public function getQuery()
   {
     return $this->query;
   }
+  /**
+   * @param Google_Service_Analytics_McfDataRows
+   */
   public function setRows($rows)
   {
     $this->rows = $rows;
   }
+  /**
+   * @return Google_Service_Analytics_McfDataRows
+   */
   public function getRows()
   {
     return $this->rows;

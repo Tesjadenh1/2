@@ -21,10 +21,16 @@ class Google_Service_Analytics_GaDataDataTableRows extends Google_Collection
   protected $cType = 'Google_Service_Analytics_GaDataDataTableRowsC';
   protected $cDataType = 'array';
 
+  /**
+   * @param Google_Service_Analytics_GaDataDataTableRowsC
+   */
   public function setC($c)
   {
     $this->c = $c;
   }
+  /**
+   * @return Google_Service_Analytics_GaDataDataTableRowsC
+   */
   public function getC()
   {
     return $this->c;

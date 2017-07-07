@@ -57,10 +57,16 @@ class Google_Service_Analytics_AccountSummary extends Google_Collection
   {
     return $this->starred;
   }
+  /**
+   * @param Google_Service_Analytics_WebPropertySummary
+   */
   public function setWebProperties($webProperties)
   {
     $this->webProperties = $webProperties;
   }
+  /**
+   * @return Google_Service_Analytics_WebPropertySummary
+   */
   public function getWebProperties()
   {
     return $this->webProperties;
