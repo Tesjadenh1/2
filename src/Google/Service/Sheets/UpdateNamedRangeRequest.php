@@ -29,10 +29,16 @@ class Google_Service_Sheets_UpdateNamedRangeRequest extends Google_Model
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Sheets_NamedRange
+   */
   public function setNamedRange(Google_Service_Sheets_NamedRange $namedRange)
   {
     $this->namedRange = $namedRange;
   }
+  /**
+   * @return Google_Service_Sheets_NamedRange
+   */
   public function getNamedRange()
   {
     return $this->namedRange;

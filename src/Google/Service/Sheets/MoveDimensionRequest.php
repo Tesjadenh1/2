@@ -29,10 +29,16 @@ class Google_Service_Sheets_MoveDimensionRequest extends Google_Model
   {
     return $this->destinationIndex;
   }
+  /**
+   * @param Google_Service_Sheets_DimensionRange
+   */
   public function setSource(Google_Service_Sheets_DimensionRange $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionRange
+   */
   public function getSource()
   {
     return $this->source;

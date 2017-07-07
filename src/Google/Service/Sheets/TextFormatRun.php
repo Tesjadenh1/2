@@ -21,10 +21,16 @@ class Google_Service_Sheets_TextFormatRun extends Google_Model
   protected $formatDataType = '';
   public $startIndex;
 
+  /**
+   * @param Google_Service_Sheets_TextFormat
+   */
   public function setFormat(Google_Service_Sheets_TextFormat $format)
   {
     $this->format = $format;
   }
+  /**
+   * @return Google_Service_Sheets_TextFormat
+   */
   public function getFormat()
   {
     return $this->format;

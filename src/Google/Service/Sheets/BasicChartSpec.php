@@ -32,10 +32,16 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   public $stackedType;
   public $threeDimensional;
 
+  /**
+   * @param Google_Service_Sheets_BasicChartAxis
+   */
   public function setAxis($axis)
   {
     $this->axis = $axis;
   }
+  /**
+   * @return Google_Service_Sheets_BasicChartAxis
+   */
   public function getAxis()
   {
     return $this->axis;
@@ -48,10 +54,16 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   {
     return $this->chartType;
   }
+  /**
+   * @param Google_Service_Sheets_BasicChartDomain
+   */
   public function setDomains($domains)
   {
     $this->domains = $domains;
   }
+  /**
+   * @return Google_Service_Sheets_BasicChartDomain
+   */
   public function getDomains()
   {
     return $this->domains;
@@ -88,10 +100,16 @@ class Google_Service_Sheets_BasicChartSpec extends Google_Collection
   {
     return $this->lineSmoothing;
   }
+  /**
+   * @param Google_Service_Sheets_BasicChartSeries
+   */
   public function setSeries($series)
   {
     $this->series = $series;
   }
+  /**
+   * @return Google_Service_Sheets_BasicChartSeries
+   */
   public function getSeries()
   {
     return $this->series;

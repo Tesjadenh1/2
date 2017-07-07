@@ -21,10 +21,16 @@ class Google_Service_Sheets_UpdateBandingRequest extends Google_Model
   protected $bandedRangeDataType = '';
   public $fields;
 
+  /**
+   * @param Google_Service_Sheets_BandedRange
+   */
   public function setBandedRange(Google_Service_Sheets_BandedRange $bandedRange)
   {
     $this->bandedRange = $bandedRange;
   }
+  /**
+   * @return Google_Service_Sheets_BandedRange
+   */
   public function getBandedRange()
   {
     return $this->bandedRange;

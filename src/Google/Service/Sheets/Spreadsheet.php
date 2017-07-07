@@ -27,26 +27,44 @@ class Google_Service_Sheets_Spreadsheet extends Google_Collection
   public $spreadsheetId;
   public $spreadsheetUrl;
 
+  /**
+   * @param Google_Service_Sheets_NamedRange
+   */
   public function setNamedRanges($namedRanges)
   {
     $this->namedRanges = $namedRanges;
   }
+  /**
+   * @return Google_Service_Sheets_NamedRange
+   */
   public function getNamedRanges()
   {
     return $this->namedRanges;
   }
+  /**
+   * @param Google_Service_Sheets_SpreadsheetProperties
+   */
   public function setProperties(Google_Service_Sheets_SpreadsheetProperties $properties)
   {
     $this->properties = $properties;
   }
+  /**
+   * @return Google_Service_Sheets_SpreadsheetProperties
+   */
   public function getProperties()
   {
     return $this->properties;
   }
+  /**
+   * @param Google_Service_Sheets_Sheet
+   */
   public function setSheets($sheets)
   {
     $this->sheets = $sheets;
   }
+  /**
+   * @return Google_Service_Sheets_Sheet
+   */
   public function getSheets()
   {
     return $this->sheets;

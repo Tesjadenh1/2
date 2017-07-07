@@ -20,10 +20,16 @@ class Google_Service_Sheets_SetBasicFilterRequest extends Google_Model
   protected $filterType = 'Google_Service_Sheets_BasicFilter';
   protected $filterDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_BasicFilter
+   */
   public function setFilter(Google_Service_Sheets_BasicFilter $filter)
   {
     $this->filter = $filter;
   }
+  /**
+   * @return Google_Service_Sheets_BasicFilter
+   */
   public function getFilter()
   {
     return $this->filter;

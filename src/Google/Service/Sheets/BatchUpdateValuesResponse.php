@@ -26,10 +26,16 @@ class Google_Service_Sheets_BatchUpdateValuesResponse extends Google_Collection
   public $totalUpdatedRows;
   public $totalUpdatedSheets;
 
+  /**
+   * @param Google_Service_Sheets_UpdateValuesResponse
+   */
   public function setResponses($responses)
   {
     $this->responses = $responses;
   }
+  /**
+   * @return Google_Service_Sheets_UpdateValuesResponse
+   */
   public function getResponses()
   {
     return $this->responses;

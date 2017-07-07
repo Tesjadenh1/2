@@ -30,10 +30,16 @@ class Google_Service_Sheets_UpdateEmbeddedObjectPositionRequest extends Google_M
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Sheets_EmbeddedObjectPosition
+   */
   public function setNewPosition(Google_Service_Sheets_EmbeddedObjectPosition $newPosition)
   {
     $this->newPosition = $newPosition;
   }
+  /**
+   * @return Google_Service_Sheets_EmbeddedObjectPosition
+   */
   public function getNewPosition()
   {
     return $this->newPosition;

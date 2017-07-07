@@ -23,18 +23,30 @@ class Google_Service_Sheets_AutoFillRequest extends Google_Model
   protected $sourceAndDestinationDataType = '';
   public $useAlternateSeries;
 
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setRange(Google_Service_Sheets_GridRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getRange()
   {
     return $this->range;
   }
+  /**
+   * @param Google_Service_Sheets_SourceAndDestination
+   */
   public function setSourceAndDestination(Google_Service_Sheets_SourceAndDestination $sourceAndDestination)
   {
     $this->sourceAndDestination = $sourceAndDestination;
   }
+  /**
+   * @return Google_Service_Sheets_SourceAndDestination
+   */
   public function getSourceAndDestination()
   {
     return $this->sourceAndDestination;

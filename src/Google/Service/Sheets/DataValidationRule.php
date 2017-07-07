@@ -23,10 +23,16 @@ class Google_Service_Sheets_DataValidationRule extends Google_Model
   public $showCustomUi;
   public $strict;
 
+  /**
+   * @param Google_Service_Sheets_BooleanCondition
+   */
   public function setCondition(Google_Service_Sheets_BooleanCondition $condition)
   {
     $this->condition = $condition;
   }
+  /**
+   * @return Google_Service_Sheets_BooleanCondition
+   */
   public function getCondition()
   {
     return $this->condition;

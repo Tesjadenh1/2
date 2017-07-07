@@ -21,10 +21,16 @@ class Google_Service_Sheets_BasicChartDomain extends Google_Model
   protected $domainDataType = '';
   public $reversed;
 
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setDomain(Google_Service_Sheets_ChartData $domain)
   {
     $this->domain = $domain;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getDomain()
   {
     return $this->domain;

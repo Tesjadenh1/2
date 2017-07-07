@@ -50,10 +50,16 @@ class Google_Service_Sheets_TextFormat extends Google_Model
   {
     return $this->fontSize;
   }
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setForegroundColor(Google_Service_Sheets_Color $foregroundColor)
   {
     $this->foregroundColor = $foregroundColor;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getForegroundColor()
   {
     return $this->foregroundColor;

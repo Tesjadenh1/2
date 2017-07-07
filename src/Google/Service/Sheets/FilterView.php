@@ -28,10 +28,16 @@ class Google_Service_Sheets_FilterView extends Google_Collection
   protected $sortSpecsDataType = 'array';
   public $title;
 
+  /**
+   * @param Google_Service_Sheets_FilterCriteria
+   */
   public function setCriteria($criteria)
   {
     $this->criteria = $criteria;
   }
+  /**
+   * @return Google_Service_Sheets_FilterCriteria
+   */
   public function getCriteria()
   {
     return $this->criteria;
@@ -52,18 +58,30 @@ class Google_Service_Sheets_FilterView extends Google_Collection
   {
     return $this->namedRangeId;
   }
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setRange(Google_Service_Sheets_GridRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getRange()
   {
     return $this->range;
   }
+  /**
+   * @param Google_Service_Sheets_SortSpec
+   */
   public function setSortSpecs($sortSpecs)
   {
     $this->sortSpecs = $sortSpecs;
   }
+  /**
+   * @return Google_Service_Sheets_SortSpec
+   */
   public function getSortSpecs()
   {
     return $this->sortSpecs;

@@ -38,10 +38,16 @@ class Google_Service_Sheets_NamedRange extends Google_Model
   {
     return $this->namedRangeId;
   }
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setRange(Google_Service_Sheets_GridRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getRange()
   {
     return $this->range;

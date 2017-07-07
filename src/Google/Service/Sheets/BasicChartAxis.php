@@ -22,10 +22,16 @@ class Google_Service_Sheets_BasicChartAxis extends Google_Model
   public $position;
   public $title;
 
+  /**
+   * @param Google_Service_Sheets_TextFormat
+   */
   public function setFormat(Google_Service_Sheets_TextFormat $format)
   {
     $this->format = $format;
   }
+  /**
+   * @return Google_Service_Sheets_TextFormat
+   */
   public function getFormat()
   {
     return $this->format;

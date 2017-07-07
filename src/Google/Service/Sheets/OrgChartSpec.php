@@ -29,18 +29,30 @@ class Google_Service_Sheets_OrgChartSpec extends Google_Model
   protected $tooltipsType = 'Google_Service_Sheets_ChartData';
   protected $tooltipsDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setLabels(Google_Service_Sheets_ChartData $labels)
   {
     $this->labels = $labels;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getLabels()
   {
     return $this->labels;
   }
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setNodeColor(Google_Service_Sheets_Color $nodeColor)
   {
     $this->nodeColor = $nodeColor;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getNodeColor()
   {
     return $this->nodeColor;
@@ -53,26 +65,44 @@ class Google_Service_Sheets_OrgChartSpec extends Google_Model
   {
     return $this->nodeSize;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setParentLabels(Google_Service_Sheets_ChartData $parentLabels)
   {
     $this->parentLabels = $parentLabels;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getParentLabels()
   {
     return $this->parentLabels;
   }
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setSelectedNodeColor(Google_Service_Sheets_Color $selectedNodeColor)
   {
     $this->selectedNodeColor = $selectedNodeColor;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getSelectedNodeColor()
   {
     return $this->selectedNodeColor;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setTooltips(Google_Service_Sheets_ChartData $tooltips)
   {
     $this->tooltips = $tooltips;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getTooltips()
   {
     return $this->tooltips;

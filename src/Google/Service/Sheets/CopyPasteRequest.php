@@ -24,10 +24,16 @@ class Google_Service_Sheets_CopyPasteRequest extends Google_Model
   protected $sourceType = 'Google_Service_Sheets_GridRange';
   protected $sourceDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setDestination(Google_Service_Sheets_GridRange $destination)
   {
     $this->destination = $destination;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getDestination()
   {
     return $this->destination;
@@ -48,10 +54,16 @@ class Google_Service_Sheets_CopyPasteRequest extends Google_Model
   {
     return $this->pasteType;
   }
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setSource(Google_Service_Sheets_GridRange $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getSource()
   {
     return $this->source;

@@ -24,26 +24,44 @@ class Google_Service_Sheets_GradientRule extends Google_Model
   protected $minpointType = 'Google_Service_Sheets_InterpolationPoint';
   protected $minpointDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_InterpolationPoint
+   */
   public function setMaxpoint(Google_Service_Sheets_InterpolationPoint $maxpoint)
   {
     $this->maxpoint = $maxpoint;
   }
+  /**
+   * @return Google_Service_Sheets_InterpolationPoint
+   */
   public function getMaxpoint()
   {
     return $this->maxpoint;
   }
+  /**
+   * @param Google_Service_Sheets_InterpolationPoint
+   */
   public function setMidpoint(Google_Service_Sheets_InterpolationPoint $midpoint)
   {
     $this->midpoint = $midpoint;
   }
+  /**
+   * @return Google_Service_Sheets_InterpolationPoint
+   */
   public function getMidpoint()
   {
     return $this->midpoint;
   }
+  /**
+   * @param Google_Service_Sheets_InterpolationPoint
+   */
   public function setMinpoint(Google_Service_Sheets_InterpolationPoint $minpoint)
   {
     $this->minpoint = $minpoint;
   }
+  /**
+   * @return Google_Service_Sheets_InterpolationPoint
+   */
   public function getMinpoint()
   {
     return $this->minpoint;

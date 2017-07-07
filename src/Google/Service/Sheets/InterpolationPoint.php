@@ -22,10 +22,16 @@ class Google_Service_Sheets_InterpolationPoint extends Google_Model
   public $type;
   public $value;
 
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setColor(Google_Service_Sheets_Color $color)
   {
     $this->color = $color;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getColor()
   {
     return $this->color;

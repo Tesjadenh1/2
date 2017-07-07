@@ -30,10 +30,16 @@ class Google_Service_Sheets_EmbeddedObjectPosition extends Google_Model
   {
     return $this->newSheet;
   }
+  /**
+   * @param Google_Service_Sheets_OverlayPosition
+   */
   public function setOverlayPosition(Google_Service_Sheets_OverlayPosition $overlayPosition)
   {
     $this->overlayPosition = $overlayPosition;
   }
+  /**
+   * @return Google_Service_Sheets_OverlayPosition
+   */
   public function getOverlayPosition()
   {
     return $this->overlayPosition;

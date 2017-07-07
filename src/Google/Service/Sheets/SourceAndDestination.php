@@ -38,10 +38,16 @@ class Google_Service_Sheets_SourceAndDestination extends Google_Model
   {
     return $this->fillLength;
   }
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setSource(Google_Service_Sheets_GridRange $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getSource()
   {
     return $this->source;

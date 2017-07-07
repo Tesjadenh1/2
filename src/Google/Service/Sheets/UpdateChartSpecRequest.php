@@ -29,10 +29,16 @@ class Google_Service_Sheets_UpdateChartSpecRequest extends Google_Model
   {
     return $this->chartId;
   }
+  /**
+   * @param Google_Service_Sheets_ChartSpec
+   */
   public function setSpec(Google_Service_Sheets_ChartSpec $spec)
   {
     $this->spec = $spec;
   }
+  /**
+   * @return Google_Service_Sheets_ChartSpec
+   */
   public function getSpec()
   {
     return $this->spec;

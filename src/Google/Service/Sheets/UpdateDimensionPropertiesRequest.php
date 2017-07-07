@@ -31,18 +31,30 @@ class Google_Service_Sheets_UpdateDimensionPropertiesRequest extends Google_Mode
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Sheets_DimensionProperties
+   */
   public function setProperties(Google_Service_Sheets_DimensionProperties $properties)
   {
     $this->properties = $properties;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionProperties
+   */
   public function getProperties()
   {
     return $this->properties;
   }
+  /**
+   * @param Google_Service_Sheets_DimensionRange
+   */
   public function setRange(Google_Service_Sheets_DimensionRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionRange
+   */
   public function getRange()
   {
     return $this->range;

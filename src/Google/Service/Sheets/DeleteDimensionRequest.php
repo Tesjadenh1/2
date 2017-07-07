@@ -20,10 +20,16 @@ class Google_Service_Sheets_DeleteDimensionRequest extends Google_Model
   protected $rangeType = 'Google_Service_Sheets_DimensionRange';
   protected $rangeDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_DimensionRange
+   */
   public function setRange(Google_Service_Sheets_DimensionRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionRange
+   */
   public function getRange()
   {
     return $this->range;

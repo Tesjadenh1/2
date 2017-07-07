@@ -29,10 +29,16 @@ class Google_Service_Sheets_UpdateProtectedRangeRequest extends Google_Model
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Sheets_ProtectedRange
+   */
   public function setProtectedRange(Google_Service_Sheets_ProtectedRange $protectedRange)
   {
     $this->protectedRange = $protectedRange;
   }
+  /**
+   * @return Google_Service_Sheets_ProtectedRange
+   */
   public function getProtectedRange()
   {
     return $this->protectedRange;

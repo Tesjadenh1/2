@@ -24,10 +24,16 @@ class Google_Service_Sheets_PasteDataRequest extends Google_Model
   public $html;
   public $type;
 
+  /**
+   * @param Google_Service_Sheets_GridCoordinate
+   */
   public function setCoordinate(Google_Service_Sheets_GridCoordinate $coordinate)
   {
     $this->coordinate = $coordinate;
   }
+  /**
+   * @return Google_Service_Sheets_GridCoordinate
+   */
   public function getCoordinate()
   {
     return $this->coordinate;

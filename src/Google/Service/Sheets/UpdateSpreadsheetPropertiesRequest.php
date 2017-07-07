@@ -29,10 +29,16 @@ class Google_Service_Sheets_UpdateSpreadsheetPropertiesRequest extends Google_Mo
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Sheets_SpreadsheetProperties
+   */
   public function setProperties(Google_Service_Sheets_SpreadsheetProperties $properties)
   {
     $this->properties = $properties;
   }
+  /**
+   * @return Google_Service_Sheets_SpreadsheetProperties
+   */
   public function getProperties()
   {
     return $this->properties;

@@ -30,10 +30,16 @@ class Google_Service_Sheets_BatchGetValuesResponse extends Google_Collection
   {
     return $this->spreadsheetId;
   }
+  /**
+   * @param Google_Service_Sheets_ValueRange
+   */
   public function setValueRanges($valueRanges)
   {
     $this->valueRanges = $valueRanges;
   }
+  /**
+   * @return Google_Service_Sheets_ValueRange
+   */
   public function getValueRanges()
   {
     return $this->valueRanges;

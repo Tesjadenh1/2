@@ -29,10 +29,16 @@ class Google_Service_Sheets_AddConditionalFormatRuleRequest extends Google_Model
   {
     return $this->index;
   }
+  /**
+   * @param Google_Service_Sheets_ConditionalFormatRule
+   */
   public function setRule(Google_Service_Sheets_ConditionalFormatRule $rule)
   {
     $this->rule = $rule;
   }
+  /**
+   * @return Google_Service_Sheets_ConditionalFormatRule
+   */
   public function getRule()
   {
     return $this->rule;

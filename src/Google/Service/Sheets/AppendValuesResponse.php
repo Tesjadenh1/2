@@ -38,10 +38,16 @@ class Google_Service_Sheets_AppendValuesResponse extends Google_Model
   {
     return $this->tableRange;
   }
+  /**
+   * @param Google_Service_Sheets_UpdateValuesResponse
+   */
   public function setUpdates(Google_Service_Sheets_UpdateValuesResponse $updates)
   {
     $this->updates = $updates;
   }
+  /**
+   * @return Google_Service_Sheets_UpdateValuesResponse
+   */
   public function getUpdates()
   {
     return $this->updates;

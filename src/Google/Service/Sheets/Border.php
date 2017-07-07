@@ -22,10 +22,16 @@ class Google_Service_Sheets_Border extends Google_Model
   public $style;
   public $width;
 
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setColor(Google_Service_Sheets_Color $color)
   {
     $this->color = $color;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getColor()
   {
     return $this->color;

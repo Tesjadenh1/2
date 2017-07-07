@@ -29,10 +29,16 @@ class Google_Service_Sheets_UpdateSheetPropertiesRequest extends Google_Model
   {
     return $this->fields;
   }
+  /**
+   * @param Google_Service_Sheets_SheetProperties
+   */
   public function setProperties(Google_Service_Sheets_SheetProperties $properties)
   {
     $this->properties = $properties;
   }
+  /**
+   * @return Google_Service_Sheets_SheetProperties
+   */
   public function getProperties()
   {
     return $this->properties;

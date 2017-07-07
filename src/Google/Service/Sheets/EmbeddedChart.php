@@ -31,18 +31,30 @@ class Google_Service_Sheets_EmbeddedChart extends Google_Model
   {
     return $this->chartId;
   }
+  /**
+   * @param Google_Service_Sheets_EmbeddedObjectPosition
+   */
   public function setPosition(Google_Service_Sheets_EmbeddedObjectPosition $position)
   {
     $this->position = $position;
   }
+  /**
+   * @return Google_Service_Sheets_EmbeddedObjectPosition
+   */
   public function getPosition()
   {
     return $this->position;
   }
+  /**
+   * @param Google_Service_Sheets_ChartSpec
+   */
   public function setSpec(Google_Service_Sheets_ChartSpec $spec)
   {
     $this->spec = $spec;
   }
+  /**
+   * @return Google_Service_Sheets_ChartSpec
+   */
   public function getSpec()
   {
     return $this->spec;

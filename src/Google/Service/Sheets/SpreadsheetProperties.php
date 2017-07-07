@@ -34,18 +34,30 @@ class Google_Service_Sheets_SpreadsheetProperties extends Google_Model
   {
     return $this->autoRecalc;
   }
+  /**
+   * @param Google_Service_Sheets_CellFormat
+   */
   public function setDefaultFormat(Google_Service_Sheets_CellFormat $defaultFormat)
   {
     $this->defaultFormat = $defaultFormat;
   }
+  /**
+   * @return Google_Service_Sheets_CellFormat
+   */
   public function getDefaultFormat()
   {
     return $this->defaultFormat;
   }
+  /**
+   * @param Google_Service_Sheets_IterativeCalculationSettings
+   */
   public function setIterativeCalculationSettings(Google_Service_Sheets_IterativeCalculationSettings $iterativeCalculationSettings)
   {
     $this->iterativeCalculationSettings = $iterativeCalculationSettings;
   }
+  /**
+   * @return Google_Service_Sheets_IterativeCalculationSettings
+   */
   public function getIterativeCalculationSettings()
   {
     return $this->iterativeCalculationSettings;

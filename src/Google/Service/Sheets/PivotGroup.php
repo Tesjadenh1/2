@@ -50,18 +50,30 @@ class Google_Service_Sheets_PivotGroup extends Google_Collection
   {
     return $this->sourceColumnOffset;
   }
+  /**
+   * @param Google_Service_Sheets_PivotGroupSortValueBucket
+   */
   public function setValueBucket(Google_Service_Sheets_PivotGroupSortValueBucket $valueBucket)
   {
     $this->valueBucket = $valueBucket;
   }
+  /**
+   * @return Google_Service_Sheets_PivotGroupSortValueBucket
+   */
   public function getValueBucket()
   {
     return $this->valueBucket;
   }
+  /**
+   * @param Google_Service_Sheets_PivotGroupValueMetadata
+   */
   public function setValueMetadata($valueMetadata)
   {
     $this->valueMetadata = $valueMetadata;
   }
+  /**
+   * @return Google_Service_Sheets_PivotGroupValueMetadata
+   */
   public function getValueMetadata()
   {
     return $this->valueMetadata;

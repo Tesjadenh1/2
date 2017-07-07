@@ -24,10 +24,16 @@ class Google_Service_Sheets_BatchUpdateSpreadsheetResponse extends Google_Collec
   protected $updatedSpreadsheetType = 'Google_Service_Sheets_Spreadsheet';
   protected $updatedSpreadsheetDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_Response
+   */
   public function setReplies($replies)
   {
     $this->replies = $replies;
   }
+  /**
+   * @return Google_Service_Sheets_Response
+   */
   public function getReplies()
   {
     return $this->replies;
@@ -40,10 +46,16 @@ class Google_Service_Sheets_BatchUpdateSpreadsheetResponse extends Google_Collec
   {
     return $this->spreadsheetId;
   }
+  /**
+   * @param Google_Service_Sheets_Spreadsheet
+   */
   public function setUpdatedSpreadsheet(Google_Service_Sheets_Spreadsheet $updatedSpreadsheet)
   {
     $this->updatedSpreadsheet = $updatedSpreadsheet;
   }
+  /**
+   * @return Google_Service_Sheets_Spreadsheet
+   */
   public function getUpdatedSpreadsheet()
   {
     return $this->updatedSpreadsheet;

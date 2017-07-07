@@ -38,34 +38,58 @@ class Google_Service_Sheets_ChartSpec extends Google_Model
   protected $titleTextFormatType = 'Google_Service_Sheets_TextFormat';
   protected $titleTextFormatDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setBackgroundColor(Google_Service_Sheets_Color $backgroundColor)
   {
     $this->backgroundColor = $backgroundColor;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getBackgroundColor()
   {
     return $this->backgroundColor;
   }
+  /**
+   * @param Google_Service_Sheets_BasicChartSpec
+   */
   public function setBasicChart(Google_Service_Sheets_BasicChartSpec $basicChart)
   {
     $this->basicChart = $basicChart;
   }
+  /**
+   * @return Google_Service_Sheets_BasicChartSpec
+   */
   public function getBasicChart()
   {
     return $this->basicChart;
   }
+  /**
+   * @param Google_Service_Sheets_BubbleChartSpec
+   */
   public function setBubbleChart(Google_Service_Sheets_BubbleChartSpec $bubbleChart)
   {
     $this->bubbleChart = $bubbleChart;
   }
+  /**
+   * @return Google_Service_Sheets_BubbleChartSpec
+   */
   public function getBubbleChart()
   {
     return $this->bubbleChart;
   }
+  /**
+   * @param Google_Service_Sheets_CandlestickChartSpec
+   */
   public function setCandlestickChart(Google_Service_Sheets_CandlestickChartSpec $candlestickChart)
   {
     $this->candlestickChart = $candlestickChart;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickChartSpec
+   */
   public function getCandlestickChart()
   {
     return $this->candlestickChart;
@@ -86,10 +110,16 @@ class Google_Service_Sheets_ChartSpec extends Google_Model
   {
     return $this->hiddenDimensionStrategy;
   }
+  /**
+   * @param Google_Service_Sheets_HistogramChartSpec
+   */
   public function setHistogramChart(Google_Service_Sheets_HistogramChartSpec $histogramChart)
   {
     $this->histogramChart = $histogramChart;
   }
+  /**
+   * @return Google_Service_Sheets_HistogramChartSpec
+   */
   public function getHistogramChart()
   {
     return $this->histogramChart;
@@ -102,18 +132,30 @@ class Google_Service_Sheets_ChartSpec extends Google_Model
   {
     return $this->maximized;
   }
+  /**
+   * @param Google_Service_Sheets_OrgChartSpec
+   */
   public function setOrgChart(Google_Service_Sheets_OrgChartSpec $orgChart)
   {
     $this->orgChart = $orgChart;
   }
+  /**
+   * @return Google_Service_Sheets_OrgChartSpec
+   */
   public function getOrgChart()
   {
     return $this->orgChart;
   }
+  /**
+   * @param Google_Service_Sheets_PieChartSpec
+   */
   public function setPieChart(Google_Service_Sheets_PieChartSpec $pieChart)
   {
     $this->pieChart = $pieChart;
   }
+  /**
+   * @return Google_Service_Sheets_PieChartSpec
+   */
   public function getPieChart()
   {
     return $this->pieChart;
@@ -126,10 +168,16 @@ class Google_Service_Sheets_ChartSpec extends Google_Model
   {
     return $this->title;
   }
+  /**
+   * @param Google_Service_Sheets_TextFormat
+   */
   public function setTitleTextFormat(Google_Service_Sheets_TextFormat $titleTextFormat)
   {
     $this->titleTextFormat = $titleTextFormat;
   }
+  /**
+   * @return Google_Service_Sheets_TextFormat
+   */
   public function getTitleTextFormat()
   {
     return $this->titleTextFormat;

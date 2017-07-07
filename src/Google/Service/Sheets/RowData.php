@@ -21,10 +21,16 @@ class Google_Service_Sheets_RowData extends Google_Collection
   protected $valuesType = 'Google_Service_Sheets_CellData';
   protected $valuesDataType = 'array';
 
+  /**
+   * @param Google_Service_Sheets_CellData
+   */
   public function setValues($values)
   {
     $this->values = $values;
   }
+  /**
+   * @return Google_Service_Sheets_CellData
+   */
   public function getValues()
   {
     return $this->values;

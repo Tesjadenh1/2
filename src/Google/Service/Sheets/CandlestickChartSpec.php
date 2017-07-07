@@ -23,18 +23,30 @@ class Google_Service_Sheets_CandlestickChartSpec extends Google_Collection
   protected $domainType = 'Google_Service_Sheets_CandlestickDomain';
   protected $domainDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_CandlestickData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickData
+   */
   public function getData()
   {
     return $this->data;
   }
+  /**
+   * @param Google_Service_Sheets_CandlestickDomain
+   */
   public function setDomain(Google_Service_Sheets_CandlestickDomain $domain)
   {
     $this->domain = $domain;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickDomain
+   */
   public function getDomain()
   {
     return $this->domain;

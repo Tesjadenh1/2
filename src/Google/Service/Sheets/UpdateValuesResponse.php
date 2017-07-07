@@ -49,10 +49,16 @@ class Google_Service_Sheets_UpdateValuesResponse extends Google_Model
   {
     return $this->updatedColumns;
   }
+  /**
+   * @param Google_Service_Sheets_ValueRange
+   */
   public function setUpdatedData(Google_Service_Sheets_ValueRange $updatedData)
   {
     $this->updatedData = $updatedData;
   }
+  /**
+   * @return Google_Service_Sheets_ValueRange
+   */
   public function getUpdatedData()
   {
     return $this->updatedData;

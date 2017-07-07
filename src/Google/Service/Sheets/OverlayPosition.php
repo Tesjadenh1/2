@@ -24,10 +24,16 @@ class Google_Service_Sheets_OverlayPosition extends Google_Model
   public $offsetYPixels;
   public $widthPixels;
 
+  /**
+   * @param Google_Service_Sheets_GridCoordinate
+   */
   public function setAnchorCell(Google_Service_Sheets_GridCoordinate $anchorCell)
   {
     $this->anchorCell = $anchorCell;
   }
+  /**
+   * @return Google_Service_Sheets_GridCoordinate
+   */
   public function getAnchorCell()
   {
     return $this->anchorCell;

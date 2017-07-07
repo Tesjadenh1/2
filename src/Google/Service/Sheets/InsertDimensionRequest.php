@@ -29,10 +29,16 @@ class Google_Service_Sheets_InsertDimensionRequest extends Google_Model
   {
     return $this->inheritFromBefore;
   }
+  /**
+   * @param Google_Service_Sheets_DimensionRange
+   */
   public function setRange(Google_Service_Sheets_DimensionRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionRange
+   */
   public function getRange()
   {
     return $this->range;

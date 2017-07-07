@@ -21,10 +21,16 @@ class Google_Service_Sheets_DeleteRangeRequest extends Google_Model
   protected $rangeDataType = '';
   public $shiftDimension;
 
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setRange(Google_Service_Sheets_GridRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getRange()
   {
     return $this->range;

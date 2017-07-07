@@ -26,34 +26,58 @@ class Google_Service_Sheets_CandlestickData extends Google_Model
   protected $openSeriesType = 'Google_Service_Sheets_CandlestickSeries';
   protected $openSeriesDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_CandlestickSeries
+   */
   public function setCloseSeries(Google_Service_Sheets_CandlestickSeries $closeSeries)
   {
     $this->closeSeries = $closeSeries;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickSeries
+   */
   public function getCloseSeries()
   {
     return $this->closeSeries;
   }
+  /**
+   * @param Google_Service_Sheets_CandlestickSeries
+   */
   public function setHighSeries(Google_Service_Sheets_CandlestickSeries $highSeries)
   {
     $this->highSeries = $highSeries;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickSeries
+   */
   public function getHighSeries()
   {
     return $this->highSeries;
   }
+  /**
+   * @param Google_Service_Sheets_CandlestickSeries
+   */
   public function setLowSeries(Google_Service_Sheets_CandlestickSeries $lowSeries)
   {
     $this->lowSeries = $lowSeries;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickSeries
+   */
   public function getLowSeries()
   {
     return $this->lowSeries;
   }
+  /**
+   * @param Google_Service_Sheets_CandlestickSeries
+   */
   public function setOpenSeries(Google_Service_Sheets_CandlestickSeries $openSeries)
   {
     $this->openSeries = $openSeries;
   }
+  /**
+   * @return Google_Service_Sheets_CandlestickSeries
+   */
   public function getOpenSeries()
   {
     return $this->openSeries;

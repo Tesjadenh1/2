@@ -36,18 +36,30 @@ class Google_Service_Sheets_BubbleChartSpec extends Google_Model
   protected $seriesType = 'Google_Service_Sheets_ChartData';
   protected $seriesDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setBubbleBorderColor(Google_Service_Sheets_Color $bubbleBorderColor)
   {
     $this->bubbleBorderColor = $bubbleBorderColor;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getBubbleBorderColor()
   {
     return $this->bubbleBorderColor;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setBubbleLabels(Google_Service_Sheets_ChartData $bubbleLabels)
   {
     $this->bubbleLabels = $bubbleLabels;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getBubbleLabels()
   {
     return $this->bubbleLabels;
@@ -76,34 +88,58 @@ class Google_Service_Sheets_BubbleChartSpec extends Google_Model
   {
     return $this->bubbleOpacity;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setBubbleSizes(Google_Service_Sheets_ChartData $bubbleSizes)
   {
     $this->bubbleSizes = $bubbleSizes;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getBubbleSizes()
   {
     return $this->bubbleSizes;
   }
+  /**
+   * @param Google_Service_Sheets_TextFormat
+   */
   public function setBubbleTextStyle(Google_Service_Sheets_TextFormat $bubbleTextStyle)
   {
     $this->bubbleTextStyle = $bubbleTextStyle;
   }
+  /**
+   * @return Google_Service_Sheets_TextFormat
+   */
   public function getBubbleTextStyle()
   {
     return $this->bubbleTextStyle;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setDomain(Google_Service_Sheets_ChartData $domain)
   {
     $this->domain = $domain;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getDomain()
   {
     return $this->domain;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setGroupIds(Google_Service_Sheets_ChartData $groupIds)
   {
     $this->groupIds = $groupIds;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getGroupIds()
   {
     return $this->groupIds;
@@ -116,10 +152,16 @@ class Google_Service_Sheets_BubbleChartSpec extends Google_Model
   {
     return $this->legendPosition;
   }
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setSeries(Google_Service_Sheets_ChartData $series)
   {
     $this->series = $series;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getSeries()
   {
     return $this->series;

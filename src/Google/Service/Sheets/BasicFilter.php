@@ -25,26 +25,44 @@ class Google_Service_Sheets_BasicFilter extends Google_Collection
   protected $sortSpecsType = 'Google_Service_Sheets_SortSpec';
   protected $sortSpecsDataType = 'array';
 
+  /**
+   * @param Google_Service_Sheets_FilterCriteria
+   */
   public function setCriteria($criteria)
   {
     $this->criteria = $criteria;
   }
+  /**
+   * @return Google_Service_Sheets_FilterCriteria
+   */
   public function getCriteria()
   {
     return $this->criteria;
   }
+  /**
+   * @param Google_Service_Sheets_GridRange
+   */
   public function setRange(Google_Service_Sheets_GridRange $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Sheets_GridRange
+   */
   public function getRange()
   {
     return $this->range;
   }
+  /**
+   * @param Google_Service_Sheets_SortSpec
+   */
   public function setSortSpecs($sortSpecs)
   {
     $this->sortSpecs = $sortSpecs;
   }
+  /**
+   * @return Google_Service_Sheets_SortSpec
+   */
   public function getSortSpecs()
   {
     return $this->sortSpecs;

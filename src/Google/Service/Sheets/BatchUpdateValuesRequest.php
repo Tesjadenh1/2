@@ -25,10 +25,16 @@ class Google_Service_Sheets_BatchUpdateValuesRequest extends Google_Collection
   public $responseValueRenderOption;
   public $valueInputOption;
 
+  /**
+   * @param Google_Service_Sheets_ValueRange
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Sheets_ValueRange
+   */
   public function getData()
   {
     return $this->data;

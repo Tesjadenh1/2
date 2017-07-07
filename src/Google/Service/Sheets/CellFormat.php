@@ -35,18 +35,30 @@ class Google_Service_Sheets_CellFormat extends Google_Model
   public $verticalAlignment;
   public $wrapStrategy;
 
+  /**
+   * @param Google_Service_Sheets_Color
+   */
   public function setBackgroundColor(Google_Service_Sheets_Color $backgroundColor)
   {
     $this->backgroundColor = $backgroundColor;
   }
+  /**
+   * @return Google_Service_Sheets_Color
+   */
   public function getBackgroundColor()
   {
     return $this->backgroundColor;
   }
+  /**
+   * @param Google_Service_Sheets_Borders
+   */
   public function setBorders(Google_Service_Sheets_Borders $borders)
   {
     $this->borders = $borders;
   }
+  /**
+   * @return Google_Service_Sheets_Borders
+   */
   public function getBorders()
   {
     return $this->borders;
@@ -67,18 +79,30 @@ class Google_Service_Sheets_CellFormat extends Google_Model
   {
     return $this->hyperlinkDisplayType;
   }
+  /**
+   * @param Google_Service_Sheets_NumberFormat
+   */
   public function setNumberFormat(Google_Service_Sheets_NumberFormat $numberFormat)
   {
     $this->numberFormat = $numberFormat;
   }
+  /**
+   * @return Google_Service_Sheets_NumberFormat
+   */
   public function getNumberFormat()
   {
     return $this->numberFormat;
   }
+  /**
+   * @param Google_Service_Sheets_Padding
+   */
   public function setPadding(Google_Service_Sheets_Padding $padding)
   {
     $this->padding = $padding;
   }
+  /**
+   * @return Google_Service_Sheets_Padding
+   */
   public function getPadding()
   {
     return $this->padding;
@@ -91,18 +115,30 @@ class Google_Service_Sheets_CellFormat extends Google_Model
   {
     return $this->textDirection;
   }
+  /**
+   * @param Google_Service_Sheets_TextFormat
+   */
   public function setTextFormat(Google_Service_Sheets_TextFormat $textFormat)
   {
     $this->textFormat = $textFormat;
   }
+  /**
+   * @return Google_Service_Sheets_TextFormat
+   */
   public function getTextFormat()
   {
     return $this->textFormat;
   }
+  /**
+   * @param Google_Service_Sheets_TextRotation
+   */
   public function setTextRotation(Google_Service_Sheets_TextRotation $textRotation)
   {
     $this->textRotation = $textRotation;
   }
+  /**
+   * @return Google_Service_Sheets_TextRotation
+   */
   public function getTextRotation()
   {
     return $this->textRotation;

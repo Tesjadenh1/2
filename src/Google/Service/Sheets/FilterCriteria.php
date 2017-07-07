@@ -22,10 +22,16 @@ class Google_Service_Sheets_FilterCriteria extends Google_Collection
   protected $conditionDataType = '';
   public $hiddenValues;
 
+  /**
+   * @param Google_Service_Sheets_BooleanCondition
+   */
   public function setCondition(Google_Service_Sheets_BooleanCondition $condition)
   {
     $this->condition = $condition;
   }
+  /**
+   * @return Google_Service_Sheets_BooleanCondition
+   */
   public function getCondition()
   {
     return $this->condition;

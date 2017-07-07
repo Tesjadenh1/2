@@ -32,10 +32,16 @@ class Google_Service_Sheets_ExtendedValue extends Google_Model
   {
     return $this->boolValue;
   }
+  /**
+   * @param Google_Service_Sheets_ErrorValue
+   */
   public function setErrorValue(Google_Service_Sheets_ErrorValue $errorValue)
   {
     $this->errorValue = $errorValue;
   }
+  /**
+   * @return Google_Service_Sheets_ErrorValue
+   */
   public function getErrorValue()
   {
     return $this->errorValue;

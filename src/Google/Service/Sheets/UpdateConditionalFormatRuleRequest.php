@@ -39,10 +39,16 @@ class Google_Service_Sheets_UpdateConditionalFormatRuleRequest extends Google_Mo
   {
     return $this->newIndex;
   }
+  /**
+   * @param Google_Service_Sheets_ConditionalFormatRule
+   */
   public function setRule(Google_Service_Sheets_ConditionalFormatRule $rule)
   {
     $this->rule = $rule;
   }
+  /**
+   * @return Google_Service_Sheets_ConditionalFormatRule
+   */
   public function getRule()
   {
     return $this->rule;

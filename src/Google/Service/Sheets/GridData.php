@@ -27,26 +27,44 @@ class Google_Service_Sheets_GridData extends Google_Collection
   public $startColumn;
   public $startRow;
 
+  /**
+   * @param Google_Service_Sheets_DimensionProperties
+   */
   public function setColumnMetadata($columnMetadata)
   {
     $this->columnMetadata = $columnMetadata;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionProperties
+   */
   public function getColumnMetadata()
   {
     return $this->columnMetadata;
   }
+  /**
+   * @param Google_Service_Sheets_RowData
+   */
   public function setRowData($rowData)
   {
     $this->rowData = $rowData;
   }
+  /**
+   * @return Google_Service_Sheets_RowData
+   */
   public function getRowData()
   {
     return $this->rowData;
   }
+  /**
+   * @param Google_Service_Sheets_DimensionProperties
+   */
   public function setRowMetadata($rowMetadata)
   {
     $this->rowMetadata = $rowMetadata;
   }
+  /**
+   * @return Google_Service_Sheets_DimensionProperties
+   */
   public function getRowMetadata()
   {
     return $this->rowMetadata;

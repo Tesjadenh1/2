@@ -22,10 +22,16 @@ class Google_Service_Sheets_BasicChartSeries extends Google_Model
   public $targetAxis;
   public $type;
 
+  /**
+   * @param Google_Service_Sheets_ChartData
+   */
   public function setSeries(Google_Service_Sheets_ChartData $series)
   {
     $this->series = $series;
   }
+  /**
+   * @return Google_Service_Sheets_ChartData
+   */
   public function getSeries()
   {
     return $this->series;
