@@ -39,10 +39,16 @@ class Google_Service_Clouderrorreporting_ErrorGroup extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Clouderrorreporting_TrackingIssue
+   */
   public function setTrackingIssues($trackingIssues)
   {
     $this->trackingIssues = $trackingIssues;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_TrackingIssue
+   */
   public function getTrackingIssues()
   {
     return $this->trackingIssues;

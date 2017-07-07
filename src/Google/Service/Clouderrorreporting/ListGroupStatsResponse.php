@@ -23,10 +23,16 @@ class Google_Service_Clouderrorreporting_ListGroupStatsResponse extends Google_C
   public $nextPageToken;
   public $timeRangeBegin;
 
+  /**
+   * @param Google_Service_Clouderrorreporting_ErrorGroupStats
+   */
   public function setErrorGroupStats($errorGroupStats)
   {
     $this->errorGroupStats = $errorGroupStats;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_ErrorGroupStats
+   */
   public function getErrorGroupStats()
   {
     return $this->errorGroupStats;

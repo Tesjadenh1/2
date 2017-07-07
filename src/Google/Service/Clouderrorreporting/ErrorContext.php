@@ -26,26 +26,44 @@ class Google_Service_Clouderrorreporting_ErrorContext extends Google_Collection
   protected $sourceReferencesDataType = 'array';
   public $user;
 
+  /**
+   * @param Google_Service_Clouderrorreporting_HttpRequestContext
+   */
   public function setHttpRequest(Google_Service_Clouderrorreporting_HttpRequestContext $httpRequest)
   {
     $this->httpRequest = $httpRequest;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_HttpRequestContext
+   */
   public function getHttpRequest()
   {
     return $this->httpRequest;
   }
+  /**
+   * @param Google_Service_Clouderrorreporting_SourceLocation
+   */
   public function setReportLocation(Google_Service_Clouderrorreporting_SourceLocation $reportLocation)
   {
     $this->reportLocation = $reportLocation;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_SourceLocation
+   */
   public function getReportLocation()
   {
     return $this->reportLocation;
   }
+  /**
+   * @param Google_Service_Clouderrorreporting_SourceReference
+   */
   public function setSourceReferences($sourceReferences)
   {
     $this->sourceReferences = $sourceReferences;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_SourceReference
+   */
   public function getSourceReferences()
   {
     return $this->sourceReferences;

@@ -24,10 +24,16 @@ class Google_Service_Clouderrorreporting_ErrorEvent extends Google_Model
   protected $serviceContextType = 'Google_Service_Clouderrorreporting_ServiceContext';
   protected $serviceContextDataType = '';
 
+  /**
+   * @param Google_Service_Clouderrorreporting_ErrorContext
+   */
   public function setContext(Google_Service_Clouderrorreporting_ErrorContext $context)
   {
     $this->context = $context;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_ErrorContext
+   */
   public function getContext()
   {
     return $this->context;
@@ -48,10 +54,16 @@ class Google_Service_Clouderrorreporting_ErrorEvent extends Google_Model
   {
     return $this->message;
   }
+  /**
+   * @param Google_Service_Clouderrorreporting_ServiceContext
+   */
   public function setServiceContext(Google_Service_Clouderrorreporting_ServiceContext $serviceContext)
   {
     $this->serviceContext = $serviceContext;
   }
+  /**
+   * @return Google_Service_Clouderrorreporting_ServiceContext
+   */
   public function getServiceContext()
   {
     return $this->serviceContext;
