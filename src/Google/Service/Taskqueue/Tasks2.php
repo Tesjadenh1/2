@@ -22,10 +22,16 @@ class Google_Service_Taskqueue_Tasks2 extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Taskqueue_Task
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Taskqueue_Task
+   */
   public function getItems()
   {
     return $this->items;
