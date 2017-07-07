@@ -24,10 +24,16 @@ class Google_Service_DataTransfer_ApplicationsListResponse extends Google_Collec
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_DataTransfer_Application
+   */
   public function setApplications($applications)
   {
     $this->applications = $applications;
   }
+  /**
+   * @return Google_Service_DataTransfer_Application
+   */
   public function getApplications()
   {
     return $this->applications;

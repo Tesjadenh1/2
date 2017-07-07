@@ -24,10 +24,16 @@ class Google_Service_DataTransfer_DataTransfersListResponse extends Google_Colle
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_DataTransfer_DataTransfer
+   */
   public function setDataTransfers($dataTransfers)
   {
     $this->dataTransfers = $dataTransfers;
   }
+  /**
+   * @return Google_Service_DataTransfer_DataTransfer
+   */
   public function getDataTransfers()
   {
     return $this->dataTransfers;

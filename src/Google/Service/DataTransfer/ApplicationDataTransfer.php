@@ -31,10 +31,16 @@ class Google_Service_DataTransfer_ApplicationDataTransfer extends Google_Collect
   {
     return $this->applicationId;
   }
+  /**
+   * @param Google_Service_DataTransfer_ApplicationTransferParam
+   */
   public function setApplicationTransferParams($applicationTransferParams)
   {
     $this->applicationTransferParams = $applicationTransferParams;
   }
+  /**
+   * @return Google_Service_DataTransfer_ApplicationTransferParam
+   */
   public function getApplicationTransferParams()
   {
     return $this->applicationTransferParams;

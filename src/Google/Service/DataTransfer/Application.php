@@ -57,10 +57,16 @@ class Google_Service_DataTransfer_Application extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_DataTransfer_ApplicationTransferParam
+   */
   public function setTransferParams($transferParams)
   {
     $this->transferParams = $transferParams;
   }
+  /**
+   * @return Google_Service_DataTransfer_ApplicationTransferParam
+   */
   public function getTransferParams()
   {
     return $this->transferParams;
