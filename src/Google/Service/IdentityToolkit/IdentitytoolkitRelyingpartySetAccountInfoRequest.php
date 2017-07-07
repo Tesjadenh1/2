@@ -34,6 +34,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetAccountInfoRe
   public $localId;
   public $oobCode;
   public $password;
+  public $phoneNumber;
   public $photoUrl;
   public $provider;
   public $returnSecureToken;
@@ -167,6 +168,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySetAccountInfoRe
   public function getPassword()
   {
     return $this->password;
+  }
+  public function setPhoneNumber($phoneNumber)
+  {
+    $this->phoneNumber = $phoneNumber;
+  }
+  public function getPhoneNumber()
+  {
+    return $this->phoneNumber;
   }
   public function setPhotoUrl($photoUrl)
   {

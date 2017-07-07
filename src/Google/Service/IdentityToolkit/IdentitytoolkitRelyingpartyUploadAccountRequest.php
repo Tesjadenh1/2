@@ -102,10 +102,16 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyUploadAccountReq
   {
     return $this->targetProjectId;
   }
+  /**
+   * @param Google_Service_IdentityToolkit_UserInfo
+   */
   public function setUsers($users)
   {
     $this->users = $users;
   }
+  /**
+   * @return Google_Service_IdentityToolkit_UserInfo
+   */
   public function getUsers()
   {
     return $this->users;

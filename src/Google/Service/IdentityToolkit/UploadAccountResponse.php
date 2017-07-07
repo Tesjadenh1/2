@@ -22,10 +22,16 @@ class Google_Service_IdentityToolkit_UploadAccountResponse extends Google_Collec
   protected $errorDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_IdentityToolkit_UploadAccountResponseError
+   */
   public function setError($error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_IdentityToolkit_UploadAccountResponseError
+   */
   public function getError()
   {
     return $this->error;

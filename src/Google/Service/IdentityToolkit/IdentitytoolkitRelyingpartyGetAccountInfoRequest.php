@@ -17,11 +17,12 @@
 
 class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetAccountInfoRequest extends Google_Collection
 {
-  protected $collection_key = 'localId';
+  protected $collection_key = 'phoneNumber';
   public $delegatedProjectNumber;
   public $email;
   public $idToken;
   public $localId;
+  public $phoneNumber;
 
   public function setDelegatedProjectNumber($delegatedProjectNumber)
   {
@@ -54,5 +55,13 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartyGetAccountInfoRe
   public function getLocalId()
   {
     return $this->localId;
+  }
+  public function setPhoneNumber($phoneNumber)
+  {
+    $this->phoneNumber = $phoneNumber;
+  }
+  public function getPhoneNumber()
+  {
+    return $this->phoneNumber;
   }
 }

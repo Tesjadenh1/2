@@ -112,10 +112,16 @@ class Google_Service_IdentityToolkit_SetAccountInfoResponse extends Google_Colle
   {
     return $this->photoUrl;
   }
+  /**
+   * @param Google_Service_IdentityToolkit_SetAccountInfoResponseProviderUserInfo
+   */
   public function setProviderUserInfo($providerUserInfo)
   {
     $this->providerUserInfo = $providerUserInfo;
   }
+  /**
+   * @return Google_Service_IdentityToolkit_SetAccountInfoResponseProviderUserInfo
+   */
   public function getProviderUserInfo()
   {
     return $this->providerUserInfo;

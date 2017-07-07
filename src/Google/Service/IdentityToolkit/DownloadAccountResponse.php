@@ -39,10 +39,16 @@ class Google_Service_IdentityToolkit_DownloadAccountResponse extends Google_Coll
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_IdentityToolkit_UserInfo
+   */
   public function setUsers($users)
   {
     $this->users = $users;
   }
+  /**
+   * @return Google_Service_IdentityToolkit_UserInfo
+   */
   public function getUsers()
   {
     return $this->users;

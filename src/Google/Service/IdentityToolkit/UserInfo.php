@@ -134,10 +134,16 @@ class Google_Service_IdentityToolkit_UserInfo extends Google_Collection
   {
     return $this->photoUrl;
   }
+  /**
+   * @param Google_Service_IdentityToolkit_UserInfoProviderUserInfo
+   */
   public function setProviderUserInfo($providerUserInfo)
   {
     $this->providerUserInfo = $providerUserInfo;
   }
+  /**
+   * @return Google_Service_IdentityToolkit_UserInfoProviderUserInfo
+   */
   public function getProviderUserInfo()
   {
     return $this->providerUserInfo;

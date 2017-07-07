@@ -27,6 +27,7 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignupNewUserReq
   public $instanceId;
   public $localId;
   public $password;
+  public $phoneNumber;
   public $photoUrl;
 
   public function setCaptchaChallenge($captchaChallenge)
@@ -108,6 +109,14 @@ class Google_Service_IdentityToolkit_IdentitytoolkitRelyingpartySignupNewUserReq
   public function getPassword()
   {
     return $this->password;
+  }
+  public function setPhoneNumber($phoneNumber)
+  {
+    $this->phoneNumber = $phoneNumber;
+  }
+  public function getPhoneNumber()
+  {
+    return $this->phoneNumber;
   }
   public function setPhotoUrl($photoUrl)
   {
