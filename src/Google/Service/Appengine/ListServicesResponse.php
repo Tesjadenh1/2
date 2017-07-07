@@ -30,10 +30,16 @@ class Google_Service_Appengine_ListServicesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Appengine_Service
+   */
   public function setServices($services)
   {
     $this->services = $services;
   }
+  /**
+   * @return Google_Service_Appengine_Service
+   */
   public function getServices()
   {
     return $this->services;

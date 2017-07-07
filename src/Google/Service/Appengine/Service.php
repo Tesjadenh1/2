@@ -38,10 +38,16 @@ class Google_Service_Appengine_Service extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Appengine_TrafficSplit
+   */
   public function setSplit(Google_Service_Appengine_TrafficSplit $split)
   {
     $this->split = $split;
   }
+  /**
+   * @return Google_Service_Appengine_TrafficSplit
+   */
   public function getSplit()
   {
     return $this->split;

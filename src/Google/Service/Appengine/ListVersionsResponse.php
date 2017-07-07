@@ -30,10 +30,16 @@ class Google_Service_Appengine_ListVersionsResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Appengine_Version
+   */
   public function setVersions($versions)
   {
     $this->versions = $versions;
   }
+  /**
+   * @return Google_Service_Appengine_Version
+   */
   public function getVersions()
   {
     return $this->versions;

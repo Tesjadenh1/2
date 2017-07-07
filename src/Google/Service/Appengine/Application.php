@@ -73,10 +73,16 @@ class Google_Service_Appengine_Application extends Google_Collection
   {
     return $this->defaultHostname;
   }
+  /**
+   * @param Google_Service_Appengine_UrlDispatchRule
+   */
   public function setDispatchRules($dispatchRules)
   {
     $this->dispatchRules = $dispatchRules;
   }
+  /**
+   * @return Google_Service_Appengine_UrlDispatchRule
+   */
   public function getDispatchRules()
   {
     return $this->dispatchRules;
@@ -89,10 +95,16 @@ class Google_Service_Appengine_Application extends Google_Collection
   {
     return $this->gcrDomain;
   }
+  /**
+   * @param Google_Service_Appengine_IdentityAwareProxy
+   */
   public function setIap(Google_Service_Appengine_IdentityAwareProxy $iap)
   {
     $this->iap = $iap;
   }
+  /**
+   * @return Google_Service_Appengine_IdentityAwareProxy
+   */
   public function getIap()
   {
     return $this->iap;

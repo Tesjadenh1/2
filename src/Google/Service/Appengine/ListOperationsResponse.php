@@ -30,10 +30,16 @@ class Google_Service_Appengine_ListOperationsResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Appengine_Operation
+   */
   public function setOperations($operations)
   {
     $this->operations = $operations;
   }
+  /**
+   * @return Google_Service_Appengine_Operation
+   */
   public function getOperations()
   {
     return $this->operations;

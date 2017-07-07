@@ -32,10 +32,16 @@ class Google_Service_Appengine_Operation extends Google_Model
   {
     return $this->done;
   }
+  /**
+   * @param Google_Service_Appengine_Status
+   */
   public function setError(Google_Service_Appengine_Status $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_Appengine_Status
+   */
   public function getError()
   {
     return $this->error;

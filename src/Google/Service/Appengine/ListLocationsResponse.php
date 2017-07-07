@@ -22,10 +22,16 @@ class Google_Service_Appengine_ListLocationsResponse extends Google_Collection
   protected $locationsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Appengine_Location
+   */
   public function setLocations($locations)
   {
     $this->locations = $locations;
   }
+  /**
+   * @return Google_Service_Appengine_Location
+   */
   public function getLocations()
   {
     return $this->locations;

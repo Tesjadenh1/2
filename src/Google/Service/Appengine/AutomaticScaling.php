@@ -42,18 +42,30 @@ class Google_Service_Appengine_AutomaticScaling extends Google_Model
   {
     return $this->coolDownPeriod;
   }
+  /**
+   * @param Google_Service_Appengine_CpuUtilization
+   */
   public function setCpuUtilization(Google_Service_Appengine_CpuUtilization $cpuUtilization)
   {
     $this->cpuUtilization = $cpuUtilization;
   }
+  /**
+   * @return Google_Service_Appengine_CpuUtilization
+   */
   public function getCpuUtilization()
   {
     return $this->cpuUtilization;
   }
+  /**
+   * @param Google_Service_Appengine_DiskUtilization
+   */
   public function setDiskUtilization(Google_Service_Appengine_DiskUtilization $diskUtilization)
   {
     $this->diskUtilization = $diskUtilization;
   }
+  /**
+   * @return Google_Service_Appengine_DiskUtilization
+   */
   public function getDiskUtilization()
   {
     return $this->diskUtilization;
@@ -114,18 +126,30 @@ class Google_Service_Appengine_AutomaticScaling extends Google_Model
   {
     return $this->minTotalInstances;
   }
+  /**
+   * @param Google_Service_Appengine_NetworkUtilization
+   */
   public function setNetworkUtilization(Google_Service_Appengine_NetworkUtilization $networkUtilization)
   {
     $this->networkUtilization = $networkUtilization;
   }
+  /**
+   * @return Google_Service_Appengine_NetworkUtilization
+   */
   public function getNetworkUtilization()
   {
     return $this->networkUtilization;
   }
+  /**
+   * @param Google_Service_Appengine_RequestUtilization
+   */
   public function setRequestUtilization(Google_Service_Appengine_RequestUtilization $requestUtilization)
   {
     $this->requestUtilization = $requestUtilization;
   }
+  /**
+   * @return Google_Service_Appengine_RequestUtilization
+   */
   public function getRequestUtilization()
   {
     return $this->requestUtilization;
