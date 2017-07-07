@@ -22,10 +22,16 @@ class Google_Service_Webfonts_WebfontList extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Webfonts_Webfont
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Webfonts_Webfont
+   */
   public function getItems()
   {
     return $this->items;
