@@ -24,10 +24,16 @@ class Google_Service_Safebrowsing_ListUpdateRequest extends Google_Model
   public $threatEntryType;
   public $threatType;
 
+  /**
+   * @param Google_Service_Safebrowsing_Constraints
+   */
   public function setConstraints(Google_Service_Safebrowsing_Constraints $constraints)
   {
     $this->constraints = $constraints;
   }
+  /**
+   * @return Google_Service_Safebrowsing_Constraints
+   */
   public function getConstraints()
   {
     return $this->constraints;

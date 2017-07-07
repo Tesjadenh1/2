@@ -21,10 +21,16 @@ class Google_Service_Safebrowsing_ListThreatListsResponse extends Google_Collect
   protected $threatListsType = 'Google_Service_Safebrowsing_ThreatListDescriptor';
   protected $threatListsDataType = 'array';
 
+  /**
+   * @param Google_Service_Safebrowsing_ThreatListDescriptor
+   */
   public function setThreatLists($threatLists)
   {
     $this->threatLists = $threatLists;
   }
+  /**
+   * @return Google_Service_Safebrowsing_ThreatListDescriptor
+   */
   public function getThreatLists()
   {
     return $this->threatLists;

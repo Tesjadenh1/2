@@ -22,10 +22,16 @@ class Google_Service_Safebrowsing_FetchThreatListUpdatesResponse extends Google_
   protected $listUpdateResponsesDataType = 'array';
   public $minimumWaitDuration;
 
+  /**
+   * @param Google_Service_Safebrowsing_ListUpdateResponse
+   */
   public function setListUpdateResponses($listUpdateResponses)
   {
     $this->listUpdateResponses = $listUpdateResponses;
   }
+  /**
+   * @return Google_Service_Safebrowsing_ListUpdateResponse
+   */
   public function getListUpdateResponses()
   {
     return $this->listUpdateResponses;

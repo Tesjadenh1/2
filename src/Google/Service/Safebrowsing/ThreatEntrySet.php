@@ -35,34 +35,58 @@ class Google_Service_Safebrowsing_ThreatEntrySet extends Google_Model
   {
     return $this->compressionType;
   }
+  /**
+   * @param Google_Service_Safebrowsing_RawHashes
+   */
   public function setRawHashes(Google_Service_Safebrowsing_RawHashes $rawHashes)
   {
     $this->rawHashes = $rawHashes;
   }
+  /**
+   * @return Google_Service_Safebrowsing_RawHashes
+   */
   public function getRawHashes()
   {
     return $this->rawHashes;
   }
+  /**
+   * @param Google_Service_Safebrowsing_RawIndices
+   */
   public function setRawIndices(Google_Service_Safebrowsing_RawIndices $rawIndices)
   {
     $this->rawIndices = $rawIndices;
   }
+  /**
+   * @return Google_Service_Safebrowsing_RawIndices
+   */
   public function getRawIndices()
   {
     return $this->rawIndices;
   }
+  /**
+   * @param Google_Service_Safebrowsing_RiceDeltaEncoding
+   */
   public function setRiceHashes(Google_Service_Safebrowsing_RiceDeltaEncoding $riceHashes)
   {
     $this->riceHashes = $riceHashes;
   }
+  /**
+   * @return Google_Service_Safebrowsing_RiceDeltaEncoding
+   */
   public function getRiceHashes()
   {
     return $this->riceHashes;
   }
+  /**
+   * @param Google_Service_Safebrowsing_RiceDeltaEncoding
+   */
   public function setRiceIndices(Google_Service_Safebrowsing_RiceDeltaEncoding $riceIndices)
   {
     $this->riceIndices = $riceIndices;
   }
+  /**
+   * @return Google_Service_Safebrowsing_RiceDeltaEncoding
+   */
   public function getRiceIndices()
   {
     return $this->riceIndices;

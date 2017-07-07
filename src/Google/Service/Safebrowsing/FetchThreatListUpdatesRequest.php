@@ -23,18 +23,30 @@ class Google_Service_Safebrowsing_FetchThreatListUpdatesRequest extends Google_C
   protected $listUpdateRequestsType = 'Google_Service_Safebrowsing_ListUpdateRequest';
   protected $listUpdateRequestsDataType = 'array';
 
+  /**
+   * @param Google_Service_Safebrowsing_ClientInfo
+   */
   public function setClient(Google_Service_Safebrowsing_ClientInfo $client)
   {
     $this->client = $client;
   }
+  /**
+   * @return Google_Service_Safebrowsing_ClientInfo
+   */
   public function getClient()
   {
     return $this->client;
   }
+  /**
+   * @param Google_Service_Safebrowsing_ListUpdateRequest
+   */
   public function setListUpdateRequests($listUpdateRequests)
   {
     $this->listUpdateRequests = $listUpdateRequests;
   }
+  /**
+   * @return Google_Service_Safebrowsing_ListUpdateRequest
+   */
   public function getListUpdateRequests()
   {
     return $this->listUpdateRequests;

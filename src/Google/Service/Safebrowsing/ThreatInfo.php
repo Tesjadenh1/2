@@ -32,10 +32,16 @@ class Google_Service_Safebrowsing_ThreatInfo extends Google_Collection
   {
     return $this->platformTypes;
   }
+  /**
+   * @param Google_Service_Safebrowsing_ThreatEntry
+   */
   public function setThreatEntries($threatEntries)
   {
     $this->threatEntries = $threatEntries;
   }
+  /**
+   * @return Google_Service_Safebrowsing_ThreatEntry
+   */
   public function getThreatEntries()
   {
     return $this->threatEntries;
