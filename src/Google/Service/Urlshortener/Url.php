@@ -25,10 +25,16 @@ class Google_Service_Urlshortener_Url extends Google_Model
   public $longUrl;
   public $status;
 
+  /**
+   * @param Google_Service_Urlshortener_AnalyticsSummary
+   */
   public function setAnalytics(Google_Service_Urlshortener_AnalyticsSummary $analytics)
   {
     $this->analytics = $analytics;
   }
+  /**
+   * @return Google_Service_Urlshortener_AnalyticsSummary
+   */
   public function getAnalytics()
   {
     return $this->analytics;
