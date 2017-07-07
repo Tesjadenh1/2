@@ -56,10 +56,16 @@ class Google_Service_CloudResourceManager_Organization extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_OrganizationOwner
+   */
   public function setOwner(Google_Service_CloudResourceManager_OrganizationOwner $owner)
   {
     $this->owner = $owner;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_OrganizationOwner
+   */
   public function getOwner()
   {
     return $this->owner;

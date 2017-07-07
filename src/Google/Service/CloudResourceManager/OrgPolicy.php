@@ -28,10 +28,16 @@ class Google_Service_CloudResourceManager_OrgPolicy extends Google_Model
   public $updateTime;
   public $version;
 
+  /**
+   * @param Google_Service_CloudResourceManager_BooleanPolicy
+   */
   public function setBooleanPolicy(Google_Service_CloudResourceManager_BooleanPolicy $booleanPolicy)
   {
     $this->booleanPolicy = $booleanPolicy;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_BooleanPolicy
+   */
   public function getBooleanPolicy()
   {
     return $this->booleanPolicy;
@@ -52,18 +58,30 @@ class Google_Service_CloudResourceManager_OrgPolicy extends Google_Model
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_ListPolicy
+   */
   public function setListPolicy(Google_Service_CloudResourceManager_ListPolicy $listPolicy)
   {
     $this->listPolicy = $listPolicy;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_ListPolicy
+   */
   public function getListPolicy()
   {
     return $this->listPolicy;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_RestoreDefault
+   */
   public function setRestoreDefault(Google_Service_CloudResourceManager_RestoreDefault $restoreDefault)
   {
     $this->restoreDefault = $restoreDefault;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_RestoreDefault
+   */
   public function getRestoreDefault()
   {
     return $this->restoreDefault;

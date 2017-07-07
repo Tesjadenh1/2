@@ -20,10 +20,16 @@ class Google_Service_CloudResourceManager_SetOrgPolicyRequest extends Google_Mod
   protected $policyType = 'Google_Service_CloudResourceManager_OrgPolicy';
   protected $policyDataType = '';
 
+  /**
+   * @param Google_Service_CloudResourceManager_OrgPolicy
+   */
   public function setPolicy(Google_Service_CloudResourceManager_OrgPolicy $policy)
   {
     $this->policy = $policy;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_OrgPolicy
+   */
   public function getPolicy()
   {
     return $this->policy;

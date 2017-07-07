@@ -30,10 +30,16 @@ class Google_Service_CloudResourceManager_ListOrgPoliciesResponse extends Google
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_OrgPolicy
+   */
   public function setPolicies($policies)
   {
     $this->policies = $policies;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_OrgPolicy
+   */
   public function getPolicies()
   {
     return $this->policies;

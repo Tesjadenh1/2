@@ -58,10 +58,16 @@ class Google_Service_CloudResourceManager_Project extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_ResourceId
+   */
   public function setParent(Google_Service_CloudResourceManager_ResourceId $parent)
   {
     $this->parent = $parent;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_ResourceId
+   */
   public function getParent()
   {
     return $this->parent;

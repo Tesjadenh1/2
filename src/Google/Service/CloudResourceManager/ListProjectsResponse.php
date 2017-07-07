@@ -30,10 +30,16 @@ class Google_Service_CloudResourceManager_ListProjectsResponse extends Google_Co
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_Project
+   */
   public function setProjects($projects)
   {
     $this->projects = $projects;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_Project
+   */
   public function getProjects()
   {
     return $this->projects;

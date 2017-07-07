@@ -20,10 +20,16 @@ class Google_Service_CloudResourceManager_Ancestor extends Google_Model
   protected $resourceIdType = 'Google_Service_CloudResourceManager_ResourceId';
   protected $resourceIdDataType = '';
 
+  /**
+   * @param Google_Service_CloudResourceManager_ResourceId
+   */
   public function setResourceId(Google_Service_CloudResourceManager_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_ResourceId
+   */
   public function getResourceId()
   {
     return $this->resourceId;

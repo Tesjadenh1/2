@@ -47,7 +47,11 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * Our SLO permits Project creation to take up to 30 seconds at the 90th
    * percentile. As of 2016-08-29, we are observing 6 seconds 50th percentile
    * latency. 95th percentile latency is around 11 seconds. We recommend polling
-   * at the 5th second with an exponential backoff. (projects.create)
+   * at the 5th second with an exponential backoff.
+   *
+   * Authorization requires the Google IAM permission
+   * `resourcemanager.projects.create` on the specified parent for the new
+   * project. (projects.create)
    *
    * @param Google_Service_CloudResourceManager_Project $postBody
    * @param array $optParams Optional parameters.
@@ -151,6 +155,9 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
   /**
    * Returns the IAM access control policy for the specified Project. Permission
    * is denied if the policy or the resource does not exist.
+   *
+   * Authorization requires the Google IAM permission
+   * `resourcemanager.projects.getIamPolicy` on the project
    * (projects.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
@@ -216,6 +223,15 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * project's label `color` has the value `red`.|
    * |labels.color:redlabels.size:big|The project's label `color` has the value
    * `red` and its label `size` has the value `big`.
+   *
+   * If you specify a filter that has both `parent.type` and `parent.id`, then the
+   * `resourcemanager.projects.list` permission is checked on the parent. If the
+   * user has this permission, all projects under the parent will be returned
+   * after remaining filters have been applied. If the user lacks this permission,
+   * then all projects for which the user has the `resourcemanager.projects.get`
+   * permission will be returned after remaining filters have been applied. If no
+   * filter is specified, the call will return projects for which the user has
+   * `resourcemanager.projects.get` permissions.
    *
    * Optional.
    * @return Google_Service_CloudResourceManager_ListProjectsResponse
@@ -293,6 +309,9 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * Note: Removing service accounts from policies or changing their roles can
    * render services completely inoperable. It is important to understand how the
    * service account is being used before removing or updating its roles.
+   *
+   * Authorization requires the Google IAM permission
+   * `resourcemanager.projects.setIamPolicy` on the project
    * (projects.setIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
@@ -328,6 +347,8 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
   }
   /**
    * Returns permissions that a caller has on the specified Project.
+   *
+   * There are no permissions required for making this API call.
    * (projects.testIamPermissions)
    *
    * @param string $resource REQUIRED: The resource for which the policy detail is

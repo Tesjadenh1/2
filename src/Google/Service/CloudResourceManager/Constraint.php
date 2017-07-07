@@ -27,10 +27,16 @@ class Google_Service_CloudResourceManager_Constraint extends Google_Model
   public $name;
   public $version;
 
+  /**
+   * @param Google_Service_CloudResourceManager_BooleanConstraint
+   */
   public function setBooleanConstraint(Google_Service_CloudResourceManager_BooleanConstraint $booleanConstraint)
   {
     $this->booleanConstraint = $booleanConstraint;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_BooleanConstraint
+   */
   public function getBooleanConstraint()
   {
     return $this->booleanConstraint;
@@ -59,10 +65,16 @@ class Google_Service_CloudResourceManager_Constraint extends Google_Model
   {
     return $this->displayName;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_ListConstraint
+   */
   public function setListConstraint(Google_Service_CloudResourceManager_ListConstraint $listConstraint)
   {
     $this->listConstraint = $listConstraint;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_ListConstraint
+   */
   public function getListConstraint()
   {
     return $this->listConstraint;

@@ -76,6 +76,9 @@ class Google_Service_CloudResourceManager_Resource_Organizations extends Google_
    * Gets the access control policy for an Organization resource. May be empty if
    * no such policy or resource exists. The `resource` field should be the
    * organization's resource name, e.g. "organizations/123".
+   *
+   * Authorization requires the Google IAM permission
+   * `resourcemanager.organizations.getIamPolicy` on the specified organization
    * (organizations.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
@@ -144,7 +147,9 @@ class Google_Service_CloudResourceManager_Resource_Organizations extends Google_
    * Searches Organization resources that are visible to the user and satisfy the
    * specified filter. This method returns Organizations in an unspecified order.
    * New Organizations do not necessarily appear at the end of the results.
-   * (organizations.search)
+   *
+   * Search will only return organizations on which the user has the permission
+   * `resourcemanager.organizations.get` (organizations.search)
    *
    * @param Google_Service_CloudResourceManager_SearchOrganizationsRequest $postBody
    * @param array $optParams Optional parameters.
@@ -159,7 +164,11 @@ class Google_Service_CloudResourceManager_Resource_Organizations extends Google_
   /**
    * Sets the access control policy on an Organization resource. Replaces any
    * existing policy. The `resource` field should be the organization's resource
-   * name, e.g. "organizations/123". (organizations.setIamPolicy)
+   * name, e.g. "organizations/123".
+   *
+   * Authorization requires the Google IAM permission
+   * `resourcemanager.organizations.setIamPolicy` on the specified organization
+   * (organizations.setIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
    * specified. See the operation documentation for the appropriate value for this
@@ -195,7 +204,10 @@ class Google_Service_CloudResourceManager_Resource_Organizations extends Google_
   /**
    * Returns permissions that a caller has on the specified Organization. The
    * `resource` field should be the organization's resource name, e.g.
-   * "organizations/123". (organizations.testIamPermissions)
+   * "organizations/123".
+   *
+   * There are no permissions required for making this API call.
+   * (organizations.testIamPermissions)
    *
    * @param string $resource REQUIRED: The resource for which the policy detail is
    * being requested. See the operation documentation for the appropriate value

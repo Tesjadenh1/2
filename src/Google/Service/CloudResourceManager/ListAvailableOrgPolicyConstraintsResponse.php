@@ -22,10 +22,16 @@ class Google_Service_CloudResourceManager_ListAvailableOrgPolicyConstraintsRespo
   protected $constraintsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_CloudResourceManager_Constraint
+   */
   public function setConstraints($constraints)
   {
     $this->constraints = $constraints;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_Constraint
+   */
   public function getConstraints()
   {
     return $this->constraints;

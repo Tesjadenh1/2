@@ -30,10 +30,16 @@ class Google_Service_CloudResourceManager_SearchOrganizationsResponse extends Go
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_Organization
+   */
   public function setOrganizations($organizations)
   {
     $this->organizations = $organizations;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_Organization
+   */
   public function getOrganizations()
   {
     return $this->organizations;

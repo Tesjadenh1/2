@@ -32,10 +32,16 @@ class Google_Service_CloudResourceManager_Operation extends Google_Model
   {
     return $this->done;
   }
+  /**
+   * @param Google_Service_CloudResourceManager_Status
+   */
   public function setError(Google_Service_CloudResourceManager_Status $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_CloudResourceManager_Status
+   */
   public function getError()
   {
     return $this->error;
