@@ -46,10 +46,16 @@ class Google_Service_YouTube_SuperChatEventListResponse extends Google_Collectio
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_SuperChatEvent
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_SuperChatEvent
+   */
   public function getItems()
   {
     return $this->items;
@@ -70,18 +76,30 @@ class Google_Service_YouTube_SuperChatEventListResponse extends Google_Collectio
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_YouTube_PageInfo
+   */
   public function setPageInfo(Google_Service_YouTube_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
+  /**
+   * @return Google_Service_YouTube_PageInfo
+   */
   public function getPageInfo()
   {
     return $this->pageInfo;
   }
+  /**
+   * @param Google_Service_YouTube_TokenPagination
+   */
   public function setTokenPagination(Google_Service_YouTube_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }
+  /**
+   * @return Google_Service_YouTube_TokenPagination
+   */
   public function getTokenPagination()
   {
     return $this->tokenPagination;

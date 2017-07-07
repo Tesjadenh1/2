@@ -47,10 +47,16 @@ class Google_Service_YouTube_I18nLanguage extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTube_I18nLanguageSnippet
+   */
   public function setSnippet(Google_Service_YouTube_I18nLanguageSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTube_I18nLanguageSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;

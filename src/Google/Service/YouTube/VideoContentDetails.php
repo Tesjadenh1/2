@@ -39,18 +39,30 @@ class Google_Service_YouTube_VideoContentDetails extends Google_Model
   {
     return $this->caption;
   }
+  /**
+   * @param Google_Service_YouTube_ContentRating
+   */
   public function setContentRating(Google_Service_YouTube_ContentRating $contentRating)
   {
     $this->contentRating = $contentRating;
   }
+  /**
+   * @return Google_Service_YouTube_ContentRating
+   */
   public function getContentRating()
   {
     return $this->contentRating;
   }
+  /**
+   * @param Google_Service_YouTube_AccessPolicy
+   */
   public function setCountryRestriction(Google_Service_YouTube_AccessPolicy $countryRestriction)
   {
     $this->countryRestriction = $countryRestriction;
   }
+  /**
+   * @return Google_Service_YouTube_AccessPolicy
+   */
   public function getCountryRestriction()
   {
     return $this->countryRestriction;
@@ -103,10 +115,16 @@ class Google_Service_YouTube_VideoContentDetails extends Google_Model
   {
     return $this->projection;
   }
+  /**
+   * @param Google_Service_YouTube_VideoContentDetailsRegionRestriction
+   */
   public function setRegionRestriction(Google_Service_YouTube_VideoContentDetailsRegionRestriction $regionRestriction)
   {
     $this->regionRestriction = $regionRestriction;
   }
+  /**
+   * @return Google_Service_YouTube_VideoContentDetailsRegionRestriction
+   */
   public function getRegionRestriction()
   {
     return $this->regionRestriction;

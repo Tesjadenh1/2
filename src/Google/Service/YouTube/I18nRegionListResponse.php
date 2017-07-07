@@ -41,10 +41,16 @@ class Google_Service_YouTube_I18nRegionListResponse extends Google_Collection
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_I18nRegion
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_I18nRegion
+   */
   public function getItems()
   {
     return $this->items;

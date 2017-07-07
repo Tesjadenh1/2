@@ -20,10 +20,16 @@ class Google_Service_YouTube_ChannelContentDetails extends Google_Model
   protected $relatedPlaylistsType = 'Google_Service_YouTube_ChannelContentDetailsRelatedPlaylists';
   protected $relatedPlaylistsDataType = '';
 
+  /**
+   * @param Google_Service_YouTube_ChannelContentDetailsRelatedPlaylists
+   */
   public function setRelatedPlaylists(Google_Service_YouTube_ChannelContentDetailsRelatedPlaylists $relatedPlaylists)
   {
     $this->relatedPlaylists = $relatedPlaylists;
   }
+  /**
+   * @return Google_Service_YouTube_ChannelContentDetailsRelatedPlaylists
+   */
   public function getRelatedPlaylists()
   {
     return $this->relatedPlaylists;

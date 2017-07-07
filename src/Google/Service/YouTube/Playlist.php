@@ -31,10 +31,16 @@ class Google_Service_YouTube_Playlist extends Google_Model
   protected $statusType = 'Google_Service_YouTube_PlaylistStatus';
   protected $statusDataType = '';
 
+  /**
+   * @param Google_Service_YouTube_PlaylistContentDetails
+   */
   public function setContentDetails(Google_Service_YouTube_PlaylistContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistContentDetails
+   */
   public function getContentDetails()
   {
     return $this->contentDetails;
@@ -63,34 +69,58 @@ class Google_Service_YouTube_Playlist extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistLocalization
+   */
   public function setLocalizations($localizations)
   {
     $this->localizations = $localizations;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistLocalization
+   */
   public function getLocalizations()
   {
     return $this->localizations;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistPlayer
+   */
   public function setPlayer(Google_Service_YouTube_PlaylistPlayer $player)
   {
     $this->player = $player;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistPlayer
+   */
   public function getPlayer()
   {
     return $this->player;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistSnippet
+   */
   public function setSnippet(Google_Service_YouTube_PlaylistSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistStatus
+   */
   public function setStatus(Google_Service_YouTube_PlaylistStatus $status)
   {
     $this->status = $status;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistStatus
+   */
   public function getStatus()
   {
     return $this->status;

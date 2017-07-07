@@ -41,10 +41,16 @@ class Google_Service_YouTube_I18nLanguageListResponse extends Google_Collection
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_I18nLanguage
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_I18nLanguage
+   */
   public function getItems()
   {
     return $this->items;

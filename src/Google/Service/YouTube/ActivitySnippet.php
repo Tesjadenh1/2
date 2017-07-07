@@ -67,10 +67,16 @@ class Google_Service_YouTube_ActivitySnippet extends Google_Model
   {
     return $this->publishedAt;
   }
+  /**
+   * @param Google_Service_YouTube_ThumbnailDetails
+   */
   public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }
+  /**
+   * @return Google_Service_YouTube_ThumbnailDetails
+   */
   public function getThumbnails()
   {
     return $this->thumbnails;

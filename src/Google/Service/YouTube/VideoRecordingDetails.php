@@ -22,10 +22,16 @@ class Google_Service_YouTube_VideoRecordingDetails extends Google_Model
   public $locationDescription;
   public $recordingDate;
 
+  /**
+   * @param Google_Service_YouTube_GeoPoint
+   */
   public function setLocation(Google_Service_YouTube_GeoPoint $location)
   {
     $this->location = $location;
   }
+  /**
+   * @return Google_Service_YouTube_GeoPoint
+   */
   public function getLocation()
   {
     return $this->location;

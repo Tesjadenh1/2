@@ -20,10 +20,16 @@ class Google_Service_YouTube_ActivityContentDetailsLike extends Google_Model
   protected $resourceIdType = 'Google_Service_YouTube_ResourceId';
   protected $resourceIdDataType = '';
 
+  /**
+   * @param Google_Service_YouTube_ResourceId
+   */
   public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
+  /**
+   * @return Google_Service_YouTube_ResourceId
+   */
   public function getResourceId()
   {
     return $this->resourceId;

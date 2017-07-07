@@ -38,10 +38,16 @@ class Google_Service_YouTube_ActivityContentDetailsPlaylistItem extends Google_M
   {
     return $this->playlistItemId;
   }
+  /**
+   * @param Google_Service_YouTube_ResourceId
+   */
   public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
+  /**
+   * @return Google_Service_YouTube_ResourceId
+   */
   public function getResourceId()
   {
     return $this->resourceId;

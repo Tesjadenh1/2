@@ -32,18 +32,30 @@ class Google_Service_YouTube_LocalizedProperty extends Google_Collection
   {
     return $this->default;
   }
+  /**
+   * @param Google_Service_YouTube_LanguageTag
+   */
   public function setDefaultLanguage(Google_Service_YouTube_LanguageTag $defaultLanguage)
   {
     $this->defaultLanguage = $defaultLanguage;
   }
+  /**
+   * @return Google_Service_YouTube_LanguageTag
+   */
   public function getDefaultLanguage()
   {
     return $this->defaultLanguage;
   }
+  /**
+   * @param Google_Service_YouTube_LocalizedString
+   */
   public function setLocalized($localized)
   {
     $this->localized = $localized;
   }
+  /**
+   * @return Google_Service_YouTube_LocalizedString
+   */
   public function getLocalized()
   {
     return $this->localized;

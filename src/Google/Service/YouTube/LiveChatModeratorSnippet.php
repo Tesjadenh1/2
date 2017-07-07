@@ -29,10 +29,16 @@ class Google_Service_YouTube_LiveChatModeratorSnippet extends Google_Model
   {
     return $this->liveChatId;
   }
+  /**
+   * @param Google_Service_YouTube_ChannelProfileDetails
+   */
   public function setModeratorDetails(Google_Service_YouTube_ChannelProfileDetails $moderatorDetails)
   {
     $this->moderatorDetails = $moderatorDetails;
   }
+  /**
+   * @return Google_Service_YouTube_ChannelProfileDetails
+   */
   public function getModeratorDetails()
   {
     return $this->moderatorDetails;

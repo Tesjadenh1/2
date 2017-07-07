@@ -27,10 +27,16 @@ class Google_Service_YouTube_PlaylistItem extends Google_Model
   protected $statusType = 'Google_Service_YouTube_PlaylistItemStatus';
   protected $statusDataType = '';
 
+  /**
+   * @param Google_Service_YouTube_PlaylistItemContentDetails
+   */
   public function setContentDetails(Google_Service_YouTube_PlaylistItemContentDetails $contentDetails)
   {
     $this->contentDetails = $contentDetails;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistItemContentDetails
+   */
   public function getContentDetails()
   {
     return $this->contentDetails;
@@ -59,18 +65,30 @@ class Google_Service_YouTube_PlaylistItem extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistItemSnippet
+   */
   public function setSnippet(Google_Service_YouTube_PlaylistItemSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistItemSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistItemStatus
+   */
   public function setStatus(Google_Service_YouTube_PlaylistItemStatus $status)
   {
     $this->status = $status;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistItemStatus
+   */
   public function getStatus()
   {
     return $this->status;

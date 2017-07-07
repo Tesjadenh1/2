@@ -62,10 +62,16 @@ class Google_Service_YouTube_PlaylistSnippet extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_YouTube_PlaylistLocalization
+   */
   public function setLocalized(Google_Service_YouTube_PlaylistLocalization $localized)
   {
     $this->localized = $localized;
   }
+  /**
+   * @return Google_Service_YouTube_PlaylistLocalization
+   */
   public function getLocalized()
   {
     return $this->localized;
@@ -86,10 +92,16 @@ class Google_Service_YouTube_PlaylistSnippet extends Google_Collection
   {
     return $this->tags;
   }
+  /**
+   * @param Google_Service_YouTube_ThumbnailDetails
+   */
   public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }
+  /**
+   * @return Google_Service_YouTube_ThumbnailDetails
+   */
   public function getThumbnails()
   {
     return $this->thumbnails;

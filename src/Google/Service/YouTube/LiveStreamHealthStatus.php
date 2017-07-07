@@ -23,10 +23,16 @@ class Google_Service_YouTube_LiveStreamHealthStatus extends Google_Collection
   public $lastUpdateTimeSeconds;
   public $status;
 
+  /**
+   * @param Google_Service_YouTube_LiveStreamConfigurationIssue
+   */
   public function setConfigurationIssues($configurationIssues)
   {
     $this->configurationIssues = $configurationIssues;
   }
+  /**
+   * @return Google_Service_YouTube_LiveStreamConfigurationIssue
+   */
   public function getConfigurationIssues()
   {
     return $this->configurationIssues;

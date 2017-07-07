@@ -38,10 +38,16 @@ class Google_Service_YouTube_LiveChatUserBannedMessageDetails extends Google_Mod
   {
     return $this->banType;
   }
+  /**
+   * @param Google_Service_YouTube_ChannelProfileDetails
+   */
   public function setBannedUserDetails(Google_Service_YouTube_ChannelProfileDetails $bannedUserDetails)
   {
     $this->bannedUserDetails = $bannedUserDetails;
   }
+  /**
+   * @return Google_Service_YouTube_ChannelProfileDetails
+   */
   public function getBannedUserDetails()
   {
     return $this->bannedUserDetails;

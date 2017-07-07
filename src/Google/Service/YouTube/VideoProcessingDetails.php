@@ -59,10 +59,16 @@ class Google_Service_YouTube_VideoProcessingDetails extends Google_Model
   {
     return $this->processingIssuesAvailability;
   }
+  /**
+   * @param Google_Service_YouTube_VideoProcessingDetailsProcessingProgress
+   */
   public function setProcessingProgress(Google_Service_YouTube_VideoProcessingDetailsProcessingProgress $processingProgress)
   {
     $this->processingProgress = $processingProgress;
   }
+  /**
+   * @return Google_Service_YouTube_VideoProcessingDetailsProcessingProgress
+   */
   public function getProcessingProgress()
   {
     return $this->processingProgress;

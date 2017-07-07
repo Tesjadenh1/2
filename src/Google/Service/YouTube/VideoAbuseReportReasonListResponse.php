@@ -41,10 +41,16 @@ class Google_Service_YouTube_VideoAbuseReportReasonListResponse extends Google_C
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_VideoAbuseReportReason
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_VideoAbuseReportReason
+   */
   public function getItems()
   {
     return $this->items;

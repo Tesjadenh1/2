@@ -21,10 +21,16 @@ class Google_Service_YouTube_LiveBroadcastTopicDetails extends Google_Collection
   protected $topicsType = 'Google_Service_YouTube_LiveBroadcastTopic';
   protected $topicsDataType = 'array';
 
+  /**
+   * @param Google_Service_YouTube_LiveBroadcastTopic
+   */
   public function setTopics($topics)
   {
     $this->topics = $topics;
   }
+  /**
+   * @return Google_Service_YouTube_LiveBroadcastTopic
+   */
   public function getTopics()
   {
     return $this->topics;

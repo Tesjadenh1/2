@@ -47,10 +47,16 @@ class Google_Service_YouTube_Sponsor extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTube_SponsorSnippet
+   */
   public function setSnippet(Google_Service_YouTube_SponsorSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTube_SponsorSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;

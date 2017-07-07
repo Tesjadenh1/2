@@ -31,18 +31,30 @@ class Google_Service_YouTube_ActivityContentDetailsRecommendation extends Google
   {
     return $this->reason;
   }
+  /**
+   * @param Google_Service_YouTube_ResourceId
+   */
   public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
+  /**
+   * @return Google_Service_YouTube_ResourceId
+   */
   public function getResourceId()
   {
     return $this->resourceId;
   }
+  /**
+   * @param Google_Service_YouTube_ResourceId
+   */
   public function setSeedResourceId(Google_Service_YouTube_ResourceId $seedResourceId)
   {
     $this->seedResourceId = $seedResourceId;
   }
+  /**
+   * @return Google_Service_YouTube_ResourceId
+   */
   public function getSeedResourceId()
   {
     return $this->seedResourceId;

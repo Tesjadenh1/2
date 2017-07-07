@@ -83,10 +83,16 @@ class Google_Service_YouTube_SuperChatEventSnippet extends Google_Model
   {
     return $this->messageType;
   }
+  /**
+   * @param Google_Service_YouTube_ChannelProfileDetails
+   */
   public function setSupporterDetails(Google_Service_YouTube_ChannelProfileDetails $supporterDetails)
   {
     $this->supporterDetails = $supporterDetails;
   }
+  /**
+   * @return Google_Service_YouTube_ChannelProfileDetails
+   */
   public function getSupporterDetails()
   {
     return $this->supporterDetails;

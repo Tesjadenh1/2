@@ -32,10 +32,16 @@ class Google_Service_YouTube_SearchResult extends Google_Model
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_YouTube_ResourceId
+   */
   public function setId(Google_Service_YouTube_ResourceId $id)
   {
     $this->id = $id;
   }
+  /**
+   * @return Google_Service_YouTube_ResourceId
+   */
   public function getId()
   {
     return $this->id;
@@ -48,10 +54,16 @@ class Google_Service_YouTube_SearchResult extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_YouTube_SearchResultSnippet
+   */
   public function setSnippet(Google_Service_YouTube_SearchResultSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTube_SearchResultSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;

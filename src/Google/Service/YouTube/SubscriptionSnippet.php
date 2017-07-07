@@ -59,18 +59,30 @@ class Google_Service_YouTube_SubscriptionSnippet extends Google_Model
   {
     return $this->publishedAt;
   }
+  /**
+   * @param Google_Service_YouTube_ResourceId
+   */
   public function setResourceId(Google_Service_YouTube_ResourceId $resourceId)
   {
     $this->resourceId = $resourceId;
   }
+  /**
+   * @return Google_Service_YouTube_ResourceId
+   */
   public function getResourceId()
   {
     return $this->resourceId;
   }
+  /**
+   * @param Google_Service_YouTube_ThumbnailDetails
+   */
   public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }
+  /**
+   * @return Google_Service_YouTube_ThumbnailDetails
+   */
   public function getThumbnails()
   {
     return $this->thumbnails;

@@ -41,10 +41,16 @@ class Google_Service_YouTube_ChannelSectionListResponse extends Google_Collectio
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_ChannelSection
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_ChannelSection
+   */
   public function getItems()
   {
     return $this->items;

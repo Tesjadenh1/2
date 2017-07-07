@@ -22,10 +22,16 @@ class Google_Service_YouTube_LiveBroadcastTopic extends Google_Model
   public $type;
   public $unmatched;
 
+  /**
+   * @param Google_Service_YouTube_LiveBroadcastTopicSnippet
+   */
   public function setSnippet(Google_Service_YouTube_LiveBroadcastTopicSnippet $snippet)
   {
     $this->snippet = $snippet;
   }
+  /**
+   * @return Google_Service_YouTube_LiveBroadcastTopicSnippet
+   */
   public function getSnippet()
   {
     return $this->snippet;

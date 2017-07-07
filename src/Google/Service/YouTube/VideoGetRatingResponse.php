@@ -41,10 +41,16 @@ class Google_Service_YouTube_VideoGetRatingResponse extends Google_Collection
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_VideoRating
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_VideoRating
+   */
   public function getItems()
   {
     return $this->items;

@@ -102,10 +102,16 @@ class Google_Service_YouTube_LiveBroadcastSnippet extends Google_Model
   {
     return $this->scheduledStartTime;
   }
+  /**
+   * @param Google_Service_YouTube_ThumbnailDetails
+   */
   public function setThumbnails(Google_Service_YouTube_ThumbnailDetails $thumbnails)
   {
     $this->thumbnails = $thumbnails;
   }
+  /**
+   * @return Google_Service_YouTube_ThumbnailDetails
+   */
   public function getThumbnails()
   {
     return $this->thumbnails;

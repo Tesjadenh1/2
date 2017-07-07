@@ -48,10 +48,16 @@ class Google_Service_YouTube_SearchListResponse extends Google_Collection
   {
     return $this->eventId;
   }
+  /**
+   * @param Google_Service_YouTube_SearchResult
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_YouTube_SearchResult
+   */
   public function getItems()
   {
     return $this->items;
@@ -72,10 +78,16 @@ class Google_Service_YouTube_SearchListResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_YouTube_PageInfo
+   */
   public function setPageInfo(Google_Service_YouTube_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
+  /**
+   * @return Google_Service_YouTube_PageInfo
+   */
   public function getPageInfo()
   {
     return $this->pageInfo;
@@ -96,10 +108,16 @@ class Google_Service_YouTube_SearchListResponse extends Google_Collection
   {
     return $this->regionCode;
   }
+  /**
+   * @param Google_Service_YouTube_TokenPagination
+   */
   public function setTokenPagination(Google_Service_YouTube_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }
+  /**
+   * @return Google_Service_YouTube_TokenPagination
+   */
   public function getTokenPagination()
   {
     return $this->tokenPagination;
