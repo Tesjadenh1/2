@@ -23,18 +23,30 @@ class Google_Service_Datastore_LookupRequest extends Google_Collection
   protected $readOptionsType = 'Google_Service_Datastore_ReadOptions';
   protected $readOptionsDataType = '';
 
+  /**
+   * @param Google_Service_Datastore_Key
+   */
   public function setKeys($keys)
   {
     $this->keys = $keys;
   }
+  /**
+   * @return Google_Service_Datastore_Key
+   */
   public function getKeys()
   {
     return $this->keys;
   }
+  /**
+   * @param Google_Service_Datastore_ReadOptions
+   */
   public function setReadOptions(Google_Service_Datastore_ReadOptions $readOptions)
   {
     $this->readOptions = $readOptions;
   }
+  /**
+   * @return Google_Service_Datastore_ReadOptions
+   */
   public function getReadOptions()
   {
     return $this->readOptions;

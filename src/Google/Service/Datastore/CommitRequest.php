@@ -31,10 +31,16 @@ class Google_Service_Datastore_CommitRequest extends Google_Collection
   {
     return $this->mode;
   }
+  /**
+   * @param Google_Service_Datastore_Mutation
+   */
   public function setMutations($mutations)
   {
     $this->mutations = $mutations;
   }
+  /**
+   * @return Google_Service_Datastore_Mutation
+   */
   public function getMutations()
   {
     return $this->mutations;

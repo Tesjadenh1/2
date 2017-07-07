@@ -29,10 +29,16 @@ class Google_Service_Datastore_PropertyOrder extends Google_Model
   {
     return $this->direction;
   }
+  /**
+   * @param Google_Service_Datastore_PropertyReference
+   */
   public function setProperty(Google_Service_Datastore_PropertyReference $property)
   {
     $this->property = $property;
   }
+  /**
+   * @return Google_Service_Datastore_PropertyReference
+   */
   public function getProperty()
   {
     return $this->property;

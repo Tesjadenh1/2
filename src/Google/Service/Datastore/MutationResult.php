@@ -30,10 +30,16 @@ class Google_Service_Datastore_MutationResult extends Google_Model
   {
     return $this->conflictDetected;
   }
+  /**
+   * @param Google_Service_Datastore_Key
+   */
   public function setKey(Google_Service_Datastore_Key $key)
   {
     $this->key = $key;
   }
+  /**
+   * @return Google_Service_Datastore_Key
+   */
   public function getKey()
   {
     return $this->key;

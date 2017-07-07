@@ -31,18 +31,30 @@ class Google_Service_Datastore_PropertyFilter extends Google_Model
   {
     return $this->op;
   }
+  /**
+   * @param Google_Service_Datastore_PropertyReference
+   */
   public function setProperty(Google_Service_Datastore_PropertyReference $property)
   {
     $this->property = $property;
   }
+  /**
+   * @return Google_Service_Datastore_PropertyReference
+   */
   public function getProperty()
   {
     return $this->property;
   }
+  /**
+   * @param Google_Service_Datastore_Value
+   */
   public function setValue(Google_Service_Datastore_Value $value)
   {
     $this->value = $value;
   }
+  /**
+   * @return Google_Service_Datastore_Value
+   */
   public function getValue()
   {
     return $this->value;

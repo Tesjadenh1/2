@@ -30,10 +30,16 @@ class Google_Service_Datastore_EntityResult extends Google_Model
   {
     return $this->cursor;
   }
+  /**
+   * @param Google_Service_Datastore_Entity
+   */
   public function setEntity(Google_Service_Datastore_Entity $entity)
   {
     $this->entity = $entity;
   }
+  /**
+   * @return Google_Service_Datastore_Entity
+   */
   public function getEntity()
   {
     return $this->entity;

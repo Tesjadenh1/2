@@ -43,10 +43,16 @@ class Google_Service_Datastore_QueryResultBatch extends Google_Collection
   {
     return $this->entityResultType;
   }
+  /**
+   * @param Google_Service_Datastore_EntityResult
+   */
   public function setEntityResults($entityResults)
   {
     $this->entityResults = $entityResults;
   }
+  /**
+   * @return Google_Service_Datastore_EntityResult
+   */
   public function getEntityResults()
   {
     return $this->entityResults;

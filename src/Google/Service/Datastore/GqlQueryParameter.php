@@ -29,10 +29,16 @@ class Google_Service_Datastore_GqlQueryParameter extends Google_Model
   {
     return $this->cursor;
   }
+  /**
+   * @param Google_Service_Datastore_Value
+   */
   public function setValue(Google_Service_Datastore_Value $value)
   {
     $this->value = $value;
   }
+  /**
+   * @return Google_Service_Datastore_Value
+   */
   public function getValue()
   {
     return $this->value;

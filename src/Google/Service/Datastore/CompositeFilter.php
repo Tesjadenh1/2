@@ -22,10 +22,16 @@ class Google_Service_Datastore_CompositeFilter extends Google_Collection
   protected $filtersDataType = 'array';
   public $op;
 
+  /**
+   * @param Google_Service_Datastore_Filter
+   */
   public function setFilters($filters)
   {
     $this->filters = $filters;
   }
+  /**
+   * @return Google_Service_Datastore_Filter
+   */
   public function getFilters()
   {
     return $this->filters;
