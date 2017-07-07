@@ -31,10 +31,16 @@ class Google_Service_Reports_UsageReportsWarnings extends Google_Collection
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Reports_UsageReportsWarningsData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Reports_UsageReportsWarningsData
+   */
   public function getData()
   {
     return $this->data;

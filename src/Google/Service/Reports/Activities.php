@@ -32,10 +32,16 @@ class Google_Service_Reports_Activities extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_Reports_Activity
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Reports_Activity
+   */
   public function getItems()
   {
     return $this->items;

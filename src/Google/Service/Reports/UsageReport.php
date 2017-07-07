@@ -34,10 +34,16 @@ class Google_Service_Reports_UsageReport extends Google_Collection
   {
     return $this->date;
   }
+  /**
+   * @param Google_Service_Reports_UsageReportEntity
+   */
   public function setEntity(Google_Service_Reports_UsageReportEntity $entity)
   {
     $this->entity = $entity;
   }
+  /**
+   * @return Google_Service_Reports_UsageReportEntity
+   */
   public function getEntity()
   {
     return $this->entity;
@@ -58,10 +64,16 @@ class Google_Service_Reports_UsageReport extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Reports_UsageReportParameters
+   */
   public function setParameters($parameters)
   {
     $this->parameters = $parameters;
   }
+  /**
+   * @return Google_Service_Reports_UsageReportParameters
+   */
   public function getParameters()
   {
     return $this->parameters;

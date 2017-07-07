@@ -50,18 +50,30 @@ class Google_Service_Reports_UsageReports extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Reports_UsageReport
+   */
   public function setUsageReports($usageReports)
   {
     $this->usageReports = $usageReports;
   }
+  /**
+   * @return Google_Service_Reports_UsageReport
+   */
   public function getUsageReports()
   {
     return $this->usageReports;
   }
+  /**
+   * @param Google_Service_Reports_UsageReportsWarnings
+   */
   public function setWarnings($warnings)
   {
     $this->warnings = $warnings;
   }
+  /**
+   * @return Google_Service_Reports_UsageReportsWarnings
+   */
   public function getWarnings()
   {
     return $this->warnings;
