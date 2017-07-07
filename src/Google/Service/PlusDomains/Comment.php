@@ -34,10 +34,16 @@ class Google_Service_PlusDomains_Comment extends Google_Collection
   public $updated;
   public $verb;
 
+  /**
+   * @param Google_Service_PlusDomains_CommentActor
+   */
   public function setActor(Google_Service_PlusDomains_CommentActor $actor)
   {
     $this->actor = $actor;
   }
+  /**
+   * @return Google_Service_PlusDomains_CommentActor
+   */
   public function getActor()
   {
     return $this->actor;
@@ -58,10 +64,16 @@ class Google_Service_PlusDomains_Comment extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_PlusDomains_CommentInReplyTo
+   */
   public function setInReplyTo($inReplyTo)
   {
     $this->inReplyTo = $inReplyTo;
   }
+  /**
+   * @return Google_Service_PlusDomains_CommentInReplyTo
+   */
   public function getInReplyTo()
   {
     return $this->inReplyTo;
@@ -74,18 +86,30 @@ class Google_Service_PlusDomains_Comment extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_PlusDomains_CommentObject
+   */
   public function setObject(Google_Service_PlusDomains_CommentObject $object)
   {
     $this->object = $object;
   }
+  /**
+   * @return Google_Service_PlusDomains_CommentObject
+   */
   public function getObject()
   {
     return $this->object;
   }
+  /**
+   * @param Google_Service_PlusDomains_CommentPlusoners
+   */
   public function setPlusoners(Google_Service_PlusDomains_CommentPlusoners $plusoners)
   {
     $this->plusoners = $plusoners;
   }
+  /**
+   * @return Google_Service_PlusDomains_CommentPlusoners
+   */
   public function getPlusoners()
   {
     return $this->plusoners;

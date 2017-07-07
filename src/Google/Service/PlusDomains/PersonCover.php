@@ -23,18 +23,30 @@ class Google_Service_PlusDomains_PersonCover extends Google_Model
   protected $coverPhotoDataType = '';
   public $layout;
 
+  /**
+   * @param Google_Service_PlusDomains_PersonCoverCoverInfo
+   */
   public function setCoverInfo(Google_Service_PlusDomains_PersonCoverCoverInfo $coverInfo)
   {
     $this->coverInfo = $coverInfo;
   }
+  /**
+   * @return Google_Service_PlusDomains_PersonCoverCoverInfo
+   */
   public function getCoverInfo()
   {
     return $this->coverInfo;
   }
+  /**
+   * @param Google_Service_PlusDomains_PersonCoverCoverPhoto
+   */
   public function setCoverPhoto(Google_Service_PlusDomains_PersonCoverCoverPhoto $coverPhoto)
   {
     $this->coverPhoto = $coverPhoto;
   }
+  /**
+   * @return Google_Service_PlusDomains_PersonCoverCoverPhoto
+   */
   public function getCoverPhoto()
   {
     return $this->coverPhoto;

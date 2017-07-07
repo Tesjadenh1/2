@@ -39,10 +39,16 @@ class Google_Service_PlusDomains_MediaAuthor extends Google_Model
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_PlusDomains_MediaAuthorImage
+   */
   public function setImage(Google_Service_PlusDomains_MediaAuthorImage $image)
   {
     $this->image = $image;
   }
+  /**
+   * @return Google_Service_PlusDomains_MediaAuthorImage
+   */
   public function getImage()
   {
     return $this->image;

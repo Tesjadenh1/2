@@ -40,10 +40,16 @@ class Google_Service_PlusDomains_Acl extends Google_Collection
   {
     return $this->domainRestricted;
   }
+  /**
+   * @param Google_Service_PlusDomains_PlusDomainsAclentryResource
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_PlusDomains_PlusDomainsAclentryResource
+   */
   public function getItems()
   {
     return $this->items;

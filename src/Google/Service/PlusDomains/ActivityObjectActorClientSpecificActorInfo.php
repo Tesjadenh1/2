@@ -20,10 +20,16 @@ class Google_Service_PlusDomains_ActivityObjectActorClientSpecificActorInfo exte
   protected $youtubeActorInfoType = 'Google_Service_PlusDomains_ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo';
   protected $youtubeActorInfoDataType = '';
 
+  /**
+   * @param Google_Service_PlusDomains_ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo
+   */
   public function setYoutubeActorInfo(Google_Service_PlusDomains_ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo $youtubeActorInfo)
   {
     $this->youtubeActorInfo = $youtubeActorInfo;
   }
+  /**
+   * @return Google_Service_PlusDomains_ActivityObjectActorClientSpecificActorInfoYoutubeActorInfo
+   */
   public function getYoutubeActorInfo()
   {
     return $this->youtubeActorInfo;

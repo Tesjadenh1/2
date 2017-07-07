@@ -20,10 +20,16 @@ class Google_Service_PlusDomains_CommentActorClientSpecificActorInfo extends Goo
   protected $youtubeActorInfoType = 'Google_Service_PlusDomains_CommentActorClientSpecificActorInfoYoutubeActorInfo';
   protected $youtubeActorInfoDataType = '';
 
+  /**
+   * @param Google_Service_PlusDomains_CommentActorClientSpecificActorInfoYoutubeActorInfo
+   */
   public function setYoutubeActorInfo(Google_Service_PlusDomains_CommentActorClientSpecificActorInfoYoutubeActorInfo $youtubeActorInfo)
   {
     $this->youtubeActorInfo = $youtubeActorInfo;
   }
+  /**
+   * @return Google_Service_PlusDomains_CommentActorClientSpecificActorInfoYoutubeActorInfo
+   */
   public function getYoutubeActorInfo()
   {
     return $this->youtubeActorInfo;

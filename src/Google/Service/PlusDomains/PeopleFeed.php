@@ -35,10 +35,16 @@ class Google_Service_PlusDomains_PeopleFeed extends Google_Collection
   {
     return $this->etag;
   }
+  /**
+   * @param Google_Service_PlusDomains_Person
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_PlusDomains_Person
+   */
   public function getItems()
   {
     return $this->items;
