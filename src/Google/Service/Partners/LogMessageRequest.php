@@ -47,10 +47,16 @@ class Google_Service_Partners_LogMessageRequest extends Google_Model
   {
     return $this->level;
   }
+  /**
+   * @param Google_Service_Partners_RequestMetadata
+   */
   public function setRequestMetadata(Google_Service_Partners_RequestMetadata $requestMetadata)
   {
     $this->requestMetadata = $requestMetadata;
   }
+  /**
+   * @return Google_Service_Partners_RequestMetadata
+   */
   public function getRequestMetadata()
   {
     return $this->requestMetadata;

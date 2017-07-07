@@ -24,10 +24,16 @@ class Google_Service_Partners_CertificationStatus extends Google_Collection
   public $type;
   public $userCount;
 
+  /**
+   * @param Google_Service_Partners_CertificationExamStatus
+   */
   public function setExamStatuses($examStatuses)
   {
     $this->examStatuses = $examStatuses;
   }
+  /**
+   * @return Google_Service_Partners_CertificationExamStatus
+   */
   public function getExamStatuses()
   {
     return $this->examStatuses;

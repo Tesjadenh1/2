@@ -35,10 +35,16 @@ class Google_Service_Partners_UserProfile extends Google_Collection
   public $primaryCountryCode;
   public $profilePublic;
 
+  /**
+   * @param Google_Service_Partners_Location
+   */
   public function setAddress(Google_Service_Partners_Location $address)
   {
     $this->address = $address;
   }
+  /**
+   * @return Google_Service_Partners_Location
+   */
   public function getAddress()
   {
     return $this->address;
@@ -67,10 +73,16 @@ class Google_Service_Partners_UserProfile extends Google_Collection
   {
     return $this->emailAddress;
   }
+  /**
+   * @param Google_Service_Partners_OptIns
+   */
   public function setEmailOptIns(Google_Service_Partners_OptIns $emailOptIns)
   {
     $this->emailOptIns = $emailOptIns;
   }
+  /**
+   * @return Google_Service_Partners_OptIns
+   */
   public function getEmailOptIns()
   {
     return $this->emailOptIns;

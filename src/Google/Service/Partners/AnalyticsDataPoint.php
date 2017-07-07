@@ -30,10 +30,16 @@ class Google_Service_Partners_AnalyticsDataPoint extends Google_Collection
   {
     return $this->eventCount;
   }
+  /**
+   * @param Google_Service_Partners_LatLng
+   */
   public function setEventLocations($eventLocations)
   {
     $this->eventLocations = $eventLocations;
   }
+  /**
+   * @return Google_Service_Partners_LatLng
+   */
   public function getEventLocations()
   {
     return $this->eventLocations;

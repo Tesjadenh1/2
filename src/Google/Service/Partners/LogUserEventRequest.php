@@ -45,10 +45,16 @@ class Google_Service_Partners_LogUserEventRequest extends Google_Collection
   {
     return $this->eventCategory;
   }
+  /**
+   * @param Google_Service_Partners_EventData
+   */
   public function setEventDatas($eventDatas)
   {
     $this->eventDatas = $eventDatas;
   }
+  /**
+   * @return Google_Service_Partners_EventData
+   */
   public function getEventDatas()
   {
     return $this->eventDatas;
@@ -61,18 +67,30 @@ class Google_Service_Partners_LogUserEventRequest extends Google_Collection
   {
     return $this->eventScope;
   }
+  /**
+   * @param Google_Service_Partners_Lead
+   */
   public function setLead(Google_Service_Partners_Lead $lead)
   {
     $this->lead = $lead;
   }
+  /**
+   * @return Google_Service_Partners_Lead
+   */
   public function getLead()
   {
     return $this->lead;
   }
+  /**
+   * @param Google_Service_Partners_RequestMetadata
+   */
   public function setRequestMetadata(Google_Service_Partners_RequestMetadata $requestMetadata)
   {
     $this->requestMetadata = $requestMetadata;
   }
+  /**
+   * @return Google_Service_Partners_RequestMetadata
+   */
   public function getRequestMetadata()
   {
     return $this->requestMetadata;

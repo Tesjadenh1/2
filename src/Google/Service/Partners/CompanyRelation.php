@@ -128,10 +128,16 @@ class Google_Service_Partners_CompanyRelation extends Google_Collection
   {
     return $this->phoneNumber;
   }
+  /**
+   * @param Google_Service_Partners_Location
+   */
   public function setPrimaryAddress(Google_Service_Partners_Location $primaryAddress)
   {
     $this->primaryAddress = $primaryAddress;
   }
+  /**
+   * @return Google_Service_Partners_Location
+   */
   public function getPrimaryAddress()
   {
     return $this->primaryAddress;
@@ -168,10 +174,16 @@ class Google_Service_Partners_CompanyRelation extends Google_Collection
   {
     return $this->segment;
   }
+  /**
+   * @param Google_Service_Partners_SpecializationStatus
+   */
   public function setSpecializationStatus($specializationStatus)
   {
     $this->specializationStatus = $specializationStatus;
   }
+  /**
+   * @return Google_Service_Partners_SpecializationStatus
+   */
   public function getSpecializationStatus()
   {
     return $this->specializationStatus;

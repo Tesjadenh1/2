@@ -24,10 +24,16 @@ class Google_Service_Partners_ListOffersResponse extends Google_Collection
   protected $responseMetadataType = 'Google_Service_Partners_ResponseMetadata';
   protected $responseMetadataDataType = '';
 
+  /**
+   * @param Google_Service_Partners_AvailableOffer
+   */
   public function setAvailableOffers($availableOffers)
   {
     $this->availableOffers = $availableOffers;
   }
+  /**
+   * @return Google_Service_Partners_AvailableOffer
+   */
   public function getAvailableOffers()
   {
     return $this->availableOffers;
@@ -40,10 +46,16 @@ class Google_Service_Partners_ListOffersResponse extends Google_Collection
   {
     return $this->noOfferReason;
   }
+  /**
+   * @param Google_Service_Partners_ResponseMetadata
+   */
   public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }
+  /**
+   * @return Google_Service_Partners_ResponseMetadata
+   */
   public function getResponseMetadata()
   {
     return $this->responseMetadata;

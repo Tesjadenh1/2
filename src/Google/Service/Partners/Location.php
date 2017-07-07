@@ -70,10 +70,16 @@ class Google_Service_Partners_Location extends Google_Collection
   {
     return $this->languageCode;
   }
+  /**
+   * @param Google_Service_Partners_LatLng
+   */
   public function setLatLng(Google_Service_Partners_LatLng $latLng)
   {
     $this->latLng = $latLng;
   }
+  /**
+   * @return Google_Service_Partners_LatLng
+   */
   public function getLatLng()
   {
     return $this->latLng;

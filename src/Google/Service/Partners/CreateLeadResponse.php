@@ -23,10 +23,16 @@ class Google_Service_Partners_CreateLeadResponse extends Google_Model
   protected $responseMetadataType = 'Google_Service_Partners_ResponseMetadata';
   protected $responseMetadataDataType = '';
 
+  /**
+   * @param Google_Service_Partners_Lead
+   */
   public function setLead(Google_Service_Partners_Lead $lead)
   {
     $this->lead = $lead;
   }
+  /**
+   * @return Google_Service_Partners_Lead
+   */
   public function getLead()
   {
     return $this->lead;
@@ -39,10 +45,16 @@ class Google_Service_Partners_CreateLeadResponse extends Google_Model
   {
     return $this->recaptchaStatus;
   }
+  /**
+   * @param Google_Service_Partners_ResponseMetadata
+   */
   public function setResponseMetadata(Google_Service_Partners_ResponseMetadata $responseMetadata)
   {
     $this->responseMetadata = $responseMetadata;
   }
+  /**
+   * @return Google_Service_Partners_ResponseMetadata
+   */
   public function getResponseMetadata()
   {
     return $this->responseMetadata;

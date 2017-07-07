@@ -41,10 +41,16 @@ class Google_Service_Partners_AvailableOffer extends Google_Collection
   {
     return $this->available;
   }
+  /**
+   * @param Google_Service_Partners_CountryOfferInfo
+   */
   public function setCountryOfferInfos($countryOfferInfos)
   {
     $this->countryOfferInfos = $countryOfferInfos;
   }
+  /**
+   * @return Google_Service_Partners_CountryOfferInfo
+   */
   public function getCountryOfferInfos()
   {
     return $this->countryOfferInfos;
@@ -97,10 +103,16 @@ class Google_Service_Partners_AvailableOffer extends Google_Collection
   {
     return $this->offerType;
   }
+  /**
+   * @param Google_Service_Partners_OfferCustomer
+   */
   public function setQualifiedCustomer($qualifiedCustomer)
   {
     $this->qualifiedCustomer = $qualifiedCustomer;
   }
+  /**
+   * @return Google_Service_Partners_OfferCustomer
+   */
   public function getQualifiedCustomer()
   {
     return $this->qualifiedCustomer;

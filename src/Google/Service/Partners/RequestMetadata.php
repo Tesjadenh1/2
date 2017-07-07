@@ -50,18 +50,30 @@ class Google_Service_Partners_RequestMetadata extends Google_Collection
   {
     return $this->partnersSessionId;
   }
+  /**
+   * @param Google_Service_Partners_TrafficSource
+   */
   public function setTrafficSource(Google_Service_Partners_TrafficSource $trafficSource)
   {
     $this->trafficSource = $trafficSource;
   }
+  /**
+   * @return Google_Service_Partners_TrafficSource
+   */
   public function getTrafficSource()
   {
     return $this->trafficSource;
   }
+  /**
+   * @param Google_Service_Partners_UserOverrides
+   */
   public function setUserOverrides(Google_Service_Partners_UserOverrides $userOverrides)
   {
     $this->userOverrides = $userOverrides;
   }
+  /**
+   * @return Google_Service_Partners_UserOverrides
+   */
   public function getUserOverrides()
   {
     return $this->userOverrides;

@@ -115,10 +115,16 @@ class Google_Service_Partners_Lead extends Google_Collection
   {
     return $this->marketingOptIn;
   }
+  /**
+   * @param Google_Service_Partners_Money
+   */
   public function setMinMonthlyBudget(Google_Service_Partners_Money $minMonthlyBudget)
   {
     $this->minMonthlyBudget = $minMonthlyBudget;
   }
+  /**
+   * @return Google_Service_Partners_Money
+   */
   public function getMinMonthlyBudget()
   {
     return $this->minMonthlyBudget;
