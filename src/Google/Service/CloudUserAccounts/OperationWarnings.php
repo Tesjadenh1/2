@@ -31,10 +31,16 @@ class Google_Service_CloudUserAccounts_OperationWarnings extends Google_Collecti
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_CloudUserAccounts_OperationWarningsData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_CloudUserAccounts_OperationWarningsData
+   */
   public function getData()
   {
     return $this->data;

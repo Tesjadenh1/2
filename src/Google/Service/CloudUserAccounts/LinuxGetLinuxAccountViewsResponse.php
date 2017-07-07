@@ -20,10 +20,16 @@ class Google_Service_CloudUserAccounts_LinuxGetLinuxAccountViewsResponse extends
   protected $resourceType = 'Google_Service_CloudUserAccounts_LinuxAccountViews';
   protected $resourceDataType = '';
 
+  /**
+   * @param Google_Service_CloudUserAccounts_LinuxAccountViews
+   */
   public function setResource(Google_Service_CloudUserAccounts_LinuxAccountViews $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_CloudUserAccounts_LinuxAccountViews
+   */
   public function getResource()
   {
     return $this->resource;

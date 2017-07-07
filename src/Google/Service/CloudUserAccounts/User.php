@@ -85,10 +85,16 @@ class Google_Service_CloudUserAccounts_User extends Google_Collection
   {
     return $this->owner;
   }
+  /**
+   * @param Google_Service_CloudUserAccounts_PublicKey
+   */
   public function setPublicKeys($publicKeys)
   {
     $this->publicKeys = $publicKeys;
   }
+  /**
+   * @return Google_Service_CloudUserAccounts_PublicKey
+   */
   public function getPublicKeys()
   {
     return $this->publicKeys;

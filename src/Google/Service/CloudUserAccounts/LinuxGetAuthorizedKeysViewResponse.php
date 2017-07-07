@@ -20,10 +20,16 @@ class Google_Service_CloudUserAccounts_LinuxGetAuthorizedKeysViewResponse extend
   protected $resourceType = 'Google_Service_CloudUserAccounts_AuthorizedKeysView';
   protected $resourceDataType = '';
 
+  /**
+   * @param Google_Service_CloudUserAccounts_AuthorizedKeysView
+   */
   public function setResource(Google_Service_CloudUserAccounts_AuthorizedKeysView $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_CloudUserAccounts_AuthorizedKeysView
+   */
   public function getResource()
   {
     return $this->resource;

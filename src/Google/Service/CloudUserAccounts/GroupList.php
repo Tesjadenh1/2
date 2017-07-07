@@ -33,10 +33,16 @@ class Google_Service_CloudUserAccounts_GroupList extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_CloudUserAccounts_Group
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_CloudUserAccounts_Group
+   */
   public function getItems()
   {
     return $this->items;
