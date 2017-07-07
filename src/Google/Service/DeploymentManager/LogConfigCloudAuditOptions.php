@@ -15,24 +15,16 @@
  * the License.
  */
 
-class Google_Service_DeploymentManager_OperationError extends Google_Collection
+class Google_Service_DeploymentManager_LogConfigCloudAuditOptions extends Google_Model
 {
-  protected $collection_key = 'errors';
-  protected $errorsType = 'Google_Service_DeploymentManager_OperationErrorErrors';
-  protected $errorsDataType = 'array';
+  public $logName;
 
-  /**
-   * @param Google_Service_DeploymentManager_OperationErrorErrors
-   */
-  public function setErrors($errors)
+  public function setLogName($logName)
   {
-    $this->errors = $errors;
+    $this->logName = $logName;
   }
-  /**
-   * @return Google_Service_DeploymentManager_OperationErrorErrors
-   */
-  public function getErrors()
+  public function getLogName()
   {
-    return $this->errors;
+    return $this->logName;
   }
 }

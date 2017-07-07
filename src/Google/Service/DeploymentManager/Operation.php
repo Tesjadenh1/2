@@ -76,10 +76,16 @@ class Google_Service_DeploymentManager_Operation extends Google_Collection
   {
     return $this->endTime;
   }
+  /**
+   * @param Google_Service_DeploymentManager_OperationError
+   */
   public function setError(Google_Service_DeploymentManager_OperationError $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_DeploymentManager_OperationError
+   */
   public function getError()
   {
     return $this->error;
@@ -212,10 +218,16 @@ class Google_Service_DeploymentManager_Operation extends Google_Collection
   {
     return $this->user;
   }
+  /**
+   * @param Google_Service_DeploymentManager_OperationWarnings
+   */
   public function setWarnings($warnings)
   {
     $this->warnings = $warnings;
   }
+  /**
+   * @return Google_Service_DeploymentManager_OperationWarnings
+   */
   public function getWarnings()
   {
     return $this->warnings;

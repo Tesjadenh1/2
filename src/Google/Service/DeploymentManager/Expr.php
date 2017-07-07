@@ -15,13 +15,12 @@
  * the License.
  */
 
-class Google_Service_DeploymentManager_DeploymentUpdate extends Google_Collection
+class Google_Service_DeploymentManager_Expr extends Google_Model
 {
-  protected $collection_key = 'labels';
   public $description;
-  protected $labelsType = 'Google_Service_DeploymentManager_DeploymentUpdateLabelEntry';
-  protected $labelsDataType = 'array';
-  public $manifest;
+  public $expression;
+  public $location;
+  public $title;
 
   public function setDescription($description)
   {
@@ -31,26 +30,28 @@ class Google_Service_DeploymentManager_DeploymentUpdate extends Google_Collectio
   {
     return $this->description;
   }
-  /**
-   * @param Google_Service_DeploymentManager_DeploymentUpdateLabelEntry
-   */
-  public function setLabels($labels)
+  public function setExpression($expression)
   {
-    $this->labels = $labels;
+    $this->expression = $expression;
   }
-  /**
-   * @return Google_Service_DeploymentManager_DeploymentUpdateLabelEntry
-   */
-  public function getLabels()
+  public function getExpression()
   {
-    return $this->labels;
+    return $this->expression;
   }
-  public function setManifest($manifest)
+  public function setLocation($location)
   {
-    $this->manifest = $manifest;
+    $this->location = $location;
   }
-  public function getManifest()
+  public function getLocation()
   {
-    return $this->manifest;
+    return $this->location;
+  }
+  public function setTitle($title)
+  {
+    $this->title = $title;
+  }
+  public function getTitle()
+  {
+    return $this->title;
   }
 }

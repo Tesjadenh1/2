@@ -31,10 +31,16 @@ class Google_Service_DeploymentManager_DeploymentmanagerResourceWarnings extends
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_DeploymentManager_DeploymentmanagerResourceWarningsData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_DeploymentManager_DeploymentmanagerResourceWarningsData
+   */
   public function getData()
   {
     return $this->data;

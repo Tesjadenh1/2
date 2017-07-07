@@ -22,10 +22,16 @@ class Google_Service_DeploymentManager_DeploymentsListResponse extends Google_Co
   protected $deploymentsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_DeploymentManager_Deployment
+   */
   public function setDeployments($deployments)
   {
     $this->deployments = $deployments;
   }
+  /**
+   * @return Google_Service_DeploymentManager_Deployment
+   */
   public function getDeployments()
   {
     return $this->deployments;

@@ -48,10 +48,16 @@ class Google_Service_DeploymentManager_Type extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_DeploymentManager_Operation
+   */
   public function setOperation(Google_Service_DeploymentManager_Operation $operation)
   {
     $this->operation = $operation;
   }
+  /**
+   * @return Google_Service_DeploymentManager_Operation
+   */
   public function getOperation()
   {
     return $this->operation;

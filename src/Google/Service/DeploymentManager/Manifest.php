@@ -29,10 +29,16 @@ class Google_Service_DeploymentManager_Manifest extends Google_Collection
   public $name;
   public $selfLink;
 
+  /**
+   * @param Google_Service_DeploymentManager_ConfigFile
+   */
   public function setConfig(Google_Service_DeploymentManager_ConfigFile $config)
   {
     $this->config = $config;
   }
+  /**
+   * @return Google_Service_DeploymentManager_ConfigFile
+   */
   public function getConfig()
   {
     return $this->config;
@@ -53,10 +59,16 @@ class Google_Service_DeploymentManager_Manifest extends Google_Collection
   {
     return $this->id;
   }
+  /**
+   * @param Google_Service_DeploymentManager_ImportFile
+   */
   public function setImports($imports)
   {
     $this->imports = $imports;
   }
+  /**
+   * @return Google_Service_DeploymentManager_ImportFile
+   */
   public function getImports()
   {
     return $this->imports;

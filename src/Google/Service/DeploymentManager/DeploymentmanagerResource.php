@@ -34,10 +34,16 @@ class Google_Service_DeploymentManager_DeploymentmanagerResource extends Google_
   protected $warningsType = 'Google_Service_DeploymentManager_DeploymentmanagerResourceWarnings';
   protected $warningsDataType = 'array';
 
+  /**
+   * @param Google_Service_DeploymentManager_ResourceAccessControl
+   */
   public function setAccessControl(Google_Service_DeploymentManager_ResourceAccessControl $accessControl)
   {
     $this->accessControl = $accessControl;
   }
+  /**
+   * @return Google_Service_DeploymentManager_ResourceAccessControl
+   */
   public function getAccessControl()
   {
     return $this->accessControl;
@@ -98,10 +104,16 @@ class Google_Service_DeploymentManager_DeploymentmanagerResource extends Google_
   {
     return $this->type;
   }
+  /**
+   * @param Google_Service_DeploymentManager_ResourceUpdate
+   */
   public function setUpdate(Google_Service_DeploymentManager_ResourceUpdate $update)
   {
     $this->update = $update;
   }
+  /**
+   * @return Google_Service_DeploymentManager_ResourceUpdate
+   */
   public function getUpdate()
   {
     return $this->update;
@@ -122,10 +134,16 @@ class Google_Service_DeploymentManager_DeploymentmanagerResource extends Google_
   {
     return $this->url;
   }
+  /**
+   * @param Google_Service_DeploymentManager_DeploymentmanagerResourceWarnings
+   */
   public function setWarnings($warnings)
   {
     $this->warnings = $warnings;
   }
+  /**
+   * @return Google_Service_DeploymentManager_DeploymentmanagerResourceWarnings
+   */
   public function getWarnings()
   {
     return $this->warnings;

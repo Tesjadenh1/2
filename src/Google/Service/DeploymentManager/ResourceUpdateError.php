@@ -21,10 +21,16 @@ class Google_Service_DeploymentManager_ResourceUpdateError extends Google_Collec
   protected $errorsType = 'Google_Service_DeploymentManager_ResourceUpdateErrorErrors';
   protected $errorsDataType = 'array';
 
+  /**
+   * @param Google_Service_DeploymentManager_ResourceUpdateErrorErrors
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_DeploymentManager_ResourceUpdateErrorErrors
+   */
   public function getErrors()
   {
     return $this->errors;

@@ -22,10 +22,16 @@ class Google_Service_DeploymentManager_ManifestsListResponse extends Google_Coll
   protected $manifestsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_DeploymentManager_Manifest
+   */
   public function setManifests($manifests)
   {
     $this->manifests = $manifests;
   }
+  /**
+   * @return Google_Service_DeploymentManager_Manifest
+   */
   public function getManifests()
   {
     return $this->manifests;
