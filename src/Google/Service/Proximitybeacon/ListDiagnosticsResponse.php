@@ -22,10 +22,16 @@ class Google_Service_Proximitybeacon_ListDiagnosticsResponse extends Google_Coll
   protected $diagnosticsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Proximitybeacon_Diagnostics
+   */
   public function setDiagnostics($diagnostics)
   {
     $this->diagnostics = $diagnostics;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_Diagnostics
+   */
   public function getDiagnostics()
   {
     return $this->diagnostics;

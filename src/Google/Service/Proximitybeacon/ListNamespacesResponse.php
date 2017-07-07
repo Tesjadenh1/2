@@ -21,10 +21,16 @@ class Google_Service_Proximitybeacon_ListNamespacesResponse extends Google_Colle
   protected $namespacesType = 'Google_Service_Proximitybeacon_ProximitybeaconNamespace';
   protected $namespacesDataType = 'array';
 
+  /**
+   * @param Google_Service_Proximitybeacon_ProximitybeaconNamespace
+   */
   public function setNamespaces($namespaces)
   {
     $this->namespaces = $namespaces;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_ProximitybeaconNamespace
+   */
   public function getNamespaces()
   {
     return $this->namespaces;

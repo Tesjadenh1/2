@@ -22,10 +22,16 @@ class Google_Service_Proximitybeacon_Observation extends Google_Model
   public $telemetry;
   public $timestampMs;
 
+  /**
+   * @param Google_Service_Proximitybeacon_AdvertisedId
+   */
   public function setAdvertisedId(Google_Service_Proximitybeacon_AdvertisedId $advertisedId)
   {
     $this->advertisedId = $advertisedId;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_AdvertisedId
+   */
   public function getAdvertisedId()
   {
     return $this->advertisedId;

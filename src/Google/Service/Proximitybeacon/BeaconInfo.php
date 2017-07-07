@@ -24,18 +24,30 @@ class Google_Service_Proximitybeacon_BeaconInfo extends Google_Collection
   protected $attachmentsDataType = 'array';
   public $beaconName;
 
+  /**
+   * @param Google_Service_Proximitybeacon_AdvertisedId
+   */
   public function setAdvertisedId(Google_Service_Proximitybeacon_AdvertisedId $advertisedId)
   {
     $this->advertisedId = $advertisedId;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_AdvertisedId
+   */
   public function getAdvertisedId()
   {
     return $this->advertisedId;
   }
+  /**
+   * @param Google_Service_Proximitybeacon_AttachmentInfo
+   */
   public function setAttachments($attachments)
   {
     $this->attachments = $attachments;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_AttachmentInfo
+   */
   public function getAttachments()
   {
     return $this->attachments;

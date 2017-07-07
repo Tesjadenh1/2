@@ -21,10 +21,16 @@ class Google_Service_Proximitybeacon_GetInfoForObservedBeaconsResponse extends G
   protected $beaconsType = 'Google_Service_Proximitybeacon_BeaconInfo';
   protected $beaconsDataType = 'array';
 
+  /**
+   * @param Google_Service_Proximitybeacon_BeaconInfo
+   */
   public function setBeacons($beacons)
   {
     $this->beacons = $beacons;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_BeaconInfo
+   */
   public function getBeacons()
   {
     return $this->beacons;

@@ -39,10 +39,16 @@ class Google_Service_Proximitybeacon_Diagnostics extends Google_Collection
   {
     return $this->beaconName;
   }
+  /**
+   * @param Google_Service_Proximitybeacon_Date
+   */
   public function setEstimatedLowBatteryDate(Google_Service_Proximitybeacon_Date $estimatedLowBatteryDate)
   {
     $this->estimatedLowBatteryDate = $estimatedLowBatteryDate;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_Date
+   */
   public function getEstimatedLowBatteryDate()
   {
     return $this->estimatedLowBatteryDate;

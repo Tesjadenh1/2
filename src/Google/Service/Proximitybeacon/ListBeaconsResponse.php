@@ -23,10 +23,16 @@ class Google_Service_Proximitybeacon_ListBeaconsResponse extends Google_Collecti
   public $nextPageToken;
   public $totalCount;
 
+  /**
+   * @param Google_Service_Proximitybeacon_Beacon
+   */
   public function setBeacons($beacons)
   {
     $this->beacons = $beacons;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_Beacon
+   */
   public function getBeacons()
   {
     return $this->beacons;

@@ -30,10 +30,16 @@ class Google_Service_Proximitybeacon_GetInfoForObservedBeaconsRequest extends Go
   {
     return $this->namespacedTypes;
   }
+  /**
+   * @param Google_Service_Proximitybeacon_Observation
+   */
   public function setObservations($observations)
   {
     $this->observations = $observations;
   }
+  /**
+   * @return Google_Service_Proximitybeacon_Observation
+   */
   public function getObservations()
   {
     return $this->observations;
