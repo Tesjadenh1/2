@@ -30,10 +30,16 @@ class Google_Service_FirebaseRules_ListRulesetsResponse extends Google_Collectio
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_FirebaseRules_Ruleset
+   */
   public function setRulesets($rulesets)
   {
     $this->rulesets = $rulesets;
   }
+  /**
+   * @return Google_Service_FirebaseRules_Ruleset
+   */
   public function getRulesets()
   {
     return $this->rulesets;

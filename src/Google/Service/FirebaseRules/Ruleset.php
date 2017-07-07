@@ -38,10 +38,16 @@ class Google_Service_FirebaseRules_Ruleset extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_FirebaseRules_Source
+   */
   public function setSource(Google_Service_FirebaseRules_Source $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_FirebaseRules_Source
+   */
   public function getSource()
   {
     return $this->source;

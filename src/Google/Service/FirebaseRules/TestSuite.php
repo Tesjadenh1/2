@@ -21,10 +21,16 @@ class Google_Service_FirebaseRules_TestSuite extends Google_Collection
   protected $testCasesType = 'Google_Service_FirebaseRules_TestCase';
   protected $testCasesDataType = 'array';
 
+  /**
+   * @param Google_Service_FirebaseRules_TestCase
+   */
   public function setTestCases($testCases)
   {
     $this->testCases = $testCases;
   }
+  /**
+   * @return Google_Service_FirebaseRules_TestCase
+   */
   public function getTestCases()
   {
     return $this->testCases;

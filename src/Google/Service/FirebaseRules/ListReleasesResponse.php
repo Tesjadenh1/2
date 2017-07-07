@@ -30,10 +30,16 @@ class Google_Service_FirebaseRules_ListReleasesResponse extends Google_Collectio
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_FirebaseRules_Release
+   */
   public function setReleases($releases)
   {
     $this->releases = $releases;
   }
+  /**
+   * @return Google_Service_FirebaseRules_Release
+   */
   public function getReleases()
   {
     return $this->releases;

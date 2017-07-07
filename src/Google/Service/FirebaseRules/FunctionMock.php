@@ -24,10 +24,16 @@ class Google_Service_FirebaseRules_FunctionMock extends Google_Collection
   protected $resultType = 'Google_Service_FirebaseRules_Result';
   protected $resultDataType = '';
 
+  /**
+   * @param Google_Service_FirebaseRules_Arg
+   */
   public function setArgs($args)
   {
     $this->args = $args;
   }
+  /**
+   * @return Google_Service_FirebaseRules_Arg
+   */
   public function getArgs()
   {
     return $this->args;
@@ -40,10 +46,16 @@ class Google_Service_FirebaseRules_FunctionMock extends Google_Collection
   {
     return $this->function;
   }
+  /**
+   * @param Google_Service_FirebaseRules_Result
+   */
   public function setResult(Google_Service_FirebaseRules_Result $result)
   {
     $this->result = $result;
   }
+  /**
+   * @return Google_Service_FirebaseRules_Result
+   */
   public function getResult()
   {
     return $this->result;

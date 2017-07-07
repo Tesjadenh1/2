@@ -21,10 +21,16 @@ class Google_Service_FirebaseRules_Arg extends Google_Model
   protected $anyValueDataType = '';
   public $exactValue;
 
+  /**
+   * @param Google_Service_FirebaseRules_FirebaserulesEmpty
+   */
   public function setAnyValue(Google_Service_FirebaseRules_FirebaserulesEmpty $anyValue)
   {
     $this->anyValue = $anyValue;
   }
+  /**
+   * @return Google_Service_FirebaseRules_FirebaserulesEmpty
+   */
   public function getAnyValue()
   {
     return $this->anyValue;

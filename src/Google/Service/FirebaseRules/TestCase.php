@@ -32,10 +32,16 @@ class Google_Service_FirebaseRules_TestCase extends Google_Collection
   {
     return $this->expectation;
   }
+  /**
+   * @param Google_Service_FirebaseRules_FunctionMock
+   */
   public function setFunctionMocks($functionMocks)
   {
     $this->functionMocks = $functionMocks;
   }
+  /**
+   * @return Google_Service_FirebaseRules_FunctionMock
+   */
   public function getFunctionMocks()
   {
     return $this->functionMocks;

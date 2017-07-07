@@ -38,10 +38,16 @@ class Google_Service_FirebaseRules_Issue extends Google_Model
   {
     return $this->severity;
   }
+  /**
+   * @param Google_Service_FirebaseRules_SourcePosition
+   */
   public function setSourcePosition(Google_Service_FirebaseRules_SourcePosition $sourcePosition)
   {
     $this->sourcePosition = $sourcePosition;
   }
+  /**
+   * @return Google_Service_FirebaseRules_SourcePosition
+   */
   public function getSourcePosition()
   {
     return $this->sourcePosition;

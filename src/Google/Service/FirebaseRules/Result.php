@@ -21,10 +21,16 @@ class Google_Service_FirebaseRules_Result extends Google_Model
   protected $undefinedDataType = '';
   public $value;
 
+  /**
+   * @param Google_Service_FirebaseRules_FirebaserulesEmpty
+   */
   public function setUndefined(Google_Service_FirebaseRules_FirebaserulesEmpty $undefined)
   {
     $this->undefined = $undefined;
   }
+  /**
+   * @return Google_Service_FirebaseRules_FirebaserulesEmpty
+   */
   public function getUndefined()
   {
     return $this->undefined;
