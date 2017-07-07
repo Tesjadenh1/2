@@ -22,10 +22,16 @@ class Google_Service_Monitoring_ListMetricDescriptorsResponse extends Google_Col
   protected $metricDescriptorsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Monitoring_MetricDescriptor
+   */
   public function setMetricDescriptors($metricDescriptors)
   {
     $this->metricDescriptors = $metricDescriptors;
   }
+  /**
+   * @return Google_Service_Monitoring_MetricDescriptor
+   */
   public function getMetricDescriptors()
   {
     return $this->metricDescriptors;

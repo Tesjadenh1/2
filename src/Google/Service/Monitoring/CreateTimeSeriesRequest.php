@@ -21,10 +21,16 @@ class Google_Service_Monitoring_CreateTimeSeriesRequest extends Google_Collectio
   protected $timeSeriesType = 'Google_Service_Monitoring_TimeSeries';
   protected $timeSeriesDataType = 'array';
 
+  /**
+   * @param Google_Service_Monitoring_TimeSeries
+   */
   public function setTimeSeries($timeSeries)
   {
     $this->timeSeries = $timeSeries;
   }
+  /**
+   * @return Google_Service_Monitoring_TimeSeries
+   */
   public function getTimeSeries()
   {
     return $this->timeSeries;

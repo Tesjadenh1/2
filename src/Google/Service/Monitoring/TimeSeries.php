@@ -27,10 +27,16 @@ class Google_Service_Monitoring_TimeSeries extends Google_Collection
   protected $resourceDataType = '';
   public $valueType;
 
+  /**
+   * @param Google_Service_Monitoring_Metric
+   */
   public function setMetric(Google_Service_Monitoring_Metric $metric)
   {
     $this->metric = $metric;
   }
+  /**
+   * @return Google_Service_Monitoring_Metric
+   */
   public function getMetric()
   {
     return $this->metric;
@@ -43,18 +49,30 @@ class Google_Service_Monitoring_TimeSeries extends Google_Collection
   {
     return $this->metricKind;
   }
+  /**
+   * @param Google_Service_Monitoring_Point
+   */
   public function setPoints($points)
   {
     $this->points = $points;
   }
+  /**
+   * @return Google_Service_Monitoring_Point
+   */
   public function getPoints()
   {
     return $this->points;
   }
+  /**
+   * @param Google_Service_Monitoring_MonitoredResource
+   */
   public function setResource(Google_Service_Monitoring_MonitoredResource $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_Monitoring_MonitoredResource
+   */
   public function getResource()
   {
     return $this->resource;

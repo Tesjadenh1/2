@@ -38,10 +38,16 @@ class Google_Service_Monitoring_CollectdValue extends Google_Model
   {
     return $this->dataSourceType;
   }
+  /**
+   * @param Google_Service_Monitoring_TypedValue
+   */
   public function setValue(Google_Service_Monitoring_TypedValue $value)
   {
     $this->value = $value;
   }
+  /**
+   * @return Google_Service_Monitoring_TypedValue
+   */
   public function getValue()
   {
     return $this->value;

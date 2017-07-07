@@ -35,10 +35,16 @@ class Google_Service_Monitoring_Distribution extends Google_Collection
   {
     return $this->bucketCounts;
   }
+  /**
+   * @param Google_Service_Monitoring_BucketOptions
+   */
   public function setBucketOptions(Google_Service_Monitoring_BucketOptions $bucketOptions)
   {
     $this->bucketOptions = $bucketOptions;
   }
+  /**
+   * @return Google_Service_Monitoring_BucketOptions
+   */
   public function getBucketOptions()
   {
     return $this->bucketOptions;
@@ -59,10 +65,16 @@ class Google_Service_Monitoring_Distribution extends Google_Collection
   {
     return $this->mean;
   }
+  /**
+   * @param Google_Service_Monitoring_Range
+   */
   public function setRange(Google_Service_Monitoring_Range $range)
   {
     $this->range = $range;
   }
+  /**
+   * @return Google_Service_Monitoring_Range
+   */
   public function getRange()
   {
     return $this->range;

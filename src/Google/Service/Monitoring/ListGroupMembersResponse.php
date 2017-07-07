@@ -23,10 +23,16 @@ class Google_Service_Monitoring_ListGroupMembersResponse extends Google_Collecti
   public $nextPageToken;
   public $totalSize;
 
+  /**
+   * @param Google_Service_Monitoring_MonitoredResource
+   */
   public function setMembers($members)
   {
     $this->members = $members;
   }
+  /**
+   * @return Google_Service_Monitoring_MonitoredResource
+   */
   public function getMembers()
   {
     return $this->members;

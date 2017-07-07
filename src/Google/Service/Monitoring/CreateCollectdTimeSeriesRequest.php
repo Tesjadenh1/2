@@ -24,10 +24,16 @@ class Google_Service_Monitoring_CreateCollectdTimeSeriesRequest extends Google_C
   protected $resourceType = 'Google_Service_Monitoring_MonitoredResource';
   protected $resourceDataType = '';
 
+  /**
+   * @param Google_Service_Monitoring_CollectdPayload
+   */
   public function setCollectdPayloads($collectdPayloads)
   {
     $this->collectdPayloads = $collectdPayloads;
   }
+  /**
+   * @return Google_Service_Monitoring_CollectdPayload
+   */
   public function getCollectdPayloads()
   {
     return $this->collectdPayloads;
@@ -40,10 +46,16 @@ class Google_Service_Monitoring_CreateCollectdTimeSeriesRequest extends Google_C
   {
     return $this->collectdVersion;
   }
+  /**
+   * @param Google_Service_Monitoring_MonitoredResource
+   */
   public function setResource(Google_Service_Monitoring_MonitoredResource $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_Monitoring_MonitoredResource
+   */
   public function getResource()
   {
     return $this->resource;

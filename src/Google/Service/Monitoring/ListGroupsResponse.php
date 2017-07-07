@@ -22,10 +22,16 @@ class Google_Service_Monitoring_ListGroupsResponse extends Google_Collection
   protected $groupDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Monitoring_Group
+   */
   public function setGroup($group)
   {
     $this->group = $group;
   }
+  /**
+   * @return Google_Service_Monitoring_Group
+   */
   public function getGroup()
   {
     return $this->group;

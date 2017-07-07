@@ -32,10 +32,16 @@ class Google_Service_Monitoring_TypedValue extends Google_Model
   {
     return $this->boolValue;
   }
+  /**
+   * @param Google_Service_Monitoring_Distribution
+   */
   public function setDistributionValue(Google_Service_Monitoring_Distribution $distributionValue)
   {
     $this->distributionValue = $distributionValue;
   }
+  /**
+   * @return Google_Service_Monitoring_Distribution
+   */
   public function getDistributionValue()
   {
     return $this->distributionValue;
