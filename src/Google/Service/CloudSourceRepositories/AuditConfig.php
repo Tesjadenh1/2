@@ -23,10 +23,16 @@ class Google_Service_CloudSourceRepositories_AuditConfig extends Google_Collecti
   public $exemptedMembers;
   public $service;
 
+  /**
+   * @param Google_Service_CloudSourceRepositories_AuditLogConfig
+   */
   public function setAuditLogConfigs($auditLogConfigs)
   {
     $this->auditLogConfigs = $auditLogConfigs;
   }
+  /**
+   * @return Google_Service_CloudSourceRepositories_AuditLogConfig
+   */
   public function getAuditLogConfigs()
   {
     return $this->auditLogConfigs;

@@ -28,18 +28,30 @@ class Google_Service_CloudSourceRepositories_Policy extends Google_Collection
   protected $rulesDataType = 'array';
   public $version;
 
+  /**
+   * @param Google_Service_CloudSourceRepositories_AuditConfig
+   */
   public function setAuditConfigs($auditConfigs)
   {
     $this->auditConfigs = $auditConfigs;
   }
+  /**
+   * @return Google_Service_CloudSourceRepositories_AuditConfig
+   */
   public function getAuditConfigs()
   {
     return $this->auditConfigs;
   }
+  /**
+   * @param Google_Service_CloudSourceRepositories_Binding
+   */
   public function setBindings($bindings)
   {
     $this->bindings = $bindings;
   }
+  /**
+   * @return Google_Service_CloudSourceRepositories_Binding
+   */
   public function getBindings()
   {
     return $this->bindings;
@@ -60,10 +72,16 @@ class Google_Service_CloudSourceRepositories_Policy extends Google_Collection
   {
     return $this->iamOwned;
   }
+  /**
+   * @param Google_Service_CloudSourceRepositories_Rule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_CloudSourceRepositories_Rule
+   */
   public function getRules()
   {
     return $this->rules;

@@ -21,10 +21,16 @@ class Google_Service_CloudSourceRepositories_SetIamPolicyRequest extends Google_
   protected $policyDataType = '';
   public $updateMask;
 
+  /**
+   * @param Google_Service_CloudSourceRepositories_Policy
+   */
   public function setPolicy(Google_Service_CloudSourceRepositories_Policy $policy)
   {
     $this->policy = $policy;
   }
+  /**
+   * @return Google_Service_CloudSourceRepositories_Policy
+   */
   public function getPolicy()
   {
     return $this->policy;

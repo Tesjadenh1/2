@@ -23,10 +23,16 @@ class Google_Service_CloudSourceRepositories_Repo extends Google_Model
   public $size;
   public $url;
 
+  /**
+   * @param Google_Service_CloudSourceRepositories_MirrorConfig
+   */
   public function setMirrorConfig(Google_Service_CloudSourceRepositories_MirrorConfig $mirrorConfig)
   {
     $this->mirrorConfig = $mirrorConfig;
   }
+  /**
+   * @return Google_Service_CloudSourceRepositories_MirrorConfig
+   */
   public function getMirrorConfig()
   {
     return $this->mirrorConfig;
