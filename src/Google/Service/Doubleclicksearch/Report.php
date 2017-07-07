@@ -30,10 +30,16 @@ class Google_Service_Doubleclicksearch_Report extends Google_Collection
   public $statisticsCurrencyCode;
   public $statisticsTimeZone;
 
+  /**
+   * @param Google_Service_Doubleclicksearch_ReportFiles
+   */
   public function setFiles($files)
   {
     $this->files = $files;
   }
+  /**
+   * @return Google_Service_Doubleclicksearch_ReportFiles
+   */
   public function getFiles()
   {
     return $this->files;
@@ -62,10 +68,16 @@ class Google_Service_Doubleclicksearch_Report extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Doubleclicksearch_ReportRequest
+   */
   public function setRequest(Google_Service_Doubleclicksearch_ReportRequest $request)
   {
     $this->request = $request;
   }
+  /**
+   * @return Google_Service_Doubleclicksearch_ReportRequest
+   */
   public function getRequest()
   {
     return $this->request;
