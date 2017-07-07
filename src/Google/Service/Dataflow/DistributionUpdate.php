@@ -30,42 +30,72 @@ class Google_Service_Dataflow_DistributionUpdate extends Google_Collection
   protected $sumDataType = '';
   public $sumOfSquares;
 
+  /**
+   * @param Google_Service_Dataflow_SplitInt64
+   */
   public function setCount(Google_Service_Dataflow_SplitInt64 $count)
   {
     $this->count = $count;
   }
+  /**
+   * @return Google_Service_Dataflow_SplitInt64
+   */
   public function getCount()
   {
     return $this->count;
   }
+  /**
+   * @param Google_Service_Dataflow_LogBucket
+   */
   public function setLogBuckets($logBuckets)
   {
     $this->logBuckets = $logBuckets;
   }
+  /**
+   * @return Google_Service_Dataflow_LogBucket
+   */
   public function getLogBuckets()
   {
     return $this->logBuckets;
   }
+  /**
+   * @param Google_Service_Dataflow_SplitInt64
+   */
   public function setMax(Google_Service_Dataflow_SplitInt64 $max)
   {
     $this->max = $max;
   }
+  /**
+   * @return Google_Service_Dataflow_SplitInt64
+   */
   public function getMax()
   {
     return $this->max;
   }
+  /**
+   * @param Google_Service_Dataflow_SplitInt64
+   */
   public function setMin(Google_Service_Dataflow_SplitInt64 $min)
   {
     $this->min = $min;
   }
+  /**
+   * @return Google_Service_Dataflow_SplitInt64
+   */
   public function getMin()
   {
     return $this->min;
   }
+  /**
+   * @param Google_Service_Dataflow_SplitInt64
+   */
   public function setSum(Google_Service_Dataflow_SplitInt64 $sum)
   {
     $this->sum = $sum;
   }
+  /**
+   * @return Google_Service_Dataflow_SplitInt64
+   */
   public function getSum()
   {
     return $this->sum;

@@ -49,10 +49,16 @@ class Google_Service_Dataflow_Source extends Google_Collection
   {
     return $this->doesNotNeedSplitting;
   }
+  /**
+   * @param Google_Service_Dataflow_SourceMetadata
+   */
   public function setMetadata(Google_Service_Dataflow_SourceMetadata $metadata)
   {
     $this->metadata = $metadata;
   }
+  /**
+   * @return Google_Service_Dataflow_SourceMetadata
+   */
   public function getMetadata()
   {
     return $this->metadata;

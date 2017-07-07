@@ -21,10 +21,16 @@ class Google_Service_Dataflow_LeaseWorkItemResponse extends Google_Collection
   protected $workItemsType = 'Google_Service_Dataflow_WorkItem';
   protected $workItemsDataType = 'array';
 
+  /**
+   * @param Google_Service_Dataflow_WorkItem
+   */
   public function setWorkItems($workItems)
   {
     $this->workItems = $workItems;
   }
+  /**
+   * @return Google_Service_Dataflow_WorkItem
+   */
   public function getWorkItems()
   {
     return $this->workItems;

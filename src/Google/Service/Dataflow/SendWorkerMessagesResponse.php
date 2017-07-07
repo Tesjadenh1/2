@@ -21,10 +21,16 @@ class Google_Service_Dataflow_SendWorkerMessagesResponse extends Google_Collecti
   protected $workerMessageResponsesType = 'Google_Service_Dataflow_WorkerMessageResponse';
   protected $workerMessageResponsesDataType = 'array';
 
+  /**
+   * @param Google_Service_Dataflow_WorkerMessageResponse
+   */
   public function setWorkerMessageResponses($workerMessageResponses)
   {
     $this->workerMessageResponses = $workerMessageResponses;
   }
+  /**
+   * @return Google_Service_Dataflow_WorkerMessageResponse
+   */
   public function getWorkerMessageResponses()
   {
     return $this->workerMessageResponses;

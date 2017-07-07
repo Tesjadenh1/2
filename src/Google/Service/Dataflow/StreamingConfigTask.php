@@ -24,10 +24,16 @@ class Google_Service_Dataflow_StreamingConfigTask extends Google_Collection
   public $windmillServiceEndpoint;
   public $windmillServicePort;
 
+  /**
+   * @param Google_Service_Dataflow_StreamingComputationConfig
+   */
   public function setStreamingComputationConfigs($streamingComputationConfigs)
   {
     $this->streamingComputationConfigs = $streamingComputationConfigs;
   }
+  /**
+   * @return Google_Service_Dataflow_StreamingComputationConfig
+   */
   public function getStreamingComputationConfigs()
   {
     return $this->streamingComputationConfigs;

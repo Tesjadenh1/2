@@ -22,18 +22,30 @@ class Google_Service_Dataflow_SourceSplitRequest extends Google_Model
   protected $sourceType = 'Google_Service_Dataflow_Source';
   protected $sourceDataType = '';
 
+  /**
+   * @param Google_Service_Dataflow_SourceSplitOptions
+   */
   public function setOptions(Google_Service_Dataflow_SourceSplitOptions $options)
   {
     $this->options = $options;
   }
+  /**
+   * @return Google_Service_Dataflow_SourceSplitOptions
+   */
   public function getOptions()
   {
     return $this->options;
   }
+  /**
+   * @param Google_Service_Dataflow_Source
+   */
   public function setSource(Google_Service_Dataflow_Source $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Dataflow_Source
+   */
   public function getSource()
   {
     return $this->source;

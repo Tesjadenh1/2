@@ -27,10 +27,16 @@ class Google_Service_Dataflow_PartialGroupByKeyInstruction extends Google_Collec
   protected $sideInputsDataType = 'array';
   public $valueCombiningFn;
 
+  /**
+   * @param Google_Service_Dataflow_InstructionInput
+   */
   public function setInput(Google_Service_Dataflow_InstructionInput $input)
   {
     $this->input = $input;
   }
+  /**
+   * @return Google_Service_Dataflow_InstructionInput
+   */
   public function getInput()
   {
     return $this->input;
@@ -59,10 +65,16 @@ class Google_Service_Dataflow_PartialGroupByKeyInstruction extends Google_Collec
   {
     return $this->originalCombineValuesStepName;
   }
+  /**
+   * @param Google_Service_Dataflow_SideInputInfo
+   */
   public function setSideInputs($sideInputs)
   {
     $this->sideInputs = $sideInputs;
   }
+  /**
+   * @return Google_Service_Dataflow_SideInputInfo
+   */
   public function getSideInputs()
   {
     return $this->sideInputs;

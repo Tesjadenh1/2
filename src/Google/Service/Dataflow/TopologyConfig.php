@@ -26,18 +26,30 @@ class Google_Service_Dataflow_TopologyConfig extends Google_Collection
   public $persistentStateVersion;
   public $userStageToComputationNameMap;
 
+  /**
+   * @param Google_Service_Dataflow_ComputationTopology
+   */
   public function setComputations($computations)
   {
     $this->computations = $computations;
   }
+  /**
+   * @return Google_Service_Dataflow_ComputationTopology
+   */
   public function getComputations()
   {
     return $this->computations;
   }
+  /**
+   * @param Google_Service_Dataflow_DataDiskAssignment
+   */
   public function setDataDiskAssignments($dataDiskAssignments)
   {
     $this->dataDiskAssignments = $dataDiskAssignments;
   }
+  /**
+   * @return Google_Service_Dataflow_DataDiskAssignment
+   */
   public function getDataDiskAssignments()
   {
     return $this->dataDiskAssignments;

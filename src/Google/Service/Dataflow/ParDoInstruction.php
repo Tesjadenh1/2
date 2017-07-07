@@ -27,18 +27,30 @@ class Google_Service_Dataflow_ParDoInstruction extends Google_Collection
   protected $sideInputsDataType = 'array';
   public $userFn;
 
+  /**
+   * @param Google_Service_Dataflow_InstructionInput
+   */
   public function setInput(Google_Service_Dataflow_InstructionInput $input)
   {
     $this->input = $input;
   }
+  /**
+   * @return Google_Service_Dataflow_InstructionInput
+   */
   public function getInput()
   {
     return $this->input;
   }
+  /**
+   * @param Google_Service_Dataflow_MultiOutputInfo
+   */
   public function setMultiOutputInfos($multiOutputInfos)
   {
     $this->multiOutputInfos = $multiOutputInfos;
   }
+  /**
+   * @return Google_Service_Dataflow_MultiOutputInfo
+   */
   public function getMultiOutputInfos()
   {
     return $this->multiOutputInfos;
@@ -51,10 +63,16 @@ class Google_Service_Dataflow_ParDoInstruction extends Google_Collection
   {
     return $this->numOutputs;
   }
+  /**
+   * @param Google_Service_Dataflow_SideInputInfo
+   */
   public function setSideInputs($sideInputs)
   {
     $this->sideInputs = $sideInputs;
   }
+  /**
+   * @return Google_Service_Dataflow_SideInputInfo
+   */
   public function getSideInputs()
   {
     return $this->sideInputs;

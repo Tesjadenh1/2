@@ -22,18 +22,30 @@ class Google_Service_Dataflow_SourceOperationResponse extends Google_Model
   protected $splitType = 'Google_Service_Dataflow_SourceSplitResponse';
   protected $splitDataType = '';
 
+  /**
+   * @param Google_Service_Dataflow_SourceGetMetadataResponse
+   */
   public function setGetMetadata(Google_Service_Dataflow_SourceGetMetadataResponse $getMetadata)
   {
     $this->getMetadata = $getMetadata;
   }
+  /**
+   * @return Google_Service_Dataflow_SourceGetMetadataResponse
+   */
   public function getGetMetadata()
   {
     return $this->getMetadata;
   }
+  /**
+   * @param Google_Service_Dataflow_SourceSplitResponse
+   */
   public function setSplit(Google_Service_Dataflow_SourceSplitResponse $split)
   {
     $this->split = $split;
   }
+  /**
+   * @return Google_Service_Dataflow_SourceSplitResponse
+   */
   public function getSplit()
   {
     return $this->split;

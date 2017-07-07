@@ -27,10 +27,16 @@ class Google_Service_Dataflow_SeqMapTask extends Google_Collection
   public $systemName;
   public $userFn;
 
+  /**
+   * @param Google_Service_Dataflow_SideInputInfo
+   */
   public function setInputs($inputs)
   {
     $this->inputs = $inputs;
   }
+  /**
+   * @return Google_Service_Dataflow_SideInputInfo
+   */
   public function getInputs()
   {
     return $this->inputs;
@@ -43,10 +49,16 @@ class Google_Service_Dataflow_SeqMapTask extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Dataflow_SeqMapTaskOutputInfo
+   */
   public function setOutputInfos($outputInfos)
   {
     $this->outputInfos = $outputInfos;
   }
+  /**
+   * @return Google_Service_Dataflow_SeqMapTaskOutputInfo
+   */
   public function getOutputInfos()
   {
     return $this->outputInfos;

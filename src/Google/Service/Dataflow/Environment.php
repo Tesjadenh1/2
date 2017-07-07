@@ -102,10 +102,16 @@ class Google_Service_Dataflow_Environment extends Google_Collection
   {
     return $this->version;
   }
+  /**
+   * @param Google_Service_Dataflow_WorkerPool
+   */
   public function setWorkerPools($workerPools)
   {
     $this->workerPools = $workerPools;
   }
+  /**
+   * @return Google_Service_Dataflow_WorkerPool
+   */
   public function getWorkerPools()
   {
     return $this->workerPools;

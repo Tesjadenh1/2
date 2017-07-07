@@ -21,10 +21,16 @@ class Google_Service_Dataflow_FloatingPointMean extends Google_Model
   protected $countDataType = '';
   public $sum;
 
+  /**
+   * @param Google_Service_Dataflow_SplitInt64
+   */
   public function setCount(Google_Service_Dataflow_SplitInt64 $count)
   {
     $this->count = $count;
   }
+  /**
+   * @return Google_Service_Dataflow_SplitInt64
+   */
   public function getCount()
   {
     return $this->count;

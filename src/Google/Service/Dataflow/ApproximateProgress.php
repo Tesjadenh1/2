@@ -30,10 +30,16 @@ class Google_Service_Dataflow_ApproximateProgress extends Google_Model
   {
     return $this->percentComplete;
   }
+  /**
+   * @param Google_Service_Dataflow_Position
+   */
   public function setPosition(Google_Service_Dataflow_Position $position)
   {
     $this->position = $position;
   }
+  /**
+   * @return Google_Service_Dataflow_Position
+   */
   public function getPosition()
   {
     return $this->position;

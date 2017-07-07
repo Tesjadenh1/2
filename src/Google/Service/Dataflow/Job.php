@@ -76,18 +76,30 @@ class Google_Service_Dataflow_Job extends Google_Collection
   {
     return $this->currentStateTime;
   }
+  /**
+   * @param Google_Service_Dataflow_Environment
+   */
   public function setEnvironment(Google_Service_Dataflow_Environment $environment)
   {
     $this->environment = $environment;
   }
+  /**
+   * @return Google_Service_Dataflow_Environment
+   */
   public function getEnvironment()
   {
     return $this->environment;
   }
+  /**
+   * @param Google_Service_Dataflow_JobExecutionInfo
+   */
   public function setExecutionInfo(Google_Service_Dataflow_JobExecutionInfo $executionInfo)
   {
     $this->executionInfo = $executionInfo;
   }
+  /**
+   * @return Google_Service_Dataflow_JobExecutionInfo
+   */
   public function getExecutionInfo()
   {
     return $this->executionInfo;
@@ -124,10 +136,16 @@ class Google_Service_Dataflow_Job extends Google_Collection
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Dataflow_PipelineDescription
+   */
   public function setPipelineDescription(Google_Service_Dataflow_PipelineDescription $pipelineDescription)
   {
     $this->pipelineDescription = $pipelineDescription;
   }
+  /**
+   * @return Google_Service_Dataflow_PipelineDescription
+   */
   public function getPipelineDescription()
   {
     return $this->pipelineDescription;
@@ -164,18 +182,30 @@ class Google_Service_Dataflow_Job extends Google_Collection
   {
     return $this->requestedState;
   }
+  /**
+   * @param Google_Service_Dataflow_ExecutionStageState
+   */
   public function setStageStates($stageStates)
   {
     $this->stageStates = $stageStates;
   }
+  /**
+   * @return Google_Service_Dataflow_ExecutionStageState
+   */
   public function getStageStates()
   {
     return $this->stageStates;
   }
+  /**
+   * @param Google_Service_Dataflow_Step
+   */
   public function setSteps($steps)
   {
     $this->steps = $steps;
   }
+  /**
+   * @return Google_Service_Dataflow_Step
+   */
   public function getSteps()
   {
     return $this->steps;

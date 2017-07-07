@@ -30,10 +30,16 @@ class Google_Service_Dataflow_StreamingComputationRanges extends Google_Collecti
   {
     return $this->computationId;
   }
+  /**
+   * @param Google_Service_Dataflow_KeyRangeDataDiskAssignment
+   */
   public function setRangeAssignments($rangeAssignments)
   {
     $this->rangeAssignments = $rangeAssignments;
   }
+  /**
+   * @return Google_Service_Dataflow_KeyRangeDataDiskAssignment
+   */
   public function getRangeAssignments()
   {
     return $this->rangeAssignments;

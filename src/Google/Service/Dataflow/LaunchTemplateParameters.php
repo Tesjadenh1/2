@@ -22,10 +22,16 @@ class Google_Service_Dataflow_LaunchTemplateParameters extends Google_Model
   public $jobName;
   public $parameters;
 
+  /**
+   * @param Google_Service_Dataflow_RuntimeEnvironment
+   */
   public function setEnvironment(Google_Service_Dataflow_RuntimeEnvironment $environment)
   {
     $this->environment = $environment;
   }
+  /**
+   * @return Google_Service_Dataflow_RuntimeEnvironment
+   */
   public function getEnvironment()
   {
     return $this->environment;

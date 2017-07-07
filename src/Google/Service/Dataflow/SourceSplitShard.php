@@ -29,10 +29,16 @@ class Google_Service_Dataflow_SourceSplitShard extends Google_Model
   {
     return $this->derivationMode;
   }
+  /**
+   * @param Google_Service_Dataflow_Source
+   */
   public function setSource(Google_Service_Dataflow_Source $source)
   {
     $this->source = $source;
   }
+  /**
+   * @return Google_Service_Dataflow_Source
+   */
   public function getSource()
   {
     return $this->source;

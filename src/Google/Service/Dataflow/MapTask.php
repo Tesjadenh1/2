@@ -23,10 +23,16 @@ class Google_Service_Dataflow_MapTask extends Google_Collection
   public $stageName;
   public $systemName;
 
+  /**
+   * @param Google_Service_Dataflow_ParallelInstruction
+   */
   public function setInstructions($instructions)
   {
     $this->instructions = $instructions;
   }
+  /**
+   * @return Google_Service_Dataflow_ParallelInstruction
+   */
   public function getInstructions()
   {
     return $this->instructions;

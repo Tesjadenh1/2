@@ -32,10 +32,16 @@ class Google_Service_Dataflow_StreamingComputationConfig extends Google_Collecti
   {
     return $this->computationId;
   }
+  /**
+   * @param Google_Service_Dataflow_ParallelInstruction
+   */
   public function setInstructions($instructions)
   {
     $this->instructions = $instructions;
   }
+  /**
+   * @return Google_Service_Dataflow_ParallelInstruction
+   */
   public function getInstructions()
   {
     return $this->instructions;

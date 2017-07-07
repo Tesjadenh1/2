@@ -21,10 +21,16 @@ class Google_Service_Dataflow_ResourceUtilizationReport extends Google_Collectio
   protected $cpuTimeType = 'Google_Service_Dataflow_CPUTime';
   protected $cpuTimeDataType = 'array';
 
+  /**
+   * @param Google_Service_Dataflow_CPUTime
+   */
   public function setCpuTime($cpuTime)
   {
     $this->cpuTime = $cpuTime;
   }
+  /**
+   * @return Google_Service_Dataflow_CPUTime
+   */
   public function getCpuTime()
   {
     return $this->cpuTime;

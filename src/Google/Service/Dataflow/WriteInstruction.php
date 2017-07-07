@@ -22,18 +22,30 @@ class Google_Service_Dataflow_WriteInstruction extends Google_Model
   protected $sinkType = 'Google_Service_Dataflow_Sink';
   protected $sinkDataType = '';
 
+  /**
+   * @param Google_Service_Dataflow_InstructionInput
+   */
   public function setInput(Google_Service_Dataflow_InstructionInput $input)
   {
     $this->input = $input;
   }
+  /**
+   * @return Google_Service_Dataflow_InstructionInput
+   */
   public function getInput()
   {
     return $this->input;
   }
+  /**
+   * @param Google_Service_Dataflow_Sink
+   */
   public function setSink(Google_Service_Dataflow_Sink $sink)
   {
     $this->sink = $sink;
   }
+  /**
+   * @return Google_Service_Dataflow_Sink
+   */
   public function getSink()
   {
     return $this->sink;

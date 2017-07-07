@@ -21,10 +21,16 @@ class Google_Service_Dataflow_IntegerList extends Google_Collection
   protected $elementsType = 'Google_Service_Dataflow_SplitInt64';
   protected $elementsDataType = 'array';
 
+  /**
+   * @param Google_Service_Dataflow_SplitInt64
+   */
   public function setElements($elements)
   {
     $this->elements = $elements;
   }
+  /**
+   * @return Google_Service_Dataflow_SplitInt64
+   */
   public function getElements()
   {
     return $this->elements;

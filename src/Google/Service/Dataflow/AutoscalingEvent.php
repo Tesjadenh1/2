@@ -32,10 +32,16 @@ class Google_Service_Dataflow_AutoscalingEvent extends Google_Model
   {
     return $this->currentNumWorkers;
   }
+  /**
+   * @param Google_Service_Dataflow_StructuredMessage
+   */
   public function setDescription(Google_Service_Dataflow_StructuredMessage $description)
   {
     $this->description = $description;
   }
+  /**
+   * @return Google_Service_Dataflow_StructuredMessage
+   */
   public function getDescription()
   {
     return $this->description;

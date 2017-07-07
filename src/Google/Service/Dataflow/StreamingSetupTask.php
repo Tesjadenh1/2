@@ -39,10 +39,16 @@ class Google_Service_Dataflow_StreamingSetupTask extends Google_Model
   {
     return $this->receiveWorkPort;
   }
+  /**
+   * @param Google_Service_Dataflow_TopologyConfig
+   */
   public function setStreamingComputationTopology(Google_Service_Dataflow_TopologyConfig $streamingComputationTopology)
   {
     $this->streamingComputationTopology = $streamingComputationTopology;
   }
+  /**
+   * @return Google_Service_Dataflow_TopologyConfig
+   */
   public function getStreamingComputationTopology()
   {
     return $this->streamingComputationTopology;

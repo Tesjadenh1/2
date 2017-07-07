@@ -26,10 +26,16 @@ class Google_Service_Dataflow_TransformSummary extends Google_Collection
   public $name;
   public $outputCollectionName;
 
+  /**
+   * @param Google_Service_Dataflow_DisplayData
+   */
   public function setDisplayData($displayData)
   {
     $this->displayData = $displayData;
   }
+  /**
+   * @return Google_Service_Dataflow_DisplayData
+   */
   public function getDisplayData()
   {
     return $this->displayData;

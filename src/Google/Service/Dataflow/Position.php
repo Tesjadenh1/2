@@ -33,10 +33,16 @@ class Google_Service_Dataflow_Position extends Google_Model
   {
     return $this->byteOffset;
   }
+  /**
+   * @param Google_Service_Dataflow_ConcatPosition
+   */
   public function setConcatPosition(Google_Service_Dataflow_ConcatPosition $concatPosition)
   {
     $this->concatPosition = $concatPosition;
   }
+  /**
+   * @return Google_Service_Dataflow_ConcatPosition
+   */
   public function getConcatPosition()
   {
     return $this->concatPosition;

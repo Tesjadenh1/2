@@ -20,10 +20,16 @@ class Google_Service_Dataflow_LaunchTemplateResponse extends Google_Model
   protected $jobType = 'Google_Service_Dataflow_Job';
   protected $jobDataType = '';
 
+  /**
+   * @param Google_Service_Dataflow_Job
+   */
   public function setJob(Google_Service_Dataflow_Job $job)
   {
     $this->job = $job;
   }
+  /**
+   * @return Google_Service_Dataflow_Job
+   */
   public function getJob()
   {
     return $this->job;

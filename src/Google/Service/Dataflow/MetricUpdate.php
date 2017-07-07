@@ -77,10 +77,16 @@ class Google_Service_Dataflow_MetricUpdate extends Google_Model
   {
     return $this->meanSum;
   }
+  /**
+   * @param Google_Service_Dataflow_MetricStructuredName
+   */
   public function setName(Google_Service_Dataflow_MetricStructuredName $name)
   {
     $this->name = $name;
   }
+  /**
+   * @return Google_Service_Dataflow_MetricStructuredName
+   */
   public function getName()
   {
     return $this->name;
