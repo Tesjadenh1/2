@@ -22,10 +22,16 @@ class Google_Service_Logging_ListLogEntriesResponse extends Google_Collection
   protected $entriesDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Logging_LogEntry
+   */
   public function setEntries($entries)
   {
     $this->entries = $entries;
   }
+  /**
+   * @return Google_Service_Logging_LogEntry
+   */
   public function getEntries()
   {
     return $this->entries;

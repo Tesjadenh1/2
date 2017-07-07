@@ -36,10 +36,16 @@ class Google_Service_Logging_LogEntry extends Google_Model
   public $timestamp;
   public $trace;
 
+  /**
+   * @param Google_Service_Logging_HttpRequest
+   */
   public function setHttpRequest(Google_Service_Logging_HttpRequest $httpRequest)
   {
     $this->httpRequest = $httpRequest;
   }
+  /**
+   * @return Google_Service_Logging_HttpRequest
+   */
   public function getHttpRequest()
   {
     return $this->httpRequest;
@@ -76,10 +82,16 @@ class Google_Service_Logging_LogEntry extends Google_Model
   {
     return $this->logName;
   }
+  /**
+   * @param Google_Service_Logging_LogEntryOperation
+   */
   public function setOperation(Google_Service_Logging_LogEntryOperation $operation)
   {
     $this->operation = $operation;
   }
+  /**
+   * @return Google_Service_Logging_LogEntryOperation
+   */
   public function getOperation()
   {
     return $this->operation;
@@ -100,10 +112,16 @@ class Google_Service_Logging_LogEntry extends Google_Model
   {
     return $this->receiveTimestamp;
   }
+  /**
+   * @param Google_Service_Logging_MonitoredResource
+   */
   public function setResource(Google_Service_Logging_MonitoredResource $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_Logging_MonitoredResource
+   */
   public function getResource()
   {
     return $this->resource;
@@ -116,10 +134,16 @@ class Google_Service_Logging_LogEntry extends Google_Model
   {
     return $this->severity;
   }
+  /**
+   * @param Google_Service_Logging_LogEntrySourceLocation
+   */
   public function setSourceLocation(Google_Service_Logging_LogEntrySourceLocation $sourceLocation)
   {
     $this->sourceLocation = $sourceLocation;
   }
+  /**
+   * @return Google_Service_Logging_LogEntrySourceLocation
+   */
   public function getSourceLocation()
   {
     return $this->sourceLocation;

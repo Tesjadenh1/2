@@ -39,10 +39,16 @@ class Google_Service_Logging_LogLine extends Google_Model
   {
     return $this->severity;
   }
+  /**
+   * @param Google_Service_Logging_SourceLocation
+   */
   public function setSourceLocation(Google_Service_Logging_SourceLocation $sourceLocation)
   {
     $this->sourceLocation = $sourceLocation;
   }
+  /**
+   * @return Google_Service_Logging_SourceLocation
+   */
   public function getSourceLocation()
   {
     return $this->sourceLocation;

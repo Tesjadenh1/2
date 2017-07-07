@@ -149,10 +149,16 @@ class Google_Service_Logging_RequestLog extends Google_Collection
   {
     return $this->latency;
   }
+  /**
+   * @param Google_Service_Logging_LogLine
+   */
   public function setLine($line)
   {
     $this->line = $line;
   }
+  /**
+   * @return Google_Service_Logging_LogLine
+   */
   public function getLine()
   {
     return $this->line;
@@ -229,10 +235,16 @@ class Google_Service_Logging_RequestLog extends Google_Collection
   {
     return $this->responseSize;
   }
+  /**
+   * @param Google_Service_Logging_SourceReference
+   */
   public function setSourceReference($sourceReference)
   {
     $this->sourceReference = $sourceReference;
   }
+  /**
+   * @return Google_Service_Logging_SourceReference
+   */
   public function getSourceReference()
   {
     return $this->sourceReference;
