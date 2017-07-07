@@ -22,10 +22,16 @@ class Google_Service_Cloudbilling_ListBillingAccountsResponse extends Google_Col
   protected $billingAccountsDataType = 'array';
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Cloudbilling_BillingAccount
+   */
   public function setBillingAccounts($billingAccounts)
   {
     $this->billingAccounts = $billingAccounts;
   }
+  /**
+   * @return Google_Service_Cloudbilling_BillingAccount
+   */
   public function getBillingAccounts()
   {
     return $this->billingAccounts;
