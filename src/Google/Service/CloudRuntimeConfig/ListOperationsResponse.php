@@ -30,10 +30,16 @@ class Google_Service_CloudRuntimeConfig_ListOperationsResponse extends Google_Co
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_CloudRuntimeConfig_Operation
+   */
   public function setOperations($operations)
   {
     $this->operations = $operations;
   }
+  /**
+   * @return Google_Service_CloudRuntimeConfig_Operation
+   */
   public function getOperations()
   {
     return $this->operations;

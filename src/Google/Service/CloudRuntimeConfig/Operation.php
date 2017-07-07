@@ -32,10 +32,16 @@ class Google_Service_CloudRuntimeConfig_Operation extends Google_Model
   {
     return $this->done;
   }
+  /**
+   * @param Google_Service_CloudRuntimeConfig_Status
+   */
   public function setError(Google_Service_CloudRuntimeConfig_Status $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_CloudRuntimeConfig_Status
+   */
   public function getError()
   {
     return $this->error;
