@@ -23,10 +23,16 @@ class Google_Service_Fusiontables_TableList extends Google_Collection
   public $kind;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Fusiontables_Table
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Fusiontables_Table
+   */
   public function getItems()
   {
     return $this->items;

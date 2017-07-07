@@ -24,10 +24,16 @@ class Google_Service_Fusiontables_StyleSettingList extends Google_Collection
   public $nextPageToken;
   public $totalItems;
 
+  /**
+   * @param Google_Service_Fusiontables_StyleSetting
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Fusiontables_StyleSetting
+   */
   public function getItems()
   {
     return $this->items;

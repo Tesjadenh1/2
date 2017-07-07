@@ -36,10 +36,16 @@ class Google_Service_Fusiontables_StyleSetting extends Google_Model
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Fusiontables_PointStyle
+   */
   public function setMarkerOptions(Google_Service_Fusiontables_PointStyle $markerOptions)
   {
     $this->markerOptions = $markerOptions;
   }
+  /**
+   * @return Google_Service_Fusiontables_PointStyle
+   */
   public function getMarkerOptions()
   {
     return $this->markerOptions;
@@ -52,18 +58,30 @@ class Google_Service_Fusiontables_StyleSetting extends Google_Model
   {
     return $this->name;
   }
+  /**
+   * @param Google_Service_Fusiontables_PolygonStyle
+   */
   public function setPolygonOptions(Google_Service_Fusiontables_PolygonStyle $polygonOptions)
   {
     $this->polygonOptions = $polygonOptions;
   }
+  /**
+   * @return Google_Service_Fusiontables_PolygonStyle
+   */
   public function getPolygonOptions()
   {
     return $this->polygonOptions;
   }
+  /**
+   * @param Google_Service_Fusiontables_LineStyle
+   */
   public function setPolylineOptions(Google_Service_Fusiontables_LineStyle $polylineOptions)
   {
     $this->polylineOptions = $polylineOptions;
   }
+  /**
+   * @return Google_Service_Fusiontables_LineStyle
+   */
   public function getPolylineOptions()
   {
     return $this->polylineOptions;

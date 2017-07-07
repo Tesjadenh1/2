@@ -24,10 +24,16 @@ class Google_Service_Fusiontables_TaskList extends Google_Collection
   public $nextPageToken;
   public $totalItems;
 
+  /**
+   * @param Google_Service_Fusiontables_Task
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Fusiontables_Task
+   */
   public function getItems()
   {
     return $this->items;

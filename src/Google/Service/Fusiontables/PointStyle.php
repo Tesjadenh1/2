@@ -29,10 +29,16 @@ class Google_Service_Fusiontables_PointStyle extends Google_Model
   {
     return $this->iconName;
   }
+  /**
+   * @param Google_Service_Fusiontables_StyleFunction
+   */
   public function setIconStyler(Google_Service_Fusiontables_StyleFunction $iconStyler)
   {
     $this->iconStyler = $iconStyler;
   }
+  /**
+   * @return Google_Service_Fusiontables_StyleFunction
+   */
   public function getIconStyler()
   {
     return $this->iconStyler;

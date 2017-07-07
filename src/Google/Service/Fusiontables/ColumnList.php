@@ -24,10 +24,16 @@ class Google_Service_Fusiontables_ColumnList extends Google_Collection
   public $nextPageToken;
   public $totalItems;
 
+  /**
+   * @param Google_Service_Fusiontables_Column
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Fusiontables_Column
+   */
   public function getItems()
   {
     return $this->items;

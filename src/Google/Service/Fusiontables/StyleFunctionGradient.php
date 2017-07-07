@@ -23,10 +23,16 @@ class Google_Service_Fusiontables_StyleFunctionGradient extends Google_Collectio
   public $max;
   public $min;
 
+  /**
+   * @param Google_Service_Fusiontables_StyleFunctionGradientColors
+   */
   public function setColors($colors)
   {
     $this->colors = $colors;
   }
+  /**
+   * @return Google_Service_Fusiontables_StyleFunctionGradientColors
+   */
   public function getColors()
   {
     return $this->colors;
