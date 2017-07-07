@@ -24,10 +24,16 @@ class Google_Service_Storage_Policy extends Google_Collection
   public $kind;
   public $resourceId;
 
+  /**
+   * @param Google_Service_Storage_PolicyBindings
+   */
   public function setBindings($bindings)
   {
     $this->bindings = $bindings;
   }
+  /**
+   * @return Google_Service_Storage_PolicyBindings
+   */
   public function getBindings()
   {
     return $this->bindings;

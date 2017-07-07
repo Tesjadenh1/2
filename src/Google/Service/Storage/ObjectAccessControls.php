@@ -22,10 +22,16 @@ class Google_Service_Storage_ObjectAccessControls extends Google_Collection
   protected $itemsDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_Storage_ObjectAccessControl
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Storage_ObjectAccessControl
+   */
   public function getItems()
   {
     return $this->items;

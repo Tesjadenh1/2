@@ -15,33 +15,16 @@
  * the License.
  */
 
-class Google_Service_Storage_BucketAccessControls extends Google_Collection
+class Google_Service_Storage_BucketEncryption extends Google_Model
 {
-  protected $collection_key = 'items';
-  protected $itemsType = 'Google_Service_Storage_BucketAccessControl';
-  protected $itemsDataType = 'array';
-  public $kind;
+  public $defaultKmsKeyName;
 
-  /**
-   * @param Google_Service_Storage_BucketAccessControl
-   */
-  public function setItems($items)
+  public function setDefaultKmsKeyName($defaultKmsKeyName)
   {
-    $this->items = $items;
+    $this->defaultKmsKeyName = $defaultKmsKeyName;
   }
-  /**
-   * @return Google_Service_Storage_BucketAccessControl
-   */
-  public function getItems()
+  public function getDefaultKmsKeyName()
   {
-    return $this->items;
-  }
-  public function setKind($kind)
-  {
-    $this->kind = $kind;
-  }
-  public function getKind()
-  {
-    return $this->kind;
+    return $this->defaultKmsKeyName;
   }
 }

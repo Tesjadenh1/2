@@ -49,10 +49,16 @@ class Google_Service_Storage_RewriteResponse extends Google_Model
   {
     return $this->objectSize;
   }
+  /**
+   * @param Google_Service_Storage_StorageObject
+   */
   public function setResource(Google_Service_Storage_StorageObject $resource)
   {
     $this->resource = $resource;
   }
+  /**
+   * @return Google_Service_Storage_StorageObject
+   */
   public function getResource()
   {
     return $this->resource;

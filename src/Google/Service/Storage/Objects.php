@@ -24,10 +24,16 @@ class Google_Service_Storage_Objects extends Google_Collection
   public $nextPageToken;
   public $prefixes;
 
+  /**
+   * @param Google_Service_Storage_StorageObject
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Storage_StorageObject
+   */
   public function getItems()
   {
     return $this->items;
