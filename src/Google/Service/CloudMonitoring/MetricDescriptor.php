@@ -34,10 +34,16 @@ class Google_Service_CloudMonitoring_MetricDescriptor extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_MetricDescriptorLabelDescriptor
+   */
   public function setLabels($labels)
   {
     $this->labels = $labels;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_MetricDescriptorLabelDescriptor
+   */
   public function getLabels()
   {
     return $this->labels;
@@ -58,10 +64,16 @@ class Google_Service_CloudMonitoring_MetricDescriptor extends Google_Collection
   {
     return $this->project;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_MetricDescriptorTypeDescriptor
+   */
   public function setTypeDescriptor(Google_Service_CloudMonitoring_MetricDescriptorTypeDescriptor $typeDescriptor)
   {
     $this->typeDescriptor = $typeDescriptor;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_MetricDescriptorTypeDescriptor
+   */
   public function getTypeDescriptor()
   {
     return $this->typeDescriptor;

@@ -34,10 +34,16 @@ class Google_Service_CloudMonitoring_Point extends Google_Model
   {
     return $this->boolValue;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_PointDistribution
+   */
   public function setDistributionValue(Google_Service_CloudMonitoring_PointDistribution $distributionValue)
   {
     $this->distributionValue = $distributionValue;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_PointDistribution
+   */
   public function getDistributionValue()
   {
     return $this->distributionValue;

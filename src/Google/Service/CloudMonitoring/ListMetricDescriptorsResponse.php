@@ -31,10 +31,16 @@ class Google_Service_CloudMonitoring_ListMetricDescriptorsResponse extends Googl
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_MetricDescriptor
+   */
   public function setMetrics($metrics)
   {
     $this->metrics = $metrics;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_MetricDescriptor
+   */
   public function getMetrics()
   {
     return $this->metrics;

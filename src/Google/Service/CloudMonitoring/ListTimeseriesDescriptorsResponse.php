@@ -49,10 +49,16 @@ class Google_Service_CloudMonitoring_ListTimeseriesDescriptorsResponse extends G
   {
     return $this->oldest;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_TimeseriesDescriptor
+   */
   public function setTimeseries($timeseries)
   {
     $this->timeseries = $timeseries;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_TimeseriesDescriptor
+   */
   public function getTimeseries()
   {
     return $this->timeseries;

@@ -23,18 +23,30 @@ class Google_Service_CloudMonitoring_Timeseries extends Google_Collection
   protected $timeseriesDescType = 'Google_Service_CloudMonitoring_TimeseriesDescriptor';
   protected $timeseriesDescDataType = '';
 
+  /**
+   * @param Google_Service_CloudMonitoring_Point
+   */
   public function setPoints($points)
   {
     $this->points = $points;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_Point
+   */
   public function getPoints()
   {
     return $this->points;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_TimeseriesDescriptor
+   */
   public function setTimeseriesDesc(Google_Service_CloudMonitoring_TimeseriesDescriptor $timeseriesDesc)
   {
     $this->timeseriesDesc = $timeseriesDesc;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_TimeseriesDescriptor
+   */
   public function getTimeseriesDesc()
   {
     return $this->timeseriesDesc;

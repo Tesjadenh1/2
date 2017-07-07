@@ -30,10 +30,16 @@ class Google_Service_CloudMonitoring_WriteTimeseriesRequest extends Google_Colle
   {
     return $this->commonLabels;
   }
+  /**
+   * @param Google_Service_CloudMonitoring_TimeseriesPoint
+   */
   public function setTimeseries($timeseries)
   {
     $this->timeseries = $timeseries;
   }
+  /**
+   * @return Google_Service_CloudMonitoring_TimeseriesPoint
+   */
   public function getTimeseries()
   {
     return $this->timeseries;
