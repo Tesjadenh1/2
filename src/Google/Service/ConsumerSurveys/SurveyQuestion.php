@@ -70,10 +70,16 @@ class Google_Service_ConsumerSurveys_SurveyQuestion extends Google_Collection
   {
     return $this->highValueLabel;
   }
+  /**
+   * @param Google_Service_ConsumerSurveys_SurveyQuestionImage
+   */
   public function setImages($images)
   {
     $this->images = $images;
   }
+  /**
+   * @return Google_Service_ConsumerSurveys_SurveyQuestionImage
+   */
   public function getImages()
   {
     return $this->images;

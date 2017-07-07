@@ -26,10 +26,16 @@ class Google_Service_ConsumerSurveys_SurveysListResponse extends Google_Collecti
   protected $tokenPaginationType = 'Google_Service_ConsumerSurveys_TokenPagination';
   protected $tokenPaginationDataType = '';
 
+  /**
+   * @param Google_Service_ConsumerSurveys_PageInfo
+   */
   public function setPageInfo(Google_Service_ConsumerSurveys_PageInfo $pageInfo)
   {
     $this->pageInfo = $pageInfo;
   }
+  /**
+   * @return Google_Service_ConsumerSurveys_PageInfo
+   */
   public function getPageInfo()
   {
     return $this->pageInfo;
@@ -42,18 +48,30 @@ class Google_Service_ConsumerSurveys_SurveysListResponse extends Google_Collecti
   {
     return $this->requestId;
   }
+  /**
+   * @param Google_Service_ConsumerSurveys_Survey
+   */
   public function setResources($resources)
   {
     $this->resources = $resources;
   }
+  /**
+   * @return Google_Service_ConsumerSurveys_Survey
+   */
   public function getResources()
   {
     return $this->resources;
   }
+  /**
+   * @param Google_Service_ConsumerSurveys_TokenPagination
+   */
   public function setTokenPagination(Google_Service_ConsumerSurveys_TokenPagination $tokenPagination)
   {
     $this->tokenPagination = $tokenPagination;
   }
+  /**
+   * @return Google_Service_ConsumerSurveys_TokenPagination
+   */
   public function getTokenPagination()
   {
     return $this->tokenPagination;
