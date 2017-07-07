@@ -29,10 +29,16 @@ class Google_Service_Fitness_BucketByTime extends Google_Model
   {
     return $this->durationMillis;
   }
+  /**
+   * @param Google_Service_Fitness_BucketByTimePeriod
+   */
   public function setPeriod(Google_Service_Fitness_BucketByTimePeriod $period)
   {
     $this->period = $period;
   }
+  /**
+   * @return Google_Service_Fitness_BucketByTimePeriod
+   */
   public function getPeriod()
   {
     return $this->period;

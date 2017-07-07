@@ -22,10 +22,16 @@ class Google_Service_Fitness_DataType extends Google_Collection
   protected $fieldDataType = 'array';
   public $name;
 
+  /**
+   * @param Google_Service_Fitness_DataTypeField
+   */
   public function setField($field)
   {
     $this->field = $field;
   }
+  /**
+   * @return Google_Service_Fitness_DataTypeField
+   */
   public function getField()
   {
     return $this->field;

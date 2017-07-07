@@ -57,10 +57,16 @@ class Google_Service_Fitness_Dataset extends Google_Collection
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_Fitness_DataPoint
+   */
   public function setPoint($point)
   {
     $this->point = $point;
   }
+  /**
+   * @return Google_Service_Fitness_DataPoint
+   */
   public function getPoint()
   {
     return $this->point;

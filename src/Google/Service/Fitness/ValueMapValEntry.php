@@ -29,10 +29,16 @@ class Google_Service_Fitness_ValueMapValEntry extends Google_Model
   {
     return $this->key;
   }
+  /**
+   * @param Google_Service_Fitness_MapValue
+   */
   public function setValue(Google_Service_Fitness_MapValue $value)
   {
     $this->value = $value;
   }
+  /**
+   * @return Google_Service_Fitness_MapValue
+   */
   public function getValue()
   {
     return $this->value;

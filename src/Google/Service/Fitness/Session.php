@@ -44,10 +44,16 @@ class Google_Service_Fitness_Session extends Google_Model
   {
     return $this->activityType;
   }
+  /**
+   * @param Google_Service_Fitness_Application
+   */
   public function setApplication(Google_Service_Fitness_Application $application)
   {
     $this->application = $application;
   }
+  /**
+   * @return Google_Service_Fitness_Application
+   */
   public function getApplication()
   {
     return $this->application;
