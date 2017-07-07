@@ -39,10 +39,16 @@ class Google_Service_ShoppingContent_ProductsListResponse extends Google_Collect
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Product
+   */
   public function setResources($resources)
   {
     $this->resources = $resources;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Product
+   */
   public function getResources()
   {
     return $this->resources;

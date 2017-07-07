@@ -25,10 +25,16 @@ class Google_Service_ShoppingContent_OrdersCancelLineItemRequest extends Google_
   public $reason;
   public $reasonText;
 
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
   public function setAmount(Google_Service_ShoppingContent_Price $amount)
   {
     $this->amount = $amount;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
   public function getAmount()
   {
     return $this->amount;

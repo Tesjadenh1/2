@@ -32,10 +32,16 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryShipLineItems 
   {
     return $this->carrier;
   }
+  /**
+   * @param Google_Service_ShoppingContent_OrderShipmentLineItemShipment
+   */
   public function setLineItems($lineItems)
   {
     $this->lineItems = $lineItems;
   }
+  /**
+   * @return Google_Service_ShoppingContent_OrderShipmentLineItemShipment
+   */
   public function getLineItems()
   {
     return $this->lineItems;

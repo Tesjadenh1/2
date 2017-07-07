@@ -31,18 +31,30 @@ class Google_Service_ShoppingContent_DatafeedsCustomBatchResponseEntry extends G
   {
     return $this->batchId;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Datafeed
+   */
   public function setDatafeed(Google_Service_ShoppingContent_Datafeed $datafeed)
   {
     $this->datafeed = $datafeed;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Datafeed
+   */
   public function getDatafeed()
   {
     return $this->datafeed;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Errors
+   */
   public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Errors
+   */
   public function getErrors()
   {
     return $this->errors;

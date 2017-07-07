@@ -54,10 +54,16 @@ class Google_Service_ShoppingContent_AccountStatusDataQualityIssue extends Googl
   {
     return $this->displayedValue;
   }
+  /**
+   * @param Google_Service_ShoppingContent_AccountStatusExampleItem
+   */
   public function setExampleItems($exampleItems)
   {
     $this->exampleItems = $exampleItems;
   }
+  /**
+   * @return Google_Service_ShoppingContent_AccountStatusExampleItem
+   */
   public function getExampleItems()
   {
     return $this->exampleItems;

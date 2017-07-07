@@ -40,10 +40,16 @@ class Google_Service_ShoppingContent_DatafeedStatusError extends Google_Collecti
   {
     return $this->count;
   }
+  /**
+   * @param Google_Service_ShoppingContent_DatafeedStatusExample
+   */
   public function setExamples($examples)
   {
     $this->examples = $examples;
   }
+  /**
+   * @return Google_Service_ShoppingContent_DatafeedStatusExample
+   */
   public function getExamples()
   {
     return $this->examples;

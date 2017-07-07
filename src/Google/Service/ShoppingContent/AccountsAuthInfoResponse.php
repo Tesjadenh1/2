@@ -22,10 +22,16 @@ class Google_Service_ShoppingContent_AccountsAuthInfoResponse extends Google_Col
   protected $accountIdentifiersDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_ShoppingContent_AccountIdentifier
+   */
   public function setAccountIdentifiers($accountIdentifiers)
   {
     $this->accountIdentifiers = $accountIdentifiers;
   }
+  /**
+   * @return Google_Service_ShoppingContent_AccountIdentifier
+   */
   public function getAccountIdentifiers()
   {
     return $this->accountIdentifiers;

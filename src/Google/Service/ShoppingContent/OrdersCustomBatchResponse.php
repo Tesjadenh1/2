@@ -22,10 +22,16 @@ class Google_Service_ShoppingContent_OrdersCustomBatchResponse extends Google_Co
   protected $entriesDataType = 'array';
   public $kind;
 
+  /**
+   * @param Google_Service_ShoppingContent_OrdersCustomBatchResponseEntry
+   */
   public function setEntries($entries)
   {
     $this->entries = $entries;
   }
+  /**
+   * @return Google_Service_ShoppingContent_OrdersCustomBatchResponseEntry
+   */
   public function getEntries()
   {
     return $this->entries;

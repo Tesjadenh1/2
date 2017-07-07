@@ -32,10 +32,16 @@ class Google_Service_ShoppingContent_AccountStatus extends Google_Collection
   {
     return $this->accountId;
   }
+  /**
+   * @param Google_Service_ShoppingContent_AccountStatusDataQualityIssue
+   */
   public function setDataQualityIssues($dataQualityIssues)
   {
     $this->dataQualityIssues = $dataQualityIssues;
   }
+  /**
+   * @return Google_Service_ShoppingContent_AccountStatusDataQualityIssue
+   */
   public function getDataQualityIssues()
   {
     return $this->dataQualityIssues;

@@ -39,10 +39,16 @@ class Google_Service_ShoppingContent_ShippingsettingsListResponse extends Google
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_ShoppingContent_ShippingSettings
+   */
   public function setResources($resources)
   {
     $this->resources = $resources;
   }
+  /**
+   * @return Google_Service_ShoppingContent_ShippingSettings
+   */
   public function getResources()
   {
     return $this->resources;

@@ -21,10 +21,16 @@ class Google_Service_ShoppingContent_Installment extends Google_Model
   protected $amountDataType = '';
   public $months;
 
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
   public function setAmount(Google_Service_ShoppingContent_Price $amount)
   {
     $this->amount = $amount;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
   public function getAmount()
   {
     return $this->amount;

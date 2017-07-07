@@ -32,10 +32,16 @@ class Google_Service_ShoppingContent_ShippingsettingsCustomBatchResponseEntry ex
   {
     return $this->batchId;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Errors
+   */
   public function setErrors(Google_Service_ShoppingContent_Errors $errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Errors
+   */
   public function getErrors()
   {
     return $this->errors;
@@ -48,10 +54,16 @@ class Google_Service_ShoppingContent_ShippingsettingsCustomBatchResponseEntry ex
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_ShoppingContent_ShippingSettings
+   */
   public function setShippingSettings(Google_Service_ShoppingContent_ShippingSettings $shippingSettings)
   {
     $this->shippingSettings = $shippingSettings;
   }
+  /**
+   * @return Google_Service_ShoppingContent_ShippingSettings
+   */
   public function getShippingSettings()
   {
     return $this->shippingSettings;

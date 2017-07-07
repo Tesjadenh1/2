@@ -21,10 +21,16 @@ class Google_Service_ShoppingContent_InventoryCustomBatchRequest extends Google_
   protected $entriesType = 'Google_Service_ShoppingContent_InventoryCustomBatchRequestEntry';
   protected $entriesDataType = 'array';
 
+  /**
+   * @param Google_Service_ShoppingContent_InventoryCustomBatchRequestEntry
+   */
   public function setEntries($entries)
   {
     $this->entries = $entries;
   }
+  /**
+   * @return Google_Service_ShoppingContent_InventoryCustomBatchRequestEntry
+   */
   public function getEntries()
   {
     return $this->entries;

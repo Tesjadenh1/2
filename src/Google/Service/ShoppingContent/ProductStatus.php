@@ -38,18 +38,30 @@ class Google_Service_ShoppingContent_ProductStatus extends Google_Collection
   {
     return $this->creationDate;
   }
+  /**
+   * @param Google_Service_ShoppingContent_ProductStatusDataQualityIssue
+   */
   public function setDataQualityIssues($dataQualityIssues)
   {
     $this->dataQualityIssues = $dataQualityIssues;
   }
+  /**
+   * @return Google_Service_ShoppingContent_ProductStatusDataQualityIssue
+   */
   public function getDataQualityIssues()
   {
     return $this->dataQualityIssues;
   }
+  /**
+   * @param Google_Service_ShoppingContent_ProductStatusDestinationStatus
+   */
   public function setDestinationStatuses($destinationStatuses)
   {
     $this->destinationStatuses = $destinationStatuses;
   }
+  /**
+   * @return Google_Service_ShoppingContent_ProductStatusDestinationStatus
+   */
   public function getDestinationStatuses()
   {
     return $this->destinationStatuses;

@@ -29,10 +29,16 @@ class Google_Service_ShoppingContent_OrdersCreateTestOrderRequest extends Google
   {
     return $this->templateName;
   }
+  /**
+   * @param Google_Service_ShoppingContent_TestOrder
+   */
   public function setTestOrder(Google_Service_ShoppingContent_TestOrder $testOrder)
   {
     $this->testOrder = $testOrder;
   }
+  /**
+   * @return Google_Service_ShoppingContent_TestOrder
+   */
   public function getTestOrder()
   {
     return $this->testOrder;

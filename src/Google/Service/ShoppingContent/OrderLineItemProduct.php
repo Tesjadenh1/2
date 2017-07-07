@@ -116,10 +116,16 @@ class Google_Service_ShoppingContent_OrderLineItemProduct extends Google_Collect
   {
     return $this->offerId;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
   public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
   public function getPrice()
   {
     return $this->price;
@@ -148,10 +154,16 @@ class Google_Service_ShoppingContent_OrderLineItemProduct extends Google_Collect
   {
     return $this->title;
   }
+  /**
+   * @param Google_Service_ShoppingContent_OrderLineItemProductVariantAttribute
+   */
   public function setVariantAttributes($variantAttributes)
   {
     $this->variantAttributes = $variantAttributes;
   }
+  /**
+   * @return Google_Service_ShoppingContent_OrderLineItemProductVariantAttribute
+   */
   public function getVariantAttributes()
   {
     return $this->variantAttributes;

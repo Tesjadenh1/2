@@ -31,10 +31,16 @@ class Google_Service_ShoppingContent_Errors extends Google_Collection
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Error
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Error
+   */
   public function getErrors()
   {
     return $this->errors;

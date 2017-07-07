@@ -58,10 +58,16 @@ class Google_Service_ShoppingContent_ProductShipping extends Google_Model
   {
     return $this->postalCode;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
   public function setPrice(Google_Service_ShoppingContent_Price $price)
   {
     $this->price = $price;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
   public function getPrice()
   {
     return $this->price;

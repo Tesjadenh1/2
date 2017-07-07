@@ -27,10 +27,16 @@ class Google_Service_ShoppingContent_OrderPromotion extends Google_Collection
   public $productApplicability;
   public $redemptionChannel;
 
+  /**
+   * @param Google_Service_ShoppingContent_OrderPromotionBenefit
+   */
   public function setBenefits($benefits)
   {
     $this->benefits = $benefits;
   }
+  /**
+   * @return Google_Service_ShoppingContent_OrderPromotionBenefit
+   */
   public function getBenefits()
   {
     return $this->benefits;

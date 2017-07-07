@@ -33,10 +33,16 @@ class Google_Service_ShoppingContent_OrdersShipLineItemsRequest extends Google_C
   {
     return $this->carrier;
   }
+  /**
+   * @param Google_Service_ShoppingContent_OrderShipmentLineItemShipment
+   */
   public function setLineItems($lineItems)
   {
     $this->lineItems = $lineItems;
   }
+  /**
+   * @return Google_Service_ShoppingContent_OrderShipmentLineItemShipment
+   */
   public function getLineItems()
   {
     return $this->lineItems;

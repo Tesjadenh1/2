@@ -56,10 +56,16 @@ class Google_Service_ShoppingContent_ShippingsettingsCustomBatchRequestEntry ext
   {
     return $this->method;
   }
+  /**
+   * @param Google_Service_ShoppingContent_ShippingSettings
+   */
   public function setShippingSettings(Google_Service_ShoppingContent_ShippingSettings $shippingSettings)
   {
     $this->shippingSettings = $shippingSettings;
   }
+  /**
+   * @return Google_Service_ShoppingContent_ShippingSettings
+   */
   public function getShippingSettings()
   {
     return $this->shippingSettings;

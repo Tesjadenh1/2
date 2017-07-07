@@ -39,10 +39,16 @@ class Google_Service_ShoppingContent_ProductstatusesListResponse extends Google_
   {
     return $this->nextPageToken;
   }
+  /**
+   * @param Google_Service_ShoppingContent_ProductStatus
+   */
   public function setResources($resources)
   {
     $this->resources = $resources;
   }
+  /**
+   * @return Google_Service_ShoppingContent_ProductStatus
+   */
   public function getResources()
   {
     return $this->resources;

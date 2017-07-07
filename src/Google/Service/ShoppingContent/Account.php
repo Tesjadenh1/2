@@ -38,10 +38,16 @@ class Google_Service_ShoppingContent_Account extends Google_Collection
   {
     return $this->adultContent;
   }
+  /**
+   * @param Google_Service_ShoppingContent_AccountAdwordsLink
+   */
   public function setAdwordsLinks($adwordsLinks)
   {
     $this->adwordsLinks = $adwordsLinks;
   }
+  /**
+   * @return Google_Service_ShoppingContent_AccountAdwordsLink
+   */
   public function getAdwordsLinks()
   {
     return $this->adwordsLinks;
@@ -86,10 +92,16 @@ class Google_Service_ShoppingContent_Account extends Google_Collection
   {
     return $this->sellerId;
   }
+  /**
+   * @param Google_Service_ShoppingContent_AccountUser
+   */
   public function setUsers($users)
   {
     $this->users = $users;
   }
+  /**
+   * @return Google_Service_ShoppingContent_AccountUser
+   */
   public function getUsers()
   {
     return $this->users;

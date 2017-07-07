@@ -39,10 +39,16 @@ class Google_Service_ShoppingContent_AccountTax extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_ShoppingContent_AccountTaxTaxRule
+   */
   public function setRules($rules)
   {
     $this->rules = $rules;
   }
+  /**
+   * @return Google_Service_ShoppingContent_AccountTaxTaxRule
+   */
   public function getRules()
   {
     return $this->rules;

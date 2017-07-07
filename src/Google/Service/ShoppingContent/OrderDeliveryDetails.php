@@ -21,10 +21,16 @@ class Google_Service_ShoppingContent_OrderDeliveryDetails extends Google_Model
   protected $addressDataType = '';
   public $phoneNumber;
 
+  /**
+   * @param Google_Service_ShoppingContent_OrderAddress
+   */
   public function setAddress(Google_Service_ShoppingContent_OrderAddress $address)
   {
     $this->address = $address;
   }
+  /**
+   * @return Google_Service_ShoppingContent_OrderAddress
+   */
   public function getAddress()
   {
     return $this->address;

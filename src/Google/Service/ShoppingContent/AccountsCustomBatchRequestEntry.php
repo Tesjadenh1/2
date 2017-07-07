@@ -25,10 +25,16 @@ class Google_Service_ShoppingContent_AccountsCustomBatchRequestEntry extends Goo
   public $method;
   public $overwrite;
 
+  /**
+   * @param Google_Service_ShoppingContent_Account
+   */
   public function setAccount(Google_Service_ShoppingContent_Account $account)
   {
     $this->account = $account;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Account
+   */
   public function getAccount()
   {
     return $this->account;

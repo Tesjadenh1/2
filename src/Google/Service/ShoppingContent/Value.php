@@ -32,10 +32,16 @@ class Google_Service_ShoppingContent_Value extends Google_Model
   {
     return $this->carrierRateName;
   }
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
   public function setFlatRate(Google_Service_ShoppingContent_Price $flatRate)
   {
     $this->flatRate = $flatRate;
   }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
   public function getFlatRate()
   {
     return $this->flatRate;
