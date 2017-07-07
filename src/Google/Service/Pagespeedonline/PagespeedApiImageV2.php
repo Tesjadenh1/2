@@ -61,10 +61,16 @@ class Google_Service_Pagespeedonline_PagespeedApiImageV2 extends Google_Model
   {
     return $this->mimeType;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect
+   */
   public function setPageRect(Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect $pageRect)
   {
     $this->pageRect = $pageRect;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect
+   */
   public function getPageRect()
   {
     return $this->pageRect;

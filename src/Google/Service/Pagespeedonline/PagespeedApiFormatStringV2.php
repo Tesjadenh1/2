@@ -22,10 +22,16 @@ class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 extends Google_C
   protected $argsDataType = 'array';
   public $format;
 
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args
+   */
   public function setArgs($args)
   {
     $this->args = $args;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args
+   */
   public function getArgs()
   {
     return $this->args;

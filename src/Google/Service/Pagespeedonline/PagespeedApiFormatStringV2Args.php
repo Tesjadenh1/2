@@ -37,18 +37,30 @@ class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args extends Goog
   {
     return $this->key;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsRects
+   */
   public function setRects($rects)
   {
     $this->rects = $rects;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsRects
+   */
   public function getRects()
   {
     return $this->rects;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsSecondaryRects
+   */
   public function setSecondaryRects($secondaryRects)
   {
     $this->secondaryRects = $secondaryRects;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsSecondaryRects
+   */
   public function getSecondaryRects()
   {
     return $this->secondaryRects;

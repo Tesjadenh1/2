@@ -23,18 +23,30 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrl
   protected $resultType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV2';
   protected $resultDataType = '';
 
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function setDetails($details)
   {
     $this->details = $details;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function getDetails()
   {
     return $this->details;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function setResult(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $result)
   {
     $this->result = $result;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function getResult()
   {
     return $this->result;

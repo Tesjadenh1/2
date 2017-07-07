@@ -23,18 +23,30 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrl
   protected $urlsType = 'Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls';
   protected $urlsDataType = 'array';
 
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function setHeader(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $header)
   {
     $this->header = $header;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function getHeader()
   {
     return $this->header;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls
+   */
   public function setUrls($urls)
   {
     $this->urls = $urls;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls
+   */
   public function getUrls()
   {
     return $this->urls;

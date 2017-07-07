@@ -50,18 +50,30 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement ex
   {
     return $this->ruleImpact;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function setSummary(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $summary)
   {
     $this->summary = $summary;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   */
   public function getSummary()
   {
     return $this->summary;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocks
+   */
   public function setUrlBlocks($urlBlocks)
   {
     $this->urlBlocks = $urlBlocks;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocks
+   */
   public function getUrlBlocks()
   {
     return $this->urlBlocks;

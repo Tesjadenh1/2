@@ -34,10 +34,16 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   protected $versionType = 'Google_Service_Pagespeedonline_ResultVersion';
   protected $versionDataType = '';
 
+  /**
+   * @param Google_Service_Pagespeedonline_ResultFormattedResults
+   */
   public function setFormattedResults(Google_Service_Pagespeedonline_ResultFormattedResults $formattedResults)
   {
     $this->formattedResults = $formattedResults;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_ResultFormattedResults
+   */
   public function getFormattedResults()
   {
     return $this->formattedResults;
@@ -66,10 +72,16 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_ResultPageStats
+   */
   public function setPageStats(Google_Service_Pagespeedonline_ResultPageStats $pageStats)
   {
     $this->pageStats = $pageStats;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_ResultPageStats
+   */
   public function getPageStats()
   {
     return $this->pageStats;
@@ -82,18 +94,30 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   {
     return $this->responseCode;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_ResultRuleGroupsElement
+   */
   public function setRuleGroups($ruleGroups)
   {
     $this->ruleGroups = $ruleGroups;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_ResultRuleGroupsElement
+   */
   public function getRuleGroups()
   {
     return $this->ruleGroups;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_PagespeedApiImageV2
+   */
   public function setScreenshot(Google_Service_Pagespeedonline_PagespeedApiImageV2 $screenshot)
   {
     $this->screenshot = $screenshot;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_PagespeedApiImageV2
+   */
   public function getScreenshot()
   {
     return $this->screenshot;
@@ -106,10 +130,16 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   {
     return $this->title;
   }
+  /**
+   * @param Google_Service_Pagespeedonline_ResultVersion
+   */
   public function setVersion(Google_Service_Pagespeedonline_ResultVersion $version)
   {
     $this->version = $version;
   }
+  /**
+   * @return Google_Service_Pagespeedonline_ResultVersion
+   */
   public function getVersion()
   {
     return $this->version;
