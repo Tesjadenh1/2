@@ -47,10 +47,16 @@ class Google_Service_DoubleClickBidManager_ReportMetadata extends Google_Model
   {
     return $this->reportDataStartTimeMs;
   }
+  /**
+   * @param Google_Service_DoubleClickBidManager_ReportStatus
+   */
   public function setStatus(Google_Service_DoubleClickBidManager_ReportStatus $status)
   {
     $this->status = $status;
   }
+  /**
+   * @return Google_Service_DoubleClickBidManager_ReportStatus
+   */
   public function getStatus()
   {
     return $this->status;

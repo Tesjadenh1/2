@@ -25,10 +25,16 @@ class Google_Service_DoubleClickBidManager_Parameters extends Google_Collection
   public $metrics;
   public $type;
 
+  /**
+   * @param Google_Service_DoubleClickBidManager_FilterPair
+   */
   public function setFilters($filters)
   {
     $this->filters = $filters;
   }
+  /**
+   * @return Google_Service_DoubleClickBidManager_FilterPair
+   */
   public function getFilters()
   {
     return $this->filters;

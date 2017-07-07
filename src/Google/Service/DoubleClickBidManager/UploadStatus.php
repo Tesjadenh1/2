@@ -30,10 +30,16 @@ class Google_Service_DoubleClickBidManager_UploadStatus extends Google_Collectio
   {
     return $this->errors;
   }
+  /**
+   * @param Google_Service_DoubleClickBidManager_RowStatus
+   */
   public function setRowStatus($rowStatus)
   {
     $this->rowStatus = $rowStatus;
   }
+  /**
+   * @return Google_Service_DoubleClickBidManager_RowStatus
+   */
   public function getRowStatus()
   {
     return $this->rowStatus;

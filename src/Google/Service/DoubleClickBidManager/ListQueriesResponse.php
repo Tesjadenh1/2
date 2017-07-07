@@ -30,10 +30,16 @@ class Google_Service_DoubleClickBidManager_ListQueriesResponse extends Google_Co
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_DoubleClickBidManager_Query
+   */
   public function setQueries($queries)
   {
     $this->queries = $queries;
   }
+  /**
+   * @return Google_Service_DoubleClickBidManager_Query
+   */
   public function getQueries()
   {
     return $this->queries;
