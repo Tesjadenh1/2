@@ -24,10 +24,16 @@ class Google_Service_Resourceviews_ZoneViewsList extends Google_Collection
   public $nextPageToken;
   public $selfLink;
 
+  /**
+   * @param Google_Service_Resourceviews_ResourceView
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Resourceviews_ResourceView
+   */
   public function getItems()
   {
     return $this->items;

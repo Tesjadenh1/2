@@ -21,10 +21,16 @@ class Google_Service_Resourceviews_OperationError extends Google_Collection
   protected $errorsType = 'Google_Service_Resourceviews_OperationErrorErrors';
   protected $errorsDataType = 'array';
 
+  /**
+   * @param Google_Service_Resourceviews_OperationErrorErrors
+   */
   public function setErrors($errors)
   {
     $this->errors = $errors;
   }
+  /**
+   * @return Google_Service_Resourceviews_OperationErrorErrors
+   */
   public function getErrors()
   {
     return $this->errors;

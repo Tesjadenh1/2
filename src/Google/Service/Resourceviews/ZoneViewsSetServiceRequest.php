@@ -23,10 +23,16 @@ class Google_Service_Resourceviews_ZoneViewsSetServiceRequest extends Google_Col
   public $fingerprint;
   public $resourceName;
 
+  /**
+   * @param Google_Service_Resourceviews_ServiceEndpoint
+   */
   public function setEndpoints($endpoints)
   {
     $this->endpoints = $endpoints;
   }
+  /**
+   * @return Google_Service_Resourceviews_ServiceEndpoint
+   */
   public function getEndpoints()
   {
     return $this->endpoints;

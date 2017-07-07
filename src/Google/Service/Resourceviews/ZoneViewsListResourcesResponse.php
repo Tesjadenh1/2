@@ -23,10 +23,16 @@ class Google_Service_Resourceviews_ZoneViewsListResourcesResponse extends Google
   public $network;
   public $nextPageToken;
 
+  /**
+   * @param Google_Service_Resourceviews_ListResourceResponseItem
+   */
   public function setItems($items)
   {
     $this->items = $items;
   }
+  /**
+   * @return Google_Service_Resourceviews_ListResourceResponseItem
+   */
   public function getItems()
   {
     return $this->items;

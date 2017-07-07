@@ -22,10 +22,16 @@ class Google_Service_Resourceviews_ZoneViewsGetServiceResponse extends Google_Co
   protected $endpointsDataType = 'array';
   public $fingerprint;
 
+  /**
+   * @param Google_Service_Resourceviews_ServiceEndpoint
+   */
   public function setEndpoints($endpoints)
   {
     $this->endpoints = $endpoints;
   }
+  /**
+   * @return Google_Service_Resourceviews_ServiceEndpoint
+   */
   public function getEndpoints()
   {
     return $this->endpoints;

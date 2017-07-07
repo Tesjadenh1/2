@@ -31,10 +31,16 @@ class Google_Service_Resourceviews_OperationWarnings extends Google_Collection
   {
     return $this->code;
   }
+  /**
+   * @param Google_Service_Resourceviews_OperationWarningsData
+   */
   public function setData($data)
   {
     $this->data = $data;
   }
+  /**
+   * @return Google_Service_Resourceviews_OperationWarningsData
+   */
   public function getData()
   {
     return $this->data;

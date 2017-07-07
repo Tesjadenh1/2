@@ -49,10 +49,16 @@ class Google_Service_Resourceviews_ResourceView extends Google_Collection
   {
     return $this->description;
   }
+  /**
+   * @param Google_Service_Resourceviews_ServiceEndpoint
+   */
   public function setEndpoints($endpoints)
   {
     $this->endpoints = $endpoints;
   }
+  /**
+   * @return Google_Service_Resourceviews_ServiceEndpoint
+   */
   public function getEndpoints()
   {
     return $this->endpoints;
@@ -81,10 +87,16 @@ class Google_Service_Resourceviews_ResourceView extends Google_Collection
   {
     return $this->kind;
   }
+  /**
+   * @param Google_Service_Resourceviews_Label
+   */
   public function setLabels($labels)
   {
     $this->labels = $labels;
   }
+  /**
+   * @return Google_Service_Resourceviews_Label
+   */
   public function getLabels()
   {
     return $this->labels;
