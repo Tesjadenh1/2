@@ -40,10 +40,16 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1V
   {
     return $this->labelDetectionModel;
   }
+  /**
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoSegment
+   */
   public function setSegments($segments)
   {
     $this->segments = $segments;
   }
+  /**
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoSegment
+   */
   public function getSegments()
   {
     return $this->segments;

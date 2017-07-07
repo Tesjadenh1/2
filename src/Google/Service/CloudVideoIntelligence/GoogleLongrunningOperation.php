@@ -32,10 +32,16 @@ class Google_Service_CloudVideoIntelligence_GoogleLongrunningOperation extends G
   {
     return $this->done;
   }
+  /**
+   * @param Google_Service_CloudVideoIntelligence_GoogleRpcStatus
+   */
   public function setError(Google_Service_CloudVideoIntelligence_GoogleRpcStatus $error)
   {
     $this->error = $error;
   }
+  /**
+   * @return Google_Service_CloudVideoIntelligence_GoogleRpcStatus
+   */
   public function getError()
   {
     return $this->error;

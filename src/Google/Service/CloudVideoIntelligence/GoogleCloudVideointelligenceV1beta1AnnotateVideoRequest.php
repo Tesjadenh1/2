@@ -66,10 +66,16 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1A
   {
     return $this->outputUri;
   }
+  /**
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext
+   */
   public function setVideoContext(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext $videoContext)
   {
     $this->videoContext = $videoContext;
   }
+  /**
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext
+   */
   public function getVideoContext()
   {
     return $this->videoContext;
