@@ -35,16 +35,16 @@ class Google_Service_Translate_Resource_Translations extends Google_Service_Reso
    * set to one of the language codes listed in Language Support.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string cid The customization id for translate
-   * @opt_param string format The format of the source text, in either HTML
-   * (default) or plain-text. A value of "html" indicates HTML and a value of
-   * "text" indicates plain-text.
    * @opt_param string model The `model` type requested for this translation.
    * Valid values are listed in public documentation.
    * @opt_param string source The language of the source text, set to one of the
    * language codes listed in Language Support. If the source language is not
    * specified, the API will attempt to identify the source language automatically
    * and return it within the response.
+   * @opt_param string cid The customization id for translate
+   * @opt_param string format The format of the source text, in either HTML
+   * (default) or plain-text. A value of "html" indicates HTML and a value of
+   * "text" indicates plain-text.
    * @return Google_Service_Translate_TranslationsListResponse
    */
   public function listTranslations($q, $target, $optParams = array())

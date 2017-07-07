@@ -21,10 +21,16 @@ class Google_Service_Translate_LanguagesListResponse extends Google_Collection
   protected $languagesType = 'Google_Service_Translate_LanguagesResource';
   protected $languagesDataType = 'array';
 
+  /**
+   * @param Google_Service_Translate_LanguagesResource
+   */
   public function setLanguages($languages)
   {
     $this->languages = $languages;
   }
+  /**
+   * @return Google_Service_Translate_LanguagesResource
+   */
   public function getLanguages()
   {
     return $this->languages;
