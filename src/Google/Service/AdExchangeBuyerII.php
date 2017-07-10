@@ -48,7 +48,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
   public $accounts_filterSets_filteredBidRequests;
   public $accounts_filterSets_filteredBids;
   public $accounts_filterSets_filteredBids_creatives;
-  public $accounts_filterSets_filteredBids_creatives_details;
   public $accounts_filterSets_filteredBids_details;
   public $accounts_filterSets_impressionMetrics;
   public $accounts_filterSets_losingBids;
@@ -320,15 +319,15 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'query' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -607,13 +606,13 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -709,49 +708,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                 'creativeStatusId' => array(
                   'location' => 'path',
                   'type' => 'integer',
-                  'required' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->accounts_filterSets_filteredBids_creatives_details = new Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSetsFilteredBidsCreativesDetails(
-        $this,
-        $this->serviceName,
-        'details',
-        array(
-          'methods' => array(
-            'list' => array(
-              'path' => 'v2beta1/accounts/{accountId}/filterSets/{filterSetId}/filteredBids/{creativeStatusId}/creatives/{creativeId}/details',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'accountId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'filterSetId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'creativeStatusId' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-                'creativeId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
                   'required' => true,
                 ),
                 'pageToken' => array(
@@ -891,13 +847,13 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
