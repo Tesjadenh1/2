@@ -36,6 +36,9 @@ class Google_Service_PeopleService_Resource_PeopleConnections extends Google_Ser
    * `people/me` is valid.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param bool requestSyncToken Whether the response should include a sync
+   * token, which can be used to get all changes since the last request.
+   * @opt_param string pageToken The token of the page to be returned.
    * @opt_param string requestMask.includeField **Required.** Comma-separated list
    * of person fields to be included in the response. Each path should start with
    * `person.`: for example, `person.names` or `person.photos`.
@@ -54,9 +57,6 @@ class Google_Service_PeopleService_Resource_PeopleConnections extends Google_Ser
    * relationshipStatuses * residences * skills * taglines * urls
    * @opt_param string sortOrder The order in which the connections should be
    * sorted. Defaults to `LAST_MODIFIED_ASCENDING`.
-   * @opt_param bool requestSyncToken Whether the response should include a sync
-   * token, which can be used to get all changes since the last request.
-   * @opt_param string pageToken The token of the page to be returned.
    * @return Google_Service_PeopleService_ListConnectionsResponse
    */
   public function listPeopleConnections($resourceName, $optParams = array())
