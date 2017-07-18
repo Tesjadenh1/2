@@ -1,0 +1,96 @@
+<?php
+/*
+ * Copyright 2014 Google Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+class Google_Service_Dataproc_WorkflowMetadata extends Google_Model
+{
+  protected $createClusterType = 'Google_Service_Dataproc_ClusterOperation';
+  protected $createClusterDataType = '';
+  protected $deleteClusterType = 'Google_Service_Dataproc_ClusterOperation';
+  protected $deleteClusterDataType = '';
+  protected $graphType = 'Google_Service_Dataproc_WorkflowGraph';
+  protected $graphDataType = '';
+  public $state;
+  public $template;
+  public $version;
+
+  /**
+   * @param Google_Service_Dataproc_ClusterOperation
+   */
+  public function setCreateCluster(Google_Service_Dataproc_ClusterOperation $createCluster)
+  {
+    $this->createCluster = $createCluster;
+  }
+  /**
+   * @return Google_Service_Dataproc_ClusterOperation
+   */
+  public function getCreateCluster()
+  {
+    return $this->createCluster;
+  }
+  /**
+   * @param Google_Service_Dataproc_ClusterOperation
+   */
+  public function setDeleteCluster(Google_Service_Dataproc_ClusterOperation $deleteCluster)
+  {
+    $this->deleteCluster = $deleteCluster;
+  }
+  /**
+   * @return Google_Service_Dataproc_ClusterOperation
+   */
+  public function getDeleteCluster()
+  {
+    return $this->deleteCluster;
+  }
+  /**
+   * @param Google_Service_Dataproc_WorkflowGraph
+   */
+  public function setGraph(Google_Service_Dataproc_WorkflowGraph $graph)
+  {
+    $this->graph = $graph;
+  }
+  /**
+   * @return Google_Service_Dataproc_WorkflowGraph
+   */
+  public function getGraph()
+  {
+    return $this->graph;
+  }
+  public function setState($state)
+  {
+    $this->state = $state;
+  }
+  public function getState()
+  {
+    return $this->state;
+  }
+  public function setTemplate($template)
+  {
+    $this->template = $template;
+  }
+  public function getTemplate()
+  {
+    return $this->template;
+  }
+  public function setVersion($version)
+  {
+    $this->version = $version;
+  }
+  public function getVersion()
+  {
+    return $this->version;
+  }
+}

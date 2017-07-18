@@ -19,11 +19,9 @@
  * Service definition for StreetViewPublish (v1).
  *
  * <p>
- * The Street View Publish API allows your application to publish 360 photos to
- * Google Maps, along with image metadata that specifies the position,
- * orientation, and connectivity of each photo. With this API, any app can offer
- * an interface for positioning, connecting, and uploading user-generated Street
- * View images.</p>
+ * Publishes 360 photos to Google Maps, along with position, orientation, and
+ * connectivity metadata. Apps can offer an interface for positioning,
+ * connecting, and uploading user-generated Street View images.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -124,14 +122,14 @@ class Google_Service_StreetViewPublish extends Google_Service
               'path' => 'v1/photos:batchGet',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'view' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'photoIds' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
+                ),
+                'view' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'batchUpdate' => array(
@@ -142,6 +140,10 @@ class Google_Service_StreetViewPublish extends Google_Service
               'path' => 'v1/photos',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -151,10 +153,6 @@ class Google_Service_StreetViewPublish extends Google_Service
                   'type' => 'integer',
                 ),
                 'view' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

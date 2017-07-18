@@ -26,15 +26,13 @@
 class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Resource
 {
   /**
-   * After the client finishes uploading the photo with the returned UploadRef,
-   * CreatePhoto publishes the uploaded Photo to Street View on Google Maps.
+   * After the client finishes uploading the photo with the returned `UploadRef`,
+   * `photo.create` publishes the uploaded photo to Street View on Google Maps.
    *
    * This method returns the following error codes:
    *
-   * * google.rpc.Code.INVALID_ARGUMENT if the request is malformed. *
-   * google.rpc.Code.NOT_FOUND if the upload reference does not exist. *
-   * google.rpc.Code.RESOURCE_EXHAUSTED if the account has reached the storage
-   * limit. (photo.create)
+   * * `INVALID_ARGUMENT` if the request is malformed. * `NOT_FOUND` if the upload
+   * reference does not exist. (photo.create)
    *
    * @param Google_Service_StreetViewPublish_Photo $postBody
    * @param array $optParams Optional parameters.
@@ -47,15 +45,14 @@ class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Res
     return $this->call('create', array($params), "Google_Service_StreetViewPublish_Photo");
   }
   /**
-   * Deletes a Photo and its metadata.
+   * Deletes a photo and its metadata.
    *
    * This method returns the following error codes:
    *
-   * * google.rpc.Code.PERMISSION_DENIED if the requesting user did not create the
-   * requested photo. * google.rpc.Code.NOT_FOUND if the photo ID does not exist.
-   * (photo.delete)
+   * * `PERMISSION_DENIED` if the requesting user did not create the requested
+   * photo. * `NOT_FOUND` if the photo ID does not exist. (photo.delete)
    *
-   * @param string $photoId Required. ID of the Photo.
+   * @param string $photoId Required. ID of the photo.
    * @param array $optParams Optional parameters.
    * @return Google_Service_StreetViewPublish_StreetviewpublishEmpty
    */
@@ -66,15 +63,14 @@ class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Res
     return $this->call('delete', array($params), "Google_Service_StreetViewPublish_StreetviewpublishEmpty");
   }
   /**
-   * Gets the metadata of the specified Photo.
+   * Gets the metadata of the specified `Photo`.
    *
    * This method returns the following error codes:
    *
-   * * google.rpc.Code.PERMISSION_DENIED if the requesting user did not create the
-   * requested Photo. * google.rpc.Code.NOT_FOUND if the requested Photo does not
-   * exist. (photo.get)
+   * * `PERMISSION_DENIED` if the requesting user did not create the requested
+   * photo. * `NOT_FOUND` if the requested photo does not exist. (photo.get)
    *
-   * @param string $photoId Required. ID of the Photo.
+   * @param string $photoId Required. ID of the photo.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string view Specifies if a download URL for the photo bytes should
@@ -88,8 +84,8 @@ class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Res
     return $this->call('get', array($params), "Google_Service_StreetViewPublish_Photo");
   }
   /**
-   * Creates an upload session to start uploading photo bytes. The upload URL of
-   * the returned UploadRef is used to upload the bytes for the Photo.
+   * Creates an upload session to start uploading photo data. The upload URL of
+   * the returned `UploadRef` is used to upload the data for the photo.
    *
    * In addition to the photo requirements shown in
    * https://support.google.com/maps/answer/7012050?hl=en_topic=6275604, the photo
@@ -101,8 +97,9 @@ class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Res
    * in https://support.google.com/maps/answer/7012050?hl=en_topic=6275604, and
    * the photo must be a full 360 horizontally.
    *
-   * After the upload is complete, the UploadRef is used with CreatePhoto to
-   * create the Photo object entry. (photo.startUpload)
+   * After the upload is complete, the `UploadRef` is used with
+   * `StreetViewPublishService:CreatePhoto()` to create the `Photo` object entry.
+   * (photo.startUpload)
    *
    * @param Google_Service_StreetViewPublish_StreetviewpublishEmpty $postBody
    * @param array $optParams Optional parameters.
@@ -115,15 +112,14 @@ class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Res
     return $this->call('startUpload', array($params), "Google_Service_StreetViewPublish_UploadRef");
   }
   /**
-   * Updates the metadata of a Photo, such as pose, place association,
-   * connections, etc. Changing the pixels of a photo is not supported.
+   * Updates the metadata of a photo, such as pose, place association, etc.
+   * Changing the pixels of a photo is not supported.
    *
    * This method returns the following error codes:
    *
-   * * google.rpc.Code.PERMISSION_DENIED if the requesting user did not create the
-   * requested photo. * google.rpc.Code.INVALID_ARGUMENT if the request is
-   * malformed. * google.rpc.Code.NOT_FOUND if the requested photo does not exist.
-   * (photo.update)
+   * * `PERMISSION_DENIED` if the requesting user did not create the requested
+   * photo. * `INVALID_ARGUMENT` if the request is malformed. * `NOT_FOUND` if the
+   * photo ID does not exist. (photo.update)
    *
    * @param string $id Required. A base64 encoded identifier.
    * @param Google_Service_StreetViewPublish_Photo $postBody
@@ -140,11 +136,11 @@ class Google_Service_StreetViewPublish_Resource_Photo extends Google_Service_Res
    * * `pose.heading` * `pose.latlngpair` * `pose.pitch` * `pose.roll` *
    * `pose.level` * `pose.altitude` * `connections` * `places`
    *
-   * Note: Repeated fields in updateMask mean the entire set of repeated values
-   * will be replaced with the new contents. For example, if updateMask contains
-   * `connections` and
-   * google.streetview.publish.v1.UpdatePhotoRequest.photo.connections is empty,
-   * all connections will be removed.
+   * Note: Repeated fields in `update_mask` mean the entire set of repeated values
+   * will be replaced with the new contents. For example, if
+   * `UpdatePhotoRequest.photo.update_mask` contains `connections` and
+   * `UpdatePhotoRequest.photo.connections` is empty, all connections will be
+   * removed.
    * @return Google_Service_StreetViewPublish_Photo
    */
   public function update($id, Google_Service_StreetViewPublish_Photo $postBody, $optParams = array())

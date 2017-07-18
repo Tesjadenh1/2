@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1AutomaticScaling extends Google_Model
+class Google_Service_FlightAvailability_FlightavailabilityPartnerAvailAnswersConstraint extends Google_Collection
 {
-  public $minNodes;
+  protected $collection_key = 'segmentIndices';
+  public $segmentIndices;
 
-  public function setMinNodes($minNodes)
+  public function setSegmentIndices($segmentIndices)
   {
-    $this->minNodes = $minNodes;
+    $this->segmentIndices = $segmentIndices;
   }
-  public function getMinNodes()
+  public function getSegmentIndices()
   {
-    return $this->minNodes;
+    return $this->segmentIndices;
   }
 }

@@ -15,16 +15,17 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1beta1AutomaticScaling extends Google_Model
+class Google_Service_FlightAvailability_FlightavailabilityPartnerAvailAnswersEquivalentBookingCodes extends Google_Collection
 {
-  public $minNodes;
+  protected $collection_key = 'bookingCodes';
+  public $bookingCodes;
 
-  public function setMinNodes($minNodes)
+  public function setBookingCodes($bookingCodes)
   {
-    $this->minNodes = $minNodes;
+    $this->bookingCodes = $bookingCodes;
   }
-  public function getMinNodes()
+  public function getBookingCodes()
   {
-    return $this->minNodes;
+    return $this->bookingCodes;
   }
 }

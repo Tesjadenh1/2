@@ -17,8 +17,17 @@
 
 class Google_Service_CloudMachineLearningEngine_GoogleIamV1LogConfigCloudAuditOptions extends Google_Model
 {
+  public $isReadPermissionType;
   public $logName;
 
+  public function setIsReadPermissionType($isReadPermissionType)
+  {
+    $this->isReadPermissionType = $isReadPermissionType;
+  }
+  public function getIsReadPermissionType()
+  {
+    return $this->isReadPermissionType;
+  }
   public function setLogName($logName)
   {
     $this->logName = $logName;
