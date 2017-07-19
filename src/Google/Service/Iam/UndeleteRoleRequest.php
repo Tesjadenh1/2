@@ -15,25 +15,16 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+class Google_Service_Iam_UndeleteRoleRequest extends Google_Model
 {
-  public $isReadPermissionType;
-  public $logName;
+  public $etag;
 
-  public function setIsReadPermissionType($isReadPermissionType)
+  public function setEtag($etag)
   {
-    $this->isReadPermissionType = $isReadPermissionType;
+    $this->etag = $etag;
   }
-  public function getIsReadPermissionType()
+  public function getEtag()
   {
-    return $this->isReadPermissionType;
-  }
-  public function setLogName($logName)
-  {
-    $this->logName = $logName;
-  }
-  public function getLogName()
-  {
-    return $this->logName;
+    return $this->etag;
   }
 }

@@ -15,25 +15,32 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+class Google_Service_Iam_CreateRoleRequest extends Google_Model
 {
-  public $isReadPermissionType;
-  public $logName;
+  protected $roleType = 'Google_Service_Iam_Role';
+  protected $roleDataType = '';
+  public $roleId;
 
-  public function setIsReadPermissionType($isReadPermissionType)
+  /**
+   * @param Google_Service_Iam_Role
+   */
+  public function setRole(Google_Service_Iam_Role $role)
   {
-    $this->isReadPermissionType = $isReadPermissionType;
+    $this->role = $role;
   }
-  public function getIsReadPermissionType()
+  /**
+   * @return Google_Service_Iam_Role
+   */
+  public function getRole()
   {
-    return $this->isReadPermissionType;
+    return $this->role;
   }
-  public function setLogName($logName)
+  public function setRoleId($roleId)
   {
-    $this->logName = $logName;
+    $this->roleId = $roleId;
   }
-  public function getLogName()
+  public function getRoleId()
   {
-    return $this->logName;
+    return $this->roleId;
   }
 }

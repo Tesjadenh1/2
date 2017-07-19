@@ -15,25 +15,14 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+/**
+ * The "organizations" collection of methods.
+ * Typical usage is:
+ *  <code>
+ *   $iamService = new Google_Service_Iam(...);
+ *   $organizations = $iamService->organizations;
+ *  </code>
+ */
+class Google_Service_Iam_Resource_Organizations extends Google_Service_Resource
 {
-  public $isReadPermissionType;
-  public $logName;
-
-  public function setIsReadPermissionType($isReadPermissionType)
-  {
-    $this->isReadPermissionType = $isReadPermissionType;
-  }
-  public function getIsReadPermissionType()
-  {
-    return $this->isReadPermissionType;
-  }
-  public function setLogName($logName)
-  {
-    $this->logName = $logName;
-  }
-  public function getLogName()
-  {
-    return $this->logName;
-  }
 }

@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+class Google_Service_AndroidEnterprise_AndroidDevicePolicyConfig extends Google_Model
 {
-  public $isReadPermissionType;
-  public $logName;
+  public $kind;
+  public $state;
 
-  public function setIsReadPermissionType($isReadPermissionType)
+  public function setKind($kind)
   {
-    $this->isReadPermissionType = $isReadPermissionType;
+    $this->kind = $kind;
   }
-  public function getIsReadPermissionType()
+  public function getKind()
   {
-    return $this->isReadPermissionType;
+    return $this->kind;
   }
-  public function setLogName($logName)
+  public function setState($state)
   {
-    $this->logName = $logName;
+    $this->state = $state;
   }
-  public function getLogName()
+  public function getState()
   {
-    return $this->logName;
+    return $this->state;
   }
 }

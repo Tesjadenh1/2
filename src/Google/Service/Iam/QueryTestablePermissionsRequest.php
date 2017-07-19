@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+class Google_Service_Iam_QueryTestablePermissionsRequest extends Google_Model
 {
-  public $isReadPermissionType;
-  public $logName;
+  public $fullResourceName;
+  public $pageSize;
+  public $pageToken;
 
-  public function setIsReadPermissionType($isReadPermissionType)
+  public function setFullResourceName($fullResourceName)
   {
-    $this->isReadPermissionType = $isReadPermissionType;
+    $this->fullResourceName = $fullResourceName;
   }
-  public function getIsReadPermissionType()
+  public function getFullResourceName()
   {
-    return $this->isReadPermissionType;
+    return $this->fullResourceName;
   }
-  public function setLogName($logName)
+  public function setPageSize($pageSize)
   {
-    $this->logName = $logName;
+    $this->pageSize = $pageSize;
   }
-  public function getLogName()
+  public function getPageSize()
   {
-    return $this->logName;
+    return $this->pageSize;
+  }
+  public function setPageToken($pageToken)
+  {
+    $this->pageToken = $pageToken;
+  }
+  public function getPageToken()
+  {
+    return $this->pageToken;
   }
 }

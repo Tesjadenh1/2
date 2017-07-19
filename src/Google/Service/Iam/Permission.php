@@ -15,24 +15,22 @@
  * the License.
  */
 
-class Google_Service_Iam_Role extends Google_Collection
+class Google_Service_Iam_Permission extends Google_Model
 {
-  protected $collection_key = 'includedPermissions';
-  public $deleted;
+  public $customRolesSupportLevel;
   public $description;
-  public $etag;
-  public $includedPermissions;
   public $name;
+  public $onlyInPredefinedRoles;
   public $stage;
   public $title;
 
-  public function setDeleted($deleted)
+  public function setCustomRolesSupportLevel($customRolesSupportLevel)
   {
-    $this->deleted = $deleted;
+    $this->customRolesSupportLevel = $customRolesSupportLevel;
   }
-  public function getDeleted()
+  public function getCustomRolesSupportLevel()
   {
-    return $this->deleted;
+    return $this->customRolesSupportLevel;
   }
   public function setDescription($description)
   {
@@ -42,22 +40,6 @@ class Google_Service_Iam_Role extends Google_Collection
   {
     return $this->description;
   }
-  public function setEtag($etag)
-  {
-    $this->etag = $etag;
-  }
-  public function getEtag()
-  {
-    return $this->etag;
-  }
-  public function setIncludedPermissions($includedPermissions)
-  {
-    $this->includedPermissions = $includedPermissions;
-  }
-  public function getIncludedPermissions()
-  {
-    return $this->includedPermissions;
-  }
   public function setName($name)
   {
     $this->name = $name;
@@ -65,6 +47,14 @@ class Google_Service_Iam_Role extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  public function setOnlyInPredefinedRoles($onlyInPredefinedRoles)
+  {
+    $this->onlyInPredefinedRoles = $onlyInPredefinedRoles;
+  }
+  public function getOnlyInPredefinedRoles()
+  {
+    return $this->onlyInPredefinedRoles;
   }
   public function setStage($stage)
   {
