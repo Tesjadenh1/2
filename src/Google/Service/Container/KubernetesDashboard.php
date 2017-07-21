@@ -15,24 +15,16 @@
  * the License.
  */
 
-class Google_Service_Dataproc_WorkflowGraph extends Google_Collection
+class Google_Service_Container_KubernetesDashboard extends Google_Model
 {
-  protected $collection_key = 'nodes';
-  protected $nodesType = 'Google_Service_Dataproc_WorkflowNode';
-  protected $nodesDataType = 'array';
+  public $disabled;
 
-  /**
-   * @param Google_Service_Dataproc_WorkflowNode
-   */
-  public function setNodes($nodes)
+  public function setDisabled($disabled)
   {
-    $this->nodes = $nodes;
+    $this->disabled = $disabled;
   }
-  /**
-   * @return Google_Service_Dataproc_WorkflowNode
-   */
-  public function getNodes()
+  public function getDisabled()
   {
-    return $this->nodes;
+    return $this->disabled;
   }
 }

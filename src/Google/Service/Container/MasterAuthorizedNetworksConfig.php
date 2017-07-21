@@ -15,32 +15,33 @@
  * the License.
  */
 
-class Google_Service_Calendar_EventHabitInstance extends Google_Model
+class Google_Service_Container_MasterAuthorizedNetworksConfig extends Google_Collection
 {
-  protected $dataType = 'Google_Service_Calendar_HabitInstanceData';
-  protected $dataDataType = '';
-  public $parentId;
+  protected $collection_key = 'cidrBlocks';
+  protected $cidrBlocksType = 'Google_Service_Container_CidrBlock';
+  protected $cidrBlocksDataType = 'array';
+  public $enabled;
 
   /**
-   * @param Google_Service_Calendar_HabitInstanceData
+   * @param Google_Service_Container_CidrBlock
    */
-  public function setData(Google_Service_Calendar_HabitInstanceData $data)
+  public function setCidrBlocks($cidrBlocks)
   {
-    $this->data = $data;
+    $this->cidrBlocks = $cidrBlocks;
   }
   /**
-   * @return Google_Service_Calendar_HabitInstanceData
+   * @return Google_Service_Container_CidrBlock
    */
-  public function getData()
+  public function getCidrBlocks()
   {
-    return $this->data;
+    return $this->cidrBlocks;
   }
-  public function setParentId($parentId)
+  public function setEnabled($enabled)
   {
-    $this->parentId = $parentId;
+    $this->enabled = $enabled;
   }
-  public function getParentId()
+  public function getEnabled()
   {
-    return $this->parentId;
+    return $this->enabled;
   }
 }

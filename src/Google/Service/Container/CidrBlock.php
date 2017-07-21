@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Calendar_HabitInstanceData extends Google_Model
+class Google_Service_Container_CidrBlock extends Google_Model
 {
-  public $status;
-  public $statusInferred;
-  public $type;
+  public $cidrBlock;
+  public $displayName;
 
-  public function setStatus($status)
+  public function setCidrBlock($cidrBlock)
   {
-    $this->status = $status;
+    $this->cidrBlock = $cidrBlock;
   }
-  public function getStatus()
+  public function getCidrBlock()
   {
-    return $this->status;
+    return $this->cidrBlock;
   }
-  public function setStatusInferred($statusInferred)
+  public function setDisplayName($displayName)
   {
-    $this->statusInferred = $statusInferred;
+    $this->displayName = $displayName;
   }
-  public function getStatusInferred()
+  public function getDisplayName()
   {
-    return $this->statusInferred;
-  }
-  public function setType($type)
-  {
-    $this->type = $type;
-  }
-  public function getType()
-  {
-    return $this->type;
+    return $this->displayName;
   }
 }

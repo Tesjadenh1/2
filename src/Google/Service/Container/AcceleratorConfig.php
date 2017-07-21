@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_Dataproc_ClusterOperation extends Google_Model
+class Google_Service_Container_AcceleratorConfig extends Google_Model
 {
-  public $error;
-  public $operationId;
+  public $acceleratorCount;
+  public $acceleratorType;
 
-  public function setError($error)
+  public function setAcceleratorCount($acceleratorCount)
   {
-    $this->error = $error;
+    $this->acceleratorCount = $acceleratorCount;
   }
-  public function getError()
+  public function getAcceleratorCount()
   {
-    return $this->error;
+    return $this->acceleratorCount;
   }
-  public function setOperationId($operationId)
+  public function setAcceleratorType($acceleratorType)
   {
-    $this->operationId = $operationId;
+    $this->acceleratorType = $acceleratorType;
   }
-  public function getOperationId()
+  public function getAcceleratorType()
   {
-    return $this->operationId;
+    return $this->acceleratorType;
   }
 }
