@@ -51,6 +51,33 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * is "projects/{project_id_or_number}".
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string interval.endTime Required. The end of the time interval.
+   * @opt_param string aggregation.alignmentPeriod The alignment period for per-
+   * time series alignment. If present, alignmentPeriod must be at least 60
+   * seconds. After per-time series alignment, each time series will contain data
+   * points only on the period boundaries. If perSeriesAligner is not specified or
+   * equals ALIGN_NONE, then this field is ignored. If perSeriesAligner is
+   * specified and does not equal ALIGN_NONE, then this field must be defined;
+   * otherwise an error is returned.
+   * @opt_param int pageSize A positive number that is the maximum number of
+   * results to return. When view field sets to FULL, it limits the number of
+   * Points server will return; if view field is HEADERS, it limits the number of
+   * TimeSeries server will return.
+   * @opt_param string outputPeriod If outputPeriod is specified, the data in the
+   * response will have the given period. Must be equal to or longer than
+   * alignmentPeriod. Must not be used when view is HEADERS. Only used when
+   * interval describes an interval longer than a single point.
+   * @opt_param string orderBy Specifies the order in which the points of the time
+   * series should be returned. By default, results are not ordered. Currently,
+   * this field must be left blank.
+   * @opt_param string aggregation.crossSeriesReducer The approach to be used to
+   * combine time series. Not all reducer functions may be applied to all time
+   * series, depending on the metric type and the value type of the original time
+   * series. Reduction may change the metric type of value type of the time
+   * series.Time series data must be aligned in order to perform cross-time series
+   * reduction. If crossSeriesReducer is specified, then perSeriesAligner must be
+   * specified and not equal ALIGN_NONE and alignmentPeriod must be specified;
+   * otherwise, an error is returned.
    * @opt_param string filter A monitoring filter that specifies which time series
    * should be returned. The filter must specify a single metric type, and can
    * additionally specify metric labels and other information. For example:
@@ -71,6 +98,8 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * @opt_param string interval.startTime Optional. The beginning of the time
    * interval. The default value for the start time is the end time. The start
    * time must not be later than the end time.
+   * @opt_param double aggregation.reduceFractionLessThanParams.threshold The
+   * threshold used by the REDUCE_FRACTION_LESS_THAN cross-series reducer.
    * @opt_param string view Specifies which information is returned about the time
    * series.
    * @opt_param string aggregation.groupByFields The set of fields to preserve
@@ -85,29 +114,6 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * have the same resource type, then the time series are aggregated into a
    * single output time series. If crossSeriesReducer is not defined, this field
    * is ignored.
-   * @opt_param string interval.endTime Required. The end of the time interval.
-   * @opt_param string aggregation.alignmentPeriod The alignment period for per-
-   * time series alignment. If present, alignmentPeriod must be at least 60
-   * seconds. After per-time series alignment, each time series will contain data
-   * points only on the period boundaries. If perSeriesAligner is not specified or
-   * equals ALIGN_NONE, then this field is ignored. If perSeriesAligner is
-   * specified and does not equal ALIGN_NONE, then this field must be defined;
-   * otherwise an error is returned.
-   * @opt_param int pageSize A positive number that is the maximum number of
-   * results to return. When view field sets to FULL, it limits the number of
-   * Points server will return; if view field is HEADERS, it limits the number of
-   * TimeSeries server will return.
-   * @opt_param string orderBy Specifies the order in which the points of the time
-   * series should be returned. By default, results are not ordered. Currently,
-   * this field must be left blank.
-   * @opt_param string aggregation.crossSeriesReducer The approach to be used to
-   * combine time series. Not all reducer functions may be applied to all time
-   * series, depending on the metric type and the value type of the original time
-   * series. Reduction may change the metric type of value type of the time
-   * series.Time series data must be aligned in order to perform cross-time series
-   * reduction. If crossSeriesReducer is specified, then perSeriesAligner must be
-   * specified and not equal ALIGN_NONE and alignmentPeriod must be specified;
-   * otherwise, an error is returned.
    * @return Google_Service_Monitoring_ListTimeSeriesResponse
    */
   public function listProjectsTimeSeries($name, $optParams = array())
