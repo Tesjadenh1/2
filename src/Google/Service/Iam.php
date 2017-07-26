@@ -213,19 +213,19 @@ class Google_Service_Iam extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'view' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'showDeleted' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
                 'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'view' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -313,13 +313,13 @@ class Google_Service_Iam extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'setIamPolicy' => array(
@@ -455,6 +455,10 @@ class Google_Service_Iam extends Google_Service
               'path' => 'v1/roles',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'view' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'parent' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -470,10 +474,6 @@ class Google_Service_Iam extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'view' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'queryGrantableRoles' => array(

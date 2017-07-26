@@ -15,16 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+class Google_Service_Directory_UserKeyword extends Google_Model
 {
-  public $logName;
+  public $customType;
+  public $type;
+  public $value;
 
-  public function setLogName($logName)
+  public function setCustomType($customType)
   {
-    $this->logName = $logName;
+    $this->customType = $customType;
   }
-  public function getLogName()
+  public function getCustomType()
   {
-    return $this->logName;
+    return $this->customType;
+  }
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
+  }
+  public function setValue($value)
+  {
+    $this->value = $value;
+  }
+  public function getValue()
+  {
+    return $this->value;
   }
 }
