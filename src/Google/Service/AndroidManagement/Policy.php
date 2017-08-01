@@ -30,6 +30,7 @@ class Google_Service_AndroidManagement_Policy extends Google_Collection
   public $defaultPermissionPolicy;
   public $factoryResetDisabled;
   public $frpAdminEmails;
+  public $funDisabled;
   public $installUnknownSourcesAllowed;
   public $keyguardDisabled;
   public $maximumTimeToLock;
@@ -144,6 +145,14 @@ class Google_Service_AndroidManagement_Policy extends Google_Collection
   public function getFrpAdminEmails()
   {
     return $this->frpAdminEmails;
+  }
+  public function setFunDisabled($funDisabled)
+  {
+    $this->funDisabled = $funDisabled;
+  }
+  public function getFunDisabled()
+  {
+    return $this->funDisabled;
   }
   public function setInstallUnknownSourcesAllowed($installUnknownSourcesAllowed)
   {
