@@ -15,16 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1LogConfigDataAccessOptions extends Google_Model
+class Google_Service_Classroom_StateHistory extends Google_Model
 {
-  public $logMode;
+  public $actorUserId;
+  public $state;
+  public $stateTimestamp;
 
-  public function setLogMode($logMode)
+  public function setActorUserId($actorUserId)
   {
-    $this->logMode = $logMode;
+    $this->actorUserId = $actorUserId;
   }
-  public function getLogMode()
+  public function getActorUserId()
   {
-    return $this->logMode;
+    return $this->actorUserId;
+  }
+  public function setState($state)
+  {
+    $this->state = $state;
+  }
+  public function getState()
+  {
+    return $this->state;
+  }
+  public function setStateTimestamp($stateTimestamp)
+  {
+    $this->stateTimestamp = $stateTimestamp;
+  }
+  public function getStateTimestamp()
+  {
+    return $this->stateTimestamp;
   }
 }
