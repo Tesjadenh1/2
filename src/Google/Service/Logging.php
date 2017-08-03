@@ -167,6 +167,20 @@ class Google_Service_Logging extends Google_Service
                   'type' => 'integer',
                 ),
               ),
+            ),'patch' => array(
+              'path' => 'v2/{+sinkName}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'sinkName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'uniqueWriterIdentity' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
             ),'update' => array(
               'path' => 'v2/{+sinkName}',
               'httpMethod' => 'PUT',
@@ -228,13 +242,13 @@ class Google_Service_Logging extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -297,6 +311,20 @@ class Google_Service_Logging extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v2/{+sinkName}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'sinkName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'uniqueWriterIdentity' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'update' => array(
@@ -436,6 +464,20 @@ class Google_Service_Logging extends Google_Service
                   'type' => 'integer',
                 ),
               ),
+            ),'patch' => array(
+              'path' => 'v2/{+sinkName}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'sinkName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'uniqueWriterIdentity' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
             ),'update' => array(
               'path' => 'v2/{+sinkName}',
               'httpMethod' => 'PUT',
@@ -479,13 +521,13 @@ class Google_Service_Logging extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -616,6 +658,20 @@ class Google_Service_Logging extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v2/{+sinkName}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'sinkName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'uniqueWriterIdentity' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'update' => array(
