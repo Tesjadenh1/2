@@ -15,16 +15,26 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_DataAccessOptions extends Google_Model
+class Google_Service_Datastore_GoogleDatastoreAdminV1beta1EntityFilter extends Google_Collection
 {
-  public $logMode;
+  protected $collection_key = 'namespaceIds';
+  public $kinds;
+  public $namespaceIds;
 
-  public function setLogMode($logMode)
+  public function setKinds($kinds)
   {
-    $this->logMode = $logMode;
+    $this->kinds = $kinds;
   }
-  public function getLogMode()
+  public function getKinds()
   {
-    return $this->logMode;
+    return $this->kinds;
+  }
+  public function setNamespaceIds($namespaceIds)
+  {
+    $this->namespaceIds = $namespaceIds;
+  }
+  public function getNamespaceIds()
+  {
+    return $this->namespaceIds;
   }
 }

@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_DataAccessOptions extends Google_Model
+class Google_Service_Datastore_GoogleDatastoreAdminV1beta1Progress extends Google_Model
 {
-  public $logMode;
+  public $workCompleted;
+  public $workEstimated;
 
-  public function setLogMode($logMode)
+  public function setWorkCompleted($workCompleted)
   {
-    $this->logMode = $logMode;
+    $this->workCompleted = $workCompleted;
   }
-  public function getLogMode()
+  public function getWorkCompleted()
   {
-    return $this->logMode;
+    return $this->workCompleted;
+  }
+  public function setWorkEstimated($workEstimated)
+  {
+    $this->workEstimated = $workEstimated;
+  }
+  public function getWorkEstimated()
+  {
+    return $this->workEstimated;
   }
 }

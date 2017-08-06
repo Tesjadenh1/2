@@ -15,16 +15,16 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_DataAccessOptions extends Google_Model
+class Google_Service_Datastore_GoogleDatastoreAdminV1beta1ExportEntitiesResponse extends Google_Model
 {
-  public $logMode;
+  public $outputUrl;
 
-  public function setLogMode($logMode)
+  public function setOutputUrl($outputUrl)
   {
-    $this->logMode = $logMode;
+    $this->outputUrl = $outputUrl;
   }
-  public function getLogMode()
+  public function getOutputUrl()
   {
-    return $this->logMode;
+    return $this->outputUrl;
   }
 }

@@ -15,29 +15,29 @@
  * the License.
  */
 
-class Google_Service_ServiceUser_AuthProvider extends Google_Model
+class Google_Service_ShoppingContent_AccountStatusAccountLevelIssue extends Google_Model
 {
-  public $audiences;
-  public $authorizationUrl;
+  public $country;
+  public $detail;
   public $id;
-  public $issuer;
-  public $jwksUri;
+  public $severity;
+  public $title;
 
-  public function setAudiences($audiences)
+  public function setCountry($country)
   {
-    $this->audiences = $audiences;
+    $this->country = $country;
   }
-  public function getAudiences()
+  public function getCountry()
   {
-    return $this->audiences;
+    return $this->country;
   }
-  public function setAuthorizationUrl($authorizationUrl)
+  public function setDetail($detail)
   {
-    $this->authorizationUrl = $authorizationUrl;
+    $this->detail = $detail;
   }
-  public function getAuthorizationUrl()
+  public function getDetail()
   {
-    return $this->authorizationUrl;
+    return $this->detail;
   }
   public function setId($id)
   {
@@ -47,20 +47,20 @@ class Google_Service_ServiceUser_AuthProvider extends Google_Model
   {
     return $this->id;
   }
-  public function setIssuer($issuer)
+  public function setSeverity($severity)
   {
-    $this->issuer = $issuer;
+    $this->severity = $severity;
   }
-  public function getIssuer()
+  public function getSeverity()
   {
-    return $this->issuer;
+    return $this->severity;
   }
-  public function setJwksUri($jwksUri)
+  public function setTitle($title)
   {
-    $this->jwksUri = $jwksUri;
+    $this->title = $title;
   }
-  public function getJwksUri()
+  public function getTitle()
   {
-    return $this->jwksUri;
+    return $this->title;
   }
 }

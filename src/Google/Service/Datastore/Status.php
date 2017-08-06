@@ -15,16 +15,35 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_DataAccessOptions extends Google_Model
+class Google_Service_Datastore_Status extends Google_Collection
 {
-  public $logMode;
+  protected $collection_key = 'details';
+  public $code;
+  public $details;
+  public $message;
 
-  public function setLogMode($logMode)
+  public function setCode($code)
   {
-    $this->logMode = $logMode;
+    $this->code = $code;
   }
-  public function getLogMode()
+  public function getCode()
   {
-    return $this->logMode;
+    return $this->code;
+  }
+  public function setDetails($details)
+  {
+    $this->details = $details;
+  }
+  public function getDetails()
+  {
+    return $this->details;
+  }
+  public function setMessage($message)
+  {
+    $this->message = $message;
+  }
+  public function getMessage()
+  {
+    return $this->message;
   }
 }

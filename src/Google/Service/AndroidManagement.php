@@ -31,7 +31,9 @@
  */
 class Google_Service_AndroidManagement extends Google_Service
 {
-
+  /** Manage Android devices and apps for your customers. */
+  const ANDROIDMANAGEMENT =
+      "https://www.googleapis.com/auth/androidmanagement";
 
   public $enterprises;
   public $enterprises_applications;

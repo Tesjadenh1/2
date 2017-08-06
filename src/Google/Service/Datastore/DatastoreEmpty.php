@@ -15,16 +15,6 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_DataAccessOptions extends Google_Model
+class Google_Service_Datastore_DatastoreEmpty extends Google_Model
 {
-  public $logMode;
-
-  public function setLogMode($logMode)
-  {
-    $this->logMode = $logMode;
-  }
-  public function getLogMode()
-  {
-    return $this->logMode;
-  }
 }
