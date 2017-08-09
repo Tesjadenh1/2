@@ -15,35 +15,16 @@
  * the License.
  */
 
-class Google_Service_Script_JoinAsyncRequest extends Google_Collection
+class Google_Service_Spanner_AuthorizationLoggingOptions extends Google_Model
 {
-  protected $collection_key = 'names';
-  public $names;
-  public $scriptId;
-  public $timeout;
+  public $permissionType;
 
-  public function setNames($names)
+  public function setPermissionType($permissionType)
   {
-    $this->names = $names;
+    $this->permissionType = $permissionType;
   }
-  public function getNames()
+  public function getPermissionType()
   {
-    return $this->names;
-  }
-  public function setScriptId($scriptId)
-  {
-    $this->scriptId = $scriptId;
-  }
-  public function getScriptId()
-  {
-    return $this->scriptId;
-  }
-  public function setTimeout($timeout)
-  {
-    $this->timeout = $timeout;
-  }
-  public function getTimeout()
-  {
-    return $this->timeout;
+    return $this->permissionType;
   }
 }
