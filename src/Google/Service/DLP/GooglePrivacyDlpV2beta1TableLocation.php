@@ -15,25 +15,16 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_ApkBinary extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2beta1TableLocation extends Google_Model
 {
-  public $sha1;
-  public $sha256;
+  public $rowIndex;
 
-  public function setSha1($sha1)
+  public function setRowIndex($rowIndex)
   {
-    $this->sha1 = $sha1;
+    $this->rowIndex = $rowIndex;
   }
-  public function getSha1()
+  public function getRowIndex()
   {
-    return $this->sha1;
-  }
-  public function setSha256($sha256)
-  {
-    $this->sha256 = $sha256;
-  }
-  public function getSha256()
-  {
-    return $this->sha256;
+    return $this->rowIndex;
   }
 }

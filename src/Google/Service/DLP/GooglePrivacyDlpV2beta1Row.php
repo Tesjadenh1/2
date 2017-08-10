@@ -15,25 +15,24 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_ApkBinary extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2beta1Row extends Google_Collection
 {
-  public $sha1;
-  public $sha256;
+  protected $collection_key = 'values';
+  protected $valuesType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1Value';
+  protected $valuesDataType = 'array';
 
-  public function setSha1($sha1)
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1Value
+   */
+  public function setValues($values)
   {
-    $this->sha1 = $sha1;
+    $this->values = $values;
   }
-  public function getSha1()
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1Value
+   */
+  public function getValues()
   {
-    return $this->sha1;
-  }
-  public function setSha256($sha256)
-  {
-    $this->sha256 = $sha256;
-  }
-  public function getSha256()
-  {
-    return $this->sha256;
+    return $this->values;
   }
 }

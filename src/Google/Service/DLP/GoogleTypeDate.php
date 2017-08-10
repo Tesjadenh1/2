@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_ApkBinary extends Google_Model
+class Google_Service_DLP_GoogleTypeDate extends Google_Model
 {
-  public $sha1;
-  public $sha256;
+  public $day;
+  public $month;
+  public $year;
 
-  public function setSha1($sha1)
+  public function setDay($day)
   {
-    $this->sha1 = $sha1;
+    $this->day = $day;
   }
-  public function getSha1()
+  public function getDay()
   {
-    return $this->sha1;
+    return $this->day;
   }
-  public function setSha256($sha256)
+  public function setMonth($month)
   {
-    $this->sha256 = $sha256;
+    $this->month = $month;
   }
-  public function getSha256()
+  public function getMonth()
   {
-    return $this->sha256;
+    return $this->month;
+  }
+  public function setYear($year)
+  {
+    $this->year = $year;
+  }
+  public function getYear()
+  {
+    return $this->year;
   }
 }
