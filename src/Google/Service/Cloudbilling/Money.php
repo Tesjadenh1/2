@@ -15,23 +15,34 @@
  * the License.
  */
 
-class Google_Service_Datastore_BeginTransactionRequest extends Google_Model
+class Google_Service_Cloudbilling_Money extends Google_Model
 {
-  protected $transactionOptionsType = 'Google_Service_Datastore_TransactionOptions';
-  protected $transactionOptionsDataType = '';
+  public $currencyCode;
+  public $nanos;
+  public $units;
 
-  /**
-   * @param Google_Service_Datastore_TransactionOptions
-   */
-  public function setTransactionOptions(Google_Service_Datastore_TransactionOptions $transactionOptions)
+  public function setCurrencyCode($currencyCode)
   {
-    $this->transactionOptions = $transactionOptions;
+    $this->currencyCode = $currencyCode;
   }
-  /**
-   * @return Google_Service_Datastore_TransactionOptions
-   */
-  public function getTransactionOptions()
+  public function getCurrencyCode()
   {
-    return $this->transactionOptions;
+    return $this->currencyCode;
+  }
+  public function setNanos($nanos)
+  {
+    $this->nanos = $nanos;
+  }
+  public function getNanos()
+  {
+    return $this->nanos;
+  }
+  public function setUnits($units)
+  {
+    $this->units = $units;
+  }
+  public function getUnits()
+  {
+    return $this->units;
   }
 }

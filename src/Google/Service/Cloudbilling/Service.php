@@ -15,23 +15,34 @@
  * the License.
  */
 
-class Google_Service_Datastore_BeginTransactionRequest extends Google_Model
+class Google_Service_Cloudbilling_Service extends Google_Model
 {
-  protected $transactionOptionsType = 'Google_Service_Datastore_TransactionOptions';
-  protected $transactionOptionsDataType = '';
+  public $displayName;
+  public $name;
+  public $serviceId;
 
-  /**
-   * @param Google_Service_Datastore_TransactionOptions
-   */
-  public function setTransactionOptions(Google_Service_Datastore_TransactionOptions $transactionOptions)
+  public function setDisplayName($displayName)
   {
-    $this->transactionOptions = $transactionOptions;
+    $this->displayName = $displayName;
   }
-  /**
-   * @return Google_Service_Datastore_TransactionOptions
-   */
-  public function getTransactionOptions()
+  public function getDisplayName()
   {
-    return $this->transactionOptions;
+    return $this->displayName;
+  }
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+  public function getName()
+  {
+    return $this->name;
+  }
+  public function setServiceId($serviceId)
+  {
+    $this->serviceId = $serviceId;
+  }
+  public function getServiceId()
+  {
+    return $this->serviceId;
   }
 }

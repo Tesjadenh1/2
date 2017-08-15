@@ -15,23 +15,33 @@
  * the License.
  */
 
-class Google_Service_Datastore_BeginTransactionRequest extends Google_Model
+class Google_Service_Cloudbilling_ListSkusResponse extends Google_Collection
 {
-  protected $transactionOptionsType = 'Google_Service_Datastore_TransactionOptions';
-  protected $transactionOptionsDataType = '';
+  protected $collection_key = 'skus';
+  public $nextPageToken;
+  protected $skusType = 'Google_Service_Cloudbilling_Sku';
+  protected $skusDataType = 'array';
 
-  /**
-   * @param Google_Service_Datastore_TransactionOptions
-   */
-  public function setTransactionOptions(Google_Service_Datastore_TransactionOptions $transactionOptions)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->transactionOptions = $transactionOptions;
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
   /**
-   * @return Google_Service_Datastore_TransactionOptions
+   * @param Google_Service_Cloudbilling_Sku
    */
-  public function getTransactionOptions()
+  public function setSkus($skus)
   {
-    return $this->transactionOptions;
+    $this->skus = $skus;
+  }
+  /**
+   * @return Google_Service_Cloudbilling_Sku
+   */
+  public function getSkus()
+  {
+    return $this->skus;
   }
 }

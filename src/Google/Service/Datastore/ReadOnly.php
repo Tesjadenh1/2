@@ -15,23 +15,6 @@
  * the License.
  */
 
-class Google_Service_Datastore_BeginTransactionRequest extends Google_Model
+class Google_Service_Datastore_ReadOnly extends Google_Model
 {
-  protected $transactionOptionsType = 'Google_Service_Datastore_TransactionOptions';
-  protected $transactionOptionsDataType = '';
-
-  /**
-   * @param Google_Service_Datastore_TransactionOptions
-   */
-  public function setTransactionOptions(Google_Service_Datastore_TransactionOptions $transactionOptions)
-  {
-    $this->transactionOptions = $transactionOptions;
-  }
-  /**
-   * @return Google_Service_Datastore_TransactionOptions
-   */
-  public function getTransactionOptions()
-  {
-    return $this->transactionOptions;
-  }
 }
