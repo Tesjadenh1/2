@@ -58,12 +58,12 @@ class Google_Service_CloudTrace_Resource_ProjectsTraces extends Google_Service_R
    *     "label:/http/url root:/_ah/background my_label:17"
    * @opt_param string endTime Optional. Do not return traces whose start time is
    * later than this time.
+   * @opt_param string startTime Optional. Do not return traces whose end time is
+   * earlier than this time.
    * @opt_param string pageToken Optional. If present, then retrieve the next
    * batch of results from the preceding call to this method.  `page_token` must
    * be the value of `next_page_token` from the previous response.  The values of
    * other method parameters should be identical to those in the previous call.
-   * @opt_param string startTime Optional. Do not return traces whose end time is
-   * earlier than this time.
    * @opt_param int pageSize Optional. The maximum number of results to return
    * from this request. Non-positive values are ignored. The presence of
    * `next_page_token` in the response indicates that more results might be
