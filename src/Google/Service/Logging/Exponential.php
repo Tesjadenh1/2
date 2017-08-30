@@ -15,16 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1LogConfigCloudAuditOptions extends Google_Model
+class Google_Service_Logging_Exponential extends Google_Model
 {
-  public $logName;
+  public $growthFactor;
+  public $numFiniteBuckets;
+  public $scale;
 
-  public function setLogName($logName)
+  public function setGrowthFactor($growthFactor)
   {
-    $this->logName = $logName;
+    $this->growthFactor = $growthFactor;
   }
-  public function getLogName()
+  public function getGrowthFactor()
   {
-    return $this->logName;
+    return $this->growthFactor;
+  }
+  public function setNumFiniteBuckets($numFiniteBuckets)
+  {
+    $this->numFiniteBuckets = $numFiniteBuckets;
+  }
+  public function getNumFiniteBuckets()
+  {
+    return $this->numFiniteBuckets;
+  }
+  public function setScale($scale)
+  {
+    $this->scale = $scale;
+  }
+  public function getScale()
+  {
+    return $this->scale;
   }
 }

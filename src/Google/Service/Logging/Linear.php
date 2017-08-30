@@ -15,16 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1LogConfigDataAccessOptions extends Google_Model
+class Google_Service_Logging_Linear extends Google_Model
 {
-  public $logMode;
+  public $numFiniteBuckets;
+  public $offset;
+  public $width;
 
-  public function setLogMode($logMode)
+  public function setNumFiniteBuckets($numFiniteBuckets)
   {
-    $this->logMode = $logMode;
+    $this->numFiniteBuckets = $numFiniteBuckets;
   }
-  public function getLogMode()
+  public function getNumFiniteBuckets()
   {
-    return $this->logMode;
+    return $this->numFiniteBuckets;
+  }
+  public function setOffset($offset)
+  {
+    $this->offset = $offset;
+  }
+  public function getOffset()
+  {
+    return $this->offset;
+  }
+  public function setWidth($width)
+  {
+    $this->width = $width;
+  }
+  public function getWidth()
+  {
+    return $this->width;
   }
 }

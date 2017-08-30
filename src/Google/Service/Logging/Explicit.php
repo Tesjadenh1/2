@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1LogConfigCounterOptions extends Google_Model
+class Google_Service_Logging_Explicit extends Google_Collection
 {
-  public $field;
-  public $metric;
+  protected $collection_key = 'bounds';
+  public $bounds;
 
-  public function setField($field)
+  public function setBounds($bounds)
   {
-    $this->field = $field;
+    $this->bounds = $bounds;
   }
-  public function getField()
+  public function getBounds()
   {
-    return $this->field;
-  }
-  public function setMetric($metric)
-  {
-    $this->metric = $metric;
-  }
-  public function getMetric()
-  {
-    return $this->metric;
+    return $this->bounds;
   }
 }
