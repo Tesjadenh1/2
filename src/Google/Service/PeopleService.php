@@ -86,14 +86,14 @@ class Google_Service_PeopleService extends Google_Service
               'path' => 'v1/contactGroups:batchGet',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'maxMembers' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'resourceNames' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
-                ),
-                'maxMembers' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),'create' => array(
@@ -213,11 +213,11 @@ class Google_Service_PeopleService extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'personFields' => array(
+                'requestMask.includeField' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'requestMask.includeField' => array(
+                'personFields' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

@@ -39,6 +39,7 @@ class Google_Service_DLP extends Google_Service
   public $content;
   public $inspect_operations;
   public $inspect_results_findings;
+  public $riskAnalysis_operations;
   public $rootCategories;
   public $rootCategories_infoTypes;
   
@@ -147,6 +148,68 @@ class Google_Service_DLP extends Google_Service
           'methods' => array(
             'list' => array(
               'path' => 'v2beta1/{+name}/findings',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->riskAnalysis_operations = new Google_Service_DLP_Resource_RiskAnalysisOperations(
+        $this,
+        $this->serviceName,
+        'operations',
+        array(
+          'methods' => array(
+            'cancel' => array(
+              'path' => 'v2beta1/{+name}:cancel',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v2beta1/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2beta1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2beta1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
