@@ -15,16 +15,35 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CloudAuditOptions extends Google_Model
+class Google_Service_Monitoring_Status extends Google_Collection
 {
-  public $logName;
+  protected $collection_key = 'details';
+  public $code;
+  public $details;
+  public $message;
 
-  public function setLogName($logName)
+  public function setCode($code)
   {
-    $this->logName = $logName;
+    $this->code = $code;
   }
-  public function getLogName()
+  public function getCode()
   {
-    return $this->logName;
+    return $this->code;
+  }
+  public function setDetails($details)
+  {
+    $this->details = $details;
+  }
+  public function getDetails()
+  {
+    return $this->details;
+  }
+  public function setMessage($message)
+  {
+    $this->message = $message;
+  }
+  public function getMessage()
+  {
+    return $this->message;
   }
 }

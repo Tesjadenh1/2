@@ -15,16 +15,32 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_DataAccessOptions extends Google_Model
+class Google_Service_Monitoring_CollectdValueError extends Google_Model
 {
-  public $logMode;
+  protected $errorType = 'Google_Service_Monitoring_Status';
+  protected $errorDataType = '';
+  public $index;
 
-  public function setLogMode($logMode)
+  /**
+   * @param Google_Service_Monitoring_Status
+   */
+  public function setError(Google_Service_Monitoring_Status $error)
   {
-    $this->logMode = $logMode;
+    $this->error = $error;
   }
-  public function getLogMode()
+  /**
+   * @return Google_Service_Monitoring_Status
+   */
+  public function getError()
   {
-    return $this->logMode;
+    return $this->error;
+  }
+  public function setIndex($index)
+  {
+    $this->index = $index;
+  }
+  public function getIndex()
+  {
+    return $this->index;
   }
 }

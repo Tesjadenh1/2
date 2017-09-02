@@ -15,25 +15,24 @@
  * the License.
  */
 
-class Google_Service_CloudKMS_CounterOptions extends Google_Model
+class Google_Service_Monitoring_CreateCollectdTimeSeriesResponse extends Google_Collection
 {
-  public $field;
-  public $metric;
+  protected $collection_key = 'payloadErrors';
+  protected $payloadErrorsType = 'Google_Service_Monitoring_CollectdPayloadError';
+  protected $payloadErrorsDataType = 'array';
 
-  public function setField($field)
+  /**
+   * @param Google_Service_Monitoring_CollectdPayloadError
+   */
+  public function setPayloadErrors($payloadErrors)
   {
-    $this->field = $field;
+    $this->payloadErrors = $payloadErrors;
   }
-  public function getField()
+  /**
+   * @return Google_Service_Monitoring_CollectdPayloadError
+   */
+  public function getPayloadErrors()
   {
-    return $this->field;
-  }
-  public function setMetric($metric)
-  {
-    $this->metric = $metric;
-  }
-  public function getMetric()
-  {
-    return $this->metric;
+    return $this->payloadErrors;
   }
 }

@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Bigquery_TimePartitioning extends Google_Model
+class Google_Service_FirebaseRemoteConfig_RemoteConfigParameterValue extends Google_Model
 {
-  public $expirationMs;
-  public $field;
-  public $type;
+  public $useInAppDefault;
+  public $value;
 
-  public function setExpirationMs($expirationMs)
+  public function setUseInAppDefault($useInAppDefault)
   {
-    $this->expirationMs = $expirationMs;
+    $this->useInAppDefault = $useInAppDefault;
   }
-  public function getExpirationMs()
+  public function getUseInAppDefault()
   {
-    return $this->expirationMs;
+    return $this->useInAppDefault;
   }
-  public function setField($field)
+  public function setValue($value)
   {
-    $this->field = $field;
+    $this->value = $value;
   }
-  public function getField()
+  public function getValue()
   {
-    return $this->field;
-  }
-  public function setType($type)
-  {
-    $this->type = $type;
-  }
-  public function getType()
-  {
-    return $this->type;
+    return $this->value;
   }
 }
