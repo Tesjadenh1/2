@@ -15,25 +15,23 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_CounterOptions extends Google_Model
+class Google_Service_AndroidProvisioningPartner_CreateCustomerRequest extends Google_Model
 {
-  public $field;
-  public $metric;
+  protected $customerType = 'Google_Service_AndroidProvisioningPartner_Company';
+  protected $customerDataType = '';
 
-  public function setField($field)
+  /**
+   * @param Google_Service_AndroidProvisioningPartner_Company
+   */
+  public function setCustomer(Google_Service_AndroidProvisioningPartner_Company $customer)
   {
-    $this->field = $field;
+    $this->customer = $customer;
   }
-  public function getField()
+  /**
+   * @return Google_Service_AndroidProvisioningPartner_Company
+   */
+  public function getCustomer()
   {
-    return $this->field;
-  }
-  public function setMetric($metric)
-  {
-    $this->metric = $metric;
-  }
-  public function getMetric()
-  {
-    return $this->metric;
+    return $this->customer;
   }
 }

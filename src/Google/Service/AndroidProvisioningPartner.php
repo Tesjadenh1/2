@@ -77,7 +77,17 @@ class Google_Service_AndroidProvisioningPartner extends Google_Service
         'customers',
         array(
           'methods' => array(
-            'list' => array(
+            'create' => array(
+              'path' => 'v1/{+parent}/customers',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
               'path' => 'v1/partners/{+partnerId}/customers',
               'httpMethod' => 'GET',
               'parameters' => array(
