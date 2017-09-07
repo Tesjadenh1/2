@@ -15,26 +15,25 @@
  * the License.
  */
 
-class Google_Service_Spanner_AuditLogConfig extends Google_Collection
+class Google_Service_Appengine_AuthorizedDomain extends Google_Model
 {
-  protected $collection_key = 'exemptedMembers';
-  public $exemptedMembers;
-  public $logType;
+  public $id;
+  public $name;
 
-  public function setExemptedMembers($exemptedMembers)
+  public function setId($id)
   {
-    $this->exemptedMembers = $exemptedMembers;
+    $this->id = $id;
   }
-  public function getExemptedMembers()
+  public function getId()
   {
-    return $this->exemptedMembers;
+    return $this->id;
   }
-  public function setLogType($logType)
+  public function setName($name)
   {
-    $this->logType = $logType;
+    $this->name = $name;
   }
-  public function getLogType()
+  public function getName()
   {
-    return $this->logType;
+    return $this->name;
   }
 }

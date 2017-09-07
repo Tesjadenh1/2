@@ -15,23 +15,6 @@
  * the License.
  */
 
-class Google_Service_Spanner_SetIamPolicyRequest extends Google_Model
+class Google_Service_Appengine_AppengineEmpty extends Google_Model
 {
-  protected $policyType = 'Google_Service_Spanner_Policy';
-  protected $policyDataType = '';
-
-  /**
-   * @param Google_Service_Spanner_Policy
-   */
-  public function setPolicy(Google_Service_Spanner_Policy $policy)
-  {
-    $this->policy = $policy;
-  }
-  /**
-   * @return Google_Service_Spanner_Policy
-   */
-  public function getPolicy()
-  {
-    return $this->policy;
-  }
 }

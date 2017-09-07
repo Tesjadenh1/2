@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_Spanner_AuthorizationLoggingOptions extends Google_Model
+class Google_Service_Appengine_CertificateRawData extends Google_Model
 {
-  public $permissionType;
+  public $privateKey;
+  public $publicCertificate;
 
-  public function setPermissionType($permissionType)
+  public function setPrivateKey($privateKey)
   {
-    $this->permissionType = $permissionType;
+    $this->privateKey = $privateKey;
   }
-  public function getPermissionType()
+  public function getPrivateKey()
   {
-    return $this->permissionType;
+    return $this->privateKey;
+  }
+  public function setPublicCertificate($publicCertificate)
+  {
+    $this->publicCertificate = $publicCertificate;
+  }
+  public function getPublicCertificate()
+  {
+    return $this->publicCertificate;
   }
 }

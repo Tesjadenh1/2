@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_Spanner_CounterOptions extends Google_Model
+class Google_Service_Appengine_ResourceRecord extends Google_Model
 {
-  public $field;
-  public $metric;
+  public $name;
+  public $rrdata;
+  public $type;
 
-  public function setField($field)
+  public function setName($name)
   {
-    $this->field = $field;
+    $this->name = $name;
   }
-  public function getField()
+  public function getName()
   {
-    return $this->field;
+    return $this->name;
   }
-  public function setMetric($metric)
+  public function setRrdata($rrdata)
   {
-    $this->metric = $metric;
+    $this->rrdata = $rrdata;
   }
-  public function getMetric()
+  public function getRrdata()
   {
-    return $this->metric;
+    return $this->rrdata;
+  }
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
   }
 }
