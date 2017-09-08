@@ -282,8 +282,7 @@ class Google_Service_Storage_Resource_Objects extends Google_Service_Resource
     return $this->call('list', array($params), "Google_Service_Storage_Objects");
   }
   /**
-   * Updates an object's metadata. This method supports patch semantics.
-   * (objects.patch)
+   * Patches an object's metadata. (objects.patch)
    *
    * @param string $bucket Name of the bucket in which the object resides.
    * @param string $object Name of the object. For information about how to URL
