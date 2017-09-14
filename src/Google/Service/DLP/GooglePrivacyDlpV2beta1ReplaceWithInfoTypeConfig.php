@@ -15,16 +15,6 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_SetEnabledRequest extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2beta1ReplaceWithInfoTypeConfig extends Google_Model
 {
-  public $enabled;
-
-  public function setEnabled($enabled)
-  {
-    $this->enabled = $enabled;
-  }
-  public function getEnabled()
-  {
-    return $this->enabled;
-  }
 }

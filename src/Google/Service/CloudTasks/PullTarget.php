@@ -15,25 +15,6 @@
  * the License.
  */
 
-class Google_Service_YouTube_LiveBroadcastTopicSnippet extends Google_Model
+class Google_Service_CloudTasks_PullTarget extends Google_Model
 {
-  public $name;
-  public $releaseDate;
-
-  public function setName($name)
-  {
-    $this->name = $name;
-  }
-  public function getName()
-  {
-    return $this->name;
-  }
-  public function setReleaseDate($releaseDate)
-  {
-    $this->releaseDate = $releaseDate;
-  }
-  public function getReleaseDate()
-  {
-    return $this->releaseDate;
-  }
 }

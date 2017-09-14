@@ -15,16 +15,23 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_IsEnabledResponse extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2beta1NumericalStatsConfig extends Google_Model
 {
-  public $enabled;
+  protected $fieldType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1FieldId';
+  protected $fieldDataType = '';
 
-  public function setEnabled($enabled)
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1FieldId
+   */
+  public function setField(Google_Service_DLP_GooglePrivacyDlpV2beta1FieldId $field)
   {
-    $this->enabled = $enabled;
+    $this->field = $field;
   }
-  public function getEnabled()
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1FieldId
+   */
+  public function getField()
   {
-    return $this->enabled;
+    return $this->field;
   }
 }

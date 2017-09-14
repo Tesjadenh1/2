@@ -15,6 +15,23 @@
  * the License.
  */
 
-class Google_Service_BigQueryDataTransfer_IsEnabledRequest extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2beta1RecordSuppression extends Google_Model
 {
+  protected $conditionType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1RecordCondition';
+  protected $conditionDataType = '';
+
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1RecordCondition
+   */
+  public function setCondition(Google_Service_DLP_GooglePrivacyDlpV2beta1RecordCondition $condition)
+  {
+    $this->condition = $condition;
+  }
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1RecordCondition
+   */
+  public function getCondition()
+  {
+    return $this->condition;
+  }
 }

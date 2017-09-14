@@ -15,24 +15,17 @@
  * the License.
  */
 
-class Google_Service_YouTube_LiveBroadcastTopicDetails extends Google_Collection
+class Google_Service_CloudTasks_TestIamPermissionsRequest extends Google_Collection
 {
-  protected $collection_key = 'topics';
-  protected $topicsType = 'Google_Service_YouTube_LiveBroadcastTopic';
-  protected $topicsDataType = 'array';
+  protected $collection_key = 'permissions';
+  public $permissions;
 
-  /**
-   * @param Google_Service_YouTube_LiveBroadcastTopic
-   */
-  public function setTopics($topics)
+  public function setPermissions($permissions)
   {
-    $this->topics = $topics;
+    $this->permissions = $permissions;
   }
-  /**
-   * @return Google_Service_YouTube_LiveBroadcastTopic
-   */
-  public function getTopics()
+  public function getPermissions()
   {
-    return $this->topics;
+    return $this->permissions;
   }
 }
