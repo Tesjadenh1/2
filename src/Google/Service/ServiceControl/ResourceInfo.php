@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudTrace_Trace extends Google_Model
+class Google_Service_ServiceControl_ResourceInfo extends Google_Model
 {
-  public $name;
+  public $resourceContainer;
+  public $resourceName;
 
-  public function setName($name)
+  public function setResourceContainer($resourceContainer)
   {
-    $this->name = $name;
+    $this->resourceContainer = $resourceContainer;
   }
-  public function getName()
+  public function getResourceContainer()
   {
-    return $this->name;
+    return $this->resourceContainer;
+  }
+  public function setResourceName($resourceName)
+  {
+    $this->resourceName = $resourceName;
+  }
+  public function getResourceName()
+  {
+    return $this->resourceName;
   }
 }
