@@ -173,7 +173,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * @opt_param string orderBy
    *
    * Sort order used for the query. The fields supported for sorting are
-   * Task.schedule_time and PullTaskTarget.tag. All results will be returned in
+   * Task.schedule_time and PullMessage.tag. All results will be returned in
    * ascending order. The default ordering is by Task.schedule_time.
    * @opt_param string responseView The response_view specifies which subset of
    * the Task will be returned.

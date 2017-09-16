@@ -19,8 +19,8 @@
  * Service definition for CloudTasks (v2beta2).
  *
  * <p>
- * Cloud Tasks enables developers to manage the execution of large numbers of
- * distributed requests. Cloud Tasks is in Alpha.</p>
+ * Manages the execution of large numbers of distributed requests. Cloud Tasks
+ * is in Alpha.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -35,6 +35,7 @@ class Google_Service_CloudTasks extends Google_Service
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
 
+  public $projects_locations;
   public $projects_locations_queues;
   public $projects_locations_queues_tasks;
   
@@ -51,6 +52,48 @@ class Google_Service_CloudTasks extends Google_Service
     $this->version = 'v2beta2';
     $this->serviceName = 'cloudtasks';
 
+    $this->projects_locations = new Google_Service_CloudTasks_Resource_ProjectsLocations(
+        $this,
+        $this->serviceName,
+        'locations',
+        array(
+          'methods' => array(
+            'get' => array(
+              'path' => 'v2beta2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2beta2/{+name}/locations',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->projects_locations_queues = new Google_Service_CloudTasks_Resource_ProjectsLocationsQueues(
         $this,
         $this->serviceName,
@@ -106,10 +149,6 @@ class Google_Service_CloudTasks extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -117,6 +156,10 @@ class Google_Service_CloudTasks extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(
