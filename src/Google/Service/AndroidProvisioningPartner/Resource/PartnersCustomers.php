@@ -26,11 +26,13 @@
 class Google_Service_AndroidProvisioningPartner_Resource_PartnersCustomers extends Google_Service_Resource
 {
   /**
-   * A customer for zero-touch enrollment will be created. After a Customer is
-   * created, their admins and owners will be able to manage devices on
-   * partner.android.com/zerotouch or via their API. (customers.create)
+   * Creates a customer for zero-touch enrollment. After the method returns
+   * successfully, admin and owner roles can manage devices and EMM configs by
+   * calling API methods or using their zero-touch enrollment portal. The API
+   * doesn't notify the customer that they have access. (customers.create)
    *
-   * @param string $parent The parent resource in format `partners/[PARTNER_ID]'.
+   * @param string $parent Required. The parent resource ID in format
+   * `partners/[PARTNER_ID]` that identifies the reseller.
    * @param Google_Service_AndroidProvisioningPartner_CreateCustomerRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_AndroidProvisioningPartner_Company
@@ -42,7 +44,7 @@ class Google_Service_AndroidProvisioningPartner_Resource_PartnersCustomers exten
     return $this->call('create', array($params), "Google_Service_AndroidProvisioningPartner_Company");
   }
   /**
-   * List the customers that are enrolled to the reseller identified by the
+   * Lists the customers that are enrolled to the reseller identified by the
    * `partnerId` argument. This list includes customers that the reseller created
    * and customers that enrolled themselves using the portal.
    * (customers.listPartnersCustomers)
