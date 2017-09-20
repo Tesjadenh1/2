@@ -15,19 +15,33 @@
  * the License.
  */
 
-class Google_Service_Sheets_DimensionProperties extends Google_Collection
+class Google_Service_Sheets_UpdateDeveloperMetadataRequest extends Google_Collection
 {
-  protected $collection_key = 'developerMetadata';
+  protected $collection_key = 'dataFilters';
+  protected $dataFiltersType = 'Google_Service_Sheets_DataFilter';
+  protected $dataFiltersDataType = 'array';
   protected $developerMetadataType = 'Google_Service_Sheets_DeveloperMetadata';
-  protected $developerMetadataDataType = 'array';
-  public $hiddenByFilter;
-  public $hiddenByUser;
-  public $pixelSize;
+  protected $developerMetadataDataType = '';
+  public $fields;
 
+  /**
+   * @param Google_Service_Sheets_DataFilter
+   */
+  public function setDataFilters($dataFilters)
+  {
+    $this->dataFilters = $dataFilters;
+  }
+  /**
+   * @return Google_Service_Sheets_DataFilter
+   */
+  public function getDataFilters()
+  {
+    return $this->dataFilters;
+  }
   /**
    * @param Google_Service_Sheets_DeveloperMetadata
    */
-  public function setDeveloperMetadata($developerMetadata)
+  public function setDeveloperMetadata(Google_Service_Sheets_DeveloperMetadata $developerMetadata)
   {
     $this->developerMetadata = $developerMetadata;
   }
@@ -38,28 +52,12 @@ class Google_Service_Sheets_DimensionProperties extends Google_Collection
   {
     return $this->developerMetadata;
   }
-  public function setHiddenByFilter($hiddenByFilter)
+  public function setFields($fields)
   {
-    $this->hiddenByFilter = $hiddenByFilter;
+    $this->fields = $fields;
   }
-  public function getHiddenByFilter()
+  public function getFields()
   {
-    return $this->hiddenByFilter;
-  }
-  public function setHiddenByUser($hiddenByUser)
-  {
-    $this->hiddenByUser = $hiddenByUser;
-  }
-  public function getHiddenByUser()
-  {
-    return $this->hiddenByUser;
-  }
-  public function setPixelSize($pixelSize)
-  {
-    $this->pixelSize = $pixelSize;
-  }
-  public function getPixelSize()
-  {
-    return $this->pixelSize;
+    return $this->fields;
   }
 }

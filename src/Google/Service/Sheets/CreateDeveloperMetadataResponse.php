@@ -15,19 +15,15 @@
  * the License.
  */
 
-class Google_Service_Sheets_DimensionProperties extends Google_Collection
+class Google_Service_Sheets_CreateDeveloperMetadataResponse extends Google_Model
 {
-  protected $collection_key = 'developerMetadata';
   protected $developerMetadataType = 'Google_Service_Sheets_DeveloperMetadata';
-  protected $developerMetadataDataType = 'array';
-  public $hiddenByFilter;
-  public $hiddenByUser;
-  public $pixelSize;
+  protected $developerMetadataDataType = '';
 
   /**
    * @param Google_Service_Sheets_DeveloperMetadata
    */
-  public function setDeveloperMetadata($developerMetadata)
+  public function setDeveloperMetadata(Google_Service_Sheets_DeveloperMetadata $developerMetadata)
   {
     $this->developerMetadata = $developerMetadata;
   }
@@ -37,29 +33,5 @@ class Google_Service_Sheets_DimensionProperties extends Google_Collection
   public function getDeveloperMetadata()
   {
     return $this->developerMetadata;
-  }
-  public function setHiddenByFilter($hiddenByFilter)
-  {
-    $this->hiddenByFilter = $hiddenByFilter;
-  }
-  public function getHiddenByFilter()
-  {
-    return $this->hiddenByFilter;
-  }
-  public function setHiddenByUser($hiddenByUser)
-  {
-    $this->hiddenByUser = $hiddenByUser;
-  }
-  public function getHiddenByUser()
-  {
-    return $this->hiddenByUser;
-  }
-  public function setPixelSize($pixelSize)
-  {
-    $this->pixelSize = $pixelSize;
-  }
-  public function getPixelSize()
-  {
-    return $this->pixelSize;
   }
 }

@@ -15,19 +15,32 @@
  * the License.
  */
 
-class Google_Service_Sheets_DimensionProperties extends Google_Collection
+class Google_Service_Sheets_MatchedDeveloperMetadata extends Google_Collection
 {
-  protected $collection_key = 'developerMetadata';
+  protected $collection_key = 'dataFilters';
+  protected $dataFiltersType = 'Google_Service_Sheets_DataFilter';
+  protected $dataFiltersDataType = 'array';
   protected $developerMetadataType = 'Google_Service_Sheets_DeveloperMetadata';
-  protected $developerMetadataDataType = 'array';
-  public $hiddenByFilter;
-  public $hiddenByUser;
-  public $pixelSize;
+  protected $developerMetadataDataType = '';
 
+  /**
+   * @param Google_Service_Sheets_DataFilter
+   */
+  public function setDataFilters($dataFilters)
+  {
+    $this->dataFilters = $dataFilters;
+  }
+  /**
+   * @return Google_Service_Sheets_DataFilter
+   */
+  public function getDataFilters()
+  {
+    return $this->dataFilters;
+  }
   /**
    * @param Google_Service_Sheets_DeveloperMetadata
    */
-  public function setDeveloperMetadata($developerMetadata)
+  public function setDeveloperMetadata(Google_Service_Sheets_DeveloperMetadata $developerMetadata)
   {
     $this->developerMetadata = $developerMetadata;
   }
@@ -37,29 +50,5 @@ class Google_Service_Sheets_DimensionProperties extends Google_Collection
   public function getDeveloperMetadata()
   {
     return $this->developerMetadata;
-  }
-  public function setHiddenByFilter($hiddenByFilter)
-  {
-    $this->hiddenByFilter = $hiddenByFilter;
-  }
-  public function getHiddenByFilter()
-  {
-    return $this->hiddenByFilter;
-  }
-  public function setHiddenByUser($hiddenByUser)
-  {
-    $this->hiddenByUser = $hiddenByUser;
-  }
-  public function getHiddenByUser()
-  {
-    return $this->hiddenByUser;
-  }
-  public function setPixelSize($pixelSize)
-  {
-    $this->pixelSize = $pixelSize;
-  }
-  public function getPixelSize()
-  {
-    return $this->pixelSize;
   }
 }
