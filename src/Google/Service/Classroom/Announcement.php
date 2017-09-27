@@ -15,36 +15,23 @@
  * the License.
  */
 
-class Google_Service_Classroom_CourseWork extends Google_Collection
+class Google_Service_Classroom_Announcement extends Google_Collection
 {
   protected $collection_key = 'materials';
   public $alternateLink;
   public $assigneeMode;
-  protected $assignmentType = 'Google_Service_Classroom_Assignment';
-  protected $assignmentDataType = '';
-  public $associatedWithDeveloper;
   public $courseId;
   public $creationTime;
   public $creatorUserId;
-  public $description;
-  protected $dueDateType = 'Google_Service_Classroom_Date';
-  protected $dueDateDataType = '';
-  protected $dueTimeType = 'Google_Service_Classroom_TimeOfDay';
-  protected $dueTimeDataType = '';
   public $id;
   protected $individualStudentsOptionsType = 'Google_Service_Classroom_IndividualStudentsOptions';
   protected $individualStudentsOptionsDataType = '';
   protected $materialsType = 'Google_Service_Classroom_Material';
   protected $materialsDataType = 'array';
-  public $maxPoints;
-  protected $multipleChoiceQuestionType = 'Google_Service_Classroom_MultipleChoiceQuestion';
-  protected $multipleChoiceQuestionDataType = '';
   public $scheduledTime;
   public $state;
-  public $submissionModificationMode;
-  public $title;
+  public $text;
   public $updateTime;
-  public $workType;
 
   public function setAlternateLink($alternateLink)
   {
@@ -61,28 +48,6 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   public function getAssigneeMode()
   {
     return $this->assigneeMode;
-  }
-  /**
-   * @param Google_Service_Classroom_Assignment
-   */
-  public function setAssignment(Google_Service_Classroom_Assignment $assignment)
-  {
-    $this->assignment = $assignment;
-  }
-  /**
-   * @return Google_Service_Classroom_Assignment
-   */
-  public function getAssignment()
-  {
-    return $this->assignment;
-  }
-  public function setAssociatedWithDeveloper($associatedWithDeveloper)
-  {
-    $this->associatedWithDeveloper = $associatedWithDeveloper;
-  }
-  public function getAssociatedWithDeveloper()
-  {
-    return $this->associatedWithDeveloper;
   }
   public function setCourseId($courseId)
   {
@@ -107,42 +72,6 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   public function getCreatorUserId()
   {
     return $this->creatorUserId;
-  }
-  public function setDescription($description)
-  {
-    $this->description = $description;
-  }
-  public function getDescription()
-  {
-    return $this->description;
-  }
-  /**
-   * @param Google_Service_Classroom_Date
-   */
-  public function setDueDate(Google_Service_Classroom_Date $dueDate)
-  {
-    $this->dueDate = $dueDate;
-  }
-  /**
-   * @return Google_Service_Classroom_Date
-   */
-  public function getDueDate()
-  {
-    return $this->dueDate;
-  }
-  /**
-   * @param Google_Service_Classroom_TimeOfDay
-   */
-  public function setDueTime(Google_Service_Classroom_TimeOfDay $dueTime)
-  {
-    $this->dueTime = $dueTime;
-  }
-  /**
-   * @return Google_Service_Classroom_TimeOfDay
-   */
-  public function getDueTime()
-  {
-    return $this->dueTime;
   }
   public function setId($id)
   {
@@ -180,28 +109,6 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   {
     return $this->materials;
   }
-  public function setMaxPoints($maxPoints)
-  {
-    $this->maxPoints = $maxPoints;
-  }
-  public function getMaxPoints()
-  {
-    return $this->maxPoints;
-  }
-  /**
-   * @param Google_Service_Classroom_MultipleChoiceQuestion
-   */
-  public function setMultipleChoiceQuestion(Google_Service_Classroom_MultipleChoiceQuestion $multipleChoiceQuestion)
-  {
-    $this->multipleChoiceQuestion = $multipleChoiceQuestion;
-  }
-  /**
-   * @return Google_Service_Classroom_MultipleChoiceQuestion
-   */
-  public function getMultipleChoiceQuestion()
-  {
-    return $this->multipleChoiceQuestion;
-  }
   public function setScheduledTime($scheduledTime)
   {
     $this->scheduledTime = $scheduledTime;
@@ -218,21 +125,13 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   {
     return $this->state;
   }
-  public function setSubmissionModificationMode($submissionModificationMode)
+  public function setText($text)
   {
-    $this->submissionModificationMode = $submissionModificationMode;
+    $this->text = $text;
   }
-  public function getSubmissionModificationMode()
+  public function getText()
   {
-    return $this->submissionModificationMode;
-  }
-  public function setTitle($title)
-  {
-    $this->title = $title;
-  }
-  public function getTitle()
-  {
-    return $this->title;
+    return $this->text;
   }
   public function setUpdateTime($updateTime)
   {
@@ -241,13 +140,5 @@ class Google_Service_Classroom_CourseWork extends Google_Collection
   public function getUpdateTime()
   {
     return $this->updateTime;
-  }
-  public function setWorkType($workType)
-  {
-    $this->workType = $workType;
-  }
-  public function getWorkType()
-  {
-    return $this->workType;
   }
 }

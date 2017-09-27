@@ -123,6 +123,10 @@ class Google_Service_Classroom_Resource_Invitations extends Google_Service_Resou
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param int pageSize Maximum number of items to return. Zero means no
+   * maximum.
+   *
+   * The server may return fewer than the specified number of results.
    * @opt_param string courseId Restricts returned invitations to those for a
    * course with the specified identifier.
    * @opt_param string pageToken nextPageToken value returned from a previous list
@@ -135,10 +139,6 @@ class Google_Service_Classroom_Resource_Invitations extends Google_Service_Resou
    *
    * * the numeric identifier for the user * the email address of the user * the
    * string literal `"me"`, indicating the requesting user
-   * @opt_param int pageSize Maximum number of items to return. Zero means no
-   * maximum.
-   *
-   * The server may return fewer than the specified number of results.
    * @return Google_Service_Classroom_ListInvitationsResponse
    */
   public function listInvitations($optParams = array())

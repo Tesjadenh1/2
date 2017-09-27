@@ -19,6 +19,8 @@ class Google_Service_Dataflow_DistributionUpdate extends Google_Model
 {
   protected $countType = 'Google_Service_Dataflow_SplitInt64';
   protected $countDataType = '';
+  protected $histogramType = 'Google_Service_Dataflow_Histogram';
+  protected $histogramDataType = '';
   protected $maxType = 'Google_Service_Dataflow_SplitInt64';
   protected $maxDataType = '';
   protected $minType = 'Google_Service_Dataflow_SplitInt64';
@@ -40,6 +42,20 @@ class Google_Service_Dataflow_DistributionUpdate extends Google_Model
   public function getCount()
   {
     return $this->count;
+  }
+  /**
+   * @param Google_Service_Dataflow_Histogram
+   */
+  public function setHistogram(Google_Service_Dataflow_Histogram $histogram)
+  {
+    $this->histogram = $histogram;
+  }
+  /**
+   * @return Google_Service_Dataflow_Histogram
+   */
+  public function getHistogram()
+  {
+    return $this->histogram;
   }
   /**
    * @param Google_Service_Dataflow_SplitInt64
