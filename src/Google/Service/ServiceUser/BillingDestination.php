@@ -15,25 +15,26 @@
  * the License.
  */
 
-class Google_Service_ServiceUser_AuthorizationRule extends Google_Model
+class Google_Service_ServiceUser_BillingDestination extends Google_Collection
 {
-  public $permissions;
-  public $selector;
+  protected $collection_key = 'metrics';
+  public $metrics;
+  public $monitoredResource;
 
-  public function setPermissions($permissions)
+  public function setMetrics($metrics)
   {
-    $this->permissions = $permissions;
+    $this->metrics = $metrics;
   }
-  public function getPermissions()
+  public function getMetrics()
   {
-    return $this->permissions;
+    return $this->metrics;
   }
-  public function setSelector($selector)
+  public function setMonitoredResource($monitoredResource)
   {
-    $this->selector = $selector;
+    $this->monitoredResource = $monitoredResource;
   }
-  public function getSelector()
+  public function getMonitoredResource()
   {
-    return $this->selector;
+    return $this->monitoredResource;
   }
 }

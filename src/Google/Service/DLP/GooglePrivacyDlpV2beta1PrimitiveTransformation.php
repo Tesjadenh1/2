@@ -25,8 +25,6 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta1PrimitiveTransformation extends 
   protected $cryptoHashConfigDataType = '';
   protected $cryptoReplaceFfxFpeConfigType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig';
   protected $cryptoReplaceFfxFpeConfigDataType = '';
-  protected $cryptoReplaceRegexFpeConfigType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceRegexFpeConfig';
-  protected $cryptoReplaceRegexFpeConfigDataType = '';
   protected $fixedSizeBucketingConfigType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1FixedSizeBucketingConfig';
   protected $fixedSizeBucketingConfigDataType = '';
   protected $redactConfigType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1RedactConfig';
@@ -93,20 +91,6 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta1PrimitiveTransformation extends 
   public function getCryptoReplaceFfxFpeConfig()
   {
     return $this->cryptoReplaceFfxFpeConfig;
-  }
-  /**
-   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceRegexFpeConfig
-   */
-  public function setCryptoReplaceRegexFpeConfig(Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceRegexFpeConfig $cryptoReplaceRegexFpeConfig)
-  {
-    $this->cryptoReplaceRegexFpeConfig = $cryptoReplaceRegexFpeConfig;
-  }
-  /**
-   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceRegexFpeConfig
-   */
-  public function getCryptoReplaceRegexFpeConfig()
-  {
-    return $this->cryptoReplaceRegexFpeConfig;
   }
   /**
    * @param Google_Service_DLP_GooglePrivacyDlpV2beta1FixedSizeBucketingConfig
