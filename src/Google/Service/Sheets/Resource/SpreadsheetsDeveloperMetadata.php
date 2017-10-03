@@ -26,7 +26,7 @@
 class Google_Service_Sheets_Resource_SpreadsheetsDeveloperMetadata extends Google_Service_Resource
 {
   /**
-   * Returns the developer metadata with the specified id. The caller must specify
+   * Returns the developer metadata with the specified ID. The caller must specify
    * the spreadsheet ID and the developer metadata's unique metadataId.
    * (developerMetadata.get)
    *
