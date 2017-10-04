@@ -139,10 +139,6 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -150,6 +146,10 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'setIamPolicy' => array(
@@ -240,6 +240,20 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'type' => 'integer',
                 ),
               ),
+            ),'patch' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),'setIamPolicy' => array(
               'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
@@ -318,6 +332,20 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'patch' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),'setDefault' => array(
               'path' => 'v1/{+name}:setDefault',
               'httpMethod' => 'POST',
@@ -377,15 +405,15 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
