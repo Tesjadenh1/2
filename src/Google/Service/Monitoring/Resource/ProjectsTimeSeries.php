@@ -51,10 +51,11 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * is "projects/{project_id_or_number}".
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken If this field is not empty then it must contain
-   * the nextPageToken value returned by a previous call to this method. Using
-   * this field causes the method to return additional results from the previous
-   * method call.
+   * @opt_param string filter A monitoring filter that specifies which time series
+   * should be returned. The filter must specify a single metric type, and can
+   * additionally specify metric labels and other information. For example:
+   * metric.type = "compute.googleapis.com/instance/cpu/usage_time" AND
+   * metric.label.instance_name = "my-instance-name"
    * @opt_param string aggregation.perSeriesAligner The approach to be used to
    * align individual time series. Not all alignment functions may be applied to
    * all time series, depending on the metric type and value type of the original
@@ -63,6 +64,10 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * series reduction. If crossSeriesReducer is specified, then perSeriesAligner
    * must be specified and not equal ALIGN_NONE and alignmentPeriod must be
    * specified; otherwise, an error is returned.
+   * @opt_param string pageToken If this field is not empty then it must contain
+   * the nextPageToken value returned by a previous call to this method. Using
+   * this field causes the method to return additional results from the previous
+   * method call.
    * @opt_param string interval.startTime Optional. The beginning of the time
    * interval. The default value for the start time is the end time. The start
    * time must not be later than the end time.
@@ -103,11 +108,6 @@ class Google_Service_Monitoring_Resource_ProjectsTimeSeries extends Google_Servi
    * reduction. If crossSeriesReducer is specified, then perSeriesAligner must be
    * specified and not equal ALIGN_NONE and alignmentPeriod must be specified;
    * otherwise, an error is returned.
-   * @opt_param string filter A monitoring filter that specifies which time series
-   * should be returned. The filter must specify a single metric type, and can
-   * additionally specify metric labels and other information. For example:
-   * metric.type = "compute.googleapis.com/instance/cpu/usage_time" AND
-   * metric.label.instance_name = "my-instance-name"
    * @return Google_Service_Monitoring_ListTimeSeriesResponse
    */
   public function listProjectsTimeSeries($name, $optParams = array())
