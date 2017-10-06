@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_ThrottleConfig extends Google_Model
+class Google_Service_CloudTasks_RateLimits extends Google_Model
 {
   public $maxBurstSize;
-  public $maxOutstandingTasks;
+  public $maxConcurrentTasks;
   public $maxTasksDispatchedPerSecond;
 
   public function setMaxBurstSize($maxBurstSize)
@@ -29,13 +29,13 @@ class Google_Service_CloudTasks_ThrottleConfig extends Google_Model
   {
     return $this->maxBurstSize;
   }
-  public function setMaxOutstandingTasks($maxOutstandingTasks)
+  public function setMaxConcurrentTasks($maxConcurrentTasks)
   {
-    $this->maxOutstandingTasks = $maxOutstandingTasks;
+    $this->maxConcurrentTasks = $maxConcurrentTasks;
   }
-  public function getMaxOutstandingTasks()
+  public function getMaxConcurrentTasks()
   {
-    return $this->maxOutstandingTasks;
+    return $this->maxConcurrentTasks;
   }
   public function setMaxTasksDispatchedPerSecond($maxTasksDispatchedPerSecond)
   {

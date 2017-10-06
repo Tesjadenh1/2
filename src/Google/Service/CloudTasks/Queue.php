@@ -28,10 +28,10 @@ class Google_Service_CloudTasks_Queue extends Google_Model
   protected $pullTargetDataType = '';
   public $purgeTime;
   public $queueState;
+  protected $rateLimitsType = 'Google_Service_CloudTasks_RateLimits';
+  protected $rateLimitsDataType = '';
   protected $retryConfigType = 'Google_Service_CloudTasks_RetryConfig';
   protected $retryConfigDataType = '';
-  protected $throttleConfigType = 'Google_Service_CloudTasks_ThrottleConfig';
-  protected $throttleConfigDataType = '';
 
   /**
    * @param Google_Service_CloudTasks_AppEngineHttpTarget
@@ -114,6 +114,20 @@ class Google_Service_CloudTasks_Queue extends Google_Model
     return $this->queueState;
   }
   /**
+   * @param Google_Service_CloudTasks_RateLimits
+   */
+  public function setRateLimits(Google_Service_CloudTasks_RateLimits $rateLimits)
+  {
+    $this->rateLimits = $rateLimits;
+  }
+  /**
+   * @return Google_Service_CloudTasks_RateLimits
+   */
+  public function getRateLimits()
+  {
+    return $this->rateLimits;
+  }
+  /**
    * @param Google_Service_CloudTasks_RetryConfig
    */
   public function setRetryConfig(Google_Service_CloudTasks_RetryConfig $retryConfig)
@@ -126,19 +140,5 @@ class Google_Service_CloudTasks_Queue extends Google_Model
   public function getRetryConfig()
   {
     return $this->retryConfig;
-  }
-  /**
-   * @param Google_Service_CloudTasks_ThrottleConfig
-   */
-  public function setThrottleConfig(Google_Service_CloudTasks_ThrottleConfig $throttleConfig)
-  {
-    $this->throttleConfig = $throttleConfig;
-  }
-  /**
-   * @return Google_Service_CloudTasks_ThrottleConfig
-   */
-  public function getThrottleConfig()
-  {
-    return $this->throttleConfig;
   }
 }

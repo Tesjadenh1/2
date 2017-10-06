@@ -211,7 +211,11 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * The payload is intended to store data that the lease holder needs to perform
    * the work associated with the task. To return the payloads in the
    * PullTasksResponse, set PullTasksRequest.response_view to Task.View.FULL.
-   * (tasks.pull)
+   *
+   * A maximum of 10 qps of CloudTasks.PullTasks requests are allowed per queue.
+   * google.rpc.Code.RESOURCE_EXHAUSTED is returned when this limit is exceeded.
+   * google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
+   * ThrottleConfig.max_tasks_dispatched_per_second is exceeded. (tasks.pull)
    *
    * @param string $name Required.
    *
