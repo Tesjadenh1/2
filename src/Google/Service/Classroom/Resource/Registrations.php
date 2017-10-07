@@ -42,16 +42,17 @@ class Google_Service_Classroom_Resource_Registrations extends Google_Service_Res
    *
    * This method may return the following error codes:
    *
-   * * `PERMISSION_DENIED` if:   * the authenticated user does not have permission
-   * to receive     notifications from the requested field; or   * the credential
-   * provided does not include the appropriate scope for the     requested feed.
-   * * another access error is encountered. * `INVALID_ARGUMENT` if:   * no
-   * `destination` is specified, or the specified `destination` is not     valid;
-   * or   * no `feed` is specified, or the specified `feed` is not valid. *
-   * `NOT_FOUND` if:   * the specified `feed` cannot be located, or the requesting
-   * user does not     have permission to determine whether or not it exists; or
-   * * the specified `destination` cannot be located, or Classroom has not
-   * been granted permission to publish to it. (registrations.create)
+   * * `PERMISSION_DENIED` if:     * the authenticated user does not have
+   * permission to receive       notifications from the requested field; or     *
+   * the credential provided does not include the appropriate scope for the
+   * requested feed.     * another access error is encountered. *
+   * `INVALID_ARGUMENT` if:     * no `destination` is specified, or the specified
+   * `destination` is not       valid; or     * no `feed` is specified, or the
+   * specified `feed` is not valid. * `NOT_FOUND` if:     * the specified `feed`
+   * cannot be located, or the requesting user does not       have permission to
+   * determine whether or not it exists; or     * the specified `destination`
+   * cannot be located, or Classroom has not       been granted permission to
+   * publish to it. (registrations.create)
    *
    * @param Google_Service_Classroom_Registration $postBody
    * @param array $optParams Optional parameters.

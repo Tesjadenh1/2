@@ -82,7 +82,11 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * https://developers.google.com/api-client-library/python/guide/batch.
    *
    * Tasks cannot be updated after creation; there is no UpdateTask command.
-   * (tasks.create)
+   *
+   * * For [App Engine queues](google.cloud.tasks.v2beta2.AppEngineHttpTarget),
+   * the maximum task size is 100KB. * For [pull
+   * queues](google.cloud.tasks.v2beta2.PullTarget), this   the maximum task size
+   * is 1MB. (tasks.create)
    *
    * @param string $parent Required.
    *
@@ -161,6 +165,13 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
    * @param array $optParams Optional parameters.
    *
+   * @opt_param int pageSize Requested page size. Fewer tasks than requested might
+   * be returned.
+   *
+   * The maximum page size is 1000. If unspecified, the page size will be the
+   * maximum. Fewer tasks than requested might be returned, even if more tasks
+   * exist; use ListTasksResponse.next_page_token to determine if more tasks
+   * exist.
    * @opt_param string pageToken A token identifying the page of results to
    * return.
    *
@@ -185,13 +196,6 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    *
    * Authorization for Task.View.FULL requires `cloudtasks.tasks.fullView` [Google
    * IAM](/iam/) permission on the Task.name resource.
-   * @opt_param int pageSize Requested page size. Fewer tasks than requested might
-   * be returned.
-   *
-   * The maximum page size is 1000. If unspecified, the page size will be the
-   * maximum. Fewer tasks than requested might be returned, even if more tasks
-   * exist; use ListTasksResponse.next_page_token to determine if more tasks
-   * exist.
    * @return Google_Service_CloudTasks_ListTasksResponse
    */
   public function listProjectsLocationsQueuesTasks($parent, $optParams = array())
@@ -215,7 +219,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * A maximum of 10 qps of CloudTasks.PullTasks requests are allowed per queue.
    * google.rpc.Code.RESOURCE_EXHAUSTED is returned when this limit is exceeded.
    * google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
-   * ThrottleConfig.max_tasks_dispatched_per_second is exceeded. (tasks.pull)
+   * RateLimits.max_tasks_dispatched_per_second is exceeded. (tasks.pull)
    *
    * @param string $name Required.
    *

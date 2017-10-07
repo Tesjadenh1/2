@@ -17,7 +17,7 @@
 
 class Google_Service_ServiceControl_AuditLog extends Google_Collection
 {
-  protected $collection_key = 'metadata';
+  protected $collection_key = 'authorizationInfo';
   protected $authenticationInfoType = 'Google_Service_ServiceControl_AuthenticationInfo';
   protected $authenticationInfoDataType = '';
   protected $authorizationInfoType = 'Google_Service_ServiceControl_AuthorizationInfo';
