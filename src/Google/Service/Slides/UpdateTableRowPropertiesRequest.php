@@ -15,43 +15,38 @@
  * the License.
  */
 
-class Google_Service_Slides_TableRow extends Google_Collection
+class Google_Service_Slides_UpdateTableRowPropertiesRequest extends Google_Collection
 {
-  protected $collection_key = 'tableCells';
-  protected $rowHeightType = 'Google_Service_Slides_Dimension';
-  protected $rowHeightDataType = '';
-  protected $tableCellsType = 'Google_Service_Slides_TableCell';
-  protected $tableCellsDataType = 'array';
+  protected $collection_key = 'rowIndices';
+  public $fields;
+  public $objectId;
+  public $rowIndices;
   protected $tableRowPropertiesType = 'Google_Service_Slides_TableRowProperties';
   protected $tableRowPropertiesDataType = '';
 
-  /**
-   * @param Google_Service_Slides_Dimension
-   */
-  public function setRowHeight(Google_Service_Slides_Dimension $rowHeight)
+  public function setFields($fields)
   {
-    $this->rowHeight = $rowHeight;
+    $this->fields = $fields;
   }
-  /**
-   * @return Google_Service_Slides_Dimension
-   */
-  public function getRowHeight()
+  public function getFields()
   {
-    return $this->rowHeight;
+    return $this->fields;
   }
-  /**
-   * @param Google_Service_Slides_TableCell
-   */
-  public function setTableCells($tableCells)
+  public function setObjectId($objectId)
   {
-    $this->tableCells = $tableCells;
+    $this->objectId = $objectId;
   }
-  /**
-   * @return Google_Service_Slides_TableCell
-   */
-  public function getTableCells()
+  public function getObjectId()
   {
-    return $this->tableCells;
+    return $this->objectId;
+  }
+  public function setRowIndices($rowIndices)
+  {
+    $this->rowIndices = $rowIndices;
+  }
+  public function getRowIndices()
+  {
+    return $this->rowIndices;
   }
   /**
    * @param Google_Service_Slides_TableRowProperties
