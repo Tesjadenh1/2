@@ -80,23 +80,14 @@ class Google_Service_Monitoring_Resource_ProjectsUptimeCheckConfigs extends Goog
    * listed. The format isprojects/[PROJECT_ID].
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize The maximum number of results to return in a single
-   * response. The server may further constrain the maximum number of results
-   * returned in a single page. If the page_size is <=0, the server will decide
-   * the number of results to be returned.
-   * @opt_param string filter If provided, specifies the criteria that must be met
-   * by uptime check configurations in the provided project to be included in the
-   * response. One of the following filters can be provided.
-   * uptime_check_config.id = {uptime_check_id}  resource.type = gce_instance AND
-   * resource.label.instance_id =  {instance_id}  resource.type = aws_ec2_instance
-   * AND resource.label.instance_id =  {instance_id}  resource.type =
-   * aws_elb_load_balancer AND  resource.label.name = {name}  resource.type =
-   * gae_app AND resource.label.module_id = {module_id}  resource.type =
-   * uptime_url AND resource.label.host = {host}  group.id = {group_id}
    * @opt_param string pageToken If this field is not empty then it must contain
    * the nextPageToken value returned by a previous call to this method. Using
    * this field causes the method to return more results from the previous method
    * call.
+   * @opt_param int pageSize The maximum number of results to return in a single
+   * response. The server may further constrain the maximum number of results
+   * returned in a single page. If the page_size is <=0, the server will decide
+   * the number of results to be returned.
    * @return Google_Service_Monitoring_ListUptimeCheckConfigsResponse
    */
   public function listProjectsUptimeCheckConfigs($parent, $optParams = array())
@@ -119,12 +110,12 @@ class Google_Service_Monitoring_Resource_ProjectsUptimeCheckConfigs extends Goog
    * @param Google_Service_Monitoring_UptimeCheckConfig $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string name1 The uptime check configuration to update. The format
-   * isprojects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].
    * @opt_param string updateMask Optional. If present, only the listed fields in
    * the current uptime check configuration are updated with values from the new
    * configuration. If this field is empty, then the current configuration is
    * completely replaced with the new configuration.
+   * @opt_param string name1 The uptime check configuration to update. The format
+   * isprojects/[PROJECT_ID]/uptimeCheckConfigs/[UPTIME_CHECK_ID].
    * @return Google_Service_Monitoring_UptimeCheckConfig
    */
   public function patch($name, Google_Service_Monitoring_UptimeCheckConfig $postBody, $optParams = array())
