@@ -23,24 +23,30 @@
  *   $filterSets = $adexchangebuyer2Service->filterSets;
  *  </code>
  */
-class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSets extends Google_Service_Resource
+class Google_Service_AdExchangeBuyerII_Resource_BiddersAccountsFilterSets extends Google_Service_Resource
 {
   /**
    * Creates the specified filter set for the account with the given account ID.
    * (filterSets.create)
    *
-   * @param string $accountId Account ID of the buyer.
+   * @param string $ownerName Name of the owner (bidder or account) of the filter
+   * set to be created. For example: - For a bidder-level filter set for bidder
+   * 123: "bidders/123" - For an account-level filter set for the buyer account
+   * representing bidder   123: "bidders/123/accounts/123" - For an account-level
+   * filter set for the child seat buyer account 456   whose bidder is 123:
+   * "bidders/123/accounts/456"
    * @param Google_Service_AdExchangeBuyerII_FilterSet $postBody
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool isTransient Whether the filter set is transient, or should be
    * persisted indefinitely. By default, filter sets are not transient. If
    * transient, it will be available for at least 1 hour after creation.
+   * @opt_param string accountId Account ID of the buyer.
    * @return Google_Service_AdExchangeBuyerII_FilterSet
    */
-  public function create($accountId, Google_Service_AdExchangeBuyerII_FilterSet $postBody, $optParams = array())
+  public function create($ownerName, Google_Service_AdExchangeBuyerII_FilterSet $postBody, $optParams = array())
   {
-    $params = array('accountId' => $accountId, 'postBody' => $postBody);
+    $params = array('ownerName' => $ownerName, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('create', array($params), "Google_Service_AdExchangeBuyerII_FilterSet");
   }
@@ -48,14 +54,21 @@ class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSets extends Googl
    * Deletes the requested filter set from the account with the given account ID.
    * (filterSets.delete)
    *
-   * @param string $accountId Account ID of the buyer.
-   * @param string $filterSetId The ID of the filter set to delete.
+   * @param string $name Full name of the resource to delete. For example: - For a
+   * bidder-level filter set for bidder 123:   "bidders/123/filterSets/abc" - For
+   * an account-level filter set for the buyer account representing bidder   123:
+   * "bidders/123/accounts/123/filterSets/abc" - For an account-level filter set
+   * for the child seat buyer account 456   whose bidder is 123:
+   * "bidders/123/accounts/456/filterSets/abc"
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string accountId Account ID of the buyer.
+   * @opt_param string filterSetId The ID of the filter set to delete.
    * @return Google_Service_AdExchangeBuyerII_Adexchangebuyer2Empty
    */
-  public function delete($accountId, $filterSetId, $optParams = array())
+  public function delete($name, $optParams = array())
   {
-    $params = array('accountId' => $accountId, 'filterSetId' => $filterSetId);
+    $params = array('name' => $name);
     $params = array_merge($params, $optParams);
     return $this->call('delete', array($params), "Google_Service_AdExchangeBuyerII_Adexchangebuyer2Empty");
   }
@@ -63,22 +76,34 @@ class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSets extends Googl
    * Retrieves the requested filter set for the account with the given account ID.
    * (filterSets.get)
    *
-   * @param string $accountId Account ID of the buyer.
-   * @param string $filterSetId The ID of the filter set to get.
+   * @param string $name Full name of the resource being requested. For example: -
+   * For a bidder-level filter set for bidder 123:   "bidders/123/filterSets/abc"
+   * - For an account-level filter set for the buyer account representing bidder
+   * 123: "bidders/123/accounts/123/filterSets/abc" - For an account-level filter
+   * set for the child seat buyer account 456   whose bidder is 123:
+   * "bidders/123/accounts/456/filterSets/abc"
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param string accountId Account ID of the buyer.
+   * @opt_param string filterSetId The ID of the filter set to get.
    * @return Google_Service_AdExchangeBuyerII_FilterSet
    */
-  public function get($accountId, $filterSetId, $optParams = array())
+  public function get($name, $optParams = array())
   {
-    $params = array('accountId' => $accountId, 'filterSetId' => $filterSetId);
+    $params = array('name' => $name);
     $params = array_merge($params, $optParams);
     return $this->call('get', array($params), "Google_Service_AdExchangeBuyerII_FilterSet");
   }
   /**
    * Lists all filter sets for the account with the given account ID.
-   * (filterSets.listAccountsFilterSets)
+   * (filterSets.listBiddersAccountsFilterSets)
    *
-   * @param string $accountId Account ID of the buyer.
+   * @param string $ownerName Name of the owner (bidder or account) of the filter
+   * sets to be listed. For example: - For a bidder-level filter set for bidder
+   * 123: "bidders/123" - For an account-level filter set for the buyer account
+   * representing bidder   123: "bidders/123/accounts/123" - For an account-level
+   * filter set for the child seat buyer account 456   whose bidder is 123:
+   * "bidders/123/accounts/456"
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken A token identifying a page of results the server
@@ -88,11 +113,12 @@ class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSets extends Googl
    * @opt_param int pageSize Requested page size. The server may return fewer
    * results than requested. If unspecified, the server will pick an appropriate
    * default.
+   * @opt_param string accountId Account ID of the buyer.
    * @return Google_Service_AdExchangeBuyerII_ListFilterSetsResponse
    */
-  public function listAccountsFilterSets($accountId, $optParams = array())
+  public function listBiddersAccountsFilterSets($ownerName, $optParams = array())
   {
-    $params = array('accountId' => $accountId);
+    $params = array('ownerName' => $ownerName);
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_AdExchangeBuyerII_ListFilterSetsResponse");
   }

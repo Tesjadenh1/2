@@ -23,28 +23,35 @@
  *   $impressionMetrics = $adexchangebuyer2Service->impressionMetrics;
  *  </code>
  */
-class Google_Service_AdExchangeBuyerII_Resource_AccountsFilterSetsImpressionMetrics extends Google_Service_Resource
+class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSetsImpressionMetrics extends Google_Service_Resource
 {
   /**
    * Lists all metrics that are measured in terms of number of impressions.
-   * (impressionMetrics.listAccountsFilterSetsImpressionMetrics)
+   * (impressionMetrics.listBiddersFilterSetsImpressionMetrics)
    *
-   * @param string $accountId Account ID of the buyer.
-   * @param string $filterSetId The ID of the filter set to apply.
+   * @param string $filterSetName Name of the filter set that should be applied to
+   * the requested metrics. For example: - For a bidder-level filter set for
+   * bidder 123:   "bidders/123/filterSets/abc" - For an account-level filter set
+   * for the buyer account representing bidder   123:
+   * "bidders/123/accounts/123/filterSets/abc" - For an account-level filter set
+   * for the child seat buyer account 456   whose bidder is 123:
+   * "bidders/123/accounts/456/filterSets/abc"
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of
    * ListImpressionMetricsResponse.nextPageToken returned from the previous call
-   * to the accounts.filterSets.impressionMetrics.list method.
+   * to the impressionMetrics.list method.
    * @opt_param int pageSize Requested page size. The server may return fewer
    * results than requested. If unspecified, the server will pick an appropriate
    * default.
+   * @opt_param string accountId Account ID of the buyer.
+   * @opt_param string filterSetId The ID of the filter set to apply.
    * @return Google_Service_AdExchangeBuyerII_ListImpressionMetricsResponse
    */
-  public function listAccountsFilterSetsImpressionMetrics($accountId, $filterSetId, $optParams = array())
+  public function listBiddersFilterSetsImpressionMetrics($filterSetName, $optParams = array())
   {
-    $params = array('accountId' => $accountId, 'filterSetId' => $filterSetId);
+    $params = array('filterSetName' => $filterSetName);
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_AdExchangeBuyerII_ListImpressionMetricsResponse");
   }

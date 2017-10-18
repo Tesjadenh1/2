@@ -22,7 +22,7 @@ class Google_Service_Dataflow_CounterStructuredName extends Google_Model
   public $name;
   public $origin;
   public $originNamespace;
-  public $originalShuffleStepName;
+  public $originalRequestingStepName;
   public $originalStepName;
   public $portion;
   protected $sideInputType = 'Google_Service_Dataflow_SideInputId';
@@ -69,13 +69,13 @@ class Google_Service_Dataflow_CounterStructuredName extends Google_Model
   {
     return $this->originNamespace;
   }
-  public function setOriginalShuffleStepName($originalShuffleStepName)
+  public function setOriginalRequestingStepName($originalRequestingStepName)
   {
-    $this->originalShuffleStepName = $originalShuffleStepName;
+    $this->originalRequestingStepName = $originalRequestingStepName;
   }
-  public function getOriginalShuffleStepName()
+  public function getOriginalRequestingStepName()
   {
-    return $this->originalShuffleStepName;
+    return $this->originalRequestingStepName;
   }
   public function setOriginalStepName($originalStepName)
   {

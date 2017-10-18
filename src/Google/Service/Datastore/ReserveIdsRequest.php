@@ -15,25 +15,33 @@
  * the License.
  */
 
-class Google_Service_Firestore_Progress extends Google_Model
+class Google_Service_Datastore_ReserveIdsRequest extends Google_Collection
 {
-  public $workCompleted;
-  public $workEstimated;
+  protected $collection_key = 'keys';
+  public $databaseId;
+  protected $keysType = 'Google_Service_Datastore_Key';
+  protected $keysDataType = 'array';
 
-  public function setWorkCompleted($workCompleted)
+  public function setDatabaseId($databaseId)
   {
-    $this->workCompleted = $workCompleted;
+    $this->databaseId = $databaseId;
   }
-  public function getWorkCompleted()
+  public function getDatabaseId()
   {
-    return $this->workCompleted;
+    return $this->databaseId;
   }
-  public function setWorkEstimated($workEstimated)
+  /**
+   * @param Google_Service_Datastore_Key
+   */
+  public function setKeys($keys)
   {
-    $this->workEstimated = $workEstimated;
+    $this->keys = $keys;
   }
-  public function getWorkEstimated()
+  /**
+   * @return Google_Service_Datastore_Key
+   */
+  public function getKeys()
   {
-    return $this->workEstimated;
+    return $this->keys;
   }
 }

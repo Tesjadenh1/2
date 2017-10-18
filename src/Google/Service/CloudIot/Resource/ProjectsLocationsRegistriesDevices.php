@@ -79,6 +79,11 @@ class Google_Service_CloudIot_Resource_ProjectsLocationsRegistriesDevices extend
    * `projects/my-project/locations/us-central1/registries/my-registry`.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string deviceIds A list of device string identifiers. If empty, it
+   * will ignore this field. For example, `['device0', 'device12']`. This field
+   * cannot hold more than 10,000 entries.
+   * @opt_param string deviceNumIds A list of device numerical ids. If empty, it
+   * will ignore this field. This field cannot hold more than 10,000 entries.
    * @opt_param string fieldMask The fields of the `Device` resource to be
    * returned in the response. The fields `id`, and `num_id` are always returned
    * by default, along with any other fields specified.
@@ -89,11 +94,6 @@ class Google_Service_CloudIot_Resource_ProjectsLocationsRegistriesDevices extend
    * response. If this value is zero, the service will select a default size. A
    * call may return fewer objects than requested, but if there is a non-empty
    * `page_token`, it indicates that more entries are available.
-   * @opt_param string deviceIds A list of device string identifiers. If empty, it
-   * will ignore this field. For example, `['device0', 'device12']`. This field
-   * cannot hold more than 10,000 entries.
-   * @opt_param string deviceNumIds A list of device numerical ids. If empty, it
-   * will ignore this field. This field cannot hold more than 10,000 entries.
    * @return Google_Service_CloudIot_ListDevicesResponse
    */
   public function listProjectsLocationsRegistriesDevices($parent, $optParams = array())
