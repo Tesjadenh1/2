@@ -200,13 +200,13 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -330,15 +330,15 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'query' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -427,15 +427,15 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'query' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -632,6 +632,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -641,10 +645,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                 ),
                 'filterSetId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -668,10 +668,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filterSetId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -681,6 +677,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                 ),
                 'accountId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -786,14 +786,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'accountId' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -801,6 +793,14 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                 'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -822,6 +822,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -831,10 +835,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                 ),
                 'filterSetId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -930,6 +930,38 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filterSet.buyerAccountId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'filterSet.ownerAccountId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'filterSet.absoluteDateRange.startDate.day' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filterSet.realtimeTimeRange.startTimestamp' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'filterSet.absoluteDateRange.startDate.month' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filterSet.absoluteDateRange.endDate.day' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filterSet.absoluteDateRange.startDate.year' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filterSet.name' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'filterSet.platforms' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -987,38 +1019,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                 'isTransient' => array(
                   'location' => 'query',
                   'type' => 'boolean',
-                ),
-                'filterSet.buyerAccountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filterSet.ownerAccountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filterSet.absoluteDateRange.startDate.day' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filterSet.realtimeTimeRange.startTimestamp' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filterSet.absoluteDateRange.startDate.month' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filterSet.absoluteDateRange.endDate.day' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filterSet.absoluteDateRange.startDate.year' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filterSet.name' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'delete' => array(
@@ -1098,6 +1098,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filterSetId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -1107,10 +1111,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                 ),
                 'accountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -1170,19 +1170,19 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'accountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'accountId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -1283,6 +1283,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                   'required' => true,
                 ),
+                'accountId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -1294,10 +1298,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'accountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
@@ -1360,6 +1360,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filterSetId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -1369,10 +1373,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                 ),
                 'accountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -1396,10 +1396,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filterSetId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -1409,6 +1405,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                 ),
                 'accountId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -1432,6 +1432,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filterSetId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -1441,10 +1445,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'integer',
                 ),
                 'accountId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'filterSetId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

@@ -41,41 +41,6 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * whose bidder is 123: `bidders/123/accounts/456`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filterSet.platforms The list of platforms on which to
-   * filter; may be empty. The filters represented by multiple platforms are ORed
-   * together (i.e. if non-empty, results must match any one of the platforms).
-   * @opt_param string accountId Account ID of the buyer.
-   * @opt_param int filterSet.relativeDateRange.durationDays The number of days in
-   * the requested date range. E.g. for a range spanning today, 1. For a range
-   * spanning the last 7 days, 7.
-   * @opt_param string filterSet.dealId The ID of the deal on which to filter;
-   * optional.
-   * @opt_param int filterSet.absoluteDateRange.endDate.year Year of date. Must be
-   * from 1 to 9999, or 0 if specifying a date without a year.
-   * @opt_param int filterSet.absoluteDateRange.endDate.month Month of year. Must
-   * be from 1 to 12.
-   * @opt_param string filterSet.environment The environment on which to filter;
-   * optional.
-   * @opt_param int filterSet.sellerNetworkIds The list of IDs of the seller
-   * (publisher) networks on which to filter; may be empty. The filters
-   * represented by multiple seller network IDs are ORed together (i.e. if non-
-   * empty, results must match any one of the publisher networks). See [seller-
-   * network-ids](https://developers.google.com/ad-exchange/rtb/downloads/seller-
-   * network-ids) file for the set of existing seller network IDs.
-   * @opt_param string filterSet.filterSetId The ID of the filter set; unique
-   * within the account of the filter set owner. The value of this field is
-   * ignored in create operations.
-   * @opt_param string filterSet.format The format on which to filter; optional.
-   * @opt_param string filterSet.timeSeriesGranularity The granularity of time
-   * intervals if a time series breakdown is desired; optional.
-   * @opt_param string filterSet.creativeId The ID of the creative on which to
-   * filter; optional.
-   * @opt_param int filterSet.relativeDateRange.offsetDays The end date of the
-   * filter set, specified as the number of days before today. E.g. for a range
-   * where the last date is today, 0.
-   * @opt_param bool isTransient Whether the filter set is transient, or should be
-   * persisted indefinitely. By default, filter sets are not transient. If
-   * transient, it will be available for at least 1 hour after creation.
    * @opt_param string filterSet.buyerAccountId The ID of the buyer account on
    * which to filter; optional.
    * @opt_param string filterSet.ownerAccountId The account ID of the buyer who
@@ -101,6 +66,45 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * data)
    *
    * This field is required in create operations.
+   * @opt_param string filterSet.platforms The list of platforms on which to
+   * filter; may be empty. The filters represented by multiple platforms are ORed
+   * together (i.e. if non-empty, results must match any one of the platforms).
+   * @opt_param string accountId Account ID of the buyer.
+   * @opt_param int filterSet.relativeDateRange.durationDays The number of days in
+   * the requested date range. E.g. for a range spanning today, 1. For a range
+   * spanning the last 7 days, 7.
+   * @opt_param string filterSet.dealId The ID of the deal on which to filter;
+   * optional. This field may be set only for a filter set that accesses buyer-
+   * level troubleshooting data, i.e. one whose name matches the
+   * `bidders/accounts/filterSets` pattern.
+   * @opt_param int filterSet.absoluteDateRange.endDate.year Year of date. Must be
+   * from 1 to 9999, or 0 if specifying a date without a year.
+   * @opt_param int filterSet.absoluteDateRange.endDate.month Month of year. Must
+   * be from 1 to 12.
+   * @opt_param string filterSet.environment The environment on which to filter;
+   * optional.
+   * @opt_param int filterSet.sellerNetworkIds The list of IDs of the seller
+   * (publisher) networks on which to filter; may be empty. The filters
+   * represented by multiple seller network IDs are ORed together (i.e. if non-
+   * empty, results must match any one of the publisher networks). See [seller-
+   * network-ids](https://developers.google.com/ad-exchange/rtb/downloads/seller-
+   * network-ids) file for the set of existing seller network IDs.
+   * @opt_param string filterSet.filterSetId The ID of the filter set; unique
+   * within the account of the filter set owner. The value of this field is
+   * ignored in create operations.
+   * @opt_param string filterSet.format The format on which to filter; optional.
+   * @opt_param string filterSet.timeSeriesGranularity The granularity of time
+   * intervals if a time series breakdown is desired; optional.
+   * @opt_param string filterSet.creativeId The ID of the creative on which to
+   * filter; optional. This field may be set only for a filter set that accesses
+   * buyer-level troubleshooting data, i.e. one whose name matches the
+   * `bidders/accounts/filterSets` pattern.
+   * @opt_param int filterSet.relativeDateRange.offsetDays The end date of the
+   * filter set, specified as the number of days before today. E.g. for a range
+   * where the last date is today, 0.
+   * @opt_param bool isTransient Whether the filter set is transient, or should be
+   * persisted indefinitely. By default, filter sets are not transient. If
+   * transient, it will be available for at least 1 hour after creation.
    * @return Google_Service_AdExchangeBuyerII_FilterSet
    */
   public function create($ownerName, $optParams = array())

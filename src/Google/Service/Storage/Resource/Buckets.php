@@ -97,7 +97,7 @@ class Google_Service_Storage_Resource_Buckets extends Google_Service_Resource
    * @opt_param string projection Set of properties to return. Defaults to noAcl,
    * unless the bucket resource specifies acl or defaultObjectAcl properties, when
    * it defaults to full.
-   * @opt_param string userProject The project to be billed for this request
+   * @opt_param string userProject The project to be billed for this request.
    * @return Google_Service_Storage_Bucket
    */
   public function insert($project, Google_Service_Storage_Bucket $postBody, $optParams = array())

@@ -111,6 +111,8 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsModels extends 
    * response message will contain a valid value in the `next_page_token` field.
    *
    * The default value is 20, and the maximum page size is 100.
+   * @opt_param string filter Optional. Specifies the subset of models to
+   * retrieve.
    * @return Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ListModelsResponse
    */
   public function listProjectsModels($parent, $optParams = array())
