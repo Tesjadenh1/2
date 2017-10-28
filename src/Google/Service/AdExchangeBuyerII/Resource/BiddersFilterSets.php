@@ -41,11 +41,12 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * whose bidder is 123: `bidders/123/accounts/456`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filterSet.buyerAccountId The ID of the buyer account on
-   * which to filter; optional.
-   * @opt_param string filterSet.ownerAccountId The account ID of the buyer who
-   * owns this filter set. The value of this field is ignored in create
-   * operations.
+   * @opt_param int filterSet.relativeDateRange.offsetDays The end date of the
+   * filter set, specified as the number of days before today. E.g. for a range
+   * where the last date is today, 0.
+   * @opt_param bool isTransient Whether the filter set is transient, or should be
+   * persisted indefinitely. By default, filter sets are not transient. If
+   * transient, it will be available for at least 1 hour after creation.
    * @opt_param int filterSet.absoluteDateRange.startDate.day Day of month. Must
    * be from 1 to 31 and valid for the year and month, or 0 if specifying a
    * year/month where the day is not significant.
@@ -69,10 +70,10 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * @opt_param string filterSet.platforms The list of platforms on which to
    * filter; may be empty. The filters represented by multiple platforms are ORed
    * together (i.e. if non-empty, results must match any one of the platforms).
-   * @opt_param string accountId Account ID of the buyer.
    * @opt_param int filterSet.relativeDateRange.durationDays The number of days in
    * the requested date range. E.g. for a range spanning today, 1. For a range
    * spanning the last 7 days, 7.
+   * @opt_param string accountId Account ID of the buyer.
    * @opt_param string filterSet.dealId The ID of the deal on which to filter;
    * optional. This field may be set only for a filter set that accesses buyer-
    * level troubleshooting data, i.e. one whose name matches the
@@ -99,12 +100,6 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * filter; optional. This field may be set only for a filter set that accesses
    * buyer-level troubleshooting data, i.e. one whose name matches the
    * `bidders/accounts/filterSets` pattern.
-   * @opt_param int filterSet.relativeDateRange.offsetDays The end date of the
-   * filter set, specified as the number of days before today. E.g. for a range
-   * where the last date is today, 0.
-   * @opt_param bool isTransient Whether the filter set is transient, or should be
-   * persisted indefinitely. By default, filter sets are not transient. If
-   * transient, it will be available for at least 1 hour after creation.
    * @return Google_Service_AdExchangeBuyerII_FilterSet
    */
   public function create($ownerName, $optParams = array())
@@ -181,14 +176,14 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * whose bidder is 123: `bidders/123/accounts/456`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken A token identifying a page of results the server
-   * should return. Typically, this is the value of
-   * ListFilterSetsResponse.nextPageToken returned from the previous call to the
-   * accounts.filterSets.list method.
    * @opt_param int pageSize Requested page size. The server may return fewer
    * results than requested. If unspecified, the server will pick an appropriate
    * default.
    * @opt_param string accountId Account ID of the buyer.
+   * @opt_param string pageToken A token identifying a page of results the server
+   * should return. Typically, this is the value of
+   * ListFilterSetsResponse.nextPageToken returned from the previous call to the
+   * accounts.filterSets.list method.
    * @return Google_Service_AdExchangeBuyerII_ListFilterSetsResponse
    */
   public function listBiddersFilterSets($ownerName, $optParams = array())
