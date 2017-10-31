@@ -111,13 +111,13 @@ class Google_Service_CloudIot extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(
@@ -193,6 +193,10 @@ class Google_Service_CloudIot extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'fieldMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'list' => array(
               'path' => 'v1/{+parent}/devices',
@@ -203,6 +207,18 @@ class Google_Service_CloudIot extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'fieldMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'deviceIds' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -212,18 +228,6 @@ class Google_Service_CloudIot extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
-                ),
-                'fieldMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),'modifyCloudToDeviceConfig' => array(

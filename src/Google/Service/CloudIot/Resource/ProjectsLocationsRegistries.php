@@ -93,14 +93,14 @@ class Google_Service_CloudIot_Resource_ProjectsLocationsRegistries extends Googl
    * `projects/example-project/locations/us-central1`.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken The value returned by the last
-   * `ListDeviceRegistriesResponse`; indicates that this is a continuation of a
-   * prior `ListDeviceRegistries` call, and that the system should return the next
-   * page of data.
    * @opt_param int pageSize The maximum number of registries to return in the
    * response. If this value is zero, the service will select a default size. A
    * call may return fewer objects than requested, but if there is a non-empty
    * `page_token`, it indicates that more entries are available.
+   * @opt_param string pageToken The value returned by the last
+   * `ListDeviceRegistriesResponse`; indicates that this is a continuation of a
+   * prior `ListDeviceRegistries` call, and that the system should return the next
+   * page of data.
    * @return Google_Service_CloudIot_ListDeviceRegistriesResponse
    */
   public function listProjectsLocationsRegistries($parent, $optParams = array())
@@ -120,7 +120,7 @@ class Google_Service_CloudIot_Resource_ProjectsLocationsRegistries extends Googl
    * @opt_param string updateMask Only updates the `device_registry` fields
    * indicated by this mask. The field mask must not be empty, and it must not
    * contain fields that are immutable or only set by the server. Mutable top-
-   * level fields: `event_notification_config`, `mqtt_config`, and
+   * level fields: `event_notification_config`, `http_config`, `mqtt_config`, and
    * `state_notification_config`.
    * @return Google_Service_CloudIot_DeviceRegistry
    */
