@@ -23,7 +23,7 @@
  *   $logs = $loggingService->logs;
  *  </code>
  */
-class Google_Service_Logging_Resource_BillingAccountsLogs extends Google_Service_Resource
+class Google_Service_Logging_Resource_Logs extends Google_Service_Resource
 {
   /**
    * Deletes all the log entries in a log. The log reappears if it receives new
@@ -49,23 +49,23 @@ class Google_Service_Logging_Resource_BillingAccountsLogs extends Google_Service
   }
   /**
    * Lists the logs in projects, organizations, folders, or billing accounts. Only
-   * logs that have entries are listed. (logs.listBillingAccountsLogs)
+   * logs that have entries are listed. (logs.listLogs)
    *
    * @param string $parent Required. The resource name that owns the logs:
    * "projects/[PROJECT_ID]" "organizations/[ORGANIZATION_ID]"
    * "billingAccounts/[BILLING_ACCOUNT_ID]" "folders/[FOLDER_ID]"
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Optional. The maximum number of results to return
-   * from this request. Non-positive values are ignored. The presence of
-   * nextPageToken in the response indicates that more results might be available.
    * @opt_param string pageToken Optional. If present, then retrieve the next
    * batch of results from the preceding call to this method. pageToken must be
    * the value of nextPageToken from the previous response. The values of other
    * method parameters should be identical to those in the previous call.
+   * @opt_param int pageSize Optional. The maximum number of results to return
+   * from this request. Non-positive values are ignored. The presence of
+   * nextPageToken in the response indicates that more results might be available.
    * @return Google_Service_Logging_ListLogsResponse
    */
-  public function listBillingAccountsLogs($parent, $optParams = array())
+  public function listLogs($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
     $params = array_merge($params, $optParams);
