@@ -32,6 +32,10 @@ class Google_Service_Partners_Resource_Exams extends Google_Service_Resource
    * @param string $examType The exam type we are requesting a token for.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string requestMetadata.partnersSessionId Google Partners session
+   * ID.
+   * @opt_param string requestMetadata.userOverrides.userId Logged-in user ID to
+   * impersonate instead of the user's ID.
    * @opt_param string requestMetadata.trafficSource.trafficSourceId Identifier to
    * indicate where the traffic comes from. An identifier has multiple letters
    * created by a team which redirected the traffic to us.
@@ -44,10 +48,6 @@ class Google_Service_Partners_Resource_Exams extends Google_Service_Resource
    * @opt_param string requestMetadata.trafficSource.trafficSubId Second level
    * identifier to indicate where the traffic comes from. An identifier has
    * multiple letters created by a team which redirected the traffic to us.
-   * @opt_param string requestMetadata.partnersSessionId Google Partners session
-   * ID.
-   * @opt_param string requestMetadata.userOverrides.userId Logged-in user ID to
-   * impersonate instead of the user's ID.
    * @return Google_Service_Partners_ExamToken
    */
   public function getToken($examType, $optParams = array())

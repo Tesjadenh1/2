@@ -31,6 +31,8 @@ class Google_Service_Partners_Resource_OffersHistory extends Google_Service_Reso
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string requestMetadata.userOverrides.ipAddress IP address to use
+   * instead of the user's geo-located IP address.
    * @opt_param string requestMetadata.experimentIds Experiment IDs the current
    * request belongs to.
    * @opt_param bool entireCompany if true, show history for the entire company.
@@ -53,8 +55,6 @@ class Google_Service_Partners_Resource_OffersHistory extends Google_Service_Reso
    * created by a team which redirected the traffic to us.
    * @opt_param string requestMetadata.locale Locale to use for the current
    * request.
-   * @opt_param string requestMetadata.userOverrides.ipAddress IP address to use
-   * instead of the user's geo-located IP address.
    * @return Google_Service_Partners_ListOffersHistoryResponse
    */
   public function listOffersHistory($optParams = array())
