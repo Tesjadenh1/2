@@ -20,6 +20,7 @@ class Google_Service_CloudFunctions_OperationMetadataV1 extends Google_Model
   public $request;
   public $target;
   public $type;
+  public $updateTime;
   public $versionId;
 
   public function setRequest($request)
@@ -45,6 +46,14 @@ class Google_Service_CloudFunctions_OperationMetadataV1 extends Google_Model
   public function getType()
   {
     return $this->type;
+  }
+  public function setUpdateTime($updateTime)
+  {
+    $this->updateTime = $updateTime;
+  }
+  public function getUpdateTime()
+  {
+    return $this->updateTime;
   }
   public function setVersionId($versionId)
   {
