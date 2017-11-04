@@ -42,10 +42,10 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * @param Google_Service_AdExchangeBuyerII_FilterSet $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string accountId Account ID of the buyer.
    * @opt_param bool isTransient Whether the filter set is transient, or should be
    * persisted indefinitely. By default, filter sets are not transient. If
    * transient, it will be available for at least 1 hour after creation.
-   * @opt_param string accountId Account ID of the buyer.
    * @return Google_Service_AdExchangeBuyerII_FilterSet
    */
   public function create($ownerName, Google_Service_AdExchangeBuyerII_FilterSet $postBody, $optParams = array())
@@ -96,8 +96,8 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * whose bidder is 123: `bidders/123/accounts/456/filterSets/abc`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string accountId Account ID of the buyer.
    * @opt_param string filterSetId The ID of the filter set to get.
+   * @opt_param string accountId Account ID of the buyer.
    * @return Google_Service_AdExchangeBuyerII_FilterSet
    */
   public function get($name, $optParams = array())
@@ -122,14 +122,14 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersFilterSets extends Google
    * whose bidder is 123: `bidders/123/accounts/456`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Requested page size. The server may return fewer
-   * results than requested. If unspecified, the server will pick an appropriate
-   * default.
-   * @opt_param string accountId Account ID of the buyer.
    * @opt_param string pageToken A token identifying a page of results the server
    * should return. Typically, this is the value of
    * ListFilterSetsResponse.nextPageToken returned from the previous call to the
    * accounts.filterSets.list method.
+   * @opt_param string accountId Account ID of the buyer.
+   * @opt_param int pageSize Requested page size. The server may return fewer
+   * results than requested. If unspecified, the server will pick an appropriate
+   * default.
    * @return Google_Service_AdExchangeBuyerII_ListFilterSetsResponse
    */
   public function listBiddersFilterSets($ownerName, $optParams = array())
