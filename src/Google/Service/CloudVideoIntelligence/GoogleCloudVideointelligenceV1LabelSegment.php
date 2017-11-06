@@ -15,10 +15,9 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1LabelLocation extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1LabelSegment extends Google_Model
 {
   public $confidence;
-  public $level;
   protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoSegment';
   protected $segmentDataType = '';
 
@@ -29,14 +28,6 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1LabelL
   public function getConfidence()
   {
     return $this->confidence;
-  }
-  public function setLevel($level)
-  {
-    $this->level = $level;
-  }
-  public function getLevel()
-  {
-    return $this->level;
   }
   /**
    * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoSegment

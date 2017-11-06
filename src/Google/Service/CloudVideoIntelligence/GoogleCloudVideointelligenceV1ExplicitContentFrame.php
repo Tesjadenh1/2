@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoSegment extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1ExplicitContentFrame extends Google_Model
 {
-  public $endTimeOffset;
-  public $startTimeOffset;
+  public $pornographyLikelihood;
+  public $timeOffset;
 
-  public function setEndTimeOffset($endTimeOffset)
+  public function setPornographyLikelihood($pornographyLikelihood)
   {
-    $this->endTimeOffset = $endTimeOffset;
+    $this->pornographyLikelihood = $pornographyLikelihood;
   }
-  public function getEndTimeOffset()
+  public function getPornographyLikelihood()
   {
-    return $this->endTimeOffset;
+    return $this->pornographyLikelihood;
   }
-  public function setStartTimeOffset($startTimeOffset)
+  public function setTimeOffset($timeOffset)
   {
-    $this->startTimeOffset = $startTimeOffset;
+    $this->timeOffset = $timeOffset;
   }
-  public function getStartTimeOffset()
+  public function getTimeOffset()
   {
-    return $this->startTimeOffset;
+    return $this->timeOffset;
   }
 }

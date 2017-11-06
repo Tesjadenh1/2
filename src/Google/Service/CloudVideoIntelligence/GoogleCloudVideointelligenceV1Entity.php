@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1SafeSearchAnnotation extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1Entity extends Google_Model
 {
-  public $adult;
-  public $time;
+  public $description;
+  public $entityId;
+  public $languageCode;
 
-  public function setAdult($adult)
+  public function setDescription($description)
   {
-    $this->adult = $adult;
+    $this->description = $description;
   }
-  public function getAdult()
+  public function getDescription()
   {
-    return $this->adult;
+    return $this->description;
   }
-  public function setTime($time)
+  public function setEntityId($entityId)
   {
-    $this->time = $time;
+    $this->entityId = $entityId;
   }
-  public function getTime()
+  public function getEntityId()
   {
-    return $this->time;
+    return $this->entityId;
+  }
+  public function setLanguageCode($languageCode)
+  {
+    $this->languageCode = $languageCode;
+  }
+  public function getLanguageCode()
+  {
+    return $this->languageCode;
   }
 }

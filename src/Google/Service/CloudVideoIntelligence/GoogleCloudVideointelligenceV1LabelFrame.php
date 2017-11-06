@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoSegment extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1LabelFrame extends Google_Model
 {
-  public $endTimeOffset;
-  public $startTimeOffset;
+  public $confidence;
+  public $timeOffset;
 
-  public function setEndTimeOffset($endTimeOffset)
+  public function setConfidence($confidence)
   {
-    $this->endTimeOffset = $endTimeOffset;
+    $this->confidence = $confidence;
   }
-  public function getEndTimeOffset()
+  public function getConfidence()
   {
-    return $this->endTimeOffset;
+    return $this->confidence;
   }
-  public function setStartTimeOffset($startTimeOffset)
+  public function setTimeOffset($timeOffset)
   {
-    $this->startTimeOffset = $startTimeOffset;
+    $this->timeOffset = $timeOffset;
   }
-  public function getStartTimeOffset()
+  public function getTimeOffset()
   {
-    return $this->startTimeOffset;
+    return $this->timeOffset;
   }
 }
