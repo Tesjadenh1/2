@@ -122,13 +122,13 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'currentDocument.exists' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
                 'currentDocument.updateTime' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'currentDocument.exists' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'get' => array(
@@ -168,11 +168,24 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'transaction' => array(
+                'showMissing' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'mask.fieldPaths' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'orderBy' => array(
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'transaction' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -180,22 +193,9 @@ class Google_Service_Firestore extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'showMissing' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
-                'pageToken' => array(
+                'orderBy' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'mask.fieldPaths' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),'listCollectionIds' => array(
@@ -227,6 +227,10 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'currentDocument.exists' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
                 'mask.fieldPaths' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -240,10 +244,6 @@ class Google_Service_Firestore extends Google_Service
                 'currentDocument.updateTime' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'currentDocument.exists' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
                 ),
               ),
             ),'rollback' => array(
@@ -325,6 +325,10 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -332,10 +336,6 @@ class Google_Service_Firestore extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),
