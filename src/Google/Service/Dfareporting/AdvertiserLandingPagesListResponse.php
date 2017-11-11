@@ -15,12 +15,13 @@
  * the License.
  */
 
-class Google_Service_Dfareporting_LandingPagesListResponse extends Google_Collection
+class Google_Service_Dfareporting_AdvertiserLandingPagesListResponse extends Google_Collection
 {
   protected $collection_key = 'landingPages';
   public $kind;
   protected $landingPagesType = 'Google_Service_Dfareporting_LandingPage';
   protected $landingPagesDataType = 'array';
+  public $nextPageToken;
 
   public function setKind($kind)
   {
@@ -43,5 +44,13 @@ class Google_Service_Dfareporting_LandingPagesListResponse extends Google_Collec
   public function getLandingPages()
   {
     return $this->landingPages;
+  }
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
 }
