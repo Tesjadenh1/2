@@ -42,6 +42,7 @@ class Google_Service_AndroidEnterprise extends Google_Service
   public $installs;
   public $managedconfigurationsfordevice;
   public $managedconfigurationsforuser;
+  public $managedconfigurationssettings;
   public $permissions;
   public $products;
   public $serviceaccountkeys;
@@ -870,6 +871,31 @@ class Google_Service_AndroidEnterprise extends Google_Service
                   'required' => true,
                 ),
                 'managedConfigurationForUserId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->managedconfigurationssettings = new Google_Service_AndroidEnterprise_Resource_Managedconfigurationssettings(
+        $this,
+        $this->serviceName,
+        'managedconfigurationssettings',
+        array(
+          'methods' => array(
+            'list' => array(
+              'path' => 'enterprises/{enterpriseId}/products/{productId}/managedConfigurationsSettings',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'enterpriseId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'productId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,

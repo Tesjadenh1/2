@@ -15,34 +15,34 @@
  * the License.
  */
 
-class Google_Service_Proximitybeacon_AttachmentInfo extends Google_Model
+class Google_Service_AndroidEnterprise_VariableSet extends Google_Model
 {
-  public $data;
-  public $maxDistanceMeters;
-  public $namespacedType;
+  public $kind;
+  public $placeholder;
+  public $userValue;
 
-  public function setData($data)
+  public function setKind($kind)
   {
-    $this->data = $data;
+    $this->kind = $kind;
   }
-  public function getData()
+  public function getKind()
   {
-    return $this->data;
+    return $this->kind;
   }
-  public function setMaxDistanceMeters($maxDistanceMeters)
+  public function setPlaceholder($placeholder)
   {
-    $this->maxDistanceMeters = $maxDistanceMeters;
+    $this->placeholder = $placeholder;
   }
-  public function getMaxDistanceMeters()
+  public function getPlaceholder()
   {
-    return $this->maxDistanceMeters;
+    return $this->placeholder;
   }
-  public function setNamespacedType($namespacedType)
+  public function setUserValue($userValue)
   {
-    $this->namespacedType = $namespacedType;
+    $this->userValue = $userValue;
   }
-  public function getNamespacedType()
+  public function getUserValue()
   {
-    return $this->namespacedType;
+    return $this->userValue;
   }
 }

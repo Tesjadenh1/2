@@ -99,7 +99,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * Authorization requires the following [Google IAM](/iam) permission on the
    * specified resource parent:
    *
-   * * `cloudtasks.queues.getIamPolicy`  (queues.getIamPolicy)
+   * * `cloudtasks.queues.getIamPolicy` (queues.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
    * requested. See the operation documentation for the appropriate value for this
@@ -173,11 +173,9 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * The queue name must have the following format:
    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
    *
-   * * `PROJECT_ID` can contain uppercase and lowercase letters,   numbers,
-   * hyphens, colons, and periods; that is, it must match   the regular
-   * expression: `[a-zA-Z\\d-:\\.]+`. * `QUEUE_ID` can contain uppercase and
-   * lowercase letters,   numbers, and hyphens; that is, it must match the regular
-   * expression: `[a-zA-Z\\d-]+`. The maximum length is 100   characters.
+   * * `PROJECT_ID` can contain letters ([A-Za-z]), numbers ([0-9]),    hyphens
+   * (-), colons (:), or periods (.). * `QUEUE_ID` can contain letters ([A-Za-z]),
+   * numbers ([0-9]), or   hyphens (-). The maximum length is 100 characters.
    *
    * Caller-specified and required in CreateQueueRequest, after which it becomes
    * output only.
@@ -278,7 +276,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * Authorization requires the following [Google IAM](/iam) permission on the
    * specified resource parent:
    *
-   * * `cloudtasks.queues.setIamPolicy`  (queues.setIamPolicy)
+   * * `cloudtasks.queues.setIamPolicy` (queues.setIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
    * specified. See the operation documentation for the appropriate value for this
@@ -300,7 +298,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    *
    * Note: This operation is designed to be used for building permission-aware UIs
    * and command-line tools, not for authorization checking. This operation may
-   * "fail open" without warning.  (queues.testIamPermissions)
+   * "fail open" without warning. (queues.testIamPermissions)
    *
    * @param string $resource REQUIRED: The resource for which the policy detail is
    * being requested. See the operation documentation for the appropriate value

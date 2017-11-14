@@ -15,30 +15,15 @@
  * the License.
  */
 
-class Google_Service_AndroidEnterprise_ManagedConfiguration extends Google_Collection
+class Google_Service_AndroidEnterprise_ManagedConfigurationsSettings extends Google_Collection
 {
   protected $collection_key = 'managedProperty';
-  protected $configurationVariablesType = 'Google_Service_AndroidEnterprise_ConfigurationVariables';
-  protected $configurationVariablesDataType = '';
   public $kind;
   protected $managedPropertyType = 'Google_Service_AndroidEnterprise_ManagedProperty';
   protected $managedPropertyDataType = 'array';
-  public $productId;
+  public $mcmId;
+  public $name;
 
-  /**
-   * @param Google_Service_AndroidEnterprise_ConfigurationVariables
-   */
-  public function setConfigurationVariables(Google_Service_AndroidEnterprise_ConfigurationVariables $configurationVariables)
-  {
-    $this->configurationVariables = $configurationVariables;
-  }
-  /**
-   * @return Google_Service_AndroidEnterprise_ConfigurationVariables
-   */
-  public function getConfigurationVariables()
-  {
-    return $this->configurationVariables;
-  }
   public function setKind($kind)
   {
     $this->kind = $kind;
@@ -61,12 +46,20 @@ class Google_Service_AndroidEnterprise_ManagedConfiguration extends Google_Colle
   {
     return $this->managedProperty;
   }
-  public function setProductId($productId)
+  public function setMcmId($mcmId)
   {
-    $this->productId = $productId;
+    $this->mcmId = $mcmId;
   }
-  public function getProductId()
+  public function getMcmId()
   {
-    return $this->productId;
+    return $this->mcmId;
+  }
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+  public function getName()
+  {
+    return $this->name;
   }
 }
