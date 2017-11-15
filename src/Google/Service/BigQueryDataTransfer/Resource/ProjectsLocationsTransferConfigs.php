@@ -123,12 +123,10 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
    * @param Google_Service_BigQueryDataTransfer_TransferConfig $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string updateMask Required list of fields to be updated in this
-   * request.
    * @opt_param string authorizationCode Optional OAuth2 authorization code to use
    * with this transfer configuration. If it is provided, the transfer
-   * configuration will be associated with the gaia id of the authorizing user. In
-   * order to obtain authorization_code, please make a request to
+   * configuration will be associated with the authorizing user. In order to
+   * obtain authorization_code, please make a request to
    * https://www.gstatic.com/bigquerydatatransfer/oauthz/auth?client_id==_uri=
    *
    * * client_id should be OAuth client_id of BigQuery DTS API for the given
@@ -140,6 +138,8 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
    * authorization code should be   returned in the title bar of the browser, with
    * the page text prompting   the user to copy the code and paste it in the
    * application.
+   * @opt_param string updateMask Required list of fields to be updated in this
+   * request.
    * @return Google_Service_BigQueryDataTransfer_TransferConfig
    */
   public function patch($name, Google_Service_BigQueryDataTransfer_TransferConfig $postBody, $optParams = array())
@@ -149,10 +149,10 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
     return $this->call('patch', array($params), "Google_Service_BigQueryDataTransfer_TransferConfig");
   }
   /**
-   * Creates transfer runs for a time range [range_start_time, range_end_time].
-   * For each date - or whatever granularity the data source supports - in the
-   * range, one transfer run is created. Note that runs are created per UTC time
-   * in the time range. (transferConfigs.scheduleRuns)
+   * Creates transfer runs for a time range [start_time, end_time]. For each date
+   * - or whatever granularity the data source supports - in the range, one
+   * transfer run is created. Note that runs are created per UTC time in the time
+   * range. (transferConfigs.scheduleRuns)
    *
    * @param string $parent Transfer configuration name in the form:
    * `projects/{project_id}/transferConfigs/{config_id}`.
