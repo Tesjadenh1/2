@@ -674,6 +674,21 @@ class Google_Service_Directory extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'hasMember' => array(
+              'path' => 'groups/{groupKey}/hasMember/{memberKey}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'groupKey' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'memberKey' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'insert' => array(
               'path' => 'groups/{groupKey}/members',
               'httpMethod' => 'POST',
