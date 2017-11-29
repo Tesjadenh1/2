@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_OrderShipmentLineItemShipment extends Google_Model
+class Google_Service_ShoppingContent_AccountGoogleMyBusinessLink extends Google_Model
 {
-  public $lineItemId;
-  public $productId;
-  public $quantity;
+  public $gmbEmail;
+  public $status;
 
-  public function setLineItemId($lineItemId)
+  public function setGmbEmail($gmbEmail)
   {
-    $this->lineItemId = $lineItemId;
+    $this->gmbEmail = $gmbEmail;
   }
-  public function getLineItemId()
+  public function getGmbEmail()
   {
-    return $this->lineItemId;
+    return $this->gmbEmail;
   }
-  public function setProductId($productId)
+  public function setStatus($status)
   {
-    $this->productId = $productId;
+    $this->status = $status;
   }
-  public function getProductId()
+  public function getStatus()
   {
-    return $this->productId;
-  }
-  public function setQuantity($quantity)
-  {
-    $this->quantity = $quantity;
-  }
-  public function getQuantity()
-  {
-    return $this->quantity;
+    return $this->status;
   }
 }

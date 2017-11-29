@@ -269,7 +269,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * made or to manually force a task to be dispatched now.
    *
    * When this method is called, Cloud Tasks will dispatch the task to its target,
-   * even if the queue is Queue.QueueState.PAUSED.
+   * even if the queue is Queue.State.PAUSED.
    *
    * The dispatched task is returned. That is, the task that is returned contains
    * the Task.task_status after the task is dispatched but before the task is
@@ -283,7 +283,9 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * CloudTasks.RunTask returns google.rpc.Code.NOT_FOUND when it is called on a
    * task that has already succeeded or permanently failed.
    * google.rpc.Code.FAILED_PRECONDITION is returned when CloudTasks.RunTask is
-   * called on task that is dispatched or already running. (tasks.run)
+   * called on task that is dispatched or already running.
+   *
+   * CloudTasks.RunTask cannot be called on pull tasks. (tasks.run)
    *
    * @param string $name Required.
    *
