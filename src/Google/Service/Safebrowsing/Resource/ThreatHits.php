@@ -16,30 +16,27 @@
  */
 
 /**
- * The "encodedFullHashes" collection of methods.
+ * The "threatHits" collection of methods.
  * Typical usage is:
  *  <code>
  *   $safebrowsingService = new Google_Service_Safebrowsing(...);
- *   $encodedFullHashes = $safebrowsingService->encodedFullHashes;
+ *   $threatHits = $safebrowsingService->threatHits;
  *  </code>
  */
-class Google_Service_Safebrowsing_Resource_EncodedFullHashes extends Google_Service_Resource
+class Google_Service_Safebrowsing_Resource_ThreatHits extends Google_Service_Resource
 {
   /**
-   * (encodedFullHashes.get)
+   * Reports a Safe Browsing threat list hit to Google. Only projects with
+   * TRUSTED_REPORTER visibility can use this method. (threatHits.create)
    *
-   * @param string $encodedRequest A serialized FindFullHashesRequest proto.
+   * @param Google_Service_Safebrowsing_ThreatHit $postBody
    * @param array $optParams Optional parameters.
-   *
-   * @opt_param string clientId A client ID that (hopefully) uniquely identifies
-   * the client implementation of the Safe Browsing API.
-   * @opt_param string clientVersion The version of the client implementation.
-   * @return Google_Service_Safebrowsing_FindFullHashesResponse
+   * @return Google_Service_Safebrowsing_SafebrowsingEmpty
    */
-  public function get($encodedRequest, $optParams = array())
+  public function create(Google_Service_Safebrowsing_ThreatHit $postBody, $optParams = array())
   {
-    $params = array('encodedRequest' => $encodedRequest);
+    $params = array('postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_Safebrowsing_FindFullHashesResponse");
+    return $this->call('create', array($params), "Google_Service_Safebrowsing_SafebrowsingEmpty");
   }
 }
