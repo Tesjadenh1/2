@@ -125,12 +125,6 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * The location name. For example: `projects/PROJECT_ID/locations/LOCATION_ID`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Requested page size.
-   *
-   * The maximum page size is 9800. If unspecified, the page size will be the
-   * maximum. Fewer queues than requested might be returned, even if more queues
-   * exist; use ListQueuesResponse.next_page_token to determine if more queues
-   * exist.
    * @opt_param string filter `filter` can be used to specify a subset of queues.
    * Any Queue field can be used as a filter and several operators as supported.
    * For example: `<=, <, >=, >, !=, =, :`. The filter syntax is the same as
@@ -149,6 +143,12 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * ListQueuesResponse.next_page_token returned from the previous call to
    * CloudTasks.ListQueues method. It is an error to switch the value of
    * ListQueuesRequest.filter while iterating through pages.
+   * @opt_param int pageSize Requested page size.
+   *
+   * The maximum page size is 9800. If unspecified, the page size will be the
+   * maximum. Fewer queues than requested might be returned, even if more queues
+   * exist; use ListQueuesResponse.next_page_token to determine if more queues
+   * exist.
    * @return Google_Service_CloudTasks_ListQueuesResponse
    */
   public function listProjectsLocationsQueues($parent, $optParams = array())
@@ -174,7 +174,9 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
    *
    * * `PROJECT_ID` can contain letters ([A-Za-z]), numbers ([0-9]),    hyphens
-   * (-), colons (:), or periods (.). * `LOCATION_ID` is the canonical ID for the
+   * (-), colons (:), or periods (.).    For more information, see    [Identifying
+   * projects](/resource-manager/docs/creating-managing-
+   * projects#identifying_projects) * `LOCATION_ID` is the canonical ID for the
    * queue's location.    The list of available locations can be obtained by
    * calling    google.cloud.location.Locations.ListLocations.    For more
    * information, see https://cloud.google.com/about/locations/. * `QUEUE_ID` can

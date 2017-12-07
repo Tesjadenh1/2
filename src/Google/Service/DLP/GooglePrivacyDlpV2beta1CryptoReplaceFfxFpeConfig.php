@@ -24,6 +24,8 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig extend
   protected $cryptoKeyDataType = '';
   public $customAlphabet;
   public $radix;
+  protected $surrogateInfoTypeType = 'Google_Service_DLP_GooglePrivacyDlpV2beta1InfoType';
+  protected $surrogateInfoTypeDataType = '';
 
   public function setCommonAlphabet($commonAlphabet)
   {
@@ -76,5 +78,19 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta1CryptoReplaceFfxFpeConfig extend
   public function getRadix()
   {
     return $this->radix;
+  }
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta1InfoType
+   */
+  public function setSurrogateInfoType(Google_Service_DLP_GooglePrivacyDlpV2beta1InfoType $surrogateInfoType)
+  {
+    $this->surrogateInfoType = $surrogateInfoType;
+  }
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta1InfoType
+   */
+  public function getSurrogateInfoType()
+  {
+    return $this->surrogateInfoType;
   }
 }
