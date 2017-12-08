@@ -24,6 +24,8 @@ class Google_Service_Directory_ChromeOsDevice extends Google_Collection
   public $annotatedLocation;
   public $annotatedUser;
   public $bootMode;
+  protected $deviceFilesType = 'Google_Service_Directory_ChromeOsDeviceDeviceFiles';
+  protected $deviceFilesDataType = 'array';
   public $deviceId;
   public $etag;
   public $ethernetMacAddress;
@@ -91,6 +93,20 @@ class Google_Service_Directory_ChromeOsDevice extends Google_Collection
   public function getBootMode()
   {
     return $this->bootMode;
+  }
+  /**
+   * @param Google_Service_Directory_ChromeOsDeviceDeviceFiles
+   */
+  public function setDeviceFiles($deviceFiles)
+  {
+    $this->deviceFiles = $deviceFiles;
+  }
+  /**
+   * @return Google_Service_Directory_ChromeOsDeviceDeviceFiles
+   */
+  public function getDeviceFiles()
+  {
+    return $this->deviceFiles;
   }
   public function setDeviceId($deviceId)
   {
