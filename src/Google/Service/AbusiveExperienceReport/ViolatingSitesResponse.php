@@ -15,23 +15,24 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_AppEngineQueueConfig extends Google_Model
+class Google_Service_AbusiveExperienceReport_ViolatingSitesResponse extends Google_Collection
 {
-  protected $appEngineRoutingOverrideType = 'Google_Service_CloudTasks_AppEngineRouting';
-  protected $appEngineRoutingOverrideDataType = '';
+  protected $collection_key = 'violatingSites';
+  protected $violatingSitesType = 'Google_Service_AbusiveExperienceReport_SiteSummaryResponse';
+  protected $violatingSitesDataType = 'array';
 
   /**
-   * @param Google_Service_CloudTasks_AppEngineRouting
+   * @param Google_Service_AbusiveExperienceReport_SiteSummaryResponse
    */
-  public function setAppEngineRoutingOverride(Google_Service_CloudTasks_AppEngineRouting $appEngineRoutingOverride)
+  public function setViolatingSites($violatingSites)
   {
-    $this->appEngineRoutingOverride = $appEngineRoutingOverride;
+    $this->violatingSites = $violatingSites;
   }
   /**
-   * @return Google_Service_CloudTasks_AppEngineRouting
+   * @return Google_Service_AbusiveExperienceReport_SiteSummaryResponse
    */
-  public function getAppEngineRoutingOverride()
+  public function getViolatingSites()
   {
-    return $this->appEngineRoutingOverride;
+    return $this->violatingSites;
   }
 }

@@ -19,14 +19,10 @@ class Google_Service_CloudTasks_Task extends Google_Model
 {
   protected $appEngineHttpRequestType = 'Google_Service_CloudTasks_AppEngineHttpRequest';
   protected $appEngineHttpRequestDataType = '';
-  protected $appEngineTaskTargetType = 'Google_Service_CloudTasks_AppEngineTaskTarget';
-  protected $appEngineTaskTargetDataType = '';
   public $createTime;
   public $name;
   protected $pullMessageType = 'Google_Service_CloudTasks_PullMessage';
   protected $pullMessageDataType = '';
-  protected $pullTaskTargetType = 'Google_Service_CloudTasks_PullTaskTarget';
-  protected $pullTaskTargetDataType = '';
   public $scheduleTime;
   protected $taskStatusType = 'Google_Service_CloudTasks_TaskStatus';
   protected $taskStatusDataType = '';
@@ -45,20 +41,6 @@ class Google_Service_CloudTasks_Task extends Google_Model
   public function getAppEngineHttpRequest()
   {
     return $this->appEngineHttpRequest;
-  }
-  /**
-   * @param Google_Service_CloudTasks_AppEngineTaskTarget
-   */
-  public function setAppEngineTaskTarget(Google_Service_CloudTasks_AppEngineTaskTarget $appEngineTaskTarget)
-  {
-    $this->appEngineTaskTarget = $appEngineTaskTarget;
-  }
-  /**
-   * @return Google_Service_CloudTasks_AppEngineTaskTarget
-   */
-  public function getAppEngineTaskTarget()
-  {
-    return $this->appEngineTaskTarget;
   }
   public function setCreateTime($createTime)
   {
@@ -89,20 +71,6 @@ class Google_Service_CloudTasks_Task extends Google_Model
   public function getPullMessage()
   {
     return $this->pullMessage;
-  }
-  /**
-   * @param Google_Service_CloudTasks_PullTaskTarget
-   */
-  public function setPullTaskTarget(Google_Service_CloudTasks_PullTaskTarget $pullTaskTarget)
-  {
-    $this->pullTaskTarget = $pullTaskTarget;
-  }
-  /**
-   * @return Google_Service_CloudTasks_PullTaskTarget
-   */
-  public function getPullTaskTarget()
-  {
-    return $this->pullTaskTarget;
   }
   public function setScheduleTime($scheduleTime)
   {

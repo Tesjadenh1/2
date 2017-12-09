@@ -18,12 +18,14 @@
 class Google_Service_Bigquery_ExplainQueryStage extends Google_Collection
 {
   protected $collection_key = 'steps';
+  public $completedParallelInputs;
   public $computeMsAvg;
   public $computeMsMax;
   public $computeRatioAvg;
   public $computeRatioMax;
   public $id;
   public $name;
+  public $parallelInputs;
   public $readMsAvg;
   public $readMsMax;
   public $readRatioAvg;
@@ -44,6 +46,14 @@ class Google_Service_Bigquery_ExplainQueryStage extends Google_Collection
   public $writeRatioAvg;
   public $writeRatioMax;
 
+  public function setCompletedParallelInputs($completedParallelInputs)
+  {
+    $this->completedParallelInputs = $completedParallelInputs;
+  }
+  public function getCompletedParallelInputs()
+  {
+    return $this->completedParallelInputs;
+  }
   public function setComputeMsAvg($computeMsAvg)
   {
     $this->computeMsAvg = $computeMsAvg;
@@ -91,6 +101,14 @@ class Google_Service_Bigquery_ExplainQueryStage extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  public function setParallelInputs($parallelInputs)
+  {
+    $this->parallelInputs = $parallelInputs;
+  }
+  public function getParallelInputs()
+  {
+    return $this->parallelInputs;
   }
   public function setReadMsAvg($readMsAvg)
   {
