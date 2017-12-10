@@ -17,8 +17,6 @@
 
 class Google_Service_CloudResourceManager_Constraint extends Google_Model
 {
-  protected $booleanConstraintType = 'Google_Service_CloudResourceManager_BooleanConstraint';
-  protected $booleanConstraintDataType = '';
   public $constraintDefault;
   public $description;
   public $displayName;
@@ -27,20 +25,6 @@ class Google_Service_CloudResourceManager_Constraint extends Google_Model
   public $name;
   public $version;
 
-  /**
-   * @param Google_Service_CloudResourceManager_BooleanConstraint
-   */
-  public function setBooleanConstraint(Google_Service_CloudResourceManager_BooleanConstraint $booleanConstraint)
-  {
-    $this->booleanConstraint = $booleanConstraint;
-  }
-  /**
-   * @return Google_Service_CloudResourceManager_BooleanConstraint
-   */
-  public function getBooleanConstraint()
-  {
-    return $this->booleanConstraint;
-  }
   public function setConstraintDefault($constraintDefault)
   {
     $this->constraintDefault = $constraintDefault;

@@ -23,8 +23,6 @@ class Google_Service_CloudResourceManager_OrgPolicy extends Google_Model
   public $etag;
   protected $listPolicyType = 'Google_Service_CloudResourceManager_ListPolicy';
   protected $listPolicyDataType = '';
-  protected $restoreDefaultType = 'Google_Service_CloudResourceManager_RestoreDefault';
-  protected $restoreDefaultDataType = '';
   public $updateTime;
   public $version;
 
@@ -71,20 +69,6 @@ class Google_Service_CloudResourceManager_OrgPolicy extends Google_Model
   public function getListPolicy()
   {
     return $this->listPolicy;
-  }
-  /**
-   * @param Google_Service_CloudResourceManager_RestoreDefault
-   */
-  public function setRestoreDefault(Google_Service_CloudResourceManager_RestoreDefault $restoreDefault)
-  {
-    $this->restoreDefault = $restoreDefault;
-  }
-  /**
-   * @return Google_Service_CloudResourceManager_RestoreDefault
-   */
-  public function getRestoreDefault()
-  {
-    return $this->restoreDefault;
   }
   public function setUpdateTime($updateTime)
   {
