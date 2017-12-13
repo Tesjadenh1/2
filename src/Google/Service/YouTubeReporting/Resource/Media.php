@@ -32,12 +32,12 @@ class Google_Service_YouTubeReporting_Resource_Media extends Google_Service_Reso
    * @param string $resourceName Name of the media that is being downloaded.  See
    * ReadRequest.resource_name.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_YouTubeReporting_Media
+   * @return Google_Service_YouTubeReporting_GdataMedia
    */
   public function download($resourceName, $optParams = array())
   {
     $params = array('resourceName' => $resourceName);
     $params = array_merge($params, $optParams);
-    return $this->call('download', array($params), "Google_Service_YouTubeReporting_Media");
+    return $this->call('download', array($params), "Google_Service_YouTubeReporting_GdataMedia");
   }
 }

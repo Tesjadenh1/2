@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_YouTubeReporting_Media extends Google_Model
+class Google_Service_YouTubeReporting_GdataDownloadParameters extends Google_Model
 {
-  public $resourceName;
+  public $allowGzipCompression;
+  public $ignoreRange;
 
-  public function setResourceName($resourceName)
+  public function setAllowGzipCompression($allowGzipCompression)
   {
-    $this->resourceName = $resourceName;
+    $this->allowGzipCompression = $allowGzipCompression;
   }
-  public function getResourceName()
+  public function getAllowGzipCompression()
   {
-    return $this->resourceName;
+    return $this->allowGzipCompression;
+  }
+  public function setIgnoreRange($ignoreRange)
+  {
+    $this->ignoreRange = $ignoreRange;
+  }
+  public function getIgnoreRange()
+  {
+    return $this->ignoreRange;
   }
 }

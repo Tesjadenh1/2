@@ -761,8 +761,38 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'setlineitemmetadata' => array(
+              'path' => '{merchantId}/orders/{orderId}/setLineItemMetadata',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'shiplineitems' => array(
               'path' => '{merchantId}/orders/{orderId}/shipLineItems',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'updatelineitemshippingdetails' => array(
+              'path' => '{merchantId}/orders/{orderId}/updateLineItemShippingDetails',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'merchantId' => array(

@@ -25,6 +25,8 @@ class Google_Service_CloudBuild_BuildStep extends Google_Collection
   public $id;
   public $name;
   public $secretEnv;
+  protected $timingType = 'Google_Service_CloudBuild_TimeSpan';
+  protected $timingDataType = '';
   protected $volumesType = 'Google_Service_CloudBuild_Volume';
   protected $volumesDataType = 'array';
   public $waitFor;
@@ -84,6 +86,20 @@ class Google_Service_CloudBuild_BuildStep extends Google_Collection
   public function getSecretEnv()
   {
     return $this->secretEnv;
+  }
+  /**
+   * @param Google_Service_CloudBuild_TimeSpan
+   */
+  public function setTiming(Google_Service_CloudBuild_TimeSpan $timing)
+  {
+    $this->timing = $timing;
+  }
+  /**
+   * @return Google_Service_CloudBuild_TimeSpan
+   */
+  public function getTiming()
+  {
+    return $this->timing;
   }
   /**
    * @param Google_Service_CloudBuild_Volume

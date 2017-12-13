@@ -31,8 +31,12 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   protected $refundDataType = '';
   protected $returnLineItemType = 'Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryReturnLineItem';
   protected $returnLineItemDataType = '';
+  protected $setLineItemMetadataType = 'Google_Service_ShoppingContent_OrdersCustomBatchRequestEntrySetLineItemMetadata';
+  protected $setLineItemMetadataDataType = '';
   protected $shipLineItemsType = 'Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryShipLineItems';
   protected $shipLineItemsDataType = '';
+  protected $updateLineItemShippingDetailsType = 'Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails';
+  protected $updateLineItemShippingDetailsDataType = '';
   protected $updateShipmentType = 'Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateShipment';
   protected $updateShipmentDataType = '';
 
@@ -141,6 +145,20 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
     return $this->returnLineItem;
   }
   /**
+   * @param Google_Service_ShoppingContent_OrdersCustomBatchRequestEntrySetLineItemMetadata
+   */
+  public function setSetLineItemMetadata(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntrySetLineItemMetadata $setLineItemMetadata)
+  {
+    $this->setLineItemMetadata = $setLineItemMetadata;
+  }
+  /**
+   * @return Google_Service_ShoppingContent_OrdersCustomBatchRequestEntrySetLineItemMetadata
+   */
+  public function getSetLineItemMetadata()
+  {
+    return $this->setLineItemMetadata;
+  }
+  /**
    * @param Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryShipLineItems
    */
   public function setShipLineItems(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryShipLineItems $shipLineItems)
@@ -153,6 +171,20 @@ class Google_Service_ShoppingContent_OrdersCustomBatchRequestEntry extends Googl
   public function getShipLineItems()
   {
     return $this->shipLineItems;
+  }
+  /**
+   * @param Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails
+   */
+  public function setUpdateLineItemShippingDetails(Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails $updateLineItemShippingDetails)
+  {
+    $this->updateLineItemShippingDetails = $updateLineItemShippingDetails;
+  }
+  /**
+   * @return Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateLineItemShippingDetails
+   */
+  public function getUpdateLineItemShippingDetails()
+  {
+    return $this->updateLineItemShippingDetails;
   }
   /**
    * @param Google_Service_ShoppingContent_OrdersCustomBatchRequestEntryUpdateShipment
