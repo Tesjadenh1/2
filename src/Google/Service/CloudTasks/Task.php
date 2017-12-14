@@ -24,8 +24,8 @@ class Google_Service_CloudTasks_Task extends Google_Model
   protected $pullMessageType = 'Google_Service_CloudTasks_PullMessage';
   protected $pullMessageDataType = '';
   public $scheduleTime;
-  protected $taskStatusType = 'Google_Service_CloudTasks_TaskStatus';
-  protected $taskStatusDataType = '';
+  protected $statusType = 'Google_Service_CloudTasks_TaskStatus';
+  protected $statusDataType = '';
   public $view;
 
   /**
@@ -83,16 +83,16 @@ class Google_Service_CloudTasks_Task extends Google_Model
   /**
    * @param Google_Service_CloudTasks_TaskStatus
    */
-  public function setTaskStatus(Google_Service_CloudTasks_TaskStatus $taskStatus)
+  public function setStatus(Google_Service_CloudTasks_TaskStatus $status)
   {
-    $this->taskStatus = $taskStatus;
+    $this->status = $status;
   }
   /**
    * @return Google_Service_CloudTasks_TaskStatus
    */
-  public function getTaskStatus()
+  public function getStatus()
   {
-    return $this->taskStatus;
+    return $this->status;
   }
   public function setView($view)
   {

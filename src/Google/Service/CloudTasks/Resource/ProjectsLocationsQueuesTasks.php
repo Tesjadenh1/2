@@ -28,11 +28,11 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   /**
    * Acknowledges a pull task.
    *
-   * The lease holder, that is, the entity that received this task in a
+   * The pull worker, that is, the entity that received this task in a
    * PullTasksResponse, must call this method to indicate that the work associated
    * with the task has finished.
    *
-   * The lease holder must acknowledge a task within the
+   * The pull worker must acknowledge a task within the
    * PullTasksRequest.lease_duration or the lease will expire and the task will
    * become ready to be returned in a different PullTasksResponse. After the task
    * is acknowledged, it will not be returned by a later CloudTasks.PullTasks,
@@ -61,7 +61,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   /**
    * Cancel a pull task's lease.
    *
-   * The lease holder can use this method to cancel a task's lease by setting
+   * The pull worker can use this method to cancel a task's lease by setting
    * Task.schedule_time to now. This will make the task available to be leased to
    * the next caller of CloudTasks.PullTasks. (tasks.cancelLease)
    *
@@ -213,11 +213,11 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * Pulls tasks from a pull queue and acquires a lease on them for a specified
    * PullTasksRequest.lease_duration.
    *
-   * This method is invoked by the lease holder to obtain the lease. The lease
-   * holder must acknowledge the task via CloudTasks.AcknowledgeTask after they
+   * This method is invoked by the pull worker to obtain the lease. The pull
+   * worker must acknowledge the task via CloudTasks.AcknowledgeTask after they
    * have performed the work associated with the task.
    *
-   * The payload is intended to store data that the lease holder needs to perform
+   * The payload is intended to store data that the pull worker needs to perform
    * the work associated with the task. To return the payloads in the
    * PullTasksResponse, set PullTasksRequest.response_view to Task.View.FULL.
    *
@@ -243,7 +243,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   /**
    * Renew the current lease of a pull task.
    *
-   * The lease holder can use this method to extend the lease by a new duration,
+   * The pull worker can use this method to extend the lease by a new duration,
    * starting from now. The new task lease will be returned in Task.schedule_time.
    * (tasks.renewLease)
    *
@@ -272,8 +272,8 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * even if the queue is Queue.State.PAUSED.
    *
    * The dispatched task is returned. That is, the task that is returned contains
-   * the Task.task_status after the task is dispatched but before the task is
-   * received by its target.
+   * the Task.status after the task is dispatched but before the task is received
+   * by its target.
    *
    * If Cloud Tasks receives a successful response from the task's handler, then
    * the task will be deleted; otherwise the task's Task.schedule_time will be
