@@ -33,9 +33,6 @@ class Google_Service_Speech extends Google_Service
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
-  /** Convert speech to text using Google speech recognition technology. */
-  const CLOUD_SPEECH =
-      "https://www.googleapis.com/auth/cloud-speech";
 
   public $operations;
   public $speech;
@@ -93,19 +90,19 @@ class Google_Service_Speech extends Google_Service
               'path' => 'v1/operations',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'name' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

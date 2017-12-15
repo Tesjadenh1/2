@@ -386,10 +386,6 @@ class Google_Service_CloudResourceManager extends Google_Service
               'path' => 'v1/projects',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -397,6 +393,10 @@ class Google_Service_CloudResourceManager extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'listAvailableOrgPolicyConstraints' => array(

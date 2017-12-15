@@ -194,16 +194,14 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
   }
   /**
    * Lists Projects that are visible to the user and satisfy the specified filter.
-   * This method returns Projects in an unspecified order. New Projects do not
-   * necessarily appear at the end of the list. (projects.listProjects)
+   * This method returns Projects in an unspecified order. This method is
+   * eventually consistent with project mutations; this means that a newly created
+   * project may not appear in the results or recent updates to an existing
+   * project may not be reflected in the results. To retrieve the latest state of
+   * a project, use the GetProject method. (projects.listProjects)
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize The maximum number of Projects to return in the
-   * response. The server can return fewer Projects than requested. If
-   * unspecified, server picks an appropriate default.
-   *
-   * Optional.
    * @opt_param string filter An expression for filtering the results of the
    * request.  Filter rules are case insensitive. The fields eligible for
    * filtering are:
@@ -232,6 +230,11 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * Optional.
    * @opt_param string pageToken A pagination token returned from a previous call
    * to ListProjects that indicates from where listing should continue.
+   *
+   * Optional.
+   * @opt_param int pageSize The maximum number of Projects to return in the
+   * response. The server can return fewer Projects than requested. If
+   * unspecified, server picks an appropriate default.
    *
    * Optional.
    * @return Google_Service_CloudResourceManager_ListProjectsResponse
@@ -273,7 +276,7 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
     return $this->call('listOrgPolicies', array($params), "Google_Service_CloudResourceManager_ListOrgPoliciesResponse");
   }
   /**
-   * Sets the IAM access control policy for the specified Project. Replaces any
+   * Sets the IAM access control policy for the specified Project. Overwrites any
    * existing policy.
    *
    * The following constraints apply when using `setIamPolicy()`:
@@ -304,7 +307,8 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * longer have owners who have accepted the ToS. Edits to IAM policies will be
    * rejected until the lack of a ToS-accepting owner is rectified.
    *
-   * + Calling this method requires enabling the App Engine Admin API.
+   * + This method will replace the existing policy, and cannot be used to append
+   * additional IAM settings.
    *
    * Note: Removing service accounts from policies or changing their roles can
    * render services completely inoperable. It is important to understand how the
