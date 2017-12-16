@@ -158,6 +158,36 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
     return $this->call('get', array($params), "Google_Service_CloudTasks_Task");
   }
   /**
+   * Leases tasks from a pull queue for LeaseTasksRequest.lease_duration.
+   *
+   * This method is invoked by the pull worker to obtain a lease. The pull worker
+   * must acknowledge the task via CloudTasks.AcknowledgeTask after they have
+   * performed the work associated with the task.
+   *
+   * The payload is intended to store data that the pull worker needs to perform
+   * the work associated with the task. To return the payloads in the
+   * LeaseTasksResponse, set LeaseTasksRequest.response_view to Task.View.FULL.
+   *
+   * A maximum of 10 qps of CloudTasks.LeaseTasks requests are allowed per queue.
+   * google.rpc.Code.RESOURCE_EXHAUSTED is returned when this limit is exceeded.
+   * google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
+   * RateLimits.max_tasks_dispatched_per_second is exceeded. (tasks.lease)
+   *
+   * @param string $parent Required.
+   *
+   * The queue name. For example:
+   * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
+   * @param Google_Service_CloudTasks_LeaseTasksRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudTasks_LeaseTasksResponse
+   */
+  public function lease($parent, Google_Service_CloudTasks_LeaseTasksRequest $postBody, $optParams = array())
+  {
+    $params = array('parent' => $parent, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('lease', array($params), "Google_Service_CloudTasks_LeaseTasksResponse");
+  }
+  /**
    * Lists the tasks in a queue.
    *
    * By default response_view is Task.View.BASIC; not all information is retrieved
