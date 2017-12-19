@@ -250,7 +250,8 @@ class Google_Service_Compute_Resource_Disks extends Google_Service_Resource
     return $this->call('list', array($params), "Google_Service_Compute_DiskList");
   }
   /**
-   * Resizes the specified persistent disk. (disks.resize)
+   * Resizes the specified persistent disk. You can only increase the size of the
+   * disk. (disks.resize)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone for this request.

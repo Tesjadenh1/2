@@ -19,6 +19,8 @@ class Google_Service_AndroidManagement_SoftwareInfo extends Google_Model
 {
   public $androidBuildNumber;
   public $androidBuildTime;
+  public $androidDevicePolicyVersionCode;
+  public $androidDevicePolicyVersionName;
   public $androidVersion;
   public $bootloaderVersion;
   public $deviceKernelVersion;
@@ -39,6 +41,22 @@ class Google_Service_AndroidManagement_SoftwareInfo extends Google_Model
   public function getAndroidBuildTime()
   {
     return $this->androidBuildTime;
+  }
+  public function setAndroidDevicePolicyVersionCode($androidDevicePolicyVersionCode)
+  {
+    $this->androidDevicePolicyVersionCode = $androidDevicePolicyVersionCode;
+  }
+  public function getAndroidDevicePolicyVersionCode()
+  {
+    return $this->androidDevicePolicyVersionCode;
+  }
+  public function setAndroidDevicePolicyVersionName($androidDevicePolicyVersionName)
+  {
+    $this->androidDevicePolicyVersionName = $androidDevicePolicyVersionName;
+  }
+  public function getAndroidDevicePolicyVersionName()
+  {
+    return $this->androidDevicePolicyVersionName;
   }
   public function setAndroidVersion($androidVersion)
   {

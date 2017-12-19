@@ -93,14 +93,14 @@ class Google_Service_Sheets extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'includeGridData' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
                 'ranges' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
+                ),
+                'includeGridData' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'getByDataFilter' => array(
@@ -247,20 +247,20 @@ class Google_Service_Sheets extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'majorDimension' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'ranges' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
                 ),
-                'dateTimeRenderOption' => array(
+                'majorDimension' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'valueRenderOption' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'dateTimeRenderOption' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -324,7 +324,7 @@ class Google_Service_Sheets extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'dateTimeRenderOption' => array(
+                'majorDimension' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -332,7 +332,7 @@ class Google_Service_Sheets extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'majorDimension' => array(
+                'dateTimeRenderOption' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
