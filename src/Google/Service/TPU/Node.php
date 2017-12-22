@@ -22,6 +22,7 @@ class Google_Service_TPU_Node extends Google_Collection
   public $cidrBlock;
   public $createTime;
   public $description;
+  public $health;
   public $healthDescription;
   public $ipAddress;
   public $name;
@@ -64,6 +65,14 @@ class Google_Service_TPU_Node extends Google_Collection
   public function getDescription()
   {
     return $this->description;
+  }
+  public function setHealth($health)
+  {
+    $this->health = $health;
+  }
+  public function getHealth()
+  {
+    return $this->health;
   }
   public function setHealthDescription($healthDescription)
   {

@@ -44,8 +44,8 @@ class Google_Service_CloudMachineLearningEngine_Resource_Projects extends Google
   /**
    * Performs prediction on the data in the request. Cloud ML Engine implements a
    * custom `predict` verb on top of an HTTP POST method. For details of the
-   * format, see the **guide to the [predict request format](/ml-engine/docs/v1
-   * /predict-request)**. (projects.predict)
+   * request and response format, see the **guide to the [predict request format
+   * ](/ml-engine/docs/v1/predict-request)**. (projects.predict)
    *
    * @param string $name Required. The resource name of a model or a version.
    *

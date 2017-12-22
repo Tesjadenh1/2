@@ -15,34 +15,34 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_CheckError extends Google_Model
+class Google_Service_Storage_BucketRetentionPolicy extends Google_Model
 {
-  public $code;
-  public $detail;
-  public $subject;
+  public $effectiveTime;
+  public $isLocked;
+  public $retentionPeriod;
 
-  public function setCode($code)
+  public function setEffectiveTime($effectiveTime)
   {
-    $this->code = $code;
+    $this->effectiveTime = $effectiveTime;
   }
-  public function getCode()
+  public function getEffectiveTime()
   {
-    return $this->code;
+    return $this->effectiveTime;
   }
-  public function setDetail($detail)
+  public function setIsLocked($isLocked)
   {
-    $this->detail = $detail;
+    $this->isLocked = $isLocked;
   }
-  public function getDetail()
+  public function getIsLocked()
   {
-    return $this->detail;
+    return $this->isLocked;
   }
-  public function setSubject($subject)
+  public function setRetentionPeriod($retentionPeriod)
   {
-    $this->subject = $subject;
+    $this->retentionPeriod = $retentionPeriod;
   }
-  public function getSubject()
+  public function getRetentionPeriod()
   {
-    return $this->subject;
+    return $this->retentionPeriod;
   }
 }

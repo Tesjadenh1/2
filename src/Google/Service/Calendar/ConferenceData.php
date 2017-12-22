@@ -25,6 +25,7 @@ class Google_Service_Calendar_ConferenceData extends Google_Collection
   protected $createRequestDataType = '';
   protected $entryPointsType = 'Google_Service_Calendar_EntryPoint';
   protected $entryPointsDataType = 'array';
+  public $notes;
   public $signature;
 
   public function setConferenceId($conferenceId)
@@ -76,6 +77,14 @@ class Google_Service_Calendar_ConferenceData extends Google_Collection
   public function getEntryPoints()
   {
     return $this->entryPoints;
+  }
+  public function setNotes($notes)
+  {
+    $this->notes = $notes;
+  }
+  public function getNotes()
+  {
+    return $this->notes;
   }
   public function setSignature($signature)
   {
