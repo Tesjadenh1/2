@@ -17,7 +17,7 @@
 
 class Google_Service_Appengine_Version extends Google_Collection
 {
-  protected $collection_key = 'libraries';
+  protected $collection_key = 'zones';
   protected $apiConfigType = 'Google_Service_Appengine_ApiConfigHandler';
   protected $apiConfigDataType = '';
   protected $automaticScalingType = 'Google_Service_Appengine_AutomaticScaling';
@@ -64,6 +64,7 @@ class Google_Service_Appengine_Version extends Google_Collection
   public $threadsafe;
   public $versionUrl;
   public $vm;
+  public $zones;
 
   /**
    * @param Google_Service_Appengine_ApiConfigHandler
@@ -404,5 +405,13 @@ class Google_Service_Appengine_Version extends Google_Collection
   public function getVm()
   {
     return $this->vm;
+  }
+  public function setZones($zones)
+  {
+    $this->zones = $zones;
+  }
+  public function getZones()
+  {
+    return $this->zones;
   }
 }
