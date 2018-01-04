@@ -15,24 +15,32 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_PullTasksResponse extends Google_Collection
+class Google_Service_Books_FamilyInfo extends Google_Model
 {
-  protected $collection_key = 'tasks';
-  protected $tasksType = 'Google_Service_CloudTasks_Task';
-  protected $tasksDataType = 'array';
+  public $kind;
+  protected $membershipType = 'Google_Service_Books_FamilyInfoMembership';
+  protected $membershipDataType = '';
 
-  /**
-   * @param Google_Service_CloudTasks_Task
-   */
-  public function setTasks($tasks)
+  public function setKind($kind)
   {
-    $this->tasks = $tasks;
+    $this->kind = $kind;
+  }
+  public function getKind()
+  {
+    return $this->kind;
   }
   /**
-   * @return Google_Service_CloudTasks_Task
+   * @param Google_Service_Books_FamilyInfoMembership
    */
-  public function getTasks()
+  public function setMembership(Google_Service_Books_FamilyInfoMembership $membership)
   {
-    return $this->tasks;
+    $this->membership = $membership;
+  }
+  /**
+   * @return Google_Service_Books_FamilyInfoMembership
+   */
+  public function getMembership()
+  {
+    return $this->membership;
   }
 }

@@ -28,14 +28,14 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   /**
    * Acknowledges a pull task.
    *
-   * The pull worker, that is, the entity that received this task in a
-   * PullTasksResponse, must call this method to indicate that the work associated
-   * with the task has finished.
+   * The worker, that is, the entity that received this task in a
+   * LeaseTasksResponse, must call this method to indicate that the work
+   * associated with the task has finished.
    *
-   * The pull worker must acknowledge a task within the
-   * PullTasksRequest.lease_duration or the lease will expire and the task will
-   * become ready to be returned in a different PullTasksResponse. After the task
-   * is acknowledged, it will not be returned by a later CloudTasks.PullTasks,
+   * The worker must acknowledge a task within the
+   * LeaseTasksRequest.lease_duration or the lease will expire and the task will
+   * become ready to be returned in a different LeaseTasksResponse. After the task
+   * is acknowledged, it will not be returned by a later CloudTasks.LeaseTasks,
    * CloudTasks.GetTask, or CloudTasks.ListTasks.
    *
    * To acknowledge multiple tasks at the same time, use [HTTP
@@ -61,9 +61,9 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   /**
    * Cancel a pull task's lease.
    *
-   * The pull worker can use this method to cancel a task's lease by setting
+   * The worker can use this method to cancel a task's lease by setting
    * Task.schedule_time to now. This will make the task available to be leased to
-   * the next caller of CloudTasks.PullTasks. (tasks.cancelLease)
+   * the next caller of CloudTasks.LeaseTasks. (tasks.cancelLease)
    *
    * @param string $name Required.
    *
@@ -160,12 +160,12 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   /**
    * Leases tasks from a pull queue for LeaseTasksRequest.lease_duration.
    *
-   * This method is invoked by the pull worker to obtain a lease. The pull worker
-   * must acknowledge the task via CloudTasks.AcknowledgeTask after they have
-   * performed the work associated with the task.
+   * This method is invoked by the worker to obtain a lease. The worker must
+   * acknowledge the task via CloudTasks.AcknowledgeTask after they have performed
+   * the work associated with the task.
    *
-   * The payload is intended to store data that the pull worker needs to perform
-   * the work associated with the task. To return the payloads in the
+   * The payload is intended to store data that the worker needs to perform the
+   * work associated with the task. To return the payloads in the
    * LeaseTasksResponse, set LeaseTasksRequest.response_view to Task.View.FULL.
    *
    * A maximum of 10 qps of CloudTasks.LeaseTasks requests are allowed per queue.
@@ -240,40 +240,9 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
     return $this->call('list', array($params), "Google_Service_CloudTasks_ListTasksResponse");
   }
   /**
-   * Pulls tasks from a pull queue and acquires a lease on them for a specified
-   * PullTasksRequest.lease_duration.
-   *
-   * This method is invoked by the pull worker to obtain the lease. The pull
-   * worker must acknowledge the task via CloudTasks.AcknowledgeTask after they
-   * have performed the work associated with the task.
-   *
-   * The payload is intended to store data that the pull worker needs to perform
-   * the work associated with the task. To return the payloads in the
-   * PullTasksResponse, set PullTasksRequest.response_view to Task.View.FULL.
-   *
-   * A maximum of 10 qps of CloudTasks.PullTasks requests are allowed per queue.
-   * google.rpc.Code.RESOURCE_EXHAUSTED is returned when this limit is exceeded.
-   * google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
-   * RateLimits.max_tasks_dispatched_per_second is exceeded. (tasks.pull)
-   *
-   * @param string $name Required.
-   *
-   * The queue name. For example:
-   * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
-   * @param Google_Service_CloudTasks_PullTasksRequest $postBody
-   * @param array $optParams Optional parameters.
-   * @return Google_Service_CloudTasks_PullTasksResponse
-   */
-  public function pull($name, Google_Service_CloudTasks_PullTasksRequest $postBody, $optParams = array())
-  {
-    $params = array('name' => $name, 'postBody' => $postBody);
-    $params = array_merge($params, $optParams);
-    return $this->call('pull', array($params), "Google_Service_CloudTasks_PullTasksResponse");
-  }
-  /**
    * Renew the current lease of a pull task.
    *
-   * The pull worker can use this method to extend the lease by a new duration,
+   * The worker can use this method to extend the lease by a new duration,
    * starting from now. The new task lease will be returned in Task.schedule_time.
    * (tasks.renewLease)
    *

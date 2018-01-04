@@ -15,8 +15,10 @@
  * the License.
  */
 
-class Google_Service_Dataflow_RuntimeEnvironment extends Google_Model
+class Google_Service_Dataflow_RuntimeEnvironment extends Google_Collection
 {
+  protected $collection_key = 'additionalExperiments';
+  public $additionalExperiments;
   public $bypassTempDirValidation;
   public $machineType;
   public $maxWorkers;
@@ -24,6 +26,14 @@ class Google_Service_Dataflow_RuntimeEnvironment extends Google_Model
   public $tempLocation;
   public $zone;
 
+  public function setAdditionalExperiments($additionalExperiments)
+  {
+    $this->additionalExperiments = $additionalExperiments;
+  }
+  public function getAdditionalExperiments()
+  {
+    return $this->additionalExperiments;
+  }
   public function setBypassTempDirValidation($bypassTempDirValidation)
   {
     $this->bypassTempDirValidation = $bypassTempDirValidation;
