@@ -47,6 +47,7 @@ class Google_Service_AndroidManagement_Policy extends Google_Collection
   public $installUnknownSourcesAllowed;
   public $keyguardDisabled;
   public $keyguardDisabledFeatures;
+  public $kioskCustomLauncherEnabled;
   protected $longSupportMessageType = 'Google_Service_AndroidManagement_UserFacingMessage';
   protected $longSupportMessageDataType = '';
   public $maximumTimeToLock;
@@ -315,6 +316,14 @@ class Google_Service_AndroidManagement_Policy extends Google_Collection
   public function getKeyguardDisabledFeatures()
   {
     return $this->keyguardDisabledFeatures;
+  }
+  public function setKioskCustomLauncherEnabled($kioskCustomLauncherEnabled)
+  {
+    $this->kioskCustomLauncherEnabled = $kioskCustomLauncherEnabled;
+  }
+  public function getKioskCustomLauncherEnabled()
+  {
+    return $this->kioskCustomLauncherEnabled;
   }
   /**
    * @param Google_Service_AndroidManagement_UserFacingMessage
