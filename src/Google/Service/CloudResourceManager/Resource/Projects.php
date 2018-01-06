@@ -157,8 +157,10 @@ class Google_Service_CloudResourceManager_Resource_Projects extends Google_Servi
    * is denied if the policy or the resource does not exist.
    *
    * Authorization requires the Google IAM permission
-   * `resourcemanager.projects.getIamPolicy` on the project
-   * (projects.getIamPolicy)
+   * `resourcemanager.projects.getIamPolicy` on the project.
+   *
+   * For additional information about resource structure and identification, see
+   * [Resource Names](/apis/design/resource_names). (projects.getIamPolicy)
    *
    * @param string $resource REQUIRED: The resource for which the policy is being
    * requested. See the operation documentation for the appropriate value for this
