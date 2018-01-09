@@ -27,8 +27,9 @@ class Google_Service_Cloudbilling_Resource_BillingAccountsProjects extends Googl
 {
   /**
    * Lists the projects associated with a billing account. The current
-   * authenticated user must be an [owner of the billing
-   * account](https://support.google.com/cloud/answer/4430947).
+   * authenticated user must have the "billing.resourceAssociations.list" IAM
+   * permission, which is often given to billing account
+   * [viewers](https://support.google.com/cloud/answer/4430947).
    * (projects.listBillingAccountsProjects)
    *
    * @param string $name The resource name of the billing account associated with
