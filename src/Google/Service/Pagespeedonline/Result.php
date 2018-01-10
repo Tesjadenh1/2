@@ -18,6 +18,7 @@
 class Google_Service_Pagespeedonline_Result extends Google_Collection
 {
   protected $collection_key = 'invalidRules';
+  public $captchaResult;
   protected $formattedResultsType = 'Google_Service_Pagespeedonline_ResultFormattedResults';
   protected $formattedResultsDataType = '';
   public $id;
@@ -34,6 +35,14 @@ class Google_Service_Pagespeedonline_Result extends Google_Collection
   protected $versionType = 'Google_Service_Pagespeedonline_ResultVersion';
   protected $versionDataType = '';
 
+  public function setCaptchaResult($captchaResult)
+  {
+    $this->captchaResult = $captchaResult;
+  }
+  public function getCaptchaResult()
+  {
+    return $this->captchaResult;
+  }
   /**
    * @param Google_Service_Pagespeedonline_ResultFormattedResults
    */

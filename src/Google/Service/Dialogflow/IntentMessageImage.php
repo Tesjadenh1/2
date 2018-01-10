@@ -17,8 +17,17 @@
 
 class Google_Service_Dialogflow_IntentMessageImage extends Google_Model
 {
+  public $accessibilityText;
   public $imageUri;
 
+  public function setAccessibilityText($accessibilityText)
+  {
+    $this->accessibilityText = $accessibilityText;
+  }
+  public function getAccessibilityText()
+  {
+    return $this->accessibilityText;
+  }
   public function setImageUri($imageUri)
   {
     $this->imageUri = $imageUri;

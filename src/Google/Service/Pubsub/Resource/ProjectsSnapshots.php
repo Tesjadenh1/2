@@ -73,6 +73,20 @@ class Google_Service_Pubsub_Resource_ProjectsSnapshots extends Google_Service_Re
     return $this->call('delete', array($params), "Google_Service_Pubsub_PubsubEmpty");
   }
   /**
+   * Gets the configuration details of a snapshot. (snapshots.get)
+   *
+   * @param string $snapshot The name of the snapshot to get. Format is
+   * `projects/{project}/snapshots/{snap}`.
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Pubsub_Snapshot
+   */
+  public function get($snapshot, $optParams = array())
+  {
+    $params = array('snapshot' => $snapshot);
+    $params = array_merge($params, $optParams);
+    return $this->call('get', array($params), "Google_Service_Pubsub_Snapshot");
+  }
+  /**
    * Gets the access control policy for a resource. Returns an empty policy if the
    * resource exists and does not have a policy set. (snapshots.getIamPolicy)
    *
