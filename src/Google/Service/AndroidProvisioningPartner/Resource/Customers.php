@@ -30,9 +30,9 @@ class Google_Service_AndroidProvisioningPartner_Resource_Customers extends Googl
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize The maximum number of items to return.
    * @opt_param string pageToken The next_page_token value returned from a
    * previous List request, if any.
+   * @opt_param int pageSize The maximum number of items to return.
    * @return Google_Service_AndroidProvisioningPartner_CustomerListCustomersResponse
    */
   public function listCustomers($optParams = array())
