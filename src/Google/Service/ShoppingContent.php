@@ -692,6 +692,21 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'instorerefundlineitem' => array(
+              'path' => '{merchantId}/orders/{orderId}/inStoreRefundLineItem',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'list' => array(
               'path' => '{merchantId}/orders',
               'httpMethod' => 'GET',
@@ -746,8 +761,38 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'rejectreturnlineitem' => array(
+              'path' => '{merchantId}/orders/{orderId}/rejectReturnLineItem',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'returnlineitem' => array(
               'path' => '{merchantId}/orders/{orderId}/returnLineItem',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'returnrefundlineitem' => array(
+              'path' => '{merchantId}/orders/{orderId}/returnRefundLineItem',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'merchantId' => array(
