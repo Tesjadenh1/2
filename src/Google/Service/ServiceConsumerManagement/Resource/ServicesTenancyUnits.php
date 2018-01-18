@@ -26,10 +26,11 @@
 class Google_Service_ServiceConsumerManagement_Resource_ServicesTenancyUnits extends Google_Service_Resource
 {
   /**
-   * Add a new tenant project to the tenancy unit. If there are previously failed
-   * AddTenantProject calls, you might need to call RemoveTenantProject first to
-   * clean them before you can make another AddTenantProject with the same tag.
-   * Operation. (tenancyUnits.addProject)
+   * Add a new tenant project to the tenancy unit. There can be at most 512 tenant
+   * projects in a tenancy units. If there are previously failed AddTenantProject
+   * calls, you might need to call RemoveTenantProject first to clean them before
+   * you can make another AddTenantProject with the same tag. Operation.
+   * (tenancyUnits.addProject)
    *
    * @param string $parent Name of the tenancy unit.
    * @param Google_Service_ServiceConsumerManagement_AddTenantProjectRequest $postBody

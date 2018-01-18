@@ -15,6 +15,17 @@
  * the License.
  */
 
-class Google_Service_Speech_CancelOperationRequest extends Google_Model
+class Google_Service_Genomics_ImportReadGroupSetsResponse extends Google_Collection
 {
+  protected $collection_key = 'readGroupSetIds';
+  public $readGroupSetIds;
+
+  public function setReadGroupSetIds($readGroupSetIds)
+  {
+    $this->readGroupSetIds = $readGroupSetIds;
+  }
+  public function getReadGroupSetIds()
+  {
+    return $this->readGroupSetIds;
+  }
 }

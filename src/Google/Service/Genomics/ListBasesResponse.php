@@ -15,12 +15,11 @@
  * the License.
  */
 
-class Google_Service_Speech_ListOperationsResponse extends Google_Collection
+class Google_Service_Genomics_ListBasesResponse extends Google_Model
 {
-  protected $collection_key = 'operations';
   public $nextPageToken;
-  protected $operationsType = 'Google_Service_Speech_Operation';
-  protected $operationsDataType = 'array';
+  public $offset;
+  public $sequence;
 
   public function setNextPageToken($nextPageToken)
   {
@@ -30,18 +29,20 @@ class Google_Service_Speech_ListOperationsResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  /**
-   * @param Google_Service_Speech_Operation
-   */
-  public function setOperations($operations)
+  public function setOffset($offset)
   {
-    $this->operations = $operations;
+    $this->offset = $offset;
   }
-  /**
-   * @return Google_Service_Speech_Operation
-   */
-  public function getOperations()
+  public function getOffset()
   {
-    return $this->operations;
+    return $this->offset;
+  }
+  public function setSequence($sequence)
+  {
+    $this->sequence = $sequence;
+  }
+  public function getSequence()
+  {
+    return $this->sequence;
   }
 }

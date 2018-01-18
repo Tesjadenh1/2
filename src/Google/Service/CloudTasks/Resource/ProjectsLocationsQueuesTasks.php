@@ -201,13 +201,6 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Requested page size. Fewer tasks than requested might
-   * be returned.
-   *
-   * The maximum page size is 1000. If unspecified, the page size will be the
-   * maximum. Fewer tasks than requested might be returned, even if more tasks
-   * exist; use ListTasksResponse.next_page_token to determine if more tasks
-   * exist.
    * @opt_param string responseView The response_view specifies which subset of
    * the Task will be returned.
    *
@@ -231,6 +224,13 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * CloudTasks.ListTasks method.
    *
    * The page token is valid for only 2 hours.
+   * @opt_param int pageSize Requested page size. Fewer tasks than requested might
+   * be returned.
+   *
+   * The maximum page size is 1000. If unspecified, the page size will be the
+   * maximum. Fewer tasks than requested might be returned, even if more tasks
+   * exist; use ListTasksResponse.next_page_token to determine if more tasks
+   * exist.
    * @return Google_Service_CloudTasks_ListTasksResponse
    */
   public function listProjectsLocationsQueuesTasks($parent, $optParams = array())
