@@ -26,11 +26,9 @@
 class Google_Service_Compute_Resource_InstanceTemplates extends Google_Service_Resource
 {
   /**
-   * Deletes the specified instance template. If you delete an instance template
-   * that is being referenced from another instance group, the instance group will
-   * not be able to create or recreate virtual machine instances. Deleting an
-   * instance template is permanent and cannot be undone.
-   * (instanceTemplates.delete)
+   * Deletes the specified instance template. Deleting an instance template is
+   * permanent and cannot be undone. It's not possible to delete templates which
+   * are in use by an instance group. (instanceTemplates.delete)
    *
    * @param string $project Project ID for this request.
    * @param string $instanceTemplate The name of the instance template to delete.
