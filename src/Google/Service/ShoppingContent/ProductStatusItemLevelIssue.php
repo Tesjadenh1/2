@@ -15,28 +15,29 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_ProductStatusDestinationStatus extends Google_Model
+class Google_Service_ShoppingContent_ProductStatusItemLevelIssue extends Google_Model
 {
-  public $approvalPending;
-  public $approvalStatus;
+  public $attributeName;
+  public $code;
   public $destination;
-  public $intention;
+  public $resolution;
+  public $servability;
 
-  public function setApprovalPending($approvalPending)
+  public function setAttributeName($attributeName)
   {
-    $this->approvalPending = $approvalPending;
+    $this->attributeName = $attributeName;
   }
-  public function getApprovalPending()
+  public function getAttributeName()
   {
-    return $this->approvalPending;
+    return $this->attributeName;
   }
-  public function setApprovalStatus($approvalStatus)
+  public function setCode($code)
   {
-    $this->approvalStatus = $approvalStatus;
+    $this->code = $code;
   }
-  public function getApprovalStatus()
+  public function getCode()
   {
-    return $this->approvalStatus;
+    return $this->code;
   }
   public function setDestination($destination)
   {
@@ -46,12 +47,20 @@ class Google_Service_ShoppingContent_ProductStatusDestinationStatus extends Goog
   {
     return $this->destination;
   }
-  public function setIntention($intention)
+  public function setResolution($resolution)
   {
-    $this->intention = $intention;
+    $this->resolution = $resolution;
   }
-  public function getIntention()
+  public function getResolution()
   {
-    return $this->intention;
+    return $this->resolution;
+  }
+  public function setServability($servability)
+  {
+    $this->servability = $servability;
+  }
+  public function getServability()
+  {
+    return $this->servability;
   }
 }

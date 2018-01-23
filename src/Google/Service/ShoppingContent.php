@@ -1078,6 +1078,16 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'getsupportedholidays' => array(
+              'path' => '{merchantId}/supportedHolidays',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'list' => array(
               'path' => '{merchantId}/shippingsettings',
               'httpMethod' => 'GET',
