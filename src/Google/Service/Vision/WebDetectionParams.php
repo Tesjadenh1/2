@@ -15,34 +15,16 @@
  * the License.
  */
 
-class Google_Service_Partners_ExamToken extends Google_Model
+class Google_Service_Vision_WebDetectionParams extends Google_Model
 {
-  public $examId;
-  public $examType;
-  public $token;
+  public $includeGeoResults;
 
-  public function setExamId($examId)
+  public function setIncludeGeoResults($includeGeoResults)
   {
-    $this->examId = $examId;
+    $this->includeGeoResults = $includeGeoResults;
   }
-  public function getExamId()
+  public function getIncludeGeoResults()
   {
-    return $this->examId;
-  }
-  public function setExamType($examType)
-  {
-    $this->examType = $examType;
-  }
-  public function getExamType()
-  {
-    return $this->examType;
-  }
-  public function setToken($token)
-  {
-    $this->token = $token;
-  }
-  public function getToken()
-  {
-    return $this->token;
+    return $this->includeGeoResults;
   }
 }

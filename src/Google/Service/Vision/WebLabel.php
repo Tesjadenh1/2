@@ -15,26 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudIot_AuditLogConfig extends Google_Collection
+class Google_Service_Vision_WebLabel extends Google_Model
 {
-  protected $collection_key = 'exemptedMembers';
-  public $exemptedMembers;
-  public $logType;
+  public $label;
+  public $languageCode;
 
-  public function setExemptedMembers($exemptedMembers)
+  public function setLabel($label)
   {
-    $this->exemptedMembers = $exemptedMembers;
+    $this->label = $label;
   }
-  public function getExemptedMembers()
+  public function getLabel()
   {
-    return $this->exemptedMembers;
+    return $this->label;
   }
-  public function setLogType($logType)
+  public function setLanguageCode($languageCode)
   {
-    $this->logType = $logType;
+    $this->languageCode = $languageCode;
   }
-  public function getLogType()
+  public function getLanguageCode()
   {
-    return $this->logType;
+    return $this->languageCode;
   }
 }
