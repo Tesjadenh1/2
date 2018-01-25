@@ -27,7 +27,7 @@ class Google_Service_DLP_Resource_ProjectsDataSource extends Google_Service_Reso
 {
   /**
    * Schedules a job to compute risk analysis metrics over content in a Google
-   * Cloud Platform repository. [How-to guide}(/dlp/docs/compute-risk-analysis)
+   * Cloud Platform repository. [How-to guide](/dlp/docs/compute-risk-analysis)
    * (dataSource.analyze)
    *
    * @param string $parent The parent resource name, for example projects/my-

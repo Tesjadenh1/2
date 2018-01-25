@@ -46,7 +46,8 @@ class Google_Service_DLP_Resource_OrganizationsDeidentifyTemplates extends Googl
    *
    * @param string $name Resource name of the organization and deidentify template
    * to be deleted, for example
-   * `organizations/433245324/deidentifyTemplates/432452342`.
+   * `organizations/433245324/deidentifyTemplates/432452342` or projects/project-
+   * id/deidentifyTemplates/432452342.
    * @param array $optParams Optional parameters.
    * @return Google_Service_DLP_GoogleProtobufEmpty
    */
@@ -61,7 +62,8 @@ class Google_Service_DLP_Resource_OrganizationsDeidentifyTemplates extends Googl
    *
    * @param string $name Resource name of the organization and deidentify template
    * to be read, for example
-   * `organizations/433245324/deidentifyTemplates/432452342`.
+   * `organizations/433245324/deidentifyTemplates/432452342` or projects/project-
+   * id/deidentifyTemplates/432452342.
    * @param array $optParams Optional parameters.
    * @return Google_Service_DLP_GooglePrivacyDlpV2beta2DeidentifyTemplate
    */
@@ -96,7 +98,8 @@ class Google_Service_DLP_Resource_OrganizationsDeidentifyTemplates extends Googl
    *
    * @param string $name Resource name of organization and deidentify template to
    * be updated, for example
-   * `organizations/433245324/deidentifyTemplates/432452342`.
+   * `organizations/433245324/deidentifyTemplates/432452342` or projects/project-
+   * id/deidentifyTemplates/432452342.
    * @param Google_Service_DLP_GooglePrivacyDlpV2beta2UpdateDeidentifyTemplateRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_DLP_GooglePrivacyDlpV2beta2DeidentifyTemplate

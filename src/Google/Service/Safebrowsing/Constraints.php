@@ -18,11 +18,20 @@
 class Google_Service_Safebrowsing_Constraints extends Google_Collection
 {
   protected $collection_key = 'supportedCompressions';
+  public $language;
   public $maxDatabaseEntries;
   public $maxUpdateEntries;
   public $region;
   public $supportedCompressions;
 
+  public function setLanguage($language)
+  {
+    $this->language = $language;
+  }
+  public function getLanguage()
+  {
+    return $this->language;
+  }
   public function setMaxDatabaseEntries($maxDatabaseEntries)
   {
     $this->maxDatabaseEntries = $maxDatabaseEntries;
