@@ -85,12 +85,12 @@ class Google_Service_Firestore_Resource_ProjectsDatabasesDocuments extends Googl
    * @param Google_Service_Firestore_Document $postBody
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string mask.fieldPaths The list of field paths in the mask. See
-   * Document.fields for a field path syntax reference.
    * @opt_param string documentId The client-assigned document ID to use for this
    * document.
    *
    * Optional. If not specified, an ID will be assigned by the service.
+   * @opt_param string mask.fieldPaths The list of field paths in the mask. See
+   * Document.fields for a field path syntax reference.
    * @return Google_Service_Firestore_Document
    */
   public function createDocument($parent, $collectionId, Google_Service_Firestore_Document $postBody, $optParams = array())
@@ -107,10 +107,10 @@ class Google_Service_Firestore_Resource_ProjectsDatabasesDocuments extends Googl
    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param bool currentDocument.exists When set to `true`, the target
-   * document must exist. When set to `false`, the target document must not exist.
    * @opt_param string currentDocument.updateTime When set, the target document
    * must exist and have been last updated at that time.
+   * @opt_param bool currentDocument.exists When set to `true`, the target
+   * document must exist. When set to `false`, the target document must not exist.
    * @return Google_Service_Firestore_FirestoreEmpty
    */
   public function delete($name, $optParams = array())

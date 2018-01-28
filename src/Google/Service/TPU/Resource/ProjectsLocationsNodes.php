@@ -85,7 +85,7 @@ class Google_Service_TPU_Resource_ProjectsLocationsNodes extends Google_Service_
     return $this->call('list', array($params), "Google_Service_TPU_ListNodesResponse");
   }
   /**
-   * Reimage a node's OS. (nodes.reimage)
+   * Reimages a node's OS. (nodes.reimage)
    *
    * @param string $name The resource name.
    * @param Google_Service_TPU_ReimageNodeRequest $postBody
@@ -113,7 +113,7 @@ class Google_Service_TPU_Resource_ProjectsLocationsNodes extends Google_Service_
     return $this->call('reset', array($params), "Google_Service_TPU_Operation");
   }
   /**
-   * Start a node. (nodes.start)
+   * Starts a node. (nodes.start)
    *
    * @param string $name The resource name.
    * @param Google_Service_TPU_StartNodeRequest $postBody
