@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_AdExchangeBuyerII_VideoContent extends Google_Model
+class Google_Service_Compute_InstanceListReferrersWarningData extends Google_Model
 {
-  public $videoUrl;
-  public $videoVastXml;
+  public $key;
+  public $value;
 
-  public function setVideoUrl($videoUrl)
+  public function setKey($key)
   {
-    $this->videoUrl = $videoUrl;
+    $this->key = $key;
   }
-  public function getVideoUrl()
+  public function getKey()
   {
-    return $this->videoUrl;
+    return $this->key;
   }
-  public function setVideoVastXml($videoVastXml)
+  public function setValue($value)
   {
-    $this->videoVastXml = $videoVastXml;
+    $this->value = $value;
   }
-  public function getVideoVastXml()
+  public function getValue()
   {
-    return $this->videoVastXml;
+    return $this->value;
   }
 }
