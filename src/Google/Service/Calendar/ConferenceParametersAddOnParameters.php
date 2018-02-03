@@ -15,34 +15,16 @@
  * the License.
  */
 
-class Google_Service_Bigquery_JobReference extends Google_Model
+class Google_Service_Calendar_ConferenceParametersAddOnParameters extends Google_Model
 {
-  public $jobId;
-  public $location;
-  public $projectId;
+  public $parameters;
 
-  public function setJobId($jobId)
+  public function setParameters($parameters)
   {
-    $this->jobId = $jobId;
+    $this->parameters = $parameters;
   }
-  public function getJobId()
+  public function getParameters()
   {
-    return $this->jobId;
-  }
-  public function setLocation($location)
-  {
-    $this->location = $location;
-  }
-  public function getLocation()
-  {
-    return $this->location;
-  }
-  public function setProjectId($projectId)
-  {
-    $this->projectId = $projectId;
-  }
-  public function getProjectId()
-  {
-    return $this->projectId;
+    return $this->parameters;
   }
 }
