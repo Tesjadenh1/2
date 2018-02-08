@@ -15,32 +15,33 @@
  * the License.
  */
 
-class Google_Service_Iam_SetIamPolicyRequest extends Google_Model
+class Google_Service_Iam_AuditConfig extends Google_Collection
 {
-  protected $policyType = 'Google_Service_Iam_Policy';
-  protected $policyDataType = '';
-  public $updateMask;
+  protected $collection_key = 'auditLogConfigs';
+  protected $auditLogConfigsType = 'Google_Service_Iam_AuditLogConfig';
+  protected $auditLogConfigsDataType = 'array';
+  public $service;
 
   /**
-   * @param Google_Service_Iam_Policy
+   * @param Google_Service_Iam_AuditLogConfig
    */
-  public function setPolicy(Google_Service_Iam_Policy $policy)
+  public function setAuditLogConfigs($auditLogConfigs)
   {
-    $this->policy = $policy;
+    $this->auditLogConfigs = $auditLogConfigs;
   }
   /**
-   * @return Google_Service_Iam_Policy
+   * @return Google_Service_Iam_AuditLogConfig
    */
-  public function getPolicy()
+  public function getAuditLogConfigs()
   {
-    return $this->policy;
+    return $this->auditLogConfigs;
   }
-  public function setUpdateMask($updateMask)
+  public function setService($service)
   {
-    $this->updateMask = $updateMask;
+    $this->service = $service;
   }
-  public function getUpdateMask()
+  public function getService()
   {
-    return $this->updateMask;
+    return $this->service;
   }
 }

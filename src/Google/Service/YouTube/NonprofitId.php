@@ -15,32 +15,16 @@
  * the License.
  */
 
-class Google_Service_Iam_SetIamPolicyRequest extends Google_Model
+class Google_Service_YouTube_NonprofitId extends Google_Model
 {
-  protected $policyType = 'Google_Service_Iam_Policy';
-  protected $policyDataType = '';
-  public $updateMask;
+  public $value;
 
-  /**
-   * @param Google_Service_Iam_Policy
-   */
-  public function setPolicy(Google_Service_Iam_Policy $policy)
+  public function setValue($value)
   {
-    $this->policy = $policy;
+    $this->value = $value;
   }
-  /**
-   * @return Google_Service_Iam_Policy
-   */
-  public function getPolicy()
+  public function getValue()
   {
-    return $this->policy;
-  }
-  public function setUpdateMask($updateMask)
-  {
-    $this->updateMask = $updateMask;
-  }
-  public function getUpdateMask()
-  {
-    return $this->updateMask;
+    return $this->value;
   }
 }
