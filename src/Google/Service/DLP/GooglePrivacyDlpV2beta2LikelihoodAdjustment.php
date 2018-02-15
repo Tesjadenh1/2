@@ -15,26 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2LikelihoodAdjustment extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  public $fixedLikelihood;
+  public $relativeLikelihood;
 
-  public function setMembers($members)
+  public function setFixedLikelihood($fixedLikelihood)
   {
-    $this->members = $members;
+    $this->fixedLikelihood = $fixedLikelihood;
   }
-  public function getMembers()
+  public function getFixedLikelihood()
   {
-    return $this->members;
+    return $this->fixedLikelihood;
   }
-  public function setRole($role)
+  public function setRelativeLikelihood($relativeLikelihood)
   {
-    $this->role = $role;
+    $this->relativeLikelihood = $relativeLikelihood;
   }
-  public function getRole()
+  public function getRelativeLikelihood()
   {
-    return $this->role;
+    return $this->relativeLikelihood;
   }
 }

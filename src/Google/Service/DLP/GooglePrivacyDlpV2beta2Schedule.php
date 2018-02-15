@@ -15,26 +15,16 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2Schedule extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  public $reccurrencePeriodDuration;
 
-  public function setMembers($members)
+  public function setReccurrencePeriodDuration($reccurrencePeriodDuration)
   {
-    $this->members = $members;
+    $this->reccurrencePeriodDuration = $reccurrencePeriodDuration;
   }
-  public function getMembers()
+  public function getReccurrencePeriodDuration()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->reccurrencePeriodDuration;
   }
 }

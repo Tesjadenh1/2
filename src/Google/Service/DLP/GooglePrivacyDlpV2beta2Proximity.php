@@ -15,26 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2Proximity extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  public $windowAfter;
+  public $windowBefore;
 
-  public function setMembers($members)
+  public function setWindowAfter($windowAfter)
   {
-    $this->members = $members;
+    $this->windowAfter = $windowAfter;
   }
-  public function getMembers()
+  public function getWindowAfter()
   {
-    return $this->members;
+    return $this->windowAfter;
   }
-  public function setRole($role)
+  public function setWindowBefore($windowBefore)
   {
-    $this->role = $role;
+    $this->windowBefore = $windowBefore;
   }
-  public function getRole()
+  public function getWindowBefore()
   {
-    return $this->role;
+    return $this->windowBefore;
   }
 }

@@ -15,26 +15,23 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2Trigger extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $scheduleType = 'Google_Service_DLP_GooglePrivacyDlpV2beta2Schedule';
+  protected $scheduleDataType = '';
 
-  public function setMembers($members)
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta2Schedule
+   */
+  public function setSchedule(Google_Service_DLP_GooglePrivacyDlpV2beta2Schedule $schedule)
   {
-    $this->members = $members;
+    $this->schedule = $schedule;
   }
-  public function getMembers()
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta2Schedule
+   */
+  public function getSchedule()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->schedule;
   }
 }

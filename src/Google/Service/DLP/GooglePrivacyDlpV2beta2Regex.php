@@ -15,26 +15,16 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2Regex extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  public $pattern;
 
-  public function setMembers($members)
+  public function setPattern($pattern)
   {
-    $this->members = $members;
+    $this->pattern = $pattern;
   }
-  public function getMembers()
+  public function getPattern()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->pattern;
   }
 }

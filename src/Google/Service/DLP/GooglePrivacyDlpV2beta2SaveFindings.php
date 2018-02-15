@@ -15,23 +15,23 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1SetIamPolicyRequest extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2beta2SaveFindings extends Google_Model
 {
-  protected $policyType = 'Google_Service_CloudMachineLearningEngine_GoogleIamV1Policy';
-  protected $policyDataType = '';
+  protected $outputConfigType = 'Google_Service_DLP_GooglePrivacyDlpV2beta2OutputStorageConfig';
+  protected $outputConfigDataType = '';
 
   /**
-   * @param Google_Service_CloudMachineLearningEngine_GoogleIamV1Policy
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta2OutputStorageConfig
    */
-  public function setPolicy(Google_Service_CloudMachineLearningEngine_GoogleIamV1Policy $policy)
+  public function setOutputConfig(Google_Service_DLP_GooglePrivacyDlpV2beta2OutputStorageConfig $outputConfig)
   {
-    $this->policy = $policy;
+    $this->outputConfig = $outputConfig;
   }
   /**
-   * @return Google_Service_CloudMachineLearningEngine_GoogleIamV1Policy
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta2OutputStorageConfig
    */
-  public function getPolicy()
+  public function getOutputConfig()
   {
-    return $this->policy;
+    return $this->outputConfig;
   }
 }

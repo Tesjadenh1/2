@@ -15,26 +15,23 @@
  * the License.
  */
 
-class Google_Service_CloudMachineLearningEngine_GoogleIamV1Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2DetectionRule extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $hotwordRuleType = 'Google_Service_DLP_GooglePrivacyDlpV2beta2HotwordRule';
+  protected $hotwordRuleDataType = '';
 
-  public function setMembers($members)
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta2HotwordRule
+   */
+  public function setHotwordRule(Google_Service_DLP_GooglePrivacyDlpV2beta2HotwordRule $hotwordRule)
   {
-    $this->members = $members;
+    $this->hotwordRule = $hotwordRule;
   }
-  public function getMembers()
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta2HotwordRule
+   */
+  public function getHotwordRule()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->hotwordRule;
   }
 }
