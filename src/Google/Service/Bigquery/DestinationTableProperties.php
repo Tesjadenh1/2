@@ -15,12 +15,10 @@
  * the License.
  */
 
-class Google_Service_CloudIot_Expr extends Google_Model
+class Google_Service_Bigquery_DestinationTableProperties extends Google_Model
 {
   public $description;
-  public $expression;
-  public $location;
-  public $title;
+  public $friendlyName;
 
   public function setDescription($description)
   {
@@ -30,28 +28,12 @@ class Google_Service_CloudIot_Expr extends Google_Model
   {
     return $this->description;
   }
-  public function setExpression($expression)
+  public function setFriendlyName($friendlyName)
   {
-    $this->expression = $expression;
+    $this->friendlyName = $friendlyName;
   }
-  public function getExpression()
+  public function getFriendlyName()
   {
-    return $this->expression;
-  }
-  public function setLocation($location)
-  {
-    $this->location = $location;
-  }
-  public function getLocation()
-  {
-    return $this->location;
-  }
-  public function setTitle($title)
-  {
-    $this->title = $title;
-  }
-  public function getTitle()
-  {
-    return $this->title;
+    return $this->friendlyName;
   }
 }
