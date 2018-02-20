@@ -94,16 +94,16 @@ class Google_Service_ManufacturerCenter extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
               ),
-            ),'uploadProduct' => array(
+            ),'update' => array(
               'path' => 'v1/{+parent}/products/{+name}',
               'httpMethod' => 'PUT',
               'parameters' => array(
