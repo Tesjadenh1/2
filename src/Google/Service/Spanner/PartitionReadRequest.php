@@ -15,16 +15,15 @@
  * the License.
  */
 
-class Google_Service_Spanner_ReadRequest extends Google_Collection
+class Google_Service_Spanner_PartitionReadRequest extends Google_Collection
 {
   protected $collection_key = 'columns';
   public $columns;
   public $index;
   protected $keySetType = 'Google_Service_Spanner_KeySet';
   protected $keySetDataType = '';
-  public $limit;
-  public $partitionToken;
-  public $resumeToken;
+  protected $partitionOptionsType = 'Google_Service_Spanner_PartitionOptions';
+  protected $partitionOptionsDataType = '';
   public $table;
   protected $transactionType = 'Google_Service_Spanner_TransactionSelector';
   protected $transactionDataType = '';
@@ -59,29 +58,19 @@ class Google_Service_Spanner_ReadRequest extends Google_Collection
   {
     return $this->keySet;
   }
-  public function setLimit($limit)
+  /**
+   * @param Google_Service_Spanner_PartitionOptions
+   */
+  public function setPartitionOptions(Google_Service_Spanner_PartitionOptions $partitionOptions)
   {
-    $this->limit = $limit;
+    $this->partitionOptions = $partitionOptions;
   }
-  public function getLimit()
+  /**
+   * @return Google_Service_Spanner_PartitionOptions
+   */
+  public function getPartitionOptions()
   {
-    return $this->limit;
-  }
-  public function setPartitionToken($partitionToken)
-  {
-    $this->partitionToken = $partitionToken;
-  }
-  public function getPartitionToken()
-  {
-    return $this->partitionToken;
-  }
-  public function setResumeToken($resumeToken)
-  {
-    $this->resumeToken = $resumeToken;
-  }
-  public function getResumeToken()
-  {
-    return $this->resumeToken;
+    return $this->partitionOptions;
   }
   public function setTable($table)
   {

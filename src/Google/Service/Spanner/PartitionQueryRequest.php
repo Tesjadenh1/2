@@ -15,14 +15,13 @@
  * the License.
  */
 
-class Google_Service_Spanner_ExecuteSqlRequest extends Google_Model
+class Google_Service_Spanner_PartitionQueryRequest extends Google_Model
 {
   protected $paramTypesType = 'Google_Service_Spanner_Type';
   protected $paramTypesDataType = 'map';
   public $params;
-  public $partitionToken;
-  public $queryMode;
-  public $resumeToken;
+  protected $partitionOptionsType = 'Google_Service_Spanner_PartitionOptions';
+  protected $partitionOptionsDataType = '';
   public $sql;
   protected $transactionType = 'Google_Service_Spanner_TransactionSelector';
   protected $transactionDataType = '';
@@ -49,29 +48,19 @@ class Google_Service_Spanner_ExecuteSqlRequest extends Google_Model
   {
     return $this->params;
   }
-  public function setPartitionToken($partitionToken)
+  /**
+   * @param Google_Service_Spanner_PartitionOptions
+   */
+  public function setPartitionOptions(Google_Service_Spanner_PartitionOptions $partitionOptions)
   {
-    $this->partitionToken = $partitionToken;
+    $this->partitionOptions = $partitionOptions;
   }
-  public function getPartitionToken()
+  /**
+   * @return Google_Service_Spanner_PartitionOptions
+   */
+  public function getPartitionOptions()
   {
-    return $this->partitionToken;
-  }
-  public function setQueryMode($queryMode)
-  {
-    $this->queryMode = $queryMode;
-  }
-  public function getQueryMode()
-  {
-    return $this->queryMode;
-  }
-  public function setResumeToken($resumeToken)
-  {
-    $this->resumeToken = $resumeToken;
-  }
-  public function getResumeToken()
-  {
-    return $this->resumeToken;
+    return $this->partitionOptions;
   }
   public function setSql($sql)
   {

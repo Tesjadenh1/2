@@ -23,7 +23,7 @@
  *   $entityTypes = $dialogflowService->entityTypes;
  *  </code>
  */
-class Google_Service_Dialogflow_Resource_ProjectsAgentSessionsEntityTypes extends Google_Service_Resource
+class Google_Service_Dialogflow_Resource_ProjectsAgentRuntimesSessionsEntityTypes extends Google_Service_Resource
 {
   /**
    * Creates a session entity type. (entityTypes.create)
@@ -79,7 +79,7 @@ class Google_Service_Dialogflow_Resource_ProjectsAgentSessionsEntityTypes extend
   }
   /**
    * Returns the list of all session entity types in the specified session.
-   * (entityTypes.listProjectsAgentSessionsEntityTypes)
+   * (entityTypes.listProjectsAgentRuntimesSessionsEntityTypes)
    *
    * @param string $parent Required. The session to list all session entity types
    * from. Format: `projects//agent/sessions/` or
@@ -94,7 +94,7 @@ class Google_Service_Dialogflow_Resource_ProjectsAgentSessionsEntityTypes extend
    * single page. By default 100 and at most 1000.
    * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse
    */
-  public function listProjectsAgentSessionsEntityTypes($parent, $optParams = array())
+  public function listProjectsAgentRuntimesSessionsEntityTypes($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
     $params = array_merge($params, $optParams);
