@@ -16,46 +16,46 @@
  */
 
 /**
- * The "tensorflowVersions" collection of methods.
+ * The "acceleratorTypes" collection of methods.
  * Typical usage is:
  *  <code>
  *   $tpuService = new Google_Service_TPU(...);
- *   $tensorflowVersions = $tpuService->tensorflowVersions;
+ *   $acceleratorTypes = $tpuService->acceleratorTypes;
  *  </code>
  */
-class Google_Service_TPU_Resource_ProjectsLocationsTensorflowVersions extends Google_Service_Resource
+class Google_Service_TPU_Resource_ProjectsLocationsAcceleratorTypes extends Google_Service_Resource
 {
   /**
-   * Gets TensorFlow Version. (tensorflowVersions.get)
+   * Gets AcceleratorType. (acceleratorTypes.get)
    *
    * @param string $name The resource name.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_TPU_TensorFlowVersion
+   * @return Google_Service_TPU_AcceleratorType
    */
   public function get($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_TPU_TensorFlowVersion");
+    return $this->call('get', array($params), "Google_Service_TPU_AcceleratorType");
   }
   /**
-   * Lists TensorFlow versions supported by this API.
-   * (tensorflowVersions.listProjectsLocationsTensorflowVersions)
+   * Lists accelerator types supported by this API.
+   * (acceleratorTypes.listProjectsLocationsAcceleratorTypes)
    *
    * @param string $parent The parent resource name.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string filter List filter.
    * @opt_param string pageToken The next_page_token value returned from a
    * previous List request, if any.
    * @opt_param string orderBy Sort results.
    * @opt_param int pageSize The maximum number of items to return.
-   * @opt_param string filter List filter.
-   * @return Google_Service_TPU_ListTensorFlowVersionsResponse
+   * @return Google_Service_TPU_ListAcceleratorTypesResponse
    */
-  public function listProjectsLocationsTensorflowVersions($parent, $optParams = array())
+  public function listProjectsLocationsAcceleratorTypes($parent, $optParams = array())
   {
     $params = array('parent' => $parent);
     $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_TPU_ListTensorFlowVersionsResponse");
+    return $this->call('list', array($params), "Google_Service_TPU_ListAcceleratorTypesResponse");
   }
 }

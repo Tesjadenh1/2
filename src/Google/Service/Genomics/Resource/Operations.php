@@ -65,11 +65,17 @@ class Google_Service_Genomics_Resource_Operations extends Google_Service_Resourc
    * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken The standard list page token.
-   * @opt_param int pageSize The maximum number of results to return. If
-   * unspecified, defaults to 256. The maximum value is 2048.
-   * @opt_param string filter A string for filtering Operations. The following
-   * filter fields are supported
+   * @opt_param string filter A string for filtering Operations. In v2alpha1, the
+   * following filter fields are supported
+   *
+   * * createTime The time this job was created * events The set of event (names)
+   * that have occurred while running   the pipeline.  The  operator can be used
+   * to determine if a   particular event has occurred. * error If the pipeline is
+   * running, this value is NULL.  Once the   pipeline finishes, the value is the
+   * standard Google error code. * labels.key or labels."key with space" where key
+   * is a label key.
+   *
+   * In v1 and v1alpha2, the following filter fields are supported
    *
    * * projectId Required. Corresponds to   OperationMetadata.projectId. *
    * createTime The time this job was created, in seconds from the
@@ -83,6 +89,9 @@ class Google_Service_Genomics_Resource_Operations extends Google_Service_Resourc
    * project AND createTime >= 1432140000 AND createTime <= 1432150000 AND status
    * = RUNNING` * `projectId = my-project AND labels.color = *` * `projectId = my-
    * project AND labels.color = red`
+   * @opt_param string pageToken The standard list page token.
+   * @opt_param int pageSize The maximum number of results to return. If
+   * unspecified, defaults to 256. The maximum value is 2048.
    * @return Google_Service_Genomics_ListOperationsResponse
    */
   public function listOperations($name, $optParams = array())
