@@ -15,26 +15,16 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2TimeZone extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  public $offsetMinutes;
 
-  public function setMembers($members)
+  public function setOffsetMinutes($offsetMinutes)
   {
-    $this->members = $members;
+    $this->offsetMinutes = $offsetMinutes;
   }
-  public function getMembers()
+  public function getOffsetMinutes()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->offsetMinutes;
   }
 }

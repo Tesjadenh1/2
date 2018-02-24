@@ -190,6 +190,14 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'interval.startTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'interval.endTime' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -201,14 +209,6 @@ class Google_Service_Monitoring extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'interval.startTime' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),
@@ -302,10 +302,6 @@ class Google_Service_Monitoring extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -313,6 +309,10 @@ class Google_Service_Monitoring extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),

@@ -15,26 +15,17 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Binding extends Google_Collection
+class Google_Service_AdExchangeBuyer_TargetingValueDemogGenderCriteria extends Google_Collection
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $collection_key = 'demogGenderCriteriaIds';
+  public $demogGenderCriteriaIds;
 
-  public function setMembers($members)
+  public function setDemogGenderCriteriaIds($demogGenderCriteriaIds)
   {
-    $this->members = $members;
+    $this->demogGenderCriteriaIds = $demogGenderCriteriaIds;
   }
-  public function getMembers()
+  public function getDemogGenderCriteriaIds()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->demogGenderCriteriaIds;
   }
 }

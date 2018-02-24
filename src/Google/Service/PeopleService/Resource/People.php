@@ -73,7 +73,8 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    *
    * @opt_param string personFields **Required.** A field mask to restrict which
-   * fields on the person are returned. Valid values are:
+   * fields on the person are returned. Multiple fields can be specified by
+   * separating them with commas. Valid values are:
    *
    * * addresses * ageRanges * biographies * birthdays * braggingRights *
    * coverPhotos * emailAddresses * events * genders * imClients * interests *
@@ -101,7 +102,8 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    *
    * @opt_param string personFields **Required.** A field mask to restrict which
-   * fields on each person are returned. Valid values are:
+   * fields on each person are returned. Multiple fields can be specified by
+   * separating them with commas. Valid values are:
    *
    * * addresses * ageRanges * biographies * birthdays * braggingRights *
    * coverPhotos * emailAddresses * events * genders * imClients * interests *
@@ -150,7 +152,9 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
    * @param array $optParams Optional parameters.
    *
    * @opt_param string updatePersonFields **Required.** A field mask to restrict
-   * which fields on the person are updated. Valid values are:
+   * which fields on the person are updated. Multiple fields can be specified by
+   * separating them with commas. All updated fields will be replaced. Valid
+   * values are:
    *
    * * addresses * biographies * birthdays * braggingRights * emailAddresses *
    * events * genders * imClients * interests * locales * names * nicknames *

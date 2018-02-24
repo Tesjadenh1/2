@@ -15,26 +15,23 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Binding extends Google_Collection
+class Google_Service_DLP_GooglePrivacyDlpV2beta2QuoteInfo extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $dateTimeType = 'Google_Service_DLP_GooglePrivacyDlpV2beta2DateTime';
+  protected $dateTimeDataType = '';
 
-  public function setMembers($members)
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2beta2DateTime
+   */
+  public function setDateTime(Google_Service_DLP_GooglePrivacyDlpV2beta2DateTime $dateTime)
   {
-    $this->members = $members;
+    $this->dateTime = $dateTime;
   }
-  public function getMembers()
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2beta2DateTime
+   */
+  public function getDateTime()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->dateTime;
   }
 }
