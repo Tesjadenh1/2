@@ -17,9 +17,18 @@
 
 class Google_Service_Dataflow_WorkerLifecycleEvent extends Google_Model
 {
+  public $containerStartTime;
   public $event;
   public $metadata;
 
+  public function setContainerStartTime($containerStartTime)
+  {
+    $this->containerStartTime = $containerStartTime;
+  }
+  public function getContainerStartTime()
+  {
+    return $this->containerStartTime;
+  }
   public function setEvent($event)
   {
     $this->event = $event;
