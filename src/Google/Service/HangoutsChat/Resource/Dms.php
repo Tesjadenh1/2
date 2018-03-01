@@ -15,23 +15,14 @@
  * the License.
  */
 
-class Google_Service_CloudIot_SetIamPolicyRequest extends Google_Model
+/**
+ * The "dms" collection of methods.
+ * Typical usage is:
+ *  <code>
+ *   $chatService = new Google_Service_HangoutsChat(...);
+ *   $dms = $chatService->dms;
+ *  </code>
+ */
+class Google_Service_HangoutsChat_Resource_Dms extends Google_Service_Resource
 {
-  protected $policyType = 'Google_Service_CloudIot_Policy';
-  protected $policyDataType = '';
-
-  /**
-   * @param Google_Service_CloudIot_Policy
-   */
-  public function setPolicy(Google_Service_CloudIot_Policy $policy)
-  {
-    $this->policy = $policy;
-  }
-  /**
-   * @return Google_Service_CloudIot_Policy
-   */
-  public function getPolicy()
-  {
-    return $this->policy;
-  }
 }

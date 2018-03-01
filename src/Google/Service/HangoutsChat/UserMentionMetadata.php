@@ -15,23 +15,32 @@
  * the License.
  */
 
-class Google_Service_CloudIot_SetIamPolicyRequest extends Google_Model
+class Google_Service_HangoutsChat_UserMentionMetadata extends Google_Model
 {
-  protected $policyType = 'Google_Service_CloudIot_Policy';
-  protected $policyDataType = '';
+  public $type;
+  protected $userType = 'Google_Service_HangoutsChat_User';
+  protected $userDataType = '';
 
-  /**
-   * @param Google_Service_CloudIot_Policy
-   */
-  public function setPolicy(Google_Service_CloudIot_Policy $policy)
+  public function setType($type)
   {
-    $this->policy = $policy;
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
   }
   /**
-   * @return Google_Service_CloudIot_Policy
+   * @param Google_Service_HangoutsChat_User
    */
-  public function getPolicy()
+  public function setUser(Google_Service_HangoutsChat_User $user)
   {
-    return $this->policy;
+    $this->user = $user;
+  }
+  /**
+   * @return Google_Service_HangoutsChat_User
+   */
+  public function getUser()
+  {
+    return $this->user;
   }
 }

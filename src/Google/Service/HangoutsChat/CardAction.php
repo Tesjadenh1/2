@@ -15,23 +15,32 @@
  * the License.
  */
 
-class Google_Service_CloudIot_SetIamPolicyRequest extends Google_Model
+class Google_Service_HangoutsChat_CardAction extends Google_Model
 {
-  protected $policyType = 'Google_Service_CloudIot_Policy';
-  protected $policyDataType = '';
+  public $actionLabel;
+  protected $onClickType = 'Google_Service_HangoutsChat_OnClick';
+  protected $onClickDataType = '';
 
-  /**
-   * @param Google_Service_CloudIot_Policy
-   */
-  public function setPolicy(Google_Service_CloudIot_Policy $policy)
+  public function setActionLabel($actionLabel)
   {
-    $this->policy = $policy;
+    $this->actionLabel = $actionLabel;
+  }
+  public function getActionLabel()
+  {
+    return $this->actionLabel;
   }
   /**
-   * @return Google_Service_CloudIot_Policy
+   * @param Google_Service_HangoutsChat_OnClick
    */
-  public function getPolicy()
+  public function setOnClick(Google_Service_HangoutsChat_OnClick $onClick)
   {
-    return $this->policy;
+    $this->onClick = $onClick;
+  }
+  /**
+   * @return Google_Service_HangoutsChat_OnClick
+   */
+  public function getOnClick()
+  {
+    return $this->onClick;
   }
 }

@@ -15,23 +15,32 @@
  * the License.
  */
 
-class Google_Service_CloudIot_SetIamPolicyRequest extends Google_Model
+class Google_Service_HangoutsChat_TextButton extends Google_Model
 {
-  protected $policyType = 'Google_Service_CloudIot_Policy';
-  protected $policyDataType = '';
+  protected $onClickType = 'Google_Service_HangoutsChat_OnClick';
+  protected $onClickDataType = '';
+  public $text;
 
   /**
-   * @param Google_Service_CloudIot_Policy
+   * @param Google_Service_HangoutsChat_OnClick
    */
-  public function setPolicy(Google_Service_CloudIot_Policy $policy)
+  public function setOnClick(Google_Service_HangoutsChat_OnClick $onClick)
   {
-    $this->policy = $policy;
+    $this->onClick = $onClick;
   }
   /**
-   * @return Google_Service_CloudIot_Policy
+   * @return Google_Service_HangoutsChat_OnClick
    */
-  public function getPolicy()
+  public function getOnClick()
   {
-    return $this->policy;
+    return $this->onClick;
+  }
+  public function setText($text)
+  {
+    $this->text = $text;
+  }
+  public function getText()
+  {
+    return $this->text;
   }
 }
