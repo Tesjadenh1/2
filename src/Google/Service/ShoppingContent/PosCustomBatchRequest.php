@@ -15,32 +15,24 @@
  * the License.
  */
 
-class Google_Service_Dataproc_SubmitJobRequest extends Google_Model
+class Google_Service_ShoppingContent_PosCustomBatchRequest extends Google_Collection
 {
-  protected $jobType = 'Google_Service_Dataproc_Job';
-  protected $jobDataType = '';
-  public $requestId;
+  protected $collection_key = 'entries';
+  protected $entriesType = 'Google_Service_ShoppingContent_PosCustomBatchRequestEntry';
+  protected $entriesDataType = 'array';
 
   /**
-   * @param Google_Service_Dataproc_Job
+   * @param Google_Service_ShoppingContent_PosCustomBatchRequestEntry
    */
-  public function setJob(Google_Service_Dataproc_Job $job)
+  public function setEntries($entries)
   {
-    $this->job = $job;
+    $this->entries = $entries;
   }
   /**
-   * @return Google_Service_Dataproc_Job
+   * @return Google_Service_ShoppingContent_PosCustomBatchRequestEntry
    */
-  public function getJob()
+  public function getEntries()
   {
-    return $this->job;
-  }
-  public function setRequestId($requestId)
-  {
-    $this->requestId = $requestId;
-  }
-  public function getRequestId()
-  {
-    return $this->requestId;
+    return $this->entries;
   }
 }

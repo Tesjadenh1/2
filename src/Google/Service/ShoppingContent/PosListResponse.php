@@ -15,32 +15,33 @@
  * the License.
  */
 
-class Google_Service_Dataproc_SubmitJobRequest extends Google_Model
+class Google_Service_ShoppingContent_PosListResponse extends Google_Collection
 {
-  protected $jobType = 'Google_Service_Dataproc_Job';
-  protected $jobDataType = '';
-  public $requestId;
+  protected $collection_key = 'resources';
+  public $kind;
+  protected $resourcesType = 'Google_Service_ShoppingContent_PosStore';
+  protected $resourcesDataType = 'array';
 
-  /**
-   * @param Google_Service_Dataproc_Job
-   */
-  public function setJob(Google_Service_Dataproc_Job $job)
+  public function setKind($kind)
   {
-    $this->job = $job;
+    $this->kind = $kind;
+  }
+  public function getKind()
+  {
+    return $this->kind;
   }
   /**
-   * @return Google_Service_Dataproc_Job
+   * @param Google_Service_ShoppingContent_PosStore
    */
-  public function getJob()
+  public function setResources($resources)
   {
-    return $this->job;
+    $this->resources = $resources;
   }
-  public function setRequestId($requestId)
+  /**
+   * @return Google_Service_ShoppingContent_PosStore
+   */
+  public function getResources()
   {
-    $this->requestId = $requestId;
-  }
-  public function getRequestId()
-  {
-    return $this->requestId;
+    return $this->resources;
   }
 }

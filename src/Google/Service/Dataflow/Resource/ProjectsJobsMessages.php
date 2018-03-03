@@ -32,12 +32,12 @@ class Google_Service_Dataflow_Resource_ProjectsJobsMessages extends Google_Servi
    * @param string $jobId The job to get messages about.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string startTime If specified, return only messages with
-   * timestamps >= start_time. The default is the job creation time (i.e.
-   * beginning of messages).
    * @opt_param string pageToken If supplied, this should be the value of
    * next_page_token returned by an earlier call. This will cause the next page of
    * results to be returned.
+   * @opt_param string startTime If specified, return only messages with
+   * timestamps >= start_time. The default is the job creation time (i.e.
+   * beginning of messages).
    * @opt_param int pageSize If specified, determines the maximum number of
    * messages to return.  If unspecified, the service may choose an appropriate
    * default, or may return an arbitrarily large number of results.
