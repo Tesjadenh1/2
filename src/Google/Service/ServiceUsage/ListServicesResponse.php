@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_ServiceUsage_ListEnabledServicesResponse extends Google_Collection
+class Google_Service_ServiceUsage_ListServicesResponse extends Google_Collection
 {
   protected $collection_key = 'services';
   public $nextPageToken;
-  protected $servicesType = 'Google_Service_ServiceUsage_ServiceState';
+  protected $servicesType = 'Google_Service_ServiceUsage_Service';
   protected $servicesDataType = 'array';
 
   public function setNextPageToken($nextPageToken)
@@ -31,14 +31,14 @@ class Google_Service_ServiceUsage_ListEnabledServicesResponse extends Google_Col
     return $this->nextPageToken;
   }
   /**
-   * @param Google_Service_ServiceUsage_ServiceState
+   * @param Google_Service_ServiceUsage_Service
    */
   public function setServices($services)
   {
     $this->services = $services;
   }
   /**
-   * @return Google_Service_ServiceUsage_ServiceState
+   * @return Google_Service_ServiceUsage_Service
    */
   public function getServices()
   {
