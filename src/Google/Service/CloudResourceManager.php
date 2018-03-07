@@ -52,7 +52,7 @@ class Google_Service_CloudResourceManager extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://cloudresourcemanager.googleapis.com/';
+    $this->rootUrl = 'https://content-cloudresourcemanager.googleapis.com/';
     $this->servicePath = '';
     $this->version = 'v1';
     $this->serviceName = 'cloudresourcemanager';
@@ -151,10 +151,6 @@ class Google_Service_CloudResourceManager extends Google_Service
               'path' => 'v1/liens',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'parent' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -162,6 +158,10 @@ class Google_Service_CloudResourceManager extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -386,6 +386,10 @@ class Google_Service_CloudResourceManager extends Google_Service
               'path' => 'v1/projects',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -393,10 +397,6 @@ class Google_Service_CloudResourceManager extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'listAvailableOrgPolicyConstraints' => array(
