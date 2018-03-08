@@ -46,7 +46,7 @@ class Google_Service_Dataproc extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://dataproc.googleapis.com/';
+    $this->rootUrl = 'https://content-dataproc.googleapis.com/';
     $this->servicePath = '';
     $this->version = 'v1';
     $this->serviceName = 'dataproc';
@@ -95,11 +95,11 @@ class Google_Service_Dataproc extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'clusterUuid' => array(
+                'requestId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'requestId' => array(
+                'clusterUuid' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -158,6 +158,10 @@ class Google_Service_Dataproc extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -165,10 +169,6 @@ class Google_Service_Dataproc extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(
@@ -396,6 +396,10 @@ class Google_Service_Dataproc extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -403,10 +407,6 @@ class Google_Service_Dataproc extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),

@@ -243,6 +243,39 @@ class Google_Service_Compute_Resource_Subnetworks extends Google_Service_Resourc
     return $this->call('list', array($params), "Google_Service_Compute_SubnetworkList");
   }
   /**
+   * Patches the specified subnetwork with the data included in the request. Only
+   * the following fields within the subnetwork resource can be specified in the
+   * request: secondary_ip_range and allow_subnet_cidr_routes_overlap. It is also
+   * mandatory to specify the current fingeprint of the subnetwork resource being
+   * patched. (subnetworks.patch)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $region Name of the region scoping this request.
+   * @param string $subnetwork Name of the Subnetwork resource to patch.
+   * @param Google_Service_Compute_Subnetwork $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string requestId An optional request ID to identify requests.
+   * Specify a unique request ID so that if you must retry your request, the
+   * server will know to ignore the request if it has already been completed.
+   *
+   * For example, consider a situation where you make an initial request and the
+   * request times out. If you make the request again with the same request ID,
+   * the server can check if original operation with the same request ID was
+   * received, and if so, will ignore the second request. This prevents clients
+   * from accidentally creating duplicate commitments.
+   *
+   * The request ID must be a valid UUID with the exception that zero UUID is not
+   * supported (00000000-0000-0000-0000-000000000000).
+   * @return Google_Service_Compute_Operation
+   */
+  public function patch($project, $region, $subnetwork, Google_Service_Compute_Subnetwork $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'region' => $region, 'subnetwork' => $subnetwork, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('patch', array($params), "Google_Service_Compute_Operation");
+  }
+  /**
    * Set whether VMs in this subnet can access Google services without assigning
    * external IP addresses through Private Google Access.
    * (subnetworks.setPrivateIpGoogleAccess)
