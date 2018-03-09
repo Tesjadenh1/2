@@ -19,6 +19,7 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta2CategoricalStatsHistogramBucket 
 {
   protected $collection_key = 'bucketValues';
   public $bucketSize;
+  public $bucketValueCount;
   protected $bucketValuesType = 'Google_Service_DLP_GooglePrivacyDlpV2beta2ValueFrequency';
   protected $bucketValuesDataType = 'array';
   public $valueFrequencyLowerBound;
@@ -31,6 +32,14 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta2CategoricalStatsHistogramBucket 
   public function getBucketSize()
   {
     return $this->bucketSize;
+  }
+  public function setBucketValueCount($bucketValueCount)
+  {
+    $this->bucketValueCount = $bucketValueCount;
+  }
+  public function getBucketValueCount()
+  {
+    return $this->bucketValueCount;
   }
   /**
    * @param Google_Service_DLP_GooglePrivacyDlpV2beta2ValueFrequency

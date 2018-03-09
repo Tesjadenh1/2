@@ -19,6 +19,7 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta2KMapEstimationHistogramBucket ex
 {
   protected $collection_key = 'bucketValues';
   public $bucketSize;
+  public $bucketValueCount;
   protected $bucketValuesType = 'Google_Service_DLP_GooglePrivacyDlpV2beta2KMapEstimationQuasiIdValues';
   protected $bucketValuesDataType = 'array';
   public $maxAnonymity;
@@ -31,6 +32,14 @@ class Google_Service_DLP_GooglePrivacyDlpV2beta2KMapEstimationHistogramBucket ex
   public function getBucketSize()
   {
     return $this->bucketSize;
+  }
+  public function setBucketValueCount($bucketValueCount)
+  {
+    $this->bucketValueCount = $bucketValueCount;
+  }
+  public function getBucketValueCount()
+  {
+    return $this->bucketValueCount;
   }
   /**
    * @param Google_Service_DLP_GooglePrivacyDlpV2beta2KMapEstimationQuasiIdValues
