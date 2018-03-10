@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_ResultVersion extends Google_Model
+class Google_Service_Cloudbilling_TestIamPermissionsResponse extends Google_Collection
 {
-  public $major;
-  public $minor;
+  protected $collection_key = 'permissions';
+  public $permissions;
 
-  public function setMajor($major)
+  public function setPermissions($permissions)
   {
-    $this->major = $major;
+    $this->permissions = $permissions;
   }
-  public function getMajor()
+  public function getPermissions()
   {
-    return $this->major;
-  }
-  public function setMinor($minor)
-  {
-    $this->minor = $minor;
-  }
-  public function getMinor()
-  {
-    return $this->minor;
+    return $this->permissions;
   }
 }

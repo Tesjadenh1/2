@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiImageV2 extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiImageV4 extends Google_Model
 {
   protected $internal_gapi_mappings = array(
         "mimeType" => "mime_type",
@@ -25,7 +25,7 @@ class Google_Service_Pagespeedonline_PagespeedApiImageV2 extends Google_Model
   public $height;
   public $key;
   public $mimeType;
-  protected $pageRectType = 'Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect';
+  protected $pageRectType = 'Google_Service_Pagespeedonline_PagespeedApiImageV4PageRect';
   protected $pageRectDataType = '';
   public $width;
 
@@ -62,14 +62,14 @@ class Google_Service_Pagespeedonline_PagespeedApiImageV2 extends Google_Model
     return $this->mimeType;
   }
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect
+   * @param Google_Service_Pagespeedonline_PagespeedApiImageV4PageRect
    */
-  public function setPageRect(Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect $pageRect)
+  public function setPageRect(Google_Service_Pagespeedonline_PagespeedApiImageV4PageRect $pageRect)
   {
     $this->pageRect = $pageRect;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiImageV2PageRect
+   * @return Google_Service_Pagespeedonline_PagespeedApiImageV4PageRect
    */
   public function getPageRect()
   {

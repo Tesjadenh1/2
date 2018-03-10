@@ -15,16 +15,16 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args extends Google_Collection
+class Google_Service_Pagespeedonline_PagespeedApiFormatStringV4Args extends Google_Collection
 {
   protected $collection_key = 'secondary_rects';
   protected $internal_gapi_mappings = array(
         "secondaryRects" => "secondary_rects",
   );
   public $key;
-  protected $rectsType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsRects';
+  protected $rectsType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsRects';
   protected $rectsDataType = 'array';
-  protected $secondaryRectsType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsSecondaryRects';
+  protected $secondaryRectsType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsSecondaryRects';
   protected $secondaryRectsDataType = 'array';
   public $type;
   public $value;
@@ -38,28 +38,28 @@ class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args extends Goog
     return $this->key;
   }
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsRects
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsRects
    */
   public function setRects($rects)
   {
     $this->rects = $rects;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsRects
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsRects
    */
   public function getRects()
   {
     return $this->rects;
   }
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsSecondaryRects
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsSecondaryRects
    */
   public function setSecondaryRects($secondaryRects)
   {
     $this->secondaryRects = $secondaryRects;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsSecondaryRects
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsSecondaryRects
    */
   public function getSecondaryRects()
   {

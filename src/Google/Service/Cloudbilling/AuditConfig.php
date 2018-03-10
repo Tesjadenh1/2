@@ -15,22 +15,22 @@
  * the License.
  */
 
-class Google_Service_CloudSourceRepositories_AuditConfig extends Google_Collection
+class Google_Service_Cloudbilling_AuditConfig extends Google_Collection
 {
   protected $collection_key = 'auditLogConfigs';
-  protected $auditLogConfigsType = 'Google_Service_CloudSourceRepositories_AuditLogConfig';
+  protected $auditLogConfigsType = 'Google_Service_Cloudbilling_AuditLogConfig';
   protected $auditLogConfigsDataType = 'array';
   public $service;
 
   /**
-   * @param Google_Service_CloudSourceRepositories_AuditLogConfig
+   * @param Google_Service_Cloudbilling_AuditLogConfig
    */
   public function setAuditLogConfigs($auditLogConfigs)
   {
     $this->auditLogConfigs = $auditLogConfigs;
   }
   /**
-   * @return Google_Service_CloudSourceRepositories_AuditLogConfig
+   * @return Google_Service_Cloudbilling_AuditLogConfig
    */
   public function getAuditLogConfigs()
   {

@@ -15,17 +15,26 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement extends Google_Collection
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElement extends Google_Collection
 {
   protected $collection_key = 'urlBlocks';
+  public $beta;
   public $groups;
   public $localizedRuleName;
   public $ruleImpact;
-  protected $summaryType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV2';
+  protected $summaryType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV4';
   protected $summaryDataType = '';
-  protected $urlBlocksType = 'Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocks';
+  protected $urlBlocksType = 'Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocks';
   protected $urlBlocksDataType = 'array';
 
+  public function setBeta($beta)
+  {
+    $this->beta = $beta;
+  }
+  public function getBeta()
+  {
+    return $this->beta;
+  }
   public function setGroups($groups)
   {
     $this->groups = $groups;
@@ -51,28 +60,28 @@ class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement ex
     return $this->ruleImpact;
   }
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV4
    */
-  public function setSummary(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $summary)
+  public function setSummary(Google_Service_Pagespeedonline_PagespeedApiFormatStringV4 $summary)
   {
     $this->summary = $summary;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV4
    */
   public function getSummary()
   {
     return $this->summary;
   }
   /**
-   * @param Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocks
+   * @param Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocks
    */
   public function setUrlBlocks($urlBlocks)
   {
     $this->urlBlocks = $urlBlocks;
   }
   /**
-   * @return Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocks
+   * @return Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocks
    */
   public function getUrlBlocks()
   {

@@ -15,43 +15,34 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsRects extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElementDistributions extends Google_Model
 {
-  public $height;
-  public $left;
-  public $top;
-  public $width;
+  public $max;
+  public $min;
+  public $proportion;
 
-  public function setHeight($height)
+  public function setMax($max)
   {
-    $this->height = $height;
+    $this->max = $max;
   }
-  public function getHeight()
+  public function getMax()
   {
-    return $this->height;
+    return $this->max;
   }
-  public function setLeft($left)
+  public function setMin($min)
   {
-    $this->left = $left;
+    $this->min = $min;
   }
-  public function getLeft()
+  public function getMin()
   {
-    return $this->left;
+    return $this->min;
   }
-  public function setTop($top)
+  public function setProportion($proportion)
   {
-    $this->top = $top;
+    $this->proportion = $proportion;
   }
-  public function getTop()
+  public function getProportion()
   {
-    return $this->top;
-  }
-  public function setWidth($width)
-  {
-    $this->width = $width;
-  }
-  public function getWidth()
-  {
-    return $this->width;
+    return $this->proportion;
   }
 }

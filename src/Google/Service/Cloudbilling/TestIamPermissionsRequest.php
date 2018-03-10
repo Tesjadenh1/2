@@ -15,26 +15,17 @@
  * the License.
  */
 
-class Google_Service_CloudSourceRepositories_Binding extends Google_Collection
+class Google_Service_Cloudbilling_TestIamPermissionsRequest extends Google_Collection
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $collection_key = 'permissions';
+  public $permissions;
 
-  public function setMembers($members)
+  public function setPermissions($permissions)
   {
-    $this->members = $members;
+    $this->permissions = $permissions;
   }
-  public function getMembers()
+  public function getPermissions()
   {
-    return $this->members;
-  }
-  public function setRole($role)
-  {
-    $this->role = $role;
-  }
-  public function getRole()
-  {
-    return $this->role;
+    return $this->permissions;
   }
 }

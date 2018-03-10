@@ -15,22 +15,39 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_ResultPageStats extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4PageStats extends Google_Collection
 {
+  protected $collection_key = 'transientFetchFailureUrls';
+  public $cms;
   public $cssResponseBytes;
   public $flashResponseBytes;
   public $htmlResponseBytes;
   public $imageResponseBytes;
   public $javascriptResponseBytes;
+  public $numRenderBlockingRoundTrips;
+  public $numTotalRoundTrips;
   public $numberCssResources;
   public $numberHosts;
   public $numberJsResources;
   public $numberResources;
+  public $numberRobotedResources;
   public $numberStaticResources;
+  public $numberTransientFetchFailureResources;
   public $otherResponseBytes;
+  public $overTheWireResponseBytes;
+  public $robotedUrls;
   public $textResponseBytes;
   public $totalRequestBytes;
+  public $transientFetchFailureUrls;
 
+  public function setCms($cms)
+  {
+    $this->cms = $cms;
+  }
+  public function getCms()
+  {
+    return $this->cms;
+  }
   public function setCssResponseBytes($cssResponseBytes)
   {
     $this->cssResponseBytes = $cssResponseBytes;
@@ -71,6 +88,22 @@ class Google_Service_Pagespeedonline_ResultPageStats extends Google_Model
   {
     return $this->javascriptResponseBytes;
   }
+  public function setNumRenderBlockingRoundTrips($numRenderBlockingRoundTrips)
+  {
+    $this->numRenderBlockingRoundTrips = $numRenderBlockingRoundTrips;
+  }
+  public function getNumRenderBlockingRoundTrips()
+  {
+    return $this->numRenderBlockingRoundTrips;
+  }
+  public function setNumTotalRoundTrips($numTotalRoundTrips)
+  {
+    $this->numTotalRoundTrips = $numTotalRoundTrips;
+  }
+  public function getNumTotalRoundTrips()
+  {
+    return $this->numTotalRoundTrips;
+  }
   public function setNumberCssResources($numberCssResources)
   {
     $this->numberCssResources = $numberCssResources;
@@ -103,6 +136,14 @@ class Google_Service_Pagespeedonline_ResultPageStats extends Google_Model
   {
     return $this->numberResources;
   }
+  public function setNumberRobotedResources($numberRobotedResources)
+  {
+    $this->numberRobotedResources = $numberRobotedResources;
+  }
+  public function getNumberRobotedResources()
+  {
+    return $this->numberRobotedResources;
+  }
   public function setNumberStaticResources($numberStaticResources)
   {
     $this->numberStaticResources = $numberStaticResources;
@@ -111,6 +152,14 @@ class Google_Service_Pagespeedonline_ResultPageStats extends Google_Model
   {
     return $this->numberStaticResources;
   }
+  public function setNumberTransientFetchFailureResources($numberTransientFetchFailureResources)
+  {
+    $this->numberTransientFetchFailureResources = $numberTransientFetchFailureResources;
+  }
+  public function getNumberTransientFetchFailureResources()
+  {
+    return $this->numberTransientFetchFailureResources;
+  }
   public function setOtherResponseBytes($otherResponseBytes)
   {
     $this->otherResponseBytes = $otherResponseBytes;
@@ -118,6 +167,22 @@ class Google_Service_Pagespeedonline_ResultPageStats extends Google_Model
   public function getOtherResponseBytes()
   {
     return $this->otherResponseBytes;
+  }
+  public function setOverTheWireResponseBytes($overTheWireResponseBytes)
+  {
+    $this->overTheWireResponseBytes = $overTheWireResponseBytes;
+  }
+  public function getOverTheWireResponseBytes()
+  {
+    return $this->overTheWireResponseBytes;
+  }
+  public function setRobotedUrls($robotedUrls)
+  {
+    $this->robotedUrls = $robotedUrls;
+  }
+  public function getRobotedUrls()
+  {
+    return $this->robotedUrls;
   }
   public function setTextResponseBytes($textResponseBytes)
   {
@@ -134,5 +199,13 @@ class Google_Service_Pagespeedonline_ResultPageStats extends Google_Model
   public function getTotalRequestBytes()
   {
     return $this->totalRequestBytes;
+  }
+  public function setTransientFetchFailureUrls($transientFetchFailureUrls)
+  {
+    $this->transientFetchFailureUrls = $transientFetchFailureUrls;
+  }
+  public function getTransientFetchFailureUrls()
+  {
+    return $this->transientFetchFailureUrls;
   }
 }

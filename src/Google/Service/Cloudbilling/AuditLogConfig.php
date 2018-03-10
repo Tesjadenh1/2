@@ -15,26 +15,26 @@
  * the License.
  */
 
-class Google_Service_CloudSourceRepositories_Binding extends Google_Collection
+class Google_Service_Cloudbilling_AuditLogConfig extends Google_Collection
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  protected $collection_key = 'exemptedMembers';
+  public $exemptedMembers;
+  public $logType;
 
-  public function setMembers($members)
+  public function setExemptedMembers($exemptedMembers)
   {
-    $this->members = $members;
+    $this->exemptedMembers = $exemptedMembers;
   }
-  public function getMembers()
+  public function getExemptedMembers()
   {
-    return $this->members;
+    return $this->exemptedMembers;
   }
-  public function setRole($role)
+  public function setLogType($logType)
   {
-    $this->role = $role;
+    $this->logType = $logType;
   }
-  public function getRole()
+  public function getLogType()
   {
-    return $this->role;
+    return $this->logType;
   }
 }

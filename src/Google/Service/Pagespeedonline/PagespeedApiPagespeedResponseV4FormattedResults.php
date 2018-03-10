@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_ResultFormattedResults extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResults extends Google_Model
 {
   public $locale;
-  protected $ruleResultsType = 'Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement';
+  protected $ruleResultsType = 'Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElement';
   protected $ruleResultsDataType = 'map';
 
   public function setLocale($locale)
@@ -30,14 +30,14 @@ class Google_Service_Pagespeedonline_ResultFormattedResults extends Google_Model
     return $this->locale;
   }
   /**
-   * @param Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement
+   * @param Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElement
    */
   public function setRuleResults($ruleResults)
   {
     $this->ruleResults = $ruleResults;
   }
   /**
-   * @return Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElement
+   * @return Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElement
    */
   public function getRuleResults()
   {

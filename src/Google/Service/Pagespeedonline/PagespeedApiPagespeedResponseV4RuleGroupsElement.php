@@ -15,10 +15,19 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_ResultRuleGroupsElement extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4RuleGroupsElement extends Google_Model
 {
+  public $pass;
   public $score;
 
+  public function setPass($pass)
+  {
+    $this->pass = $pass;
+  }
+  public function getPass()
+  {
+    return $this->pass;
+  }
   public function setScore($score)
   {
     $this->score = $score;

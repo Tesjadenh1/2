@@ -15,39 +15,39 @@
  * the License.
  */
 
-class Google_Service_CloudSourceRepositories_Policy extends Google_Collection
+class Google_Service_Cloudbilling_Policy extends Google_Collection
 {
   protected $collection_key = 'bindings';
-  protected $auditConfigsType = 'Google_Service_CloudSourceRepositories_AuditConfig';
+  protected $auditConfigsType = 'Google_Service_Cloudbilling_AuditConfig';
   protected $auditConfigsDataType = 'array';
-  protected $bindingsType = 'Google_Service_CloudSourceRepositories_Binding';
+  protected $bindingsType = 'Google_Service_Cloudbilling_Binding';
   protected $bindingsDataType = 'array';
   public $etag;
   public $version;
 
   /**
-   * @param Google_Service_CloudSourceRepositories_AuditConfig
+   * @param Google_Service_Cloudbilling_AuditConfig
    */
   public function setAuditConfigs($auditConfigs)
   {
     $this->auditConfigs = $auditConfigs;
   }
   /**
-   * @return Google_Service_CloudSourceRepositories_AuditConfig
+   * @return Google_Service_Cloudbilling_AuditConfig
    */
   public function getAuditConfigs()
   {
     return $this->auditConfigs;
   }
   /**
-   * @param Google_Service_CloudSourceRepositories_Binding
+   * @param Google_Service_Cloudbilling_Binding
    */
   public function setBindings($bindings)
   {
     $this->bindings = $bindings;
   }
   /**
-   * @return Google_Service_CloudSourceRepositories_Binding
+   * @return Google_Service_Cloudbilling_Binding
    */
   public function getBindings()
   {

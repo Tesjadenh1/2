@@ -15,26 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudSourceRepositories_Binding extends Google_Collection
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4Version extends Google_Model
 {
-  protected $collection_key = 'members';
-  public $members;
-  public $role;
+  public $major;
+  public $minor;
 
-  public function setMembers($members)
+  public function setMajor($major)
   {
-    $this->members = $members;
+    $this->major = $major;
   }
-  public function getMembers()
+  public function getMajor()
   {
-    return $this->members;
+    return $this->major;
   }
-  public function setRole($role)
+  public function setMinor($minor)
   {
-    $this->role = $role;
+    $this->minor = $minor;
   }
-  public function getRole()
+  public function getMinor()
   {
-    return $this->role;
+    return $this->minor;
   }
 }

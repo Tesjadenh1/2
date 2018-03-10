@@ -15,37 +15,37 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocks extends Google_Collection
+class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocks extends Google_Collection
 {
   protected $collection_key = 'urls';
-  protected $headerType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV2';
+  protected $headerType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV4';
   protected $headerDataType = '';
-  protected $urlsType = 'Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls';
+  protected $urlsType = 'Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocksUrls';
   protected $urlsDataType = 'array';
 
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV4
    */
-  public function setHeader(Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 $header)
+  public function setHeader(Google_Service_Pagespeedonline_PagespeedApiFormatStringV4 $header)
   {
     $this->header = $header;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2
+   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV4
    */
   public function getHeader()
   {
     return $this->header;
   }
   /**
-   * @param Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls
+   * @param Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocksUrls
    */
   public function setUrls($urls)
   {
     $this->urls = $urls;
   }
   /**
-   * @return Google_Service_Pagespeedonline_ResultFormattedResultsRuleResultsElementUrlBlocksUrls
+   * @return Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4FormattedResultsRuleResultsElementUrlBlocksUrls
    */
   public function getUrls()
   {

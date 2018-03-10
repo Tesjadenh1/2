@@ -15,33 +15,32 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2 extends Google_Collection
+class Google_Service_Cloudbilling_SetIamPolicyRequest extends Google_Model
 {
-  protected $collection_key = 'args';
-  protected $argsType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args';
-  protected $argsDataType = 'array';
-  public $format;
+  protected $policyType = 'Google_Service_Cloudbilling_Policy';
+  protected $policyDataType = '';
+  public $updateMask;
 
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args
+   * @param Google_Service_Cloudbilling_Policy
    */
-  public function setArgs($args)
+  public function setPolicy(Google_Service_Cloudbilling_Policy $policy)
   {
-    $this->args = $args;
+    $this->policy = $policy;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV2Args
+   * @return Google_Service_Cloudbilling_Policy
    */
-  public function getArgs()
+  public function getPolicy()
   {
-    return $this->args;
+    return $this->policy;
   }
-  public function setFormat($format)
+  public function setUpdateMask($updateMask)
   {
-    $this->format = $format;
+    $this->updateMask = $updateMask;
   }
-  public function getFormat()
+  public function getUpdateMask()
   {
-    return $this->format;
+    return $this->updateMask;
   }
 }

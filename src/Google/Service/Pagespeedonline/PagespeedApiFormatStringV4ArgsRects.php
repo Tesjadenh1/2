@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiFormatStringV2ArgsSecondaryRects extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsRects extends Google_Model
 {
   public $height;
   public $left;
