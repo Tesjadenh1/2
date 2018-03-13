@@ -15,26 +15,26 @@
  * the License.
  */
 
-class Google_Service_CloudResourceManager_ListAvailableOrgPolicyConstraintsResponse extends Google_Collection
+class Google_Service_CloudResourceManager_SearchFoldersResponse extends Google_Collection
 {
-  protected $collection_key = 'constraints';
-  protected $constraintsType = 'Google_Service_CloudResourceManager_Constraint';
-  protected $constraintsDataType = 'array';
+  protected $collection_key = 'folders';
+  protected $foldersType = 'Google_Service_CloudResourceManager_Folder';
+  protected $foldersDataType = 'array';
   public $nextPageToken;
 
   /**
-   * @param Google_Service_CloudResourceManager_Constraint
+   * @param Google_Service_CloudResourceManager_Folder
    */
-  public function setConstraints($constraints)
+  public function setFolders($folders)
   {
-    $this->constraints = $constraints;
+    $this->folders = $folders;
   }
   /**
-   * @return Google_Service_CloudResourceManager_Constraint
+   * @return Google_Service_CloudResourceManager_Folder
    */
-  public function getConstraints()
+  public function getFolders()
   {
-    return $this->constraints;
+    return $this->folders;
   }
   public function setNextPageToken($nextPageToken)
   {

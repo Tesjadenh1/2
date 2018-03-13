@@ -15,16 +15,13 @@
  * the License.
  */
 
-class Google_Service_CloudResourceManager_Project extends Google_Model
+class Google_Service_CloudResourceManager_Folder extends Google_Model
 {
   public $createTime;
-  public $labels;
+  public $displayName;
   public $lifecycleState;
   public $name;
-  protected $parentType = 'Google_Service_CloudResourceManager_ResourceId';
-  protected $parentDataType = '';
-  public $projectId;
-  public $projectNumber;
+  public $parent;
 
   public function setCreateTime($createTime)
   {
@@ -34,13 +31,13 @@ class Google_Service_CloudResourceManager_Project extends Google_Model
   {
     return $this->createTime;
   }
-  public function setLabels($labels)
+  public function setDisplayName($displayName)
   {
-    $this->labels = $labels;
+    $this->displayName = $displayName;
   }
-  public function getLabels()
+  public function getDisplayName()
   {
-    return $this->labels;
+    return $this->displayName;
   }
   public function setLifecycleState($lifecycleState)
   {
@@ -58,34 +55,12 @@ class Google_Service_CloudResourceManager_Project extends Google_Model
   {
     return $this->name;
   }
-  /**
-   * @param Google_Service_CloudResourceManager_ResourceId
-   */
-  public function setParent(Google_Service_CloudResourceManager_ResourceId $parent)
+  public function setParent($parent)
   {
     $this->parent = $parent;
   }
-  /**
-   * @return Google_Service_CloudResourceManager_ResourceId
-   */
   public function getParent()
   {
     return $this->parent;
-  }
-  public function setProjectId($projectId)
-  {
-    $this->projectId = $projectId;
-  }
-  public function getProjectId()
-  {
-    return $this->projectId;
-  }
-  public function setProjectNumber($projectNumber)
-  {
-    $this->projectNumber = $projectNumber;
-  }
-  public function getProjectNumber()
-  {
-    return $this->projectNumber;
   }
 }

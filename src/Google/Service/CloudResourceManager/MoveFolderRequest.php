@@ -15,25 +15,16 @@
  * the License.
  */
 
-class Google_Service_CloudResourceManager_ListOrgPoliciesRequest extends Google_Model
+class Google_Service_CloudResourceManager_MoveFolderRequest extends Google_Model
 {
-  public $pageSize;
-  public $pageToken;
+  public $destinationParent;
 
-  public function setPageSize($pageSize)
+  public function setDestinationParent($destinationParent)
   {
-    $this->pageSize = $pageSize;
+    $this->destinationParent = $destinationParent;
   }
-  public function getPageSize()
+  public function getDestinationParent()
   {
-    return $this->pageSize;
-  }
-  public function setPageToken($pageToken)
-  {
-    $this->pageToken = $pageToken;
-  }
-  public function getPageToken()
-  {
-    return $this->pageToken;
+    return $this->destinationParent;
   }
 }
