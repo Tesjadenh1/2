@@ -41,6 +41,7 @@ class Google_Service_ShoppingContent extends Google_Service
   public $datafeeds;
   public $datafeedstatuses;
   public $inventory;
+  public $liasettings;
   public $orders;
   public $pos;
   public $products;
@@ -555,6 +556,181 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
                 'productId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'dryRun' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->liasettings = new Google_Service_ShoppingContent_Resource_Liasettings(
+        $this,
+        $this->serviceName,
+        'liasettings',
+        array(
+          'methods' => array(
+            'custombatch' => array(
+              'path' => 'liasettings/batch',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'dryRun' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
+            ),'get' => array(
+              'path' => '{merchantId}/liasettings/{accountId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'getaccessiblegmbaccounts' => array(
+              'path' => '{merchantId}/liasettings/{accountId}/accessiblegmbaccounts',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => '{merchantId}/liasettings',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => '{merchantId}/liasettings/{accountId}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'dryRun' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
+            ),'requestgmbaccess' => array(
+              'path' => '{merchantId}/liasettings/{accountId}/requestgmbaccess',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'gmbEmail' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'requestinventoryverification' => array(
+              'path' => '{merchantId}/liasettings/{accountId}/requestinventoryverification/{country}',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'country' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'setinventoryverificationcontact' => array(
+              'path' => '{merchantId}/liasettings/{accountId}/setinventoryverificationcontact',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'contactEmail' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'contactName' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'country' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'language' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'update' => array(
+              'path' => '{merchantId}/liasettings/{accountId}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
