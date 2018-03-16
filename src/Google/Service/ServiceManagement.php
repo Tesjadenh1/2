@@ -59,7 +59,7 @@ class Google_Service_ServiceManagement extends Google_Service
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://servicemanagement.googleapis.com/';
+    $this->rootUrl = 'https://content-servicemanagement.googleapis.com/';
     $this->servicePath = '';
     $this->version = 'v1';
     $this->serviceName = 'servicemanagement';
