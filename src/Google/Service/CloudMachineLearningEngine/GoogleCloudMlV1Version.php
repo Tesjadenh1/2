@@ -29,6 +29,7 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Version extends G
   protected $manualScalingType = 'Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1ManualScaling';
   protected $manualScalingDataType = '';
   public $name;
+  public $pythonVersion;
   public $runtimeVersion;
   public $state;
 
@@ -123,6 +124,14 @@ class Google_Service_CloudMachineLearningEngine_GoogleCloudMlV1Version extends G
   public function getName()
   {
     return $this->name;
+  }
+  public function setPythonVersion($pythonVersion)
+  {
+    $this->pythonVersion = $pythonVersion;
+  }
+  public function getPythonVersion()
+  {
+    return $this->pythonVersion;
   }
   public function setRuntimeVersion($runtimeVersion)
   {
