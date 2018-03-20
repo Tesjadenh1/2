@@ -64,7 +64,7 @@ class Google_Service_ServiceConsumerManagement_Resource_ServicesTenancyUnits ext
   }
   /**
    * Delete a tenancy unit.  Before the tenancy unit is deleted, there should be
-   * no tenant resource in it. Operation. (tenancyUnits.delete)
+   * no tenant resources in it. Operation. (tenancyUnits.delete)
    *
    * @param string $name Name of the tenancy unit to be deleted.
    * @param array $optParams Optional parameters.
@@ -91,13 +91,13 @@ class Google_Service_ServiceConsumerManagement_Resource_ServicesTenancyUnits ext
    * example 'service.googleapis.com'.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string filter Filter expression over tenancy resources field.
+   * Optional.
    * @opt_param string pageToken The continuation token, which is used to page
    * through large result sets. To get the next page of results, set this
    * parameter to the value of `nextPageToken` from the previous response.
    * @opt_param int pageSize The maximum number of results returned by this
    * request.
-   * @opt_param string filter Filter expression over tenancy resources field.
-   * Optional.
    * @return Google_Service_ServiceConsumerManagement_ListTenancyUnitsResponse
    */
   public function listServicesTenancyUnits($parent, $optParams = array())

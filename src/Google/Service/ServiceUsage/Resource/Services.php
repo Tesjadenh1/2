@@ -33,7 +33,8 @@ class Google_Service_ServiceUsage_Resource_Services extends Google_Service_Resou
    *
    * @param string $parent Parent to enable services on.
    *
-   * An example name would be: projects/123
+   * An example name would be: `projects/123` where `123` is the project number
+   * (not project ID).
    *
    * The `BatchEnableServices` method currently only supports projects.
    * @param Google_Service_ServiceUsage_BatchEnableServicesRequest $postBody
@@ -62,7 +63,8 @@ class Google_Service_ServiceUsage_Resource_Services extends Google_Service_Resou
    *
    * The enable and disable methods currently only support projects.
    *
-   * An example name would be: projects/123/services/serviceusage.googleapis.com
+   * An example name would be: `projects/123/services/serviceusage.googleapis.com`
+   * where `123` is the project number (not project ID).
    * @param Google_Service_ServiceUsage_DisableServiceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceUsage_Operation
@@ -87,7 +89,8 @@ class Google_Service_ServiceUsage_Resource_Services extends Google_Service_Resou
    * Enabling a service requires that the service is public or is shared with the
    * user enabling the service.
    *
-   * An example name would be: projects/123/services/serviceusage.googleapis.com
+   * An example name would be: `projects/123/services/serviceusage.googleapis.com`
+   * where `123` is the project number (not project ID).
    * @param Google_Service_ServiceUsage_EnableServiceRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceUsage_Operation
@@ -105,7 +108,8 @@ class Google_Service_ServiceUsage_Resource_Services extends Google_Service_Resou
    * @param string $name Name of the consumer and service to get the
    * `ConsumerState` for.
    *
-   * An example name would be: projects/123/services/serviceusage.googleapis.com
+   * An example name would be: `projects/123/services/serviceusage.googleapis.com`
+   * where `123` is the project number (not project ID).
    * @param array $optParams Optional parameters.
    * @return Google_Service_ServiceUsage_Service
    */
@@ -126,15 +130,16 @@ class Google_Service_ServiceUsage_Resource_Services extends Google_Service_Resou
    *
    * @param string $parent Parent to search for services on.
    *
-   * An example name would be: projects/123
+   * An example name would be: `projects/123` where `123` is the project number
+   * (not project ID).
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string filter Only list services that conform to the given filter.
+   * The allowed filter strings are `state:ENABLED` and `state:DISABLED`.
    * @opt_param string pageToken Token identifying which result to start with,
    * which is returned by a previous list call.
    * @opt_param int pageSize Requested size of the next page of data. Requested
    * page size cannot exceed 200.  If not set, the default page size is 50.
-   * @opt_param string filter Only list services that conform to the given filter.
-   * The allowed filter strings are `state:ENABLED` and `state:DISABLED`.
    * @return Google_Service_ServiceUsage_ListServicesResponse
    */
   public function listServices($parent, $optParams = array())
