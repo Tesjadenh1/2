@@ -19,7 +19,7 @@
  * Service definition for HangoutsChat (v1).
  *
  * <p>
-</p>
+ * Create bots and extend the new Hangouts Chat.</p>
  *
  * <p>
  * For more information about this service, see the API

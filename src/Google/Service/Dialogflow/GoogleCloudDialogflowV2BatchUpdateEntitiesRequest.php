@@ -15,21 +15,27 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1InputAudioConfig extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2BatchUpdateEntitiesRequest extends Google_Collection
 {
-  protected $collection_key = 'phraseHints';
-  public $audioEncoding;
+  protected $collection_key = 'entities';
+  protected $entitiesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeEntity';
+  protected $entitiesDataType = 'array';
   public $languageCode;
-  public $phraseHints;
-  public $sampleRateHertz;
+  public $updateMask;
 
-  public function setAudioEncoding($audioEncoding)
+  /**
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeEntity
+   */
+  public function setEntities($entities)
   {
-    $this->audioEncoding = $audioEncoding;
+    $this->entities = $entities;
   }
-  public function getAudioEncoding()
+  /**
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeEntity
+   */
+  public function getEntities()
   {
-    return $this->audioEncoding;
+    return $this->entities;
   }
   public function setLanguageCode($languageCode)
   {
@@ -39,20 +45,12 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1InputAudioConfig ext
   {
     return $this->languageCode;
   }
-  public function setPhraseHints($phraseHints)
+  public function setUpdateMask($updateMask)
   {
-    $this->phraseHints = $phraseHints;
+    $this->updateMask = $updateMask;
   }
-  public function getPhraseHints()
+  public function getUpdateMask()
   {
-    return $this->phraseHints;
-  }
-  public function setSampleRateHertz($sampleRateHertz)
-  {
-    $this->sampleRateHertz = $sampleRateHertz;
-  }
-  public function getSampleRateHertz()
-  {
-    return $this->sampleRateHertz;
+    return $this->updateMask;
   }
 }

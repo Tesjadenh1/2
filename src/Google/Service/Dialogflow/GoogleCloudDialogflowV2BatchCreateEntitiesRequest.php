@@ -15,19 +15,26 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchDeleteEntitiesRequest extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2BatchCreateEntitiesRequest extends Google_Collection
 {
-  protected $collection_key = 'entityValues';
-  public $entityValues;
+  protected $collection_key = 'entities';
+  protected $entitiesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeEntity';
+  protected $entitiesDataType = 'array';
   public $languageCode;
 
-  public function setEntityValues($entityValues)
+  /**
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeEntity
+   */
+  public function setEntities($entities)
   {
-    $this->entityValues = $entityValues;
+    $this->entities = $entities;
   }
-  public function getEntityValues()
+  /**
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeEntity
+   */
+  public function getEntities()
   {
-    return $this->entityValues;
+    return $this->entities;
   }
   public function setLanguageCode($languageCode)
   {

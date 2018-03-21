@@ -15,12 +15,12 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1DetectIntentRequest extends Google_Model
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2DetectIntentRequest extends Google_Model
 {
   public $inputAudio;
-  protected $queryInputType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryInput';
+  protected $queryInputType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryInput';
   protected $queryInputDataType = '';
-  protected $queryParamsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryParameters';
+  protected $queryParamsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters';
   protected $queryParamsDataType = '';
 
   public function setInputAudio($inputAudio)
@@ -32,28 +32,28 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1DetectIntentRequest 
     return $this->inputAudio;
   }
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryInput
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryInput
    */
-  public function setQueryInput(Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryInput $queryInput)
+  public function setQueryInput(Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryInput $queryInput)
   {
     $this->queryInput = $queryInput;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryInput
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryInput
    */
   public function getQueryInput()
   {
     return $this->queryInput;
   }
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryParameters
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters
    */
-  public function setQueryParams(Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryParameters $queryParams)
+  public function setQueryParams(Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters $queryParams)
   {
     $this->queryParams = $queryParams;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryParameters
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters
    */
   public function getQueryParams()
   {

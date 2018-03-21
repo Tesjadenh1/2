@@ -15,17 +15,24 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchDeleteEntityTypesRequest extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentBatch extends Google_Collection
 {
-  protected $collection_key = 'entityTypeNames';
-  public $entityTypeNames;
+  protected $collection_key = 'intents';
+  protected $intentsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent';
+  protected $intentsDataType = 'array';
 
-  public function setEntityTypeNames($entityTypeNames)
+  /**
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent
+   */
+  public function setIntents($intents)
   {
-    $this->entityTypeNames = $entityTypeNames;
+    $this->intents = $intents;
   }
-  public function getEntityTypeNames()
+  /**
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent
+   */
+  public function getIntents()
   {
-    return $this->entityTypeNames;
+    return $this->intents;
   }
 }

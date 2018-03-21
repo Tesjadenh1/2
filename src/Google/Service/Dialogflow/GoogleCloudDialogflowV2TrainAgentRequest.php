@@ -15,6 +15,6 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1TrainAgentRequest extends Google_Model
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2TrainAgentRequest extends Google_Model
 {
 }

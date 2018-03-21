@@ -15,9 +15,9 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchUpdateIntentsRequest extends Google_Model
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2BatchUpdateIntentsRequest extends Google_Model
 {
-  protected $intentBatchInlineType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentBatch';
+  protected $intentBatchInlineType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentBatch';
   protected $intentBatchInlineDataType = '';
   public $intentBatchUri;
   public $intentView;
@@ -25,14 +25,14 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchUpdateIntentsRe
   public $updateMask;
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentBatch
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentBatch
    */
-  public function setIntentBatchInline(Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentBatch $intentBatchInline)
+  public function setIntentBatchInline(Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentBatch $intentBatchInline)
   {
     $this->intentBatchInline = $intentBatchInline;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentBatch
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2IntentBatch
    */
   public function getIntentBatchInline()
   {

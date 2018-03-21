@@ -15,26 +15,26 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ListEntityTypesResponse extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2SearchAgentsResponse extends Google_Collection
 {
-  protected $collection_key = 'entityTypes';
-  protected $entityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityType';
-  protected $entityTypesDataType = 'array';
+  protected $collection_key = 'agents';
+  protected $agentsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2Agent';
+  protected $agentsDataType = 'array';
   public $nextPageToken;
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityType
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2Agent
    */
-  public function setEntityTypes($entityTypes)
+  public function setAgents($agents)
   {
-    $this->entityTypes = $entityTypes;
+    $this->agents = $agents;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityType
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2Agent
    */
-  public function getEntityTypes()
+  public function getAgents()
   {
-    return $this->entityTypes;
+    return $this->agents;
   }
   public function setNextPageToken($nextPageToken)
   {

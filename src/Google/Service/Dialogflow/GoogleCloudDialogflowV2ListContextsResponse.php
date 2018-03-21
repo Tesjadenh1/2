@@ -15,26 +15,26 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SearchAgentsResponse extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2ListContextsResponse extends Google_Collection
 {
-  protected $collection_key = 'agents';
-  protected $agentsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Agent';
-  protected $agentsDataType = 'array';
+  protected $collection_key = 'contexts';
+  protected $contextsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2Context';
+  protected $contextsDataType = 'array';
   public $nextPageToken;
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Agent
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2Context
    */
-  public function setAgents($agents)
+  public function setContexts($contexts)
   {
-    $this->agents = $agents;
+    $this->contexts = $contexts;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Agent
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2Context
    */
-  public function getAgents()
+  public function getContexts()
   {
-    return $this->agents;
+    return $this->contexts;
   }
   public function setNextPageToken($nextPageToken)
   {

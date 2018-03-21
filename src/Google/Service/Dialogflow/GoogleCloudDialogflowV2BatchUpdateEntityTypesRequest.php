@@ -15,27 +15,35 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchUpdateEntitiesRequest extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2BatchUpdateEntityTypesRequest extends Google_Model
 {
-  protected $collection_key = 'entities';
-  protected $entitiesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityTypeEntity';
-  protected $entitiesDataType = 'array';
+  protected $entityTypeBatchInlineType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeBatch';
+  protected $entityTypeBatchInlineDataType = '';
+  public $entityTypeBatchUri;
   public $languageCode;
   public $updateMask;
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityTypeEntity
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeBatch
    */
-  public function setEntities($entities)
+  public function setEntityTypeBatchInline(Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeBatch $entityTypeBatchInline)
   {
-    $this->entities = $entities;
+    $this->entityTypeBatchInline = $entityTypeBatchInline;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityTypeEntity
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeBatch
    */
-  public function getEntities()
+  public function getEntityTypeBatchInline()
   {
-    return $this->entities;
+    return $this->entityTypeBatchInline;
+  }
+  public function setEntityTypeBatchUri($entityTypeBatchUri)
+  {
+    $this->entityTypeBatchUri = $entityTypeBatchUri;
+  }
+  public function getEntityTypeBatchUri()
+  {
+    return $this->entityTypeBatchUri;
   }
   public function setLanguageCode($languageCode)
   {

@@ -15,21 +15,21 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityTypeBatch extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityTypeBatch extends Google_Collection
 {
   protected $collection_key = 'entityTypes';
-  protected $entityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityType';
+  protected $entityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityType';
   protected $entityTypesDataType = 'array';
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityType
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityType
    */
   public function setEntityTypes($entityTypes)
   {
     $this->entityTypes = $entityTypes;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1EntityType
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2EntityType
    */
   public function getEntityTypes()
   {

@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ListSessionEntityTypesResponse extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2ListSessionEntityTypesResponse extends Google_Collection
 {
   protected $collection_key = 'sessionEntityTypes';
   public $nextPageToken;
-  protected $sessionEntityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SessionEntityType';
+  protected $sessionEntityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType';
   protected $sessionEntityTypesDataType = 'array';
 
   public function setNextPageToken($nextPageToken)
@@ -31,14 +31,14 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ListSessionEntityTyp
     return $this->nextPageToken;
   }
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SessionEntityType
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType
    */
   public function setSessionEntityTypes($sessionEntityTypes)
   {
     $this->sessionEntityTypes = $sessionEntityTypes;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SessionEntityType
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType
    */
   public function getSessionEntityTypes()
   {

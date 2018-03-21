@@ -15,24 +15,33 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1BatchDeleteIntentsRequest extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2ListIntentsResponse extends Google_Collection
 {
   protected $collection_key = 'intents';
-  protected $intentsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Intent';
+  protected $intentsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent';
   protected $intentsDataType = 'array';
+  public $nextPageToken;
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Intent
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent
    */
   public function setIntents($intents)
   {
     $this->intents = $intents;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Intent
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent
    */
   public function getIntents()
   {
     return $this->intents;
+  }
+  public function setNextPageToken($nextPageToken)
+  {
+    $this->nextPageToken = $nextPageToken;
+  }
+  public function getNextPageToken()
+  {
+    return $this->nextPageToken;
   }
 }

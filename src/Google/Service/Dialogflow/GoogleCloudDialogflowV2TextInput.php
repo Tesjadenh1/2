@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1RestoreAgentRequest extends Google_Model
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2TextInput extends Google_Model
 {
-  public $agentContent;
-  public $agentUri;
+  public $languageCode;
+  public $text;
 
-  public function setAgentContent($agentContent)
+  public function setLanguageCode($languageCode)
   {
-    $this->agentContent = $agentContent;
+    $this->languageCode = $languageCode;
   }
-  public function getAgentContent()
+  public function getLanguageCode()
   {
-    return $this->agentContent;
+    return $this->languageCode;
   }
-  public function setAgentUri($agentUri)
+  public function setText($text)
   {
-    $this->agentUri = $agentUri;
+    $this->text = $text;
   }
-  public function getAgentUri()
+  public function getText()
   {
-    return $this->agentUri;
+    return $this->text;
   }
 }

@@ -15,23 +15,23 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1DetectIntentResponse extends Google_Model
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2DetectIntentResponse extends Google_Model
 {
-  protected $queryResultType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryResult';
+  protected $queryResultType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult';
   protected $queryResultDataType = '';
   public $responseId;
   protected $webhookStatusType = 'Google_Service_Dialogflow_GoogleRpcStatus';
   protected $webhookStatusDataType = '';
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryResult
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult
    */
-  public function setQueryResult(Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryResult $queryResult)
+  public function setQueryResult(Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult $queryResult)
   {
     $this->queryResult = $queryResult;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryResult
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryResult
    */
   public function getQueryResult()
   {

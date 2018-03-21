@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Agent extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2Agent extends Google_Collection
 {
   protected $collection_key = 'supportedLanguageCodes';
   public $avatarUri;

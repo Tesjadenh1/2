@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1ImportAgentRequest extends Google_Model
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2BatchDeleteEntityTypesRequest extends Google_Collection
 {
-  public $agentContent;
-  public $agentUri;
+  protected $collection_key = 'entityTypeNames';
+  public $entityTypeNames;
 
-  public function setAgentContent($agentContent)
+  public function setEntityTypeNames($entityTypeNames)
   {
-    $this->agentContent = $agentContent;
+    $this->entityTypeNames = $entityTypeNames;
   }
-  public function getAgentContent()
+  public function getEntityTypeNames()
   {
-    return $this->agentContent;
-  }
-  public function setAgentUri($agentUri)
-  {
-    $this->agentUri = $agentUri;
-  }
-  public function getAgentUri()
-  {
-    return $this->agentUri;
+    return $this->entityTypeNames;
   }
 }

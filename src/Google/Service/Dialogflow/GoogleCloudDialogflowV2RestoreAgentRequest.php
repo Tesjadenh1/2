@@ -15,24 +15,25 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1IntentBatch extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2RestoreAgentRequest extends Google_Model
 {
-  protected $collection_key = 'intents';
-  protected $intentsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Intent';
-  protected $intentsDataType = 'array';
+  public $agentContent;
+  public $agentUri;
 
-  /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Intent
-   */
-  public function setIntents($intents)
+  public function setAgentContent($agentContent)
   {
-    $this->intents = $intents;
+    $this->agentContent = $agentContent;
   }
-  /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Intent
-   */
-  public function getIntents()
+  public function getAgentContent()
   {
-    return $this->intents;
+    return $this->agentContent;
+  }
+  public function setAgentUri($agentUri)
+  {
+    $this->agentUri = $agentUri;
+  }
+  public function getAgentUri()
+  {
+    return $this->agentUri;
   }
 }

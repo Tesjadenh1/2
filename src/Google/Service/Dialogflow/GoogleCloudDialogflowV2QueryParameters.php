@@ -15,28 +15,28 @@
  * the License.
  */
 
-class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryParameters extends Google_Collection
+class Google_Service_Dialogflow_GoogleCloudDialogflowV2QueryParameters extends Google_Collection
 {
   protected $collection_key = 'sessionEntityTypes';
-  protected $contextsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Context';
+  protected $contextsType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2Context';
   protected $contextsDataType = 'array';
   protected $geoLocationType = 'Google_Service_Dialogflow_GoogleTypeLatLng';
   protected $geoLocationDataType = '';
   public $payload;
   public $resetContexts;
-  protected $sessionEntityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SessionEntityType';
+  protected $sessionEntityTypesType = 'Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType';
   protected $sessionEntityTypesDataType = 'array';
   public $timeZone;
 
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Context
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2Context
    */
   public function setContexts($contexts)
   {
     $this->contexts = $contexts;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1Context
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2Context
    */
   public function getContexts()
   {
@@ -73,14 +73,14 @@ class Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1QueryParameters exte
     return $this->resetContexts;
   }
   /**
-   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SessionEntityType
+   * @param Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType
    */
   public function setSessionEntityTypes($sessionEntityTypes)
   {
     $this->sessionEntityTypes = $sessionEntityTypes;
   }
   /**
-   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2beta1SessionEntityType
+   * @return Google_Service_Dialogflow_GoogleCloudDialogflowV2SessionEntityType
    */
   public function getSessionEntityTypes()
   {
