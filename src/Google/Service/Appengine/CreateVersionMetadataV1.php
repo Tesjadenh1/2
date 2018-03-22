@@ -15,25 +15,16 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_VisibilityRule extends Google_Model
+class Google_Service_Appengine_CreateVersionMetadataV1 extends Google_Model
 {
-  public $restriction;
-  public $selector;
+  public $cloudBuildId;
 
-  public function setRestriction($restriction)
+  public function setCloudBuildId($cloudBuildId)
   {
-    $this->restriction = $restriction;
+    $this->cloudBuildId = $cloudBuildId;
   }
-  public function getRestriction()
+  public function getCloudBuildId()
   {
-    return $this->restriction;
-  }
-  public function setSelector($selector)
-  {
-    $this->selector = $selector;
-  }
-  public function getSelector()
-  {
-    return $this->selector;
+    return $this->cloudBuildId;
   }
 }

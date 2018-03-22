@@ -15,24 +15,25 @@
  * the License.
  */
 
-class Google_Service_ServiceManagement_Visibility extends Google_Collection
+class Google_Service_Appengine_CloudBuildOptions extends Google_Model
 {
-  protected $collection_key = 'rules';
-  protected $rulesType = 'Google_Service_ServiceManagement_VisibilityRule';
-  protected $rulesDataType = 'array';
+  public $appYamlPath;
+  public $cloudBuildTimeout;
 
-  /**
-   * @param Google_Service_ServiceManagement_VisibilityRule
-   */
-  public function setRules($rules)
+  public function setAppYamlPath($appYamlPath)
   {
-    $this->rules = $rules;
+    $this->appYamlPath = $appYamlPath;
   }
-  /**
-   * @return Google_Service_ServiceManagement_VisibilityRule
-   */
-  public function getRules()
+  public function getAppYamlPath()
   {
-    return $this->rules;
+    return $this->appYamlPath;
+  }
+  public function setCloudBuildTimeout($cloudBuildTimeout)
+  {
+    $this->cloudBuildTimeout = $cloudBuildTimeout;
+  }
+  public function getCloudBuildTimeout()
+  {
+    return $this->cloudBuildTimeout;
   }
 }
