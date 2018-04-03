@@ -19,7 +19,8 @@
  * Service definition for Texttospeech (v1beta1).
  *
  * <p>
- * Cloud Text-to-Speech API.</p>
+ * Synthesizes natural-sounding speech by applying powerful neural network
+ * models.</p>
  *
  * <p>
  * For more information about this service, see the API
