@@ -41,6 +41,7 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
   public $accounts_clients_users;
   public $accounts_creatives;
   public $accounts_creatives_dealAssociations;
+  public $accounts_publishers;
   public $bidders_accounts_filterSets;
   public $bidders_accounts_filterSets_bidMetrics;
   public $bidders_accounts_filterSets_bidResponseErrors;
@@ -117,10 +118,6 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -128,6 +125,10 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                 'partnerClientId' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'update' => array(
@@ -463,6 +464,30 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
           )
         )
     );
+    $this->accounts_publishers = new Google_Service_AdExchangeBuyerII_Resource_AccountsPublishers(
+        $this,
+        $this->serviceName,
+        'publishers',
+        array(
+          'methods' => array(
+            'list' => array(
+              'path' => 'v2beta1/accounts/{accountId}/publishers',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'environment' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->bidders_accounts_filterSets = new Google_Service_AdExchangeBuyerII_Resource_BiddersAccountsFilterSets(
         $this,
         $this->serviceName,
@@ -596,13 +621,13 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -948,13 +973,13 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -1154,13 +1179,13 @@ class Google_Service_AdExchangeBuyerII extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
