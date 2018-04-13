@@ -103,6 +103,11 @@ class Google_Service_Classroom_Resource_Courses extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string pageToken nextPageToken value returned from a previous list
+   * call, indicating that the subsequent page of results should be returned.
+   *
+   * The list request must be otherwise identical to the one that resulted in this
+   * token.
    * @opt_param int pageSize Maximum number of items to return. Zero or
    * unspecified indicates that the server may assign a maximum.
    *
@@ -122,11 +127,6 @@ class Google_Service_Classroom_Resource_Courses extends Google_Service_Resource
    *
    * * the numeric identifier for the user * the email address of the user * the
    * string literal `"me"`, indicating the requesting user
-   * @opt_param string pageToken nextPageToken value returned from a previous list
-   * call, indicating that the subsequent page of results should be returned.
-   *
-   * The list request must be otherwise identical to the one that resulted in this
-   * token.
    * @return Google_Service_Classroom_ListCoursesResponse
    */
   public function listCourses($optParams = array())
