@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1AnnotateVideoRequest extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1AnnotateVideoRequest extends Google_Collection
 {
   protected $collection_key = 'features';
   public $features;
@@ -23,7 +23,7 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1A
   public $inputUri;
   public $locationId;
   public $outputUri;
-  protected $videoContextType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext';
+  protected $videoContextType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoContext';
   protected $videoContextDataType = '';
 
   public function setFeatures($features)
@@ -67,14 +67,14 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1A
     return $this->outputUri;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoContext
    */
-  public function setVideoContext(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext $videoContext)
+  public function setVideoContext(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoContext $videoContext)
   {
     $this->videoContext = $videoContext;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1beta1VideoContext
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoContext
    */
   public function getVideoContext()
   {

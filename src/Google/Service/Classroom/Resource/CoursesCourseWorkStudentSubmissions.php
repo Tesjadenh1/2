@@ -70,9 +70,6 @@ class Google_Service_Classroom_Resource_CoursesCourseWorkStudentSubmissions exte
    * work in the specified course.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string late Requested lateness value. If specified, returned
-   * student submissions are restricted by the requested value. If unspecified,
-   * submissions are returned regardless of `late` value.
    * @opt_param string pageToken nextPageToken value returned from a previous list
    * call, indicating that the subsequent page of results should be returned.
    *
@@ -90,6 +87,9 @@ class Google_Service_Classroom_Resource_CoursesCourseWorkStudentSubmissions exte
    *
    * * the numeric identifier for the user * the email address of the user * the
    * string literal `"me"`, indicating the requesting user
+   * @opt_param string late Requested lateness value. If specified, returned
+   * student submissions are restricted by the requested value. If unspecified,
+   * submissions are returned regardless of `late` value.
    * @return Google_Service_Classroom_ListStudentSubmissionsResponse
    */
   public function listCoursesCourseWorkStudentSubmissions($courseId, $courseWorkId, $optParams = array())
