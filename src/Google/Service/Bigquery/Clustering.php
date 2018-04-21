@@ -15,25 +15,17 @@
  * the License.
  */
 
-class Google_Service_Bigquery_GoogleSheetsOptions extends Google_Model
+class Google_Service_Bigquery_Clustering extends Google_Collection
 {
-  public $range;
-  public $skipLeadingRows;
+  protected $collection_key = 'fields';
+  public $fields;
 
-  public function setRange($range)
+  public function setFields($fields)
   {
-    $this->range = $range;
+    $this->fields = $fields;
   }
-  public function getRange()
+  public function getFields()
   {
-    return $this->range;
-  }
-  public function setSkipLeadingRows($skipLeadingRows)
-  {
-    $this->skipLeadingRows = $skipLeadingRows;
-  }
-  public function getSkipLeadingRows()
-  {
-    return $this->skipLeadingRows;
+    return $this->fields;
   }
 }
