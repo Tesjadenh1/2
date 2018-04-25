@@ -15,34 +15,34 @@
  * the License.
  */
 
-class Google_Service_YouTubeAnalytics_ResultTableColumnHeaders extends Google_Model
+class Google_Service_WebSecurityScanner_CrawledUrl extends Google_Model
 {
-  public $columnType;
-  public $dataType;
-  public $name;
+  public $body;
+  public $httpMethod;
+  public $url;
 
-  public function setColumnType($columnType)
+  public function setBody($body)
   {
-    $this->columnType = $columnType;
+    $this->body = $body;
   }
-  public function getColumnType()
+  public function getBody()
   {
-    return $this->columnType;
+    return $this->body;
   }
-  public function setDataType($dataType)
+  public function setHttpMethod($httpMethod)
   {
-    $this->dataType = $dataType;
+    $this->httpMethod = $httpMethod;
   }
-  public function getDataType()
+  public function getHttpMethod()
   {
-    return $this->dataType;
+    return $this->httpMethod;
   }
-  public function setName($name)
+  public function setUrl($url)
   {
-    $this->name = $name;
+    $this->url = $url;
   }
-  public function getName()
+  public function getUrl()
   {
-    return $this->name;
+    return $this->url;
   }
 }

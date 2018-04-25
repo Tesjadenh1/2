@@ -15,44 +15,26 @@
  * the License.
  */
 
-class Google_Service_YouTubeAnalytics_GroupListResponse extends Google_Collection
+class Google_Service_WebSecurityScanner_ListCrawledUrlsResponse extends Google_Collection
 {
-  protected $collection_key = 'items';
-  public $etag;
-  protected $itemsType = 'Google_Service_YouTubeAnalytics_Group';
-  protected $itemsDataType = 'array';
-  public $kind;
+  protected $collection_key = 'crawledUrls';
+  protected $crawledUrlsType = 'Google_Service_WebSecurityScanner_CrawledUrl';
+  protected $crawledUrlsDataType = 'array';
   public $nextPageToken;
 
-  public function setEtag($etag)
+  /**
+   * @param Google_Service_WebSecurityScanner_CrawledUrl
+   */
+  public function setCrawledUrls($crawledUrls)
   {
-    $this->etag = $etag;
-  }
-  public function getEtag()
-  {
-    return $this->etag;
+    $this->crawledUrls = $crawledUrls;
   }
   /**
-   * @param Google_Service_YouTubeAnalytics_Group
+   * @return Google_Service_WebSecurityScanner_CrawledUrl
    */
-  public function setItems($items)
+  public function getCrawledUrls()
   {
-    $this->items = $items;
-  }
-  /**
-   * @return Google_Service_YouTubeAnalytics_Group
-   */
-  public function getItems()
-  {
-    return $this->items;
-  }
-  public function setKind($kind)
-  {
-    $this->kind = $kind;
-  }
-  public function getKind()
-  {
-    return $this->kind;
+    return $this->crawledUrls;
   }
   public function setNextPageToken($nextPageToken)
   {

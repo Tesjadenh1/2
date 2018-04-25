@@ -15,32 +15,16 @@
  * the License.
  */
 
-class Google_Service_YouTubeAnalytics_Group extends Google_Model
+class Google_Service_YouTubeAnalytics_ListGroupItemsResponse extends Google_Collection
 {
-  protected $contentDetailsType = 'Google_Service_YouTubeAnalytics_GroupContentDetails';
-  protected $contentDetailsDataType = '';
+  protected $collection_key = 'items';
   protected $errorsType = 'Google_Service_YouTubeAnalytics_Errors';
   protected $errorsDataType = '';
   public $etag;
-  public $id;
+  protected $itemsType = 'Google_Service_YouTubeAnalytics_GroupItem';
+  protected $itemsDataType = 'array';
   public $kind;
-  protected $snippetType = 'Google_Service_YouTubeAnalytics_GroupSnippet';
-  protected $snippetDataType = '';
 
-  /**
-   * @param Google_Service_YouTubeAnalytics_GroupContentDetails
-   */
-  public function setContentDetails(Google_Service_YouTubeAnalytics_GroupContentDetails $contentDetails)
-  {
-    $this->contentDetails = $contentDetails;
-  }
-  /**
-   * @return Google_Service_YouTubeAnalytics_GroupContentDetails
-   */
-  public function getContentDetails()
-  {
-    return $this->contentDetails;
-  }
   /**
    * @param Google_Service_YouTubeAnalytics_Errors
    */
@@ -63,13 +47,19 @@ class Google_Service_YouTubeAnalytics_Group extends Google_Model
   {
     return $this->etag;
   }
-  public function setId($id)
+  /**
+   * @param Google_Service_YouTubeAnalytics_GroupItem
+   */
+  public function setItems($items)
   {
-    $this->id = $id;
+    $this->items = $items;
   }
-  public function getId()
+  /**
+   * @return Google_Service_YouTubeAnalytics_GroupItem
+   */
+  public function getItems()
   {
-    return $this->id;
+    return $this->items;
   }
   public function setKind($kind)
   {
@@ -78,19 +68,5 @@ class Google_Service_YouTubeAnalytics_Group extends Google_Model
   public function getKind()
   {
     return $this->kind;
-  }
-  /**
-   * @param Google_Service_YouTubeAnalytics_GroupSnippet
-   */
-  public function setSnippet(Google_Service_YouTubeAnalytics_GroupSnippet $snippet)
-  {
-    $this->snippet = $snippet;
-  }
-  /**
-   * @return Google_Service_YouTubeAnalytics_GroupSnippet
-   */
-  public function getSnippet()
-  {
-    return $this->snippet;
   }
 }
