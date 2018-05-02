@@ -15,24 +15,25 @@
  * the License.
  */
 
-class Google_Service_AdExchangeBuyerII_ListPublishersResponse extends Google_Collection
+class Google_Service_AndroidPublisher_SubscriptionCancelSurveyResult extends Google_Model
 {
-  protected $collection_key = 'publisher';
-  protected $publisherType = 'Google_Service_AdExchangeBuyerII_Publisher';
-  protected $publisherDataType = 'array';
+  public $cancelSurveyReason;
+  public $userInputCancelReason;
 
-  /**
-   * @param Google_Service_AdExchangeBuyerII_Publisher
-   */
-  public function setPublisher($publisher)
+  public function setCancelSurveyReason($cancelSurveyReason)
   {
-    $this->publisher = $publisher;
+    $this->cancelSurveyReason = $cancelSurveyReason;
   }
-  /**
-   * @return Google_Service_AdExchangeBuyerII_Publisher
-   */
-  public function getPublisher()
+  public function getCancelSurveyReason()
   {
-    return $this->publisher;
+    return $this->cancelSurveyReason;
+  }
+  public function setUserInputCancelReason($userInputCancelReason)
+  {
+    $this->userInputCancelReason = $userInputCancelReason;
+  }
+  public function getUserInputCancelReason()
+  {
+    return $this->userInputCancelReason;
   }
 }

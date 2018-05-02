@@ -15,25 +15,6 @@
  * the License.
  */
 
-class Google_Service_AdExchangeBuyerII_Publisher extends Google_Model
+class Google_Service_CloudComposer_ComposerEmpty extends Google_Model
 {
-  public $publisherDisplayName;
-  public $publisherId;
-
-  public function setPublisherDisplayName($publisherDisplayName)
-  {
-    $this->publisherDisplayName = $publisherDisplayName;
-  }
-  public function getPublisherDisplayName()
-  {
-    return $this->publisherDisplayName;
-  }
-  public function setPublisherId($publisherId)
-  {
-    $this->publisherId = $publisherId;
-  }
-  public function getPublisherId()
-  {
-    return $this->publisherId;
-  }
 }
