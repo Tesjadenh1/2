@@ -15,16 +15,23 @@
  * the License.
  */
 
-class Google_Service_DLP_GooglePrivacyDlpV2beta1InspectOperationResult extends Google_Model
+class Google_Service_DLP_GooglePrivacyDlpV2EntityId extends Google_Model
 {
-  public $name;
+  protected $fieldType = 'Google_Service_DLP_GooglePrivacyDlpV2FieldId';
+  protected $fieldDataType = '';
 
-  public function setName($name)
+  /**
+   * @param Google_Service_DLP_GooglePrivacyDlpV2FieldId
+   */
+  public function setField(Google_Service_DLP_GooglePrivacyDlpV2FieldId $field)
   {
-    $this->name = $name;
+    $this->field = $field;
   }
-  public function getName()
+  /**
+   * @return Google_Service_DLP_GooglePrivacyDlpV2FieldId
+   */
+  public function getField()
   {
-    return $this->name;
+    return $this->field;
   }
 }
