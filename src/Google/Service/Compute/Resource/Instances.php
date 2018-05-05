@@ -231,8 +231,8 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('detachDisk', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Returns the specified Instance resource. Get a list of available instances by
-   * making a list() request. (instances.get)
+   * Returns the specified Instance resource. Gets a list of available instances
+   * by making a list() request. (instances.get)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone for this request.
@@ -749,8 +749,8 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('setTags', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Starts an instance that was stopped using the using the instances().stop
-   * method. For more information, see Restart an instance. (instances.start)
+   * Starts an instance that was stopped using the instances().stop method. For
+   * more information, see Restart an instance. (instances.start)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone for this request.
@@ -778,9 +778,8 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('start', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Starts an instance that was stopped using the using the instances().stop
-   * method. For more information, see Restart an instance.
-   * (instances.startWithEncryptionKey)
+   * Starts an instance that was stopped using the instances().stop method. For
+   * more information, see Restart an instance. (instances.startWithEncryptionKey)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone for this request.

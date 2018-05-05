@@ -79,7 +79,7 @@ class Google_Service_Compute_Resource_AcceleratorTypes extends Google_Service_Re
     return $this->call('aggregatedList', array($params), "Google_Service_Compute_AcceleratorTypeAggregatedList");
   }
   /**
-   * Returns the specified accelerator type. Get a list of available accelerator
+   * Returns the specified accelerator type. Gets a list of available accelerator
    * types by making a list() request. (acceleratorTypes.get)
    *
    * @param string $project Project ID for this request.

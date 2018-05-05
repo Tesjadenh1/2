@@ -54,7 +54,7 @@ class Google_Service_Compute_Resource_TargetHttpsProxies extends Google_Service_
     return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Returns the specified TargetHttpsProxy resource. Get a list of available
+   * Returns the specified TargetHttpsProxy resource. Gets a list of available
    * target HTTPS proxies by making a list() request. (targetHttpsProxies.get)
    *
    * @param string $project Project ID for this request.
