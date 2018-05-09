@@ -15,33 +15,35 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_Status extends Google_Collection
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  protected $collection_key = 'details';
+  public $code;
+  public $details;
+  public $message;
 
-  /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
-   */
-  public function setReleases($releases)
+  public function setCode($code)
   {
-    $this->releases = $releases;
+    $this->code = $code;
   }
-  /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
-   */
-  public function getReleases()
+  public function getCode()
   {
-    return $this->releases;
+    return $this->code;
   }
-  public function setTrack($track)
+  public function setDetails($details)
   {
-    $this->track = $track;
+    $this->details = $details;
   }
-  public function getTrack()
+  public function getDetails()
   {
-    return $this->track;
+    return $this->details;
+  }
+  public function setMessage($message)
+  {
+    $this->message = $message;
+  }
+  public function getMessage()
+  {
+    return $this->message;
   }
 }

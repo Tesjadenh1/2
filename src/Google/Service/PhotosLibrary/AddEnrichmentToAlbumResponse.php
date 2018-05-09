@@ -15,33 +15,23 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_AddEnrichmentToAlbumResponse extends Google_Model
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  protected $enrichmentItemType = 'Google_Service_PhotosLibrary_EnrichmentItem';
+  protected $enrichmentItemDataType = '';
 
   /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
+   * @param Google_Service_PhotosLibrary_EnrichmentItem
    */
-  public function setReleases($releases)
+  public function setEnrichmentItem(Google_Service_PhotosLibrary_EnrichmentItem $enrichmentItem)
   {
-    $this->releases = $releases;
+    $this->enrichmentItem = $enrichmentItem;
   }
   /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
+   * @return Google_Service_PhotosLibrary_EnrichmentItem
    */
-  public function getReleases()
+  public function getEnrichmentItem()
   {
-    return $this->releases;
-  }
-  public function setTrack($track)
-  {
-    $this->track = $track;
-  }
-  public function getTrack()
-  {
-    return $this->track;
+    return $this->enrichmentItem;
   }
 }

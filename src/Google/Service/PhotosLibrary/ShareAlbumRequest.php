@@ -15,25 +15,23 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_ApkListing extends Google_Model
+class Google_Service_PhotosLibrary_ShareAlbumRequest extends Google_Model
 {
-  public $language;
-  public $recentChanges;
+  protected $sharedAlbumOptionsType = 'Google_Service_PhotosLibrary_SharedAlbumOptions';
+  protected $sharedAlbumOptionsDataType = '';
 
-  public function setLanguage($language)
+  /**
+   * @param Google_Service_PhotosLibrary_SharedAlbumOptions
+   */
+  public function setSharedAlbumOptions(Google_Service_PhotosLibrary_SharedAlbumOptions $sharedAlbumOptions)
   {
-    $this->language = $language;
+    $this->sharedAlbumOptions = $sharedAlbumOptions;
   }
-  public function getLanguage()
+  /**
+   * @return Google_Service_PhotosLibrary_SharedAlbumOptions
+   */
+  public function getSharedAlbumOptions()
   {
-    return $this->language;
-  }
-  public function setRecentChanges($recentChanges)
-  {
-    $this->recentChanges = $recentChanges;
-  }
-  public function getRecentChanges()
-  {
-    return $this->recentChanges;
+    return $this->sharedAlbumOptions;
   }
 }

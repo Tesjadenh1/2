@@ -15,33 +15,32 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_Location extends Google_Model
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  protected $latlngType = 'Google_Service_PhotosLibrary_LatLng';
+  protected $latlngDataType = '';
+  public $locationName;
 
   /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
+   * @param Google_Service_PhotosLibrary_LatLng
    */
-  public function setReleases($releases)
+  public function setLatlng(Google_Service_PhotosLibrary_LatLng $latlng)
   {
-    $this->releases = $releases;
+    $this->latlng = $latlng;
   }
   /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
+   * @return Google_Service_PhotosLibrary_LatLng
    */
-  public function getReleases()
+  public function getLatlng()
   {
-    return $this->releases;
+    return $this->latlng;
   }
-  public function setTrack($track)
+  public function setLocationName($locationName)
   {
-    $this->track = $track;
+    $this->locationName = $locationName;
   }
-  public function getTrack()
+  public function getLocationName()
   {
-    return $this->track;
+    return $this->locationName;
   }
 }

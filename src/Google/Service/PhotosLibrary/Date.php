@@ -15,33 +15,34 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_Date extends Google_Model
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  public $day;
+  public $month;
+  public $year;
 
-  /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
-   */
-  public function setReleases($releases)
+  public function setDay($day)
   {
-    $this->releases = $releases;
+    $this->day = $day;
   }
-  /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
-   */
-  public function getReleases()
+  public function getDay()
   {
-    return $this->releases;
+    return $this->day;
   }
-  public function setTrack($track)
+  public function setMonth($month)
   {
-    $this->track = $track;
+    $this->month = $month;
   }
-  public function getTrack()
+  public function getMonth()
   {
-    return $this->track;
+    return $this->month;
+  }
+  public function setYear($year)
+  {
+    $this->year = $year;
+  }
+  public function getYear()
+  {
+    return $this->year;
   }
 }

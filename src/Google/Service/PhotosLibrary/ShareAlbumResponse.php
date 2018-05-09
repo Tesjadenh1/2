@@ -15,33 +15,23 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_ShareAlbumResponse extends Google_Model
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  protected $shareInfoType = 'Google_Service_PhotosLibrary_ShareInfo';
+  protected $shareInfoDataType = '';
 
   /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
+   * @param Google_Service_PhotosLibrary_ShareInfo
    */
-  public function setReleases($releases)
+  public function setShareInfo(Google_Service_PhotosLibrary_ShareInfo $shareInfo)
   {
-    $this->releases = $releases;
+    $this->shareInfo = $shareInfo;
   }
   /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
+   * @return Google_Service_PhotosLibrary_ShareInfo
    */
-  public function getReleases()
+  public function getShareInfo()
   {
-    return $this->releases;
-  }
-  public function setTrack($track)
-  {
-    $this->track = $track;
-  }
-  public function getTrack()
-  {
-    return $this->track;
+    return $this->shareInfo;
   }
 }

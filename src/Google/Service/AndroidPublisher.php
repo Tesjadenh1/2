@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for AndroidPublisher (v2).
+ * Service definition for AndroidPublisher (v3).
  *
  * <p>
  * Lets Android application developers access their Google Play accounts.</p>
@@ -35,7 +35,6 @@ class Google_Service_AndroidPublisher extends Google_Service
       "https://www.googleapis.com/auth/androidpublisher";
 
   public $edits;
-  public $edits_apklistings;
   public $edits_apks;
   public $edits_deobfuscationfiles;
   public $edits_details;
@@ -59,8 +58,8 @@ class Google_Service_AndroidPublisher extends Google_Service
   {
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
-    $this->servicePath = 'androidpublisher/v2/applications/';
-    $this->version = 'v2';
+    $this->servicePath = 'androidpublisher/v3/applications/';
+    $this->version = 'v3';
     $this->serviceName = 'androidpublisher';
 
     $this->edits = new Google_Service_AndroidPublisher_Resource_Edits(
@@ -134,156 +133,6 @@ class Google_Service_AndroidPublisher extends Google_Service
                   'required' => true,
                 ),
                 'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->edits_apklistings = new Google_Service_AndroidPublisher_Resource_EditsApklistings(
-        $this,
-        $this->serviceName,
-        'apklistings',
-        array(
-          'methods' => array(
-            'delete' => array(
-              'path' => '{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'packageName' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'apkVersionCode' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-                'language' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'deleteall' => array(
-              'path' => '{packageName}/edits/{editId}/apks/{apkVersionCode}/listings',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'packageName' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'apkVersionCode' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => '{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'packageName' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'apkVersionCode' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-                'language' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => '{packageName}/edits/{editId}/apks/{apkVersionCode}/listings',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'packageName' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'apkVersionCode' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-              ),
-            ),'patch' => array(
-              'path' => '{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'packageName' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'apkVersionCode' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-                'language' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'update' => array(
-              'path' => '{packageName}/edits/{editId}/apks/{apkVersionCode}/listings/{language}',
-              'httpMethod' => 'PUT',
-              'parameters' => array(
-                'packageName' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'editId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'apkVersionCode' => array(
-                  'location' => 'path',
-                  'type' => 'integer',
-                  'required' => true,
-                ),
-                'language' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,

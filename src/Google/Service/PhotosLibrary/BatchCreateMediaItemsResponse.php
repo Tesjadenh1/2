@@ -15,33 +15,24 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_BatchCreateMediaItemsResponse extends Google_Collection
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  protected $collection_key = 'newMediaItemResults';
+  protected $newMediaItemResultsType = 'Google_Service_PhotosLibrary_NewMediaItemResult';
+  protected $newMediaItemResultsDataType = 'array';
 
   /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
+   * @param Google_Service_PhotosLibrary_NewMediaItemResult
    */
-  public function setReleases($releases)
+  public function setNewMediaItemResults($newMediaItemResults)
   {
-    $this->releases = $releases;
+    $this->newMediaItemResults = $newMediaItemResults;
   }
   /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
+   * @return Google_Service_PhotosLibrary_NewMediaItemResult
    */
-  public function getReleases()
+  public function getNewMediaItemResults()
   {
-    return $this->releases;
-  }
-  public function setTrack($track)
-  {
-    $this->track = $track;
-  }
-  public function getTrack()
-  {
-    return $this->track;
+    return $this->newMediaItemResults;
   }
 }

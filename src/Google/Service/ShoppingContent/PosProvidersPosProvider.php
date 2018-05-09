@@ -15,33 +15,34 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_ShoppingContent_PosProvidersPosProvider extends Google_Model
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  public $displayName;
+  public $fullName;
+  public $providerId;
 
-  /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
-   */
-  public function setReleases($releases)
+  public function setDisplayName($displayName)
   {
-    $this->releases = $releases;
+    $this->displayName = $displayName;
   }
-  /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
-   */
-  public function getReleases()
+  public function getDisplayName()
   {
-    return $this->releases;
+    return $this->displayName;
   }
-  public function setTrack($track)
+  public function setFullName($fullName)
   {
-    $this->track = $track;
+    $this->fullName = $fullName;
   }
-  public function getTrack()
+  public function getFullName()
   {
-    return $this->track;
+    return $this->fullName;
+  }
+  public function setProviderId($providerId)
+  {
+    $this->providerId = $providerId;
+  }
+  public function getProviderId()
+  {
+    return $this->providerId;
   }
 }

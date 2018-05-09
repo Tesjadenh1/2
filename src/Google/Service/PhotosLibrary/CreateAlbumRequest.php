@@ -15,33 +15,23 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_ApkListingsListResponse extends Google_Collection
+class Google_Service_PhotosLibrary_CreateAlbumRequest extends Google_Model
 {
-  protected $collection_key = 'listings';
-  public $kind;
-  protected $listingsType = 'Google_Service_AndroidPublisher_ApkListing';
-  protected $listingsDataType = 'array';
+  protected $albumType = 'Google_Service_PhotosLibrary_Album';
+  protected $albumDataType = '';
 
-  public function setKind($kind)
+  /**
+   * @param Google_Service_PhotosLibrary_Album
+   */
+  public function setAlbum(Google_Service_PhotosLibrary_Album $album)
   {
-    $this->kind = $kind;
-  }
-  public function getKind()
-  {
-    return $this->kind;
+    $this->album = $album;
   }
   /**
-   * @param Google_Service_AndroidPublisher_ApkListing
+   * @return Google_Service_PhotosLibrary_Album
    */
-  public function setListings($listings)
+  public function getAlbum()
   {
-    $this->listings = $listings;
-  }
-  /**
-   * @return Google_Service_AndroidPublisher_ApkListing
-   */
-  public function getListings()
-  {
-    return $this->listings;
+    return $this->album;
   }
 }

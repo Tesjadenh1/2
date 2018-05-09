@@ -15,33 +15,33 @@
  * the License.
  */
 
-class Google_Service_AndroidPublisher_Track extends Google_Collection
+class Google_Service_PhotosLibrary_ListAlbumsResponse extends Google_Collection
 {
-  protected $collection_key = 'releases';
-  protected $releasesType = 'Google_Service_AndroidPublisher_TrackRelease';
-  protected $releasesDataType = 'array';
-  public $track;
+  protected $collection_key = 'albums';
+  protected $albumsType = 'Google_Service_PhotosLibrary_Album';
+  protected $albumsDataType = 'array';
+  public $nextPageToken;
 
   /**
-   * @param Google_Service_AndroidPublisher_TrackRelease
+   * @param Google_Service_PhotosLibrary_Album
    */
-  public function setReleases($releases)
+  public function setAlbums($albums)
   {
-    $this->releases = $releases;
+    $this->albums = $albums;
   }
   /**
-   * @return Google_Service_AndroidPublisher_TrackRelease
+   * @return Google_Service_PhotosLibrary_Album
    */
-  public function getReleases()
+  public function getAlbums()
   {
-    return $this->releases;
+    return $this->albums;
   }
-  public function setTrack($track)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->track = $track;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getTrack()
+  public function getNextPageToken()
   {
-    return $this->track;
+    return $this->nextPageToken;
   }
 }
