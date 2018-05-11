@@ -36,6 +36,7 @@ class Google_Service_AndroidPublisher extends Google_Service
 
   public $edits;
   public $edits_apks;
+  public $edits_bundles;
   public $edits_deobfuscationfiles;
   public $edits_details;
   public $edits_expansionfiles;
@@ -180,6 +181,46 @@ class Google_Service_AndroidPublisher extends Google_Service
               ),
             ),'upload' => array(
               'path' => '{packageName}/edits/{editId}/apks',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'editId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->edits_bundles = new Google_Service_AndroidPublisher_Resource_EditsBundles(
+        $this,
+        $this->serviceName,
+        'bundles',
+        array(
+          'methods' => array(
+            'list' => array(
+              'path' => '{packageName}/edits/{editId}/bundles',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'editId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'upload' => array(
+              'path' => '{packageName}/edits/{editId}/bundles',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'packageName' => array(
