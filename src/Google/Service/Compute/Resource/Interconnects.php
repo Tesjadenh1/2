@@ -53,7 +53,7 @@ class Google_Service_Compute_Resource_Interconnects extends Google_Service_Resou
     return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Returns the specified interconnect. Gets a list of available interconnects by
+   * Returns the specified interconnect. Get a list of available interconnects by
    * making a list() request. (interconnects.get)
    *
    * @param string $project Project ID for this request.
