@@ -15,29 +15,20 @@
  * the License.
  */
 
-class Google_Service_CloudSourceRepositories_Repo extends Google_Model
+class Google_Service_CloudSourceRepositories_ProjectConfig extends Google_Model
 {
-  protected $mirrorConfigType = 'Google_Service_CloudSourceRepositories_MirrorConfig';
-  protected $mirrorConfigDataType = '';
+  public $enablePrivateKeyCheck;
   public $name;
   protected $pubsubConfigsType = 'Google_Service_CloudSourceRepositories_PubsubConfig';
   protected $pubsubConfigsDataType = 'map';
-  public $size;
-  public $url;
 
-  /**
-   * @param Google_Service_CloudSourceRepositories_MirrorConfig
-   */
-  public function setMirrorConfig(Google_Service_CloudSourceRepositories_MirrorConfig $mirrorConfig)
+  public function setEnablePrivateKeyCheck($enablePrivateKeyCheck)
   {
-    $this->mirrorConfig = $mirrorConfig;
+    $this->enablePrivateKeyCheck = $enablePrivateKeyCheck;
   }
-  /**
-   * @return Google_Service_CloudSourceRepositories_MirrorConfig
-   */
-  public function getMirrorConfig()
+  public function getEnablePrivateKeyCheck()
   {
-    return $this->mirrorConfig;
+    return $this->enablePrivateKeyCheck;
   }
   public function setName($name)
   {
@@ -60,21 +51,5 @@ class Google_Service_CloudSourceRepositories_Repo extends Google_Model
   public function getPubsubConfigs()
   {
     return $this->pubsubConfigs;
-  }
-  public function setSize($size)
-  {
-    $this->size = $size;
-  }
-  public function getSize()
-  {
-    return $this->size;
-  }
-  public function setUrl($url)
-  {
-    $this->url = $url;
-  }
-  public function getUrl()
-  {
-    return $this->url;
   }
 }
