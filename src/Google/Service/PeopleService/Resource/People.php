@@ -80,7 +80,7 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
    * coverPhotos * emailAddresses * events * genders * imClients * interests *
    * locales * memberships * metadata * names * nicknames * occupations *
    * organizations * phoneNumbers * photos * relations * relationshipInterests *
-   * relationshipStatuses * residences * skills * taglines * urls
+   * relationshipStatuses * residences * skills * taglines * urls * userDefined
    * @opt_param string requestMask.includeField **Required.** Comma-separated list
    * of person fields to be included in the response. Each path should start with
    * `person.`: for example, `person.names` or `person.photos`.
@@ -109,7 +109,7 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
    * coverPhotos * emailAddresses * events * genders * imClients * interests *
    * locales * memberships * metadata * names * nicknames * occupations *
    * organizations * phoneNumbers * photos * relations * relationshipInterests *
-   * relationshipStatuses * residences * skills * taglines * urls
+   * relationshipStatuses * residences * skills * taglines * urls * userDefined
    * @opt_param string requestMask.includeField **Required.** Comma-separated list
    * of person fields to be included in the response. Each path should start with
    * `person.`: for example, `person.names` or `person.photos`.
@@ -158,7 +158,7 @@ class Google_Service_PeopleService_Resource_People extends Google_Service_Resour
    *
    * * addresses * biographies * birthdays * emailAddresses * events * genders *
    * imClients * interests * locales * names * nicknames * occupations *
-   * organizations * phoneNumbers * relations * residences * urls
+   * organizations * phoneNumbers * relations * residences * urls * userDefined
    * @return Google_Service_PeopleService_Person
    */
   public function updateContact($resourceName, Google_Service_PeopleService_Person $postBody, $optParams = array())
