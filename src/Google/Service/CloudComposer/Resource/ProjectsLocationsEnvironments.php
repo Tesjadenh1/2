@@ -29,7 +29,7 @@ class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironments extend
    * Create a new environment. (environments.create)
    *
    * @param string $parent The parent must be of the form
-   * `projects/{projectId}/locations/{locationId}`.
+   * "projects/{projectId}/locations/{locationId}".
    * @param Google_Service_CloudComposer_Environment $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudComposer_Operation
@@ -44,7 +44,7 @@ class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironments extend
    * Delete an environment. (environments.delete)
    *
    * @param string $name The environment to delete, in the form:
-   * `projects/{projectId}/locations/{locationId}/environments/{environmentId}`
+   * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudComposer_Operation
    */
@@ -58,7 +58,7 @@ class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironments extend
    * Get an existing environment. (environments.get)
    *
    * @param string $name The resource name of the environment to get, in the form:
-   * `projects/{projectId}/locations/{locationId}/environments/{environmentId}`
+   * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
    * @param array $optParams Optional parameters.
    * @return Google_Service_CloudComposer_Environment
    */
@@ -72,7 +72,7 @@ class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironments extend
    * List environments. (environments.listProjectsLocationsEnvironments)
    *
    * @param string $parent List environments in the given project and location, in
-   * the form: `projects/{projectId}/locations/{locationId}`
+   * the form: "projects/{projectId}/locations/{locationId}"
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken The next_page_token value returned from a
@@ -91,7 +91,7 @@ class Google_Service_CloudComposer_Resource_ProjectsLocationsEnvironments extend
    *
    * @param string $name The relative resource name of the environment to update,
    * in the form:
-   * `projects/{projectId}/locations/{locationId}/environments/{environmentId}`
+   * "projects/{projectId}/locations/{locationId}/environments/{environmentId}"
    * @param Google_Service_CloudComposer_Environment $postBody
    * @param array $optParams Optional parameters.
    *
