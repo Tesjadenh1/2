@@ -39,7 +39,10 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
     return $this->call('batchDelete', array($params), "Google_Service_JobService_JobsEmpty");
   }
   /**
-   * Creates a new job. (jobs.create)
+   * Creates a new job.
+   *
+   * Typically, the job becomes searchable within 10 seconds, but it may take up
+   * to 5 minutes. (jobs.create)
    *
    * @param Google_Service_JobService_CreateJobRequest $postBody
    * @param array $optParams Optional parameters.
@@ -52,9 +55,10 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
     return $this->call('create', array($params), "Google_Service_JobService_Job");
   }
   /**
-   * Deletes the specified job. You can specify whether to synchronously wait for
-   * validation, indexing, and general processing to be completed before the
-   * response is returned. (jobs.delete)
+   * Deletes the specified job.
+   *
+   * Typically, the job becomes unsearchable within 10 seconds, but it may take up
+   * to 5 minutes. (jobs.delete)
    *
    * @param string $name Required.
    *
@@ -95,8 +99,8 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
     return $this->call('deleteByFilter', array($params), "Google_Service_JobService_JobsEmpty");
   }
   /**
-   * Retrieves the specified job, whose status is OPEN or recently EXPIRED in 60
-   * days. (jobs.get)
+   * Retrieves the specified job, whose status is OPEN or recently EXPIRED within
+   * the last 90 days. (jobs.get)
    *
    * @param string $name Required.
    *
@@ -139,20 +143,6 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter Required.
-   *
-   * The filter string specifies the jobs to be enumerated.
-   *
-   * Supported operator: =, AND
-   *
-   * The fields eligible for filtering are:
-   *
-   * * `companyName` (Required) * `requisitionId` (Optional)
-   *
-   * Sample Query:
-   *
-   * * companyName = "companies/123" * companyName = "companies/123" AND
-   * requisitionId = "req-1"
    * @opt_param string pageToken Optional.
    *
    * The starting point of a query result.
@@ -172,6 +162,20 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
    * A typical use case is to synchronize job repositories.
    *
    * Defaults to false.
+   * @opt_param string filter Required.
+   *
+   * The filter string specifies the jobs to be enumerated.
+   *
+   * Supported operator: =, AND
+   *
+   * The fields eligible for filtering are:
+   *
+   * * `companyName` (Required) * `requisitionId` (Optional)
+   *
+   * Sample Query:
+   *
+   * * companyName = "companies/123" * companyName = "companies/123" AND
+   * requisitionId = "req-1"
    * @return Google_Service_JobService_ListJobsResponse
    */
   public function listJobs($optParams = array())
@@ -181,13 +185,10 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
     return $this->call('list', array($params), "Google_Service_JobService_ListJobsResponse");
   }
   /**
-   * Updates the specified job. You can specify whether to synchronously wait for
-   * validation, indexing, and general processing to be completed before the
-   * response is returned.
+   * Updates the specified job.
    *
-   * If this call is executed synchronously, the returned job is guaranteed to be
-   * fully processed and complete upon response. The `companyName` and
-   * `distributorCompanyId` job fields cannot be updated. (jobs.patch)
+   * Typically, the updated contents become visible in search results within 10
+   * seconds, but it may take up to 5 minutes. (jobs.patch)
    *
    * @param string $name Required during job update.
    *

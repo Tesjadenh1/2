@@ -90,6 +90,10 @@ class Google_Service_JobService extends Google_Service
               'path' => 'v2/companies',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'mustHaveOpenJobs' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -97,10 +101,6 @@ class Google_Service_JobService extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'mustHaveOpenJobs' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
                 ),
               ),
             ),'patch' => array(
@@ -211,10 +211,6 @@ class Google_Service_JobService extends Google_Service
               'path' => 'v2/jobs',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -226,6 +222,10 @@ class Google_Service_JobService extends Google_Service
                 'idsOnly' => array(
                   'location' => 'query',
                   'type' => 'boolean',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(

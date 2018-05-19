@@ -76,13 +76,6 @@ class Google_Service_JobService_Resource_Companies extends Google_Service_Resour
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken Optional.
-   *
-   * The starting indicator from which to return results.
-   * @opt_param int pageSize Optional.
-   *
-   * The maximum number of companies to be returned, at most 100. Default is 100
-   * if a non-positive number is provided.
    * @opt_param bool mustHaveOpenJobs Optional.
    *
    * Set to true if the companies request must have open jobs.
@@ -91,6 +84,13 @@ class Google_Service_JobService_Resource_Companies extends Google_Service_Resour
    *
    * If true, at most page_size of companies are fetched, among which only those
    * with open jobs are returned.
+   * @opt_param string pageToken Optional.
+   *
+   * The starting indicator from which to return results.
+   * @opt_param int pageSize Optional.
+   *
+   * The maximum number of companies to be returned, at most 100. Default is 100
+   * if a non-positive number is provided.
    * @return Google_Service_JobService_ListCompaniesResponse
    */
   public function listCompanies($optParams = array())
