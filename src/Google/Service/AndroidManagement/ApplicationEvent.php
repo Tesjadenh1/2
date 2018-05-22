@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_ServiceConsumerManagement_CustomAuthRequirements extends Google_Model
+class Google_Service_AndroidManagement_ApplicationEvent extends Google_Model
 {
-  public $provider;
+  public $createTime;
+  public $eventType;
 
-  public function setProvider($provider)
+  public function setCreateTime($createTime)
   {
-    $this->provider = $provider;
+    $this->createTime = $createTime;
   }
-  public function getProvider()
+  public function getCreateTime()
   {
-    return $this->provider;
+    return $this->createTime;
+  }
+  public function setEventType($eventType)
+  {
+    $this->eventType = $eventType;
+  }
+  public function getEventType()
+  {
+    return $this->eventType;
   }
 }

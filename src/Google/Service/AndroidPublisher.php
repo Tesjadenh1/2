@@ -45,6 +45,7 @@ class Google_Service_AndroidPublisher extends Google_Service
   public $edits_testers;
   public $edits_tracks;
   public $inappproducts;
+  public $orders;
   public $purchases_products;
   public $purchases_subscriptions;
   public $purchases_voidedpurchases;
@@ -934,6 +935,35 @@ class Google_Service_AndroidPublisher extends Google_Service
                   'required' => true,
                 ),
                 'autoConvertMissingPrices' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->orders = new Google_Service_AndroidPublisher_Resource_Orders(
+        $this,
+        $this->serviceName,
+        'orders',
+        array(
+          'methods' => array(
+            'refund' => array(
+              'path' => '{packageName}/orders/{orderId}:refund',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'packageName' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'revoke' => array(
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
