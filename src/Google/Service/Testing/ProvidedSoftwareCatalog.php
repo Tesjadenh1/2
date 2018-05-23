@@ -15,14 +15,16 @@
  * the License.
  */
 
-/**
- * The "groups" collection of methods.
- * Typical usage is:
- *  <code>
- *   $cloudiotService = new Google_Service_CloudIot(...);
- *   $groups = $cloudiotService->groups;
- *  </code>
- */
-class Google_Service_CloudIot_Resource_ProjectsLocationsGroups extends Google_Service_Resource
+class Google_Service_Testing_ProvidedSoftwareCatalog extends Google_Model
 {
+  public $orchestratorVersion;
+
+  public function setOrchestratorVersion($orchestratorVersion)
+  {
+    $this->orchestratorVersion = $orchestratorVersion;
+  }
+  public function getOrchestratorVersion()
+  {
+    return $this->orchestratorVersion;
+  }
 }
