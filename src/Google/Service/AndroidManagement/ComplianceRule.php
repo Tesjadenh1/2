@@ -15,15 +15,13 @@
  * the License.
  */
 
-class Google_Service_AndroidManagement_ComplianceRule extends Google_Collection
+class Google_Service_AndroidManagement_ComplianceRule extends Google_Model
 {
-  protected $collection_key = 'packageNamesToDisable';
   protected $apiLevelConditionType = 'Google_Service_AndroidManagement_ApiLevelCondition';
   protected $apiLevelConditionDataType = '';
   public $disableApps;
   protected $nonComplianceDetailConditionType = 'Google_Service_AndroidManagement_NonComplianceDetailCondition';
   protected $nonComplianceDetailConditionDataType = '';
-  public $packageNamesToDisable;
 
   /**
    * @param Google_Service_AndroidManagement_ApiLevelCondition
@@ -60,13 +58,5 @@ class Google_Service_AndroidManagement_ComplianceRule extends Google_Collection
   public function getNonComplianceDetailCondition()
   {
     return $this->nonComplianceDetailCondition;
-  }
-  public function setPackageNamesToDisable($packageNamesToDisable)
-  {
-    $this->packageNamesToDisable = $packageNamesToDisable;
-  }
-  public function getPackageNamesToDisable()
-  {
-    return $this->packageNamesToDisable;
   }
 }
