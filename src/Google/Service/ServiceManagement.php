@@ -84,10 +84,6 @@ class Google_Service_ServiceManagement extends Google_Service
               'path' => 'v1/operations',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'name' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -99,6 +95,10 @@ class Google_Service_ServiceManagement extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),

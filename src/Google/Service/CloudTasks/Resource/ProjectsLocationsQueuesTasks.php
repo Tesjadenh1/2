@@ -34,13 +34,7 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
    * The worker must acknowledge a task within the lease_duration or the lease
    * will expire and the task will become available to be leased again. After the
    * task is acknowledged, it will not be returned by a later LeaseTasks, GetTask,
-   * or ListTasks.
-   *
-   * To acknowledge multiple tasks at the same time, use [HTTP
-   * batching](/storage/docs/json_api/v1/how-tos/batch) or the batching
-   * documentation for your client library, for example
-   * https://developers.google.com/api-client-library/python/guide/batch.
-   * (tasks.acknowledge)
+   * or ListTasks. (tasks.acknowledge)
    *
    * @param string $name Required.
    *
@@ -79,11 +73,6 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks extends Go
   }
   /**
    * Creates a task and adds it to a queue.
-   *
-   * To add multiple tasks at the same time, use [HTTP
-   * batching](/storage/docs/json_api/v1/how-tos/batch) or the batching
-   * documentation for your client library, for example
-   * https://developers.google.com/api-client-library/python/guide/batch.
    *
    * Tasks cannot be updated after creation; there is no UpdateTask command.
    *

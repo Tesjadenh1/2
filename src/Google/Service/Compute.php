@@ -3639,6 +3639,30 @@ class Google_Service_Compute extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'patch' => array(
+              'path' => '{project}/regions/{region}/interconnectAttachments/{interconnectAttachment}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'region' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'interconnectAttachment' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),
           )
         )
@@ -6589,6 +6613,25 @@ class Google_Service_Compute extends Google_Service
                   'type' => 'string',
                 ),
                 'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'setQuicOverride' => array(
+              'path' => '{project}/global/targetHttpsProxies/{targetHttpsProxy}/setQuicOverride',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'targetHttpsProxy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
