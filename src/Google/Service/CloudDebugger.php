@@ -85,13 +85,13 @@ class Google_Service_CloudDebugger extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'successOnTimeout' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
                 'waitToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'successOnTimeout' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'update' => array(
@@ -193,18 +193,6 @@ class Google_Service_CloudDebugger extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'waitToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'clientVersion' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'action.value' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'includeInactive' => array(
                   'location' => 'query',
                   'type' => 'boolean',
@@ -216,6 +204,18 @@ class Google_Service_CloudDebugger extends Google_Service
                 'stripResults' => array(
                   'location' => 'query',
                   'type' => 'boolean',
+                ),
+                'waitToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'clientVersion' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'action.value' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'set' => array(

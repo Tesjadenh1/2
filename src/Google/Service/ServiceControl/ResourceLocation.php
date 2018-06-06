@@ -15,26 +15,17 @@
  * the License.
  */
 
-class Google_Service_Speech_SpeechContext extends Google_Collection
+class Google_Service_ServiceControl_ResourceLocation extends Google_Collection
 {
-  protected $collection_key = 'phrases';
-  public $biasingStrength;
-  public $phrases;
+  protected $collection_key = 'currentLocations';
+  public $currentLocations;
 
-  public function setBiasingStrength($biasingStrength)
+  public function setCurrentLocations($currentLocations)
   {
-    $this->biasingStrength = $biasingStrength;
+    $this->currentLocations = $currentLocations;
   }
-  public function getBiasingStrength()
+  public function getCurrentLocations()
   {
-    return $this->biasingStrength;
-  }
-  public function setPhrases($phrases)
-  {
-    $this->phrases = $phrases;
-  }
-  public function getPhrases()
-  {
-    return $this->phrases;
+    return $this->currentLocations;
   }
 }
