@@ -663,6 +663,10 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'listposdataproviders' => array(
+              'path' => 'liasettings/posdataproviders',
+              'httpMethod' => 'GET',
+              'parameters' => array(),
             ),'patch' => array(
               'path' => '{merchantId}/liasettings/{accountId}',
               'httpMethod' => 'PATCH',
@@ -748,6 +752,33 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                 ),
                 'language' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'setposdataprovider' => array(
+              'path' => '{merchantId}/liasettings/{accountId}/setposdataprovider',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accountId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'country' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'posDataProviderId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'posExternalAccountId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

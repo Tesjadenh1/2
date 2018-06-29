@@ -136,14 +136,6 @@ class Google_Service_JobService extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'includeJobsCount' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'idsOnly' => array(
                   'location' => 'query',
                   'type' => 'boolean',
@@ -153,6 +145,14 @@ class Google_Service_JobService extends Google_Service
                   'type' => 'integer',
                 ),
                 'jobRequisitionId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'includeJobsCount' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -211,10 +211,6 @@ class Google_Service_JobService extends Google_Service
               'path' => 'v2/jobs',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -224,6 +220,10 @@ class Google_Service_JobService extends Google_Service
                   'type' => 'boolean',
                 ),
                 'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -260,6 +260,14 @@ class Google_Service_JobService extends Google_Service
               'path' => 'v2:complete',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'languageCode' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'type' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'companyName' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -273,14 +281,6 @@ class Google_Service_JobService extends Google_Service
                   'type' => 'integer',
                 ),
                 'query' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'languageCode' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'type' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
