@@ -36,6 +36,17 @@ class Google_Service_JobService_Resource_CompaniesJobs extends Google_Service_Re
    * "companies/0000aaaa-1111-bbbb-2222-cccc3333dddd".
    * @param array $optParams Optional parameters.
    *
+   * @opt_param bool includeJobsCount Deprecated. Please DO NOT use this field
+   * except for small companies. Suggest counting jobs page by page instead.
+   *
+   * Optional.
+   *
+   * Set to true if the total number of open jobs is to be returned.
+   *
+   * Defaults to false.
+   * @opt_param string pageToken Optional.
+   *
+   * The starting point of a query result.
    * @opt_param bool idsOnly Optional.
    *
    * If set to `true`, only job ID, job requisition ID and language code will be
@@ -58,17 +69,6 @@ class Google_Service_JobService_Resource_CompaniesJobs extends Google_Service_Re
    * job.
    *
    * The maximum number of allowable characters is 225.
-   * @opt_param bool includeJobsCount Deprecated. Please DO NOT use this field
-   * except for small companies. Suggest counting jobs page by page instead.
-   *
-   * Optional.
-   *
-   * Set to true if the total number of open jobs is to be returned.
-   *
-   * Defaults to false.
-   * @opt_param string pageToken Optional.
-   *
-   * The starting point of a query result.
    * @return Google_Service_JobService_ListCompanyJobsResponse
    */
   public function listCompaniesJobs($companyName, $optParams = array())

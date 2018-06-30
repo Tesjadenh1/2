@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_Firestore_IndexField extends Google_Model
+class Google_Service_ServiceManagement_MetricDescriptorMetadata extends Google_Model
 {
-  public $fieldPath;
-  public $mode;
+  public $ingestDelay;
+  public $launchStage;
+  public $samplePeriod;
 
-  public function setFieldPath($fieldPath)
+  public function setIngestDelay($ingestDelay)
   {
-    $this->fieldPath = $fieldPath;
+    $this->ingestDelay = $ingestDelay;
   }
-  public function getFieldPath()
+  public function getIngestDelay()
   {
-    return $this->fieldPath;
+    return $this->ingestDelay;
   }
-  public function setMode($mode)
+  public function setLaunchStage($launchStage)
   {
-    $this->mode = $mode;
+    $this->launchStage = $launchStage;
   }
-  public function getMode()
+  public function getLaunchStage()
   {
-    return $this->mode;
+    return $this->launchStage;
+  }
+  public function setSamplePeriod($samplePeriod)
+  {
+    $this->samplePeriod = $samplePeriod;
+  }
+  public function getSamplePeriod()
+  {
+    return $this->samplePeriod;
   }
 }

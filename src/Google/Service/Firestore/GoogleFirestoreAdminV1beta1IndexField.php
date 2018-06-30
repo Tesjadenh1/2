@@ -15,6 +15,25 @@
  * the License.
  */
 
-class Google_Service_ServiceUsage_EnableServiceRequest extends Google_Model
+class Google_Service_Firestore_GoogleFirestoreAdminV1beta1IndexField extends Google_Model
 {
+  public $fieldPath;
+  public $mode;
+
+  public function setFieldPath($fieldPath)
+  {
+    $this->fieldPath = $fieldPath;
+  }
+  public function getFieldPath()
+  {
+    return $this->fieldPath;
+  }
+  public function setMode($mode)
+  {
+    $this->mode = $mode;
+  }
+  public function getMode()
+  {
+    return $this->mode;
+  }
 }

@@ -143,22 +143,6 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Optional.
-   *
-   * The maximum number of jobs to be returned per page of results.
-   *
-   * If ids_only is set to true, the maximum allowed page size is 1000. Otherwise,
-   * the maximum allowed page size is 100.
-   *
-   * Default is 100 if empty or a number < 1 is specified.
-   * @opt_param bool idsOnly Optional.
-   *
-   * If set to `true`, only Job.name, Job.requisition_id and Job.language_code
-   * will be returned.
-   *
-   * A typical use case is to synchronize job repositories.
-   *
-   * Defaults to false.
    * @opt_param string filter Required.
    *
    * The filter string specifies the jobs to be enumerated.
@@ -176,6 +160,22 @@ class Google_Service_JobService_Resource_Jobs extends Google_Service_Resource
    * @opt_param string pageToken Optional.
    *
    * The starting point of a query result.
+   * @opt_param int pageSize Optional.
+   *
+   * The maximum number of jobs to be returned per page of results.
+   *
+   * If ids_only is set to true, the maximum allowed page size is 1000. Otherwise,
+   * the maximum allowed page size is 100.
+   *
+   * Default is 100 if empty or a number < 1 is specified.
+   * @opt_param bool idsOnly Optional.
+   *
+   * If set to `true`, only Job.name, Job.requisition_id and Job.language_code
+   * will be returned.
+   *
+   * A typical use case is to synchronize job repositories.
+   *
+   * Defaults to false.
    * @return Google_Service_JobService_ListJobsResponse
    */
   public function listJobs($optParams = array())

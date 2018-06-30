@@ -15,22 +15,22 @@
  * the License.
  */
 
-class Google_Service_Firestore_ListIndexesResponse extends Google_Collection
+class Google_Service_Firestore_GoogleFirestoreAdminV1beta1ListIndexesResponse extends Google_Collection
 {
   protected $collection_key = 'indexes';
-  protected $indexesType = 'Google_Service_Firestore_Index';
+  protected $indexesType = 'Google_Service_Firestore_GoogleFirestoreAdminV1beta1Index';
   protected $indexesDataType = 'array';
   public $nextPageToken;
 
   /**
-   * @param Google_Service_Firestore_Index
+   * @param Google_Service_Firestore_GoogleFirestoreAdminV1beta1Index
    */
   public function setIndexes($indexes)
   {
     $this->indexes = $indexes;
   }
   /**
-   * @return Google_Service_Firestore_Index
+   * @return Google_Service_Firestore_GoogleFirestoreAdminV1beta1Index
    */
   public function getIndexes()
   {

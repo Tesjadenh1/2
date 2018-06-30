@@ -15,17 +15,6 @@
  * the License.
  */
 
-class Google_Service_ServiceUsage_BatchEnableServicesRequest extends Google_Collection
+class Google_Service_ServiceUsage_CancelOperationRequest extends Google_Model
 {
-  protected $collection_key = 'serviceIds';
-  public $serviceIds;
-
-  public function setServiceIds($serviceIds)
-  {
-    $this->serviceIds = $serviceIds;
-  }
-  public function getServiceIds()
-  {
-    return $this->serviceIds;
-  }
 }

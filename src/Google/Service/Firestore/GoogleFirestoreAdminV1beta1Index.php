@@ -15,11 +15,11 @@
  * the License.
  */
 
-class Google_Service_Firestore_Index extends Google_Collection
+class Google_Service_Firestore_GoogleFirestoreAdminV1beta1Index extends Google_Collection
 {
   protected $collection_key = 'fields';
   public $collectionId;
-  protected $fieldsType = 'Google_Service_Firestore_IndexField';
+  protected $fieldsType = 'Google_Service_Firestore_GoogleFirestoreAdminV1beta1IndexField';
   protected $fieldsDataType = 'array';
   public $name;
   public $state;
@@ -33,14 +33,14 @@ class Google_Service_Firestore_Index extends Google_Collection
     return $this->collectionId;
   }
   /**
-   * @param Google_Service_Firestore_IndexField
+   * @param Google_Service_Firestore_GoogleFirestoreAdminV1beta1IndexField
    */
   public function setFields($fields)
   {
     $this->fields = $fields;
   }
   /**
-   * @return Google_Service_Firestore_IndexField
+   * @return Google_Service_Firestore_GoogleFirestoreAdminV1beta1IndexField
    */
   public function getFields()
   {

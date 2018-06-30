@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Firestore_Operation extends Google_Model
+class Google_Service_Firestore_GoogleLongrunningOperation extends Google_Model
 {
   public $done;
   protected $errorType = 'Google_Service_Firestore_Status';
