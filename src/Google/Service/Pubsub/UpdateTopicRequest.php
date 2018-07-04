@@ -15,25 +15,32 @@
  * the License.
  */
 
-class Google_Service_Pubsub_Topic extends Google_Model
+class Google_Service_Pubsub_UpdateTopicRequest extends Google_Model
 {
-  public $labels;
-  public $name;
+  protected $topicType = 'Google_Service_Pubsub_Topic';
+  protected $topicDataType = '';
+  public $updateMask;
 
-  public function setLabels($labels)
+  /**
+   * @param Google_Service_Pubsub_Topic
+   */
+  public function setTopic(Google_Service_Pubsub_Topic $topic)
   {
-    $this->labels = $labels;
+    $this->topic = $topic;
   }
-  public function getLabels()
+  /**
+   * @return Google_Service_Pubsub_Topic
+   */
+  public function getTopic()
   {
-    return $this->labels;
+    return $this->topic;
   }
-  public function setName($name)
+  public function setUpdateMask($updateMask)
   {
-    $this->name = $name;
+    $this->updateMask = $updateMask;
   }
-  public function getName()
+  public function getUpdateMask()
   {
-    return $this->name;
+    return $this->updateMask;
   }
 }
