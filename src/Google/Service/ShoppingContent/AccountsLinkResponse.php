@@ -15,17 +15,16 @@
  * the License.
  */
 
-class Google_Service_ServiceUsage_GoogleApiServiceusageV1beta1OperationMetadata extends Google_Collection
+class Google_Service_ShoppingContent_AccountsLinkResponse extends Google_Model
 {
-  protected $collection_key = 'resourceNames';
-  public $resourceNames;
+  public $kind;
 
-  public function setResourceNames($resourceNames)
+  public function setKind($kind)
   {
-    $this->resourceNames = $resourceNames;
+    $this->kind = $kind;
   }
-  public function getResourceNames()
+  public function getKind()
   {
-    return $this->resourceNames;
+    return $this->kind;
   }
 }

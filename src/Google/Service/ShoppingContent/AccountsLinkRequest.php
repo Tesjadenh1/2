@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_ServiceUsage_Step extends Google_Model
+class Google_Service_ShoppingContent_AccountsLinkRequest extends Google_Model
 {
-  public $description;
-  public $status;
+  public $action;
+  public $linkType;
+  public $linkedAccountId;
 
-  public function setDescription($description)
+  public function setAction($action)
   {
-    $this->description = $description;
+    $this->action = $action;
   }
-  public function getDescription()
+  public function getAction()
   {
-    return $this->description;
+    return $this->action;
   }
-  public function setStatus($status)
+  public function setLinkType($linkType)
   {
-    $this->status = $status;
+    $this->linkType = $linkType;
   }
-  public function getStatus()
+  public function getLinkType()
   {
-    return $this->status;
+    return $this->linkType;
+  }
+  public function setLinkedAccountId($linkedAccountId)
+  {
+    $this->linkedAccountId = $linkedAccountId;
+  }
+  public function getLinkedAccountId()
+  {
+    return $this->linkedAccountId;
   }
 }
