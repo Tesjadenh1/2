@@ -15,28 +15,12 @@
  * the License.
  */
 
-class Google_Service_Compute_BackendServiceCdnPolicy extends Google_Collection
+class Google_Service_Compute_BackendBucketCdnPolicy extends Google_Collection
 {
   protected $collection_key = 'signedUrlKeyNames';
-  protected $cacheKeyPolicyType = 'Google_Service_Compute_CacheKeyPolicy';
-  protected $cacheKeyPolicyDataType = '';
   public $signedUrlCacheMaxAgeSec;
   public $signedUrlKeyNames;
 
-  /**
-   * @param Google_Service_Compute_CacheKeyPolicy
-   */
-  public function setCacheKeyPolicy(Google_Service_Compute_CacheKeyPolicy $cacheKeyPolicy)
-  {
-    $this->cacheKeyPolicy = $cacheKeyPolicy;
-  }
-  /**
-   * @return Google_Service_Compute_CacheKeyPolicy
-   */
-  public function getCacheKeyPolicy()
-  {
-    return $this->cacheKeyPolicy;
-  }
   public function setSignedUrlCacheMaxAgeSec($signedUrlCacheMaxAgeSec)
   {
     $this->signedUrlCacheMaxAgeSec = $signedUrlCacheMaxAgeSec;
