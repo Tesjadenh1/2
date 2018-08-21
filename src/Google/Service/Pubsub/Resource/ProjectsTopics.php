@@ -134,8 +134,7 @@ class Google_Service_Pubsub_Resource_ProjectsTopics extends Google_Service_Resou
   }
   /**
    * Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic does
-   * not exist. The message payload must not be empty; it must contain  either a
-   * non-empty data field, or at least one attribute. (topics.publish)
+   * not exist. (topics.publish)
    *
    * @param string $topic The messages in the request will be published on this
    * topic. Format is `projects/{project}/topics/{topic}`.

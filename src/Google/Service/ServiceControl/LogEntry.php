@@ -20,6 +20,8 @@ class Google_Service_ServiceControl_LogEntry extends Google_Model
   public $insertId;
   public $labels;
   public $name;
+  protected $operationType = 'Google_Service_ServiceControl_LogEntryOperation';
+  protected $operationDataType = '';
   public $protoPayload;
   public $severity;
   public $structPayload;
@@ -49,6 +51,20 @@ class Google_Service_ServiceControl_LogEntry extends Google_Model
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param Google_Service_ServiceControl_LogEntryOperation
+   */
+  public function setOperation(Google_Service_ServiceControl_LogEntryOperation $operation)
+  {
+    $this->operation = $operation;
+  }
+  /**
+   * @return Google_Service_ServiceControl_LogEntryOperation
+   */
+  public function getOperation()
+  {
+    return $this->operation;
   }
   public function setProtoPayload($protoPayload)
   {

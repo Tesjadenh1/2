@@ -95,8 +95,8 @@ class Google_Service_SQLAdmin_Resource_Instances extends Google_Service_Resource
     return $this->call('demoteMaster', array($params), "Google_Service_SQLAdmin_Operation");
   }
   /**
-   * Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a
-   * MySQL dump file. (instances.export)
+   * Exports data from a Cloud SQL instance to a Cloud Storage bucket as a SQL
+   * dump or CSV file. (instances.export)
    *
    * @param string $project Project ID of the project that contains the instance
    * to be exported.
@@ -145,7 +145,7 @@ class Google_Service_SQLAdmin_Resource_Instances extends Google_Service_Resource
     return $this->call('get', array($params), "Google_Service_SQLAdmin_DatabaseInstance");
   }
   /**
-   * Imports data into a Cloud SQL instance from a MySQL dump file in Google Cloud
+   * Imports data into a Cloud SQL instance from a SQL dump or CSV file in Cloud
    * Storage. (instances.import)
    *
    * @param string $project Project ID of the project that contains the instance.

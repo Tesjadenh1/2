@@ -26,7 +26,7 @@
 class Google_Service_Compute_Resource_BackendBuckets extends Google_Service_Resource
 {
   /**
-   * Adds the given Signed URL Key to the backend bucket.
+   * Adds a key for validating requests with signed URLs for this backend bucket.
    * (backendBuckets.addSignedUrlKey)
    *
    * @param string $project Project ID for this request.
@@ -83,8 +83,8 @@ class Google_Service_Compute_Resource_BackendBuckets extends Google_Service_Reso
     return $this->call('delete', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Deletes the given Signed URL Key from the backend bucket.
-   * (backendBuckets.deleteSignedUrlKey)
+   * Deletes a key for validating requests with signed URLs for this backend
+   * bucket. (backendBuckets.deleteSignedUrlKey)
    *
    * @param string $project Project ID for this request.
    * @param string $backendBucket Name of the BackendBucket resource to which the

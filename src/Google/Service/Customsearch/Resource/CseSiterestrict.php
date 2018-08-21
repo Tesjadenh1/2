@@ -26,9 +26,9 @@
 class Google_Service_Customsearch_Resource_CseSiterestrict extends Google_Service_Resource
 {
   /**
-   * (Closed Beta API) Returns metadata about the search performed, metadata about
-   * the custom search engine used for the search, and the search results only for
-   * site-restrict cses. (siterestrict.listCseSiterestrict)
+   * Returns metadata about the search performed, metadata about the custom search
+   * engine used for the search, and the search results. Uses a small set of url
+   * patterns. (siterestrict.listCseSiterestrict)
    *
    * @param string $q Query
    * @param array $optParams Optional parameters.

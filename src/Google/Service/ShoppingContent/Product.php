@@ -102,6 +102,7 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   public $sizeSystem;
   public $sizeType;
   public $sizes;
+  public $source;
   public $targetCountry;
   protected $taxesType = 'Google_Service_ShoppingContent_ProductTax';
   protected $taxesDataType = 'array';
@@ -757,6 +758,14 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   public function getSizes()
   {
     return $this->sizes;
+  }
+  public function setSource($source)
+  {
+    $this->source = $source;
+  }
+  public function getSource()
+  {
+    return $this->source;
   }
   public function setTargetCountry($targetCountry)
   {

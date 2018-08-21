@@ -1055,6 +1055,10 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'country' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'instorerefundlineitem' => array(
               'path' => '{merchantId}/orders/{orderId}/inStoreRefundLineItem',

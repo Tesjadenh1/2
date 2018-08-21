@@ -19,11 +19,11 @@
  * Service definition for CloudProfiler (v2).
  *
  * <p>
- * Allows Google services manage the continuous profiling information.</p>
+ * Manages continuous profiling information.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://cloud.google.com/" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/profiler/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.

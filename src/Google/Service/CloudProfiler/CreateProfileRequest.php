@@ -20,7 +20,6 @@ class Google_Service_CloudProfiler_CreateProfileRequest extends Google_Collectio
   protected $collection_key = 'profileType';
   protected $deploymentType = 'Google_Service_CloudProfiler_Deployment';
   protected $deploymentDataType = '';
-  protected $profileDataType = '';
   public $profileType;
 
   /**
@@ -36,20 +35,6 @@ class Google_Service_CloudProfiler_CreateProfileRequest extends Google_Collectio
   public function getDeployment()
   {
     return $this->deployment;
-  }
-  /**
-   * @param Google_Service_CloudProfiler_Profile
-   */
-  public function setProfile(Google_Service_CloudProfiler_Profile $profile)
-  {
-    $this->profile = $profile;
-  }
-  /**
-   * @return Google_Service_CloudProfiler_Profile
-   */
-  public function getProfile()
-  {
-    return $this->profile;
   }
   public function setProfileType($profileType)
   {
