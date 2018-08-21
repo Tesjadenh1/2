@@ -17,6 +17,8 @@
 
 class Google_Service_ServiceControl_LogEntry extends Google_Model
 {
+  protected $httpRequestType = 'Google_Service_ServiceControl_HttpRequest';
+  protected $httpRequestDataType = '';
   public $insertId;
   public $labels;
   public $name;
@@ -27,7 +29,22 @@ class Google_Service_ServiceControl_LogEntry extends Google_Model
   public $structPayload;
   public $textPayload;
   public $timestamp;
+  public $trace;
 
+  /**
+   * @param Google_Service_ServiceControl_HttpRequest
+   */
+  public function setHttpRequest(Google_Service_ServiceControl_HttpRequest $httpRequest)
+  {
+    $this->httpRequest = $httpRequest;
+  }
+  /**
+   * @return Google_Service_ServiceControl_HttpRequest
+   */
+  public function getHttpRequest()
+  {
+    return $this->httpRequest;
+  }
   public function setInsertId($insertId)
   {
     $this->insertId = $insertId;
@@ -105,5 +122,13 @@ class Google_Service_ServiceControl_LogEntry extends Google_Model
   public function getTimestamp()
   {
     return $this->timestamp;
+  }
+  public function setTrace($trace)
+  {
+    $this->trace = $trace;
+  }
+  public function getTrace()
+  {
+    return $this->trace;
   }
 }

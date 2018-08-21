@@ -96,8 +96,8 @@ class Google_Service_Pubsub_Resource_ProjectsTopics extends Google_Service_Resou
   /**
    * Lists matching topics. (topics.listProjectsTopics)
    *
-   * @param string $project The name of the cloud project that topics belong to.
-   * Format is `projects/{project}`.
+   * @param string $project The name of the project in which to list topics.
+   * Format is `projects/{project-id}`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken The value returned by the last

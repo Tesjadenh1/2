@@ -225,7 +225,7 @@ class Google_Service_ShoppingContent_Resource_Orders extends Google_Service_Reso
     return $this->call('list', array($params), "Google_Service_ShoppingContent_OrdersListResponse");
   }
   /**
-   * Refund a portion of the order, up to the full amount paid. (orders.refund)
+   * Deprecated, please use returnRefundLineItem instead. (orders.refund)
    *
    * @param string $merchantId The ID of the account that manages the order. This
    * cannot be a multi-client account.

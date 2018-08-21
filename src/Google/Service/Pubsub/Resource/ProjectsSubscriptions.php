@@ -125,8 +125,8 @@ class Google_Service_Pubsub_Resource_ProjectsSubscriptions extends Google_Servic
   /**
    * Lists matching subscriptions. (subscriptions.listProjectsSubscriptions)
    *
-   * @param string $project The name of the cloud project that subscriptions
-   * belong to. Format is `projects/{project}`.
+   * @param string $project The name of the project in which to list
+   * subscriptions. Format is `projects/{project-id}`.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string pageToken The value returned by the last
