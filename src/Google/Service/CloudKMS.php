@@ -19,8 +19,11 @@
  * Service definition for CloudKMS (v1).
  *
  * <p>
- * Manages encryption for your cloud services the same way you do on-premises.
- * You can generate, use, rotate, and destroy AES256 encryption keys.</p>
+ * Cloud KMS allows you to keep cryptographic keys in one central cloud service,
+ * for direct use by other cloud resources and applications. With Cloud KMS you
+ * are the ultimate custodian of your data, you can manage encryption in the
+ * cloud the same way you do on-premises, and you have a provable and
+ * monitorable root of trust over your data.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -78,10 +81,6 @@ class Google_Service_CloudKMS extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -89,6 +88,10 @@ class Google_Service_CloudKMS extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -246,15 +249,15 @@ class Google_Service_CloudKMS extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'versionView' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
