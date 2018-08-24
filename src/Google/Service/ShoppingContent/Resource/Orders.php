@@ -168,7 +168,8 @@ class Google_Service_ShoppingContent_Resource_Orders extends Google_Service_Reso
     return $this->call('gettestordertemplate', array($params), "Google_Service_ShoppingContent_OrdersGetTestOrderTemplateResponse");
   }
   /**
-   * Notifies that item return and refund was handled directly in store.
+   * Notifies that item return and refund was handled directly by merchant outside
+   * of Google payments processing (e.g. cash refund done in store).
    * (orders.instorerefundlineitem)
    *
    * @param string $merchantId The ID of the account that manages the order. This

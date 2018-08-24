@@ -23,10 +23,15 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public $canComment;
   public $canCopy;
   public $canDelete;
+  public $canDeleteChildren;
   public $canDownload;
   public $canEdit;
   public $canListChildren;
+  public $canMoveChildrenOutOfTeamDrive;
+  public $canMoveChildrenWithinTeamDrive;
   public $canMoveItemIntoTeamDrive;
+  public $canMoveItemOutOfTeamDrive;
+  public $canMoveItemWithinTeamDrive;
   public $canMoveTeamDriveItem;
   public $canReadRevisions;
   public $canReadTeamDrive;
@@ -34,6 +39,7 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public $canRename;
   public $canShare;
   public $canTrash;
+  public $canTrashChildren;
   public $canUntrash;
 
   public function setCanAddChildren($canAddChildren)
@@ -84,6 +90,14 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   {
     return $this->canDelete;
   }
+  public function setCanDeleteChildren($canDeleteChildren)
+  {
+    $this->canDeleteChildren = $canDeleteChildren;
+  }
+  public function getCanDeleteChildren()
+  {
+    return $this->canDeleteChildren;
+  }
   public function setCanDownload($canDownload)
   {
     $this->canDownload = $canDownload;
@@ -108,6 +122,22 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   {
     return $this->canListChildren;
   }
+  public function setCanMoveChildrenOutOfTeamDrive($canMoveChildrenOutOfTeamDrive)
+  {
+    $this->canMoveChildrenOutOfTeamDrive = $canMoveChildrenOutOfTeamDrive;
+  }
+  public function getCanMoveChildrenOutOfTeamDrive()
+  {
+    return $this->canMoveChildrenOutOfTeamDrive;
+  }
+  public function setCanMoveChildrenWithinTeamDrive($canMoveChildrenWithinTeamDrive)
+  {
+    $this->canMoveChildrenWithinTeamDrive = $canMoveChildrenWithinTeamDrive;
+  }
+  public function getCanMoveChildrenWithinTeamDrive()
+  {
+    return $this->canMoveChildrenWithinTeamDrive;
+  }
   public function setCanMoveItemIntoTeamDrive($canMoveItemIntoTeamDrive)
   {
     $this->canMoveItemIntoTeamDrive = $canMoveItemIntoTeamDrive;
@@ -115,6 +145,22 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public function getCanMoveItemIntoTeamDrive()
   {
     return $this->canMoveItemIntoTeamDrive;
+  }
+  public function setCanMoveItemOutOfTeamDrive($canMoveItemOutOfTeamDrive)
+  {
+    $this->canMoveItemOutOfTeamDrive = $canMoveItemOutOfTeamDrive;
+  }
+  public function getCanMoveItemOutOfTeamDrive()
+  {
+    return $this->canMoveItemOutOfTeamDrive;
+  }
+  public function setCanMoveItemWithinTeamDrive($canMoveItemWithinTeamDrive)
+  {
+    $this->canMoveItemWithinTeamDrive = $canMoveItemWithinTeamDrive;
+  }
+  public function getCanMoveItemWithinTeamDrive()
+  {
+    return $this->canMoveItemWithinTeamDrive;
   }
   public function setCanMoveTeamDriveItem($canMoveTeamDriveItem)
   {
@@ -171,6 +217,14 @@ class Google_Service_Drive_DriveFileCapabilities extends Google_Model
   public function getCanTrash()
   {
     return $this->canTrash;
+  }
+  public function setCanTrashChildren($canTrashChildren)
+  {
+    $this->canTrashChildren = $canTrashChildren;
+  }
+  public function getCanTrashChildren()
+  {
+    return $this->canTrashChildren;
   }
   public function setCanUntrash($canUntrash)
   {

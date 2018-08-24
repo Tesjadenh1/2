@@ -24,6 +24,7 @@ class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
   public $canChangeTeamMembersOnlyRestriction;
   public $canComment;
   public $canCopy;
+  public $canDeleteChildren;
   public $canDeleteTeamDrive;
   public $canDownload;
   public $canEdit;
@@ -34,6 +35,7 @@ class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
   public $canRename;
   public $canRenameTeamDrive;
   public $canShare;
+  public $canTrashChildren;
 
   public function setCanAddChildren($canAddChildren)
   {
@@ -90,6 +92,14 @@ class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
   public function getCanCopy()
   {
     return $this->canCopy;
+  }
+  public function setCanDeleteChildren($canDeleteChildren)
+  {
+    $this->canDeleteChildren = $canDeleteChildren;
+  }
+  public function getCanDeleteChildren()
+  {
+    return $this->canDeleteChildren;
   }
   public function setCanDeleteTeamDrive($canDeleteTeamDrive)
   {
@@ -170,5 +180,13 @@ class Google_Service_Drive_TeamDriveCapabilities extends Google_Model
   public function getCanShare()
   {
     return $this->canShare;
+  }
+  public function setCanTrashChildren($canTrashChildren)
+  {
+    $this->canTrashChildren = $canTrashChildren;
+  }
+  public function getCanTrashChildren()
+  {
+    return $this->canTrashChildren;
   }
 }
