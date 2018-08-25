@@ -19,7 +19,8 @@
  * Service definition for Firestore (v1).
  *
  * <p>
-</p>
+ * Accesses the NoSQL document database built for automatic scaling, high
+ * performance, and ease of application development.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -140,6 +141,10 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -147,10 +152,6 @@ class Google_Service_Firestore extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
