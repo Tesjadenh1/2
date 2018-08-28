@@ -76,6 +76,7 @@ class Google_Service_AndroidManagement_Policy extends Google_Collection
   protected $permittedInputMethodsDataType = '';
   protected $persistentPreferredActivitiesType = 'Google_Service_AndroidManagement_PersistentPreferredActivity';
   protected $persistentPreferredActivitiesDataType = 'array';
+  public $playStoreMode;
   public $privateKeySelectionEnabled;
   protected $recommendedGlobalProxyType = 'Google_Service_AndroidManagement_ProxyInfo';
   protected $recommendedGlobalProxyDataType = '';
@@ -548,6 +549,14 @@ class Google_Service_AndroidManagement_Policy extends Google_Collection
   public function getPersistentPreferredActivities()
   {
     return $this->persistentPreferredActivities;
+  }
+  public function setPlayStoreMode($playStoreMode)
+  {
+    $this->playStoreMode = $playStoreMode;
+  }
+  public function getPlayStoreMode()
+  {
+    return $this->playStoreMode;
   }
   public function setPrivateKeySelectionEnabled($privateKeySelectionEnabled)
   {

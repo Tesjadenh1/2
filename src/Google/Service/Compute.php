@@ -91,6 +91,7 @@ class Google_Service_Compute extends Google_Service
   public $regions;
   public $routers;
   public $routes;
+  public $securityPolicies;
   public $snapshots;
   public $sslCertificates;
   public $sslPolicies;
@@ -845,6 +846,25 @@ class Google_Service_Compute extends Google_Service
             ),'patch' => array(
               'path' => '{project}/global/backendServices/{backendService}',
               'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'backendService' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'setSecurityPolicy' => array(
+              'path' => '{project}/global/backendServices/{backendService}/setSecurityPolicy',
+              'httpMethod' => 'POST',
               'parameters' => array(
                 'project' => array(
                   'location' => 'path',
@@ -6511,6 +6531,181 @@ class Google_Service_Compute extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->securityPolicies = new Google_Service_Compute_Resource_SecurityPolicies(
+        $this,
+        $this->serviceName,
+        'securityPolicies',
+        array(
+          'methods' => array(
+            'addRule' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}/addRule',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'get' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'getRule' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}/getRule',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'priority' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'insert' => array(
+              'path' => '{project}/global/securityPolicies',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'list' => array(
+              'path' => '{project}/global/securityPolicies',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'orderBy' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patchRule' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}/patchRule',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'priority' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'removeRule' => array(
+              'path' => '{project}/global/securityPolicies/{securityPolicy}/removeRule',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'securityPolicy' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'priority' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),

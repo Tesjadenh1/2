@@ -58,7 +58,8 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('addAccessConfig', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Retrieves aggregated list of instances. (instances.aggregatedList)
+   * Retrieves aggregated list of all of the instances in your project across all
+   * regions and zones. (instances.aggregatedList)
    *
    * @param string $project Project ID for this request.
    * @param array $optParams Optional parameters.
@@ -250,7 +251,7 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('get', array($params), "Google_Service_Compute_Instance");
   }
   /**
-   * Returns the specified instance's serial port output.
+   * Returns the last 1 MB of serial port output from the specified instance.
    * (instances.getSerialPortOutput)
    *
    * @param string $project Project ID for this request.

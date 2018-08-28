@@ -24,6 +24,8 @@ class Google_Service_AndroidManagement_EnrollmentToken extends Google_Model
   public $oneTimeOnly;
   public $policyName;
   public $qrCode;
+  protected $userType = 'Google_Service_AndroidManagement_User';
+  protected $userDataType = '';
   public $value;
 
   public function setAdditionalData($additionalData)
@@ -81,6 +83,20 @@ class Google_Service_AndroidManagement_EnrollmentToken extends Google_Model
   public function getQrCode()
   {
     return $this->qrCode;
+  }
+  /**
+   * @param Google_Service_AndroidManagement_User
+   */
+  public function setUser(Google_Service_AndroidManagement_User $user)
+  {
+    $this->user = $user;
+  }
+  /**
+   * @return Google_Service_AndroidManagement_User
+   */
+  public function getUser()
+  {
+    return $this->user;
   }
   public function setValue($value)
   {
