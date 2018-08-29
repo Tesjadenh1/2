@@ -151,9 +151,9 @@ class Google_Service_CloudTasks_Resource_ProjectsLocationsQueues extends Google_
    * described in [Stackdriver's Advanced Logs
    * Filters](https://cloud.google.com/logging/docs/view/advanced_filters).
    *
-   * Sample filter "app_engine_http_target: *".
+   * Sample filter "state: PAUSED".
    *
-   * Note that using filters might cause fewer queues than the requested_page size
+   * Note that using filters might cause fewer queues than the requested page_size
    * to be returned.
    * @return Google_Service_CloudTasks_ListQueuesResponse
    */

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_AppEngineHttpTarget extends Google_Model
+class Google_Service_CloudTasks_AppEngineHttpQueue extends Google_Model
 {
   protected $appEngineRoutingOverrideType = 'Google_Service_CloudTasks_AppEngineRouting';
   protected $appEngineRoutingOverrideDataType = '';

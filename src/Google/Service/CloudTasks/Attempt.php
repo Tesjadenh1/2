@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_AttemptStatus extends Google_Model
+class Google_Service_CloudTasks_Attempt extends Google_Model
 {
   public $dispatchTime;
   protected $responseStatusType = 'Google_Service_CloudTasks_Status';
