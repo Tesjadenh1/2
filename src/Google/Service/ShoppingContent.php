@@ -1065,6 +1065,21 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'canceltestorderbycustomer' => array(
+              'path' => '{merchantId}/testorders/{orderId}/cancelByCustomer',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'createtestorder' => array(
               'path' => '{merchantId}/testorders',
               'httpMethod' => 'POST',
