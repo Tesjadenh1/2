@@ -222,7 +222,11 @@ class Google_Service_Pubsub_Resource_ProjectsSubscriptions extends Google_Servic
   }
   /**
    * Seeks an existing subscription to a point in time or to a given snapshot,
-   * whichever is provided in the request. ALPHA: This feature is part of an alpha
+   * whichever is provided in the request. Snapshots are used in Seek operations,
+   * which allow you to manage message acknowledgments in bulk. That is, you can
+   * set the acknowledgment state of messages in an existing subscription to the
+   * state captured by a snapshot. Note that both the subscription and the
+   * snapshot must be on the same topic. BETA: This feature is part of a beta
    * release. This API might be changed in backward-incompatible ways and is not
    * recommended for production use. It is not subject to any SLA or deprecation
    * policy. (subscriptions.seek)
