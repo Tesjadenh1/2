@@ -15,26 +15,6 @@
  * the License.
  */
 
-class Google_Service_ServiceControl_ResourceLocation extends Google_Collection
+class Google_Service_Genomics_RunPipelineResponse extends Google_Model
 {
-  protected $collection_key = 'originalLocations';
-  public $currentLocations;
-  public $originalLocations;
-
-  public function setCurrentLocations($currentLocations)
-  {
-    $this->currentLocations = $currentLocations;
-  }
-  public function getCurrentLocations()
-  {
-    return $this->currentLocations;
-  }
-  public function setOriginalLocations($originalLocations)
-  {
-    $this->originalLocations = $originalLocations;
-  }
-  public function getOriginalLocations()
-  {
-    return $this->originalLocations;
-  }
 }
