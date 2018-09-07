@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_CloudRedis_GoogleCloudCommonOperationMetadata extends Google_Model
+class Google_Service_CloudRedis_GoogleCloudRedisV1OperationMetadata extends Google_Model
 {
   public $apiVersion;
   public $cancelRequested;
