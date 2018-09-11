@@ -37,9 +37,6 @@ class Google_Service_CloudTalentSolution_Resource_Projects extends Google_Servic
    * project".
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string type Optional.
-   *
-   * The completion topic. The default is CompletionType.COMBINED.
    * @opt_param string scope Optional.
    *
    * The scope of the completion. The defaults is CompletionScope.PUBLIC.
@@ -75,6 +72,9 @@ class Google_Service_CloudTalentSolution_Resource_Projects extends Google_Servic
    * companies having open jobs with same language_code are returned.
    *
    * The maximum number of allowed characters is 255.
+   * @opt_param string type Optional.
+   *
+   * The completion topic. The default is CompletionType.COMBINED.
    * @return Google_Service_CloudTalentSolution_CompleteQueryResponse
    */
   public function complete($name, $optParams = array())
