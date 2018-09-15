@@ -852,15 +852,14 @@ class Google_Service_SQLAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'host' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'required' => true,
-                ),
                 'name' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'required' => true,
+                ),
+                'host' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),

@@ -19,7 +19,6 @@ class Google_Service_Testing_IosModel extends Google_Collection
 {
   protected $collection_key = 'tags';
   public $deviceCapabilities;
-  public $formFactor;
   public $id;
   public $name;
   public $supportedVersionIds;
@@ -32,14 +31,6 @@ class Google_Service_Testing_IosModel extends Google_Collection
   public function getDeviceCapabilities()
   {
     return $this->deviceCapabilities;
-  }
-  public function setFormFactor($formFactor)
-  {
-    $this->formFactor = $formFactor;
-  }
-  public function getFormFactor()
-  {
-    return $this->formFactor;
   }
   public function setId($id)
   {
