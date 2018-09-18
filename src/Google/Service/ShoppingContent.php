@@ -1090,6 +1090,21 @@ class Google_Service_ShoppingContent extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'createtestreturn' => array(
+              'path' => '{merchantId}/orders/{orderId}/testreturn',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'orderId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'custombatch' => array(
               'path' => 'orders/batch',
               'httpMethod' => 'POST',

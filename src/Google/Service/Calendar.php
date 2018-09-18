@@ -33,9 +33,18 @@ class Google_Service_Calendar extends Google_Service
   /** Manage your calendars. */
   const CALENDAR =
       "https://www.googleapis.com/auth/calendar";
+  /** View and edit events on all your calendars. */
+  const CALENDAR_EVENTS =
+      "https://www.googleapis.com/auth/calendar.events";
+  /** View events on all your calendars. */
+  const CALENDAR_EVENTS_READONLY =
+      "https://www.googleapis.com/auth/calendar.events.readonly";
   /** View your calendars. */
   const CALENDAR_READONLY =
       "https://www.googleapis.com/auth/calendar.readonly";
+  /** View your Calendar settings. */
+  const CALENDAR_SETTINGS_READONLY =
+      "https://www.googleapis.com/auth/calendar.settings.readonly";
 
   public $acl;
   public $calendarList;
