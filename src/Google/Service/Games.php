@@ -181,11 +181,20 @@ class Google_Service_Games extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'builtinGameId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'updateMultiple' => array(
               'path' => 'achievements/updateMultiple',
               'httpMethod' => 'POST',
-              'parameters' => array(),
+              'parameters' => array(
+                'builtinGameId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),
           )
         )
