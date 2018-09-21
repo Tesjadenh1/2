@@ -58,6 +58,8 @@ class Google_Service_Container_Cluster extends Google_Collection
   public $nodeIpv4CidrSize;
   protected $nodePoolsType = 'Google_Service_Container_NodePool';
   protected $nodePoolsDataType = 'array';
+  protected $privateClusterConfigType = 'Google_Service_Container_PrivateClusterConfig';
+  protected $privateClusterConfigDataType = '';
   public $resourceLabels;
   public $selfLink;
   public $servicesIpv4Cidr;
@@ -365,6 +367,20 @@ class Google_Service_Container_Cluster extends Google_Collection
   public function getNodePools()
   {
     return $this->nodePools;
+  }
+  /**
+   * @param Google_Service_Container_PrivateClusterConfig
+   */
+  public function setPrivateClusterConfig(Google_Service_Container_PrivateClusterConfig $privateClusterConfig)
+  {
+    $this->privateClusterConfig = $privateClusterConfig;
+  }
+  /**
+   * @return Google_Service_Container_PrivateClusterConfig
+   */
+  public function getPrivateClusterConfig()
+  {
+    return $this->privateClusterConfig;
   }
   public function setResourceLabels($resourceLabels)
   {

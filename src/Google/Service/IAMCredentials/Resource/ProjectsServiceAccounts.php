@@ -66,8 +66,8 @@ class Google_Service_IAMCredentials_Resource_ProjectsServiceAccounts extends Goo
    *
    * @param string $name The resource name of the service account for which the
    * credentials are requested, in the following format:
-   * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Using `-` as a
-   * wildcard for the project will infer the project from the account.
+   * `projects/-/serviceAccounts/{ACCOUNT_EMAIL_OR_UNIQUEID}`. Use hyphen as
+   * placeholder for project id since there is no project context for this API.
    * @param Google_Service_IAMCredentials_GenerateIdentityBindingAccessTokenRequest $postBody
    * @param array $optParams Optional parameters.
    * @return Google_Service_IAMCredentials_GenerateIdentityBindingAccessTokenResponse
