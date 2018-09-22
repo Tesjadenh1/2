@@ -83,10 +83,13 @@ class Google_Service_Dialogflow_Resource_ProjectsAgentIntents extends Google_Ser
     return $this->call('create', array($params), "Google_Service_Dialogflow_GoogleCloudDialogflowV2Intent");
   }
   /**
-   * Deletes the specified intent. (intents.delete)
+   * Deletes the specified intent and its direct or indirect followup intents.
+   * (intents.delete)
    *
-   * @param string $name Required. The name of the intent to delete. Format:
-   * `projects//agent/intents/`.
+   * @param string $name Required. The name of the intent to delete. If this
+   * intent has direct or indirect followup intents, we also delete them.
+   *
+   * Format: `projects//agent/intents/`.
    * @param array $optParams Optional parameters.
    * @return Google_Service_Dialogflow_GoogleProtobufEmpty
    */

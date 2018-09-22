@@ -37,25 +37,6 @@ class Google_Service_CloudTalentSolution_Resource_Projects extends Google_Servic
    * project".
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string scope Optional.
-   *
-   * The scope of the completion. The defaults is CompletionScope.PUBLIC.
-   * @opt_param string companyName Optional.
-   *
-   * If provided, restricts completion to specified company.
-   *
-   * The format is "projects/{project_id}/companies/{company_id}", for example,
-   * "projects/api-test-project/companies/foo".
-   * @opt_param int pageSize Required.
-   *
-   * Completion result count.
-   *
-   * The maximum allowed page size is 10.
-   * @opt_param string query Required.
-   *
-   * The query used to generate suggestions.
-   *
-   * The maximum number of allowed characters is 255.
    * @opt_param string languageCode Required.
    *
    * The language of the query. This is the BCP-47 language code, such as "en-US"
@@ -75,6 +56,25 @@ class Google_Service_CloudTalentSolution_Resource_Projects extends Google_Servic
    * @opt_param string type Optional.
    *
    * The completion topic. The default is CompletionType.COMBINED.
+   * @opt_param string scope Optional.
+   *
+   * The scope of the completion. The defaults is CompletionScope.PUBLIC.
+   * @opt_param string companyName Optional.
+   *
+   * If provided, restricts completion to specified company.
+   *
+   * The format is "projects/{project_id}/companies/{company_id}", for example,
+   * "projects/api-test-project/companies/foo".
+   * @opt_param int pageSize Required.
+   *
+   * Completion result count.
+   *
+   * The maximum allowed page size is 10.
+   * @opt_param string query Required.
+   *
+   * The query used to generate suggestions.
+   *
+   * The maximum number of allowed characters is 255.
    * @return Google_Service_CloudTalentSolution_CompleteQueryResponse
    */
   public function complete($name, $optParams = array())
