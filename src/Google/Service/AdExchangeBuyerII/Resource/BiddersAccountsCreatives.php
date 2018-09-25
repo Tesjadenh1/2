@@ -32,12 +32,14 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersAccountsCreatives extends
    * snippet quota. A deleted creative should not be used in bidding (all bids
    * with that creative will be rejected). (creatives.delete)
    *
-   * @param string $ownerName Name of the buyer account that owns the creative.
-   * Supports two cases: - For the buyer account representing bidder 123:
-   * `bidders/123/accounts/123/`
+   * @param string $ownerName Name of the owner (bidder or account) of the
+   * creative to be deleted. For example:
    *
-   * - For the child seat buyer account 456 whose bidder is 123:
-   * `bidders/123/accounts/456/`
+   * - For an account-level creative for the buyer account representing bidder
+   * 123: `bidders/123/accounts/123/`
+   *
+   * - For an account-level creative for the child seat buyer account 456   whose
+   * bidder is 123: `bidders/123/accounts/456/`
    * @param string $creativeId The ID of the creative to delete.
    * @param array $optParams Optional parameters.
    * @return Google_Service_AdExchangeBuyerII_Adexchangebuyer2Empty
