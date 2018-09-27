@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Compute_CustomerEncryptionKey extends Google_Model
+class Google_Service_ShoppingContent_ShipmentTrackingInfo extends Google_Model
 {
-  public $kmsKeyName;
-  public $rawKey;
-  public $sha256;
+  public $carrier;
+  public $trackingNumber;
 
-  public function setKmsKeyName($kmsKeyName)
+  public function setCarrier($carrier)
   {
-    $this->kmsKeyName = $kmsKeyName;
+    $this->carrier = $carrier;
   }
-  public function getKmsKeyName()
+  public function getCarrier()
   {
-    return $this->kmsKeyName;
+    return $this->carrier;
   }
-  public function setRawKey($rawKey)
+  public function setTrackingNumber($trackingNumber)
   {
-    $this->rawKey = $rawKey;
+    $this->trackingNumber = $trackingNumber;
   }
-  public function getRawKey()
+  public function getTrackingNumber()
   {
-    return $this->rawKey;
-  }
-  public function setSha256($sha256)
-  {
-    $this->sha256 = $sha256;
-  }
-  public function getSha256()
-  {
-    return $this->sha256;
+    return $this->trackingNumber;
   }
 }

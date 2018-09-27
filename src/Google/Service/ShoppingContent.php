@@ -45,6 +45,7 @@ class Google_Service_ShoppingContent extends Google_Service
   public $orderinvoices;
   public $orderpayments;
   public $orderreports;
+  public $orderreturns;
   public $orders;
   public $pos;
   public $products;
@@ -978,17 +979,72 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'disbursementEndDate' => array(
+                'maxResults' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'disbursementStartDate' => array(
+                'transactionEndDate' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'transactionStartDate' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->orderreturns = new Google_Service_ShoppingContent_Resource_Orderreturns(
+        $this,
+        $this->serviceName,
+        'orderreturns',
+        array(
+          'methods' => array(
+            'get' => array(
+              'path' => '{merchantId}/orderreturns/{returnId}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'returnId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => '{merchantId}/orderreturns',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'createdEndDate' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'createdStartDate' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'maxResults' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'orderBy' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
                 'pageToken' => array(
                   'location' => 'query',

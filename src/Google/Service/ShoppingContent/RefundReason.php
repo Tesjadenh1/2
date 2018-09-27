@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Compute_CustomerEncryptionKey extends Google_Model
+class Google_Service_ShoppingContent_RefundReason extends Google_Model
 {
-  public $kmsKeyName;
-  public $rawKey;
-  public $sha256;
+  public $description;
+  public $reasonCode;
 
-  public function setKmsKeyName($kmsKeyName)
+  public function setDescription($description)
   {
-    $this->kmsKeyName = $kmsKeyName;
+    $this->description = $description;
   }
-  public function getKmsKeyName()
+  public function getDescription()
   {
-    return $this->kmsKeyName;
+    return $this->description;
   }
-  public function setRawKey($rawKey)
+  public function setReasonCode($reasonCode)
   {
-    $this->rawKey = $rawKey;
+    $this->reasonCode = $reasonCode;
   }
-  public function getRawKey()
+  public function getReasonCode()
   {
-    return $this->rawKey;
-  }
-  public function setSha256($sha256)
-  {
-    $this->sha256 = $sha256;
-  }
-  public function getSha256()
-  {
-    return $this->sha256;
+    return $this->reasonCode;
   }
 }
