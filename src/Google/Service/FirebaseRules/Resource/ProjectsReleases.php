@@ -102,7 +102,7 @@ class Google_Service_FirebaseRules_Resource_ProjectsReleases extends Google_Serv
    * @param array $optParams Optional parameters.
    *
    * @opt_param string executableVersion The requested runtime executable version.
-   * Defaults to FIREBASE_RULES_EXECUTABLE_V1
+   * Defaults to FIREBASE_RULES_EXECUTABLE_V1.
    * @return Google_Service_FirebaseRules_GetReleaseExecutableResponse
    */
   public function getExecutable($name, $optParams = array())

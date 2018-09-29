@@ -226,7 +226,12 @@ class Google_Service_Games extends Google_Service
             ),'played' => array(
               'path' => 'applications/played',
               'httpMethod' => 'POST',
-              'parameters' => array(),
+              'parameters' => array(
+                'builtinGameId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),'verify' => array(
               'path' => 'applications/{applicationId}/verify',
               'httpMethod' => 'GET',
