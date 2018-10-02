@@ -147,4 +147,31 @@ class Google_Service_CloudIot_Resource_ProjectsLocationsRegistriesDevices extend
     $params = array_merge($params, $optParams);
     return $this->call('patch', array($params), "Google_Service_CloudIot_Device");
   }
+  /**
+   * Sends a command to the specified device. In order for a device to be able to
+   * receive commands, it must: 1) be connected to Cloud IoT Core using the MQTT
+   * protocol, and 2) be subscribed to the group of MQTT topics specified by
+   * /devices/{device-id}/commands/#. This subscription will receive commands
+   * at the top-level topic /devices/{device-id}/commands as well as commands
+   * for subfolders, like /devices/{device-id}/commands/subfolder.    Note that
+   * subscribing to specific subfolders is not supported. If the command could not
+   * be delivered to the device, this method will return an error; in particular,
+   * if the device is not subscribed, this method will return FAILED_PRECONDITION.
+   * Otherwise, this method will return OK. If the subscription is QoS 1, at least
+   * once delivery will be guaranteed; for QoS 0, no acknowledgment will be
+   * expected from the device. (devices.sendCommandToDevice)
+   *
+   * @param string $name The name of the device. For example,
+   * `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
+   * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
+   * @param Google_Service_CloudIot_SendCommandToDeviceRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_CloudIot_SendCommandToDeviceResponse
+   */
+  public function sendCommandToDevice($name, Google_Service_CloudIot_SendCommandToDeviceRequest $postBody, $optParams = array())
+  {
+    $params = array('name' => $name, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('sendCommandToDevice', array($params), "Google_Service_CloudIot_SendCommandToDeviceResponse");
+  }
 }

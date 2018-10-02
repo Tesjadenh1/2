@@ -258,6 +258,16 @@ class Google_Service_CloudIot extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'sendCommandToDevice' => array(
+              'path' => 'v1/{+name}:sendCommandToDevice',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),
           )
         )
@@ -379,6 +389,11 @@ class Google_Service_CloudIot extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'deviceNumIds' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -392,11 +407,6 @@ class Google_Service_CloudIot extends Google_Service
                   'type' => 'integer',
                 ),
                 'deviceIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'deviceNumIds' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
@@ -424,6 +434,16 @@ class Google_Service_CloudIot extends Google_Service
                 'updateMask' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+              ),
+            ),'sendCommandToDevice' => array(
+              'path' => 'v1/{+name}:sendCommandToDevice',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),
