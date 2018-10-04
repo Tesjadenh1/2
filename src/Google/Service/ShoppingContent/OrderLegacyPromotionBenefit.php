@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_OrderPromotionBenefit extends Google_Collection
+class Google_Service_ShoppingContent_OrderLegacyPromotionBenefit extends Google_Collection
 {
   protected $collection_key = 'offerIds';
   protected $discountType = 'Google_Service_ShoppingContent_Price';

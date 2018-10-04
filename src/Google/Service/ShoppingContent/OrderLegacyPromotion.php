@@ -15,10 +15,10 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_OrderPromotion extends Google_Collection
+class Google_Service_ShoppingContent_OrderLegacyPromotion extends Google_Collection
 {
   protected $collection_key = 'benefits';
-  protected $benefitsType = 'Google_Service_ShoppingContent_OrderPromotionBenefit';
+  protected $benefitsType = 'Google_Service_ShoppingContent_OrderLegacyPromotionBenefit';
   protected $benefitsDataType = 'array';
   public $effectiveDates;
   public $genericRedemptionCode;
@@ -28,14 +28,14 @@ class Google_Service_ShoppingContent_OrderPromotion extends Google_Collection
   public $redemptionChannel;
 
   /**
-   * @param Google_Service_ShoppingContent_OrderPromotionBenefit
+   * @param Google_Service_ShoppingContent_OrderLegacyPromotionBenefit
    */
   public function setBenefits($benefits)
   {
     $this->benefits = $benefits;
   }
   /**
-   * @return Google_Service_ShoppingContent_OrderPromotionBenefit
+   * @return Google_Service_ShoppingContent_OrderLegacyPromotionBenefit
    */
   public function getBenefits()
   {

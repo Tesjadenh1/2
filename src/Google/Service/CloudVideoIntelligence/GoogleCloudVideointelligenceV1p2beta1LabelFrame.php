@@ -15,13 +15,10 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p1beta1WordInfo extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p2beta1LabelFrame extends Google_Model
 {
   public $confidence;
-  public $endTime;
-  public $speakerTag;
-  public $startTime;
-  public $word;
+  public $timeOffset;
 
   public function setConfidence($confidence)
   {
@@ -31,36 +28,12 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p1beta
   {
     return $this->confidence;
   }
-  public function setEndTime($endTime)
+  public function setTimeOffset($timeOffset)
   {
-    $this->endTime = $endTime;
+    $this->timeOffset = $timeOffset;
   }
-  public function getEndTime()
+  public function getTimeOffset()
   {
-    return $this->endTime;
-  }
-  public function setSpeakerTag($speakerTag)
-  {
-    $this->speakerTag = $speakerTag;
-  }
-  public function getSpeakerTag()
-  {
-    return $this->speakerTag;
-  }
-  public function setStartTime($startTime)
-  {
-    $this->startTime = $startTime;
-  }
-  public function getStartTime()
-  {
-    return $this->startTime;
-  }
-  public function setWord($word)
-  {
-    $this->word = $word;
-  }
-  public function getWord()
-  {
-    return $this->word;
+    return $this->timeOffset;
   }
 }

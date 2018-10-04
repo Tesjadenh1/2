@@ -948,11 +948,12 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'disbursementEndDate' => array(
+                'disbursementStartDate' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
-                'disbursementStartDate' => array(
+                'disbursementEndDate' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -979,6 +980,11 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'transactionStartDate' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'required' => true,
+                ),
                 'maxResults' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -988,10 +994,6 @@ class Google_Service_ShoppingContent extends Google_Service
                   'type' => 'string',
                 ),
                 'transactionEndDate' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'transactionStartDate' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
