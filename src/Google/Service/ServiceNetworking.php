@@ -16,15 +16,15 @@
  */
 
 /**
- * Service definition for ServiceNetworking (v1).
+ * Service definition for ServiceNetworking (v1beta).
  *
  * <p>
- * The Service Networking API provides automatic management of network
- * configurations necessary for certain services.</p>
+ * Provides automatic management of network configurations necessary for certain
+ * services.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://cloud.google.com/service-infrastructure/docs/service-networking/reference/rest/" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
@@ -39,6 +39,8 @@ class Google_Service_ServiceNetworking extends Google_Service
       "https://www.googleapis.com/auth/service.management";
 
   public $operations;
+  public $services;
+  public $services_connections;
   
   /**
    * Constructs the internal representation of the ServiceNetworking service.
@@ -50,7 +52,7 @@ class Google_Service_ServiceNetworking extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://servicenetworking.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1';
+    $this->version = 'v1beta';
     $this->serviceName = 'servicenetworking';
 
     $this->operations = new Google_Service_ServiceNetworking_Resource_Operations(
@@ -59,54 +61,66 @@ class Google_Service_ServiceNetworking extends Google_Service
         'operations',
         array(
           'methods' => array(
-            'cancel' => array(
-              'path' => 'v1/{+name}:cancel',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'delete' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1/{+name}',
+            'get' => array(
+              'path' => 'v1beta/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->services = new Google_Service_ServiceNetworking_Resource_Services(
+        $this,
+        $this->serviceName,
+        'services',
+        array(
+          'methods' => array(
+            'addSubnetwork' => array(
+              'path' => 'v1beta/{+parent}:addSubnetwork',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->services_connections = new Google_Service_ServiceNetworking_Resource_ServicesConnections(
+        $this,
+        $this->serviceName,
+        'connections',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1beta/{+parent}/connections',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'list' => array(
-              'path' => 'v1/{+name}',
+              'path' => 'v1beta/{+parent}/connections',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'name' => array(
+                'parent' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
+                'network' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

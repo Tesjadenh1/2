@@ -15,6 +15,6 @@
  * the License.
  */
 
-class Google_Service_ServiceNetworking_CancelOperationRequest extends Google_Model
+class Google_Service_Spanner_PartitionedDml extends Google_Model
 {
 }

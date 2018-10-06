@@ -15,6 +15,24 @@
  * the License.
  */
 
-class Google_Service_ServiceNetworking_ServicenetworkingEmpty extends Google_Model
+class Google_Service_ServiceNetworking_ListConnectionsResponse extends Google_Collection
 {
+  protected $collection_key = 'connections';
+  protected $connectionsType = 'Google_Service_ServiceNetworking_Connection';
+  protected $connectionsDataType = 'array';
+
+  /**
+   * @param Google_Service_ServiceNetworking_Connection
+   */
+  public function setConnections($connections)
+  {
+    $this->connections = $connections;
+  }
+  /**
+   * @return Google_Service_ServiceNetworking_Connection
+   */
+  public function getConnections()
+  {
+    return $this->connections;
+  }
 }
