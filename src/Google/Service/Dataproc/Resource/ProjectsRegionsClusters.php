@@ -61,6 +61,9 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsClusters extends Google_Se
    * @param string $clusterName Required. The cluster name.
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string clusterUuid Optional. Specifying the cluster_uuid means the
+   * RPC should fail (with error NOT_FOUND) if cluster with specified UUID does
+   * not exist.
    * @opt_param string requestId Optional. A unique id used to identify the
    * request. If the server receives two DeleteClusterRequest requests with the
    * same id, then the second request will be ignored and the first
@@ -69,9 +72,6 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsClusters extends Google_Se
    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The id must
    * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens
    * (-). The maximum length is 40 characters.
-   * @opt_param string clusterUuid Optional. Specifying the cluster_uuid means the
-   * RPC should fail (with error NOT_FOUND) if cluster with specified UUID does
-   * not exist.
    * @return Google_Service_Dataproc_Operation
    */
   public function delete($projectId, $region, $clusterName, $optParams = array())
@@ -176,6 +176,19 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsClusters extends Google_Se
    * @param Google_Service_Dataproc_Cluster $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string updateMask Required. Specifies the path, relative to
+   * Cluster, of the field to update. For example, to change the number of workers
+   * in a cluster to 5, the update_mask parameter would be specified as
+   * config.worker_config.num_instances, and the PATCH request body would specify
+   * the new value, as follows: {   "config":{     "workerConfig":{
+   * "numInstances":"5"     }   } } Similarly, to change the number of preemptible
+   * workers in a cluster to 5, the update_mask parameter would be
+   * config.secondary_worker_config.num_instances, and the PATCH request body
+   * would be set as follows: {   "config":{     "secondaryWorkerConfig":{
+   * "numInstances":"5"     }   } } Note: Currently, only the following fields can
+   * be updated:      Mask  Purpose      labels  Update labels
+   * config.worker_config.num_instances  Resize primary worker group
+   * config.secondary_worker_config.num_instances  Resize secondary worker group
    * @opt_param string gracefulDecommissionTimeout Optional. Timeout for graceful
    * YARN decomissioning. Graceful decommissioning allows removing nodes from the
    * cluster without interrupting jobs in progress. Timeout specifies how long to
@@ -191,19 +204,6 @@ class Google_Service_Dataproc_Resource_ProjectsRegionsClusters extends Google_Se
    * (https://en.wikipedia.org/wiki/Universally_unique_identifier).The id must
    * contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens
    * (-). The maximum length is 40 characters.
-   * @opt_param string updateMask Required. Specifies the path, relative to
-   * Cluster, of the field to update. For example, to change the number of workers
-   * in a cluster to 5, the update_mask parameter would be specified as
-   * config.worker_config.num_instances, and the PATCH request body would specify
-   * the new value, as follows: {   "config":{     "workerConfig":{
-   * "numInstances":"5"     }   } } Similarly, to change the number of preemptible
-   * workers in a cluster to 5, the update_mask parameter would be
-   * config.secondary_worker_config.num_instances, and the PATCH request body
-   * would be set as follows: {   "config":{     "secondaryWorkerConfig":{
-   * "numInstances":"5"     }   } } Note: Currently, only the following fields can
-   * be updated:      Mask  Purpose      labels  Update labels
-   * config.worker_config.num_instances  Resize primary worker group
-   * config.secondary_worker_config.num_instances  Resize secondary worker group
    * @return Google_Service_Dataproc_Operation
    */
   public function patch($projectId, $region, $clusterName, Google_Service_Dataproc_Cluster $postBody, $optParams = array())
