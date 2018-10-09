@@ -38,7 +38,7 @@ class Google_Service_Calendar_Resource_Events extends Google_Service_Resource
    *
    * Whether to send notifications about the deletion of the event. Note that some
    * emails might still be sent even if you set the value to false. The default is
-   * False.
+   * false.
    * @opt_param string sendUpdates Guests who should receive notifications about
    * the deletion of the event.
    */
@@ -122,10 +122,10 @@ class Google_Service_Calendar_Resource_Events extends Google_Service_Resource
    *
    * Whether to send notifications about the creation of the new event. Note that
    * some emails might still be sent even if you set the value to false. The
-   * default is False.
+   * default is false.
    * @opt_param string sendUpdates Whether to send notifications about the
    * creation of the new event. Note that some emails might still be sent. The
-   * default is False.
+   * default is false.
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Calendar_Event
@@ -285,7 +285,7 @@ class Google_Service_Calendar_Resource_Events extends Google_Service_Resource
    *
    * Whether to send notifications about the change of the event's organizer. Note
    * that some emails might still be sent even if you set the value to false. The
-   * default is False.
+   * default is false.
    * @opt_param string sendUpdates Guests who should receive notifications about
    * the change of the event's organizer.
    * @return Google_Service_Calendar_Event
@@ -322,11 +322,11 @@ class Google_Service_Calendar_Resource_Events extends Google_Service_Resource
    * participant is returned. Optional.
    * @opt_param bool sendNotifications Deprecated. Please use sendUpdates instead.
    *
-   * Whether to send notifications about the event update (e.g. description
-   * changes, etc.). Note that some emails might still be sent even if you set the
-   * value to false. The default is False.
+   * Whether to send notifications about the event update (for example,
+   * description changes, etc.). Note that some emails might still be sent even if
+   * you set the value to false. The default is false.
    * @opt_param string sendUpdates Guests who should receive notifications about
-   * the event update (e.g., attendee responses, title changes, etc.).
+   * the event update (for example, title changes, etc.).
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Calendar_Event
@@ -350,7 +350,7 @@ class Google_Service_Calendar_Resource_Events extends Google_Service_Resource
    *
    * Whether to send notifications about the creation of the event. Note that some
    * emails might still be sent even if you set the value to false. The default is
-   * False.
+   * false.
    * @opt_param string sendUpdates Guests who should receive notifications about
    * the creation of the new event.
    * @return Google_Service_Calendar_Event
@@ -387,11 +387,11 @@ class Google_Service_Calendar_Resource_Events extends Google_Service_Resource
    * participant is returned. Optional.
    * @opt_param bool sendNotifications Deprecated. Please use sendUpdates instead.
    *
-   * Whether to send notifications about the event update (e.g. description
-   * changes, etc.). Note that some emails might still be sent even if you set the
-   * value to false. The default is False.
+   * Whether to send notifications about the event update (for example,
+   * description changes, etc.). Note that some emails might still be sent even if
+   * you set the value to false. The default is false.
    * @opt_param string sendUpdates Guests who should receive notifications about
-   * the event update (e.g., attendee responses, title changes, etc.).
+   * the event update (for example, title changes, etc.).
    * @opt_param bool supportsAttachments Whether API client performing operation
    * supports event attachments. Optional. The default is False.
    * @return Google_Service_Calendar_Event

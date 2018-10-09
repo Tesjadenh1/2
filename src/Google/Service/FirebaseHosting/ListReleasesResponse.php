@@ -15,28 +15,13 @@
  * the License.
  */
 
-class Google_Service_AndroidProvisioningPartner_FindDevicesByOwnerResponse extends Google_Collection
+class Google_Service_FirebaseHosting_ListReleasesResponse extends Google_Collection
 {
-  protected $collection_key = 'devices';
-  protected $devicesType = 'Google_Service_AndroidProvisioningPartner_Device';
-  protected $devicesDataType = 'array';
+  protected $collection_key = 'releases';
   public $nextPageToken;
-  public $totalSize;
+  protected $releasesType = 'Google_Service_FirebaseHosting_Release';
+  protected $releasesDataType = 'array';
 
-  /**
-   * @param Google_Service_AndroidProvisioningPartner_Device
-   */
-  public function setDevices($devices)
-  {
-    $this->devices = $devices;
-  }
-  /**
-   * @return Google_Service_AndroidProvisioningPartner_Device
-   */
-  public function getDevices()
-  {
-    return $this->devices;
-  }
   public function setNextPageToken($nextPageToken)
   {
     $this->nextPageToken = $nextPageToken;
@@ -45,12 +30,18 @@ class Google_Service_AndroidProvisioningPartner_FindDevicesByOwnerResponse exten
   {
     return $this->nextPageToken;
   }
-  public function setTotalSize($totalSize)
+  /**
+   * @param Google_Service_FirebaseHosting_Release
+   */
+  public function setReleases($releases)
   {
-    $this->totalSize = $totalSize;
+    $this->releases = $releases;
   }
-  public function getTotalSize()
+  /**
+   * @return Google_Service_FirebaseHosting_Release
+   */
+  public function getReleases()
   {
-    return $this->totalSize;
+    return $this->releases;
   }
 }

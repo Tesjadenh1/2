@@ -15,27 +15,26 @@
  * the License.
  */
 
-class Google_Service_AndroidProvisioningPartner_FindDevicesByOwnerResponse extends Google_Collection
+class Google_Service_AlertCenter_ListAlertsResponse extends Google_Collection
 {
-  protected $collection_key = 'devices';
-  protected $devicesType = 'Google_Service_AndroidProvisioningPartner_Device';
-  protected $devicesDataType = 'array';
+  protected $collection_key = 'alerts';
+  protected $alertsType = 'Google_Service_AlertCenter_Alert';
+  protected $alertsDataType = 'array';
   public $nextPageToken;
-  public $totalSize;
 
   /**
-   * @param Google_Service_AndroidProvisioningPartner_Device
+   * @param Google_Service_AlertCenter_Alert
    */
-  public function setDevices($devices)
+  public function setAlerts($alerts)
   {
-    $this->devices = $devices;
+    $this->alerts = $alerts;
   }
   /**
-   * @return Google_Service_AndroidProvisioningPartner_Device
+   * @return Google_Service_AlertCenter_Alert
    */
-  public function getDevices()
+  public function getAlerts()
   {
-    return $this->devices;
+    return $this->alerts;
   }
   public function setNextPageToken($nextPageToken)
   {
@@ -44,13 +43,5 @@ class Google_Service_AndroidProvisioningPartner_FindDevicesByOwnerResponse exten
   public function getNextPageToken()
   {
     return $this->nextPageToken;
-  }
-  public function setTotalSize($totalSize)
-  {
-    $this->totalSize = $totalSize;
-  }
-  public function getTotalSize()
-  {
-    return $this->totalSize;
   }
 }
