@@ -16,261 +16,271 @@
  */
 
 /**
- * Service definition for CloudBuild (v1).
+ * Service definition for AccessContextManager (v1beta).
  *
  * <p>
- * Creates and manages builds on Google Cloud Platform.</p>
+ * An API for setting attribute based access control to requests to GCP
+ * services.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://cloud.google.com/cloud-build/docs/" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/access-context-manager/docs/reference/rest/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
  */
-class Google_Service_CloudBuild extends Google_Service
+class Google_Service_AccessContextManager extends Google_Service
 {
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
 
+  public $accessPolicies;
+  public $accessPolicies_accessLevels;
+  public $accessPolicies_servicePerimeters;
   public $operations;
-  public $projects_builds;
-  public $projects_triggers;
   
   /**
-   * Constructs the internal representation of the CloudBuild service.
+   * Constructs the internal representation of the AccessContextManager service.
    *
    * @param Google_Client $client
    */
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://cloudbuild.googleapis.com/';
+    $this->rootUrl = 'https://accesscontextmanager.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1';
-    $this->serviceName = 'cloudbuild';
+    $this->version = 'v1beta';
+    $this->serviceName = 'accesscontextmanager';
 
-    $this->operations = new Google_Service_CloudBuild_Resource_Operations(
+    $this->accessPolicies = new Google_Service_AccessContextManager_Resource_AccessPolicies(
         $this,
         $this->serviceName,
-        'operations',
-        array(
-          'methods' => array(
-            'cancel' => array(
-              'path' => 'v1/{+name}:cancel',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_builds = new Google_Service_CloudBuild_Resource_ProjectsBuilds(
-        $this,
-        $this->serviceName,
-        'builds',
-        array(
-          'methods' => array(
-            'cancel' => array(
-              'path' => 'v1/projects/{projectId}/builds/{id}:cancel',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'id' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'create' => array(
-              'path' => 'v1/projects/{projectId}/builds',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1/projects/{projectId}/builds/{id}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'id' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/projects/{projectId}/builds',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'retry' => array(
-              'path' => 'v1/projects/{projectId}/builds/{id}:retry',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'id' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_triggers = new Google_Service_CloudBuild_Resource_ProjectsTriggers(
-        $this,
-        $this->serviceName,
-        'triggers',
+        'accessPolicies',
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1/projects/{projectId}/triggers',
+              'path' => 'v1beta/accessPolicies',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'delete' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1beta/accessPolicies',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->accessPolicies_accessLevels = new Google_Service_AccessContextManager_Resource_AccessPoliciesAccessLevels(
+        $this,
+        $this->serviceName,
+        'accessLevels',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1beta/{+parent}/accessLevels',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'projectId' => array(
+                'parent' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'delete' => array(
-              'path' => 'v1/projects/{projectId}/triggers/{triggerId}',
+              'path' => 'v1beta/{+name}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'triggerId' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/projects/{projectId}/triggers/{triggerId}',
+              'path' => 'v1beta/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'projectId' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'triggerId' => array(
+                'accessLevelFormat' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1beta/{+parent}/accessLevels',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'accessLevelFormat' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->accessPolicies_servicePerimeters = new Google_Service_AccessContextManager_Resource_AccessPoliciesServicePerimeters(
+        $this,
+        $this->serviceName,
+        'servicePerimeters',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1beta/{+parent}/servicePerimeters',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
               ),
             ),'list' => array(
-              'path' => 'v1/projects/{projectId}/triggers',
+              'path' => 'v1beta/{+parent}/servicePerimeters',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'projectId' => array(
+                'parent' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'patch' => array(
-              'path' => 'v1/projects/{projectId}/triggers/{triggerId}',
+              'path' => 'v1beta/{+name}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
-                'projectId' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'triggerId' => array(
-                  'location' => 'path',
+                'updateMask' => array(
+                  'location' => 'query',
                   'type' => 'string',
-                  'required' => true,
                 ),
               ),
-            ),'run' => array(
-              'path' => 'v1/projects/{projectId}/triggers/{triggerId}:run',
-              'httpMethod' => 'POST',
+            ),
+          )
+        )
+    );
+    $this->operations = new Google_Service_AccessContextManager_Resource_Operations(
+        $this,
+        $this->serviceName,
+        'operations',
+        array(
+          'methods' => array(
+            'get' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'GET',
               'parameters' => array(
-                'projectId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'triggerId' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
