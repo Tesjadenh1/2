@@ -36,10 +36,10 @@ class Google_Service_AdExchangeBuyerII_Resource_BiddersAccountsCreatives extends
    * creative to be deleted. For example:
    *
    * - For an account-level creative for the buyer account representing bidder
-   * 123: `bidders/123/accounts/123/`
+   * 123: `bidders/123/accounts/123`
    *
    * - For an account-level creative for the child seat buyer account 456   whose
-   * bidder is 123: `bidders/123/accounts/456/`
+   * bidder is 123: `bidders/123/accounts/456`
    * @param string $creativeId The ID of the creative to delete.
    * @param array $optParams Optional parameters.
    * @return Google_Service_AdExchangeBuyerII_Adexchangebuyer2Empty

@@ -53,7 +53,7 @@ class Google_Service_AndroidPublisher_Resource_EditsBundles extends Google_Servi
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool ackBundleInstallationWarning Must be set to true if the
-   * bundle installation may trigger a warning on user devices (i.e. if
+   * bundle installation may trigger a warning on user devices (for example, if
    * installation size may be over a threshold, typically 100 MB).
    * @return Google_Service_AndroidPublisher_Bundle
    */
