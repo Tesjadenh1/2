@@ -19,7 +19,7 @@
  * Service definition for Script (v1).
  *
  * <p>
- * An API for managing and executing Google Apps Script projects.</p>
+ * Manages and executes Google Apps Script projects.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -96,18 +96,6 @@ class Google_Service_Script extends Google_Service
               'path' => 'v1/processes',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'userProcessFilter.deploymentId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'userProcessFilter.endTime' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -133,21 +121,37 @@ class Google_Service_Script extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'userProcessFilter.statuses' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                  'repeated' => true,
+                ),
                 'userProcessFilter.types' => array(
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
                 ),
-                'userProcessFilter.statuses' => array(
+                'userProcessFilter.deploymentId' => array(
                   'location' => 'query',
                   'type' => 'string',
-                  'repeated' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'userProcessFilter.endTime' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'listScriptProcesses' => array(
               'path' => 'v1/processes:listScriptProcesses',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'scriptProcessFilter.endTime' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -186,10 +190,6 @@ class Google_Service_Script extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),
@@ -385,13 +385,13 @@ class Google_Service_Script extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),

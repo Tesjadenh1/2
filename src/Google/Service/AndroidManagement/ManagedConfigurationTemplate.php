@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_Vault_MailExportOptions extends Google_Model
+class Google_Service_AndroidManagement_ManagedConfigurationTemplate extends Google_Model
 {
-  public $exportFormat;
-  public $showConfidentialModeContent;
+  public $configurationVariables;
+  public $templateId;
 
-  public function setExportFormat($exportFormat)
+  public function setConfigurationVariables($configurationVariables)
   {
-    $this->exportFormat = $exportFormat;
+    $this->configurationVariables = $configurationVariables;
   }
-  public function getExportFormat()
+  public function getConfigurationVariables()
   {
-    return $this->exportFormat;
+    return $this->configurationVariables;
   }
-  public function setShowConfidentialModeContent($showConfidentialModeContent)
+  public function setTemplateId($templateId)
   {
-    $this->showConfidentialModeContent = $showConfidentialModeContent;
+    $this->templateId = $templateId;
   }
-  public function getShowConfidentialModeContent()
+  public function getTemplateId()
   {
-    return $this->showConfidentialModeContent;
+    return $this->templateId;
   }
 }

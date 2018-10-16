@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_Vault_MailExportOptions extends Google_Model
+class Google_Service_AndroidManagement_SigninDetail extends Google_Model
 {
-  public $exportFormat;
-  public $showConfidentialModeContent;
+  public $qrCode;
+  public $signinEnrollmentToken;
+  public $signinUrl;
 
-  public function setExportFormat($exportFormat)
+  public function setQrCode($qrCode)
   {
-    $this->exportFormat = $exportFormat;
+    $this->qrCode = $qrCode;
   }
-  public function getExportFormat()
+  public function getQrCode()
   {
-    return $this->exportFormat;
+    return $this->qrCode;
   }
-  public function setShowConfidentialModeContent($showConfidentialModeContent)
+  public function setSigninEnrollmentToken($signinEnrollmentToken)
   {
-    $this->showConfidentialModeContent = $showConfidentialModeContent;
+    $this->signinEnrollmentToken = $signinEnrollmentToken;
   }
-  public function getShowConfidentialModeContent()
+  public function getSigninEnrollmentToken()
   {
-    return $this->showConfidentialModeContent;
+    return $this->signinEnrollmentToken;
+  }
+  public function setSigninUrl($signinUrl)
+  {
+    $this->signinUrl = $signinUrl;
+  }
+  public function getSigninUrl()
+  {
+    return $this->signinUrl;
   }
 }
