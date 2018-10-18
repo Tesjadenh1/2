@@ -49,8 +49,8 @@ class Google_Service_ShoppingContent_Resource_Orderreports extends Google_Servic
     return $this->call('listdisbursements', array($params), "Google_Service_ShoppingContent_OrderreportsListDisbursementsResponse");
   }
   /**
-   * Retrieves a list of transactions for an disbursement from your Merchant
-   * Center account. (orderreports.listtransactions)
+   * Retrieves a list of transactions for a disbursement from your Merchant Center
+   * account. (orderreports.listtransactions)
    *
    * @param string $merchantId The ID of the account that manages the order. This
    * cannot be a multi-client account.
