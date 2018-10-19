@@ -23,7 +23,7 @@
  *   $monitoredResourceDescriptors = $monitoringService->monitoredResourceDescriptors;
  *  </code>
  */
-class Google_Service_Monitoring_Resource_ProjectsMonitoredResourceDescriptors extends Google_Service_Resource
+class Google_Service_Monitoring_Resource_MonitoredResourceDescriptors extends Google_Service_Resource
 {
   /**
    * Gets a single monitored resource descriptor. This method does not require a
@@ -44,7 +44,7 @@ class Google_Service_Monitoring_Resource_ProjectsMonitoredResourceDescriptors ex
   /**
    * Lists monitored resource descriptors that match a filter. This method does
    * not require a Stackdriver account.
-   * (monitoredResourceDescriptors.listProjectsMonitoredResourceDescriptors)
+   * (monitoredResourceDescriptors.listMonitoredResourceDescriptors)
    *
    * @param string $name The project on which to execute the request. The format
    * is "projects/{project_id_or_number}".
@@ -63,7 +63,7 @@ class Google_Service_Monitoring_Resource_ProjectsMonitoredResourceDescriptors ex
    * results to return.
    * @return Google_Service_Monitoring_ListMonitoredResourceDescriptorsResponse
    */
-  public function listProjectsMonitoredResourceDescriptors($name, $optParams = array())
+  public function listMonitoredResourceDescriptors($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);

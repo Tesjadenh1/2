@@ -72,15 +72,6 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken Optional. A token identifying a page of results
-   * the server should return. If empty, a new iteration is started. To continue
-   * an iteration, pass in the value from the previous ListAlertsResponse's
-   * next_page_token field.
-   * @opt_param string orderBy Optional. Sort the list results by a certain order.
-   * If not specified results may be returned in arbitrary order. You can sort the
-   * results in a descending order based on the creation timestamp using
-   * order_by="create_time desc". Currently, only sorting by create_time desc is
-   * supported.
    * @opt_param string customerId Optional. The unique identifier of the Google
    * account of the customer the alerts are associated with. This is obfuscated
    * and not the plain customer ID as stored internally. Inferred from the caller
@@ -154,6 +145,15 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
    * phishing":
    *
    * `type:"User reported phishing" source:"Gmail phishing"`
+   * @opt_param string pageToken Optional. A token identifying a page of results
+   * the server should return. If empty, a new iteration is started. To continue
+   * an iteration, pass in the value from the previous ListAlertsResponse's
+   * next_page_token field.
+   * @opt_param string orderBy Optional. Sort the list results by a certain order.
+   * If not specified results may be returned in arbitrary order. You can sort the
+   * results in a descending order based on the creation timestamp using
+   * order_by="create_time desc". Currently, only sorting by create_time desc is
+   * supported.
    * @return Google_Service_AlertCenter_ListAlertsResponse
    */
   public function listAlerts($optParams = array())
