@@ -23,6 +23,7 @@ class Google_Service_ServiceNetworking_AddSubnetworkRequest extends Google_Colle
   public $description;
   public $ipPrefixLength;
   public $region;
+  public $requestedAddress;
   public $subnetwork;
   public $subnetworkUsers;
 
@@ -65,6 +66,14 @@ class Google_Service_ServiceNetworking_AddSubnetworkRequest extends Google_Colle
   public function getRegion()
   {
     return $this->region;
+  }
+  public function setRequestedAddress($requestedAddress)
+  {
+    $this->requestedAddress = $requestedAddress;
+  }
+  public function getRequestedAddress()
+  {
+    return $this->requestedAddress;
   }
   public function setSubnetwork($subnetwork)
   {

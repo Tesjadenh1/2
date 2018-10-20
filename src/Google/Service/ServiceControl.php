@@ -19,8 +19,8 @@
  * Service definition for ServiceControl (v1).
  *
  * <p>
- * Google Service Control provides control plane functionality to managed
- * services, such as logging, monitoring, and status checks.</p>
+ * Provides control plane functionality to managed services, such as logging,
+ * monitoring, and status checks.</p>
  *
  * <p>
  * For more information about this service, see the API
