@@ -15,35 +15,25 @@
  * the License.
  */
 
-class Google_Service_AndroidEnterprise_ProductPolicy extends Google_Collection
+class Google_Service_AndroidEnterprise_TrackInfo extends Google_Model
 {
-  protected $collection_key = 'tracks';
-  public $productId;
-  public $trackIds;
-  public $tracks;
+  public $trackAlias;
+  public $trackId;
 
-  public function setProductId($productId)
+  public function setTrackAlias($trackAlias)
   {
-    $this->productId = $productId;
+    $this->trackAlias = $trackAlias;
   }
-  public function getProductId()
+  public function getTrackAlias()
   {
-    return $this->productId;
+    return $this->trackAlias;
   }
-  public function setTrackIds($trackIds)
+  public function setTrackId($trackId)
   {
-    $this->trackIds = $trackIds;
+    $this->trackId = $trackId;
   }
-  public function getTrackIds()
+  public function getTrackId()
   {
-    return $this->trackIds;
-  }
-  public function setTracks($tracks)
-  {
-    $this->tracks = $tracks;
-  }
-  public function getTracks()
-  {
-    return $this->tracks;
+    return $this->trackId;
   }
 }
