@@ -25,6 +25,7 @@ class Google_Service_ShoppingContent_Inventory extends Google_Model
   public $customLabel4;
   protected $installmentType = 'Google_Service_ShoppingContent_Installment';
   protected $installmentDataType = '';
+  public $instoreProductLocation;
   public $kind;
   protected $loyaltyPointsType = 'Google_Service_ShoppingContent_LoyaltyPoints';
   protected $loyaltyPointsDataType = '';
@@ -99,6 +100,14 @@ class Google_Service_ShoppingContent_Inventory extends Google_Model
   public function getInstallment()
   {
     return $this->installment;
+  }
+  public function setInstoreProductLocation($instoreProductLocation)
+  {
+    $this->instoreProductLocation = $instoreProductLocation;
+  }
+  public function getInstoreProductLocation()
+  {
+    return $this->instoreProductLocation;
   }
   public function setKind($kind)
   {

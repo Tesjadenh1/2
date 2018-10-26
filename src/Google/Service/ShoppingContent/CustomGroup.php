@@ -15,22 +15,22 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_ProductCustomGroup extends Google_Collection
+class Google_Service_ShoppingContent_CustomGroup extends Google_Collection
 {
   protected $collection_key = 'attributes';
-  protected $attributesType = 'Google_Service_ShoppingContent_ProductCustomAttribute';
+  protected $attributesType = 'Google_Service_ShoppingContent_CustomAttribute';
   protected $attributesDataType = 'array';
   public $name;
 
   /**
-   * @param Google_Service_ShoppingContent_ProductCustomAttribute
+   * @param Google_Service_ShoppingContent_CustomAttribute
    */
   public function setAttributes($attributes)
   {
     $this->attributes = $attributes;
   }
   /**
-   * @return Google_Service_ShoppingContent_ProductCustomAttribute
+   * @return Google_Service_ShoppingContent_CustomAttribute
    */
   public function getAttributes()
   {

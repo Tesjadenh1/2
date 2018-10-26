@@ -15,43 +15,32 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_ProductCustomAttribute extends Google_Model
+class Google_Service_CloudFunctions_SetIamPolicyRequest extends Google_Model
 {
-  public $name;
-  public $type;
-  public $unit;
-  public $value;
+  protected $policyType = 'Google_Service_CloudFunctions_Policy';
+  protected $policyDataType = '';
+  public $updateMask;
 
-  public function setName($name)
+  /**
+   * @param Google_Service_CloudFunctions_Policy
+   */
+  public function setPolicy(Google_Service_CloudFunctions_Policy $policy)
   {
-    $this->name = $name;
+    $this->policy = $policy;
   }
-  public function getName()
+  /**
+   * @return Google_Service_CloudFunctions_Policy
+   */
+  public function getPolicy()
   {
-    return $this->name;
+    return $this->policy;
   }
-  public function setType($type)
+  public function setUpdateMask($updateMask)
   {
-    $this->type = $type;
+    $this->updateMask = $updateMask;
   }
-  public function getType()
+  public function getUpdateMask()
   {
-    return $this->type;
-  }
-  public function setUnit($unit)
-  {
-    $this->unit = $unit;
-  }
-  public function getUnit()
-  {
-    return $this->unit;
-  }
-  public function setValue($value)
-  {
-    $this->value = $value;
-  }
-  public function getValue()
-  {
-    return $this->value;
+    return $this->updateMask;
   }
 }

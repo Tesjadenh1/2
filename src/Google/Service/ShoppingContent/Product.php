@@ -36,9 +36,9 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
   public $contentLanguage;
   protected $costOfGoodsSoldType = 'Google_Service_ShoppingContent_Price';
   protected $costOfGoodsSoldDataType = '';
-  protected $customAttributesType = 'Google_Service_ShoppingContent_ProductCustomAttribute';
+  protected $customAttributesType = 'Google_Service_ShoppingContent_CustomAttribute';
   protected $customAttributesDataType = 'array';
-  protected $customGroupsType = 'Google_Service_ShoppingContent_ProductCustomGroup';
+  protected $customGroupsType = 'Google_Service_ShoppingContent_CustomGroup';
   protected $customGroupsDataType = 'array';
   public $customLabel0;
   public $customLabel1;
@@ -256,28 +256,28 @@ class Google_Service_ShoppingContent_Product extends Google_Collection
     return $this->costOfGoodsSold;
   }
   /**
-   * @param Google_Service_ShoppingContent_ProductCustomAttribute
+   * @param Google_Service_ShoppingContent_CustomAttribute
    */
   public function setCustomAttributes($customAttributes)
   {
     $this->customAttributes = $customAttributes;
   }
   /**
-   * @return Google_Service_ShoppingContent_ProductCustomAttribute
+   * @return Google_Service_ShoppingContent_CustomAttribute
    */
   public function getCustomAttributes()
   {
     return $this->customAttributes;
   }
   /**
-   * @param Google_Service_ShoppingContent_ProductCustomGroup
+   * @param Google_Service_ShoppingContent_CustomGroup
    */
   public function setCustomGroups($customGroups)
   {
     $this->customGroups = $customGroups;
   }
   /**
-   * @return Google_Service_ShoppingContent_ProductCustomGroup
+   * @return Google_Service_ShoppingContent_CustomGroup
    */
   public function getCustomGroups()
   {
