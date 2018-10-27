@@ -34,7 +34,7 @@ class Google_Service_YouTube extends Google_Service
   /** Manage your YouTube account. */
   const YOUTUBE =
       "https://www.googleapis.com/auth/youtube";
-  /** See, edit, and permanently delete your YouTube videos, ratings, comments and captions. */
+  /** Manage your YouTube account. */
   const YOUTUBE_FORCE_SSL =
       "https://www.googleapis.com/auth/youtube.force-ssl";
   /** View your YouTube account. */

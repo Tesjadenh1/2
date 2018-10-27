@@ -40,6 +40,7 @@ class Google_Service_Dataflow_Job extends Google_Collection
   public $requestedState;
   protected $stageStatesType = 'Google_Service_Dataflow_ExecutionStageState';
   protected $stageStatesDataType = 'array';
+  public $startTime;
   protected $stepsType = 'Google_Service_Dataflow_Step';
   protected $stepsDataType = 'array';
   public $tempFiles;
@@ -211,6 +212,14 @@ class Google_Service_Dataflow_Job extends Google_Collection
   public function getStageStates()
   {
     return $this->stageStates;
+  }
+  public function setStartTime($startTime)
+  {
+    $this->startTime = $startTime;
+  }
+  public function getStartTime()
+  {
+    return $this->startTime;
   }
   /**
    * @param Google_Service_Dataflow_Step
