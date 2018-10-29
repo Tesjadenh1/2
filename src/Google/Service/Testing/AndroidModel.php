@@ -23,6 +23,7 @@ class Google_Service_Testing_AndroidModel extends Google_Collection
   public $form;
   public $formFactor;
   public $id;
+  public $lowFpsVideoRecording;
   public $manufacturer;
   public $name;
   public $screenDensity;
@@ -72,6 +73,14 @@ class Google_Service_Testing_AndroidModel extends Google_Collection
   public function getId()
   {
     return $this->id;
+  }
+  public function setLowFpsVideoRecording($lowFpsVideoRecording)
+  {
+    $this->lowFpsVideoRecording = $lowFpsVideoRecording;
+  }
+  public function getLowFpsVideoRecording()
+  {
+    return $this->lowFpsVideoRecording;
   }
   public function setManufacturer($manufacturer)
   {
