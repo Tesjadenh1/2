@@ -38,6 +38,9 @@ class Google_Service_Firestore extends Google_Service
   const DATASTORE =
       "https://www.googleapis.com/auth/datastore";
 
+  public $projects_databases;
+  public $projects_databases_collectionGroups_fields;
+  public $projects_databases_collectionGroups_indexes;
   public $projects_databases_operations;
   public $projects_locations;
   
@@ -54,6 +57,154 @@ class Google_Service_Firestore extends Google_Service
     $this->version = 'v1';
     $this->serviceName = 'firestore';
 
+    $this->projects_databases = new Google_Service_Firestore_Resource_ProjectsDatabases(
+        $this,
+        $this->serviceName,
+        'databases',
+        array(
+          'methods' => array(
+            'exportDocuments' => array(
+              'path' => 'v1/{+name}:exportDocuments',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'importDocuments' => array(
+              'path' => 'v1/{+name}:importDocuments',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_databases_collectionGroups_fields = new Google_Service_Firestore_Resource_ProjectsDatabasesCollectionGroupsFields(
+        $this,
+        $this->serviceName,
+        'fields',
+        array(
+          'methods' => array(
+            'get' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1/{+parent}/fields',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_databases_collectionGroups_indexes = new Google_Service_Firestore_Resource_ProjectsDatabasesCollectionGroupsIndexes(
+        $this,
+        $this->serviceName,
+        'indexes',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1/{+parent}/indexes',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1/{+parent}/indexes',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->projects_databases_operations = new Google_Service_Firestore_Resource_ProjectsDatabasesOperations(
         $this,
         $this->serviceName,
@@ -99,6 +250,10 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -106,10 +261,6 @@ class Google_Service_Firestore extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
@@ -141,10 +292,6 @@ class Google_Service_Firestore extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -152,6 +299,10 @@ class Google_Service_Firestore extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
