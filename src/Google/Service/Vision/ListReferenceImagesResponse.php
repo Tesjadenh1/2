@@ -15,28 +15,14 @@
  * the License.
  */
 
-class Google_Service_CloudRedis_ListInstancesResponse extends Google_Collection
+class Google_Service_Vision_ListReferenceImagesResponse extends Google_Collection
 {
-  protected $collection_key = 'unreachable';
-  protected $instancesType = 'Google_Service_CloudRedis_Instance';
-  protected $instancesDataType = 'array';
+  protected $collection_key = 'referenceImages';
   public $nextPageToken;
-  public $unreachable;
+  public $pageSize;
+  protected $referenceImagesType = 'Google_Service_Vision_ReferenceImage';
+  protected $referenceImagesDataType = 'array';
 
-  /**
-   * @param Google_Service_CloudRedis_Instance
-   */
-  public function setInstances($instances)
-  {
-    $this->instances = $instances;
-  }
-  /**
-   * @return Google_Service_CloudRedis_Instance
-   */
-  public function getInstances()
-  {
-    return $this->instances;
-  }
   public function setNextPageToken($nextPageToken)
   {
     $this->nextPageToken = $nextPageToken;
@@ -45,12 +31,26 @@ class Google_Service_CloudRedis_ListInstancesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  public function setUnreachable($unreachable)
+  public function setPageSize($pageSize)
   {
-    $this->unreachable = $unreachable;
+    $this->pageSize = $pageSize;
   }
-  public function getUnreachable()
+  public function getPageSize()
   {
-    return $this->unreachable;
+    return $this->pageSize;
+  }
+  /**
+   * @param Google_Service_Vision_ReferenceImage
+   */
+  public function setReferenceImages($referenceImages)
+  {
+    $this->referenceImages = $referenceImages;
+  }
+  /**
+   * @return Google_Service_Vision_ReferenceImage
+   */
+  public function getReferenceImages()
+  {
+    return $this->referenceImages;
   }
 }

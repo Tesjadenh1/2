@@ -15,28 +15,13 @@
  * the License.
  */
 
-class Google_Service_CloudRedis_ListInstancesResponse extends Google_Collection
+class Google_Service_Vision_ListProductsResponse extends Google_Collection
 {
-  protected $collection_key = 'unreachable';
-  protected $instancesType = 'Google_Service_CloudRedis_Instance';
-  protected $instancesDataType = 'array';
+  protected $collection_key = 'products';
   public $nextPageToken;
-  public $unreachable;
+  protected $productsType = 'Google_Service_Vision_Product';
+  protected $productsDataType = 'array';
 
-  /**
-   * @param Google_Service_CloudRedis_Instance
-   */
-  public function setInstances($instances)
-  {
-    $this->instances = $instances;
-  }
-  /**
-   * @return Google_Service_CloudRedis_Instance
-   */
-  public function getInstances()
-  {
-    return $this->instances;
-  }
   public function setNextPageToken($nextPageToken)
   {
     $this->nextPageToken = $nextPageToken;
@@ -45,12 +30,18 @@ class Google_Service_CloudRedis_ListInstancesResponse extends Google_Collection
   {
     return $this->nextPageToken;
   }
-  public function setUnreachable($unreachable)
+  /**
+   * @param Google_Service_Vision_Product
+   */
+  public function setProducts($products)
   {
-    $this->unreachable = $unreachable;
+    $this->products = $products;
   }
-  public function getUnreachable()
+  /**
+   * @return Google_Service_Vision_Product
+   */
+  public function getProducts()
   {
-    return $this->unreachable;
+    return $this->products;
   }
 }

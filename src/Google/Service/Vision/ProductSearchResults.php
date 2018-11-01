@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResults extends Google_Collection
+class Google_Service_Vision_ProductSearchResults extends Google_Collection
 {
   protected $collection_key = 'results';
   public $indexTime;
-  protected $productGroupedResultsType = 'Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult';
+  protected $productGroupedResultsType = 'Google_Service_Vision_GroupedResult';
   protected $productGroupedResultsDataType = 'array';
-  protected $resultsType = 'Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsResult';
+  protected $resultsType = 'Google_Service_Vision_Result';
   protected $resultsDataType = 'array';
 
   public function setIndexTime($indexTime)
@@ -33,28 +33,28 @@ class Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResults exten
     return $this->indexTime;
   }
   /**
-   * @param Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult
+   * @param Google_Service_Vision_GroupedResult
    */
   public function setProductGroupedResults($productGroupedResults)
   {
     $this->productGroupedResults = $productGroupedResults;
   }
   /**
-   * @return Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult
+   * @return Google_Service_Vision_GroupedResult
    */
   public function getProductGroupedResults()
   {
     return $this->productGroupedResults;
   }
   /**
-   * @param Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsResult
+   * @param Google_Service_Vision_Result
    */
   public function setResults($results)
   {
     $this->results = $results;
   }
   /**
-   * @return Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsResult
+   * @return Google_Service_Vision_Result
    */
   public function getResults()
   {

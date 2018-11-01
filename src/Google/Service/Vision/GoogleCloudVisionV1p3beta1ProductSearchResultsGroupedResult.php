@@ -15,36 +15,27 @@
  * the License.
  */
 
-class Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResults extends Google_Collection
+class Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult extends Google_Collection
 {
   protected $collection_key = 'results';
-  public $indexTime;
-  protected $productGroupedResultsType = 'Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult';
-  protected $productGroupedResultsDataType = 'array';
+  protected $boundingPolyType = 'Google_Service_Vision_GoogleCloudVisionV1p3beta1BoundingPoly';
+  protected $boundingPolyDataType = '';
   protected $resultsType = 'Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsResult';
   protected $resultsDataType = 'array';
 
-  public function setIndexTime($indexTime)
+  /**
+   * @param Google_Service_Vision_GoogleCloudVisionV1p3beta1BoundingPoly
+   */
+  public function setBoundingPoly(Google_Service_Vision_GoogleCloudVisionV1p3beta1BoundingPoly $boundingPoly)
   {
-    $this->indexTime = $indexTime;
-  }
-  public function getIndexTime()
-  {
-    return $this->indexTime;
+    $this->boundingPoly = $boundingPoly;
   }
   /**
-   * @param Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult
+   * @return Google_Service_Vision_GoogleCloudVisionV1p3beta1BoundingPoly
    */
-  public function setProductGroupedResults($productGroupedResults)
+  public function getBoundingPoly()
   {
-    $this->productGroupedResults = $productGroupedResults;
-  }
-  /**
-   * @return Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsGroupedResult
-   */
-  public function getProductGroupedResults()
-  {
-    return $this->productGroupedResults;
+    return $this->boundingPoly;
   }
   /**
    * @param Google_Service_Vision_GoogleCloudVisionV1p3beta1ProductSearchResultsResult
