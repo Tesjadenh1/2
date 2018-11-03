@@ -39,6 +39,9 @@ class Google_Service_Bigquery_Table extends Google_Model
   public $numLongTermBytes;
   public $numPhysicalBytes;
   public $numRows;
+  protected $rangePartitioningType = 'Google_Service_Bigquery_RangePartitioning';
+  protected $rangePartitioningDataType = '';
+  public $requirePartitionFilter;
   protected $schemaType = 'Google_Service_Bigquery_TableSchema';
   protected $schemaDataType = '';
   public $selfLink;
@@ -219,6 +222,28 @@ class Google_Service_Bigquery_Table extends Google_Model
   public function getNumRows()
   {
     return $this->numRows;
+  }
+  /**
+   * @param Google_Service_Bigquery_RangePartitioning
+   */
+  public function setRangePartitioning(Google_Service_Bigquery_RangePartitioning $rangePartitioning)
+  {
+    $this->rangePartitioning = $rangePartitioning;
+  }
+  /**
+   * @return Google_Service_Bigquery_RangePartitioning
+   */
+  public function getRangePartitioning()
+  {
+    return $this->rangePartitioning;
+  }
+  public function setRequirePartitionFilter($requirePartitionFilter)
+  {
+    $this->requirePartitionFilter = $requirePartitionFilter;
+  }
+  public function getRequirePartitionFilter()
+  {
+    return $this->requirePartitionFilter;
   }
   /**
    * @param Google_Service_Bigquery_TableSchema
