@@ -19,7 +19,7 @@
  * Service definition for Slides (v1).
  *
  * <p>
- * An API for creating and editing Google Slides presentations.</p>
+ * Reads and writes Google Slides presentations.</p>
  *
  * <p>
  * For more information about this service, see the API
