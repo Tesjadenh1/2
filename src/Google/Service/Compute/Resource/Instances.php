@@ -366,7 +366,8 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
   }
   /**
    * Retrieves the list of referrers to instances contained within the specified
-   * zone. (instances.listReferrers)
+   * zone. For more information, read Viewing Referrers to VM Instances.
+   * (instances.listReferrers)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone for this request.
@@ -723,8 +724,8 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('setServiceAccount', array($params), "Google_Service_Compute_Operation");
   }
   /**
-   * Sets tags for the specified instance to the data included in the request.
-   * (instances.setTags)
+   * Sets network tags for the specified instance to the data included in the
+   * request. (instances.setTags)
    *
    * @param string $project Project ID for this request.
    * @param string $zone The name of the zone for this request.

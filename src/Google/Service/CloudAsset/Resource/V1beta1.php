@@ -16,21 +16,21 @@
  */
 
 /**
- * The "projects" collection of methods.
+ * The "v1beta1" collection of methods.
  * Typical usage is:
  *  <code>
  *   $cloudassetService = new Google_Service_CloudAsset(...);
- *   $projects = $cloudassetService->projects;
+ *   $v1beta1 = $cloudassetService->v1beta1;
  *  </code>
  */
-class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resource
+class Google_Service_CloudAsset_Resource_V1beta1 extends Google_Service_Resource
 {
   /**
    * Batch gets the update history of assets that overlap a time window. For
    * RESOURCE content, this API outputs history with asset in both non-delete or
    * deleted status. For IAM_POLICY content, this API outputs history when the
    * asset and its attached IAM POLICY both exist. This can create gaps in the
-   * output history. (projects.batchGetAssetsHistory)
+   * output history. (v1beta1.batchGetAssetsHistory)
    *
    * @param string $parent Required. The relative name of the root asset. It can
    * only be an organization number (such as "organizations/123"), a project ID
@@ -47,9 +47,9 @@ class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resourc
    * of the asset name list is 100 in one request.
    * @opt_param string contentType Required. The content type.
    * @opt_param string readTimeWindow.endTime End time of the time window
-   * (exclusive). Current timestamp if not specified.
+   * (inclusive). Current timestamp if not specified.
    * @opt_param string readTimeWindow.startTime Start time of the time window
-   * (inclusive).
+   * (exclusive).
    * @return Google_Service_CloudAsset_BatchGetAssetsHistoryResponse
    */
   public function batchGetAssetsHistory($parent, $optParams = array())
@@ -62,7 +62,7 @@ class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resourc
    * Exports assets with time and resource types to a given Cloud Storage
    * location. The output format is newline-delimited JSON. This API implements
    * the google.longrunning.Operation API allowing you to keep track of the
-   * export. (projects.exportAssets)
+   * export. (v1beta1.exportAssets)
    *
    * @param string $parent Required. The relative name of the root asset. This can
    * only be an organization number (such as "organizations/123"), a project ID

@@ -19,8 +19,7 @@
  * Service definition for AlertCenter (v1beta1).
  *
  * <p>
- * G Suite Alert Center API to view and manage alerts on issues affecting your
- * domain.</p>
+ * Manages alerts on issues affecting your domain.</p>
  *
  * <p>
  * For more information about this service, see the API
