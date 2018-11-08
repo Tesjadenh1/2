@@ -720,6 +720,7 @@ class Google_Service_ShoppingContent extends Google_Service
                 'gmbEmail' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),'requestinventoryverification' => array(
@@ -759,18 +760,22 @@ class Google_Service_ShoppingContent extends Google_Service
                 'contactEmail' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
                 'contactName' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
                 'country' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
                 'language' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),'setposdataprovider' => array(
@@ -790,6 +795,7 @@ class Google_Service_ShoppingContent extends Google_Service
                 'country' => array(
                   'location' => 'query',
                   'type' => 'string',
+                  'required' => true,
                 ),
                 'posDataProviderId' => array(
                   'location' => 'query',

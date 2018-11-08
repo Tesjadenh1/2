@@ -85,6 +85,10 @@ class Google_Service_StreetViewPublish extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'languageCode' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'startUpload' => array(
               'path' => 'v1/photo:startUpload',
@@ -126,6 +130,10 @@ class Google_Service_StreetViewPublish extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'languageCode' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'photoIds' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -141,6 +149,10 @@ class Google_Service_StreetViewPublish extends Google_Service
               'httpMethod' => 'GET',
               'parameters' => array(
                 'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

@@ -19,7 +19,6 @@ class Google_Service_ShoppingContent_OrderLineItemProductFee extends Google_Mode
 {
   protected $amountType = 'Google_Service_ShoppingContent_Price';
   protected $amountDataType = '';
-  public $id;
   public $name;
 
   /**
@@ -35,14 +34,6 @@ class Google_Service_ShoppingContent_OrderLineItemProductFee extends Google_Mode
   public function getAmount()
   {
     return $this->amount;
-  }
-  public function setId($id)
-  {
-    $this->id = $id;
-  }
-  public function getId()
-  {
-    return $this->id;
   }
   public function setName($name)
   {

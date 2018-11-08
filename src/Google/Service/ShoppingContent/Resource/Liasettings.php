@@ -138,14 +138,13 @@ class Google_Service_ShoppingContent_Resource_Liasettings extends Google_Service
    * account and accountId must be the ID of a sub-account of this account.
    * @param string $accountId The ID of the account for which GMB access is
    * requested.
+   * @param string $gmbEmail The email of the Google My Business account.
    * @param array $optParams Optional parameters.
-   *
-   * @opt_param string gmbEmail The email of the Google My Business account.
    * @return Google_Service_ShoppingContent_LiasettingsRequestGmbAccessResponse
    */
-  public function requestgmbaccess($merchantId, $accountId, $optParams = array())
+  public function requestgmbaccess($merchantId, $accountId, $gmbEmail, $optParams = array())
   {
-    $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
+    $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'gmbEmail' => $gmbEmail);
     $params = array_merge($params, $optParams);
     return $this->call('requestgmbaccess', array($params), "Google_Service_ShoppingContent_LiasettingsRequestGmbAccessResponse");
   }
@@ -178,20 +177,18 @@ class Google_Service_ShoppingContent_Resource_Liasettings extends Google_Service
    * account and accountId must be the ID of a sub-account of this account.
    * @param string $accountId The ID of the account that manages the order. This
    * cannot be a multi-client account.
+   * @param string $contactEmail The email of the inventory verification contact.
+   * @param string $contactName The name of the inventory verification contact.
+   * @param string $country The country for which inventory verification is
+   * requested.
+   * @param string $language The language for which inventory verification is
+   * requested.
    * @param array $optParams Optional parameters.
-   *
-   * @opt_param string contactEmail The email of the inventory verification
-   * contact.
-   * @opt_param string contactName The name of the inventory verification contact.
-   * @opt_param string country The country for which inventory verification is
-   * requested.
-   * @opt_param string language The language for which inventory verification is
-   * requested.
    * @return Google_Service_ShoppingContent_LiasettingsSetInventoryVerificationContactResponse
    */
-  public function setinventoryverificationcontact($merchantId, $accountId, $optParams = array())
+  public function setinventoryverificationcontact($merchantId, $accountId, $contactEmail, $contactName, $country, $language, $optParams = array())
   {
-    $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
+    $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'contactEmail' => $contactEmail, 'contactName' => $contactName, 'country' => $country, 'language' => $language);
     $params = array_merge($params, $optParams);
     return $this->call('setinventoryverificationcontact', array($params), "Google_Service_ShoppingContent_LiasettingsSetInventoryVerificationContactResponse");
   }
@@ -204,18 +201,18 @@ class Google_Service_ShoppingContent_Resource_Liasettings extends Google_Service
    * account and accountId must be the ID of a sub-account of this account.
    * @param string $accountId The ID of the account for which to retrieve
    * accessible Google My Business accounts.
+   * @param string $country The country for which the POS data provider is
+   * selected.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string country The country for which the POS data provider is
-   * selected.
    * @opt_param string posDataProviderId The ID of POS data provider.
    * @opt_param string posExternalAccountId The account ID by which this merchant
    * is known to the POS data provider.
    * @return Google_Service_ShoppingContent_LiasettingsSetPosDataProviderResponse
    */
-  public function setposdataprovider($merchantId, $accountId, $optParams = array())
+  public function setposdataprovider($merchantId, $accountId, $country, $optParams = array())
   {
-    $params = array('merchantId' => $merchantId, 'accountId' => $accountId);
+    $params = array('merchantId' => $merchantId, 'accountId' => $accountId, 'country' => $country);
     $params = array_merge($params, $optParams);
     return $this->call('setposdataprovider', array($params), "Google_Service_ShoppingContent_LiasettingsSetPosDataProviderResponse");
   }
