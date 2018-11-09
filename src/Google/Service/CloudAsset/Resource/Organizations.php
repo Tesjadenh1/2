@@ -16,21 +16,21 @@
  */
 
 /**
- * The "v1beta1" collection of methods.
+ * The "organizations" collection of methods.
  * Typical usage is:
  *  <code>
  *   $cloudassetService = new Google_Service_CloudAsset(...);
- *   $v1beta1 = $cloudassetService->v1beta1;
+ *   $organizations = $cloudassetService->organizations;
  *  </code>
  */
-class Google_Service_CloudAsset_Resource_V1beta1 extends Google_Service_Resource
+class Google_Service_CloudAsset_Resource_Organizations extends Google_Service_Resource
 {
   /**
    * Batch gets the update history of assets that overlap a time window. For
    * RESOURCE content, this API outputs history with asset in both non-delete or
    * deleted status. For IAM_POLICY content, this API outputs history when the
    * asset and its attached IAM POLICY both exist. This can create gaps in the
-   * output history. (v1beta1.batchGetAssetsHistory)
+   * output history. (organizations.batchGetAssetsHistory)
    *
    * @param string $parent Required. The relative name of the root asset. It can
    * only be an organization number (such as "organizations/123"), a project ID
@@ -38,6 +38,11 @@ class Google_Service_CloudAsset_Resource_V1beta1 extends Google_Service_Resource
    * "projects/12345").
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string contentType Required. The content type.
+   * @opt_param string readTimeWindow.endTime End time of the time window
+   * (inclusive). Current timestamp if not specified.
+   * @opt_param string readTimeWindow.startTime Start time of the time window
+   * (exclusive).
    * @opt_param string assetNames A list of the full names of the assets. For
    * example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/instan
    * ces/instance1`. See [Resource Names](https://cloud.google.com/apis/design/res
@@ -45,11 +50,6 @@ class Google_Service_CloudAsset_Resource_V1beta1 extends Google_Service_Resource
    *
    * The request becomes a no-op if the asset name list is empty, and the max size
    * of the asset name list is 100 in one request.
-   * @opt_param string contentType Required. The content type.
-   * @opt_param string readTimeWindow.endTime End time of the time window
-   * (inclusive). Current timestamp if not specified.
-   * @opt_param string readTimeWindow.startTime Start time of the time window
-   * (exclusive).
    * @return Google_Service_CloudAsset_BatchGetAssetsHistoryResponse
    */
   public function batchGetAssetsHistory($parent, $optParams = array())
@@ -62,7 +62,7 @@ class Google_Service_CloudAsset_Resource_V1beta1 extends Google_Service_Resource
    * Exports assets with time and resource types to a given Cloud Storage
    * location. The output format is newline-delimited JSON. This API implements
    * the google.longrunning.Operation API allowing you to keep track of the
-   * export. (v1beta1.exportAssets)
+   * export. (organizations.exportAssets)
    *
    * @param string $parent Required. The relative name of the root asset. This can
    * only be an organization number (such as "organizations/123"), a project ID
