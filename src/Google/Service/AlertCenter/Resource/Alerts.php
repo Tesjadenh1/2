@@ -69,12 +69,6 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string customerId Optional. The unique identifier of the G Suite
-   * organization account of the customer the alerts are associated with. Inferred
-   * from the caller identity if not provided.
-   * @opt_param int pageSize Optional. The requested page size. Server may return
-   * fewer items than requested. If unspecified, server picks an appropriate
-   * default.
    * @opt_param string filter Optional. A query string for filtering alert
    * results. For more details, see [Query filters](/admin-sdk/alertcenter/guides
    * /query-filters) and [Supported query filter fields](/admin-
@@ -88,6 +82,12 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
    * results in descending order based on the creation timestamp using
    * `order_by="create_time desc"`. Currently, only sorting by `create_time desc`
    * is supported.
+   * @opt_param string customerId Optional. The unique identifier of the G Suite
+   * organization account of the customer the alerts are associated with. Inferred
+   * from the caller identity if not provided.
+   * @opt_param int pageSize Optional. The requested page size. Server may return
+   * fewer items than requested. If unspecified, server picks an appropriate
+   * default.
    * @return Google_Service_AlertCenter_ListAlertsResponse
    */
   public function listAlerts($optParams = array())

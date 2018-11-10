@@ -86,14 +86,6 @@ class Google_Service_AlertCenter extends Google_Service
               'path' => 'v1beta1/alerts',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'customerId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -105,6 +97,14 @@ class Google_Service_AlertCenter extends Google_Service
                 'orderBy' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'customerId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -141,6 +141,10 @@ class Google_Service_AlertCenter extends Google_Service
                   'required' => true,
                 ),
                 'customerId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

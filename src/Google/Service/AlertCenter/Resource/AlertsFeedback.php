@@ -55,6 +55,7 @@ class Google_Service_AlertCenter_Resource_AlertsFeedback extends Google_Service_
    * @opt_param string customerId Optional. The unique identifier of the G Suite
    * organization account of the customer the alert feedback are associated with.
    * Inferred from the caller identity if not provided.
+   * @opt_param string filter
    * @return Google_Service_AlertCenter_ListAlertFeedbackResponse
    */
   public function listAlertsFeedback($alertId, $optParams = array())
