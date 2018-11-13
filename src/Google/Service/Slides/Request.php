@@ -77,6 +77,8 @@ class Google_Service_Slides_Request extends Google_Model
   protected $updatePageElementAltTextDataType = '';
   protected $updatePageElementTransformType = 'Google_Service_Slides_UpdatePageElementTransformRequest';
   protected $updatePageElementTransformDataType = '';
+  protected $updatePageElementsZOrderType = 'Google_Service_Slides_UpdatePageElementsZOrderRequest';
+  protected $updatePageElementsZOrderDataType = '';
   protected $updatePagePropertiesType = 'Google_Service_Slides_UpdatePagePropertiesRequest';
   protected $updatePagePropertiesDataType = '';
   protected $updateParagraphStyleType = 'Google_Service_Slides_UpdateParagraphStyleRequest';
@@ -517,6 +519,20 @@ class Google_Service_Slides_Request extends Google_Model
   public function getUpdatePageElementTransform()
   {
     return $this->updatePageElementTransform;
+  }
+  /**
+   * @param Google_Service_Slides_UpdatePageElementsZOrderRequest
+   */
+  public function setUpdatePageElementsZOrder(Google_Service_Slides_UpdatePageElementsZOrderRequest $updatePageElementsZOrder)
+  {
+    $this->updatePageElementsZOrder = $updatePageElementsZOrder;
+  }
+  /**
+   * @return Google_Service_Slides_UpdatePageElementsZOrderRequest
+   */
+  public function getUpdatePageElementsZOrder()
+  {
+    return $this->updatePageElementsZOrder;
   }
   /**
    * @param Google_Service_Slides_UpdatePagePropertiesRequest
