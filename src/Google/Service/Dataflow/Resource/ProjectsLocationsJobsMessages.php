@@ -34,8 +34,6 @@ class Google_Service_Dataflow_Resource_ProjectsLocationsJobsMessages extends Goo
    * @param string $jobId The job to get messages about.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string endTime Return only messages with timestamps < end_time.
-   * The default is now (i.e. return up to the latest messages available).
    * @opt_param string startTime If specified, return only messages with
    * timestamps >= start_time. The default is the job creation time (i.e.
    * beginning of messages).
@@ -47,6 +45,8 @@ class Google_Service_Dataflow_Resource_ProjectsLocationsJobsMessages extends Goo
    * default, or may return an arbitrarily large number of results.
    * @opt_param string minimumImportance Filter to only get messages with
    * importance >= level
+   * @opt_param string endTime Return only messages with timestamps < end_time.
+   * The default is now (i.e. return up to the latest messages available).
    * @return Google_Service_Dataflow_ListJobMessagesResponse
    */
   public function listProjectsLocationsJobsMessages($projectId, $location, $jobId, $optParams = array())
