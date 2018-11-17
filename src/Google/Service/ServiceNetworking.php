@@ -91,6 +91,24 @@ class Google_Service_ServiceNetworking extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'patch' => array(
+              'path' => 'v1beta/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'force' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
             ),
           )
         )

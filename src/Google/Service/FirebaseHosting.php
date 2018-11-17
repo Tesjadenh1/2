@@ -43,6 +43,7 @@ class Google_Service_FirebaseHosting extends Google_Service
   const FIREBASE_READONLY =
       "https://www.googleapis.com/auth/firebase.readonly";
 
+  public $sites;
   public $sites_domains;
   public $sites_releases;
   public $sites_versions;
@@ -61,6 +62,40 @@ class Google_Service_FirebaseHosting extends Google_Service
     $this->version = 'v1beta1';
     $this->serviceName = 'firebasehosting';
 
+    $this->sites = new Google_Service_FirebaseHosting_Resource_Sites(
+        $this,
+        $this->serviceName,
+        'sites',
+        array(
+          'methods' => array(
+            'getConfig' => array(
+              'path' => 'v1beta1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'updateConfig' => array(
+              'path' => 'v1beta1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
     $this->sites_domains = new Google_Service_FirebaseHosting_Resource_SitesDomains(
         $this,
         $this->serviceName,
@@ -158,13 +193,13 @@ class Google_Service_FirebaseHosting extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -248,15 +283,15 @@ class Google_Service_FirebaseHosting extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'status' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

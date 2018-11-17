@@ -51,4 +51,26 @@ class Google_Service_ServiceNetworking_Resource_Services extends Google_Service_
     $params = array_merge($params, $optParams);
     return $this->call('addSubnetwork', array($params), "Google_Service_ServiceNetworking_Operation");
   }
+  /**
+   * Allocated ranges specified for the connection may be updated. Operation.
+   * (services.patch)
+   *
+   * @param string $name Provider peering service that is managing peering
+   * connectivity for a service provider organization. For Google services that
+   * support this functionality it is 'services/servicenetworking.googleapis.com'.
+   * @param Google_Service_ServiceNetworking_Connection $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string updateMask The update mask. If this is omitted, it defaults
+   * to "*".   Only reserved peering ranges list may be updated.
+   * @opt_param bool force If a previously defined allocated range is removed,
+   * force flag must be set to true.
+   * @return Google_Service_ServiceNetworking_Operation
+   */
+  public function patch($name, Google_Service_ServiceNetworking_Connection $postBody, $optParams = array())
+  {
+    $params = array('name' => $name, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('patch', array($params), "Google_Service_ServiceNetworking_Operation");
+  }
 }

@@ -55,6 +55,7 @@ class Google_Service_ServiceNetworking_Resource_ServicesConnections extends Goog
    * @param string $parent Provider peering service that is managing peering
    * connectivity for a service provider organization. For Google services that
    * support this functionality it is 'services/servicenetworking.googleapis.com'.
+   * For "-" all configured public peering services will be queried.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string network Network name in the consumer project.   This
