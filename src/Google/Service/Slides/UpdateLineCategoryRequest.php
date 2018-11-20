@@ -15,12 +15,10 @@
  * the License.
  */
 
-class Google_Service_Slides_Line extends Google_Model
+class Google_Service_Slides_UpdateLineCategoryRequest extends Google_Model
 {
   public $lineCategory;
-  protected $linePropertiesType = 'Google_Service_Slides_LineProperties';
-  protected $linePropertiesDataType = '';
-  public $lineType;
+  public $objectId;
 
   public function setLineCategory($lineCategory)
   {
@@ -30,26 +28,12 @@ class Google_Service_Slides_Line extends Google_Model
   {
     return $this->lineCategory;
   }
-  /**
-   * @param Google_Service_Slides_LineProperties
-   */
-  public function setLineProperties(Google_Service_Slides_LineProperties $lineProperties)
+  public function setObjectId($objectId)
   {
-    $this->lineProperties = $lineProperties;
+    $this->objectId = $objectId;
   }
-  /**
-   * @return Google_Service_Slides_LineProperties
-   */
-  public function getLineProperties()
+  public function getObjectId()
   {
-    return $this->lineProperties;
-  }
-  public function setLineType($lineType)
-  {
-    $this->lineType = $lineType;
-  }
-  public function getLineType()
-  {
-    return $this->lineType;
+    return $this->objectId;
   }
 }

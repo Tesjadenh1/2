@@ -65,12 +65,16 @@ class Google_Service_Slides_Request extends Google_Model
   protected $replaceAllTextDataType = '';
   protected $replaceImageType = 'Google_Service_Slides_ReplaceImageRequest';
   protected $replaceImageDataType = '';
+  protected $rerouteLineType = 'Google_Service_Slides_RerouteLineRequest';
+  protected $rerouteLineDataType = '';
   protected $ungroupObjectsType = 'Google_Service_Slides_UngroupObjectsRequest';
   protected $ungroupObjectsDataType = '';
   protected $unmergeTableCellsType = 'Google_Service_Slides_UnmergeTableCellsRequest';
   protected $unmergeTableCellsDataType = '';
   protected $updateImagePropertiesType = 'Google_Service_Slides_UpdateImagePropertiesRequest';
   protected $updateImagePropertiesDataType = '';
+  protected $updateLineCategoryType = 'Google_Service_Slides_UpdateLineCategoryRequest';
+  protected $updateLineCategoryDataType = '';
   protected $updateLinePropertiesType = 'Google_Service_Slides_UpdateLinePropertiesRequest';
   protected $updateLinePropertiesDataType = '';
   protected $updatePageElementAltTextType = 'Google_Service_Slides_UpdatePageElementAltTextRequest';
@@ -437,6 +441,20 @@ class Google_Service_Slides_Request extends Google_Model
     return $this->replaceImage;
   }
   /**
+   * @param Google_Service_Slides_RerouteLineRequest
+   */
+  public function setRerouteLine(Google_Service_Slides_RerouteLineRequest $rerouteLine)
+  {
+    $this->rerouteLine = $rerouteLine;
+  }
+  /**
+   * @return Google_Service_Slides_RerouteLineRequest
+   */
+  public function getRerouteLine()
+  {
+    return $this->rerouteLine;
+  }
+  /**
    * @param Google_Service_Slides_UngroupObjectsRequest
    */
   public function setUngroupObjects(Google_Service_Slides_UngroupObjectsRequest $ungroupObjects)
@@ -477,6 +495,20 @@ class Google_Service_Slides_Request extends Google_Model
   public function getUpdateImageProperties()
   {
     return $this->updateImageProperties;
+  }
+  /**
+   * @param Google_Service_Slides_UpdateLineCategoryRequest
+   */
+  public function setUpdateLineCategory(Google_Service_Slides_UpdateLineCategoryRequest $updateLineCategory)
+  {
+    $this->updateLineCategory = $updateLineCategory;
+  }
+  /**
+   * @return Google_Service_Slides_UpdateLineCategoryRequest
+   */
+  public function getUpdateLineCategory()
+  {
+    return $this->updateLineCategory;
   }
   /**
    * @param Google_Service_Slides_UpdateLinePropertiesRequest

@@ -19,7 +19,7 @@
  * Service definition for DriveActivity (v2).
  *
  * <p>
-</p>
+ * Provides a historical view of activity in Google Drive.</p>
  *
  * <p>
  * For more information about this service, see the API
