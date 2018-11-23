@@ -15,43 +15,34 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiFormatStringV4ArgsRects extends Google_Model
+class Google_Service_Pagespeedonline_LighthouseResultV5ConfigSettings extends Google_Model
 {
-  public $height;
-  public $left;
-  public $top;
-  public $width;
+  public $emulatedFormFactor;
+  public $locale;
+  public $onlyCategories;
 
-  public function setHeight($height)
+  public function setEmulatedFormFactor($emulatedFormFactor)
   {
-    $this->height = $height;
+    $this->emulatedFormFactor = $emulatedFormFactor;
   }
-  public function getHeight()
+  public function getEmulatedFormFactor()
   {
-    return $this->height;
+    return $this->emulatedFormFactor;
   }
-  public function setLeft($left)
+  public function setLocale($locale)
   {
-    $this->left = $left;
+    $this->locale = $locale;
   }
-  public function getLeft()
+  public function getLocale()
   {
-    return $this->left;
+    return $this->locale;
   }
-  public function setTop($top)
+  public function setOnlyCategories($onlyCategories)
   {
-    $this->top = $top;
+    $this->onlyCategories = $onlyCategories;
   }
-  public function getTop()
+  public function getOnlyCategories()
   {
-    return $this->top;
-  }
-  public function setWidth($width)
-  {
-    $this->width = $width;
-  }
-  public function getWidth()
-  {
-    return $this->width;
+    return $this->onlyCategories;
   }
 }

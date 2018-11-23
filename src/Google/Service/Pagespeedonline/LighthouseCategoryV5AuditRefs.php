@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4RuleGroupsElement extends Google_Model
+class Google_Service_Pagespeedonline_LighthouseCategoryV5AuditRefs extends Google_Model
 {
-  public $pass;
-  public $score;
+  public $group;
+  public $id;
+  public $weight;
 
-  public function setPass($pass)
+  public function setGroup($group)
   {
-    $this->pass = $pass;
+    $this->group = $group;
   }
-  public function getPass()
+  public function getGroup()
   {
-    return $this->pass;
+    return $this->group;
   }
-  public function setScore($score)
+  public function setId($id)
   {
-    $this->score = $score;
+    $this->id = $id;
   }
-  public function getScore()
+  public function getId()
   {
-    return $this->score;
+    return $this->id;
+  }
+  public function setWeight($weight)
+  {
+    $this->weight = $weight;
+  }
+  public function getWeight()
+  {
+    return $this->weight;
   }
 }

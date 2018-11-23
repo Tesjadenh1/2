@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperience extends Google_Model
+class Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5 extends Google_Model
 {
   protected $internal_gapi_mappings = array(
         "initialUrl" => "initial_url",
@@ -23,7 +23,7 @@ class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExper
   );
   public $id;
   public $initialUrl;
-  protected $metricsType = 'Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElement';
+  protected $metricsType = 'Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElement';
   protected $metricsDataType = 'map';
   public $overallCategory;
 
@@ -44,14 +44,14 @@ class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExper
     return $this->initialUrl;
   }
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElement
+   * @param Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElement
    */
   public function setMetrics($metrics)
   {
     $this->metrics = $metrics;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElement
+   * @return Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElement
    */
   public function getMetrics()
   {

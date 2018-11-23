@@ -15,25 +15,16 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4Version extends Google_Model
+class Google_Service_Pagespeedonline_LighthouseResultV5Timing extends Google_Model
 {
-  public $major;
-  public $minor;
+  public $total;
 
-  public function setMajor($major)
+  public function setTotal($total)
   {
-    $this->major = $major;
+    $this->total = $total;
   }
-  public function getMajor()
+  public function getTotal()
   {
-    return $this->major;
-  }
-  public function setMinor($minor)
-  {
-    $this->minor = $minor;
-  }
-  public function getMinor()
-  {
-    return $this->minor;
+    return $this->total;
   }
 }

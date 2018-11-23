@@ -15,34 +15,25 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElementDistributions extends Google_Model
+class Google_Service_Pagespeedonline_LighthouseResultV5RuntimeError extends Google_Model
 {
-  public $max;
-  public $min;
-  public $proportion;
+  public $code;
+  public $message;
 
-  public function setMax($max)
+  public function setCode($code)
   {
-    $this->max = $max;
+    $this->code = $code;
   }
-  public function getMax()
+  public function getCode()
   {
-    return $this->max;
+    return $this->code;
   }
-  public function setMin($min)
+  public function setMessage($message)
   {
-    $this->min = $min;
+    $this->message = $message;
   }
-  public function getMin()
+  public function getMessage()
   {
-    return $this->min;
-  }
-  public function setProportion($proportion)
-  {
-    $this->proportion = $proportion;
-  }
-  public function getProportion()
-  {
-    return $this->proportion;
+    return $this->message;
   }
 }

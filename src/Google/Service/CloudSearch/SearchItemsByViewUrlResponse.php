@@ -15,33 +15,33 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiFormatStringV4 extends Google_Collection
+class Google_Service_CloudSearch_SearchItemsByViewUrlResponse extends Google_Collection
 {
-  protected $collection_key = 'args';
-  protected $argsType = 'Google_Service_Pagespeedonline_PagespeedApiFormatStringV4Args';
-  protected $argsDataType = 'array';
-  public $format;
+  protected $collection_key = 'items';
+  protected $itemsType = 'Google_Service_CloudSearch_Item';
+  protected $itemsDataType = 'array';
+  public $nextPageToken;
 
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiFormatStringV4Args
+   * @param Google_Service_CloudSearch_Item
    */
-  public function setArgs($args)
+  public function setItems($items)
   {
-    $this->args = $args;
+    $this->items = $items;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiFormatStringV4Args
+   * @return Google_Service_CloudSearch_Item
    */
-  public function getArgs()
+  public function getItems()
   {
-    return $this->args;
+    return $this->items;
   }
-  public function setFormat($format)
+  public function setNextPageToken($nextPageToken)
   {
-    $this->format = $format;
+    $this->nextPageToken = $nextPageToken;
   }
-  public function getFormat()
+  public function getNextPageToken()
   {
-    return $this->format;
+    return $this->nextPageToken;
   }
 }

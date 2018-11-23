@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElement extends Google_Collection
+class Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElement extends Google_Collection
 {
   protected $collection_key = 'distributions';
   public $category;
-  protected $distributionsType = 'Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElementDistributions';
+  protected $distributionsType = 'Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElementDistributions';
   protected $distributionsDataType = 'array';
-  public $median;
+  public $percentile;
 
   public function setCategory($category)
   {
@@ -32,25 +32,25 @@ class Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExper
     return $this->category;
   }
   /**
-   * @param Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElementDistributions
+   * @param Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElementDistributions
    */
   public function setDistributions($distributions)
   {
     $this->distributions = $distributions;
   }
   /**
-   * @return Google_Service_Pagespeedonline_PagespeedApiPagespeedResponseV4LoadingExperienceMetricsElementDistributions
+   * @return Google_Service_Pagespeedonline_PagespeedApiLoadingExperienceV5MetricsElementDistributions
    */
   public function getDistributions()
   {
     return $this->distributions;
   }
-  public function setMedian($median)
+  public function setPercentile($percentile)
   {
-    $this->median = $median;
+    $this->percentile = $percentile;
   }
-  public function getMedian()
+  public function getPercentile()
   {
-    return $this->median;
+    return $this->percentile;
   }
 }
