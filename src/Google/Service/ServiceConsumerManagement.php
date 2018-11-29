@@ -162,6 +162,26 @@ class Google_Service_ServiceConsumerManagement extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'applyProjectConfig' => array(
+              'path' => 'v1/{+name}:applyProjectConfig',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'attachProject' => array(
+              'path' => 'v1/{+name}:attachProject',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'create' => array(
               'path' => 'v1/{+parent}/tenancyUnits',
               'httpMethod' => 'POST',
