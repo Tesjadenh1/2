@@ -19,7 +19,8 @@
  * Service definition for FirebaseHosting (v1beta1).
  *
  * <p>
-</p>
+ * The Firebase Hosting REST API enables programmatic custom deployment for
+ * releasing versions of your Firebase hosted content and configuration files.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -283,15 +284,15 @@ class Google_Service_FirebaseHosting extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'status' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
