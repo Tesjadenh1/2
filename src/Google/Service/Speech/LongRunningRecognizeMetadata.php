@@ -15,19 +15,27 @@
  * the License.
  */
 
-class Google_Service_Speech_WordInfo extends Google_Model
+class Google_Service_Speech_LongRunningRecognizeMetadata extends Google_Model
 {
-  public $endTime;
+  public $lastUpdateTime;
+  public $progressPercent;
   public $startTime;
-  public $word;
 
-  public function setEndTime($endTime)
+  public function setLastUpdateTime($lastUpdateTime)
   {
-    $this->endTime = $endTime;
+    $this->lastUpdateTime = $lastUpdateTime;
   }
-  public function getEndTime()
+  public function getLastUpdateTime()
   {
-    return $this->endTime;
+    return $this->lastUpdateTime;
+  }
+  public function setProgressPercent($progressPercent)
+  {
+    $this->progressPercent = $progressPercent;
+  }
+  public function getProgressPercent()
+  {
+    return $this->progressPercent;
   }
   public function setStartTime($startTime)
   {
@@ -36,13 +44,5 @@ class Google_Service_Speech_WordInfo extends Google_Model
   public function getStartTime()
   {
     return $this->startTime;
-  }
-  public function setWord($word)
-  {
-    $this->word = $word;
-  }
-  public function getWord()
-  {
-    return $this->word;
   }
 }

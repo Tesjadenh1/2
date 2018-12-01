@@ -15,34 +15,24 @@
  * the License.
  */
 
-class Google_Service_Speech_WordInfo extends Google_Model
+class Google_Service_Speech_LongRunningRecognizeResponse extends Google_Collection
 {
-  public $endTime;
-  public $startTime;
-  public $word;
+  protected $collection_key = 'results';
+  protected $resultsType = 'Google_Service_Speech_SpeechRecognitionResult';
+  protected $resultsDataType = 'array';
 
-  public function setEndTime($endTime)
+  /**
+   * @param Google_Service_Speech_SpeechRecognitionResult
+   */
+  public function setResults($results)
   {
-    $this->endTime = $endTime;
+    $this->results = $results;
   }
-  public function getEndTime()
+  /**
+   * @return Google_Service_Speech_SpeechRecognitionResult
+   */
+  public function getResults()
   {
-    return $this->endTime;
-  }
-  public function setStartTime($startTime)
-  {
-    $this->startTime = $startTime;
-  }
-  public function getStartTime()
-  {
-    return $this->startTime;
-  }
-  public function setWord($word)
-  {
-    $this->word = $word;
-  }
-  public function getWord()
-  {
-    return $this->word;
+    return $this->results;
   }
 }
