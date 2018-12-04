@@ -179,11 +179,11 @@ class Google_Service_AndroidProvisioningPartner extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'pageToken' => array(
+                'pageSize' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

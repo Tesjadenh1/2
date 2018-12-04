@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for CloudIAP (v1beta1).
+ * Service definition for CloudIAP (v1).
  *
  * <p>
  * Controls access to cloud applications running on Google Cloud Platform.</p>
@@ -51,7 +51,7 @@ class Google_Service_CloudIAP extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://iap.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1beta1';
+    $this->version = 'v1';
     $this->serviceName = 'iap';
 
     $this->projects_iap_tunnel = new Google_Service_CloudIAP_Resource_ProjectsIapTunnel(
@@ -61,7 +61,7 @@ class Google_Service_CloudIAP extends Google_Service
         array(
           'methods' => array(
             'getIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:getIamPolicy',
+              'path' => 'v1/{+resource}:getIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -71,7 +71,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'setIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:setIamPolicy',
+              'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -81,7 +81,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'testIamPermissions' => array(
-              'path' => 'v1beta1/{+resource}:testIamPermissions',
+              'path' => 'v1/{+resource}:testIamPermissions',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -101,7 +101,7 @@ class Google_Service_CloudIAP extends Google_Service
         array(
           'methods' => array(
             'getIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:getIamPolicy',
+              'path' => 'v1/{+resource}:getIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -111,7 +111,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'setIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:setIamPolicy',
+              'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -121,7 +121,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'testIamPermissions' => array(
-              'path' => 'v1beta1/{+resource}:testIamPermissions',
+              'path' => 'v1/{+resource}:testIamPermissions',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -141,7 +141,7 @@ class Google_Service_CloudIAP extends Google_Service
         array(
           'methods' => array(
             'getIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:getIamPolicy',
+              'path' => 'v1/{+resource}:getIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -151,7 +151,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'setIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:setIamPolicy',
+              'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -161,7 +161,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'testIamPermissions' => array(
-              'path' => 'v1beta1/{+resource}:testIamPermissions',
+              'path' => 'v1/{+resource}:testIamPermissions',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -181,7 +181,7 @@ class Google_Service_CloudIAP extends Google_Service
         array(
           'methods' => array(
             'getIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:getIamPolicy',
+              'path' => 'v1/{+resource}:getIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -191,7 +191,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'setIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:setIamPolicy',
+              'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -201,7 +201,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'testIamPermissions' => array(
-              'path' => 'v1beta1/{+resource}:testIamPermissions',
+              'path' => 'v1/{+resource}:testIamPermissions',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -221,7 +221,7 @@ class Google_Service_CloudIAP extends Google_Service
         array(
           'methods' => array(
             'getIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:getIamPolicy',
+              'path' => 'v1/{+resource}:getIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -231,7 +231,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'setIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:setIamPolicy',
+              'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -241,7 +241,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'testIamPermissions' => array(
-              'path' => 'v1beta1/{+resource}:testIamPermissions',
+              'path' => 'v1/{+resource}:testIamPermissions',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -261,7 +261,7 @@ class Google_Service_CloudIAP extends Google_Service
         array(
           'methods' => array(
             'getIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:getIamPolicy',
+              'path' => 'v1/{+resource}:getIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -271,7 +271,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'setIamPolicy' => array(
-              'path' => 'v1beta1/{+resource}:setIamPolicy',
+              'path' => 'v1/{+resource}:setIamPolicy',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
@@ -281,7 +281,7 @@ class Google_Service_CloudIAP extends Google_Service
                 ),
               ),
             ),'testIamPermissions' => array(
-              'path' => 'v1beta1/{+resource}:testIamPermissions',
+              'path' => 'v1/{+resource}:testIamPermissions',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'resource' => array(
