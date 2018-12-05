@@ -78,12 +78,12 @@ class Google_Service_CloudSearch_Resource_SettingsDatasources extends Google_Ser
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken Starting index of the results.
-   * @opt_param int pageSize Maximum number of data sources to fetch in a request.
-   * The max value is 100. The default value is 10
    * @opt_param bool debugOptions.enableDebugging If set, the request will enable
    * debugging features of Cloud Search. Only turn on this field, if asked by
    * Google to help with debugging.
+   * @opt_param string pageToken Starting index of the results.
+   * @opt_param int pageSize Maximum number of data sources to fetch in a request.
+   * The max value is 100. The default value is 10
    * @return Google_Service_CloudSearch_ListDataSourceResponse
    */
   public function listSettingsDatasources($optParams = array())
