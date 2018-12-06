@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_InventorySetResponse extends Google_Model
+class Google_Service_ShoppingContent_AccountAdsLink extends Google_Model
 {
-  public $kind;
+  public $adsId;
+  public $status;
 
-  public function setKind($kind)
+  public function setAdsId($adsId)
   {
-    $this->kind = $kind;
+    $this->adsId = $adsId;
   }
-  public function getKind()
+  public function getAdsId()
   {
-    return $this->kind;
+    return $this->adsId;
+  }
+  public function setStatus($status)
+  {
+    $this->status = $status;
+  }
+  public function getStatus()
+  {
+    return $this->status;
   }
 }

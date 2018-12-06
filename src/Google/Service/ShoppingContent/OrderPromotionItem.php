@@ -15,25 +15,34 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_ProductDestination extends Google_Model
+class Google_Service_ShoppingContent_OrderPromotionItem extends Google_Model
 {
-  public $destinationName;
-  public $intention;
+  public $lineItemId;
+  public $productId;
+  public $quantity;
 
-  public function setDestinationName($destinationName)
+  public function setLineItemId($lineItemId)
   {
-    $this->destinationName = $destinationName;
+    $this->lineItemId = $lineItemId;
   }
-  public function getDestinationName()
+  public function getLineItemId()
   {
-    return $this->destinationName;
+    return $this->lineItemId;
   }
-  public function setIntention($intention)
+  public function setProductId($productId)
   {
-    $this->intention = $intention;
+    $this->productId = $productId;
   }
-  public function getIntention()
+  public function getProductId()
   {
-    return $this->intention;
+    return $this->productId;
+  }
+  public function setQuantity($quantity)
+  {
+    $this->quantity = $quantity;
+  }
+  public function getQuantity()
+  {
+    return $this->quantity;
   }
 }

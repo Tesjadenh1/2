@@ -18,18 +18,9 @@
 class Google_Service_ShoppingContent_OrderpaymentsNotifyRefundRequest extends Google_Collection
 {
   protected $collection_key = 'invoiceIds';
-  public $invoiceId;
   public $invoiceIds;
   public $refundState;
 
-  public function setInvoiceId($invoiceId)
-  {
-    $this->invoiceId = $invoiceId;
-  }
-  public function getInvoiceId()
-  {
-    return $this->invoiceId;
-  }
   public function setInvoiceIds($invoiceIds)
   {
     $this->invoiceIds = $invoiceIds;

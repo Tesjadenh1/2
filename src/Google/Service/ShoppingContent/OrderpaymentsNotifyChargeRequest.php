@@ -19,7 +19,6 @@ class Google_Service_ShoppingContent_OrderpaymentsNotifyChargeRequest extends Go
 {
   protected $collection_key = 'invoiceIds';
   public $chargeState;
-  public $invoiceId;
   public $invoiceIds;
 
   public function setChargeState($chargeState)
@@ -29,14 +28,6 @@ class Google_Service_ShoppingContent_OrderpaymentsNotifyChargeRequest extends Go
   public function getChargeState()
   {
     return $this->chargeState;
-  }
-  public function setInvoiceId($invoiceId)
-  {
-    $this->invoiceId = $invoiceId;
-  }
-  public function getInvoiceId()
-  {
-    return $this->invoiceId;
   }
   public function setInvoiceIds($invoiceIds)
   {
