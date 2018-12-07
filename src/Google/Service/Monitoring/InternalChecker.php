@@ -22,6 +22,7 @@ class Google_Service_Monitoring_InternalChecker extends Google_Model
   public $name;
   public $network;
   public $peerProjectId;
+  public $state;
 
   public function setDisplayName($displayName)
   {
@@ -62,5 +63,13 @@ class Google_Service_Monitoring_InternalChecker extends Google_Model
   public function getPeerProjectId()
   {
     return $this->peerProjectId;
+  }
+  public function setState($state)
+  {
+    $this->state = $state;
+  }
+  public function getState()
+  {
+    return $this->state;
   }
 }

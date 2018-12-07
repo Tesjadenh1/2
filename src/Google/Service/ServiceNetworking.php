@@ -109,6 +109,16 @@ class Google_Service_ServiceNetworking extends Google_Service
                   'type' => 'boolean',
                 ),
               ),
+            ),'searchRange' => array(
+              'path' => 'v1beta/{+parent}:searchRange',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),
           )
         )
