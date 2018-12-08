@@ -306,6 +306,41 @@ class Google_Service_Compute_Resource_RegionInstanceGroupManagers extends Google
     return $this->call('listManagedInstances', array($params), "Google_Service_Compute_RegionInstanceGroupManagersListInstancesResponse");
   }
   /**
+   * Updates a managed instance group using the information that you specify in
+   * the request. This operation is marked as DONE when the group is patched even
+   * if the instances in the group are still in the process of being patched. You
+   * must separately verify the status of the individual instances with the
+   * listmanagedinstances method. This method supports PATCH semantics and uses
+   * the JSON merge patch format and processing rules.
+   * (regionInstanceGroupManagers.patch)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $region Name of the region scoping this request.
+   * @param string $instanceGroupManager The name of the instance group manager.
+   * @param Google_Service_Compute_InstanceGroupManager $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string requestId An optional request ID to identify requests.
+   * Specify a unique request ID so that if you must retry your request, the
+   * server will know to ignore the request if it has already been completed.
+   *
+   * For example, consider a situation where you make an initial request and the
+   * request times out. If you make the request again with the same request ID,
+   * the server can check if original operation with the same request ID was
+   * received, and if so, will ignore the second request. This prevents clients
+   * from accidentally creating duplicate commitments.
+   *
+   * The request ID must be a valid UUID with the exception that zero UUID is not
+   * supported (00000000-0000-0000-0000-000000000000).
+   * @return Google_Service_Compute_Operation
+   */
+  public function patch($project, $region, $instanceGroupManager, Google_Service_Compute_InstanceGroupManager $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'region' => $region, 'instanceGroupManager' => $instanceGroupManager, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('patch', array($params), "Google_Service_Compute_Operation");
+  }
+  /**
    * Flags the specified instances in the managed instance group to be immediately
    * recreated. The instances are deleted and recreated using the current instance
    * template for the managed instance group. This operation is marked as DONE

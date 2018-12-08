@@ -69,10 +69,6 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
    *
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter Optional. A query string for filtering alert
-   * results. For more details, see [Query filters](/admin-sdk/alertcenter/guides
-   * /query-filters) and [Supported query filter fields](/admin-
-   * sdk/alertcenter/reference/filter-fields#alerts.list).
    * @opt_param string pageToken Optional. A token identifying a page of results
    * the server should return. If empty, a new iteration is started. To continue
    * an iteration, pass in the value from the previous ListAlertsResponse's
@@ -88,6 +84,10 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
    * @opt_param int pageSize Optional. The requested page size. Server may return
    * fewer items than requested. If unspecified, server picks an appropriate
    * default.
+   * @opt_param string filter Optional. A query string for filtering alert
+   * results. For more details, see [Query filters](/admin-sdk/alertcenter/guides
+   * /query-filters) and [Supported query filter fields](/admin-
+   * sdk/alertcenter/reference/filter-fields#alerts.list).
    * @return Google_Service_AlertCenter_ListAlertsResponse
    */
   public function listAlerts($optParams = array())
@@ -95,5 +95,23 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
     $params = array();
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_AlertCenter_ListAlertsResponse");
+  }
+  /**
+   * Restores, or "undeletes", an alert that was marked for deletion within the
+   * past 30 days. Attempting to undelete an alert which was marked for deletion
+   * over 30 days ago (which has been removed from the Alert Center database) or a
+   * nonexistent alert returns a `NOT_FOUND` error. Attempting to undelete an
+   * alert which has not been marked for deletion has no effect. (alerts.undelete)
+   *
+   * @param string $alertId Required. The identifier of the alert to undelete.
+   * @param Google_Service_AlertCenter_UndeleteAlertRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_AlertCenter_Alert
+   */
+  public function undelete($alertId, Google_Service_AlertCenter_UndeleteAlertRequest $postBody, $optParams = array())
+  {
+    $params = array('alertId' => $alertId, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('undelete', array($params), "Google_Service_AlertCenter_Alert");
   }
 }

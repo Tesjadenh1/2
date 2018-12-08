@@ -33,6 +33,8 @@ class Google_Service_Bigquery_Table extends Google_Model
   public $labels;
   public $lastModifiedTime;
   public $location;
+  protected $materializedViewType = 'Google_Service_Bigquery_MaterializedViewDefinition';
+  protected $materializedViewDataType = '';
   protected $modelType = 'Google_Service_Bigquery_ModelDefinition';
   protected $modelDataType = '';
   public $numBytes;
@@ -176,6 +178,20 @@ class Google_Service_Bigquery_Table extends Google_Model
   public function getLocation()
   {
     return $this->location;
+  }
+  /**
+   * @param Google_Service_Bigquery_MaterializedViewDefinition
+   */
+  public function setMaterializedView(Google_Service_Bigquery_MaterializedViewDefinition $materializedView)
+  {
+    $this->materializedView = $materializedView;
+  }
+  /**
+   * @return Google_Service_Bigquery_MaterializedViewDefinition
+   */
+  public function getMaterializedView()
+  {
+    return $this->materializedView;
   }
   /**
    * @param Google_Service_Bigquery_ModelDefinition
