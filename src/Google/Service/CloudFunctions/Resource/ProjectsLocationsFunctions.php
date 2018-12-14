@@ -26,8 +26,11 @@
 class Google_Service_CloudFunctions_Resource_ProjectsLocationsFunctions extends Google_Service_Resource
 {
   /**
-   * Invokes synchronously deployed function. To be used for testing, very limited
-   * traffic allowed. (functions.callProjectsLocationsFunctions)
+   * Synchronously invokes a deployed Cloud Function. To be used for testing
+   * purposes as very limited traffic is allowed. For more information on the
+   * actual limits refer to [API Calls](
+   * https://cloud.google.com/functions/quotas#rate_limits).
+   * (functions.callProjectsLocationsFunctions)
    *
    * @param string $name The name of the function to be called.
    * @param Google_Service_CloudFunctions_CallFunctionRequest $postBody

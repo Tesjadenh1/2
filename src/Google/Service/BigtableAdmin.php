@@ -16,54 +16,77 @@
  */
 
 /**
- * Service definition for CloudMachineLearningEngine (v1).
+ * Service definition for BigtableAdmin (v2).
  *
  * <p>
- * An API to enable creating and using machine learning models.</p>
+</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://cloud.google.com/ml/" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/bigtable/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
  */
-class Google_Service_CloudMachineLearningEngine extends Google_Service
+class Google_Service_BigtableAdmin extends Google_Service
 {
+  /** Administer your Cloud Bigtable tables and clusters. */
+  const BIGTABLE_ADMIN =
+      "https://www.googleapis.com/auth/bigtable.admin";
+  /** Administer your Cloud Bigtable clusters. */
+  const BIGTABLE_ADMIN_CLUSTER =
+      "https://www.googleapis.com/auth/bigtable.admin.cluster";
+  /** Administer your Cloud Bigtable clusters. */
+  const BIGTABLE_ADMIN_INSTANCE =
+      "https://www.googleapis.com/auth/bigtable.admin.instance";
+  /** Administer your Cloud Bigtable tables. */
+  const BIGTABLE_ADMIN_TABLE =
+      "https://www.googleapis.com/auth/bigtable.admin.table";
+  /** Administer your Cloud Bigtable tables and clusters. */
+  const CLOUD_BIGTABLE_ADMIN =
+      "https://www.googleapis.com/auth/cloud-bigtable.admin";
+  /** Administer your Cloud Bigtable clusters. */
+  const CLOUD_BIGTABLE_ADMIN_CLUSTER =
+      "https://www.googleapis.com/auth/cloud-bigtable.admin.cluster";
+  /** Administer your Cloud Bigtable tables. */
+  const CLOUD_BIGTABLE_ADMIN_TABLE =
+      "https://www.googleapis.com/auth/cloud-bigtable.admin.table";
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
+  /** View your data across Google Cloud Platform services. */
+  const CLOUD_PLATFORM_READ_ONLY =
+      "https://www.googleapis.com/auth/cloud-platform.read-only";
 
-  public $projects;
-  public $projects_jobs;
-  public $projects_locations;
-  public $projects_models;
-  public $projects_models_versions;
-  public $projects_operations;
+  public $operations;
+  public $operations_projects_operations;
+  public $projects_instances;
+  public $projects_instances_appProfiles;
+  public $projects_instances_clusters;
+  public $projects_instances_tables;
   
   /**
-   * Constructs the internal representation of the CloudMachineLearningEngine
-   * service.
+   * Constructs the internal representation of the BigtableAdmin service.
    *
    * @param Google_Client $client
    */
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://ml.googleapis.com/';
+    $this->rootUrl = 'https://bigtableadmin.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1';
-    $this->serviceName = 'ml';
+    $this->version = 'v2';
+    $this->serviceName = 'bigtableadmin';
 
-    $this->projects = new Google_Service_CloudMachineLearningEngine_Resource_Projects(
+    $this->operations = new Google_Service_BigtableAdmin_Resource_Operations(
         $this,
         $this->serviceName,
-        'projects',
+        'operations',
         array(
           'methods' => array(
-            'getConfig' => array(
-              'path' => 'v1/{+name}:getConfig',
-              'httpMethod' => 'GET',
+            'cancel' => array(
+              'path' => 'v2/{+name}:cancel',
+              'httpMethod' => 'POST',
               'parameters' => array(
                 'name' => array(
                   'location' => 'path',
@@ -71,9 +94,19 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'predict' => array(
-              'path' => 'v1/{+name}:predict',
-              'httpMethod' => 'POST',
+            ),'delete' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
                   'location' => 'path',
@@ -85,14 +118,310 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
           )
         )
     );
-    $this->projects_jobs = new Google_Service_CloudMachineLearningEngine_Resource_ProjectsJobs(
+    $this->operations_projects_operations = new Google_Service_BigtableAdmin_Resource_OperationsProjectsOperations(
         $this,
         $this->serviceName,
-        'jobs',
+        'operations',
         array(
           'methods' => array(
-            'cancel' => array(
-              'path' => 'v1/{+name}:cancel',
+            'list' => array(
+              'path' => 'v2/{+name}/operations',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_instances = new Google_Service_BigtableAdmin_Resource_ProjectsInstances(
+        $this,
+        $this->serviceName,
+        'instances',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v2/{+parent}/instances',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'getIamPolicy' => array(
+              'path' => 'v2/{+resource}:getIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2/{+parent}/instances',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'partialUpdateInstance' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'setIamPolicy' => array(
+              'path' => 'v2/{+resource}:setIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'testIamPermissions' => array(
+              'path' => 'v2/{+resource}:testIamPermissions',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_instances_appProfiles = new Google_Service_BigtableAdmin_Resource_ProjectsInstancesAppProfiles(
+        $this,
+        $this->serviceName,
+        'appProfiles',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v2/{+parent}/appProfiles',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'ignoreWarnings' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'appProfileId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'ignoreWarnings' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2/{+parent}/appProfiles',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'ignoreWarnings' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_instances_clusters = new Google_Service_BigtableAdmin_Resource_ProjectsInstancesClusters(
+        $this,
+        $this->serviceName,
+        'clusters',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v2/{+parent}/clusters',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'clusterId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2/{+parent}/clusters',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'update' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'PUT',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_instances_tables = new Google_Service_BigtableAdmin_Resource_ProjectsInstancesTables(
+        $this,
+        $this->serviceName,
+        'tables',
+        array(
+          'methods' => array(
+            'checkConsistency' => array(
+              'path' => 'v2/{+name}:checkConsistency',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'name' => array(
@@ -102,141 +431,7 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                 ),
               ),
             ),'create' => array(
-              'path' => 'v1/{+parent}/jobs',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'getIamPolicy' => array(
-              'path' => 'v1/{+resource}:getIamPolicy',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/{+parent}/jobs',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'patch' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'setIamPolicy' => array(
-              'path' => 'v1/{+resource}:setIamPolicy',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'testIamPermissions' => array(
-              'path' => 'v1/{+resource}:testIamPermissions',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_locations = new Google_Service_CloudMachineLearningEngine_Resource_ProjectsLocations(
-        $this,
-        $this->serviceName,
-        'locations',
-        array(
-          'methods' => array(
-            'get' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/{+parent}/locations',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_models = new Google_Service_CloudMachineLearningEngine_Resource_ProjectsModels(
-        $this,
-        $this->serviceName,
-        'models',
-        array(
-          'methods' => array(
-            'create' => array(
-              'path' => 'v1/{+parent}/models',
+              'path' => 'v2/{+parent}/tables',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'parent' => array(
@@ -246,7 +441,7 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                 ),
               ),
             ),'delete' => array(
-              'path' => 'v1/{+name}',
+              'path' => 'v2/{+name}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'name' => array(
@@ -255,9 +450,9 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'get' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
+            ),'dropRowRange' => array(
+              'path' => 'v2/{+name}:dropRowRange',
+              'httpMethod' => 'POST',
               'parameters' => array(
                 'name' => array(
                   'location' => 'path',
@@ -265,95 +460,9 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'getIamPolicy' => array(
-              'path' => 'v1/{+resource}:getIamPolicy',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/{+parent}/models',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'patch' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'setIamPolicy' => array(
-              'path' => 'v1/{+resource}:setIamPolicy',
+            ),'generateConsistencyToken' => array(
+              'path' => 'v2/{+name}:generateConsistencyToken',
               'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'testIamPermissions' => array(
-              'path' => 'v1/{+resource}:testIamPermissions',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'resource' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_models_versions = new Google_Service_CloudMachineLearningEngine_Resource_ProjectsModelsVersions(
-        $this,
-        $this->serviceName,
-        'versions',
-        array(
-          'methods' => array(
-            'create' => array(
-              'path' => 'v1/{+parent}/versions',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'delete' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'DELETE',
               'parameters' => array(
                 'name' => array(
                   'location' => 'path',
@@ -362,7 +471,7 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1/{+name}',
+              'path' => 'v2/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
@@ -370,98 +479,16 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'view' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
               ),
             ),'list' => array(
-              'path' => 'v1/{+parent}/versions',
+              'path' => 'v2/{+parent}/tables',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-              ),
-            ),'patch' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),'setDefault' => array(
-              'path' => 'v1/{+name}:setDefault',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_operations = new Google_Service_CloudMachineLearningEngine_Resource_ProjectsOperations(
-        $this,
-        $this->serviceName,
-        'operations',
-        array(
-          'methods' => array(
-            'cancel' => array(
-              'path' => 'v1/{+name}:cancel',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'delete' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'v1/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/{+name}/operations',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
@@ -474,9 +501,19 @@ class Google_Service_CloudMachineLearningEngine extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
-                'filter' => array(
+                'view' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+              ),
+            ),'modifyColumnFamilies' => array(
+              'path' => 'v2/{+name}:modifyColumnFamilies',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),

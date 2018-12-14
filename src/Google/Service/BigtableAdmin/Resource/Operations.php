@@ -19,11 +19,11 @@
  * The "operations" collection of methods.
  * Typical usage is:
  *  <code>
- *   $mlService = new Google_Service_CloudMachineLearningEngine(...);
- *   $operations = $mlService->operations;
+ *   $bigtableadminService = new Google_Service_BigtableAdmin(...);
+ *   $operations = $bigtableadminService->operations;
  *  </code>
  */
-class Google_Service_CloudMachineLearningEngine_Resource_ProjectsOperations extends Google_Service_Resource
+class Google_Service_BigtableAdmin_Resource_Operations extends Google_Service_Resource
 {
   /**
    * Starts asynchronous cancellation on a long-running operation.  The server
@@ -38,13 +38,13 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsOperations exte
    *
    * @param string $name The name of the operation resource to be cancelled.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CloudMachineLearningEngine_GoogleProtobufEmpty
+   * @return Google_Service_BigtableAdmin_BigtableadminEmpty
    */
   public function cancel($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('cancel', array($params), "Google_Service_CloudMachineLearningEngine_GoogleProtobufEmpty");
+    return $this->call('cancel', array($params), "Google_Service_BigtableAdmin_BigtableadminEmpty");
   }
   /**
    * Deletes a long-running operation. This method indicates that the client is no
@@ -54,13 +54,13 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsOperations exte
    *
    * @param string $name The name of the operation resource to be deleted.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CloudMachineLearningEngine_GoogleProtobufEmpty
+   * @return Google_Service_BigtableAdmin_BigtableadminEmpty
    */
   public function delete($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('delete', array($params), "Google_Service_CloudMachineLearningEngine_GoogleProtobufEmpty");
+    return $this->call('delete', array($params), "Google_Service_BigtableAdmin_BigtableadminEmpty");
   }
   /**
    * Gets the latest state of a long-running operation.  Clients can use this
@@ -69,38 +69,12 @@ class Google_Service_CloudMachineLearningEngine_Resource_ProjectsOperations exte
    *
    * @param string $name The name of the operation resource.
    * @param array $optParams Optional parameters.
-   * @return Google_Service_CloudMachineLearningEngine_GoogleLongrunningOperation
+   * @return Google_Service_BigtableAdmin_Operation
    */
   public function get($name, $optParams = array())
   {
     $params = array('name' => $name);
     $params = array_merge($params, $optParams);
-    return $this->call('get', array($params), "Google_Service_CloudMachineLearningEngine_GoogleLongrunningOperation");
-  }
-  /**
-   * Lists operations that match the specified filter in the request. If the
-   * server doesn't support this method, it returns `UNIMPLEMENTED`.
-   *
-   * NOTE: the `name` binding allows API services to override the binding to use
-   * different resource name schemes, such as `users/operations`. To override the
-   * binding, API services can add a binding such as
-   * `"/v1/{name=users}/operations"` to their service configuration. For backwards
-   * compatibility, the default name includes the operations collection id,
-   * however overriding users must ensure the name binding is the parent resource,
-   * without the operations collection id. (operations.listProjectsOperations)
-   *
-   * @param string $name The name of the operation's parent resource.
-   * @param array $optParams Optional parameters.
-   *
-   * @opt_param string pageToken The standard list page token.
-   * @opt_param int pageSize The standard list page size.
-   * @opt_param string filter The standard list filter.
-   * @return Google_Service_CloudMachineLearningEngine_GoogleLongrunningListOperationsResponse
-   */
-  public function listProjectsOperations($name, $optParams = array())
-  {
-    $params = array('name' => $name);
-    $params = array_merge($params, $optParams);
-    return $this->call('list', array($params), "Google_Service_CloudMachineLearningEngine_GoogleLongrunningListOperationsResponse");
+    return $this->call('get', array($params), "Google_Service_BigtableAdmin_Operation");
   }
 }
