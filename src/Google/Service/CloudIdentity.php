@@ -16,88 +16,100 @@
  */
 
 /**
- * Service definition for AlertCenter (v1beta1).
+ * Service definition for CloudIdentity (v1beta1).
  *
  * <p>
- * Manages alerts on issues affecting your domain.</p>
+ * API for provisioning and managing identity resources.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://developers.google.com/admin-sdk/alertcenter/" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/identity/" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
  */
-class Google_Service_AlertCenter extends Google_Service
+class Google_Service_CloudIdentity extends Google_Service
 {
-  /** See and delete your domain's G Suite alerts, and send alert feedback. */
-  const APPS_ALERTS =
-      "https://www.googleapis.com/auth/apps.alerts";
 
-  public $alerts;
-  public $alerts_feedback;
-  public $v1beta1;
+
+  public $groups;
+  public $groups_memberships;
   
   /**
-   * Constructs the internal representation of the AlertCenter service.
+   * Constructs the internal representation of the CloudIdentity service.
    *
    * @param Google_Client $client
    */
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://alertcenter.googleapis.com/';
+    $this->rootUrl = 'https://cloudidentity.googleapis.com/';
     $this->servicePath = '';
     $this->version = 'v1beta1';
-    $this->serviceName = 'alertcenter';
+    $this->serviceName = 'cloudidentity';
 
-    $this->alerts = new Google_Service_AlertCenter_Resource_Alerts(
+    $this->groups = new Google_Service_CloudIdentity_Resource_Groups(
         $this,
         $this->serviceName,
-        'alerts',
+        'groups',
         array(
           'methods' => array(
-            'delete' => array(
-              'path' => 'v1beta1/alerts/{alertId}',
+            'create' => array(
+              'path' => 'v1beta1/groups',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'delete' => array(
+              'path' => 'v1beta1/{+name}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
-                'alertId' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
-                ),
-                'customerId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1beta1/alerts/{alertId}',
+              'path' => 'v1beta1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'alertId' => array(
+                'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'customerId' => array(
+              ),
+            ),'lookup' => array(
+              'path' => 'v1beta1/groups:lookup',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'groupKey.namespace' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'groupKey.id' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
               ),
-            ),'list' => array(
-              'path' => 'v1beta1/alerts',
+            ),'patch' => array(
+              'path' => 'v1beta1/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'search' => array(
+              'path' => 'v1beta1/groups:search',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'orderBy' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'customerId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -105,87 +117,91 @@ class Google_Service_AlertCenter extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
-                'filter' => array(
+                'query' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-              ),
-            ),'undelete' => array(
-              'path' => 'v1beta1/alerts/{alertId}:undelete',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'alertId' => array(
-                  'location' => 'path',
+                'view' => array(
+                  'location' => 'query',
                   'type' => 'string',
-                  'required' => true,
                 ),
               ),
             ),
           )
         )
     );
-    $this->alerts_feedback = new Google_Service_AlertCenter_Resource_AlertsFeedback(
+    $this->groups_memberships = new Google_Service_CloudIdentity_Resource_GroupsMemberships(
         $this,
         $this->serviceName,
-        'feedback',
+        'memberships',
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1beta1/alerts/{alertId}/feedback',
+              'path' => 'v1beta1/{+parent}/memberships',
               'httpMethod' => 'POST',
               'parameters' => array(
-                'alertId' => array(
+                'parent' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'customerId' => array(
-                  'location' => 'query',
+              ),
+            ),'delete' => array(
+              'path' => 'v1beta1/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
                   'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1beta1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),'list' => array(
-              'path' => 'v1beta1/alerts/{alertId}/feedback',
+              'path' => 'v1beta1/{+parent}/memberships',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'alertId' => array(
+                'parent' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'customerId' => array(
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'view' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
               ),
-            ),
-          )
-        )
-    );
-    $this->v1beta1 = new Google_Service_AlertCenter_Resource_V1beta1(
-        $this,
-        $this->serviceName,
-        'v1beta1',
-        array(
-          'methods' => array(
-            'getSettings' => array(
-              'path' => 'v1beta1/settings',
+            ),'lookup' => array(
+              'path' => 'v1beta1/{+parent}/memberships:lookup',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'customerId' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'memberKey.id' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-              ),
-            ),'updateSettings' => array(
-              'path' => 'v1beta1/settings',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'customerId' => array(
+                'memberKey.namespace' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
