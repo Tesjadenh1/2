@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for CloudIdentity (v1beta1).
+ * Service definition for CloudIdentity (v1).
  *
  * <p>
  * API for provisioning and managing identity resources.</p>
@@ -45,7 +45,7 @@ class Google_Service_CloudIdentity extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://cloudidentity.googleapis.com/';
     $this->servicePath = '';
-    $this->version = 'v1beta1';
+    $this->version = 'v1';
     $this->serviceName = 'cloudidentity';
 
     $this->groups = new Google_Service_CloudIdentity_Resource_Groups(
@@ -55,11 +55,11 @@ class Google_Service_CloudIdentity extends Google_Service
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1beta1/groups',
+              'path' => 'v1/groups',
               'httpMethod' => 'POST',
               'parameters' => array(),
             ),'delete' => array(
-              'path' => 'v1beta1/{+name}',
+              'path' => 'v1/{+name}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'name' => array(
@@ -69,7 +69,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1beta1/{+name}',
+              'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
@@ -78,8 +78,29 @@ class Google_Service_CloudIdentity extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'list' => array(
+              'path' => 'v1/groups',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'view' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),'lookup' => array(
-              'path' => 'v1beta1/groups:lookup',
+              'path' => 'v1/groups:lookup',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'groupKey.namespace' => array(
@@ -92,7 +113,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'patch' => array(
-              'path' => 'v1beta1/{+name}',
+              'path' => 'v1/{+name}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
                 'name' => array(
@@ -106,7 +127,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'search' => array(
-              'path' => 'v1beta1/groups:search',
+              'path' => 'v1/groups:search',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'pageToken' => array(
@@ -137,7 +158,7 @@ class Google_Service_CloudIdentity extends Google_Service
         array(
           'methods' => array(
             'create' => array(
-              'path' => 'v1beta1/{+parent}/memberships',
+              'path' => 'v1/{+parent}/memberships',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'parent' => array(
@@ -147,7 +168,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'delete' => array(
-              'path' => 'v1beta1/{+name}',
+              'path' => 'v1/{+name}',
               'httpMethod' => 'DELETE',
               'parameters' => array(
                 'name' => array(
@@ -157,7 +178,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'get' => array(
-              'path' => 'v1beta1/{+name}',
+              'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
@@ -167,7 +188,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'list' => array(
-              'path' => 'v1beta1/{+parent}/memberships',
+              'path' => 'v1/{+parent}/memberships',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'parent' => array(
@@ -189,7 +210,7 @@ class Google_Service_CloudIdentity extends Google_Service
                 ),
               ),
             ),'lookup' => array(
-              'path' => 'v1beta1/{+parent}/memberships:lookup',
+              'path' => 'v1/{+parent}/memberships:lookup',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'parent' => array(

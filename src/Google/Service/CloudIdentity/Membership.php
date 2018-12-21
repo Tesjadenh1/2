@@ -19,9 +19,9 @@ class Google_Service_CloudIdentity_Membership extends Google_Collection
 {
   protected $collection_key = 'roles';
   public $createTime;
-  protected $memberKeyType = 'Google_Service_CloudIdentity_EntityKey';
-  protected $memberKeyDataType = '';
   public $name;
+  protected $preferredMemberKeyType = 'Google_Service_CloudIdentity_EntityKey';
+  protected $preferredMemberKeyDataType = '';
   protected $rolesType = 'Google_Service_CloudIdentity_MembershipRole';
   protected $rolesDataType = 'array';
   public $updateTime;
@@ -34,20 +34,6 @@ class Google_Service_CloudIdentity_Membership extends Google_Collection
   {
     return $this->createTime;
   }
-  /**
-   * @param Google_Service_CloudIdentity_EntityKey
-   */
-  public function setMemberKey(Google_Service_CloudIdentity_EntityKey $memberKey)
-  {
-    $this->memberKey = $memberKey;
-  }
-  /**
-   * @return Google_Service_CloudIdentity_EntityKey
-   */
-  public function getMemberKey()
-  {
-    return $this->memberKey;
-  }
   public function setName($name)
   {
     $this->name = $name;
@@ -55,6 +41,20 @@ class Google_Service_CloudIdentity_Membership extends Google_Collection
   public function getName()
   {
     return $this->name;
+  }
+  /**
+   * @param Google_Service_CloudIdentity_EntityKey
+   */
+  public function setPreferredMemberKey(Google_Service_CloudIdentity_EntityKey $preferredMemberKey)
+  {
+    $this->preferredMemberKey = $preferredMemberKey;
+  }
+  /**
+   * @return Google_Service_CloudIdentity_EntityKey
+   */
+  public function getPreferredMemberKey()
+  {
+    return $this->preferredMemberKey;
   }
   /**
    * @param Google_Service_CloudIdentity_MembershipRole

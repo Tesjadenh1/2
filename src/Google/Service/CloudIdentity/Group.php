@@ -15,11 +15,8 @@
  * the License.
  */
 
-class Google_Service_CloudIdentity_Group extends Google_Collection
+class Google_Service_CloudIdentity_Group extends Google_Model
 {
-  protected $collection_key = 'additionalGroupKeys';
-  protected $additionalGroupKeysType = 'Google_Service_CloudIdentity_EntityKey';
-  protected $additionalGroupKeysDataType = 'array';
   public $createTime;
   public $description;
   public $displayName;
@@ -30,20 +27,6 @@ class Google_Service_CloudIdentity_Group extends Google_Collection
   public $parent;
   public $updateTime;
 
-  /**
-   * @param Google_Service_CloudIdentity_EntityKey
-   */
-  public function setAdditionalGroupKeys($additionalGroupKeys)
-  {
-    $this->additionalGroupKeys = $additionalGroupKeys;
-  }
-  /**
-   * @return Google_Service_CloudIdentity_EntityKey
-   */
-  public function getAdditionalGroupKeys()
-  {
-    return $this->additionalGroupKeys;
-  }
   public function setCreateTime($createTime)
   {
     $this->createTime = $createTime;
