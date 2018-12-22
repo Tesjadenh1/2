@@ -15,21 +15,11 @@
  * the License.
  */
 
-class Google_Service_ServiceNetworking_Subnetwork extends Google_Model
+class Google_Service_Bigquery_JobStatisticsReservationUsage extends Google_Model
 {
-  public $ipCidrRange;
   public $name;
-  public $network;
-  public $outsideAllocation;
+  public $slotMs;
 
-  public function setIpCidrRange($ipCidrRange)
-  {
-    $this->ipCidrRange = $ipCidrRange;
-  }
-  public function getIpCidrRange()
-  {
-    return $this->ipCidrRange;
-  }
   public function setName($name)
   {
     $this->name = $name;
@@ -38,20 +28,12 @@ class Google_Service_ServiceNetworking_Subnetwork extends Google_Model
   {
     return $this->name;
   }
-  public function setNetwork($network)
+  public function setSlotMs($slotMs)
   {
-    $this->network = $network;
+    $this->slotMs = $slotMs;
   }
-  public function getNetwork()
+  public function getSlotMs()
   {
-    return $this->network;
-  }
-  public function setOutsideAllocation($outsideAllocation)
-  {
-    $this->outsideAllocation = $outsideAllocation;
-  }
-  public function getOutsideAllocation()
-  {
-    return $this->outsideAllocation;
+    return $this->slotMs;
   }
 }
