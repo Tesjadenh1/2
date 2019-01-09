@@ -23,7 +23,7 @@
  *   $operations = $speechService->operations;
  *  </code>
  */
-class Google_Service_Speech_Resource_Operations extends Google_Service_Resource
+class Google_Service_Speech_Resource_ProjectsLocationsOperations extends Google_Service_Resource
 {
   /**
    * Gets the latest state of a long-running operation.  Clients can use this
@@ -50,19 +50,20 @@ class Google_Service_Speech_Resource_Operations extends Google_Service_Resource
    * `"/v1/{name=users}/operations"` to their service configuration. For backwards
    * compatibility, the default name includes the operations collection id,
    * however overriding users must ensure the name binding is the parent resource,
-   * without the operations collection id. (operations.listOperations)
+   * without the operations collection id.
+   * (operations.listProjectsLocationsOperations)
    *
+   * @param string $name The name of the operation's parent resource.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string filter The standard list filter.
-   * @opt_param string name The name of the operation's parent resource.
    * @opt_param string pageToken The standard list page token.
    * @opt_param int pageSize The standard list page size.
+   * @opt_param string filter The standard list filter.
    * @return Google_Service_Speech_ListOperationsResponse
    */
-  public function listOperations($optParams = array())
+  public function listProjectsLocationsOperations($name, $optParams = array())
   {
-    $params = array();
+    $params = array('name' => $name);
     $params = array_merge($params, $optParams);
     return $this->call('list', array($params), "Google_Service_Speech_ListOperationsResponse");
   }

@@ -16,87 +16,44 @@
  */
 
 /**
- * Service definition for Speech (v1).
+ * Service definition for Libraryagent (v1).
  *
  * <p>
- * Converts audio to text by applying powerful neural network models.</p>
+ * A simple Google Example Library API.</p>
  *
  * <p>
  * For more information about this service, see the API
- * <a href="https://cloud.google.com/speech-to-text/docs/quickstart-protocol" target="_blank">Documentation</a>
+ * <a href="https://cloud.google.com/docs/quota" target="_blank">Documentation</a>
  * </p>
  *
  * @author Google, Inc.
  */
-class Google_Service_Speech extends Google_Service
+class Google_Service_Libraryagent extends Google_Service
 {
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
 
-  public $operations;
-  public $projects_locations_operations;
-  public $projects_operations_manualRecognitionTasks;
-  public $speech;
+  public $shelves;
+  public $shelves_books;
   
   /**
-   * Constructs the internal representation of the Speech service.
+   * Constructs the internal representation of the Libraryagent service.
    *
    * @param Google_Client $client
    */
   public function __construct(Google_Client $client)
   {
     parent::__construct($client);
-    $this->rootUrl = 'https://speech.googleapis.com/';
+    $this->rootUrl = 'https://libraryagent.googleapis.com/';
     $this->servicePath = '';
     $this->version = 'v1';
-    $this->serviceName = 'speech';
+    $this->serviceName = 'libraryagent';
 
-    $this->operations = new Google_Service_Speech_Resource_Operations(
+    $this->shelves = new Google_Service_Libraryagent_Resource_Shelves(
         $this,
         $this->serviceName,
-        'operations',
-        array(
-          'methods' => array(
-            'get' => array(
-              'path' => 'v1/operations/{+name}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1/operations',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'name' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->projects_locations_operations = new Google_Service_Speech_Resource_ProjectsLocationsOperations(
-        $this,
-        $this->serviceName,
-        'operations',
+        'shelves',
         array(
           'methods' => array(
             'get' => array(
@@ -110,23 +67,14 @@ class Google_Service_Speech extends Google_Service
                 ),
               ),
             ),'list' => array(
-              'path' => 'v1/{+name}/operations',
+              'path' => 'v1/shelves',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'name' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
-                'filter' => array(
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -135,13 +83,23 @@ class Google_Service_Speech extends Google_Service
           )
         )
     );
-    $this->projects_operations_manualRecognitionTasks = new Google_Service_Speech_Resource_ProjectsOperationsManualRecognitionTasks(
+    $this->shelves_books = new Google_Service_Libraryagent_Resource_ShelvesBooks(
         $this,
         $this->serviceName,
-        'manualRecognitionTasks',
+        'books',
         array(
           'methods' => array(
-            'get' => array(
+            'borrow' => array(
+              'path' => 'v1/{+name}:borrow',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
               'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
@@ -151,24 +109,34 @@ class Google_Service_Speech extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),
-          )
-        )
-    );
-    $this->speech = new Google_Service_Speech_Resource_Speech(
-        $this,
-        $this->serviceName,
-        'speech',
-        array(
-          'methods' => array(
-            'longrunningrecognize' => array(
-              'path' => 'v1/speech:longrunningrecognize',
+            ),'list' => array(
+              'path' => 'v1/{+parent}/books',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'return' => array(
+              'path' => 'v1/{+name}:return',
               'httpMethod' => 'POST',
-              'parameters' => array(),
-            ),'recognize' => array(
-              'path' => 'v1/speech:recognize',
-              'httpMethod' => 'POST',
-              'parameters' => array(),
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),
           )
         )
