@@ -34,6 +34,9 @@ class Google_Service_CloudKMS extends Google_Service
   /** View and manage your data across Google Cloud Platform services. */
   const CLOUD_PLATFORM =
       "https://www.googleapis.com/auth/cloud-platform";
+  /** View and manage your keys and secrets stored in Cloud Key Management Service. */
+  const CLOUDKMS =
+      "https://www.googleapis.com/auth/cloudkms";
 
   public $projects_locations;
   public $projects_locations_keyRings;
@@ -247,10 +250,6 @@ class Google_Service_CloudKMS extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'versionView' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -258,6 +257,10 @@ class Google_Service_CloudKMS extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'versionView' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(

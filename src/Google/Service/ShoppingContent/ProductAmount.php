@@ -15,10 +15,12 @@
  * the License.
  */
 
-class Google_Service_ShoppingContent_Amount extends Google_Model
+class Google_Service_ShoppingContent_ProductAmount extends Google_Model
 {
   protected $priceAmountType = 'Google_Service_ShoppingContent_Price';
   protected $priceAmountDataType = '';
+  protected $remittedTaxAmountType = 'Google_Service_ShoppingContent_Price';
+  protected $remittedTaxAmountDataType = '';
   protected $taxAmountType = 'Google_Service_ShoppingContent_Price';
   protected $taxAmountDataType = '';
 
@@ -35,6 +37,20 @@ class Google_Service_ShoppingContent_Amount extends Google_Model
   public function getPriceAmount()
   {
     return $this->priceAmount;
+  }
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
+  public function setRemittedTaxAmount(Google_Service_ShoppingContent_Price $remittedTaxAmount)
+  {
+    $this->remittedTaxAmount = $remittedTaxAmount;
+  }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
+  public function getRemittedTaxAmount()
+  {
+    return $this->remittedTaxAmount;
   }
   /**
    * @param Google_Service_ShoppingContent_Price

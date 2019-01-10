@@ -48,6 +48,7 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   protected $shippingCostTaxDataType = '';
   public $shippingOption;
   public $status;
+  public $taxCollector;
 
   public function setAcknowledged($acknowledged)
   {
@@ -268,5 +269,13 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   public function getStatus()
   {
     return $this->status;
+  }
+  public function setTaxCollector($taxCollector)
+  {
+    $this->taxCollector = $taxCollector;
+  }
+  public function getTaxCollector()
+  {
+    return $this->taxCollector;
   }
 }
