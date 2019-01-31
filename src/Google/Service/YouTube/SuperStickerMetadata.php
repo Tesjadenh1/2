@@ -15,26 +15,34 @@
  * the License.
  */
 
-class Google_Service_DLP_GooglePrivacyDlpV2Regex extends Google_Collection
+class Google_Service_YouTube_SuperStickerMetadata extends Google_Model
 {
-  protected $collection_key = 'groupIndexes';
-  public $groupIndexes;
-  public $pattern;
+  public $altText;
+  public $altTextLanguage;
+  public $stickerId;
 
-  public function setGroupIndexes($groupIndexes)
+  public function setAltText($altText)
   {
-    $this->groupIndexes = $groupIndexes;
+    $this->altText = $altText;
   }
-  public function getGroupIndexes()
+  public function getAltText()
   {
-    return $this->groupIndexes;
+    return $this->altText;
   }
-  public function setPattern($pattern)
+  public function setAltTextLanguage($altTextLanguage)
   {
-    $this->pattern = $pattern;
+    $this->altTextLanguage = $altTextLanguage;
   }
-  public function getPattern()
+  public function getAltTextLanguage()
   {
-    return $this->pattern;
+    return $this->altTextLanguage;
+  }
+  public function setStickerId($stickerId)
+  {
+    $this->stickerId = $stickerId;
+  }
+  public function getStickerId()
+  {
+    return $this->stickerId;
   }
 }
