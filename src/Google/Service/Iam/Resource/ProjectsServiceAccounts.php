@@ -160,10 +160,6 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
     return $this->call('setIamPolicy', array($params), "Google_Service_Iam_Policy");
   }
   /**
-   * **Note**: This method is in the process of being deprecated. Call the [`signB
-   * lob()`](/iam/credentials/reference/rest/v1/projects.serviceAccounts/signBlob)
-   * method of the Cloud IAM Service Account Credentials API instead.
-   *
    * Signs a blob using a service account's system-managed private key.
    * (serviceAccounts.signBlob)
    *
@@ -183,10 +179,6 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
     return $this->call('signBlob', array($params), "Google_Service_Iam_SignBlobResponse");
   }
   /**
-   * **Note**: This method is in the process of being deprecated. Call the [`signJ
-   * wt()`](/iam/credentials/reference/rest/v1/projects.serviceAccounts/signJwt)
-   * method of the Cloud IAM Service Account Credentials API instead.
-   *
    * Signs a JWT using a service account's system-managed private key.
    *
    * If no expiry time (`exp`) is provided in the `SignJwtRequest`, IAM sets an an
