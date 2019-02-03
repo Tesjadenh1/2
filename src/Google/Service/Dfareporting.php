@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for Dfareporting (v3.2).
+ * Service definition for Dfareporting (v3.3).
  *
  * <p>
  * Manages your DoubleClick Campaign Manager ad campaigns and reports.</p>
@@ -64,7 +64,6 @@ class Google_Service_Dfareporting extends Google_Service
   public $creativeGroups;
   public $creatives;
   public $dimensionValues;
-  public $directorySiteContacts;
   public $directorySites;
   public $dynamicTargetingKeys;
   public $eventTags;
@@ -113,8 +112,8 @@ class Google_Service_Dfareporting extends Google_Service
   {
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
-    $this->servicePath = 'dfareporting/v3.2/';
-    $this->version = 'v3.2';
+    $this->servicePath = 'dfareporting/v3.3/';
+    $this->version = 'v3.3';
     $this->serviceName = 'dfareporting';
 
     $this->accountActiveAdSummaries = new Google_Service_Dfareporting_Resource_AccountActiveAdSummaries(
@@ -2001,71 +2000,6 @@ class Google_Service_Dfareporting extends Google_Service
           )
         )
     );
-    $this->directorySiteContacts = new Google_Service_Dfareporting_Resource_DirectorySiteContacts(
-        $this,
-        $this->serviceName,
-        'directorySiteContacts',
-        array(
-          'methods' => array(
-            'get' => array(
-              'path' => 'userprofiles/{profileId}/directorySiteContacts/{id}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'profileId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'id' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'userprofiles/{profileId}/directorySiteContacts',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'profileId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'directorySiteIds' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'ids' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'maxResults' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'searchString' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'sortField' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'sortOrder' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-              ),
-            ),
-          )
-        )
-    );
     $this->directorySites = new Google_Service_Dfareporting_Resource_DirectorySites(
         $this,
         $this->serviceName,
@@ -2122,10 +2056,6 @@ class Google_Service_Dfareporting extends Google_Service
                   'location' => 'query',
                   'type' => 'boolean',
                 ),
-                'countryId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'dfpNetworkCode' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -2140,10 +2070,6 @@ class Google_Service_Dfareporting extends Google_Service
                   'type' => 'integer',
                 ),
                 'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'parentId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

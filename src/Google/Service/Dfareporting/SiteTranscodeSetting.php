@@ -15,25 +15,26 @@
  * the License.
  */
 
-class Google_Service_Dfareporting_CreativeSettings extends Google_Model
+class Google_Service_Dfareporting_SiteTranscodeSetting extends Google_Collection
 {
-  public $iFrameFooter;
-  public $iFrameHeader;
+  protected $collection_key = 'enabledVideoFormats';
+  public $enabledVideoFormats;
+  public $kind;
 
-  public function setIFrameFooter($iFrameFooter)
+  public function setEnabledVideoFormats($enabledVideoFormats)
   {
-    $this->iFrameFooter = $iFrameFooter;
+    $this->enabledVideoFormats = $enabledVideoFormats;
   }
-  public function getIFrameFooter()
+  public function getEnabledVideoFormats()
   {
-    return $this->iFrameFooter;
+    return $this->enabledVideoFormats;
   }
-  public function setIFrameHeader($iFrameHeader)
+  public function setKind($kind)
   {
-    $this->iFrameHeader = $iFrameHeader;
+    $this->kind = $kind;
   }
-  public function getIFrameHeader()
+  public function getKind()
   {
-    return $this->iFrameHeader;
+    return $this->kind;
   }
 }
