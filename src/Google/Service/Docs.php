@@ -19,7 +19,7 @@
  * Service definition for Docs (v1).
  *
  * <p>
- * An API for creating and editing Google Docs documents.</p>
+ * Reads and writes Google Docs documents.</p>
  *
  * <p>
  * For more information about this service, see the API
