@@ -113,36 +113,6 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
     return $this->call('list', array($params), "Google_Service_Iam_ListServiceAccountsResponse");
   }
   /**
-   * Patches a ServiceAccount.
-   *
-   * Currently, only the following fields are updatable: `display_name` and
-   * `description`.
-   *
-   * Only fields specified in the request are garaunteed to be returned in the
-   * response. Other fields in the response may be empty.
-   *
-   * Note: The field mask is required. (serviceAccounts.patch)
-   *
-   * @param string $name The resource name of the service account in the following
-   * format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`.
-   *
-   * Requests using `-` as a wildcard for the `PROJECT_ID` will infer the project
-   * from the `account` and the `ACCOUNT` value can be the `email` address or the
-   * `unique_id` of the service account.
-   *
-   * In responses the resource name will always be in the format
-   * `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`.
-   * @param Google_Service_Iam_PatchServiceAccountRequest $postBody
-   * @param array $optParams Optional parameters.
-   * @return Google_Service_Iam_ServiceAccount
-   */
-  public function patch($name, Google_Service_Iam_PatchServiceAccountRequest $postBody, $optParams = array())
-  {
-    $params = array('name' => $name, 'postBody' => $postBody);
-    $params = array_merge($params, $optParams);
-    return $this->call('patch', array($params), "Google_Service_Iam_ServiceAccount");
-  }
-  /**
    * Sets the IAM access control policy for a ServiceAccount.
    * (serviceAccounts.setIamPolicy)
    *
@@ -160,6 +130,10 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
     return $this->call('setIamPolicy', array($params), "Google_Service_Iam_Policy");
   }
   /**
+   * **Note**: This method is in the process of being deprecated. Call the [`signB
+   * lob()`](/iam/credentials/reference/rest/v1/projects.serviceAccounts/signBlob)
+   * method of the Cloud IAM Service Account Credentials API instead.
+   *
    * Signs a blob using a service account's system-managed private key.
    * (serviceAccounts.signBlob)
    *
@@ -179,6 +153,10 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
     return $this->call('signBlob', array($params), "Google_Service_Iam_SignBlobResponse");
   }
   /**
+   * **Note**: This method is in the process of being deprecated. Call the [`signJ
+   * wt()`](/iam/credentials/reference/rest/v1/projects.serviceAccounts/signJwt)
+   * method of the Cloud IAM Service Account Credentials API instead.
+   *
    * Signs a JWT using a service account's system-managed private key.
    *
    * If no expiry time (`exp`) is provided in the `SignJwtRequest`, IAM sets an an
