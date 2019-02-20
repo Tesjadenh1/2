@@ -66,6 +66,7 @@ class Google_Service_Games extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = 'games/v1/';
+    $this->batchPath = 'batch/games/v1';
     $this->version = 'v1';
     $this->serviceName = 'games';
 

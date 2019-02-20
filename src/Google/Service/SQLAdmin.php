@@ -57,6 +57,7 @@ class Google_Service_SQLAdmin extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = 'sql/v1beta4/';
+    $this->batchPath = 'batch/sqladmin/v1beta4';
     $this->version = 'v1beta4';
     $this->serviceName = 'sqladmin';
 

@@ -54,6 +54,7 @@ class Google_Service_CloudKMS extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://cloudkms.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'cloudkms';
 

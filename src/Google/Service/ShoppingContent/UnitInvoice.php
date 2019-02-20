@@ -20,8 +20,6 @@ class Google_Service_ShoppingContent_UnitInvoice extends Google_Collection
   protected $collection_key = 'unitPriceTaxes';
   protected $additionalChargesType = 'Google_Service_ShoppingContent_UnitInvoiceAdditionalCharge';
   protected $additionalChargesDataType = 'array';
-  protected $promotionsType = 'Google_Service_ShoppingContent_Promotion';
-  protected $promotionsDataType = 'array';
   protected $unitPriceType = 'Google_Service_ShoppingContent_Price';
   protected $unitPriceDataType = '';
   protected $unitPriceTaxesType = 'Google_Service_ShoppingContent_UnitInvoiceTaxLine';
@@ -40,20 +38,6 @@ class Google_Service_ShoppingContent_UnitInvoice extends Google_Collection
   public function getAdditionalCharges()
   {
     return $this->additionalCharges;
-  }
-  /**
-   * @param Google_Service_ShoppingContent_Promotion
-   */
-  public function setPromotions($promotions)
-  {
-    $this->promotions = $promotions;
-  }
-  /**
-   * @return Google_Service_ShoppingContent_Promotion
-   */
-  public function getPromotions()
-  {
-    return $this->promotions;
   }
   /**
    * @param Google_Service_ShoppingContent_Price

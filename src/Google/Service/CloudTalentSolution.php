@@ -53,6 +53,7 @@ class Google_Service_CloudTalentSolution extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://jobs.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v3';
     $this->serviceName = 'jobs';
 

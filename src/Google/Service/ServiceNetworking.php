@@ -52,6 +52,7 @@ class Google_Service_ServiceNetworking extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://servicenetworking.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1beta';
     $this->serviceName = 'servicenetworking';
 

@@ -49,6 +49,10 @@ class Google_Service_Monitoring_Resource_ProjectsGroups extends Google_Service_R
    * @param string $name The group to delete. The format is
    * "projects/{project_id_or_number}/groups/{group_id}".
    * @param array $optParams Optional parameters.
+   *
+   * @opt_param bool recursive If this field is true, then the request means to
+   * delete a group with all its descendants. Otherwise, the request means to
+   * delete a group only when it has no descendants. The default value is false.
    * @return Google_Service_Monitoring_MonitoringEmpty
    */
   public function delete($name, $optParams = array())

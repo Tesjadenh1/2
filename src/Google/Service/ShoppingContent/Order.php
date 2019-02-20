@@ -32,8 +32,10 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   protected $lineItemsDataType = 'array';
   public $merchantId;
   public $merchantOrderId;
-  protected $netAmountType = 'Google_Service_ShoppingContent_Price';
-  protected $netAmountDataType = '';
+  protected $netPriceAmountType = 'Google_Service_ShoppingContent_Price';
+  protected $netPriceAmountDataType = '';
+  protected $netTaxAmountType = 'Google_Service_ShoppingContent_Price';
+  protected $netTaxAmountDataType = '';
   public $paymentStatus;
   public $placedDate;
   protected $promotionsType = 'Google_Service_ShoppingContent_OrderPromotion';
@@ -157,16 +159,30 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   /**
    * @param Google_Service_ShoppingContent_Price
    */
-  public function setNetAmount(Google_Service_ShoppingContent_Price $netAmount)
+  public function setNetPriceAmount(Google_Service_ShoppingContent_Price $netPriceAmount)
   {
-    $this->netAmount = $netAmount;
+    $this->netPriceAmount = $netPriceAmount;
   }
   /**
    * @return Google_Service_ShoppingContent_Price
    */
-  public function getNetAmount()
+  public function getNetPriceAmount()
   {
-    return $this->netAmount;
+    return $this->netPriceAmount;
+  }
+  /**
+   * @param Google_Service_ShoppingContent_Price
+   */
+  public function setNetTaxAmount(Google_Service_ShoppingContent_Price $netTaxAmount)
+  {
+    $this->netTaxAmount = $netTaxAmount;
+  }
+  /**
+   * @return Google_Service_ShoppingContent_Price
+   */
+  public function getNetTaxAmount()
+  {
+    return $this->netTaxAmount;
   }
   public function setPaymentStatus($paymentStatus)
   {

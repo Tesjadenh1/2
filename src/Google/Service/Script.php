@@ -101,6 +101,7 @@ class Google_Service_Script extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://script.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'script';
 

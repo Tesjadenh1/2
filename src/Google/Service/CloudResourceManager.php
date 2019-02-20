@@ -51,6 +51,7 @@ class Google_Service_CloudResourceManager extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://cloudresourcemanager.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v2';
     $this->serviceName = 'cloudresourcemanager';
 

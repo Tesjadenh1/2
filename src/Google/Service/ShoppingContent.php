@@ -48,6 +48,7 @@ class Google_Service_ShoppingContent extends Google_Service
   public $pos;
   public $products;
   public $productstatuses;
+  public $regionalinventory;
   public $shippingsettings;
   
   /**
@@ -60,6 +61,7 @@ class Google_Service_ShoppingContent extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = 'content/v2.1/';
+    $this->batchPath = 'batch/content/v2.1';
     $this->version = 'v2.1';
     $this->serviceName = 'content';
 
@@ -1371,6 +1373,35 @@ class Google_Service_ShoppingContent extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->regionalinventory = new Google_Service_ShoppingContent_Resource_Regionalinventory(
+        $this,
+        $this->serviceName,
+        'regionalinventory',
+        array(
+          'methods' => array(
+            'custombatch' => array(
+              'path' => 'regionalinventory/batch',
+              'httpMethod' => 'POST',
+              'parameters' => array(),
+            ),'insert' => array(
+              'path' => '{merchantId}/products/{productId}/regionalinventory',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'merchantId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'productId' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),

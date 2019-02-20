@@ -31,8 +31,6 @@ class Google_Service_ShoppingContent_TestOrder extends Google_Collection
   protected $promotionsDataType = 'array';
   protected $shippingCostType = 'Google_Service_ShoppingContent_Price';
   protected $shippingCostDataType = '';
-  protected $shippingCostTaxType = 'Google_Service_ShoppingContent_Price';
-  protected $shippingCostTaxDataType = '';
   public $shippingOption;
 
   /**
@@ -130,20 +128,6 @@ class Google_Service_ShoppingContent_TestOrder extends Google_Collection
   public function getShippingCost()
   {
     return $this->shippingCost;
-  }
-  /**
-   * @param Google_Service_ShoppingContent_Price
-   */
-  public function setShippingCostTax(Google_Service_ShoppingContent_Price $shippingCostTax)
-  {
-    $this->shippingCostTax = $shippingCostTax;
-  }
-  /**
-   * @return Google_Service_ShoppingContent_Price
-   */
-  public function getShippingCostTax()
-  {
-    return $this->shippingCostTax;
   }
   public function setShippingOption($shippingOption)
   {

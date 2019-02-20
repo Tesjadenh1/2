@@ -47,6 +47,7 @@ class Google_Service_CloudFilestore extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://file.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'file';
 

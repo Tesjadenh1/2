@@ -61,6 +61,7 @@ class Google_Service_Sheets extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://sheets.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v4';
     $this->serviceName = 'sheets';
 

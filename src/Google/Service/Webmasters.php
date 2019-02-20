@@ -53,6 +53,7 @@ class Google_Service_Webmasters extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = 'webmasters/v3/';
+    $this->batchPath = 'batch/webmasters/v3';
     $this->version = 'v3';
     $this->serviceName = 'webmasters';
 

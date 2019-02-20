@@ -51,6 +51,7 @@ class Google_Service_Clouderrorreporting extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://clouderrorreporting.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1beta1';
     $this->serviceName = 'clouderrorreporting';
 

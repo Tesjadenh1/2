@@ -50,6 +50,7 @@ class Google_Service_WebSecurityScanner extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://websecurityscanner.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1alpha';
     $this->serviceName = 'websecurityscanner';
 

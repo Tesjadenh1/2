@@ -53,6 +53,7 @@ class Google_Service_ContainerAnalysis extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://containeranalysis.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1alpha1';
     $this->serviceName = 'containeranalysis';
 

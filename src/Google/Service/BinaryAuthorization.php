@@ -49,6 +49,7 @@ class Google_Service_BinaryAuthorization extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://binaryauthorization.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1beta1';
     $this->serviceName = 'binaryauthorization';
 

@@ -55,6 +55,7 @@ class Google_Service_Container extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://container.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'container';
 

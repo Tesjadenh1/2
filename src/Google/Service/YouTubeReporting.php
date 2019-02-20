@@ -53,6 +53,7 @@ class Google_Service_YouTubeReporting extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://youtubereporting.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'youtubereporting';
 

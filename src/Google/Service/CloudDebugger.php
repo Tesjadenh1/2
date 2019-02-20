@@ -53,6 +53,7 @@ class Google_Service_CloudDebugger extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://clouddebugger.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v2';
     $this->serviceName = 'clouddebugger';
 

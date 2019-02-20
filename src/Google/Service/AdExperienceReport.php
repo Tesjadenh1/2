@@ -48,6 +48,7 @@ class Google_Service_AdExperienceReport extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://adexperiencereport.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'adexperiencereport';
 

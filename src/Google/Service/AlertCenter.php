@@ -48,6 +48,7 @@ class Google_Service_AlertCenter extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://alertcenter.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1beta1';
     $this->serviceName = 'alertcenter';
 
@@ -153,11 +154,11 @@ class Google_Service_AlertCenter extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'customerId' => array(
+                'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'filter' => array(
+                'customerId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

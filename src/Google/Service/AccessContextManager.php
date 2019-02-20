@@ -50,6 +50,7 @@ class Google_Service_AccessContextManager extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://accesscontextmanager.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1beta';
     $this->serviceName = 'accesscontextmanager';
 

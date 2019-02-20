@@ -50,6 +50,7 @@ class Google_Service_RemoteBuildExecution extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://remotebuildexecution.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v2';
     $this->serviceName = 'remotebuildexecution';
 

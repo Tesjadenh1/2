@@ -47,10 +47,10 @@ class Google_Service_AlertCenter_Resource_Alerts extends Google_Service_Resource
     return $this->call('delete', array($params), "Google_Service_AlertCenter_AlertcenterEmpty");
   }
   /**
-   * Gets the specified alert. (alerts.get)
+   * Gets the specified alert. Attempting to get a nonexistent alert returns
+   * `NOT_FOUND` error. (alerts.get)
    *
    * @param string $alertId Required. The identifier of the alert to retrieve.
-   * Returns a NOT_FOUND error if no such alert.
    * @param array $optParams Optional parameters.
    *
    * @opt_param string customerId Optional. The unique identifier of the G Suite

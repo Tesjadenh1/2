@@ -70,6 +70,7 @@ class Google_Service_Genomics extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://genomics.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'genomics';
 
@@ -277,6 +278,10 @@ class Google_Service_Genomics extends Google_Service
               'path' => 'v1/datasets',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'projectId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -284,10 +289,6 @@ class Google_Service_Genomics extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'projectId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),'patch' => array(
@@ -373,10 +374,6 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -384,6 +381,10 @@ class Google_Service_Genomics extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -467,6 +468,14 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'end' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -480,14 +489,6 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                 ),
                 'referenceName' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'end' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -549,14 +550,6 @@ class Google_Service_Genomics extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'start' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'end' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -564,6 +557,14 @@ class Google_Service_Genomics extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'start' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'end' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),

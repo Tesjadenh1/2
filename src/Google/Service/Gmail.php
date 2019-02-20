@@ -85,6 +85,7 @@ class Google_Service_Gmail extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = 'gmail/v1/users/';
+    $this->batchPath = 'batch/gmail/v1';
     $this->version = 'v1';
     $this->serviceName = 'gmail';
 

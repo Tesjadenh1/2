@@ -53,6 +53,7 @@ class Google_Service_Vault extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://vault.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'vault';
 

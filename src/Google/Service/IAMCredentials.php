@@ -46,6 +46,7 @@ class Google_Service_IAMCredentials extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://iamcredentials.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'iamcredentials';
 

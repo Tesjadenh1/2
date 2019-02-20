@@ -61,6 +61,7 @@ class Google_Service_FirebaseHosting extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://firebasehosting.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1beta1';
     $this->serviceName = 'firebasehosting';
 

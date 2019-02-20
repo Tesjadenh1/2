@@ -56,6 +56,7 @@ class Google_Service_Oauth2 extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch/oauth2/v2';
     $this->version = 'v2';
     $this->serviceName = 'oauth2';
 

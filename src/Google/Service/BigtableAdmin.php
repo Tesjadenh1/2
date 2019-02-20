@@ -75,6 +75,7 @@ class Google_Service_BigtableAdmin extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://bigtableadmin.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v2';
     $this->serviceName = 'bigtableadmin';
 

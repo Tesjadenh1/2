@@ -21,6 +21,7 @@ class Google_Service_Dataflow_Environment extends Google_Collection
   public $clusterManagerApiService;
   public $dataset;
   public $experiments;
+  public $flexResourceSchedulingGoal;
   public $internalExperiments;
   public $sdkPipelineOptions;
   public $serviceAccountEmail;
@@ -53,6 +54,14 @@ class Google_Service_Dataflow_Environment extends Google_Collection
   public function getExperiments()
   {
     return $this->experiments;
+  }
+  public function setFlexResourceSchedulingGoal($flexResourceSchedulingGoal)
+  {
+    $this->flexResourceSchedulingGoal = $flexResourceSchedulingGoal;
+  }
+  public function getFlexResourceSchedulingGoal()
+  {
+    return $this->flexResourceSchedulingGoal;
   }
   public function setInternalExperiments($internalExperiments)
   {

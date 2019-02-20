@@ -49,6 +49,7 @@ class Google_Service_DriveActivity extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://driveactivity.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v2';
     $this->serviceName = 'driveactivity';
 

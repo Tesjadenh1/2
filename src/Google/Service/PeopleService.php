@@ -73,6 +73,7 @@ class Google_Service_PeopleService extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://people.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'people';
 

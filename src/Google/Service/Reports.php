@@ -54,6 +54,7 @@ class Google_Service_Reports extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://www.googleapis.com/';
     $this->servicePath = 'admin/reports/v1/';
+    $this->batchPath = 'batch/admin/reports_v1';
     $this->version = 'reports_v1';
     $this->serviceName = 'admin';
 

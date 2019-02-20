@@ -52,6 +52,7 @@ class Google_Service_Datastore extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://datastore.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v1';
     $this->serviceName = 'datastore';
 

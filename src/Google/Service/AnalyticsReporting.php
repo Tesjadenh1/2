@@ -49,6 +49,7 @@ class Google_Service_AnalyticsReporting extends Google_Service
     parent::__construct($client);
     $this->rootUrl = 'https://analyticsreporting.googleapis.com/';
     $this->servicePath = '';
+    $this->batchPath = 'batch';
     $this->version = 'v4';
     $this->serviceName = 'analyticsreporting';
 
