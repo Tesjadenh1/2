@@ -24,6 +24,7 @@ class Google_Service_Compute_ForwardingRule extends Google_Collection
   );
   public $iPAddress;
   public $iPProtocol;
+  public $allPorts;
   public $backendService;
   public $creationTimestamp;
   public $description;
@@ -58,6 +59,14 @@ class Google_Service_Compute_ForwardingRule extends Google_Collection
   public function getIPProtocol()
   {
     return $this->iPProtocol;
+  }
+  public function setAllPorts($allPorts)
+  {
+    $this->allPorts = $allPorts;
+  }
+  public function getAllPorts()
+  {
+    return $this->allPorts;
   }
   public function setBackendService($backendService)
   {

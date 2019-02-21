@@ -123,8 +123,7 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
    * @param array $optParams Optional parameters.
    *
    * @opt_param bool forceAttach Whether to force attach the disk even if it's
-   * currently attached to another instance. This is only available for regional
-   * disks.
+   * currently attached to another instance.
    * @opt_param string requestId An optional request ID to identify requests.
    * Specify a unique request ID so that if you must retry your request, the
    * server will know to ignore the request if it has already been completed.
