@@ -95,8 +95,9 @@ class Google_Service_Spanner_Resource_ProjectsInstancesDatabasesSessions extends
     return $this->call('create', array($params), "Google_Service_Spanner_Session");
   }
   /**
-   * Ends a session, releasing server resources associated with it.
-   * (sessions.delete)
+   * Ends a session, releasing server resources associated with it. This will
+   * asynchronously trigger cancellation of any operations that are running with
+   * this session. (sessions.delete)
    *
    * @param string $name Required. The name of the session to delete.
    * @param array $optParams Optional parameters.

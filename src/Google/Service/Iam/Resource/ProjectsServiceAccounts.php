@@ -98,12 +98,12 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
    * with the service accounts, such as `projects/my-project-123`.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param string pageToken Optional pagination token returned in an earlier
-   * ListServiceAccountsResponse.next_page_token.
    * @opt_param int pageSize Optional limit on the number of service accounts to
    * include in the response. Further accounts can subsequently be obtained by
    * including the ListServiceAccountsResponse.next_page_token in a subsequent
    * request.
+   * @opt_param string pageToken Optional pagination token returned in an earlier
+   * ListServiceAccountsResponse.next_page_token.
    * @return Google_Service_Iam_ListServiceAccountsResponse
    */
   public function listProjectsServiceAccounts($name, $optParams = array())
@@ -194,6 +194,23 @@ class Google_Service_Iam_Resource_ProjectsServiceAccounts extends Google_Service
     $params = array('resource' => $resource, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('testIamPermissions', array($params), "Google_Service_Iam_TestIamPermissionsResponse");
+  }
+  /**
+   * Restores a deleted ServiceAccount. (serviceAccounts.undelete)
+   *
+   * @param string $name The resource name of the service account in the following
+   * format: `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT_UNIQUE_ID}'. Using
+   * `-` as a wildcard for the `PROJECT_ID` will infer the project from the
+   * account.
+   * @param Google_Service_Iam_UndeleteServiceAccountRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Iam_UndeleteServiceAccountResponse
+   */
+  public function undelete($name, Google_Service_Iam_UndeleteServiceAccountRequest $postBody, $optParams = array())
+  {
+    $params = array('name' => $name, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('undelete', array($params), "Google_Service_Iam_UndeleteServiceAccountResponse");
   }
   /**
    * Updates a ServiceAccount.

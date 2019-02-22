@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_TagManager_WorkspaceProposalHistoryStatusChange extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment extends Google_Model
 {
-  public $newStatus;
-  public $oldStatus;
+  public $endTimeOffset;
+  public $startTimeOffset;
 
-  public function setNewStatus($newStatus)
+  public function setEndTimeOffset($endTimeOffset)
   {
-    $this->newStatus = $newStatus;
+    $this->endTimeOffset = $endTimeOffset;
   }
-  public function getNewStatus()
+  public function getEndTimeOffset()
   {
-    return $this->newStatus;
+    return $this->endTimeOffset;
   }
-  public function setOldStatus($oldStatus)
+  public function setStartTimeOffset($startTimeOffset)
   {
-    $this->oldStatus = $oldStatus;
+    $this->startTimeOffset = $startTimeOffset;
   }
-  public function getOldStatus()
+  public function getStartTimeOffset()
   {
-    return $this->oldStatus;
+    return $this->startTimeOffset;
   }
 }

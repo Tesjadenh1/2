@@ -15,25 +15,23 @@
  * the License.
  */
 
-class Google_Service_TagManager_WorkspaceProposalUser extends Google_Model
+class Google_Service_TagManager_RevertZoneResponse extends Google_Model
 {
-  public $gaiaId;
-  public $type;
+  protected $zoneType = 'Google_Service_TagManager_Zone';
+  protected $zoneDataType = '';
 
-  public function setGaiaId($gaiaId)
+  /**
+   * @param Google_Service_TagManager_Zone
+   */
+  public function setZone(Google_Service_TagManager_Zone $zone)
   {
-    $this->gaiaId = $gaiaId;
+    $this->zone = $zone;
   }
-  public function getGaiaId()
+  /**
+   * @return Google_Service_TagManager_Zone
+   */
+  public function getZone()
   {
-    return $this->gaiaId;
-  }
-  public function setType($type)
-  {
-    $this->type = $type;
-  }
-  public function getType()
-  {
-    return $this->type;
+    return $this->zone;
   }
 }

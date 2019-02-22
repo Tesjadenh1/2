@@ -20,7 +20,8 @@
  *
  * <p>
  * Detects objects, explicit content, and scene changes in videos. It also
- * specifies the region for annotation and transcribes speech to text.</p>
+ * specifies the region for annotation and transcribes speech to text. Supports
+ * both asynchronous API and streaming API.</p>
  *
  * <p>
  * For more information about this service, see the API

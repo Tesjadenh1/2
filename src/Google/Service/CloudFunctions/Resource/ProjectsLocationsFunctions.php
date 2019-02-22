@@ -28,8 +28,8 @@ class Google_Service_CloudFunctions_Resource_ProjectsLocationsFunctions extends 
   /**
    * Synchronously invokes a deployed Cloud Function. To be used for testing
    * purposes as very limited traffic is allowed. For more information on the
-   * actual limits refer to [API Calls](
-   * https://cloud.google.com/functions/quotas#rate_limits).
+   * actual limits, refer to [Rate
+   * Limits](https://cloud.google.com/functions/quotas#rate_limits).
    * (functions.callProjectsLocationsFunctions)
    *
    * @param string $name The name of the function to be called.
@@ -106,12 +106,19 @@ class Google_Service_CloudFunctions_Resource_ProjectsLocationsFunctions extends 
    * restrictions:
    *
    * * Source file type should be a zip file. * Source file size should not exceed
-   * 100MB limit.
+   * 100MB limit. * No credentials should be attached - the signed URLs provide
+   * access to the   target bucket using internal service identity; if credentials
+   * were   attached, the identity from the credentials would be used, but that
+   * identity does not have permissions to upload files to the URL.
    *
    * When making a HTTP PUT request, these two headers need to be specified:
    *
    * * `content-type: application/zip` * `x-goog-content-length-range:
-   * 0,104857600` (functions.generateUploadUrl)
+   * 0,104857600`
+   *
+   * And this header SHOULD NOT be specified:
+   *
+   * * `Authorization: Bearer YOUR_TOKEN` (functions.generateUploadUrl)
    *
    * @param string $parent The project and location in which the Google Cloud
    * Storage signed URL should be generated, specified in the format
@@ -166,11 +173,11 @@ class Google_Service_CloudFunctions_Resource_ProjectsLocationsFunctions extends 
    * functions in all locations, use "-" in place of a location.
    * @param array $optParams Optional parameters.
    *
-   * @opt_param int pageSize Maximum number of functions to return per call.
    * @opt_param string pageToken The value returned by the last
    * `ListFunctionsResponse`; indicates that this is a continuation of a prior
    * `ListFunctions` call, and that the system should return the next page of
    * data.
+   * @opt_param int pageSize Maximum number of functions to return per call.
    * @return Google_Service_CloudFunctions_ListFunctionsResponse
    */
   public function listProjectsLocationsFunctions($parent, $optParams = array())

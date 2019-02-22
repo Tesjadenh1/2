@@ -15,16 +15,25 @@
  * the License.
  */
 
-class Google_Service_TagManager_WorkspaceProposalHistoryComment extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedVertex extends Google_Model
 {
-  public $content;
+  public $x;
+  public $y;
 
-  public function setContent($content)
+  public function setX($x)
   {
-    $this->content = $content;
+    $this->x = $x;
   }
-  public function getContent()
+  public function getX()
   {
-    return $this->content;
+    return $this->x;
+  }
+  public function setY($y)
+  {
+    $this->y = $y;
+  }
+  public function getY()
+  {
+    return $this->y;
   }
 }

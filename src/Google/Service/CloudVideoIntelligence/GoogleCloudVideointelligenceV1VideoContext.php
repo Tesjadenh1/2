@@ -28,6 +28,8 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoC
   protected $shotChangeDetectionConfigDataType = '';
   protected $speechTranscriptionConfigType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1SpeechTranscriptionConfig';
   protected $speechTranscriptionConfigDataType = '';
+  protected $textDetectionConfigType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1TextDetectionConfig';
+  protected $textDetectionConfigDataType = '';
 
   /**
    * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig
@@ -98,5 +100,19 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1VideoC
   public function getSpeechTranscriptionConfig()
   {
     return $this->speechTranscriptionConfig;
+  }
+  /**
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1TextDetectionConfig
+   */
+  public function setTextDetectionConfig(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1TextDetectionConfig $textDetectionConfig)
+  {
+    $this->textDetectionConfig = $textDetectionConfig;
+  }
+  /**
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1TextDetectionConfig
+   */
+  public function getTextDetectionConfig()
+  {
+    return $this->textDetectionConfig;
   }
 }
