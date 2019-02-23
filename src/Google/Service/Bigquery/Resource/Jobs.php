@@ -128,6 +128,8 @@ class Google_Service_Bigquery_Resource_Jobs extends Google_Service_Resource
    * this timestamp are returned
    * @opt_param string pageToken Page token, returned by a previous call, to
    * request the next page of results
+   * @opt_param string parentJobId If set, retrieves only jobs whose parent is
+   * this job. Otherwise, retrieves only jobs which have no parent.
    * @opt_param string projection Restrict information returned to a set of
    * selected fields
    * @opt_param string stateFilter Filter for job state

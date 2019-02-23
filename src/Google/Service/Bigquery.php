@@ -300,6 +300,10 @@ class Google_Service_Bigquery extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'parentJobId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'projection' => array(
                   'location' => 'query',
                   'type' => 'string',

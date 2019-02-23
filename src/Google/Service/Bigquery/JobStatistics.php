@@ -25,6 +25,8 @@ class Google_Service_Bigquery_JobStatistics extends Google_Collection
   protected $extractDataType = '';
   protected $loadType = 'Google_Service_Bigquery_JobStatistics3';
   protected $loadDataType = '';
+  public $numChildJobs;
+  public $parentJobId;
   protected $queryType = 'Google_Service_Bigquery_JobStatistics2';
   protected $queryDataType = '';
   public $quotaDeferments;
@@ -85,6 +87,22 @@ class Google_Service_Bigquery_JobStatistics extends Google_Collection
   public function getLoad()
   {
     return $this->load;
+  }
+  public function setNumChildJobs($numChildJobs)
+  {
+    $this->numChildJobs = $numChildJobs;
+  }
+  public function getNumChildJobs()
+  {
+    return $this->numChildJobs;
+  }
+  public function setParentJobId($parentJobId)
+  {
+    $this->parentJobId = $parentJobId;
+  }
+  public function getParentJobId()
+  {
+    return $this->parentJobId;
   }
   /**
    * @param Google_Service_Bigquery_JobStatistics2
