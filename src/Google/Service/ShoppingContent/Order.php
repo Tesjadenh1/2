@@ -48,7 +48,6 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   protected $shippingCostDataType = '';
   protected $shippingCostTaxType = 'Google_Service_ShoppingContent_Price';
   protected $shippingCostTaxDataType = '';
-  public $shippingOption;
   public $status;
   public $taxCollector;
 
@@ -269,14 +268,6 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   public function getShippingCostTax()
   {
     return $this->shippingCostTax;
-  }
-  public function setShippingOption($shippingOption)
-  {
-    $this->shippingOption = $shippingOption;
-  }
-  public function getShippingOption()
-  {
-    return $this->shippingOption;
   }
   public function setStatus($status)
   {
