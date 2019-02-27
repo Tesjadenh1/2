@@ -166,21 +166,6 @@ class Google_Service_Fitness extends Google_Service
                   'repeated' => true,
                 ),
               ),
-            ),'patch' => array(
-              'path' => '{userId}/dataSources/{dataSourceId}',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'userId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'dataSourceId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
             ),'update' => array(
               'path' => '{userId}/dataSources/{dataSourceId}',
               'httpMethod' => 'PUT',
