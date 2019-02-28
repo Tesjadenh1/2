@@ -30,7 +30,7 @@
  */
 class Google_Service_GamesManagement extends Google_Service
 {
-  /** Share your Google+ profile information and view and manage your game activity. */
+  /** Create, edit, and delete your Google Play Games activity. */
   const GAMES =
       "https://www.googleapis.com/auth/games";
 

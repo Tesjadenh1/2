@@ -438,7 +438,7 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('listReferrers', array($params), "Google_Service_Compute_InstanceListReferrers");
   }
   /**
-   * Performs a reset on the instance. This is a hard reset; the VM does not do a
+   * Performs a reset on the instance. This is a hard reset the VM does not do a
    * graceful shutdown. For more information, see Resetting an instance.
    * (instances.reset)
    *
