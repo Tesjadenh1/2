@@ -115,9 +115,6 @@ class Google_Service_CloudSearch_Resource_IndexingDatasourcesItems extends Googl
    * datasources/{source_id}
    * @param array $optParams Optional parameters.
    *
-   * @opt_param bool debugOptions.enableDebugging If set, the request will enable
-   * debugging features of Cloud Search. Only turn on this field, if asked by
-   * Google to help with debugging.
    * @opt_param string connectorName Name of connector making this call. Format:
    * datasources/{source_id}/connectors/{ID}
    * @opt_param bool brief When set to true, the indexing system only populates
@@ -129,6 +126,9 @@ class Google_Service_CloudSearch_Resource_IndexingDatasourcesItems extends Googl
    * @opt_param int pageSize Maximum number of items to fetch in a request. The
    * max value is 1000 when brief is true.  The max value is 10 if brief is false.
    * The default value is 10
+   * @opt_param bool debugOptions.enableDebugging If set, the request will enable
+   * debugging features of Cloud Search. Only turn on this field, if asked by
+   * Google to help with debugging.
    * @return Google_Service_CloudSearch_ListItemsResponse
    */
   public function listIndexingDatasourcesItems($name, $optParams = array())
