@@ -153,11 +153,11 @@ class Google_Service_ShoppingContent_Resource_Orders extends Google_Service_Reso
     return $this->call('get', array($params), "Google_Service_ShoppingContent_Order");
   }
   /**
-   * Retrieves an order using merchant order id. (orders.getbymerchantorderid)
+   * Retrieves an order using merchant order ID. (orders.getbymerchantorderid)
    *
    * @param string $merchantId The ID of the account that manages the order. This
    * cannot be a multi-client account.
-   * @param string $merchantOrderId The merchant order id to be looked for.
+   * @param string $merchantOrderId The merchant order ID to be looked for.
    * @param array $optParams Optional parameters.
    * @return Google_Service_ShoppingContent_OrdersGetByMerchantOrderIdResponse
    */

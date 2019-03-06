@@ -17,19 +17,10 @@
 
 class Google_Service_ShoppingContent_OrderCustomer extends Google_Model
 {
-  public $email;
   public $fullName;
   protected $marketingRightsInfoType = 'Google_Service_ShoppingContent_OrderCustomerMarketingRightsInfo';
   protected $marketingRightsInfoDataType = '';
 
-  public function setEmail($email)
-  {
-    $this->email = $email;
-  }
-  public function getEmail()
-  {
-    return $this->email;
-  }
   public function setFullName($fullName)
   {
     $this->fullName = $fullName;
