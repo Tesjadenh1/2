@@ -24,6 +24,8 @@ class Google_Service_CloudBuild_BuildTrigger extends Google_Collection
   public $description;
   public $disabled;
   public $filename;
+  protected $githubType = 'Google_Service_CloudBuild_GitHubEventsConfig';
+  protected $githubDataType = '';
   public $id;
   public $ignoredFiles;
   public $includedFiles;
@@ -76,6 +78,20 @@ class Google_Service_CloudBuild_BuildTrigger extends Google_Collection
   public function getFilename()
   {
     return $this->filename;
+  }
+  /**
+   * @param Google_Service_CloudBuild_GitHubEventsConfig
+   */
+  public function setGithub(Google_Service_CloudBuild_GitHubEventsConfig $github)
+  {
+    $this->github = $github;
+  }
+  /**
+   * @return Google_Service_CloudBuild_GitHubEventsConfig
+   */
+  public function getGithub()
+  {
+    return $this->github;
   }
   public function setId($id)
   {

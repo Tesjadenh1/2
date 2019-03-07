@@ -110,7 +110,10 @@ class Google_Service_CloudScheduler_Resource_ProjectsLocationsJobs extends Googl
    * If this happens, retry the UpdateJob request until a successful response is
    * received. (jobs.patch)
    *
-   * @param string $name The job name. For example:
+   * @param string $name Optionally caller-specified in CreateJob, after which it
+   * becomes output only.
+   *
+   * The job name. For example:
    * `projects/PROJECT_ID/locations/LOCATION_ID/jobs/JOB_ID`.
    *
    * * `PROJECT_ID` can contain letters ([A-Za-z]), numbers ([0-9]),    hyphens
