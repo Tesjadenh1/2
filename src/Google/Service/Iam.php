@@ -125,19 +125,19 @@ class Google_Service_Iam extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'showDeleted' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'view' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'showDeleted' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
+                ),
+                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -233,10 +233,6 @@ class Google_Service_Iam extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'showDeleted' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -248,6 +244,10 @@ class Google_Service_Iam extends Google_Service
                 'view' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'showDeleted' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'patch' => array(
@@ -304,6 +304,26 @@ class Google_Service_Iam extends Google_Service
                   'required' => true,
                 ),
               ),
+            ),'disable' => array(
+              'path' => 'v1/{+name}:disable',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'enable' => array(
+              'path' => 'v1/{+name}:enable',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'get' => array(
               'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
@@ -333,13 +353,13 @@ class Google_Service_Iam extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'setIamPolicy' => array(
@@ -485,10 +505,6 @@ class Google_Service_Iam extends Google_Service
               'path' => 'v1/roles',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -504,6 +520,10 @@ class Google_Service_Iam extends Google_Service
                 'showDeleted' => array(
                   'location' => 'query',
                   'type' => 'boolean',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'queryGrantableRoles' => array(

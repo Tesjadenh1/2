@@ -149,6 +149,10 @@ class Google_Service_Proximitybeacon extends Google_Service
               'path' => 'v1beta1/beacons',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'q' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -158,10 +162,6 @@ class Google_Service_Proximitybeacon extends Google_Service
                   'type' => 'integer',
                 ),
                 'projectId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -254,11 +254,11 @@ class Google_Service_Proximitybeacon extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'namespacedType' => array(
+                'projectId' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'projectId' => array(
+                'namespacedType' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
