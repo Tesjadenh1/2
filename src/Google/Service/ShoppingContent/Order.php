@@ -21,7 +21,6 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   public $acknowledged;
   protected $billingAddressType = 'Google_Service_ShoppingContent_OrderAddress';
   protected $billingAddressDataType = '';
-  public $channelType;
   protected $customerType = 'Google_Service_ShoppingContent_OrderCustomer';
   protected $customerDataType = '';
   protected $deliveryDetailsType = 'Google_Service_ShoppingContent_OrderDeliveryDetails';
@@ -72,14 +71,6 @@ class Google_Service_ShoppingContent_Order extends Google_Collection
   public function getBillingAddress()
   {
     return $this->billingAddress;
-  }
-  public function setChannelType($channelType)
-  {
-    $this->channelType = $channelType;
-  }
-  public function getChannelType()
-  {
-    return $this->channelType;
   }
   /**
    * @param Google_Service_ShoppingContent_OrderCustomer
