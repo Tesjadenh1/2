@@ -15,22 +15,22 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechTranscription extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechTranscription extends Google_Collection
 {
   protected $collection_key = 'alternatives';
-  protected $alternativesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechRecognitionAlternative';
+  protected $alternativesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative';
   protected $alternativesDataType = 'array';
   public $languageCode;
 
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechRecognitionAlternative
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative
    */
   public function setAlternatives($alternatives)
   {
     $this->alternatives = $alternatives;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechRecognitionAlternative
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative
    */
   public function getAlternatives()
   {

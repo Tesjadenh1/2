@@ -15,21 +15,21 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedBoundingPoly extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly extends Google_Collection
 {
   protected $collection_key = 'vertices';
-  protected $verticesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedVertex';
+  protected $verticesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedVertex';
   protected $verticesDataType = 'array';
 
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedVertex
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedVertex
    */
   public function setVertices($vertices)
   {
     $this->vertices = $vertices;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedVertex
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedVertex
    */
   public function getVertices()
   {

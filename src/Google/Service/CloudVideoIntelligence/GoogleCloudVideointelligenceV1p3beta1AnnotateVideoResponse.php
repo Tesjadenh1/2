@@ -15,21 +15,21 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1AnnotateVideoResponse extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1AnnotateVideoResponse extends Google_Collection
 {
   protected $collection_key = 'annotationResults';
-  protected $annotationResultsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoAnnotationResults';
+  protected $annotationResultsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults';
   protected $annotationResultsDataType = 'array';
 
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoAnnotationResults
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults
    */
   public function setAnnotationResults($annotationResults)
   {
     $this->annotationResults = $annotationResults;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoAnnotationResults
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults
    */
   public function getAnnotationResults()
   {

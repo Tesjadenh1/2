@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment extends Google_Model
+class Google_Service_Dns_ManagedZonePrivateVisibilityConfigNetwork extends Google_Model
 {
-  public $endTimeOffset;
-  public $startTimeOffset;
+  public $kind;
+  public $networkUrl;
 
-  public function setEndTimeOffset($endTimeOffset)
+  public function setKind($kind)
   {
-    $this->endTimeOffset = $endTimeOffset;
+    $this->kind = $kind;
   }
-  public function getEndTimeOffset()
+  public function getKind()
   {
-    return $this->endTimeOffset;
+    return $this->kind;
   }
-  public function setStartTimeOffset($startTimeOffset)
+  public function setNetworkUrl($networkUrl)
   {
-    $this->startTimeOffset = $startTimeOffset;
+    $this->networkUrl = $networkUrl;
   }
-  public function getStartTimeOffset()
+  public function getNetworkUrl()
   {
-    return $this->startTimeOffset;
+    return $this->networkUrl;
   }
 }

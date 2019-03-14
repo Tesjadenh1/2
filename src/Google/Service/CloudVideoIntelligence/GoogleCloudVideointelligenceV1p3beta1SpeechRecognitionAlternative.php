@@ -15,12 +15,12 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechRecognitionAlternative extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechRecognitionAlternative extends Google_Collection
 {
   protected $collection_key = 'words';
   public $confidence;
   public $transcript;
-  protected $wordsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1WordInfo';
+  protected $wordsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1WordInfo';
   protected $wordsDataType = 'array';
 
   public function setConfidence($confidence)
@@ -40,14 +40,14 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1S
     return $this->transcript;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1WordInfo
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1WordInfo
    */
   public function setWords($words)
   {
     $this->words = $words;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1WordInfo
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1WordInfo
    */
   public function getWords()
   {

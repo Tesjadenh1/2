@@ -15,15 +15,15 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingAnnotation extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation extends Google_Collection
 {
   protected $collection_key = 'frames';
   public $confidence;
-  protected $entityType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1Entity';
+  protected $entityType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1Entity';
   protected $entityDataType = '';
-  protected $framesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingFrame';
+  protected $framesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame';
   protected $framesDataType = 'array';
-  protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment';
+  protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment';
   protected $segmentDataType = '';
   public $trackId;
 
@@ -36,42 +36,42 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1O
     return $this->confidence;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1Entity
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1Entity
    */
-  public function setEntity(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1Entity $entity)
+  public function setEntity(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1Entity $entity)
   {
     $this->entity = $entity;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1Entity
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1Entity
    */
   public function getEntity()
   {
     return $this->entity;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingFrame
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame
    */
   public function setFrames($frames)
   {
     $this->frames = $frames;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingFrame
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingFrame
    */
   public function getFrames()
   {
     return $this->frames;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
    */
-  public function setSegment(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment $segment)
+  public function setSegment(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment $segment)
   {
     $this->segment = $segment;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
    */
   public function getSegment()
   {

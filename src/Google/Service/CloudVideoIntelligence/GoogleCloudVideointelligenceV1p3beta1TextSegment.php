@@ -15,13 +15,13 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextSegment extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextSegment extends Google_Collection
 {
   protected $collection_key = 'frames';
   public $confidence;
-  protected $framesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextFrame';
+  protected $framesType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextFrame';
   protected $framesDataType = 'array';
-  protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment';
+  protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment';
   protected $segmentDataType = '';
 
   public function setConfidence($confidence)
@@ -33,28 +33,28 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1T
     return $this->confidence;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextFrame
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextFrame
    */
   public function setFrames($frames)
   {
     $this->frames = $frames;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextFrame
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextFrame
    */
   public function getFrames()
   {
     return $this->frames;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
    */
-  public function setSegment(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment $segment)
+  public function setSegment(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment $segment)
   {
     $this->segment = $segment;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
    */
   public function getSegment()
   {

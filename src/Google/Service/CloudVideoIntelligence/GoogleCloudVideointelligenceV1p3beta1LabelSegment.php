@@ -15,13 +15,11 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1WordInfo extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelSegment extends Google_Model
 {
   public $confidence;
-  public $endTime;
-  public $speakerTag;
-  public $startTime;
-  public $word;
+  protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment';
+  protected $segmentDataType = '';
 
   public function setConfidence($confidence)
   {
@@ -31,36 +29,18 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1W
   {
     return $this->confidence;
   }
-  public function setEndTime($endTime)
+  /**
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
+   */
+  public function setSegment(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment $segment)
   {
-    $this->endTime = $endTime;
+    $this->segment = $segment;
   }
-  public function getEndTime()
+  /**
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
+   */
+  public function getSegment()
   {
-    return $this->endTime;
-  }
-  public function setSpeakerTag($speakerTag)
-  {
-    $this->speakerTag = $speakerTag;
-  }
-  public function getSpeakerTag()
-  {
-    return $this->speakerTag;
-  }
-  public function setStartTime($startTime)
-  {
-    $this->startTime = $startTime;
-  }
-  public function getStartTime()
-  {
-    return $this->startTime;
-  }
-  public function setWord($word)
-  {
-    $this->word = $word;
-  }
-  public function getWord()
-  {
-    return $this->word;
+    return $this->segment;
   }
 }

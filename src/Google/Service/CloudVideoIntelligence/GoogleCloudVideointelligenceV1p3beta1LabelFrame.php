@@ -15,11 +15,10 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelSegment extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelFrame extends Google_Model
 {
   public $confidence;
-  protected $segmentType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment';
-  protected $segmentDataType = '';
+  public $timeOffset;
 
   public function setConfidence($confidence)
   {
@@ -29,18 +28,12 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1L
   {
     return $this->confidence;
   }
-  /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
-   */
-  public function setSegment(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment $segment)
+  public function setTimeOffset($timeOffset)
   {
-    $this->segment = $segment;
+    $this->timeOffset = $timeOffset;
   }
-  /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
-   */
-  public function getSegment()
+  public function getTimeOffset()
   {
-    return $this->segment;
+    return $this->timeOffset;
   }
 }

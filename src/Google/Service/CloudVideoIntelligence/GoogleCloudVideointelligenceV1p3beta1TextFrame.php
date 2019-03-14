@@ -15,21 +15,21 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextFrame extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextFrame extends Google_Model
 {
-  protected $rotatedBoundingBoxType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedBoundingPoly';
+  protected $rotatedBoundingBoxType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly';
   protected $rotatedBoundingBoxDataType = '';
   public $timeOffset;
 
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedBoundingPoly
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly
    */
-  public function setRotatedBoundingBox(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedBoundingPoly $rotatedBoundingBox)
+  public function setRotatedBoundingBox(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly $rotatedBoundingBox)
   {
     $this->rotatedBoundingBox = $rotatedBoundingBox;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1NormalizedBoundingPoly
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1NormalizedBoundingPoly
    */
   public function getRotatedBoundingBox()
   {

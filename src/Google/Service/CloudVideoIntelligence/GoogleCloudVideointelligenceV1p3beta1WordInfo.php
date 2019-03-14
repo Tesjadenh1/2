@@ -15,28 +15,37 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoAnnotationProgress extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1WordInfo extends Google_Model
 {
-  public $inputUri;
-  public $progressPercent;
+  public $confidence;
+  public $endTime;
+  public $speakerTag;
   public $startTime;
-  public $updateTime;
+  public $word;
 
-  public function setInputUri($inputUri)
+  public function setConfidence($confidence)
   {
-    $this->inputUri = $inputUri;
+    $this->confidence = $confidence;
   }
-  public function getInputUri()
+  public function getConfidence()
   {
-    return $this->inputUri;
+    return $this->confidence;
   }
-  public function setProgressPercent($progressPercent)
+  public function setEndTime($endTime)
   {
-    $this->progressPercent = $progressPercent;
+    $this->endTime = $endTime;
   }
-  public function getProgressPercent()
+  public function getEndTime()
   {
-    return $this->progressPercent;
+    return $this->endTime;
+  }
+  public function setSpeakerTag($speakerTag)
+  {
+    $this->speakerTag = $speakerTag;
+  }
+  public function getSpeakerTag()
+  {
+    return $this->speakerTag;
   }
   public function setStartTime($startTime)
   {
@@ -46,12 +55,12 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1V
   {
     return $this->startTime;
   }
-  public function setUpdateTime($updateTime)
+  public function setWord($word)
   {
-    $this->updateTime = $updateTime;
+    $this->word = $word;
   }
-  public function getUpdateTime()
+  public function getWord()
   {
-    return $this->updateTime;
+    return $this->word;
   }
 }

@@ -15,23 +15,23 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1StreamingAnnotateVideoResponse extends Google_Model
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1StreamingAnnotateVideoResponse extends Google_Model
 {
-  protected $annotationResultsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1StreamingVideoAnnotationResults';
+  protected $annotationResultsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults';
   protected $annotationResultsDataType = '';
   public $annotationResultsUri;
   protected $errorType = 'Google_Service_CloudVideoIntelligence_GoogleRpcStatus';
   protected $errorDataType = '';
 
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1StreamingVideoAnnotationResults
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults
    */
-  public function setAnnotationResults(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1StreamingVideoAnnotationResults $annotationResults)
+  public function setAnnotationResults(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults $annotationResults)
   {
     $this->annotationResults = $annotationResults;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1StreamingVideoAnnotationResults
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1StreamingVideoAnnotationResults
    */
   public function getAnnotationResults()
   {

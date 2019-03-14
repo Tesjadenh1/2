@@ -15,27 +15,27 @@
  * the License.
  */
 
-class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoAnnotationResults extends Google_Collection
+class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoAnnotationResults extends Google_Collection
 {
   protected $collection_key = 'textAnnotations';
   protected $errorType = 'Google_Service_CloudVideoIntelligence_GoogleRpcStatus';
   protected $errorDataType = '';
-  protected $explicitAnnotationType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ExplicitContentAnnotation';
+  protected $explicitAnnotationType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation';
   protected $explicitAnnotationDataType = '';
-  protected $frameLabelAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation';
+  protected $frameLabelAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation';
   protected $frameLabelAnnotationsDataType = 'array';
   public $inputUri;
-  protected $objectAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingAnnotation';
+  protected $objectAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation';
   protected $objectAnnotationsDataType = 'array';
-  protected $segmentLabelAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation';
+  protected $segmentLabelAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation';
   protected $segmentLabelAnnotationsDataType = 'array';
-  protected $shotAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment';
+  protected $shotAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment';
   protected $shotAnnotationsDataType = 'array';
-  protected $shotLabelAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation';
+  protected $shotLabelAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation';
   protected $shotLabelAnnotationsDataType = 'array';
-  protected $speechTranscriptionsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechTranscription';
+  protected $speechTranscriptionsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechTranscription';
   protected $speechTranscriptionsDataType = 'array';
-  protected $textAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextAnnotation';
+  protected $textAnnotationsType = 'Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextAnnotation';
   protected $textAnnotationsDataType = 'array';
 
   /**
@@ -53,28 +53,28 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1V
     return $this->error;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ExplicitContentAnnotation
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation
    */
-  public function setExplicitAnnotation(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ExplicitContentAnnotation $explicitAnnotation)
+  public function setExplicitAnnotation(Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation $explicitAnnotation)
   {
     $this->explicitAnnotation = $explicitAnnotation;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ExplicitContentAnnotation
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ExplicitContentAnnotation
    */
   public function getExplicitAnnotation()
   {
     return $this->explicitAnnotation;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation
    */
   public function setFrameLabelAnnotations($frameLabelAnnotations)
   {
     $this->frameLabelAnnotations = $frameLabelAnnotations;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation
    */
   public function getFrameLabelAnnotations()
   {
@@ -89,84 +89,84 @@ class Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1V
     return $this->inputUri;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingAnnotation
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation
    */
   public function setObjectAnnotations($objectAnnotations)
   {
     $this->objectAnnotations = $objectAnnotations;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1ObjectTrackingAnnotation
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1ObjectTrackingAnnotation
    */
   public function getObjectAnnotations()
   {
     return $this->objectAnnotations;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation
    */
   public function setSegmentLabelAnnotations($segmentLabelAnnotations)
   {
     $this->segmentLabelAnnotations = $segmentLabelAnnotations;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation
    */
   public function getSegmentLabelAnnotations()
   {
     return $this->segmentLabelAnnotations;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
    */
   public function setShotAnnotations($shotAnnotations)
   {
     $this->shotAnnotations = $shotAnnotations;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1VideoSegment
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1VideoSegment
    */
   public function getShotAnnotations()
   {
     return $this->shotAnnotations;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation
    */
   public function setShotLabelAnnotations($shotLabelAnnotations)
   {
     $this->shotLabelAnnotations = $shotLabelAnnotations;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1LabelAnnotation
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1LabelAnnotation
    */
   public function getShotLabelAnnotations()
   {
     return $this->shotLabelAnnotations;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechTranscription
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechTranscription
    */
   public function setSpeechTranscriptions($speechTranscriptions)
   {
     $this->speechTranscriptions = $speechTranscriptions;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1SpeechTranscription
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1SpeechTranscription
    */
   public function getSpeechTranscriptions()
   {
     return $this->speechTranscriptions;
   }
   /**
-   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextAnnotation
+   * @param Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextAnnotation
    */
   public function setTextAnnotations($textAnnotations)
   {
     $this->textAnnotations = $textAnnotations;
   }
   /**
-   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV2beta1TextAnnotation
+   * @return Google_Service_CloudVideoIntelligence_GoogleCloudVideointelligenceV1p3beta1TextAnnotation
    */
   public function getTextAnnotations()
   {
