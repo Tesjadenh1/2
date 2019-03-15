@@ -57,7 +57,7 @@ class Google_Service_PlusDomains extends Google_Service
   /** View your email address. */
   const USERINFO_EMAIL =
       "https://www.googleapis.com/auth/userinfo.email";
-  /** View your basic profile info. */
+  /** See your personal info, including any personal info you've made publically available. */
   const USERINFO_PROFILE =
       "https://www.googleapis.com/auth/userinfo.profile";
 

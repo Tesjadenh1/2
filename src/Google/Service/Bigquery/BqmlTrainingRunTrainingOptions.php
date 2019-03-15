@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Bigquery_TrainingRunTrainingOptions extends Google_Model
+class Google_Service_Bigquery_BqmlTrainingRunTrainingOptions extends Google_Model
 {
   public $earlyStop;
   public $l1Reg;

@@ -15,7 +15,7 @@
  * the License.
  */
 
-class Google_Service_Bigquery_IterationResult extends Google_Model
+class Google_Service_Bigquery_BqmlIterationResult extends Google_Model
 {
   public $durationMs;
   public $evalLoss;
