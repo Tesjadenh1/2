@@ -16,7 +16,7 @@
  */
 
 /**
- * Service definition for ServiceNetworking (v1beta).
+ * Service definition for ServiceNetworking (v1).
  *
  * <p>
  * Provides automatic management of network configurations necessary for certain
@@ -53,7 +53,7 @@ class Google_Service_ServiceNetworking extends Google_Service
     $this->rootUrl = 'https://servicenetworking.googleapis.com/';
     $this->servicePath = '';
     $this->batchPath = 'batch';
-    $this->version = 'v1beta';
+    $this->version = 'v1';
     $this->serviceName = 'servicenetworking';
 
     $this->operations = new Google_Service_ServiceNetworking_Resource_Operations(
@@ -62,14 +62,56 @@ class Google_Service_ServiceNetworking extends Google_Service
         'operations',
         array(
           'methods' => array(
-            'get' => array(
-              'path' => 'v1beta/{+name}',
+            'cancel' => array(
+              'path' => 'v1/{+name}:cancel',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v1/{+name}',
               'httpMethod' => 'GET',
               'parameters' => array(
                 'name' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),
@@ -83,7 +125,7 @@ class Google_Service_ServiceNetworking extends Google_Service
         array(
           'methods' => array(
             'addSubnetwork' => array(
-              'path' => 'v1beta/{+parent}:addSubnetwork',
+              'path' => 'v1/{+parent}:addSubnetwork',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'parent' => array(
@@ -93,7 +135,7 @@ class Google_Service_ServiceNetworking extends Google_Service
                 ),
               ),
             ),'searchRange' => array(
-              'path' => 'v1beta/{+parent}:searchRange',
+              'path' => 'v1/{+parent}:searchRange',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'parent' => array(
@@ -102,8 +144,42 @@ class Google_Service_ServiceNetworking extends Google_Service
                   'required' => true,
                 ),
               ),
-            ),'updateConnections' => array(
-              'path' => 'v1beta/{+name}/connections',
+            ),
+          )
+        )
+    );
+    $this->services_connections = new Google_Service_ServiceNetworking_Resource_ServicesConnections(
+        $this,
+        $this->serviceName,
+        'connections',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v1/{+parent}/connections',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v1/{+parent}/connections',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'network' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v1/{+name}',
               'httpMethod' => 'PATCH',
               'parameters' => array(
                 'name' => array(
@@ -118,40 +194,6 @@ class Google_Service_ServiceNetworking extends Google_Service
                 'force' => array(
                   'location' => 'query',
                   'type' => 'boolean',
-                ),
-              ),
-            ),
-          )
-        )
-    );
-    $this->services_connections = new Google_Service_ServiceNetworking_Resource_ServicesConnections(
-        $this,
-        $this->serviceName,
-        'connections',
-        array(
-          'methods' => array(
-            'create' => array(
-              'path' => 'v1beta/{+parent}/connections',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
-              'path' => 'v1beta/{+parent}/connections',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'parent' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'network' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
