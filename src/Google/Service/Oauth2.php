@@ -30,9 +30,6 @@
  */
 class Google_Service_Oauth2 extends Google_Service
 {
-  /** View your basic profile info, including your age range and language. */
-  const PLUS_LOGIN =
-      "https://www.googleapis.com/auth/plus.login";
   /** Know who you are on Google. */
   const PLUS_ME =
       "https://www.googleapis.com/auth/plus.me";

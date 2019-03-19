@@ -35,6 +35,10 @@ class Google_Service_Docs_Request extends Google_Model
   protected $deleteTableRowDataType = '';
   protected $insertInlineImageType = 'Google_Service_Docs_InsertInlineImageRequest';
   protected $insertInlineImageDataType = '';
+  protected $insertPageBreakType = 'Google_Service_Docs_InsertPageBreakRequest';
+  protected $insertPageBreakDataType = '';
+  protected $insertTableType = 'Google_Service_Docs_InsertTableRequest';
+  protected $insertTableDataType = '';
   protected $insertTableRowType = 'Google_Service_Docs_InsertTableRowRequest';
   protected $insertTableRowDataType = '';
   protected $insertTextType = 'Google_Service_Docs_InsertTextRequest';
@@ -171,6 +175,34 @@ class Google_Service_Docs_Request extends Google_Model
   public function getInsertInlineImage()
   {
     return $this->insertInlineImage;
+  }
+  /**
+   * @param Google_Service_Docs_InsertPageBreakRequest
+   */
+  public function setInsertPageBreak(Google_Service_Docs_InsertPageBreakRequest $insertPageBreak)
+  {
+    $this->insertPageBreak = $insertPageBreak;
+  }
+  /**
+   * @return Google_Service_Docs_InsertPageBreakRequest
+   */
+  public function getInsertPageBreak()
+  {
+    return $this->insertPageBreak;
+  }
+  /**
+   * @param Google_Service_Docs_InsertTableRequest
+   */
+  public function setInsertTable(Google_Service_Docs_InsertTableRequest $insertTable)
+  {
+    $this->insertTable = $insertTable;
+  }
+  /**
+   * @return Google_Service_Docs_InsertTableRequest
+   */
+  public function getInsertTable()
+  {
+    return $this->insertTable;
   }
   /**
    * @param Google_Service_Docs_InsertTableRowRequest
