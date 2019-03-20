@@ -15,32 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_CreateTaskRequest extends Google_Model
+class Google_Service_AnalyticsReporting_CustomDimension extends Google_Model
 {
-  public $responseView;
-  protected $taskType = 'Google_Service_CloudTasks_Task';
-  protected $taskDataType = '';
+  public $index;
+  public $value;
 
-  public function setResponseView($responseView)
+  public function setIndex($index)
   {
-    $this->responseView = $responseView;
+    $this->index = $index;
   }
-  public function getResponseView()
+  public function getIndex()
   {
-    return $this->responseView;
+    return $this->index;
   }
-  /**
-   * @param Google_Service_CloudTasks_Task
-   */
-  public function setTask(Google_Service_CloudTasks_Task $task)
+  public function setValue($value)
   {
-    $this->task = $task;
+    $this->value = $value;
   }
-  /**
-   * @return Google_Service_CloudTasks_Task
-   */
-  public function getTask()
+  public function getValue()
   {
-    return $this->task;
+    return $this->value;
   }
 }

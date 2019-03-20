@@ -15,35 +15,24 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_Status extends Google_Collection
+class Google_Service_AnalyticsReporting_GoalSetData extends Google_Collection
 {
-  protected $collection_key = 'details';
-  public $code;
-  public $details;
-  public $message;
+  protected $collection_key = 'goals';
+  protected $goalsType = 'Google_Service_AnalyticsReporting_GoalData';
+  protected $goalsDataType = 'array';
 
-  public function setCode($code)
+  /**
+   * @param Google_Service_AnalyticsReporting_GoalData
+   */
+  public function setGoals($goals)
   {
-    $this->code = $code;
+    $this->goals = $goals;
   }
-  public function getCode()
+  /**
+   * @return Google_Service_AnalyticsReporting_GoalData
+   */
+  public function getGoals()
   {
-    return $this->code;
-  }
-  public function setDetails($details)
-  {
-    $this->details = $details;
-  }
-  public function getDetails()
-  {
-    return $this->details;
-  }
-  public function setMessage($message)
-  {
-    $this->message = $message;
-  }
-  public function getMessage()
-  {
-    return $this->message;
+    return $this->goals;
   }
 }

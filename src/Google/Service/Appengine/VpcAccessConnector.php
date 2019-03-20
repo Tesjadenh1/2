@@ -15,6 +15,16 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_PauseQueueRequest extends Google_Model
+class Google_Service_Appengine_VpcAccessConnector extends Google_Model
 {
+  public $name;
+
+  public function setName($name)
+  {
+    $this->name = $name;
+  }
+  public function getName()
+  {
+    return $this->name;
+  }
 }

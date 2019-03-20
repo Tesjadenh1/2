@@ -15,6 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_GetIamPolicyRequest extends Google_Model
+class Google_Service_AnalyticsReporting_User extends Google_Model
 {
+  public $type;
+  public $userId;
+
+  public function setType($type)
+  {
+    $this->type = $type;
+  }
+  public function getType()
+  {
+    return $this->type;
+  }
+  public function setUserId($userId)
+  {
+    $this->userId = $userId;
+  }
+  public function getUserId()
+  {
+    return $this->userId;
+  }
 }

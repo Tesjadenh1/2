@@ -15,17 +15,25 @@
  * the License.
  */
 
-class Google_Service_CloudTasks_TestIamPermissionsRequest extends Google_Collection
+class Google_Service_AnalyticsReporting_PageviewData extends Google_Model
 {
-  protected $collection_key = 'permissions';
-  public $permissions;
+  public $pagePath;
+  public $pageTitle;
 
-  public function setPermissions($permissions)
+  public function setPagePath($pagePath)
   {
-    $this->permissions = $permissions;
+    $this->pagePath = $pagePath;
   }
-  public function getPermissions()
+  public function getPagePath()
   {
-    return $this->permissions;
+    return $this->pagePath;
+  }
+  public function setPageTitle($pageTitle)
+  {
+    $this->pageTitle = $pageTitle;
+  }
+  public function getPageTitle()
+  {
+    return $this->pageTitle;
   }
 }
