@@ -97,7 +97,7 @@ class Google_Service_FirebaseRules_Resource_ProjectsRulesets extends Google_Serv
    * Filters on `Ruleset.create_time` should use the `date` function which parses
    * strings that conform to the RFC 3339 date/time specifications.
    *
-   * Example: `create_time > date("2017-01-01") AND name=UUID-*`
+   * Example: `create_time > date("2017-01-01T00:00:00Z") AND name=UUID-*`
    * @opt_param string pageToken Next page token for loading the next batch of
    * `Ruleset` instances.
    * @opt_param int pageSize Page size to load. Maximum of 100. Defaults to 10.

@@ -26,8 +26,9 @@
 class Google_Service_CloudSearch_Resource_Stats extends Google_Service_Resource
 {
   /**
-   * Gets indexed item statistics aggreggated across all data sources.
-   * (stats.getIndex)
+   * Gets indexed item statistics aggreggated across all data sources. This API
+   * only returns statistics for previous dates; it doesn't return statistics for
+   * the current day. (stats.getIndex)
    *
    * @param array $optParams Optional parameters.
    *
