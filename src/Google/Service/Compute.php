@@ -3315,6 +3315,26 @@ class Google_Service_Compute extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'getShieldedInstanceIdentity' => array(
+              'path' => '{project}/zones/{zone}/instances/{instance}/getShieldedInstanceIdentity',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'instance' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'insert' => array(
               'path' => '{project}/zones/{zone}/instances',
               'httpMethod' => 'POST',
@@ -3679,6 +3699,30 @@ class Google_Service_Compute extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'setShieldedInstanceIntegrityPolicy' => array(
+              'path' => '{project}/zones/{zone}/instances/{instance}/setShieldedInstanceIntegrityPolicy',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'instance' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
             ),'setTags' => array(
               'path' => '{project}/zones/{zone}/instances/{instance}/setTags',
               'httpMethod' => 'POST',
@@ -3865,6 +3909,30 @@ class Google_Service_Compute extends Google_Service
                 ),
                 'networkInterface' => array(
                   'location' => 'query',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'requestId' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'updateShieldedInstanceConfig' => array(
+              'path' => '{project}/zones/{zone}/instances/{instance}/updateShieldedInstanceConfig',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'project' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'zone' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'instance' => array(
+                  'location' => 'path',
                   'type' => 'string',
                   'required' => true,
                 ),

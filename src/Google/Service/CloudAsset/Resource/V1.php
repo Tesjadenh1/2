@@ -16,14 +16,14 @@
  */
 
 /**
- * The "projects" collection of methods.
+ * The "v1" collection of methods.
  * Typical usage is:
  *  <code>
  *   $cloudassetService = new Google_Service_CloudAsset(...);
- *   $projects = $cloudassetService->projects;
+ *   $v1 = $cloudassetService->v1;
  *  </code>
  */
-class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resource
+class Google_Service_CloudAsset_Resource_V1 extends Google_Service_Resource
 {
   /**
    * Batch gets the update history of assets that overlap a time window. For
@@ -31,7 +31,7 @@ class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resourc
    * deleted status. For IAM_POLICY content, this API outputs history when the
    * asset and its attached IAM POLICY both exist. This can create gaps in the
    * output history. If a specified asset does not exist, this API returns an
-   * INVALID_ARGUMENT error. (projects.batchGetAssetsHistory)
+   * INVALID_ARGUMENT error. (v1.batchGetAssetsHistory)
    *
    * @param string $parent Required. The relative name of the root asset. It can
    * only be an organization number (such as "organizations/123"), a project ID
@@ -46,7 +46,9 @@ class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resourc
    * @opt_param string assetNames A list of the full names of the assets. For
    * example: `//compute.googleapis.com/projects/my_project_123/zones/zone1/instan
    * ces/instance1`. See [Resource Names](https://cloud.google.com/apis/design/res
-   * ource_names#full_resource_name) for more info.
+   * ource_names#full_resource_name) and [Resource Name
+   * Format](https://cloud.google.com/resource-manager/docs/cloud-asset-inventory
+   * /resource-name-format) for more info.
    *
    * The request becomes a no-op if the asset name list is empty, and the max size
    * of the asset name list is 100 in one request.
@@ -63,11 +65,11 @@ class Google_Service_CloudAsset_Resource_Projects extends Google_Service_Resourc
    * Exports assets with time and resource types to a given Cloud Storage
    * location. The output format is newline-delimited JSON. This API implements
    * the google.longrunning.Operation API allowing you to keep track of the
-   * export. (projects.exportAssets)
+   * export. (v1.exportAssets)
    *
    * @param string $parent Required. The relative name of the root asset. This can
    * only be an organization number (such as "organizations/123"), a project ID
-   * (such as "projects/my-project-id"), a project number (such as
+   * (such as "projects/my-project-id"), or a project number (such as
    * "projects/12345"), or a folder number (such as "folders/123").
    * @param Google_Service_CloudAsset_ExportAssetsRequest $postBody
    * @param array $optParams Optional parameters.

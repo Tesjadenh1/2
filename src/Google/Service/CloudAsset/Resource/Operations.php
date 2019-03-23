@@ -23,7 +23,7 @@
  *   $operations = $cloudassetService->operations;
  *  </code>
  */
-class Google_Service_CloudAsset_Resource_ProjectsOperations extends Google_Service_Resource
+class Google_Service_CloudAsset_Resource_Operations extends Google_Service_Resource
 {
   /**
    * Gets the latest state of a long-running operation.  Clients can use this

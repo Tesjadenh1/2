@@ -290,6 +290,22 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('getSerialPortOutput', array($params), "Google_Service_Compute_SerialPortOutput");
   }
   /**
+   * Returns the Shielded Instance Identity of an instance
+   * (instances.getShieldedInstanceIdentity)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $zone The name of the zone for this request.
+   * @param string $instance Name or id of the instance scoping this request.
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_Compute_ShieldedInstanceIdentity
+   */
+  public function getShieldedInstanceIdentity($project, $zone, $instance, $optParams = array())
+  {
+    $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance);
+    $params = array_merge($params, $optParams);
+    return $this->call('getShieldedInstanceIdentity', array($params), "Google_Service_Compute_ShieldedInstanceIdentity");
+  }
+  /**
    * Creates an instance resource in the specified project using the data included
    * in the request. (instances.insert)
    *
@@ -759,6 +775,38 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     return $this->call('setServiceAccount', array($params), "Google_Service_Compute_Operation");
   }
   /**
+   * Sets the Shielded Instance integrity policy for an instance. You can only use
+   * this method on a running instance. This method supports PATCH semantics and
+   * uses the JSON merge patch format and processing rules.
+   * (instances.setShieldedInstanceIntegrityPolicy)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $zone The name of the zone for this request.
+   * @param string $instance Name or id of the instance scoping this request.
+   * @param Google_Service_Compute_ShieldedInstanceIntegrityPolicy $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string requestId An optional request ID to identify requests.
+   * Specify a unique request ID so that if you must retry your request, the
+   * server will know to ignore the request if it has already been completed.
+   *
+   * For example, consider a situation where you make an initial request and the
+   * request times out. If you make the request again with the same request ID,
+   * the server can check if original operation with the same request ID was
+   * received, and if so, will ignore the second request. This prevents clients
+   * from accidentally creating duplicate commitments.
+   *
+   * The request ID must be a valid UUID with the exception that zero UUID is not
+   * supported (00000000-0000-0000-0000-000000000000).
+   * @return Google_Service_Compute_Operation
+   */
+  public function setShieldedInstanceIntegrityPolicy($project, $zone, $instance, Google_Service_Compute_ShieldedInstanceIntegrityPolicy $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('setShieldedInstanceIntegrityPolicy', array($params), "Google_Service_Compute_Operation");
+  }
+  /**
    * Sets network tags for the specified instance to the data included in the
    * request. (instances.setTags)
    *
@@ -977,5 +1025,37 @@ class Google_Service_Compute_Resource_Instances extends Google_Service_Resource
     $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'networkInterface' => $networkInterface, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('updateNetworkInterface', array($params), "Google_Service_Compute_Operation");
+  }
+  /**
+   * Updates the Shielded Instance config for an instance. You can only use this
+   * method on a stopped instance. This method supports PATCH semantics and uses
+   * the JSON merge patch format and processing rules.
+   * (instances.updateShieldedInstanceConfig)
+   *
+   * @param string $project Project ID for this request.
+   * @param string $zone The name of the zone for this request.
+   * @param string $instance Name or id of the instance scoping this request.
+   * @param Google_Service_Compute_ShieldedInstanceConfig $postBody
+   * @param array $optParams Optional parameters.
+   *
+   * @opt_param string requestId An optional request ID to identify requests.
+   * Specify a unique request ID so that if you must retry your request, the
+   * server will know to ignore the request if it has already been completed.
+   *
+   * For example, consider a situation where you make an initial request and the
+   * request times out. If you make the request again with the same request ID,
+   * the server can check if original operation with the same request ID was
+   * received, and if so, will ignore the second request. This prevents clients
+   * from accidentally creating duplicate commitments.
+   *
+   * The request ID must be a valid UUID with the exception that zero UUID is not
+   * supported (00000000-0000-0000-0000-000000000000).
+   * @return Google_Service_Compute_Operation
+   */
+  public function updateShieldedInstanceConfig($project, $zone, $instance, Google_Service_Compute_ShieldedInstanceConfig $postBody, $optParams = array())
+  {
+    $params = array('project' => $project, 'zone' => $zone, 'instance' => $instance, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('updateShieldedInstanceConfig', array($params), "Google_Service_Compute_Operation");
   }
 }

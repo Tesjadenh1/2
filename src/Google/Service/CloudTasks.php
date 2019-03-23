@@ -35,6 +35,8 @@ class Google_Service_CloudTasks extends Google_Service
       "https://www.googleapis.com/auth/cloud-platform";
 
   public $projects_locations;
+  public $projects_locations_queues;
+  public $projects_locations_queues_tasks;
   
   /**
    * Constructs the internal representation of the CloudTasks service.
@@ -75,6 +77,10 @@ class Google_Service_CloudTasks extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -83,9 +89,217 @@ class Google_Service_CloudTasks extends Google_Service
                   'location' => 'query',
                   'type' => 'integer',
                 ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_locations_queues = new Google_Service_CloudTasks_Resource_ProjectsLocationsQueues(
+        $this,
+        $this->serviceName,
+        'queues',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v2/{+parent}/queues',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'getIamPolicy' => array(
+              'path' => 'v2/{+resource}:getIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2/{+parent}/queues',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'filter' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'patch' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'PATCH',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'pause' => array(
+              'path' => 'v2/{+name}:pause',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'purge' => array(
+              'path' => 'v2/{+name}:purge',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'resume' => array(
+              'path' => 'v2/{+name}:resume',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'setIamPolicy' => array(
+              'path' => 'v2/{+resource}:setIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'testIamPermissions' => array(
+              'path' => 'v2/{+resource}:testIamPermissions',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),
+          )
+        )
+    );
+    $this->projects_locations_queues_tasks = new Google_Service_CloudTasks_Resource_ProjectsLocationsQueuesTasks(
+        $this,
+        $this->serviceName,
+        'tasks',
+        array(
+          'methods' => array(
+            'create' => array(
+              'path' => 'v2/{+parent}/tasks',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'delete' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'DELETE',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'get' => array(
+              'path' => 'v2/{+name}',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'responseView' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'list' => array(
+              'path' => 'v2/{+parent}/tasks',
+              'httpMethod' => 'GET',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
+                'responseView' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+              ),
+            ),'run' => array(
+              'path' => 'v2/{+name}:run',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
                 ),
               ),
             ),
