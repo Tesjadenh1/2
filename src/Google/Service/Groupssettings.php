@@ -19,7 +19,7 @@
  * Service definition for Groupssettings (v1).
  *
  * <p>
- * Lets you manage permission levels and related settings of a group.</p>
+ * Manages permission levels and related settings of a group.</p>
  *
  * <p>
  * For more information about this service, see the API

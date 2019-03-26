@@ -15,17 +15,25 @@
  * the License.
  */
 
-class Google_Service_Genomics_ImportVariantsResponse extends Google_Collection
+class Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1Publisher extends Google_Model
 {
-  protected $collection_key = 'callSetIds';
-  public $callSetIds;
+  public $name;
+  public $site;
 
-  public function setCallSetIds($callSetIds)
+  public function setName($name)
   {
-    $this->callSetIds = $callSetIds;
+    $this->name = $name;
   }
-  public function getCallSetIds()
+  public function getName()
   {
-    return $this->callSetIds;
+    return $this->name;
+  }
+  public function setSite($site)
+  {
+    $this->site = $site;
+  }
+  public function getSite()
+  {
+    return $this->site;
   }
 }
