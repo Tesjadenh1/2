@@ -33,9 +33,6 @@ class Google_Service_PlusDomains extends Google_Service
   /** View your circles and the people and pages in them. */
   const PLUS_CIRCLES_READ =
       "https://www.googleapis.com/auth/plus.circles.read";
-  /** Manage your circles and add people and pages. People and pages you add to your circles will be notified. Others may see this information publicly. People you add to circles can use Hangouts with you.. */
-  const PLUS_CIRCLES_WRITE =
-      "https://www.googleapis.com/auth/plus.circles.write";
   /** View your basic profile info, including your age range and language. */
   const PLUS_LOGIN =
       "https://www.googleapis.com/auth/plus.login";
@@ -96,20 +93,6 @@ class Google_Service_PlusDomains extends Google_Service
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
-                ),
-              ),
-            ),'insert' => array(
-              'path' => 'people/{userId}/activities',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'userId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'preview' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
                 ),
               ),
             ),'list' => array(
@@ -173,47 +156,7 @@ class Google_Service_PlusDomains extends Google_Service
         'circles',
         array(
           'methods' => array(
-            'addPeople' => array(
-              'path' => 'circles/{circleId}/people',
-              'httpMethod' => 'PUT',
-              'parameters' => array(
-                'circleId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'email' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'userId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-              ),
-            ),'get' => array(
-              'path' => 'circles/{circleId}',
-              'httpMethod' => 'GET',
-              'parameters' => array(
-                'circleId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'insert' => array(
-              'path' => 'people/{userId}/circles',
-              'httpMethod' => 'POST',
-              'parameters' => array(
-                'userId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'list' => array(
+            'list' => array(
               'path' => 'people/{userId}/circles',
               'httpMethod' => 'GET',
               'parameters' => array(
@@ -229,56 +172,6 @@ class Google_Service_PlusDomains extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-              ),
-            ),'patch' => array(
-              'path' => 'circles/{circleId}',
-              'httpMethod' => 'PATCH',
-              'parameters' => array(
-                'circleId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'remove' => array(
-              'path' => 'circles/{circleId}',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'circleId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-              ),
-            ),'removePeople' => array(
-              'path' => 'circles/{circleId}/people',
-              'httpMethod' => 'DELETE',
-              'parameters' => array(
-                'circleId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
-                ),
-                'email' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-                'userId' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                  'repeated' => true,
-                ),
-              ),
-            ),'update' => array(
-              'path' => 'circles/{circleId}',
-              'httpMethod' => 'PUT',
-              'parameters' => array(
-                'circleId' => array(
-                  'location' => 'path',
-                  'type' => 'string',
-                  'required' => true,
                 ),
               ),
             ),
