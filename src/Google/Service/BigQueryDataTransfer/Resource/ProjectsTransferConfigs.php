@@ -167,7 +167,8 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigs exten
    * Creates transfer runs for a time range [start_time, end_time]. For each date
    * - or whatever granularity the data source supports - in the range, one
    * transfer run is created. Note that runs are created per UTC time in the time
-   * range. (transferConfigs.scheduleRuns)
+   * range. DEPRECATED: use StartManualTransferRuns instead.
+   * (transferConfigs.scheduleRuns)
    *
    * @param string $parent Transfer configuration name in the form:
    * `projects/{project_id}/transferConfigs/{config_id}`.
@@ -180,5 +181,23 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsTransferConfigs exten
     $params = array('parent' => $parent, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('scheduleRuns', array($params), "Google_Service_BigQueryDataTransfer_ScheduleTransferRunsResponse");
+  }
+  /**
+   * Start manual transfer runs to be executed now with schedule_time equal to
+   * current time. The transfer runs can be created for a time range where the
+   * run_time is between start_time (inclusive) and end_time (exclusive), or for a
+   * specific run_time. (transferConfigs.startManualRuns)
+   *
+   * @param string $parent Transfer configuration name in the form:
+   * `projects/{project_id}/transferConfigs/{config_id}`.
+   * @param Google_Service_BigQueryDataTransfer_StartManualTransferRunsRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_BigQueryDataTransfer_StartManualTransferRunsResponse
+   */
+  public function startManualRuns($parent, Google_Service_BigQueryDataTransfer_StartManualTransferRunsRequest $postBody, $optParams = array())
+  {
+    $params = array('parent' => $parent, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('startManualRuns', array($params), "Google_Service_BigQueryDataTransfer_StartManualTransferRunsResponse");
   }
 }

@@ -132,6 +132,8 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
    * @param Google_Service_BigQueryDataTransfer_TransferConfig $postBody
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string updateMask Required list of fields to be updated in this
+   * request.
    * @opt_param string versionInfo Optional version info. If users want to find a
    * very recent access token, that is, immediately after approving access, users
    * have to set the version_info claim in the token request. To obtain the
@@ -153,8 +155,6 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
    * authorization code should be   returned in the title bar of the browser, with
    * the page text prompting   the user to copy the code and paste it in the
    * application.
-   * @opt_param string updateMask Required list of fields to be updated in this
-   * request.
    * @return Google_Service_BigQueryDataTransfer_TransferConfig
    */
   public function patch($name, Google_Service_BigQueryDataTransfer_TransferConfig $postBody, $optParams = array())
@@ -167,7 +167,8 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
    * Creates transfer runs for a time range [start_time, end_time]. For each date
    * - or whatever granularity the data source supports - in the range, one
    * transfer run is created. Note that runs are created per UTC time in the time
-   * range. (transferConfigs.scheduleRuns)
+   * range. DEPRECATED: use StartManualTransferRuns instead.
+   * (transferConfigs.scheduleRuns)
    *
    * @param string $parent Transfer configuration name in the form:
    * `projects/{project_id}/transferConfigs/{config_id}`.
@@ -180,5 +181,23 @@ class Google_Service_BigQueryDataTransfer_Resource_ProjectsLocationsTransferConf
     $params = array('parent' => $parent, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('scheduleRuns', array($params), "Google_Service_BigQueryDataTransfer_ScheduleTransferRunsResponse");
+  }
+  /**
+   * Start manual transfer runs to be executed now with schedule_time equal to
+   * current time. The transfer runs can be created for a time range where the
+   * run_time is between start_time (inclusive) and end_time (exclusive), or for a
+   * specific run_time. (transferConfigs.startManualRuns)
+   *
+   * @param string $parent Transfer configuration name in the form:
+   * `projects/{project_id}/transferConfigs/{config_id}`.
+   * @param Google_Service_BigQueryDataTransfer_StartManualTransferRunsRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_BigQueryDataTransfer_StartManualTransferRunsResponse
+   */
+  public function startManualRuns($parent, Google_Service_BigQueryDataTransfer_StartManualTransferRunsRequest $postBody, $optParams = array())
+  {
+    $params = array('parent' => $parent, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('startManualRuns', array($params), "Google_Service_BigQueryDataTransfer_StartManualTransferRunsResponse");
   }
 }

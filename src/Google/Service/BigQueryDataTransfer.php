@@ -190,13 +190,13 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -279,6 +279,10 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'updateMask' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'versionInfo' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -287,13 +291,19 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
               ),
             ),'scheduleRuns' => array(
               'path' => 'v1/{+parent}:scheduleRuns',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'startManualRuns' => array(
+              'path' => 'v1/{+parent}:startManualRuns',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'parent' => array(
@@ -378,6 +388,10 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -386,10 +400,6 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                   'repeated' => true,
-                ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
@@ -487,6 +497,16 @@ class Google_Service_BigQueryDataTransfer extends Google_Service
               ),
             ),'scheduleRuns' => array(
               'path' => 'v1/{+parent}:scheduleRuns',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'parent' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'startManualRuns' => array(
+              'path' => 'v1/{+parent}:startManualRuns',
               'httpMethod' => 'POST',
               'parameters' => array(
                 'parent' => array(
