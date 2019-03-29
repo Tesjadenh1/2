@@ -30,9 +30,9 @@
  */
 class Google_Service_FactCheckTools extends Google_Service
 {
-  /** View and manage your data across Google Cloud Platform services. */
-  const CLOUD_PLATFORM =
-      "https://www.googleapis.com/auth/cloud-platform";
+  /** View your email address. */
+  const USERINFO_EMAIL =
+      "https://www.googleapis.com/auth/userinfo.email";
 
   public $claims;
   public $pages;
@@ -61,14 +61,6 @@ class Google_Service_FactCheckTools extends Google_Service
               'path' => 'v1alpha1/claims:search',
               'httpMethod' => 'GET',
               'parameters' => array(
-                'languageCode' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'maxAgeDays' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'offset' => array(
                   'location' => 'query',
                   'type' => 'integer',
@@ -77,17 +69,25 @@ class Google_Service_FactCheckTools extends Google_Service
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'reviewPublisherSiteFilter' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'query' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'languageCode' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'maxAgeDays' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),
@@ -128,6 +128,14 @@ class Google_Service_FactCheckTools extends Google_Service
               'path' => 'v1alpha1/pages',
               'httpMethod' => 'GET',
               'parameters' => array(
+                'organization' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
+                ),
                 'url' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -139,14 +147,6 @@ class Google_Service_FactCheckTools extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
-                ),
-                'organization' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
                 ),
               ),
             ),'update' => array(

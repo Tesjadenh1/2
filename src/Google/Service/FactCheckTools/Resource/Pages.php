@@ -72,6 +72,10 @@ class Google_Service_FactCheckTools_Resource_Pages extends Google_Service_Resour
    *
    * @param array $optParams Optional parameters.
    *
+   * @opt_param string organization The organization for which we want to fetch
+   * markups for. For instance, "site.com". Cannot be specified along with an URL.
+   * @opt_param int pageSize The pagination size. We will return up to that many
+   * results. Defaults to 10 if not set. Has no effect if a URL is requested.
    * @opt_param string url The URL from which to get `ClaimReview` markup. There
    * will be at most one result. If markup is associated with a more canonical
    * version of the URL provided, we will return that URL instead. Cannot be
@@ -85,10 +89,6 @@ class Google_Service_FactCheckTools_Resource_Pages extends Google_Service_Resour
    * `next_page_token` returned from a previous List request, if any, in order to
    * get the next page. All other fields must have the same values as in the
    * previous request.
-   * @opt_param string organization The organization for which we want to fetch
-   * markups for. For instance, "site.com". Cannot be specified along with an URL.
-   * @opt_param int pageSize The pagination size. We will return up to that many
-   * results. Defaults to 10 if not set. Has no effect if a URL is requested.
    * @return Google_Service_FactCheckTools_GoogleFactcheckingFactchecktoolsV1alpha1ListClaimReviewMarkupPagesResponse
    */
   public function listPages($optParams = array())
