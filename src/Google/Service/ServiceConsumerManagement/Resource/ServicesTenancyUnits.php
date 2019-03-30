@@ -127,6 +127,28 @@ class Google_Service_ServiceConsumerManagement_Resource_ServicesTenancyUnits ext
     return $this->call('delete', array($params), "Google_Service_ServiceConsumerManagement_Operation");
   }
   /**
+   * Deletes the specified project resource identified by a tenant resource tag.
+   * The mothod removes a project lien with a 'TenantManager' origin if that was
+   * added. It will then attempt to delete the project. If that operation fails,
+   * this method also fails. After the project has been deleted, the tenant
+   * resource state is set to DELETED.  To permanently remove resource metadata,
+   * call the `RemoveTenantProject` method. New resources with the same tag can't
+   * be added if there are existing resources in a DELETED state. Operation.
+   * (tenancyUnits.deleteProject)
+   *
+   * @param string $name Name of the tenancy unit. Such as
+   * 'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.
+   * @param Google_Service_ServiceConsumerManagement_DeleteTenantProjectRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_ServiceConsumerManagement_Operation
+   */
+  public function deleteProject($name, Google_Service_ServiceConsumerManagement_DeleteTenantProjectRequest $postBody, $optParams = array())
+  {
+    $params = array('name' => $name, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('deleteProject', array($params), "Google_Service_ServiceConsumerManagement_Operation");
+  }
+  /**
    * Find the tenancy unit for a managed service and service consumer. This method
    * shouldn't be used in a service producer's runtime path, for example to find
    * the tenant project number when creating VMs. Service producers must persist
@@ -176,5 +198,24 @@ class Google_Service_ServiceConsumerManagement_Resource_ServicesTenancyUnits ext
     $params = array('name' => $name, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
     return $this->call('removeProject', array($params), "Google_Service_ServiceConsumerManagement_Operation");
+  }
+  /**
+   * Attempts to undelete a previously deleted tenant project. The project must be
+   * in a DELETED state. There are no guarantees that an undeleted project will be
+   * in a fully restored and functional state. Call the `ApplyTenantProjectConfig`
+   * method to update its configuration and then validate all managed service
+   * resources. Operation. (tenancyUnits.undeleteProject)
+   *
+   * @param string $name Name of the tenancy unit. Such as
+   * 'services/service.googleapis.com/projects/12345/tenancyUnits/abcd'.
+   * @param Google_Service_ServiceConsumerManagement_UndeleteTenantProjectRequest $postBody
+   * @param array $optParams Optional parameters.
+   * @return Google_Service_ServiceConsumerManagement_Operation
+   */
+  public function undeleteProject($name, Google_Service_ServiceConsumerManagement_UndeleteTenantProjectRequest $postBody, $optParams = array())
+  {
+    $params = array('name' => $name, 'postBody' => $postBody);
+    $params = array_merge($params, $optParams);
+    return $this->call('undeleteProject', array($params), "Google_Service_ServiceConsumerManagement_Operation");
   }
 }

@@ -25,6 +25,7 @@ class Google_Service_Dataflow_Environment extends Google_Collection
   public $internalExperiments;
   public $sdkPipelineOptions;
   public $serviceAccountEmail;
+  public $serviceKmsKeyName;
   public $tempStoragePrefix;
   public $userAgent;
   public $version;
@@ -86,6 +87,14 @@ class Google_Service_Dataflow_Environment extends Google_Collection
   public function getServiceAccountEmail()
   {
     return $this->serviceAccountEmail;
+  }
+  public function setServiceKmsKeyName($serviceKmsKeyName)
+  {
+    $this->serviceKmsKeyName = $serviceKmsKeyName;
+  }
+  public function getServiceKmsKeyName()
+  {
+    return $this->serviceKmsKeyName;
   }
   public function setTempStoragePrefix($tempStoragePrefix)
   {
