@@ -20,6 +20,7 @@ class Google_Service_Compute_HTTP2HealthCheck extends Google_Model
   public $host;
   public $port;
   public $portName;
+  public $portSpecification;
   public $proxyHeader;
   public $requestPath;
   public $response;
@@ -47,6 +48,14 @@ class Google_Service_Compute_HTTP2HealthCheck extends Google_Model
   public function getPortName()
   {
     return $this->portName;
+  }
+  public function setPortSpecification($portSpecification)
+  {
+    $this->portSpecification = $portSpecification;
+  }
+  public function getPortSpecification()
+  {
+    return $this->portSpecification;
   }
   public function setProxyHeader($proxyHeader)
   {

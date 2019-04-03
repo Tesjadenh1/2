@@ -26,7 +26,8 @@
 class Google_Service_PlusDomains_Resource_Circles extends Google_Service_Resource
 {
   /**
-   * List all of the circles for a user. (circles.listCircles)
+   * Shut down. See https://developers.google.com/+/api-shutdown for more details.
+   * (circles.listCircles)
    *
    * @param string $userId The ID of the user to get circles for. The special
    * value "me" can be used to indicate the authenticated user.

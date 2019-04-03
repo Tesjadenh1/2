@@ -63,7 +63,7 @@ class Google_Service_PlusDomains_Resource_People extends Google_Service_Resource
     return $this->call('list', array($params), "Google_Service_PlusDomains_PeopleFeed");
   }
   /**
-   * List all of the people in the specified collection for a particular activity.
+   * Shut down. See https://developers.google.com/+/api-shutdown for more details.
    * (people.listByActivity)
    *
    * @param string $activityId The ID of the activity to get the list of people
@@ -86,7 +86,8 @@ class Google_Service_PlusDomains_Resource_People extends Google_Service_Resource
     return $this->call('listByActivity', array($params), "Google_Service_PlusDomains_PeopleFeed");
   }
   /**
-   * List all of the people who are members of a circle. (people.listByCircle)
+   * Shut down. See https://developers.google.com/+/api-shutdown for more details.
+   * (people.listByCircle)
    *
    * @param string $circleId The ID of the circle to get the members of.
    * @param array $optParams Optional parameters.
