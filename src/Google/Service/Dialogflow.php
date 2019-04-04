@@ -127,13 +127,13 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageToken' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
+                ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
                 ),
               ),
             ),'train' => array(
@@ -223,10 +223,6 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'pageSize' => array(
-                  'location' => 'query',
-                  'type' => 'integer',
-                ),
                 'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -234,6 +230,10 @@ class Google_Service_Dialogflow extends Google_Service
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'pageSize' => array(
+                  'location' => 'query',
+                  'type' => 'integer',
                 ),
               ),
             ),'patch' => array(
@@ -333,11 +333,11 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'intentView' => array(
+                'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'languageCode' => array(
+                'intentView' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -361,11 +361,11 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'languageCode' => array(
+                'intentView' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
-                'intentView' => array(
+                'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -405,15 +405,15 @@ class Google_Service_Dialogflow extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'intentView' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'languageCode' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
                 'updateMask' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'intentView' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),

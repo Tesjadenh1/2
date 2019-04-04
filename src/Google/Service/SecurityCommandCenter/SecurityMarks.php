@@ -15,25 +15,25 @@
  * the License.
  */
 
-class Google_Service_AndroidEnterprise_AndroidDevicePolicyConfig extends Google_Model
+class Google_Service_SecurityCommandCenter_SecurityMarks extends Google_Model
 {
-  public $kind;
-  public $state;
+  public $marks;
+  public $name;
 
-  public function setKind($kind)
+  public function setMarks($marks)
   {
-    $this->kind = $kind;
+    $this->marks = $marks;
   }
-  public function getKind()
+  public function getMarks()
   {
-    return $this->kind;
+    return $this->marks;
   }
-  public function setState($state)
+  public function setName($name)
   {
-    $this->state = $state;
+    $this->name = $name;
   }
-  public function getState()
+  public function getName()
   {
-    return $this->state;
+    return $this->name;
   }
 }
