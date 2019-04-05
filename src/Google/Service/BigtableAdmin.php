@@ -19,7 +19,7 @@
  * Service definition for BigtableAdmin (v2).
  *
  * <p>
-</p>
+ * Administer your Cloud Bigtable tables and instances.</p>
  *
  * <p>
  * For more information about this service, see the API
@@ -134,6 +134,10 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'filter' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
@@ -141,10 +145,6 @@ class Google_Service_BigtableAdmin extends Google_Service
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
-                ),
-                'filter' => array(
-                  'location' => 'query',
-                  'type' => 'string',
                 ),
               ),
             ),
@@ -274,13 +274,13 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
-                'ignoreWarnings' => array(
-                  'location' => 'query',
-                  'type' => 'boolean',
-                ),
                 'appProfileId' => array(
                   'location' => 'query',
                   'type' => 'string',
+                ),
+                'ignoreWarnings' => array(
+                  'location' => 'query',
+                  'type' => 'boolean',
                 ),
               ),
             ),'delete' => array(
@@ -485,6 +485,16 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                 ),
               ),
+            ),'getIamPolicy' => array(
+              'path' => 'v2/{+resource}:getIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
             ),'list' => array(
               'path' => 'v2/{+parent}/tables',
               'httpMethod' => 'GET',
@@ -494,15 +504,15 @@ class Google_Service_BigtableAdmin extends Google_Service
                   'type' => 'string',
                   'required' => true,
                 ),
+                'pageToken' => array(
+                  'location' => 'query',
+                  'type' => 'string',
+                ),
                 'pageSize' => array(
                   'location' => 'query',
                   'type' => 'integer',
                 ),
                 'view' => array(
-                  'location' => 'query',
-                  'type' => 'string',
-                ),
-                'pageToken' => array(
                   'location' => 'query',
                   'type' => 'string',
                 ),
@@ -512,6 +522,26 @@ class Google_Service_BigtableAdmin extends Google_Service
               'httpMethod' => 'POST',
               'parameters' => array(
                 'name' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'setIamPolicy' => array(
+              'path' => 'v2/{+resource}:setIamPolicy',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
+                  'location' => 'path',
+                  'type' => 'string',
+                  'required' => true,
+                ),
+              ),
+            ),'testIamPermissions' => array(
+              'path' => 'v2/{+resource}:testIamPermissions',
+              'httpMethod' => 'POST',
+              'parameters' => array(
+                'resource' => array(
                   'location' => 'path',
                   'type' => 'string',
                   'required' => true,
